@@ -33,26 +33,31 @@ async def on_message(message):
     if message.author == client.user:
         return
     if is_command(message):
-        message = del_char(message, len(prefix))
+        message.content = del_char(message, len(prefix))
         get_id(message)
         
 def get_id(message):
-    message = message.lower()
-    tokenized_message  = message.split(' ')[0]
+    s = message.content.lower()
+    tokenized_message  = s.split(' ')[0]
+    id_map(message.channel, tokenized_message)
     
-def id_map(tokenized_message):
+def id_map(channel, tokenized_message):
     map = {
             'cirno': cirno_data
     }
-    do_command(tokenized_message, map.get(tokenized_message[1], print('wtf are u doing')))
+    do_command(channel, tokenized_message, map.get(tokenized_message[1], print('wtf are u doing')))
     
 
-def do_command(tokenized_message, data):
+def do_command(channel, tokenized_message, data):
     commands = {
         'card': card
     }
-   callback = commands.get(tokenized_message[0]) 
-   callback(tokenized_message, data)
+    callback = commands.get(tokenized_message[0])
+    callback(channel, tokenized_message, data)
+
+@client.event
+async def card(channel, tokenized_message, data):
+    await channel.send('pog')
 
 client.run(token)
 
