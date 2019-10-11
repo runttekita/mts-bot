@@ -9,6 +9,7 @@ token = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
 cirnoData = None
+prefix = '!'
 
 @client.event
 async def on_ready():
