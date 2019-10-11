@@ -37,7 +37,12 @@ async def on_message(message):
         get_id(message)
         
 def get_id(message):
-    tokenizedMessage  = message.split(' ')[0]
+    message = message.lower()
+    tokenized_message  = message.split(' ')[0]
     
+def id_map(tokenized_message):
+    map = {
+            'cirno': cirno_data
+    }
 client.run(token)
 
