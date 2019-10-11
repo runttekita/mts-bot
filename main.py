@@ -25,14 +25,16 @@ def load_data(data_field, mod_id):
 def is_command(message):
     return message.content.startswith(prefix)
 
-def del_char
+def del_char(string, index):
+    return ''.join((char for idx, char in enumerate(string) if idx not in indexes))
 
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
-
     if is_command(message):
+        message = del_char(message, len(prefix))
+        get_id(message)
         
 client.run(token)
 
