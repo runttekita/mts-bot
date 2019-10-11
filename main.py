@@ -16,10 +16,14 @@ async def on_ready():
     print(f'{client.user} has connected to Discord!')
     print('Loading mod data')
     loadData(cirnoData, 'cirno')
-
+    
 def loadData(dataField, modId):
     with open(f'data/{modId}/items.json') as json_file:
         dataField = json.load(json_file)
     print('Loaded modId!')
 
+def isCommand(message):
+    return message.content.startswith(prefix)
+
 client.run(token)
+
