@@ -8,22 +8,31 @@ load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
-cirnoData = None
+cirno_data = None
 prefix = '!'
 
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
     print('Loading mod data')
-    loadData(cirnoData, 'cirno')
+    load_data(cirno_data, 'cirno')
     
-def loadData(dataField, modId):
-    with open(f'data/{modId}/items.json') as json_file:
-        dataField = json.load(json_file)
-    print('Loaded modId!')
+def load_data(data_field, mod_id):
+    with open(f'data/{mod_id}/items.json') as json_file:
+        data_field = json.load(json_file)
+    print(f'Loaded {mod_id}!')
 
-def isCommand(message):
+def is_command(message):
     return message.content.startswith(prefix)
 
+def del_char
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if is_command(message):
+        
 client.run(token)
 
