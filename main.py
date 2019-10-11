@@ -44,5 +44,13 @@ def id_map(tokenized_message):
     map = {
             'cirno': cirno_data
     }
+    do_command(tokenized_message, map.get(tokenized_message[0], print('wtf are u doing')))
+    
+
+def do_command(tokenized_message, data):
+    commands = {
+        'card': card
+    }
+    
 client.run(token)
 
