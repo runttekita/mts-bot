@@ -36,5 +36,8 @@ async def on_message(message):
         message = del_char(message, len(prefix))
         get_id(message)
         
+def get_id(message):
+    tokenizedMessage  = message.split(' ')[0]
+    
 client.run(token)
 
