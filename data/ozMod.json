@@ -1,0 +1,284 @@
+{
+  "mod": {
+    "name": "Oz Mod",
+    "version": "0.0.1",
+    "authors": ["Ozole"],
+    "credits": "",
+    "description": "A content mod adding in various things for different characters.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Ichor Spray",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 ozmod:Ichor to ALL enemies."
+    },
+    {
+      "name": "Ichor Spray+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 ozmod:Ichor to ALL enemies."
+    },
+    {
+      "name": "Orange Dagger",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nApply 2 ozmod:Ichor."
+    },
+    {
+      "name": "Orange Dagger+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nApply 2 ozmod:Ichor."
+    },
+    {
+      "name": "Gold Blood",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you receive unblocked attack damage, apply 3 ozmod:Ichor to the attacker."
+    },
+    {
+      "name": "Gold Blood+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you receive unblocked attack damage, apply 4 ozmod:Ichor to the attacker."
+    },
+    {
+      "name": "Ichor Bath",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 10 ozmod:Ichor.\nExhaust."
+    },
+    {
+      "name": "Ichor Bath+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 13 ozmod:Ichor.\nExhaust."
+    },
+    {
+      "name": "Painful Shower",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage to a random enemy and apply 2 ozmod:Ichor to that enemy X times. Exhaust."
+    },
+    {
+      "name": "Painful Shower+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 7 damage to a random enemy and apply 3 ozmod:Ichor to that enemy X times. Exhaust."
+    },
+    {
+      "name": "Blessed Touch",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you deal unblocked attack damage, apply 1 ozmod:Ichor."
+    },
+    {
+      "name": "Blessed Touch+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you deal unblocked attack damage, apply 1 ozmod:Ichor."
+    },
+    {
+      "name": "Ichorsplosion",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply an enemy's Ichor to itself and ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Ichorsplosion+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply an enemy's Ichor to itself and ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Pollution",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Radiation."
+    },
+    {
+      "name": "Pollution+",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Channel 1 Radiation."
+    },
+    {
+      "name": "Toxic Slice",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply Poison equal to the number of channeled Radiation orbs."
+    },
+    {
+      "name": "Toxic Slice+",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nApply Poison equal to the number of channeled Radiation orbs."
+    },
+    {
+      "name": "Radiator",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, Channel 1 Radiation."
+    },
+    {
+      "name": "Radiator+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, Channel 1 Radiation."
+    },
+    {
+      "name": "Harvest Plutonium",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand.\nChannel that many Radiation orbs.\nExhaust."
+    },
+    {
+      "name": "Harvest Plutonium+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust your hand.\nChannel that many Radiation orbs.\nExhaust."
+    },
+    {
+      "name": "Irradiated Core",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Channel Radiation, gain [E] ."
+    },
+    {
+      "name": "Irradiated Core+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Channel Radiation, gain [E] ."
+    },
+    {
+      "name": "Nuclear Bomb",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 30 damage.\nChannel 3 Radiation.\nExhaust."
+    },
+    {
+      "name": "Nuclear Bomb+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 40 damage.\nChannel 4 Radiation.\nExhaust."
+    },
+    {
+      "name": "Parry",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If an enemy is intending to attack, deal 5 damage and gain 7 Block."
+    },
+    {
+      "name": "Parry+",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If an enemy is intending to attack, deal 7 damage and gain 9 Block."
+    },
+    {
+      "name": "Flow Fist",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 2 damage X times.\nGain X [E] ."
+    },
+    {
+      "name": "Flow Fist+",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 3 damage X times.\nGain X [E] ."
+    },
+    {
+      "name": "Focus Power",
+      "color": "Purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next attack does 2 times damage.\nYour turn ends."
+    },
+    {
+      "name": "Focus Power+",
+      "color": "Purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next attack does 3 times damage.\nYour turn ends."
+    }
+  ],
+  "relics": [
+  ],
+  "potions": [
+    {
+      "name": "Jar of Plutonium",
+      "rarity": "Uncommon",
+      "description": "Channel 3 Radiation."
+    }
+  ],
+  "creatures": [
+  ],
+  "keywords": [
+  ]
+}
