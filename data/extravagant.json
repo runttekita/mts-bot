@@ -1,0 +1,1271 @@
+{
+  "mod": {
+    "name": "The Extravagant",
+    "version": "1.0.12",
+    "authors": ["Lobbienjonsji"],
+    "credits": "Smonko for Extravagant Beta Art. Mrs. Dingsda for Dig up Junk and Meditation Card Art. Grimm for the many ideas. Kiooeht for giving permission to steal an important Patch. Other art Credits: lobbien",
+    "description": "A Character mostly centered around synergy and strong card control.",
+    "mts_version": "3.10.1",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Acceleration",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain [E].\nExhaust."
+    },
+    {
+      "name": "Acceleration+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain [E] [E].\nExhaust."
+    },
+    {
+      "name": "Accumulation",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nDraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Accumulation+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Invocation",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nFetch 1 card from your draw pile.\nExhaust."
+    },
+    {
+      "name": "Invocation+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nFetch 2 cards from your draw pile.\nExhaust."
+    },
+    {
+      "name": "Preservation",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nRetain 1 card this turn.\nExhaust."
+    },
+    {
+      "name": "Preservation+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nRetain 2 cards this turn.\nExhaust."
+    },
+    {
+      "name": "Clairvoyance",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nDiscard any number of cards from your draw pile."
+    },
+    {
+      "name": "Clairvoyance+",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nDiscard any number of cards from your draw pile."
+    },
+    {
+      "name": "Fence",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nNext turn gain !theextravagant:REDUCED_BLOCK! Block.\ntheextravagant:Basic_Defend."
+    },
+    {
+      "name": "Fence+",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nNext turn gain !theextravagant:REDUCED_BLOCK! Block.\ntheextravagant:Basic_Defend."
+    },
+    {
+      "name": "Jump Cut",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage. For the next 2 buffs you gain, trigger its effects that happen at the start of your turn."
+    },
+    {
+      "name": "Jump Cut+",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. For the next 3 buffs you gain, trigger its effects that happen at the start of your turn."
+    },
+    {
+      "name": "Sly Strike",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 1 Strength.\nLose 1 Strength at the end of your turn.\ntheextravagant:Basic_Strike."
+    },
+    {
+      "name": "Sly Strike+",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 2 Strength.\nLose 2 Strength at the end of your turn.\ntheextravagant:Basic_Strike."
+    },
+    {
+      "name": "Triumph",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play 2 attacks in a row this turn, gain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Triumph+",
+      "color": "Ev_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play 2 attacks in a row this turn, gain 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Aggression",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage. Double this cards damage this turn."
+    },
+    {
+      "name": "Aggression+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. Double this cards damage this turn."
+    },
+    {
+      "name": "Cutthroat",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDeals triple damage if you played no cards this turn.\nExhaust."
+    },
+    {
+      "name": "Cutthroat+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDeals triple damage if you played no cards this turn.\nExhaust."
+    },
+    {
+      "name": "Cutting Edge",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage. Apply 2 Vulnerable.\nExhaust the top card of your draw pile."
+    },
+    {
+      "name": "Cutting Edge+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. Apply 3 Vulnerable.\nExhaust the top card of your draw pile."
+    },
+    {
+      "name": "Flashback",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put the next 2 cards you play on top of your draw pile."
+    },
+    {
+      "name": "Flashback+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put the next 3 cards you play on top of your draw pile."
+    },
+    {
+      "name": "Focus Stab",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage. Deals double damage if this costs 0."
+    },
+    {
+      "name": "Focus Stab+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. Deals double damage if this costs 0."
+    },
+    {
+      "name": "Garbage Cannon",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 3 cards.\nExhaust each Status card drawn.\nDeal 5 damage for each card Exhausted."
+    },
+    {
+      "name": "Garbage Cannon+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 3 cards.\nExhaust each Status card drawn.\nDeal 7 damage for each card Exhausted."
+    },
+    {
+      "name": "Iron Plumes",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 3 Temporary_HP.\nWhenever this card is drawn, increase the amount by 3 this combat.\nExhaust."
+    },
+    {
+      "name": "Iron Plumes+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Temporary_HP.\nWhenever this card is drawn, increase the amount by 3 this combat.\nExhaust."
+    },
+    {
+      "name": "Persistence",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. Gain 3 Strength. Lose 3 Strength at the end of your turn.\nAdd a Persistence into your hand.\nExhaust."
+    },
+    {
+      "name": "Persistence+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. Gain 4 Strength. Lose 4 Strength at the end of your turn.\nAdd a Persistence+ into your hand.\nExhaust."
+    },
+    {
+      "name": "PuffUp",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Temporary_HP.\nGain 3 Strength, lose 3 Strength at the end of your turn."
+    },
+    {
+      "name": "PuffUp+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Temporary_HP.\nGain 4 Strength, lose 4 Strength at the end of your turn."
+    },
+    {
+      "name": "Reconsider",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard 1 card. If you discard an attack gain Strength equal to it's [E] cost.\nExhaust."
+    },
+    {
+      "name": "Reconsider+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard 2 cards. If you discard an attack gain Strength equal to it's [E] cost.\nExhaust."
+    },
+    {
+      "name": "Riot",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "When drawn discard 3 cards.\nDeal 16 damage.\nApply 2 Vulnerable.\n Next turn, gain [E]."
+    },
+    {
+      "name": "Riot+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "When drawn discard 3 cards.\nDeal 20 damage.\nApply 2 Vulnerable.\n Next turn, gain [E]."
+    },
+    {
+      "name": "Rusty Buckler",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of this turn, gain 2 Thorns and 2 Block.\nIf you played a card that costs 2 or more this turn, Retain this card."
+    },
+    {
+      "name": "Rusty Buckler+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of this turn, gain 2 Thorns and 4 Block.\nIf you played a card that costs 2 or more this turn, Retain this card."
+    },
+    {
+      "name": "Sharp Talons",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nIf the target is Vulnerable, increase the damage of a random attack in your hand by 2.\nExhaust."
+    },
+    {
+      "name": "Sharp Talons+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nIf the target is Vulnerable, increase the damage of a random attack in your hand by 3.\nExhaust."
+    },
+    {
+      "name": "Spark",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Ethereal.\nUnplayable.\nWhen drawn increase the damage and Block of all cards in your hand by 1 this combat."
+    },
+    {
+      "name": "Spark+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Ethereal.\nUnplayable.\nWhen drawn or discarded from your hand, increase the damage and Block of all cards in your hand by 1 this combat."
+    },
+    {
+      "name": "Spontaneous Strike",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage. When drawn, this card costs 3 this turn."
+    },
+    {
+      "name": "Spontaneous Strike+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 15 damage. When drawn, this card costs 3 this turn."
+    },
+    {
+      "name": "Step Back",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. Put 1 card from your hand on top of your draw pile."
+    },
+    {
+      "name": "Step Back+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block. Put 1 card from your hand on top of your draw pile."
+    },
+    {
+      "name": "Swift Switch",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards. Put 1 card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Swift Switch+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards. Put 1 card from your discard pile on top of your draw pile. It costs 0 [E] until played."
+    },
+    {
+      "name": "Twitch",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn,\ngain [E] [E] and discard a random card from  your hand."
+    },
+    {
+      "name": "Twitch+",
+      "color": "Ev_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn,\ngain [E] [E] and discard a card from  your hand."
+    },
+    {
+      "name": "Ambush",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "If the last card you play during your turn is a skill, the next card you play deals double damage.\nEthereal."
+    },
+    {
+      "name": "Ambush+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "If the last card you play during your turn is a skill, the next card you play deals double damage."
+    },
+    {
+      "name": "Button up",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhile this card is in your draw pile, gain 3 Block at the start of your turn."
+    },
+    {
+      "name": "Button up+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhile this card is in your draw pile, gain 4 Block at the start of your turn."
+    },
+    {
+      "name": "Channel",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain all 2 [E] cost cards at the end of this turn.\nThey cost 0 [E] next turn."
+    },
+    {
+      "name": "Channel+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain all 2 [E] cost cards at the end of this turn.\nThey cost 0 [E] next turn."
+    },
+    {
+      "name": "Courage",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nGain 12 Block.\nWhile this is in your hand, all other cards in your hand are Unplayable."
+    },
+    {
+      "name": "Courage+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nGain 15 Block.\nWhile this is in your hand, all other cards in your hand are Unplayable."
+    },
+    {
+      "name": "Dig up Junk",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 3 random 0 [E] cost cards from your draw pile into your hand."
+    },
+    {
+      "name": "Dig up Junk+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 4 random 0 [E] cost cards from your draw pile into your hand."
+    },
+    {
+      "name": "Drift",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 2 times. Draw 3 cards, discard 3 cards."
+    },
+    {
+      "name": "Drift+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 2 times. Draw 4 cards, discard 4 cards."
+    },
+    {
+      "name": "Dual Mirror Cut",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Discard a card. If you discard an attack, deal its damage to a random enemy 2 times.\nExhaust."
+    },
+    {
+      "name": "Dual Mirror Cut+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Discard a card. If you discard an attack, deal its damage to a random enemy 3 times.\nExhaust."
+    },
+    {
+      "name": "Firework",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Discard a card.\nDeal 4 damage for each [E] it costs."
+    },
+    {
+      "name": "Firework+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Discard a card.\nDeal 5 damage for each [E] it costs."
+    },
+    {
+      "name": "Foil",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you play a card this turn, gain 3 Temporary_HP and reduce its damage and Block by 2.\nExhaust."
+    },
+    {
+      "name": "Foil+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play a card this turn, gain 3 Temporary_HP and reduce its damage and Block by 2.\nExhaust."
+    },
+    {
+      "name": "Glamour",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [SE] [SE] \b.\nBecomes Unplayable until the end of the turn."
+    },
+    {
+      "name": "Glamour+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [SE] [SE] [SE] \b.\nBecomes Unplayable until the end of the turn."
+    },
+    {
+      "name": "Glyph of Choice",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of each turn lose [SE] and add an theextravagant:Accumulation into your hand."
+    },
+    {
+      "name": "Glyph of Choice+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of each turn lose [SE] and add an theextravagant:Accumulation into your hand."
+    },
+    {
+      "name": "Glyph of Power",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of each turn lose [SE] and add an theextravagant:Acceleration into your hand."
+    },
+    {
+      "name": "Glyph of Power+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of each turn lose [SE] and add an theextravagant:Acceleration into your hand."
+    },
+    {
+      "name": "Glyph of Sight",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of each turn lose [SE] and add an theextravagant:Invocation into your hand."
+    },
+    {
+      "name": "Glyph of Sight+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of each turn lose [SE] and add an theextravagant:Invocation into your hand.."
+    },
+    {
+      "name": "Glyph of Time",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of each turn lose [SE] and add an theextravagant:Preservation into your hand."
+    },
+    {
+      "name": "Glyph of Time+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of each turn lose [SE] and add an theextravagant:Preservation into your hand."
+    },
+    {
+      "name": "Gust of Wind",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 damage 6 times.\nExhaust."
+    },
+    {
+      "name": "Gust of Wind+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 damage 8 times.\nExhaust."
+    },
+    {
+      "name": "Impulse",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play a card that costs 2 or more [E] this turn, gain [E] next turn."
+    },
+    {
+      "name": "Impulse+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play a card that costs 2 or more [E] this turn, gain [E] [E] next turn."
+    },
+    {
+      "name": "Overrun",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you gain Block this turn, deal 4 damage to all enemies."
+    },
+    {
+      "name": "Overrun+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you gain Block this turn, deal 6 damage to all enemies."
+    },
+    {
+      "name": "Pluck",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards. They cost 0 [E] and Exhaust when played."
+    },
+    {
+      "name": "Pluck+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards. They cost 0 [E] and Exhaust when played."
+    },
+    {
+      "name": "Precaution",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block.\nGain 3 Block next turn.\nPut 2 cards from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Precaution+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nGain 4 Block next turn.\nPut 3 cards from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Radiance",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a power, a random enemy loses 1 Strength and add 1 Dazed on top of your draw pile."
+    },
+    {
+      "name": "Radiance+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you play a power, a random enemy loses 1 Strength and add 1 Dazed on top of your draw pile."
+    },
+    {
+      "name": "Re-Seek",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fetch 2 cards from your discard pile."
+    },
+    {
+      "name": "Re-Seek+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fetch 3 cards from your discard pile."
+    },
+    {
+      "name": "Retreat",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "At the end of this turn put all cards in your hand into your draw pile and gain 4 Block for each."
+    },
+    {
+      "name": "Retreat+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "At the end of this turn put all cards in your hand into your draw pile and gain 6 Block for each."
+    },
+    {
+      "name": "Rising Phoenix",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Costs 1 [E] less for every card Exhausted last turn.\nDeal 4 damage 4 times to all enemies."
+    },
+    {
+      "name": "Rising Phoenix+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Costs 1 [E] less for every card Exhausted last turn.\nDeal 4 damage 6 times to all enemies."
+    },
+    {
+      "name": "Shine",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If the top card of your draw pile is Unplayable, gain 1 Dexterity and draw 1 card.\nExhaust."
+    },
+    {
+      "name": "Shine+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If the top card of your draw pile is Unplayable, gain 1 Dexterity and draw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Skillfull Dodge",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block 2 times."
+    },
+    {
+      "name": "Skillfull Dodge+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block 3 times."
+    },
+    {
+      "name": "Strafe",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block for each skill in your hand that costs 0 [E]."
+    },
+    {
+      "name": "Strafe+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block for each skill in your hand that costs 0 [E]."
+    },
+    {
+      "name": "Swirl",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fetch a card from your draw pile and increase its Block by 2 this combat.\nExhaust."
+    },
+    {
+      "name": "Swirl+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fetch a card from your draw pile and increase its Block by 3 this combat.\nExhaust."
+    },
+    {
+      "name": "Thrill",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to a random enemy 4 times.\nDuplicate ALL attacks in your hand."
+    },
+    {
+      "name": "Thrill+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to a random enemy 5 times.\nDuplicate ALL attacks in your hand."
+    },
+    {
+      "name": "Tools of Trickery",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of each turn, discard a random card and Fetch a card from your draw pile."
+    },
+    {
+      "name": "Tools of Trickery+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of each turn, discard a random card and Fetch a card from your draw pile."
+    },
+    {
+      "name": "Twostep",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards. Next turn draw 2 cards."
+    },
+    {
+      "name": "Twostep+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards. Next turn draw 3 cards."
+    },
+    {
+      "name": "Vintage",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, shuffle up to 2 cards from your hand into your draw pile and gain [SE] for each."
+    },
+    {
+      "name": "Vintage+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, shuffle up to 2 cards from your hand into your draw pile and gain [SE] for each."
+    },
+    {
+      "name": "Zero Hero",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block. If the next card you play costs 0 [E] \b, play it 3 times."
+    },
+    {
+      "name": "Zero Hero+",
+      "color": "Ev_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block. If the next card you play costs 0 [E] \b, play it 3 times."
+    },
+    {
+      "name": "16 Tons",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Ethereal.\nWhen this card is discarded from your hand, exhaust it and deal 16 damage to a random enemy."
+    },
+    {
+      "name": "16 Tons+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "7",
+      "description": "Ethereal.\nWhen this card is discarded from your hand, exhaust it and deal 16 damage to a random enemy."
+    },
+    {
+      "name": "Aftermath",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "",
+      "description": "Unplayable.\nIf this is the only card left in your hand at the end of your turn, deal 25 damage to all enemies."
+    },
+    {
+      "name": "Aftermath+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "",
+      "description": "Unplayable.\nIf this is the only card left in your hand at the end of your turn, deal 32 damage to all enemies."
+    },
+    {
+      "name": "Antiquity",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn play any number of cards from your hand twice and draw 1 less card for each next turn."
+    },
+    {
+      "name": "Antiquity+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn play any number of cards from your hand twice and draw 1 less card for each next turn."
+    },
+    {
+      "name": "Aurora Form",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever a card is Exhausted, gain Temporary_HP equal to 3 times its [E] cost."
+    },
+    {
+      "name": "Aurora Form+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever a card is Exhausted, gain Temporary_HP equal to 4 times its [E] cost."
+    },
+    {
+      "name": "Damnation",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play 3 cards that cost 2 [E] in a row deal 40 damage to all enemies."
+    },
+    {
+      "name": "Damnation+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play 3 cards that cost 2 [E] in a row deal 50 damage to all enemies."
+    },
+    {
+      "name": "Manifest Illusion",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Add 2 copies of a card in your hand into your hand. They cost 0 [E] until played. Shuffle 2 Dazed into your draw pile."
+    },
+    {
+      "name": "Manifest Illusion+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Add 2 copies of a card in your hand into your hand. They cost 0 [E] until played. Shuffle 2 Dazed into your draw pile."
+    },
+    {
+      "name": "Ominous Glare",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block. Add a copy of each card in your hand on top of your draw pile."
+    },
+    {
+      "name": "Ominous Glare+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block. Add a copy of each card in your hand on top of your draw pile."
+    },
+    {
+      "name": "Outrun",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Discard all Skills.\nGain 1 Dexterity for each skill discarded.\nAt the end of this turn lose 2 Dexterity."
+    },
+    {
+      "name": "Outrun+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Discard all Skills.\nGain 1 Dexterity for each skill discarded.\nAt the end of this turn lose 1 Dexterity."
+    },
+    {
+      "name": "Overpower",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Can only be played if you played a power this turn. Double the damage of ALL attacks in your hand for this combat.\nExhaust."
+    },
+    {
+      "name": "Overpower+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Can only be played if you played a power this turn. Double the damage of ALL attacks in your hand for this combat.\nExhaust."
+    },
+    {
+      "name": "Rapid Pulse",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn gain 1 Strength.\nAt the end of your turn Exhaust the top card of your draw pile."
+    },
+    {
+      "name": "Rapid Pulse+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn gain 1 Strength.\nAt the end of your turn Exhaust the top card of your draw pile."
+    },
+    {
+      "name": "Redemption",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 5 damage to all enemies for each Unplayable card in your draw pile. Put all Unplayable cards from your draw pile into your discard pile."
+    },
+    {
+      "name": "Redemption+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 7 damage to all enemies for each Unplayable card in your draw pile. Put all Unplayable cards from your draw pile into your discard pile."
+    },
+    {
+      "name": "Risky Strike",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage. Add 2 Wounds on top of your draw pile."
+    },
+    {
+      "name": "Risky Strike+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 23 damage. Add 2 Wounds on top of your draw pile."
+    },
+    {
+      "name": "Snek Eyes",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fetch 2 cards from your draw pile and randomize their costs.\nExhaust."
+    },
+    {
+      "name": "Snek Eyes+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fetch 3 cards from your draw pile and randomize their costs.\nExhaust."
+    },
+    {
+      "name": "Snek Oil",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next card you play applies 2 Poison and 1 Vulnerable whenever it deals unblocked attack damage.\nExhaust."
+    },
+    {
+      "name": "Snek Oil+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next card you play applies 3 Poison and 1 Vulnerable whenever it deals unblocked attack damage.\nExhaust."
+    },
+    {
+      "name": "Twilight Tone",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "While this card is in your discard pile, deal double attack damage but you can only play attacks.\nEthereal."
+    },
+    {
+      "name": "Twilight Tone+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nWhile this card is in your discard pile, deal double damage, but you can only play attacks."
+    },
+    {
+      "name": "Whiff of Magic",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Become theextravagant:Hexxed.\nUntil next turn, whenever a card Exhausts, heal 2 HP and gain 2 Temporary_HP."
+    },
+    {
+      "name": "Whiff of Magic+",
+      "color": "Ev_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Become theextravagant:Hexxed.\nUntil next turn, whenever a card Exhausts, heal 3 HP and gain 3 Temporary_HP."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Translucent Feather",
+      "tier": "Starter",
+      "pool": "Ev_blue_color",
+      "description": "At the start of each combat Fetch 1 card from your draw pile.",
+      "flavorText": "Like it's just an illusion."
+    },
+    {
+      "name": "Pocket Dynamo",
+      "tier": "Common",
+      "pool": "Ev_blue_color",
+      "description": "If your hand is empty at the end of your turn, add 1 theextravagant:Accumulation to your hand.",
+      "flavorText": "If you spin it enough, a small light flickers."
+    },
+    {
+      "name": "Red Phonoblaster",
+      "tier": "Uncommon",
+      "pool": "Ev_blue_color",
+      "description": "Whenever you gain Strength, gain 1 additional Strength and lose 1 Strength at the end of your turn.",
+      "flavorText": "Badabidibabam, Dadadidudam."
+    },
+    {
+      "name": "Sorbet",
+      "tier": "Rare",
+      "pool": "Ev_blue_color",
+      "description": "Extravagance is now conserved between turns.",
+      "flavorText": "Like Ice cream, but made for fancy people."
+    },
+    {
+      "name": "Transcended Feather",
+      "tier": "Boss",
+      "pool": "Ev_blue_color",
+      "description": "Replaces Translucent Feather. At the start of each combat add 2 theextravagant:Invocations to your hand.",
+      "flavorText": "Certainly not an illusion."
+    },
+    {
+      "name": "Molten Lipstick",
+      "tier": "Shop",
+      "pool": "Ev_blue_color",
+      "description": "Whenever you play a card that costs 0 [E], deal 10 damage to a random enemy and add an upgraded Burn on top of your draw pile.",
+      "flavorText": "Kissing not recommended."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Extravagant",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+  ]
+}

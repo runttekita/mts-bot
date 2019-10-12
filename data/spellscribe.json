@@ -1,0 +1,1381 @@
+{
+  "mod": {
+    "name": "The Spell Scribe",
+    "version": "0.6.7",
+    "authors": ["Left Click","ComingVirus"],
+    "credits": "",
+    "description": "The Spell Scribe: An attempt to create a character that uses modular spells as a core concept.\n\nUse Spell Effects and Spell Modifiers to create modular spells. \n\n Feedback is appreciated.",
+    "mts_version": "3.11.0",
+    "sts_version": "07-01-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Detailed Annotation",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "scribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Detailed Annotation+",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "scribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Icy Defend",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Gain 5 Block."
+    },
+    {
+      "name": "Icy Defend+",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Gain 8 Block."
+    },
+    {
+      "name": "Lightning Strike",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal !BETTERSPELLATTACK! Damage."
+    },
+    {
+      "name": "Lightning Strike+",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal !BETTERSPELLATTACK! Damage."
+    },
+    {
+      "name": "Strike",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Scribe_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Scribed Spell",
+      "color": "Scribe_blue",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "scribe:Cast, Purge, scribe:Spectral."
+    },
+    {
+      "name": "Scribed Spell+",
+      "color": "Scribe_blue",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "scribe:Cast, Purge, scribe:Spectral."
+    },
+    {
+      "name": "Amp Spellstone",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaustive !stslib:ex!.\nWhen this card is Exhausted, gain\nscribe:Spell_Modifier: !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Amp Spellstone+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaustive !stslib:ex!.\nWhen this card is Exhausted, gain\nscribe:Spell_Modifier: !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Arcane Barrier",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect:\nGain 14 Block.\nscribe:Spell_Modifier:\n[#fa0000]Lose[] 25% scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Arcane Barrier+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect:\nGain 19 Block.\nscribe:Spell_Modifier:\n[#fa0000]Lose[] 25% scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Blunt Weapons",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect:\nApply 1 Weak."
+    },
+    {
+      "name": "Blunt Weapons+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect:\nApply 2 Weak."
+    },
+    {
+      "name": "Divination",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 2 cards of your deck. Put 1 into your hand, Exhaust the other."
+    },
+    {
+      "name": "Divination+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 3 cards of your deck. Put 1 into your hand, Exhaust the others."
+    },
+    {
+      "name": "Enchanted Strike",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Affected by scribe:Spell_Modifiers.\nDeal 7 damage. "
+    },
+    {
+      "name": "Enchanted Strike+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Affected by scribe:Spell_Modifiers.\nDeal 11 damage. "
+    },
+    {
+      "name": "Focusing Blow",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 1 scribe:Drained.\nscribe:Spell_Modifier:\nGain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Focusing Blow+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nGain 1 scribe:Drained.\nscribe:Spell_Modifier:\nGain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Freeze",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect:\nGain !BETTERSPELLBLOCK! Block."
+    },
+    {
+      "name": "Freeze+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak to ALL enemies.\nscribe:Spell_Effect:\nGain !BETTERSPELLBLOCK! Block."
+    },
+    {
+      "name": "Frostvenom Toxin",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. scribe:Spell_Effect: Apply 3 Poison."
+    },
+    {
+      "name": "Frostvenom Toxin+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. scribe:Spell_Effect: Apply 4 Poison."
+    },
+    {
+      "name": "Gather Components",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a random card in your hand. Gain scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage if it was an attack, otherwise, gain scribe:Spell_Effect: Gain !BETTERSPELLBLOCK! Block."
+    },
+    {
+      "name": "Gather Components+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card in your hand. Gain scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage if it was an attack, otherwise, gain scribe:Spell_Effect: Gain !BETTERSPELLBLOCK! Block."
+    },
+    {
+      "name": "Incendio",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Costs 1 [E] if you are scribe:Drained.\nDeal 22 damage. Gain !BETTERDRAINED! scribe:Drained."
+    },
+    {
+      "name": "Incendio+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Costs 1 [E] if you are scribe:Drained.\nDeal 28 damage. Gain !BETTERDRAINED! scribe:Drained."
+    },
+    {
+      "name": "Invigorating Strike",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. If you are scribe:Drained, gain scribe:Spell_Effect: gain [E]."
+    },
+    {
+      "name": "Invigorating Strike+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. If you are scribe:Drained, gain scribe:Spell_Effect: gain [E]."
+    },
+    {
+      "name": "Lightning Bolt",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nscribe:Spell_Effect:\nDeal 5 damage."
+    },
+    {
+      "name": "Lightning Bolt+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies.\nscribe:Spell_Effect:\nDeal 5 damage."
+    },
+    {
+      "name": "Magic Missiles",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 2 times.\nIncrease the number of hits for each unique scribe:Spell_Effect and scribe:Spell_Modifier.\n(Hits 2 Times.)"
+    },
+    {
+      "name": "Magic Missiles+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 2 times.\nIncrease the number of hits for each unique scribe:Spell_Effect and scribe:Spell_Modifier.\n(Hits 2 Times.)"
+    },
+    {
+      "name": "Mirror Image",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nscribe:Spell_Effect:\nGain 4 Block."
+    },
+    {
+      "name": "Mirror Image+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nscribe:Spell_Effect:\nGain 6 Block."
+    },
+    {
+      "name": "Overcharge",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect:\nDeal 13 damage to an enemy, and !OverchargeVariable! to yourself."
+    },
+    {
+      "name": "Overcharge+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect:\nDeal 18 damage to an enemy, and !OverchargeVariable! to yourself."
+    },
+    {
+      "name": "Reckless Response",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable to ALL enemies.\nscribe:Spell_Effect: Deal !BETTERSELFDAMAGE! damage to yourself."
+    },
+    {
+      "name": "Reckless Response+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable to ALL enemies.\nscribe:Spell_Effect: Deal !BETTERSELFDAMAGE! damage to yourself."
+    },
+    {
+      "name": "Storm Savvy",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw a card.\nscribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage."
+    },
+    {
+      "name": "Storm Savvy+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 2 cards.\nscribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage."
+    },
+    {
+      "name": "Telum Spellstone",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaustive !stslib:ex!.\nWhen this card is Exhausted, gain\nscribe:Spell_Effect: deal !BETTERSPELLATTACK! damage."
+    },
+    {
+      "name": "Telum Spellstone+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaustive !stslib:ex!.\nWhen this card is Exhausted, gain\nscribe:Spell_Effect: deal !BETTERSPELLATTACK! damage."
+    },
+    {
+      "name": "Thrown Scroll",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 Damage. Remove ALL your scribe:Spell_Effects and scribe:Spell_Modifiers. Deals 1 additional damage for each 3 stacks removed."
+    },
+    {
+      "name": "Thrown Scroll+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 Damage. Remove ALL your scribe:Spell_Effects and scribe:Spell_Modifiers. Deals 1 additional damage for each 2 stacks removed."
+    },
+    {
+      "name": "Toxic Spellstone",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaustive !stslib:ex!.\nWhen this card is Exhausted, gain\nscribe:Spell_Effect: Apply 11 Poison."
+    },
+    {
+      "name": "Toxic Spellstone+",
+      "color": "Scribe_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaustive !stslib:ex!.\nWhen this card is Exhausted, gain\nscribe:Spell_Effect: Apply 14 Poison."
+    },
+    {
+      "name": "Arcane Arcing",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Gain X times:\nscribe:Spell_Effect: Deal !BETTERSPELLATTACK! Damage."
+    },
+    {
+      "name": "Arcane Arcing+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Gain X times:\nscribe:Spell_Effect: Deal !BETTERSPELLATTACK! Damage."
+    },
+    {
+      "name": "Barrier Of Light",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Costs 1 less [E] for each 25% of health missing.\nGain 1 Block for each 3 Max HP.\n(Gain 0 Block.)"
+    },
+    {
+      "name": "Barrier Of Light+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Costs 1 less [E] for each 25% of health missing.\nGain 1 Block for each 3 Max HP.\n(Gain 0 Block.)"
+    },
+    {
+      "name": "Blank Scroll",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your spell now starts with \" scribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness. \""
+    },
+    {
+      "name": "Blank Scroll+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nYour spell now starts with \" scribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness. \""
+    },
+    {
+      "name": "Capacitance Scroll",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your spell now starts with \" scribe:Spell_Effect: Deal 3 damage.\""
+    },
+    {
+      "name": "Capacitance Scroll+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your spell now starts with \" scribe:Spell_Effect: Deal 6 damage.\""
+    },
+    {
+      "name": "Clarity",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "scribe:Spell_Effect:\nGain 1 [E]."
+    },
+    {
+      "name": "Clarity+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "scribe:Spell_Effect:\nGain 2 [E]."
+    },
+    {
+      "name": "Crippling Charge",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.\nscribe:Spell_Modifier: [#fa0000]Lose[] !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Crippling Charge+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.\nscribe:Spell_Modifier: [#fa0000]Lose[] !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Crystal Shield",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 7 Block and 2 Thorns X Times. Lose the gained Thorns at the start of your turn."
+    },
+    {
+      "name": "Crystal Shield+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 9 Block and 3 Thorns X Times. Lose the gained Thorns at the start of your turn."
+    },
+    {
+      "name": "Eldritch",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "scribe:Spell_Effect:\nApply 5 Poison and 2 Weak."
+    },
+    {
+      "name": "Eldritch+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect:\nApply 5 Poison and 2 Weak."
+    },
+    {
+      "name": "False Life",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Block is gained as Temporary_HP this turn.\nExhaust."
+    },
+    {
+      "name": "False Life+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Block is gained as Temporary_HP this turn.\nExhaust."
+    },
+    {
+      "name": "Flow Like Water",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you play this, and at the start of your turn, if you are scribe:Drained, gain 3 Dexterity until end of turn."
+    },
+    {
+      "name": "Flow Like Water+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you play this, and at the start of your turn, if you are scribe:Drained, gain 5 Dexterity until end of turn."
+    },
+    {
+      "name": "Focused",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nscribe:Spell_Modifier:\nGain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Focused+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nscribe:Spell_Modifier:\nGain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Focusing Barrier",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "scribe:Spell_Effect: Gain 10 Block.\nscribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Focusing Barrier+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "scribe:Spell_Effect: Gain 16 Block.\nscribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Frantic Search",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 15 cards. Any that don't fit in your hand are Exhausted."
+    },
+    {
+      "name": "Frantic Search+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 10 cards. Any that don't fit in your hand are Exhausted."
+    },
+    {
+      "name": "Glacies Spellstone",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nExhaustive !stslib:ex!\nWhen this card is Exhausted, gain 10 Block."
+    },
+    {
+      "name": "Glacies Spellstone+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 13 Block.\nExhaustive !stslib:ex!\nWhen this card is Exhausted, gain 13 Block."
+    },
+    {
+      "name": "Hemorrhage",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nStun target enemy for 1 turn.\nGain 2 scribe:Drained.\nExhaust."
+    },
+    {
+      "name": "Hemorrhage+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nStun target enemy for 1 turn.\nGain 2 scribe:Drained.\nExhaust."
+    },
+    {
+      "name": "Icicle Blast",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Thorns equal to half your block.\nLose the gained Thorns at the start of your turn."
+    },
+    {
+      "name": "Icicle Blast+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Thorns equal to your block.\nLose the gained Thorns at the start of your turn."
+    },
+    {
+      "name": "Insight",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards, Exhaust."
+    },
+    {
+      "name": "Insight+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards."
+    },
+    {
+      "name": "Lightning Blade",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Deals additional damage equal to amount of scribe:Thunder.\n(Deal 5 damage.)"
+    },
+    {
+      "name": "Lightning Blade+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Deals additional damage equal to amount of scribe:Thunder.\nDraw a card.\n(Deal 5 damage.)"
+    },
+    {
+      "name": "Liquidum Scroll",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "While scribe:Drained, draw an additional card at the start of your turn."
+    },
+    {
+      "name": "Liquidum Scroll+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhile scribe:Drained, draw an additional card at the start of your turn."
+    },
+    {
+      "name": "Meditate",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Remove all Debuffs.\nExhaust."
+    },
+    {
+      "name": "Meditate+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Remove all Debuffs."
+    },
+    {
+      "name": "Piercing Bolts",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal 6 damage.\nscribe:Spell_Modifier: Your scribe:Thunder deals double damage when hitting an enemy with Block.\nStacks diminishingly."
+    },
+    {
+      "name": "Piercing Bolts+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal 6 damage.\nscribe:Spell_Modifier: your scribe:Thunder deals 2.5 times damage when hitting an enemy with Block.\nStacks diminishingly"
+    },
+    {
+      "name": "Price of Knowledge",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This card costs 5 gold to play.\nAdd a \"Price of Knowledge\" to your hand.\nPurge.\nDraw 1 Card."
+    },
+    {
+      "name": "Price of Knowledge+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This card costs 2 gold to play.\nAdd an upgraded \"Price of Knowledge\" to your hand.\nPurge.\nDraw 1 Card."
+    },
+    {
+      "name": "Quick Study",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add an scribe:Echo of a random card in your deck to your hand. It costs 0. Exhaust."
+    },
+    {
+      "name": "Quick Study+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add an scribe:Echo of a random card in your deck to your hand. It costs 0. Exhaust."
+    },
+    {
+      "name": "Ritual of Sacrifice",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf this kills an enemy, heal for 25% of the slain enemy's Max HP.\nExhaust."
+    },
+    {
+      "name": "Ritual of Sacrifice+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf this kills an enemy, heal for 25% of the slain enemy's Max HP.\nExhaust."
+    },
+    {
+      "name": "Sanguine Surge",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Add a \"Sanguine Surge\" to your hand.\nPurge.\nscribe:Spell_Effect: Deal 10 damage to an enemy and !BETTERSELFDAMAGE! to yourself."
+    },
+    {
+      "name": "Sanguine Surge+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Add an upgraded \"Sanguine Surge\" to your hand.\nPurge.\nscribe:Spell_Effect: Deal 13 damage to an enemy and !BETTERSELFDAMAGE! to yourself."
+    },
+    {
+      "name": "Scindo Spellstone",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaustive !stslib:ex!.\nGain !BETTERDRAINED! scribe:Drained.\nWhen this card is Exhausted, gain\nscribe:Spell_Modifier: !BETTERSPLIT! scribe:Additional_Casts."
+    },
+    {
+      "name": "Scindo Spellstone+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaustive !stslib:ex!.\nGain !BETTERDRAINED! scribe:Drained.\nWhen this card is Exhausted, gain\nscribe:Spell_Modifier: !BETTERSPLIT! scribe:Additional_Casts."
+    },
+    {
+      "name": "Scroll Of Poison",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you take damage on your turn, apply that much Poison to ALL enemies."
+    },
+    {
+      "name": "Scroll Of Poison+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you take damage on your turn, apply that much Poison to ALL enemies."
+    },
+    {
+      "name": "Scroll of Scrying",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain !BETTERDRAINED! scribe:Drained. At the end of your turn, you may place a card from your hand on top of your draw pile. The first card you draw each turn costs 1 less."
+    },
+    {
+      "name": "Scroll of Scrying+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain !BETTERDRAINED! scribe:Drained. At the end of your turn, you may place a card from your hand on top of your draw pile. The first card you draw each turn costs 1 less."
+    },
+    {
+      "name": "Scroll of Shadows",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play the first card each turn, if it is a power, add an scribe:Echo of it to your hand. It costs 1 less."
+    },
+    {
+      "name": "Scroll of Shadows+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play the first card each turn, if it is a power, add an scribe:Echo of it to your hand. It costs 1 less."
+    },
+    {
+      "name": "Split",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Modifier:\n[#fa0000]Lose[] 50% scribe:Spell_Effectiveness,\ngain 1 scribe:Additional_Cast."
+    },
+    {
+      "name": "Split+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Modifier:\n[#fa0000]Lose[] 50% scribe:Spell_Effectiveness,\ngain 2 scribe:Additional_Casts."
+    },
+    {
+      "name": "Static Cage",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 11 Block.\nscribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage."
+    },
+    {
+      "name": "Static Cage+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 16 Block.\nscribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage."
+    },
+    {
+      "name": "Static Series",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.\nscribe:Spell_Modifier: Your spells now target 1 additional enemy.\nCannot target the same enemy more than once."
+    },
+    {
+      "name": "Static Series+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.\nscribe:Spell_Modifier: Your spells now target 1 additional enemy.\nCannot target the same enemy more than once."
+    },
+    {
+      "name": "Weird Blast",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain !BETTERDRAINED! scribe:Drained.\nscribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage."
+    },
+    {
+      "name": "Weird Blast+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Draw a card.\nGain !BETTERDRAINED! scribe:Drained.\nscribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage."
+    },
+    {
+      "name": "Weird Shield",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block.\nscribe:Spell_Effect: Deal !BETTERSELFDAMAGE! damage to yourself."
+    },
+    {
+      "name": "Weird Shield+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card.\nGain 8 Block.\nscribe:Spell_Effect: Deal !BETTERSELFDAMAGE! damage to yourself."
+    },
+    {
+      "name": "Weird Toxin",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain !SCRIBEM2! Weak and !SCRIBEM2! Frail.\nscribe:Spell_Effect: Apply 6 Poison."
+    },
+    {
+      "name": "Weird Toxin+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card.\nGain !SCRIBEM2! Weak and !SCRIBEM2! Frail.\nscribe:Spell_Effect: Apply 6 Poison."
+    },
+    {
+      "name": "Words of Power",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose a buff, deal 3 damage to a random enemy."
+    },
+    {
+      "name": "Words of Power+",
+      "color": "Scribe_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain or lose a buff, deal 3 damage to a random enemy."
+    },
+    {
+      "name": "Absolute Zero",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Give ALL enemies 50 Block.\nAfter this turn, start another turn.\nYour Hand, Block and Energy are Retained.\nExhaust."
+    },
+    {
+      "name": "Absolute Zero+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Give ALL enemies 30 Block.\nAfter this turn, start another turn.\nYour Hand, Block and Energy are Retained.\nExhaust."
+    },
+    {
+      "name": "Anomalous Texts",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose all negative scribe:Spell_Effectiveness and all scribe:Additional_Casts.\nGain 25% scribe:Spell_Effectiveness for each !SPELLEFFECTIVENESS!% lost, and !ANOMALOUSTEXTSVARIABLE!% scribe:Spell_Effectiveness for each scribe:Additional_Cast lost.\nExhaust."
+    },
+    {
+      "name": "Anomalous Texts+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose all negative scribe:Spell_Effectiveness and all scribe:Additional_Casts.\nGain 25% scribe:Spell_Effectiveness for each !SPELLEFFECTIVENESS!% lost, and !ANOMALOUSTEXTSVARIABLE!% scribe:Spell_Effectiveness for each scribe:Additional_Cast lost.\nExhaust."
+    },
+    {
+      "name": "Blood Magicks",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you take damage on your turn, draw a card and gain 1 [E]."
+    },
+    {
+      "name": "Blood Magicks+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you take damage on your turn, draw a card and gain 1 [E]."
+    },
+    {
+      "name": "Catalytic Catastrophe",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Poison. Deal the sum of damage that half the Poison will deal.\n(Deal !SCRIBEM2! damage)"
+    },
+    {
+      "name": "Catalytic Catastrophe+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 Poison. Deal the sum of damage that half the Poison will deal.\n(Deal !SCRIBEM2! damage)"
+    },
+    {
+      "name": "Conflagrate",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 35 damage to the closest enemy. If this kills any enemy, it deals double of any excess damage to the one behind it."
+    },
+    {
+      "name": "Conflagrate+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 50 damage to the closest enemy. If this kills any enemy, it deals double of any excess damage to the one behind it."
+    },
+    {
+      "name": "Deluge",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play the first card each turn, if you are scribe:Drained, add an scribe:Echo of a random card from your deck that costs less than or equal energy to your hand. It costs 0.\nGain 2 scribe:Drained."
+    },
+    {
+      "name": "Deluge+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play the first two cards each turn, if you are scribe:Drained, add an scribe:Echo of a random card from your deck that costs less than or equal energy to your hand. It costs 0.\nGain 2 scribe:Drained."
+    },
+    {
+      "name": "Echo",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust.\nscribe:Spell_Modifier:\nGain 1 scribe:Additional_Cast."
+    },
+    {
+      "name": "Echo+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust.\nscribe:Spell_Modifier:\nGain 2 scribe:Additional_Casts."
+    },
+    {
+      "name": "Escalation",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "For the first scribe:Spell_Effect you play each turn, add an scribe:Echo of that scribe:Spell_Effect to your hand. It costs 0.\nGain 1 scribe:Drained."
+    },
+    {
+      "name": "Escalation+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nFor the first scribe:Spell_Effect you play each turn, add an scribe:Echo of that scribe:Spell_Effect to your hand. It costs 0.\nGain 1 scribe:Drained."
+    },
+    {
+      "name": "Focusing Bolt",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.\nscribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Focusing Bolt+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.\nscribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness."
+    },
+    {
+      "name": "Forked Bolt",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 scribe:Echoes of random cards that give scribe:Spell_Effect: damage from your deck into your hand.\nThey cost 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Forked Bolt+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 scribe:Echoes of random cards that give scribe:Spell_Effect: damage from your deck into your hand.\nThey cost 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Glacial Guard",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Cannot be played if you have played an attack this turn.\nYou cannot play additional attacks this turn. Gain 30 Block."
+    },
+    {
+      "name": "Glacial Guard+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "You cannot play additional attacks this turn. Gain 30 Block."
+    },
+    {
+      "name": "Inscribe Death",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage to ALL enemies.\nscribe:Spell_Effect: Deal 12 damage to yourself."
+    },
+    {
+      "name": "Inscribe Death+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 36 damage to ALL enemies.\nscribe:Spell_Effect: Deal 12 damage to yourself."
+    },
+    {
+      "name": "Overexert",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Play a random card in your hand twice, then Exhaust it. Gain scribe:Drained equal to its cost."
+    },
+    {
+      "name": "Overexert+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Play a card in your hand twice, then Exhaust it. Gain scribe:Drained equal to its cost."
+    },
+    {
+      "name": "Recurring Rime",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Gain 6 Block.\nscribe:Spell_Modifier: Gain !BETTERSPLIT! scribe:Additional_Cast this turn.\nExhaust."
+    },
+    {
+      "name": "Recurring Rime+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "scribe:Spell_Effect: Gain 9 Block.\nscribe:Spell_Modifier: Gain !BETTERSPLIT! scribe:Additional_Cast this turn.\nExhaust."
+    },
+    {
+      "name": "Scripted Starfall",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Retain. Innate. At the end of your turn, deal !SCRIBEM2! damage to ALL enemies.\nIncrease the damage by 2 for each turn this remains in your hand."
+    },
+    {
+      "name": "Scripted Starfall+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Retain. Innate. At the end of your turn, deal !SCRIBEM2! damage to ALL enemies.\nIncrease the damage by 3 for each turn this remains in your hand."
+    },
+    {
+      "name": "Scroll of Chaining",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn,\ngain 1 scribe:Spell_Modifier: Your spells now target 1 additional enemy.\nCannot target the same enemy more than once."
+    },
+    {
+      "name": "Scroll of Chaining+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn and when you play this,\ngain 1 scribe:Spell_Modifier: Your spells now target 1 additional enemy.\nCannot target the same enemy more than once."
+    },
+    {
+      "name": "Spectral Scroll",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "You and ALL enemies gain 2 Intangible."
+    },
+    {
+      "name": "Spectral Scroll+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "You and ALL enemies gain 3 Intangible."
+    },
+    {
+      "name": "Stem the Flow",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain a debuff, gain Temporary_HP equal to the amount.\nStacks diminishingly."
+    },
+    {
+      "name": "Stem the Flow+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nWhenever you gain a debuff, gain Temporary_HP equal to the amount.\nStacks diminishingly."
+    },
+    {
+      "name": "Time Dilation",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain !BETTERDRAINED! scribe:Drained.\nExhaust.\nApply Slow."
+    },
+    {
+      "name": "Time Dilation+",
+      "color": "Scribe_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain !BETTERDRAINED! scribe:Drained.\nExhaust.\nApply Slow."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Spell Scribe's Scroll",
+      "tier": "Starter",
+      "pool": "Scribe_blue",
+      "description": "At the start of each combat, choose 1 of 3 cards to shuffle into your draw pile.",
+      "flavorText": "Inscribed with an \"S\" it radiates arcane energies."
+    },
+    {
+      "name": "Storm Scale",
+      "tier": "Common",
+      "pool": "Scribe_blue",
+      "description": "Whenever you would gain scribe:Spell_Effect [REMOVE_SPACE]: Damage, Increase it by 1 for each card played this turn.",
+      "flavorText": "A tough and shiny scale. Its innate ability to conduct electricity makes it a great foci for lightning-based spells."
+    },
+    {
+      "name": "Osmotic Filter",
+      "tier": "Uncommon",
+      "pool": "Scribe_blue",
+      "description": "Whenever you gain scribe:Drained [REMOVE_SPACE], gain that much [E] at the start of your next turn.",
+      "flavorText": "A mysterious device that is cool to touch and hums very slightly. It spouts crystal clear water that is refreshing to drink."
+    },
+    {
+      "name": "Permafrost Pen",
+      "tier": "Uncommon",
+      "pool": "Scribe_blue",
+      "description": "Whenever you play a card that gives a scribe:Spell_Effect [REMOVE_SPACE], gain 3 Block.",
+      "flavorText": "An ice cold writing instrument, adorned with a snowflake. Its chill numbs the nerves to pain."
+    },
+    {
+      "name": "Alchemical Alter",
+      "tier": "Rare",
+      "pool": "Scribe_blue",
+      "description": "Whenever you would gain scribe:Spell_Effect [REMOVE_SPACE]: Damage, gain half of it as Spell Effect [REMOVE_SPACE]: Poison [REMOVE_SPACE].",
+      "flavorText": "A flask of poison, supercharged with electricity. The potency of the toxin will shock you."
+    },
+    {
+      "name": "Runic Repeater",
+      "tier": "Rare",
+      "pool": "Scribe_blue",
+      "description": "Gaining a scribe:Spell_Modifier causes a random card in your hand to cost 1 less until end of turn.",
+      "flavorText": "A small metallic loop, adorned with strange letters. Wearing it seems to deepen your capacity for magic."
+    },
+    {
+      "name": "Invisible Inkwell",
+      "tier": "Boss",
+      "pool": "Scribe_blue",
+      "description": "Gain \" [REMOVE_SPACE]#ySpell Effect [REMOVE_SPACE]: Gain 2 [E] [REMOVE_SPACE]\" at the start of each turn. At the end of each turn, lose all scribe:Spell_Effects and scribe:Spell_Modifiers [REMOVE_SPACE].",
+      "flavorText": "An ornate Inkwell that spills forth an endless torrent of nothing. You quickly lose track of spells scribed with this \"ink\"."
+    },
+    {
+      "name": "Meditation Circle",
+      "tier": "Boss",
+      "pool": "Scribe_blue",
+      "description": "At the start of your turn, gain 25% scribe:Spell_Effectiveness. Then, if you have less than or equal to 50% Spell Effectiveness, gain an scribe:Additional_Cast this turn.",
+      "flavorText": "This makes you wonder: Is a circle technically a polygon of infinite sides?"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Spell Scribe",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+  ]
+}

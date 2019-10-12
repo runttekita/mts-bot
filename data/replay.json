@@ -1,0 +1,2584 @@
+{
+  "mod": {
+    "name": "Replay The Spire",
+    "version": "1.5.1",
+    "authors": ["The_Evil_Pickle"],
+    "credits": "Original creator of Replay: AstroPenguin642. \n Artists: Bakuhaku, Stewartisme, Lyman, RedDyeNo5. \n OST: Slimer509. \n Translators: PJJLegend, TheGrobber, Rita-Bernstein, Rincewind. \n Also helped: Reina, Blank the Evil.",
+    "description": "Huge content expansion mod. Adds new cards, relics, potions, events, monsters, and shenanigans.",
+    "mts_version": "3.0.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Run Through",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy loses 9 HP and 4 Block."
+    },
+    {
+      "name": "Run Through+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy loses 11 HP and 7 Block."
+    },
+    {
+      "name": "Strike From Hell",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf this card is Exhausted, increase its damage by 4 and place it back into your hand."
+    },
+    {
+      "name": "Strike From Hell+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf this card is Exhausted, increase its damage by 4 and place it back into your hand. It costs 0 until played."
+    },
+    {
+      "name": "Undeath's Touch",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage 2 times.\nApply 1 Decrepit.\nExhaust."
+    },
+    {
+      "name": "Undeath's Touch+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage 3 times.\nApply 1 Decrepit.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Abandon",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust up to 3 cards.\nDraw 1 card for each.\nAdd a Void to your discard pile.\nExhaustive !stslib:ex!.\nEthereal."
+    },
+    {
+      "name": "Abandon+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust up to 3 cards.\nDraw 1 card for each.\nAdd a Dazed to your discard pile.\nExhaustive !stslib:ex!.\nEthereal."
+    },
+    {
+      "name": "Corrosion Curse",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply !replay:M-1! Languid and 2 Decrepit.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Corrosion Curse+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply !replay:M-1! Languid and 3 Decrepit.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Defy Death",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "5",
+      "description": "Gain 10 Block.\nCosts [R] less for each card you've Exhausted this combat.\nGrave."
+    },
+    {
+      "name": "Defy Death+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "5",
+      "description": "Gain 14 Block.\nCosts [R] less for each card you've Exhausted this combat.\nGrave."
+    },
+    {
+      "name": "Fire Breathing",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, for each Attack played this turn deal 1 damage to ALL enemies, increasing damage by 1 each time."
+    },
+    {
+      "name": "Fire Breathing+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the end of your turn, for each Attack played this turn deal 1 damage to ALL enemies, increasing damage by 1 each time."
+    },
+    {
+      "name": "Leading Strike",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nReduce the cost of an Attack in your hand to 1 this turn."
+    },
+    {
+      "name": "Leading Strike+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nReduce the cost of an Attack in your hand to 0 this turn."
+    },
+    {
+      "name": "Life Bind",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply to an enemy. When you lose health, the bound enemy takes that much damage."
+    },
+    {
+      "name": "Life Bind+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Apply to an enemy. When you lose health, the bound enemy takes that much damage."
+    },
+    {
+      "name": "Limb From Limb",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 24 damage.\nIf this deals at least 30 unblocked damage, Refund 2 and draw 2 cards."
+    },
+    {
+      "name": "Limb From Limb+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 28 damage.\nIf this deals at least 32 unblocked damage, Refund 2 and draw 2 cards."
+    },
+    {
+      "name": "Massacre",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage to ALL enemies.\nLose all Strength.\nAffected 5 times by Strength."
+    },
+    {
+      "name": "Massacre+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to ALL enemies.\nLose all Strength.\nAffected 8 times by Strength."
+    },
+    {
+      "name": "Phantom Shield",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Phantom Shield+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Reversal",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Keep Block at the end of this round.\nGain 2 Reflection."
+    },
+    {
+      "name": "Reversal+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Keep Block at the end of the next !replay:M-1! rounds.\nGain 3 Reflection."
+    },
+    {
+      "name": "Weight Training",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nLose 2 HP.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Weight Training+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nLose 1 HP.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Demonic Infusion",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Upgrade a Skill or Attack in your hand X times.\nRefund !stslib:refund!.\nExhaust."
+    },
+    {
+      "name": "Demonic Infusion+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Upgrade a Skill or Attack in your hand X+ 1 times.\nRefund !stslib:refund!.\nExhaust."
+    },
+    {
+      "name": "Eclipse",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Exhaust your hand, and replace it with random cards that cost 1 less than normal.\nExhaust."
+    },
+    {
+      "name": "Eclipse+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Exhaust your hand, and replace it with random cards that cost 1 less than normal.\nRefund !stslib:refund!.\nExhaust."
+    },
+    {
+      "name": "Hemogenesis",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 5 damage. Gain 5 Block. Heal 5 HP. Exhaust.\nUpgrade each time you lose HP while this is in your hand."
+    },
+    {
+      "name": "Hemogenesis+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 8 damage. Gain 8 Block. Heal 8 HP. Exhaust.\nUpgrade each time you lose HP while this is in your hand."
+    },
+    {
+      "name": "Many Hands",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X copies of Undeath's Touch to your hand.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Many Hands+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X copies of Undeath's Touch to your hand.\nRefund !stslib:refund!.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Hidden Blade",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Shiv to your hand and draw 2 cards."
+    },
+    {
+      "name": "Hidden Blade+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Shiv to your hand and draw 3 cards."
+    },
+    {
+      "name": "Draining Mist",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Apply 3 Necrotic Poison and 1 Languid to a random enemy 2 times.\nApply -1 Strength to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Draining Mist+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Apply 3 Necrotic Poison and 1 Languid to a random enemy 3 times.\nApply -2 Strength to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Exploit Weakness",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply Languid equal to target's Weak.\nExhaust."
+    },
+    {
+      "name": "Exploit Weakness+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply Languid equal to target's Weak.\nExhaust."
+    },
+    {
+      "name": "Fluid Movement",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Keep up to 5 Block between rounds."
+    },
+    {
+      "name": "Fluid Movement+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Keep up to 8 Block between rounds."
+    },
+    {
+      "name": "Poison Smokescreen",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 6 Block.\nApply that much Poison randomly split among all enemies.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Poison Smokescreen+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 6 Block.\nApply that much Poison randomly split among all enemies."
+    },
+    {
+      "name": "Scrap Shanks",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each time you discard a card during your turn, add 1 Shiv to your hand."
+    },
+    {
+      "name": "Scrap Shanks+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each time you discard a card during your turn, add 1 Upgraded Shiv to your hand."
+    },
+    {
+      "name": "Shiv Toss",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard all Shivs in your hand.\nYour Shivs deal 1 extra damage this combat for each one discarded.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Shiv Toss+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard all Shivs in your hand.\nYour Shivs deal 1 extra damage this combat for each one discarded.\nExhaustive !stslib:ex!.\nRetain."
+    },
+    {
+      "name": "Sneak Up",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 1 Intangible.\nDiscard all Attacks in your hand.\nRefund !stslib:refund!.\nInnate.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Sneak Up+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Intangible.\nDiscard all Attacks in your hand.\nRefund !stslib:refund!.\nInnate.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Speed Training",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Dexterity.\nDiscard a random card.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Speed Training+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Dexterity.\nDiscard a random card.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "The Works",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "For every 3 cards you draw this turn, gain [E] and deal 4 damage to a random enemy.\nBecomes Unplayable until end of round."
+    },
+    {
+      "name": "The Works+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "For every 3 cards you draw this turn, gain [E] and deal 9 damage to a random enemy.\nBecomes Unplayable until end of round."
+    },
+    {
+      "name": "Toxin Wave",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Necrotic Poison to ALL enemies."
+    },
+    {
+      "name": "Toxin Wave+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 Necrotic Poison to ALL enemies."
+    },
+    {
+      "name": "Tripwire",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 Block.\nAt the start of your next turn, Stun a random enemy.\nExhaust."
+    },
+    {
+      "name": "Tripwire+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 4 Block.\nAt the start of your next turn, Stun a random enemy and draw 1 card.\nExhaust."
+    },
+    {
+      "name": "Atom Bomb",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 60 damage.\nApply 4 Poison to ALL fighters.\nExhaust."
+    },
+    {
+      "name": "Atom Bomb+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 75 damage.\nApply 4 Poison to ALL fighters.\nExhaust."
+    },
+    {
+      "name": "Bag of Tricks",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Choose X:\nApply !replay:M+1! Poison,\nadd !replay:M-1! shivs to your hand,\ngain 7 block, draw !replay:M-2! cards,\nor gain [E] [E] next turn."
+    },
+    {
+      "name": "Bag of Tricks+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Choose X:\nApply !replay:M+1! Poison,\nadd !replay:M-1! shivs to your hand,\ngain 10 block, draw !replay:M-2! cards,\nor gain [E] [E] next turn."
+    },
+    {
+      "name": "From All Sides",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Apply 1 Weak and deal 3 damage to a random enemy 2X + 1 times."
+    },
+    {
+      "name": "From All Sides+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Apply 1 Weak and deal 4 damage to a random enemy 2X + 1 times."
+    },
+    {
+      "name": "Necrosis",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Convert all Poison on all enemies to Necrotic Poison.\nExhaust."
+    },
+    {
+      "name": "Necrosis+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses all Poison. Apply Necrotic Poison equal to the amount lost to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Poison Darts",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Apply 3 Necrotic Poison X times.\nApply X Poison to ALL enemies."
+    },
+    {
+      "name": "Poison Darts+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Apply 4 Necrotic Poison X times.\nApply X Poison to ALL enemies."
+    },
+    {
+      "name": "Crystal Conduit",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Crystal."
+    },
+    {
+      "name": "Crystal Conduit+",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Crystal.\nChannel 1 random orb."
+    },
+    {
+      "name": "Panic Button",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Evoke all your orbs.\nDraw 1 card.\nExhaust.\nRetain."
+    },
+    {
+      "name": "Panic Button+",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Evoke all your orbs.\nDraw 2 cards.\nExhaust.\nRetain."
+    },
+    {
+      "name": "Calculation Training",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Focus.\nAdd 1 Dazed to your discard pile.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Calculation Training+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Focus.\nExhaustive !stslib:ex!.\nStartup: add 1 Dazed to your discard pile."
+    },
+    {
+      "name": "Claw Rake",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage.\nDeal 2 damage to ALL enemies.\nGrave. Counts as Claw.\nStartup: if your deck has no normal Claw cards, add one to your draw pile."
+    },
+    {
+      "name": "Claw Rake+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage.\nDeal 4 damage to ALL enemies.\nGrave. Counts as Claw.\nStartup: if your deck has no normal Claw cards, add one to your draw pile."
+    },
+    {
+      "name": "Crystallizer",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Crystal orbs give 2 additional Focus to adjacent orbs.\nAt the end of your turn, if more than half your orb slots are empty, Channel 1 Crystal."
+    },
+    {
+      "name": "Crystallizer+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nCrystal orbs give 2 additional Focus to adjacent orbs.\nAt the end of your turn, if more than half your orb slots are empty, Channel 1 Crystal."
+    },
+    {
+      "name": "Empty Bin",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, Exhaust all Common cards in your hand, and gain 4 Block for each."
+    },
+    {
+      "name": "Empty Bin+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the end of your turn, Exhaust all Common cards in your hand, and gain 5 Block for each."
+    },
+    {
+      "name": "FIFO Queue",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 4 Orb Slots."
+    },
+    {
+      "name": "FIFO Queue+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nGain 4 Orb Slots."
+    },
+    {
+      "name": "Reflective Lens",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Channel 1 Glass.\nGlass orbs give Reflection as a passive ability."
+    },
+    {
+      "name": "Reflective Lens+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Channel 1 Glass.\nGlass orbs give Reflection as a passive ability."
+    },
+    {
+      "name": "Repulse",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Reflection.\nShuffle 1 Backfire into your discard pile."
+    },
+    {
+      "name": "Repulse+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Reflection.\nShuffle 1 Backfire into your discard pile."
+    },
+    {
+      "name": "Reroute Power",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Swap your Strength and Focus.\nDraw 1 card."
+    },
+    {
+      "name": "Reroute Power+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Swap your Strength and Focus.\nDraw 1 card.\nRetain."
+    },
+    {
+      "name": "Solid Light Projector",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Shielding for every 5 cards in your discard pile.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Solid Light Projector+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Shielding for every 3 cards in your discard pile.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Sort",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle all Rare OR non-Status cards in your discard pile back into your draw pile. Draw 2 cards."
+    },
+    {
+      "name": "Sort+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle all Rare OR non-Status cards in your discard pile back into your draw pile. Draw 2 cards.\nRetain."
+    },
+    {
+      "name": "System Scan",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next 2 Status cards you draw Exhaust and draw 1 card when drawn."
+    },
+    {
+      "name": "System Scan+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next 3 Status cards you draw Exhaust and draw 1 card when drawn."
+    },
+    {
+      "name": "Time Bomb",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Orb Slots.\nChannel 2 Glass.\nChannel 1 Dark and trigger its passive 2 times.\nExhaust."
+    },
+    {
+      "name": "Time Bomb+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Orb Slots.\nChannel 2 Glass.\nChannel 1 Dark and trigger its passive 3 times.\nExhaust."
+    },
+    {
+      "name": "Fabricate Wheel",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Obtain a Prayer Wheel relic.\nFleeting."
+    },
+    {
+      "name": "Fabricate Wheel+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Obtain a Prayer Wheel relic.\nYou may choose 1 of 3 random Rare cards to permanently add to your deck.\nFleeting."
+    },
+    {
+      "name": "Mirror Shield",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 1 Crystal.\nChannel 1 Frost.\nGain 5 Block.\nGain 1 Reflection."
+    },
+    {
+      "name": "Mirror Shield+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 1 Crystal.\nChannel 1 Frost.\nGain 8 Block.\nGain 2 Reflection."
+    },
+    {
+      "name": "Omega Cannon",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage to ALL enemies 4 times.\nAdd 2 Backfires to your discard pile."
+    },
+    {
+      "name": "Omega Cannon+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage to ALL enemies 5 times.\nAdd 2 Backfires to your discard pile."
+    },
+    {
+      "name": "RNG",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Channel X random orbs."
+    },
+    {
+      "name": "RNG+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Channel (X+1) random orbs."
+    },
+    {
+      "name": "Armaments MK-II",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nUpgrade a card in your hand.\nCan Mega-Upgrade cards."
+    },
+    {
+      "name": "Armaments MK-II-B",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nUpgrade a card in your hand.\nIf the card is already Upgraded, Enhance it instead.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Armaments MK-II-B+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nUpgrade ALL cards in your hand.\nEnhances cards that are already Upgraded.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Armaments MK-III",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nUpgrade ALL cards in your hand.\nCan Mega-Upgrade cards."
+    },
+    {
+      "name": "Captain's Orders",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 10 Block.\nIf you have <1 Strength, gain 1 Strength.\nIf you have <1 Potency, gain 1 Potency."
+    },
+    {
+      "name": "Captain's Orders+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 15 Block.\nIf you have <1 Strength, gain 1 Strength.\nIf you have <1 Potency, gain 1 Potency."
+    },
+    {
+      "name": "Dark Echo",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 42 damage to ALL enemies."
+    },
+    {
+      "name": "Dark Echo+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 56 damage to ALL enemies."
+    },
+    {
+      "name": "Drag to Hell",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 Drowning.\nExhaust."
+    },
+    {
+      "name": "Drag to Hell+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 9 Drowning.\nExhaust."
+    },
+    {
+      "name": "Firewall",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nEach time you block incoming damage this round, Channel 1 Hellfire."
+    },
+    {
+      "name": "Firewall+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nEach time you block incoming damage this round, Channel 1 Hellfire."
+    },
+    {
+      "name": "Forest Fishers",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Choose: Gain 2 Dexterity, or heal 10 HP."
+    },
+    {
+      "name": "Forest Fishers+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Choose: Gain 3 Dexterity, or heal 10 HP."
+    },
+    {
+      "name": "Forest Treasure",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 2 random Relic effects."
+    },
+    {
+      "name": "Forest Treasure+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 3 random Relic effects."
+    },
+    {
+      "name": "Ghost Defend",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Ghost Defend+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Ghost Fetch",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a basic card from your draw pile and place it into your hand.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Ghost Fetch+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a basic card from your draw pile and place it into your hand.\nIt costs 0 this turn.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Ghost Swipe",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Ghost Swipe+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Grinning Jar",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nYou may not play another Grinning Jar this turn."
+    },
+    {
+      "name": "Grinning Jar+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards."
+    },
+    {
+      "name": "Living Lantern",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 7 HP.\nIf you are below 50% max HP, gain 1 Intangible.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Living Lantern+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 12 HP.\nIf you are below 50% max HP, gain 1 Intangible.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Lost Forever",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply to an enemy.\nFor every 15 health they lose, they gain 1 Languid."
+    },
+    {
+      "name": "Lost Forever+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply to an enemy.\nFor every 12 health they lose, they gain 1 Languid."
+    },
+    {
+      "name": "Many Paths",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 1 card.\nFetch !replay:M+1! cards.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Many Paths+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 2 card.\nFetch !replay:M+1! cards.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Overheat Weapons",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Focus if you have <0, Lose 1 Focus if you have >0.\nChannel 1 Hellfire.\nAdd 1 Backfire to your discard pile.\nEthereal."
+    },
+    {
+      "name": "Overheat Weapons+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Focus if you have <0, Lose 1 Focus if you have >0.\nChannel 1 Hellfire.\nEthereal."
+    },
+    {
+      "name": "Ritual Component",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card."
+    },
+    {
+      "name": "Ritual Component+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card."
+    },
+    {
+      "name": "Scorching Beam",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage to ALL enemies.\nChannel 1 Hellfire."
+    },
+    {
+      "name": "Scorching Beam+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage to ALL enemies.\nChannel 2 Hellfire."
+    },
+    {
+      "name": "Six Feet Under",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage 6 times.\nGain 2 Weak.\nExhaust."
+    },
+    {
+      "name": "Six Feet Under+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage 6 times.\nExhaust."
+    },
+    {
+      "name": "Improvise",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 random cards to add to your hand. It costs 1 less.\nExhaust."
+    },
+    {
+      "name": "Improvise+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 random cards to upgrade and add to your hand.\nIt costs 1 less.\nExhaust."
+    },
+    {
+      "name": "Might",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "X",
+      "description": "For X turns, your Attacks deal 25% more damage.\nRefund !stslib:refund!."
+    },
+    {
+      "name": "Might+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "X",
+      "description": "For X turns, your Attacks deal 25% more damage.\nRefund !stslib:refund!."
+    },
+    {
+      "name": "Parry",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nGain 2 Reflection if target intends to attack.\nEthereal.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Parry+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 2 Reflection if target intends to attack.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Private Reserves",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E].\nExhaust.\nRetain."
+    },
+    {
+      "name": "Private Reserves+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E].\nDraw 1 card.\nExhaust.\nRetain."
+    },
+    {
+      "name": "Specialist",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Lose 1 Focus.\nAll non-attack damage you deal is increased by 2. "
+    },
+    {
+      "name": "Specialist+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Lose 1 Focus.\nInnate.\nAll non-attack damage you deal is increased by 2. "
+    },
+    {
+      "name": "Sssshield",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 6 Block.\nGain 6 Shielding for each [E] this cost.\nSnecko.\nExhaust."
+    },
+    {
+      "name": "Sssshield+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 6 Block.\nGain 6 Shielding for each [E] this cost.\nRefund !stslib:refund!.\nSnecko.\nExhaust."
+    },
+    {
+      "name": "Sssstrike",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 4 damage, plus an additional 4 for each [E] this cost.\nRefund !stslib:refund!.\nSnecko."
+    },
+    {
+      "name": "Sssstrike+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage, plus an additional 5 for each [E] this cost.\nRefund !stslib:refund!.\nSnecko."
+    },
+    {
+      "name": "Survey Options",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw X.\nRefund !stslib:refund!. "
+    },
+    {
+      "name": "Survey Options+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw X.\nRefund !stslib:refund!. "
+    },
+    {
+      "name": "Trickstab",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 2 times.\nAffected by block modifiers."
+    },
+    {
+      "name": "Trickstab+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times.\nAffected by block modifiers."
+    },
+    {
+      "name": "Uncanny Aura",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nGrave.\nAt the end of your turn, gain 1 Strength and Dexterity for each other Unplayable card in your hand."
+    },
+    {
+      "name": "Uncanny Aura+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nGrave.\nAt the end of your turn, gain 2 Strength and Dexterity for each other Unplayable card in your hand."
+    },
+    {
+      "name": "Awakened One Ritual",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Add 3 \u03C0Ritual Components to your draw and discard piles. If 5 are ever in your hand at once, they become 42 damage Attacks."
+    },
+    {
+      "name": "Awakened One Ritual+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Add 4 \u03C0Ritual Components to your draw and discard piles. If 5 are ever in your hand at once, they become 42 damage Attacks."
+    },
+    {
+      "name": "Brewmaster",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Obtain a random potion at the start of each round."
+    },
+    {
+      "name": "Brewmaster+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Obtain a random potion at the start of each round."
+    },
+    {
+      "name": "Dark Deal",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nStartup: Choose 1 of 2 random Black cards to add to your draw pile."
+    },
+    {
+      "name": "Dark Deal+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. Grave.\nStartup: Choose 1 of 3 random Black cards to add to your draw pile."
+    },
+    {
+      "name": "Midas Touch",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust any number of cards in your hand.\nAdd a random Rare card to your hand for each.\nExhaust."
+    },
+    {
+      "name": "Midas Touch+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust any number of cards in your hand.\nAdd a random Upgraded Rare card to your hand for each.\nExhaust."
+    },
+    {
+      "name": "Necrogeddon",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to the number of cards you've Exhausted this combat.\nGrave."
+    },
+    {
+      "name": "Necrogeddon+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to the number of cards you've Exhausted this combat to ALL enemies.\nGrave."
+    },
+    {
+      "name": "Poisoned Strike",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Apply 3 Poison.\nAffected by damage modifiers."
+    },
+    {
+      "name": "Poisoned Strike+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Apply 4 Poison.\nAffected by damage modifiers."
+    },
+    {
+      "name": "The Ultimate Defense",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 1 Artifact.\nGain 1 Dexterity.\nGain 5 Plated Armor.\nGain 5 Shielding."
+    },
+    {
+      "name": "The Ultimate Defense+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 2 Artifact.\nGain 2 Dexterity.\nGain 1 Intangible.\nGain 5 Plated Armor.\nGain 8 Shielding."
+    },
+    {
+      "name": "Abe's Revenge",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, gain 2 Frail.\nEthereal.\nSoulbound."
+    },
+    {
+      "name": "Amnesia",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, Exhaust your hand."
+    },
+    {
+      "name": "Common Cold",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "0",
+      "description": "Sneeze!"
+    },
+    {
+      "name": "Delirium",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, gain Confusion for 1 round."
+    },
+    {
+      "name": "Depression",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, gain 2 Languid and draw a card."
+    },
+    {
+      "name": "Doomed",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "0",
+      "description": "Die.\nFleeting.\nEthereal.\nGrave."
+    },
+    {
+      "name": "Faulty Equipment",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nSoulbound."
+    },
+    {
+      "name": "Hallucinations",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, add 1 random card to your draw pile.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "I.O.U.",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Costs 100 gold to play.\nFleeting.\nSoulbound."
+    },
+    {
+      "name": "Looming Evil",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "3",
+      "description": "Can be played for 3 Energy to Exhaust.\nAt the end of your turn, shuffle a curse into your draw pile and reduce cost."
+    },
+    {
+      "name": "Over-Encumbered",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhen you draw this, add 3 Dazed to your hand and draw a card."
+    },
+    {
+      "name": "Restless Dread",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "0",
+      "description": "Autoplay.\nDraw 1 card.\nAdd 3 random Curses to your discard pile.\nExhaust.\nGrave."
+    },
+    {
+      "name": "Sickly",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, lose 3 Block."
+    },
+    {
+      "name": "Splinters",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "0",
+      "description": "Take 2 damage.\nDraw 1 card.\nExhaustive !stslib:ex!.\nStartup: add a copy of this to your draw pile."
+    },
+    {
+      "name": "Spreading Infection",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, duplicate all other Status and Curse cards in your hand."
+    },
+    {
+      "name": "Untested Repairs",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "0",
+      "description": "Fleeting."
+    },
+    {
+      "name": "Vengeful Threat",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "0",
+      "description": "Grave.\nDraw 1 card.\nExhaust.\nSwitches to Imminent Threat."
+    },
+    {
+      "name": "Voices",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nEthereal.\nStartup: Add 2 copies of this card to your discard pile."
+    },
+    {
+      "name": "Wavering Confidence",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nSelf-Retaining.\nAt the end of your turn, Switches to Delayed Remorse."
+    },
+    {
+      "name": "??????????????????",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko. Purge.\n???????"
+    },
+    {
+      "name": "??????????????????+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko. Purge.\n???????"
+    },
+    {
+      "name": "Black Plague",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw !replay:M/2u! cards.\nApply 4 Poison.\nApply 4 Necrotic Poison.\nApply 4 Languid.\nApply 4 Decrepit.\nSplit this card in half."
+    },
+    {
+      "name": "Black Plague+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw !replay:M/2u! cards.\nApply 6 Poison.\nApply 6 Necrotic Poison.\nApply 6 Languid.\nApply 6 Decrepit.\nSplit this card in half."
+    },
+    {
+      "name": "Book of Names",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain Slime/Orb slots until you have 3.\nAdd a random Spire Boss card to your hand at the start of your next 3 turns.\nAfter 3 turns, shuffle a copy of this card into your draw pile."
+    },
+    {
+      "name": "Book of Names+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain Slime/Orb slots until you have 4.\nAdd a random Spire Boss card to your hand at the start of your next !replay:M+1! turns.\nAfter 4 turns, shuffle a copy of this card into your draw pile."
+    },
+    {
+      "name": "Chaos Vortex",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 15 Shielding.\nConfuse all enemies.\n1 card you draw each turn has its stats and effects scrambled."
+    },
+    {
+      "name": "Chaos Vortex+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 20 Shielding.\nGain 1 Artifact.\nConfuse all enemies.\n1 card you draw each turn has its stats and effects scrambled."
+    },
+    {
+      "name": "Echoes of Time",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fetch 3 cards you've Exhausted this combat.\nGrave.\nPurge."
+    },
+    {
+      "name": "Echoes of Time+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fetch 5 cards you've Exhausted this combat.\nGrave.\nPurge."
+    },
+    {
+      "name": "Fractal Strike",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nDraw 1 card.\nAdd a new Fractal \u03C0Strike to your discard pile.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Fractal Strike+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nDraw 1 card.\nAdd a new Fractal \u03C0Strike to your discard pile.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Haul",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw your entire draw pile.\nYou cannot draw any more cards this turn.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Haul+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw your entire draw pile.\nExhaustive !stslib:ex!."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Burning Sludge",
+      "tier": "Starter",
+      "pool": "Slimebound",
+      "description": "At the end of combat, for each Spawned slime, heal 2 HP.\nCertain Red cards can now be obtained.",
+      "flavorText": "Your entire being burns with rage."
+    },
+    {
+      "name": "Chord Ring",
+      "tier": "Starter",
+      "pool": "Bard_color",
+      "description": "Draw 2 additional cards on the first turn of combat.\nCertain Green cards can now be obtained.",
+      "flavorText": "This ring is composed of a series of rotating metal bands, each sporting carvings of notes."
+    },
+    {
+      "name": "Cloak of the Snake",
+      "tier": "Starter",
+      "pool": "Silver",
+      "description": "Draw 2 additional cards on the first turn of combat.\nCertain Green cards can now be obtained.",
+      "flavorText": "Draping it over your shoulders, you hear a faint hissing sound where the clinking of knives once was."
+    },
+    {
+      "name": "Ignis Sanguine",
+      "tier": "Starter",
+      "pool": "Runesmith_beige",
+      "description": "Each time you deal 20 damage in a single turn, gain 2 Ignis.\nHeal 3 HP at the end of combat.\nCertain Red cards can now be obtained.",
+      "flavorText": "Where the broken gem once was, only the intense heat of a forge remains."
+    },
+    {
+      "name": "Iron Core",
+      "tier": "Starter",
+      "pool": "",
+      "description": "At the start of combat, gain 2 orb slots if you have none, or Channel 1 Hellfire otherwise.\nCertain Red and Blue cards can appear in future card reward screens.",
+      "flavorText": "Powered by unceasing flames and rage."
+    },
+    {
+      "name": "Larethian Blood",
+      "tier": "Starter",
+      "pool": "Bard_color",
+      "description": "At the start of combat, gain 6 Temporary HP.\nCertain Red cards can now be obtained.",
+      "flavorText": "Blood of the ancient god Corellon Larethian."
+    },
+    {
+      "name": "Mercury Core",
+      "tier": "Starter",
+      "pool": "Chrono_gold",
+      "description": "At the start of combat, Replicate 1 Mercury.\nCertain Blue cards can now be obtained.",
+      "flavorText": "The liquid inside sloshes around, ready to fulfill its timely purpose."
+    },
+    {
+      "name": "Music Box",
+      "tier": "Starter",
+      "pool": "Bard_color",
+      "description": "At the start of combat, gain 3 orb slots and bard:Queue a [OrbNote] [REMOVE_SPACE].\nCertain Blue cards can now be obtained.",
+      "flavorText": "."
+    },
+    {
+      "name": "Ring of the Sea Serpent",
+      "tier": "Starter",
+      "pool": "Blackbeard_black",
+      "description": "At the start of each combat, add 2 Shivs to your hand.\nCertain Green cards can now be obtained.",
+      "flavorText": "Supposedly the remains of a great sea creature from times long past."
+    },
+    {
+      "name": "Ring of the Slime",
+      "tier": "Starter",
+      "pool": "Slimebound",
+      "description": "Draw 2 additional cards on the first turn of combat.\nCertain Green cards can now be obtained.",
+      "flavorText": "This part of you acts on its own, never completely split, and never completely merged."
+    },
+    {
+      "name": "Scarlet Blood",
+      "tier": "Starter",
+      "pool": "Silver",
+      "description": "Each time you gain Strength, gain twice that many Knives.\nCertain Red cards can now be obtained.",
+      "flavorText": "As your rage builds and your senses sharpen, so does your blood."
+    },
+    {
+      "name": "Sea Blood",
+      "tier": "Starter",
+      "pool": "Blackbeard_black",
+      "description": "At the end of combat, heal 6 HP.\nCertain Red cards can now be obtained.",
+      "flavorText": "Your blood becomes merged with the rage of the far-off seas."
+    },
+    {
+      "name": "Sizzling Blood",
+      "tier": "Starter",
+      "pool": "",
+      "description": "At the end of combat heal 4 HP.\nGain 4 max HP on pickup.",
+      "flavorText": "It burns with fire and poison."
+    },
+    {
+      "name": "Antivirus Software",
+      "tier": "Common",
+      "pool": "Blue",
+      "description": "Every time you shuffle your deck, gain 1 Artifact.\nWhen you draw a Status, consumes 1 Artifact to Exhaust it and all other Status cards drawn that turn, drawing 1 card each time.",
+      "flavorText": "The robotic equivalent to a vaccine."
+    },
+    {
+      "name": "Bandana",
+      "tier": "Common",
+      "pool": "",
+      "description": "Gain 2 Thievery for the first 3 turns of combat.\nSynergy - Bloody Idol.",
+      "flavorText": "The finest article of pick-pocketing attire."
+    },
+    {
+      "name": "Baseball",
+      "tier": "Common",
+      "pool": "",
+      "description": "Upon pick up, a random card in your deck becomes free.",
+      "flavorText": "We all have our favorite player."
+    },
+    {
+      "name": "Funnel",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the end of your turn, unused energy is converted to 4 Block each.",
+      "flavorText": "Use every last drop."
+    },
+    {
+      "name": "Geode",
+      "tier": "Common",
+      "pool": "Blue",
+      "description": "The first time you lose HP each combat, trigger the passive effect of all your channeled orbs and Channel 1 Crystal.",
+      "flavorText": "Break it open!"
+    },
+    {
+      "name": "Gremlin Food",
+      "tier": "Common",
+      "pool": "",
+      "description": "Whenever you Rest, Upgrade a random card.",
+      "flavorText": "Some gremlins are known to steal food from people, but in return grant a favor while the adventurer sleeps."
+    },
+    {
+      "name": "Grinning Jar",
+      "tier": "Common",
+      "pool": "",
+      "description": "Obtain a Skill that draws 2 cards.\nObtain an additional copy for every 12 other cards added to your deck.",
+      "flavorText": "\"I play Grinning Jar, which allows me to draw 2 cards from my deck!\""
+    },
+    {
+      "name": "King of Hearts",
+      "tier": "Common",
+      "pool": "Red",
+      "description": "When you lose HP during your turn, gain twice that much block.",
+      "flavorText": "Traditionally drawn with his sword going through his head, is sometimes known as the Suicide King."
+    },
+    {
+      "name": "Lightbulb",
+      "tier": "Common",
+      "pool": "",
+      "description": "If you have any unspent [E] at the end of your turn, draw that many cards at the start of your next turn.",
+      "flavorText": "How long has it been since you've seen the sun?"
+    },
+    {
+      "name": "Mystery Machine",
+      "tier": "Common",
+      "pool": "",
+      "description": "Gains 1 charge each time you enter a ? room.\nLoses 1 charge each time you go between two non-? rooms.\nStart combat with 1 random Strength or Dexterity for each charge this has.",
+      "flavorText": "For those who like to wander."
+    },
+    {
+      "name": "Pet Ghost",
+      "tier": "Common",
+      "pool": "",
+      "description": "Add a ghost card to your hand every turn.\nYour max hand size is increased by 1.",
+      "flavorText": "The ghost of a pet once belonging to a knight."
+    },
+    {
+      "name": "Rubber Ducky",
+      "tier": "Common",
+      "pool": "",
+      "description": "Each time you play a Power, gain Shielding equal to 3 times its [E] cost.",
+      "flavorText": "When you squeeze it, it makes noise."
+    },
+    {
+      "name": "Rune of Simplicity",
+      "tier": "Common",
+      "pool": "",
+      "description": "Strikes and Defends can be Upgraded any number of times.\nOn pick up, Upgrade 2 randomly.",
+      "flavorText": "Sometimes, things aren't as complicated as they appear."
+    },
+    {
+      "name": "Spearhead",
+      "tier": "Common",
+      "pool": "Red",
+      "description": "At the end of your turn, all enemies lose HP equal to their Vulnerable.",
+      "flavorText": "---"
+    },
+    {
+      "name": "Tag Bag",
+      "tier": "Common",
+      "pool": "",
+      "description": "Shops have all 3 kinds of sale tags.\nSale tags can appear on colorless cards.\nOn-sale cards are cheaper.",
+      "flavorText": "A colorful collection."
+    },
+    {
+      "name": "Tiger Marble",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of each combat, add a random card which Exhausts to your hand.\nIt costs 0 until played.",
+      "flavorText": "Eye of the Tiger"
+    },
+    {
+      "name": "Wax Seal",
+      "tier": "Common",
+      "pool": "",
+      "description": "Relics in shops cost 20% less.\nRight click at a shop to activate:\nBorrow 100 gold. Add a Curse to your deck until you pay it back.",
+      "flavorText": "The kind used to close envelopes, not the sea creature."
+    },
+    {
+      "name": "Accelerometer",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Right click during combat to activate. Usable once per combat.\nDecrease your turn-based Debuffs by 1.\nIncrease all enemy turn-based Debuffs by 1.",
+      "flavorText": "Time over Time."
+    },
+    {
+      "name": "Basket of Snakes",
+      "tier": "Uncommon",
+      "pool": "Green",
+      "description": "Every 5th Attack you play applies 2 Necrotic Poison each time it deals unblocked damage.",
+      "flavorText": "Don't worry; they won't bite. At least, they won't bite you."
+    },
+    {
+      "name": "Bottled Eggs",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "On pick up, choose a card.\nAll copies of that card you have are Upgraded.\nAll future copies of that card you obtain are Upgraded.",
+      "flavorText": ""
+    },
+    {
+      "name": "Bottled Flurry",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "On pick up, choose a card.\nYou Retain that card at the end of your turn.\nIf the card would Exhaust due to being Ethereal, it is discarded instead.",
+      "flavorText": "It's like a snowglobe!"
+    },
+    {
+      "name": "Bottled Geyser",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "On pick up, choose a card.\nEach time you shuffle your deck, that card is placed on the top.",
+      "flavorText": "FWOOOOOOSH!"
+    },
+    {
+      "name": "Bottled Snecko",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "On pick up, you may choose a card.\nIt gains Snecko.\nIf you do not choose a card, you may choose one at a later rest site as a free action.",
+      "flavorText": "Despite how large the adults are, baby sneckos are small enough to fit in your pocket - and they're cute!"
+    },
+    {
+      "name": "Carrot",
+      "tier": "Uncommon",
+      "pool": "Blue",
+      "description": "You gain 3 Focus at the start of combat. You lose 1 Focus over the next 3 turns.",
+      "flavorText": "Filled with power."
+    },
+    {
+      "name": "Chameleon Ring",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Your potions are more potent.\nYou can now Brew at Rest Sites.",
+      "flavorText": "A ring that glimmers with slowly shifting colors."
+    },
+    {
+      "name": "Divine Protection",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Gain 8 Temporary HP at the start of combat.",
+      "flavorText": "The strength to carry on in times of trial."
+    },
+    {
+      "name": "Garlic",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of combat, apply 3 Languid to ALL enemies.",
+      "flavorText": "Taking a whiff may cause your eyes to tear up."
+    },
+    {
+      "name": "Golden Egg",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you add a Rare card to your deck, it is Upgraded.\nWhenever you purchase a card from the merchant, it is Upgraded.",
+      "flavorText": "Not approved by the FDA."
+    },
+    {
+      "name": "Hand Mirror",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you gain Vulnerable or Weakened, it is also applied to the enemy that sent it.",
+      "flavorText": "You can see yourself through the glass. The good and the bad."
+    },
+    {
+      "name": "Iron Hammer",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "During the first turn, drawing a card upgrades it.",
+      "flavorText": "A handy - and heavy - tool."
+    },
+    {
+      "name": "Ninjato",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Every time you play 3 Attacks in a single turn, draw 2 cards.",
+      "flavorText": "Stab stab stab"
+    },
+    {
+      "name": "Onion Ring",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "You gain 3 Strength at the start of each combat.\nYou lose 1 Strength over the next 3 turns.",
+      "flavorText": "The onion is encased in a deep-fried breading."
+    },
+    {
+      "name": "Quantum Egg",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever a card is created during combat, it is Upgraded.",
+      "flavorText": "Tastes like [REDACTED]."
+    },
+    {
+      "name": "Ringing Soul",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Once per room, when you add a card to your deck, gain 3 Max HP.",
+      "flavorText": "How obnoxious!"
+    },
+    {
+      "name": "Shallot",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "You gain 3 Dexterity and Metallicize at the start of each combat.\nYou lose 1 Dexterity and Metallicize over the next 3 turns.",
+      "flavorText": "It's a shallot. Not a whole lot to say about it."
+    },
+    {
+      "name": "Snack Pack",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Every time you play 3 Attacks in a single turn, gain 2 HP.",
+      "flavorText": "Always come prepared with a snack."
+    },
+    {
+      "name": "Solar Panel",
+      "tier": "Uncommon",
+      "pool": "Blue",
+      "description": "At the end of combat, heal 2 HP for each of your active Lightning orbs.",
+      "flavorText": "Clean, renewable power."
+    },
+    {
+      "name": "Wasp Nest",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Each time you lose HP in combat, gain 2 Thorns.",
+      "flavorText": "Like a bee nest, but more evil."
+    },
+    {
+      "name": "Another Sword",
+      "tier": "Rare",
+      "pool": "Red",
+      "description": "The first card containing \"strike\" you play each round is played twice.\nTakes 1 additional turn to recharge for each [R] spent on the card.",
+      "flavorText": "A second sword. You have two now."
+    },
+    {
+      "name": "Arrowhead",
+      "tier": "Rare",
+      "pool": "",
+      "description": "You may Upgrade 2 cards whenever you smith.",
+      "flavorText": "The first thing you ever forged."
+    },
+    {
+      "name": "Byrd Skull",
+      "tier": "Rare",
+      "pool": "Green",
+      "description": "Your Innate cards have Refund 1 and draw 1 card.",
+      "flavorText": " The skull of a fallen Byrd. ...Get it? Fallen?"
+    },
+    {
+      "name": "Counterbalance",
+      "tier": "Rare",
+      "pool": "",
+      "description": "During boss and elite fights enemy Strength gain, Block gain, and Healing is reduced by half.",
+      "flavorText": "For every strength, there is a weakness."
+    },
+    {
+      "name": "Durian",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you gain a Debuff, gain Temporary HP equal to the amount.\nAt the start of your turn, reduce your turn-based Debuffs to 2.\nOn pickup, increase your max HP by 5.",
+      "flavorText": "Smells awful, tastes great."
+    },
+    {
+      "name": "Kaleidoscope",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you play 3 cards that give Block in a single turn, gain 1 Reflection.",
+      "flavorText": "Colors, distorts, and reflects light."
+    },
+    {
+      "name": "Multitool",
+      "tier": "Rare",
+      "pool": "",
+      "description": "You have 2 additional options at rest sites, chosen randomly.",
+      "flavorText": ""
+    },
+    {
+      "name": "Pocket Polymer",
+      "tier": "Rare",
+      "pool": "",
+      "description": "You can now Transform a card at rest sites as a free action.",
+      "flavorText": "The power of SCIENCE! Probably."
+    },
+    {
+      "name": "Pondfish Scales",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you play a Skill that does not give Block, gain 2 Block.",
+      "flavorText": "Scales sometimes held by those who have bested Captain Abe in battle."
+    },
+    {
+      "name": "Towering Pillar of Hats",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Max hand size increased by 2.\nAt the end of your turn, Retain the right-most cards in your hand. Retains 1 card for every 3 in your hand.",
+      "flavorText": "\"Tarnish notte the majesty of my TOWER of HATS!\""
+    },
+    {
+      "name": "Vampiric Spirits",
+      "tier": "Rare",
+      "pool": "Green",
+      "description": "On the first turn of combat, 25% of all unblocked Attack damage you deal is returned as health.",
+      "flavorText": "A fondness for shadows, a thirst for blood; traits held by rogues and vampires alike."
+    },
+    {
+      "name": "Blank Codex",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat and each time you shuffle your deck, you may choose 1 of 3 random Black cards to add to your discard pile. If you do, also add a random Curse to your discard pile.",
+      "flavorText": "Full of empty. Full of evil."
+    },
+    {
+      "name": "Library Looter",
+      "tier": "Special",
+      "pool": "",
+      "description": "Custom Run Modifer\nEach time you open a non-boss chest, choose 1 of 15 cards to obtain.",
+      "flavorText": "aight listen i KNOW its bad form to implement a custom run mod with a relic but y'know what sometimes you just gotta look urself in the mirror and ask \"do i really feel like dealing with patching shit when relics have a perfectly good hook for opening chests\" and sometimes the answer is no."
+    },
+    {
+      "name": "Ring of Addiction",
+      "tier": "Special",
+      "pool": "",
+      "description": "On pick up, obtain 3 potions and 2 random relics with effects related to potions.\nEach time you go through 3 rooms without using a potion, lose 2 Max HP.",
+      "flavorText": "Good in abundance breeds evil."
+    },
+    {
+      "name": "Ring of Collecting",
+      "tier": "Special",
+      "pool": "",
+      "description": "Non-boss chests contain a random ring relic in addition to thier normal contents.\nShops will sometimes sell ring relics.",
+      "flavorText": "A full set is greater than the sum of its parts, yet not nessearily worth the cost."
+    },
+    {
+      "name": "Ring of Exchange",
+      "tier": "Special",
+      "pool": "",
+      "description": "Shop relics can sometimes appear in boss chests.\nBoss relics can sometimes appear in shops.",
+      "flavorText": "You never know the value of what you have until it is lost."
+    },
+    {
+      "name": "Ring of Fangs",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat lose 3 Strength.\nWhenever you deal unblocked attack damage, apply 1 Poison.",
+      "flavorText": "The fangs poke into the wearer, making wielding weapons difficult."
+    },
+    {
+      "name": "Ring of Fury",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat gain 2 Strength and lose 1 Dexterity.",
+      "flavorText": "A cursed ring that heightens both senses and senselessness."
+    },
+    {
+      "name": "Ring of Greed",
+      "tier": "Special",
+      "pool": "",
+      "description": "On pick up, obtain 50 gold and 2 random relics with effects related to gold or shops.\nFor every 150 gold you obtain, add 1 random Curse to your deck.",
+      "flavorText": "Great wealth often rides with great dispair."
+    },
+    {
+      "name": "Ring of Hypnosis",
+      "tier": "Special",
+      "pool": "",
+      "description": "All enemies start with 5 Confusion.",
+      "flavorText": "The strange colors and reflected lights draw the mind down a wandering path."
+    },
+    {
+      "name": "Ring of Misfortune",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat add a random Curse to your discard pile.\nEach time you draw a Curse, gain [E] and 3 Temporary HP.\nEach time you draw a Status, gain 3 Block.",
+      "flavorText": "Weary wear."
+    },
+    {
+      "name": "Ring of Panic",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat you become Confused for 3 turns.\nGain [E] [E] at the start of rounds 1 and 2.\nGain [E] at the start of round 3.",
+      "flavorText": "Fear serves its purpose."
+    },
+    {
+      "name": "Ring of Peace",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat apply 3 Weak to ALL fighters and gain 1 Buffer",
+      "flavorText": "Peace never lasts long in the Spire."
+    },
+    {
+      "name": "Ring of Searing",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of your turn, ALL enemies above 50% Max HP lose 10% of their current HP.\nAt the end of each round, if you are above 75% Max HP, lose 5 HP.",
+      "flavorText": "A cursed ring that burns everything around it to ash."
+    },
+    {
+      "name": "Ring of Shattering",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat you gain 3 Focus and lose 2 Orb Slots.",
+      "flavorText": "What is broken can be made better for it."
+    },
+    {
+      "name": "Abe's Treasure",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn.\nStart combat with Drowning.\nOn pick up, add a copy of Abe's Revenge to your deck.",
+      "flavorText": "Cursed?"
+    },
+    {
+      "name": "Bronze Core",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn.\nEach combat includes a Bronze Orb minion that won't attack, but will put cards into stasis until killed.",
+      "flavorText": "Even now, it acts to defend the spire."
+    },
+    {
+      "name": "Chewing Gum",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn.\nEvery time you shuffle your deck, add 3 Slimed to your draw pile.",
+      "flavorText": "Sticky and sweet."
+    },
+    {
+      "name": "Dimensional Glitch",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn.\nAll non-attack damage you deal is reduced to half, rounding down.\nAll non-attack damage you recieve is increased by half, rounding up.\nAll in-combat healing you recieve is reduced to half, rounding up.",
+      "flavorText": "UPDATE BODY TEXT"
+    },
+    {
+      "name": "Electric Blood",
+      "tier": "Boss",
+      "pool": "Red",
+      "description": "Gain [R] [R] at the start of each turn.\nLose 1 HP for every [R] you use, excluding the first 2 used each turn.",
+      "flavorText": "You feel your body surging with power. It hurts."
+    },
+    {
+      "name": "Grab Bag",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Choose 1 Energy Boss Relic and 1 Non-Energy Boss Relic to obtain.\nBoth choices will be out of 3 random relics, and cannot be skipped.",
+      "flavorText": "Trinkets and treats. What will you get?"
+    },
+    {
+      "name": "Hamster Wheel",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] each time you draw a card.\nDrawing a card increases its cost by 1 for the turn.\nAt the start of combat, add a random Curse to your draw pile for each X-cost card in your deck.",
+      "flavorText": "Keep on running."
+    },
+    {
+      "name": "Honey Jar",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Draw 1 more card each turn.\nRetain up to 1 card each turn.\nOn pick up, gain 1 extra potion slot.\nYou cannot skip rewards.",
+      "flavorText": "Delicious!"
+    },
+    {
+      "name": "Kintsugi",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Remove 5 cards from your deck.\nChoose 2 Curses to obtain.\n(Attempting to remove Curses with the first effect Transforms them instead).",
+      "flavorText": "What is broken can be made better."
+    },
+    {
+      "name": "Ooze Armor",
+      "tier": "Boss",
+      "pool": "Red",
+      "description": "Gain [E] at the start of each turn.\nGain 4 Malleable and -3 Slow at the start of combat",
+      "flavorText": "Armor with the flexibility and toughness of living slime."
+    },
+    {
+      "name": "Ring of Chaos",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Some card rewards have randomly altered stats and effects.",
+      "flavorText": "A ring with wild and unpredictable magic effects."
+    },
+    {
+      "name": "Sealed Pack",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Choose a Basic card to obtain.\nChoose a Rare card to obtain.\nChoose a Colorless card to obtain.\nChoose a Black card to obtain.\nChoose a Curse to obtain.\nCurse cannot be skipped, and becomes Soulbound.",
+      "flavorText": "A standard 5-card booster pack. Maybe you'll get lucky?"
+    },
+    {
+      "name": "Shrinking Draught",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Lose [E] and draw 2 cards at the start of your turn.\nStart each combat with 4 Dexterity.\nIf you play at least 6 cards in a single turn, gain [E] at the start of your next turn.\nOn pick up, remove 3 cards from your deck and lose 25% Max HP.\nSynergy - Tiny House",
+      "flavorText": "The label reads \"Drink me.\""
+    },
+    {
+      "name": "Snecko Heart",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Start combat Confused.\nConfusion can never increase the cost of a card by more than 1.\nThe first card you draw each turn always costs 0.",
+      "flavorText": "The preserved heart of a fallen Snecko."
+    },
+    {
+      "name": "Snecko Scales",
+      "tier": "Boss",
+      "pool": "Green",
+      "description": "Draw 3 additional cards each turn.\nWhen you play a card that costs more than 0 energy, discard a card.",
+      "flavorText": "Scales from a Snecko that shed its skin. They seem to reflect lights with shimmering colors."
+    },
+    {
+      "name": "Sweet Flower",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn.\nLess map information.",
+      "flavorText": "The sickly sweet scent of this flower makes you feel dizzy..."
+    },
+    {
+      "name": "Wanted Poster",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn.\nFor every 100 gold below 500 you have, enemies start with a random buff.\nGain 100 gold on pick up.",
+      "flavorText": "Gold and blood: weighed on the same scale."
+    },
+    {
+      "name": "Bargain Bundle",
+      "tier": "Shop",
+      "pool": "",
+      "description": "When you purchase this relic, the cost of the cards, potions, and card removal service in the same shop are reduced by 100 gold.",
+      "flavorText": "What a deal!"
+    },
+    {
+      "name": "Cursed Coin",
+      "tier": "Shop",
+      "pool": "",
+      "description": "On pickup, obtain 150 gold and a random Curse.",
+      "flavorText": "A cursed coin that brings misfortune to its owner. The only way to get rid of it is to sell it."
+    },
+    {
+      "name": "Energy Ball",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Right click during combat to activate. Usable once per combat.\nConsumes unspent [E] at the end of your turn to gain charges, up to 5 max.\nUsing spends 3 charges to play your character's Form Power.",
+      "flavorText": "Smashing!"
+    },
+    {
+      "name": "Frozen Program",
+      "tier": "Shop",
+      "pool": "Blue",
+      "description": "Each time you Evoke Frost, gain 1 Reflection.",
+      "flavorText": "FROST.exe has stopped responding."
+    },
+    {
+      "name": "Guide Book",
+      "tier": "Shop",
+      "pool": "",
+      "description": "On pickup, Upgrades 2 cards randomly.\nPrioritizes rarer cards.",
+      "flavorText": "A book detailing \"tourist spots\" in the spire. It seems to have been written by the shop merchant."
+    },
+    {
+      "name": "Lucky Slots",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Whenever a fighter loses exactly 7 HP, gain Critical.\nIf this triggers 3 times in one combat, gain 7 gold.",
+      "flavorText": "Spin to win!"
+    },
+    {
+      "name": "Raider's Mask",
+      "tier": "Shop",
+      "pool": "Blue",
+      "description": "At the end of your turn, if a Dark orb has more stored damage than the HP of the lowest-health enemy, it is Evoked.",
+      "flavorText": "Leave no survivors."
+    },
+    {
+      "name": "Shop Pack",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Choose 3 Colorless cards to obtain.\nGuaranteed to get at least 1 Rare card!",
+      "flavorText": "A cheap 3-card booster pack. Probably rigged by the merchant."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Adrenaline Potion",
+      "rarity": "Common",
+      "description": "Draw 2 cards and gain 1 Energy."
+    },
+    {
+      "name": "Elixir",
+      "rarity": "Common",
+      "description": "Exhaust ALL Status and Curse cards."
+    },
+    {
+      "name": "Languish Potion",
+      "rarity": "Uncommon",
+      "description": "Apply 3 Languid."
+    },
+    {
+      "name": "Lifeblood Potion",
+      "rarity": "Uncommon",
+      "description": "Gain 12 Temporary HP."
+    },
+    {
+      "name": "Milkshake",
+      "rarity": "Uncommon",
+      "description": "You can retain up to 5 Energy between turns until the end of combat."
+    },
+    {
+      "name": "Reflective Coating",
+      "rarity": "Uncommon",
+      "description": "Gain 3 Blur.\nGain 3 Reflection."
+    },
+    {
+      "name": "Toxic Potion",
+      "rarity": "Uncommon",
+      "description": "Apply 5 Necrotic Poison to ALL enemies."
+    },
+    {
+      "name": "Venom Potion",
+      "rarity": "Uncommon",
+      "description": "Apply 1 Poison to enemies when you damage them. Lose 1 Strength."
+    },
+    {
+      "name": "Cursed Concoction",
+      "rarity": "Rare",
+      "description": "Gain 3 Strength and 2 Dexterity.\nAdd a random Curse to your draw and discard piles."
+    },
+    {
+      "name": "Death Potion",
+      "rarity": "Rare",
+      "description": "Deal 60 damage. Lose 12 health."
+    },
+    {
+      "name": "Doom Potion",
+      "rarity": "Rare",
+      "description": "Destroy an enemy after 10 turns."
+    },
+    {
+      "name": "Flashpowder",
+      "rarity": "Rare",
+      "description": "Stun an enemy."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Captain Abe",
+      "type": "Boss",
+      "minHP": "80",
+      "maxHP": "80"
+    },
+    {
+      "name": "Erik",
+      "type": "Elite",
+      "minHP": "33",
+      "maxHP": "33"
+    },
+    {
+      "name": "Gremlin Cook",
+      "type": "Normal",
+      "minHP": "16",
+      "maxHP": "16"
+    },
+    {
+      "name": "Hell's Engine",
+      "type": "Boss",
+      "minHP": "450",
+      "maxHP": "450"
+    },
+    {
+      "name": "Pondfish",
+      "type": "Boss",
+      "minHP": "280",
+      "maxHP": "280"
+    },
+    {
+      "name": "Puro",
+      "type": "Elite",
+      "minHP": "33",
+      "maxHP": "33"
+    },
+    {
+      "name": "Rhapsodic Hoarder",
+      "type": "Elite",
+      "minHP": "300",
+      "maxHP": "300"
+    },
+    {
+      "name": "Snechameleon",
+      "type": "Elite",
+      "minHP": "145",
+      "maxHP": "145"
+    },
+    {
+      "name": "The Conductor",
+      "type": "Boss",
+      "minHP": "450",
+      "maxHP": "450"
+    },
+    {
+      "name": "The Fable-Spinner",
+      "type": "Boss",
+      "minHP": "800",
+      "maxHP": "800"
+    },
+    {
+      "name": "Yu",
+      "type": "Elite",
+      "minHP": "33",
+      "maxHP": "33"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Backfire",
+      "description": "Status: Deals 4 damage and Exhausts at the end of your turn.\nAffected by your own damage modifiers."
+    },
+    {
+      "name": "Crystal",
+      "description": "Orb: Gives adjacent orbs +2 Focus. When Evoked, if you have fewer than 3 orb slots, gain an orb slot.\nPassive effect is not affected by Focus."
+    },
+    {
+      "name": "Decrepit",
+      "description": "Fighters afflicted by Decrepit suffer 1 extra damage from attacks for each stack.\nEach turn Decrepit is decreased by 1."
+    },
+    {
+      "name": "Glass",
+      "description": "Orb: No Passive effect. When Evoked while you have more than 3 orb slots, consumes your leftmost orb slot and Evokes the occupying orb."
+    },
+    {
+      "name": "Hellfire",
+      "description": "Orb: At the start of your turn, gain +2 Strength until the end of your turn.\nWhen Evoked, applies 1 Vulnerable to a random enemy."
+    },
+    {
+      "name": "Languid",
+      "description": "Fighters with Languid deal 1 less Attack damage per stack.\nIs reduced by 1 at the end of each turn."
+    },
+    {
+      "name": "Manaspark",
+      "description": "Orb: At the start of your turn, gain 3 Charge-Up.\nWhen Evoked, gain [e] and 5 Charge-Up."
+    },
+    {
+      "name": "Necrotic",
+      "description": "A powerful poison that deals 2 damage each turn, but doesn't last as long."
+    },
+    {
+      "name": "Reflection",
+      "description": "Goes down by 1 each round, is removed on 0.\nWhile active, completely blocking Attack damage reflects it back at the attacker."
+    },
+    {
+      "name": "Shielding",
+      "description": "An alternate form of Block that is not lost at the end of each round."
+    }
+  ]
+}

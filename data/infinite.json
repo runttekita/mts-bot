@@ -1,0 +1,584 @@
+{
+  "mod": {
+    "name": "Infinite Spire",
+    "version": "0.20.0",
+    "authors": ["Blank The Evil"],
+    "credits": "Contributors: The_Evil_Pickle, RedDyeNo5, Gremious, Len (for French translation)",
+    "description": "Adds a new way to climb the spire forever, complete quests along the way, but be careful, the spire will not be kind to those who do not give up.\n\nAlso thanks to kiooeht, test477, The_Evil_Pickle, Moocowsgomoo, fiiiiilth, JohnnyDevo, Chronometrics, MichaelMayhem and Reina for helping me learn more about programming. \n\n Shoutouts to Fairy, gkjzhgffjh, Nafen, Jedi and JohnnyBazooka for being awesome members of the modding community.",
+    "mts_version": "3.11.0",
+    "sts_version": "07-01-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "One For All",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage.\nEach time this card is played, permanently increase its damage by 2.\nExhaust."
+    },
+    {
+      "name": "One For All+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage.\nEach time this card is played, permanently increase its damage by 3.\nExhaust."
+    },
+    {
+      "name": "Neurotoxin",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Poison.\nEach time this card is played, permanently increase its poison by !inf_P!.\nExhaust."
+    },
+    {
+      "name": "Neurotoxin+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Poison.\nEach time this card is played, permanently increase its poison by !inf_P!.\nExhaust."
+    },
+    {
+      "name": "Pacifist",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "2",
+      "description": "While this card is in your hand you cannot play Attacks."
+    },
+    {
+      "name": "Collect",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards and Upgrade them."
+    },
+    {
+      "name": "Collect+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 4 cards and Upgrade them."
+    },
+    {
+      "name": "Dark Harmony",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "bard:Queue 2 [WildNote] ."
+    },
+    {
+      "name": "Dark Harmony+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "bard:Queue 3 [WildNote] ."
+    },
+    {
+      "name": "Deaths Touch",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 25 damage.\nNext turn, deal 25 damage to ALL enemies."
+    },
+    {
+      "name": "Deaths Touch+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 35 damage.\nNext turn, deal 35 damage to ALL enemies."
+    },
+    {
+      "name": "Execution",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply Shredded to an enemy.\nExhaust."
+    },
+    {
+      "name": "Execution+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply Shredded to an enemy.\nExhaust."
+    },
+    {
+      "name": "Final Strike",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. Deals an additional 5 damage for ALL of your cards containing Strike."
+    },
+    {
+      "name": "Final Strike+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage. Deals an additional 5 damage for ALL of your cards containing Strike."
+    },
+    {
+      "name": "Fortify",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block 5 times."
+    },
+    {
+      "name": "Fortify+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block 6 times."
+    },
+    {
+      "name": "Future Sight",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain\n[E]  [E]  [E]  [E]\nenergy.\nExhaust."
+    },
+    {
+      "name": "Future Sight+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain\n[E]  [E]  [E]  [E]\nenergy.\nExhaust."
+    },
+    {
+      "name": "Gouge",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nRemove Artifact.\nApply 2 Weak and Vulnerable"
+    },
+    {
+      "name": "Gouge+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nRemove Artifact.\nApply 3 Weak and Vulnerable"
+    },
+    {
+      "name": "Menacing",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next attack you play stuns any enemy it hits for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Menacing+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next 2 attacks you play stun any enemy they hit for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Neural Network",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Draw 2 additional cards at the start of each turn."
+    },
+    {
+      "name": "Neural Network+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nDraw 2 additional cards at the start of each turn."
+    },
+    {
+      "name": "Oblivion",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nChannel 2 random Orbs."
+    },
+    {
+      "name": "Oblivion+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nChannel 4 random Orbs."
+    },
+    {
+      "name": "Punishment",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage for each card in your draw, hand, and discard pile."
+    },
+    {
+      "name": "Punishment+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage for each card in your draw, hand, and discard pile."
+    },
+    {
+      "name": "Seven Walls",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 15 Block.\nDeal 15 damage."
+    },
+    {
+      "name": "Starlight",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 10 HP.\nExhaust."
+    },
+    {
+      "name": "Starlight+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 15 HP.\nExhaust."
+    },
+    {
+      "name": "The Best Defense",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible.\nConvert all of your Block into Strength, lose that Strength at the end of your turn."
+    },
+    {
+      "name": "The Best Defense+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Intangible.\nConvert all of your Block into Strength, lose that Strength at the end of your turn."
+    },
+    {
+      "name": "Ultimate Form",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "5",
+      "description": "Gain 2 Strength and Dexterity each turn.\nIf you have orb slots gain 2 Focus each turn."
+    },
+    {
+      "name": "Ultimate Form+",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "5",
+      "description": "Gain 3 Strength and Dexterity each turn.\nIf you have orb slots gain 3 Focus each turn."
+    },
+    {
+      "name": "Unstable Space-Time",
+      "color": "Infinite_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 20 Temporary_HP (Effected by Block modifiers).\nDeal 20 damage."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Dark Rift",
+      "tier": "Starter",
+      "pool": "",
+      "description": "At the start of combat, add a random Black card to your draw pile.",
+      "flavorText": "It looks like a small galaxy!"
+    },
+    {
+      "name": "Beetle Shell",
+      "tier": "Common",
+      "pool": "",
+      "description": "Every 10th time you gain Block from a card, gain double the Block.",
+      "flavorText": "Hard as a rock."
+    },
+    {
+      "name": "Freezer",
+      "tier": "Common",
+      "pool": "Blue",
+      "description": "At the start of combat, channel 1 Frost orb.",
+      "flavorText": "It's cold to the touch."
+    },
+    {
+      "name": "Lucky Rock",
+      "tier": "Common",
+      "pool": "",
+      "description": "Each time you play an attack card, you have a 5% chance to gain Critical.",
+      "flavorText": "It's feels smooth."
+    },
+    {
+      "name": "Puzzle Cube",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of each turn, Puzzle Cube picks a random card in your draw pile, if you play that card, draw a card.",
+      "flavorText": "Timing..."
+    },
+    {
+      "name": "Satchel",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the end of each turn Retain 1 card.",
+      "flavorText": "It's not a purse!"
+    },
+    {
+      "name": "Bottled Mercury",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup choose a card, when it is played, if it is an Attack, gain 1 Strength, if it is a Skill, gain 1 Dexterity, if it is a Power, gain 2 Focus.",
+      "flavorText": "Tastes real bad..."
+    },
+    {
+      "name": "Bottled Soul",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup, choose an Exhaust card. Whenever you play that card, it no longer Exhausts.",
+      "flavorText": "A broken bottle... A broken soul..."
+    },
+    {
+      "name": "Broken Mirror",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of combat, gain 3 Reflection.",
+      "flavorText": "It's sharp."
+    },
+    {
+      "name": "Checkered Pen",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you play a card, deal 1 damage to a random enemy.",
+      "flavorText": "Secrets revealed..."
+    },
+    {
+      "name": "Empowering Shard",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "For each act you climb gain 1 Strength at the start of combat.",
+      "flavorText": "It feels like it holds great power..."
+    },
+    {
+      "name": "Focusing Shard",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "For each act you climb Upgrade a random card at the start of combat.",
+      "flavorText": "Sharp!"
+    },
+    {
+      "name": "Midas Blood",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you take HP damage, gain 2 gold.",
+      "flavorText": "Taking damage never felt so good."
+    },
+    {
+      "name": "Shielding Shard",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "For each act you climb gain 3 Temp HP at the start of combat.",
+      "flavorText": "Nice and cool."
+    },
+    {
+      "name": "Soldering Iron",
+      "tier": "Uncommon",
+      "pool": "Blue",
+      "description": "Every 3 orbs you channel in one turn, gain 1 Orb slot",
+      "flavorText": "OUCH! Hot!"
+    },
+    {
+      "name": "Warding Shard",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "For each act you climb gain 1 Dexterity at the start of combat.",
+      "flavorText": "It's unbreakable!"
+    },
+    {
+      "name": "Cursed Dice",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Can only be used once.\nWhen you would die, shuffle your hand and discard pile into your draw pile, you no longer take damage. If you win before you empty your draw pile and hand, heal 35% max hp. Otherwise you die!",
+      "flavorText": "Onward unto death! Die like a nail hammered into a coffin!"
+    },
+    {
+      "name": "Eraser",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Right click during combat to activate.\nUsable only once per combat.\nRestart an elite combat against a different elite. The enemies will be stronger.\nCan be used 3 times.",
+      "flavorText": "Chewy!"
+    },
+    {
+      "name": "Golem's Mask",
+      "tier": "Rare",
+      "pool": "",
+      "description": "On the first turn of combat, gain Golem's Might.",
+      "flavorText": "Just like the golem, slow and steady."
+    },
+    {
+      "name": "Joker Card",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Every 15th card you play is played twice.",
+      "flavorText": "Takes the form of any other card."
+    },
+    {
+      "name": "Lychee Nut",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon pick up, lose 25% of your max HP. At the start of combat gain 3 Regen.",
+      "flavorText": "It's kinda sweet."
+    },
+    {
+      "name": "Magic Flask",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At campfires, the rest option may now be taken for free. This consumes 1 use.\nStarts with 3 uses. Kill bosses to gain 2 more uses.",
+      "flavorText": "The flames feel warmer..."
+    },
+    {
+      "name": "Abe's Evil Pickle",
+      "tier": "Special",
+      "pool": "",
+      "description": "After combat, gain 6.5% interest on your gold.",
+      "flavorText": "Nothing is more evil than gold!"
+    },
+    {
+      "name": "Black Egg",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click to toggle.\nWhen activated the next floor's boss will be The Lord of Annihilation.",
+      "flavorText": "Something terrifying... contained..."
+    },
+    {
+      "name": "Blank's Blanky",
+      "tier": "Special",
+      "pool": "",
+      "description": "When resting at Rest Sites, heal to full.",
+      "flavorText": "It's more like a comforter."
+    },
+    {
+      "name": "Cubic Diamond",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pick up, replace your starter relic with a random starter relic.",
+      "flavorText": "Feels weird."
+    },
+    {
+      "name": "Mutagenic Dexterity",
+      "tier": "Special",
+      "pool": "",
+      "description": "Start each combat with 3 Dexterity that is lost at the end of your turn.",
+      "flavorText": "The subject is able to endure more damage, only for a short while."
+    },
+    {
+      "name": "Burning Sword",
+      "tier": "Boss",
+      "pool": "Red",
+      "description": "At the start of each turn, gain Critical. The first Attack you play adds a Burn to your hand.",
+      "flavorText": "Bursting with powerful energy."
+    },
+    {
+      "name": "Cupcake",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn. After 3 turns, become De-Energized.",
+      "flavorText": "It's mostly icing."
+    },
+    {
+      "name": "Chaos",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Upon pickup, replace every relic you hold with a random relic.",
+      "flavorText": "CHAOS!!!"
+    }
+  ],
+  "potions": [
+    {
+      "name": "Black Potion",
+      "rarity": "Rare",
+      "description": "Choose 1 of 3 random Black cards to add to your hand, it costs 0 this turn."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Lord of Fortification",
+      "type": "Boss",
+      "minHP": "10000",
+      "maxHP": "10000"
+    },
+    {
+      "name": "Mass Of Shapes",
+      "type": "Boss",
+      "minHP": "550",
+      "maxHP": "550"
+    },
+    {
+      "name": "Nightmare",
+      "type": "Elite",
+      "minHP": "200",
+      "maxHP": "200"
+    },
+    {
+      "name": "The Lord of Annihilation",
+      "type": "Boss",
+      "minHP": "2000",
+      "maxHP": "2000"
+    },
+    {
+      "name": "Voidling",
+      "type": "Normal",
+      "minHP": "57",
+      "maxHP": "57"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Critical",
+      "description": "The next attack you play will deal 2x damage."
+    },
+    {
+      "name": "De-energized",
+      "description": "At the start of each turn, lose 1 energy."
+    },
+    {
+      "name": "Golem's might",
+      "description": "Each turn your attacks deal 5% more damage than the last turn."
+    },
+    {
+      "name": "Mitigation",
+      "description": "Reduces all damage by a percentage."
+    },
+    {
+      "name": "Shredded",
+      "description": "For each card played for the rest of combat, the enemy takes 10% more damage from Attacks."
+    }
+  ]
+}

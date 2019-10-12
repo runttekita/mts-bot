@@ -1,0 +1,1346 @@
+{
+  "mod": {
+    "name": "The Servant 0.9.3",
+    "version": "0.9.3",
+    "authors": ["BlackRuse, Kuzomari, Dimlight"],
+    "credits": "",
+    "description": "Adds The Servant as a new playable character. She has a full set of 75 cards, 8 new mechanics and 11 exclusive relics.",
+    "mts_version": "3.6.0",
+    "sts_version": "11-17-2018",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Silver",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Silver",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Exchange",
+      "color": "Silver",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 2 cards.\nObtain 2 Knives."
+    },
+    {
+      "name": "Exchange+",
+      "color": "Silver",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 2 cards.\nObtain 2 Knives.\nRetain."
+    },
+    {
+      "name": "Kidney Shot",
+      "color": "Silver",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Throw 2 Knives.\nEach deals 4 damage and apply 1 Weak."
+    },
+    {
+      "name": "Kidney Shot+",
+      "color": "Silver",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Throw 3 Knives.\nEach deals 4 damage and apply 1 Weak."
+    },
+    {
+      "name": "Strike",
+      "color": "Silver",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Silver",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Alleviate",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard up to 3 cards.\nGain 5 Block for each card you discard."
+    },
+    {
+      "name": "Alleviate+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard up to 3 cards.\nGain 7 Block for each card you discard."
+    },
+    {
+      "name": "Bottled Time",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Bottled Time+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nDraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Defy",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nYou are not affected by Weak, Vulnerable and Frail for 1 turn."
+    },
+    {
+      "name": "Defy+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nYou are not affected by Weak, Vulnerable and Frail for 1 turn.\nRetain."
+    },
+    {
+      "name": "Double Edge",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nApply 2 Vulnerable.\nBacklash."
+    },
+    {
+      "name": "Double Edge+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 21 damage.\nApply 3 Vulnerable.\nBacklash."
+    },
+    {
+      "name": "Fast Forward",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nIf there is no Attack in your hand, draw 2 cards."
+    },
+    {
+      "name": "Fast Forward+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nIf there is no Attack in your hand, draw 2 cards."
+    },
+    {
+      "name": "Potential",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nShift: Deals 5 additional damage this combat and put this in your hand."
+    },
+    {
+      "name": "Potential+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\nShift: Deals 7 additional damage this combat and put this in your hand."
+    },
+    {
+      "name": "Rearm",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nObtain 5 Knives."
+    },
+    {
+      "name": "Rearm+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nObtain 5 Knives."
+    },
+    {
+      "name": "Replace",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard a card from your draw pile.\nPlace a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Replace+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard a card from your draw pile.\nPlace a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Revamp",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return 1 card from your discard pile to your hand and\nupgrade it.\nExhaust."
+    },
+    {
+      "name": "Revamp+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return 1 card from your discard pile to your hand and\nupgrade it."
+    },
+    {
+      "name": "Rewind",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nPut the card at the bottom of your discard pile in your hand."
+    },
+    {
+      "name": "Rewind+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nPut the card at the bottom of your discard pile in your hand."
+    },
+    {
+      "name": "Ricochet",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Throw 1 Knife.\nEach deals 9 damage and bounces between enemies 2 times."
+    },
+    {
+      "name": "Ricochet+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Throw 1 Knife.\nEach deals 9 damage and bounces between enemies 3 times."
+    },
+    {
+      "name": "Shattered Reality",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nShift: Deal DOUBLE damage to ALL enemies."
+    },
+    {
+      "name": "Shattered Reality+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nShift: Deal DOUBLE damage to ALL enemies."
+    },
+    {
+      "name": "Spin",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage and apply 1 Weak to ALL enemies.\nBacklash."
+    },
+    {
+      "name": "Spin+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage and apply 2 Weak to ALL enemies.\nBacklash."
+    },
+    {
+      "name": "Starlight",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Throw 2 Knives.\nEach deals 5 damage to a random enemy and draw 1 card."
+    },
+    {
+      "name": "Starlight+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Throw 3 Knives.\nEach deals 5 damage to a random enemy and draw 1 card."
+    },
+    {
+      "name": "Time Warp",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nDiscard 1 card(s).\nShift: Draw 1 card."
+    },
+    {
+      "name": "Time Warp+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nDiscard 2 card(s).\nShift: Draw 1 card."
+    },
+    {
+      "name": "Unruled",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nFor each stack of Weak, Vulnerable and Frail on you, deal 2 additional damage."
+    },
+    {
+      "name": "Unruled+",
+      "color": "Silver",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nFor each stack of Weak, Vulnerable and Frail on you, deal 3 additional damage."
+    },
+    {
+      "name": "Advance",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 2 Cost 0 cards from your draw pile into your hand."
+    },
+    {
+      "name": "Advance+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nPut 2 Cost 0 cards from your draw pile into your hand."
+    },
+    {
+      "name": "Barrier",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 Block.\nGain 7 Protection."
+    },
+    {
+      "name": "Barrier+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain 10 Protection."
+    },
+    {
+      "name": "Best Practice",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, you may upgrade 1 card in your hand for the rest of combat."
+    },
+    {
+      "name": "Best Practice+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, you may upgrade 1 card in your hand for the rest of combat."
+    },
+    {
+      "name": "Collapse",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to your current Protection to ALL enemies."
+    },
+    {
+      "name": "Collapse+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your current Protection to ALL enemies."
+    },
+    {
+      "name": "Comet",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nDraw 2 cards.\nDraw 1 less card for each card you have played this turn."
+    },
+    {
+      "name": "Comet+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nDraw 3 cards.\nDraw 1 less card for each card you have played this turn."
+    },
+    {
+      "name": "Contraction",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Protection.\nConvert all Block to Protection."
+    },
+    {
+      "name": "Contraction+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Protection.\nConvert all Block to Protection."
+    },
+    {
+      "name": "Dancing Silver",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Convert 4 Knives to Satellites.\nGain 2 Block for each Satellite you have."
+    },
+    {
+      "name": "Dancing Silver+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Convert 6 Knives to Satellites.\nGain 2 Block for each Satellite you have."
+    },
+    {
+      "name": "Deadline",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Vision: Apply 2 Blight and Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Deadline+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Vision: Apply 3 Blight and Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Desolation",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDouble the enemy's Blight.\nExhaust."
+    },
+    {
+      "name": "Desolation+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nDouble the enemy's Blight.\nExhaust."
+    },
+    {
+      "name": "Dual Dimension",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Double your Protection.\nExhaust.\nShift: Gain 6 Protection."
+    },
+    {
+      "name": "Dual Dimension+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Protection.\nExhaust.\nShift: Gain 6 Protection."
+    },
+    {
+      "name": "Fan of Knives",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Throw 1 Knife at each enemy X times.\nEach deals 7 damage."
+    },
+    {
+      "name": "Fan of Knives+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Throw 1 Knife at each enemy X times.\nEach deals 10 damage."
+    },
+    {
+      "name": "Foresight",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, look at the\ntop 2 cards of\nyour draw pile.\nYou may discard\nany of them."
+    },
+    {
+      "name": "Foresight+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, look at the\ntop 3 cards of\nyour draw pile.\nYou may discard\nany of them."
+    },
+    {
+      "name": "Gear Up",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Protection.\nObtain 3 Knives."
+    },
+    {
+      "name": "Gear Up+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Protection.\nObtain 3 Knives."
+    },
+    {
+      "name": "Gouge",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 6 damage and apply 1 Blight X times.\nExhaust."
+    },
+    {
+      "name": "Gouge+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 6 damage and apply 1 Blight X+1 times.\nExhaust."
+    },
+    {
+      "name": "Hightail",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 8 Protection\nX time(s).\nBacklash."
+    },
+    {
+      "name": "Hightail+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 11 Protection\nX time(s).\nBacklash."
+    },
+    {
+      "name": "Instant Armor",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nGain 6 Protection.\nConvert 3 Knives to Satellites.\nExhaust."
+    },
+    {
+      "name": "Instant Armor+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nGain 9 Protection.\nConvert 3 Knives to Satellites.\nExhaust."
+    },
+    {
+      "name": "Luminosity",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nGain 1 Elegance."
+    },
+    {
+      "name": "Luminosity+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nGain 2 Elegance."
+    },
+    {
+      "name": "Manipulate",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Adds X+1 random Temporal cards to your draw pile."
+    },
+    {
+      "name": "Manipulate+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Adds X+2 random Temporal cards to your draw pile."
+    },
+    {
+      "name": "Misdirect",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nApply 1 Blight and Weak."
+    },
+    {
+      "name": "Misdirect+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nApply 1 Blight and Weak."
+    },
+    {
+      "name": "Moon Phase",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the end of your turn, gain 1 Block for each stack of Weak, Vulnerable and Frail on you."
+    },
+    {
+      "name": "Moon Phase+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the end of your turn, gain 2 Block for each stack of Weak, Vulnerable and Frail on you."
+    },
+    {
+      "name": "Moondial",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 2 random Temporal cards to your hand and your draw pile. "
+    },
+    {
+      "name": "Moondial+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 3 random Temporal cards to your hand and your draw pile. "
+    },
+    {
+      "name": "Moonlight",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Throw 2 Knives.\nEach deals 5 damage and apply 1 Vulnerable."
+    },
+    {
+      "name": "Moonlight+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Throw 3 Knives.\nEach deals 5 damage and apply 1 Vulnerable."
+    },
+    {
+      "name": "Orbit",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Convert 3 Knives to Satellites.\nDeal 3 damage to ALL enemies for each Satellite you have."
+    },
+    {
+      "name": "Orbit+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Convert 4 Knives to Satellites.\nDeal 3 damage to ALL enemies for each Satellite you have."
+    },
+    {
+      "name": "Read",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Vision: Gain 15 Protection and apply 2 Weak."
+    },
+    {
+      "name": "Read+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Vision: Gain 20 Protection and apply 3 Weak."
+    },
+    {
+      "name": "Reality Marble",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the end of your turn, Retain up to 1 card.\nThe cards you retain lose Ethereal for this combat."
+    },
+    {
+      "name": "Reality Marble+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the end of your turn, Retain up to 2 card.\nThe cards you retain lose Ethereal for this combat."
+    },
+    {
+      "name": "Reset",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Clear ALL Weak, Vulnerable and Frail.\nEach stack gives you 1 Protection.\nExhaust."
+    },
+    {
+      "name": "Reset+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Clear ALL Weak, Vulnerable and Frail.\nEach stack gives you 2 Protection.\nExhaust."
+    },
+    {
+      "name": "Returning Blade",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Vision: Deal 6 damage to ALL enemies, put this card in your hand.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Returning Blade+1",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Vision: Deal 8 damage to ALL enemies, put this card in your hand.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Sabotage",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nEnemy loses Strength equals to the damage for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Sabotage+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nEnemy loses Strength equals to the damage for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Shifting Gears",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nShift: Gain 1 Elegance."
+    },
+    {
+      "name": "Shifting Gears+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 4 cards.\nShift: Gain 1 Elegance."
+    },
+    {
+      "name": "Shuttle",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Activate card and relic effects that will activate at the start of your next turn.\nExhaust."
+    },
+    {
+      "name": "Shuttle+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Activate card and relic effects that will activate at the start of your next turn.\nExhaust."
+    },
+    {
+      "name": "Silver Blades",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Knives deal 2 additional damage.\nAt the start\nof your turn,\nobtain 2 Knives."
+    },
+    {
+      "name": "Silver Blades+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Knives deal 3 additional damage.\nAt the start\nof your turn,\nobtain 3 Knives."
+    },
+    {
+      "name": "Snipe",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Vision: Throw 1 Knife.\nEach deals 15 damage and apply 1 Vulnerable."
+    },
+    {
+      "name": "Snipe+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Vision: Throw 1 Knife.\nEach deals 20 damage and apply 1 Vulnerable."
+    },
+    {
+      "name": "Special Formula",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [B] .\nHeal 5 HP.\nBacklash.\nExhaust."
+    },
+    {
+      "name": "Special Formula+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [B] .\nHeal 8 HP.\nBacklash.\nExhaust."
+    },
+    {
+      "name": "Star Chef",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, you may exhaust 1 card and gain [B] .\nEthereal."
+    },
+    {
+      "name": "Star Chef+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, you may exhaust 1 card and gain [B] ."
+    },
+    {
+      "name": "Surpressing Fire",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you throw or convert a Knife, gain 2 Block."
+    },
+    {
+      "name": "Surpressing Fire+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you throw or convert a Knife, gain 3 Block."
+    },
+    {
+      "name": "Time Theft",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Vision: Gain [B] [B] .\nDraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Time Theft+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Vision: Gain [B] [B] [B] .\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Waste Not",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, spend all [B] .\nDraw 1 more card next turn for each [B] you spend."
+    },
+    {
+      "name": "Waste Not+",
+      "color": "Silver",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the end of your turn, spend all [B] .\nDraw 1 more card next turn for each [B] you spend."
+    },
+    {
+      "name": "Deny",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Look at your\ndraw pile.\nYou may discard\nup to 3 cards.\nExhaust."
+    },
+    {
+      "name": "Deny+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Look at your\ndraw pile.\nYou may discard\nup to 3 cards."
+    },
+    {
+      "name": "Dilation",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Protection.\nThis card's Protection is increased by 1 this combat."
+    },
+    {
+      "name": "Dilation+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Protection.\nThis card's Protection is increased by 1 this combat."
+    },
+    {
+      "name": "Duplication",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Duplicate 1 card(s).\nThe duplicates\ncost 0 this turn.\nBacklash.\nExhaust."
+    },
+    {
+      "name": "Duplication+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Duplicate 2 card(s).\nThe duplicates\ncost 0 this turn.\nBacklash.\nExhaust."
+    },
+    {
+      "name": "Enbodiment",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end your turn, add a random Temporal card to your draw pile."
+    },
+    {
+      "name": "Enbodiment+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end your turn, add a random Upgraded Temporal card to your draw pile."
+    },
+    {
+      "name": "Flawless Form",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 12 Protection.\nYou are not affected by Weak, Vulnerable and Frail."
+    },
+    {
+      "name": "Flawless Form+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 16 Protection.\nYou are not affected by Weak, Vulnerable and Frail.\nRetain."
+    },
+    {
+      "name": "Flowering Night",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a card, draw a card.\nYou may only draw 6 cards each turn by this power."
+    },
+    {
+      "name": "Flowering Night+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card, draw a card.\nYou may only draw 6 cards each turn by this power."
+    },
+    {
+      "name": "Forge in Time",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust your hand.\nGain 5 Protection and 2 Knives for each exhausted card.\nExhaust."
+    },
+    {
+      "name": "Forge in Time+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust your hand.\nGain 7 Protection and 2 Knives for each exhausted card.\nExhaust."
+    },
+    {
+      "name": "Initiator",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nAdd Follow Up\nto your hand."
+    },
+    {
+      "name": "Initiator+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nAdd Follow Up+\nto your hand."
+    },
+    {
+      "name": "Killing Doll",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Throw ALL Knives.\nEach deals 2 damage to a random enemy.\nExhaust. "
+    },
+    {
+      "name": "Killing Doll+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Throw ALL Knives.\nEach deals 3 damage to a random enemy.\nExhaust. "
+    },
+    {
+      "name": "Light Flow",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage\n3 times.\nBacklash."
+    },
+    {
+      "name": "Light Flow+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage\n3 times.\nBacklash."
+    },
+    {
+      "name": "Murderous Aura",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 1 Blight to ALL enemies."
+    },
+    {
+      "name": "Murderous Aura+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, apply 1 Blight to ALL enemies."
+    },
+    {
+      "name": "Pendulum of Eternity",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Deal 33 damage.\nApply 3 Vulnerable.\nApply 3 Weak.\nShift: Costs 1 less [B] ."
+    },
+    {
+      "name": "Pendulum of Eternity+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 33 damage.\nApply 3 Vulnerable.\nApply 3 Weak.\nShift: Costs 1 less [B] ."
+    },
+    {
+      "name": "Silver Matrix",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Convert 2 Knives to Satellites.\nGain 1 Matrix for each Satellite you have."
+    },
+    {
+      "name": "Silver Matrix+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Convert 3 Knives to Satellites.\nGain 1 Matrix for each Satellite you have."
+    },
+    {
+      "name": "Solidify",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 Temporal card and place it on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Solidify+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 Temporal card twice and place it on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Soul Sculpture",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage\nsix times.\nEnemy loses\n3 Strength.\nExhaust."
+    },
+    {
+      "name": "Soul Sculpture+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage\nsix times.\nEnemy loses\n4 Strength.\nExhaust."
+    },
+    {
+      "name": "Sunlight",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Throw 1 Knife.\nEach deals 16 damage\nand apply 1 Blight\nto ALL enemies."
+    },
+    {
+      "name": "Sunlight+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Throw 1 Knife.\nEach deals 21 damage\nand apply 2 Blight\nto ALL enemies."
+    },
+    {
+      "name": "The World",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nThe next card you play this turn costs 0. Exhaust."
+    },
+    {
+      "name": "The World+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nThe next card you play this turn costs 0. Exhaust."
+    },
+    {
+      "name": "True Sight",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Vision effects will always be triggered."
+    },
+    {
+      "name": "True Sight+",
+      "color": "Silver",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Vision effects will always be triggered.\nRetain."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Uniform",
+      "tier": "Starter",
+      "pool": "Silver",
+      "description": "At the start of each combat, obtain 6 Knives.",
+      "flavorText": "It helps in keeping dirty stuff away as well as in carrying weapons."
+    },
+    {
+      "name": "Broom",
+      "tier": "Common",
+      "pool": "Silver",
+      "description": "Every 10 cards you manually discard, gain [B] .",
+      "flavorText": "A must-have for every maid."
+    },
+    {
+      "name": "Knee Brace",
+      "tier": "Uncommon",
+      "pool": "Silver",
+      "description": "Gain 3 Block for each Shift effect you trigger.",
+      "flavorText": "Quite useful for avoiding bursitis."
+    },
+    {
+      "name": "Paper Swan",
+      "tier": "Uncommon",
+      "pool": "Silver",
+      "description": "Whenever you apply Blight, you have 50% chance to apply an additional 1 Blight.",
+      "flavorText": "Perfect and Elegant."
+    },
+    {
+      "name": "Old Scarf",
+      "tier": "Rare",
+      "pool": "Silver",
+      "description": "At the start of each combat, upgrade all Vision cards in your deck for the rest of combat.",
+      "flavorText": "It is said that this is a family heirloom."
+    },
+    {
+      "name": "Pocket Watch",
+      "tier": "Rare",
+      "pool": "Silver",
+      "description": "Whenever you Exhaust a card, draw a card.",
+      "flavorText": "Sixty years, an instant."
+    },
+    {
+      "name": "Roman Bracelet",
+      "tier": "Rare",
+      "pool": "Silver",
+      "description": "At the start of each combat, put 2 Temporal Essence in your draw pile.",
+      "flavorText": "Only few people may release its true potential."
+    },
+    {
+      "name": "Mystery Sword",
+      "tier": "Boss",
+      "pool": "Silver",
+      "description": "Gain [B] at the start of each turn. The first Skill you play each turn has Backlash.",
+      "flavorText": "Found in the depth. Users must sacrifice themselves to wield this sword."
+    },
+    {
+      "name": "Splendid Attire",
+      "tier": "Boss",
+      "pool": "Silver",
+      "description": "Replaces Uniform. At the start of each combat, obtain 12 Knives, gain 1 Elegance and 3 Satellites.",
+      "flavorText": "Danger hides in beauty."
+    },
+    {
+      "name": "Stone Mask",
+      "tier": "Boss",
+      "pool": "Silver",
+      "description": "Each time you kill a non-minion enemy, heal for 2 HP and gain 1 permanent Max HP.",
+      "flavorText": "You feel a sudden impulse to reject your humanity."
+    },
+    {
+      "name": "Pan",
+      "tier": "Shop",
+      "pool": "Silver",
+      "description": "At the start of each combat, apply 2 Blight to ALL enemies.",
+      "flavorText": "Why are they selling this?"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Servant",
+      "type": "Player",
+      "minHP": "65",
+      "maxHP": "65"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Backlash",
+      "description": "Apply 1 Weak, Vulnerable AND Frail to you."
+    },
+    {
+      "name": "Blight",
+      "description": "Blighted enemies will take extra damage when attacked."
+    },
+    {
+      "name": "Elegance",
+      "description": "Elegance improves Block and Protection gained from cards."
+    },
+    {
+      "name": "Knives",
+      "description": "Knives are the Servant's most dedicated weapons. Can be thrown or converted."
+    },
+    {
+      "name": "Matrix",
+      "description": "Reduce Attack damage taken by 50%. Lose 1 Martix whenever you are attacked."
+    },
+    {
+      "name": "Protection",
+      "description": "Whenever you lose HP, lose Protection instead. Protection will not be removed at the start of your next turn."
+    },
+    {
+      "name": "Satellite",
+      "description": "Whenever you use an Attack, lose 1 Satellite and attack an extra time for 4 damage. Whenever you are attacked, lose 1 Satellite and deal 4 damage to the attacker. Satellites count as Knives."
+    },
+    {
+      "name": "Shift",
+      "description": "Shift effects can only be triggered by manually discarding the card."
+    },
+    {
+      "name": "Temporal",
+      "description": "Temporal cards cost 0 and have Ethereal and Exhaust."
+    },
+    {
+      "name": "Vision",
+      "description": "Predict the enemy intent for the next turn. If correct, trigger the effect(s) at the start of your next turn."
+    }
+  ]
+}

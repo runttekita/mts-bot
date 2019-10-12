@@ -1,0 +1,1621 @@
+{
+  "mod": {
+    "name": "The Bug Knight",
+    "version": "1.7.1",
+    "authors": ["Venim"],
+    "credits": "Thanks in part due to the efforts of Gremious, the Great people at the STS Modding Discord, and of course: Team Cherry, Simplified Chinese Translations provided by AmethystProductions.",
+    "description": "A mod that attempts to add the Knight from Hollow Knight as a Playable Character, NL All rights for Hollow Knight belong to Team Cherry. NL Please Support them by playing Hollow Knight: https://hollowknight.com/. NL Hollow Knight: Silksong is coming out soon! ",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Nail Strike",
+      "color": "Bugknight_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage."
+    },
+    {
+      "name": "Nail Strike+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Pogo Strike",
+      "color": "Bugknight_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nDiscard 1 card. Draw 1 card."
+    },
+    {
+      "name": "Pogo Strike+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\nDiscard 1 card. Draw 1 card."
+    },
+    {
+      "name": "Quick Dash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Quick Dash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Simple Focus",
+      "color": "Bugknight_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost!:  Heal 6 HP.\nHeals for 2 less each time it's used this combat.\nExhaust on the final use."
+    },
+    {
+      "name": "Simple Focus+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 6 HP.\nHeals for 2 less each time it's used this combat.\nExhaust on the final use."
+    },
+    {
+      "name": "Dark Nestling",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "[#696969]Void[] 1: Deal 0 damage. For every 3 [#696969]Void[] increase the damage dealt by 1.\nExhaust."
+    },
+    {
+      "name": "Dark Nestling+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "[#696969]Void[] 1: Deal 1 damage. For every 3 [#696969]Void[] increase the damage dealt by 1.\nExhaust."
+    },
+    {
+      "name": "Infectling",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Apply 1 Poison.\nExhaust."
+    },
+    {
+      "name": "Infectling+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Apply 1 Poison.\nExhaust."
+    },
+    {
+      "name": "Myla's Salvation",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return a card from your Exhaust pile to your Hand. Exhaust."
+    },
+    {
+      "name": "Myla's Salvation+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Return a card from your Exhaust pile to your Hand. Exhaust."
+    },
+    {
+      "name": "Nestling",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nExhaust."
+    },
+    {
+      "name": "Nestling+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nExhaust."
+    },
+    {
+      "name": "Spirit Nestling",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] 1: Deal 2 damage. Heal 1 HP.\nExhaust."
+    },
+    {
+      "name": "Spirit Nestling+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] 1: Deal 3 damage. Heal 1 HP.\nExhaust."
+    },
+    {
+      "name": "The Last Stag",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Take a card from your draw pile into hand."
+    },
+    {
+      "name": "The Last Stag+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Take a card from your draw pile into hand.\nTake a card from your discard pile into hand."
+    },
+    {
+      "name": "Zoteling",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage. Draw 1 card.\nExhaust."
+    },
+    {
+      "name": "Zoteling+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage. Draw 1 card.\nExhaust."
+    },
+    {
+      "name": "Channel Nail",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] 3: Next turn, gain [E] and Draw 1 Extra Card. Exhaust."
+    },
+    {
+      "name": "Channel Nail+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] 3: Next turn, gain [E] and Draw 1 Extra Card."
+    },
+    {
+      "name": "Cloak Dash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nDraw 1 card. Exhaust."
+    },
+    {
+      "name": "Cloak Dash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "NL Gain 5 Block.\nDraw 2 cards. Exhaust."
+    },
+    {
+      "name": "Cornifer's Map",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost! : Draw 3 cards."
+    },
+    {
+      "name": "Cornifer's Map+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost! : Draw 3 cards."
+    },
+    {
+      "name": "Cyclone Slash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nIncrease this card's damage by 1 for the rest of the combat."
+    },
+    {
+      "name": "Cyclone Slash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nIncrease this card's damage by 2 for the rest of the combat."
+    },
+    {
+      "name": "Dash Slash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 4 Block.\nDeal 6 damage. "
+    },
+    {
+      "name": "Dash Slash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 6 Block.\nDeal 9 damage. "
+    },
+    {
+      "name": "Descending Dark",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#696969]Void[] 2: Deal 11 damage to ALL enemies. Exhaust."
+    },
+    {
+      "name": "Descending Dark+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#696969]Void[] 2: Deal 16 damage to ALL enemies. Exhaust."
+    },
+    {
+      "name": "Double Dash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nGain 3 Block next turn."
+    },
+    {
+      "name": "Double Dash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 5 Block next turn."
+    },
+    {
+      "name": "Good Intentions",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain 2 hollowmod:Soul."
+    },
+    {
+      "name": "Good Intentions+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain 3 hollowmod:Soul.\nGain 1 Plated Armor"
+    },
+    {
+      "name": "Heavy Blow",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage and apply 2 Weak."
+    },
+    {
+      "name": "Heavy Blow+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage and apply 3 Weak."
+    },
+    {
+      "name": "Howling Wraiths",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost!: Deal 18 damage to ALL enemies."
+    },
+    {
+      "name": "Howling Wraiths+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost!: Deal 24 damage to ALL enemies."
+    },
+    {
+      "name": "Infected Attack",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage. Apply 4 Poison.\n[#FFA200]Infection[] !HollowMod:SecondMagic! ."
+    },
+    {
+      "name": "Infected Attack+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage. Apply 6 Poison.\n[#FFA200]Infection[] !HollowMod:SecondMagic! ."
+    },
+    {
+      "name": "Infected Cysts",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage and apply 3 Poison to ALL enemies.\n[#FFA200]Infection[] !HollowMod:SecondMagic! . Exhaust."
+    },
+    {
+      "name": "Infected Cysts+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage and apply 6 Poison to ALL enemies.\n[#FFA200]Infection[] !HollowMod:SecondMagic! . Exhaust."
+    },
+    {
+      "name": "Jinn's Soul",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose all hollowmod:Soul , [#696969]Void[] and [#FFA200]Infection[] . Gain 2 Temporary_HP for each point lost.\nExhaust."
+    },
+    {
+      "name": "Jinn's Soul+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose all hollowmod:Soul , [#696969]Void[] and [#FFA200]Infection[] . Gain 2 Temporary_HP for each point lost."
+    },
+    {
+      "name": "Lifeblood Cocoon",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Temporary_HP each time you play an attack this turn."
+    },
+    {
+      "name": "Lifeblood Cocoon+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Temporary_HP each time you play an attack this turn."
+    },
+    {
+      "name": "Recoil Strike",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nReturn a [#60CFFF]Dash card from your discard pile to hand."
+    },
+    {
+      "name": "Recoil Strike+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nReturn a [#60CFFF]Dash card from your discard pile to hand. It costs 1 Less [E] this turn."
+    },
+    {
+      "name": "Shadow Dash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#696969]Void[] 1: Gain Block equal to your [#696969]Void[] Level. Exhaust"
+    },
+    {
+      "name": "Shadow Dash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#696969]Void[] 1: Gain Block equal to your [#696969]Void[] Level."
+    },
+    {
+      "name": "Sharpened Nail",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the enemy is Weak, Deal the same damage to ALL other enemies. "
+    },
+    {
+      "name": "Sharpened Nail+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf the enemy is Weak, Deal the same damage to ALL other enemies. "
+    },
+    {
+      "name": "Sibling's Souls",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Copy of the next played attack or skill to your hand. Exhaust."
+    },
+    {
+      "name": "Sibling's Souls+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a Copy of the next played attack or skill to your hand. Exhaust."
+    },
+    {
+      "name": "Soul Splash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost! : Apply 1 Vulnerable to ALL enemies. Draw a card."
+    },
+    {
+      "name": "Soul Splash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost! : Apply 2 Vulnerable to ALL enemies. Draw a card."
+    },
+    {
+      "name": "Soul Strike",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 1 Additional hollowmod:Soul."
+    },
+    {
+      "name": "Soul Strike+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nGain 2 Additional hollowmod:Soul."
+    },
+    {
+      "name": "Tainted Husks",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Poison to a random enemy 2 times.\n[#FFA200]Infection[] 3."
+    },
+    {
+      "name": "Tainted Husks+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Poison to a random enemy 4 times.\n[#FFA200]Infection[] 3."
+    },
+    {
+      "name": "The Little Fool",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Exhaust a card. If you do, deal 2 damage."
+    },
+    {
+      "name": "The Little Fool+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Exhaust a card. If you do, deal 5 damage."
+    },
+    {
+      "name": "Vengeful Void",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#696969]Void[] 2: Deal 4 damage 2 times. Exhaust."
+    },
+    {
+      "name": "Vengeful Void+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#696969]Void[] 2: Deal 4 damage 3 times. Exhaust."
+    },
+    {
+      "name": "Wraith Strike",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "[#696969]Void[] 2: Deal 8 damage and Apply 1 Weak. [#696969]Void[] Bonus affects this card's damage 2 times."
+    },
+    {
+      "name": "Wraith Strike+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "[#696969]Void[] 2: Deal 10 damage and Apply 2 Weak. [#696969]Void[] Bonus affects this card's damage 2 times."
+    },
+    {
+      "name": "Abyss Shriek",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "[#696969]Void[] 2: Deal 15 damage to ALL enemies.\nYou cannot play any more Attacks this turn."
+    },
+    {
+      "name": "Abyss Shriek+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "[#696969]Void[] 2: Deal 20 damage to ALL enemies.\nYou cannot play any more Attacks this turn."
+    },
+    {
+      "name": "Baldur Shell",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you [#EFFAFF]Focus[], gain 5 Block."
+    },
+    {
+      "name": "Baldur Shell+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. Whenever you [#EFFAFF]Focus[], gain 5 Block."
+    },
+    {
+      "name": "Black Tendrils",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#696969]Void[] 3: Deal 6 damage to a random enemy.\nHeal for 33% the total damage dealt. (Including [#696969]Void[] bonus.) Exhaust."
+    },
+    {
+      "name": "Black Tendrils+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#696969]Void[] 3: Deal 6 damage to a random enemy.\nHeal for 50% the total damage dealt. (Including [#696969]Void[] bonus.) Exhaust."
+    },
+    {
+      "name": "Black Wings",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose all [#696969]Void[] .\nFor every 2 [#696969]Void[] lost, gain 1 Plated Armor. Exhaust."
+    },
+    {
+      "name": "Black Wings+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose all [#696969]Void[] .\nFor every 2 [#696969]Void[] lost, gain 1 Plated Armor. Exhaust."
+    },
+    {
+      "name": "Broken Vessel",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you take damage from [#FFA200]Infection[], deal that damage to ALL enemies.\nThis Effect can Stack."
+    },
+    {
+      "name": "Broken Vessel+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you take damage from [#FFA200]Infection[], deal that damage to ALL enemies.\nThis Effect can Stack."
+    },
+    {
+      "name": "Coiled Nail",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nIf the target is Vulnerable, repeat this effect."
+    },
+    {
+      "name": "Coiled Nail+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nIf the target is Vulnerable, repeat this effect."
+    },
+    {
+      "name": "Crystal Dash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your hand and gain 4 Block for each card discarded."
+    },
+    {
+      "name": "Crystal Dash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your hand and gain 5 Block for each card discarded."
+    },
+    {
+      "name": "Defender's Aura",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block. Whenever an enemy attacks you this turn, apply 2 Poison to them."
+    },
+    {
+      "name": "Defender's Aura+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block. Whenever an enemy attacks you this turn, apply 2 Poison to them."
+    },
+    {
+      "name": "Desolate Dive",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost! : Deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Desolate Dive+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost! : Deal 15 damage to ALL enemies."
+    },
+    {
+      "name": "Dream Gate",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card, return the top card of your discard pile to your hand. Exhaust"
+    },
+    {
+      "name": "Dream Gate+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card, return the top 2 cards of your discard pile to your hand. Exhaust"
+    },
+    {
+      "name": "Fast Strike",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard 1 card. Deal 3 damage and apply 1 Vulnerable to 2 random enemies."
+    },
+    {
+      "name": "Fast Strike+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard 1 card. Deal 4 damage and apply 1 Vulnerable to 3 random enemies."
+    },
+    {
+      "name": "Fury of the Fallen",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you are below 25% HP, Deal 3 times that amount instead."
+    },
+    {
+      "name": "Fury of the Fallen+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf you are below 25% HP, Deal 3 times that amount instead."
+    },
+    {
+      "name": "Glowing Womb",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, if you have [#FFA200]Infection[], gain Block equal to 3 plus any Dexterity and lose 1 [#FFA200]Infection[].\n[#FFA200]Infection[] !HollowMod:SecondMagic!."
+    },
+    {
+      "name": "Glowing Womb+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, if you have [#FFA200]Infection[], gain Block equal to 3 plus any Dexterity and lose 1 [#FFA200]Infection[].\n[#FFA200]Infection[] !HollowMod:SecondMagic!."
+    },
+    {
+      "name": "Great Slash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage to ALL enemies 2 times."
+    },
+    {
+      "name": "Great Slash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage to ALL enemies 3 times."
+    },
+    {
+      "name": "Grimm's Gift",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Each time you damage an enemy this turn, apply 1 Vulnerable to them. "
+    },
+    {
+      "name": "Grimm's Gift+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Each time you damage an enemy this turn, apply 1 Vulnerable to them. "
+    },
+    {
+      "name": "Grubsong",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time you take damage each turn, Gain 1 hollowmod:Soul."
+    },
+    {
+      "name": "Grubsong+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first 2 times you take damage each turn, Gain 1 hollowmod:Soul."
+    },
+    {
+      "name": "Hunter's Journal",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards. Exhaust"
+    },
+    {
+      "name": "Hunter's Journal+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards, Gain 1 [E].\nExhaust"
+    },
+    {
+      "name": "Infection Assault",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage, plus an additional 2 damage for every [#FFA200]Infection[]."
+    },
+    {
+      "name": "Infection Assault+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage, plus an additional 4 damage for every [#FFA200]Infection[]."
+    },
+    {
+      "name": "Mantis Mark",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength. Exhaust."
+    },
+    {
+      "name": "Mantis Mark+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Strength. Exhaust."
+    },
+    {
+      "name": "Mawlek's Shell",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Dexterity.\n[#FFA200]Infection[] !HollowMod:SecondMagic!."
+    },
+    {
+      "name": "Mawlek's Shell+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Dexterity.\n[#FFA200]Infection[] !HollowMod:SecondMagic!."
+    },
+    {
+      "name": "Monarch Wings",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For the next 3 turns, double the Block of any [#60CFFF]Dash cards played. Exhaust."
+    },
+    {
+      "name": "Monarch Wings+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For the next 4 turns, double the Block of any [#60CFFF]Dash cards played. Exhaust."
+    },
+    {
+      "name": "Monomon's Archive",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] 5: Gain 15 Block."
+    },
+    {
+      "name": "Monomon's Archive+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] 5: Gain 20 Block."
+    },
+    {
+      "name": "Moth's Mistake",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the Start of your turn, apply 2 Poison to ALL enemies, and gain 1 [#FFA200]Infection[]."
+    },
+    {
+      "name": "Moth's Mistake+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the Start of your turn, apply 4 Poison to ALL enemies, and gain 1 [#FFA200]Infection[]."
+    },
+    {
+      "name": "Perfect Dash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Intangible. Exhaust."
+    },
+    {
+      "name": "Perfect Dash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Intangible. Gain 5 Block. Exhaust."
+    },
+    {
+      "name": "Pure Nail Strike",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "[#EFFAFF]Focus[] X: Deal 9 damage. Deal an additional 3 damage for each hollowmod:Soul Spent."
+    },
+    {
+      "name": "Pure Nail Strike+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "[#EFFAFF]Focus[] X: Deal 9 damage. Deal an additional 5 damage for each hollowmod:Soul Spent."
+    },
+    {
+      "name": "Quirrel's Assistance",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to a random enemy.\n Apply 1 Weak to a random enemy."
+    },
+    {
+      "name": "Quirrel's Assistance+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to a random enemy.\n Apply 2 Weak to a random enemy."
+    },
+    {
+      "name": "Shape of Unn",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a [#60CFFF]Spell, Return 1 [#60CFFF]Dash in your Discard pile to your hand."
+    },
+    {
+      "name": "Shape of Unn+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play a [#60CFFF]Spell, Return 1 [#60CFFF]Dash in your Discard pile to your hand."
+    },
+    {
+      "name": "Sharpened Shadows",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "While you have [#696969]Void[], Playing a [#60CFFF]Dash Card will deal 4 damage to a random enemy."
+    },
+    {
+      "name": "Sharpened Shadows+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "While you have [#696969]Void[], Playing a [#60CFFF]Dash Card will deal 6 damage to a random enemy."
+    },
+    {
+      "name": "Sibling's Shadow",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#696969]Void[] 1: Return 1 [#696969]Void[] cards from your Exhaust pile to your hand. Exhaust."
+    },
+    {
+      "name": "Sibling's Shadow+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#696969]Void[] 1: Return 2 [#696969]Void[] cards from your Exhaust pile to your hand. Exhaust."
+    },
+    {
+      "name": "Soul Eater",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an attack card, generate 1 hollowmod:Soul . Doesn't work for [#60CFFF]Spell or [#60CFFF]Ally attacks."
+    },
+    {
+      "name": "Soul Eater+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an attack card, generate 1 hollowmod:Soul . Doesn't work for [#60CFFF]Spell or [#60CFFF]Ally attacks."
+    },
+    {
+      "name": "Soul Shaman",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] 5: Gain [E]."
+    },
+    {
+      "name": "Soul Shaman+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#EFFAFF]Focus[] 5: Gain [E] [E]."
+    },
+    {
+      "name": "Soul Vessel",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increase the maximum hollowmod:Soul the [#F4D03F]Soul hollowmod:Meter can hold by 2 this combat."
+    },
+    {
+      "name": "Soul Vessel+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increase the maximum hollowmod:Soul the [#F4D03F]Soul hollowmod:Meter can hold by 3 this combat."
+    },
+    {
+      "name": "Vengeful Spirit",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost!:  Deal 8 damage.\nThen deal half that amount again."
+    },
+    {
+      "name": "Vengeful Spirit+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#EFFAFF]Focus[] !HollowMod:focusCost!:  Deal 12 damage.\nThen deal half that amount again."
+    },
+    {
+      "name": "Awoken Dream Nail",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage. Increase the [#F4D03F]Soul hollowmod:Meter Limit by 1 for this combat, and fill your [#F4D03F]Soul hollowmod:Meter"
+    },
+    {
+      "name": "Awoken Dream Nail+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage. Increase the [#F4D03F]Soul hollowmod:Meter Limit by 2 for this combat, and fill your [#F4D03F]Soul hollowmod:Meter"
+    },
+    {
+      "name": "Elderbug's Wisdom",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an [#60CFFF]Ally card, draw 1 card."
+    },
+    {
+      "name": "Elderbug's Wisdom+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an [#60CFFF]Ally card, draw 1 card."
+    },
+    {
+      "name": "Herrah's Nest",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "At the start of your next turn, add 2 hollowmod:Nestlings to your hand, plus an additional [#F4D03F]Nestling for each [#60CFFF]Ally card played for the rest of this turn."
+    },
+    {
+      "name": "Herrah's Nest+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start of your next turn, add 2 hollowmod:Nestlings to your hand, plus an additional [#F4D03F]Nestling for each [#60CFFF]Ally card played for the rest of this turn."
+    },
+    {
+      "name": "Hiveblood",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 10 HP. Gain half that amount as Regen. Exhaust."
+    },
+    {
+      "name": "Hiveblood+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 14 HP. Gain half that amount as Regen. Exhaust."
+    },
+    {
+      "name": "Hornet's Help",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Gain X Block and deal X damage to a random enemy 4 times."
+    },
+    {
+      "name": "Hornet's Help+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Gain X Block and deal X damage to a random enemy 5 times."
+    },
+    {
+      "name": "Infected Guardian",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can only be played if you have at least 4 [#FFA200]Infection[],\nDouble ALL enemies Poison. Double your [#FFA200]Infection[].\nExhaust."
+    },
+    {
+      "name": "Infected Guardian+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played if you have at least 4 [#FFA200]Infection[],\nDouble ALL enemies Poison. Double your [#FFA200]Infection[].\nExhaust."
+    },
+    {
+      "name": "Lifeblood Core",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal\nLose all Block.\nGain 2 Temporary_HP for each Block lost. Exhaust"
+    },
+    {
+      "name": "Lifeblood Core+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Lose all Block.\nGain 2 Temporary_HP for each Block lost. Exhaust"
+    },
+    {
+      "name": "Lord of Shades",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal\n[#696969]Void[] 1: While [#696969]Void[] is active, gain 1 Thorn for every 2 Block gained. ALL Thorn is reduced by half at the end of each turn."
+    },
+    {
+      "name": "Lord of Shades+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Ethereal\n[#696969]Void[] 1: While [#696969]Void[] is active, gain 1 Thorn for every 2 Block gained. ALL Thorn is reduced by half at the end of each turn."
+    },
+    {
+      "name": "Lurien's Spire",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all [#FFA200]Infection[] and Gain that amount of hollowmod:Soul\nor, if you have [#696969]Void[], gain [#696969]Void[] instead.\nExhaust."
+    },
+    {
+      "name": "Lurien's Spire+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all [#FFA200]Infection[] and Gain that amount of hollowmod:Soul\nor, if you have [#696969]Void[], gain [#696969]Void[] instead."
+    },
+    {
+      "name": "Midwife's Hunger",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 1 damage 1 time for every permanent [#60CFFF]Ally in your deck."
+    },
+    {
+      "name": "Midwife's Hunger+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage 1 time for every permanent [#60CFFF]Ally in your deck."
+    },
+    {
+      "name": "Pale King's Blessing",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 4 HP. Heal !HollowMod:SecondMagic! Additional HP for each [#FFA200]Infection[].\nExhaust."
+    },
+    {
+      "name": "Pale King's Blessing+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 4 HP. Heal !HollowMod:SecondMagic! Additional HP for each [#FFA200]Infection[].\nExhaust."
+    },
+    {
+      "name": "Pure Vessel",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, pay 1 hollowmod:Soul to Gain 1 Strength.\nThese values increase by 1 each turn. If you cannot pay: lose this power and any gained Strength."
+    },
+    {
+      "name": "Pure Vessel+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Retain\nAt the start of your turn Turn, pay 1 hollowmod:Soul to Gain 1 Strength.\nThese values increase by 1 each turn. If you cannot pay: lose this power and any gained Strength."
+    },
+    {
+      "name": "Radiance's Lament",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Return all other [#FFA200]Infection cards from your discard, draw and Exhaust piles to your hand. Exhaust"
+    },
+    {
+      "name": "Radiance's Lament+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Return all other [#FFA200]Infection[] cards from your discard, draw and Exhaust piles to your hand. They cost 1 less [E] this turn. Exhaust."
+    },
+    {
+      "name": "Sly's Strikes",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Ethereal.\nGain 1 Strength at the beginning of each of your turns."
+    },
+    {
+      "name": "Sly's Strikes+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Ethereal.\nGain 1 Strength at the beginning of each of your turns."
+    },
+    {
+      "name": "Soul Master",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "[#EFFAFF]Focus[] [#60CFFF]Spells cost 1 less hollowmod:Soul.\n[#696969]Void[] [#60CFFF]Spells generate 1 extra [#696969]Void[]."
+    },
+    {
+      "name": "Soul Master+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\n[#EFFAFF]Focus[] [#60CFFF]Spells cost 1 less hollowmod:Soul.\n[#696969]Void[] [#60CFFF]Spells generate 1 extra [#696969]Void[]."
+    },
+    {
+      "name": "The Nailsmith",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever a Non - [#60CFFF]Spell attack is used this turn, upgrade it for the rest of the combat."
+    },
+    {
+      "name": "The Nailsmith+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever a Non - [#60CFFF]Spell attack is used this turn, upgrade it for the rest of the combat."
+    },
+    {
+      "name": "Void Dash",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "[#696969]Void[] 2: Gain 16 Block. Whenever you are attacked this turn, return 3 damage and apply 1 Vulnerable.\n(Applies 2 Vulnerable if they have none.)"
+    },
+    {
+      "name": "Void Dash+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "[#696969]Void[] 2: Gain 20 Block. Whenever you are attacked this turn, return 5 damage and apply 1 Vulnerable.\n(Applies 2 Vulnerable if they have none.)"
+    },
+    {
+      "name": "Weaversong",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an attack, deal 4 damage to a random enemy."
+    },
+    {
+      "name": "Weaversong+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an attack, deal 6 damage to a random enemy."
+    },
+    {
+      "name": "White Lady's Blessing",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "[#696969]Void[] 1: While you have [#696969]Void[], you may [#EFFAFF]Focus[]\nThe [#60CFFF]Spell will be Exhausted."
+    },
+    {
+      "name": "White Lady's Blessing+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "[#696969]Void[] 2: While you have [#696969]Void[], you may [#EFFAFF]Focus[]\nThe [#60CFFF]Spell will be Exhausted."
+    },
+    {
+      "name": "Zote's Magnificence",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 damage, Lose ALL of your current Block. Exhaust"
+    },
+    {
+      "name": "Zote's Magnificence+",
+      "color": "Bugknight_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 40 damage, Lose ALL of your current Block. Exhaust"
+    }
+  ],
+  "relics": [
+    {
+      "name": "Knight's Mask",
+      "tier": "Starter",
+      "pool": "Bugknight_gray_color",
+      "description": "Gain 1 hollowmod:Soul each time you play an Attack card. (Except hollowmod:Spell or Ally Attacks)",
+      "flavorText": "All vessels carry a mask."
+    },
+    {
+      "name": "Isma's Tear",
+      "tier": "Common",
+      "pool": "Bugknight_gray_color",
+      "description": "WheneverInfection damages you, take 1 less damage.",
+      "flavorText": "Fruit formed from a single hardened tear."
+    },
+    {
+      "name": "Millibelle's Note",
+      "tier": "Common",
+      "pool": "Bugknight_gray_color",
+      "description": "Begin each combat with 2 Soul.",
+      "flavorText": "Still not interested? You're far too hesitant."
+    },
+    {
+      "name": "Pale Ore",
+      "tier": "Common",
+      "pool": "",
+      "description": "Basic Strikes deal 2 additional damage.",
+      "flavorText": "Prized by those who craft weapons."
+    },
+    {
+      "name": "The King's Brand",
+      "tier": "Common",
+      "pool": "Bugknight_gray_color",
+      "description": "As long as you have enough Infection, Focus will spend Infection instead of Soul (Even while in Void).",
+      "flavorText": "Hallownest's ancient places shall open before it."
+    },
+    {
+      "name": "Delicate Flower",
+      "tier": "Uncommon",
+      "pool": "Bugknight_gray_color",
+      "description": "If your HP is Full, gain Max Soul at the Beginning of Each turn.",
+      "flavorText": "The Grey Mourner sends her Love."
+    },
+    {
+      "name": "Life Ender",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Draw a card after playing 5 attacks.",
+      "flavorText": "Another fool to be cut down by Life Ender..."
+    },
+    {
+      "name": "Lumafly Lantern",
+      "tier": "Uncommon",
+      "pool": "Bugknight_gray_color",
+      "description": "Whenever you draw an Ally gain 1 Block.",
+      "flavorText": "Brightens dark caverns so wanderers can find their way."
+    },
+    {
+      "name": "Mantis Claw",
+      "tier": "Uncommon",
+      "pool": "Bugknight_gray_color",
+      "description": "Whenever you play 3 Dash cards in one turn, gain 1 [E]",
+      "flavorText": "Claw carved from bone."
+    },
+    {
+      "name": "Queens Comb",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon Pickup Lose 50% Max HP. Until you take health damage each combat: At the beginning of your turn: heal for 4 HP.",
+      "flavorText": "Golden nugget of the Hive's precious comb."
+    },
+    {
+      "name": "Stag's Pass",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Cards Purchased from Shops are automatically upgraded.",
+      "flavorText": "The sound of the bell will always call me back."
+    },
+    {
+      "name": "KingsSoul",
+      "tier": "Rare",
+      "pool": "Bugknight_gray_color",
+      "description": "Replaces Knight's Mask or Void Idol. Gain 4 Soul at the beginning of your turn. Increases Soul Meter Limit by 2",
+      "flavorText": "Holy charm symbolising a union between higher beings."
+    },
+    {
+      "name": "Void Idol",
+      "tier": "Rare",
+      "pool": "Bugknight_gray_color",
+      "description": "Replaces Knight's Mask or King's Soul. You can no longer Gain Soul. Void cards lose Exhaust. At the beginning of each combat, -1 Dexterity, -1 Strength.",
+      "flavorText": "A Mask formed of liquid from the Abyss, perfectly still."
+    },
+    {
+      "name": "The Great Knight's Mask",
+      "tier": "Special",
+      "pool": "Bugknight_gray_color",
+      "description": "Zote needs no effect.",
+      "flavorText": "Fear not, cur... Your death will be swift"
+    },
+    {
+      "name": "GodTuner",
+      "tier": "Boss",
+      "pool": "Bugknight_gray_color",
+      "description": "Gain 1 [E] at the start of each turn. Soul Meter Limit is reduced by 3.",
+      "flavorText": "Device that resonates with beings of great power."
+    },
+    {
+      "name": "Joni's Blessing",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Begin each combat with 15 Temporary HP. Healing in combat instead increases Temporary HP.",
+      "flavorText": "Blessed by Joni, the kindly heretic. Transfigures vital fluids into blue lifeblood."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Bug Knight",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    },
+    {
+      "name": "Husk Sentry",
+      "type": "Normal",
+      "minHP": "54",
+      "maxHP": "54"
+    },
+    {
+      "name": "Husk Warrior",
+      "type": "Normal",
+      "minHP": "41",
+      "maxHP": "41"
+    },
+    {
+      "name": "Little Weaver",
+      "type": "Normal",
+      "minHP": "24",
+      "maxHP": "24"
+    },
+    {
+      "name": "Moss Knight",
+      "type": "Elite",
+      "minHP": "92",
+      "maxHP": "92"
+    },
+    {
+      "name": "Nightmare King Grimm",
+      "type": "Boss",
+      "minHP": "317",
+      "maxHP": "317"
+    },
+    {
+      "name": "Nosk",
+      "type": "Elite",
+      "minHP": "41",
+      "maxHP": "41"
+    },
+    {
+      "name": "Slobbering Husk",
+      "type": "Normal",
+      "minHP": "266",
+      "maxHP": "266"
+    },
+    {
+      "name": "Stalking Devout",
+      "type": "Elite",
+      "minHP": "169",
+      "maxHP": "169"
+    },
+    {
+      "name": "The False Knight",
+      "type": "Boss",
+      "minHP": "236",
+      "maxHP": "236"
+    },
+    {
+      "name": "The Radiance",
+      "type": "Boss",
+      "minHP": "647",
+      "maxHP": "647"
+    },
+    {
+      "name": "Violent Husk",
+      "type": "Normal",
+      "minHP": "221",
+      "maxHP": "221"
+    },
+    {
+      "name": "Zote the Mighty",
+      "type": "Elite",
+      "minHP": "1000",
+      "maxHP": "1000"
+    }
+  ],
+  "keywords": [
+  ]
+}
