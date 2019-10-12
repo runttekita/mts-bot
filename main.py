@@ -4,6 +4,7 @@ import json
 import discord
 from dotenv import load_dotenv
 import os
+import random
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -93,6 +94,10 @@ async def card(channel, tokenized_message):
 @client.event
 async def relic(channel, tokenized_message):
     relics = Mod_Data(tokenized_message[1]).data
+    if len(tokenized_message) == 3:
+        if tokenized_message[2] == 'random':
+            await channel.send(relic_format(random.choice(relics[0]['relics'])))
+            return
     for x in range(len(relics)):
         for relic in relics[x]['relics']:
             if len(tokenized_message) == 3:
