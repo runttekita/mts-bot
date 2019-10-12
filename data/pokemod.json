@@ -1,0 +1,1750 @@
+{
+  "mod": {
+    "name": "PokeMod",
+    "version": "0.0.1",
+    "authors": ["ozole"],
+    "credits": "",
+    "description": "A mod that lets you be a Pokemon Trainer in the world of slay the spire!",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Fairy Wind",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Receive 25% less attack damage this turn. Exhaust."
+    },
+    {
+      "name": "Fairy Wind+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Receive 25% less attack damage for 2 turns. Exhaust."
+    },
+    {
+      "name": "Snake Dagger",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage. Exhaust."
+    },
+    {
+      "name": "Snake Dagger+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 25 damage. Exhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Acid Slime",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 6 Poison."
+    },
+    {
+      "name": "Acid Slime+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 8 Poison."
+    },
+    {
+      "name": "Awakened One",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. Whenever you play a Power, gain 3 Strength."
+    },
+    {
+      "name": "Awakened One+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. Whenever you play a Power, gain 5 Strength."
+    },
+    {
+      "name": "Blastoise",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage to ALL enemies. Gain 5 Block. Can be upgraded any number of times."
+    },
+    {
+      "name": "Blastoise+1",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage to ALL enemies. Gain 7 Block. Can be upgraded any number of times."
+    },
+    {
+      "name": "Book of Stabbing",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage 1 times. Increase this card's hit times by 1 for this combat."
+    },
+    {
+      "name": "Book of Stabbing+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage 1 times. Increase this card's hit times by 1 for this combat."
+    },
+    {
+      "name": "Bronze Automaton",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 25 damage to ALL enemies. Gain 2 Artifact. Exhaust."
+    },
+    {
+      "name": "Bronze Automaton+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 30 damage to ALL enemies. Gain 3 Artifact. Exhaust."
+    },
+    {
+      "name": "Byrd",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage 5 times."
+    },
+    {
+      "name": "Byrd+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage 5 times."
+    },
+    {
+      "name": "Centurion",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Deal 10 damage again for every Mystic in your Exhaust pile."
+    },
+    {
+      "name": "Centurion+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage. Deal 13 damage again for every Mystic in your Exhaust pile."
+    },
+    {
+      "name": "Charizard",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage. Add a Burn to your discard pile. Can be upgraded any number of times."
+    },
+    {
+      "name": "Charizard+1",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage. Add a Burn to your discard pile. Can be upgraded any number of times."
+    },
+    {
+      "name": "Chosen",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage + 2 more damage for every card in your Exhaust pile."
+    },
+    {
+      "name": "Chosen+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage + 3 more damage for every card in your Exhaust pile."
+    },
+    {
+      "name": "Cultist",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "3",
+      "description": " At the start of your turn, gain 1 Strength."
+    },
+    {
+      "name": "Cultist+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "2",
+      "description": " At the start of your turn, gain 1 Strength."
+    },
+    {
+      "name": "Darkling",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block. When this card is drawn, return all Darklings from your discard pile into your hand."
+    },
+    {
+      "name": "Darkling+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block. When this card is drawn, return all Darklings from your discard pile into your hand."
+    },
+    {
+      "name": "Deca",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage twice. Gain 6 Plated Armor."
+    },
+    {
+      "name": "Deca+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage twice. Gain 8 Plated Armor."
+    },
+    {
+      "name": "Ditto",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in your hand. Add a copy of that card to your hand. Exhaust."
+    },
+    {
+      "name": "Ditto+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card in your hand. Add a copy of that card to your hand. Exhaust."
+    },
+    {
+      "name": "Donu",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage twice. Gain 3 Strength."
+    },
+    {
+      "name": "Donu+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage twice. Gain 5 Strength."
+    },
+    {
+      "name": "Exploder",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "In 3 turns, deal 20 damage to ALL enemies. Exhaust."
+    },
+    {
+      "name": "Exploder+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "In 3 turns, deal 30 damage to ALL enemies. Exhaust."
+    },
+    {
+      "name": "Fungi Beast",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable."
+    },
+    {
+      "name": "Fungi Beast+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Vulnerable."
+    },
+    {
+      "name": "Giant Head",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Increase the cost of all cards in your hand by 1 and double their effects for this combat. Exhaust."
+    },
+    {
+      "name": "Giant Head+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "When you play this, increase the cost of all cards in your deck by 1 and double their effects for this combat. Exhaust."
+    },
+    {
+      "name": "Green Louse",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage. Gain 6 Block. Apply 1 Weak."
+    },
+    {
+      "name": "Green Louse+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Gain 8 Block. Apply 2 Weak."
+    },
+    {
+      "name": "Gremlin Leader",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a Pokemon, gain 3 temporary Strength."
+    },
+    {
+      "name": "Gremlin Leader+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a Pokemon, gain 4 temporary Strength."
+    },
+    {
+      "name": "Gremlin Nob",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage. If the last played card was a Skill, Gain 2 Strength."
+    },
+    {
+      "name": "Gremlin Nob+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage. If the last played card was a Skill, Gain 3 Strength."
+    },
+    {
+      "name": "Guardian's Defense",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block and 3 Thorns."
+    },
+    {
+      "name": "Guardian's Defense+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 17 Block and 4 Thorns."
+    },
+    {
+      "name": "Hexaghost",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage 6 times. Add 2 Burns to your discard pile. Exhaust."
+    },
+    {
+      "name": "Hexaghost+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage 6 times. Add 2 Burns to your discard pile. Exhaust."
+    },
+    {
+      "name": "Ho-oh",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 5 Regen and 5 Plated Armor. Exhaust."
+    },
+    {
+      "name": "Ho-oh+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 7 Regen and 7 Plated Armor. Exhaust."
+    },
+    {
+      "name": "Jaw Worm",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage."
+    },
+    {
+      "name": "Jaw Worm+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 26 damage."
+    },
+    {
+      "name": "Lagavulin",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block. Gain 3 Plated Armor."
+    },
+    {
+      "name": "Lagavulin+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block. Gain 4 Plated Armor."
+    },
+    {
+      "name": "Looter",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Gain 5 gold. Exhaust."
+    },
+    {
+      "name": "Looter+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Gain 8 gold. Exhaust."
+    },
+    {
+      "name": "Lugia",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage. Take 50% less attack damage this turn."
+    },
+    {
+      "name": "Lugia+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 27 damage. Take 50% less attack damage this turn."
+    },
+    {
+      "name": "Mystic",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 6 HP. Exhaust."
+    },
+    {
+      "name": "Mystic+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 9 HP. Exhaust."
+    },
+    {
+      "name": "Nemesis",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage. Gain 1 intangible. Exhaust."
+    },
+    {
+      "name": "Nemesis+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 25 damage. Gain 1 intangible. Exhaust."
+    },
+    {
+      "name": "Noivern",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies. Take 50% less damage this turn. Exhaust."
+    },
+    {
+      "name": "Noivern+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage to ALL enemies. Take 50% less damage this turn. Exhaust."
+    },
+    {
+      "name": "Orb Walker",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. Gain 3 Strength. Add a Burn to your discard pile."
+    },
+    {
+      "name": "Orb Walker+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. Gain 5 Strength. Add a Burn to your discard pile."
+    },
+    {
+      "name": "Red Louse",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Gain 5 Block."
+    },
+    {
+      "name": "Red Louse+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Gain 5 Block."
+    },
+    {
+      "name": "Reptomancer",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage. Shuffle 2 Snake Daggers into your Draw pile."
+    },
+    {
+      "name": "Reptomancer+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 25 Damage. Shuffle 2 upgraded Snake Daggers into your Draw pile."
+    },
+    {
+      "name": "Repulsor",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Stun an enemy. Add 2 Dazed to your Discard pile. Exhaust."
+    },
+    {
+      "name": "Repulsor+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Stun an enemy. Add 2 Dazed to your Discard pile. Exhaust."
+    },
+    {
+      "name": "Sentry",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies. Add a Dazed to your discard pile."
+    },
+    {
+      "name": "Sentry+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage to ALL enemies. Add a Dazed to your discard pile."
+    },
+    {
+      "name": "Shelled Parasite",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 5 Block. Deal 6 damage. Heal 3 HP."
+    },
+    {
+      "name": "Shelled Parasite+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 7 Block. Deal 8 damage. Heal 4 HP."
+    },
+    {
+      "name": "Slime Boss",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 50 damage. Add 2 Slimed to your discard pile."
+    },
+    {
+      "name": "Slime Boss+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 65 damage. Add 2 Slimed to your discard pile."
+    },
+    {
+      "name": "Snake Plant",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Apply 1 Vulnerable and 4 Poison."
+    },
+    {
+      "name": "Snake Plant+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Apply 1 Vulnerable and 6 Poison."
+    },
+    {
+      "name": "Snecko",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "2",
+      "description": "Become Confused. Draw 2 cards."
+    },
+    {
+      "name": "Snecko+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "2",
+      "description": "Become Confused. Draw 4 cards."
+    },
+    {
+      "name": "Spheric Guardian",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block. Block is not removed at the start of your next turn."
+    },
+    {
+      "name": "Spheric Guardian+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block. Block is not removed at the start of your next turn."
+    },
+    {
+      "name": "Spike Slime",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. Gain 1 Thorns."
+    },
+    {
+      "name": "Spike Slime+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block. Gain 1 Thorns."
+    },
+    {
+      "name": "Spiker",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 thorns."
+    },
+    {
+      "name": "Spiker+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 thorns."
+    },
+    {
+      "name": "Spire Growth",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. At the end each turn, that enemy takes 5 damage."
+    },
+    {
+      "name": "Spire Growth+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. At the end each turn, that enemy takes 7 damage."
+    },
+    {
+      "name": "Taskmaster",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage. Draw 2 cards. Discard 2 cards."
+    },
+    {
+      "name": "Taskmaster+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage. Draw 3 cards. Discard 3 cards."
+    },
+    {
+      "name": "The Champ",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 22 damage twice."
+    },
+    {
+      "name": "The Champ+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 26 damage twice."
+    },
+    {
+      "name": "The Collector",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to your deck size. Apply 6 Weak and 6 Vulnerable. Exhaust."
+    },
+    {
+      "name": "The Collector+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to your deck size. Apply 10 Weak and 10 Vulnerable. Exhaust."
+    },
+    {
+      "name": "The Guardian",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 5 damage to ALL enemies 4 times."
+    },
+    {
+      "name": "The Guardian+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 7 damage to ALL enemies 4 times."
+    },
+    {
+      "name": "The Maw",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage 1 times. Hit amount increases by 1 every turn."
+    },
+    {
+      "name": "The Maw+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage 1 times. Hit amount increases by 1 every turn."
+    },
+    {
+      "name": "Time Eater",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 12 cards, gain [E] [E] [E] ."
+    },
+    {
+      "name": "Time Eater+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play 12 cards, gain [E] [E] [E] ."
+    },
+    {
+      "name": "Venusaur",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Poison, 2 Weak, and 2 Vulnerable. Can be upgraded any number of times."
+    },
+    {
+      "name": "Venusaur+1",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 4 Poison, 2 Weak, and 2 Vulnerable. Can be upgraded any number of times."
+    },
+    {
+      "name": "Writhing Mass",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to double the enemy's Poison. Apply 10 Poison."
+    },
+    {
+      "name": "Writhing Mass+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal Damage equal to triple the enemy's Poison. Apply 14 Poison."
+    },
+    {
+      "name": "Acro Bike",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 2 cards of your draw pile and discard any of them. Then, draw a card."
+    },
+    {
+      "name": "Acro Bike+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 3 cards of your draw pile and discard any of them. Then, draw a card."
+    },
+    {
+      "name": "Apricorn Maker",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Pokeball into your hand."
+    },
+    {
+      "name": "Apricorn Maker+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Great Ball into your hand."
+    },
+    {
+      "name": "Battle Compressor",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 8 cards of your draw pile. Discard any of them. Exhaust."
+    },
+    {
+      "name": "Battle Compressor+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 12 cards of your draw pile. Discard any of them. Exhaust."
+    },
+    {
+      "name": "Battle Plan",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, draw 3 more cards."
+    },
+    {
+      "name": "Battle Plan+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, draw 4 more cards."
+    },
+    {
+      "name": "Beat Up",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Deal 5 damage again for every Pokemon in your hand."
+    },
+    {
+      "name": "Beat Up+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Deal 7 damage again for every Pokemon in your hand."
+    },
+    {
+      "name": "Belly Drum",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 6 Strength. Lose 15 HP."
+    },
+    {
+      "name": "Belly Drum+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Strength. Lose 15 HP."
+    },
+    {
+      "name": "Defender",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Dexterity. At the end of this turn, lose 4 Dexterity. Exhaust."
+    },
+    {
+      "name": "Defender+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Dexterity. At the end of this turn, lose 6 Dexterity. Exhaust."
+    },
+    {
+      "name": "Fiery Torch",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card from your hand. Gain [E] and draw 1 card."
+    },
+    {
+      "name": "Fiery Torch+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card from your hand. Gain [E] and draw 2 cards."
+    },
+    {
+      "name": "Ice Axe Attack",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Discard 1 card."
+    },
+    {
+      "name": "Ice Axe Attack+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage. Discard 1 card."
+    },
+    {
+      "name": "PlusPower",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Strength. Next turn, lose 3 Strength. Exhaust."
+    },
+    {
+      "name": "PlusPower+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Strength. Next turn, lose 5 Strength. Exhaust."
+    },
+    {
+      "name": "Pokeball",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. If this kills an enemy, catch it! One-time use."
+    },
+    {
+      "name": "Pokeball+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage. If this kills an enemy, catch it! One-time use."
+    },
+    {
+      "name": "Potion",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 5 HP. Exhaust."
+    },
+    {
+      "name": "Potion+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 7 HP. Exhaust."
+    },
+    {
+      "name": "Professor Kukui",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards. Your next attack deals 2 additional damage."
+    },
+    {
+      "name": "Professor Kukui+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards. Your next attack deals 4 additional damage."
+    },
+    {
+      "name": "Rare Candy",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Upgrade a card in your hand for the rest of this combat. Exhaust."
+    },
+    {
+      "name": "Rare Candy+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Upgrade ALL cards in your hand for the rest of this combat. Exhaust."
+    },
+    {
+      "name": "Steven's Resolve",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 5. End your turn. Exhaust."
+    },
+    {
+      "name": "Steven's Resolve+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 5. End your turn."
+    },
+    {
+      "name": "Tate & Liza",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block, then discard your hand and draw 3 cards."
+    },
+    {
+      "name": "Tate & Liza+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block, then discard your hand and draw 4 cards."
+    },
+    {
+      "name": "Baton Pass",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Next turn, gain X+ 1 [E] ."
+    },
+    {
+      "name": "Baton Pass+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Next turn, gain X+ 2 [E] ."
+    },
+    {
+      "name": "Battle City",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your even turns, draw an additional card. At the end of your odd turns, gain 3 Block."
+    },
+    {
+      "name": "Battle City+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. At the start of your even turns, draw an additional card. At the end of your odd turns, gain 3 Block."
+    },
+    {
+      "name": "Broken Time Space",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play 2 cards in a single turn, draw a card."
+    },
+    {
+      "name": "Broken Time Space+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play 2 cards in a single turn, draw a card."
+    },
+    {
+      "name": "Cynthia",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand and draw 5 cards."
+    },
+    {
+      "name": "Cynthia+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand and draw 6 cards."
+    },
+    {
+      "name": "Explosion",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust a card in your hand. Deal 16 damage to ALL enemies."
+    },
+    {
+      "name": "Explosion+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust a card in your hand. Deal 20 damage to ALL enemies."
+    },
+    {
+      "name": "False Swipe",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. If this would kill an enemy, set its hp to 1."
+    },
+    {
+      "name": "False Swipe+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage. If this would kill an enemy, set its hp to 1."
+    },
+    {
+      "name": "First Ticket",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card. If it's your first turn, draw 2 more cards. Exhaust."
+    },
+    {
+      "name": "First Ticket+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card. If it's your first turn, draw 3 more cards. Exhaust."
+    },
+    {
+      "name": "Flower Shield",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. Shuffle a Fairy Wind into your draw pile."
+    },
+    {
+      "name": "Flower Shield+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. Shuffle an upgraded Fairy Wind into your draw pile."
+    },
+    {
+      "name": "Fortune Teller",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put a card from your hand on top of your draw pile."
+    },
+    {
+      "name": "Fortune Teller+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card. Put a card from your hand on top of your Draw pile."
+    },
+    {
+      "name": "Full Heal",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all of your Weak, Vulnerable, and Frail. Exhaust."
+    },
+    {
+      "name": "Full Heal+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all of your Weak, Vulnerable, and Frail. Exhaust."
+    },
+    {
+      "name": "Great Ball",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. If this kills an enemy, catch it! One-time use."
+    },
+    {
+      "name": "Great Ball+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage. If this kills an enemy, catch it! One-time use."
+    },
+    {
+      "name": "Hypnotoxic Laser",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 Poison. Exhaust."
+    },
+    {
+      "name": "Hypnotoxic Laser+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 7 Poison. Exhaust."
+    },
+    {
+      "name": "Kiawe",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "End your turn. Next turn, gain [E] [E] [E] . Exhaust."
+    },
+    {
+      "name": "Kiawe+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "End your turn. Next turn, gain [E] [E] [E] [E] . Exhaust."
+    },
+    {
+      "name": "Lost Shield",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 Block for every card in your exhaust pile. Exhaust."
+    },
+    {
+      "name": "Lost Shield+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 Block for every card in your exhaust pile."
+    },
+    {
+      "name": "Outrage",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage times the number of cards in your exhaust pile. Exhaust."
+    },
+    {
+      "name": "Outrage+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage times the number of cards in your exhaust pile. Exhaust."
+    },
+    {
+      "name": "Protect",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block. Decrease this card's block amount by 1 for this combat."
+    },
+    {
+      "name": "Protect+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 16 Block. Decrease this card's block amount by 1 for this combat."
+    },
+    {
+      "name": "Super Potion",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal 13 HP. Exhaust."
+    },
+    {
+      "name": "Super Potion+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal 17 HP. Exhaust."
+    },
+    {
+      "name": "Virbank Gym",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, all Poisoned enemies lose 5 HP."
+    },
+    {
+      "name": "Virbank Gym+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, all Poisoned enemies lose 8 HP."
+    },
+    {
+      "name": "Ace Form",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, draw a card and gain [E] ."
+    },
+    {
+      "name": "Ace Form+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Innate. At the start of your turn, draw a card and gain [E] ."
+    },
+    {
+      "name": "Apricorn Factory",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, add a 0 cost Pokeball to your hand."
+    },
+    {
+      "name": "Apricorn Factory+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, add a 0 cost Great Ball to your hand."
+    },
+    {
+      "name": "Final Gambit",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to your current HP. Lose 4 Max HP. Exhaust."
+    },
+    {
+      "name": "Final Gambit+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to your current HP. Lose 3 Max HP. Exhaust."
+    },
+    {
+      "name": "Heat Factory",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, Exhaust a card and draw 3 cards."
+    },
+    {
+      "name": "Heat Factory+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. At the start of your turn, Exhaust a card and draw 3 cards."
+    },
+    {
+      "name": "Hyper Potion",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Heal 25 HP. Exhaust."
+    },
+    {
+      "name": "Hyper Potion+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Heal 30 HP. Exhaust."
+    },
+    {
+      "name": "Lysandre's Trump Card",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Shuffle every card from your Exhaust pile (excluding Lysandre's Trump Card) into your draw pile. Exhaust."
+    },
+    {
+      "name": "Lysandre's Trump Card+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Shuffle every card from your Exhaust pile (excluding Lysandre's Trump Card) into your draw pile. Exhaust."
+    },
+    {
+      "name": "Momentum",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your discard pile and gain [E] for every 3 cards you exhausted. Exhaust."
+    },
+    {
+      "name": "Momentum+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your discard pile and gain [E] for every 5 cards you exhausted."
+    },
+    {
+      "name": "Perish Song",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Targeted enemy takes double attack damage for this combat. Die in 3 turns. Exhaust."
+    },
+    {
+      "name": "Perish Song+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies take double attack damage for this combat. Die in 3 turns. Exhaust."
+    },
+    {
+      "name": "Poke-Cloner",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a Pokemon card in your hand. Add a copy of it to your hand. Exhaust."
+    },
+    {
+      "name": "Poke-Cloner+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a Pokemon card in your hand. Add 2 copies of it to your hand. Exhaust."
+    },
+    {
+      "name": "Pokegear 1.0",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Reduce the cost of all Pokemon in your hand to 0 for this turn."
+    },
+    {
+      "name": "Pokegear 2.0",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Reduce the cost of all Pokemon in your hand to 0 for this combat."
+    },
+    {
+      "name": "Rescue Stretcher",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put a card from your discard pile into your hand."
+    },
+    {
+      "name": "Rescue Stretcher+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 2 cards from your discard pile into your hand."
+    },
+    {
+      "name": "Surprise Box",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If this is the only card in your hand, Stun an enemy. Exhaust."
+    },
+    {
+      "name": "Surprise Box+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain. If this is the only card in your hand, Stun an enemy.  Exhaust."
+    },
+    {
+      "name": "Ultra Ball",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage. If this kills an enemy, catch it! One-time use."
+    },
+    {
+      "name": "Ultra Ball+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 35 damage. If this kills an enemy, catch it! One-time use."
+    },
+    {
+      "name": "Wondrous Labyrinth",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, all enemies lose 1 Strength, unless they are at or below -2 Strength."
+    },
+    {
+      "name": "Wondrous Labyrinth+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, all enemies lose 1 Strength, unless they are at or below -4 Strength."
+    }
+  ],
+  "relics": [
+    {
+      "name": "The Pokeball",
+      "tier": "Starter",
+      "pool": "Default_gray_color",
+      "description": "At the start of each combat, add a Pokeball to your hand.",
+      "flavorText": "Keep it handy."
+    },
+    {
+      "name": "Trainer's Cap",
+      "tier": "Starter",
+      "pool": "Default_gray_color",
+      "description": "Whenever you catch a Pokemon, gain 2 max HP.",
+      "flavorText": "A rookie trainer's best friend."
+    },
+    {
+      "name": "Poison Barb",
+      "tier": "Common",
+      "pool": "",
+      "description": "Whenever you receive unblocked attack damage, apply 2 Poison to the attacker.",
+      "flavorText": "Go ahead and hit me, see what happens!"
+    },
+    {
+      "name": "Lucky Egg",
+      "tier": "Uncommon",
+      "pool": "Default_gray_color",
+      "description": "Whenever you obtain a Pokemon, upgrade it.",
+      "flavorText": "It feels like you are getting stronger whenever you're around it."
+    },
+    {
+      "name": "Lost Charger",
+      "tier": "Boss",
+      "pool": "Default_gray_color",
+      "description": "Usable once per turn. Right-click to exhaust a random card in your hand and gain [E] .",
+      "flavorText": "Everything you put near this device is consumed and turned into energy."
+    },
+    {
+      "name": "The Ultraball",
+      "tier": "Boss",
+      "pool": "Default_gray_color",
+      "description": "Replaces The Pokeball. At the start of each combat, add an Ultra Ball to your hand.",
+      "flavorText": "A nearly perfect version of the Pokeball."
+    },
+    {
+      "name": "Toxic Orb",
+      "tier": "Shop",
+      "pool": "Default_gray_color",
+      "description": "At the start of each combat, apply 3 Poison to yourself and 9 Poison to ALL enemies.",
+      "flavorText": "You wonder why you keep holding onto this thing."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Trainer",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    },
+    {
+      "name": "Ditto",
+      "type": "Normal",
+      "minHP": "75",
+      "maxHP": "75"
+    },
+    {
+      "name": "Ho-oh",
+      "type": "Boss",
+      "minHP": "120",
+      "maxHP": "120"
+    },
+    {
+      "name": "Lugia",
+      "type": "Boss",
+      "minHP": "230",
+      "maxHP": "230"
+    },
+    {
+      "name": "Noivern",
+      "type": "Normal",
+      "minHP": "120",
+      "maxHP": "120"
+    }
+  ],
+  "keywords": [
+  ]
+}
