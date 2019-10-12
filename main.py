@@ -156,8 +156,9 @@ def keyword_format(keyword, name):
     return "**{0}**\n{1}".format(name.capitalize(), keyword['description'])
 
 def energy_string(cost):
-    if cost == 'X':
+    if cost == 'X' or '0':
         return cost
+
     cost = int(cost)
     s = ''
     for i in range (0, cost):
