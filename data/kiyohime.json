@@ -1,0 +1,988 @@
+{
+  "mod": {
+    "name": "Kiyohime\uFF08\u6E05\u59EC\uFF09",
+    "version": "0.1.6",
+    "authors": ["jglb"],
+    "credits": "",
+    "description": "Kiyohime\uFF08\u6E05\u59EC\uFF09 Mod",
+    "mts_version": "0.0.0",
+    "sts_version": "",
+    "dependencies": ["basemod","stslib","Friendly_Minions_0987678"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Flame Coloured Kiss",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "buster Up 20 % for 1 turn"
+    },
+    {
+      "name": "Flame Coloured Kiss+",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "buster Up 30 % for 1 turn,remove a random debuff from yourself."
+    },
+    {
+      "name": "Pursuer of Love+",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Vulnerable ,and gain 1 Strength to it 1 turn."
+    },
+    {
+      "name": "Shapeshift",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Switch spirit_origin .Gain 4 Block.\nExhaust ."
+    },
+    {
+      "name": "Shapeshift+",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Switch spirit_origin .Gain 4 Block."
+    },
+    {
+      "name": "Stalking",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Vulnerable ,and gain 1 Strength to it 3 turn."
+    },
+    {
+      "name": "Strike",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Kiyohime_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Dojoji Bell,Method 108 - Fire Dragon Mower",
+      "color": "Kiyohime_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage 6 times.Apply it skill seal 1 turn.\nnp_card , Exhaust , Ethereal ."
+    },
+    {
+      "name": "Dojoji Bell,Method 108 - Fire Dragon Mower+",
+      "color": "Kiyohime_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage 6 times.Apply it skill seal 1 turn.\nnp_card , Exhaust , Ethereal ."
+    },
+    {
+      "name": "Extra Attack",
+      "color": "Kiyohime_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Unobtainable.\nDeal 0 damage 0 times.Damage and hit count varies depending on current Spirit Origin.Card color is determined by the first attack you played this turn."
+    },
+    {
+      "name": "Extra Attack",
+      "color": "Kiyohime_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Unobtainable.\nDeal 0 damage 0 times.Damage and hit count varies depending on current Spirit Origin.Card color is determined by the first attack you played this turn."
+    },
+    {
+      "name": "Extra Attack",
+      "color": "Kiyohime_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Unobtainable.\nDeal 0 damage 0 times.Damage and hit count varies depending on current Spirit Origin.Card color is determined by the first attack you played this turn."
+    },
+    {
+      "name": "Samadhi Through Transforming Flames",
+      "color": "Kiyohime_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage 3 times to ALL enemies,probability stuns the enemy.\nnp_card , Exhaust , Ethereal ."
+    },
+    {
+      "name": "Samadhi Through Transforming Flames+",
+      "color": "Kiyohime_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage 3 times to ALL enemies,probability stuns the enemy.\nnp_card , Exhaust , Ethereal ."
+    },
+    {
+      "name": "And So The Ship Conquers",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nNext turn, gain 10 Block."
+    },
+    {
+      "name": "And So The Ship Conquers+",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nNext turn, gain 14 Block."
+    },
+    {
+      "name": "Bathing Transformation",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "buster Up 20 % for 2 turn."
+    },
+    {
+      "name": "Bathing Transformation+",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "buster Up 30 % for 3 turn."
+    },
+    {
+      "name": "Blue Black Key",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. arts Up 15 % for 1 turn."
+    },
+    {
+      "name": "Blue Black Key+",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 11 damage. arts Up 20 % for 1 turn."
+    },
+    {
+      "name": "Green Black Key",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. quick Up 15 % for 1 turn."
+    },
+    {
+      "name": "Green Black Key+",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 11 damage. quick Up 20 % for 1 turn."
+    },
+    {
+      "name": "Mad Enhancement",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "buster Up 12 %."
+    },
+    {
+      "name": "Mad Enhancement+",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "buster Up 20 %."
+    },
+    {
+      "name": "Preemption",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage 2 times."
+    },
+    {
+      "name": "Preemption+",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage 2 times."
+    },
+    {
+      "name": "Red Black Key",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. buster Up 15 % for 1 turn."
+    },
+    {
+      "name": "Red Black Key+",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 11 damage. buster Up 20 % for 1 turn."
+    },
+    {
+      "name": "Spirit Eater",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 99 Weak.\nExhaust ."
+    },
+    {
+      "name": "Spirit Eater+",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 99 Weak.\nExhaust ."
+    },
+    {
+      "name": "Steel Training",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block."
+    },
+    {
+      "name": "Steel Training+",
+      "color": "Kiyohime_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block."
+    },
+    {
+      "name": "Be Elegant",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Use 20 Crit star,Gain [E] [E] ."
+    },
+    {
+      "name": "Be Elegant+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Use 20 Crit star,Gain [E] [E] [E] ."
+    },
+    {
+      "name": "Beast of Billows",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 3 times.(random enemies)"
+    },
+    {
+      "name": "Beast of Billows+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage 3 times.(random enemies)"
+    },
+    {
+      "name": "Celestial Inverted Moon",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 0 Block.\nFor each Crit Star you have,Gain 1 Block."
+    },
+    {
+      "name": "Celestial Inverted Moon+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nFor each Crit Star you have,Gain 1 Block."
+    },
+    {
+      "name": "Command Card:Arts",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "command_card , arts .Base damage: 12 .(Deal 0 damage 0 times.)"
+    },
+    {
+      "name": "Command Card:Arts+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "command_card , arts .Base damage: 15 .(Deal 0 damage 0 times.)"
+    },
+    {
+      "name": "Command Card:Buster",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "command_card , buster .Base damage: 12 .(Deal 0 damage 0 times.)"
+    },
+    {
+      "name": "Command Card:Buster+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "command_card , buster .Base damage: 15 .(Deal 0 damage 0 times.)"
+    },
+    {
+      "name": "Command Card:Quick",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "command_card , quick .Base damage: 12 .(Deal 0 damage 0 times.)"
+    },
+    {
+      "name": "Command Card:Quick+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "command_card , quick .Base damage: 15 .(Deal 0 damage 0 times.)"
+    },
+    {
+      "name": "Divine Construct",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Crit Star."
+    },
+    {
+      "name": "Divine Construct+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 25 Crit Star."
+    },
+    {
+      "name": "Extremely Spicy Mapo Tofu",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 3 HP.\n Exhaust ."
+    },
+    {
+      "name": "Extremely Spicy Mapo Tofu+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 5 HP.\n Exhaust ."
+    },
+    {
+      "name": "First Premonition",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.Discard 1 card.\nIf the discarded card is attack card,draw 2 cards."
+    },
+    {
+      "name": "First Premonition+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.Discard 1 card.\nIf the discarded card is attack card,draw 2 cards."
+    },
+    {
+      "name": "Formal Craft",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "arts Up 25 %."
+    },
+    {
+      "name": "Formal Craft+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "arts Up 40 %."
+    },
+    {
+      "name": "Fragarach",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 1 times.\nIncrease this card's attack times by 1 this combat."
+    },
+    {
+      "name": "Fragarach+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage 1 times.\nIncrease this card's attack times by 1 this combat."
+    },
+    {
+      "name": "Grimoire",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand,\nthen draw 5 cards.\nExhaust ."
+    },
+    {
+      "name": "Grimoire+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand,\nthen draw 5 cards."
+    },
+    {
+      "name": "Hot Spring of The Moon",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Crit Damage Up 20 %.\nGain 5 Crit Star each turn."
+    },
+    {
+      "name": "Hot Spring of The Moon+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Crit Damage Up 25 %.\nGain 8 Crit Star each turn."
+    },
+    {
+      "name": "Hydra Dagger",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 1 Weak ."
+    },
+    {
+      "name": "Hydra Dagger+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nApply 2 Weak ."
+    },
+    {
+      "name": "Imaginary Around",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "quick Up 25 %."
+    },
+    {
+      "name": "Imaginary Around+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "quick Up 40 %."
+    },
+    {
+      "name": "Ley Line",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 30 NP.\nExhaust ."
+    },
+    {
+      "name": "Ley Line+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 50 NP.\nExhaust ."
+    },
+    {
+      "name": "Limited/Zero Over",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "buster Up 25 %."
+    },
+    {
+      "name": "Limited/Zero Over+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "buster Up 40 %."
+    },
+    {
+      "name": "Mooncell Automaton",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Artifact.\nExhaust ."
+    },
+    {
+      "name": "Mooncell Automaton+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Artifact.\nExhaust ."
+    },
+    {
+      "name": "Projection",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 random Colorless attack card into your hand.\nIf it with Exhaust ,Gain 2 Strength."
+    },
+    {
+      "name": "Projection+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 random Colorless attack card into your hand,it cost 0 this turn.\nIf it with Exhaust ,Gain 2 Strength."
+    },
+    {
+      "name": "Reality Marble",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.Gain 6 Block."
+    },
+    {
+      "name": "Reality Marble+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.Gain 9 Block."
+    },
+    {
+      "name": "Tenacious",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Plated Armor."
+    },
+    {
+      "name": "Tenacious+",
+      "color": "Kiyohime_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 5 Plated Armor."
+    },
+    {
+      "name": "Barrier",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Buffer.\nExhaust ."
+    },
+    {
+      "name": "Barrier+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Buffer."
+    },
+    {
+      "name": "Burning Love Story",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "buster , arts , quick and Crit Damage Up 10 %.\nGain 2 NP, 1 Crit Star each turn."
+    },
+    {
+      "name": "Burning Love Story+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate . buster , arts , quick and Crit Damage Up 15 %.\nGain 5 NP, 3 Crit Star each turn."
+    },
+    {
+      "name": "Castle of the Sun",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Crit Damage Up 15 %.\nCrit Star generation rate Up 60 %.\nGain 15 NP."
+    },
+    {
+      "name": "Castle of the Sun+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Crit Damage Up 20 %.\nCrit Star generation rate Up 80 %.\nGain 30 NP."
+    },
+    {
+      "name": "Destruction",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to ALL enemies.\nEach enemy with Block make you draw 1 card."
+    },
+    {
+      "name": "Destruction+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 25 damage to ALL enemies.\nEach enemy with Block make you draw 1 card."
+    },
+    {
+      "name": "Faceless Moon",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "In the next 3 turns,lock the card color of all attack cards to the selected card color."
+    },
+    {
+      "name": "Faceless Moon+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "In the next 3 turns,lock the card color of all attack cards to the selected card color."
+    },
+    {
+      "name": "Firing The First Arrow",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 11 damage.Gain 5 Strength.\nAt the end of this turn, lose 5 Strength."
+    },
+    {
+      "name": "Firing The First Arrow+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.Gain 6 Strength.\nAt the end of this turn, lose 6 Strength."
+    },
+    {
+      "name": "Fragments of 2030",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 10 Crit Star each turn."
+    },
+    {
+      "name": "Fragments of 2030+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 15 Crit Star each turn."
+    },
+    {
+      "name": "Golden Carp Figure",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Crit Star.\nPut 1 card from your discard pile into your hand.\nExhaust ."
+    },
+    {
+      "name": "Golden Carp Figure+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Crit Star.\nPut 2 card from your discard pile into your hand.\nExhaust ."
+    },
+    {
+      "name": "Hero Creation",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "6",
+      "description": "buster Up 30 % for 3 turn.Crit Damage Up 50 % for 1 turn.Gain 10 temporary HP.\nhc ."
+    },
+    {
+      "name": "Hero Creation+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "5",
+      "description": "buster Up 50 % for 3 turn.Crit Damage Up 100 % for 1 turn.Gain 15 temporary HP.\nhc ."
+    },
+    {
+      "name": "Imaginary Number Magecraft",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 60 NP.\nExhaust ."
+    },
+    {
+      "name": "Imaginary Number Magecraft+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 75 NP.\nExhaust ."
+    },
+    {
+      "name": "Jeweled Sword",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.Gain 10 NP.\nExhaust ."
+    },
+    {
+      "name": "Jeweled Sword+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.Gain 10 NP."
+    },
+    {
+      "name": "Magic Crystal",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 10 NP X times.\nNext turn,draw X cards."
+    },
+    {
+      "name": "Magic Crystal+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 10 NP X+1 times.\nNext turn,draw X+1 cards."
+    },
+    {
+      "name": "Osakabehime",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "summon .\nSummoning Osakabehime.\nIf exists,Gain 10 Temp HP."
+    },
+    {
+      "name": "Osakabehime+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "summon .\nSummoning Osakabehime.\nIf exists,Gain 10 Temp HP."
+    },
+    {
+      "name": "Prisma Cosmos",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 10 NP each turn."
+    },
+    {
+      "name": "Prisma Cosmos+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 15 NP each turn."
+    },
+    {
+      "name": "Tamamo no Mae",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "summon .\nSummoning Tamamo_no_Mae.\nIf exists,Gain 10 NP."
+    },
+    {
+      "name": "Tamamo no Mae+",
+      "color": "Kiyohime_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "summon .\nSummoning Tamamo_no_Mae.\nIf exists,Gain 20 NP."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Fire Dragon",
+      "tier": "Starter",
+      "pool": "Kiyohime_color",
+      "description": "Avoid the damage caused by Burn .",
+      "flavorText": "There are no records of her having the blood of the Dragon Kind mixed in. There was only a persistent deep-rooted delusion towards the human she was deeply in love with."
+    },
+    {
+      "name": "Elixir of Rejuvenation",
+      "tier": "Uncommon",
+      "pool": "Kiyohime_color",
+      "description": "If your HP is at or below 50% at the start of combat, heal 10 HP.",
+      "flavorText": "One of the treasures inside the Treasury of the King of Heroes.It is said to be able to rejuvenate a person's physical appearance.It was originally a spiritual herb that was plucked from a ravine,It is a 'Medicine for Longevity' that was misrepresented as the Medicine for Immortality."
+    },
+    {
+      "name": "Holy Shroud of Magdalene",
+      "tier": "Uncommon",
+      "pool": "Kiyohime_color",
+      "description": "Whenever you would receive unblocked attack damage from an Elite,reduce it by 3 .",
+      "flavorText": "Noli me tangere.It is precisely in the mud of exorcism, where proof of a Saint is set."
+    },
+    {
+      "name": "Territory Creation",
+      "tier": "Uncommon",
+      "pool": "Kiyohime_color",
+      "description": "Arts Up 15%",
+      "flavorText": "Territory Creation."
+    },
+    {
+      "name": "Divinity",
+      "tier": "Rare",
+      "pool": "Kiyohime_color",
+      "description": "Whenever you would deal unblocked attack damage,increase it by 3 .",
+      "flavorText": "Divinity."
+    },
+    {
+      "name": "Unlimited Prana Supply",
+      "tier": "Rare",
+      "pool": "Kiyohime_color",
+      "description": "Gain 4 NP each turn",
+      "flavorText": "Unlimited Prana Supply."
+    },
+    {
+      "name": "Bond",
+      "tier": "Boss",
+      "pool": "Kiyohime_color",
+      "description": "At battle start,gain 50 NP\u3002",
+      "flavorText": "Even if it's slightly different from the last time you met them, you still remember all the bonds with them."
+    },
+    {
+      "name": "Necromancy",
+      "tier": "Boss",
+      "pool": "Kiyohime_color",
+      "description": "When you receive Fatal Damage ,There is a certain probability that reduce damage to avoid death,and heal a little HP.",
+      "flavorText": "In the world of mages, there are many spells that should be avoided."
+    },
+    {
+      "name": "The Black Grail",
+      "tier": "Boss",
+      "pool": "Kiyohime_color",
+      "description": "NP Damage Up 80% .At the end of your turn,give 1 damage to you.",
+      "flavorText": "An illusion seen by a man haunted by justice.The corrupted Grail speaks.It says a price is required for what he seeks.Just like the maiden of fate, singing of love."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Kiyohime",
+      "type": "Player",
+      "minHP": "60",
+      "maxHP": "60"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Arts",
+      "description": "As the first attack card you played,gain NP generation rate up buff this turn.\nWhen playing 3 times in a row,gains extra NP."
+    },
+    {
+      "name": "Buster",
+      "description": "As the first attack card you played,gain damage up buff this turn.\nWhen playing 3 Buster cards in a row,make an Extra Attack."
+    },
+    {
+      "name": "Command card",
+      "description": "Has a clear color and base damage value, but the damage and hits are determined by the hidden value of the current Spirit Origin."
+    },
+    {
+      "name": "Hc",
+      "description": "Reduce the cost of this card by 1 energy for each Buster in your hand."
+    },
+    {
+      "name": "Np card",
+      "description": "Special attack card.When NP >= 100,add it to your hand.Cost all NP when playing.Overcharge will more powerful."
+    },
+    {
+      "name": "Quick",
+      "description": "As the first attack card you played,gain Crit Star generation rate up buff this turn.\nWhen playing 3 times in a row,gains extra Crit Star."
+    },
+    {
+      "name": "Spirit origin",
+      "description": "Kiyohime currently has two Spirit Origin: Berserker and Lancer .They have different NPCard and hidden value."
+    },
+    {
+      "name": "Summon",
+      "description": "Summoning a servant to help you in combat.If this servant exists,reset their skills,and increase the maximum HP."
+    },
+    {
+      "name": "\u2605",
+      "description": "The more crit stars,the higher the crit probability. Crit determined."
+    },
+    {
+      "name": "\u2606",
+      "description": "The more crit stars,the higher the crit probability."
+    }
+  ]
+}

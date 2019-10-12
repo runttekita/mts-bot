@@ -1,0 +1,1285 @@
+{
+  "mod": {
+    "name": "Koishi",
+    "version": "1.3.1",
+    "authors": ["Darkglade"],
+    "credits": "",
+    "description": "My hat is my friend. It helps me relax.",
+    "mts_version": "3.8.0",
+    "sts_version": "07-17-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Dark_green_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Dark_green_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Haunting Slash",
+      "color": "Dark_green_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 1 koishi:Terror."
+    },
+    {
+      "name": "Haunting Slash+",
+      "color": "Dark_green_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 2 koishi:Terror."
+    },
+    {
+      "name": "Provoke",
+      "color": "Dark_green_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nForce target enemy to intend to attack this turn if possible."
+    },
+    {
+      "name": "Provoke+",
+      "color": "Dark_green_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nForce target enemy to intend to attack this turn if possible."
+    },
+    {
+      "name": "Strike",
+      "color": "Dark_green_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Dark_green_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Bloodcurdling Scream",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to ALL enemies.\nApply 2 Vulnerable to ALL enemies with koishi:Terror."
+    },
+    {
+      "name": "Bloodcurdling Scream+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage to ALL enemies.\nApply 3 Vulnerable to ALL enemies with koishi:Terror."
+    },
+    {
+      "name": "Catch and Rose",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 koishi:Constricted."
+    },
+    {
+      "name": "Catch and Rose+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 6 koishi:Constricted."
+    },
+    {
+      "name": "Dreadful Blow",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 1 koishi:Terror.\nForce target enemy to NOT intend to attack this turn if possible."
+    },
+    {
+      "name": "Dreadful Blow+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nApply 1 koishi:Terror.\nForce target enemy to NOT intend to attack this turn if possible."
+    },
+    {
+      "name": "Embryo's Dream",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If target enemy intends to attack, gain 15 Block.\nIf target enemy does not intend to attack, deal 18 damage."
+    },
+    {
+      "name": "Embryo's Dream+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If target enemy intends to attack, gain 20 Block.\nIf target enemy does not intend to attack, deal 23 damage."
+    },
+    {
+      "name": "Fleeting Phantom",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nGain !Koishi:SecondMagic! koishi:Ephemeral."
+    },
+    {
+      "name": "Fleeting Phantom+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nGain !Koishi:SecondMagic! koishi:Ephemeral."
+    },
+    {
+      "name": "Heartfelt Fancy",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put a card from your discard pile on top of your draw pile.\nLose [E].\nIf you do, gain 8 Block."
+    },
+    {
+      "name": "Heartfelt Fancy+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put a card from your discard pile on top of your draw pile.\nLose [E].\nIf you do, gain 11 Block."
+    },
+    {
+      "name": "Jaunt",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 1 card.\nIf target enemy intends to attack, draw 1 card."
+    },
+    {
+      "name": "Jaunt+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nDraw 1 card.\nIf target enemy intends to attack, draw 1 card."
+    },
+    {
+      "name": "Jump Scare",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nApply 2 koishi:Terror.\nExhaust."
+    },
+    {
+      "name": "Jump Scare+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nApply 3 koishi:Terror.\nExhaust."
+    },
+    {
+      "name": "Paralyzing Fear",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf target enemy has koishi:Terror, apply 2 Weak."
+    },
+    {
+      "name": "Paralyzing Fear+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf target enemy has koishi:Terror, apply 3 Weak."
+    },
+    {
+      "name": "Phantom Barrier",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain 1 koishi:Ephemeral."
+    },
+    {
+      "name": "Phantom Barrier+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain 1 koishi:Ephemeral."
+    },
+    {
+      "name": "Phantom Strike",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 1 koishi:Ephemeral."
+    },
+    {
+      "name": "Phantom Strike+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nGain 1 koishi:Ephemeral."
+    },
+    {
+      "name": "Prune",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nScry 2.\nThis card costs 0 if you drew an koishi:Id card this turn."
+    },
+    {
+      "name": "Prune+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nScry 3.\nThis card costs 0 if you drew an koishi:Id card this turn."
+    },
+    {
+      "name": "Racing Heart",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf target enemy has koishi:Terror, apply 2 koishi:Terror."
+    },
+    {
+      "name": "Racing Heart+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf target enemy has koishi:Terror, apply 3 koishi:Terror."
+    },
+    {
+      "name": "Reflex Radar",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose [E].\nDraw 2 cards."
+    },
+    {
+      "name": "Reflex Radar+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nLose [E].\nDraw 2 cards."
+    },
+    {
+      "name": "Stinging Mind",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage and apply 2 koishi:Terror twice."
+    },
+    {
+      "name": "Stinging Mind+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage and apply 2 koishi:Terror twice."
+    },
+    {
+      "name": "Subconscious Sweep",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "koishi:Id.\nDeal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Subconscious Sweep+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "koishi:Id.\nDeal 13 damage to ALL enemies."
+    },
+    {
+      "name": "Subterranean Rose",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nGain 7 Block.\nGain 5 Thorns this turn."
+    },
+    {
+      "name": "Subterranean Rose+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nGain 9 Block.\nGain 6 Thorns this turn."
+    },
+    {
+      "name": "Unanswered Love",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose !Koishi:SecondMagic! HP.\nGain 2 koishi:Ephemeral."
+    },
+    {
+      "name": "Unanswered Love+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nLose !Koishi:SecondMagic! HP.\nGain 2 koishi:Ephemeral."
+    },
+    {
+      "name": "Unconscious Uprising",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nGain 11 Block."
+    },
+    {
+      "name": "Unconscious Uprising+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nGain 14 Block."
+    },
+    {
+      "name": "Whimsy",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Whimsy+",
+      "color": "Dark_green_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nScry !Koishi:SecondMagic!.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Apparitions Stalk the Night",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose !Koishi:SecondMagic! HP.\nIf you do not have Intangible, gain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Apparitions Stalk the Night+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nLose !Koishi:SecondMagic! HP.\nIf you do not have Intangible, gain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Bloodlust",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain [E] [E].\nLose [E] [E] next turn.\nExhaust."
+    },
+    {
+      "name": "Bloodlust+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain [E] [E] [E].\nLose [E] [E] [E] next turn.\nExhaust."
+    },
+    {
+      "name": "Brambly Rose Garden",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 5 Thorns."
+    },
+    {
+      "name": "Brambly Rose Garden+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 8 Thorns."
+    },
+    {
+      "name": "Catatonia",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nDeals 2 additional damage for each stack of koishi:Terror on target enemy."
+    },
+    {
+      "name": "Catatonia+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nDeals 3 additional damage for each stack of koishi:Terror on target enemy."
+    },
+    {
+      "name": "DNA's Flaw",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If target enemy intends to attack, gain 2 koishi:Ephemeral."
+    },
+    {
+      "name": "DNA's Flaw+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If target enemy intends to attack, gain 3 koishi:Ephemeral."
+    },
+    {
+      "name": "Danmaku Paranoia",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nGains 1 additional Block for each koishi:Terror on an enemy."
+    },
+    {
+      "name": "Danmaku Paranoia+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block.\nGains 1 additional Block for each koishi:Terror on an enemy."
+    },
+    {
+      "name": "Embers of Love",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nForce ALL enemies to NOT intend to attack this turn if possible.\nkoishi:Flow.\nExhaust."
+    },
+    {
+      "name": "Embers of Love+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nForce ALL enemies to NOT intend to attack this turn if possible.\nkoishi:Flow."
+    },
+    {
+      "name": "Fidgety Snatcher",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 1 koishi:Constricted to ALL enemies."
+    },
+    {
+      "name": "Fidgety Snatcher+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 2 koishi:Constricted to ALL enemies."
+    },
+    {
+      "name": "Fourth Eye",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain koishi:Frozen_Eye this combat.\nExhaust."
+    },
+    {
+      "name": "Fourth Eye+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nGain koishi:Frozen_Eye this combat.\nExhaust."
+    },
+    {
+      "name": "Freudian Instinct",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw an koishi:Id card, gain 2 Block."
+    },
+    {
+      "name": "Freudian Instinct+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you draw an koishi:Id card, gain 2 Block."
+    },
+    {
+      "name": "Genetics of the Unconscious",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put a card from your discard pile on top of your draw pile.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Genetics of the Unconscious+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "NL Put !Koishi:SecondMagic! cards from your discard pile on top of your draw pile.\nDraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Ghost Party",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nIf you do not have Intangible, ALL characters gain 1 Intangible."
+    },
+    {
+      "name": "Ghost Party+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "koishi:Id.\nIf you do not have Intangible, ALL characters gain 1 Intangible."
+    },
+    {
+      "name": "Heart Attack",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "koishi:Id.\nDeal 30 damage to a random enemy."
+    },
+    {
+      "name": "Heart Attack+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "koishi:Id.\nDeal 40 damage to a random enemy."
+    },
+    {
+      "name": "Idle Whim",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nNext turn, draw 3 cards."
+    },
+    {
+      "name": "Idle Whim+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nNext turn, draw 4 cards."
+    },
+    {
+      "name": "Last Remote",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain [E].\nThis card costs 0 if you drew an koishi:Id card this turn."
+    },
+    {
+      "name": "Last Remote+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain [E].\nThis card costs 0 if you drew an koishi:Id card this turn."
+    },
+    {
+      "name": "Mass Hysteria",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "koishi:Id.\nALL enemies lose HP equal to their combined intents."
+    },
+    {
+      "name": "Mass Hysteria+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nALL enemies lose HP equal to their combined intents."
+    },
+    {
+      "name": "Mind Numbing Terror",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nHeal HP equal to half of target enemy's koishi:Terror.\nExhaust."
+    },
+    {
+      "name": "Mind Numbing Terror+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nHeal HP equal to half of target enemy's koishi:Terror.\nExhaust."
+    },
+    {
+      "name": "Philosophy of the Despised",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nForce ALL enemies to intend to attack this turn if possible.\nkoishi:Flow.\nExhaust."
+    },
+    {
+      "name": "Philosophy of the Despised+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nForce ALL enemies to intend to attack this turn if possible.\nkoishi:Flow."
+    },
+    {
+      "name": "Possession",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nApply 1 koishi:Mind_Control.\nThis card can only be played while you are Intangible.\nExhaust."
+    },
+    {
+      "name": "Possession+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nApply 1 koishi:Mind_Control.\nThis card can only be played while you are Intangible.\nExhaust."
+    },
+    {
+      "name": "Predatory Instincts",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 koishi:Terror to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Predatory Instincts+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 6 koishi:Terror to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Release of the Id",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle 2 random koishi:Id cards into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Release of the Id+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle 2 random upgraded koishi:Id cards into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Rorschach in Danmaku",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "koishi:Id.\nGain 17 Block.\nNext turn, draw 1 card."
+    },
+    {
+      "name": "Rorschach in Danmaku+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "koishi:Id.\nGain 22 Block.\nNext turn, draw 1 card."
+    },
+    {
+      "name": "Spirited Away",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 12 damage.\nDraw 1 card.\nThis card costs 0 while you are Intangible."
+    },
+    {
+      "name": "Spirited Away+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 16 damage.\nDraw 1 card.\nThis card costs 0 while you are Intangible."
+    },
+    {
+      "name": "Sprinkle Star and Heart",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nApply 2 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Sprinkle Star and Heart+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "koishi:Id.\nApply 3 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Strange Cloud Fist",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 15 damage.\nDeals double damage while you are Intangible."
+    },
+    {
+      "name": "Strange Cloud Fist+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 20 damage.\nDeals double damage while you are Intangible."
+    },
+    {
+      "name": "Terrifying Spectre",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain Intangible, apply 3 koishi:Terror to ALL enemies."
+    },
+    {
+      "name": "Terrifying Spectre+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you gain Intangible, apply 3 koishi:Terror to ALL enemies."
+    },
+    {
+      "name": "Traumatic Stroke",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nIf you applied a debuff this turn, gain 14 Block."
+    },
+    {
+      "name": "Traumatic Stroke+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nIf you applied a debuff this turn, gain 18 Block."
+    },
+    {
+      "name": "Trembling Hands",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nTarget enemy loses Strength this turn equal to its koishi:Terror."
+    },
+    {
+      "name": "Trembling Hands+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nTarget enemy loses Strength this turn equal to its koishi:Terror."
+    },
+    {
+      "name": "Unconscious Urges",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, randomly select a card in your hand.\nIf you play it, gain [E] next turn."
+    },
+    {
+      "name": "Unconscious Urges+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, randomly select a card in your hand.\nIf you play it, gain [E] next turn."
+    },
+    {
+      "name": "Unseen Terror",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nGain !Koishi:SecondMagic! koishi:Ephemeral.\nApply 2 koishi:Terror."
+    },
+    {
+      "name": "Unseen Terror+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nGain !Koishi:SecondMagic! koishi:Ephemeral.\nApply 3 koishi:Terror."
+    },
+    {
+      "name": "Vanish",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 1 HP !Koishi:SecondMagic! times.\nGain 7 koishi:Ephemeral.\nExhaust."
+    },
+    {
+      "name": "Vanish+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 1 HP !Koishi:SecondMagic! times.\nGain 9 koishi:Ephemeral.\nExhaust."
+    },
+    {
+      "name": "Vengeful Spirit",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain Intangible, apply 3 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Vengeful Spirit+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you gain Intangible, apply 3 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Youkai Polygraph",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf you applied a debuff this turn, gain [E] [E]."
+    },
+    {
+      "name": "Youkai Polygraph+",
+      "color": "Dark_green_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nIf you applied a debuff this turn, gain [E] [E]."
+    },
+    {
+      "name": "Conditioned Teleport",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nRetain.\nEscape from a non-boss combat and receive no rewards.\nkoishi:Flow.\nFleeting."
+    },
+    {
+      "name": "Conditioned Teleport+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nRetain.\nEscape from a non-boss combat and receive no rewards.\nkoishi:Flow."
+    },
+    {
+      "name": "Confined Innocent",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, lose !Koishi:SecondMagic! HP and gain 3 koishi:Ephemeral."
+    },
+    {
+      "name": "Confined Innocent+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, lose !Koishi:SecondMagic! HP and gain 4 koishi:Ephemeral."
+    },
+    {
+      "name": "Ego",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Your koishi:Id cards no longer automatically use themselves.\nWhenever you play an koishi:Id card, draw 1 card."
+    },
+    {
+      "name": "Ego+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nYour koishi:Id cards no longer automatically use themselves.\nWhenever you play an koishi:Id card, draw 1 card."
+    },
+    {
+      "name": "Fading Memory",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "koishi:Id.\nIf your hand is not empty, draw 1 card.\nExhaust a card in your hand.\nNext turn, draw !Koishi:SecondMagic! cards."
+    },
+    {
+      "name": "Fading Memory+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "koishi:Id.\nIf your hand is not empty, draw 1 card.\nExhaust a card in your hand.\nNext turn, draw !Koishi:SecondMagic! cards."
+    },
+    {
+      "name": "Formless Existence",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you gain Intangible, gain twice as much.\nYou can no longer heal."
+    },
+    {
+      "name": "Formless Existence+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain Intangible, gain twice as much.\nYou can no longer heal."
+    },
+    {
+      "name": "Growing Pain",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage 1 time(s).\nDeals damage an additional time for every Intangible you gained this combat."
+    },
+    {
+      "name": "Growing Pain+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage 1 time(s).\nDeals damage an additional time for every Intangible you gained this combat."
+    },
+    {
+      "name": "Heart-Stopping Horror",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn, ALL enemies lose HP equal to their koishi:Terror."
+    },
+    {
+      "name": "Heart-Stopping Horror+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, ALL enemies lose HP equal to their koishi:Terror."
+    },
+    {
+      "name": "Heartbroken",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "While you are Intangible, deal double damage."
+    },
+    {
+      "name": "Heartbroken+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "While you are Intangible, deal double damage."
+    },
+    {
+      "name": "I'm Going to Call You Now",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 koishi:Terror.\nAdd koishi:So_Answer_The_Phone to your hand.\nExhaust."
+    },
+    {
+      "name": "I'm Going to Call You Now+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 koishi:Terror.\nAdd koishi:So_Answer_The_Phone+ to your hand.\nExhaust."
+    },
+    {
+      "name": "Mental Breakdown",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nIf target enemy does NOT intend to attack, apply 1 koishi:Stun.\nExhaust."
+    },
+    {
+      "name": "Mental Breakdown+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 20 damage.\nIf target enemy does NOT intend to attack, apply 1 koishi:Stun.\nExhaust."
+    },
+    {
+      "name": "Mind Stellar Relief",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nTarget enemy loses 15 HP.\nIt loses !Koishi:SecondMagic! additional HP for every time you applied a debuff this combat.\nExhaust."
+    },
+    {
+      "name": "Mind Stellar Relief+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nTarget enemy loses 18 HP.\nIt loses !Koishi:SecondMagic! additional HP for every time you applied a debuff this combat.\nExhaust."
+    },
+    {
+      "name": "Perfect Mind Control",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Apply 1 koishi:Mind_Control to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Perfect Mind Control+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Retain.\nApply 1 koishi:Mind_Control to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Rolling-in-Riches Heart",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose !Koishi:SecondMagic! Gold.\nIncrease the damage of ALL Attacks in your hand by 3 this combat."
+    },
+    {
+      "name": "Rolling-in-Riches Heart+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose !Koishi:SecondMagic! Gold.\nIncrease the damage of ALL Attacks in your hand by 5 this combat."
+    },
+    {
+      "name": "Rose Hell",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 Thorns X times.\nApply 2 koishi:Constricted to ALL enemies X times.\nExhaust."
+    },
+    {
+      "name": "Rose Hell+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 Thorns X + 1 times.\nApply 2 koishi:Constricted to ALL enemies X + 1 times.\nExhaust."
+    },
+    {
+      "name": "Rupture Mind",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf you applied a debuff this turn, apply 2 additional stacks of every debuff on target enemy."
+    },
+    {
+      "name": "Rupture Mind+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nIf you applied a debuff this turn, apply 3 additional stacks of every debuff on target enemy."
+    },
+    {
+      "name": "Silent and Restless",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 13 damage.\nGain 2 koishi:Ephemeral.\nIf this kills an enemy, permanently increase this card's koishi:Ephemeral gain by !Koishi:SecondMagic!.\nExhaust."
+    },
+    {
+      "name": "Silent and Restless+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 18 damage.\nGain 2 koishi:Ephemeral.\nIf this kills an enemy, permanently increase this card's koishi:Ephemeral gain by !Koishi:SecondMagic!.\nExhaust."
+    },
+    {
+      "name": "Super-Ego",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nExhaust ALL your Id cards.\nGain [E] and draw 1 card for each card exhausted this way.\nExhaust."
+    },
+    {
+      "name": "Super-Ego+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 8 damage.\nExhaust ALL your Id cards.\nGain [E] and draw 1 card for each card exhausted this way.\nExhaust."
+    },
+    {
+      "name": "Untouchable",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Artifact.\nAt the start of your turn, exhaust ALL your Status and Curse cards."
+    },
+    {
+      "name": "Untouchable+",
+      "color": "Dark_green_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain 1 Artifact.\nAt the start of your turn, exhaust ALL your Status and Curse cards."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Imaginary Friend",
+      "tier": "Starter",
+      "pool": "Dark_green_color",
+      "description": "Whenever you play a card or draw an Id card, gain 1 Ephemeral.",
+      "flavorText": "They'll forget about me. They always do."
+    },
+    {
+      "name": "A Hole Where a Sister Should Be",
+      "tier": "Common",
+      "pool": "Dark_green_color",
+      "description": "The first time you draw an Id card each combat, gain [E] and draw 1 card.",
+      "flavorText": "It hurt. It hurt to remember the sound of her laugh, the touch of her mind against her own."
+    },
+    {
+      "name": "Bloodstained White Rose",
+      "tier": "Common",
+      "pool": "Dark_green_color",
+      "description": "At the start of combat, apply 3 Terror to a random enemy.",
+      "flavorText": "The treaty was broken, and the White Rose of Chireiden was stained forever."
+    },
+    {
+      "name": "Letters to Reimu",
+      "tier": "Uncommon",
+      "pool": "Dark_green_color",
+      "description": "Whenever a card is exhausted, gain 2 Temporary HP.",
+      "flavorText": "Everything comes to an end, even the dream they had believed in. Even this story must have a sad, tragic end."
+    },
+    {
+      "name": "Teeth and Claws",
+      "tier": "Uncommon",
+      "pool": "Dark_green_color",
+      "description": "The first time you apply a debuff each turn, gain 6 Block.",
+      "flavorText": "Not everyone plays by the rules. Those who don\u2019t tend to be dealt with. Swiftly."
+    },
+    {
+      "name": "Echoes of a Dead Girl",
+      "tier": "Rare",
+      "pool": "Dark_green_color",
+      "description": "Whenever you gain Intangible, gain [E] .",
+      "flavorText": "She wasn't sure if there was anything left of her sister in that shell, that hollow existence that could only mindlessly follow its primal urges."
+    },
+    {
+      "name": "Imperfect Metamorphosis",
+      "tier": "Rare",
+      "pool": "Dark_green_color",
+      "description": "Upon pickup, choose and Transform 2 cards into random Id cards.",
+      "flavorText": "It was the first day of spring, and nobody cared."
+    },
+    {
+      "name": "Colorful Days",
+      "tier": "Boss",
+      "pool": "Dark_green_color",
+      "description": "Gain [E] at the start of each turn. Ephemeral now triggers at 20 stacks instead of 15.",
+      "flavorText": "Everything I saw, everything I heard, everything I felt . . . all the scenery around me started to take color."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Unintentionally Closed-Hearted Satori",
+      "type": "Player",
+      "minHP": "60",
+      "maxHP": "60"
+    }
+  ],
+  "keywords": [
+  ]
+}

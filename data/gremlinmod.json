@@ -1,0 +1,1359 @@
+{
+  "mod": {
+    "name": "Gremlin Mod",
+    "version": "1.2.0",
+    "authors": ["HypoSoc","Rita-B (Translation)"],
+    "credits": "",
+    "description": "Adds a new character: The Gremlins.",
+    "mts_version": "3.10.1",
+    "sts_version": "07-01-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Gremlin",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Gremlin",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Gremlin Dance",
+      "color": "Gremlin",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nHas a bonus effect based on which Gremlin you are."
+    },
+    {
+      "name": "Gremlin Dance+",
+      "color": "Gremlin",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nHas a bonus effect based on which Gremlin you are."
+    },
+    {
+      "name": "Strike",
+      "color": "Gremlin",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Gremlin",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Tag Team",
+      "color": "Gremlin",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Swap to a living Gremlin of your choice."
+    },
+    {
+      "name": "Tag Team+",
+      "color": "Gremlin",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Swap to a living Gremlin of your choice."
+    },
+    {
+      "name": "Bellow",
+      "color": "Gremlin",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nGain 2 Strength for each enemy that does not intend to Attack.\nExhaust."
+    },
+    {
+      "name": "Bellow+",
+      "color": "Gremlin",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nGain 3 Strength for each enemy that does not intend to Attack.\nExhaust."
+    },
+    {
+      "name": "Rush",
+      "color": "Gremlin",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 14 damage.\nExhaust."
+    },
+    {
+      "name": "Rush+",
+      "color": "Gremlin",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 16 damage.\nExhaust."
+    },
+    {
+      "name": "Skull Bash",
+      "color": "Gremlin",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 6 damage.\nApply 2 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Skull Bash+",
+      "color": "Gremlin",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 8 damage.\nApply 2 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Bubble Barrier",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you play a card this turn, gain 3 Block."
+    },
+    {
+      "name": "Bubble Barrier+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play a card this turn, gain 3 Block."
+    },
+    {
+      "name": "Bulk Up",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Temporary HP.\nSwap to Fat Gremlin."
+    },
+    {
+      "name": "Bulk Up+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Temporary HP.\nSwap to Fat Gremlin."
+    },
+    {
+      "name": "Cat Scratch",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage 3 times."
+    },
+    {
+      "name": "Cat Scratch+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage 4 times."
+    },
+    {
+      "name": "Change-o!",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block and 1 Wiz."
+    },
+    {
+      "name": "Change-o!+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block and 1 Wiz."
+    },
+    {
+      "name": "Dagger Dance",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to ALL enemies 2 times."
+    },
+    {
+      "name": "Dagger Dance+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to ALL enemies 3 times."
+    },
+    {
+      "name": "Glimmer",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nAdd 1 Ward to your hand."
+    },
+    {
+      "name": "Glimmer+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nAdd 1 Upgraded Ward to your hand."
+    },
+    {
+      "name": "Glitter Guard",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 Wards to your hand.\nSwap to Shield Gremlin."
+    },
+    {
+      "name": "Glitter Guard+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 Upgraded Wards to your hand.\nSwap to Shield Gremlin."
+    },
+    {
+      "name": "Gremlin Arms",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random assortment of 2 Shivs and Wards to your hand."
+    },
+    {
+      "name": "Gremlin Arms+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random assortment of 3 Shivs and Wards to your hand."
+    },
+    {
+      "name": "Gremlin Meal",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Momentary Strength."
+    },
+    {
+      "name": "Gremlin Meal+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Momentary Strength."
+    },
+    {
+      "name": "Irritability",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you are attacked this turn, deal 5 damage to the attacker.\nSwap to Mad Gremlin."
+    },
+    {
+      "name": "Irritability+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you are attacked this turn, deal 7 damage to the attacker.\nSwap to Mad Gremlin."
+    },
+    {
+      "name": "Jeer",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. If the enemy has a debuff, gain 3 Temporary HP."
+    },
+    {
+      "name": "Jeer+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. If the enemy has a debuff, gain 4 Temporary HP."
+    },
+    {
+      "name": "Patsy",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nSwap to the next Gremlin."
+    },
+    {
+      "name": "Patsy+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Block.\nSwap to the next Gremlin."
+    },
+    {
+      "name": "Pinprick",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage.\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Pinprick+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Whenever you draw this card, add an Echo of it to your hand.\nDeal 1 damage.\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Pour Salt",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage. If the enemy is Weak, add 2 Shivs to your hand."
+    },
+    {
+      "name": "Pour Salt+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. If the enemy is Weak, add 3 Shivs to your hand."
+    },
+    {
+      "name": "Presto!",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Gain 1 Wiz."
+    },
+    {
+      "name": "Presto!+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Gain 1 Wiz."
+    },
+    {
+      "name": "Pretaliation",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage. If the enemy intends to attack, deal an additional 15 damage."
+    },
+    {
+      "name": "Pretaliation+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage. If the enemy intends to attack, deal an additional 22 damage."
+    },
+    {
+      "name": "Tadah!",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add an Echo of a random Skill to your hand.\nSwap to Gremlin Wizard."
+    },
+    {
+      "name": "Tadah!+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add an Echo of a random Skill to your hand. It costs 1 less.\nSwap to Gremlin Wizard."
+    },
+    {
+      "name": "Toe Stub",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. If the enemy is Weak, apply 2 Vulnerable."
+    },
+    {
+      "name": "Toe Stub+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. If the enemy is Weak, apply 3 Vulnerable."
+    },
+    {
+      "name": "Tricksy",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards. Discard all cards draw this way that are not Attacks.\nSwap to Sneaky Gremlin."
+    },
+    {
+      "name": "Tricksy+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 5 cards. Discard all cards draw this way that are not Attacks.\nSwap to Sneaky Gremlin."
+    },
+    {
+      "name": "Twist The Knife",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nAdd 1 Shiv to your hand."
+    },
+    {
+      "name": "Twist The Knife+",
+      "color": "Gremlin",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nAdd 1 Upgraded Shiv to your hand."
+    },
+    {
+      "name": "Aggressive Defense",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nWhenever you gain Block this turn, targeted enemy loses 3 HP."
+    },
+    {
+      "name": "Aggressive Defense+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nWhenever you gain Block this turn, targeted enemy loses 5 HP."
+    },
+    {
+      "name": "Arms Theft",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Steal 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Arms Theft+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Steal 3 Strength.\nExhaust."
+    },
+    {
+      "name": "Astound",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nIf you have 3 or more Wiz, add 2 Wards to your hand."
+    },
+    {
+      "name": "Astound+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nIf you have 3 or more Wiz, add 2 Upgraded Wards to your hand."
+    },
+    {
+      "name": "Burly Blow",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage for each stack of Weakened.\n(Always hits at least once.)"
+    },
+    {
+      "name": "Burly Blow+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage for each stack of Weakened.\n(Always hits at least once.)"
+    },
+    {
+      "name": "Counter Strike",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. If the enemy intends to attack, add 2 Wards to your hand."
+    },
+    {
+      "name": "Counter Strike+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. If the enemy intends to attack, add 2 Upgraded Wards to your hand."
+    },
+    {
+      "name": "Dazzle",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nEnemy loses 1 Strength for each stack of Wiz you have.\nExhaust."
+    },
+    {
+      "name": "Dazzle+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nEnemy loses 1 Strength for each stack of Wiz you have.\nExhaust."
+    },
+    {
+      "name": "Edible Armor",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Convert your Block into Temporary HP."
+    },
+    {
+      "name": "Edible Armor+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Convert your Block into Temporary HP."
+    },
+    {
+      "name": "Enthusiasm",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Swap, draw a card."
+    },
+    {
+      "name": "Enthusiasm+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you Swap, draw a card."
+    },
+    {
+      "name": "Fan Of Knives",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nAdd 1 Shiv to your hand for each stack of Wiz you have."
+    },
+    {
+      "name": "Fan Of Knives+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nAdd 1 Upgraded Shiv to your hand for each stack of Wiz you have."
+    },
+    {
+      "name": "Feel The Audience",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nGain 1 Wiz for each one that intends to attack."
+    },
+    {
+      "name": "Feel The Audience+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies.\nGain 1 Wiz for each one that intends to attack."
+    },
+    {
+      "name": "Flurry",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage for each card played this turn."
+    },
+    {
+      "name": "Flurry+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage for each card played this turn."
+    },
+    {
+      "name": "Follow Through",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 1 Momentary Strength."
+    },
+    {
+      "name": "Follow Through+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nGain 2 Momentary Strength."
+    },
+    {
+      "name": "Gremlin Offensive",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nAdd a Gremlin Offensive to your hand.\nExhaust."
+    },
+    {
+      "name": "Gremlin Offensive+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nAdd an Upgraded Gremlin Offensive to your hand.\nExhaust."
+    },
+    {
+      "name": "Gremlin Toss",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your current Block and Temporary HP."
+    },
+    {
+      "name": "Gremlin Toss+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 4 Temporary HP.\nDeal damage equal to your current Block and Temporary HP."
+    },
+    {
+      "name": "Heckle",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you apply a debuff to an enemy, gain 2 Temporary HP."
+    },
+    {
+      "name": "Heckle+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you apply a debuff to an enemy, gain 2 Temporary HP."
+    },
+    {
+      "name": "Infinite Blocks",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a Ward to your hand."
+    },
+    {
+      "name": "Infinite Blocks+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, add a Ward to your hand."
+    },
+    {
+      "name": "Irksome Blow",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage.\nIrksome Blow is affected by Strength 4 times."
+    },
+    {
+      "name": "Irksome Blow+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage.\nIrksome Blow is affected by Strength 6 times."
+    },
+    {
+      "name": "Kablamo!",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to ALL enemies.\nThis attack does not consume Wiz."
+    },
+    {
+      "name": "Kablamo!+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage to ALL enemies.\nThis attack does not consume Wiz."
+    },
+    {
+      "name": "Makeshift Armor",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Artifact."
+    },
+    {
+      "name": "Makeshift Armor+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Artifact."
+    },
+    {
+      "name": "Mockery",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak.\nIf the enemy has 3 or more Weak, gain 10 Block."
+    },
+    {
+      "name": "Mockery+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nIf the enemy has 3 or more Weak, gain 14 Block."
+    },
+    {
+      "name": "Party Stick",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you Swap while this card is in your hand, gain [E]"
+    },
+    {
+      "name": "Party Stick+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you Swap while this card is in your hand, gain [E] [E]"
+    },
+    {
+      "name": "Pickpocket",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Steal all Artifact.\nDeal 9 damage.\nExhaust."
+    },
+    {
+      "name": "Pickpocket+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Steal all Artifact.\nDeal 13 damage.\nExhaust."
+    },
+    {
+      "name": "Pin Needle",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nShuffle 2 Pinpricks into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Pin Needle+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nShuffle 2 Upgraded Pinpricks into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Polish",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Shivs deal 2 additional damage.\nWards grant 2 additional Block."
+    },
+    {
+      "name": "Polish+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Shivs deal 3 additional damage.\nWards grant 3 additional Block."
+    },
+    {
+      "name": "Proper Tools",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage. If the enemy intends to attack, add 3 Wards to your hand. Otherwise, add 3 Shivs to your hand."
+    },
+    {
+      "name": "Proper Tools+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. If the enemy intends to attack, add 3 Wards to your hand. Otherwise, add 3 Shivs to your hand."
+    },
+    {
+      "name": "Rage Break",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Double your Strength.\nExhaust."
+    },
+    {
+      "name": "Rage Break+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Double your Strength."
+    },
+    {
+      "name": "Raid",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw a card for each living Gremlin.\nDiscard 2 cards."
+    },
+    {
+      "name": "Raid+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw a card for each living Gremlin.\nDiscard 1 card."
+    },
+    {
+      "name": "Revel",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain [E] for each living Gremlin."
+    },
+    {
+      "name": "Revel+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain [E] for each living Gremlin."
+    },
+    {
+      "name": "Rhythm",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Swap to the next Gremlin.\nFetch a Basic card from your draw pile. It costs 0 this turn."
+    },
+    {
+      "name": "Rhythm+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Swap to the next Gremlin.\nFetch a Basic card from your draw pile. It costs 0 this turn."
+    },
+    {
+      "name": "Scatter!",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "The next time you would lose HP, instead Swap into a random Gremlin.\nExhaust"
+    },
+    {
+      "name": "Scatter!+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next time you would lose HP, instead Swap into a random Gremlin.\nExhaust"
+    },
+    {
+      "name": "Shank Stone",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you draw this card, add 2 Shivs to your hand."
+    },
+    {
+      "name": "Shank Stone+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you draw this card, add 3 Shivs to your hand."
+    },
+    {
+      "name": "Sharpen Blades",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Reduce the cost of all Attacks in your hand to 0 this turn."
+    },
+    {
+      "name": "Sharpen Blades+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw a card.\nReduce the cost of all Attacks in your hand to 0 this turn."
+    },
+    {
+      "name": "Show of Hands",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block for every card in your hand."
+    },
+    {
+      "name": "Show of Hands+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw a card.\nGain 2 Block for every card in your hand."
+    },
+    {
+      "name": "Stupend",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 6 Block.\nDeal 6 damage.\nBlock is affected by Wiz."
+    },
+    {
+      "name": "Stupend+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDeal 8 damage.\nBlock is affected by Wiz."
+    },
+    {
+      "name": "Whiz",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Wiz. Next turn, add 1 Bang to your hand.\nExhaust."
+    },
+    {
+      "name": "Whiz+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Wiz. Next turn, add 1 Upgraded Bang to your hand.\nExhaust."
+    },
+    {
+      "name": "Wizardry",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 Wiz."
+    },
+    {
+      "name": "Wizardry+",
+      "color": "Gremlin",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, gain 1 Wiz."
+    },
+    {
+      "name": "Broken Shin",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all Weak. Stun the enemy for every 4 stacks of Weak removed this way."
+    },
+    {
+      "name": "Broken Shin+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all Weak. Stun the enemy for every 3 stacks of Weak removed this way."
+    },
+    {
+      "name": "Conga Line",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain [E] and Swap to the next Gremlin."
+    },
+    {
+      "name": "Conga Line+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, gain [E] and Swap to the next Gremlin."
+    },
+    {
+      "name": "Duplicate",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Make 2 Echoes of an Attack in your hand. They cost 1 less."
+    },
+    {
+      "name": "Duplicate+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Make 3 Echoes of an Attack in your hand. They cost 1 less."
+    },
+    {
+      "name": "Encore",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Wiz.\nWhenever you consume Wiz, deal 5 damage to ALL enemies."
+    },
+    {
+      "name": "Encore+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Wiz.\nWhenever you consume Wiz, deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Erupt",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Momentary Strength.\nExhaust."
+    },
+    {
+      "name": "Erupt+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Momentary Strength.\nExhaust."
+    },
+    {
+      "name": "Exacerbate",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. The enemy's Weak no longer wears off.\nExhaust."
+    },
+    {
+      "name": "Exacerbate+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage. The enemy's Weak no longer wears off.\nExhaust."
+    },
+    {
+      "name": "Fairy Dust",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 Wards to your hand and draw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Fairy Dust+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 3 Wards to your hand and draw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Flip Out",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nWhenever you would gain Block this turn, instead deal that much damage to ALL enemies."
+    },
+    {
+      "name": "Flip Out+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies.\nWhenever you would gain Block this turn, instead deal that much damage to ALL enemies."
+    },
+    {
+      "name": "Fury",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Costs 1 less [E] for each 2 Strength you have.\nDeal 7 damage thrice."
+    },
+    {
+      "name": "Fury+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Costs 1 less [E] for each 2 Strength you have.\nDeal 9 damage thrice."
+    },
+    {
+      "name": "NOB",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 25 Temporary HP.\nMutate into Gremlin Nob until you run out of Temporary HP."
+    },
+    {
+      "name": "NOB+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 40 Temporary HP.\nMutate into Gremlin Nob until you run out of Temporary HP."
+    },
+    {
+      "name": "Necromancy",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can only be played if you have 5 or more Wiz.\nConsume all Wiz to resurrect a random Gremlin with 5 HP. Exhaust."
+    },
+    {
+      "name": "Necromancy+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can only be played if you have 5 or more Wiz.\nConsume all Wiz to resurrect a random Gremlin with 8 HP. Exhaust."
+    },
+    {
+      "name": "Second Volley",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage. Add a Shiv to your hand for each card played this turn"
+    },
+    {
+      "name": "Second Volley+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage. Add an upgraded Shiv to your hand for each card played this turn"
+    },
+    {
+      "name": "Shadow Shiv",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play an Attack that doesn't exhaust, add a Shiv to your hand."
+    },
+    {
+      "name": "Shadow Shiv+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an Attack that doesn't exhaust, add a Shiv to your hand."
+    },
+    {
+      "name": "Show Stopper",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played if you have exactly 10 Wiz.\nDeal 0 damage to ALL enemies 5 times."
+    },
+    {
+      "name": "Show Stopper+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played if you have exactly 10 Wiz.\nDeal 2 damage to ALL enemies 5 times."
+    },
+    {
+      "name": "Target Wounds",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Deal 3 additional damage to Weakened enemies."
+    },
+    {
+      "name": "Target Wounds+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Deal 5 additional damage to Weakened enemies."
+    },
+    {
+      "name": "Unforgiving",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "You cannot lose Strength."
+    },
+    {
+      "name": "Unforgiving+",
+      "color": "Gremlin",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "You cannot lose Strength."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Gremlin Knob",
+      "tier": "Starter",
+      "pool": "Gremlin",
+      "description": "Whenever an enemy dies, gain [E] , draw 1 card, and Swap to the next Gremlin.",
+      "flavorText": "A sign of status among the Gremlin Mobs."
+    },
+    {
+      "name": "Supply Scroll",
+      "tier": "Common",
+      "pool": "Gremlin",
+      "description": "Right click during combat to activate.Usable once per combat.\nAdd a random assortment of 3 Shivs and Wards to your hand.",
+      "flavorText": "A surprisingly detailed inventory of the mob's various bits and bobbles."
+    },
+    {
+      "name": "Wizard Staff",
+      "tier": "Uncommon",
+      "pool": "Gremlin",
+      "description": "Wiz deals 7 additional damage.",
+      "flavorText": "The pride and joy of every Gremlin Wizard, this staff is a frequent target of theft by rival mobs."
+    },
+    {
+      "name": "PricklyShields",
+      "tier": "Rare",
+      "pool": "Gremlin",
+      "description": "Whenever you gain Block, deal 2 damage to a random enemy.",
+      "flavorText": "Gremlins use whatever scraps they can find as weapons or armor. Some serve as both."
+    },
+    {
+      "name": "Gremlin Bomb",
+      "tier": "Boss",
+      "pool": "Gremlin",
+      "description": "Whenever a Gremlin dies, deal 40 damage to ALL enemies.",
+      "flavorText": "Gremlins have an uncanny knack for finding dangerous things. Sometimes, they even survive looting them."
+    },
+    {
+      "name": "Stolen Merchandise",
+      "tier": "Shop",
+      "pool": "Gremlin",
+      "description": "Whenever you Swap, add an Echo of a random Colorless card to your hand.",
+      "flavorText": "\"Blasted, thieving Gremlins!\"."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Gremlins",
+      "type": "Player",
+      "minHP": "20",
+      "maxHP": "20"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Bang",
+      "description": "Bang is a 2 cost Attack that benefits from Wiz."
+    },
+    {
+      "name": "Echo",
+      "description": "Echoes are copies of cards with Ethereal and Exhaust."
+    },
+    {
+      "name": "Pinprick",
+      "description": "Pinpricks are 0 cost Attack cards which draw a card."
+    },
+    {
+      "name": "Swap",
+      "description": "Switch places with another character. Does nothing if there is no valid target."
+    },
+    {
+      "name": "Whiz",
+      "description": "Whiz is a 1 cost Skill that grants Wiz."
+    },
+    {
+      "name": "Wiz",
+      "description": "When you have at least three stacks of Wiz, attacks will consume all stacks to deal 10 additional damage."
+    }
+  ]
+}

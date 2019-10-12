@@ -1,0 +1,1231 @@
+{
+  "mod": {
+    "name": "Catgirl Mod",
+    "version": "0.8.3",
+    "authors": ["saishy"],
+    "credits": "Contributors: Taxouck. \nBeta Testers: Yun, Graham, The Golden Fairy, Skyson. \nLocalization: BDWSSBB",
+    "description": "Adds a new playable catgirl as a character.",
+    "mts_version": "3.8.3",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Stumble",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "",
+      "description": "Exhaust on discard.\nClumsy: Deal 6 damage to a random enemy."
+    },
+    {
+      "name": "Claw Strike",
+      "color": "Catgirl_teal",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 2 times."
+    },
+    {
+      "name": "Claw Strike+",
+      "color": "Catgirl_teal",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 2 times."
+    },
+    {
+      "name": "Defend",
+      "color": "Catgirl_teal",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Catgirl_teal",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Evasion",
+      "color": "Catgirl_teal",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Evade."
+    },
+    {
+      "name": "Evasion+",
+      "color": "Catgirl_teal",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Evade."
+    },
+    {
+      "name": "Strike",
+      "color": "Catgirl_teal",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Catgirl_teal",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Change Of Plans",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nPut a card from your hand to the top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Change Of Plans+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nPut a card from your hand to the top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Claw Scratch",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage for each Attack played this turn."
+    },
+    {
+      "name": "Claw Scratch+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage for each Attack played this turn."
+    },
+    {
+      "name": "Claws",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage to a random enemy.\nEnemy receives 2 additional damage from Claw cards."
+    },
+    {
+      "name": "Claws+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage to a random enemy.\nEnemy receives 3 additional damage from Claw cards."
+    },
+    {
+      "name": "Clench Your Teeth",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDiscard 1 card."
+    },
+    {
+      "name": "Clench Your Teeth+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nDiscard 1 card."
+    },
+    {
+      "name": "Combo Attack",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDraw a card.\nIf it is an Attack, play it. Otherwise, discard it."
+    },
+    {
+      "name": "Combo Attack+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nDraw a card.\nIf it is an Attack, play it. Otherwise, discard it."
+    },
+    {
+      "name": "Declining Defenses",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Block. Decrease this card's Block by 1 this combat.\nClumsy: Gain 6 Block."
+    },
+    {
+      "name": "Declining Defenses+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block. Decrease this card's Block by 1 this combat.\nClumsy: Gain 8 Block."
+    },
+    {
+      "name": "Elegant Strike",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage for each Evade you have.\n( 0 Damage).\nExhaust."
+    },
+    {
+      "name": "Elegant Strike+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage for each Evade you have.\n( 0 Damage)."
+    },
+    {
+      "name": "Emergency Parry",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to your Evade.\nLose all Evade."
+    },
+    {
+      "name": "Emergency Parry+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to 2 times your Evade.\nLose all Evade."
+    },
+    {
+      "name": "Growl",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Vulnerable to a random enemy 3 times."
+    },
+    {
+      "name": "Growl+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Vulnerable to a random enemy 4 times."
+    },
+    {
+      "name": "Keep Alert",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Evade.\nEvade is not lost at the end of this turn."
+    },
+    {
+      "name": "Keep Alert+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Evade.\nEvade is not lost at the end of this turn."
+    },
+    {
+      "name": "Learn By Mistake",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to the number of cards in your discard pile."
+    },
+    {
+      "name": "Learn By Mistake+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to the number of cards in your discard pile +3."
+    },
+    {
+      "name": "Lost Trinket",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nExhaust 1 card."
+    },
+    {
+      "name": "Lost Trinket+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nExhaust 1 card."
+    },
+    {
+      "name": "Lucky Blow",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf you have discarded a card this turn, this card damage is increased by 6."
+    },
+    {
+      "name": "Lucky Blow+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf you have discarded a card this turn, this card damage is increased by 8."
+    },
+    {
+      "name": "Meow",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Meow+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Misfire",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nDraw 1 card.\nDiscard 1 card."
+    },
+    {
+      "name": "Misfire+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDraw 1 card.\nDiscard 1 card."
+    },
+    {
+      "name": "Parry",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDeal 5 damage.\nIf the enemy intends to attack, gain 4 Evade."
+    },
+    {
+      "name": "Parry+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDeal 7 damage.\nIf the enemy intends to attack, gain 6 Evade."
+    },
+    {
+      "name": "Play Around",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nEnemy receives 2 additional damage from Strike cards."
+    },
+    {
+      "name": "Play Around+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\nEnemy receives 2 additional damage from Strike cards."
+    },
+    {
+      "name": "Poised Strike",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nUpgrade a random Skill in your hand for the rest of the combat."
+    },
+    {
+      "name": "Poised Strike+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nUpgrade all Skills in your hand for the rest of the combat."
+    },
+    {
+      "name": "Quick Strike",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDraw a card."
+    },
+    {
+      "name": "Quick Strike+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nDraw a card."
+    },
+    {
+      "name": "Rage Claws",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage to a random enemy 4 times."
+    },
+    {
+      "name": "Rage Claws+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage to a random enemy 5 times."
+    },
+    {
+      "name": "Recovery Blow",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw a card for each Stumble on your hand."
+    },
+    {
+      "name": "Recovery Blow+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw a card for each Stumble on your hand."
+    },
+    {
+      "name": "Running With Daggers",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nIf you have discarded a card this turn,\ngain [E] [E]."
+    },
+    {
+      "name": "Running With Daggers+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nIf you have discarded a card this turn,\ngain [E] [E]."
+    },
+    {
+      "name": "Search Backpack",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 cards.\nDiscard 1 card."
+    },
+    {
+      "name": "Search Backpack+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nDiscard 1 card."
+    },
+    {
+      "name": "Slip",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 9 Evade.\nDiscard 1 card."
+    },
+    {
+      "name": "Slip+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 13 Evade.\nDiscard 1 card.\nAdd 1 Stumble into your hand."
+    },
+    {
+      "name": "Spinning Strike",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Spinning Strike+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Stalk",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to 5 times the number of debuffs ALL enemies have."
+    },
+    {
+      "name": "Stalk+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to 5 times the number of debuffs ALL enemies have, plus 4 Block."
+    },
+    {
+      "name": "Train Wreck",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies lose 6 Strength this turn.\nExhaust."
+    },
+    {
+      "name": "Train Wreck+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies lose 8 Strength this turn.\nExhaust."
+    },
+    {
+      "name": "Trip Lunge",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nAdd 1 Stumble into your hand."
+    },
+    {
+      "name": "Trip Lunge+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nAdd 1 Stumble into your hand."
+    },
+    {
+      "name": "Two-Step",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nNext turn, gain 7 Evade."
+    },
+    {
+      "name": "Two-Step+",
+      "color": "Catgirl_teal",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nNext turn, gain 10 Evade."
+    },
+    {
+      "name": "Accidental Slap",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 1 times the number of cards discarded this combat."
+    },
+    {
+      "name": "Accidental Slap+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 2 times the number of cards discarded this combat."
+    },
+    {
+      "name": "All In",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nIf the enemy intends to attack, apply 2 Vulnerable."
+    },
+    {
+      "name": "All In+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nIf the enemy intends to attack, apply 3 Vulnerable."
+    },
+    {
+      "name": "Blood Bath",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nIf this kills an enemy, deal 20 damage again to a random enemy."
+    },
+    {
+      "name": "Blood Bath+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nIf this kills an enemy, deal 25 damage again to a random enemy."
+    },
+    {
+      "name": "Blood Scent",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Strength.\nLose all Block.\nLose all Evade."
+    },
+    {
+      "name": "Blood Scent+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Strength.\nLose all Block.\nLose all Evade."
+    },
+    {
+      "name": "Body Blow",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies.\nDiscard 1 card at random."
+    },
+    {
+      "name": "Body Blow+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage to ALL enemies.\nDiscard 1 card at random."
+    },
+    {
+      "name": "Counterattack",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain Evade, deal 1 damage to ALL enemies."
+    },
+    {
+      "name": "Counterattack+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain Evade, deal 2 damage to ALL enemies."
+    },
+    {
+      "name": "Defensive Stance",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Evade.\nPermanently increase this card's Evade by !theCatGirl:SecondMagic!.\nExhaust."
+    },
+    {
+      "name": "Defensive Stance+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Evade.\nPermanently increase this card's Evade by !theCatGirl:SecondMagic!.\nExhaust."
+    },
+    {
+      "name": "Extreme Speed",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nIf you have at least 3 Evade, lose 3 Evade and draw a card."
+    },
+    {
+      "name": "Extreme Speed+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nIf you have at least 2 Evade, lose 2 Evade and draw a card."
+    },
+    {
+      "name": "Finishing Move",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal.\nDeal 20 damage.\nIf the enemy has less than 50 %HP, deal !theCatGirl:SecondMagic! damage instead."
+    },
+    {
+      "name": "Finishing Move+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal.\nDeal 25 damage.\nIf the enemy has less than 60 %HP, deal !theCatGirl:SecondMagic! damage instead."
+    },
+    {
+      "name": "Focused Strike",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage. If you have Evade, gain 1 [E]."
+    },
+    {
+      "name": "Focused Strike+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage. If you have Evade, gain 1 [E]."
+    },
+    {
+      "name": "Fumbling Blow",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nDraw a card.\nClumsy: Deal 4 damage.\nDraw a card."
+    },
+    {
+      "name": "Fumbling Blow+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nDraw a card.\nClumsy: Deal 7 damage.\nDraw a card."
+    },
+    {
+      "name": "Goddess Of Misfortune",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add 1 Stumble into your hand."
+    },
+    {
+      "name": "Goddess Of Misfortune+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add 1 Stumble into your hand.\nInnate."
+    },
+    {
+      "name": "Piling Errors",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "All Stumbles have Retain."
+    },
+    {
+      "name": "Piling Errors+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "All Stumbles Retain.\nStumbles can now be played for 1 Energy. Whenever you play a Stumble, Exhaust it."
+    },
+    {
+      "name": "Prepared",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next Skill is played twice."
+    },
+    {
+      "name": "Prepared+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next 2 Skills are played twice."
+    },
+    {
+      "name": "Scratch Flurry",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 3 cards and discard all cards drawn this way that are not claws."
+    },
+    {
+      "name": "Scratch Flurry+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nDraw 3 cards and discard all cards drawn this way that are not claws."
+    },
+    {
+      "name": "Shocked Witness",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first time you Exhaust a card during your turn, apply 1 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Shocked Witness+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first time you Exhaust a card during your turn, apply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Smell Fear",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the target does not intend to Attack, gain 2 Strength."
+    },
+    {
+      "name": "Smell Fear+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the target does not intend to Attack, gain 3 Strength."
+    },
+    {
+      "name": "That Wasn't It",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Place a card from your Exhaust pile into your hand.\nExhaust."
+    },
+    {
+      "name": "That Wasn't It+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Place a card from your Exhaust pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Trying My Best",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Discard your hand.\nDeal 12 for every Attack and Stumble discarded this way."
+    },
+    {
+      "name": "Trying My Best+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Discard your hand.\nDeal 15 for every Attack and Stumble discarded this way."
+    },
+    {
+      "name": "Unrelenting Assault",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Draw 6 cards.\nDeal 8 damage for each Attack drawn this way."
+    },
+    {
+      "name": "Unrelenting Assault+",
+      "color": "Catgirl_teal",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Draw 6 cards.\nDeal 12 damage for each Attack drawn this way."
+    },
+    {
+      "name": "Accidental Headbutt",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Stuns the enemy and ends your turn. Gain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Accidental Headbutt+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Stuns the enemy and ends your turn. Gain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Adaptive Pacing",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block.\nReduce this card's cost by 1 this combat."
+    },
+    {
+      "name": "Adaptive Pacing+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block.\nReduce this card's cost by 1 this combat."
+    },
+    {
+      "name": "Adventurer's Insight",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you would gain Evade, gain 1 more."
+    },
+    {
+      "name": "Adventurer's Insight+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you would gain Evade, gain 1 more.\nInnate."
+    },
+    {
+      "name": "Angry Form",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Evade will increase your damage by 2 times the Evade amount.\nEvade will not increase Block anymore."
+    },
+    {
+      "name": "Angry Form+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Evade will increase your damage by 2 times the Evade amount.\nEvade will not increase Block anymore.\nInnate."
+    },
+    {
+      "name": "Beastification",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 3 Strength.\nGain !theCatGirl:SecondMagic! Dexterity.\nGain 15 Block.\nNext turn, lose [E] [E]."
+    },
+    {
+      "name": "Beastification+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 4 Strength.\nGain !theCatGirl:SecondMagic! Dexterity.\nGain 15 Block.\nNext turn, lose [E] [E]."
+    },
+    {
+      "name": "Bleeding Wounds",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever an Attack deals unblocked damage, apply 1 Poison."
+    },
+    {
+      "name": "Bleeding Wounds+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever an Attack deals unblocked damage, apply 1 Poison."
+    },
+    {
+      "name": "Bloody Claws",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to a random enemy 3 times.\nHeal HP equal to unblocked damage.\nExhaust."
+    },
+    {
+      "name": "Bloody Claws+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to a random enemy 4 times.\nHeal HP equal to unblocked damage.\nExhaust."
+    },
+    {
+      "name": "Enrage",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn, deal 3 damage to a random enemy for each Attack played this turn."
+    },
+    {
+      "name": "Enrage+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn, deal 5 damage to a random enemy for each Attack played this turn."
+    },
+    {
+      "name": "Howl",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Strength.\nExhaust."
+    },
+    {
+      "name": "Howl+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Strength."
+    },
+    {
+      "name": "Hunger Claw",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage to the enemy with the most Gash.\nIf this kills a non-minion enemy, raise your Max HP by 3.\nExhaust."
+    },
+    {
+      "name": "Hunger Claw+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage to the enemy with the most Gash.\nIf this kills a non-minion enemy, raise your Max HP by 4.\nExhaust."
+    },
+    {
+      "name": "Insane",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Fetch all cards from exhaust pile, they cost 1 this turn.\nExhaust."
+    },
+    {
+      "name": "Insane+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Fetch all cards from exhaust pile, they cost 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Learn The Pattern",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Evade.\nExhaust."
+    },
+    {
+      "name": "Learn The Pattern+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Evade."
+    },
+    {
+      "name": "Never Giving Up",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you discard a card, deals 3 damage to a random enemy."
+    },
+    {
+      "name": "Never Giving Up+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you discard a card, deals 3 damage to a random enemy.\nInnate."
+    },
+    {
+      "name": "Perfect Block",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Block."
+    },
+    {
+      "name": "Perfect Block+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 10 Block."
+    },
+    {
+      "name": "Poise Stance",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 2 Evade."
+    },
+    {
+      "name": "Poise Stance+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 3 Evade."
+    },
+    {
+      "name": "Seven Lives",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ignore the next damage you would take, gain that much Evade instead.\nExhaust."
+    },
+    {
+      "name": "Seven Lives+",
+      "color": "Catgirl_teal",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ignore the next 2 times you would take damage, gain that much Evade instead.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Trained",
+      "tier": "Starter",
+      "pool": "Catgirl_teal",
+      "description": "Whenever you attack an enemy that intends to attack, gain 1 Evade.",
+      "flavorText": "An adventurer is always able to exploit opportunities."
+    },
+    {
+      "name": "Dried Fish",
+      "tier": "Common",
+      "pool": "Catgirl_teal",
+      "description": "Every time you play 10 Attacks, heal 2.",
+      "flavorText": "The perfect snack for a long adventure."
+    },
+    {
+      "name": "Lost and Found",
+      "tier": "Common",
+      "pool": "Catgirl_teal",
+      "description": "Whenever you Exhaust a card, gain Evade equal to it's cost.",
+      "flavorText": "I've never heard a monster yelling 'unfair'."
+    },
+    {
+      "name": "Ambush",
+      "tier": "Uncommon",
+      "pool": "Catgirl_teal",
+      "description": "At the start of the combat, remove 1 Artifact from enemies.",
+      "flavorText": "I've never saw a monster yelling 'unfair'."
+    },
+    {
+      "name": "Throwing Dagger",
+      "tier": "Uncommon",
+      "pool": "Catgirl_teal",
+      "description": "Every time you play 3 Attacks in a single turn, gain 4 Evade.",
+      "flavorText": "Any seasoned adventurer know a trick or two."
+    },
+    {
+      "name": "Monster Guide",
+      "tier": "Rare",
+      "pool": "Catgirl_teal",
+      "description": "The first time you would gain a debuff in each combat, reflect it.",
+      "flavorText": "Contains detailed information about every monster."
+    },
+    {
+      "name": "Nepeta's Hat",
+      "tier": "Rare",
+      "pool": "Catgirl_teal",
+      "description": "Whenever you attack an enemy that has Block, remove 2 of their Block and apply 2 Poison.",
+      "flavorText": "It smells like sugar and tea..."
+    },
+    {
+      "name": "Beginner's Luck",
+      "tier": "Boss",
+      "pool": "Catgirl_teal",
+      "description": "Replaces Trained. Start each turn with 3 stacks.\nWhenever you discard a card, lose one stack and draw a card.",
+      "flavorText": "I'm really good at dices!"
+    },
+    {
+      "name": "Instincts",
+      "tier": "Boss",
+      "pool": "Catgirl_teal",
+      "description": "Replaces Trained. At the start of combat, gain 3 Strength, lose .1 Strength at the end of your first turn.",
+      "flavorText": "You're slowly losing sanity."
+    },
+    {
+      "name": "S-Rank",
+      "tier": "Boss",
+      "pool": "Catgirl_teal",
+      "description": "Whenever you are attacked, gain 2 Evade.",
+      "flavorText": "You're in the top 1% of adventurers."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Catgirl",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Clumsy",
+      "description": "Trigger when you discard or exhaust this card."
+    },
+    {
+      "name": "Evade",
+      "description": "Increases your next Block. Lose half stacks at the end of your turn."
+    },
+    {
+      "name": "Gash",
+      "description": "Increases the damage done by Claw cards."
+    },
+    {
+      "name": "Striken",
+      "description": "Increases the damage done by Strike cards."
+    },
+    {
+      "name": "Stumble",
+      "description": "Stumbles are unplayable status cards that deal damage when discarded or exhausted (Clumsy)."
+    }
+  ]
+}

@@ -1,0 +1,1326 @@
+{
+  "mod": {
+    "name": "Glutton Mod",
+    "version": "1.2.0",
+    "authors": ["HypoSoc","RedDyeNo5"],
+    "credits": "",
+    "description": "Adds a new character: The Glutton.",
+    "mts_version": "3.6.2",
+    "sts_version": "11-15-2018",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Hunger Pang",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, lose 2 HP and draw another card."
+    },
+    {
+      "name": "Defend",
+      "color": "Glutton",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Glutton",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Flail",
+      "color": "Glutton",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 3 HP. Deal 10 damage."
+    },
+    {
+      "name": "Flail+",
+      "color": "Glutton",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 3 HP. Deal 15 damage."
+    },
+    {
+      "name": "Strike",
+      "color": "Glutton",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Glutton",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Bite",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nHeal 2 HP."
+    },
+    {
+      "name": "Bite+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nHeal 3 HP."
+    },
+    {
+      "name": "Borborygmi",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage and apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Borborygmi+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage and apply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Brace",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 5 HP.\nGain 20 Block."
+    },
+    {
+      "name": "Brace+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 5 HP.\nGain 25 Block."
+    },
+    {
+      "name": "Demolish",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to ALL enemies.\nIf this card is Exhausted, deal 4 damage to ALL enemies three times."
+    },
+    {
+      "name": "Demolish+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nIf this card is Exhausted, deal 6 damage to ALL enemies three times."
+    },
+    {
+      "name": "Devour",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaust a card.\nDeal 10 damage."
+    },
+    {
+      "name": "Devour+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaust a card.\nDeal 15 damage."
+    },
+    {
+      "name": "Feed",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf this kills a\nnon-minion enemy,\nraise your Max HP by 3. Exhaust."
+    },
+    {
+      "name": "Feed+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf this kills a\nnon-minion enemy,\nraise your Max HP by 4. Exhaust."
+    },
+    {
+      "name": "Gnawing Hunger",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 7 HP. Deal 6 damage. When played, permanently increase the damage by 2. Exhaust."
+    },
+    {
+      "name": "Gnawing Hunger+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 7 HP. Deal 6 damage. When played, permanently increase the damage by 2."
+    },
+    {
+      "name": "Guard Stance",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nHeal 8 HP.\nExhaust."
+    },
+    {
+      "name": "Guard Stance+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nHeal 12 HP.\nExhaust."
+    },
+    {
+      "name": "Knee-Jerk",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. If you have lost at least 3 HP this turn, Gain [R] [R] ."
+    },
+    {
+      "name": "Knee-Jerk+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. If you have lost at least 3 HP this turn, Gain [R] [R] ."
+    },
+    {
+      "name": "Lash Out",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaust a random card.\nDeal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Lash Out+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaust a card.\nDeal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Pain Meditation",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw a card. If you have lost at least 3 HP this turn, draw another card."
+    },
+    {
+      "name": "Pain Meditation+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card. If you have lost at least 3 HP this turn, draw another card."
+    },
+    {
+      "name": "Rest",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Vulnerable.\nHeal 10 HP.\nExhaust."
+    },
+    {
+      "name": "Rest+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Vulnerable.\nHeal 10 HP.\nExhaust."
+    },
+    {
+      "name": "Salivate",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak. If you have lost at least 3 HP this turn, also apply 2 Vulnerable."
+    },
+    {
+      "name": "Salivate+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak. If you have lost at least 3 HP this turn, also apply 3 Vulnerable."
+    },
+    {
+      "name": "Scab",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 5 HP.\nShuffle a Hunger_Pang into your discard pile."
+    },
+    {
+      "name": "Scab+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 8 HP.\nShuffle a Hunger_Pang into your discard pile."
+    },
+    {
+      "name": "Self Flagellate",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 3 HP. Exhaust a card. Gain 2 Strength."
+    },
+    {
+      "name": "Self Flagellate+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 3 HP. Exhaust a card. Gain 3 Strength."
+    },
+    {
+      "name": "Slam",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose 2 HP. Deal 8 damage."
+    },
+    {
+      "name": "Slam+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose 2 HP. Deal 12 damage."
+    },
+    {
+      "name": "Tantrum",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage to a random enemy.\nIf this card is Exhausted, deal 16 damage to the enemy with the least HP."
+    },
+    {
+      "name": "Tantrum+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage to a random enemy.\nIf this card is Exhausted, deal 21 damage to the enemy with the least HP."
+    },
+    {
+      "name": "Thrombosis",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 3 HP.\nHeal 3 HP a turn for the next 3 turns.\nExhaust."
+    },
+    {
+      "name": "Thrombosis+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 3 HP.\nHeal 3 HP a turn for the next 4 turns.\nExhaust."
+    },
+    {
+      "name": "Treat",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf this card is Exhausted, gain 2 Maximum HP."
+    },
+    {
+      "name": "Treat+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nIf this card is Exhausted, gain 4 Maximum HP."
+    },
+    {
+      "name": "Yearn",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw a card. If it is not a Status or Curse, create an Echo of it that costs 1 less.\nExhaust."
+    },
+    {
+      "name": "Yearn+",
+      "color": "Glutton",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw a card. If it is not a Status or Curse, create an Echo of it that costs 1 less."
+    },
+    {
+      "name": "Autotomy",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nExhaust all Status and Curse cards in your hand and gain 10 Block for each.\nExhaust."
+    },
+    {
+      "name": "Autotomy+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nExhaust all Status and Curse cards in your hand and gain 13 Block for each.\nExhaust."
+    },
+    {
+      "name": "Belly Slam",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to your HP divided by 4."
+    },
+    {
+      "name": "Belly Slam+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to your HP divided by 3."
+    },
+    {
+      "name": "Bloody Knuckle",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Give an enemy 1 Thorns. Deal 6 damage 3 times."
+    },
+    {
+      "name": "Bloody Knuckle+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Give an enemy 1 Thorns. Deal 8 damage 3 times."
+    },
+    {
+      "name": "Chomp",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 16 damage.\nHeal for unblocked damage dealt. Exhaust."
+    },
+    {
+      "name": "Chomp+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 21 damage.\nHeal for unblocked damage dealt. Exhaust."
+    },
+    {
+      "name": "Chrysosphagy",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Pay 20 Gold.\nHeal 20 HP."
+    },
+    {
+      "name": "Chrysosphagy+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Pay 20 Gold.\nHeal 30 HP."
+    },
+    {
+      "name": "Clot",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 HP.\nGain 1 Maximum HP.\nExhaust."
+    },
+    {
+      "name": "Clot+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 HP.\nGain 1 Maximum HP.\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Decrepit Strike",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. If you are Weak, Deal 10 damage two additional times."
+    },
+    {
+      "name": "Decrepit Strike+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage. If you are Weak, Deal 13 damage two additional times."
+    },
+    {
+      "name": "Delusion",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Create an Echo of a non-Ethereal card in your hand.\nExhaust."
+    },
+    {
+      "name": "Delusion+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Create two Echoes of a non-Ethereal card in your hand.\nExhaust."
+    },
+    {
+      "name": "Dispepsia",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, lose 1 HP and gain [R]."
+    },
+    {
+      "name": "Dispepsia+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, lose 1 HP and gain [R] [R]."
+    },
+    {
+      "name": "Distilled Agony",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Lose 2 HP and deal 10 damage X times."
+    },
+    {
+      "name": "Distilled Agony+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Lose 2 HP and deal 13 damage X times."
+    },
+    {
+      "name": "Feast",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 10 damage to ALL enemies.\nFor every non-minion enemy killed, raise your Max HP by 3. Exhaust."
+    },
+    {
+      "name": "Feast+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage to ALL enemies.\nFor every non-minion enemy killed, raise your Max HP by 4. Exhaust."
+    },
+    {
+      "name": "Feeble Kick",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. If you have a Debuff, Gain [R] and draw 1 card."
+    },
+    {
+      "name": "Feeble Kick+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. If you have a Debuff, Gain [R] and draw 1 card."
+    },
+    {
+      "name": "Fever",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 6 HP.\nGain 3 Poison.\nExhaust."
+    },
+    {
+      "name": "Fever Visions",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, if you have a Debuff, draw 1 card."
+    },
+    {
+      "name": "Fever Visions+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, if you have a Debuff, draw 2 cards."
+    },
+    {
+      "name": "Fever+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 8 HP.\nGain 3 Poison.\nExhaust."
+    },
+    {
+      "name": "Golden Armor",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Block for every 15 Gold you have."
+    },
+    {
+      "name": "Golden Armor+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Block for every 12 Gold you have."
+    },
+    {
+      "name": "Hoard",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "In 4 turns, gain 40 Gold."
+    },
+    {
+      "name": "Hoard+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nIn 4 turns, gain 40 Gold."
+    },
+    {
+      "name": "Loot",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf this kills a\nnon-minion enemy, gain 24 Gold. Exhaust."
+    },
+    {
+      "name": "Loot+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf this kills a\nnon-minion enemy, gain 30 Gold. Exhaust."
+    },
+    {
+      "name": "Masochism",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you lose HP, gain 1 Block."
+    },
+    {
+      "name": "Masochism+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you lose HP, gain 2 Block."
+    },
+    {
+      "name": "Migraine",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, lose 1 HP and draw 2 cards."
+    },
+    {
+      "name": "Migraine+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, lose 1 HP and draw 3 cards."
+    },
+    {
+      "name": "Misery",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you lose HP, deal 2 damage to ALL enemies."
+    },
+    {
+      "name": "Misery+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you lose HP, deal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Mug",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nGain 15 Gold. Exhaust."
+    },
+    {
+      "name": "Mug+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 20 Gold. Exhaust."
+    },
+    {
+      "name": "Obsessive Greed",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Pay 30 Gold.\nGain 1 Intangible."
+    },
+    {
+      "name": "Obsessive Greed+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Pay 50 Gold.\nGain 2 Intangible."
+    },
+    {
+      "name": "Overreach",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Gain 1 Vulnerable."
+    },
+    {
+      "name": "Overreach+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 damage. Gain 1 Vulnerable."
+    },
+    {
+      "name": "Profligacy",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Pay 10 Gold.\nDeal 20 damage.\nGain 8 Block."
+    },
+    {
+      "name": "Profligacy+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Pay 10 Gold.\nDeal 28 damage.\nGain 11 Block."
+    },
+    {
+      "name": "Rapacity",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a random card.\nGain 10 Gold.\nExhaust."
+    },
+    {
+      "name": "Rapacity+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card.\nGain 15 Gold.\nExhaust."
+    },
+    {
+      "name": "Regurgitate",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 3 Maximum HP.\nDeal 15 damage to ALL enemies."
+    },
+    {
+      "name": "Regurgitate+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 3 Maximum HP.\nDeal 18 damage to ALL enemies."
+    },
+    {
+      "name": "Revivivfication",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you heal HP, heal an additional 1 HP."
+    },
+    {
+      "name": "Revivivfication+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you heal HP, heal an additional 2 HP."
+    },
+    {
+      "name": "Share Weakness",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you are Weak, apply 2 Weak to ALL enemies.\nRepeat for Frail and Vulnerable."
+    },
+    {
+      "name": "Share Weakness+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you are Weak, apply 3 Weak to ALL enemies.\nRepeat for Frail and Vulnerable."
+    },
+    {
+      "name": "Shed Fat",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust your hand. Draw that many cards plus 1.\nExhaust."
+    },
+    {
+      "name": "Shed Fat+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain. Exhaust your hand. Draw that many cards plus 1.\nExhaust."
+    },
+    {
+      "name": "Strain",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Gain 1 Weak."
+    },
+    {
+      "name": "Strain+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 damage. Gain 1 Weak."
+    },
+    {
+      "name": "Throb",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. If you have lost at least 3 HP this turn, Gain 7 Block."
+    },
+    {
+      "name": "Throb+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. If you have lost at least 3 HP this turn, Gain 10 Block."
+    },
+    {
+      "name": "Torment",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played if you have lost life 15 or more times this combat.\nDeal 30 damage."
+    },
+    {
+      "name": "Torment+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played if you have lost life 10 or more times this combat.\nDeal 30 damage."
+    },
+    {
+      "name": "Toxic Residue",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is Exhausted, apply 3 Poison to a random enemy."
+    },
+    {
+      "name": "Toxic Residue+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is Exhausted, apply 4 Poison to a random enemy."
+    },
+    {
+      "name": "Toxicity",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Weak, Frail, and Vulnerable.\nApply 8 Poison."
+    },
+    {
+      "name": "Toxicity+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Weak, Frail, and Vulnerable.\nApply 11 Poison."
+    },
+    {
+      "name": "Tumor",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Weak, Frail, and Vulnerable.\nIf this card is Exhausted, draw 2 cards."
+    },
+    {
+      "name": "Tumor+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Weak, Frail, and Vulnerable.\nIf this card is Exhausted, draw 3 cards."
+    },
+    {
+      "name": "Voracity",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Shuffle a Hunger_Pang into your discard pile."
+    },
+    {
+      "name": "Voracity+",
+      "color": "Glutton",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 damage. Shuffle a Hunger_Pang into your discard pile."
+    },
+    {
+      "name": "Avarice",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Costs 1 less [R]  for every 100 Gold you have.\nDeal 30 damage."
+    },
+    {
+      "name": "Avarice+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Costs 1 less [R]  for every 100 Gold you have.\nDeal 40 damage."
+    },
+    {
+      "name": "Eat Alive",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 7 damage.\nGain Maximum HP for unblocked damage dealt. Exhaust."
+    },
+    {
+      "name": "Eat Alive+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 10 damage.\nGain Maximum HP for unblocked damage dealt. Exhaust."
+    },
+    {
+      "name": "Enfeeblement",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain a Debuff, deal 4 damage to a random enemy."
+    },
+    {
+      "name": "Enfeeblement+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain a Debuff, deal 5 damage to a random enemy."
+    },
+    {
+      "name": "Excrescence",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to the number of cards in your deck. Shuffle 2 Hunger_Pangs into your discard pile."
+    },
+    {
+      "name": "Excrescence+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to the number of cards in your deck. Shuffle 2 Hunger_Pangs into your discard pile."
+    },
+    {
+      "name": "Fast",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 Cards. Shuffle two Hunger_Pangs into your discard pile."
+    },
+    {
+      "name": "Fast+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 5 Cards. Shuffle two Hunger_Pangs into your discard pile."
+    },
+    {
+      "name": "Fragile Might",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage. Double the number of hits for each Debuff you have."
+    },
+    {
+      "name": "Fragile Might+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage. Double the number of hits for each Debuff you have."
+    },
+    {
+      "name": "Hemophilia",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Bleed. Apply 3 Bleed to ALL enemies."
+    },
+    {
+      "name": "Hemophilia+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Bleed. Apply 4 Bleed to ALL enemies."
+    },
+    {
+      "name": "Inversion",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you are Weak, gain 2 Strength.\nIf you are Frail, gain 2 Dexterity.\nIf you are Vulnerable, gain 15 Block."
+    },
+    {
+      "name": "Inversion+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you are Weak, gain 3 Strength.\nIf you are Frail, gain 3 Dexterity.\nIf you are Vulnerable, gain 20 Block."
+    },
+    {
+      "name": "Malignancy",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is Exhausted, gain 2 Intangible."
+    },
+    {
+      "name": "Malignancy+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nRetain.\nIf this card is Exhausted, gain 2 Intangible."
+    },
+    {
+      "name": "Megrim",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you draw a card, deal 1 damage to a random enemy."
+    },
+    {
+      "name": "Megrim+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you draw a card, deal 2 damage to a random enemy."
+    },
+    {
+      "name": "Nostalgia",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Exhaust a non-Ethereal Skill or Attack, create an Echo of it."
+    },
+    {
+      "name": "Nostalgia+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Exhaust a non-Ethereal Skill or Attack, create an Echo of it."
+    },
+    {
+      "name": "Reminisce",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage for each card in your Exhaust pile."
+    },
+    {
+      "name": "Reminisce+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage for each card in your Exhaust pile."
+    },
+    {
+      "name": "Retaliation",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to twice the number of times you have lost HP this combat.\nExhaust."
+    },
+    {
+      "name": "Retaliation+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to thrice the number of times you have lost HP this combat.\nExhaust."
+    },
+    {
+      "name": "Starvation Mode",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain Starving.\nWhenever you draw a Status or Curse, apply 4 Poison to ALL enemies."
+    },
+    {
+      "name": "Starvation Mode+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain Starving.\nWhenever you draw a Status or Curse, apply 6 Poison to ALL enemies."
+    },
+    {
+      "name": "Treasure",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have less than 300 gold, gain 35 Gold. Otherwise, add 3 random rare cards to your hand. They cost 0 this turn. Exhaust."
+    },
+    {
+      "name": "Treasure+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have less than 300 gold, gain 50 Gold. Otherwise, add 3 random rare cards to your hand. They cost 0 this turn. Exhaust."
+    },
+    {
+      "name": "Vitality",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you heal HP, gain [R]."
+    },
+    {
+      "name": "Vitality+",
+      "color": "Glutton",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nWhenever you heal HP, gain [R]."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Eternal Hunger",
+      "tier": "Starter",
+      "pool": "Glutton",
+      "description": "At the start of your turn, lose 1 HP and draw 1 card.",
+      "flavorText": "so... hungry..."
+    },
+    {
+      "name": "Amulet of Pain",
+      "tier": "Common",
+      "pool": "Glutton",
+      "description": "Every 5 times you take damage in combat, deal 5 damage to ALL enemies.",
+      "flavorText": "A cursed trinket designed to draw the evil eye."
+    },
+    {
+      "name": "Half-Eaten Sandwich",
+      "tier": "Uncommon",
+      "pool": "Glutton",
+      "description": "At the end of combat, heal 2 HP and raise your Max HP by 1.",
+      "flavorText": "Somebody didn't have time to finish their lunch."
+    },
+    {
+      "name": "Lucky Sock",
+      "tier": "Uncommon",
+      "pool": "Glutton",
+      "description": "Gold gain during combat is increased by 25%.",
+      "flavorText": "Its owner never, ever, ever took it off."
+    },
+    {
+      "name": "Muscle Shirt",
+      "tier": "Rare",
+      "pool": "Glutton",
+      "description": "Every third time you gain a Debuff, gain 1 Strength.",
+      "flavorText": "Work through the sweat. Work past the tears."
+    },
+    {
+      "name": "Syringe",
+      "tier": "Rare",
+      "pool": "Glutton",
+      "description": "Whenever you heal HP, deal 6 damage to a random enemy.",
+      "flavorText": "What's in it? Just some water and food coloring."
+    },
+    {
+      "name": "Treadmill",
+      "tier": "Rare",
+      "pool": "Glutton",
+      "description": "Whenever you Exhaust a non-Ethereal card, heal 3 HP.",
+      "flavorText": "A torturous device designed to stave off the effects of gluttony."
+    },
+    {
+      "name": "Doggy Bag",
+      "tier": "Boss",
+      "pool": "Glutton",
+      "description": "Whenever you defeat an elite, raise your Max HP by 10.",
+      "flavorText": "The carefully packed remains of a tasty meal."
+    },
+    {
+      "name": "Gemstone",
+      "tier": "Boss",
+      "pool": "Glutton",
+      "description": "At the start of each combat, if you have 300 or more Gold, gain 2 Strength and 2 Dexterity.",
+      "flavorText": "Crystalized opulence."
+    },
+    {
+      "name": "Infinite Famine",
+      "tier": "Boss",
+      "pool": "Glutton",
+      "description": "Replaces Eternal Hunger. At the start of your turn, lose 2 HP and draw 2 cards.",
+      "flavorText": "must... feed..."
+    },
+    {
+      "name": "Lollipop",
+      "tier": "Shop",
+      "pool": "Glutton",
+      "description": "Reduce the HP loss of Eternal Hunger, Infinite Famine, and Hunger Pangs by 1.",
+      "flavorText": "A satisfying solution to an oral fixation."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Glutton",
+      "type": "Player",
+      "minHP": "120",
+      "maxHP": "120"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Bleed",
+      "description": "Bleeding creatures lose HP at the start of their turn."
+    },
+    {
+      "name": "Hunger pang",
+      "description": "Hunger Pangs are unplayable Status cards that damage you and draw you new cards."
+    },
+    {
+      "name": "Starving",
+      "description": "At the start of each turn, add Hunger Pangs to your discard pile."
+    }
+  ]
+}

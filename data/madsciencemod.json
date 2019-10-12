@@ -1,0 +1,1484 @@
+{
+  "mod": {
+    "name": "Mad Scientist",
+    "version": "0.3.3",
+    "authors": ["twanvl"],
+    "credits": "",
+    "description": "Adds a new character, the Mad Scientist",
+    "mts_version": "3.0.0",
+    "sts_version": "01-10-2019",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Decorative Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Artifact.\nExhaust."
+    },
+    {
+      "name": "Decorative Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Artifact.\nExhaust."
+    },
+    {
+      "name": "Explosive Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply a Bomb that deals 10 damage in 3 turns.\nExhaust."
+    },
+    {
+      "name": "Explosive Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply a Bomb that deals 15 damage in 3 turns.\nExhaust."
+    },
+    {
+      "name": "Flammable Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Fuel.\nExhaust."
+    },
+    {
+      "name": "Flammable Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Fuel.\nExhaust."
+    },
+    {
+      "name": "Foam Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Foam Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Folded Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards, discard one of them.\nExhaust"
+    },
+    {
+      "name": "Folded Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards, discard all but one of them.\nExhaust."
+    },
+    {
+      "name": "Fused Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain  [E].\nGain 1 Fuel.\nGain 3 Block.\nDraw 1 card.\nDeal 4 damage.\nExhaust."
+    },
+    {
+      "name": "Fused Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain  [E].\nGain 1 Fuel.\nGain 5 Block.\nDraw 1 card.\nDeal 6 damage.\nExhaust."
+    },
+    {
+      "name": "Recycled Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Return the top card from your discard pile to your hand.\nExhaust."
+    },
+    {
+      "name": "Recycled Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Return a card from your discard pile to your hand.\nExhaust."
+    },
+    {
+      "name": "Shiny Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E].\nExhaust."
+    },
+    {
+      "name": "Shiny Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nExhaust."
+    },
+    {
+      "name": "Spiky Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Spiky Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Tasty Trinket",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 3 HP.\nExhaust."
+    },
+    {
+      "name": "Tasty Trinket+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 5 HP.\nExhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Mad_science",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Mad_science",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Hide Behind Junk",
+      "color": "Mad_science",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nChoose and shuffle a Trinket into your draw pile."
+    },
+    {
+      "name": "Hide Behind Junk+",
+      "color": "Mad_science",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nShuffle up to 2 Trinkets into your draw pile."
+    },
+    {
+      "name": "Powered Strike",
+      "color": "Mad_science",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel.\nDeal 10 damage.\nIf you have no Fuel, gain 1 Fuel instead."
+    },
+    {
+      "name": "Powered Strike+",
+      "color": "Mad_science",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel.\nDeal 15 damage.\nIf you have no Fuel, gain 1 Fuel instead."
+    },
+    {
+      "name": "Strike",
+      "color": "Mad_science",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Mad_science",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Acid Spray",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Deal 10 damage to a random enemy; or deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Acid Spray+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Deal 13 damage to a random enemy; or deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Antimatter Bomb",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply a Bomb that deals 15 damage in 3 turns."
+    },
+    {
+      "name": "Antimatter Bomb+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply a Bomb that deals 20 damage in 3 turns."
+    },
+    {
+      "name": "Auto-Strike",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nWhen drawn, deal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Auto-Strike+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nWhen drawn, deal 5 damage to ALL enemies."
+    },
+    {
+      "name": "Detonate",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDetonate enemy's Bombs."
+    },
+    {
+      "name": "Detonate+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDeal damage equal to the enemy's Bombs."
+    },
+    {
+      "name": "Energy Barrier",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block.\nGain 2 additional Block for each Fuel you have."
+    },
+    {
+      "name": "Energy Barrier+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block.\nGain 3 additional Block for each Fuel you have."
+    },
+    {
+      "name": "Flame Cannon",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel.\nDeal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Flame Cannon+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel.\nDeal 14 damage to ALL enemies."
+    },
+    {
+      "name": "Flexible Spear",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Deal 6 damage, apply 1 Weak; or deal 6 damage, apply 1 Vulnerable."
+    },
+    {
+      "name": "Flexible Spear+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Deal 9 damage, apply 2 Weak; or deal 9 damage, apply 2 Vulnerable."
+    },
+    {
+      "name": "Fragmentation Grenade",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice. Shuffle 2 random Trinkets into your draw pile."
+    },
+    {
+      "name": "Fragmentation Grenade+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice. Shuffle 2 random upgraded Trinkets into your draw pile."
+    },
+    {
+      "name": "Fume Blast",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 8 damage twice. Costs 1 less for each Fuel spent this combat."
+    },
+    {
+      "name": "Fume Blast+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 10 damage twice. Costs 1 less for each Fuel spent this combat."
+    },
+    {
+      "name": "LightOnFire",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage. This turn, whenever you spend Fuel deal 10 damage."
+    },
+    {
+      "name": "LightOnFire+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage. This and next turn, whenever you spend Fuel deal 10 damage."
+    },
+    {
+      "name": "Now or Never",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose: Gain 7 Block; or gain 11 Block next turn."
+    },
+    {
+      "name": "Now or Never+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose: Gain 10 Block; or gain 14 Block next turn."
+    },
+    {
+      "name": "Oil Drum",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain 1 Fuel."
+    },
+    {
+      "name": "Oil Drum+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain 1 Fuel."
+    },
+    {
+      "name": "Prosthetic Claw",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel. Deal 12 damage. Draw a card."
+    },
+    {
+      "name": "Prosthetic Claw+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel. Deal 16 damage. Draw a card."
+    },
+    {
+      "name": "Radioactive Sword",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 1 Fuel."
+    },
+    {
+      "name": "Radioactive Sword+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nGain 1 Fuel."
+    },
+    {
+      "name": "Refuel",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Fuel.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Refuel+1",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Fuel.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Shrink Ray",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 4 Strength, it regains 1 Strength per turn. Exhaust."
+    },
+    {
+      "name": "Shrink Ray+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 6 Strength, it regains 1 Strength per turn. Exhaust."
+    },
+    {
+      "name": "Sprocket",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Artifact. Exhaust.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Sprocket+1",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Artifact. Exhaust.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Strafe",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel.\nDeal 8 damage.\nGain 8 Block."
+    },
+    {
+      "name": "Strafe+",
+      "color": "Mad_science",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel.\nDeal 11 damage.\nGain 11 Block."
+    },
+    {
+      "name": "Assembly Line",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn choose and shuffle a Trinket into your draw pile."
+    },
+    {
+      "name": "Assembly Line+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn choose and shuffle a Trinket into your draw pile."
+    },
+    {
+      "name": "Bandage Bot",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you take attack damage, shuffle a Tasty Trinket into your draw pile."
+    },
+    {
+      "name": "Bandage Bot+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you take attack damage, shuffle a Tasty Trinket into your draw pile."
+    },
+    {
+      "name": "Bayonet",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Deal 8 damage; or spend 2 Fuel to deal 8 damage 3 times."
+    },
+    {
+      "name": "Bayonet+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Deal 10 damage; or spend 2 Fuel to deal 10 damage 3 times."
+    },
+    {
+      "name": "Bombardment",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply a Bomb to ALL enemies that deals 15 damage in 3 turns, and again in 6 turns. Exhaust."
+    },
+    {
+      "name": "Bombardment+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply a Bomb to ALL enemies that deals 20 damage in 3 turns, and again in 6 turns. Exhaust."
+    },
+    {
+      "name": "Box of Scraps",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nShuffle up to 2 Trinkets into your draw pile."
+    },
+    {
+      "name": "Box of Scraps+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nShuffle up to 3 Trinkets into your draw pile."
+    },
+    {
+      "name": "Browse",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Spend 1 Fuel.\nDraw 3 cards.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Browse+1",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Spend 1 Fuel.\nDraw 4 cards.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Capture Momentum",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, whenever an attack would deal damage, instead apply a Bomb that deals double that damage in 3 turns."
+    },
+    {
+      "name": "Capture Momentum+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, whenever an attack would deal damage, instead apply a Bomb that deals triple that damage in 3 turns."
+    },
+    {
+      "name": "Explore Options",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nWhen drawn gain 3 Block."
+    },
+    {
+      "name": "Explore Options+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nWhen drawn gain 5 Block."
+    },
+    {
+      "name": "Extract Oil",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. This turn, when you play an Attack, gain 1 Fuel."
+    },
+    {
+      "name": "Extract Oil+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. This turn, when you play an Attack, gain 1 Fuel."
+    },
+    {
+      "name": "Flame Thrower",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend all Fuel.\nDeal 7 damage for each Fuel spent."
+    },
+    {
+      "name": "Flame Thrower+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend all Fuel.\nDeal 10 damage for each Fuel spent."
+    },
+    {
+      "name": "Flammable Wall",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose: Spend 1 Fuel to gain 16 Block; or gain 2 Fuel."
+    },
+    {
+      "name": "Flammable Wall+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose: Spend 1 Fuel to gain 19 Block; or gain 3 Fuel."
+    },
+    {
+      "name": "Imposing Construct",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block. When drawn apply 1 Weak to all enemies."
+    },
+    {
+      "name": "Imposing Construct+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block. When drawn apply 1 Weak to all enemies."
+    },
+    {
+      "name": "Inflate",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Block. Lose 1 Dexterity."
+    },
+    {
+      "name": "Inflate+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 18 Block. Lose 1 Dexterity."
+    },
+    {
+      "name": "Junk Laser",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nDeals an additional 3 damage for ALL of your 0 cost cards."
+    },
+    {
+      "name": "Junk Laser+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nDeals an additional 4 damage for ALL of your 0 cost cards."
+    },
+    {
+      "name": "Lightbulb",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Spend 1 Fuel.\nGain [E] [E]."
+    },
+    {
+      "name": "Lightbulb+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Spend 1 Fuel.\nGain [E] [E] [E]."
+    },
+    {
+      "name": "Make or Break",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage twice. Choose: Draw 2 cards; or draw 2 cards next turn."
+    },
+    {
+      "name": "Make or Break+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage twice. Choose: Draw 2 cards; or draw 2 cards next turn."
+    },
+    {
+      "name": "Minature Weapons",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Choose: Whenever you play a Trinket, deal 3 damage to ALL enemies; or whenever you play a Trinket, gain 3 Block."
+    },
+    {
+      "name": "Minature Weapons+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Choose: Whenever you play a Trinket, deal 5 damage to ALL enemies; or whenever you play a Trinket, gain 5 Block."
+    },
+    {
+      "name": "Mind Control Beam",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Weak. Enemy changes their intent."
+    },
+    {
+      "name": "Mind Control Beam+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak. Enemy changes their intent."
+    },
+    {
+      "name": "Omni-Hammer",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Choose: Deal 7 damage to a random enemy X times; or gain 6 Block X times."
+    },
+    {
+      "name": "Omni-Hammer+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Choose: Deal 9 damage to a random enemy X times; or gain 8 Block X times."
+    },
+    {
+      "name": "Particle Beam",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage.\nWhen drawn, reduce this card's cost by 1 for this combat."
+    },
+    {
+      "name": "Particle Beam+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 16 damage.\nWhen drawn, reduce this card's cost by 1 for this combat."
+    },
+    {
+      "name": "Plasma Rifle",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage for each Fuel you have."
+    },
+    {
+      "name": "Plasma Rifle+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage for each Fuel you have."
+    },
+    {
+      "name": "Poke",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Draw cards until you draw a 0 cost card, discard the others."
+    },
+    {
+      "name": "Poke+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. Draw cards until you draw a 0 cost card, discard the others."
+    },
+    {
+      "name": "Power Armor",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, if you have at least 3 Fuel, gain 4 Block."
+    },
+    {
+      "name": "Power Armor+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, if you have at least 3 Fuel, gain 6 Block."
+    },
+    {
+      "name": "Probe",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Look at the top 2 cards of your draw pile. You may discard and upgrade any of them."
+    },
+    {
+      "name": "Probe+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Look at the top 3 cards of your draw pile. You may discard and upgrade any of them."
+    },
+    {
+      "name": "Recycling Station",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw a Trinket, draw a card."
+    },
+    {
+      "name": "Recycling Station+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Shuffle 2 random Trinkets into your draw pile.\nWhenever you draw a Trinket, draw a card."
+    },
+    {
+      "name": "Redesign",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Upgrade all cards in your hand and discard them. Draw 4 cards."
+    },
+    {
+      "name": "Redesign+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Upgrade all cards in your hand and discard them. Draw 5 cards."
+    },
+    {
+      "name": "Retarget",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 2 Strength.\nGain 2 Thorns for each Attack card in your hand."
+    },
+    {
+      "name": "Retarget+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 1 Strength.\nGain 2 Thorns for each Attack card in your hand."
+    },
+    {
+      "name": "Self Destruct",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to yourself, deal 20 damage to ALL enemies. Exhaust."
+    },
+    {
+      "name": "Self Destruct+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to yourself, deal 25 damage to ALL enemies. Exhaust."
+    },
+    {
+      "name": "Soften Up",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel. Deal 4 damage. Your next attack this turn deals double damage."
+    },
+    {
+      "name": "Soften Up+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Spend 1 Fuel. Deal 7 damage. Your next attack this turn deals double damage."
+    },
+    {
+      "name": "Time Dilation Field",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply Slow to ALL enemies. Exhaust."
+    },
+    {
+      "name": "Time Dilation Field+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply Slow to ALL enemies. Exhaust."
+    },
+    {
+      "name": "Tune",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose: Gain 2 Strength and lose 2 Dexterity; or gain 2 Dexterity and lose 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Tune+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose: Gain 2 Strength and lose 2 Dexterity; or gain 2 Dexterity and lose 2 Strength."
+    },
+    {
+      "name": "Virus",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to the number of Virus cards in your deck. Add a copy of this to your discard pile."
+    },
+    {
+      "name": "Virus+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to the number of Virus cards in your deck. Add 2 copies of this to your discard pile."
+    },
+    {
+      "name": "Weaponize",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Turn a Skill card in your hand into an Attack that deals 9 damage in addition to its other effects."
+    },
+    {
+      "name": "Weaponize+",
+      "color": "Mad_science",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Turn ALL Skill cards in your hand into Attacks that deal 11 damage in addition to their other effects."
+    },
+    {
+      "name": "Artillery Shot",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Spend 2 Fuel.\nDeal 36 damage."
+    },
+    {
+      "name": "Artillery Shot+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Spend 2 Fuel.\nDeal 46 damage."
+    },
+    {
+      "name": "Assemble",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Assemble a Trinket out of 4 parts.\nShuffle X copies of it into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Assemble+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Assemble a Trinket out of 5 parts.\nShuffle X copies of it into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Automate",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, whenever you play a card, spend 1 Fuel to play it twice."
+    },
+    {
+      "name": "Automate+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, whenever you play a card, spend 1 Fuel to play it twice."
+    },
+    {
+      "name": "Booster",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Fuel.\nDraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Booster+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Fuel.\nDraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Clockwork Assistant",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, draw a card and play it."
+    },
+    {
+      "name": "Clockwork Assistant+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, draw a card and play it."
+    },
+    {
+      "name": "Clone Vats",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, you may copy a card in your hand."
+    },
+    {
+      "name": "Clone Vats+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, you may copy a card in your hand."
+    },
+    {
+      "name": "Condense Vapors",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Spend 1 Fuel.\nObtain 20 Gold.\nExhaust."
+    },
+    {
+      "name": "Condense Vapors+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Spend 1 Fuel.\nObtain 20 Gold.\nExhaust."
+    },
+    {
+      "name": "Fume Hood",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Exhaust a card, gain 1 Fuel."
+    },
+    {
+      "name": "Fume Hood+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Exhaust a card, gain 1 Fuel."
+    },
+    {
+      "name": "Gather Parts",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw all Trinkets from your draw pile.\nShuffle up to 3 Trinkets into your draw pile. Exhaust."
+    },
+    {
+      "name": "Gather Parts+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw all Trinkets from your draw pile.\nShuffle up to 3 Trinkets into your draw pile."
+    },
+    {
+      "name": "Generator",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, spend 1 Fuel to gain [E]."
+    },
+    {
+      "name": "Generator+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of your turn, spend 1 Fuel to gain [E]."
+    },
+    {
+      "name": "Glass Cannon",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage 1 times. When drawn increase this card's number of attacks. Exhaust."
+    },
+    {
+      "name": "Glass Cannon+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage 1 times. When drawn increase this card's number of attacks. Exhaust."
+    },
+    {
+      "name": "Golden Gun",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Spend 20 gold.\nDeal 40 damage to ALL enemies."
+    },
+    {
+      "name": "Golden Gun+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Spend 20 gold.\nDeal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Jetpack",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Spent 1 Fuel at the start of each turn. Reduce incoming damage by 50%."
+    },
+    {
+      "name": "Jetpack+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Spent 1 Fuel at the start of each turn. Reduce incoming damage by 50%."
+    },
+    {
+      "name": "Lab Accident",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust all cards in your hand. Add 5 random cards to your hand. They cost 0 this turn. Exhaust."
+    },
+    {
+      "name": "Lab Accident+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust all cards in your hand. Add 5 random upgraded cards to your hand. They cost 0 this turn. Exhaust."
+    },
+    {
+      "name": "Liquify",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose and Exhaust up to 3 cards in your hand, gain 1 Fuel for each card exhausted.\nExhaust."
+    },
+    {
+      "name": "Liquify+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose and Exhaust up to 5 cards in your hand, gain 1 Fuel for each card exhausted.\nExhaust."
+    },
+    {
+      "name": "Mechanical Snecko",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play 2 cards in a turn, draw a card and randomize the cost of cards in your hand for this turn."
+    },
+    {
+      "name": "Mechanical Snecko+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play 2 cards in a turn, draw a card and randomize the cost of cards in your hand for this turn."
+    },
+    {
+      "name": "Mechanize",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 3 Fuel. Cards in your hand cost Fuel instead of energy this turn until played."
+    },
+    {
+      "name": "Mechanize+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 3 Fuel. Cards in your hand cost Fuel instead of energy this turn until played."
+    },
+    {
+      "name": "Postpone",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Place this and any cards from your hand on top of your draw pile.\nWhen drawn, draw 1 card."
+    },
+    {
+      "name": "Postpone+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Place this and any cards from your hand on top of your draw pile.\nWhen drawn, draw 2 cards."
+    },
+    {
+      "name": "Reconstitute",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "At the end of your turn gain 1 Fuel for each Fuel spent this turn."
+    },
+    {
+      "name": "Reconstitute+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Fuel for each Fuel spent this turn."
+    },
+    {
+      "name": "Refine",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Fuel.\nExhaust."
+    },
+    {
+      "name": "Refine+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Triple your Fuel.\nExhaust."
+    },
+    {
+      "name": "Tinker",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card and upgrade it."
+    },
+    {
+      "name": "Tinker+",
+      "color": "Mad_science",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card and upgrade it.\nIt costs 1 less this turn."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Fuel Tank",
+      "tier": "Starter",
+      "pool": "Mad_science",
+      "description": "At the start of each combat, gain 2 Fuel.",
+      "flavorText": "Taken from an old motorcycle, it now stores fuel for all kinds of nifty tools."
+    },
+    {
+      "name": "Doomsday Device",
+      "tier": "Common",
+      "pool": "Mad_science",
+      "description": "At the start of combat, shuffle up to 3 Trinkets into your draw pile.",
+      "flavorText": "Failed to blow up the spire, but can be recycled for spare parts."
+    },
+    {
+      "name": "Exhaust Vent",
+      "tier": "Common",
+      "pool": "Mad_science",
+      "description": "Whenever you spend Fuel, apply 2 Poison to ALL enemies.",
+      "flavorText": "Point the opening in the direction of your enemies."
+    },
+    {
+      "name": "Polishing Wheel",
+      "tier": "Uncommon",
+      "pool": "Mad_science",
+      "description": "Your Trinkets are upgraded.",
+      "flavorText": "Polishes even your throw-away creations to a mirror shine."
+    },
+    {
+      "name": "Signal Flag",
+      "tier": "Uncommon",
+      "pool": "Mad_science",
+      "description": "Whenever you play 3 attacks in a turn, gain 1 Fuel.",
+      "flavorText": ""
+    },
+    {
+      "name": "Funnel",
+      "tier": "Rare",
+      "pool": "Mad_science",
+      "description": "Whenever you gain Fuel, gain 1 additional Fuel.",
+      "flavorText": "Refuel your tools without spilling a single drop."
+    },
+    {
+      "name": "Portable Pumpjack",
+      "tier": "Boss",
+      "pool": "Mad_science",
+      "description": "At the start of your turn, gain 1 Fuel.",
+      "flavorText": "Stolen from an oil field."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Fuel Potion",
+      "rarity": "Common",
+      "description": "Gain 2 Fuel."
+    },
+    {
+      "name": "Trinket Potion",
+      "rarity": "Uncommon",
+      "description": "Add 3 random Trinkets to your hand."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Mad Scientist",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Bomb",
+      "description": "Bombs detonate after a certain number of turns, dealing damage."
+    },
+    {
+      "name": "Detonate",
+      "description": "Detonate a bomb deals its damage and removes it."
+    },
+    {
+      "name": "Fuel",
+      "description": "Fuel is used to power your cards."
+    },
+    {
+      "name": "Slow",
+      "description": "For each card played this turn, enemy takes 10% more damage from Attacks."
+    },
+    {
+      "name": "Trinket",
+      "description": "Trinkets are 0 cost cards that Exhaust."
+    }
+  ]
+}

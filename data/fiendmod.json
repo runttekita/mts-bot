@@ -1,0 +1,1113 @@
+{
+  "mod": {
+    "name": "Fiend Mod",
+    "version": "1.0.320",
+    "authors": ["Pwn\u4E09d (aka Bick)"],
+    "credits": "Big thanks to Lisa for character art",
+    "description": "The Fiend Mod adds a class for Slay The Spire, introducing The Fiend, alongside with 70+ cards, 5 relics, and multiple playstyle.",
+    "mts_version": "3.5.0",
+    "sts_version": "10-25-2018",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Barrage",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage. Gain 1 Flesh. Draw 1 card. Exhaust."
+    },
+    {
+      "name": "Barrage+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 Damage. Gain 1 Flesh. Draw 1 card. Exhaust."
+    },
+    {
+      "name": "Dice",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal Damage equal to 5% of target's current HP, then heal for 5% of target's current HP. Exhaust."
+    },
+    {
+      "name": "Dice+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal Damage equal to 5% of target's current HP, then heal for 5% of target's current HP. Exhaust."
+    },
+    {
+      "name": "Slice",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal Damage equal to 10% of target's current HP, then gain Flesh equal to 5% of target's current HP. Exhaust."
+    },
+    {
+      "name": "Slice+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal Damage equal to 10% of target's current HP, then gain Flesh equal to 5% of target's current HP. Exhaust."
+    },
+    {
+      "name": "Consume",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Consumes all Flesh. Heals for 0.5% per Flesh of max HP ( !MAX_HP_CONSUME! ). Gain 1 max HP if at least 8 Flesh is consumed. Exhaust."
+    },
+    {
+      "name": "Consume+",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Consumes all Flesh. Heals for 1% per Flesh of max HP ( !MAX_HP_CONSUME! ). Gain 2 max HP if at least 8 Flesh is consumed. Exhaust."
+    },
+    {
+      "name": "Demon Slash",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 Damage. Gain 1 Stress."
+    },
+    {
+      "name": "Demon Slash+",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 Damage. Gain 1 Stress and 1 Flesh."
+    },
+    {
+      "name": "Fortify",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block. Gain 1 additional Block for every 4 Flesh. Gain 1 Stress."
+    },
+    {
+      "name": "Fortify+",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block. Gain 1 additional Block for every 2 Flesh. Gain 1 Stress."
+    },
+    {
+      "name": "Bloodlust",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength and 2 Stress."
+    },
+    {
+      "name": "Bloodlust+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength and 2 Stress. Draw a card."
+    },
+    {
+      "name": "Conserve",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X Energy next turn. Exhaust."
+    },
+    {
+      "name": "Conserve+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X + 1 Energy next turn. Exhaust"
+    },
+    {
+      "name": "Demon Whip",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 Damage. Gain 2 Flesh and 1 Stress."
+    },
+    {
+      "name": "Demon Whip+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 Damage. Gain 3 Flesh and 1 Stress."
+    },
+    {
+      "name": "Demonic Contract",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Flesh and 2 Curse."
+    },
+    {
+      "name": "Demonic Contract+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Flesh and 2 Curse."
+    },
+    {
+      "name": "Fiendish Charge",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 Damage. Apply 1 Vulnerable. Gain 1 Flesh and 1 Stress."
+    },
+    {
+      "name": "Fiendish Charge+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 Damage. Apply 2 Vulnerable. Gain 1 Flesh and 1 Stress."
+    },
+    {
+      "name": "Meat Paste",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 4 Flesh. Gain 1 Stress."
+    },
+    {
+      "name": "Meat Paste+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 7 Flesh. Gain 1 Stress."
+    },
+    {
+      "name": "Meat Shield",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 2 Flesh and gain 10 Block. Gain 4 Block if no Flesh. Block from Flesh does not scale with any modifiers."
+    },
+    {
+      "name": "Meat Shield+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 2 Flesh and gain 16 Block. Gain 8 Block if no Flesh. Block from Flesh does not scale with any modifiers."
+    },
+    {
+      "name": "Meditate",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 Stress. Draw a card."
+    },
+    {
+      "name": "Meditate+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 2 Stress. Draw a card."
+    },
+    {
+      "name": "Radiation",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage. Gain 1 Flesh. Apply 1 Cancer."
+    },
+    {
+      "name": "Radiation+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage. Gain 2 Flesh. Apply 2 Cancer."
+    },
+    {
+      "name": "Rage",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 4 Flesh. Gain 2 Vulnerable. Shuffle 5 Barrage into your draw pile. Draw 1 card."
+    },
+    {
+      "name": "Rage+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 4 Flesh. Gain 2 Vulnerable. Shuffle 6 Barrage+ into your draw pile. Draw 1 card."
+    },
+    {
+      "name": "Ram",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal Damage equal to 10% of your max HP ( !MAX_HP_10! ). Gain 1 Flesh."
+    },
+    {
+      "name": "Ram+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal Damage equal to 25% of your max HP ( !MAX_HP_25! ). Gain 1 Flesh."
+    },
+    {
+      "name": "Salvage",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Flesh. Exhaust."
+    },
+    {
+      "name": "Salvage+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Flesh. Exhaust."
+    },
+    {
+      "name": "Splat",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 1 Flesh. Apply 1 Vulnerable and Weak. Apply 1 Flesh."
+    },
+    {
+      "name": "Splat+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 1 Flesh. Apply 2 Vulnerable and Weak. Apply 1 Flesh."
+    },
+    {
+      "name": "Vaccine",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 1 Flesh. Gain 2 Artifact. Exhaust."
+    },
+    {
+      "name": "Vaccine+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 1 Flesh. Gain 4 Artifact. Exhaust."
+    },
+    {
+      "name": "Abomination",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 10% of max HP ( !MAX_HP_10! ). Converts up to 10 Flesh into Strength, Block, Vulnerable, and - Dexterity."
+    },
+    {
+      "name": "Abomination+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 10% of max HP ( !MAX_HP_10! ). Converts up to 20 Flesh into Strength, Block, Vulnerable, and - Dexterity."
+    },
+    {
+      "name": "Alchemeat",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 25% of max HP ( !MAX_HP_25! ). Doubles your Flesh."
+    },
+    {
+      "name": "Alchemeat+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 10% of max HP ( !MAX_HP_10! ). Doubles your Flesh."
+    },
+    {
+      "name": "Back From Hell",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 10% of max HP ( !MAX_HP_10! ). Retrieve one card from the exhaust pile. Exhaust."
+    },
+    {
+      "name": "Back From Hell+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 10% of max HP ( !MAX_HP_10! ). Retrieve one card from the exhaust pile. Exhaust."
+    },
+    {
+      "name": "Black Market",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply all of your Flesh on target. Consumes all Flesh. Gain 4 Gold for each Flesh consumed. Exhaust."
+    },
+    {
+      "name": "Black Market+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply all of your Flesh on target. Consumes all Flesh. Gain 7 Gold for each Flesh consumed. Exhaust."
+    },
+    {
+      "name": "Blood Price",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal Damage for every 3 missing HP ( !BLOOD_PRICE! ). Not affected by modifiers."
+    },
+    {
+      "name": "Blood Price+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal Damage for every 2 missing HP ( !BLOOD_PRICE! ). Not affected by modifiers."
+    },
+    {
+      "name": "Cancer",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Cancer. Ethereal. "
+    },
+    {
+      "name": "Cancer+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 2 Cancer. Ethereal. "
+    },
+    {
+      "name": "Deepen Wound",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage and gain 1 Flesh for every 10% of target's missing HP. Gain 1 Stress."
+    },
+    {
+      "name": "Deepen Wound+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 Damage and gain 1 Flesh for every 10% of target's missing HP. Gain 1 Stress."
+    },
+    {
+      "name": "Execute",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 Damage. Gain 1 Flesh. 2x Damage and Flesh gain if enemy is below 50% HP. Gain 1 Stress."
+    },
+    {
+      "name": "Execute+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 Damage. Gain 2 Flesh. 2x Damage and Flesh gain if enemy is below 50% HP. Gain 1 Stress."
+    },
+    {
+      "name": "Flay",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 Damage. Apply 1 GW. Gain 1 Stress and 1 Flesh."
+    },
+    {
+      "name": "Flay+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 Damage. Apply 2 GW. Gain 1 Stress and 1 Flesh."
+    },
+    {
+      "name": "Flesh Plating",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 1 Flesh. Gain 2 Plated Armor. Gain 4 Stress."
+    },
+    {
+      "name": "Flesh Plating+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 1 Flesh. Gain 3 Plated Armor. Gain 4 Stress."
+    },
+    {
+      "name": "Flesh Whip",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 Damage, Deal 1 additional Damage for every Flesh you have. Gain 1 Stress."
+    },
+    {
+      "name": "Flesh Whip+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 Damage, Deal 2 additional Damage for every Flesh you have. Gain 1 Stress."
+    },
+    {
+      "name": "Greater Demon Slash",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage. Gain 1 Stress and 2 Flesh."
+    },
+    {
+      "name": "Greater Demon Slash+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 Damage. Gain 1 Stress and 3 Flesh."
+    },
+    {
+      "name": "Harden",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Converts all Flesh into Block and Thorns."
+    },
+    {
+      "name": "Harden+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Converts all Flesh into Block and Thorns."
+    },
+    {
+      "name": "Infect",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 GW. Deal 3 Damage per GW stack."
+    },
+    {
+      "name": "Infect+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 GW. Deal 4 Damage per GW stack."
+    },
+    {
+      "name": "Injection",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 Damage. Apply 2 Strength and 4 Flesh. Gain 1 Stress."
+    },
+    {
+      "name": "Injection+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 16 Damage. Apply 1 Strength and 4 Flesh. Gain 1 Stress."
+    },
+    {
+      "name": "Leech",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Steals 2 Flesh. Deal 2 Damage, unaffected by daamge modifiers. Gain 1 Stress."
+    },
+    {
+      "name": "Leech+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Steals 4 Flesh. Deal 4 Damage, unaffected by daamge modifiers. Gain 1 Stress."
+    },
+    {
+      "name": "Meat Magnet",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Steals all of the target's Flesh and deal that much Damage."
+    },
+    {
+      "name": "Meat Magnet+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Steals all of the target's Flesh and deal 2x that much Damage."
+    },
+    {
+      "name": "Mutative Arms",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Costs 3 Flesh. At the start of your turn, play 1 Barrage."
+    },
+    {
+      "name": "Mutative Arms+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Costs 3 Flesh. At the start of your turn, play 2 Barrage."
+    },
+    {
+      "name": "Rampage",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes all Flesh. Deal 4 Damage and lose 1 HP for each Flesh you consumed."
+    },
+    {
+      "name": "Rampage+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Consumes all Flesh. Deal 6 Damage and lose 1 HP for each Flesh you consumed."
+    },
+    {
+      "name": "Risky d5",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "80% chance to heal 10% of max HP ( !MAX_HP_10! ). 20% chance to lose 25% of max HP ( !MAX_HP_25! ). Exhaust."
+    },
+    {
+      "name": "Risky d5+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "80% chance to heal 10% of max HP ( !MAX_HP_10! ). 20% chance to lose 25% of max HP ( !MAX_HP_25! ). Exhaust. Draw a card."
+    },
+    {
+      "name": "Siphon",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 1 Damage. Gain 1 Strength. Apply 1 Weak."
+    },
+    {
+      "name": "Siphon+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 1 Damage. Gain 2 Strength. Apply 2 Weak."
+    },
+    {
+      "name": "Slice and Dice",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 10% of max HP. Draw Slice and Dice. Exhaust."
+    },
+    {
+      "name": "Slice and Dice+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Costs 10% of max HP. Draw Slice+ and Dice+ (Each now draws a card). Exhaust."
+    },
+    {
+      "name": "Transmeatation",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 Flesh X times."
+    },
+    {
+      "name": "Transmeatation+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 3 Flesh X times."
+    },
+    {
+      "name": "Upstart Demon",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 Regenerate. Draw 4 cards. Exhaust."
+    },
+    {
+      "name": "Upstart Demon+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 Regenerate. Draw 7 cards. Exhaust."
+    },
+    {
+      "name": "Violent Outburst",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, play 1 Demon Slash or Fiendish Charge."
+    },
+    {
+      "name": "Violent Outburst+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, play 2 Demon Slash or Fiendish Charge."
+    },
+    {
+      "name": "Amnesia",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Remove Strength from every unit, including yourself."
+    },
+    {
+      "name": "Amnesia+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove Strength from every unit, including yourself."
+    },
+    {
+      "name": "Bloodstone",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Flesh. Can be upgraded any number of times. Exhaust."
+    },
+    {
+      "name": "Bloodstone+1",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Flesh. Can be upgraded any number of times. Exhaust."
+    },
+    {
+      "name": "Bribery",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Pay 30 Gold. Gain 2 max HP. Target loses 2 max HP. Apply that amount as Strength. Exhaust."
+    },
+    {
+      "name": "Bribery+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Pay 30 Gold. Gain 4 max HP. Target loses 4 max HP. Apply that amount as Strength. Exhaust."
+    },
+    {
+      "name": "Bulk Up",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Doubles Flesh. Exhaust."
+    },
+    {
+      "name": "Bulk Up+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Triples Flesh. Exhaust."
+    },
+    {
+      "name": "Curse",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Curse and 2 Vulnerable."
+    },
+    {
+      "name": "Curse+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Curse and 3 Vulnerable."
+    },
+    {
+      "name": "Feast",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 6 Flesh. Gain 6 Regen. Exhaust."
+    },
+    {
+      "name": "Feast+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 6 Flesh. Gain 8 Regen. Exhaust."
+    },
+    {
+      "name": "Fiend's Grip",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Costs 4 Flesh and 25% of max HP ( !MAX_HP_25! ). Deal 16 Damage. Gain 5 max HP if it kills non-minion enemy. Exhaust."
+    },
+    {
+      "name": "Fiend's Grip+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Costs 4 Flesh and 10% of max HP ( !MAX_HP_10! ). Deal 22 Damage. Gain 5 max HP if it kills non-minion enemy. Exhaust."
+    },
+    {
+      "name": "Flesh For Flesh",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Consumes all Flesh. Deal 1% of enemy's max HP for every Flesh consumed. Exhaust."
+    },
+    {
+      "name": "Flesh For Flesh+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Consumes all Flesh. Deal 1.5% of enemy's max HP for every Flesh consumed. Exhaust."
+    },
+    {
+      "name": "Heal Burst",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal 5% of max HP ( !MAX_HP_5! ). Exhaust. Gain 1 Stress."
+    },
+    {
+      "name": "Heal Burst+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 5% of max HP ( !MAX_HP_5! ). Exhaust."
+    },
+    {
+      "name": "Hell Beam",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage. Deal 4 additional Damage for every card in your Exhaust Pile. Exhaust a random card in hand. Gain 2 Stress."
+    },
+    {
+      "name": "Hell Beam+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage. Deal 8 additional Damage for every card in your Exhaust Pile. Exhaust a random card in hand. Gain 2 Stress."
+    },
+    {
+      "name": "Iron Blood",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you lose HP, gain that amount as Block."
+    },
+    {
+      "name": "Iron Blood+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose HP, gain that amount as Block."
+    },
+    {
+      "name": "Masochism",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 25% your max HP ( !MAX_HP_25! ). Gain 3 max HP and 3 Strength. Exhaust."
+    },
+    {
+      "name": "Masochism+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 25% your max HP ( !MAX_HP_25! ). Gain 5 max HP and 5 Strength. Exhaust."
+    },
+    {
+      "name": "Mutilation",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Sets your HP to 1, then gain Flesh for every 2 HP lost. Exhaust."
+    },
+    {
+      "name": "Mutilation+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Sets your HP to 1, then gain Flesh for every 1 HP lost. Exhaust."
+    },
+    {
+      "name": "Nom",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Costs 25% of max HP ( !MAX_HP_25! ). Deal 8 Damage. Heal 8 HP. Exhaust."
+    },
+    {
+      "name": "Nom+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Costs 25% of max HP ( !MAX_HP_25! ). Deal 16 Damage. Heal 16 HP. Exhaust."
+    },
+    {
+      "name": "Red Stone of Aja",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Costs 10% of max HP ( !MAX_HP_10! ). Remove all debuffs. Gain Hamon."
+    },
+    {
+      "name": "Red Stone of Aja+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Remove all debuffs. Gain Hamon."
+    },
+    {
+      "name": "Satanic Ritual",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Costs 10% of your max HP ( !MAX_HP_10! ). Converts 5% of all enemies' into Flesh. Exhaust."
+    },
+    {
+      "name": "Satanic Ritual+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Costs 10% of your max HP ( !MAX_HP_10! ). Converts 10% of all enemies' into Flesh. Exhaust."
+    },
+    {
+      "name": "Soul Swap",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Costs 7 Flesh, but consumes all extras. Swaps HP with target, up to a difference of 30 . Exhaust."
+    },
+    {
+      "name": "Soul Swap+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Costs 7 Flesh, but consumes all extras. Swaps HP with target, up to a difference of 60 . Exhaust."
+    },
+    {
+      "name": "Unstable Cells",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Remove Flesh from target. Deal 4 Damage per Flesh removed."
+    },
+    {
+      "name": "Unstable Cells+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Remove Flesh from target. Deal 7 Damage per Flesh removed."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Fiend Totem",
+      "tier": "Starter",
+      "pool": "Default_gray",
+      "description": "Gain 1 Strength for every 10 non-minion kills (up to 5).\nGain [R] at 10 kills.",
+      "flavorText": "It's looking at you."
+    },
+    {
+      "name": "Soothe Bell",
+      "tier": "Common",
+      "pool": "Default_gray",
+      "description": "Increases your stress limit from 5 to 10.",
+      "flavorText": "The comforting chime of this bell calms the holder."
+    },
+    {
+      "name": "Flesh Totem",
+      "tier": "Uncommon",
+      "pool": "Default_gray",
+      "description": "At the beginning of combat, gain 1 Flesh for every 20 of your max HP.",
+      "flavorText": "It looks hungry."
+    },
+    {
+      "name": "Blood Totem",
+      "tier": "Rare",
+      "pool": "Default_gray",
+      "description": "At the end of combat, heal for 5% of your max HP.",
+      "flavorText": "It looks thirsty."
+    },
+    {
+      "name": "Scarf",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each combat, gain 1 Hamon.",
+      "flavorText": "A scarf made from the wings of many Satiporoja beetles."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Flesh Potion",
+      "rarity": "Common",
+      "description": "Gain 10 Flesh."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Fiend",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Cancer",
+      "description": "Causes you to lose 1% HP and gain 1 Flesh each turn."
+    },
+    {
+      "name": "Curse",
+      "description": "Stores 50% of Damage taken and take that amount as Damage at the end of the Curse."
+    },
+    {
+      "name": "Dice",
+      "description": "Deal Damage equal to 5% of target's current HP, then heal for 5% of target's current HP. Exhaust."
+    },
+    {
+      "name": "Flesh",
+      "description": "A resource used by the Fiend. Makes you take less Damage."
+    },
+    {
+      "name": "Gw",
+      "description": "Each Grievous Wound reduces healing received by 10% and deals 1 Damage."
+    },
+    {
+      "name": "Hamon",
+      "description": "The power of Hamon allows you to draw 2 extra cards each turn. Only works if you are above 50% HP."
+    },
+    {
+      "name": "Keyword",
+      "description": "Whenever you play a card, gain 1 dexterity this turn only."
+    },
+    {
+      "name": "Slice",
+      "description": "Deal Damage equal to 10% of target's current HP. Gain Flesh. Exhaust."
+    },
+    {
+      "name": "Stress",
+      "description": "At enough Stress, you will lose 1 energy and be unable to draw for a turn. Resets at the end of each turn."
+    }
+  ]
+}

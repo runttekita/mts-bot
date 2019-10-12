@@ -1,0 +1,748 @@
+{
+  "mod": {
+    "name": "FutureSeer",
+    "version": "11",
+    "authors": ["Tiny Night"],
+    "credits": "",
+    "description": "Add new character \"FutureSeer\".",
+    "mts_version": "0.0.0",
+    "sts_version": "",
+    "dependencies": [],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Energy Sword",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nTarget lose all Block.\nExhaust."
+    },
+    {
+      "name": "Energy Sword+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nTarget lose all Block and gain 2 Vulnerable .\nExhaust."
+    },
+    {
+      "name": "Firewall",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nGain 1 Artifact.\nExhaust."
+    },
+    {
+      "name": "Firewall+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nGain 2 Artifact.\nExhaust."
+    },
+    {
+      "name": "Injection",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nTarget lose all Strength.\nExhaust."
+    },
+    {
+      "name": "Injection+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nTarget lose all Strength and gain 2 Weak .\nExhaust."
+    },
+    {
+      "name": "Purified Water",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nExhaust 2 cards from the bottom of your draw pile and discard pile.\nExhaust."
+    },
+    {
+      "name": "Purified Water+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nExhaust 2 cards from the bottom of your draw pile and discard pile, and put non-curse or status cards into your hand after 2 turn starts.\nExhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Violet",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Violet",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Violet",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Violet",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Bounty",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 cards.\nIf target non-minion enemy died during its next 4th turn, you get 10 gold."
+    },
+    {
+      "name": "Bounty+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nIf target non-minion enemy died during its next 4th or 6th turn, you get 15 gold."
+    },
+    {
+      "name": "Brainstorm",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to all enemies after 2 turn starts."
+    },
+    {
+      "name": "Brainstorm+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage to all enemies after 2 turn starts."
+    },
+    {
+      "name": "Charge",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 energy after 2 turns."
+    },
+    {
+      "name": "Charge+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 energy after 2 and 4 turns."
+    },
+    {
+      "name": "Counter Strike",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 7 Block.\nTarget takes 7 damage after 2 turn starts."
+    },
+    {
+      "name": "Counter Strike+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 12 Block.\nTarget takes 12 damage after 2 turn starts."
+    },
+    {
+      "name": "Delay",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Before the turn end of your next turn, the HP loss will be delayed to your next 2 turn ends as damage. Half of the delayed damage cannot be delayed again."
+    },
+    {
+      "name": "Delay+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Before the turn end of your next turn, the HP loss will be delayed to your next 2 turn ends as damage. Half of the delayed damage cannot be delayed again."
+    },
+    {
+      "name": "Future Defend",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block after 2 turn starts."
+    },
+    {
+      "name": "Future Defend+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 21 Block after 2 turn starts."
+    },
+    {
+      "name": "Future Strike",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target takes 16 damage after 3 turn starts."
+    },
+    {
+      "name": "Future Strike+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target takes 24 damage after 3 turn starts."
+    },
+    {
+      "name": "Meteor",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Target takes 36 damage after 4 turn starts."
+    },
+    {
+      "name": "Meteor+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Target takes 48 damage after 4 turn starts."
+    },
+    {
+      "name": "Overdraft",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block, draw 2 Cards. After 2 turn starts, take 14 damage."
+    },
+    {
+      "name": "Overdraft+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate\nGain 14 Block, draw 2 cards. After 2 turn starts, take 14 damage."
+    },
+    {
+      "name": "Push Time",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Target lose 1 stack of prediction."
+    },
+    {
+      "name": "Push Time+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "All enemies lose 1 stack of prediction."
+    },
+    {
+      "name": "Solid Time",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Every character get 1 stack of prediction. For each character affected, you get 6 Block."
+    },
+    {
+      "name": "Solid Time+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Every character get 1 stack of prediction. For each character affected, you get 9 Block."
+    },
+    {
+      "name": "Time Contraction",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 1 stack of prediction."
+    },
+    {
+      "name": "Time Contraction+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 stack of prediction."
+    },
+    {
+      "name": "Toolbox",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put a Tool into your hand after 2 turn starts."
+    },
+    {
+      "name": "Toolbox+",
+      "color": "Violet",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put an upgraded Tool into your hand after 2 turn starts."
+    },
+    {
+      "name": "Accurate Prediction",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust 1 card from your hand, draw pile and discard pile respectively and put them into your hand after 2 turn starts.\nExhaust."
+    },
+    {
+      "name": "Accurate Prediction+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust 1 card from your hand, draw pile and discard pile respectively and put them into your hand after 2 turn starts."
+    },
+    {
+      "name": "Death Mark",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy takes 4 damage in its 4th turn. Multiply damage it takes by 2 in that turn."
+    },
+    {
+      "name": "Death Mark+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy takes 5 damage in its 4th and 6th turn. Multiply damage it takes by 2 in those turns."
+    },
+    {
+      "name": "Doom",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 40 damage to all enemies after 4 turn starts. You will also take 20 damage after that turn ends."
+    },
+    {
+      "name": "Doom+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 60 damage to all enemies after 4 turn starts. You will also take 20 damage after that turn ends."
+    },
+    {
+      "name": "Explosive Armor",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "From your 3rd turn ends, when you lose Block by damage, an enemy take the same amount of damage after its 2 turn starts. Last for a turn. You gain 7 Block after 2 turn starts."
+    },
+    {
+      "name": "Explosive Armor+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "From your 3rd turn ends, when you lose Block by damage, an enemy take the same amount of damage after its 2 turn starts. Last for a turn. You gain 14 Block after 2 turn starts."
+    },
+    {
+      "name": "Halflife Period",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "After 3 turn starts of the target, if its health is less than half, it takes 18 damage, otherwise you gain 18 Block."
+    },
+    {
+      "name": "Halflife Period+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "After 3 turn starts of the target, if its health is less than half, it takes 27 damage, otherwise you gain 27 Block."
+    },
+    {
+      "name": "Hat Trick",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card.\nPut a card in your hand into your draw pile."
+    },
+    {
+      "name": "Hat Trick+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards. Put a card in your hand into your draw pile."
+    },
+    {
+      "name": "Hunt",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 cards.\nIf target non-minion enemy died during its next 5th turn, you get 8 max health.\nExhaust."
+    },
+    {
+      "name": "Hunt+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nIf target non-minion enemy died during its next 5th or 7th turn, you get 12 max health.\nExhaust."
+    },
+    {
+      "name": "Infinite Pain",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy takes 4 damage in its 3th turn. The damage it takes in that turn will be taken again after 2 turns."
+    },
+    {
+      "name": "Infinite Pain+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy takes 5 damage in its 3th and 5th turn. The damage it takes in those turns will be taken again after 2 turns."
+    },
+    {
+      "name": "Lie",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove your negative prediction."
+    },
+    {
+      "name": "Lie",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove your negative prediction."
+    },
+    {
+      "name": "Lie",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove your negative prediction."
+    },
+    {
+      "name": "Probing Attack",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy takes 4 damage in its 2nd turn. The damage it takes in that turn will give the damage dealer the same amount of Block."
+    },
+    {
+      "name": "Probing Attack+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy takes 5 damage in its 2nd and 4th turn. The damage it takes in those turns will give the damage dealer the same amount of Block."
+    },
+    {
+      "name": "Quick Beam",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw a card. Target enemy lost 1 stack of prediction, take 6 damage, and gain 1 Weak."
+    },
+    {
+      "name": "Quick Beam+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 2 cards. Target enemy lost 1 stack of prediction, take 9 damage, and gain 2 Weak."
+    },
+    {
+      "name": "Retry",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw as many card as possible, then discard the same number of cards. You take 6 damage after 2 turn starts.\nExhaust."
+    },
+    {
+      "name": "Retry+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw as many card as possible, then discard the same number of cards.\nExhaust."
+    },
+    {
+      "name": "Taste Blood",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy takes 2 damage in its 5th turn. The damage it takes in that turn will heal the damage dealer for the same amount.\nExhaust."
+    },
+    {
+      "name": "Taste Blood+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy takes 3 damage in its 5th and 7th turn. The damage it takes in those turns will heal the damage dealer for the same amount.\nExhaust."
+    },
+    {
+      "name": "Thrifty",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "If you have no card left in your hand at end of turn, you draw 2 cards cards in next turn."
+    },
+    {
+      "name": "Thrifty+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate\nIf you have no card left in your hand at end of turn, you draw 2 cards cards in next turn."
+    },
+    {
+      "name": "Time Bomb",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 25 damage to all enemies after 3 turn starts."
+    },
+    {
+      "name": "Time Bomb+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 35 damage to all enemies after 3 turn starts."
+    },
+    {
+      "name": "Time Capsule",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card. Exhaust a card in your hand and move it into your hand after 2 turn starts."
+    },
+    {
+      "name": "Time Capsule+",
+      "color": "Violet",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 card. Exhaust a card in your hand and move it into your hand after 2 turn starts."
+    },
+    {
+      "name": "4D Print",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At every turn end, put a Tool into your hand after 2 turn starts."
+    },
+    {
+      "name": "4D Print+",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At every turn end, put an upgraded Tool into your hand after 2 turn starts."
+    },
+    {
+      "name": "Absolute Defense",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Preventing you from taking damage for your next 3rd turn.\nExhaust."
+    },
+    {
+      "name": "Absolute Defense+",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Preventing you from taking damage for your next 3rd and 5th turn.\nExhaust."
+    },
+    {
+      "name": "Borrow",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage and gain 10 health.\nReturn 10 health to target at its next 3 turn ends.\nExhaust."
+    },
+    {
+      "name": "Borrow+",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage and gain 15 health.\nReturn 15 health to target at its next 4 turn ends.\nExhaust."
+    },
+    {
+      "name": "Confident Turn",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At end of battle, you are healed by 9 and gain 9 gold for every turn after using this card.\nLose this effect when you use a card."
+    },
+    {
+      "name": "Confident Turn+",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At end of battle, you are healed by 15 and gain 15 gold for every turn after using this card.\nLose this effect when you use a card."
+    },
+    {
+      "name": "Double Trouble",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Your next card played in this turn will be played after 2 turn starts."
+    },
+    {
+      "name": "Double Trouble+",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Your next 2 cards played in this turn will be played after 2 turn starts."
+    },
+    {
+      "name": "Meet Future",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nEvery card played is played another time in your next 2 turn.\nExhaust."
+    },
+    {
+      "name": "Meet Future+",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "NL Every card played is played another time in your next 2 turn.\nExhaust."
+    },
+    {
+      "name": "Overhead",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When your hand is empty, draw a card and it costs 0 for this turn. When you play it, add a Dazed into your draw pile."
+    },
+    {
+      "name": "Overhead+",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nWhen your hand has less than 2 cards, draw a card and it costs 0 for this turn. When you play it, add a Dazed into your draw pile."
+    },
+    {
+      "name": "Predestined",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate, Ethereal.\nExhaust 3 cards from you draw pile, and put them into your hand in current, next and next 2 turn.\nExhaust."
+    },
+    {
+      "name": "Predestined+",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate, Ethereal.\nExhaust 4 cards from you draw pile, and put them into your hand in current, next, next 2 and next 3 turn.\nExhaust."
+    },
+    {
+      "name": "Reinforce",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain Block, you gain same amount of Block after 4 turn starts."
+    },
+    {
+      "name": "Reinforce+",
+      "color": "Violet",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain Block, you gain same amount of Block after 3 turn starts."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Future Seer",
+      "tier": "Starter",
+      "pool": "",
+      "description": "When battle ends, you gain 4 gold and HP for every turn in a battle. The bonus is cleared when you use a card.",
+      "flavorText": "Do not waste your life and money to doomed enemies."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The FutureSeer",
+      "type": "Player",
+      "minHP": "65",
+      "maxHP": "65"
+    }
+  ],
+  "keywords": [
+  ]
+}

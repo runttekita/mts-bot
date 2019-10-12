@@ -1,0 +1,1457 @@
+{
+  "mod": {
+    "name": "Marisa\uFF08\u9727\u96E8\u3000\u9B54\u7406\u6C99\uFF09",
+    "version": "0.14.30",
+    "authors": ["Flynn","Hell","Hohner257","Samsara"],
+    "credits": "",
+    "description": "Adds Marisa\uFF08\u9727\u96E8\u3000\u9B54\u7406\u6C99\uFF09 from Touhou Project as a new playable character.",
+    "mts_version": "0.0.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Exhaustion",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nWhile in hand, you cannot gain or consume Charge-up."
+    },
+    {
+      "name": "Wraith",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, gain 1 Wraith ."
+    },
+    {
+      "name": "Defend",
+      "color": "Marisa_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Marisa_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Master Spark",
+      "color": "Marisa_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nAmplify  [E]  : Deal 15 damage instead."
+    },
+    {
+      "name": "Master Spark+",
+      "color": "Marisa_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nAmplify  [E]  : Deal 20 damage instead."
+    },
+    {
+      "name": "Rising Sweep",
+      "color": "Marisa_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage. Gain 1 Charge-up."
+    },
+    {
+      "name": "Rising Sweep+",
+      "color": "Marisa_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. Gain 2 Charge-up."
+    },
+    {
+      "name": "Simple Spark",
+      "color": "Marisa_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Simple Spark+",
+      "color": "Marisa_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "66C",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate.\nDeal 8 damage.\nDeals double damage if there are no cards in your discard pile."
+    },
+    {
+      "name": "66C+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate.\nDeal 11 damage.\nDeals double damage if there are no cards in your discard pile."
+    },
+    {
+      "name": "6A",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage. Gain Block equal to the unblocked damage dealt."
+    },
+    {
+      "name": "6A+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage. Gain Block equal to the unblocked damage dealt."
+    },
+    {
+      "name": "Asteroid Belt",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nAmplify  [E]  : Next turn, gain 8 Block."
+    },
+    {
+      "name": "Asteroid Belt+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nAmplify  [E]  : Next turn, gain 11 Block."
+    },
+    {
+      "name": "Double Spark",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Add 1 Spark to your hand."
+    },
+    {
+      "name": "Double Spark+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Add 1 Upgraded Spark to your hand."
+    },
+    {
+      "name": "Galactic Halo",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block and 2 Charge-up."
+    },
+    {
+      "name": "Galactic Halo+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block and 3 Charge-up."
+    },
+    {
+      "name": "Grand Cross",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nCosts 0 if you have activated an Amplify effect this turn."
+    },
+    {
+      "name": "Grand Cross+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nCosts 0 if you have activated an Amplify effect this turn."
+    },
+    {
+      "name": "Illusion Star",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 random cards to your hand. Put a card from your hand on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Illusion Star+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 random cards to your hand. Put a card from your hand on top of your draw pile."
+    },
+    {
+      "name": "Luminous Strike",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to 2 times the number of cards in your hand( 0 damage).\nAmplify  [E]  : Deal damage equal to 4 times your current energy instead( 4 damage)."
+    },
+    {
+      "name": "Luminous Strike+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to 3 times the number of cards in your hand( 0 damage).\nAmplify  [E]  : Deal damage equal to 5 times your current energy instead( 5 damage)."
+    },
+    {
+      "name": "Magic Chant",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose up to 2 cards to Upgrade and Retain this turn."
+    },
+    {
+      "name": "Magic Chant+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose up to 2 cards to Upgrade and Retain this turn."
+    },
+    {
+      "name": "Mana Convection",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards. Exhaust 2 cards.\nIf you have 8 or more Charge-up, lose 8 Charge-up and gain  [E]  [E]  ."
+    },
+    {
+      "name": "Mana Convection+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards. Exhaust 2 cards.\nIf you have 8 or more Charge-up, lose 8 Charge-up and gain  [E]  [E]  ."
+    },
+    {
+      "name": "Mysterious Beam",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Add a random Attack to your hand. Deal damage equal to the damage of the card added."
+    },
+    {
+      "name": "Mysterious Beam+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Add a random upgraded Attack to your hand. Deal damage equal to the damage of the card added."
+    },
+    {
+      "name": "Non-Directional Laser",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies, then deal 5 damage to a random enemy."
+    },
+    {
+      "name": "Non-Directional Laser+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies, then deal 7 damage to a random enemy."
+    },
+    {
+      "name": "Shooting Echo",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Exhaust a random card. Add a Shooting Echo to your hand.\nDeal 9 damage.\nExhaust."
+    },
+    {
+      "name": "Shooting Echo+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaust a card. Add an Upgraded Shooting Echo to your hand.\nDeal 11 damage.\nExhaust."
+    },
+    {
+      "name": "Spore Crump",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable to an enemy.\nAmplify  [E]  : Apply 2 Vulnerable to ALL enemies instead."
+    },
+    {
+      "name": "Spore Crump+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Vulnerable to an enemy.\nAmplify  [E]  : Apply 3 Vulnerable to ALL enemies instead."
+    },
+    {
+      "name": "Unstable Bomb",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal random damage ( 1 to 4 ) to a random enemy 4 times."
+    },
+    {
+      "name": "Unstable Bomb+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal random damage ( 2 to 5 ) to a random enemy 4 times."
+    },
+    {
+      "name": "Upgrade!",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "ALL Attacks in your hand deal 2 additional damage this combat."
+    },
+    {
+      "name": "Upgrade!+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "ALL Attacks in your hand deal 3 additional damage this combat."
+    },
+    {
+      "name": "Witch Leyline",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage. Add 2 Burns to your hand."
+    },
+    {
+      "name": "Witch Leyline+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 16 damage. Add 2 Burns to your hand."
+    },
+    {
+      "name": "Witch Of Greed",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of combat, gain 15 gold. \n Amplify  [E] : Also obtain a random potion."
+    },
+    {
+      "name": "Witch Of Greed+",
+      "color": "Marisa_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of combat, gain 25 gold. \n Amplify  [E] : Also obtain a random potion."
+    },
+    {
+      "name": "Alice's Gift",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": " Retain. Deal 5 Damage. Exhaust .\nAmplify [E]  [E] : Deal triple damage."
+    },
+    {
+      "name": "Alice's Gift+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": " Retain. Deal 7 Damage. Exhaust .\nAmplify [E]  [E] : Deal triple damage."
+    },
+    {
+      "name": "Blaze Away",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play the last Attack you played this turn 1 time(s)."
+    },
+    {
+      "name": "Blaze Away+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play the last Attack you played this turn 2 time(s)."
+    },
+    {
+      "name": "Charge-Up Spray",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf this card consumes Charge-up, gain [E] and draw 2 cards."
+    },
+    {
+      "name": "Charge-Up Spray+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf this card consumes Charge-up, gain [E] and draw 2 cards."
+    },
+    {
+      "name": "Charging Up",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Charge-up.\nExhaust."
+    },
+    {
+      "name": "Charging Up+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Charge-up.\nExhaust."
+    },
+    {
+      "name": "Dark Matter",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played once per turn.\nShuffle 2 copies of this card into your draw pile. Draw 1 card. When this card is Exhausted, gain 4 Block.\nEthereal."
+    },
+    {
+      "name": "Dark Matter+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played once per turn.\nShuffle 2 copies of this card into your draw pile. Draw 1 card. When this card is Exhausted, gain 6 Block.\nEthereal ."
+    },
+    {
+      "name": "Dark Spark",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all non-Attack cards in your hand.\nDeal 7 damage to ALL enemies twice."
+    },
+    {
+      "name": "Dark Spark+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all non-Attack cards in your hand.\nDeal 10 damage to ALL enemies twice."
+    },
+    {
+      "name": "Deep Ecological Bomb",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to a random enemy, then reduce its Strength by 2 this turn.\nAmplify  [E]  : Apply this effect again."
+    },
+    {
+      "name": "Deep Ecological Bomb+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to a random enemy, then reduce its Strength by 3 this turn.\nAmplify  [E]  : Apply this effect again."
+    },
+    {
+      "name": "Dragon Meteor",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nDeals an additional 1 damage for each card in your exhaust pile."
+    },
+    {
+      "name": "Dragon Meteor+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nDeals an additional 2 damage for each card in your exhaust pile."
+    },
+    {
+      "name": "Earthlight Ray",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 4 HP. Exhaust.\nAmplify  [E]  : Put a random card from your discard pile into your hand."
+    },
+    {
+      "name": "Earthlight Ray+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 6 HP. Exhaust.\nAmplify  [E]  : Put a card from your discard pile into your hand."
+    },
+    {
+      "name": "Energy Flow",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Charge-up at the end of your turn."
+    },
+    {
+      "name": "Energy Flow+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Charge-up at the end of your turn."
+    },
+    {
+      "name": "Energy Recoil",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to your Charge-up."
+    },
+    {
+      "name": "Energy Recoil+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to your Charge-up + 3."
+    },
+    {
+      "name": "Event Horizon",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "1 time(s) each turn, when you activate an Amplify effect, you can put an Attack from your discard pile into your hand."
+    },
+    {
+      "name": "Event Horizon+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "2 time(s) each turn, when you activate an Amplify effect, you can put an Attack from your discard pile into your hand."
+    },
+    {
+      "name": "Fairy Destruction Ray",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage to all enemies. Amplify  [E]  [E] : Instant-kill those with 15 or less HP."
+    },
+    {
+      "name": "Fairy Destruction Ray+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage to all enemies. Amplify  [E]  [E] : Instant-kill those with 18 or less HP."
+    },
+    {
+      "name": "Gas Giant",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 16 Block. Add 2 Burns to your hand."
+    },
+    {
+      "name": "Gas Giant+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 20 Block. Add 2 Burns to your hand."
+    },
+    {
+      "name": "Gravity Beat",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage and apply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Gravity Beat+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage and apply 3 Weak to ALL enemies."
+    },
+    {
+      "name": "Machine Gun Spark",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage 6 times.\nExhaust."
+    },
+    {
+      "name": "Machine Gun Spark+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage 8 times.\nExhaust."
+    },
+    {
+      "name": "Magic Absorber",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block. Remove a random debuff from yourself.\nExhaust."
+    },
+    {
+      "name": "Magic Absorber+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block. Remove a random debuff from yourself.\nExhaust."
+    },
+    {
+      "name": "Meteonic Shower",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Exhaust up to X + 1 cards.\nDeal 3 damage to a random enemy 2 times for each card you Exhausted, or 3 times for each Burn Exhausted."
+    },
+    {
+      "name": "Meteonic Shower+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Exhaust up to X + 1 cards.\nDeal 4 damage to a random enemy 2 times for each card you Exhausted, or 3 times for each Burn Exhausted."
+    },
+    {
+      "name": "Milky Way",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. Draw 1 card.\nALL Attacks in your hand deal 1 additional damage this combat."
+    },
+    {
+      "name": "Milky Way+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. Draw 1 card.\nALL Attacks in your hand deal 2 additional damage this combat."
+    },
+    {
+      "name": "Occultation",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your draw pile. Gain 1 Block for each card discarded."
+    },
+    {
+      "name": "Occultation+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your draw pile. Gain 1 Block for each card discarded."
+    },
+    {
+      "name": "One Time Off",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. You can't activate Amplify effects this turn.\nDraw 1 card(s) next turn."
+    },
+    {
+      "name": "One Time Off+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. You can't activate Amplify effects or consume Charge-up this turn.\nDraw 2 card(s) next turn."
+    },
+    {
+      "name": "OortCloud",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Plated Armor.\nAmplify  [E]  : Gain 2 more Plated Armor."
+    },
+    {
+      "name": "OortCloud+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 5 Plated Armor.\nAmplify  [E]  : Gain 3 more Plated Armor."
+    },
+    {
+      "name": "Open Universe",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 5 random cards into your draw pile. Each of them has a 20 % chance to be Upgraded.\nDraw 2 cards."
+    },
+    {
+      "name": "Open Universe+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 5 random cards into your draw pile. Each of them has a 30 % chance to be Upgraded.\nDraw 3 cards."
+    },
+    {
+      "name": "Orbital",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": " Unplayable. When this card is drawn, draw 1 card.\nIf this card is Exhausted, place 1 card(s) from your exhaust pile into your hand."
+    },
+    {
+      "name": "Orbital+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": " Unplayable. When this card is drawn, draw 1 card.\nIf this card is Exhausted, place 2 card(s) from your exhaust pile into your hand."
+    },
+    {
+      "name": "Orrerys Sun",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever Charge-up is consumed, deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Orrerys Sun+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever Charge-up is consumed, deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Portable Prop Bag",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Randomly get either Orichalcum, Amplification Wand or Art Of War.\nLose that relic when the battle ends.\nExhaust."
+    },
+    {
+      "name": "Portable Prop Bag+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Innate.\nRandomly get either Orichalcum, Amplification Wand or Art Of War.\nLose that relic when the battle ends.\nExhaust."
+    },
+    {
+      "name": "Pulse Magic",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn, gain  [E]  . Amplify [E]  : Amplify effects cost no [E] this turn."
+    },
+    {
+      "name": "Pulse Magic+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn, gain [E]  [E]  . Amplify [E]  : Amplify effects cost no [E] this turn."
+    },
+    {
+      "name": "Refraction Spark",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage. Increase the damage of ALL Spark cards in your hand by the unblocked damage dealt.\nAmplify  [E]  : Deal 7 damage instead."
+    },
+    {
+      "name": "Refraction Spark+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Increase the damage of ALL Spark cards in your hand by the unblocked damage dealt.\nAmplify  [E]  : Deal 9 damage instead."
+    },
+    {
+      "name": "Robbery",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Gain gold equal to unblocked damage dealt.\nExhaust.\nAmplify [E] : Double the gold you gain."
+    },
+    {
+      "name": "Robbery+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Gain gold equal to unblocked damage dealt.\nExhaust.\nAmplify [E] : Double the gold you gain."
+    },
+    {
+      "name": "Shoot The Moon",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove a random buff from your target if it is not a boss enemy. Deal 8 damage.\nAmplify  [E]  : Remove ALL buffs and deal 13 damage instead."
+    },
+    {
+      "name": "Shoot The Moon+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove a random buff from your target if it is not a boss enemy. Deal 11 damage.\nAmplify  [E]  : Remove ALL buffs and deal 18 damage instead."
+    },
+    {
+      "name": "Sprinkle Star Seal",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 99 Weak.\nExhaust."
+    },
+    {
+      "name": "Sprinkle Star Seal+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 99 Weak.\nExhaust."
+    },
+    {
+      "name": "Star Barrage",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage 1 time.\nEvery time this card is played, it deals damage 1 additional time for this combat."
+    },
+    {
+      "name": "Star Barrage+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage 1 time.\nEvery time this card is played, it deals damage 1 additional time for this combat."
+    },
+    {
+      "name": "Starlight Typhoon",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to 2 times the number of cards that cost 0 you played this combat to ALL enemies."
+    },
+    {
+      "name": "Starlight Typhoon+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to 3 times the number of cards that cost 0 you played this combat to ALL enemies."
+    },
+    {
+      "name": "Super Perseids",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. When this card is drawn, gain [E].\nIf this card is Exhausted, deal 16 damage to a random enemy."
+    },
+    {
+      "name": "Super Perseids+",
+      "color": "Marisa_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. When this card is drawn, gain [E].\nIf this card is Exhausted, deal 24 damage to a random enemy."
+    },
+    {
+      "name": "Absolute Magnitude",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 2 times your Charge-up (Deals 0 damage)."
+    },
+    {
+      "name": "Absolute Magnitude+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 3 times your Charge-up (Deals 0 damage)."
+    },
+    {
+      "name": "Big Crunch",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust half of the cards in your discard pile and Draw Pile. Gain  [E]  and draw 1 card for every 5 cards Exhausted.\nExhaust."
+    },
+    {
+      "name": "Big Crunch+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust half of the cards in your discard pile and Draw Pile. Gain  [E]  and draw 1 card for every 4 cards Exhausted.\nExhaust."
+    },
+    {
+      "name": "Binary Stars",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose to add either Black Flare Star or White Dwarf to your hand. Exhaust.\nAmplify  [E]  : Add both to your hand instead."
+    },
+    {
+      "name": "Binary Stars+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose to add and upgrade either Black Flare Star or White Dwarf to your hand. Exhaust.\nAmplify  [E]  : Add both to your hand instead."
+    },
+    {
+      "name": "Blazing Star",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. Deals 7 additional damage for each Burn in your hand.\nAmplify  [E]  : Deal double damage. "
+    },
+    {
+      "name": "Blazing Star+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage. Deals 9 additional damage for each Burn in your hand.\nAmplify  [E]  : Deal double damage. "
+    },
+    {
+      "name": "Casket Of Star",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain Block, add a Spark to your hand."
+    },
+    {
+      "name": "Casket Of Star+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain Block, add an Upgraded Spark to your hand."
+    },
+    {
+      "name": "Collecting Quirk",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage to a random enemy for every 4 Relics you have."
+    },
+    {
+      "name": "Collecting Quirk+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage to a random enemy for every 3 Relics you have."
+    },
+    {
+      "name": "Escape Velocity",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of each turn, draw 2 more cards and add a Burn to your hand."
+    },
+    {
+      "name": "Escape Velocity+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, draw 2 more cards and add a Burn to your hand."
+    },
+    {
+      "name": "Final Spark",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "7",
+      "description": "Cost 1 less  [E]  for each card containing \"Spark\" played this combat.\nDeal 40 damage to ALL enemies.\nReset the cost of this card."
+    },
+    {
+      "name": "Final Spark+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "7",
+      "description": "Retain.\nCost 1 less  [E]  for each card containing \"Spark\" played this combat.\nDeal 40 damage to ALL enemies.\nReset the cost of this card."
+    },
+    {
+      "name": "Mana Rampage",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Play X random Attacks."
+    },
+    {
+      "name": "Mana Rampage+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Play X random Upgraded Attacks."
+    },
+    {
+      "name": "Max Power",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Convert your Charge-up stacks into energy. Add 1 Exhaustion to your hand. Your attack damage is doubled this turn.\nExhaust."
+    },
+    {
+      "name": "Max Power+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Convert your Charge-up stacks into energy. Add 1 Exhaustion to your hand. Your attack damage is doubled this turn.\nExhaust."
+    },
+    {
+      "name": "Millisecond Pulsars",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Amplify effects cost no  [E]  this combat."
+    },
+    {
+      "name": "Millisecond Pulsars+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nAmplify effects cost no  [E]  this combat."
+    },
+    {
+      "name": "Polaris Unique",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. Shuffle a Guiding Star into your draw pile. Gain  [E]  at the start of your turn while it is in your draw pile(does not stack)."
+    },
+    {
+      "name": "Polaris Unique+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate. Shuffle a Guiding Star into your draw pile. Gain  [E]  at the start of your turn while it is in your draw pile(does not stack)."
+    },
+    {
+      "name": "Satellite Illusion",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain  [E]  when the number of cards in your draw pile increases during your turn."
+    },
+    {
+      "name": "Satellite Illusion+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate. Gain  [E]  when the number of cards in your draw pile increases during your turn."
+    },
+    {
+      "name": "Singularity",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card that costs 0, increase the damage of a random Attack in your hand by 2 ."
+    },
+    {
+      "name": "Singularity+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card that costs 0, increase the damage of a random Attack in your hand by 3 ."
+    },
+    {
+      "name": "Stardust Reverie",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle your hand into your draw pile, then add that many random cards into your hand.\nExhaust."
+    },
+    {
+      "name": "Stardust Reverie+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle your hand into your draw pile, then add that many random Upgraded cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Supernova",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "No longer take damage from Burn. Whenever you Exhaust a Burn, gain 1 Strength.\nExhaust your hand at the end of each turn."
+    },
+    {
+      "name": "Supernova+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": " Innate.\nNo longer take damage from Burn. Whenever you Exhaust a Burn, gain 1 Strength.\nExhaust your hand at the end of each turn."
+    },
+    {
+      "name": "TreasureHunter",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nIf this kills a non-minion enemy in an Elite or Boss room, at the end of combat, obtain 1 random relic.\nExhaust."
+    },
+    {
+      "name": "TreasureHunter+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\nIf this kills a non-minion enemy in an Elite or Boss room, at the end of combat, obtain 1 random relic.\nExhaust."
+    },
+    {
+      "name": "Ultimate Shortwave",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 [E] and 1 Charge-up. Increase the Charge-up gain of this card by 1 and energy gain by 1 for this battle."
+    },
+    {
+      "name": "Ultimate Shortwave+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 [E] and 1 Charge-up. Increase the Charge-up gain of this card by 2 and energy gain by 1 for this battle."
+    },
+    {
+      "name": "Warming Up",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 1 damage. Add a Rising Sweep, a Spark and a Witch Leyline to your hand."
+    },
+    {
+      "name": "Warming Up+",
+      "color": "Marisa_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 1 damage. Add a Rising Sweep, a Spark and a Witch Leyline to your hand and Upgrade them."
+    },
+    {
+      "name": "Black Flare Star",
+      "color": "Marisa_derivations",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played when you have 4 or more cards in your hand.\nDiscard any number of cards from your hand and gain 4 Block for each."
+    },
+    {
+      "name": "Black Flare Star+",
+      "color": "Marisa_derivations",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played when you have 4 or more cards in your hand.\nDiscard any number of cards from your hand and gain 5 Block for each."
+    },
+    {
+      "name": "Guiding Star",
+      "color": "Marisa_derivations",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle a copy of this card into your draw pile.\nShuffle your discard pile into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Guiding Star+",
+      "color": "Marisa_derivations",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle a copy of this card into your draw pile.\nShuffle your discard pile into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Spark",
+      "color": "Marisa_derivations",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nExhaust."
+    },
+    {
+      "name": "Spark+",
+      "color": "Marisa_derivations",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nExhaust."
+    },
+    {
+      "name": "White Dwarf",
+      "color": "Marisa_derivations",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played when you have 4 or less cards in your hand.\nDeal -1 damage (1.5 \u00D7 size of your discard pile). Add 2 Burns to your hand."
+    },
+    {
+      "name": "White Dwarf+",
+      "color": "Marisa_derivations",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played when you have 4 or less cards in your hand.\nDeal -1 damage (2 \u00D7 size of your discard pile). Add 2 Burns to your hand."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Mini-Hakkero",
+      "tier": "Starter",
+      "pool": "Marisa_color",
+      "description": "Whenever you play a card, gain 1 Charge-up .",
+      "flavorText": "A mini-Eight Trigram Furnace, a gift from Rinosuke when Marisa left her parents."
+    },
+    {
+      "name": "Shroom Bag",
+      "tier": "Common",
+      "pool": "Marisa_color",
+      "description": "Upon pickup, obtain 2 Parasite. Parasite cards can now be played. Playing a Parasite will heal 2 HP and draw a card, then Exhausts it.",
+      "flavorText": "All witches have an abnormal enthusiasm for mushrooms... Or is it just Marisa...?"
+    },
+    {
+      "name": "Bread Of A Washoku Lover",
+      "tier": "Uncommon",
+      "pool": "Marisa_color",
+      "description": "Heal 1 hp whenever you exhaust a Status or a Curse.\nWhen triggered 13 times, you gain 13 max HP,and this relic no longer works.",
+      "flavorText": "\"Can you remember how many slices of bread you have eaten until now?\"\"Thirteen. I prefer Japanese food.\""
+    },
+    {
+      "name": "Handmade Grimoire",
+      "tier": "Uncommon",
+      "pool": "Marisa_color",
+      "description": "At the start of battle, for every 15 cards in your master deck, gain [E] and draw a card.",
+      "flavorText": "A notebook full of experiment records and magic material recipes;just how Marisa develops her Magics."
+    },
+    {
+      "name": "Amplification Wand",
+      "tier": "Rare",
+      "pool": "Marisa_color",
+      "description": "Whenever you activate an Amplify effect, gain 4 block .",
+      "flavorText": "A wand that seems to not be used often."
+    },
+    {
+      "name": "Magic Broom",
+      "tier": "Rare",
+      "pool": "Marisa_color",
+      "description": "Every time you play 3 cards that cost 0, draw 1 card.",
+      "flavorText": "Marisa always travels on her flying broom."
+    },
+    {
+      "name": "Big Shroom Bag",
+      "tier": "Special",
+      "pool": "Marisa_color",
+      "description": "Replaces Shroom Bag .\nParasite cards can now be played. Playing a Parasite will heal 3 HP and draw 2 card, then Exhausts it.",
+      "flavorText": "A large version of shroom bag."
+    },
+    {
+      "name": "Cat Cart",
+      "tier": "Special",
+      "pool": "",
+      "description": "Gain 1 charge when you climb a floor.When you would die,consume all charges and heal 4 hp for each of them.",
+      "flavorText": "When you fall in battle,your loyal kitties will bring you back to life with this."
+    },
+    {
+      "name": "Sprouting Branch",
+      "tier": "Special",
+      "pool": "Marisa_color",
+      "description": "At the start of combat, gain 5 Regen .",
+      "flavorText": "The dead branch just come to life in Marisa's hand,how poetic."
+    },
+    {
+      "name": "Bewitched Hakkero",
+      "tier": "Boss",
+      "pool": "Marisa_color",
+      "description": "Replaces Mini-Hakkero .\nWhenever you play a card or are attacked, gain 1 Charge-up .",
+      "flavorText": "Its firepower is on a new level, but is it ok to use a bewitched tool?"
+    },
+    {
+      "name": "Experimental Familiar",
+      "tier": "Boss",
+      "pool": "Marisa_color",
+      "description": "At the start of each turn, add 1 Spark to your hand.\nAt the start of combat, you can choose 1 from 3 random cards. It costs 0 this turn.",
+      "flavorText": "A Familiar looks just like a shiny orb. Not very powerful, but it will surely help you a lot."
+    },
+    {
+      "name": "Rampaging Magic Tool",
+      "tier": "Boss",
+      "pool": "Marisa_color",
+      "description": "Gain [E] at the start of each turn.\nApply a random debuff/buff ( 2 Frail , 2 Weak , 2 Vulnerable , 3 Poison , 8 Charge-up )to you at the start of each combat.",
+      "flavorText": "It's been so long since anyone last used them. Who knows what could happen?"
+    },
+    {
+      "name": "Simple Launcher",
+      "tier": "Shop",
+      "pool": "Marisa_color",
+      "description": "Reduce your Charge-up consumption threshold value from 8 to 6 .",
+      "flavorText": "A flashlight is a flashlight,no matter how it is called..."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Shroom Brew",
+      "rarity": "Uncommon",
+      "description": " Exhaust a card.\nThe effect of this potion depends on the type of the card you Exhausted."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Ordinary Magician",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    },
+    {
+      "name": "Orin",
+      "type": "Elite",
+      "minHP": "68",
+      "maxHP": "68"
+    },
+    {
+      "name": "Zombie Fairy",
+      "type": "Normal",
+      "minHP": "12",
+      "maxHP": "12"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Black Flare Star",
+      "description": "Black Flare Star is a skill card costs 0 and grants you Block by discarding cards."
+    },
+    {
+      "name": "Charge-up",
+      "description": "For every 8 stacks,double the damage of your next Attack."
+    },
+    {
+      "name": "Exhaustion",
+      "description": "Exhaustion prevent you from gaining or using Charge-Up ."
+    },
+    {
+      "name": "Spark",
+      "description": "Spark is an attack card costs 0 energy and exhausts upon use."
+    },
+    {
+      "name": "WWWWWWWWWWWWWWWWWWW",
+      "description": "WWWWWWWWWWWWWWWWWWWWW"
+    },
+    {
+      "name": "White Dwarf",
+      "description": "White Dwarf is a attack card costs 0 and deals damage depending on the size of your discard pile."
+    },
+    {
+      "name": "Wraith",
+      "description": "Wraith will exhaust a random card in your hand after the start of your turn."
+    },
+    {
+      "name": "Amplify",
+      "description": "Pay extra energy for its effect when you have enough [E] ."
+    },
+    {
+      "name": "Is only shown to",
+      "description": "Well...That means you may not able to see it..."
+    },
+    {
+      "name": "True Magicians",
+      "description": "Perhaps Marisa is not one though."
+    }
+  ]
+}

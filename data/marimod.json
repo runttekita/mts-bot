@@ -1,0 +1,1377 @@
+{
+  "mod": {
+    "name": "Mari Mod",
+    "version": "1.2.3",
+    "authors": ["iryan72","Delta4S"],
+    "credits": "Extra thanks to Delta4S for the ZHS translation!",
+    "description": "You want idols? You get idols.",
+    "mts_version": "3.7.0",
+    "sts_version": "07-17-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Debut",
+      "color": "Mari",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\n[#fbccff]Spend[] !MARI_GOLD_COST! Gold to apply 2 Radiance and gain 2 Radiance.\nExhaust."
+    },
+    {
+      "name": "Debut+",
+      "color": "Mari",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\n[#fbccff]Spend[] !MARI_GOLD_COST! Gold to apply 2 Radiance and gain 2 Radiance.\nExhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Mari",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nKindle: Gain 4 more."
+    },
+    {
+      "name": "Defend+",
+      "color": "Mari",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nKindle: Gain 5 more."
+    },
+    {
+      "name": "Reminisce",
+      "color": "Mari",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose from 3 types of cards in your exhaust pile to randomly move one to your hand. You cannot choose that type again."
+    },
+    {
+      "name": "Reminisce+",
+      "color": "Mari",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose from 4 types of cards in your exhaust pile to randomly move one to your hand. You cannot choose that type again."
+    },
+    {
+      "name": "Strike",
+      "color": "Mari",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nApply 1 Radiance."
+    },
+    {
+      "name": "Strike+",
+      "color": "Mari",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 1 Radiance."
+    },
+    {
+      "name": "Stewshine!",
+      "color": "Mari",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Play three combined cards.\n(Special Relic Card.)"
+    },
+    {
+      "name": "\"It's Joke!\"",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage to an enemy, then restore the enemy's HP back to its original value."
+    },
+    {
+      "name": "\"It's Joke!\"+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 15 damage to an enemy, then restore the enemy's HP back to its original value."
+    },
+    {
+      "name": "\"Let's Go!\"",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nThis always costs 1 more for each other skill in your hand."
+    },
+    {
+      "name": "\"Let's Go!\"+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 4 cards.\nThis always costs 1 more for each other skill in your hand."
+    },
+    {
+      "name": "Defiance",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf you are Frail, lose 1 Frail and gain 8 Block."
+    },
+    {
+      "name": "Defiance+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nIf you are Frail, lose 1 Frail and gain 10 Block."
+    },
+    {
+      "name": "Dolphin Strike",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to a random enemy 2 times.\nKindle: Deal damage an extra time."
+    },
+    {
+      "name": "Dolphin Strike+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to a random enemy 3 times.\nKindle: Deal damage an extra time."
+    },
+    {
+      "name": "Fragile Hope",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Frail.\nGain 1 Radiance and draw a card for each debuff you have."
+    },
+    {
+      "name": "Fragile Hope+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Frail.\nGain 2 Radiance and draw a card for each debuff you have."
+    },
+    {
+      "name": "Glow",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage and apply 2 Radiance to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Glow+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage and apply 3 Radiance to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Golden Glint",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ngain 3 Radiance."
+    },
+    {
+      "name": "Golden Glint+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ngain 4 Radiance."
+    },
+    {
+      "name": "Heavy Price",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to\ntwice the total cost of all other cards in your hand."
+    },
+    {
+      "name": "Heavy Price+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to\n3 + twice the total cost of all other cards in your hand."
+    },
+    {
+      "name": "Lie In Wait",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nAt the start of your next turn, deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Lie In Wait+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nAt the start of your next turn, deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Old Costume",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Target ANY character. It gains 7 Block and 1 Vulnerable."
+    },
+    {
+      "name": "Old Costume+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Target ANY character. It gains 7 Block and 1 Vulnerable.\nGain 3 Block."
+    },
+    {
+      "name": "Pent-up Emotions",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage and lose 1 Frail.\nWhen you draw this, gain 1 Frail."
+    },
+    {
+      "name": "Pent-up Emotions+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage and lose 1 Frail.\nWhen you draw this, gain 1 Frail."
+    },
+    {
+      "name": "Reckless Driving",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Reckless Driving+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Reckless Spending",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\n[#fbccff]Spend[] !MARI_GOLD_COST! Gold.\nDraw a card.\nGain 15 Gold if you do not lose HP until your next turn.\nExhaust."
+    },
+    {
+      "name": "Reckless Spending+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\n[#fbccff]Spend[] !MARI_GOLD_COST! Gold.\nDraw a card.\nGain 15 Gold if you do not lose HP until your next turn.\nExhaust."
+    },
+    {
+      "name": "Self-Care",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ngain 10 Block and\ndraw a card."
+    },
+    {
+      "name": "Self-Care+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ngain 13 Block and\ndraw a card."
+    },
+    {
+      "name": "Slap!",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nDeals 6 more damage for each stack of Vulnerable you have."
+    },
+    {
+      "name": "Slap!+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDeals 7 more damage for each stack of Vulnerable you have."
+    },
+    {
+      "name": "Sparkle",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Apply 2 Radiance.\nExhaust."
+    },
+    {
+      "name": "Sparkle+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Apply 3 Radiance.\nExhaust."
+    },
+    {
+      "name": "Tough Front",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 12 Block.\nGain [E] [E].\nGain 1 Frail.\nKindle: Lose 2 Frail."
+    },
+    {
+      "name": "Tough Front+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 15 Block.\nGain [E] [E].\nGain 1 Frail.\nKindle: Lose 2 Frail."
+    },
+    {
+      "name": "Well-Kept Secret",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 20 Block and keep your Block at the start of your next turn.\nKindle: Retain your hand this turn."
+    },
+    {
+      "name": "Well-Kept Secret+",
+      "color": "Mari",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 25 Block and keep your Block at the start of your next turn.\nKindle: Retain your hand this turn."
+    },
+    {
+      "name": "\"Approved!\"",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 28 damage to an enemy if it does not intend to attack.\nExhaust."
+    },
+    {
+      "name": "\"Approved!\"+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 35 damage to an enemy if it does not intend to attack.\nExhaust."
+    },
+    {
+      "name": "\"Kyu!\"",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "9",
+      "description": "Ethereal.\nApply 9 Radiance.\nExhaust."
+    },
+    {
+      "name": "\"Kyu!\"+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "9",
+      "description": "Apply 9 Radiance.\nExhaust."
+    },
+    {
+      "name": "\"No Problem!\"",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ignore Frail, Weak, and Vulnerable this turn.\nKindle: Ignore for 2 turns instead.\nExhaust."
+    },
+    {
+      "name": "\"No Problem!\"+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ignore Frail, Weak, and Vulnerable this turn.\nKindle: Ignore for 2 turns instead.\nExhaust."
+    },
+    {
+      "name": "\"Pretty Bomber Head!\"",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Become Confused.\nDraw 1 more card each turn."
+    },
+    {
+      "name": "\"Pretty Bomber Head!\"+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Become Confused.\nDraw 1 more card each turn."
+    },
+    {
+      "name": "\"SHUT UUUUUUP!\"+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "GAIN 6 STRENGTH THIS TURN!!!\nENEMY LOSES 6 STRENGTH THIS TURN!!!\nExhaust (!!!!!)"
+    },
+    {
+      "name": "\"Shut uuuuuup!\"",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Strength\nthis turn.\nEnemy loses 4 strength this turn.\nExhaust."
+    },
+    {
+      "name": "Awe",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Repeat 2 times:\nKindle: Gain 1 Strength and [E]."
+    },
+    {
+      "name": "Awe+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Repeat 3 times:\nKindle: Gain 1 Strength and [E]."
+    },
+    {
+      "name": "Boundless Energy",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ngain 3 [E].\nCan be upgraded any number of times.\nExhaust."
+    },
+    {
+      "name": "Boundless Energy+1",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ngain 4 [E].\nCan be upgraded any number of times.\nExhaust."
+    },
+    {
+      "name": "Cash Back",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you [#fbccff]spend[] Gold, regain 40\npercent of it.\n(Max 80 percent)"
+    },
+    {
+      "name": "Cash Back+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you [#fbccff]spend[] Gold, regain 40\npercent of it.\n(Max 80 percent)"
+    },
+    {
+      "name": "Character Development",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you fully lose a debuff,\ngain 2 Strength."
+    },
+    {
+      "name": "Character Development+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you fully lose a debuff,\ngain 2 Strength."
+    },
+    {
+      "name": "Choreography",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you spend less energy on a card than the previous on the same turn,\ndraw 1 card."
+    },
+    {
+      "name": "Choreography+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you spend less energy on a card than the previous on the same turn,\ndraw 2 cards."
+    },
+    {
+      "name": "Closure",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 22 Block and permanently decrease the Block by 2.\nCan be upgraded any number of times to increase Block by 6."
+    },
+    {
+      "name": "Closure+1",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 28 Block and permanently decrease the Block by 2.\nCan be upgraded any number of times to increase Block by 6."
+    },
+    {
+      "name": "Collect Thoughts",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand.\nAdd a copy of each card discarded to your hand.\nKindle: Upgrade\nthe copies.\nExhaust."
+    },
+    {
+      "name": "Collect Thoughts+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard your hand.\nAdd a copy of each card discarded to your hand.\nKindle: Upgrade\nthe copies.\nExhaust."
+    },
+    {
+      "name": "Delicacy",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you [#fbccff]spend[] Gold, draw a card."
+    },
+    {
+      "name": "Delicacy+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you [#fbccff]spend[] Gold, draw a card."
+    },
+    {
+      "name": "Emotional Episode",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\n[#fbccff]Spend[] !MARI_GOLD_COST! Gold.\nDraw a card.\nGain 20 Gold if you start your next turn with a debuff.\nExhaust."
+    },
+    {
+      "name": "Emotional Episode+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\n[#fbccff]Spend[] !MARI_GOLD_COST! Gold.\nDraw a card.\nGain 20 Gold if you start your next turn with a debuff.\nExhaust."
+    },
+    {
+      "name": "Excitement",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you apply Radiance, draw a card that applies Radiance."
+    },
+    {
+      "name": "Excitement+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply Radiance, draw a card that applies Radiance."
+    },
+    {
+      "name": "Expenses",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nDeals 4 more for each time you spent Gold this combat."
+    },
+    {
+      "name": "Expenses+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nDeals 6 more for each time you spent Gold this combat."
+    },
+    {
+      "name": "Expensive Tastes",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Rearrange your draw pile by cost.\n(Expensive on top)\nKindle: The top card costs 0 until played."
+    },
+    {
+      "name": "Expensive Tastes+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Rearrange your draw pile by cost.\n(Expensive on top)\nKindle: The top card costs 0 until played."
+    },
+    {
+      "name": "Fire Strike",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Apply 1 Radiance to an enemy X times.\nExhaust."
+    },
+    {
+      "name": "Fire Strike+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Apply 1 Radiance to an enemy X+1 times.\nExhaust."
+    },
+    {
+      "name": "Flaunt",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you [#fbccff]spend[] Gold, deal 5 damage to a random enemy."
+    },
+    {
+      "name": "Flaunt+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you [#fbccff]spend[] Gold, deal 8 damage to a random enemy."
+    },
+    {
+      "name": "Glimmer",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply, remove, and apply 2 Radiance.\nExhaust."
+    },
+    {
+      "name": "Glimmer+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply, remove, and apply 3 Radiance.\nExhaust."
+    },
+    {
+      "name": "Heavy Metal",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove and apply all your Vulnerable to ALL enemies, then deal 12 damage to them."
+    },
+    {
+      "name": "Heavy Metal+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove and apply all your Vulnerable to ALL enemies, then deal 16 damage to them."
+    },
+    {
+      "name": "Hug",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If you are Frail, lose 1 Frail, draw a card, and Apply 1 Weak and Vulnerable."
+    },
+    {
+      "name": "Hug+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If you are Frail, lose 1 Frail, draw a card, and Apply 2 Weak and Vulnerable."
+    },
+    {
+      "name": "Mic Check",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nPut ALL cards with quotation marks in their names from your draw pile into your hand."
+    },
+    {
+      "name": "Mic Check+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nPut ALL cards with quotation marks in their names from your draw pile into your hand."
+    },
+    {
+      "name": "Overexertion",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 4 cards and reduce their costs by 1 this combat\n(down to 1).\nGain 1 Vulnerable.\nGain 1 Frail."
+    },
+    {
+      "name": "Overexertion+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 5 cards and reduce their costs by 1 this combat\n(down to 1).\nGain 1 Vulnerable.\nGain 1 Frail."
+    },
+    {
+      "name": "Practice Outfit",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nUntil the end of your next turn, you take no damage and you deal no attack damage. Exhaust."
+    },
+    {
+      "name": "Practice Outfit+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Until the end of your next turn, you take no damage and you deal no attack damage. Exhaust."
+    },
+    {
+      "name": "Reflection",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to target ANY character. Apply its Radiance to a random other character."
+    },
+    {
+      "name": "Reflection+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to target ANY character. Apply its Radiance to ALL other characters."
+    },
+    {
+      "name": "Research",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you successfully Kindle an enemy, reduce the cost of a random card in your hand by 1 this combat."
+    },
+    {
+      "name": "Research+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you successfully Kindle an enemy, reduce the cost of a random card in your hand by 2 this combat."
+    },
+    {
+      "name": "Second Season",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return all cards that apply Radiance from your exhaust pile to your draw pile, they cost 0 until played.\nExhaust."
+    },
+    {
+      "name": "Second Season+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Return all cards that apply Radiance from your exhaust pile to your draw pile, they cost 0 until played.\nExhaust."
+    },
+    {
+      "name": "Shine",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Radiance to ANY character.\nExhaust."
+    },
+    {
+      "name": "Shine+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 Radiance to ANY character.\nExhaust."
+    },
+    {
+      "name": "Tea Time",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to reduce ALL debuff stacks by 2."
+    },
+    {
+      "name": "Tea Time+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to reduce ALL debuff stacks by 3."
+    },
+    {
+      "name": "The Beach Episode",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all Block and Frail from ANY character.\nGain 1 Radiance for every 5 Block or 1 Frail removed."
+    },
+    {
+      "name": "The Beach Episode+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all Block and Frail from ALL characters.\nGain 1 Radiance for every 5 Block or 1 Frail removed."
+    },
+    {
+      "name": "The FLYING CAR",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ndeal 32 damage and apply 5 Radiance."
+    },
+    {
+      "name": "The FLYING CAR+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ndeal 42 damage and apply 5 Radiance."
+    },
+    {
+      "name": "The HELICOPTER",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ndeal 5 damage to a random enemy 7 times."
+    },
+    {
+      "name": "The HELICOPTER+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ndeal 5 damage to a random enemy 9 times."
+    },
+    {
+      "name": "The Light We Chase",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever an enemy gains Radiance, you gain 1 Radiance."
+    },
+    {
+      "name": "The Light We Chase+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain [E].\nWhenever an enemy gains Radiance, you gain 1 Radiance."
+    },
+    {
+      "name": "The Planisphere",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose 1 of 3 random cards to add to your hand. Deal damage and apply Radiance equal to its cost.\nExhaust."
+    },
+    {
+      "name": "The Planisphere+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Choose 1 of 3 random cards to add to your hand. Deal damage and apply Radiance equal to its cost.\nExhaust."
+    },
+    {
+      "name": "Unveiled Secret",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\n[#fbccff]Spend[] !MARI_GOLD_COST! Gold.\nDraw a card.\nGain 25 Gold if you start your next turn with no Block.\nExhaust."
+    },
+    {
+      "name": "Unveiled Secret+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\n[#fbccff]Spend[] !MARI_GOLD_COST! Gold.\nDraw a card.\nGain 25 Gold if you start your next turn with no Block.\nExhaust."
+    },
+    {
+      "name": "Wishing Fountain",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 20 Gold.\nLose any unspent Gold from this card at the start of your next turn.\nExhaust."
+    },
+    {
+      "name": "Wishing Fountain+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 30 Gold.\nLose any unspent Gold from this card at the start of your next turn.\nExhaust."
+    },
+    {
+      "name": "Withdrawal",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "You have additional Dexterity and Strength equal to your Vulnerable."
+    },
+    {
+      "name": "Withdrawal+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nYou have additional Dexterity and Strength equal to your Vulnerable."
+    },
+    {
+      "name": "zzz...?",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 13 Block.\nIf you start your turn with this in hand, gain 1 Vulnerable."
+    },
+    {
+      "name": "zzz...?+",
+      "color": "Mari",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 16 Block.\nIf you start your turn with this in hand, gain 1 Vulnerable."
+    },
+    {
+      "name": "\"All or Nothing!\"",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Set the cost of ALL your cards to 0 or 3, randomly.\nKindle: Only change non-0-cost cards.\nExhaust."
+    },
+    {
+      "name": "\"All or Nothing!\"+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Set the cost of ALL your cards to 0 or 3, randomly.\nKindle: Only change non-0-cost cards.\nDowngrade this card this combat."
+    },
+    {
+      "name": "\"Lock on!\"",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an enemy. After you target that enemy with a card this turn, gain [E].\nExhaust."
+    },
+    {
+      "name": "\"Lock on!\"+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose an enemy. After you target that enemy with a card this turn, gain [E].\nExhaust."
+    },
+    {
+      "name": "\"Oh My God!\"",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "If any enemy intends to attack, play copies of up to 4 random cards in your hand on a target for free.\n(Except \"Oh My God!\")"
+    },
+    {
+      "name": "\"Oh My God!\"+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "If any enemy intends to attack, play copies of up to 10 random cards in your hand on a target for free.\n(Except \"Oh My God!\")"
+    },
+    {
+      "name": "\"SHIIIIIINY!\"",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double ANY\ncharacter's Radiance.\nExhaust."
+    },
+    {
+      "name": "\"SHIIIIIINY!\"+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double ALL\ncharacter's Radiance.\nExhaust."
+    },
+    {
+      "name": "Administrator Privilege",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold.\nInstead of drawing regularly, you choose cards from your draw pile to put into your hand at the start of your turn."
+    },
+    {
+      "name": "Administrator Privilege+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\n[#fbccff]Spend[] !MARI_GOLD_COST! Gold.\nInstead of drawing regularly, you choose cards from your draw pile to put into your hand at the start of your turn."
+    },
+    {
+      "name": "Devilish Assistant",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start each turn, play the last card you played on the same target for free.\n(Does not self-trigger)"
+    },
+    {
+      "name": "Devilish Assistant+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start each turn, play the last card you played on the same target for free.\n(Does not self-trigger)"
+    },
+    {
+      "name": "Flawless Form",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you spend more energy on a card than the previous on the same turn, [#fff6e2]refund[] the energy spent."
+    },
+    {
+      "name": "Flawless Form+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Innate.\nWhenever you spend more energy on a card than the previous on the same turn, [#fff6e2]refund[] the energy spent."
+    },
+    {
+      "name": "From Zero...",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you spend 0 [E] on a card, exhaust the card, draw a card, and apply 1 Radiance to a random enemy."
+    },
+    {
+      "name": "From Zero...+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you spend 0 [E] on a card, exhaust the card, draw a card, and apply 1 Radiance to a random enemy."
+    },
+    {
+      "name": "Grand Scheme",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold X times. At the start of your next turn, gain 10 Gold and [E] X times.\nExhaust."
+    },
+    {
+      "name": "Grand Scheme+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold X times. At the start of your next turn, gain 10 Gold and [E] X+1 times.\nExhaust."
+    },
+    {
+      "name": "Higher-Ups",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose ANY Mari card to add to your hand. Reduce its cost to 0 this turn and [#fbccff]Spend[] !MARI_GOLD_COST! Gold for each [E] reduced.\nExhaust."
+    },
+    {
+      "name": "Higher-Ups+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose ANY Upgraded Mari card to add to your hand. Reduce its cost to 0 this turn and [#fbccff]Spend[] !MARI_GOLD_COST! Gold for each [E] reduced.\nExhaust."
+    },
+    {
+      "name": "Limelight",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, apply 1 Radiance to ALL characters."
+    },
+    {
+      "name": "Limelight+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the end of your turn, apply 1 Radiance to ALL characters."
+    },
+    {
+      "name": "Perfect Performance",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 40 damage to ALL enemies. Can only be played if you have\nspent [#ff6563]1[],[#ff6563]2[], and [#ff6563]3[] [E]\non cards this turn."
+    },
+    {
+      "name": "Perfect Performance+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 50 damage to ALL enemies. Can only be played if you have\nspent [#ff6563]1[],[#ff6563]2[], and [#ff6563]3[] [E]\non cards this turn."
+    },
+    {
+      "name": "Shining Tornado",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage and apply 2 Radiance to a random enemy 3 times. Exhaust."
+    },
+    {
+      "name": "Shining Tornado+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage and apply 2 Radiance to a random enemy 3 times. Exhaust."
+    },
+    {
+      "name": "Supervision",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Set the cost of ALL your cards to 2.\nAt the start of your turn, gain [E] [E] [E]."
+    },
+    {
+      "name": "Supervision+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Set the cost of ALL your cards to 2.\nAt the start of your turn, gain [E] [E] [E]."
+    },
+    {
+      "name": "The GOLDEN STATUE",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ndeal 19 damage and\ngain 19 Block."
+    },
+    {
+      "name": "The GOLDEN STATUE+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\ndeal 24 damage and\ngain 24 Block."
+    },
+    {
+      "name": "The MANSION",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\nremove ALL your debuffs and gain 30 Block."
+    },
+    {
+      "name": "The MANSION+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "[#fbccff]Spend[] !MARI_GOLD_COST! Gold to\nremove ALL your debuffs and gain 40 Block."
+    },
+    {
+      "name": "Undying Spark",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Radiance. After you gain Frail\nor Vulnerable, returns from the Exhaust Pile to your Hand.\nExhaust."
+    },
+    {
+      "name": "Undying Spark+",
+      "color": "Mari",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Radiance. After you gain Frail\nor Vulnerable, returns from the Exhaust Pile to your Hand.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "The Spark",
+      "tier": "Starter",
+      "pool": "Mari",
+      "description": "At the start of combat, gain 5 Gold. For every 40 Gold you spend in combat,\ngain an extra uncommon card reward in your next combat reward.",
+      "flavorText": "\"SHIIIIIIIIINY!\" \u2013 Mari Ohara, Probably."
+    },
+    {
+      "name": "Devil's Charm",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you take 6 or more unblocked damage, gain 1 Strength.",
+      "flavorText": "Thank you, Yoshiko-chan."
+    },
+    {
+      "name": "Dolphin Trinket",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you add an Uncommon card to your deck, heal 8 HP.",
+      "flavorText": "Thank you, Kanan."
+    },
+    {
+      "name": "Flower Ring",
+      "tier": "Special",
+      "pool": "",
+      "description": "The first time you lose HP each combat, lose 4 less HP.",
+      "flavorText": "Thank you, Hanamaru-chan."
+    },
+    {
+      "name": "Juicy Tangerine",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of each combat, apply 1 or 3 (depending on your character) Radiance to ALL characters.",
+      "flavorText": "Thank you, Chika-chi."
+    },
+    {
+      "name": "Miniature Piano",
+      "tier": "Special",
+      "pool": "",
+      "description": "Everytime you play 3 cards, draw a card. (Triggers once per turn)",
+      "flavorText": "Thank you, Riko-chan."
+    },
+    {
+      "name": "Old Lollipop",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you deal attack damage to an enemy, reduce its max HP by 5 (but not less than 1).",
+      "flavorText": "Thank you, Ruby-chan."
+    },
+    {
+      "name": "Toy Sailboat",
+      "tier": "Special",
+      "pool": "",
+      "description": "Every time you play 2 Powers, gain 7 Block.",
+      "flavorText": "Thank you, You-chan."
+    },
+    {
+      "name": "Ume Blossom",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you smith, increase your max HP by 7 (does not affect current HP).",
+      "flavorText": "Thank you, Dia-...chan!"
+    },
+    {
+      "name": "Diploma",
+      "tier": "Boss",
+      "pool": "Mari",
+      "description": "Gain [E] at the start of your turn. Radiance now decays by 2 instead.",
+      "flavorText": "We all fade eventually."
+    },
+    {
+      "name": "Festival Badge",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you have a pair of unupgraded cards with the same name in your deck, upgrade them.",
+      "flavorText": "Alternatively, you can use a UR sticker."
+    },
+    {
+      "name": "Stewshine!",
+      "tier": "Boss",
+      "pool": "Mari",
+      "description": "Upon pickup, select 3 cards from 20 random cards. Combine their cost and card text into one exhaust skill.",
+      "flavorText": "Personal recipe by Mari Ohara, only costs 100,000\u00A5 a bowl."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Mari",
+      "type": "Player",
+      "minHP": "72",
+      "maxHP": "72"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Kindle",
+      "description": "You can target ANY character with this card. Consume 1 Radiance from the character to trigger an effect."
+    },
+    {
+      "name": "Radiance",
+      "description": "Whenever an enemy gains Radiance, it takes damage equal to its total Radiance. If you have Radiance, you deal 10% more attack damage per stack. At the end of a character's turn, it loses 1 Radiance."
+    }
+  ]
+}

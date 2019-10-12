@@ -1,0 +1,1240 @@
+{
+  "mod": {
+    "name": "Bard",
+    "version": "1.7.1",
+    "authors": ["kiooeht"],
+    "credits": "Testing: Reina, Gremious, Blank The Evil, and Skyson",
+    "description": "Adds a new playable character: The Bard.",
+    "mts_version": "3.11.0",
+    "sts_version": "07-01-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Bard_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Bard_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Inspire",
+      "color": "Bard_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain bard:Inspiration !bard:In!.\nExhaust."
+    },
+    {
+      "name": "Inspire+",
+      "color": "Bard_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain bard:Inspiration !bard:In!.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Riposte",
+      "color": "Bard_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 5 Block."
+    },
+    {
+      "name": "Riposte+",
+      "color": "Bard_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 7 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Bard_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Bard_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Buckler Bash",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 5 Block.\nIf you do, deal 12 damage."
+    },
+    {
+      "name": "Buckler Bash+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 7 Block.\nIf you do, deal 18 damage."
+    },
+    {
+      "name": "Cutting Words",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak and 1 Vulnerable to a random enemy for each [DebuffNote] you have bard:Queued."
+    },
+    {
+      "name": "Cutting Words+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak and 2 Vulnerable to a random enemy for each [DebuffNote] you have bard:Queued."
+    },
+    {
+      "name": "Echo Echo",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal !bard:M2! damage.\nDeal 3 damage."
+    },
+    {
+      "name": "Echo Echo+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal !bard:M2! damage.\nDeal 5 damage."
+    },
+    {
+      "name": "Feast on Fear",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nIf the enemy is Vulnerable, gain 6 Temporary_HP instead."
+    },
+    {
+      "name": "Feast on Fear+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf the enemy is Vulnerable, gain 8 Temporary_HP instead."
+    },
+    {
+      "name": "Fermata",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nbard:Queue a bard:Rest."
+    },
+    {
+      "name": "Fermata+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nbard:Queue a bard:Rest."
+    },
+    {
+      "name": "Gamble",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card type (Attack/Skill/Power).\nDraw 1 card, if it is the chosen type, it costs 0 this turn."
+    },
+    {
+      "name": "Gamble+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card type (Attack/Skill/Power).\nDraw 1 card, if it is the chosen type, it costs 0 this turn."
+    },
+    {
+      "name": "Hideous Laughter",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Vulnerable and 1 Weak."
+    },
+    {
+      "name": "Hideous Laughter+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable and 2 Weak."
+    },
+    {
+      "name": "Inspiring Song",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain bard:Inspiration !bard:In!\nfor each [BuffNote] you have bard:Queued."
+    },
+    {
+      "name": "Inspiring Song+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain bard:Inspiration !bard:In!\nfor each [BuffNote] you have bard:Queued."
+    },
+    {
+      "name": "Lingering Echo",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nThe next card you play this turn remains in your hand."
+    },
+    {
+      "name": "Lingering Echo+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nThe next card you play this turn remains in your hand."
+    },
+    {
+      "name": "Parry",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDexterity affects this card 3 times."
+    },
+    {
+      "name": "Parry+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDexterity affects this card 5 times."
+    },
+    {
+      "name": "Phantasmal Force",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 7 Temporary_HP.\nIf the enemy is Weak, deal damage equal to your Temporary_HP."
+    },
+    {
+      "name": "Phantasmal Force+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 9 Temporary_HP.\nIf the enemy is Weak, deal damage equal to your Temporary_HP."
+    },
+    {
+      "name": "Quick Song",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDiscard a card.\nbard:Queue bard:Notes as if the card was played."
+    },
+    {
+      "name": "Quick Song+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block.\nDiscard a card.\nbard:Queue bard:Notes as if the card was played."
+    },
+    {
+      "name": "Sift",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw !bard:M2! card.\nGain [E] equal\nto its cost."
+    },
+    {
+      "name": "Sift+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw !bard:M2! card.\nGain [E] equal\nto its cost.\nDraw 1 card."
+    },
+    {
+      "name": "Song Bolt",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage for each bard:Note you have bard:Queued.\nClear your Note Queue."
+    },
+    {
+      "name": "Song Bolt+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage for each bard:Note you have bard:Queued.\nClear your Note Queue."
+    },
+    {
+      "name": "Studied Strike",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDeals 1 additional damage for each\nstack of Weak or Vulnerable on the enemy."
+    },
+    {
+      "name": "Studied Strike+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDeals 2 additional damage for each\nstack of Weak or Vulnerable on the enemy."
+    },
+    {
+      "name": "Thunderwave",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage and apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Thunderwave+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage and apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Tiny Hut",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDraw 1 card for each unique bard:Note you have bard:Queued."
+    },
+    {
+      "name": "Tiny Hut+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDraw 1 card for each unique bard:Note you have bard:Queued."
+    },
+    {
+      "name": "Vicious Mockery",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "Vicious Mockery+",
+      "color": "Bard_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "6/4 Time",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "You can bard:Queue 2 additional bard:Notes."
+    },
+    {
+      "name": "8/4 Time",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "You can bard:Queue 4 additional bard:Notes."
+    },
+    {
+      "name": "Accelerando",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E].\nDraw 2 cards.\nLose [E] next turn."
+    },
+    {
+      "name": "Accelerando+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain [E].\nDraw 2 cards.\nLose [E] next turn."
+    },
+    {
+      "name": "Aphasia",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies lose between !bard:M2! and 3 Strength.\nExhaust."
+    },
+    {
+      "name": "Aphasia+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies lose between !bard:M2! and 4 Strength.\nExhaust."
+    },
+    {
+      "name": "Balestra",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage 3 times.\nThis card's damage is affected by Dexterity in addition to Strength."
+    },
+    {
+      "name": "Balestra+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage 4 times.\nThis card's damage is affected by Dexterity in addition to Strength."
+    },
+    {
+      "name": "Bestow Curse",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses 4 HP at the start of each of its turns.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Bestow Curse+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses 7 HP at the start of each of its turns.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Blink",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Take 50% less damage for 1 turn."
+    },
+    {
+      "name": "Blink+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Take 50% less damage for 2 turns."
+    },
+    {
+      "name": "Demoralize",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double the enemy's Weak and Vulnerable."
+    },
+    {
+      "name": "Demoralize+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Double the enemy's Weak and Vulnerable."
+    },
+    {
+      "name": "Dervish Dance",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage to ALL enemies for each [AttackNote] you have bard:Queued."
+    },
+    {
+      "name": "Dervish Dance+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage to ALL enemies for each [AttackNote] you have bard:Queued."
+    },
+    {
+      "name": "Discordant Voice",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you bard:Queue a [AttackNote] or [DebuffNote] , deal 2 damage to a random enemy."
+    },
+    {
+      "name": "Discordant Voice+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you bard:Queue a [AttackNote] or [DebuffNote] , deal 2 damage to a random enemy."
+    },
+    {
+      "name": "Doot",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a bard:Note to bard:Queue."
+    },
+    {
+      "name": "Doot Doot",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 2 bard:Notes to bard:Queue."
+    },
+    {
+      "name": "En Garde",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 7 Block.\nDeal 7 damage.\nbard:Inspiration affects this card 2 times."
+    },
+    {
+      "name": "En Garde+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 7 Block.\nDeal 7 damage.\nbard:Inspiration affects this card 3 times."
+    },
+    {
+      "name": "Faerie Fire",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Faerie Fire+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "False Life",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Temporary_HP.\nGain !bard:M2! additional Temporary_HP for each [BlockNote] you have bard:Queued."
+    },
+    {
+      "name": "False Life+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Temporary_HP.\nGain !bard:M2! additional Temporary_HP for each [BlockNote] you have bard:Queued."
+    },
+    {
+      "name": "First Strike",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nStartup: Deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "First Strike+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nStartup: Deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Flourish",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose a bard:Note to bard:Queue.\nDeal 10 damage."
+    },
+    {
+      "name": "Flourish+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose a bard:Note to bard:Queue.\nDeal 13 damage."
+    },
+    {
+      "name": "Glyph of Warding",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose Block or Temporary_HP, deal 2 damage to ALL enemies."
+    },
+    {
+      "name": "Glyph of Warding+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose Block or Temporary_HP, deal 4 damage to ALL enemies."
+    },
+    {
+      "name": "Greater Magic Weapon",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first Attack card you play each turn also applies 1 Vulnerable."
+    },
+    {
+      "name": "Greater Magic Weapon+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nThe first Attack card you play each turn also applies 1 Vulnerable."
+    },
+    {
+      "name": "Greatness",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain bard:Inspiration !bard:In!."
+    },
+    {
+      "name": "Greatness+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain bard:Inspiration !bard:In!."
+    },
+    {
+      "name": "Guard Point",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nIf you have no [BlockNote] bard:Queued, gain 7 Block again."
+    },
+    {
+      "name": "Guard Point+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nIf you have no [BlockNote] bard:Queued, gain 9 Block again."
+    },
+    {
+      "name": "Harmonious Voice",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you bard:Queue a [BlockNote] or [BuffNote] , gain 1 Temporary_HP."
+    },
+    {
+      "name": "Harmonious Voice+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you bard:Queue a [BlockNote] or [BuffNote] , gain 1 Temporary_HP."
+    },
+    {
+      "name": "Heroism",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Temporary_HP.\nGain bard:Inspiration !bard:In!."
+    },
+    {
+      "name": "Heroism+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Temporary_HP.\nGain bard:Inspiration !bard:In!."
+    },
+    {
+      "name": "Life Drain",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain Temporary_HP for half the unblocked damage dealt."
+    },
+    {
+      "name": "Life Drain+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain Temporary_HP for half the unblocked damage dealt."
+    },
+    {
+      "name": "Lingering Performance",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All bard:Inspiration you currently have affect 1 additional card.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Lingering Performance+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All bard:Inspiration you currently have affect 1 additional card.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Locate Object",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 1 card from your draw pile into your hand.\nbard:Queue a bard:Rest.\nExhaust."
+    },
+    {
+      "name": "Locate Object+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 1 card from your draw pile into your hand.\nbard:Queue a bard:Rest.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Mantle of Inspiration",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increase all bard:Inspiration you gain from cards by !bard:M2!."
+    },
+    {
+      "name": "Mantle of Inspiration+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increase all bard:Inspiration you gain from cards by !bard:M2!."
+    },
+    {
+      "name": "Off-Key",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDeal 8 damage.\nbard:Queue 2 bard:Rests."
+    },
+    {
+      "name": "Off-Key+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 11 Block.\nDeal 11 damage.\nbard:Queue 2 bard:Rests."
+    },
+    {
+      "name": "Prismatic Spray",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X random Attacks of any color into your hand. They cost 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Prismatic Spray+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X random Attacks of any color into your hand. They cost 0 this combat.\nExhaust."
+    },
+    {
+      "name": "Rest",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all bard:Rests from your Note Queue.\nHeal 2 HP for each bard:Rest removed.\nExhaust."
+    },
+    {
+      "name": "Rest+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all bard:Rests from your Note Queue.\nHeal 3 HP for each bard:Rest removed.\nExhaust."
+    },
+    {
+      "name": "Shout",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nEnemy loses 2 Strength.\nDecrease this card's Strength loss by 1 this combat."
+    },
+    {
+      "name": "Shout+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nEnemy loses 2 Strength.\nDecrease this card's Strength loss by 1 this combat."
+    },
+    {
+      "name": "Silence",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy cannot debuff you for 3 turns.\nExhaust."
+    },
+    {
+      "name": "Silence+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy cannot buff itself or debuff you for 3 turns.\nExhaust."
+    },
+    {
+      "name": "Solo",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If your Note Queue contains no bard:Notes, perform any bard:Melody."
+    },
+    {
+      "name": "Solo+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If your Note Queue contains no bard:Notes, perform any bard:Melody."
+    },
+    {
+      "name": "Thick of the Fight",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage to a random enemy for each living enemy.\nCosts 1 less [E]\nfor each living enemy."
+    },
+    {
+      "name": "Thick of the Fight+",
+      "color": "Bard_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 15 damage to a random enemy for each living enemy.\nCosts 1 less [E]\nfor each living enemy."
+    },
+    {
+      "name": "Covetous Aura",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever an enemy gains Strength, you also gain the same Strength."
+    },
+    {
+      "name": "Covetous Aura+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever an enemy gains Strength, you also gain the same Strength."
+    },
+    {
+      "name": "Death Metal",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "You can no longer bard:Queue bard:Notes.\nWhenever you would bard:Queue a bard:Note, deal 2 damage to ALL enemies instead."
+    },
+    {
+      "name": "Death Metal+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "You can no longer bard:Queue bard:Notes.\nWhenever you would bard:Queue a bard:Note, deal 3 damage to ALL enemies instead."
+    },
+    {
+      "name": "Encore",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next bard:Melody is performed twice."
+    },
+    {
+      "name": "Encore+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next 2 bard:Melodies are performed twice."
+    },
+    {
+      "name": "Finger of Death",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to twice your Temporary_HP."
+    },
+    {
+      "name": "Finger of Death+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to twice your Temporary_HP to ALL enemies."
+    },
+    {
+      "name": "Focused",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain bard:Inspiration X00."
+    },
+    {
+      "name": "Focused+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain bard:Inspiration X00.\nRefund !stslib:refund!."
+    },
+    {
+      "name": "Greater Invisibility",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain !bard:M2! Intangible.\nDraw 2 more cards next turn.\nExhaust."
+    },
+    {
+      "name": "Haste",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Dexterity.\nExhaust."
+    },
+    {
+      "name": "Haste+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Dexterity.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Improv",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, for every 6 bard:Notes you bard:Queue, perform any bard:Melody regardless of your Note Queue.\nAt the end of this turn, clear your Note Queue."
+    },
+    {
+      "name": "Improv+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, for every 5 bard:Notes you bard:Queue, perform any bard:Melody regardless of your Note Queue.\nAt the end of this turn, clear your Note Queue."
+    },
+    {
+      "name": "Invisibility",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain !bard:M2! Intangible.\nDraw 1 more card next turn.\nExhaust."
+    },
+    {
+      "name": "Magnum Opus",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain bard:Inspiration !bard:In!.\nPermanently increase this card's bard:Inspiration by !bard:M2!.\nExhaust."
+    },
+    {
+      "name": "Magnum Opus+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain bard:Inspiration !bard:In!.\nPermanently increase this card's bard:Inspiration by !bard:M2!.\nExhaust."
+    },
+    {
+      "name": "Mnemonic Vestments",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nStartup: Choose any card in your deck and shuffle a copy of that card into your draw pile. It costs 0 until played."
+    },
+    {
+      "name": "Mnemonic Vestments+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. Ethereal.\nStartup: Choose any card in your deck and shuffle a copy of that card into your draw pile. It costs 0 until played."
+    },
+    {
+      "name": "Power Word Stun",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If the enemy has less than !bard:M2! % HP, Stun it for 1 turn."
+    },
+    {
+      "name": "Power Word Stun+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If the enemy has less than !bard:M2! % HP, Stun it for 1 turn."
+    },
+    {
+      "name": "Reverse Gravity",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 15 damage and apply 1 Weak to ALL enemies.\nNext turn, deal !bard:M2! damage and apply 1 Weak to ALL enemies again."
+    },
+    {
+      "name": "Reverse Gravity+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 18 damage and apply 1 Weak to ALL enemies.\nNext turn, deal !bard:M2! damage and apply 1 Weak to ALL enemies again."
+    },
+    {
+      "name": "Rhapsody",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Perform any bard:Melody you have the bard:Notes for, regardless of their order."
+    },
+    {
+      "name": "Rhapsody+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a bard:Note to bard:Queue.\nPerform any bard:Melody you have the bard:Notes for, regardless of their order."
+    },
+    {
+      "name": "Shifting",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage or\ngain 12 Block.\nDeal 12 damage or\ngain 12 Block."
+    },
+    {
+      "name": "Shifting+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 16 damage or\ngain 16 Block.\nDeal 16 damage or\ngain 16 Block."
+    },
+    {
+      "name": "Sonata",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "You can perform every possible bard:Melody in your Note Queue at once."
+    },
+    {
+      "name": "Sonata+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nYou can perform every possible bard:Melody in your Note Queue at once."
+    },
+    {
+      "name": "Splendid Form",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of\nyour turn, gain\nbard:Inspiration !bard:M2!."
+    },
+    {
+      "name": "Splendid Form+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of\nyour turn, gain\nbard:Inspiration !bard:M2!."
+    },
+    {
+      "name": "Wish",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nEthereal."
+    },
+    {
+      "name": "Wish+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose any non-rare Bard card. Permanently replace this card with the chosen card.\nPurge."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Bag Pipes",
+      "tier": "Starter",
+      "pool": "Bard_color",
+      "description": "Each card you play may also bard:Queue bard:Notes. The bard:Notes bard:Queued depend on the type of the card played and are shown in the card's tooltips.",
+      "flavorText": "Your trusty instrument and weapon."
+    },
+    {
+      "name": "Pitch Pipe",
+      "tier": "Starter",
+      "pool": "Bard_color",
+      "description": "At the start of each combat, bard:Queue a [BuffNote] [REMOVE_SPACE].",
+      "flavorText": "Stay in tune."
+    },
+    {
+      "name": "Oil Painting",
+      "tier": "Common",
+      "pool": "Bard_color",
+      "description": "Start each combat with bard:Inspiration 100.",
+      "flavorText": "This painting depicts a group of people standing on a stage together. They feel oddly familiar to you."
+    },
+    {
+      "name": "Strange Harp",
+      "tier": "Uncommon",
+      "pool": "Bard_color",
+      "description": "Whenever an enemy dies, transfer any Weak or Vulnerable it has to a random enemy.",
+      "flavorText": "Every note played on this harp sounds eerie."
+    },
+    {
+      "name": "Coral Orchestra",
+      "tier": "Rare",
+      "pool": "Bard_color",
+      "description": "Every 5th bard:Melody you perform is performed twice.",
+      "flavorText": ""
+    },
+    {
+      "name": "Echo Chamber",
+      "tier": "Rare",
+      "pool": "Bard_color",
+      "description": "At the start of each combat, perform the last bard:Melody performed in the previous combat.",
+      "flavorText": ""
+    },
+    {
+      "name": "Magic Tuning Fork",
+      "tier": "Special",
+      "pool": "Bard_color",
+      "description": "At the start of your turn, bard:Queue a [WildNote] [REMOVE_SPACE].",
+      "flavorText": "A memento of your past life. Rings with the sound of a constantly changing note."
+    },
+    {
+      "name": "Deep Vero",
+      "tier": "Boss",
+      "pool": "Bard_color",
+      "description": "Gain [E] at the start of each turn. Clear your Note Queue at the end of each turn.",
+      "flavorText": ""
+    },
+    {
+      "name": "Self-Playing Flute",
+      "tier": "Boss",
+      "pool": "Bard_color",
+      "description": "Replaces Pitch Pipe.\nAt the start of each combat, bard:Queue 2 [WildNote] [REMOVE_SPACE].",
+      "flavorText": "A magical flute, enchanted to play songs on its own."
+    },
+    {
+      "name": "Conductor's Baton",
+      "tier": "Shop",
+      "pool": "Bard_color",
+      "description": "Your Note Queue can hold 2 additional bard:Notes.",
+      "flavorText": "Beatings will continue until the music improves."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Inspired Brew",
+      "rarity": "Uncommon",
+      "description": "Gain Inspiration 100."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Bard",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+  ]
+}

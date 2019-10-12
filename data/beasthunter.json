@@ -1,0 +1,1420 @@
+{
+  "mod": {
+    "name": "Hunter \u730E\u4EBA",
+    "version": "07-20-2019",
+    "authors": ["\u9648\u9547\u94A6"],
+    "credits": "",
+    "description": "New Character.It can summon minions and also more new mechanisms. It will continue update in the future.\r\n \u65B0\u89D2\u8272\uFF0C\u53EF\u4EE5\u53EC\u5524\u968F\u4ECE\uFF0C\u5E76\u4E14\u5361\u724C\u7684\u673A\u5236\u4E0D\u9519\uFF0C\u5E0C\u671B\u5927\u5BB6\u559C\u6B22\u3002\u540E\u7EED\u5185\u5BB9\u4F1A\u6162\u6162\u6DFB\u52A0\u3002\r\n\r\n07-20-2019\r\n1.Fix bugs.\r\n2.Add 2 new cards.\r\n\r\n1.\u4FEE\u590D\u4E86\u65B0\u7248\u672C\u95EA\u9000\u7684bug\u3002\r\n2.\u6DFB\u52A0\u4E86\u4E24\u5F20\u65B0\u5361\uFF0C\u4FEE\u6539\u4E86\u90E8\u5206\u5361\u3002\r\n ",
+    "mts_version": "0.0.0",
+    "sts_version": "12-20-2018",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Blood",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nEthereal."
+    },
+    {
+      "name": "Defend",
+      "color": "Giant_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gian 5 block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Giant_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gian 8 block."
+    },
+    {
+      "name": "Shoot-1",
+      "color": "Giant_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nCombo start."
+    },
+    {
+      "name": "Shoot-1+",
+      "color": "Giant_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nCombo start."
+    },
+    {
+      "name": "Strike",
+      "color": "Giant_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Giant_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "BloodAttack",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose 1 HP.\nDeal 6 damage.\nShuffle a Blood into your draw pile.\nExhaust."
+    },
+    {
+      "name": "BloodAttack+",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose 1 HP.\nDeal 9 damage.\nShuffle a Blood into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Broken Defect",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Defect.\nIt has 6 damages to all enemies and 2 Mana.\nExhaust."
+    },
+    {
+      "name": "Broken Defect+",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Defect.\nIt has 8 damages to all enemies and 3 Mana.\nExhaust."
+    },
+    {
+      "name": "Poison",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your Bow gain 1 Poison."
+    },
+    {
+      "name": "Poison+",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your Bow gain 2 Poison."
+    },
+    {
+      "name": "Quiver",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Arrow.\nGian 5 Block."
+    },
+    {
+      "name": "Quiver+",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Arrow.\nGian 7 Block."
+    },
+    {
+      "name": "Upgrade",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase 5 damage to the Bow.\nAdd a same card into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Upgrade+",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase 6 damage to the Bow.\nAdd a same card into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Vampire",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your Bow gain 1 Vampire."
+    },
+    {
+      "name": "Vampire+",
+      "color": "Giant_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Your Bow gain 1 Vampire."
+    },
+    {
+      "name": "Backflip",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Backflip+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Byrd",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Byrd.\nIt has 3 damages and 3 Mana.\nExhaust."
+    },
+    {
+      "name": "Byrd+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Byrd.\nIt has 4 damages and 3 Mana.\nExhaust."
+    },
+    {
+      "name": "Clone",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Clone a Minion.\nExhaust."
+    },
+    {
+      "name": "Clone+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Clone a Minion.\nExhaust."
+    },
+    {
+      "name": "Combo Recycle-N",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nCombo-N: Gain [R] [R] and draw 1 card."
+    },
+    {
+      "name": "Combo Recycle-N+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nCombo-N: Gain [R] [R] and draw 1 card."
+    },
+    {
+      "name": "Command",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Command a minion to take action immediately.\nExhaust."
+    },
+    {
+      "name": "Command+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Command a minion to take action immediately."
+    },
+    {
+      "name": "Cultist",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Cultist.\nIt has 4 damages and 3 Mana.\nExhaust."
+    },
+    {
+      "name": "Cultist+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Cultist.\nIt has 5 damages and 3 Mana."
+    },
+    {
+      "name": "Death",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give DeathRattles: Explode, Sacrifice."
+    },
+    {
+      "name": "Death+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Give DeathRattles: Explode, Sacrifice."
+    },
+    {
+      "name": "Echo Defend",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nEcho."
+    },
+    {
+      "name": "Echo Defend+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nEcho."
+    },
+    {
+      "name": "Fanatic",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Your Cultists gain 5 Strength.\nExhaust."
+    },
+    {
+      "name": "Fanatic+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Your Cultists gain 8 Strength.\nExhaust."
+    },
+    {
+      "name": "GremlinTsundere",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a GremlinTsundere.\nIt has 3 Mana and can give you 6 Block.\nExhaust."
+    },
+    {
+      "name": "GremlinTsundere+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a GremlinTsundere with a random DeathRattle.\nIt has 3 Mana and can give you 6 Block.\nExhaust."
+    },
+    {
+      "name": "HP Growth",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gian 10 Block.\nYour Minions increase 6 max HP."
+    },
+    {
+      "name": "HP Growth+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gian 13 Block.\nYour Minions increase 8 max HP."
+    },
+    {
+      "name": "Mana Growth",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gian 10 Block.\nYour Minions gain 1 Mana."
+    },
+    {
+      "name": "Mana Growth+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gian 13 Block.\nYour Minions gain 1 Mana."
+    },
+    {
+      "name": "Prepare",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose: Gain [R] [R] .\nor draw 3 card.\nExhaust."
+    },
+    {
+      "name": "Prepare+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose: Gain [R] [R] .\nor draw 3 card."
+    },
+    {
+      "name": "Prevent-1",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 block.\nCombo start."
+    },
+    {
+      "name": "Prevent-1+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 block.\nCombo start."
+    },
+    {
+      "name": "Protect",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain extra 4 Block on each minion you have."
+    },
+    {
+      "name": "Protect+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain extra 5 Block on each minion you have."
+    },
+    {
+      "name": "Pummel-2",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage 3 times.\nCombo-2: Increase 2 times. "
+    },
+    {
+      "name": "Pummel-2+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage 4 times.\nCombo-2: Increase 2 times. "
+    },
+    {
+      "name": "Shoot-2",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nCombo-2: Increase 6 damage."
+    },
+    {
+      "name": "Shoot-2+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nCombo-2: Increase 8 damage."
+    },
+    {
+      "name": "Struggle Attack",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage(your lost HP plus 5, Max 50).\nShuffle a Blood into your draw pile."
+    },
+    {
+      "name": "Struggle Attack+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage(your lost HP plus 5, Max 50).\nShuffle a Blood into your draw pile."
+    },
+    {
+      "name": "Trace-2",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nCombo-2: Put 1 card from your discard pile into your hand."
+    },
+    {
+      "name": "Trace-2+",
+      "color": "Giant_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nCombo-2: Put 2 card from your discard pile into your hand."
+    },
+    {
+      "name": "Backward-3",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 block.\nCombo-3: Increase 9 Block and Blocks will not disappear in 2 turn."
+    },
+    {
+      "name": "Backward-3+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 block.\nCombo-3: Increase 14 Block and Blocks will not disappear in 2 turn."
+    },
+    {
+      "name": "Blood Defend",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 2 HP,\nGain 11 Block.\nShuffle a Blood into your draw pile.\nEcho."
+    },
+    {
+      "name": "Blood Defend+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 2 HP,\nGain 14 Block.\nShuffle a Blood into your draw pile.\nEcho."
+    },
+    {
+      "name": "Bloody",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Shuffle 2 Blood into your draw pile. Whenever you draw a Blood card, draw 1 card, gain 1 Strength, heal 3 HP."
+    },
+    {
+      "name": "Bloody+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Shuffle 2 Blood into your draw pile. Whenever you draw a Blood card, draw 2 cards, gain 2 Strength, heal 3 HP."
+    },
+    {
+      "name": "Bow",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Equip a Bow with 2 Arrow and 4 damage.\nAdd 5 Bow's relevant cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Bow+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Equip a Bow with 2 Arrow and 4 damage.\nAdd 5 Bow's relevant and upgraded cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Calmness",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a Skill and 0 cost card, draw 1 card."
+    },
+    {
+      "name": "Calmness+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a Skill and 0 cost card, draw 1 card."
+    },
+    {
+      "name": "Combo Form",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain combo-1."
+    },
+    {
+      "name": "Combo Form+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, gain combo-1."
+    },
+    {
+      "name": "Cultist Form",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 2 Strength each turn."
+    },
+    {
+      "name": "Cultist Form+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 3 Strength each turn."
+    },
+    {
+      "name": "Death Explode",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Decrease a Minions's Mana to 1 and give DeathRattle: Explode 1 times."
+    },
+    {
+      "name": "Death Explode+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Decrease a Minions's Mana to 1 and give DeathRattle: Explode 2 times."
+    },
+    {
+      "name": "Death Prophecy",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Trigger the DeathRattle."
+    },
+    {
+      "name": "Death Prophecy+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Trigger all minions DeathRattle."
+    },
+    {
+      "name": "Discover Combo",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 random Combo cards to add into your hand. It costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Discover Combo+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 random Combo cards to add into your hand. It costs 0 this turn."
+    },
+    {
+      "name": "Discover Minions",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose 1 of 3 random Minion cards to add into your hand. It costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Discover Minions+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose 1 of 3 random Minion cards to add into your hand. It costs 0 this turn."
+    },
+    {
+      "name": "Duplicate Hand",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Copy your hand cards to draw pile.\nExhaust."
+    },
+    {
+      "name": "Duplicate Hand+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Copy your hand cards to draw pile."
+    },
+    {
+      "name": "Encourage",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Give 1 Mana to a Minion.\nExhaust."
+    },
+    {
+      "name": "Encourage+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Give 2 Mana to a Minion.\nExhaust."
+    },
+    {
+      "name": "Go Go Go",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Command your offensive minions attack an enemy immediately.\nExhaust."
+    },
+    {
+      "name": "Go Go Go+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Command your offensive minions attack an enemy immediately."
+    },
+    {
+      "name": "Heal Wind",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all non-Attack cards in your hand. Gain 3 HP for each card Exhausted."
+    },
+    {
+      "name": "Heal Wind+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all non-Attack cards in your hand. Gain 5 HP for each card Exhausted."
+    },
+    {
+      "name": "Healer",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Healer.\nIt has 2 Mana and can heal you 6 HP.\nExhaust."
+    },
+    {
+      "name": "Healer+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Healer with a random DeathRattle.\nIt has 2 Mana and can heal you 6 HP.\nExhaust."
+    },
+    {
+      "name": "Infinite Combo",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a FirstCombo into your hand."
+    },
+    {
+      "name": "Infinite Combo+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, add a FirstCombo into your hand."
+    },
+    {
+      "name": "Left Hook-2",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage and give 1 Vulnerable.\nCombo-2: Add 1 RightHook to your hand."
+    },
+    {
+      "name": "Left Hook-2+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage and give 2 Vulnerable.\nCombo-2: Add 2 RightHook to your hand."
+    },
+    {
+      "name": "Meditate-4",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nDraw a card.\nCombo-4: Gain [R] [R] and draw more 2 cards."
+    },
+    {
+      "name": "Meditate-4+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nDraw a card.\nCombo-4: Gain [R] [R] [R] and draw more 3 cards."
+    },
+    {
+      "name": "Mislead",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Give 1 Mislead.\nThe misleading enemy will attack his companions.\nExhaust."
+    },
+    {
+      "name": "Mislead+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Give 2 Mislead.\nThe misleading enemy will attack his companions.\nExhaust."
+    },
+    {
+      "name": "Overload",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 2 card.\nDraw 2 cards."
+    },
+    {
+      "name": "Overload+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 2 card.\nDraw 3 cards."
+    },
+    {
+      "name": "Poison Claw",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give a Minion 2 poison claw.\nwhen minion deal damage,give poison equal the damage value.\nExhaust."
+    },
+    {
+      "name": "Poison Claw+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Give a Minion 2 poison claw.\nwhen minion deal damage,give poison equal the damage value.\nExhaust."
+    },
+    {
+      "name": "Prayer",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random card into your hand.\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Prayer+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random card into your hand.\nIt costs 0 this turn.\nExhaust.\nEcho."
+    },
+    {
+      "name": "Resurrection",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a random Minion which dead in this battle.\nIt has 2 Mana."
+    },
+    {
+      "name": "Resurrection+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a random Minion which dead in this battle.\nIt has 2 Mana."
+    },
+    {
+      "name": "Retain Combo",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of turn, retain your combos in your hand."
+    },
+    {
+      "name": "Retain Combo+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the end of turn, retain your combos in your hand."
+    },
+    {
+      "name": "Revenge",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nThe damage is 10 plus your received damage this combat."
+    },
+    {
+      "name": "Revenge+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nThe damage is 10 plus your received damage this combat."
+    },
+    {
+      "name": "Rupture",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose HP from a card,\ngain 1 Strength."
+    },
+    {
+      "name": "Rupture+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you lose HP from a card,\ngain 1 Strength."
+    },
+    {
+      "name": "Sacrifice",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Immolate all Minions.\neach immolate Minion get a 0 cost Minion Card.\nExhaust."
+    },
+    {
+      "name": "Sacrifice+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Immolate all Minions.\neach immolate Minion get a 0 cost and upgraded Minion Card.\nExhaust."
+    },
+    {
+      "name": "Seek Combo",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle your discard pile into your draw pile.\nChoose a Combo from your draw pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Seek Combo+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle your discard pile into your draw pile.\nChoose a Combo from your draw pile into your hand."
+    },
+    {
+      "name": "Seek Minion",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a Minion from your draw pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Seek Minion+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nChoose a Minion from your draw pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Shoot-3",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to all enemies.\nCombo-3: Increase 20 damage."
+    },
+    {
+      "name": "Shoot-3+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to all enemies.\nCombo-3: Increase 25 damage."
+    },
+    {
+      "name": "Shoot-N",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nCombo-N: Gain [R] and draw a card."
+    },
+    {
+      "name": "Shoot-N+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nCombo-N: Gain [R] and draw a card."
+    },
+    {
+      "name": "Spiker",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Taunt Spiker.\nIt has 2 Mana and 3 throns.\nExhaust."
+    },
+    {
+      "name": "Spiker+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Taunt Spiker with a random DeathRattle.\nIt has 2 Mana and 3 throns.\nExhaust."
+    },
+    {
+      "name": "Spirit",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gian 1 spirit."
+    },
+    {
+      "name": "Spirit+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gian 2 spirit."
+    },
+    {
+      "name": "The End-5",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage twice to all enemies.\nCombo-5: Gain 30 block. Increase 20 damage."
+    },
+    {
+      "name": "The End-5+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage twice to all enemies.\nCombo-5: Gain 30 block. Increase 25 damage."
+    },
+    {
+      "name": "UP UP UP",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase 2 Strength to a Minion.\nExhaust.\nEcho."
+    },
+    {
+      "name": "UP UP UP+",
+      "color": "Giant_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase 3 Strength to a Minion.\nExhaust.\nEcho."
+    },
+    {
+      "name": "Battle Master",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Choose: Whenever you trigger combo, gain 6 Block or deal 8 damage to a random enemy."
+    },
+    {
+      "name": "Battle Master+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Choose: Whenever you trigger combo, gain 8 Block or deal 10 damage to a random enemy."
+    },
+    {
+      "name": "Beast Master",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, lose 1 HP, gain 1 Spirit."
+    },
+    {
+      "name": "Beast Master+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, lose 2 HP, gain 2 Spirit."
+    },
+    {
+      "name": "Echo Attack",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nEcho."
+    },
+    {
+      "name": "Echo Attack+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nEcho."
+    },
+    {
+      "name": "Force of Nature",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose: for the rest of combat, upgrade all your attack, skill, or power cards. \nExhaust."
+    },
+    {
+      "name": "Force of Nature+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose: for the rest of combat, upgrade all your attack, skill, or power cards. \nExhaust."
+    },
+    {
+      "name": "Ghost Form",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, give a random minion 1 random deathrattle."
+    },
+    {
+      "name": "Ghost Form+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, give a random minion 2 random deathrattle."
+    },
+    {
+      "name": "GremlinNob Call",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Call a GremlinNob.\nIt has 4 damages and 3 Mana.\nExhaust."
+    },
+    {
+      "name": "GremlinNob Call+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Call a GremlinNob.\nIt has 6 damages and 4 Mana.\nExhaust."
+    },
+    {
+      "name": "Multi-Move",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Command a minion to take action X times."
+    },
+    {
+      "name": "Multi-Move+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Command a minion to take action X+1 times."
+    },
+    {
+      "name": "Nourish",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Double the minion's HP and increaes 3 Mana.\nExhaust."
+    },
+    {
+      "name": "Nourish+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Double the minion's HP and increaes 5 Mana.\nExhaust."
+    },
+    {
+      "name": "One Blood",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose HP to 1.\nGain 0 Block( 3 times your lost HP).\nBlock is not removed at the start of your next 4 turn.\nExhaust."
+    },
+    {
+      "name": "One Blood+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose HP to 1.\nGain 0 Block( 5 times your lost HP).\nBlock is not removed at the start of your next 4 turn.\nExhaust."
+    },
+    {
+      "name": "Recover",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of 3 turns, recover your lost HP in this turns."
+    },
+    {
+      "name": "Recover+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of 3 turns, recover your lost HP in this turns."
+    },
+    {
+      "name": "Right Hook-3",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage.\nCombo-3: Increase 4 Damage.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Right Hook-3+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage.\nCombo-3: Increase 6 Damage.\nExhaust.\nEthereal."
+    },
+    {
+      "name": "Snake Form",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Get confusion.\nDraw 1 card each turn."
+    },
+    {
+      "name": "Snake Form+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nGet confusion.\nDraw 2 card each turn."
+    },
+    {
+      "name": "Storm of Blood",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your hand.\nAdd 1 BloodAttack into your hand for each card discarded."
+    },
+    {
+      "name": "Storm of Blood+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your hand.\nAdd 1 upgraded BloodAttack into your hand for each card discarded."
+    },
+    {
+      "name": "Take All",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your next 2 choose card will trigger all effects."
+    },
+    {
+      "name": "Take All+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your next 3 choose card will trigger all effects."
+    },
+    {
+      "name": "Time Travel",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Mark your HP, at the end of battle, recover HP to the mark number."
+    },
+    {
+      "name": "Time Travel+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Mark your HP, at the end of battle, recover HP to the mark number."
+    },
+    {
+      "name": "Unlimited Combo",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your combo card can trigger without other condition in this turn."
+    },
+    {
+      "name": "Unlimited Combo+",
+      "color": "Giant_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Your combo card can trigger without other condition in this turn."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Soul Bottle",
+      "tier": "Starter",
+      "pool": "Giant_color",
+      "description": "You will gain 30 golds and increase 5 max HP when you level up.\nYou level is -1 .\nNow need 0 exp to level up.\nAfter finish enemy floor, normal: 2 exp, elite: 4 exp, boss: 10 exp.\nThe max level is 10. \r\nReward: level 5: gain Hunter Medal.",
+      "flavorText": "Kill enemies can collect their souls."
+    },
+    {
+      "name": "Hunter Medal",
+      "tier": "Special",
+      "pool": "Giant_color",
+      "description": "Start each combat with 1 Spirit.",
+      "flavorText": "It proves your are a qualified hunter."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Spirit Potion",
+      "rarity": "Uncommon",
+      "description": "Gain 2 Spirit."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Hunter",
+      "type": "Player",
+      "minHP": "60",
+      "maxHP": "60"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Arrow",
+      "description": "It will derease 1 when you use the Bow."
+    },
+    {
+      "name": "Blood",
+      "description": "It can't be play. Exhaust."
+    },
+    {
+      "name": "Bloodattack",
+      "description": "0 Cost. Deal 7 damage. Lose 1 HP. Exhaust."
+    },
+    {
+      "name": "Bow",
+      "description": "Weapon. Click it to use. You can use it twice each turn."
+    },
+    {
+      "name": "Byrd",
+      "description": "Byrd attack multiple times. 1 spirit can increase 1 time."
+    },
+    {
+      "name": "Combo",
+      "description": "Combo card can trigger extra effcts when the card's level is the next. Combo-N can trigger when player combo isn't 0. Player combo level will disppear at the end of turn."
+    },
+    {
+      "name": "Cultist",
+      "description": "Cultist can increase Strength each turn. 1 spirit can increase 1 this capacity."
+    },
+    {
+      "name": "Deathrattle",
+      "description": "It will be triggered when minion die."
+    },
+    {
+      "name": "Echo",
+      "description": "After use, give the same card to your hand. the same card is ethereal, exhaust and original cost."
+    },
+    {
+      "name": "Explode",
+      "description": "When this minion die, it will deal the minion's current max HP to a random enemy."
+    },
+    {
+      "name": "Firstcombo",
+      "description": "Deal 5 damage. Gain combo-1. Exhaust."
+    },
+    {
+      "name": "Gremlintsundere",
+      "description": "GremlinTsundere can give you block. 1 spirit can increase 3 block amount."
+    },
+    {
+      "name": "Healer",
+      "description": "Healer can heal your HP. 1 spirit can increase 2 heal amount."
+    },
+    {
+      "name": "Mana",
+      "description": " Minion will die when mana is 0. At the end of each turn, mana decrease 1."
+    },
+    {
+      "name": "Minion",
+      "description": "You can only summon 3 minions. when you have 3 minions, next minion will replace the left minion. Right click the minions can feed them."
+    },
+    {
+      "name": "Revenge",
+      "description": "when this minion die, you will gain strength."
+    },
+    {
+      "name": "Righthook",
+      "description": "Rare Card, Combo-3."
+    },
+    {
+      "name": "Sacrifice",
+      "description": "When this minion die, you will heal HP."
+    },
+    {
+      "name": "Spirit",
+      "description": "Spirit can enhance minions capicity."
+    },
+    {
+      "name": "Taunt",
+      "description": "Enemies will attack the taunt minion first."
+    },
+    {
+      "name": "Vampire",
+      "description": "When the Bow take damage.Heal HP equal the damage."
+    }
+  ]
+}

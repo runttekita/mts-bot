@@ -1,0 +1,1337 @@
+{
+  "mod": {
+    "name": "Hakumod",
+    "version": "0.6.4",
+    "authors": ["The_undercover_beret"],
+    "credits": "Special thanks: \n Hexanoid, SaltBadGuy, stevo2402, von_yaourt for testing the mod and providing feedback. \n Rita-B: zhs translation.",
+    "description": "Adds Haku-men from Blazblue as a new playable character. \n \n This mod currently includes 75 cards, 7 relics and 3 potions. \n \n For the latest patch notes: https://api.github.com/repos/celebo/hakumod/releases/latest \n \n The starting cards can be selected and custom bosses enabled in the mod's configuration panel. \n Path: Main menu > Mods > Hakumod > Config",
+    "mts_version": "0.0.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Blocking",
+      "color": "Hakumen_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Blocking+",
+      "color": "Hakumen_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Hakumen_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Hakumen_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nStarter: Channel 1 Fuumajin."
+    },
+    {
+      "name": "Agito",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 1\nDeal 8 damage.\nStarter and Ender: Gain 2 Offense."
+    },
+    {
+      "name": "Agito+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 1\nDeal 11 damage.\nStarter and Ender: Gain 2 Offense."
+    },
+    {
+      "name": "Air Grab",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Starter: Gain [R] next turn."
+    },
+    {
+      "name": "Air Grab+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Starter: Gain [R] next turn."
+    },
+    {
+      "name": "Alpha Counter",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Parry: Gain 5 Block, gain 5 Block next turn, deal 5 damage."
+    },
+    {
+      "name": "Alpha Counter+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Parry: Gain 6 Block, gain 6 Block next turn, deal 6 damage."
+    },
+    {
+      "name": "Awakening The Chaos",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nChannel 1 Fuumajin."
+    },
+    {
+      "name": "Awakening The Chaos+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nChannel 1 Fuumajin."
+    },
+    {
+      "name": "Barrier",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to the amount of cards play this turn + 3 (Total: 3)."
+    },
+    {
+      "name": "Barrier+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to the amount of cards play this turn + 6 (Total: 6)."
+    },
+    {
+      "name": "Black And White",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nDeals an additional 2 damage for each Parry in your hand and discard pile.\n(Total: 5)"
+    },
+    {
+      "name": "Black And White+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nDeals an additional 3 damage for each Parry in your hand and discard pile.\n(Total: 5)"
+    },
+    {
+      "name": "Blitz Attack",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGatling: Clash Assault"
+    },
+    {
+      "name": "Blitz Attack+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGatling: Clash Assault"
+    },
+    {
+      "name": "Clash Assault",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice. Ender: Apply 2 Vulnerable."
+    },
+    {
+      "name": "Clash Assault+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage twice. Ender: Apply 3 Vulnerable."
+    },
+    {
+      "name": "Claw Grip",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nAdd 1 Claw Grip from your draw pile to your hand."
+    },
+    {
+      "name": "Claw Grip+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nAdd 1 Claw Grip from your draw pile to your hand."
+    },
+    {
+      "name": "Cross-up",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nStarter: Deal 5 damage to ALL enemies."
+    },
+    {
+      "name": "Cross-up+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nStarter: Deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Crusade Seraphim",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nStarter and Ender: Gain 1 Defense."
+    },
+    {
+      "name": "Crusade Seraphim+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nStarter and Ender: Gain 1 Defense."
+    },
+    {
+      "name": "Crystal Wall",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nChannel 1 Fuumajin."
+    },
+    {
+      "name": "Crystal Wall+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nChannel 1 Fuumajin."
+    },
+    {
+      "name": "Divide",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGatling: Zantetsu"
+    },
+    {
+      "name": "Divide+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGatling: Zantetsu"
+    },
+    {
+      "name": "End Gazer",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nDraw 2 cards next turn."
+    },
+    {
+      "name": "End Gazer+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDraw 2 cards next turn."
+    },
+    {
+      "name": "Enma",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 1\nDeal 7 damage.\nGain 7 Block."
+    },
+    {
+      "name": "Enma+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 1\nDeal 9 damage.\nGain 9 Block."
+    },
+    {
+      "name": "Fuzzy jump",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nTarget one enemy, it loses 1 Strength this turn."
+    },
+    {
+      "name": "Fuzzy jump+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nTarget one enemy, it loses 2 Strength this turn."
+    },
+    {
+      "name": "Grab",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all Block from the enemy. Deal 7 damage. "
+    },
+    {
+      "name": "Grab+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all Block from the enemy. Deal 10 damage. "
+    },
+    {
+      "name": "Guren",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 1 \nDeal 9 damage.\nGatling: Sweep"
+    },
+    {
+      "name": "Guren+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 1 \nDeal 11 damage.\nGatling: Sweep"
+    },
+    {
+      "name": "Heavy Slash",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 10 damage to ALL enemies.\nCost 1 less for each card played this turn."
+    },
+    {
+      "name": "Heavy Slash+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 13 damage to ALL enemies.\nCost 1 less for each card played this turn."
+    },
+    {
+      "name": "Kishuu",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Special: 1\nGain 4 Block.\nGatling: Enma"
+    },
+    {
+      "name": "Kishuu+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Special: 1\nGain 6 Block.\nGatling: Enma"
+    },
+    {
+      "name": "Light Punch",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nCopy a random 0 cost card in your hand.\nExhaust"
+    },
+    {
+      "name": "Light Punch+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nCopy a random 0 cost card in your hand.\nExhaust"
+    },
+    {
+      "name": "Plastic Night",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Parry: Gain 4 Blocks and deal damage equal to half your current block.\n(Total: 0)"
+    },
+    {
+      "name": "Plastic Night+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Parry: Gain 6 Blocks and deal damage equal to half your current block.\n(Total: 0)"
+    },
+    {
+      "name": "Reject Guard",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Parry: Gain 6 Block, draw 1 card, deal 4 damage."
+    },
+    {
+      "name": "Reject Guard+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Parry: Gain 7 Block, draw 1 card, deal 6 damage."
+    },
+    {
+      "name": "Renka",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 2\nDeal 7 damage twice.\nDraw 1 card."
+    },
+    {
+      "name": "Renka+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 2\nDeal 8 damage twice.\nDraw 2 card."
+    },
+    {
+      "name": "Smart Steer",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGatling: Renka."
+    },
+    {
+      "name": "Smart Steer+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGatling: Renka."
+    },
+    {
+      "name": "Sweep",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nEnder: Apply 1 Weak."
+    },
+    {
+      "name": "Sweep+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nEnder: Apply 2 Weak."
+    },
+    {
+      "name": "Taunt",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Vulnerable.\nApply 2 Vulnerable on ALL enemies."
+    },
+    {
+      "name": "Taunt+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Vulnerable. Apply 3 Vulnerable on ALL enemies."
+    },
+    {
+      "name": "Void",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Channel 1 Fuumajin.\nExhaust"
+    },
+    {
+      "name": "Void+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Channel 1 Fuumajin."
+    },
+    {
+      "name": "Zantetsu",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 3\nDeal 18 damage.\nGain [R]."
+    },
+    {
+      "name": "Zantetsu+",
+      "color": "Hakumen_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 3\nDeal 22 damage.\nGain [R]."
+    },
+    {
+      "name": "Active Flow",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have played 3 cards this turn, gain [R] and 1 Strength.\nExhaust"
+    },
+    {
+      "name": "Active Flow+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have played 3 cards this turn, gain [R] and 2 Strength.\nExhaust"
+    },
+    {
+      "name": "Air Dash",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 Cards.\nStarter: Gain 2 Strength this turn."
+    },
+    {
+      "name": "Air Dash+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 Cards.\nStarter: Gain 2 Strength this turn."
+    },
+    {
+      "name": "Command Order",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nCan be upgraded any number of times.\nGain additional effects with each upgrade.\ncommand_order"
+    },
+    {
+      "name": "Command Order+1",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nCan be upgraded any number of times.\nGain additional effects with each upgrade.\ncommand_order"
+    },
+    {
+      "name": "Counter Assault",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Special: 4\nParry: Gain 10 Block.\nRemove all debuffs.\nExhaust"
+    },
+    {
+      "name": "Counter Assault+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Special: 4\nParry: Gain 13 Block.\nRemove all debuffs.\nExhaust"
+    },
+    {
+      "name": "Crush Trigger",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 2\nDeal 10 damage.\nGain 1 Artifact.\nExhaust"
+    },
+    {
+      "name": "Crush Trigger+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 2\nDeal 13 damage.\nGain 1 Artifact.\nExhaust"
+    },
+    {
+      "name": "Dead Angle",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Parry: Gain 5 Block and deal 5 damage times X."
+    },
+    {
+      "name": "Dead Angle+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Parry: Gain 6 Block and deal 6 damage times X."
+    },
+    {
+      "name": "Exceed Accel",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Starter: Gain Block equal to your current Energy.\nEnder: Deal 1 Damage for every card played this turn.\n(Total: 0 / 0)"
+    },
+    {
+      "name": "Exceed Accel+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Starter: Gain Block equal to your current Energy+2.\nEnder: Deal 1 Damage for every card played this turn+2.\n(Total: 2 / 2)"
+    },
+    {
+      "name": "Fatal Counter",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Upgrade all the cards in your hand for the rest of the combat.\nExhaust"
+    },
+    {
+      "name": "Fatal Counter+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card then upgrade all the cards in your hand for the rest of the combat.\nExhaust"
+    },
+    {
+      "name": "God Fist",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nAdd the bottom card from your discard pile to you hand.\nExhaust"
+    },
+    {
+      "name": "God Fist+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nAdd the bottom card from your discard pile to you hand.\nExhaust"
+    },
+    {
+      "name": "Guard Thrust",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Parry: Gain 4 Block, gain 1 Magatama, deal 6 damage."
+    },
+    {
+      "name": "Guard Thrust+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Parry: Gain 6 Block, gain 1 Magatama, deal 7 damage."
+    },
+    {
+      "name": "High jump",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nGain 1 Block for every card in your hand."
+    },
+    {
+      "name": "High jump+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 card.\nGain 1 Block for every card in your hand."
+    },
+    {
+      "name": "Hotaru",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 2\nDeal 10 damage.\nParry: Gain 6 Block and 1 Plated Armor."
+    },
+    {
+      "name": "Hotaru+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 2\nDeal 12 damage.\nParry: Gain 8 Block and 1 Plated Armor."
+    },
+    {
+      "name": "Instant Block",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nGain 1 Magatama."
+    },
+    {
+      "name": "Instant Block+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 Magatama."
+    },
+    {
+      "name": "Negative Edge",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nAdd one Staircase to your hand."
+    },
+    {
+      "name": "Negative Edge+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nAdd one upgraded Staircase to your hand."
+    },
+    {
+      "name": "Overdrive",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Double the amount of Magatama gained for 2 turn."
+    },
+    {
+      "name": "Overdrive+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate\nDouble the amount of Magatama gained for 2 turn."
+    },
+    {
+      "name": "Pandora Tears",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your entire hand, gain 4 Blocks for each card discarded."
+    },
+    {
+      "name": "Pandora Tears+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your entire hand, gain 5 Blocks for each card discarded."
+    },
+    {
+      "name": "Passive meter gain",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, gain 1 Magatama."
+    },
+    {
+      "name": "Passive meter gain+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of each turn, gain 1 Magatama."
+    },
+    {
+      "name": "Queen of Rose",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 1 Strength.\nGain 3 Strength at the end of the turn."
+    },
+    {
+      "name": "Queen of Rose+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 1 Strength.\nGain 4 Strength at the end of the turn."
+    },
+    {
+      "name": "Rapid Cancel",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Special: 4\nDraw 2 cards.\nGain [R] [R].\nExhaust"
+    },
+    {
+      "name": "Rapid Cancel+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Special: 4\nDraw 2 cards.\nGain [R] [R]"
+    },
+    {
+      "name": "Shippu",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Special: 4\nDeal 10 damage times X to ALL enemies.\nRetain"
+    },
+    {
+      "name": "Shippu+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Special: 4\nDeal 12 damage times X to ALL enemies.\nRetain"
+    },
+    {
+      "name": "Sword of Doom",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain Orb slots until you have 4.\nChannel 1 Fuumajin."
+    },
+    {
+      "name": "Sword of Doom+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain Orb slots until you have 4.\nChannel 1 Fuumajin."
+    },
+    {
+      "name": "The Gate",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Parry always activate.\nParry cards deal 2 additional damage."
+    },
+    {
+      "name": "The Gate+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Parry always activate.\nParry cards deal 2 additional damage."
+    },
+    {
+      "name": "Thin Red Line",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage.\nDeal 1 more damage for every card in your discard pile and 2 damage for every card in your exhaust pile. (Total: 5)"
+    },
+    {
+      "name": "Thin Red Line+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage.\nDeal 1 more damage for every card in your discard pile and 3 damage for every card in your exhaust pile. (Total: 5)"
+    },
+    {
+      "name": "Tiger Knee",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. If you have played 3 or more cards this turn, Add one Staircase to your hand."
+    },
+    {
+      "name": "Tiger Knee+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. If you have played 3 cards this turn, Add one upgraded Staircase to your hand."
+    },
+    {
+      "name": "Tsubaki",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Special: 3\nDeal 20 damage.\nAdd one Tsubaki on top of your draw pile.\nExhaust"
+    },
+    {
+      "name": "Tsubaki+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Special: 3\nDeal 24 damage.\nAdd one upgraded Tsubaki on top of your draw pile.\nExhaust"
+    },
+    {
+      "name": "Yanagi",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 2\nDeal 11 damage.\nParry: Gain 5 Block and 1 Thorns"
+    },
+    {
+      "name": "Yanagi+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Special: 2\nDeal 13 damage.\nParry: Gain 7 Block and 1 Thorns"
+    },
+    {
+      "name": "Yomotsuhirasaka",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Everytime you channel a Fuumajin, Deal 5 damage to ALL enemies.\nChannel 1 Fuumajin"
+    },
+    {
+      "name": "Yomotsuhirasaka+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Everytime you channel a Fuumajin, Deal 5 damage to ALL enemies.\nChannel 2 Fuumajin"
+    },
+    {
+      "name": "Yukikaze",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Special: 4\nParry: Deal 20 damage and gain 1 Buffer."
+    },
+    {
+      "name": "Yukikaze+",
+      "color": "Hakumen_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Special: 4\nParry: Deal 25 damage and gain 1 Buffer."
+    },
+    {
+      "name": "Akumetsu",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Special: 8\nDeal 12 damage X times to ALL enemies and gain 1 Intangible."
+    },
+    {
+      "name": "Akumetsu+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Special: 8\nDeal 16 damage X times to ALL enemies and gain 1 Intangible."
+    },
+    {
+      "name": "Childish Memories",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 Magatama.\nHeal 4 HP.\nExhaust"
+    },
+    {
+      "name": "Childish Memories+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 Magatama.\nHeal 6 HP.\nExhaust"
+    },
+    {
+      "name": "Empty Sky",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Everytime you play a Starter, Gatling, Special or Ender, draw 1 card."
+    },
+    {
+      "name": "Empty Sky+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nEverytime you play a Starter, Gatling, Special or Ender, draw 1 card."
+    },
+    {
+      "name": "Fatal Judge",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw 2 cards then change the cost of all Starter, Gatling and Ender cards in your hand to 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Fatal Judge+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw 2 cards then change the cost of all Starter, Gatling and Ender cards in your hand to 0 this turn."
+    },
+    {
+      "name": "God of War",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Deal 10 damage.\nChange the cost of all Specials in your hand to 0 this turn.\nExhaust"
+    },
+    {
+      "name": "God of War+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Deal 13 damage.\nChange the cost of all Specials in your hand to 0 this turn."
+    },
+    {
+      "name": "IN Justice",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "6",
+      "description": "Deal 40 damage.\nGain 4 Magatama.\nReduce this card cost by 1 every time you play a Special."
+    },
+    {
+      "name": "IN Justice+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Deal 50 damage.\nGain 4 Magatama.\nReduce this card cost by 1 every time you play a Special."
+    },
+    {
+      "name": "Mugen",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "Special: 8\nAdd X Random Special cards to your hand.\nSpecial cost 0 Energy and Magatama this turn."
+    },
+    {
+      "name": "Mugen+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "Special: 8\nAdd X+1 Random Special cards to your hand.\nSpecial cost 0 Energy and Magatama this turn."
+    },
+    {
+      "name": "Option Select",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain 1 Artifact.\nExhaust"
+    },
+    {
+      "name": "Option Select+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain 1 Artifact.\nExhaust"
+    },
+    {
+      "name": "SIX-HEROES",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain [R]\nGain 1 Artifact\nGain 1 Strength\nGain 2 Plated Armor\nGain 1 Thorns\nGain 1 Magatama."
+    },
+    {
+      "name": "SIX-HEROES+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain [R]\nGain 1 Artifact\nGain 2 Strength\nGain 2 Plated Armor\nGain 1 Thorns\nGain 2 Magatama."
+    },
+    {
+      "name": "Science Fiction",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [R] and draw a card for every Fuumajin channeled.\nExhaust"
+    },
+    {
+      "name": "Science Fiction+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [R] and draw a card for every Fuumajin channeled.\nExhaust"
+    },
+    {
+      "name": "Stand Unrivaled",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add one Special from your draw pile to your hand.\nExhaust"
+    },
+    {
+      "name": "Stand Unrivaled+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add one Special from your draw pile to your hand."
+    },
+    {
+      "name": "The Tyrant",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Everytime you play a Gatling, apply 1 Vulnerable.\nEverytime you play a Ender, apply 1 Weak."
+    },
+    {
+      "name": "The Tyrant+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Everytime you play a Gatling, apply 1 Vulnerable.\nEverytime you play a Ender, apply 1 Weak."
+    },
+    {
+      "name": "The White Void",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain new effects every time it is played. Add a copy of this card on top of the draw pile next turn. White_void"
+    },
+    {
+      "name": "The White Void+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain new effects every time it is played. Add a copy of this card on top of the draw pile next turn. White_void"
+    },
+    {
+      "name": "Time Killer",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nAdd 1 Exhausted Attack to your hand, change its cost to 0."
+    },
+    {
+      "name": "Time Killer+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nAdd 1 Exhausted Attack to your hand, change its cost to 0."
+    },
+    {
+      "name": "Walpurgisnacht",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to your Magatama count times 8. (Total: 0)"
+    },
+    {
+      "name": "Walpurgisnacht+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to your Magatama count times 9. (Total: 0)"
+    },
+    {
+      "name": "X-matic",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "Gain X Strength.\nGain X Magatama."
+    },
+    {
+      "name": "X-matic+",
+      "color": "Hakumen_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "Gain X+1 Strength.\nGain X+1 Magatama."
+    }
+  ],
+  "relics": [
+    {
+      "name": "SUSANO'OH",
+      "tier": "Starter",
+      "pool": "Hakumen_color",
+      "description": "Every time you play 3 cards, gain 1 Magatama.",
+      "flavorText": "When this theme was released, 6B was a low."
+    },
+    {
+      "name": "Chrono Phantasma",
+      "tier": "Common",
+      "pool": "Hakumen_color",
+      "description": "At the start of each battle, gain Strength for every 15HP missing.",
+      "flavorText": "5C > 623AA > J.2C > 2C > 9jc > J.2A > 9jc > Delay J.2C > 5A > 5B > 9jc > J.B2A > 9jc > J.B2A > J.214A"
+    },
+    {
+      "name": "Calamity Trigger",
+      "tier": "Uncommon",
+      "pool": "Hakumen_color",
+      "description": "Every time you play a card whose cost has been modified, gain 4 Blocks.",
+      "flavorText": "5C > 623AA > J.C > 2C > 9jc > J.2C > IAD > J.2C"
+    },
+    {
+      "name": "Burst icon",
+      "tier": "Rare",
+      "pool": "Hakumen_color",
+      "description": "At the start of each combat, add one Burst to your draw pile.\n(Cost 0 -\nGain 1 Intangible.)",
+      "flavorText": "Unit cookie dough!"
+    },
+    {
+      "name": "Central Fiction",
+      "tier": "Rare",
+      "pool": "Hakumen_color",
+      "description": "Draw 1 more card at the start of each turn.",
+      "flavorText": "5C > 214A > 2C > 9hjc > J.B2A > 9jc > J.B2A > J.214A"
+    },
+    {
+      "name": "Continuum Shift",
+      "tier": "Rare",
+      "pool": "Hakumen_color",
+      "description": "Whenever you enter a Rest Site, upgrade a random card.",
+      "flavorText": "5C > 623AA > J.2C > 2C > 9jc > J.2A > IAD > J.2A > J.C"
+    },
+    {
+      "name": "SUSANO'OH II",
+      "tier": "Boss",
+      "pool": "Hakumen_color",
+      "description": "Gain [R] and lose 1 Magatama at the start of each turn.",
+      "flavorText": "And people though he was gonna be low tier in CP1.0."
+    }
+  ],
+  "potions": [
+    {
+      "name": "25% Power",
+      "rarity": "Common",
+      "description": "Gain 2 Magatamas."
+    },
+    {
+      "name": "50% Power",
+      "rarity": "Uncommon",
+      "description": "Gain 4 Magatamas."
+    },
+    {
+      "name": "Full Power",
+      "rarity": "Rare",
+      "description": "Gain 8 Magatamas."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Hakumen",
+      "type": "Player",
+      "minHP": "76",
+      "maxHP": "76"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Command Order",
+      "description": "1: Reduce this card's cost by 1.\n2: Draw 1 card.\n3: Gain 1 Strength.\n4: Upgrade all the cards in your hand."
+    },
+    {
+      "name": "Defense",
+      "description": "Creatures with Defense receive 20% less damage from Attacks for 1 turn.\nRemove it if Offense is applied."
+    },
+    {
+      "name": "Ender",
+      "description": "Apply the effect if either:\n- You have 0 Energy after playing that card.\n- You have 0 Attacks left in your hand."
+    },
+    {
+      "name": "Fuumajin",
+      "description": "Gain 2 Block at the end of each turn. Evoke after 2 turns.\nEvoke: Gain 1 magatama."
+    },
+    {
+      "name": "Gatling",
+      "description": "- If you have that card in your hand, reduce its cost by 1 this turn.\n- If you don't, add that card into your hand but lose 2 Strengths until the end of the turn."
+    },
+    {
+      "name": "Magatama",
+      "description": "Resource used by Special moves."
+    },
+    {
+      "name": "Offense",
+      "description": "Creatures with Offense deal 25% more damage with Attacks for 1 turn.\nRemove it if Defense is applied."
+    },
+    {
+      "name": "Parry",
+      "description": "Apply the effect if the enemy intends to attack."
+    },
+    {
+      "name": "Special",
+      "description": "Specials consume Magatama(s) to activate their effect."
+    },
+    {
+      "name": "Starter",
+      "description": "Apply the effect if your Energy is at its maximum."
+    },
+    {
+      "name": "White Void",
+      "description": "1: Gain 1 Magatama.\n2: Gain 2 Plated Armor.\n3: Gain 1 Strength.\n4: Gain 2 Thorns.\n5: All enemies lose 2 Strengths.\n6: Draw 1 more card at the start of each turn.\n7: Gain 1 additional [R] at the start of each turn.\n8: ???"
+    }
+  ]
+}
