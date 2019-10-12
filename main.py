@@ -175,7 +175,7 @@ def remove_keyword_prefixes(description):
             continue
         final_description += word + ' '
     final_description = final_description.replace('\n ', '\n')
-    final description += ' '
+    final_description += ' '
     return final_description
 
 def is_keyword(word):
