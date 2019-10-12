@@ -3,6 +3,8 @@ import os
 import json
 import discord
 from dotenv import load_dotenv
+import os.path
+from os import path
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -16,8 +18,9 @@ class Mod_Data:
         self.data = self.get_data(id)
 
     def get_data(self, id):
-        with open(f'data/{id}/items.json') as json_file:
-            return json.load(json_file)
+        if path.exists(f'data/{id}/items.json'):
+            with open(f'data/{id}/items.json') as json_file:
+                return json.load(json_file)
 
 @client.event
 async def on_ready():
@@ -42,14 +45,22 @@ async def on_message(message):
 async def get_id(message):
     s = message.content.lower()
     tokenized_message  = s.split(' ', 2)
-    await do_command(message.channel, tokenized_message)
-    
+    if path.exists(f'data/{tokenized_message[1]}/items.json'):
+        await do_command(message.channel, tokenized_message)
+    else:
+        await send_failure(message.channel, tokenized_message)
+
 async def do_command(channel, tokenized_message):
     commands = {
-        'card': card
+        'card': card,
+        'relic': relic
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
+
+@client.event
+async def send_failure(channel, tokenized_message):
+    await channel.send(f'Unable to find mod {tokenized_message[1]}')
 
 @client.event
 async def card(channel, tokenized_message):
@@ -60,10 +71,25 @@ async def card(channel, tokenized_message):
             return
     await channel.send(f'No card named {tokenized_message[2]} found in {tokenized_message[1]}')
 
+@client.event
+async def relic(channel, tokenized_message):
+    relics = Mod_Data(tokenized_message[1]).data['relics']
+    for relic in relics:
+        if tokenized_message[2] == relic['name'].lower():
+            await channel.send(relic_format(relic))
+            return
+    await channel.send(f'No relic named ${tokenized_message[2]} found in {tokenized_message[1]}')
+
 def card_format(card):
     return "**{0}**\n{1} `{2}` `{3}` `{4}` `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], card['description'])
 
+def relic_format(relic):
+    print(relic)
+    return "**{0}**\n`{1}` `{2}` `{3}`\n{4}\n*{5}*".format(relic['name'], relic['tier'], relic['pool'], relic['mod'], relic['description'], relic['flavorText'])
+
 def energy_string(cost):
+    if cost == 'X':
+        return cost
     cost = int(cost)
     s = ''
     for i in range (0, cost):
