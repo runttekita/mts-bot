@@ -42,6 +42,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "aspiration:Fuse all your orbs.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Unbridled Hammer",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage to a random enemy X times. runesmith:Enhance a random card in your hand X times."
+    },
+    {
+      "name": "Unbridled Hammer+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage to a random enemy X+1 times. runesmith:Enhance a random card in your hand X+1 times."
     }
   ],
   "relics": [
@@ -79,6 +95,20 @@
       "pool": "",
       "description": "Right click during combat to activate.Consume all charges and deal 3 damage to a random enemy for each.\nGain 1 Charge everytime you gain gold.",
       "flavorText": "A mysterious arcade coin that can store large amounts of electricity. If enough is stored, maybe you could create a railgun?"
+    },
+    {
+      "name": "Tome of Questing",
+      "tier": "Common",
+      "pool": "",
+      "description": "Whenever you complete a quest, obtain a new one.",
+      "flavorText": "Why does it tell you to move from one floor to another all the time?"
+    },
+    {
+      "name": "Trusty Knives",
+      "tier": "Common",
+      "pool": "Silver",
+      "description": "Whenever you lose a Knife [REMOVE_SPACE], gain 1 Protection [REMOVE_SPACE].",
+      "flavorText": "It would be embarrassing if you were to cut yourself."
     },
     {
       "name": "Vile Toxins",
@@ -214,6 +244,13 @@
       "flavorText": "\"How do you reach a heart? With a knife.\" - Blizzarre, runic archmagus"
     },
     {
+      "name": "Bard's Skillbook",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Each card you play may also bard:Queue bard:Notes. At the end of your turn, bard:Queue a [WildNote] [REMOVE_SPACE].\n\nMulticlass Bard",
+      "flavorText": "A notebook used as a book for notes."
+    },
+    {
       "name": "Burster Core",
       "tier": "Boss",
       "pool": "",
@@ -240,6 +277,13 @@
       "pool": "",
       "description": "At the end of each turn, if you have more than 20 Block [REMOVE_SPACE], gain 1 Strength [REMOVE_SPACE]. At the end of combat, heal 4 HP.\n\nMulticlass Ironclad",
       "flavorText": "An abused book that contains the hasty scribbles of an angry being."
+    },
+    {
+      "name": "Mobile Forge",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you play an upgraded card, runesmith:Enhance a random card in your hand. Whenever you play an enhanced card, Upgrade a random card in your hand.",
+      "flavorText": "A pet-like machine that started to follow you on your journey."
     },
     {
       "name": "Poet's Pen",
@@ -270,6 +314,13 @@
       "flavorText": "With every move you make, you feel the dagger dig in deeper into your being. You fear what you may become if you give in."
     },
     {
+      "name": "Runesmith's Skillbook",
+      "tier": "Boss",
+      "pool": "",
+      "description": "The first time you play an Attack each turn, for each prior turn ended without playing an Attack [REMOVE_SPACE], runesmith:Enhance that many random cards in your hand that amount of times.\n\nMulticlass Runesmith",
+      "flavorText": "This seems to be a beginners guide to arcane forgery. The hammer section has been taken special care of."
+    },
+    {
       "name": "Runic Spoon",
       "tier": "Boss",
       "pool": "",
@@ -284,6 +335,13 @@
       "flavorText": "\"Promise me you'll never use these\" - Teacher"
     },
     {
+      "name": "Servant's Skillbook",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn, if you took no HP damage last turn, gain 3 Sattelites [REMOVE_SPACE]. Whenever a Sattelite is used, gain Protection equal to its damage.\n\nMulticlass Servant",
+      "flavorText": "An elegant list on how to clean a... mansion? graces these pages."
+    },
+    {
       "name": "Silent's Skillbook",
       "tier": "Boss",
       "pool": "",
@@ -291,11 +349,25 @@
       "flavorText": "Pages filled with information on how to deal with this place. A talk with the author should be enlightening."
     },
     {
+      "name": "Spell Scribe's Skillbook",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you gain a buff [REMOVE_SPACE], gain a random scribe:Spell_Effect [REMOVE_SPACE].\n\nMulticlass Spell Scribe",
+      "flavorText": "A tome filled to the brim with spells of all sorts."
+    },
+    {
       "name": "Stellarator",
       "tier": "Boss",
       "pool": "",
       "description": "Whenever channeling an orb fills your orb slots, Evoke your next orb and aspiration:Fuse all remaining orbs.",
       "flavorText": "Who needs the Inserter if you can just squeeze!"
+    },
+    {
+      "name": "Earplugs",
+      "tier": "Shop",
+      "pool": "Bard_color",
+      "description": "Whenever you would gain bard:Inspiration [REMOVE_SPACE], apply 1 Weak and Vulnerable for every 25 inspiration to a random enemy instead.",
+      "flavorText": "Faith in ones skills is always useful in one way or another."
     },
     {
       "name": "Kaom's Heart",

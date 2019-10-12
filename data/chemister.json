@@ -1,0 +1,640 @@
+{
+  "mod": {
+    "name": "TheChemist",
+    "version": "0.1.3",
+    "authors": ["Vex'd"],
+    "credits": "",
+    "description": "An chemist!",
+    "mts_version": "3.8.0",
+    "sts_version": "2.0",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Chemist_crazy_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Steam Blast",
+      "color": "Chemist_crazy_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Infuse Fire.\nInfuse Frost."
+    },
+    {
+      "name": "Steam Blast+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Infuse Fire.\nInfuse Frost.\nDraw 1 card."
+    },
+    {
+      "name": "Strike",
+      "color": "Chemist_crazy_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Blister Blast",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Vulnerable.\nInfuse Fire."
+    },
+    {
+      "name": "Blister Blast+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Infuse Lightning.\nApply 1 Vulnerable for each Lightning strike."
+    },
+    {
+      "name": "Burn to a Crisp",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. If Fire was Infused this turn, deal 10 damage again."
+    },
+    {
+      "name": "Burn to a Crisp+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage. If Fire was Infused this turn, deal 13 damage again."
+    },
+    {
+      "name": "Enfeebling Fumes",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak.\nGain 6 Block."
+    },
+    {
+      "name": "Enfeebling Fumes+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nGain 6 Block."
+    },
+    {
+      "name": "Icicle Spike",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nInfuse Frost."
+    },
+    {
+      "name": "Icicle Spike+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nInfuse Frost."
+    },
+    {
+      "name": "Leidenfrost",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nInfuse Tempest."
+    },
+    {
+      "name": "Leidenfrost+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nInfuse Tempest."
+    },
+    {
+      "name": "Potion Madness",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nWithdrawl: Deal 6 damage again."
+    },
+    {
+      "name": "Potion Madness+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nWithdrawl: Deal 8 damage again."
+    },
+    {
+      "name": "Shockstrike",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nEnemy becomes a Lightning_Rod for 2 turns."
+    },
+    {
+      "name": "Shockstrike+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nEnemy becomes a Lightning_Rod for 2 turns."
+    },
+    {
+      "name": "Triple Threat",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 4 Block.\nDeal 4 damage.\nWithdrawl: Infuse Fire."
+    },
+    {
+      "name": "Triple Threat+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 6 Block.\nDeal 6 damage.\nWithdrawl: Infuse Fire."
+    },
+    {
+      "name": "Updraft",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nInfuse Tempest."
+    },
+    {
+      "name": "Updraft+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nInfuse Tempest."
+    },
+    {
+      "name": "Wild Charge",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Infuse Lightning 2 times."
+    },
+    {
+      "name": "Wild Charge+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Infuse Lightning 3 times."
+    },
+    {
+      "name": "Bag Block",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nWithdrawl: Infuse ALL Flasks."
+    },
+    {
+      "name": "Bag Block+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block.\nWithdrawl: Infuse ALL Flasks."
+    },
+    {
+      "name": "Beacon Bolt",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy becomes a Lightning Rod for 2 turns.\nInfuse Lightning."
+    },
+    {
+      "name": "Beacon Bolt+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy becomes a Lightning Rod for 2 turns.\nInfuse Lightning.\nInfuse Tempest."
+    },
+    {
+      "name": "Conductivity",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "",
+      "description": "Lightning does 2 additional damage.\nFrost grants 1 less Block."
+    },
+    {
+      "name": "Dissolution",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 26 damage.\nWithdrawl: Shuffle this card into your draw pile."
+    },
+    {
+      "name": "Dissolution+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 32 damage.\nWithdrawl: Shuffle this card into your draw pile."
+    },
+    {
+      "name": "Duality",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "",
+      "description": "Lightning and Fire deal 1 additional damage."
+    },
+    {
+      "name": "Frenzied Flasking",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nRepeat for each unique Flask Infused this turn."
+    },
+    {
+      "name": "Frenzied Flasking+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nRepeat for each unique Flask Infused this turn."
+    },
+    {
+      "name": "Maelstrom Burst",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Infuse Lightning.\nInfuse Tempest."
+    },
+    {
+      "name": "Maelstrom Burst+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Infuse Lightning.\nInfuse Tempest."
+    },
+    {
+      "name": "Napalm",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "",
+      "description": "Fire does 3 additional damage.\nFrost grants 1 less Block."
+    },
+    {
+      "name": "Portable Glacier",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Infuse Frost.\nInfuse Frost again for each enemy in the combat."
+    },
+    {
+      "name": "Portable Glacier+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Infuse Frost.\nInfuse Tempest.\nInfuse Frost again for each enemy in the combat."
+    },
+    {
+      "name": "Slowed Reflexes",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "",
+      "description": "Frost applies 1 Weak to ALL enemies when Infused for the first time each combat."
+    },
+    {
+      "name": "Sundering Heat",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "",
+      "description": "Fire applies 1 Vulnerable when Infused for the first time each turn."
+    },
+    {
+      "name": "Superb Solution",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nRepeat for each unique Flask Infused this turn."
+    },
+    {
+      "name": "Superb Solution+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nRepeat for each unique Flask Infused this turn."
+    },
+    {
+      "name": "Thermoblast",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nInfuse Fire.\nIf this kills an enemy, Infuse Lightning twice instead."
+    },
+    {
+      "name": "Thermoblast+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nInfuse Fire.\nIf this kills an enemy, Infuse Lightning twice instead."
+    },
+    {
+      "name": "Winds of Change",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "",
+      "description": "Tempest draws an additional card when Infused for the first time each turn."
+    },
+    {
+      "name": "Winds of Prosperity",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "",
+      "description": "Tempest grants 3 gold when Infused for the first time each combat."
+    },
+    {
+      "name": "[MISSING_TITLE]",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[MISSING_DESCRIPTION]"
+    },
+    {
+      "name": "[MISSING_TITLE]+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[MISSING_DESCRIPTION+]"
+    },
+    {
+      "name": "Air Shield",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "",
+      "description": "Tempest prevents the next time you lose HP when Infused for the first time each combat."
+    },
+    {
+      "name": "Atheistic Rejection",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nWithdrawl: Apply 2 Vulnerable and 2 Weak."
+    },
+    {
+      "name": "Atheistic Rejection+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nWithdrawl: Apply 2 Vulnerable and 2 Weak."
+    },
+    {
+      "name": "Conjure Storm",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Enemy becomes a Lightning_Rod for 10 turns.\nInfuse Lightning X times.\nExhaust."
+    },
+    {
+      "name": "Conjure Storm+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Enemy becomes a Lightning_Rod for 10 turns.\nInfuse Lightning X+1 times.\nExhaust."
+    },
+    {
+      "name": "Consumption",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 9 damage.\nIf this kills a non-minion enemy, increase the damage of Fire by 1 permanently.\nExhaust."
+    },
+    {
+      "name": "Consumption+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 9 damage.\nIf this kills a non-minion enemy, increase the damage of Fire by 2 permanently.\nExhaust."
+    },
+    {
+      "name": "Crystallize",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "",
+      "description": "Frost stuns a random enemy when Infused for the first time each combat."
+    },
+    {
+      "name": "Energized Movements",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "",
+      "description": "Lightning grants [E] when Infused for the first time each turn."
+    },
+    {
+      "name": "Eureka!",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Infuse ALL Flasks.\nExhaust."
+    },
+    {
+      "name": "Eureka!+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Infuse ALL Flasks."
+    },
+    {
+      "name": "Flaming Conclusion",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Infuse Fire for each card played this turn."
+    },
+    {
+      "name": "Flaming Conclusion+",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Infuse Fire.\nInfuse Fire for each card played this turn."
+    },
+    {
+      "name": "Hurricane Force",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "",
+      "description": "Tempest deals 12 damage to ALL enemies when Infused for the first time each combat."
+    },
+    {
+      "name": "Inner Fire",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "",
+      "description": "Fire grants 1 Strength when Infused for the first time each turn."
+    },
+    {
+      "name": "Overcharged",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "",
+      "description": "Lightning hits 1 additional time if all strikes hit the same enemy."
+    },
+    {
+      "name": "Pierceburn",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "",
+      "description": "Fire reduces enemy Strength by 2 this turn when Infused."
+    },
+    {
+      "name": "Purify",
+      "color": "Chemist_crazy_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "",
+      "description": "Frost removes a random debuff when Infused."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Chemister's Journal",
+      "tier": "Starter",
+      "pool": "Chemist_crazy_color",
+      "description": "At the start of each combat, a random card in your hand costs 0 this combat.",
+      "flavorText": "Experiments... more experiments."
+    },
+    {
+      "name": "Flask of Fire",
+      "tier": "Starter",
+      "pool": "Chemist_crazy_color",
+      "description": "When Infused, deal 4 damage.",
+      "flavorText": "Burn, baby, burn!"
+    },
+    {
+      "name": "Flask of Frost",
+      "tier": "Starter",
+      "pool": "Chemist_crazy_color",
+      "description": "When Infused, gain 4 Block.",
+      "flavorText": "Handle with gloves or taste frostbite."
+    },
+    {
+      "name": "Flask of Lightning",
+      "tier": "Starter",
+      "pool": "Chemist_crazy_color",
+      "description": "When Infused, deal 3 damage to a random enemy 2 times.",
+      "flavorText": "NOTE: Not BOTTLED, FLASKED."
+    },
+    {
+      "name": "Flask of Tempest",
+      "tier": "Starter",
+      "pool": "Chemist_crazy_color",
+      "description": "When Infused, draw 1 card.",
+      "flavorText": "Your minions with Windfury have Mega-Windfury... wait a second"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Chemister",
+      "type": "Player",
+      "minHP": "71",
+      "maxHP": "71"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Frost",
+      "description": "Flask. Grants Block."
+    },
+    {
+      "name": "Infuse",
+      "description": "Infusing a Flask activates its effects."
+    },
+    {
+      "name": "Lightning",
+      "description": "Flask. Deals damage to random enemies."
+    },
+    {
+      "name": "Lightning rod",
+      "description": "All hits of Lightning target Lightning Rods."
+    },
+    {
+      "name": "Tempest",
+      "description": "Flask. Draws cards."
+    },
+    {
+      "name": "Withdrawl",
+      "description": "Effect triggers if no Flasks have been Infused this turn."
+    }
+  ]
+}

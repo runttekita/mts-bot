@@ -1,0 +1,348 @@
+{
+  "mod": {
+    "name": "TheBandit",
+    "version": "0.1.3",
+    "authors": ["Vex'd"],
+    "credits": "",
+    "description": "An artist!",
+    "mts_version": "3.8.0",
+    "sts_version": "2.0",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Bandit_weird_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nMove 2."
+    },
+    {
+      "name": "Defend+",
+      "color": "Bandit_weird_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nMove 2."
+    },
+    {
+      "name": "Leap",
+      "color": "Bandit_weird_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nMove 6.\nExhaust."
+    },
+    {
+      "name": "Leap+",
+      "color": "Bandit_weird_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nMove 8.\nExhaust."
+    },
+    {
+      "name": "Step",
+      "color": "Bandit_weird_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Upgrade the next Square.\nMove 1."
+    },
+    {
+      "name": "Step+",
+      "color": "Bandit_weird_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Upgrade the next Square.\nMove 1."
+    },
+    {
+      "name": "Strike",
+      "color": "Bandit_weird_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nMove 3."
+    },
+    {
+      "name": "Strike+",
+      "color": "Bandit_weird_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nMove 3."
+    },
+    {
+      "name": "Backwards Block",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nMove back 2."
+    },
+    {
+      "name": "Backwards Block+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nMove back 2."
+    },
+    {
+      "name": "Body Block",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nTransform a random Empty Space into a Block Space."
+    },
+    {
+      "name": "Body Block+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nTransform a random Empty Space into a Block Space."
+    },
+    {
+      "name": "Bombshield",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd 1 Kaboom into your discard pile.\nMove 2."
+    },
+    {
+      "name": "Bombshield+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nAdd 1 Kaboom into your discard pile.\nMove 2."
+    },
+    {
+      "name": "Boom Boom",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 Kaboom into your discard pile."
+    },
+    {
+      "name": "Boom Boom Boom+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 Kaboom into your discard pile."
+    },
+    {
+      "name": "Charge Forth",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Move 1.\nIf you landed on an Empty Space, repeat this."
+    },
+    {
+      "name": "Charge Forth+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Move 1.\nIf you landed on an Empty Space, repeat this.\nMove 1."
+    },
+    {
+      "name": "Disarming Moves",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Vulnerable.\nApply 1 Weak.\nMove 1.\nMove back 1."
+    },
+    {
+      "name": "Disarming Moves+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable.\nApply 2 Weak.\nMove 2.\nMove back 2."
+    },
+    {
+      "name": "Double Dip",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice.\nMove 4.\nActivate the Space you landed on again."
+    },
+    {
+      "name": "Double Dip+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice.\nMove 4.\nActivate the Space you landed on again."
+    },
+    {
+      "name": "Game",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nMove 4.\nIf you passed Go, deal 7 damage again."
+    },
+    {
+      "name": "Game+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nMove 6.\nIf you passed Go, deal 10 damage again."
+    },
+    {
+      "name": "Go-Blast",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf you're on Go, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Go-Blast+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf you're on Go, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Jumpslam",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nMove 5."
+    },
+    {
+      "name": "Jumpslam+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies.\nMove 5."
+    },
+    {
+      "name": "Smack Slam",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nTransform the next Space into a Damage Space."
+    },
+    {
+      "name": "Smack Slam+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nTransform the next Space into a Damage Space.\nUpgrade it."
+    },
+    {
+      "name": "Smackflip",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nDraw 2 cards.\nMove 1."
+    },
+    {
+      "name": "Smackflip+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 3 cards.\nMove 1."
+    },
+    {
+      "name": "Smol Sprint",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Move 1.\nGain 2 Block.\nDeal 3 damage."
+    },
+    {
+      "name": "Smol Sprint+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Move 2.\nGain 3 Block.\nDeal 4 damage."
+    },
+    {
+      "name": "Terraforming",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Transform a random Empty Space into a positive Space.\nMove 1."
+    },
+    {
+      "name": "Terraforming+",
+      "color": "Bandit_weird_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nTransform a random Empty Space into a positive Space.\nMove 1."
+    },
+    {
+      "name": "Whirlwind Burst",
+      "color": "Bandit_weird_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Transform 2 random Empty Spaces into Damage Spaces.\nUpgrade all Damage Spaces."
+    },
+    {
+      "name": "Whirlwind Burst+",
+      "color": "Bandit_weird_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Transform 3 random Empty Spaces into Damage Spaces.\nUpgrade all Damage Spaces."
+    }
+  ],
+  "relics": [
+    {
+      "name": "The Hat",
+      "tier": "Starter",
+      "pool": "Bandit_weird_color",
+      "description": "The Board starts each combat with 2 additional positive Squares.",
+      "flavorText": "Of utmost importance."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Bandit",
+      "type": "Player",
+      "minHP": "80",
+      "maxHP": "80"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Kaboom",
+      "description": "Kabooms are 1 cost Attack cards which automatically play when drawn and Exhaust."
+    },
+    {
+      "name": "Move",
+      "description": "Travel on the Board."
+    }
+  ]
+}

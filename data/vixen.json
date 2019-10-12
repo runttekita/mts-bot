@@ -1,0 +1,1342 @@
+{
+  "mod": {
+    "name": "The Vixen",
+    "version": "1.0.5",
+    "authors": ["Razash"],
+    "credits": "solderist.park's \"The Cursed\" mod, that gave me a good idea of how to structure the project itself.\nBlurred_Aspect for testing it to its limits.\nVex'd for just being Vex.\nAll the fine people that bothered playing this and gave me feedback. Thanks, guys~",
+    "description": "Adds Braixen as a playable character (automatically unlocks Ascension up to 15).\nAdds one custom event to all eventpools, limited to the vixen unless you change it in the config.\nAlso adds one custom act 3 boss that is disabled by default. (see config for more details)\nThe main mechanics are temporary damagebuffs, debuff manipulation and self-inflicted damage on enemies.",
+    "mts_version": "3.8.3",
+    "sts_version": "07-05-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "The_vixen_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nthevixenmod:Sunny: Draw a card."
+    },
+    {
+      "name": "Defend+",
+      "color": "The_vixen_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nthevixenmod:Sunny: Draw a card."
+    },
+    {
+      "name": "Ember",
+      "color": "The_vixen_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nthevixenmod:Sunny: Apply 4 thevixenmod:Burn."
+    },
+    {
+      "name": "Ember+",
+      "color": "The_vixen_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nthevixenmod:Sunny: Apply 5 thevixenmod:Burn."
+    },
+    {
+      "name": "Strike",
+      "color": "The_vixen_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nthevixenmod:Sunny: Apply 2 thevixenmod:Burn."
+    },
+    {
+      "name": "Strike+",
+      "color": "The_vixen_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nthevixenmod:Sunny: Apply 3 thevixenmod:Burn."
+    },
+    {
+      "name": "Sunny Day",
+      "color": "The_vixen_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 thevixenmod:Sunny_Day.\nthevixenmod:Sunny and debuffed: Reduce the number on all numbered debuffs on you by !MISC!."
+    },
+    {
+      "name": "Sunny Day+",
+      "color": "The_vixen_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 thevixenmod:Sunny_Day.\nthevixenmod:Sunny and debuffed: Gain [E] and\nreduce the number on all numbered debuffs on you by !MISC!."
+    },
+    {
+      "name": "Debug",
+      "color": "The_vixen_orange",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "For Dev Purposes"
+    },
+    {
+      "name": "Debug+",
+      "color": "The_vixen_orange",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "For Dev Purposes"
+    },
+    {
+      "name": "Calm Mind",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw !MISC! cards.\nthevixenmod:Sunny_Exhaust:\nGain 3 Strength and Dexterity this turn."
+    },
+    {
+      "name": "Calm Mind+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw !MISC! cards.\nRetain your thevixenmod:rightmost attack, skill or power.\nthevixenmod:Sunny_Exhaust:\nGain 5 Strength and Dexterity this turn."
+    },
+    {
+      "name": "Confusion",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy deals 6 damage to itself.\nRetain your thevixenmod:rightmost attack, skill or power."
+    },
+    {
+      "name": "Confusion+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy deals 7 damage to itself.\nRetain your thevixenmod:rightmost attack, skill or power.\nthevixenmod:Sunny: Repeat this effect once."
+    },
+    {
+      "name": "Counter Attack Dash Cancel",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nthevixenmod:Sunny: Gain 3 Strength this turn."
+    },
+    {
+      "name": "Counter Attack Dash Cancel+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nthevixenmod:Sunny: Gain 5 Strength this turn."
+    },
+    {
+      "name": "Extrasensory",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Target enemy deals\n8 damage to itself\n2 times.\nthevixenmod:Sunny_Exhaust:\n!MISC! times instead."
+    },
+    {
+      "name": "Extrasensory+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Target enemy deals\n8 damage to itself\n3 times.\nthevixenmod:Sunny_Exhaust:\n!MISC! times instead."
+    },
+    {
+      "name": "Facade",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nRepeat this for every unique thevixenmod:debuff on you.\n( !DBNUM! )"
+    },
+    {
+      "name": "Facade+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nRepeat this for every unique thevixenmod:debuff on you.\n( !DBNUM! )\nthevixenmod:Sunny:\nUnaffected by Weak."
+    },
+    {
+      "name": "Fire Fang",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage !MISC! times.\nthevixenmod:Sunny_Exhaust:\nApply 4 thevixenmod:Burn."
+    },
+    {
+      "name": "Fire Fang+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage !MISC! times.\nthevixenmod:Sunny_Exhaust:\nApply 6 thevixenmod:Burn."
+    },
+    {
+      "name": "Flame Burst",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nIf the enemy isn't burned, apply 3 thevixenmod:Burn.\nOtherwise, gain 1 thevixenmod:Sunny_Day."
+    },
+    {
+      "name": "Flame Burst+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf the enemy isn't burned, apply 4 thevixenmod:Burn.\nOtherwise, gain 1 thevixenmod:Sunny_Day."
+    },
+    {
+      "name": "Flame Charge",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nthevixenmod:Sunny: Gain 3 Dexterity this turn."
+    },
+    {
+      "name": "Flame Charge+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nthevixenmod:Sunny: Gain 5 Dexterity this turn."
+    },
+    {
+      "name": "Flame Wheel",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain !MISC! Block for each thevixenmod:Burn on the target.\nthevixenmod:Sunny:\nRepeat this effect once."
+    },
+    {
+      "name": "Flame Wheel+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 2 times.\nGain !MISC! Block for each thevixenmod:Burn on target 2 times.\nthevixenmod:Sunny: Repeat this effect once more."
+    },
+    {
+      "name": "Flamethrower",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nthevixenmod:Sunny:\nRetain your thevixenmod:rightmost attack, skill or power."
+    },
+    {
+      "name": "Flamethrower+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage\nApply 3 thevixenmod:Burn.\nthevixenmod:Sunny:\nRetain your thevixenmod:rightmost attack, skill or power."
+    },
+    {
+      "name": "Flare Blitz",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nApply 2 Vulnerable to yourself.\nthevixenmod:Sunny: Increase damage dealt by 5."
+    },
+    {
+      "name": "Flare Blitz+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 13 damage.\nApply 2 Vulnerable to yourself.\nthevixenmod:Sunny: Increase damage dealt by 5."
+    },
+    {
+      "name": "Heat Wave",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to all enemies.\nthevixenmod:Sunny: Apply 2 thevixenmod:Burn."
+    },
+    {
+      "name": "Heat Wave+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to all enemies.\nthevixenmod:Sunny: Apply 3 thevixenmod:Burn."
+    },
+    {
+      "name": "Lava Plume",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 3 times to a random enemy.\nthevixenmod:Sunny: Apply 2 thevixenmod:Burn to each target hit."
+    },
+    {
+      "name": "Lava Plume+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 4 times to a random enemy.\nthevixenmod:Sunny: Apply 2 thevixenmod:Burn to each target hit."
+    },
+    {
+      "name": "Overheat",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage and apply 3 Weak to yourself.\nthevixenmod:Sunny: Increase Weak applied by 1 and damage done by 8."
+    },
+    {
+      "name": "Overheat+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 32 damage and apply 3 Weak to yourself.\nthevixenmod:Sunny: Increase Weak applied by 1 and damage done by 8."
+    },
+    {
+      "name": "Protect",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nGain 1 thevixenmod:Protectspam.\nProtect becomes 33 % less effective for each stack of thevixenmod:Protectspam."
+    },
+    {
+      "name": "Protect+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Block.\nGain 1 thevixenmod:Protectspam.\nProtect becomes 25 % less effective for each stack of thevixenmod:Protectspam."
+    },
+    {
+      "name": "Psybeam",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy deals\n7 damage to itself.\nthevixenmod:Sunny: Gain Block equal to half the damage dealt."
+    },
+    {
+      "name": "Psybeam+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy deals\n11 damage to itself.\nthevixenmod:Sunny: Gain Block equal to the damage dealt."
+    },
+    {
+      "name": "Swagger",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Target enemy deals\n7 damage to itself.\nUntil the start of your turn, it gains 3 Strength and takes damage equal to half its damage dealt."
+    },
+    {
+      "name": "Swagger+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Target enemy deals\n10 damage to itself.\nUntil the start of your turn, it gains 5 Strength and takes damage equal to half its damage dealt."
+    },
+    {
+      "name": "Tail Whip",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply !MISC! Vulnerable.\nthevixenmod:Sunny_Exhaust:\nApply 4 thevixenmod:Burn.\nGain [E]"
+    },
+    {
+      "name": "Tail Whip+",
+      "color": "The_vixen_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply !MISC! Vulnerable.\nthevixenmod:Sunny_Exhaust:\nApply 4 thevixenmod:Burn.\nGain [E]"
+    },
+    {
+      "name": "Agility",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain your 2 thevixenmod:rightmost attack, skill or power cards.\nthevixenmod:Sunny: Gain 8 Block."
+    },
+    {
+      "name": "Agility+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain your 2 thevixenmod:rightmost attack, skill or power cards.\nGain 8 Block."
+    },
+    {
+      "name": "Amnesia",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nthevixenmod:Sunny_Exhaust:\nIncrease Block gained by 30 % and\ngain !B2! Block next turn."
+    },
+    {
+      "name": "Amnesia+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 19 Block.\nthevixenmod:Sunny_Exhaust:\nIncrease Block gained by 30 % and\ngain !B2! Block next turn."
+    },
+    {
+      "name": "Analytic",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 2 or less cards in a turn, gain 1 thevixenmod:Sunny_Day."
+    },
+    {
+      "name": "Analytic+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 3 or less cards in a turn, gain 1 thevixenmod:Sunny_Day."
+    },
+    {
+      "name": "Barrier",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 5 Block X times this turn and next turn.\nApply 3 Frail to yourself."
+    },
+    {
+      "name": "Barrier+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 6 Block X times this turn and next turn.\nApply 2 Frail to yourself."
+    },
+    {
+      "name": "Blaze",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nIf you are at or below 50% Health, whenever you apply thevixenmod:Burn, apply 1 more thevixenmod:Burn."
+    },
+    {
+      "name": "Blaze+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Strength.\nIf you are at or below 50% Health, whenever you apply thevixenmod:Burn, apply 2 more thevixenmod:Burn."
+    },
+    {
+      "name": "Confuse Ray",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy deals\n4 damage to itself\n2 times.\nthevixenmod:Sunny: Enemy takes damage equal to half its damage dealt next turn."
+    },
+    {
+      "name": "Confuse Ray+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Target enemy deals\n4 damage to itself\n3 times.\nthevixenmod:Sunny: Enemy takes damage equal to half its damage dealt next turn."
+    },
+    {
+      "name": "Curse",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Vulnerable\nto yourself.\nApply Poison equal to the thevixenmod:cumulative_stacks of your thevixenmod:debuffs."
+    },
+    {
+      "name": "Curse+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Vulnerable\nto yourself.\nApply Poison to all enemies equal to the thevixenmod:cumulative_stacks of your thevixenmod:debuffs."
+    },
+    {
+      "name": "Dazzling",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card's thevixenmod:Sunny effect is triggered, gain 2 Block."
+    },
+    {
+      "name": "Dazzling+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card's thevixenmod:Sunny effect is triggered, gain 2 Block.\nGain !MISC! thevixenmod:Sunny_Day."
+    },
+    {
+      "name": "Defiant",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 thevixenmod:Defiant."
+    },
+    {
+      "name": "Defiant+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 thevixenmod:Defiant."
+    },
+    {
+      "name": "Disable",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses !MISC! Strength this turn.\nthevixenmod:Sunny_Exhaust:\nChoose a card from your Exhaust pile and add it to your Hand."
+    },
+    {
+      "name": "Disable+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "All enemies lose !MISC! Strength this turn.\nthevixenmod:Sunny_Exhaust:\nChoose 2 cards from your Exhaust pile and add it to your Hand."
+    },
+    {
+      "name": "Double Team",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nUnaffected by Frail.\nthevixenmod:Sunny (if possible): Gain 1 extra Block for each unique thevixenmod:debuff on you ( !DBNUM! )."
+    },
+    {
+      "name": "Double Team+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block.\nFrail's effect is reverted for this card.\nthevixenmod:Sunny (if possible): Gain 1 extra Block for each unique thevixenmod:debuff on you ( !DBNUM! )."
+    },
+    {
+      "name": "Drought",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain thevixenmod:Sunny_Day, deal 3 damage to a random enemy."
+    },
+    {
+      "name": "Drought+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain thevixenmod:Sunny_Day, deal 4 damage to a random enemy."
+    },
+    {
+      "name": "Feint",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nthevixenmod:Sunny and Vulnerable: Remove up to 1 Vulnerable from yourself and apply as much Weak to all enemies."
+    },
+    {
+      "name": "Feint+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nthevixenmod:Sunny and Vulnerable: Remove up to 2 Vulnerable from yourself and apply as much Weak to all enemies."
+    },
+    {
+      "name": "Fire Blast",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage to target enemy and 50 % less to all other enemies. Exhaust."
+    },
+    {
+      "name": "Fire Blast+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 19 damage to target enemy and 30 % less to all other enemies. Exhaust.\nthevixenmod:Sunny: Shuffle an unupgraded Fire Blast into your Discard Pile."
+    },
+    {
+      "name": "Fire Pledge",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double an enemy's Burn, then gain Block equal to it.\nthevixenmod:Sunny: Triple it instead.\nExhaust."
+    },
+    {
+      "name": "Fire Pledge+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double an enemy's Burn, then gain Block equal to it. \nthevixenmod:Sunny: Triple it instead."
+    },
+    {
+      "name": "Fire Punch",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nApply 1 thevixenmod:Burn.\nCan be upgraded any number of times.\nthevixenmod:Sunny: Upgrade this card this combat."
+    },
+    {
+      "name": "Fire Punch+1",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nApply 2 thevixenmod:Burn.\nCan be upgraded any number of times.\nthevixenmod:Sunny: Upgrade this card this combat."
+    },
+    {
+      "name": "Fire Spin",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 3 damage X*2 times.\nthevixenmod:Sunny: Increase X by 1."
+    },
+    {
+      "name": "Fire Spin+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X*2 times.\nthevixenmod:Sunny: Increase X by 1."
+    },
+    {
+      "name": "Flame Body",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you are attacked, apply 2 thevixenmod:Burn to the attacker next turn."
+    },
+    {
+      "name": "Flame Body+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you are attacked, apply 3 thevixenmod:Burn to the attacker next turn."
+    },
+    {
+      "name": "Hypnosis",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Target enemy loses 4 Strength this turn.\nthevixenmod:Sunny: Gain [E]"
+    },
+    {
+      "name": "Hypnosis+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Target enemy loses 6 Strength this turn.\nthevixenmod:Sunny: Gain [E]"
+    },
+    {
+      "name": "Incinerate",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card in your hand. Gain !MISC! thevixenmod:Sunny_Day and 2 Strength this turn."
+    },
+    {
+      "name": "Incinerate+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card in your hand. Gain !MISC! thevixenmod:Sunny_Day and 4 Strength this turn."
+    },
+    {
+      "name": "Light Screen",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nthevixenmod:Sunny: Increase Block gained by this card by 3 this combat."
+    },
+    {
+      "name": "Light Screen+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nthevixenmod:Sunny: Increase Block gained by this card by 4 this combat."
+    },
+    {
+      "name": "Magic Coat",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 15 Block.\nCosts up to 2 [E] less for each unique thevixenmod:debuff on you ( !DBNUM! ).\n( !MISC! extra Block for each thevixenmod:debuff above the limit)"
+    },
+    {
+      "name": "Magic Coat+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 20 Block.\nCosts up to 3 [E] less for each unique thevixenmod:debuff on you ( !DBNUM! ).\n( !MISC! extra Block for each thevixenmod:debuff above the limit)"
+    },
+    {
+      "name": "Mind Reader",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If the enemy intends to attack, gain 15 Block\u00B9. If not, deal 15 damage\u00B2.\nthevixenmod:Sunny: Inflict 2 Weak\u00B9 or Vulnerable\u00B2 respectively."
+    },
+    {
+      "name": "Mind Reader+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If the enemy intends to attack, gain 19 Block\u00B9. If not, deal 19 damage\u00B2.\nthevixenmod:Sunny: Inflict 3 Weak\u00B9 or Vulnerable\u00B2 respectively."
+    },
+    {
+      "name": "Nasty Plot",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nthevixenmod:Sunny: Gain [E]"
+    },
+    {
+      "name": "Nasty Plot+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nGain 1 thevixenmod:Sunny_Day.\nthevixenmod:Sunny: gain [E]."
+    },
+    {
+      "name": "Perish Song",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable to yourself and an enemy.\nApply thevixenmod:Burn equal to the thevixenmod:cumulative_stacks of your thevixenmod:debuffs."
+    },
+    {
+      "name": "Perish Song+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Vulnerable to yourself and an enemy.\nApply thevixenmod:Burn equal to the thevixenmod:cumulative_stacks of your thevixenmod:debuffs."
+    },
+    {
+      "name": "Psychic",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "All enemies deal 14 damage to themselves.\nthevixenmod:Sunny: Gain Block equal to their combined thevixenmod:Burn and Strength."
+    },
+    {
+      "name": "Psychic+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "All enemies deal 19 damage to themselves.\nGain Block equal to their combined thevixenmod:Burn and Strength."
+    },
+    {
+      "name": "Psyshock",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Target enemy deals 7 damage to itself X times.\nGain X thevixenmod:Sunny_Day.\nExhaust."
+    },
+    {
+      "name": "Psyshock+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Target enemy deals 7 damage to itself X+1 times.\nGain X+1 thevixenmod:Sunny_Day.\nExhaust."
+    },
+    {
+      "name": "Refresh",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card for each unique thevixenmod:debuff on you\n( !DBNUM! )\nthen reduce the number on all numbered debuffs on you by !MISC!."
+    },
+    {
+      "name": "Refresh+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card and gain\n1 temporary HP for each unique thevixenmod:debuff on you ( !DBNUM! ),\nthen reduce the number on all numbered debuffs on you by !MISC!."
+    },
+    {
+      "name": "Shadow Ball",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nthevixenmod:Sunny or Weak enemy:\nGain [E] and\ndraw 1 card."
+    },
+    {
+      "name": "Shadow Ball+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nthevixenmod:Sunny or\nWeak enemy (stacks):\nGain [E] and\ndraw 1 card."
+    },
+    {
+      "name": "Spite",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Enemy takes damage and loses Strength this turn equal to the thevixenmod:cumulative_stacks of your thevixenmod:debuffs.\n( !DBCD! )"
+    },
+    {
+      "name": "Spite+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Enemy takes damage twice and loses Strength this turn equal to the thevixenmod:cumulative_stacks of your thevixenmod:debuffs.\n( !DBCD! )"
+    },
+    {
+      "name": "Telepathy",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Enemies deal 1 more damage to themselves.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Telepathy+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Enemies deal 3 more damage to themselves.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Trick Room",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For 2 turns, Vulnerable's effect on you is thevixenmod:inverted.\nExhaust."
+    },
+    {
+      "name": "Trick Room+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For 3 turns, Vulnerable's effect on you is thevixenmod:inverted.\nApply 1 Vulnerable to yourself.\nExhaust."
+    },
+    {
+      "name": "Trump Card",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nUnaffected by Weak.\nIf you have a thevixenmod:debuff on you, the damage dealt is applied to all other enemies."
+    },
+    {
+      "name": "Trump Card+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage.\nWeak is inverted for this card.\nIf you have a thevixenmod:debuff on you, the damage dealt is applied to all other enemies."
+    },
+    {
+      "name": "Will-O-Wisp",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 Burn.\nthevixenmod:Sunny (if possible):\nApply it to all enemies.\nExhaust."
+    },
+    {
+      "name": "Will-O-Wisp+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 8 Burn.\nthevixenmod:Sunny (if possible):\nApply it to all enemies.\nExhaust."
+    },
+    {
+      "name": "Wish",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start of your next turn, heal for half the hp you lose this turn and gain temporary_HP equal to half the blocked damage you took plus half your surplus Block.\nExhaust."
+    },
+    {
+      "name": "Wish+",
+      "color": "The_vixen_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start of your next turn, heal for half the hp you lose this turn and gain temporary_HP equal to half the blocked damage you took plus half your surplus Block.\nHeal 5 HP.\nExhaust."
+    },
+    {
+      "name": "Burn Up",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Consume all your thevixenmod:Sunny_Day.\nDraw a card and gain [E] for each stack ( !SUN! ). Exhaust."
+    },
+    {
+      "name": "Burn Up+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Consume all your thevixenmod:Sunny_Day.\nDraw a card and gain [E] for each stack ( !SUN! ), then gain 2 thevixenmod:Sunny_Day. Exhaust."
+    },
+    {
+      "name": "Clear Sky",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thevixenmod:Sunny_Day is not consumed this turn.\nExhaust."
+    },
+    {
+      "name": "Clear Sky+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 thevixenmod:Sunny_Day.\nthevixenmod:Sunny_Day is not consumed this turn.\nExhaust."
+    },
+    {
+      "name": "Copycat",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Repeat the last card you played.\nExhaust.\nthevixenmod:Sunny:\nShuffle a copy of it into your discard pile."
+    },
+    {
+      "name": "Copycat+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Repeat the last card you played. It costs 1.\nExhaust.\nthevixenmod:Sunny:\nShuffle a copy of it into your discard pile."
+    },
+    {
+      "name": "Endure",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nthevixenmod:Sunny: You cannot die this turn, exhaust this card if you would."
+    },
+    {
+      "name": "Endure+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block.\nYou cannot die this turn, exhaust this card if you would."
+    },
+    {
+      "name": "Future Sight",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Play a card from your draw pile.\nthevixenmod:Sunny_Exhaust:\nPlay up to X cards from your draw pile."
+    },
+    {
+      "name": "Future Sight+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Play a card from your draw pile.\nthevixenmod:Sunny_Exhaust:\nShuffle your discard pile into your draw pile, then play up to X cards from it."
+    },
+    {
+      "name": "Guts",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 thevixenmod:Guts.\nAt the end of your turn, gain Block equal to the thevixenmod:cumulative_stacks of your thevixenmod:debuffs."
+    },
+    {
+      "name": "Guts+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 5 thevixenmod:Guts.\nAt the end of your turn, gain Block equal to the thevixenmod:cumulative_stacks of your thevixenmod:debuffs."
+    },
+    {
+      "name": "Hex",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage to an enemy equal to the cumulative stacks of its debuffs (burn stacks only once), times the amount of unique debuffs on them."
+    },
+    {
+      "name": "Hex+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage to an enemy equal to the cumulative stacks of its debuffs (burn stacks only once), times the amount of unique debuffs + 1 on them."
+    },
+    {
+      "name": "Inferno",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage to all enemies equal to the target's thevixenmod:Burn.\nNext turn, the target receives a thevixenmod:Burn equal to the thevixenmod:Burn it has now.\nthevixenmod:Not_Sunny: Exhaust."
+    },
+    {
+      "name": "Inferno+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage to all enemies equal to the target's thevixenmod:Burn.\nNext turn, the target receives a thevixenmod:Burn equal to the thevixenmod:Burn it has now.\nthevixenmod:Not_Sunny: Exhaust."
+    },
+    {
+      "name": "Magician",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Until end of turn, whenever YOU deal damage, draw a card, gain [E] and temporarily lose 2 Strength and Dexterity.\nExhaust."
+    },
+    {
+      "name": "Magician+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Until end of turn, whenever YOU deal damage, draw a card, gain [E] and temporarily lose 1 Strength and Dexterity.\nExhaust."
+    },
+    {
+      "name": "Moody",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "NCByYW5k thevixenmod:b20gZ29vZCBlZmZ lY3RzIG thevixenmod:FuZC Ay IGJhZCBvbmVz"
+    },
+    {
+      "name": "Moody+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "NiByYW5k b20gZ29vZCBlZmZ lY3RzIG FuZC Az thevixenmod:IGJhZCBvbmVz"
+    },
+    {
+      "name": "Mystical Fire",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 2 thevixenmod:Burn.\nthevixenmod:Not_Sunny:\nShuffle this card into your drawpile.\nthevixenmod:Gain !MISC! thevixenmod:Sunny_Day."
+    },
+    {
+      "name": "Mystical Fire+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage twice.\nApply 3 thevixenmod:Burn.\nthevixenmod:Not_Sunny:\nPut this card on top of your drawpile.\nthevixenmod:Gain !MISC! thevixenmod:Sunny_Day."
+    },
+    {
+      "name": "Psych Up",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Strength and Block equal to the Strength and Block of target enemy this turn.\nthevixenmod:Sunny: Draw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Psycho Shift",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Absorb all Vulnerable and Weak from one enemy.\nHeal 1 HP for each thevixenmod:debuffstack on you.\nExhaust."
+    },
+    {
+      "name": "Psycho Shift+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Copy all Vulnerable and Weak from one enemy.\nHeal 1 HP for each thevixenmod:debuffstack on you.\nExhaust."
+    },
+    {
+      "name": "Safeguard",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 20 Block.\nGain 2 thevixenmod:Sunny_Day and !MISC! Artifact.\nExhaust."
+    },
+    {
+      "name": "Safeguard+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block.\nGain 2 thevixenmod:Sunny_Day and !MISC! Artifact.\nExhaust."
+    },
+    {
+      "name": "Snatch+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Steal target enemy's Strength and Block until end of turn.\nthevixenmod:Sunny: Draw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Solar Beam",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consume all your thevixenmod:Sunny_Day.\nDeal 12 damage to all enemies for each stack consumed ( !SUN! )."
+    },
+    {
+      "name": "Solar Beam+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 1 thevixenmod:Sunny_Day, then consume all your thevixenmod:Sunny_Day.\nDeal 12 damage to all enemies for each stack consumed ( !SUN! )."
+    },
+    {
+      "name": "Substitute",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Take !SUB! damage.\nGain !25%! thevixenmod:Substitute.\nSunny: Gain 1 Artifact."
+    },
+    {
+      "name": "Substitute+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Take !SUB! damage.\nGain !25%! thevixenmod:Substitute.\nSunny: Gain 1 Artifact."
+    },
+    {
+      "name": "Synergy Burst",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 1 Strength.\nGain 1 Dexterity.\nShuffle a thevixenmod:Psycracker into your discard pile."
+    },
+    {
+      "name": "Synergy Burst+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 2 Strength.\nGain 2 Dexterity.\nShuffle an upgraded thevixenmod:Psycracker into your discard pile."
+    },
+    {
+      "name": "Wonder Room",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "All current temporary Strength and Dexterity changes become permanent.\nExhaust."
+    },
+    {
+      "name": "Wonder Room+",
+      "color": "The_vixen_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All current temporary Strength and Dexterity changes become permanent.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Burning Stick",
+      "tier": "Starter",
+      "pool": "The_vixen_orange",
+      "description": "In the hands of the Vixen, at the start of your turn, gain 1 thevixenmod:Sunny_Day.\nDisplays the amount of thevixenmod:Sunny_Day you have.",
+      "flavorText": "It's brown, but not sticky."
+    },
+    {
+      "name": "Oran Berry",
+      "tier": "Common",
+      "pool": "The_vixen_orange",
+      "description": "Once per combat, when you take unblocked attack damage while below 50% of your max HP, heal for 10% of your max HP.\nHas 5 uses.",
+      "flavorText": "By tradition, these berries are harvested by brutally ripping out the trees they grow on."
+    },
+    {
+      "name": "Synchronize",
+      "tier": "Common",
+      "pool": "The_vixen_orange",
+      "description": "Whenever you are afflicted with Weak, Vulnerable or temporary Strengthloss, also apply it to the enemy that applied it.\n(If you apply it to yourself, apply it to all enemies but for half the amount instead)",
+      "flavorText": "no, U"
+    },
+    {
+      "name": "Charcoal",
+      "tier": "Uncommon",
+      "pool": "The_vixen_orange",
+      "description": "Damage caused by thevixenmod:Burn is doubled.",
+      "flavorText": "My christmas gift."
+    },
+    {
+      "name": "Flame Orb",
+      "tier": "Uncommon",
+      "pool": "The_vixen_orange",
+      "description": "thevixenmod:Burn is now halved instead of removed at the end of turn.\nDouble the Block gained from the power thevixenmod:Guts.",
+      "flavorText": "You need real guts to carry something like this around."
+    },
+    {
+      "name": "Shell Bell",
+      "tier": "Uncommon",
+      "pool": "The_vixen_orange",
+      "description": "Whenever you deal damage to a thevixenmod:burned creature, gain 2 Block.",
+      "flavorText": "Reverberates when others scream in agony."
+    },
+    {
+      "name": "Twisted Spoon",
+      "tier": "Uncommon",
+      "pool": "The_vixen_orange",
+      "description": "Whenever your cards cause enemies to deal damage to themselves, they lose 2 Strength this turn.",
+      "flavorText": "Not to be confused with a strange spoon."
+    },
+    {
+      "name": "Weakness Policy",
+      "tier": "Uncommon",
+      "pool": "The_vixen_orange",
+      "description": "Whenever you are afflicted with a debuff unrelated to Strength or Dexterity, gain 2 Strength this turn.",
+      "flavorText": "If hit super effectively, please fill out form 37B and provide photographic proof of the event. NL A spire spokesperson will get back to you within 3 business days."
+    },
+    {
+      "name": "Serene Grace",
+      "tier": "Rare",
+      "pool": "The_vixen_orange",
+      "description": "Whenever you apply thevixenmod:Burn to an enemy, reduce that enemy's Strength by half the amount of thevixenmod:Burn applied until end of turn.",
+      "flavorText": "Pray, Iron Head, Repeat."
+    },
+    {
+      "name": "Umbreon's Support",
+      "tier": "Special",
+      "pool": "The_vixen_orange",
+      "description": "After playing 20 cards, put Umbreon into your hand. It stays there until played or discarded manually.",
+      "flavorText": "Unbreakable bonds of friendship... that will be forgotten when you start another climb."
+    },
+    {
+      "name": "Eternal Flame",
+      "tier": "Boss",
+      "pool": "The_vixen_orange",
+      "description": "Replaces Burning Stick. In the hands of the Vixen, at the start of your turn, gain 2 thevixenmod:Sunny_Day and gain Strength this turn equal to the leftover thevixenmod:Sunny_Day from last turn.\nDisplays the amount of thevixenmod:Sunny_Day you have.",
+      "flavorText": "Just add water."
+    },
+    {
+      "name": "Firium Z",
+      "tier": "Boss",
+      "pool": "The_vixen_orange",
+      "description": "Right-click: Once per combat, deal damage equal to all damage dealt to all enemies this turn to target enemy. It cannot die this turn.",
+      "flavorText": "Obtained in a fierce... dance competition."
+    },
+    {
+      "name": "Choice Specs",
+      "tier": "Shop",
+      "pool": "The_vixen_orange",
+      "description": "After playing the first card each turn, you may only play cards of that cardtype until end of turn.\nAll Damage dealt, Block gained and HP healed is increased by 50%.",
+      "flavorText": "A rather tricky thing to use."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Vixen",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    },
+    {
+      "name": "The Vixen",
+      "type": "Boss",
+      "minHP": "630",
+      "maxHP": "630"
+    }
+  ],
+  "keywords": [
+  ]
+}

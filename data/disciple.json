@@ -1,0 +1,1647 @@
+{
+  "mod": {
+    "name": "The Disciple",
+    "version": "0.10.11",
+    "authors": ["Chronometrics"],
+    "credits": "Special Thanks to: \nRocketPad - for various character artwork. \nFormalFighting - for design assistance and early playtesting. \nSkylawinters - First alpha player. \nLyman - three card portraits. \n RedDyeNo5 - Hanging Clock relic image. \nZandorum - Chronometer, Chronograph, Metronome relic image improvements. \nBD - Tiring Slam code fix. \nKullwarrior, KongMD, xcalibre0 - consistent bug reporters.",
+    "description": "The Disciple is a custom Slay the Spire character themed after the Time Eater. The deck is designed around choosing the correct time for cards to be played to gain max value, and has four central themes: Card Retention, Intent Shifting, Card Transforming, and Temporary Relic Cycling.",
+    "mts_version": "3.4.0",
+    "sts_version": "10-18-2018",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Ward",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nExhaust."
+    },
+    {
+      "name": "Ward+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nExhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Chrono_gold",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Chrono_gold",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Pattern Shift",
+      "color": "Chrono_gold",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#FFFFFF]Shift the enemy to their next turn.\nSelf-Retaining."
+    },
+    {
+      "name": "Pattern Shift+",
+      "color": "Chrono_gold",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\n[#FFFFFF]Shift the enemy to their next turn.\nSelf-Retaining."
+    },
+    {
+      "name": "Second Hand",
+      "color": "Chrono_gold",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain 1 card.\nGain 5 Block."
+    },
+    {
+      "name": "Second Hand+",
+      "color": "Chrono_gold",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain 2 cards.\nGain 7 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Chrono_gold",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Chrono_gold",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Accelerando",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Haste."
+    },
+    {
+      "name": "Accelerando+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Haste."
+    },
+    {
+      "name": "Adagio",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Adagio+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Allargando",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage to ALL enemies."
+    },
+    {
+      "name": "Allargando+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage to ALL enemies."
+    },
+    {
+      "name": "Allegretto",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nGain 10 Block."
+    },
+    {
+      "name": "Allegretto+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\nGain 14 Block."
+    },
+    {
+      "name": "Allegro",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage."
+    },
+    {
+      "name": "Allegro+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 25 damage."
+    },
+    {
+      "name": "Grave",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Put target enemy to sleep for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Grave+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Put target enemy to sleep for 2 turns.\nExhaust."
+    },
+    {
+      "name": "Largo",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Largo+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nApply 3 Vulnerable."
+    },
+    {
+      "name": "Lento",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block."
+    },
+    {
+      "name": "Lento+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 23 Block."
+    },
+    {
+      "name": "Misterioso",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Play up to 2 cards randomly from your Exhaust pile and purge them.\nWill not play Status or Curse cards."
+    },
+    {
+      "name": "Misterioso+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Play up to 3 cards randomly from your Exhaust pile and purge them.\nWill not play Status or Curse cards."
+    },
+    {
+      "name": "Moderato",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Moderato+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\nApply 3 Weak."
+    },
+    {
+      "name": "Presto",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Escape from a non-boss combat. Receive no rewards.\nEthereal."
+    },
+    {
+      "name": "Presto+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Escape from a non-boss combat. Receive only gold rewards.\nEthereal."
+    },
+    {
+      "name": "Rallentando",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 10 Slow."
+    },
+    {
+      "name": "Rallentando+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 15 Slow."
+    },
+    {
+      "name": "Ritenuto",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Weak.\nApply 3 Vulnerable."
+    },
+    {
+      "name": "Ritenuto+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 5 Weak.\nApply 5 Vulnerable."
+    },
+    {
+      "name": "Sospirando",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply Stun.\nGain Stun.\nExhaust."
+    },
+    {
+      "name": "Sospirando+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply Stun to ALL enemies.\nGain Stun.\nExhaust."
+    },
+    {
+      "name": "Vivace",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nGain 1 Strength."
+    },
+    {
+      "name": "Vivace+",
+      "color": "Chrono_gold",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\nGain 1 Strength."
+    },
+    {
+      "name": "Alternate Timeline",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard a card.\nChoose a card from your draw pile and place it into your hand."
+    },
+    {
+      "name": "Alternate Timeline+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 2 cards.\nChoose 2 cards from your draw pile and place them into your hand."
+    },
+    {
+      "name": "Bite Command",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage, two turns from now."
+    },
+    {
+      "name": "Bite Command+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 21 damage, next turn."
+    },
+    {
+      "name": "Blue Shift",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nSelf-Retaining."
+    },
+    {
+      "name": "Blue Shift+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nSelf-Retaining."
+    },
+    {
+      "name": "Clock and Load",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nEach turn, increase this card's damage by 2 for this combat."
+    },
+    {
+      "name": "Clock and Load+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nEach turn, increase this card's damage by 2 for this combat."
+    },
+    {
+      "name": "Coated Vibrissa",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nSwitches into Exo-coating."
+    },
+    {
+      "name": "Crunch Time",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Shatter the newest Replica.\nDeal 5 damage for each turn on the countdown timer."
+    },
+    {
+      "name": "Crunch Time+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Shatter the newest Replica.\nDeal 8 damage for each turn on the countdown timer."
+    },
+    {
+      "name": "Echoward",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All subsequent cards played this turn also play a Ward."
+    },
+    {
+      "name": "Echoward+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All subsequent cards played this turn also play an upgraded Ward."
+    },
+    {
+      "name": "Engulf",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nApply 5 Slow."
+    },
+    {
+      "name": "Engulf+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nApply 8 Slow."
+    },
+    {
+      "name": "Exo-coating+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 [#EFC851]Plated Armor.\nSwitches into Coated Vibrissa+."
+    },
+    {
+      "name": "Hands Up",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nAt the end of the round, deal damage equal to your remaining Block."
+    },
+    {
+      "name": "Hands Up+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAt the end of the round, deal damage equal to your remaining Block."
+    },
+    {
+      "name": "Locked Anchor",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Ethereal.\nGain 10 Block.\nUnlocks an [#EFC851]Anchor Replica."
+    },
+    {
+      "name": "Locked Anchor+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Ethereal.\nGain 10 Block.\nUnlocks an [#EFC851]Anchor+ Replica."
+    },
+    {
+      "name": "Locked Blood",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Blood [#EFC851]Vial Replica."
+    },
+    {
+      "name": "Locked Blood+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Blood [#EFC851]Vial+ Replica."
+    },
+    {
+      "name": "Locked Medicine",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Medical [#EFC851]Kit Replica."
+    },
+    {
+      "name": "Locked Medicine+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Medical [#EFC851]Kit+ Replica."
+    },
+    {
+      "name": "Locked Scales",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Bronze [#EFC851]Scales Replica."
+    },
+    {
+      "name": "Locked Scales+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Bronze [#EFC851]Scales+ Replica."
+    },
+    {
+      "name": "Parity",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Deal 11 damage on even turns or gain 8 Block on odd turns."
+    },
+    {
+      "name": "Parity+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Deal 15 damage on even turns or gain 12 Block on odd turns."
+    },
+    {
+      "name": "Prime Time",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf this card was retained, does twice the damage."
+    },
+    {
+      "name": "Prime Time+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nIf this card was retained, does twice the damage."
+    },
+    {
+      "name": "Reap",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies.\nSwitches into Sow."
+    },
+    {
+      "name": "Reap+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies.\nSwitches into Sow+."
+    },
+    {
+      "name": "Tempo",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Returns to your hand as a permanently transformed card based on enemy intent."
+    },
+    {
+      "name": "Tempo+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Returns to your hand as a permanently transformed upgraded card based on enemy intent."
+    },
+    {
+      "name": "Wind Up",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nSelf-Retaining."
+    },
+    {
+      "name": "Wind Up+",
+      "color": "Chrono_gold",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 19 damage.\nSelf-Retaining."
+    },
+    {
+      "name": "Accruing",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 0 Fibonacci damage."
+    },
+    {
+      "name": "Accruing+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 0 Fibonacci damage.\nSelf-Retaining."
+    },
+    {
+      "name": "Acidic Goo",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nApply 2 Vulnerable.\nSwitches into Viscous Goo."
+    },
+    {
+      "name": "Analog",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Strength, Dexterity, Artifact, or Retain for each enemy based on its intent."
+    },
+    {
+      "name": "Analog+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Strength, Dexterity, Artifact, or Retain for each enemy based on its intent.\nSelf-Retaining."
+    },
+    {
+      "name": "Backlash",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 damage.\nDeals double the enemy's Block in damage.\nSelf-Retaining."
+    },
+    {
+      "name": "Backlash+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 damage.\nDeals two and a half time the enemy's Block in damage.\nSelf-Retaining."
+    },
+    {
+      "name": "Beats Per Minute",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nIf this kills, permanently gain a card based on enemy intent. Exhaust."
+    },
+    {
+      "name": "Beats Per Minute+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nIf this kills, permanently gain an upgraded card based on enemy intent. Exhaust."
+    },
+    {
+      "name": "Break",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nAll enemies gain 8 Block."
+    },
+    {
+      "name": "Break+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 13 Block.\nAll enemies gain 11 Block."
+    },
+    {
+      "name": "Cuckoo",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Exhaust 4 cards from your draw pile.\nSelf-Retaining."
+    },
+    {
+      "name": "Cuckoo+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust 4 cards from your draw pile.\nSelf-Retaining."
+    },
+    {
+      "name": "Escort Command",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block.\nNext turn gain 8 Block."
+    },
+    {
+      "name": "Escort Command+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nNext turn gain 11 Block."
+    },
+    {
+      "name": "Facsimile",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Create replicas of X of your eligible relics.\nExhaust.\nCurrently you will only replicate Rocks."
+    },
+    {
+      "name": "Facsimile+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Create replicas of X of your eligible relics.\nCurrently you will only replicate Rocks."
+    },
+    {
+      "name": "Fallback",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E]\nSwitches into Spring Forward.\nExhaust."
+    },
+    {
+      "name": "Formal Wear",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. Unlocks a Rock Replica."
+    },
+    {
+      "name": "Formal Wear+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage. Unlocks 2 Rock+ Replicas."
+    },
+    {
+      "name": "Keepsakes",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 2 times.\nFor each unblocked hit, retain one card this turn."
+    },
+    {
+      "name": "Keepsakes+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times.\nFor each unblocked hit, retain one card this turn."
+    },
+    {
+      "name": "Locked Maw Bank",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Maw [#EFC851]Bank Replica."
+    },
+    {
+      "name": "Locked Maw Bank+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Maw [#EFC851]Bank+ Replica."
+    },
+    {
+      "name": "Locked Mercury",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Mercury Replica."
+    },
+    {
+      "name": "Locked Mercury+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Mercury+ Replica."
+    },
+    {
+      "name": "Locked Orichalcum",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks an [#EFC851]Orichalcum Replica."
+    },
+    {
+      "name": "Locked Orichalcum+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks an [#EFC851]Orichalcum+ Replica."
+    },
+    {
+      "name": "Locked Plans",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Well [#EFC851]Laid [#EFC851]Plans Replica."
+    },
+    {
+      "name": "Locked Plans+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Well [#EFC851]Laid [#EFC851]Plans+ Replica."
+    },
+    {
+      "name": "Locked Thread",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Thread [#EFC851]and [#EFC851]Needle Replica."
+    },
+    {
+      "name": "Locked Thread+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Thread [#EFC851]and [#EFC851]Needle+ Replica."
+    },
+    {
+      "name": "Locked Tornado",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nUnlocks a [#EFC851]Bottled [#EFC851]Tornado Replica."
+    },
+    {
+      "name": "Locked Tornado+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nUnlocks a [#EFC851]Bottled [#EFC851]Tornado+ Replica."
+    },
+    {
+      "name": "Locked Twirtle",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Paper [#EFC851]Twirtle Replica."
+    },
+    {
+      "name": "Locked Twirtle+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Paper [#EFC851]Twirtle+ Replica."
+    },
+    {
+      "name": "Locked Urn",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Bird-Faced [#EFC851]Urn Replica."
+    },
+    {
+      "name": "Locked Urn+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Bird-Faced [#EFC851]Urn+ Replica."
+    },
+    {
+      "name": "Locked War Paint",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]War [#EFC851]Paint Replica."
+    },
+    {
+      "name": "Locked War Paint+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]War [#EFC851]Paint+ Replica."
+    },
+    {
+      "name": "Locked Whetstone",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Whetstone Replica."
+    },
+    {
+      "name": "Locked Whetstone+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Unlocks a [#EFC851]Whetstone+ Replica."
+    },
+    {
+      "name": "Recurrence",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 2 times.\nApply 2 additional Debuffs to each existing Debuff."
+    },
+    {
+      "name": "Recurrence+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 2 times.\nApply 2 additional Debuffs to each existing Debuff."
+    },
+    {
+      "name": "Resonant Call",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Mimics the effect and cost of the last card you played."
+    },
+    {
+      "name": "Resonant Call+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Mimics the effect and cost of the last card you played.\nSelf-Retaining."
+    },
+    {
+      "name": "Short Sighted",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 6 HP.\nLose twice that in HP, four turns from now."
+    },
+    {
+      "name": "Short Sighted+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 10 HP.\nLose twice that in HP, four turns from now."
+    },
+    {
+      "name": "Slime Spray",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage and apply Slow to ALL enemies.\nSelf-Retaining."
+    },
+    {
+      "name": "Slime Spray+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage and apply Slow to ALL enemies.\nSelf-Retaining."
+    },
+    {
+      "name": "Spring Forward+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nDraw 2 cards.\nRetain 1 card.\nSwitches into Fallback+."
+    },
+    {
+      "name": "Stagnate",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Put an enemy to sleep for 3 turns.\nSuffer 3 Drawdown.\nExhaust."
+    },
+    {
+      "name": "Stagnate+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Put an enemy to sleep for 3 turns.\nSuffer 3 Drawdown.\nExhaust."
+    },
+    {
+      "name": "Thick Goo+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nApply Slow.\nSwitches into Acidic Goo+."
+    },
+    {
+      "name": "Ticked Off",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nGain Haste.\nSelf-Retaining."
+    },
+    {
+      "name": "Ticked Off+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nGain Haste.\nSelf-Retaining."
+    },
+    {
+      "name": "Tiring Slam",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Tiring Slam+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nExhaust a card from ANY of your cards."
+    },
+    {
+      "name": "Vested Legacy",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 Wards to your hand and shuffle 2 into your draw pile."
+    },
+    {
+      "name": "Vested Legacy+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 upgraded Wards to your hand and shuffle 2 into your draw pile."
+    },
+    {
+      "name": "Wake Up Call",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Will deal a 44 damage attack when the targeted enemy is Sleeping or Stunned."
+    },
+    {
+      "name": "Wake Up Call+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Will deal a 60 damage attack when the targeted enemy is Sleeping or Stunned."
+    },
+    {
+      "name": "Watch Command",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Block is not removed at the start of your next 2 turns."
+    },
+    {
+      "name": "Watch Command+",
+      "color": "Chrono_gold",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Block is not removed at the start of your next 3 turns."
+    },
+    {
+      "name": "Back Four Seconds",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Restore 50% of HP lost last turn.\nSelf-Retaining.\nExhaust."
+    },
+    {
+      "name": "Back Four Seconds+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Restore 75% of HP lost last turn.\nSelf-Retaining.\nExhaust."
+    },
+    {
+      "name": "Chrono-elasticity",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Apply 5 times X Slow to ALL enemies.\nGain 5 times X Haste."
+    },
+    {
+      "name": "Chrono-elasticity+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Apply 8 times X Slow to ALL enemies.\nGain 8 times X Haste."
+    },
+    {
+      "name": "Echonomics",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, your next discounted card is duplicated into your hand and costs 0.\nExhaust."
+    },
+    {
+      "name": "Echonomics+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, your next discounted card is duplicated into your hand and costs 0 this combat.\nExhaust."
+    },
+    {
+      "name": "Flay",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies, and they lose that much Strength for one turn.\nExhaust."
+    },
+    {
+      "name": "Flay+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies, and they lose that much Strength for two turns.\nExhaust."
+    },
+    {
+      "name": "Fragmentalize",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage to ALL enemies for each replica.\nShatter all Replicas.\nExhaust."
+    },
+    {
+      "name": "Fragmentalize+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage to ALL enemies for each replica.\nShatter all Replicas.\nExhaust."
+    },
+    {
+      "name": "Locked Astrolabe",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks an [#EFC851]Astrolabe Replica."
+    },
+    {
+      "name": "Locked Astrolabe+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks an [#EFC851]Astrolabe+ Replica."
+    },
+    {
+      "name": "Locked Bell",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Calling [#EFC851]Bell Replica."
+    },
+    {
+      "name": "Locked Bell+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Calling [#EFC851]Bell+ Replica."
+    },
+    {
+      "name": "Locked Calendar",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Stone [#EFC851]Calendar Replica."
+    },
+    {
+      "name": "Locked Calendar+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nUnlocks a [#EFC851]Stone [#EFC851]Calendar+ Replica."
+    },
+    {
+      "name": "Locked Flame",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Bottled [#EFC851]Flame Replica."
+    },
+    {
+      "name": "Locked Flame+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Bottled [#EFC851]Flame+ Replica."
+    },
+    {
+      "name": "Locked Lightning",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Bottled [#EFC851]Lightning Replica."
+    },
+    {
+      "name": "Locked Lightning+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Unlocks a [#EFC851]Bottled [#EFC851]Lightning+ Replica."
+    },
+    {
+      "name": "Master Key",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Plays all Powers in your hand.\nSelf-Retaining.\nExhaust."
+    },
+    {
+      "name": "Master Key+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Plays all Powers in your hand and discard Pile.\nSelf-Retaining.\nExhaust."
+    },
+    {
+      "name": "Old Timer",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 damage.\nFor each card that has been played this combat, increase damage by 1."
+    },
+    {
+      "name": "Old Timer+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 0 damage.\nFor each card that has been played this combat, increase damage by 1."
+    },
+    {
+      "name": "Oracle Form",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Instead of drawing your hand, choose 5 cards from your draw pile."
+    },
+    {
+      "name": "Oracle Form+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Instead of drawing your hand, choose 6 cards from your draw pile."
+    },
+    {
+      "name": "Over Time",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 damage.\nFor each card that you've Exhausted this combat, increase damage by 4."
+    },
+    {
+      "name": "Over Time+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 damage.\nFor each card that you've Exhausted this combat, increase damage by 7."
+    },
+    {
+      "name": "Pendulum",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove targeted enemy buffs for 3 turns.\nExhaust."
+    },
+    {
+      "name": "Pendulum+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove targeted enemy buffs for 5 turns.\nExhaust."
+    },
+    {
+      "name": "Rage Command",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 48 damage to ALL enemies, 3 turns from now."
+    },
+    {
+      "name": "Rage Command+",
+      "color": "Chrono_gold",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 60 damage to ALL enemies, 3 turns from now."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Chronometer",
+      "tier": "Starter",
+      "pool": "Chrono_gold",
+      "description": "Cards in your hand cost 1 less energy for each turn they are Retained.",
+      "flavorText": "Proper measurement yields greater efficiency, or so you have been taught."
+    },
+    {
+      "name": "Blue Box",
+      "tier": "Common",
+      "pool": "Chrono_gold",
+      "description": "Add 2 cards to your deck from the cards you skipped over earlier this run.",
+      "flavorText": "It doesn't look like all those cards should fit in it..."
+    },
+    {
+      "name": "Spring Shield",
+      "tier": "Common",
+      "pool": "Chrono_gold",
+      "description": "Delayed attacks gain 2 Block each turn before they activate.",
+      "flavorText": "The further back you pull, the more satisfying the thunk."
+    },
+    {
+      "name": "Mystic Crock Pot",
+      "tier": "Uncommon",
+      "pool": "Chrono_gold",
+      "description": "For each turn they are Retained, cards gain 20% more damage and Block until played.",
+      "flavorText": "The slow cooker is the best way to let your cards stew for a bit."
+    },
+    {
+      "name": "Paper Twirtle",
+      "tier": "Uncommon",
+      "pool": "Chrono_gold",
+      "description": "Slowed enemies begin each turn with an additional three Slow.",
+      "flavorText": "Just holding on to this makes you feel faster."
+    },
+    {
+      "name": "Slippery Goo",
+      "tier": "Uncommon",
+      "pool": "Chrono_gold",
+      "description": "Start each combat with Haste.",
+      "flavorText": "Never gonna catch me!"
+    },
+    {
+      "name": "Cryopreserver",
+      "tier": "Rare",
+      "pool": "Chrono_gold",
+      "description": "All Replicas have their timers increased by a turn.",
+      "flavorText": "Freshness is key to retaining great flavour."
+    },
+    {
+      "name": "Heavy Switch",
+      "tier": "Rare",
+      "pool": "Chrono_gold",
+      "description": "At the end of your turn, Retain up to one additional card for each Self-Retaining card in hand, Self-Retaining cards no longer Self-Retain.",
+      "flavorText": "It used to be light."
+    },
+    {
+      "name": "Waiting Room",
+      "tier": "Rare",
+      "pool": "Chrono_gold",
+      "description": "Once per combat, if you play no cards in a turn the enemies will fall Asleep for one turn.",
+      "flavorText": "In order to survive the waiting room, you must have patience."
+    },
+    {
+      "name": "Bronze Scales?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Bronze Scales replica.",
+      "flavorText": "It looks almost like a real Bronze Scales."
+    },
+    {
+      "name": "Cryopreserver?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Cryopreserver replica.",
+      "flavorText": "It looks almost like a real Cryopreserver."
+    },
+    {
+      "name": "Flame?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Flame replica.",
+      "flavorText": "It looks almost like a real Bottled Flame."
+    },
+    {
+      "name": "Ice Cream?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Ice Cream replica.",
+      "flavorText": "It looks almost like a real Ice Cream."
+    },
+    {
+      "name": "Lightning?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Thunder replica.",
+      "flavorText": "It looks almost like a real Bottled Lightning."
+    },
+    {
+      "name": "Medical Kit?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Medical Kit replica.",
+      "flavorText": "It looks almost like a real Medical Kit."
+    },
+    {
+      "name": "Mercury?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Mercury replica.",
+      "flavorText": "It looks almost like a real Mercury Hourglass."
+    },
+    {
+      "name": "Mummified Hand?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Mummified Hand replica.",
+      "flavorText": "It looks almost like a real Mummified Hand."
+    },
+    {
+      "name": "Orichalcum?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Orichalcum replica.",
+      "flavorText": "It looks almost like a real Orichalcum."
+    },
+    {
+      "name": "Tornado?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Tornado replica.",
+      "flavorText": "It looks almost like a real Bottle Tornado."
+    },
+    {
+      "name": "War Paint?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a War Paint replica.",
+      "flavorText": "It looks almost like a real War Paint."
+    },
+    {
+      "name": "Whetstone?",
+      "tier": "Special",
+      "pool": "Chrono_gold",
+      "description": "At the start of each combat, Unlock a Whetstone replica.",
+      "flavorText": "It looks almost like a real Whetstone."
+    },
+    {
+      "name": "Chronograph",
+      "tier": "Boss",
+      "pool": "Chrono_gold",
+      "description": "Cards in your hand cost 1 less energy and are upgraded for each turn they are Retained. Replaces Chronometer.",
+      "flavorText": "Beyond measurements, one can manipulate the nature of reality itself."
+    },
+    {
+      "name": "Hanging Clock",
+      "tier": "Boss",
+      "pool": "Chrono_gold",
+      "description": "Whenever you play 12 cards, your turn is ended.\nGain [E] at the start of each turn.",
+      "flavorText": "Strangely, the hands on this clock only move when you do. And they only count down."
+    },
+    {
+      "name": "Metronome",
+      "tier": "Boss",
+      "pool": "Chrono_gold",
+      "description": "Retain 1 additional card each turn.",
+      "flavorText": "Tick... tick... tick..."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Warding Philter",
+      "rarity": "Common",
+      "description": "Add three Wards to your hand."
+    },
+    {
+      "name": "Haste Tonic",
+      "rarity": "Uncommon",
+      "description": "Gain Haste."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Disciple",
+      "type": "Player",
+      "minHP": "65",
+      "maxHP": "65"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Armor",
+      "description": "At the end of your turn, gain Block. Armor will decrease with every unblocked hit you take."
+    },
+    {
+      "name": "Debuff",
+      "description": "Debuffs are negative effects that are applied, including Weak, Vulnerable, Frail, negative Strength, and more."
+    },
+    {
+      "name": "Degrades",
+      "description": "This card will transform permanently into a worse card after a single use, and cannot be regained."
+    },
+    {
+      "name": "Drawdown",
+      "description": "Decreases your card draw temporarily."
+    },
+    {
+      "name": "Fibonacci",
+      "description": "Fibonacci effects will increase depending on the size of your hand along the fibonacci sequence: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55..."
+    },
+    {
+      "name": "Haste",
+      "description": "For each card played in a turn, gain 10% more block from Blocks."
+    },
+    {
+      "name": "Lock",
+      "description": "Locks your rightmost stored item back into its original card."
+    },
+    {
+      "name": "Replica",
+      "description": "A Replica will float above your character, activating its effect every turn. When the countdown reaches 0, it will shatter and be removed."
+    },
+    {
+      "name": "Self-retaining",
+      "description": "This card will remain in your hand until played."
+    },
+    {
+      "name": "Shatter",
+      "description": "Shattering a replica will cause it to be removed."
+    },
+    {
+      "name": "Sleep",
+      "description": "Sleeping creatures are unable to act for their turn. They will wake up if they take damage."
+    },
+    {
+      "name": "Slow",
+      "description": "For each card played in a turn, gain 10% more attack from Attacks."
+    },
+    {
+      "name": "Stun",
+      "description": "Stunned creatures are unable to act for their turn."
+    },
+    {
+      "name": "Switch",
+      "description": "Switched cards will be permanently transformed into another specified card when used, but can be switched back upon further uses."
+    },
+    {
+      "name": "Tempo",
+      "description": "Tempo cards exist for each intent. An attack intent will give an Attack card, a block intent will give a Block card."
+    },
+    {
+      "name": "Ward",
+      "description": "Wards are 0 cost Block cards which Exhaust."
+    }
+  ]
+}

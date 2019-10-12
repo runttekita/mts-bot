@@ -1,0 +1,1554 @@
+{
+  "mod": {
+    "name": "The Construct",
+    "version": "1.0.6",
+    "authors": ["Moocowsgomoo, Spike Berd, Wilde, Rita-B"],
+    "credits": "",
+    "description": "New character - The Construct! \n\nRECENT CHANGES:\nv1.0.6\n- ZHS localization update for Rocket Booster (Rita-B)\n\nv1.0.5\n- Localization for KOR (Wilde) and ZHS (Rita-B).\n- Fixed crash with Long-Range Lance.\n- Fixed rare crash with Overheat effects.\n- Probably some other minor bugfixes. \n\nv1.0.4\n- Shift Guard/Strike no longer Cycle in Challenge Mode.\n\nv1.0.3\n- Added Challenge Mode (1) to char select.\n- Fix Save State not triggering Bunker.\n- Power Up now deals more damage and Exhausts.\n- Wedding Ring description now saves.\n- Changed Challenge 3 (config options).\n\n\nThanks for playing the Construct! Please let Moocowsgomoo know on Steam, Discord, or GitHub if you have any feedback or bug reports!",
+    "mts_version": "3.4.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Attack Mode",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain 2 Strength.\nLose 2 Dexterity."
+    },
+    {
+      "name": "Attack Mode+",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain 3 Strength.\nLose 3 Dexterity."
+    },
+    {
+      "name": "Defend",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Cycle if Dexterity < 0.\nGain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Cycle if Dexterity < 0.\nGain 8 Block."
+    },
+    {
+      "name": "Defense Mode",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain 2 Dexterity.\nLose 2 Strength."
+    },
+    {
+      "name": "Defense Mode+",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain 3 Dexterity.\nLose 3 Strength."
+    },
+    {
+      "name": "Heated Defend",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#ff9900]OVERHEAT: [#ff9900]< !construct:O! [#ff9900]>\nCycle if Dexterity < 0.\nGain 5 Block."
+    },
+    {
+      "name": "Heated Defend+",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#ff9900]OVERHEAT: [#ff9900]< !construct:O! [#ff9900]>\nCycle if Dexterity < 0.\nGain 5 Block."
+    },
+    {
+      "name": "Heated Strike",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#ff9900]OVERHEAT: [#ff9900]< !construct:O! [#ff9900]>\nCycle if Strength < 0.\nDeal 6 damage."
+    },
+    {
+      "name": "Heated Strike+",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "[#ff9900]OVERHEAT: [#ff9900]< !construct:O! [#ff9900]>\nCycle if Strength < 0.\nDeal 6 damage."
+    },
+    {
+      "name": "Strike",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Cycle if Strength < 0.\nDeal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Constructmod",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Cycle if Strength < 0.\nDeal 9 damage."
+    },
+    {
+      "name": "Accumulate",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nMake a copy of a non-rare card in your draw pile."
+    },
+    {
+      "name": "Accumulate+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\nMake a copy of a non-rare card in your draw pile."
+    },
+    {
+      "name": "Analyze",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain [E]  and draw 2  more cards."
+    },
+    {
+      "name": "Analyze+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain [E]  and draw 3  more cards."
+    },
+    {
+      "name": "Anticipate",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 11 Block."
+    },
+    {
+      "name": "Anticipate+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 14 Block."
+    },
+    {
+      "name": "Autoturret",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "When a card cycles, deal 1 damage to a random enemy."
+    },
+    {
+      "name": "Autoturret+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "When a card cycles, deal 2 damage to a random enemy."
+    },
+    {
+      "name": "Backfire",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Take 5 damage.\nDeal 16 damage."
+    },
+    {
+      "name": "Backfire+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Take 4 damage.\nDeal 19 damage."
+    },
+    {
+      "name": "Boost",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nGain 2 Block."
+    },
+    {
+      "name": "Boost+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nGain 4 Block."
+    },
+    {
+      "name": "Cluster Mines",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to a random enemy 3 times.\nWhenever your Block is broken, this card costs 0 until played."
+    },
+    {
+      "name": "Cluster Mines+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage to a random enemy 3 times.\nWhenever your Block is broken, this card costs 0 until played."
+    },
+    {
+      "name": "Fierce Bash",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nHits twice if the enemy doesn't intend to attack or defend."
+    },
+    {
+      "name": "Fierce Bash+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nHits twice if the enemy doesn't intend to attack or defend."
+    },
+    {
+      "name": "Focused Beam",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nPut this on top of your draw pile."
+    },
+    {
+      "name": "Focused Beam+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nPut this on top of your draw pile."
+    },
+    {
+      "name": "Forcefield",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 6 Block."
+    },
+    {
+      "name": "Forcefield+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate. Retain.\nGain 8 Block."
+    },
+    {
+      "name": "Heavy Bolt",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nDiscard 2 random cards, then draw 2 cards."
+    },
+    {
+      "name": "Heavy Bolt+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 19 damage.\nDiscard 2 random cards, then draw 2 cards."
+    },
+    {
+      "name": "Mode Shift",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Swap your Strength and Dexterity.\nDraw a card."
+    },
+    {
+      "name": "Mode Shift+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Swap your Strength and Dexterity.\nDraw a card."
+    },
+    {
+      "name": "Reinforce",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block 2 times."
+    },
+    {
+      "name": "Reinforce+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block 3 times."
+    },
+    {
+      "name": "Save State",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain your hand this turn.\nExhaust."
+    },
+    {
+      "name": "Save State+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain your hand this turn.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Scrap Cannon",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nExhaust 1 card."
+    },
+    {
+      "name": "Scrap Cannon+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nExhaust 1 card."
+    },
+    {
+      "name": "Shift Strike",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 1 Strength.\nLose 1 Dexterity."
+    },
+    {
+      "name": "Shift Strike+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 2 Strength.\nLose 2 Dexterity."
+    },
+    {
+      "name": "Suppressive Fire",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies.\nGain 1 Blur."
+    },
+    {
+      "name": "Suppressive Fire+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nGain 1 Blur."
+    },
+    {
+      "name": "Sweep Laser",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage, then deal 4 damage to ALL enemies."
+    },
+    {
+      "name": "Sweep Laser+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage, then deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Syphon Strike",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nWhenever the enemy takes attack damage this turn, draw 1 card."
+    },
+    {
+      "name": "Syphon Strike+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nWhenever the enemy takes attack damage this turn, draw 1 card."
+    },
+    {
+      "name": "Vent Steam",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nApply 1 Weak and\n1 Vulnerable."
+    },
+    {
+      "name": "Vent Steam+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nApply 2 Weak and\n2 Vulnerable."
+    },
+    {
+      "name": "Versatility",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If the target intends to attack, gain 7 Block. Otherwise, deal 7 damage."
+    },
+    {
+      "name": "Versatility+",
+      "color": "Constructmod",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If the target intends to attack, gain 10 Block. Otherwise, deal 10 damage."
+    },
+    {
+      "name": "Antimatter",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Reduce your [E] to 0.\nDeal damage equal to 4 times the number of cards in your hand."
+    },
+    {
+      "name": "Antimatter+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Reduce your [E] to 0.\nDeal damage equal to 5 times the number of cards in your hand."
+    },
+    {
+      "name": "Backup",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a non-rare card from your hand. Add 2 copies on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Backup+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nChoose a non-rare card from your hand. Add 2 copies on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Battery Acid",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E] .\nShuffle 1 Slimed into your draw pile."
+    },
+    {
+      "name": "Battery Acid+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E] [E] .\nShuffle 1 Slimed into your draw pile."
+    },
+    {
+      "name": "Chainstrike",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage, then play a random Attack from your draw pile on the same target."
+    },
+    {
+      "name": "Chainstrike+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage, then play 2 random Attacks from your draw pile on the same target."
+    },
+    {
+      "name": "Charge Shot",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain. Deal 5 damage, plus 5 for each turn this was retained."
+    },
+    {
+      "name": "Charge Shot+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain. Deal 7 damage, plus 7 for each turn this was retained."
+    },
+    {
+      "name": "Crippling Shot",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 0 damage.\nIf this dealt unblocked damage, apply 99 Weak. Exhaust."
+    },
+    {
+      "name": "Crippling Shot+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nIf this dealt unblocked damage, apply 99 Weak. Exhaust."
+    },
+    {
+      "name": "Critical Hit",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Cycle unless an enemy is Weak or Vulnerable.\nDeal 14 damage."
+    },
+    {
+      "name": "Critical Hit+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Cycle unless an enemy is Weak or Vulnerable.\nDeal 18 damage."
+    },
+    {
+      "name": "Dampening",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cards cannot Cycle until the end of your next turn.\nGain 4 Block.\nDraw 1 card."
+    },
+    {
+      "name": "Dampening+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cards cannot Cycle until the end of your next turn.\nGain 4 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Disrupt",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nEnemy loses 2 Strength for the rest of this turn."
+    },
+    {
+      "name": "Disrupt+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nEnemy loses 3 Strength for the rest of this turn."
+    },
+    {
+      "name": "Electric Armor",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Cycle if Dexterity < 1.\nWhen an enemy attacks you this turn, it takes damage equal to your Dexterity."
+    },
+    {
+      "name": "Electric Armor+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle if Dexterity < 1.\nWhen an enemy attacks you this turn, it takes damage equal to your Dexterity."
+    },
+    {
+      "name": "Electrocute",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 22 damage.\nTarget loses 5 Strength for the rest of this turn."
+    },
+    {
+      "name": "Electrocute+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 26 damage.\nTarget loses 7 Strength for the rest of this turn."
+    },
+    {
+      "name": "Enhance",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each turn, Upgrade a random card in your discard pile for this combat."
+    },
+    {
+      "name": "Enhance+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each turn, Upgrade 2 random cards in your discard pile for this combat."
+    },
+    {
+      "name": "Failsafe",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first 2 Status cards you draw each turn Cycle."
+    },
+    {
+      "name": "Failsafe+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first 3 Status cards you draw each turn Cycle."
+    },
+    {
+      "name": "Flak Barrage",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 0 damage to a random enemy 4 times."
+    },
+    {
+      "name": "Flak Barrage+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Cycle if Strength < 1.\nDeal 0 damage to a random enemy 4 times."
+    },
+    {
+      "name": "Flame Core",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nA random enemy takes 3 damage."
+    },
+    {
+      "name": "Flame Core+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nA random enemy takes 3 damage.\nPut a Flame Core into your discard pile."
+    },
+    {
+      "name": "Force Core",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nGain 1 Strength until the end of this turn."
+    },
+    {
+      "name": "Force Core+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nGain 1 Strength until the end of this turn.\nPut a Force Core into your discard pile."
+    },
+    {
+      "name": "Guard Core",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nGain 2 Block."
+    },
+    {
+      "name": "Guard Core+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nGain 2 Block.\nPut a Guard Core into your discard pile."
+    },
+    {
+      "name": "Hard Reboot",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand.\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Hard Reboot+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand.\nDraw 5 cards.\nExhaust."
+    },
+    {
+      "name": "Hazardproof",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block.\nGain 1 Artifact."
+    },
+    {
+      "name": "Hazardproof+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nGain 1 Artifact."
+    },
+    {
+      "name": "Impenetrable",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 25 Block.\nGain [E] next turn.\nExhaust."
+    },
+    {
+      "name": "Impenetrable+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 25 Block.\nGain [E] [E] next turn.\nExhaust."
+    },
+    {
+      "name": "Isolate",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Cycle if there's more than one enemy.\nYour next attack deals double damage this turn."
+    },
+    {
+      "name": "Isolate+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Cycle if there's more than one enemy.\nYour attacks deal double damage this turn."
+    },
+    {
+      "name": "Laser Core",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nALL enemies\ntake 2 damage."
+    },
+    {
+      "name": "Laser Core+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nALL enemies\ntake 2 damage.\nPut a Laser Core into your discard pile."
+    },
+    {
+      "name": "Metal Shell",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nGain 2 Plated Armor."
+    },
+    {
+      "name": "Metal Shell+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nGain 3 Plated Armor."
+    },
+    {
+      "name": "Missile",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Cycle if already played this combat.\nDeal 15 damage.\nApply 2 Weak and 2 Vulnerable."
+    },
+    {
+      "name": "Missile+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Cycle if already played this combat.\nDeal 19 damage.\nApply 2 Weak and 2 Vulnerable."
+    },
+    {
+      "name": "Omega Cannon",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Deal 15 damage.\nCosts 1 less [E] for each Strength you have."
+    },
+    {
+      "name": "Omega Cannon+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Deal 20 damage.\nCosts 1 less [E] for each Strength you have."
+    },
+    {
+      "name": "One-Way Mirror",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block. \nApply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "One-Way Mirror+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block. \nApply 3 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Overcharge",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain [R] and add a Burn to your hand."
+    },
+    {
+      "name": "Overcharge+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, gain [R] and add a Burn to your hand."
+    },
+    {
+      "name": "Overclock",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, draw 2 cards and add a Burn to your hand."
+    },
+    {
+      "name": "Overclock+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, draw 2 cards and add a Burn to your hand."
+    },
+    {
+      "name": "Point Defense",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When a card cycles, gain 1 Block.\nWorks 5 times per turn."
+    },
+    {
+      "name": "Point Defense+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When a card cycles, gain 1 Block.\nWorks 10 times per turn."
+    },
+    {
+      "name": "Power Up",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nALL of your basic Strikes and Defends gain 2 power for this combat.\nExhaust."
+    },
+    {
+      "name": "Power Up+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nALL of your basic Strikes and Defends gain 3 power for this combat.\nExhaust."
+    },
+    {
+      "name": "Quick Attack",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nGain 2 Dexterity.\nAt the end of your turn, lose 2 Dexterity."
+    },
+    {
+      "name": "Quick Attack+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nGain 3 Dexterity.\nAt the end of your turn, lose 3 Dexterity."
+    },
+    {
+      "name": "Reactive Shield",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you gain Block, deal 3 damage to the lowest-HP enemy."
+    },
+    {
+      "name": "Reactive Shield+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nWhen you gain Block, deal 4 damage to the lowest-HP enemy."
+    },
+    {
+      "name": "Scope Core",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nA random enemy gains 1 Vulnerable."
+    },
+    {
+      "name": "Scope Core+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nA random enemy gains 1 Vulnerable.\nPut a Scope Core into your discard pile."
+    },
+    {
+      "name": "Shift Guard",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nGain 1 Dexterity.\nLose 1 Strength."
+    },
+    {
+      "name": "Shift Guard+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nGain 2 Dexterity.\nLose 2 Strength."
+    },
+    {
+      "name": "Stasis",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card.\nNext time you play this, add 1 Mega-upgraded copy of that card to your hand."
+    },
+    {
+      "name": "Stasis+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card.\nNext time you play this, add 2 Mega-upgraded copies of that card to your hand."
+    },
+    {
+      "name": "Synchronize",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you draw 2 of the same card in a row, deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Synchronize+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhen you draw 2 of the same card in a row, deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Tumble",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 3 cards.\nFor each one that cycles, deal 3 damage."
+    },
+    {
+      "name": "Tumble+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 3 cards.\nFor each one that cycles, deal 5 damage."
+    },
+    {
+      "name": "Unbalancing Blast",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nSwap your draw pile and discard pile."
+    },
+    {
+      "name": "Unbalancing Blast+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 12 damage.\nSwap your draw pile and discard pile."
+    },
+    {
+      "name": "Zapper",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you gain Strength or Dexterity, deal 3 damage to a random enemy. It loses 1 Strength this turn."
+    },
+    {
+      "name": "Zapper+",
+      "color": "Constructmod",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you gain Strength or Dexterity, deal 3 damage to a random enemy. It loses 1 Strength this turn."
+    },
+    {
+      "name": "Battery Core",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nA card in your hand costs 1 less this turn."
+    },
+    {
+      "name": "Battery Core+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle. When cycled:\nA card in your hand costs 1 less this turn.\nPut a Battery Core into your discard pile."
+    },
+    {
+      "name": "Bunker",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "When a card is Retained, gain 2 Block."
+    },
+    {
+      "name": "Bunker+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "When a card is Retained, gain 3 Block."
+    },
+    {
+      "name": "Clockwork Egg",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card.\nExhaust.\nCan be Upgraded 3 more times."
+    },
+    {
+      "name": "Clockwork Egg+1",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add an Attack Mode+ and a Defense Mode+ to your hand.\nCan be Upgraded 2 more times."
+    },
+    {
+      "name": "Gatling Gun",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 3 damage to a random enemy 2 X times."
+    },
+    {
+      "name": "Gatling Gun+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 4 damage to a random enemy 2 X times."
+    },
+    {
+      "name": "Golden Bullet",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 20 gold.\nDeal 18 damage."
+    },
+    {
+      "name": "Golden Bullet+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 15 gold.\nDeal 22 damage."
+    },
+    {
+      "name": "Hammer Down",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage.\nDouble your Strength and Dexterity."
+    },
+    {
+      "name": "Hammer Down+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 16 damage.\nDouble your Strength and Dexterity."
+    },
+    {
+      "name": "Hasty Repair",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 12 HP.\nLose 2 Max HP.\nExhaust."
+    },
+    {
+      "name": "Hasty Repair+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 16 HP.\nLose 2 Max HP.\nExhaust."
+    },
+    {
+      "name": "Hyper Beam",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Ethereal.\nDeal 50 damage.\nPut 2 Dazed on top of your draw pile."
+    },
+    {
+      "name": "Hyper Beam+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 50 damage.\nPut 2 Dazed on top of your draw pile."
+    },
+    {
+      "name": "Long-Range Lance",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of the next combat, deal 12 damage to a random enemy."
+    },
+    {
+      "name": "Long-Range Lance+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of the next combat, deal 16 damage to a random enemy."
+    },
+    {
+      "name": "Mass Production",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Choose a non-rare card in your draw pile. Exhaust your hand and replace it with copies of that card. Exhaust."
+    },
+    {
+      "name": "Mass Production+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose a non-rare card in your draw pile. Exhaust your hand and replace it with copies of that card. Exhaust."
+    },
+    {
+      "name": "Memory Tap",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add a random red, green, and blue card to your hand.\nThey cost 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Memory Tap+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add a random Upgraded red, green, and blue card to your hand. They cost 0 this turn. Exhaust."
+    },
+    {
+      "name": "Multistage",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Exhaust an Attack of cost X or less.\nAt the start of your next 2 turns, play a copy of that card.\nExhaust."
+    },
+    {
+      "name": "Multistage+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Exhaust an Attack of cost X or less.\nAt the start of your next 3 turns, play a copy of that card.\nExhaust."
+    },
+    {
+      "name": "Panic Fire",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When a non-upgraded card cycles, Exhaust it and deal 8 damage to a random enemy."
+    },
+    {
+      "name": "Panic Fire+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When a non-upgraded card cycles, Exhaust it and deal 12 damage to a random enemy."
+    },
+    {
+      "name": "Reserves",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle if HP > 20.\nGain [R] [R] [R].\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Reserves+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle if HP > 30.\nGain [R] [R] [R].\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Shield Burst",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose all your Block.\nDeal one and a half times that much damage to ALL enemies."
+    },
+    {
+      "name": "Shield Burst+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose all your Block.\nDeal 2 times that much damage to ALL enemies."
+    },
+    {
+      "name": "Shield Generator",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Blur.\nGain 2 Vulnerable."
+    },
+    {
+      "name": "Shield Generator+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Blur.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Shifting Stance",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you play 3 cards, swap your Strength and Dexterity."
+    },
+    {
+      "name": "Shifting Stance+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you play 2 cards, swap your Strength and Dexterity."
+    },
+    {
+      "name": "Siege Form",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "After you play a card, gain 2 Strength until the end of the turn."
+    },
+    {
+      "name": "Siege Form+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "After you play a card, gain 3 Strength until the end of the turn."
+    },
+    {
+      "name": "Spin Drive",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "When you play a card, draw a card.\nWorks 3 times per turn."
+    },
+    {
+      "name": "Spin Drive+",
+      "color": "Constructmod",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you play a card, draw a card.\nWorks 3 times per turn."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Cogwheel",
+      "tier": "Starter",
+      "pool": "Constructmod",
+      "description": "Gain 1 Artifact at the start of each combat.",
+      "flavorText": "A piece of old machinery, carefully preserved."
+    },
+    {
+      "name": "Master Core",
+      "tier": "Common",
+      "pool": "Constructmod",
+      "description": "At the start of combat, shuffle 3 random Cores into your draw pile.",
+      "flavorText": "A core stolen from one of the Guardians. Summons other cores to your aid."
+    },
+    {
+      "name": "Foam Finger",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "For the first 3 turns of each combat, draw 1 additional card at the start of your turn.",
+      "flavorText": "Always useful when you need a helping hand."
+    },
+    {
+      "name": "Mega Battery",
+      "tier": "Uncommon",
+      "pool": "Constructmod",
+      "description": "Upon pick up, Mega-upgrade a random Construct card.",
+      "flavorText": "Developed by gremlin inventors in an attempt to create a self-aware robot. It did not go well."
+    },
+    {
+      "name": "Bool Horns",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of each combat, deal 3 damage to a random enemy. Upon entering a non-combat space, double the damage this relic deals next combat.",
+      "flavorText": "Horns from a rarely-seen species. Bools are known to only show aggression towards those who speak lies."
+    },
+    {
+      "name": "Purple Ember",
+      "tier": "Rare",
+      "pool": "Constructmod",
+      "description": "When you enter a Rest Site, your starting hand next combat is Mega-upgraded until the end of combat.",
+      "flavorText": "A ghostly, flickering flame. It seems to absorb the power of nearby fires."
+    },
+    {
+      "name": "Rocket Booster",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you defeat an Elite, Upgrade a random card.",
+      "flavorText": "It doesn't matter how weak your swing is when you're moving at 200 miles per hour."
+    },
+    {
+      "name": "Challenger's Mark 1",
+      "tier": "Special",
+      "pool": "Constructmod",
+      "description": "Modes give +1/-1 & can't be copied.",
+      "flavorText": "The mark of one who chooses to undertake the Spire's toughest challenges."
+    },
+    {
+      "name": "Challenger's Mark 2",
+      "tier": "Special",
+      "pool": "Constructmod",
+      "description": "Modes give +1/-1 & can't be copied.\nStarter cards Overheat.",
+      "flavorText": "The mark of one who chooses to undertake the Spire's toughest challenges."
+    },
+    {
+      "name": "Challenger's Mark 3",
+      "tier": "Special",
+      "pool": "Constructmod",
+      "description": "Modes give +1/-1 & can't be copied.\nStarter cards Overheat.\nDiscard 50% of Retained cards.",
+      "flavorText": "The mark of one who chooses to undertake the Spire's toughest challenges."
+    },
+    {
+      "name": "Challenger's Mark 4",
+      "tier": "Special",
+      "pool": "Constructmod",
+      "description": "Modes give +1/-1 & can't be copied.\nStarter cards Overheat.\nDiscard 50% of Retained cards.\nBurns are upgraded.",
+      "flavorText": "The mark of one who chooses to undertake the Spire's toughest challenges."
+    },
+    {
+      "name": "Challenger's Mark 5",
+      "tier": "Special",
+      "pool": "Constructmod",
+      "description": "Modes give +1/-1 & can't be copied.\nStarter cards Overheat.\nDiscard 50% of Retained cards.\nBurns are upgraded.\nWeaker cards.",
+      "flavorText": "The mark of one who chooses to undertake the Spire's toughest challenges."
+    },
+    {
+      "name": "Clockwork Phoenix",
+      "tier": "Special",
+      "pool": "Constructmod",
+      "description": "Your upgraded Construct cards can now be Mega-upgraded outside of combat.",
+      "flavorText": "An artificial being designed to imitate the real thing. Amazingly lifelike."
+    },
+    {
+      "name": "EXTRA-Long-Range Lance",
+      "tier": "Special",
+      "pool": "Constructmod",
+      "description": "At the start of the combat after the next one, deal -1 damage to a random enemy, then lose this relic.",
+      "flavorText": "Okay, you just launched this one randomly. But it's bound to hit something!"
+    },
+    {
+      "name": "Long-Range Lance",
+      "tier": "Special",
+      "pool": "Constructmod",
+      "description": "At the start of the next combat, deal -1 damage to a random enemy, then lose this relic.",
+      "flavorText": "You hit exactly what you aimed at."
+    },
+    {
+      "name": "Claw Grip",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the end of each turn, Retain a random card. It costs 1 less [E] next turn.",
+      "flavorText": "An extendable arm used to grab hard-to-reach objects."
+    },
+    {
+      "name": "Wedding Ring",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, choose 2 cards. Once per turn, after you play one of them, play the other one too.",
+      "flavorText": "It's inscribed with \"FT2J\"."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Shift Potion",
+      "rarity": "Uncommon",
+      "description": "Swap your Strength and Dexterity. Draw 1 card."
+    },
+    {
+      "name": "Mega Potion",
+      "rarity": "Rare",
+      "description": "Mega-upgrade 1 random card in your hand for the rest of combat."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Construct",
+      "type": "Player",
+      "minHP": "85",
+      "maxHP": "85"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Blur",
+      "description": "Your Block is carried over between turns."
+    },
+    {
+      "name": "Cores",
+      "description": "Cores are cards that Cycle and apply a small bonus effect."
+    },
+    {
+      "name": "Cycle",
+      "description": "When drawn, discard this and draw a new card. Only works once per turn."
+    },
+    {
+      "name": "Egg",
+      "description": "Eggs are relics that automatically Upgrade cards when you acquire them."
+    },
+    {
+      "name": "Mega-upgrade",
+      "description": "A second upgrade that makes Construct cards even more powerful."
+    },
+    {
+      "name": "Metallicize",
+      "description": "Gain Block at the end of each turn."
+    },
+    {
+      "name": "Overheat",
+      "description": "When too many cards Cycle in one turn, transform this card into a Burn for this combat."
+    },
+    {
+      "name": "Plated armor",
+      "description": "Gain Block at the end of each turn. Reduced when you take unblocked damage."
+    },
+    {
+      "name": "Slimed",
+      "description": "Slimed is a status card that costs [R] to exhaust."
+    }
+  ]
+}
