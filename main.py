@@ -83,11 +83,11 @@ async def relic(channel, tokenized_message):
     await channel.send(f'No relic named ${tokenized_message[2]} found in {tokenized_message[1]}')
 
 def card_format(card):
-    return "**{0}**\n{1} `{2}` `{3}` `{4}` `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], card['description'])
+    return "**{0}**\n{1}  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], card['description'])
 
 def relic_format(relic):
     print(relic)
-    return "**{0}**\n`{1}` `{2}` `{3}`\n{4}\n*{5}*".format(relic['name'], relic['tier'], relic['pool'], relic['mod'], relic['description'], relic['flavorText'])
+    return "**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(relic['name'], relic['tier'], relic['pool'], relic['mod'], relic['description'], relic['flavorText'])
 
 def energy_string(cost):
     if cost == 'X':
