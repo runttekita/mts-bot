@@ -49,6 +49,8 @@ async def on_message(message):
         
 async def get_id(message):
     s = message.content.lower()
+    if (message.content == 'help'):
+        await help_command(message.channel)
     if os.path.exists(f'data/{s.split(" ")[1]}.json'):
         tokenized_message  = s.split(' ', 2)
     else:
@@ -57,6 +59,7 @@ async def get_id(message):
 
 async def do_command(channel, tokenized_message):
     commands = {
+        'help': help_command,
         'card': card,
         'relic': relic
     }
@@ -102,6 +105,10 @@ async def relic(channel, tokenized_message):
         await channel.send(f'No relic named {tokenized_message[2]} found in {tokenized_message[1]}.')
     else:
         await channel.send(f'No relic named {tokenized_message[1]} found.')
+
+@client.event
+async def help_command(channel):
+    await channel.send(f'I can look up modded info with {prefix}card, {prefix}relic or {prefix}potion!')
 
 def card_format(card):
     return "**{0}**\n{1}  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], remove_keyword_prefixes(card['description']))
