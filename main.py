@@ -170,12 +170,13 @@ def remove_keyword_prefixes(description):
     final_description = ''
     for word in description:
         if is_keyword(word):
-            print(word.split(':', 1))
-            final_description += word.split(':', 1)[1]
+            if word.split(':', 1)[1][len(word.split(':', 1)[1]) - 1] == '.':
+                final_description += word.split(':', 1)[1]
+            else:
+                final_description += word.split(':', 1)[1] + ' '
             continue
         final_description += word + ' '
     final_description = final_description.replace('\n ', '\n')
-    final_description += ' '
     return final_description
 
 def is_keyword(word):
