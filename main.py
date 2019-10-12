@@ -110,6 +110,14 @@ async def relic(channel, tokenized_message):
         if tokenized_message[2] == 'random':
             await channel.send(relic_format(random.choice(relics[0]['relics'])))
             return
+    if len(tokenized_message) == 2:
+        if tokenized_message[1] == 'random':
+            mod_object = random.choice(relics)
+            if len(mod_object['relics']) == 0:
+                await relic(channel, tokenized_message)
+            relic_object = random.choice(mod_object['relics'])
+            await channel.send(relic_format(relic_object))
+            return
     for x in range(len(relics)):
         for relic in relics[x]['relics']:
             if len(tokenized_message) == 3:
