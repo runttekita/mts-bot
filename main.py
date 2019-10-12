@@ -41,14 +41,14 @@ async def on_message(message):
         
 async def get_id(message):
     s = message.content.lower()
-    tokenized_message  = s.split(' ')
+    tokenized_message  = s.split(' ', 2)
     await do_command(message.channel, tokenized_message)
     
 async def do_command(channel, tokenized_message):
     commands = {
         'card': card
     }
-    callback = commands.get(tokenized_message[0], print('???'))
+    callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
 
 @client.event
@@ -56,9 +56,18 @@ async def card(channel, tokenized_message):
     cards = Mod_Data(tokenized_message[1]).data['cards']
     for card in cards:
         if tokenized_message[2] == card['name'].lower():
-            await channel.send(card)
+            await channel.send(card_format(card))
             return
     await channel.send(f'No card named {tokenized_message[2]} found in {tokenized_message[1]}')
 
+def card_format(card):
+    return "**{0}**\n{1} `{2}` `{3}` `{4}` `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], card['description'])
+
+def energy_string(cost):
+    cost = int(cost)
+    s = ''
+    for i in range (0, cost):
+        s += '[E] '
+    return s
 client.run(token)
 
