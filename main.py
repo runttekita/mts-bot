@@ -9,7 +9,6 @@ load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
-cirno_data = None
 prefix = '!'
 
 class Mod_Data:
