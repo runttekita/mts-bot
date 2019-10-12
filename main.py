@@ -104,7 +104,7 @@ async def relic(channel, tokenized_message):
         await channel.send(f'No relic named {tokenized_message[1]} found.')
 
 def card_format(card):
-    return "**{0}**\n{1}  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], card['description'])
+    return "**{0}**\n{1}  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], remove_keyword_prefixes(card['description']))
 
 def relic_format(relic):
     print(relic)
@@ -118,5 +118,23 @@ def energy_string(cost):
     for i in range (0, cost):
         s += '[E] '
     return s
+
+def remove_keyword_prefixes(description):
+    description = description.replace('\n', '\n ')
+    description = description.split(' ')
+    final_description = ''
+    for word in description:
+        if is_keyword(word):
+            print(word.split(':', 1))
+            final_description += word.split(':', 1)[1]
+            continue
+        final_description += word + ' '
+    final_description = final_description.replace('\n ', '\n')
+    return final_description
+
+def is_keyword(word):
+    return not word[0].isupper() and ':' in word
+
 client.run(token)
+
 
