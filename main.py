@@ -80,6 +80,14 @@ async def card(channel, tokenized_message):
         if tokenized_message[2] == 'random':
             await channel.send(card_format(random.choice(cards[0]['cards'])))
             return
+    if len(tokenized_message) == 2:
+        if tokenized_message[1] == 'random':
+            mod_object = random.choice(cards)
+            if len(mod_object['cards']) == 0:
+                await card(channel, tokenized_message)
+            cards_object = random.choice(mod_object['cards'])
+            await channel.send(card_format(cards_object))
+            return
     for x in range(len(cards)):
         for card in cards[x]['cards']:
             if len(tokenized_message) == 3:
