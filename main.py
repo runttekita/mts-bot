@@ -60,7 +60,8 @@ async def do_command(channel, tokenized_message):
     commands = {
         'help': help_command,
         'card': card,
-        'relic': relic
+        'relic': relic,
+        'keyword': keyword
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
@@ -91,7 +92,7 @@ async def card(channel, tokenized_message):
 async def relic(channel, tokenized_message):
     relics = Mod_Data(tokenized_message[1]).data
     for x in range(len(relics)):
-        for relic in relics[x][relics]:
+        for relic in relics[x]['relics']:
             if len(tokenized_message) == 3:
                 if tokenized_message[2] == relic['name'].lower():
                     await channel.send(relic_format(relic))
@@ -106,15 +107,53 @@ async def relic(channel, tokenized_message):
         await channel.send(f'No relic named {tokenized_message[1]} found.')
 
 @client.event
+async def keyword(channel, tokenized_message):
+    keywords = Mod_Data(tokenized_message[1]).data
+    for x in range(len(keywords)):
+        for keyword in keywords[x]['keywords']:
+            keyword_name = ''
+            split_keyword = keyword['name'].split(':')
+            if len(split_keyword) == 2:
+                keyword_name = split_keyword[1]
+            else:
+                keyword_name = split_keyword[0]
+            if len(tokenized_message) == 3:
+                if tokenized_message[2] == keyword_name.lower():
+                    if len(split_keyword) == 2:
+                        await channel.send(keyword_format_mod(keyword, keyword_name, split_keyword[0]))
+                        return
+                    else:
+                        await channel.send(keyword_format(keyword, keyword_name))
+                        return
+            else:
+                if tokenized_message[1] == keyword_name.lower():
+                    if len(split_keyword) == 2:
+                        await channel.send(keyword_format_mod(keyword, keyword_name, split_keyword[0]))
+                        return
+                    else:
+                        await channel.send(keyword_format(keyword, keyword_name))
+                        return
+
+    if len(tokenized_message) == 3:
+        await channel.send(f'No keyword named {tokenized_message[2]} found in {tokenized_message[1]}.')
+    else:
+        await channel.send(f'No keyword named {tokenized_message[1]} found.')
+
+@client.event
 async def help_command(channel):
-    await channel.send(f'I can look up modded info with {prefix}card, {prefix}relic or {prefix}potion!')
+    await channel.send(f'I can look up modded info with {prefix}card, {prefix}relic or {prefix}keyword!')
 
 def card_format(card):
     return "**{0}**\n{1}  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], remove_keyword_prefixes(card['description']))
 
 def relic_format(relic):
-    print(relic)
     return "**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(relic['name'], relic['tier'], relic['pool'], relic['mod'], relic['description'], relic['flavorText'])
+
+def keyword_format_mod(keyword, name, mod):
+    return "**{0}**\n`{1}`\n{2}".format(name.capitalize(), mod.capitalize(), keyword['description'])
+
+def keyword_format(keyword, name):
+    return "**{0}**\n{1}".format(name.capitalize(), keyword['description'])
 
 def energy_string(cost):
     if cost == 'X':
