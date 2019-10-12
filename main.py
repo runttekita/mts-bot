@@ -3,7 +3,7 @@ import os
 import json
 import discord
 from dotenv import load_dotenv
-import os.path
+import os
 from os import path
 
 load_dotenv()
@@ -18,9 +18,15 @@ class Mod_Data:
         self.data = self.get_data(id)
 
     def get_data(self, id):
-        if path.exists(f'data/{id}/items.json'):
-            with open(f'data/{id}/items.json') as json_file:
+        if path.exists(f'data/{id}.json'):
+            with open(f'data/{id}.json') as json_file:
                 return json.load(json_file)
+        else:
+            data = dict()
+            for file in os.listdir('data/'):
+                with open(f'data/{file}') as json_file:
+                    data.update(json.load(json_file))
+            return data
 
 @client.event
 async def on_ready():
@@ -45,10 +51,7 @@ async def on_message(message):
 async def get_id(message):
     s = message.content.lower()
     tokenized_message  = s.split(' ', 2)
-    if path.exists(f'data/{tokenized_message[1]}/items.json'):
-        await do_command(message.channel, tokenized_message)
-    else:
-        await send_failure(message.channel, tokenized_message)
+    await do_command(message.channel, tokenized_message)
 
 async def do_command(channel, tokenized_message):
     commands = {
