@@ -1,0 +1,1395 @@
+{
+  "mod": {
+    "name": "The Blackbeard",
+    "version": "1.11.22",
+    "authors": ["JohnnyBazooka89"],
+    "credits": "Jedi - Russian localization, Vex'd - Cannonball animations, various visual effects",
+    "description": "Adds The Blackbeard as a new playable character.\n\nMore info: https://steamcommunity.com/sharedfiles/filedetails/?id=1612105245\n\nGithub: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
+    "mts_version": "3.11.0",
+    "sts_version": "07-17-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Cutlass",
+      "color": "Blackbeard_black",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 4 / 2 Weapon."
+    },
+    {
+      "name": "Cutlass+",
+      "color": "Blackbeard_black",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 4 / 2 Weapon."
+    },
+    {
+      "name": "Defend",
+      "color": "Blackbeard_black",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Blackbeard_black",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Intimidating Strike",
+      "color": "Blackbeard_black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "Intimidating Strike+",
+      "color": "Blackbeard_black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Strike",
+      "color": "Blackbeard_black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Blackbeard_black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Beat Up",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Beat Up+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage twice.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Blind Attacks",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to a random enemy 3 times."
+    },
+    {
+      "name": "Blind Attacks+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to a random enemy 3 times."
+    },
+    {
+      "name": "Cloak and Cannonball",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nAdd a Cannonball into your hand."
+    },
+    {
+      "name": "Cloak and Cannonball+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nAdd an upgraded Cannonball into your hand."
+    },
+    {
+      "name": "Dagger",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 2 / 3 Weapon.\nAt the start of your turn,\n1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
+    },
+    {
+      "name": "Dagger+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 2 / 4 Weapon.\nAt the start of your turn,\n1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
+    },
+    {
+      "name": "Fencing",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give your rightmost Weapon + !blackbeard:M+1! / + 2."
+    },
+    {
+      "name": "Fencing+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give your rightmost Weapon + !blackbeard:M+1! / + 3."
+    },
+    {
+      "name": "Fiery Defense",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDeal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Fiery Defense+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDeal 3 damage to ALL enemies twice."
+    },
+    {
+      "name": "Golden Defense",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to\n1.5% of Gold gained\nthis run."
+    },
+    {
+      "name": "Golden Defense+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to\n3 + 1.5% of Gold gained\nthis run."
+    },
+    {
+      "name": "Golden Strike",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to\n1.5% of Gold gained\nthis run."
+    },
+    {
+      "name": "Golden Strike+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to\n3 + 1.5% of Gold gained\nthis run."
+    },
+    {
+      "name": "Pirate's Will",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all of your Debuffs.\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Pirate's Will+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all of your Debuffs.\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Rearming Strike",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nEquip a 4 / 2 Weapon."
+    },
+    {
+      "name": "Rearming Strike+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nEquip a 4 / 2 Weapon."
+    },
+    {
+      "name": "Sharpening",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give all your equipped Weapons + 2 Attack."
+    },
+    {
+      "name": "Sharpening+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give all your equipped Weapons + 3 Attack."
+    },
+    {
+      "name": "Shrapnel",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Shrapnel+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Spear",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 7 / 1 Weapon."
+    },
+    {
+      "name": "Spear+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 10 / 1 Weapon."
+    },
+    {
+      "name": "Sword",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 Swords.\nEquip a 3 / 3 Weapon with an additional effect."
+    },
+    {
+      "name": "Sword Dance",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, your next 3 Attacks use all equipped Weapons."
+    },
+    {
+      "name": "Sword Dance+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, your next 5 Attacks use all equipped Weapons."
+    },
+    {
+      "name": "Sword+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 Swords.\nEquip a 3 / 4 Weapon with an additional effect."
+    },
+    {
+      "name": "Tactical Retreat",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDraw 1 more card next turn."
+    },
+    {
+      "name": "Tactical Retreat+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nDraw 1 more card next turn."
+    },
+    {
+      "name": "Toast",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Resistance.\nAt the start of your next turn, lose 3 Resistance.\nExhaust."
+    },
+    {
+      "name": "Toast+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Resistance.\nAt the start of your next turn, lose 4 Resistance.\nExhaust."
+    },
+    {
+      "name": "Wise Defense",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDraw 1 card."
+    },
+    {
+      "name": "Wise Defense+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Agile Strike",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf you have equipped a Weapon this turn, reduce cost of this\ncard to 0."
+    },
+    {
+      "name": "Agile Strike+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nIf you have equipped a Weapon this turn, reduce cost of this\ncard to 0."
+    },
+    {
+      "name": "Anchor",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nGain 10 Block.\nExhaust."
+    },
+    {
+      "name": "Anchor+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nGain 10 Block.\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Armor Up",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, whenever you attack with a Weapon, gain 4 Block."
+    },
+    {
+      "name": "Armor Up+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, whenever you attack with a Weapon, gain 6 Block."
+    },
+    {
+      "name": "Bandana",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you hit an enemy, gain 5 Gold,\nup to a maximum of 25 Gold."
+    },
+    {
+      "name": "Bandana+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you hit an enemy, gain 5 Gold,\nup to a maximum of 30 Gold."
+    },
+    {
+      "name": "Boarding",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage to ALL enemies twice.\nDraw 2 cards."
+    },
+    {
+      "name": "Boarding+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage to ALL enemies twice.\nDraw 2 cards."
+    },
+    {
+      "name": "Brown Pants",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 5 Plated Armor."
+    },
+    {
+      "name": "Brown Pants+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 6 Plated Armor."
+    },
+    {
+      "name": "Buried Treasure",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Gold.\nExhaust."
+    },
+    {
+      "name": "Buried Treasure+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 20 Gold.\nExhaust."
+    },
+    {
+      "name": "Cannon Barrage",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X Cannonballs into your hand."
+    },
+    {
+      "name": "Cannon Barrage+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X+1 Cannonballs into your hand."
+    },
+    {
+      "name": "Cannonball Supply",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 3 Cannonballs into your hand.\nExhaust."
+    },
+    {
+      "name": "Cannonball Supply+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 3 Cannonballs into your hand."
+    },
+    {
+      "name": "Captain's Cabin",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nAdd 1 Cannonball into your hand."
+    },
+    {
+      "name": "Captain's Cabin+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nAdd 2 Cannonballs into your hand."
+    },
+    {
+      "name": "Cat O' Nine Tails",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 4 / 3 Weapon.\nAfter you attack with this Weapon, give it + 2 Attack."
+    },
+    {
+      "name": "Cat O' Nine Tails+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 6 / 3 Weapon.\nAfter you attack with this Weapon, give it + 2 Attack."
+    },
+    {
+      "name": "Chaotic Defense",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nAdd 1 random card into your hand."
+    },
+    {
+      "name": "Chaotic Defense+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nAdd 2 random cards into your hand."
+    },
+    {
+      "name": "Dangerous Blow",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nAt the end of your next turn, you take 4 damage."
+    },
+    {
+      "name": "Dangerous Blow+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 22 damage.\nAt the end of your next turn, you take 4 damage."
+    },
+    {
+      "name": "Delayed Pain",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nAt the end of your next turn, you take 4 damage."
+    },
+    {
+      "name": "Delayed Pain+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 18 Block.\nAt the end of your next turn, you take 4 damage."
+    },
+    {
+      "name": "Double Bottom",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nNext turn, gain 10 Block."
+    },
+    {
+      "name": "Double Bottom+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nNext turn, gain 13 Block."
+    },
+    {
+      "name": "Double Cannonball",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nAdd a Cannonball into your hand.\nExhaust."
+    },
+    {
+      "name": "Double Cannonball+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nAdd an upgraded Cannonball into your hand.\nExhaust."
+    },
+    {
+      "name": "Eyepatch",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 3 Weak.\nAt the start of your turn, draw 1 additional card."
+    },
+    {
+      "name": "Eyepatch+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nGain 3 Weak.\nAt the start of your turn, draw 1 additional card."
+    },
+    {
+      "name": "Fishing Nets",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 blackbeard:Rusty\u00A0Thorns."
+    },
+    {
+      "name": "Fishing Nets+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 blackbeard:Rusty\u00A0Thorns."
+    },
+    {
+      "name": "Ghost in the Rum",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible.\nLose 2 Resistance.\nExhaust."
+    },
+    {
+      "name": "Ghost in the Rum+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible.\nLose 1 Resistance.\nExhaust."
+    },
+    {
+      "name": "Golden Cannonball",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to\n2% of Gold gained this run.\nExhaust."
+    },
+    {
+      "name": "Golden Cannonball+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to\n4 + 2% of Gold gained this run.\nExhaust."
+    },
+    {
+      "name": "Infinite Barrage",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, add a Cannonball into your hand."
+    },
+    {
+      "name": "Infinite Barrage+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nAt the start of your turn, add a Cannonball into your hand."
+    },
+    {
+      "name": "Jolly Roger",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Jolly Roger+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Pirate Earring",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Artifact."
+    },
+    {
+      "name": "Pirate Earring+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 2 Artifact."
+    },
+    {
+      "name": "Powder Keg",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 0 / 1 Weapon.\nWhen it is destroyed, deal 15 damage to ALL enemies."
+    },
+    {
+      "name": "Powder Keg+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 0 / 1 Weapon.\nWhen it is destroyed, deal 20 damage to ALL enemies."
+    },
+    {
+      "name": "Provisioning",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Obtain a random potion.\nNext turn, obtain a random potion.\nExhaust."
+    },
+    {
+      "name": "Provisioning+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Obtain a random potion.\nNext turn, obtain a random potion.\nExhaust."
+    },
+    {
+      "name": "Recklessness",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nAt the start of your next turn, lose [E] [E]."
+    },
+    {
+      "name": "Recklessness+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E] [E].\nAt the start of your next turn, lose [E] [E]."
+    },
+    {
+      "name": "Remove Scurvy",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 5 HP.\nRemove all of your Debuffs.\nExhaust."
+    },
+    {
+      "name": "Remove Scurvy+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 8 HP.\nRemove all of your Debuffs.\nExhaust."
+    },
+    {
+      "name": "Revenge",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 - 50 damage to ALL enemies, based on how many % of HP you are missing."
+    },
+    {
+      "name": "Revenge+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 - 60 damage to ALL enemies, based on how many % of HP you are missing."
+    },
+    {
+      "name": "Rum",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Resistance."
+    },
+    {
+      "name": "Rum+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Resistance."
+    },
+    {
+      "name": "Scrap",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Destroy your rightmost Weapon to gain [E] [E]."
+    },
+    {
+      "name": "Scrap+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Destroy your rightmost Weapon to gain\n[E] [E] [E]."
+    },
+    {
+      "name": "Smithing Hammer",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 2 / 4 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat.\nExhaust."
+    },
+    {
+      "name": "Smithing Hammer+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 2 / 6 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat.\nExhaust."
+    },
+    {
+      "name": "Terror of the Seas",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Terror of the Seas+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Upgrade",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give all your equipped Weapons + 1 / + 1."
+    },
+    {
+      "name": "Upgrade+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give all your equipped Weapons + 2 / + 2."
+    },
+    {
+      "name": "Vengeful Spirit",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 12 damage.\nExhaust."
+    },
+    {
+      "name": "Vengeful Spirit+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 8 damage.\nExhaust."
+    },
+    {
+      "name": "Weapon Proficiency",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your attacks use an additional Weapon."
+    },
+    {
+      "name": "Weapon Proficiency+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Your attacks use an additional Weapon."
+    },
+    {
+      "name": "Wooden Leg",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 2 Dexterity.\nGain 4 Strength."
+    },
+    {
+      "name": "Wooden Leg+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 2 Dexterity.\nGain 5 Strength."
+    },
+    {
+      "name": "Boost Morale",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nGain [E].\nExhaust."
+    },
+    {
+      "name": "Boost Morale+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nGain [E] [E].\nExhaust."
+    },
+    {
+      "name": "Bounty Hunter",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nIf this kills a non-minion enemy, gain 16 Gold.\nExhaust."
+    },
+    {
+      "name": "Bounty Hunter+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage.\nIf this kills a non-minion enemy, gain 20 Gold.\nExhaust."
+    },
+    {
+      "name": "Captain's Hat",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain !blackbeard:M+1! Strength.\nGain 1 Resistance."
+    },
+    {
+      "name": "Captain's Hat+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain !blackbeard:M+1! Strength.\nGain 2 Resistance."
+    },
+    {
+      "name": "Final Barrage",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to 4 times the amount of Cannonballs played this combat.\n(Every type of Cannonball counts.)"
+    },
+    {
+      "name": "Final Barrage+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to 6 times the amount of Cannonballs played this combat.\n(Every type of Cannonball counts.)"
+    },
+    {
+      "name": "Golden Guillotine",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to\n4% of Gold gained this run."
+    },
+    {
+      "name": "Golden Guillotine+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to\n5% of Gold gained this run."
+    },
+    {
+      "name": "Golden Rain",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to\n2.5% of Gold gained\nthis run to ALL enemies."
+    },
+    {
+      "name": "Golden Rain+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to\n3% of Gold gained\nthis run to ALL enemies."
+    },
+    {
+      "name": "Halberd",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Equip a 6 / 4 Weapon.\nWhenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
+    },
+    {
+      "name": "Halberd+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Equip a 9 / 4 Weapon.\nWhenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
+    },
+    {
+      "name": "Humongous Cannonball",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 36 damage.\nExhaust."
+    },
+    {
+      "name": "Humongous Cannonball+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 48 damage.\nExhaust."
+    },
+    {
+      "name": "Intoxication",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Resistance.\nAt the start of your turn, lose 1 Resistance."
+    },
+    {
+      "name": "Intoxication+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 5 Resistance.\nAt the start of your turn, lose 1 Resistance."
+    },
+    {
+      "name": "Lifeboat",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 24 Block."
+    },
+    {
+      "name": "Lifeboat+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 30 Block."
+    },
+    {
+      "name": "Mega Upgrade",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Give all your equipped Weapons + 3 / + 3."
+    },
+    {
+      "name": "Mega Upgrade+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Give all your equipped Weapons + 5 / + 5."
+    },
+    {
+      "name": "Murder",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Ethereal. Grave.\nDeal 500 damage\u00A0\u00A0\u00A0\u00A0\nto a Normal enemy.\n(Cannot be used on Elite or Boss)."
+    },
+    {
+      "name": "Murder+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Ethereal. Grave.\nDeal 1000 damage\u00A0\u00A0\u00A0\u00A0\nto a Normal enemy.\n(Cannot be used on Elite or Boss)."
+    },
+    {
+      "name": "Parrot",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nThe last card played each turn is played an additional time.\nThis power does not stack."
+    },
+    {
+      "name": "Parrot+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The last card played each turn is played an additional time.\nThis power does not stack."
+    },
+    {
+      "name": "Pirate Strength",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 6 Strength."
+    },
+    {
+      "name": "Pirate Strength+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 9 Strength."
+    },
+    {
+      "name": "Reaper's Scythe",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Equip a 8 / 3 Weapon.\nWhenever you attack with this Weapon, apply 1 blackbeard:Reaper's\u00A0Mark to a target per hit."
+    },
+    {
+      "name": "Reaper's Scythe+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Equip a 11 / 3 Weapon.\nWhenever you attack with this Weapon, apply 1 blackbeard:Reaper's\u00A0Mark to a target per hit."
+    },
+    {
+      "name": "Salvager",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a Weapon is destroyed, gain [E]."
+    },
+    {
+      "name": "Salvager+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a Weapon is destroyed, gain [E] [E]."
+    },
+    {
+      "name": "The Drunken Sailor",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you use a potion, use it an additional time."
+    },
+    {
+      "name": "The Drunken Sailor+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you use a potion, use it an additional time."
+    },
+    {
+      "name": "Undead Form",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 2 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 30 damage."
+    },
+    {
+      "name": "Undead Form+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 3 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 30 damage."
+    },
+    {
+      "name": "Weapon Mastery",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you equip a Weapon, draw 1 card."
+    },
+    {
+      "name": "Weapon Mastery+",
+      "color": "Blackbeard_black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you equip a Weapon, draw 2 cards."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Load the Cannons",
+      "tier": "Starter",
+      "pool": "Blackbeard_black",
+      "description": "At the start of each combat, and then every 4 turns, add a Cannonball into your hand.",
+      "flavorText": "Ready... Aim... Fire!!!"
+    },
+    {
+      "name": "Cannonballs of Steel",
+      "tier": "Common",
+      "pool": "Blackbeard_black",
+      "description": "Your Cannonballs deal 2 more damage. (Works with every type of Cannonball [REMOVE_SPACE].)",
+      "flavorText": "Much stronger than regular cannonballs."
+    },
+    {
+      "name": "Hip Flask",
+      "tier": "Common",
+      "pool": "Blackbeard_black",
+      "description": "At the start of each combat, gain 1 Resistance.",
+      "flavorText": "Very handy."
+    },
+    {
+      "name": "Spearhead",
+      "tier": "Common",
+      "pool": "Blackbeard_black",
+      "description": "When a Weapon has 1 Durability, it deals 3 more damage.",
+      "flavorText": "The durability of your Weapon ends... and so does the life of your enemy."
+    },
+    {
+      "name": "Treasure Chest",
+      "tier": "Common",
+      "pool": "Blackbeard_black",
+      "description": "Gain 15 Gold after every battle.",
+      "flavorText": "This treasure chest contains untold riches."
+    },
+    {
+      "name": "White Pearl",
+      "tier": "Common",
+      "pool": "Blackbeard_black",
+      "description": "Whenever you equip a Weapon, give it +1 Attack.",
+      "flavorText": "Both beautiful and powerful."
+    },
+    {
+      "name": "Crossed Swords",
+      "tier": "Uncommon",
+      "pool": "Blackbeard_black",
+      "description": "Your attacks use an additional Weapon.",
+      "flavorText": "Perfect for dual wielding."
+    },
+    {
+      "name": "Golden Ring",
+      "tier": "Uncommon",
+      "pool": "Blackbeard_black",
+      "description": "At the start of each combat, gain 1 Artifact.",
+      "flavorText": "Suitable for every pirate."
+    },
+    {
+      "name": "Penknife",
+      "tier": "Uncommon",
+      "pool": "Blackbeard_black",
+      "description": "Every 8th Attack that uses at least one Weapon deals double damage.",
+      "flavorText": "If you have it in your pocket, don't forget to use it."
+    },
+    {
+      "name": "Powder Can",
+      "tier": "Uncommon",
+      "pool": "Blackbeard_black",
+      "description": "At the start of each combat, equip a 0 / 1 Weapon. When it is destroyed, deal 8 damage to ALL enemies.",
+      "flavorText": "Just like a Powder Keg, but smaller."
+    },
+    {
+      "name": "Magical Cauldron",
+      "tier": "Rare",
+      "pool": "Blackbeard_black",
+      "description": "At the start of each combat, obtain a random potion.",
+      "flavorText": "Fully automatic."
+    },
+    {
+      "name": "Poor Math Skills",
+      "tier": "Rare",
+      "pool": "Blackbeard_black",
+      "description": "You think that you have gained 500 more Gold this run than you actually did. (It matters for cards that scale with Gold gained this run.)",
+      "flavorText": "Sometimes failing a math class is a good thing."
+    },
+    {
+      "name": "Load the Golden Cannons",
+      "tier": "Boss",
+      "pool": "Blackbeard_black",
+      "description": "Replaces Load the Cannons. At the start of each combat, and then every 4 turns, add a blackbeard:Golden\u00A0Cannonball into your hand.",
+      "flavorText": "Is it even worth to shoot all these golden cannonballs?!?"
+    },
+    {
+      "name": "Sober-minded",
+      "tier": "Boss",
+      "pool": "Blackbeard_black",
+      "description": "Gain [E] at the start of your turn. At the start of each combat, and then every 4 turns, lose 1 Resistance.",
+      "flavorText": "Being sober is not a natural state for The Blackbeard."
+    },
+    {
+      "name": "Blood Orange",
+      "tier": "Shop",
+      "pool": "Blackbeard_black",
+      "description": "Whenever you play 6 cards in the same turn, remove all of your Debuffs.",
+      "flavorText": "This citrus seems to have an interesting power."
+    },
+    {
+      "name": "Karate Gi",
+      "tier": "Shop",
+      "pool": "Blackbeard_black",
+      "description": "Your Weapons have infinite Durability. After you attack with a Weapon, it goes to the last position.",
+      "flavorText": "When you wear it, you instantly learn new styles of combat."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Bottle of Rum",
+      "rarity": "Uncommon",
+      "description": "Gain 2 Resistance."
+    },
+    {
+      "name": "Quick Shots of Rum",
+      "rarity": "Uncommon",
+      "description": "Gain 4 Resistance. At the start of your next turn, lose 4 Resistance."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Blackbeard",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Cannonball",
+      "description": "Cannonballs are 0 cost attacks that deal 6 (8) damage and exhaust."
+    },
+    {
+      "name": "Resistance",
+      "description": "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.) Resistance can be negative."
+    },
+    {
+      "name": "Weapon",
+      "description": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack. You can equip a maximum of 10 Weapons."
+    }
+  ]
+}

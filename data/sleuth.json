@@ -1,0 +1,1371 @@
+{
+  "mod": {
+    "name": "The Problem Sleuth",
+    "version": "1.6",
+    "authors": ["Vex'd and Spleen"],
+    "credits": "",
+    "description": "buncha weird puzzle shit",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Mural",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nRetain.\nIf this card enters the discard pile, Exhaust it."
+    },
+    {
+      "name": "Frightening Beast",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhenever a card Purges, Topdeck this."
+    },
+    {
+      "name": "Morthol Dryax",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, discard your hand."
+    },
+    {
+      "name": "Oglog M'Rubbit",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhile in hand, your stats cannot change."
+    },
+    {
+      "name": "Defend",
+      "color": "Sleuth_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Diplomacy",
+      "color": "Sleuth_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDeal 7 damage.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Diplomacy+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDeal 9 damage.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Strike",
+      "color": "Sleuth_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Take Inventory",
+      "color": "Sleuth_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nRetain your hand this turn."
+    },
+    {
+      "name": "Take Inventory+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nRetain your hand this turn."
+    },
+    {
+      "name": "Key/Handgun",
+      "color": "Sleuth_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If the enemy intends to attack, gain 8 Block.\nOtherwise, deal 8 damage."
+    },
+    {
+      "name": "Key/Handgun+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If the enemy intends to attack, gain 11 Block.\nOtherwise, deal 11 damage."
+    },
+    {
+      "name": "Moustache Fire",
+      "color": "Sleuth_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage.\nTopdeck a copy of this.\nExhaust."
+    },
+    {
+      "name": "Moustache Fire+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 16 damage.\nTopdeck a copy of this.\nExhaust."
+    },
+    {
+      "name": "Belly O' The Whale",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nExhaust a card in your discard pile."
+    },
+    {
+      "name": "Belly O' The Whale+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nExhaust a card in your discard pile."
+    },
+    {
+      "name": "Ben Stiller Bust",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 4 damage.\nDrop: Deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Ben Stiller Bust+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 5 damage.\nDrop: Deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Candy Corn",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, gain 3 Block."
+    },
+    {
+      "name": "Candy Corn+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, gain 5 Block."
+    },
+    {
+      "name": "Charisma Blast",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nMill 1."
+    },
+    {
+      "name": "Charisma Blast+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nMill 1."
+    },
+    {
+      "name": "Fortify",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Temp._Imagination.\nGain 5 Block.\nTopdeck 1 card from your hand."
+    },
+    {
+      "name": "Fortify+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Temp._Imagination.\nGain 7 Block.\nTopdeck 1 card from your hand."
+    },
+    {
+      "name": "Ignore",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Temporary_HP.\nTopdeck 1 Mural."
+    },
+    {
+      "name": "Ignore+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Temporary_HP.\nAdd 1 Mural into your hand."
+    },
+    {
+      "name": "Moonshine",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Imagination.\nGive a card in your hand Retain this combat.\nPurge."
+    },
+    {
+      "name": "Moonshine+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Imagination.\nGive a card in your hand Retain this combat.\nPurge."
+    },
+    {
+      "name": "Ogle",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nShift the enemy's intent ahead 1 turn.\nExhaust."
+    },
+    {
+      "name": "Ogle+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 8 damage.\nShift the enemy's intent ahead 1 turn.\nExhaust."
+    },
+    {
+      "name": "Pepperminthryl",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALWAYS costs 1.\nGain 11 Block."
+    },
+    {
+      "name": "Pepperminthryl+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALWAYS costs 1.\nGain 14 Block."
+    },
+    {
+      "name": "Pez Uzi",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nGain 1 Temp._Imagination."
+    },
+    {
+      "name": "Pez Uzi+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies.\nGain 2 Temp._Imagination."
+    },
+    {
+      "name": "Taze",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 1 Weak.\nTopdeck a card from your draw pile."
+    },
+    {
+      "name": "Taze+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nApply 1 Weak.\nTopdeck a card from your draw pile."
+    },
+    {
+      "name": "Think Ahead",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play the top card of your draw pile."
+    },
+    {
+      "name": "Think Ahead+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Play the top card of your draw pile."
+    },
+    {
+      "name": "Tootsie Shotgun",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage twice.\nDamage is increased by Auto-Parry stacks."
+    },
+    {
+      "name": "Tootsie Shotgun+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage twice.\nDamage is increased by Auto-Parry stacks."
+    },
+    {
+      "name": "Truffle Shuffle",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 Auto-Parry.\nDeal 9 damage. \nPurge."
+    },
+    {
+      "name": "Truffle Shuffle+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 Auto-Parry.\nDeal 12 damage. \nPurge."
+    },
+    {
+      "name": "Unscale",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "You and ALL enemies lose 3 Strength this turn."
+    },
+    {
+      "name": "Unscale+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nYou and ALL enemies lose 3 Strength this turn."
+    },
+    {
+      "name": "Victory Pose",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 2 more if an enemy has been slain this combat."
+    },
+    {
+      "name": "Victory Pose+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain 4 more if an enemy has been slain this combat."
+    },
+    {
+      "name": "Wilson Bust",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nDrop: Gain 6 Block."
+    },
+    {
+      "name": "Wilson Bust+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nDrop: Gain 9 Block."
+    },
+    {
+      "name": "Appropriate",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put a card from your discard pile into your hand.\nYour stats are 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Appropriate+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put a card from your discard pile into your hand.\nYour stats are 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Bite Hardly",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nGain 9 Temporary_HP.\nExhaust."
+    },
+    {
+      "name": "Bite Hardly+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nGain 12 Temporary_HP.\nExhaust."
+    },
+    {
+      "name": "Candy Cane",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\nGain 2 Temp._Imagination."
+    },
+    {
+      "name": "Candy Cane+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage.\nGain 3 Temp._Imagination."
+    },
+    {
+      "name": "Candy Leather",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nReturn an Imagination card from your discard pile to your hand."
+    },
+    {
+      "name": "Candy Leather+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nReturn an Imagination card from your discard pile to your hand."
+    },
+    {
+      "name": "Club Club",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies twice.\nLose 1 of your highest stat."
+    },
+    {
+      "name": "Club Club+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies twice.\nLose 1 of your highest stat."
+    },
+    {
+      "name": "Deprogram",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 4 cards of your draw pile.\nYou may discard any of them.\nApply 1 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Deprogram+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 4 cards of your draw pile.\nYou may discard any of them.\nApply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Diamond Armor",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nDiscard 1 card.\nLose 1 of your highest stat."
+    },
+    {
+      "name": "Diamond Armor+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 17 Block.\nDiscard 1 card.\nLose 1 of your highest stat."
+    },
+    {
+      "name": "Distill",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Obtain a random potion.\nGain 1 Auto-Parry.\nPurge."
+    },
+    {
+      "name": "Distill+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Obtain a random potion.\nGain 1 Auto-Parry.\nPurge."
+    },
+    {
+      "name": "Embarrass",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nApply 3 Vulnerable.\nTopdeck 1 Mural."
+    },
+    {
+      "name": "Embarrass+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Weak.\nApply 3 Vulnerable.\nTopdeck 1 Mural."
+    },
+    {
+      "name": "Fair Shake",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 10 Block.\nDeal 13 damage to ALL enemies.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Fair Shake+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 13 Block.\nDeal 16 damage to ALL enemies.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Fool Plate",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your hand.\nGain 2 Temporary_HP for each card.\nExhaust."
+    },
+    {
+      "name": "Fool Plate+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand.\nGain 2 Temporary_HP for each card.\nExhaust."
+    },
+    {
+      "name": "Force Deck",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, draw 1 card and Topdeck 1 card from your hand."
+    },
+    {
+      "name": "Force Deck+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, draw 1 card and Topdeck 1 card from your hand."
+    },
+    {
+      "name": "Fortune",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "5",
+      "description": "Costs 1 less for each Temp._Imagination you have.\nGain 8 Block.\nDraw 1 card."
+    },
+    {
+      "name": "Fortune+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "5",
+      "description": "Costs 1 less for each Temp._Imagination you have.\nGain 10 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Frijolaegis",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you draw this card, add a copy of it into your hand.\nGain 3 Block.\nExhaust."
+    },
+    {
+      "name": "Frijolaegis+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you draw this card, add a copy of it into your hand.\nGain 4 Block.\nExhaust."
+    },
+    {
+      "name": "Fudge Deck",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, draw 1 card and discard 1 card."
+    },
+    {
+      "name": "Fudge Deck+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, draw 1 card and discard 1 card."
+    },
+    {
+      "name": "Hand Cannon",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nRetain your hand this turn."
+    },
+    {
+      "name": "Hand Cannon+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nRetain your hand this turn."
+    },
+    {
+      "name": "Heart Stab",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nApply 2 Weak.\nApply 2 Vulnerable.\nLose 1 of your highest stat."
+    },
+    {
+      "name": "Heart Stab+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nApply 2 Weak.\nApply 2 Vulnerable.\nLose 1 of your highest stat."
+    },
+    {
+      "name": "Joust",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played if no other cards in your hand are Attacks.\nDeal 8 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "Joust+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played if no other cards in your hand are Attacks.\nDeal 11 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "Kingpin Bust",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nDrop: Gain [E] ."
+    },
+    {
+      "name": "Kingpin Bust+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nDrop: Gain [E] ."
+    },
+    {
+      "name": "Leer",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all Block from the enemy.\nDeal 3 damage 3 times.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Leer+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all Block from ALL enemies.\nDeal 3 damage 3 times.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Opportunity Cost",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Permanently upgrade a card in your hand.\nLose 1 of each stat.\nRemove this card from your deck.\nPurge."
+    },
+    {
+      "name": "Opportunity Cost+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Permanently upgrade a card in your hand.\nRemove this card from your deck.\nPurge."
+    },
+    {
+      "name": "Parry",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Artifact.\nGain !sleuthSecondMagic! Thorns.\nGain 1 Auto-Parry."
+    },
+    {
+      "name": "Parry+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Artifact.\nGain !sleuthSecondMagic! Thorns.\nGain 1 Auto-Parry."
+    },
+    {
+      "name": "Retain Return",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return all cards with Retain from your discard pile to your hand.\nAt the end of your turn, discard your hand."
+    },
+    {
+      "name": "Retain Return+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Return all cards with Retain from your discard pile to your hand.\nAt the end of your turn, discard your hand."
+    },
+    {
+      "name": "Retrieve Arms",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you draw this card, add a Key/Handgun into your hand.\nEthereal."
+    },
+    {
+      "name": "Retrieve Arms+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you draw this card, add an upgraded Key/Handgun into your hand.\nEthereal."
+    },
+    {
+      "name": "Snoop Dogg Bust",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nDrop: Apply 1 Weak and 1 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Snoop Dogg Bust+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nDrop: Apply 2 Weak and 1 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Spade Dig",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 1 card from your draw pile into your hand.\nTopdeck a card from your discard pile.\nLose 1 of your highest stat."
+    },
+    {
+      "name": "Spade Dig+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 1 card from your draw pile into your hand.\nTopdeck a card from your discard pile.\nLose 1 of your highest stat."
+    },
+    {
+      "name": "Throw Hat",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 6 Block X times.\nMill X."
+    },
+    {
+      "name": "Throw Hat+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 6 Block X+1 times.\nMill X+1."
+    },
+    {
+      "name": "Tommygun/Keyring",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice. / Gain 5 Block twice.\nSwitches form at the start of your turn."
+    },
+    {
+      "name": "Tommygun/Keyring+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage twice. / Gain 6 Block twice.\nSwitches form at the start of your turn."
+    },
+    {
+      "name": "Torso Flail",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play a card in your discard pile and Exhaust it."
+    },
+    {
+      "name": "Torso Flail+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Play a card in your discard pile and Exhaust it."
+    },
+    {
+      "name": "Treaty",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nYou and the enemy cannot gain buffs for 1 turn."
+    },
+    {
+      "name": "Treaty+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nYou and ALL enemies cannot gain buffs for 1 turn."
+    },
+    {
+      "name": "Triple Scuffle",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDraw 2 cards.\nDiscard all cards drawn this way with Retain."
+    },
+    {
+      "name": "Triple Scuffle+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw 3 cards.\nDiscard all cards drawn this way with Retain."
+    },
+    {
+      "name": "Truffle Trouble",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Costs 1 less for each Vim card played this combat.\nDeal 21 damage."
+    },
+    {
+      "name": "Truffle Trouble+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Costs 1 less for each Vim card played this combat.\nDeal 24 damage."
+    },
+    {
+      "name": "Un-De-Escalate",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nYou and ALL enemies lose 1 stack of all debuffs."
+    },
+    {
+      "name": "Un-De-Escalate+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nYou lose 1 stack of all debuffs."
+    },
+    {
+      "name": "Weigh In",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nApply 2 Weak and !sleuthSecondMagic! Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Weigh In+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nApply 2 Weak and !sleuthSecondMagic! Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Wizard's Sudoku",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nIt costs 0 until played."
+    },
+    {
+      "name": "Wizard's Sudoku+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card and give it Retain this combat.\nIt costs 0 until played."
+    },
+    {
+      "name": "Brass Tacks",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage to ALL enemies.\nDiscard your hand, then draw that many cards."
+    },
+    {
+      "name": "Brass Tacks+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to ALL enemies.\nDiscard your hand, then draw that many cards."
+    },
+    {
+      "name": "Candid Bullets",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Strength.\nAt the end of your turn, lose 1 Imagination."
+    },
+    {
+      "name": "Candid Bullets+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 3 Strength.\nAt the end of your turn, lose 1 Imagination."
+    },
+    {
+      "name": "Candy Mech",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 16 Block.\nDeal 16 damage.\nLose 3 Imagination."
+    },
+    {
+      "name": "Candy Mech+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 16 Block.\nDeal 16 damage.\nLose 2 Imagination."
+    },
+    {
+      "name": "Candycorn Vampire",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": " Gain !sleuthSecondMagic! Dexterity.\nGain 3 Malleable."
+    },
+    {
+      "name": "Candycorn Vampire+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": " Gain !sleuthSecondMagic! Dexterity.\nGain 6 Malleable."
+    },
+    {
+      "name": "Conjure",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose 2: Deal 6 damage. Apply 2 Weak. Apply 2 Vulnerable."
+    },
+    {
+      "name": "Conjure+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose 3: Deal 6 damage. Apply 2 Weak. Apply 2 Vulnerable."
+    },
+    {
+      "name": "Diabeatdown",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage to the enemy with the least HP. If this kills an enemy, repeat it."
+    },
+    {
+      "name": "Diabeatdown+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 damage to the enemy with the least HP. If this kills an enemy, repeat it."
+    },
+    {
+      "name": "Gummy Zombie",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn, gain 1 Temporary_HP for each card in your hand."
+    },
+    {
+      "name": "Gummy Zombie+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, gain 1 Temporary_HP for each card in your hand."
+    },
+    {
+      "name": "Hero Bust",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Retain.\nDrop: Prevent the next time you would lose HP."
+    },
+    {
+      "name": "Hero Bust+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nDrop: Prevent the next time you would lose HP."
+    },
+    {
+      "name": "Hit the Mattresses",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to your combined stats.\nExhaust."
+    },
+    {
+      "name": "Hit the Mattresses+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to your combined stats.\nExhaust."
+    },
+    {
+      "name": "Leverage Height",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDiscard 1 card.\nDraw 1 card."
+    },
+    {
+      "name": "Leverage Height+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nDiscard 2 cards.\nDraw 2 cards."
+    },
+    {
+      "name": "Machinegun/Hairpin",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage twice. / Gain 7 Block twice.\nSwitches form whenever played."
+    },
+    {
+      "name": "Machinegun/Hairpin+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage twice. / Gain 9 Block twice.\nSwitches form whenever played."
+    },
+    {
+      "name": "Mob Rule",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies become Stunned.\nTopdeck 4 Murals."
+    },
+    {
+      "name": "Mob Rule+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies become Stunned.\nTopdeck 3 Murals."
+    },
+    {
+      "name": "Roll Boxcars",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add any 1 of the 4 Midnight Cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Roll Boxcars+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add any 1 of the 4 upgraded Midnight Cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Supermassive",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain Block equal to your Vim.\nReflect damage this turn.\nExhaust."
+    },
+    {
+      "name": "Supermassive+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain Block equal to your Vim.\nReflect damage this turn.\nExhaust."
+    },
+    {
+      "name": "The Zillyhammer",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 damage to ALL enemies.\nLose 5 Imagination."
+    },
+    {
+      "name": "The Zillyhammer+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 40 damage to ALL enemies.\nLose 4 Imagination."
+    },
+    {
+      "name": "Tootsiestein",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an Imagination card, draw 1 card."
+    },
+    {
+      "name": "Tootsiestein+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play an Imagination card, draw 1 card."
+    },
+    {
+      "name": "Weird Puzzle Shit",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 1 more for every 2 cards in your draw pile.\nAdd a Moustache_Fire into your hand."
+    },
+    {
+      "name": "Weird Puzzle Shit+",
+      "color": "Sleuth_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Costs 1 more for every 2 cards in your draw pile.\nAdd an upgraded Moustache_Fire into your hand."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Typewriter",
+      "tier": "Starter",
+      "pool": "Sleuth_gray_color",
+      "description": "When a card Purges, gain 1 Temp. HP and ALL enemies lose 1 Strength this turn.",
+      "flavorText": "Type up an UNPLEASANT NOTE to increase the enemy's SICK BURN levels."
+    },
+    {
+      "name": "Bowen Stilson Dogg",
+      "tier": "Common",
+      "pool": "Sleuth_gray_color",
+      "description": "At the start of each combat, discard 1 card from your draw pile.",
+      "flavorText": "The dreaded bust."
+    },
+    {
+      "name": "Jester of Encumbrance",
+      "tier": "Uncommon",
+      "pool": "Sleuth_gray_color",
+      "description": "At the start of each combat, choose a card in your draw pile and give it to an enemy. That card is put into your hand when the enemy is slain.",
+      "flavorText": "Exiled from CLOWN TERRITORY for the crime of BEING MISPLACED BY THE CLOWN PONTIFICATE."
+    },
+    {
+      "name": "Elf Eggs",
+      "tier": "Rare",
+      "pool": "Sleuth_gray_color",
+      "description": "Whenever you enter a Rest Site, increase your Max HP by 3.",
+      "flavorText": "You yearn to crack out the succulent yolk."
+    },
+    {
+      "name": "HAMPER OF THE JADED FOOL'S ENNUI",
+      "tier": "Special",
+      "pool": "Sleuth_gray_color",
+      "description": "Start each combat with 10 Thorns.",
+      "flavorText": "The Clown Pontificate (hereafter: \"CP\") has granted one (1) boon (hereafter: \"the product\") in exchange for the services rendered by you to slay the spire. The product may be leased for up to three combat encounters (hereafter: \"battles\") due to the eventuality in which the merchant (hereafter: \"dead-o\") is murdered. The product will be returned to CP within 3-4 business days."
+    },
+    {
+      "name": "Salted Melon",
+      "tier": "Special",
+      "pool": "Sleuth_gray_color",
+      "description": "Whenever you enter a Rest Site, increase your Max HP by 1.",
+      "flavorText": "The tastiest QUEST OF SPIRIT is satisfied."
+    },
+    {
+      "name": "Tectrixcalibur",
+      "tier": "Special",
+      "pool": "Sleuth_gray_color",
+      "description": "Start each combat with 2 Strength and 1 Dexterity.",
+      "flavorText": "Scaling!"
+    },
+    {
+      "name": "Affinity Crow",
+      "tier": "Boss",
+      "pool": "Sleuth_gray_color",
+      "description": "Enemies cannot intend to attack for more than 30 damage.",
+      "flavorText": "Heads will roll."
+    },
+    {
+      "name": "Megaton Key",
+      "tier": "Boss",
+      "pool": "Sleuth_gray_color",
+      "description": "Gain [E] at the start of your turn.\nUpon pickup, lose your leftmost 2 relics.",
+      "flavorText": "These brass knuckles are so heavy."
+    },
+    {
+      "name": "Call of Fluthlu",
+      "tier": "Shop",
+      "pool": "Sleuth_gray_color",
+      "description": "At the start of your turn, add a Dazed into your hand.",
+      "flavorText": "Surprisingly surprising."
+    },
+    {
+      "name": "Jammed Printer",
+      "tier": "Shop",
+      "pool": "Sleuth_gray_color",
+      "description": "You draw cards from the 2nd from top position of your draw pile.",
+      "flavorText": "It's stuck!"
+    }
+  ],
+  "potions": [
+    {
+      "name": "Demotion Potion",
+      "rarity": "Uncommon",
+      "description": "Enemy cannot gain Strength above 0 or debuff you."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the sleuth",
+      "type": "Player",
+      "minHP": "73",
+      "maxHP": "73"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Auto-parry",
+      "description": "At the end of combat or whenever you lose HP, gain 1 Vim and lose 1 Auto-Parry."
+    },
+    {
+      "name": "Drop",
+      "description": "Effect activates whenever this card enters the discard or exhaust pile."
+    },
+    {
+      "name": "Mill",
+      "description": "Discard an amount of cards from the top of your draw pile."
+    },
+    {
+      "name": "Moustache fire",
+      "description": "A 0-Cost Attack that puts a copy of itself on top of your draw pile."
+    },
+    {
+      "name": "Mural",
+      "description": "Murals are unplayable status cards that Retain and Exhaust when discarded."
+    },
+    {
+      "name": "Temp. imagination",
+      "description": "Temporary Imagination disappears at the end of combat."
+    },
+    {
+      "name": "Topdeck",
+      "description": "Place on top of your draw pile."
+    }
+  ]
+}

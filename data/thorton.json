@@ -1,0 +1,1562 @@
+{
+  "mod": {
+    "name": "thorton",
+    "version": "100",
+    "authors": ["Vex'd"],
+    "credits": "",
+    "description": "A very regular man.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Credit Card",
+      "color": "Thort_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Gold.\nExhaust."
+    },
+    {
+      "name": "Credit Card+",
+      "color": "Thort_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 10 Gold.\nExhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Thort_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Thort_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block."
+    },
+    {
+      "name": "Heckle",
+      "color": "Thort_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage.\nApply 1 Vulnerable.\nApply 1 Weak."
+    },
+    {
+      "name": "Heckle+",
+      "color": "Thort_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nApply 2 Vulnerable.\nApply 2 Weak."
+    },
+    {
+      "name": "Strike",
+      "color": "Thort_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Thort_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage."
+    },
+    {
+      "name": "Anger Moment",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the enemy doesn't intend to attack, apply 1 Vulnerable."
+    },
+    {
+      "name": "Anger Moment+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the enemy doesn't intend to attack, apply 2 Vulnerable."
+    },
+    {
+      "name": "Book Bash",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 6 damage X times."
+    },
+    {
+      "name": "Book Bash+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage X times."
+    },
+    {
+      "name": "Business Card",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play 10 thethorton:Business_Cards, obtain a Relic.\nExhaust."
+    },
+    {
+      "name": "Business Card+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play 10 thethorton:Business_Cards, obtain a Relic.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Cash Bash",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 5 Gold.\nDeal 10 damage.\nExhaust."
+    },
+    {
+      "name": "Cash Bash+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 6 Gold.\nDeal 12 damage.\nExhaust."
+    },
+    {
+      "name": "Cash Buffer",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Gold.\nGain 7 Block.\nExhaust."
+    },
+    {
+      "name": "Cash Buffer+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Gold.\nGain 9 Block.\nExhaust."
+    },
+    {
+      "name": "Distance",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block.\nApply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Distance+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nApply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Down Payment",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The top card of your draw pile costs 0 until played."
+    },
+    {
+      "name": "Down Payment+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The top card of your draw pile costs 0 until played."
+    },
+    {
+      "name": "Elbow Nudge",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 1 additional card next turn."
+    },
+    {
+      "name": "Elbow Nudge+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw 1 additional card next turn."
+    },
+    {
+      "name": "Fearful Run",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nthethorton:Run."
+    },
+    {
+      "name": "Fearful Run+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nthethorton:Run."
+    },
+    {
+      "name": "Hit Ahead",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nNext turn, gain [E] ."
+    },
+    {
+      "name": "Hit Ahead+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nNext turn, gain [E] ."
+    },
+    {
+      "name": "Long Term Payoff",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start of each of your turns, deal 2 damage to ALL enemies."
+    },
+    {
+      "name": "Long Term Payoff+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start of each of your turns, deal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Pocket Change",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 1 Gold.\nGain 1 Block.\nDeal 1 damage.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Pocket Change+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 2 Gold.\nGain 2 Block.\nDeal 2 damage.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Quintuple Bop",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice."
+    },
+    {
+      "name": "Quintuple Bop+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice."
+    },
+    {
+      "name": "Running Kick",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nthethorton:Run."
+    },
+    {
+      "name": "Running Kick+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nthethorton:Run."
+    },
+    {
+      "name": "Shout and Run",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nthethorton:Run."
+    },
+    {
+      "name": "Shout and Run+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak.\nthethorton:Run."
+    },
+    {
+      "name": "Stumbling Slap",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. If you have Weak, gain 5 Block."
+    },
+    {
+      "name": "Stumbling Slap+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage. If you have Weak, gain 7 Block."
+    },
+    {
+      "name": "Take Accounts",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDraw 2 cards."
+    },
+    {
+      "name": "Take Accounts+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDraw 3 cards."
+    },
+    {
+      "name": "Wailing Run",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies lose 2 Strength this turn.\nthethorton:Run."
+    },
+    {
+      "name": "Wailing Run+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies lose 3 Strength this turn.\nthethorton:Run."
+    },
+    {
+      "name": "Whirling Briefcase",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 2 Gold for each enemy.\nDeal 6 damage to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Whirling Briefcase+",
+      "color": "Thort_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 3 Gold for each enemy.\nDeal 9 damage to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Battle Trash",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nYou cannot draw additional cards this turn."
+    },
+    {
+      "name": "Battle Trash+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nYou cannot draw additional cards this turn."
+    },
+    {
+      "name": "Boardroom Blast",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to ALL enemies."
+    },
+    {
+      "name": "Boardroom Blast+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to ALL enemies."
+    },
+    {
+      "name": "Business Bash",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nAdd 1 thethorton:Business_Card into your hand.\nExhaust."
+    },
+    {
+      "name": "Business Bash+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nAdd 1 upgraded thethorton:Business_Card into your hand.\nExhaust."
+    },
+    {
+      "name": "Business Boom",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 25 damage.\nShuffle a thethorton:Business_Card into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Business Boom+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 32 damage.\nShuffle an upgraded thethorton:Business_Card into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Business Burst",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Gold.\nShuffle 2 thethorton:Business_Cards into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Business Burst+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Gold.\nShuffle 2 thethorton:Business_Cards into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Call In",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nGain 2 Frail."
+    },
+    {
+      "name": "Call In+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nGain 1 Frail."
+    },
+    {
+      "name": "Chart Project",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy intends to attack, gain 6 Block.\nOtherwise, gain [E] and draw 1 card next turn."
+    },
+    {
+      "name": "Chart Project+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nIf the enemy intends to attack, gain 6 Block.\nOtherwise, gain [E] and draw 1 card next turn."
+    },
+    {
+      "name": "Coffee Blast",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 random cards from any color into your hand.\nThey have Retain.\nExhaust."
+    },
+    {
+      "name": "Coffee Blast+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nAdd 2 random cards from any color into your hand.\nThey have Retain.\nExhaust."
+    },
+    {
+      "name": "Coin Clash",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 10 Gold.\nDeal 20 damage.\nExhaust."
+    },
+    {
+      "name": "Coin Clash+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 12 Gold.\nDeal 24 damage.\nExhaust."
+    },
+    {
+      "name": "Coin Shield",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 Gold.\nGain 14 Block.\nExhaust."
+    },
+    {
+      "name": "Coin Shield+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 Gold.\nGain 18 Block.\nExhaust."
+    },
+    {
+      "name": "Crash",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nGain 8 Block.\nthethorton:Run."
+    },
+    {
+      "name": "Crash+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nGain 10 Block.\nthethorton:Run."
+    },
+    {
+      "name": "Deep Fear",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you receive unblocked attack damage, thethorton:Run."
+    },
+    {
+      "name": "Deep Fear+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you receive unblocked attack damage, thethorton:Run."
+    },
+    {
+      "name": "Desperate Run",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nthethorton:Run."
+    },
+    {
+      "name": "Desperate Run+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nthethorton:Run."
+    },
+    {
+      "name": "Dock Pay",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nEnemy loses 1 Strength this turn."
+    },
+    {
+      "name": "Dock Pay+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nEnemy loses 2 Strength this turn."
+    },
+    {
+      "name": "Feel No Brain",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is Exhausted, gain 2 Block."
+    },
+    {
+      "name": "Feel No Brain+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever a card is Exhausted, gain 2 Block."
+    },
+    {
+      "name": "Focus Strength",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nEnd your turn."
+    },
+    {
+      "name": "Focus Strength+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nEnd your turn."
+    },
+    {
+      "name": "Hedge Fund",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nNext turn, draw 1 less card."
+    },
+    {
+      "name": "Hedge Fund+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nNext turn, draw 1 less card."
+    },
+    {
+      "name": "Hindsight",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 3 Block.\nPut a card from your discard pile into your hand."
+    },
+    {
+      "name": "Hindsight+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 5 Block.\nPut a card from your discard pile into your hand."
+    },
+    {
+      "name": "Investment",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nWhenever you play 4 thethorton:Investments, obtain a Relic.\nExhaust."
+    },
+    {
+      "name": "Investment+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nWhenever you play 4 thethorton:Investments, obtain a Relic.\nExhaust."
+    },
+    {
+      "name": "Last Ditch Effort",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nIf your HP is below 50%, deal 12 damage.\nIf your HP is below 25%, deal 12 damage."
+    },
+    {
+      "name": "Last Ditch Effort+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nIf your HP is below 50%, deal 15 damage.\nIf your HP is below 25%, deal 15 damage."
+    },
+    {
+      "name": "Long Day's Work",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 1 card.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Long Day's Work+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw 1 card.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Lunch Break",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 3 HP.\nShuffle 1 thethorton:Business_Card into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Lunch Break+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 4 HP.\nAdd 1 thethorton:Business_Card into your hand.\nExhaust."
+    },
+    {
+      "name": "Perplexing Power",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 of either Malleable, Artifact, Thorns or Plated Armor randomly."
+    },
+    {
+      "name": "Perplexing Power+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain 3 of either Malleable, Artifact, Thorns or Plated Armor randomly."
+    },
+    {
+      "name": "Plan Ahead",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose a bonus to start the next combat with.\nExhaust."
+    },
+    {
+      "name": "Plan Ahead+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a bonus to start the next combat with.\nExhaust."
+    },
+    {
+      "name": "Promotion",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Promotion+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nGain 1 Dexterity."
+    },
+    {
+      "name": "ROI",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nGain 25 Gold.\nExhaust."
+    },
+    {
+      "name": "ROI+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 25 Gold.\nExhaust."
+    },
+    {
+      "name": "Rebalance",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Strength.\nALL enemies lose 1 Strength.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Rebalance+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nALL enemies lose 1 Strength.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Run Run",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thethorton:Run.\nthethorton:Run."
+    },
+    {
+      "name": "Run Run+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thethorton:Run.\nthethorton:Run."
+    },
+    {
+      "name": "Running Business",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Gold.\nthethorton:Run.\nExhaust."
+    },
+    {
+      "name": "Running Business+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 15 Gold.\nthethorton:Run.\nExhaust."
+    },
+    {
+      "name": "Running Feint",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable.\nthethorton:Run."
+    },
+    {
+      "name": "Running Feint+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Vulnerable.\nthethorton:Run."
+    },
+    {
+      "name": "Seeing Double",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nChoose a card in your hand.\nPut 2 copies of that card on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Seeing Double+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nChoose a card in your hand.\nPut 2 copies of that card on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Snow Day",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Frost.\nthethorton:Run.\nExhaust."
+    },
+    {
+      "name": "Snow Day+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Frost.\nthethorton:Run.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Stamp Smack",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDeal 7 damage to a random enemy at the start of the next combat.\nExhaust."
+    },
+    {
+      "name": "Stamp Smack+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nDeal 9 damage to a random enemy at the start of the next combat.\nExhaust."
+    },
+    {
+      "name": "Thick Skin",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose non-Temporary HP, gain 2 Temporary_HP."
+    },
+    {
+      "name": "Thick Skin+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you lose non-Temporary HP, gain 2 Temporary_HP."
+    },
+    {
+      "name": "Toxic Greed",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Poison to a random enemy. Repeat this process up to 5 times for every 100 Gold you have.\nExhaust."
+    },
+    {
+      "name": "Toxic Greed+",
+      "color": "Thort_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Poison to a random enemy. Repeat this process up to 5 times for every 100 Gold you have.\nExhaust."
+    },
+    {
+      "name": "Administrative Actions",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Choose any Thorton card and put it on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Administrative Actions+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose any Thorton card and put it on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Big Break",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Strength."
+    },
+    {
+      "name": "Big Break+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain 3 Strength."
+    },
+    {
+      "name": "Blood Debt",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nGain Temporary_HP equal to unblocked damage.\nExhaust."
+    },
+    {
+      "name": "Blood Debt+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nGain Temporary_HP equal to unblocked damage.\nExhaust."
+    },
+    {
+      "name": "Boss Rush",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy becomes a random Boss."
+    },
+    {
+      "name": "Boss Rush+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enemy becomes a random Boss."
+    },
+    {
+      "name": "Call Of Commerce",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nGain 15 Gold.\nThe next ? room you enter contains a shop.\nExhaust."
+    },
+    {
+      "name": "Call Of Commerce+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nGain 15 Gold.\nThe next ? room you enter contains a shop.\nExhaust."
+    },
+    {
+      "name": "Cardboard Box",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Intangible."
+    },
+    {
+      "name": "Cardboard Box+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Intangible."
+    },
+    {
+      "name": "Compound Interest",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust.\nChoose 1:\nDouble this card's Gold permanently.\nGain 2 Gold and remove this card from your deck permanently."
+    },
+    {
+      "name": "Compound Interest+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust.\nChoose 1:\nDouble this card's Gold permanently.\nGain 2 Gold and remove this card from your deck permanently."
+    },
+    {
+      "name": "Coward Form",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "thethorton:Run.\nAt the start of your turn, thethorton:Run."
+    },
+    {
+      "name": "Coward Form+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "thethorton:Run.\nAt the start of your turn, thethorton:Run."
+    },
+    {
+      "name": "Crashing Stocks",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "If you have at least 100 Gold, lose 100 Gold and deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Crashing Stocks+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If you have at least 100 Gold, lose 100 Gold and deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Demotion",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "ALL enemies cannot buff themselves or debuff you.\nExhaust."
+    },
+    {
+      "name": "Demotion+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies cannot buff themselves or debuff you.\nExhaust."
+    },
+    {
+      "name": "Dodge & Roll & Run",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 Block.\nNext turn, gain 9 Block.\nthethorton:Run."
+    },
+    {
+      "name": "Dodge & Roll & Run+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nNext turn, gain 11 Block.\nthethorton:Run."
+    },
+    {
+      "name": "Escape!",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "33% chance to escape a non-boss combat.\nReceive no rewards.\nthethorton:Run.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Escape!+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "33% chance to escape a non-boss combat.\nthethorton:Run.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Fair Trade",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card in your hand.\nPut a card from your exhaust pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Fair Trade+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card in your hand.\nPut a card from your exhaust pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Fatigue",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply Weak equal to your held Gold.\nExhaust."
+    },
+    {
+      "name": "Fatigue+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply Weak equal to your held Gold.\nExhaust."
+    },
+    {
+      "name": "Fortune",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X5 Gold.\nthethorton:Run.\nExhaust."
+    },
+    {
+      "name": "Fortune+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X5 Gold.\nGain [E] .\nthethorton:Run.\nExhaust."
+    },
+    {
+      "name": "Golden Petal",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nCard rewards from this combat are Rare cards from any class.\nFleeting."
+    },
+    {
+      "name": "Golden Petal+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nCard rewards from this combat are Rare cards from any class.\nExhaust."
+    },
+    {
+      "name": "Hexaghostify",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Grave.\nEnemy becomes a Hexaghost.\nExhaust."
+    },
+    {
+      "name": "Hexaghostify+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Grave.\nALL enemies become Hexaghosts.\nExhaust."
+    },
+    {
+      "name": "Impossible?",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "thethorton:Locked.\nDeal\n200000\ndamage."
+    },
+    {
+      "name": "Impossible?+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "thethorton:Locked.\nDeal\n1180000\ndamage."
+    },
+    {
+      "name": "Jackpot",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Upon pickup, gain 300 Gold.\nExhaust."
+    },
+    {
+      "name": "Jackpot+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Upon pickup, gain 300 Gold.\nExhaust."
+    },
+    {
+      "name": "Just Business",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 1 Intangible.\nExhaust ALL your cards.\nChoose an Intent at the start of your turn."
+    },
+    {
+      "name": "Just Business+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Intangible.\nExhaust ALL your cards.\nChoose an Intent at the start of your turn."
+    },
+    {
+      "name": "Message From Our Sponsors",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nFun fact: You can commission me to make your custom mod idea! Contact Vex'd#2468 on Discord for more info."
+    },
+    {
+      "name": "Message From Our Sponsors+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Ethereal.\nCost cannot be modified.\nObtain a Relic.\nExhaust."
+    },
+    {
+      "name": "Midnight Strike",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played if you have played exactly 11 cards this combat.\nDeal 100 damage.\nExhaust."
+    },
+    {
+      "name": "Midnight Strike+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if you have played exactly 11 cards this combat.\nDeal 100 damage.\nExhaust."
+    },
+    {
+      "name": "Penny Toss",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 11 Gold.\nGain 11 Block.\nDeal 11 damage.\nExhaust."
+    },
+    {
+      "name": "Penny Toss+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 11 Gold.\nGain 11 Block.\nDeal 11 damage.\nExhaust."
+    },
+    {
+      "name": "Planned Obsolescence",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDeal 5 damage to this Act's boss.\nExhaust."
+    },
+    {
+      "name": "Planned Obsolescence+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDeal 6 damage to this Act's boss.\nExhaust."
+    },
+    {
+      "name": "Portfolio",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Gold.\nShuffle 2 thethorton:Business_Cards and 1 thethorton:Investment into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Portfolio+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Gold.\nShuffle 2 upgraded thethorton:Business_Cards and 1 upgraded thethorton:Investment into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Scaling Is Win",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 1 Strength."
+    },
+    {
+      "name": "Scaling Is Win+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 1 Strength and draw 1 additional card."
+    },
+    {
+      "name": "Sell Short",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nAdd 1 copy of a card in your hand to your deck permanently.\nExhaust."
+    },
+    {
+      "name": "Sell Short+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nAdd 1 copy of a card in your hand to your deck permanently.\nExhaust."
+    },
+    {
+      "name": "Shifting Octopus",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Do 2 things.\nExhaust."
+    },
+    {
+      "name": "Shifting Octopus+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Do 2 things.\nExhaust."
+    },
+    {
+      "name": "Slot Machine",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nLose 15 Gold.\nPlay a slot machine.\nExhaust."
+    },
+    {
+      "name": "Slot Machine+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nLose 15 Gold.\nPlay a slot machine.\nExhaust."
+    },
+    {
+      "name": "Summon Profits",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 1 random card from any color into your hand.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Summon Profits+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 1 random card from any color into your hand.\nDraw 1 card.\nThey cost 0 until played.\nExhaust."
+    },
+    {
+      "name": "Temporal Blast",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nPlay a copy of the next card you play this turn at the start of the next combat.\nExhaust."
+    },
+    {
+      "name": "Temporal Blast+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nPlay a copy of the next card you play this turn at the start of the next combat.\nExhaust."
+    },
+    {
+      "name": "The Key",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Unlock a thethorton:Locked card in your hand.\nExhaust."
+    },
+    {
+      "name": "The Key+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Unlock a thethorton:Locked card in your hand.\nExhaust."
+    },
+    {
+      "name": "You're Fired",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nRemove all of your debuffs."
+    },
+    {
+      "name": "You're Fired+",
+      "color": "Thort_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 26 damage.\nRemove all of your debuffs."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Potion of Courage",
+      "tier": "Starter",
+      "pool": "Thort_gray_color",
+      "description": "Start each Elite combat with 2 Strength.",
+      "flavorText": "Drink in emergencies."
+    },
+    {
+      "name": "Business Card Printer",
+      "tier": "Common",
+      "pool": "Thort_gray_color",
+      "description": "At the start of each combat, add a thethorton:Business_Card into your hand.",
+      "flavorText": "Look at that subtle off-white color. The tasteful thickness of it. Oh my God, it even has a watermark."
+    },
+    {
+      "name": "Bank Deed",
+      "tier": "Uncommon",
+      "pool": "Thort_gray_color",
+      "description": "Whenever you climb a floor, gain 2% interest on held Gold.",
+      "flavorText": "Dad gave this to me."
+    },
+    {
+      "name": "Helm of Sprinting",
+      "tier": "Rare",
+      "pool": "Thort_gray_color",
+      "description": "At the start of each combat, add a random card with thethorton:Run into your hand. It costs 0 this combat.",
+      "flavorText": "Helps escape efforts."
+    },
+    {
+      "name": "Bottled Funds",
+      "tier": "Boss",
+      "pool": "Thort_gray_color",
+      "description": "Upon pickup, choose a card in your deck. At the start of each combat, play and Exhaust a copy of it.",
+      "flavorText": "Looking empty."
+    },
+    {
+      "name": "Lucky Clover",
+      "tier": "Boss",
+      "pool": "Thort_gray_color",
+      "description": "66% chance to gain [E] at the start of your turn.",
+      "flavorText": "Why ever stop?"
+    },
+    {
+      "name": "Monopoly",
+      "tier": "Boss",
+      "pool": "Thort_gray_color",
+      "description": "Gain 50% more Gold from all sources.",
+      "flavorText": "I just can't help myself."
+    },
+    {
+      "name": "Necklace of Time",
+      "tier": "Boss",
+      "pool": "Thort_gray_color",
+      "description": "Replaces Potion of Courage.\nA copy of the first card you play from your hand each combat is played at the start of the next combat.",
+      "flavorText": "Your secret powers, revealed!"
+    },
+    {
+      "name": "Broken Calculator",
+      "tier": "Shop",
+      "pool": "Thort_gray_color",
+      "description": "At the start of each combat, play a random Thorton card.",
+      "flavorText": "So what if the math's in my favor?"
+    },
+    {
+      "name": "Resume",
+      "tier": "Shop",
+      "pool": "Thort_gray_color",
+      "description": "The amount of thethorton:Business_Cards required to obtain a Relic is reduced by 3.",
+      "flavorText": "Graduate of the University of Chicago."
+    },
+    {
+      "name": "Running Start",
+      "tier": "Shop",
+      "pool": "Thort_gray_color",
+      "description": "Running now carries over between fights.",
+      "flavorText": "I used to do track, you know."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Thorton",
+      "type": "Player",
+      "minHP": "68",
+      "maxHP": "68"
+    }
+  ],
+  "keywords": [
+  ]
+}
