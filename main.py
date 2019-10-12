@@ -10,7 +10,7 @@ load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
-prefix = '@'
+prefix = '?'
 
 class Mod_Data:
     def __init__(self, id):
