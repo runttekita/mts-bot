@@ -78,8 +78,13 @@ async def card(channel, tokenized_message):
     cards = Mod_Data(tokenized_message[1]).data
     if len(tokenized_message) == 3:
         if tokenized_message[2] == 'random':
-            await channel.send(card_format(random.choice(cards[0]['cards'])))
-            return
+            if 'mod' in cards[0]:
+                await channel.send(card_format(random.choice(cards[0]['cards']), cards[0]['mod']['name']))
+                return
+            else:
+                card = random.choice(cards[0]['cards'])
+                await channel.send(card_format(random.choice(card, card['mod'])))
+                return
     if len(tokenized_message) == 2:
         if tokenized_message[1] == 'random':
             mod_object = random.choice(cards)
@@ -170,8 +175,8 @@ async def keyword(channel, tokenized_message):
 async def help_command(channel):
     await channel.send(f'I can look up modded info with {prefix}card, {prefix}relic or {prefix}keyword!')
 
-def card_format(card):
-    return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`\n{5}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['color'], remove_keyword_prefixes(card['description']))
+def card_format(card, id):
+    return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['color'], id, remove_keyword_prefixes(card['description']))
 
 def relic_format(relic):
     if relic['pool'] == '':
