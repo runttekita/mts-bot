@@ -50,7 +50,7 @@ async def on_message(message):
         
 async def get_id(message):
     s = message.content.lower()
-    if os.path.exists(f'data/{s.split(' ')[1]}.json'):
+    if os.path.exists(f'data/{s.split(" ")[1]}.json'):
         tokenized_message  = s.split(' ', 1)
     else:
         tokenized_message = s.split(' ', 2)
@@ -72,19 +72,35 @@ async def send_failure(channel, tokenized_message):
 async def card(channel, tokenized_message):
     cards = Mod_Data(tokenized_message[1]).data['cards']
     for card in cards:
-        if tokenized_message[2] == card['name'].lower():
-            await channel.send(card_format(card))
-            return
-    await channel.send(f'No card named {tokenized_message[2]} found in {tokenized_message[1]}')
+        if len(tokenized_message) == 3:
+            if tokenized_message[2] == card['name'].lower():
+                await channel.send(card_format(card))
+                return
+        else:
+            if tokenized_message[1] == card['name'].lower():
+                await channel.send(card_format(card))
+                return
+    if (len(tokenized_message == 3:
+        await channel.send(f'No card named {tokenized_message[2]} found in {tokenized_message[1]}.')
+    else:
+        await channel.send(f'No card named {tokenized_message[1] found.')
 
 @client.event
 async def relic(channel, tokenized_message):
     relics = Mod_Data(tokenized_message[1]).data['relics']
     for relic in relics:
-        if tokenized_message[2] == relic['name'].lower():
-            await channel.send(relic_format(relic))
-            return
-    await channel.send(f'No relic named ${tokenized_message[2]} found in {tokenized_message[1]}')
+        if len(tokenized_message) == 3:
+            if tokenized_message[2] == relic['name'].lower():
+                await channel.send(relic_format(relic))
+                return
+        else:
+            if tokenized_message[1] == relic['name'].lower():
+                await channel.send(relic_format(relic))
+                return
+    if (len(tokenized_message == 3:
+        await channel.send(f'No relic named {tokenized_message[2]} found in {tokenized_message[1]}.')
+    else:
+        await channel.send(f'No relic named {tokenized_message[1] found.')
 
 def card_format(card):
     return "**{0}**\n{1}  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], card['description'])
