@@ -1,0 +1,1494 @@
+{
+  "mod": {
+    "name": "The Bladedancer",
+    "version": "1.0",
+    "authors": ["Rattus"],
+    "credits": "",
+    "description": "A character mod.",
+    "mts_version": "3.10.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Wrongful Footwork",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nGets added into your deck whenever you switch to the Stance you're already in.\nEthereal."
+    },
+    {
+      "name": "Defend",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nConduit 1."
+    },
+    {
+      "name": "Defend+",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nConduit 2."
+    },
+    {
+      "name": "Gale",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage.\nDeal 1 damage to all enemies.\nAdd a Zephyr to your hand. Conduit 1.\nExhaust. Ethereal."
+    },
+    {
+      "name": "Gale+",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage.\nDeal 2 damage to all enemies.\nAdd a Zephyr to your hand. Conduit 1.\nExhaust. Ethereal."
+    },
+    {
+      "name": "Lacerate",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nConduit 1.\nExhaust."
+    },
+    {
+      "name": "Lacerate+",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nConduit 1.\nExhaust."
+    },
+    {
+      "name": "Strike",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nConduit 1."
+    },
+    {
+      "name": "Strike+",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nConduit 2."
+    },
+    {
+      "name": "Zephyr",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nDeal 2 damage to all enemies. Conduit 1.\nExhaust. Ethereal."
+    },
+    {
+      "name": "Zephyr+",
+      "color": "Default_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDeal 3 damage to all enemies. Conduit 1.\nExhaust. Ethereal."
+    },
+    {
+      "name": "Air Slash",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you're in [#00FF2A]Wind[] [#00FF2A]Stance[], deal 7 damage again."
+    },
+    {
+      "name": "Air Slash+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf you're in [#00FF2A]Wind[] [#00FF2A]Stance[], deal 10 damage again."
+    },
+    {
+      "name": "Aspect of Lightning",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enter [#4A8CFF]Lightning[] [#4A8CFF]Stance[].\nExhaust."
+    },
+    {
+      "name": "Aspect of Lightning+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enter [#4A8CFF]Lightning[] [#4A8CFF]Stance[]."
+    },
+    {
+      "name": "Aspect of Wind",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enter [#00FF2A]Wind[] [#00FF2A]Stance[].\nExhaust."
+    },
+    {
+      "name": "Aspect of Wind+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enter [#00FF2A]Wind[] [#00FF2A]Stance[]."
+    },
+    {
+      "name": "Awakening Defend",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nConduit 1."
+    },
+    {
+      "name": "Awakening Defend+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nConduit 2."
+    },
+    {
+      "name": "Awakening Strike",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nConduit 1."
+    },
+    {
+      "name": "Awakening Strike+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nConduit 2."
+    },
+    {
+      "name": "Battle Plan",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain [E] and draw 2 more cards.\nIf you're in a Stance, gain 2 Charges."
+    },
+    {
+      "name": "Battle Plan+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain [E] [E] and draw 3 more cards.\nIf you're in a Stance, gain 2 Charges."
+    },
+    {
+      "name": "Bloody Blow",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nBloodied: Apply 4 Bleeding.\nConduit 1."
+    },
+    {
+      "name": "Bloody Blow+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nBloodied: Apply 5 Bleeding.\nConduit 2."
+    },
+    {
+      "name": "Charging Up",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nConduit 3."
+    },
+    {
+      "name": "Charging Up+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nConduit 4."
+    },
+    {
+      "name": "Cut",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nOn Stance switch, add this card from the Discard pile to your Hand.\nConduit 1."
+    },
+    {
+      "name": "Cut+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nOn Stance switch, add this card from the Discard pile to your Hand.\nConduit 1."
+    },
+    {
+      "name": "Dagger and Cloak",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd a Lacerate to your hand.\nConduit 1."
+    },
+    {
+      "name": "Dagger and Cloak+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd 2 Lacerates to your hand.\nConduit 1."
+    },
+    {
+      "name": "Dragon Strike",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 1 [#860037]Combo[]."
+    },
+    {
+      "name": "Dragon Strike+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 2 [#860037]Combo[]."
+    },
+    {
+      "name": "Flurry",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Havoc Blade. Draw 2 cards."
+    },
+    {
+      "name": "Flurry+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Havoc Blade. Draw 3 cards."
+    },
+    {
+      "name": "Frontflip",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDraw 2 cards.\nConduit 1."
+    },
+    {
+      "name": "Frontflip+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDraw 3 cards.\nConduit 2."
+    },
+    {
+      "name": "Furious Strike",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 7 [#FF4500]Fury[]."
+    },
+    {
+      "name": "Furious Strike+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 10 [#FF4500]Fury[]."
+    },
+    {
+      "name": "Leeching Strike",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nBloodied: Deal an additional 3 damage and heal 3 HP."
+    },
+    {
+      "name": "Leeching Strike+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nBloodied: Deal an additional 5 damage and heal 5 HP."
+    },
+    {
+      "name": "Not Barrage",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage for each Blade channeled."
+    },
+    {
+      "name": "Not Barrage+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage for each Blade channeled."
+    },
+    {
+      "name": "Not Dualcast",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Evoke your next Blade twice."
+    },
+    {
+      "name": "Not Dualcast+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Evoke your next Blade twice."
+    },
+    {
+      "name": "Parrying Strike",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage. Channel 1 Parry Blade.\nConduit 1.\nExhaust."
+    },
+    {
+      "name": "Parrying Strike+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage. Channel 1 Parry Blade.\nConduit 1.\nExhaust."
+    },
+    {
+      "name": "Quickstep",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "If you're not in a Stance, switch to a random Stance."
+    },
+    {
+      "name": "Quickstep+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nIf you're not in a Stance, switch to a random Stance."
+    },
+    {
+      "name": "Safeguard",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nChannel 1 Havoc Blade.\nConduit 1."
+    },
+    {
+      "name": "Safeguard+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nChannel 1 Havoc Blade.\nConduit 2."
+    },
+    {
+      "name": "Sharpen",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block.\nUpgrade a random card in your hand for the rest of the combat."
+    },
+    {
+      "name": "Sharpen+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block.\nUpgrade 2 random cards in your hand for the rest of the combat."
+    },
+    {
+      "name": "Slice",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nDraw 1 card.\nConduit 1."
+    },
+    {
+      "name": "Slice+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nDraw 1 card.\nConduit 1."
+    },
+    {
+      "name": "Sly Stabs",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Lacerate to your hand for each type of Charge you currently have."
+    },
+    {
+      "name": "Sly Stabs+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Lacerate to your hand for each type of Charge you currently have.\nAdd a Lacerate to your hand."
+    },
+    {
+      "name": "Stabilize",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Artifact."
+    },
+    {
+      "name": "Stabilize+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 2 Artifact."
+    },
+    {
+      "name": "Sunder",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 5 damage.\nGain 1 Focus until the end of your turn.\nConduit 1."
+    },
+    {
+      "name": "Sunder+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 7 damage.\nGain 1 Focus until the end of your turn.\nConduit 2."
+    },
+    {
+      "name": "Thrust",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage."
+    },
+    {
+      "name": "Thrust+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage."
+    },
+    {
+      "name": "Thunder Slash",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you're in [#4A8CFF]Lightning[] [#4A8CFF]Stance[], deal 7 damage again."
+    },
+    {
+      "name": "Thunder Slash+",
+      "color": "Default_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf you're in [#4A8CFF]Lightning[] [#4A8CFF]Stance[], deal 10 damage again."
+    },
+    {
+      "name": "Ancestral Healing",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Remove all of your Charges. Gain 2 HP per Charge removed.\nExhaust."
+    },
+    {
+      "name": "Ancestral Healing+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all of your Charges. Gain 2 HP per Charge removed.\nExhaust."
+    },
+    {
+      "name": "Blade Cross",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Evoke your first Blade to do 7 damage again."
+    },
+    {
+      "name": "Blade Cross+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Evoke your first Blade to do 10 damage again."
+    },
+    {
+      "name": "Blade Mastery",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Channel 2 Havoc Blades.\nExhaust."
+    },
+    {
+      "name": "Blade Mastery+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Channel 3 Havoc Blades.\nExhaust."
+    },
+    {
+      "name": "Blockade",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever your Havoc Blades attack, gain 2 Block."
+    },
+    {
+      "name": "Blockade+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever your Havoc Blades attack, gain 3 Block."
+    },
+    {
+      "name": "Bloodbath",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a Skill, apply 1 Bleeding to ALL enemies."
+    },
+    {
+      "name": "Bloodbath+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a Skill, apply 2 Bleeding to ALL enemies."
+    },
+    {
+      "name": "Bloody Wind",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal [W]  damage and apply 4 Bleeding to ALL enemies. (Deals !W! damage.)"
+    },
+    {
+      "name": "Bloody Wind+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal [W]  damage and apply 7 Bleeding to ALL enemies. (Deals !W! damage.)"
+    },
+    {
+      "name": "Brain Bloom",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Focus until the end of your turn.\nExhaust."
+    },
+    {
+      "name": "Brain Bloom+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Focus until the end of your turn.\nExhaust."
+    },
+    {
+      "name": "Breeze",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nDeal 1 damage to all enemies. Add a Gale to your hand.\nConduit 1."
+    },
+    {
+      "name": "Breeze+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nDeal 2 damage to all enemies. Add a Gale to your hand.\nConduit 1."
+    },
+    {
+      "name": "Culling Strike",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nIf the target has less than 20% HP remaining, kill it.\nConduit 1."
+    },
+    {
+      "name": "Culling Strike+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the target has less than 25% HP remaining, kill it.\nConduit 1."
+    },
+    {
+      "name": "Dancing Edge",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage and apply 4 Bleeding to a random enemy 3 times."
+    },
+    {
+      "name": "Dancing Edge+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage and apply 4 Bleeding to a random enemy 4 times."
+    },
+    {
+      "name": "Deadly Dance",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 7 Bleeding to ALL enemies.\nGain 10 Block."
+    },
+    {
+      "name": "Deadly Dance+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 10 Bleeding to ALL enemies.\nGain 13 Block."
+    },
+    {
+      "name": "Discharge",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Discharge+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block."
+    },
+    {
+      "name": "Eye of the Storm",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you're attacked, reduce the damage by 1 and gain [L] ."
+    },
+    {
+      "name": "Eye of the Storm+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you're attacked, reduce the damage by 1 and gain [L] ."
+    },
+    {
+      "name": "Eye of the Tornado",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you're attacked, reduce the damage by 1 and gain [W] ."
+    },
+    {
+      "name": "Eye of the Tornado+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you're attacked, reduce the damage by 1 and gain [W] ."
+    },
+    {
+      "name": "Frenzy",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. Apply 3 Bleeding to yourself.\nBloodied: Don't apply the Bleeding."
+    },
+    {
+      "name": "Frenzy+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage. Apply 3 Bleeding to yourself.\nBloodied: Don't apply the Bleeding."
+    },
+    {
+      "name": "Gust",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nGain 7 Block. Enter [#00FF2A]Wind Stance[].\nExhaust."
+    },
+    {
+      "name": "Gust+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nGain 10 Block. Enter [#00FF2A]Wind Stance[].\nExhaust."
+    },
+    {
+      "name": "Hailwind",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Consume ALL your  [W] to deal 3 damage per every [W]  you have."
+    },
+    {
+      "name": "Hailwind+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Consume ALL your  [W] to deal 4 damage per every [W]  you have."
+    },
+    {
+      "name": "Havoc",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Channel 1 Havoc Blade.\nExhaust."
+    },
+    {
+      "name": "Havoc+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nChannel 1 Havoc Blade.\nExhaust."
+    },
+    {
+      "name": "Ki Barrier",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [W]  + [L]  Block. (Gives !WPL! Block.)"
+    },
+    {
+      "name": "Ki Barrier+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\n[#00FF2A]Gain[] [W]   + [L]  Block. (Gives !WPL! Block.)"
+    },
+    {
+      "name": "Lightning Crash",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nEnter [#4A8CFF]\u03C0Lightning Stance[]."
+    },
+    {
+      "name": "Lightning Crash+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nEnter [#4A8CFF]\u03C0Lightning Stance[]."
+    },
+    {
+      "name": "Meditate",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you channel a Blade, heal 3 HP."
+    },
+    {
+      "name": "Meditate+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you channel a Blade, heal 3 HP."
+    },
+    {
+      "name": "Momentum",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you change Stances, deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Momentum+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you change Stances, deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "One Trick Pony",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "You can no longer change Stances. Whenever you would've changed Stances, draw a card."
+    },
+    {
+      "name": "One Trick Pony+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "You can no longer change Stances. Whenever you would've changed Stances, draw a card."
+    },
+    {
+      "name": "Overcharge",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, deal damage equal to the number of your Charges to random enemies."
+    },
+    {
+      "name": "Overcharge+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the end of your turn, deal damage equal to the number of your Charges to random enemies."
+    },
+    {
+      "name": "Quickness",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you change Stances, draw 1 card."
+    },
+    {
+      "name": "Quickness+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you change Stances, draw 1 card."
+    },
+    {
+      "name": "Reversal",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Only playable while in a Stance.\n[#00FF2A]Wind[]: Deal 7 damage to a random enemy. Enter [#4A8CFF]\u03C0Lightning Stance[].\n[#4A8CFF]\u03C0Lightning[]: Gain 6 Block. Enter [#00FF2A]Wind Stance[]."
+    },
+    {
+      "name": "Reversal+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Only playable while in a Stance.\n[#00FF2A]Wind[]: Deal 10 damage to a random enemy. Enter [#4A8CFF]\u03C0Lightning Stance[].\n[#4A8CFF]\u03C0Lightning[]: Gain 9 Block. Enter [#00FF2A]Wind Stance[]."
+    },
+    {
+      "name": "Rupture",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double an enemy's Bleeding.\nExhaust."
+    },
+    {
+      "name": "Rupture+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nDouble an enemy's Bleeding.\nExhaust."
+    },
+    {
+      "name": "Sharp Blades",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Your Havoc Blades apply 1 Bleeding on hit."
+    },
+    {
+      "name": "Sharp Blades+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your Havoc Blades apply 1 Bleeding on hit."
+    },
+    {
+      "name": "Stormstrike",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nConsume ALL your  [L] to deal 2 [L]  additional damage.\n(Deals !L2! additional damage.)"
+    },
+    {
+      "name": "Stormstrike+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nConsume ALL your  [L] to deal 3 [L]  additional damage.\n(Deals !L3! additional damage.)"
+    },
+    {
+      "name": "Thundering Opener",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate.\nDeal 5 damage. Enter [#4A8CFF]\u03C0Lightning Stance[].\nExhaust."
+    },
+    {
+      "name": "Thundering Opener+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate.\nDeal 7 damage. Enter [#4A8CFF]\u03C0Lightning Stance[].\nExhaust."
+    },
+    {
+      "name": "Traverse Cut",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice."
+    },
+    {
+      "name": "Traverse Cut+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice."
+    },
+    {
+      "name": "Vortex",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 5 Bleeding to ALL enemies."
+    },
+    {
+      "name": "Vortex+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 7 Bleeding to ALL enemies."
+    },
+    {
+      "name": "Wind Slash",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nDeal 2 damage to all enemies.\nEnter [#00FF2A]Wind Stance[]."
+    },
+    {
+      "name": "Wind Slash+",
+      "color": "Default_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nDeal 4 damage to all enemies.\nEnter [#00FF2A]Wind Stance[]."
+    },
+    {
+      "name": "Blade Dance",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Finisher. Requires 40 [#FF4500]Fury[] and 8 [#860037]Combo[].\nYour Havoc Blades deal double damage."
+    },
+    {
+      "name": "Blade Dance+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Finisher. Retain. Requires 40 [#FF4500]Fury[] and 8 [#860037]Combo[].\nYour Havoc Blades deal double damage."
+    },
+    {
+      "name": "Blindside",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage to ALL enemies."
+    },
+    {
+      "name": "Blindside+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Cloud of Steel",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 1 Lacerate to your hand for each Blade channeled.\nExhaust."
+    },
+    {
+      "name": "Cloud of Steel+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 Lacerate to your hand for each Blade channeled.\nExhaust."
+    },
+    {
+      "name": "Cold Blood",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Finisher. Requires 6 [#860037]Combo[].\nGain 4 Dexterity.\nGain 4 Strength."
+    },
+    {
+      "name": "Cold Blood+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Finisher. Requires 6 [#860037]Combo[].\nGain 5 Dexterity.\nGain 5 Strength."
+    },
+    {
+      "name": "Empower",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] . Draw 1 card.\nConduit 3.\nExhaust."
+    },
+    {
+      "name": "Empower+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E] . Draw 2 cards.\nConduit 5.\nExhaust."
+    },
+    {
+      "name": "Enchanted Cuirass",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Finisher. Requires 5 [#860037]Combo[].\nGain 8 Metallicize."
+    },
+    {
+      "name": "Enchanted Cuirass+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Finisher. Requires 5 [#860037]Combo[].\nGain 11 Metallicize."
+    },
+    {
+      "name": "Flash",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 12 [#FF4500]Fury[].\nDeal 5 damage. Apply 3 Bleeding.\nAdd a copy of this card to your hand. It costs 6 [#FF4500]Fury[] more. Conduit 1.\nExhaust."
+    },
+    {
+      "name": "Flash+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 12 [#FF4500]Fury[].\nDeal 7 damage. Apply 3 Bleeding.\nAdd a copy of this card to your hand. It costs 6 [#FF4500]Fury[] more. Conduit 1.\nExhaust."
+    },
+    {
+      "name": "Flock Of Blades",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Finisher. Requires 30 [#FF4500]Fury[] and 6 [#860037]Combo[].\nChannel 3 Havoc Blades."
+    },
+    {
+      "name": "Flock Of Blades+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Finisher. Requires 30 [#FF4500]Fury[] and 6 [#860037]Combo[].\nChannel 5 Havoc Blades."
+    },
+    {
+      "name": "Fury Of The Elements",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 25 [#FF4500]Fury[].\nDouble the amount your Charges. Deal damage equal the sum of ALL your Charges to ALL enemies."
+    },
+    {
+      "name": "Fury Of The Elements+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 20 [#FF4500]Fury[].\nDouble the amount your Charges. Deal damage equal the sum of ALL your Charges to ALL enemies."
+    },
+    {
+      "name": "High Voltage",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Finisher. Requires 3 [#860037]Combo[].\nGain 8 Block."
+    },
+    {
+      "name": "High Voltage+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Finisher. Requires 3 [#860037]Combo[].\nGain 11 Block."
+    },
+    {
+      "name": "Lightning Draw",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 20 [#FF4500]Fury[].\nDeal 9 damage and apply 3 Bleeding to ALL enemies.\nEnter [#4A8CFF]\u03C0Lightning Stance[]."
+    },
+    {
+      "name": "Lightning Draw+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 20 [#FF4500]Fury[].\nDeal 13 damage and apply 4 Bleeding to ALL enemies.\nEnter [#4A8CFF]\u03C0Lightning Stance[]."
+    },
+    {
+      "name": "Not Fission",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all your Blades. For each Blade removed, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Not Fission+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Evoke all your Blades. For each blade Evoked, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Raging Blow",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 10 [#FF4500]Fury[].\nDeal 8 damage.\nBloodied: Deals double damage."
+    },
+    {
+      "name": "Raging Blow+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 10 [#FF4500]Fury[].\nDeal 12 damage.\nBloodied: Deals double damage."
+    },
+    {
+      "name": "Rolling Typhoon",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 30 [#FF4500]Fury[].\nDeal 20 damage. Deal 10 damage to all enemies."
+    },
+    {
+      "name": "Rolling Typhoon+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 30 [#FF4500]Fury[].\nDeal 30 damage. Deal 15 damage to all enemies."
+    },
+    {
+      "name": "Stance Mastery",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you gain a Charge, gain an additional Charge."
+    },
+    {
+      "name": "Stance Mastery+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain a Charge, gain an additional Charge."
+    },
+    {
+      "name": "Three Point Strike",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 4 [#860037]Combo[].\nDeal 3 damage thrice. Gain 5 Block. Draw 1 card."
+    },
+    {
+      "name": "Three Point Strike+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Finisher. Requires 4 [#860037]Combo[].\nDeal 4 damage thrice. Gain 8 Block. Draw 2 cards."
+    },
+    {
+      "name": "Unrelenting Wind",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Finisher. Requires 5 [#860037]Combo[].\nEnter [#00FF2A]Wind Stance[]. Gain 4 Block and [W] [W] [W]  per enemy. Apply 6 Bleeding to ALL enemies."
+    },
+    {
+      "name": "Unrelenting Wind+",
+      "color": "Default_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Finisher. Requires 5 [#860037]Combo[].\nEnter [#00FF2A]Wind Stance[]. Gain 6 Block and [W] [W] [W]  per enemy. Apply 9 Bleeding to ALL enemies."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Dancer's Amulet",
+      "tier": "Starter",
+      "pool": "Default_gray",
+      "description": "Whenever you play 3 cards in a single turn, draw 1 card.",
+      "flavorText": "A mildly special amulet, I suppose."
+    },
+    {
+      "name": "Perk: Alacrity",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "At the start of each turn, gain 1 Combo.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Blades",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "At the start of each combat, channel 1 random Blade.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Combatant",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "Start each combat with 3 Combo.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Critical Hits",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "Your Lacerates apply 2 Bleeding.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Deep Cuts",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "Bleeding enemies take 30% more damage rather than 20%.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Dexterous",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "Start each combat with 1 Dexterity.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Endless Rage",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "At the start of each turn, gain 5 Fury.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Furious",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "Start each combat with 15 Fury.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Healthy Stances",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "At the end of combat,heal 6 HP if you're in a Stance.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Hypercharge",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "Whenever you're attacked, if you're in a Stance, gain 1 Charge.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Lightning Stance Mastery",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "At the start of your turn, if you're in Lightning Stance gain 3 Lightning Charges if you have none. Otherwise, gain 1 Lightning Charge.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Offensive Stance Mastery",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "At the start of combat, switch your Stance to a random Stance.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Strong",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "Start each combat with 1 Strength.",
+      "flavorText": ""
+    },
+    {
+      "name": "Perk: Wind Stance Mastery",
+      "tier": "Special",
+      "pool": "Default_gray",
+      "description": "At the start of your turn, if you're in Wind Stance gain 3 Wind Charges if you have none. Otherwise, gain 1 Wind Charge.",
+      "flavorText": ""
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Bladedancer",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Awaken",
+      "description": "Awaken one of your spectral blades, making them more potent based on your current Stance."
+    },
+    {
+      "name": "Bleeding",
+      "description": "Bleeding enemies take 20% more damage from attacks, and take damage at the end of the round. Bleeding decays by 3 at the end."
+    },
+    {
+      "name": "Bloodied",
+      "description": "An effect that's applied if the target has less than 50% HP remaining."
+    },
+    {
+      "name": "Charge",
+      "description": "A resource for stance-oriented cards."
+    },
+    {
+      "name": "Conduit",
+      "description": "Whenever you play this card while in a Stance, gain X Charges."
+    },
+    {
+      "name": "Finisher",
+      "description": "A powerful card that uses Fury or Combo as a resource."
+    },
+    {
+      "name": "Havoc",
+      "description": "A spectral blade that deals damage to enemies you attack."
+    },
+    {
+      "name": "Lacerate",
+      "description": "A 0-cost attack that deals 2 damage and exhausts."
+    },
+    {
+      "name": "Parry",
+      "description": "A spectral blade that reduces the damage taken whenever you're struck."
+    },
+    {
+      "name": "Stance",
+      "description": "A battle Stance which determines the type of Charges you get. There are 2 Stances: Wind and Lightning. Upon switching to a Stance, Awaken a Blade."
+    }
+  ]
+}
