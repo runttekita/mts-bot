@@ -1,0 +1,1339 @@
+{
+  "mod": {
+    "name": "The Cursed",
+    "version": "1.1.6",
+    "authors": ["jhp109"],
+    "credits": "",
+    "description": "A new character who uses curse and magic circle to fight against enemies.  \n \nThe Cursed adds 75 cards (plus 1 extra card), 11 new character-specific relics, and 1 new potion. \nAlso Constructed Theme Deck option is available in its config.",
+    "mts_version": "3.8.3",
+    "sts_version": "07-17-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Dregs",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable."
+    },
+    {
+      "name": "Clean up Workshop",
+      "color": "The_cursed_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ritual : Gain 3 Block and draw 1 card."
+    },
+    {
+      "name": "Clean up Workshop+",
+      "color": "The_cursed_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ritual : Gain 4 Block and draw 2 cards."
+    },
+    {
+      "name": "Cursed Wand",
+      "color": "The_cursed_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDeal 7 damage.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Cursed Wand+",
+      "color": "The_cursed_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDeal 9 damage.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Defend",
+      "color": "The_cursed_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "The_cursed_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "The_cursed_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "The_cursed_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Circle of Corruption",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a Skill card, deal 5 damage to a random enemy."
+    },
+    {
+      "name": "Circle of Corruption+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a Skill card, deal 8 damage to a random enemy."
+    },
+    {
+      "name": "Circle of Flame",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play an Attack card, deal 2 damage to ALL enemies."
+    },
+    {
+      "name": "Circle of Flame+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play an Attack card, deal 4 damage to ALL enemies."
+    },
+    {
+      "name": "Cursed Amulet",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nDraw 1 card.\nShuffle a random Curse card into your draw pile."
+    },
+    {
+      "name": "Cursed Amulet+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nDraw 1 card.\nShuffle a random Curse card into your draw pile."
+    },
+    {
+      "name": "Cursed Blade",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Cursed Blade+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Cursed Mace",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nApply 2 Vulnerable.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Cursed Mace+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nApply 3 Vulnerable.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Cursed Shiv",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Cursed Shiv+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Flesh from Bone",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ritual : Gain 3 Plated Armor."
+    },
+    {
+      "name": "Flesh from Bone+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ritual : Gain 4 Plated Armor."
+    },
+    {
+      "name": "Obscuration",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nRitual : Gain 6 Block again."
+    },
+    {
+      "name": "Obscuration+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nRitual : Gain 8 Block again."
+    },
+    {
+      "name": "Rapid Movement",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nRitual : Draw 2 cards."
+    },
+    {
+      "name": "Rapid Movement+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nRitual : Draw 2 cards."
+    },
+    {
+      "name": "Raving Staff",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage to a random enemy X times."
+    },
+    {
+      "name": "Raving Staff+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 11 damage to a random enemy X times."
+    },
+    {
+      "name": "Smoke Screen",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nRitual : Apply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Smoke Screen+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nRitual : Apply 3 Weak to ALL enemies."
+    },
+    {
+      "name": "Spiteful Strike",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nIf you have any Curse card in your hand, gain [E] [E]."
+    },
+    {
+      "name": "Spiteful Strike+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nIf you have any Curse card in your hand, gain [E] [E]."
+    },
+    {
+      "name": "Stigma",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 3 Bleed."
+    },
+    {
+      "name": "Stigma+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply 4 Bleed."
+    },
+    {
+      "name": "Stretching",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Dexterity.\nAt the end of this turn, lose 2 Dexterity."
+    },
+    {
+      "name": "Stretching+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Dexterity.\nAt the end of this turn, lose 4 Dexterity."
+    },
+    {
+      "name": "Surprise Attack",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 5 damage.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Surprise Attack+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 8 damage.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Tactical Strike",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nNext turn, draw 1 additional card."
+    },
+    {
+      "name": "Tactical Strike+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nNext turn, draw 2 additional cards."
+    },
+    {
+      "name": "Torture",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 Bleed."
+    },
+    {
+      "name": "Torture+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 Bleed."
+    },
+    {
+      "name": "Vital Strike",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the enemy has Bleed, double the damage."
+    },
+    {
+      "name": "Vital Strike+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nIf the enemy has Bleed, double the damage."
+    },
+    {
+      "name": "Wear Cloak",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf you have any Curse card in your hand, gain [E]."
+    },
+    {
+      "name": "Wear Cloak+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nIf you have any Curse card in your hand, gain [E]."
+    },
+    {
+      "name": "Wield",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw cards equal to the number of Unplayable cards in your hand."
+    },
+    {
+      "name": "Wield+",
+      "color": "The_cursed_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw cards equal to the number of Unplayable cards in your hand."
+    },
+    {
+      "name": "Abyss Shockwave",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to ALL enemies.\nIf you have any Curse in your hand, deal same damage again."
+    },
+    {
+      "name": "Abyss Shockwave+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to ALL enemies.\nIf you have any Curse in your hand, deal same damage again."
+    },
+    {
+      "name": "Ashes to Ashes",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ritual : Draw 4 cards."
+    },
+    {
+      "name": "Ashes to Ashes+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ritual : Draw 5 cards."
+    },
+    {
+      "name": "Blessing in Disguise",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all Curse cards in your hand.\nGain 8 Block for each card Exhausted."
+    },
+    {
+      "name": "Blessing in Disguise+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all Curse cards in your hand.\nGain 10 Block for each card Exhausted."
+    },
+    {
+      "name": "Blood Barrier",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ritual : Gain Block equal to your max HP minus your current HP.\nExhaust."
+    },
+    {
+      "name": "Blood Barrier+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ritual : Gain Block equal to your max HP minus your current HP.\nExhaust."
+    },
+    {
+      "name": "Circle of Amplification",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a Power card, draw 1 card.\nEthereal."
+    },
+    {
+      "name": "Circle of Amplification+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a Power card, gain [E] and draw 1 card.\nEthereal."
+    },
+    {
+      "name": "Circle of Blood",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play an Attack card, heal 2 HP.\nEthereal."
+    },
+    {
+      "name": "Circle of Blood+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play an Attack card, heal 4 HP.\nEthereal."
+    },
+    {
+      "name": "Circle of Focus",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a card that costs 3 or more, gain [E]."
+    },
+    {
+      "name": "Circle of Focus+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a card that costs 2 or more, gain [E]."
+    },
+    {
+      "name": "Circle of Windfury",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a cost 0 card, draw 1 card.\nEthereal."
+    },
+    {
+      "name": "Circle of Windfury+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a cost 0 card, draw 1 card."
+    },
+    {
+      "name": "Cursed Armor",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block.\nShuffle 2 random Curse cards into your draw pile."
+    },
+    {
+      "name": "Cursed Armor+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 25 Block.\nShuffle 2 random Curse cards into your draw pile."
+    },
+    {
+      "name": "Cursed Boomerang",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to a random enemy 3 times.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Cursed Boomerang+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to a random enemy 4 times.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Cursed Spellbook",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nShuffle a random Curse card into your draw pile."
+    },
+    {
+      "name": "Cursed Spellbook+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 4 cards.\nShuffle a random Curse card into your draw pile."
+    },
+    {
+      "name": "Cursed Staff",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage.\nAdd 2 Dregs cards into your hand."
+    },
+    {
+      "name": "Cursed Staff+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 damage.\nAdd 2 Dregs cards into your hand."
+    },
+    {
+      "name": "Double Shield",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nRitual : Next turn, gain 10 Block."
+    },
+    {
+      "name": "Double Shield+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nRitual : Next turn, gain 14 Block."
+    },
+    {
+      "name": "Empower Circles",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you draw a Circle card, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Empower Circles+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you draw a Circle card, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Evocation",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ritual : Remove all of your debuffs.\nExhaust."
+    },
+    {
+      "name": "Evocation+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ritual : Remove all of your debuffs. If there is no debuff, gain 1 Artifact.\nExhaust."
+    },
+    {
+      "name": "Fury Strike",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nReduce the cost of all Strike cards in your hand to 0 this turn."
+    },
+    {
+      "name": "Fury Strike+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nReduce the cost of all Strike cards in your hand to 0 this turn."
+    },
+    {
+      "name": "Grudge",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random Ritual card into your hand.\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Grudge+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random Ritual card into your hand.\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Hell's Gate Open",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a random Cursed card into your hand."
+    },
+    {
+      "name": "Hell's Gate Open+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, add a random Cursed card into your hand."
+    },
+    {
+      "name": "Hellfire Breathing",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw a Curse card, deal 4 damage to ALL enemies."
+    },
+    {
+      "name": "Hellfire Breathing+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you draw a Curse card, deal 4 damage to ALL enemies."
+    },
+    {
+      "name": "Hemoplague",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 2 Bleed to ALL enemies."
+    },
+    {
+      "name": "Hemoplague+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, apply 2 Bleed to ALL enemies."
+    },
+    {
+      "name": "Lucky Charm",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a Curse card is drawn or Exhausted, gain 3 Block."
+    },
+    {
+      "name": "Lucky Charm+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a Curse card is drawn or Exhausted, gain 4 Block."
+    },
+    {
+      "name": "Mana Bullet",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage for each Curse card in your hand."
+    },
+    {
+      "name": "Mana Bullet+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage for each Unplayable card in your hand."
+    },
+    {
+      "name": "Mangle",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nIf the enemy has Bleed,\ngain [E] and\ndraw 1 card."
+    },
+    {
+      "name": "Mangle+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf the enemy has Bleed,\ngain [E] and\ndraw 1 card."
+    },
+    {
+      "name": "Prepare Ritual",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust any number of non-Curse cards, then add that many Dregs cards into your hand.\nExhaust."
+    },
+    {
+      "name": "Prepare Ritual+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust any number of non-Curse cards, then add that many Dregs cards into your hand."
+    },
+    {
+      "name": "Released Knowledge",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ritual : Add a random Circle card into your hand.\nExhaust."
+    },
+    {
+      "name": "Released Knowledge+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ritual : Add a random Circle card into your hand."
+    },
+    {
+      "name": "Released Strength",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ritual : Gain 3 Strength.\nEthereal."
+    },
+    {
+      "name": "Released Strength+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ritual : Gain 4 Strength.\nEthereal."
+    },
+    {
+      "name": "Salt upon Wound",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy immediately loses HP by its Bleed 2 times.\nApply 6 Bleed."
+    },
+    {
+      "name": "Salt upon Wound+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy immediately loses HP by its Bleed 2 times.\nApply 9 Bleed."
+    },
+    {
+      "name": "Soul Crush",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all Curse cards in your hand.\nDeal 18 damage."
+    },
+    {
+      "name": "Soul Crush+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all Curse cards in your hand.\nDeal 22 damage."
+    },
+    {
+      "name": "Soul Reap",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Heal HP equal to unblocked damage.\nExhaust."
+    },
+    {
+      "name": "Soul Reap+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Heal HP equal to unblocked damage.\nExhaust."
+    },
+    {
+      "name": "Spiteful Plan",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw a Curse card, draw 1 card."
+    },
+    {
+      "name": "Spiteful Plan+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw a Curse card, draw 2 cards."
+    },
+    {
+      "name": "Spiteful Pray",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E].\nIf you have any Curse card in your hand, gain additional [E].\nExhaust."
+    },
+    {
+      "name": "Spiteful Pray+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nIf you have any Curse card in your hand, gain additional [E].\nExhaust."
+    },
+    {
+      "name": "Spread Plague",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 4 Bleed and 3 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Spread Plague+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 7 Bleed and 3 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Sting Eye",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nApply 1 Weak.\nApply 1 Bleed."
+    },
+    {
+      "name": "Sting Eye+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nApply 2 Weak.\nApply 2 Bleed."
+    },
+    {
+      "name": "Troublous Minions",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you draw this card, add a copy of it into your hand.\nGain 5 Block and add a Dregs card into your hand.\nExhaust."
+    },
+    {
+      "name": "Troublous Minions+",
+      "color": "The_cursed_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you draw this card, add a copy of it into your hand.\nGain 7 Block and add a Dregs card into your hand.\nExhaust."
+    },
+    {
+      "name": "Anti-Aging",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Block.\nRitual : Raise your max HP by 2.\nExhaust."
+    },
+    {
+      "name": "Anti-Aging+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 Block.\nRitual : Raise your max HP by 3.\nExhaust."
+    },
+    {
+      "name": "Circle of Abyss",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a card, gain 2 Block.\nIf this card is Exhausted, gain [E]."
+    },
+    {
+      "name": "Circle of Abyss+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Circle.\nWhenever you play a card, gain 3 Block.\nIf this card is Exhausted,\ngain [E] [E]."
+    },
+    {
+      "name": "Collect Tribute",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, gain [E] and add a random Curse card into your hand."
+    },
+    {
+      "name": "Collect Tribute+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of your turn, gain [E] and add a random Curse card into your hand."
+    },
+    {
+      "name": "Cursed Relics",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 2 times the number of Relics you have.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Cursed Relics+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 3 times the number of Relics you have.\nAdd a Dregs card into your hand."
+    },
+    {
+      "name": "Dark Barrier",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ritual : Gain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Dark Barrier+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ritual : Gain 2 Intangible.\nExhaust."
+    },
+    {
+      "name": "Demon Sword",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nExhaust all Curse cards in your hand and gain 1 Strength for each Exhausted card."
+    },
+    {
+      "name": "Demon Sword+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nExhaust all Curse cards in your hand and gain 1 Strength for each Exhausted card."
+    },
+    {
+      "name": "Demonic Pact",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a Ritual card, draw 1 card."
+    },
+    {
+      "name": "Demonic Pact+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a Ritual card, draw 1 card."
+    },
+    {
+      "name": "Forbidden Alchemy",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ritual : Obtain an Entropic Brew potion.\nExhaust."
+    },
+    {
+      "name": "Forbidden Alchemy+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ritual : Obtain an Entropic Brew potion.\nExhaust."
+    },
+    {
+      "name": "Mana Circulation",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "5",
+      "description": "Whenever a Curse card is Exhausted, gain [E].\nEthereal."
+    },
+    {
+      "name": "Mana Circulation+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "5",
+      "description": "Whenever a Curse card is Exhausted, gain [E]."
+    },
+    {
+      "name": "Neow's Might",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nReduce the cost of all cards in your hand by 1 this turn.\nExhaust."
+    },
+    {
+      "name": "Neow's Might+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nReduce the cost of all cards in your hand by 1 this turn.\nExhaust."
+    },
+    {
+      "name": "Neurasthenia",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all Curse cards in your hand.\nEnemy loses Strength by 1 plus the number of Exhausted cards.\nExhaust."
+    },
+    {
+      "name": "Neurasthenia+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust all Curse cards in your hand.\nEnemy loses Strength by 1 plus the number of Exhausted cards.\nExhaust."
+    },
+    {
+      "name": "Out for Blood",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever an Attack deals unblocked damage, apply 1 Bleed."
+    },
+    {
+      "name": "Out for Blood+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever an Attack deals unblocked damage, apply 2 Bleed."
+    },
+    {
+      "name": "Parallel World",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Copy all cards in your hand and Shuffle them into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Parallel World+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Copy all cards in your hand and Shuffle them into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Shock and Awe",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage 3 times.\nShuffle 2 random Curse cards into your draw pile."
+    },
+    {
+      "name": "Shock and Awe+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 14 damage 3 times.\nShuffle 2 random Curse cards into your draw pile."
+    },
+    {
+      "name": "Stunning Strike",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage.\nIf the enemy intends to attack, apply 1 Stun.\nExhaust."
+    },
+    {
+      "name": "Stunning Strike+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 28 damage.\nIf the enemy intends to attack, apply 1 Stun.\nExhaust."
+    },
+    {
+      "name": "Ultimate Pain",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "ALL enemies immediately loses HP by its Bleed X times."
+    },
+    {
+      "name": "Ultimate Pain+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "ALL enemies immediately loses HP by its Bleed X+1 times."
+    },
+    {
+      "name": "Void Form",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Shuffle 2 random Curse cards into your draw pile.\nWhenever you draw a Curse, gain 2 Strength."
+    },
+    {
+      "name": "Void Form+",
+      "color": "The_cursed_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Shuffle 2 random Curse cards into your draw pile.\nWhenever you draw a Curse, gain 3 Strength."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Black Magic 101",
+      "tier": "Starter",
+      "pool": "The_cursed_purple",
+      "description": "At the start of your turn, draw 1 additional card if your draw pile has any Curse card.",
+      "flavorText": "Learn about black magic now!!! {4th Edition}"
+    },
+    {
+      "name": "Tack",
+      "tier": "Common",
+      "pool": "The_cursed_purple",
+      "description": "At the start of each combat, apply 4 Bleed to ALL enemies.",
+      "flavorText": "It hurts when stepping on."
+    },
+    {
+      "name": "Bloody Harpoon",
+      "tier": "Uncommon",
+      "pool": "The_cursed_purple",
+      "description": "Whenever you apply Bleed, apply an additional 1 Bleed.",
+      "flavorText": "Piercing with it, cannot move!"
+    },
+    {
+      "name": "Demonic Mark",
+      "tier": "Uncommon",
+      "pool": "The_cursed_purple",
+      "description": "Every time you activate an effect of Circle 3 times in a single turn, gain 1 Strength.",
+      "flavorText": "If you've seen this mark somewhere, you're just wrong. (Firmly)"
+    },
+    {
+      "name": "Crystal Ball",
+      "tier": "Rare",
+      "pool": "The_cursed_purple",
+      "description": "Whenever a Curse card is Exhausted, deal 5 damage to a random enemy.",
+      "flavorText": "Did you say the color looks like Prismatic Shard? You've gone too far."
+    },
+    {
+      "name": "Magic Candle",
+      "tier": "Rare",
+      "pool": "The_cursed_purple",
+      "description": "Every time you activate an effect of Circle 10 times, gain [E].",
+      "flavorText": "It collects nearby mana during ritual."
+    },
+    {
+      "name": "Soul Vessel",
+      "tier": "Rare",
+      "pool": "The_cursed_purple",
+      "description": "At the end of combat, heal HP equal to the number of Exhausted Curse cards in this combat.",
+      "flavorText": "The feast of souls begins now!"
+    },
+    {
+      "name": "Black Magic Advanced",
+      "tier": "Boss",
+      "pool": "The_cursed_purple",
+      "description": "Replaces Black Magic 101. At the start of your turn, draw 2 additional cards if your draw pile has any Curse card.",
+      "flavorText": "[The effects of curses and magic circles on human's body and side effects]"
+    },
+    {
+      "name": "Four-Leaf Clover Charm",
+      "tier": "Boss",
+      "pool": "The_cursed_purple",
+      "description": "Every time a card or a relic generates a random Curse card during combat, replace it with Dregs.",
+      "flavorText": "Good luck and happiness come from gratitude."
+    },
+    {
+      "name": "Ominous Mark",
+      "tier": "Boss",
+      "pool": "The_cursed_purple",
+      "description": "Gain [E] at the start of your turn. At the start of combat, shuffle 2 random Curse cards into your draw pile.",
+      "flavorText": "Take a closer look, the mark looks shaking..."
+    },
+    {
+      "name": "Pink Pellets",
+      "tier": "Shop",
+      "pool": "The_cursed_purple",
+      "description": "Every time you activate an effect of Circle 5 times in a single turn, remove all of your debuffs.",
+      "flavorText": "Selling with Orange Pellets!"
+    }
+  ],
+  "potions": [
+    {
+      "name": "Dregs Potion",
+      "rarity": "Uncommon",
+      "description": "Add 1 Dregs card into your hand."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Cursed",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Bleed",
+      "description": "Bleeding creature loses HP whenever it Attacks. Each turn, Bleed is reduced by 1."
+    },
+    {
+      "name": "Circle",
+      "description": "An Unplayable card that can be activated by using other cards while in hand."
+    },
+    {
+      "name": "Cursed",
+      "description": "Any card with the word \"Cursed\" in its name. Using it will make Dregs or random Curse cards."
+    },
+    {
+      "name": "Dregs",
+      "description": "Dregs are unplayable Curse cards."
+    },
+    {
+      "name": "Ritual",
+      "description": "When using, choose 1 card to Exhaust. Selecting a Curse card will activate the Ritual's effect."
+    }
+  ]
+}

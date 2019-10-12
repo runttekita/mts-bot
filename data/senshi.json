@@ -1,0 +1,1369 @@
+{
+  "mod": {
+    "name": "The Senshi",
+    "version": "1.0.2",
+    "authors": ["Aelie"],
+    "credits": "",
+    "description": "A character based on Sailor Moon.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Moon Prism\nPower, Make Up!",
+      "color": "Senshi_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "0",
+      "description": "thesenshi:Transform 10."
+    },
+    {
+      "name": "Moon Prism\nPower, Make Up!+",
+      "color": "Senshi_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nthesenshi:Transform 10."
+    },
+    {
+      "name": "Rose Throw",
+      "color": "Senshi_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Rose Throw+",
+      "color": "Senshi_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nApply 2 Vulnerable.\nGain 2 thesenshi:Determination."
+    },
+    {
+      "name": "Sailor Block",
+      "color": "Senshi_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Sailor Block+",
+      "color": "Senshi_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 thesenshi:Magic."
+    },
+    {
+      "name": "Sailor Kick",
+      "color": "Senshi_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nthesenshi:Magical !theSenshi:Magical!."
+    },
+    {
+      "name": "Sailor Kick+",
+      "color": "Senshi_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nthesenshi:Magical !theSenshi:Magical!."
+    },
+    {
+      "name": "Encouraging Speech",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 thesenshi:Determination."
+    },
+    {
+      "name": "Encouraging Speech+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 thesenshi:Determination."
+    },
+    {
+      "name": "Fire Soul Bird",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nthesenshi:Teamwork:\nDeal 6 damage."
+    },
+    {
+      "name": "Fire Soul Bird+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nthesenshi:Teamwork:\nDeal 6 damage 2 times."
+    },
+    {
+      "name": "Late For School",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 Cards.\nLose !theSenshi:SecondMagic! thesenshi:Determination."
+    },
+    {
+      "name": "Late For School+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 Cards.\nLose !theSenshi:SecondMagic! thesenshi:Determination."
+    },
+    {
+      "name": "Luna's Bite",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 3 times."
+    },
+    {
+      "name": "Luna's Bite+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 4 times."
+    },
+    {
+      "name": "Luna-P Throw",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nthesenshi:Teamwork:\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Luna-P Throw+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nthesenshi:Teamwork:\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Mercury Aqua Mirage",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nthesenshi:Teamwork:\nGain 3 Block."
+    },
+    {
+      "name": "Mercury Aqua Mirage+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nthesenshi:Teamwork:\nGain 5 Block."
+    },
+    {
+      "name": "Moon Kick",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Moon Kick+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Moon Power",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to !theSenshi:SecondMagic! plus 5 times your thesenshi:Determination.\nLose all thesenshi:Determination"
+    },
+    {
+      "name": "Moon Power+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to !theSenshi:SecondMagic! plus 5 times your thesenshi:Determination."
+    },
+    {
+      "name": "Moon Princess\nHalation",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Hits 2 times.\nthesenshi:Magical !theSenshi:Magical!."
+    },
+    {
+      "name": "Moon Princess\nHalation+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Hits 3 times.\nthesenshi:Magical !theSenshi:Magical!."
+    },
+    {
+      "name": "Moon Punch",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nGain 2 thesenshi:Magic."
+    },
+    {
+      "name": "Moon Punch+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nGain 3 thesenshi:Magic."
+    },
+    {
+      "name": "Moon Tiara Magic",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to up to 2 enemies.\nGain !theSenshi:SecondMagic! thesenshi:Magic for each hit."
+    },
+    {
+      "name": "Moon Tiara Magic+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to up to 3 enemies.\nGain !theSenshi:SecondMagic! thesenshi:Magic for each hit."
+    },
+    {
+      "name": "Moon's Reflection",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 thesenshi:Magic."
+    },
+    {
+      "name": "Moon's Reflection+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 thesenshi:Magic."
+    },
+    {
+      "name": "School Bag",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 3 HP.\nDraw !theSenshi:SecondMagic! card.\nExhaust."
+    },
+    {
+      "name": "School Bag+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 5 HP.\nDraw !theSenshi:SecondMagic! cards.\nExhaust."
+    },
+    {
+      "name": "Sidestep",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block. Gain 2 Block next turn."
+    },
+    {
+      "name": "Sidestep+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. Gain 3 Block next turn."
+    },
+    {
+      "name": "Sparkling Wide\nPressure",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nthesenshi:Teamwork:\nGain unblocked damage as Block."
+    },
+    {
+      "name": "Sparkling Wide\nPressure+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nthesenshi:Teamwork:\nGain unblocked damage as Block."
+    },
+    {
+      "name": "Supersonic Waves",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies.\nIf thesenshi:Determination < 0, Repeat."
+    },
+    {
+      "name": "Supersonic Waves+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nIf thesenshi:Determination < 2, Repeat."
+    },
+    {
+      "name": "Tall Silhouette",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 thesenshi:Determination."
+    },
+    {
+      "name": "Tall Silhouette+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nGain 2 thesenshi:Determination."
+    },
+    {
+      "name": "Tuxedo Smoking\nBomber",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 to ALL enemies.  Gain Block equal to damage blocked."
+    },
+    {
+      "name": "Tuxedo Smoking\nBomber+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 to ALL enemies.  Gain Block equal to damage blocked."
+    },
+    {
+      "name": "Venus Love-Me Chain",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nthesenshi:Teamwork:\nApply 2 Weak."
+    },
+    {
+      "name": "Venus Love-Me Chain+",
+      "color": "Senshi_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nthesenshi:Teamwork:\nApply 3 Weak."
+    },
+    {
+      "name": "\"He's So Dreamy\"",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Search for 1 Tuxedo Mask Card from your deck.\nLose 1 thesenshi:Determination."
+    },
+    {
+      "name": "\"He's So Dreamy\"+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Search for 1 Tuxedo Mask Card from your deck.\nIt costs 0 this turn.\nLose 1 thesenshi:Determination."
+    },
+    {
+      "name": "Burning Mandala",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thesenshi:Teamwork:\nApply 3 thesenshi:Burn X times."
+    },
+    {
+      "name": "Burning Mandala+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thesenshi:Teamwork:\nApply 5 thesenshi:Burn X times."
+    },
+    {
+      "name": "Crisis, Make Up!",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "thesenshi:Transform 30."
+    },
+    {
+      "name": "Crisis, Make Up!+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "thesenshi:Transform 30.\nGain !theSenshi:SecondMagic! Strength.\nGain !theSenshi:SecondMagic! Dexterity.\nGain !theSenshi:SecondMagic! [E] next turn."
+    },
+    {
+      "name": "Dead Scream",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nApply 15 thesenshi:Dead_Reverb."
+    },
+    {
+      "name": "Dead Scream+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nApply 20 thesenshi:Dead_Reverb."
+    },
+    {
+      "name": "Deep Submerge",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nDeal 20 damage to front enemy."
+    },
+    {
+      "name": "Deep Submerge+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nDeal 20 damage to front enemy.\nDeal 10 damage to enemies behind it."
+    },
+    {
+      "name": "Dramatic Entrance",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Convert negative thesenshi:Determination stacks to positive."
+    },
+    {
+      "name": "Dramatic Entrance+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Convert negative thesenshi:Determination stacks to positive. Gain 2 thesenshi:Determination."
+    },
+    {
+      "name": "Gathering Strength",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Store X [E] until next turn.\nExhaust."
+    },
+    {
+      "name": "Gathering Strength+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Store X+1 [E] until next turn.\nExhaust."
+    },
+    {
+      "name": "In The Nick Of Time",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block 2 Times."
+    },
+    {
+      "name": "In The Nick Of Time+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block 3 Times."
+    },
+    {
+      "name": "Klutzy Luck",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Prevent the next time you would lose HP.\nLose 5 thesenshi:Determination."
+    },
+    {
+      "name": "Klutzy Luck+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Prevent the next time you would lose HP."
+    },
+    {
+      "name": "Luna Sensing Allies",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an Assist from your draw pile and place it into your hand."
+    },
+    {
+      "name": "Luna Sensing Allies+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose an Assist from your draw pile and place it into your hand."
+    },
+    {
+      "name": "Luna, Wise Mentor",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to !theSenshi:SecondMagic! plus 3 times your thesenshi:Determination."
+    },
+    {
+      "name": "Luna, Wise Mentor+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to !theSenshi:SecondMagic! plus 5 times your thesenshi:Determination."
+    },
+    {
+      "name": "Mercury\nAqua Rhapsody",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nIf enemy intends to Attack, Deal 15 damage.\nGain Block equal to unblocked damage."
+    },
+    {
+      "name": "Mercury\nAqua Rhapsody+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nIf enemy intends to Attack, Deal 20 damage.\nGain Block equal to unblocked damage."
+    },
+    {
+      "name": "Moon Cosmic\nPower, Make Up!",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "thesenshi:Transform 10."
+    },
+    {
+      "name": "Moon Cosmic\nPower, Make Up!+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "thesenshi:Transform 10.\nGain !theSenshi:SecondMagic! Dexterity."
+    },
+    {
+      "name": "Moon Crisis, Make Up!",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "thesenshi:Transform 30."
+    },
+    {
+      "name": "Moon Crisis, Make Up!+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "thesenshi:Transform 30.\nGain !theSenshi:SecondMagic! Block at the end of each turn."
+    },
+    {
+      "name": "Moon Crystal\nPower, Make Up!",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "thesenshi:Transform 10."
+    },
+    {
+      "name": "Moon Crystal\nPower, Make Up!+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "thesenshi:Transform 10.\nGain !theSenshi:SecondMagic! Strength."
+    },
+    {
+      "name": "Moon Healing Escalation",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thesenshi:Magic_Block."
+    },
+    {
+      "name": "Moon Healing Escalation+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thesenshi:Limited_Heal 5 HP.\nthesenshi:Magic_Block."
+    },
+    {
+      "name": "Moon Spiral Heart\nAttack",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Magical !theSenshi:Magical!. \nApply 2 Weak."
+    },
+    {
+      "name": "Moon Spiral Heart\nAttack+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Magical !theSenshi:Magical!. \nApply 2 Weak."
+    },
+    {
+      "name": "Moon Twilight Flash",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nthesenshi:Magical !theSenshi:Magical!."
+    },
+    {
+      "name": "Moon Twilight Flash+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nthesenshi:Magical !theSenshi:Magical!."
+    },
+    {
+      "name": "Moonlight Knight",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 3 Skills in one turn, gain [E] next turn."
+    },
+    {
+      "name": "Moonlight Knight+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 3 Skills in one turn, gain [E]."
+    },
+    {
+      "name": "Odango Head",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove Vulnerable, Frail, and Weak.\nLose 3 thesenshi:Determination. Exhaust."
+    },
+    {
+      "name": "Odango Head+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove Vulnerable, Frail, and Weak.\nLose 2 thesenshi:Determination. Exhaust."
+    },
+    {
+      "name": "Overload",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E].\nLose 5 thesenshi:Determination."
+    },
+    {
+      "name": "Overload+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nLose 5 thesenshi:Determination."
+    },
+    {
+      "name": "Rainbow Moon\nHeart Ache",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": " thesenshi:Magical !theSenshi:Magical!."
+    },
+    {
+      "name": "Rainbow Moon\nHeart Ache+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": " thesenshi:Magical+."
+    },
+    {
+      "name": "Sailor \"V\"",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 thesenshi:Determination.\nthesenshi:Teamwork:\nApply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Sailor \"V\"+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 thesenshi:Determination.\nthesenshi:Teamwork:\nApply 3 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Sailor Planet Attack",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to !theSenshi:SecondMagic! plus 3 damage per thesenshi:Teamwork card played this combat."
+    },
+    {
+      "name": "Sailor Planet Attack+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to !theSenshi:SecondMagic! plus 5 damage per thesenshi:Teamwork card played this combat."
+    },
+    {
+      "name": "Sailor Planet Power",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal X damage per Assist card in your deck."
+    },
+    {
+      "name": "Sailor Planet Power+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal X+1 damage per card with Assist card in your deck."
+    },
+    {
+      "name": "Silence Glaive Surprise",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nDeal 10 damage.\nHeal HP equal to unblocked damage.\nExhaust."
+    },
+    {
+      "name": "Silence Glaive Surprise+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nDeal 15 damage.\nHeal HP equal to unblocked damage.\nExhaust."
+    },
+    {
+      "name": "Space Sword Blaster",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nthesenshi:Teamwork:\nTarget loses 3 Strength this turn."
+    },
+    {
+      "name": "Space Sword Blaster+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage to ALL enemies.\nthesenshi:Teamwork:\nALL enemies lose 3 Strength this turn."
+    },
+    {
+      "name": "Star Gentle Uterus",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw X Cards.\nthesenshi:Teamwork:\nGain X Strength."
+    },
+    {
+      "name": "Star Gentle Uterus+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw X+1 Cards.\nthesenshi:Teamwork:\nGain X+1 Strength."
+    },
+    {
+      "name": "Star Serious Laser",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nthesenshi:Teamwork:\nBounces to every other target, doubling damage each time."
+    },
+    {
+      "name": "Star Serious Laser+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nthesenshi:Teamwork:\nBounces to every other target, doubling damage each time."
+    },
+    {
+      "name": "Steeled Nerves",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "thesenshi:Determination can no longer go below 0."
+    },
+    {
+      "name": "Steeled Nerves+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Negative thesenshi:Determination effects are ignored."
+    },
+    {
+      "name": "Submarine Violin Tide",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nthesenshi:Teamwork:\nGain 10 Block."
+    },
+    {
+      "name": "Submarine Violin Tide+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nthesenshi:Teamwork:\nGain 10 Block.\nthesenshi:Limited_Heal 5 HP."
+    },
+    {
+      "name": "Tuxedo Rose Barrage",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies.\nthesenshi:Teamwork:\nApply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Tuxedo Rose Barrage+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage to ALL enemies.\nthesenshi:Teamwork:\nApply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Venus Love and\nBeauty Shock",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thesenshi:Teamwork:\nDeal 12 damage to ALL enemies."
+    },
+    {
+      "name": "Venus Love and\nBeauty Shock+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thesenshi:Teamwork:\nDeal 12 damage to ALL enemies.\nPlace a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "World Shaking",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thesenshi:Teamwork:\nGain 1 Strength.\nALL enemies lose 1 Strength.\nExhaust."
+    },
+    {
+      "name": "World Shaking+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thesenshi:Teamwork:\nGain 2 Strength.\nALL enemies lose 2 Strength.\nExhaust."
+    },
+    {
+      "name": "You Can Talk?",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nGain !theSenshi:SecondMagic! thesenshi:Magic."
+    },
+    {
+      "name": "You Can Talk?+",
+      "color": "Senshi_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nGain !theSenshi:SecondMagic! thesenshi:Magic."
+    },
+    {
+      "name": "\"I Will Punish You\"",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an Attack from your draw pile and place it into your hand.\nIt costs 1 less [E] this turn."
+    },
+    {
+      "name": "\"I Will Punish You\"+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose an Attack from your draw pile and place it into your hand.\nIt costs 1 less [E] this turn."
+    },
+    {
+      "name": "\"In The Name Of\nThe Moon\"",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next Attack that deals damage gains thesenshi:Magical 15."
+    },
+    {
+      "name": "\"In The Name Of\nThe Moon\"+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Your next Attack that deals damage gains thesenshi:Magical 15."
+    },
+    {
+      "name": "Chronos Typhoon",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nLose 10 HP. \nDeal damage equal to missing health."
+    },
+    {
+      "name": "Chronos Typhoon+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nLose 10 HP. \nDeal damage equal to missing health to ALL enemies."
+    },
+    {
+      "name": "Eternal Cosmos Barrier",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Negate all incoming damage until next turn.\nExhaust.\nthesenshi:Teamwork:\nGain [E] next turn."
+    },
+    {
+      "name": "Eternal Cosmos Barrier+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Negate all incoming damage until next turn.\nExhaust.\nthesenshi:Teamwork:\nGain [E] [E] next turn."
+    },
+    {
+      "name": "Fated Kiss",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "thesenshi:Determination no longer fades at the end of the turn."
+    },
+    {
+      "name": "Fated Kiss+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "thesenshi:Determination no longer fades at the end of the turn."
+    },
+    {
+      "name": "Glimpse Of The Past",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an Attack, increase thesenshi:Magic by 1."
+    },
+    {
+      "name": "Glimpse Of The Past+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an Attack, increase thesenshi:Magic by 1."
+    },
+    {
+      "name": "Moon Eternal, Make Up!",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "thesenshi:Transform 60."
+    },
+    {
+      "name": "Moon Eternal, Make Up!+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "thesenshi:Transform 60.\nGain !theSenshi:SecondMagic! thesenshi:Determination."
+    },
+    {
+      "name": "Moon Gorgeous\nMeditation",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thesenshi:Magical+.\nthesenshi:Magic_Block."
+    },
+    {
+      "name": "Moon Gorgeous\nMeditation+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Hits ALL enemies.\nthesenshi:Magical+.\nthesenshi:Magic_Block."
+    },
+    {
+      "name": "Pink Sugar Heart\nAttack",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nHeal 10 HP.\nExhaust."
+    },
+    {
+      "name": "Pink Sugar Heart\nAttack+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thesenshi:Teamwork:\nHeal 15 HP.\nExhaust."
+    },
+    {
+      "name": "Silence Glaive Slash",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 6 Block.\nthesenshi:Teamwork:\nthesenshi:Limited_Heal 5 HP."
+    },
+    {
+      "name": "Silence Glaive Slash+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGain 9 Block.\nthesenshi:Teamwork:\nthesenshi:Limited_Heal 5 HP."
+    },
+    {
+      "name": "Silver Crystal",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of every turn, trigger all thesenshi:Transform relics."
+    },
+    {
+      "name": "Silver Crystal+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of every turn, trigger all thesenshi:Transform relics."
+    },
+    {
+      "name": "Silver Moon Crystal\nPower Kiss",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "thesenshi:Magicalx2.\nLose half your thesenshi:Magic."
+    },
+    {
+      "name": "Silver Moon Crystal\nPower Kiss+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "thesenshi:Magicalx3."
+    },
+    {
+      "name": "Star Sensitive Inferno",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 5 HP. \nExhaust.\nthesenshi:Teamwork:\nGain !theSenshi:SecondMagic! Dexterity."
+    },
+    {
+      "name": "Star Sensitive Inferno+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 5 HP. \nExhaust.\nthesenshi:Teamwork:\nGain !theSenshi:SecondMagic! Dexterity."
+    },
+    {
+      "name": "Starlight Honeymoon\nTherapy Kiss",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Hits ALL enemies.\nthesenshi:Magical+."
+    },
+    {
+      "name": "Starlight Honeymoon\nTherapy Kiss+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Hits ALL enemies.\nthesenshi:Magicalx2."
+    },
+    {
+      "name": "Study Party",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of turn, draw 1 card.\nAt the end of turn, Retain !theSenshi:SecondMagic! card."
+    },
+    {
+      "name": "Study Party+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of turn, draw 1 card.\nAt the end of turn, Retain !theSenshi:SecondMagic! card."
+    },
+    {
+      "name": "Supreme Thunder",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "8",
+      "description": "Costs 1 less [E] for each Attack played this combat.\nthesenshi:Teamwork:\nDeal 4 damage for every Attack played this combat.\nExhaust."
+    },
+    {
+      "name": "Supreme Thunder+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "7",
+      "description": "Costs 1 less [E] for each Attack played this combat.\nthesenshi:Teamwork:\nDeal 6 damage for every Attack played this combat.\nExhaust."
+    },
+    {
+      "name": "Warrior Of The Moon",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the end of turn, gain Block equal to ALL unblocked damage dealt after this card is played."
+    },
+    {
+      "name": "Warrior Of The Moon+",
+      "color": "Senshi_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the end of turn, gain Block equal to ALL unblocked damage dealt after this card is played.\nApply 2 Weak."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Transformation Brooch",
+      "tier": "Starter",
+      "pool": "Senshi_color",
+      "description": "thesenshi:Transform cards gain 3 thesenshi:Magic.",
+      "flavorText": "Slowly Building Confidence."
+    },
+    {
+      "name": "Cosmic Heart Compact",
+      "tier": "Common",
+      "pool": "Senshi_color",
+      "description": "thesenshi:Transform cards gain 5 Block.",
+      "flavorText": "The Brightest Light."
+    },
+    {
+      "name": "Crystal Star",
+      "tier": "Common",
+      "pool": "Senshi_color",
+      "description": "thesenshi:Transform cards heal 2 HP.",
+      "flavorText": "Strength Through Bonds."
+    },
+    {
+      "name": "Cutie Moon Rod",
+      "tier": "Common",
+      "pool": "Senshi_color",
+      "description": "At the start of each turn, gain 1 thesenshi:Magic.",
+      "flavorText": "The Light in the Darkness."
+    },
+    {
+      "name": "Mysterious Rose",
+      "tier": "Common",
+      "pool": "Senshi_color",
+      "description": "Tuxedo Mask cards can trigger thesenshi:Teamwork effects.",
+      "flavorText": "Always there to lend a hand."
+    },
+    {
+      "name": "Sailor Fuku",
+      "tier": "Common",
+      "pool": "",
+      "description": "When you fall below 50% HP, gain 20 Block.",
+      "flavorText": "The standard uniform of a Sailor Senshi."
+    },
+    {
+      "name": "Tiara",
+      "tier": "Common",
+      "pool": "Senshi_color",
+      "description": "Once per combat, Right-Click to search your deck for 1 thesenshi:Teamwork card.",
+      "flavorText": "The Bonds of Friendship."
+    },
+    {
+      "name": "Crescent Moon Wand",
+      "tier": "Uncommon",
+      "pool": "Senshi_color",
+      "description": "When you play a card that benefits from thesenshi:Magic, gain 1 Block.",
+      "flavorText": "The Strength of Conviction."
+    },
+    {
+      "name": "Crisis Moon Compact",
+      "tier": "Uncommon",
+      "pool": "Senshi_color",
+      "description": "thesenshi:Transform cards gain 2 thesenshi:Determination.",
+      "flavorText": "The Eternal Warrior."
+    },
+    {
+      "name": "Feather Clips",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the end of each combat, gain 6 HP.",
+      "flavorText": "How does her hair stay like that?"
+    },
+    {
+      "name": "Holy Grail",
+      "tier": "Uncommon",
+      "pool": "Senshi_color",
+      "description": "thesenshi:Transform cards gain 3 Temporary HP.",
+      "flavorText": "The Purest Love."
+    },
+    {
+      "name": "Super Sailor Fuku",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of each combat, gain 10 Temporary HP.",
+      "flavorText": "A more powerful Sailor Uniform."
+    },
+    {
+      "name": "Transformation Pen",
+      "tier": "Uncommon",
+      "pool": "Senshi_color",
+      "description": "thesenshi:Transform cards cost 1  less [E] .",
+      "flavorText": "Better not leave home without it."
+    },
+    {
+      "name": "Eternal Tiare",
+      "tier": "Rare",
+      "pool": "Senshi_color",
+      "description": "thesenshi:Magic cards can deal up to 5 more damage based on Magic.",
+      "flavorText": "Restoring Sanity to Chaos."
+    },
+    {
+      "name": "Holy Moon Chalice",
+      "tier": "Rare",
+      "pool": "Senshi_color",
+      "description": "thesenshi:Transform cards gain 7 thesenshi:Magic.",
+      "flavorText": "The Original thesenshi:Magic Cannon."
+    },
+    {
+      "name": "Spiral Heart Moon Rod",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you kill a non-minion enemy, heal 2 HP.",
+      "flavorText": "The Gift of Hope."
+    },
+    {
+      "name": "Eternal Sailor Fuku",
+      "tier": "Boss",
+      "pool": "Senshi_color",
+      "description": "If you would die, revive with 25% health and 10 thesenshi:Determination.",
+      "flavorText": "The Ultimate Sailor Uniform."
+    },
+    {
+      "name": "Moon Kaleido Scope",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Once per combat, Right-Click to gain 1 Buffer. Has 3 charges.",
+      "flavorText": "The Power of Love."
+    },
+    {
+      "name": "Choker",
+      "tier": "Shop",
+      "pool": "Senshi_color",
+      "description": "At the start of each combat, gain 2 thesenshi:Determination.",
+      "flavorText": "It really brings the outfit together."
+    },
+    {
+      "name": "Red Hair Pieces",
+      "tier": "Shop",
+      "pool": "Senshi_color",
+      "description": "Once per combat, Right-Click to gain 5 thesenshi:Magic.",
+      "flavorText": "No Seriously. This hair is amazing."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Senshi",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+  ]
+}
