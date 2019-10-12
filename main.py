@@ -146,13 +146,13 @@ async def help_command(channel):
     await channel.send(f'I can look up modded info with {prefix}card, {prefix}relic or {prefix}keyword!')
 
 def card_format(card):
-    return "**{0}**\n{1}  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['mod'], card['color'], remove_keyword_prefixes(card['description']))
+    return "**{0}**\n{1}  `{2}`  `{3}`  `{4}`\n{5}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['color'], remove_keyword_prefixes(card['description']))
 
 def relic_format(relic):
-    return "**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(relic['name'], relic['tier'], relic['pool'], relic['mod'], relic['description'], relic['flavorText'])
+    return "**{0}**\n`{1}` `{2}`\n{3}\n*{4}*".format(relic['name'], relic['tier'], relic['pool'], relic['description'], relic['flavorText'])
 
 def keyword_format_mod(keyword, name, mod):
-    return "**{0}**\n`{1}`\n{2}".format(name.capitalize(), mod.capitalize(), keyword['description'])
+    return "**{0}**\n {1}".format(name.capitalize(), keyword['description'])
 
 def keyword_format(keyword, name):
     return "**{0}**\n{1}".format(name.capitalize(), keyword['description'])
