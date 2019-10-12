@@ -25,6 +25,7 @@ class Mod_Data:
             for file in os.listdir('data/'):
                 with open(f'data/{file}') as json_file:
                     data.update(json.load(json_file))
+            print(data)
             return data
 
 @client.event
@@ -49,7 +50,10 @@ async def on_message(message):
         
 async def get_id(message):
     s = message.content.lower()
-    tokenized_message  = s.split(' ', 2)
+    if os.path.exists(f'data/{s.split(' ')[1]}.json'):
+        tokenized_message  = s.split(' ', 1)
+    else:
+        tokenized_message = s.split(' ', 2)
     await do_command(message.channel, tokenized_message)
 
 async def do_command(channel, tokenized_message):
