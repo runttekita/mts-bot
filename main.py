@@ -76,6 +76,10 @@ async def send_failure(channel, tokenized_message):
 @client.event
 async def card(channel, tokenized_message):
     cards = Mod_Data(tokenized_message[1]).data
+    if len(tokenized_message) == 3:
+        if tokenized_message[2] == 'random':
+            await channel.send(card_format(random.choice(cards[0]['cards'])))
+            return
     for x in range(len(cards)):
         for card in cards[x]['cards']:
             if len(tokenized_message) == 3:
