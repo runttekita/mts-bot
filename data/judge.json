@@ -1,0 +1,1302 @@
+{
+  "mod": {
+    "name": "Wordo's Mod",
+    "version": "0.0.0",
+    "authors": ["Wordo"],
+    "credits": "Thanks to all of the people in the Discord server for helping!",
+    "description": "A test mod made by Wordo.",
+    "mts_version": "0.0.0",
+    "sts_version": "0.0.0",
+    "dependencies": [],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Ashes",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "1",
+      "description": "Exhaust."
+    },
+    {
+      "name": "Affliction",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "2",
+      "description": "If this card is Exhausted, deal 10 damage to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Foggy Mind",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "1",
+      "description": "Shuffle 3 Dazed into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Infected",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "1",
+      "description": "Gain 2 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Petrified",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "1",
+      "description": "Countdown 3:\nStun ALL enemies and exhaust this card."
+    },
+    {
+      "name": "Defend",
+      "color": "Wordo_mod_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Wordo_mod_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Ill Will",
+      "color": "Wordo_mod_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Disease."
+    },
+    {
+      "name": "Ill Will+",
+      "color": "Wordo_mod_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Disease."
+    },
+    {
+      "name": "Shackle Guard",
+      "color": "Wordo_mod_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Shackle Guard+",
+      "color": "Wordo_mod_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Block.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Strike",
+      "color": "Wordo_mod_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Wordo_mod_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Bad Memories",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Cycle 2 cards. "
+    },
+    {
+      "name": "Bad Memories+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle 2 cards. "
+    },
+    {
+      "name": "Boundless Greed",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card for each Curse card in your hand.\nExhaust."
+    },
+    {
+      "name": "Boundless Greed+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card for each Curse card in your hand."
+    },
+    {
+      "name": "Break the Chains",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card."
+    },
+    {
+      "name": "Break the Chains+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust 1 card."
+    },
+    {
+      "name": "Burden of Sin",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nNext turn, Exhaust 1 card."
+    },
+    {
+      "name": "Burden of Sin+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nNext turn, Exhaust 1 card."
+    },
+    {
+      "name": "Cursed Buckler",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nFor each card in your Exhaust pile, gain an additional 1 Block.\n(Gain 0 Block.)"
+    },
+    {
+      "name": "Cursed Buckler+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nFor each card in your Exhaust pile, gain an additional 1 Block.\n(Gain 0 Block.)"
+    },
+    {
+      "name": "Exorcism",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nApply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Exorcism+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nApply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Lantern Flame",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Lantern Flame+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Malice",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf there are no Curse cards in your hand, lose 2 HP."
+    },
+    {
+      "name": "Malice+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nIf there are no Curse cards in your hand, lose 2 HP."
+    },
+    {
+      "name": "Memento Mori",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nShuffle a random Curse into your draw pile."
+    },
+    {
+      "name": "Memento Mori+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nShuffle a random Curse into your draw pile."
+    },
+    {
+      "name": "Repent",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nExhaust 1 card."
+    },
+    {
+      "name": "Repent+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nExhaust 1 card."
+    },
+    {
+      "name": "Resurrection",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Grave.\nGain [E] [E].\nExhaust."
+    },
+    {
+      "name": "Resurrection+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Grave.\nGain [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Retaliate",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nCycle 1 card. "
+    },
+    {
+      "name": "Retaliate+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nCycle 1 card. "
+    },
+    {
+      "name": "Sacrilege",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Potency."
+    },
+    {
+      "name": "Sacrilege+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Potency."
+    },
+    {
+      "name": "Scatter Ashes",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage to a random enemy 4 times."
+    },
+    {
+      "name": "Scatter Ashes+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to a random enemy 4 times."
+    },
+    {
+      "name": "Sickness",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nApply 2 Disease."
+    },
+    {
+      "name": "Sickness+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nApply 3 Disease."
+    },
+    {
+      "name": "Soul Spear",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 1 card."
+    },
+    {
+      "name": "Soul Spear+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw 1 card."
+    },
+    {
+      "name": "Unchained",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 1 Potency."
+    },
+    {
+      "name": "Unchained+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nGain 1 Potency."
+    },
+    {
+      "name": "Vulgarity",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nMove a random Curse card from your draw pile to your hand."
+    },
+    {
+      "name": "Vulgarity+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nMove a random Curse card from your draw pile to your hand."
+    },
+    {
+      "name": "Will-O-Wisp",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Will-O-Wisp+",
+      "color": "Wordo_mod_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Afflicted Weapon",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nApply 1 Disease."
+    },
+    {
+      "name": "Afflicted Weapon+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nApply 1 Disease."
+    },
+    {
+      "name": "Bacterial Culture",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If an enemy has Disease, remove it and add 3 Scourge.\nIf the enemy does not have Disease, add 3 Disease.\nExhaust."
+    },
+    {
+      "name": "Bacterial Culture+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If an enemy has Disease, remove it and add 4 Scourge.\nIf the enemy does not have Disease, add 4 Disease.\nExhaust."
+    },
+    {
+      "name": "Behead",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nApply 4 Vulnerable."
+    },
+    {
+      "name": "Behead+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\nApply 4 Vulnerable."
+    },
+    {
+      "name": "Beneath the Mask",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 Curse cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Beneath the Mask+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 4 Curse cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Blood Thinning",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn, Exhaust up to 1 card."
+    },
+    {
+      "name": "Blood Thinning+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, Exhaust up to 1 card."
+    },
+    {
+      "name": "Cataclysm",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Potency."
+    },
+    {
+      "name": "Cataclysm+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Potency."
+    },
+    {
+      "name": "Cleanse",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "If you draw a Curse, draw a card."
+    },
+    {
+      "name": "Cleanse+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "If you draw a Curse, draw a card."
+    },
+    {
+      "name": "Cloud of Dust",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, when a card is drawn, Exhaust it and deal 12 damage to a random enemy."
+    },
+    {
+      "name": "Cloud of Dust+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, when a card is drawn, Exhaust it and deal 12 damage to a random enemy."
+    },
+    {
+      "name": "Combo",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nCountdown 2:\nGain 1 Strength."
+    },
+    {
+      "name": "Combo+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nCountdown 2:\nGain 1 Strength."
+    },
+    {
+      "name": "Contagion",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Disease.\nWhen the enemy dies, apply 3 Disease to ALL enemies."
+    },
+    {
+      "name": "Contagion+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Disease.\nWhen the enemy dies, apply 3 Disease to ALL enemies."
+    },
+    {
+      "name": "Cremate",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nShuffle 3 Ashes into your draw pile."
+    },
+    {
+      "name": "Cremate+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 22 damage.\nShuffle 3 Ashes into your draw pile."
+    },
+    {
+      "name": "Dark Bead",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal.\nDeal 25 damage.\nIf there are no Curse cards in your hand, lose 6 HP."
+    },
+    {
+      "name": "Dark Bead+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal.\nDeal 30 damage.\nIf there are no Curse cards in your hand, lose 6 HP."
+    },
+    {
+      "name": "False Diagnosis",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy has Disease, apply 3 Disease."
+    },
+    {
+      "name": "False Diagnosis+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy has Disease, apply 4 Disease."
+    },
+    {
+      "name": "Famous Technique",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block. If you have at least 3 cards in your Exhaust pile, draw 1 card."
+    },
+    {
+      "name": "Famous Technique+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. If you have at least 3 cards in your Exhaust pile, draw 2 cards."
+    },
+    {
+      "name": "Gives You Hell",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "For all Curse cards in play, deal 4 damage to a random enemy."
+    },
+    {
+      "name": "Gives You Hell+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "For all Curse cards in play, deal 6 damage to a random enemy."
+    },
+    {
+      "name": "Hold the Fort",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 30 Block.\nSolitary: This card gives 1 less Block.\n(Gain 0 Block)"
+    },
+    {
+      "name": "Hold the Fort+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 35 Block.\nSolitary: This card gives 1 less Block.\n(Gain 0 Block)"
+    },
+    {
+      "name": "Hysteria",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak and Vulnerable to a random enemy 3 times. Exhaust."
+    },
+    {
+      "name": "Hysteria+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak and Vulnerable to a random enemy 3 times. Exhaust."
+    },
+    {
+      "name": "I Curse Thee",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nFor every 2 cards in your Exhaust pile, deal an additional 2 damage."
+    },
+    {
+      "name": "I Curse Thee+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nFor every 2 cards in your Exhaust pile, deal an additional 3 damage."
+    },
+    {
+      "name": "Induce Trauma",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 30 damage.\nSolitary: This card deals 1 less damage.\n(Deal 0 Damage)"
+    },
+    {
+      "name": "Induce Trauma+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 35 damage.\nSolitary: This card deals 1 less damage.\n(Deal 0 Damage)"
+    },
+    {
+      "name": "Lord of the Flies",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Enemies take 25% more damage from Disease and Scourge."
+    },
+    {
+      "name": "Lord of the Flies+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Enemies take 25% more damage from Disease and Scourge."
+    },
+    {
+      "name": "Malice Soul",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "The next 3 times you are attacked, add a random Curse card to your draw pile."
+    },
+    {
+      "name": "Malice Soul+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The next 3 times you are attacked, add a random Curse card to your draw pile."
+    },
+    {
+      "name": "Mental Fortitude",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nIf you have no debuffs applied, gain an additional 5 Block."
+    },
+    {
+      "name": "Mental Fortitude+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf you have no debuffs applied, gain an additional 5 Block."
+    },
+    {
+      "name": "Parry",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy intends to attack, gain 5 Barbs."
+    },
+    {
+      "name": "Parry+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy intends to attack, gain 13 Barbs."
+    },
+    {
+      "name": "Penitence",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you Exhaust a card, gain 5 Block."
+    },
+    {
+      "name": "Penitence+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you Exhaust a card, gain 5 Block."
+    },
+    {
+      "name": "Pestilence",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, apply 1 Disease to ALL enemies."
+    },
+    {
+      "name": "Pestilence+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 1 Disease to ALL enemies."
+    },
+    {
+      "name": "Plague",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you apply Disease or Scourge to an enemy, deal 6 damage to a random enemy."
+    },
+    {
+      "name": "Plague+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you apply Disease or Scourge to an enemy, deal 6 damage to a random enemy."
+    },
+    {
+      "name": "Profaned Flame",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage and apply 3 Disease to each enemy if they do not have any Disease."
+    },
+    {
+      "name": "Profaned Flame+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage and apply 3 Disease to each enemy if they do not have any Disease."
+    },
+    {
+      "name": "Projectile Purge",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 3 times.\nApply 1 Disease."
+    },
+    {
+      "name": "Projectile Purge+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times.\nApply 1 Disease."
+    },
+    {
+      "name": "Purge Disease",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf the enemy has Disease, deal an additional 6 damage."
+    },
+    {
+      "name": "Purge Disease+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nIf the enemy has Disease, deal an additional 9 damage."
+    },
+    {
+      "name": "Reading",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nDraw a card. If the drawn card is a Curse, gain 3 Strength. Exhaust."
+    },
+    {
+      "name": "Reading+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nDraw a card. If the drawn card is a Curse, gain 3 Strength."
+    },
+    {
+      "name": "Rise!",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Move 2 cards from your discard pile to the top of your draw pile."
+    },
+    {
+      "name": "Rise!+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Move 3 cards from your discard pile to the top of your draw pile."
+    },
+    {
+      "name": "Risk Taker",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase an enemy's Strength by 1.\nGain 1 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Risk Taker+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase an enemy's Strength by 2.\nGain 2 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Sacrificial Rite",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust a card.\nGain 1 Strength.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Sacrificial Rite+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card.\nGain 1 Strength.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Second Chance",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nEthereal.\nExhaust your hand.\nDraw a card for each card Exhausted."
+    },
+    {
+      "name": "Second Chance+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nExhaust your hand.\nDraw a card for each card Exhausted."
+    },
+    {
+      "name": "Spite",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nIf this card does not kill an enemy, return it to your hand and increase it's cost by 1."
+    },
+    {
+      "name": "Spite+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\nIf this card does not kill an enemy, return it to your hand and increase it's cost by 1."
+    },
+    {
+      "name": "Taunt",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase an enemy's Strength by 8 for this turn.\nGain 10 Block."
+    },
+    {
+      "name": "Taunt+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase an enemy's Strength by 8 for this turn.\nGain 15 Block."
+    },
+    {
+      "name": "Thorned Fist",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 3 Barbs."
+    },
+    {
+      "name": "Thorned Fist+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 3 Barbs."
+    },
+    {
+      "name": "Wipeout",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust your hand. For every 2 cards exhausted, gain 1 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Wipeout+",
+      "color": "Wordo_mod_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand. For every 2 cards exhausted, gain 1 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Burning Dread",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust your hand.\nGain 1 Strength for each Attack Exhausted.\nGain 1 Dexterity for each Skill Exhausted.\nDeal 8 damage to ALL enemies for all other cards Exhausted.\nExhaust."
+    },
+    {
+      "name": "Burning Dread+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand.\nGain 1 Strength for each Attack Exhausted.\nGain 1 Dexterity for each Skill Exhausted.\nDeal 8 damage to ALL enemies for all other cards Exhausted.\nExhaust."
+    },
+    {
+      "name": "Conjure the Damned",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw Curse cards from your discard and draw piles until your hand is full.\nExhaust."
+    },
+    {
+      "name": "Conjure the Damned+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw Curse cards from your discard and draw piles until your hand is full.\nExhaust."
+    },
+    {
+      "name": "Dark Form",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 3 permanent Potency."
+    },
+    {
+      "name": "Dark Form+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 5 permanent Potency."
+    },
+    {
+      "name": "End of the World",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 Potency X times.\nExhaust."
+    },
+    {
+      "name": "End of the World+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 3 Potency X times.\nExhaust."
+    },
+    {
+      "name": "Great Seal",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "When you Exhaust a card, gain 1 Potency for the rest of combat."
+    },
+    {
+      "name": "Great Seal+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you Exhaust a card, gain 1 Potency for the rest of combat."
+    },
+    {
+      "name": "Highway to Hell",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 8 Scourge.\nExhaust."
+    },
+    {
+      "name": "Highway to Hell+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 13 Scourge.\nExhaust."
+    },
+    {
+      "name": "Miasma",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage to a random enemy for each card in the exhaust pile.\n(Includes this card.)\nExhaust."
+    },
+    {
+      "name": "Miasma+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage to a random enemy for each card in the exhaust pile.\n(Includes this card.)\nExhaust."
+    },
+    {
+      "name": "Monkey's Paw",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle your hand.\nCountdown 2:\nThis card becomes a Curse."
+    },
+    {
+      "name": "Monkey's Paw+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Cycle your hand.\nCountdown 3:\nThis card becomes a Curse."
+    },
+    {
+      "name": "Morbid Fascination",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage and apply 99 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Morbid Fascination+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 30 damage and apply 99 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Surgical Precision",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Deal an obscene amount of damage.\nFleeting."
+    },
+    {
+      "name": "Surgical Precision+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal an obscene amount of damage.\nFleeting."
+    },
+    {
+      "name": "The Cure",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "If the enemy has at least 25 Disease and Scourge,\ndeal 100 damage.\nExhaust. "
+    },
+    {
+      "name": "The Cure+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "If the enemy has at least 20 Disease and Scourge,\ndeal 100 damage.\nExhaust. "
+    },
+    {
+      "name": "The Ultimate Sacrifice",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust your hand.\nGain 1 Strength for each card Exhausted."
+    },
+    {
+      "name": "The Ultimate Sacrifice+",
+      "color": "Wordo_mod_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand.\nGain 1 Strength for each card Exhausted."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Effigy",
+      "tier": "Boss",
+      "pool": "Wordo_mod_color",
+      "description": "At the start of each combat, gain Judgement.",
+      "flavorText": "There was once a soul here, but it's long gone."
+    },
+    {
+      "name": "Gas Mask",
+      "tier": "Boss",
+      "pool": "Red",
+      "description": "When you Exhaust a card, add 1 point to the counter. When you enter a boss combat, heal that much.",
+      "flavorText": "Filter out the dust."
+    },
+    {
+      "name": "Obsidian",
+      "tier": "Boss",
+      "pool": "Wordo_mod_color",
+      "description": "Every 3 combats, choose a Curse card to add to your deck. Can be skipped.",
+      "flavorText": "A jet black stone, as fragile as the soul."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Judge",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Ashes",
+      "description": "A 1 cost Status card that exhausts."
+    },
+    {
+      "name": "Barbs",
+      "description": "When recieving Attack damage, deal damage back. Removed at the start of your next turn."
+    },
+    {
+      "name": "Countdown",
+      "description": "Countdown is reduced by 1 each time this card is played. Once the Countdown hits 0, the following effect is activated and the Countdown resets."
+    },
+    {
+      "name": "Counter",
+      "description": "The following effect can only be used a limited number of times."
+    },
+    {
+      "name": "Cycle",
+      "description": "Discard the number of cards shown and draw that many."
+    },
+    {
+      "name": "Disease",
+      "description": "When an enemy attacks, they will take half of the damage they inflicted. If the resulting damage is a fraction, damage is rounded down."
+    },
+    {
+      "name": "Obscene",
+      "description": "99999 damage."
+    },
+    {
+      "name": "Potency",
+      "description": "Increases the multiplier of Judgement. Cleared at the end of your turn."
+    },
+    {
+      "name": "Scourge",
+      "description": "When an enemy attacks, they will take all of the damage they inflicted. If the resulting damage is a fraction, damage is rounded down."
+    },
+    {
+      "name": "Solitary",
+      "description": "For each card currently in play (in either discard pile, hand, or draw pile), the following effect occurs."
+    },
+    {
+      "name": "Stun",
+      "description": "The enemy will not do any actions for one turn."
+    }
+  ]
+}
