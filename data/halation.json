@@ -1,0 +1,435 @@
+{
+  "mod": {
+    "name": "Halation",
+    "version": "0.0.18",
+    "authors": ["Reina","RedDyeNo5"],
+    "credits": "",
+    "description": "Content mod that adds relics, events and monsters.",
+    "mts_version": "3.6.3",
+    "sts_version": "01-03-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Letter of Admiration",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nGain [E].\nExhaust."
+    },
+    {
+      "name": "Letter of Admiration+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nGain [E] [E] .\nExhaust."
+    },
+    {
+      "name": "Letter of Love",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nGain 3 Temporary HP.\nExhaust."
+    },
+    {
+      "name": "Letter of Love+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nGain 5 Temporary HP.\nExhaust."
+    },
+    {
+      "name": "Letter of Respect",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nGain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Letter of Respect+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nGain 2 Strength.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Afternoon Tea",
+      "tier": "Common",
+      "pool": "",
+      "description": "Upon resting, gain 5 Regen next combat.",
+      "flavorText": "There's no point in apologizing for who you are. You are a beautiful person. Please don't apologize for that."
+    },
+    {
+      "name": "Ill Gained Pizza",
+      "tier": "Common",
+      "pool": "",
+      "description": "Every time an enemy attacks you, gain 1 Gold.",
+      "flavorText": "You have to obtain the pizza stealthily. If you don't, everyone will see you. And they will ask for a slice. Everyone wants a piece. Then you're left pizzaless in an unforgiving world."
+    },
+    {
+      "name": "Kosha Piece",
+      "tier": "Common",
+      "pool": "",
+      "description": "Right click during combat to activate. If you play 3 Skills, then 3 Attacks, then 1 Skill, then 1 Power, you can flee the combat.",
+      "flavorText": "I feel...a gambler's spirit emanating from you."
+    },
+    {
+      "name": "Letters to Her",
+      "tier": "Common",
+      "pool": "",
+      "description": "Obtain a new Letter at every future non-boss chest. For every Letter, shuffle 1 Letter card into your deck at the start of combat.",
+      "flavorText": ""
+    },
+    {
+      "name": "Pancakes",
+      "tier": "Common",
+      "pool": "",
+      "description": "Upon pickup, heal 75% of your missing health.",
+      "flavorText": "I heard something about delicious pancakes..."
+    },
+    {
+      "name": "Prussian Blue Paint",
+      "tier": "Common",
+      "pool": "",
+      "description": "You can now smith Curses. Smithing a Curse removes it from your deck and upgrades a random card in your deck.",
+      "flavorText": "What's that word for when you know in your heart everything in the world is going to be all right?"
+    },
+    {
+      "name": "2 AM Donut",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "If you do not play any attacks, at the end of your turn gain 1 Strength up to 4 times a combat.",
+      "flavorText": "KA KA KA"
+    },
+    {
+      "name": "Bottled Love",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup, choose a card. Upon taking damage, that card's damage is increased by 1 for the combat.",
+      "flavorText": "The world outside is filled with impurities. People I hate. People in my way. Liars. Dirty people. I need to exterminate all risks."
+    },
+    {
+      "name": "Gekota",
+      "tier": "Uncommon",
+      "pool": "Blue",
+      "description": "Right click during combat to activate. Evoke an orb.",
+      "flavorText": "Biribiri."
+    },
+    {
+      "name": "Self Boiling Water",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Gain 1 Strength at the start of combat for every charge on this relic. Gain a charge whenever you obtain a card, up to 3 . Lose all charges whenever you skip or remove a card.",
+      "flavorText": "I despise water that thinks that it boiled itself on its own. I despise seasons that think they cycle naturally. I despise the sun that thinks it rose on its own. Despise, despise, d-d-despise...I despise them. I despise you."
+    },
+    {
+      "name": "Toothbrush",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Gain 3 Max HP whenever you remove a card from your deck.",
+      "flavorText": "Get your head out of the gutter."
+    },
+    {
+      "name": "Weightless Krab",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "For every 3 Curses you draw, gain 1 Intangible.",
+      "flavorText": "I am not a friend of justice. I am an enemy of evil."
+    },
+    {
+      "name": "Black Beret",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of Elite combats, if you have less than 30% Max HP, gain 3 Intangible.",
+      "flavorText": "Can you face your fears?"
+    },
+    {
+      "name": "Orihime-Sama",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of your turn, add a random card to your hand and make it Ethereal and Exhaust.",
+      "flavorText": "A Goddess from another time. She longs for her star crossed lover."
+    },
+    {
+      "name": "Pen Case",
+      "tier": "Rare",
+      "pool": "",
+      "description": "You may now use 2 Campfire Options as long as neither option chosen is Rest.",
+      "flavorText": "That's the best part."
+    },
+    {
+      "name": "Quantum Physics Textbook",
+      "tier": "Rare",
+      "pool": "",
+      "description": "You may now also select rooms connected to a randomly chosen room on the same level starting from the next floor.",
+      "flavorText": "Something something entanglement, something something teleportation."
+    },
+    {
+      "name": "Sword of Legend",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon entering a Rest Site, heal 3 HP for every monster room you entered since you picked this up or the last Rest Site you entered.",
+      "flavorText": "Nyanpasu!"
+    },
+    {
+      "name": "Trompette",
+      "tier": "Rare",
+      "pool": "",
+      "description": "If you play only attacks in a combat, heal 10 HP.",
+      "flavorText": "You really do have an awful personality."
+    },
+    {
+      "name": "Victory Ruler",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Right click during combat to activate. Knock back an enemy into the one behind it, dealing 25% of its Max HP to both enemies. If there is no enemy behind your target, deal 2 damage.",
+      "flavorText": "The spirit of teamwork emanates from this ruler. You can feel the sacrifices it has made to make it this far."
+    },
+    {
+      "name": "Blue Soul Gem",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click during combat to activate. Take no damage this combat and reduce your Max Health to 10. Cannot be used in boss combats. Can only be used 2 times.",
+      "flavorText": "I didn\u2019t want this power so I could fight witches. I wanted it so I\u2019d have the Strength to do what\u2019s right and protect the ones I love."
+    },
+    {
+      "name": "Eternal Fortune",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, raise your Max HP by 3. Occasionally run into more Eternal Fortune.",
+      "flavorText": "A favorite among Spire Dwellers. They grow everywhere and are said to bless any ascender with good luck."
+    },
+    {
+      "name": "Papillon Heart",
+      "tier": "Special",
+      "pool": "",
+      "description": "Every 4 turns, at the start of your turn, your entire hand is played at no cost. They target random enemies.",
+      "flavorText": "It is precisely because I cannot die, that I can say, I will always be by your side."
+    },
+    {
+      "name": "Pink Soul Gem",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click during combat to activate. Deal damage equal to the charges on this relic and lose all charges. Gain charges equal to the damage you take.",
+      "flavorText": "If anyone ever tells me it\u2019s a mistake to have hope, well then, I\u2019ll just tell them they\u2019re wrong. And I\u2019ll keep telling them till they believe."
+    },
+    {
+      "name": "Purple Soul Gem",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click during combat to activate. Restart the battle and all enemies gain 2 Strength.",
+      "flavorText": "If\u2026If it\u2019s for your sake\u2026I don\u2019t mind being locked in this eternal maze."
+    },
+    {
+      "name": "Red Soul Gem",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click during combat to activate. Gain 6 Strength. You may no longer use Skills this combat. Can only be used on turn one",
+      "flavorText": "If you live for yourself you\u2019ve only got yourself to blame. So I can\u2019t really blame anyone else and I don\u2019t have any regrets."
+    },
+    {
+      "name": "Shining Idol",
+      "tier": "Special",
+      "pool": "",
+      "description": "When you spend gold at a shop, Upgrade 3 random cards.",
+      "flavorText": "Getting used to it would be quicker than trying to work around it somehow."
+    },
+    {
+      "name": "Simulated Spire",
+      "tier": "Special",
+      "pool": "",
+      "description": "Obtain a Second Deck that copies your starter deck. Upon ending combat, there will be an additional card reward you can add to your Second Deck. At the start of combat, pick a deck to use.",
+      "flavorText": "Every day, I imagine a future where I can be with you."
+    },
+    {
+      "name": "Star Compass",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click during combat to activate. Holds the deepest secrets of the Spire. Perhaps if you are worthy...?",
+      "flavorText": "A compass that always seems to point up no matter your orientation. Maybe it holds a dark secret."
+    },
+    {
+      "name": "Yellow Soul Gem",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click during combat to activate. Deal 15damage to ALL enemies. Apply 99 Vulnerable to yourself. Can only be used once per combat and only up to 8 times overall.",
+      "flavorText": "If you\u2019re not 100% sure why you\u2019re doing it, you\u2019ll most certainly regret it later."
+    },
+    {
+      "name": "Cat Face Cupcake",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn. After the 3rd card played in a turn, all cards played will be removed from your deck and purged. YOU WILL NEVER SEE THIS CARD AGAIN. BE VERY CAREFUL!!",
+      "flavorText": "It's just a better Velvet Choker."
+    },
+    {
+      "name": "Forbidden Bikini",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn. You can no longer interact with merchants.",
+      "flavorText": "Don\u2019t go about doing weird things while thinking about me."
+    },
+    {
+      "name": "Heavy Snek",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Add 2 random Curses to the bottom of your draw pile at the start of combat. Every time you smith a card, upgrade 3 more random cards.",
+      "flavorText": "I only want one thing. Everything. Everything. Everything. Everything. Everything. Everything. Everything. Everything. Everything. Everything."
+    },
+    {
+      "name": "Incomplete Encyclopedia",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn. You can no longer see healthbars.",
+      "flavorText": "I don't know everything. I only know what I know."
+    },
+    {
+      "name": "Love Arrow",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Right click during combat to activate. Target an enemy. Every enemy between you and it becomes Surrounded until the targeted enemy dies. The targeted enemy deals 50% more damage. Can only be used once per combat.",
+      "flavorText": "LOVE ARROW SHOOT"
+    },
+    {
+      "name": "Monkei's Paw",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you play a card, add 2 copies of it to your discard pile at half power (rounded down)",
+      "flavorText": "Upon closer inspection, this isn't a monkey's paw at all."
+    },
+    {
+      "name": "Pink Allygator Plush",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Lose 2 HP at the start of every turn. If you die, heal to full and kill all enemies. Can only be used once and stops doing damage once used.",
+      "flavorText": "Everyone is waiting to die if you think about it...Some just have longer to wait than others."
+    },
+    {
+      "name": "Platinum Phoenix",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of your turn, gain [E] [E] . You can only play 1 cost cards.",
+      "flavorText": "I'm platinum mad at you!"
+    },
+    {
+      "name": "Prosthetics",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, lose 35 Max HP. When receiving a debuff, negate it, and if the source was a monster, apply the debuff to it instead.",
+      "flavorText": "Keep moving! If you're alive you can keep moving, dammit!"
+    },
+    {
+      "name": "Risk",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup lose [E] . Play the first 2 Attacks or Skills you play each turn twice. If you play an Attack or Skill, you cannot play the other type in the same turn.",
+      "flavorText": "The oldest game known to man, upon which the fate of nations has been known to rest: Rock, Paper, Scissors."
+    },
+    {
+      "name": "Smart Phone",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn. On Card Rewards, one of the choices will randomly be selected. If you do not pick that choice, take 10% of your Max HP as damage.",
+      "flavorText": "If I don't respond quickly, everyone will leave me behind...!"
+    },
+    {
+      "name": "Yufonium",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Every attack you draw has its cost lowered by 1. Deal half damage with attacks. You can only play up to 20 cards a turn.",
+      "flavorText": "Don't give up. Not until you've done everything in your power!"
+    },
+    {
+      "name": "Bottled Happiness",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Upon pickup, choose a card. It will Exhaust on draw. At the end of combat, bottle an additional card.",
+      "flavorText": "Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head."
+    },
+    {
+      "name": "Convergence",
+      "tier": "Shop",
+      "pool": "",
+      "description": " Reset your health, deck, gold, and relics to as they were at the start of the act. Generate a new version of the current act and start from the beginning. Lose 20 Max HP.",
+      "flavorText": "I will never lose, not to you, nor to fate! That is my choice."
+    },
+    {
+      "name": "Diary",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Upon pick up, pick the boss of the act.",
+      "flavorText": "DESTIIIIIIIIIIIIIIIINY"
+    },
+    {
+      "name": "Jellyphish",
+      "tier": "Shop",
+      "pool": "",
+      "description": "I'm honestly not sure what this does.",
+      "flavorText": "People are like jellyphish to me. I don't understand."
+    },
+    {
+      "name": "Komachan",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Right click to activate. The next room you can go to, other than bosses, becomes a Rest Site. Can only be used once.",
+      "flavorText": "Koma-chan always said to be prepared!"
+    },
+    {
+      "name": "No Longer Lost Snayl",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Upon entering a ? room, there is a 40 % all connected rooms become a ? room.",
+      "flavorText": "I'm sure there's a reason that, even after I stopped being lost, I stayed here. I won't leave until I know what that reason is."
+    },
+    {
+      "name": "Nonexistent Mirror",
+      "tier": "Shop",
+      "pool": "",
+      "description": "The next 2 times you obtain a card, obtain a copy of it.",
+      "flavorText": "\"I saw a strange man outside of Kanbaru's house today.\" NL \"When did they hang up a mirror?\""
+    },
+    {
+      "name": "Peace Piece",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Every 3 turns, at the start of your turn, you and all enemies take no damage until the next turn.",
+      "flavorText": "\"Peace Peace\" I said with a posed look."
+    },
+    {
+      "name": "Sosunser",
+      "tier": "Shop",
+      "pool": "",
+      "description": "If you play 8 Attacks in one turn, play all 8 Attacks again.",
+      "flavorText": "ORAORAORAORAORAORAORAORAORA"
+    },
+    {
+      "name": "Thesaurus",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Upon pickup, pick a non-special relic. Transform it into a relic of the same rarity.",
+      "flavorText": ""
+    },
+    {
+      "name": "Traffic Light",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Right click during combat to activate. Green Mode: Gain 2 Strength until the end of the turn for every card you play and 1 Frail for every card you play. Red Mode: Gain 1 Dexterity until the end of the turn for every card you play and 1 Weak for every card you play. Currently in Red Mode.",
+      "flavorText": "When the world is filled with red lights, signalling danger, the world is safer than usual. But when it's filled with green lights signalling safety, it creates a place more dangerous than any other."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+  ],
+  "keywords": [
+  ]
+}

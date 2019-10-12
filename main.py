@@ -149,6 +149,9 @@ def card_format(card):
     return "**{0}**\n{1}  `{2}`  `{3}`  `{4}`\n{5}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['color'], remove_keyword_prefixes(card['description']))
 
 def relic_format(relic):
+    if relic['pool'] == '':
+        return "**{0}**\n`{1}`\n{2}\n*{3}*".format(relic['name'], relic['tier'], relic['description'], relic['flavorText'])
+
     return "**{0}**\n`{1}` `{2}`\n{3}\n*{4}*".format(relic['name'], relic['tier'], relic['pool'], relic['description'], relic['flavorText'])
 
 def keyword_format_mod(keyword, name, mod):

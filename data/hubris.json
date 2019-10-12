@@ -1,0 +1,842 @@
+{
+  "mod": {
+    "name": "Hubris",
+    "version": "0.24.0",
+    "authors": ["kiooeht"],
+    "credits": "",
+    "description": "Content expansion mod. Adds new cards, relics, events, and monsters.",
+    "mts_version": "3.11.0",
+    "sts_version": "07-17-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Readied Action",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "At the end of this turn, Retain up to 1 card.\nIt costs 1 less Energy next turn."
+    },
+    {
+      "name": "Readied Action+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "At the end of this turn, Retain up to 2 cards.\nThey cost 1 less Energy next turn."
+    },
+    {
+      "name": "Cleaving Finish",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf this kills an enemy, this card stays in your hand and costs 0 for the turn."
+    },
+    {
+      "name": "Cleaving Finish+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf this kills an enemy, this card stays in your hand and costs 0 for the turn."
+    },
+    {
+      "name": "Sharpening Stone",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 2 Attacks in hand, they gain hubris:Piercing for the rest of combat.\nExhaust."
+    },
+    {
+      "name": "Sharpening Stone+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 2 Attacks in hand, they gain hubris:Piercing for the rest of combat.\nExhaust.\nStartup: A random Attack in your deck gains hubris:Piercing for the rest of combat."
+    },
+    {
+      "name": "Stunning Strike",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 6 damage.\nStun the enemy for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Stunning Strike+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage.\nStun the enemy for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Sleight of Hand",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard 1 card.\nIt costs 0 until played."
+    },
+    {
+      "name": "Sleight of Hand+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 1 card.\nIt costs 0 until played."
+    },
+    {
+      "name": "Counter",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If an enemy intends to attack, deal damage equal to its intended damage."
+    },
+    {
+      "name": "Counter+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If an enemy intends to attack, deal damage equal to its intended damage."
+    },
+    {
+      "name": "Sniper",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is discarded from your hand, Shivs deal 2 additional damage."
+    },
+    {
+      "name": "Sniper+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is discarded from your hand, Shivs deal 3 additional damage."
+    },
+    {
+      "name": "Trick Cloak",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fetch a random card from your discard pile.\nDraw 1 card."
+    },
+    {
+      "name": "Trick Cloak+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fetch a card from your discard pile.\nDraw 1 card."
+    },
+    {
+      "name": "Power Surge",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Grave.\nAutoplay.\nLose 2 Focus.\nNL Startup: Gain 2 Focus."
+    },
+    {
+      "name": "Power Surge+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Grave.\nAutoplay.\nLose 3 Focus.\nNL Startup: Gain 3 Focus."
+    },
+    {
+      "name": "Ukulele",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage for each Lightning you currently have Channeled."
+    },
+    {
+      "name": "Ukulele+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage for each Lightning you currently have Channeled."
+    },
+    {
+      "name": "Do While",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next card is repeated at\n+1 [E] until you run out of [E]."
+    },
+    {
+      "name": "Do While+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, your next card is repeated at\n+1 [E] until you run out of [E]."
+    },
+    {
+      "name": "Prefetch",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose a card in your hand. It is Innate for the next combat.\nExhaust."
+    },
+    {
+      "name": "Prefetch+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in your hand. It is Innate for the next combat.\nExhaust."
+    },
+    {
+      "name": "Specialized Circuitry",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Choose a type of orb.\nAnytime you Channel an orb, Channel the chosen type instead."
+    },
+    {
+      "name": "Specialized Circuitry+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nChoose a type of orb.\nAnytime you Channel an orb, Channel the chosen type instead."
+    },
+    {
+      "name": "Defend",
+      "color": "Colorless",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Colorless",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Merchant's Hand",
+      "color": "Colorless",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nIf this kills a non-minion enemy, gain 8 Gold."
+    },
+    {
+      "name": "Merchant's Hand+",
+      "color": "Colorless",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nIf this kills a non-minion enemy, gain 10 Gold."
+    },
+    {
+      "name": "Strike",
+      "color": "Colorless",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Colorless",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Mulligan",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nDiscard your hand,\nthen draw that many cards.\nPurge."
+    },
+    {
+      "name": "Negative Energy",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "1",
+      "description": "Retain.\nHeal Necromantic Totem 25 HP.\nExhaust."
+    },
+    {
+      "name": "Acid",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, take 2 damage.\nEthereal."
+    },
+    {
+      "name": "Insight",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 3 cards of your draw pile. Add one of them to your hand."
+    },
+    {
+      "name": "Insight+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top 5 cards of your draw pile. Add one of them to your hand."
+    },
+    {
+      "name": "Ssssneak",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw 1 card.\nDraw additional cards equal to this card's cost.\nSnecko."
+    },
+    {
+      "name": "Ssssneak+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw 2 cards.\nDraw additional cards equal to double this card's cost.\nSnecko."
+    },
+    {
+      "name": "Enhance Ability",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain either 1 Strength, 1 Dexterity, 1 Focus, or 10  Temporary_HP."
+    },
+    {
+      "name": "Enhance Ability+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain either 2 Strength, 2 Dexterity, 2 Focus, or 20  Temporary_HP."
+    },
+    {
+      "name": "Hubris",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "0",
+      "description": "Innate. Autoplay.\nShuffle a random Curse into your draw pile.\nPurge. Soulbound."
+    },
+    {
+      "name": "Natural One",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhen this card is drawn, lose 1 Energy.\nSoulbound."
+    },
+    {
+      "name": "SPICE",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "",
+      "description": "Obtain the Spice relic instead of this card."
+    },
+    {
+      "name": "Compulsion",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, chooses a random card in your hand. You must play that card before any other."
+    },
+    {
+      "name": "Despair",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nEach time you shuffle your draw pile, this card is placed on top.\nGrave."
+    },
+    {
+      "name": "Disease",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable. Retain\nAt the end of your turn, put a copy of this card into your discard pile."
+    },
+    {
+      "name": "Envy",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Autoplay.\nA random card in your hand becomes Unplayable for the turn."
+    },
+    {
+      "name": "Gluttony",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhile in hand, all cards Exhaust."
+    },
+    {
+      "name": "Greed",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "0",
+      "description": "Ethereal.\nPermanently add a copy of this card to your deck. Gain 5 extra gold at the end of combat for each Greed in your deck."
+    },
+    {
+      "name": "Lust",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Autoplay.\nChoose a random enemy. This turn, any time you attack that enemy, lose 3 HP."
+    },
+    {
+      "name": "Sloth",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Power",
+      "cost": "0",
+      "description": "Autoplay.\nLose all max energy. Gain 1 max energy at the end of each turn."
+    },
+    {
+      "name": "Wrath",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Autoplay.\nDeal 5 damage to a random enemy.\nPlace a copy of this card into your discard pile."
+    }
+  ],
+  "relics": [
+    {
+      "name": "10-Foot Pole",
+      "tier": "Common",
+      "pool": "",
+      "description": "Take 50% less damage outside of combat.",
+      "flavorText": "Almost as useful as a towel."
+    },
+    {
+      "name": "Ancient Text",
+      "tier": "Common",
+      "pool": "Green",
+      "description": "At the start of each combat, draw 1 additional card, then place 1 card from your hand on the bottom of your draw pile.",
+      "flavorText": "Crumbles into dust at the slightest touch."
+    },
+    {
+      "name": "Ball of Yels",
+      "tier": "Common",
+      "pool": "Blue",
+      "description": "Whenever you Channel a Lightning, trigger its passive ability.",
+      "flavorText": "At least they're not in your hovercraft."
+    },
+    {
+      "name": "Champion Shield",
+      "tier": "Common",
+      "pool": "Red",
+      "description": "While your HP is at or below 50%, you are immune to debuffs from enemies.",
+      "flavorText": "The Champ's shield... maybe?"
+    },
+    {
+      "name": "Old Nail",
+      "tier": "Common",
+      "pool": "",
+      "description": "Perhaps it can be reforged...",
+      "flavorText": "Blunt with age and wear."
+    },
+    {
+      "name": "Slimy Hat",
+      "tier": "Common",
+      "pool": "",
+      "description": "Raise your maximum hand size by 2.",
+      "flavorText": "This would be a really nice hat if it wasn't covered in slime."
+    },
+    {
+      "name": "Toy Battleship",
+      "tier": "Common",
+      "pool": "",
+      "description": "Whenever you enter a Rest Site, during the next combat the first card played each turn also draws 1 card.",
+      "flavorText": "E6."
+    },
+    {
+      "name": "Bottled Rain",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup, choose a card. This card will always Retain.",
+      "flavorText": "Petrichor."
+    },
+    {
+      "name": "Crystal Statue",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn. Breaks after you take 20 unblocked Attack damage.",
+      "flavorText": "The slightest touch could shatter it."
+    },
+    {
+      "name": "Cunning Disguise",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup, choose another character. On future Card Reward screens you have 1 additional card to choose from that will be from that character.",
+      "flavorText": "Absolutely no one could possibly recognize you while you're wearing this disguise."
+    },
+    {
+      "name": "Deck of Holding",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Right click during combat to activate. Usable once per combat.\nRetain your hand this turn.\nSynergy: Runic Pyramid",
+      "flavorText": "A nice box to hold your cards."
+    },
+    {
+      "name": "Duct Tape",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup, choose 2 cards and combine them.",
+      "flavorText": "Fix anything."
+    },
+    {
+      "name": "Iron Body",
+      "tier": "Uncommon",
+      "pool": "Red",
+      "description": "At the end of your turn, gain Block equal to your Strength.",
+      "flavorText": "Flex the pain away."
+    },
+    {
+      "name": "Metronome",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Increases Strength for each sequential Attack played, up to a maximum of 10. Playing a Non-Attack card or losing HP resets the bonus to 0.",
+      "flavorText": "Stronger and Stronger."
+    },
+    {
+      "name": "Mysterious Pyramids",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup, choose two cards. Whenever you draw one of these cards, draw the other.",
+      "flavorText": "Usually they come in sets of four."
+    },
+    {
+      "name": "Peanut Butter",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of each combat, gain 8 Temporary_HP.",
+      "flavorText": "Is it pronounced gif or gif?"
+    },
+    {
+      "name": "RGB Lights",
+      "tier": "Uncommon",
+      "pool": "Blue",
+      "description": "Every time you Evoke 3 Orbs in a single turn, Evoke the third Orb 2 times.",
+      "flavorText": "More colors makes it run faster."
+    },
+    {
+      "name": "Reverence",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Right click during combat to activate. Usable once per turn.\nPlay an Attack card from your hand at no cost and Exhaust it.",
+      "flavorText": "An inscription on the gun reads: \"Reverence - Property of Crowbot\""
+    },
+    {
+      "name": "Software Update",
+      "tier": "Uncommon",
+      "pool": "Blue",
+      "description": "Increase your maximum Orb capacity to 15.",
+      "flavorText": "Upgrading from 32-bit to 64-bit gives you access to a lot more RAM."
+    },
+    {
+      "name": "Sphere of Dissonance",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of each combat, apply 3 Vulnerable to a random enemy.\nSynergy: Juzu Bracelet",
+      "flavorText": "You are your own worst enemy."
+    },
+    {
+      "name": "Tin Flute",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the end of this run, choose one card in your deck. You start your next run with that card in your deck.",
+      "flavorText": "It feels like you've seen this before."
+    },
+    {
+      "name": "64-Bit Clover",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Every 7th normal enemy combat drops a Relic.",
+      "flavorText": "18,446,744,073,709,551,615 leaves."
+    },
+    {
+      "name": "Astral Hammer",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you play an Attack, reduce its cost by 1 for the rest of combat. Playing an Attack that costs 0 Exhausts it.",
+      "flavorText": "\"Forged in the heart of celestial fire. Powered by lasers entwined in a star. Crystal enchantment of steel.\""
+    },
+    {
+      "name": "Bundle of Herbs",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Right click during combat to activate.\nLose 1 charge, gain 3 Regen.\nWhenever you enter a Rest Site, add 1 charge.\nStarts with 2 charges.",
+      "flavorText": "A collection of healing herbs: sage, thyme, greenwarish, rosemary."
+    },
+    {
+      "name": "Curious Feather",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you play a Power, gain 1 Strength.",
+      "flavorText": "You can't help but feel curious about the world while holding this feather."
+    },
+    {
+      "name": "Fun Fungus",
+      "tier": "Rare",
+      "pool": "",
+      "description": "If you have leftover energy at the end of your turn, heal that much HP at the start of your next turn.",
+      "flavorText": "If you remain still, this fungus will grow into your wounds and heal them."
+    },
+    {
+      "name": "Glazed Torus",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Gain 1 Strength at the end of each of your odd numbered turns.",
+      "flavorText": "Not actually edible."
+    },
+    {
+      "name": "Medical Manual",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Exhaust the first Status drawn each turn.\nSynergy: Medical Kit",
+      "flavorText": "\"It's Spireblight.\""
+    },
+    {
+      "name": "Potato",
+      "tier": "Rare",
+      "pool": "",
+      "description": "During your turn, you are immune to damage.",
+      "flavorText": "A staple of pre-Spireblight life."
+    },
+    {
+      "name": "Short Range Teleporter",
+      "tier": "Rare",
+      "pool": "",
+      "description": "You may skip rooms, instead entering a room two floors away.\nHas 2 charges. Kill Bosses or Elites to regain charges.",
+      "flavorText": "A prototype teleporter from before the Spireblight. No one knows how it works anymore."
+    },
+    {
+      "name": "Spice",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon pickup, raise your Max HP by 8.\nDraw 1 additional card each turn.\nWarning: Highly addictive!",
+      "flavorText": "Must flow."
+    },
+    {
+      "name": "Zylophone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon pickup, choose a 0 or 1 cost card. This card now costs X, applying its effect X times when played.",
+      "flavorText": "C C G G A A G F F E E D D C"
+    },
+    {
+      "name": "Bottled Heart",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, this relic gains charge equal to half your Max HP and your Max HP is reduced to 1.\nStart each combat with Temporary_HP equal to this relic's charge.\nAny changes to Max HP affect this instead.\nSynergy: Necronomicon",
+      "flavorText": "Your own heart in a bottle. Still beating."
+    },
+    {
+      "name": "Dead Torch",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you Exhaust a card, gain 1 Max HP.",
+      "flavorText": "Emits a soft, blue light that attracts the souls of the dead."
+    },
+    {
+      "name": "Evacipated Box",
+      "tier": "Special",
+      "pool": "",
+      "description": "Future Boss chests have 1 additional relic to choose from.",
+      "flavorText": "evacipate: v. To undo the consequences of your actions by changing the original circumstances. To erase your own history."
+    },
+    {
+      "name": "Fruit Bowl",
+      "tier": "Special",
+      "pool": "",
+      "description": "Changes to Max HP are increased by 50%.",
+      "flavorText": "Store your fruit in an aesthetically pleasing manner."
+    },
+    {
+      "name": "Macrotransations",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click during combat to activate.\nLose 100 Gold.\nImmediately kill all non-Elite, non-Boss enemies.",
+      "flavorText": "All payments wired directly to Merchant."
+    },
+    {
+      "name": "Nice Rug",
+      "tier": "Special",
+      "pool": "",
+      "description": "Start each combat with 1 Plated Armor for every 50 Gold you have.",
+      "flavorText": "You killed a nice, blue merchant for this. That wasn't very nice of you."
+    },
+    {
+      "name": "Runic Icosahedron",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click during combat to activate.\nOnce per combat, you may roll the Icosahedron.",
+      "flavorText": "Twisting fate, 1d20 at a time."
+    },
+    {
+      "name": "Towel",
+      "tier": "Special",
+      "pool": "",
+      "description": "Future relic rewards from combats and non-Boss chests give you a choice between two relics.",
+      "flavorText": "Now you're a real frood."
+    },
+    {
+      "name": "test447",
+      "tier": "Special",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn.",
+      "flavorText": "TODO"
+    },
+    {
+      "name": "Backtick",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, choose any non-boss non-event relic to obtain.",
+      "flavorText": "` relic add test447"
+    },
+    {
+      "name": "Black Hole",
+      "tier": "Boss",
+      "pool": "",
+      "description": "All cards cost 0.\nAny card entering your discard pile is exhausted.",
+      "flavorText": "While consuming everything you put into it, it radiates a strange energy."
+    },
+    {
+      "name": "Cracked Hourglass",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn. If any battle takes longer than 3 minutes, you die.",
+      "flavorText": "Your time is running out..."
+    },
+    {
+      "name": "Grand Snecko Eye",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] and Transform 2 cards at the start of your turn.",
+      "flavorText": "Perplexingly large."
+    },
+    {
+      "name": "Hollow Soul",
+      "tier": "Boss",
+      "pool": "",
+      "description": "When you would die in combat, immediately restart the fight with 20% Max HP.\nRegain your original Max HP, heal to 50% of your Max HP, and recharge this relic if you win the fight.",
+      "flavorText": "An echo of a past life. Perhaps with this you may become whole."
+    },
+    {
+      "name": "Runic Obelisk",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn. Lower your maximum hand size by 3.",
+      "flavorText": "Extremely heavy, but the runes gives you power."
+    },
+    {
+      "name": "Scarier Mask",
+      "tier": "Boss",
+      "pool": "",
+      "description": "The weakest enemy flees at the beginning of multi-enemy fights.",
+      "flavorText": "Scary."
+    },
+    {
+      "name": "Stopwatch",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Right click during combat to activate. Usable once per combat.\nLose 1 charge. At the end of your turn, immediately start another turn. Energy and Block are maintained between these turns.\nStarts with 6 charges.",
+      "flavorText": "Maybe time's just a construct of human perception, an illusion created by\u2014"
+    },
+    {
+      "name": "Terracotta Horce",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn. Raise your Ascension level by 5.",
+      "flavorText": "\"A facsinating example of pre-Spireblight civilization.\" - Ranwid"
+    },
+    {
+      "name": "Virtuous Blindfold",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn. You can no longer see the entire map.",
+      "flavorText": "Emotions are prohibited."
+    },
+    {
+      "name": "Empty Bottle",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Potions may be used twice.",
+      "flavorText": "Just pour half the potion into this bottle and suddenly you have two potions!"
+    },
+    {
+      "name": "Herbal Paste",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Start each combat with 3 Regen.\nRegen can go to -1.",
+      "flavorText": "A foul smelling substance. Perhaps slathering it on your skin will heal your wounds."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Grand Snecko",
+      "type": "Boss",
+      "minHP": "600",
+      "maxHP": "600"
+    },
+    {
+      "name": "Merchant",
+      "type": "Boss",
+      "minHP": "10",
+      "maxHP": "10"
+    },
+    {
+      "name": "Musket Hawk",
+      "type": "Boss",
+      "minHP": "350",
+      "maxHP": "350"
+    },
+    {
+      "name": "Necromantic Totem",
+      "type": "Boss",
+      "minHP": "50",
+      "maxHP": "50"
+    }
+  ],
+  "keywords": [
+  ]
+}

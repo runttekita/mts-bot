@@ -1,0 +1,321 @@
+{
+  "mod": {
+    "name": "Aspiration",
+    "version": "1.4.0",
+    "authors": ["erasels"],
+    "credits": "",
+    "description": "A mod adding relics, cards and events with varying themes. There's no real end goal behind it, just me implementing neat ideas that come my way via reddit, Discord, other games or even my imagination.\n\n For a full list of everything added and an up to date look at what I'm working on, you can take a look at my Github Repository here: https://github.com/erasels/Aspiration-StS/ \n\nLet me know if you have questions, suggestions or found an error.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Lunge",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage to ALL enemies 2 times and lose 1 Dexterity per enemy.\nExhaust."
+    },
+    {
+      "name": "Lunge+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to ALL enemies 2 times and lose 1 Dexterity per enemy.\nExhaust."
+    },
+    {
+      "name": "Polymerization",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "aspiration:Fuse all your orbs.\nExhaust."
+    },
+    {
+      "name": "Polymerization+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "aspiration:Fuse all your orbs.\nExhaustive !stslib:ex!."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Chemical Blood",
+      "tier": "Common",
+      "pool": "",
+      "description": "Every time you lose HP equal to 25% of your max HP, gain a random potion.",
+      "flavorText": "Easily flammable."
+    },
+    {
+      "name": "Enhanced Actuators",
+      "tier": "Common",
+      "pool": "Blue",
+      "description": "Gain 1 Strength for every 2 orb slots.",
+      "flavorText": "Big actuators... equal big... gains?"
+    },
+    {
+      "name": "Hidden Compartment",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of each combat, remove a card from your draw pile. The first time you shuffle your draw pile, add this card into your hand.",
+      "flavorText": "There is no shame in deception."
+    },
+    {
+      "name": "Lifesprig",
+      "tier": "Common",
+      "pool": "",
+      "description": "Every time you play 5 Attacks [REMOVE_SPACE], gain 1 Regen [REMOVE_SPACE].",
+      "flavorText": "From the weakest slime to the strongest abomination, hostile life thrives in the spire. Maybe, so can you."
+    },
+    {
+      "name": "Supercapacitive Coin",
+      "tier": "Common",
+      "pool": "",
+      "description": "Right click during combat to activate.Consume all charges and deal 3 damage to a random enemy for each.\nGain 1 Charge everytime you gain gold.",
+      "flavorText": "A mysterious arcade coin that can store large amounts of electricity. If enough is stored, maybe you could create a railgun?"
+    },
+    {
+      "name": "Vile Toxins",
+      "tier": "Common",
+      "pool": "",
+      "description": "Whenever you apply Poison to an enemy that wasn't poisoned [REMOVE_SPACE], apply 2 Vulnerable and Weak [REMOVE_SPACE].",
+      "flavorText": "A mix so vile, it even makes organic and inorganic beings alike recoil in horror."
+    },
+    {
+      "name": "Faulty Coupler",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever an orb is channeled [REMOVE_SPACE], there is a 20% chance for it to aspiration:Fuse with a copy of a currently channeled orb.",
+      "flavorText": "... Loneliness is... the enemy..."
+    },
+    {
+      "name": "Fetid Barrel",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you Exhaust a card, apply 1 Poison to ALL enemies.",
+      "flavorText": "Even the tightly sealed interior cannot contain the pungent smell."
+    },
+    {
+      "name": "Frozen Jewel",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the end of your turn, gain 2 Block for every enemy that intends to attack. Gain Blur if there are multiple enemies and all intend to attack.",
+      "flavorText": "In your numb embrace, it pulses with comforting energy."
+    },
+    {
+      "name": "Hummingbird Heart",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "For the first 2 turns of combat, receive 50% less damage from attacks.",
+      "flavorText": "A thousand beats a minute, the power of your heart is incredible but wanes fast."
+    },
+    {
+      "name": "Sea Salt Ice Cream",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup, store a copy of one of your relics and obtain the relic you previously stored.\n\nPreviously stored:\nNostalgia",
+      "flavorText": "Bonds forged by the heart can never be broken."
+    },
+    {
+      "name": "Sticky Explosives",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Apply Aftershock to the first monster you attack on the first round of combat.",
+      "flavorText": "You have the power of attacks and explosions on your side!"
+    },
+    {
+      "name": "Sticky Explosives",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Apply Aftershock to the first monster you attack each combat.",
+      "flavorText": "You have the power of attacks and explosions on your side!"
+    },
+    {
+      "name": "Anachronic Snail Shell",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you lose HP from enemy attacks, delay half of it to the end of your next turn.",
+      "flavorText": "This piece of a snail's shell resists the flow of time, tumbling along at its own paradoxical pace."
+    },
+    {
+      "name": "Hat of Infinite Power",
+      "tier": "Rare",
+      "pool": "",
+      "description": "The first time you would lose more than 1 [E] each turn, lose 1 [E] less.",
+      "flavorText": "It's brimming with energy as if powered by one thousand explosions!"
+    },
+    {
+      "name": "Headhunter",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Gain Charges after killing a monster, gain a set of buffs at the start of battle depending on the amount of stored Charges [REMOVE_SPACE]. Visiting non-monster rooms makes Charges decay based on the type of room. Right-click to see more information [REMOVE_SPACE].",
+      "flavorText": "A belt of severed heads, the first step on the path of exiling yourself from this place of the damned."
+    },
+    {
+      "name": "Legacy Headhunter",
+      "tier": "Rare",
+      "pool": "",
+      "description": "[Unbalanced and broken, but useable.] Gain 1 tiered, random Buff after winning a battle, every Buff gained this way will be applied at the start of battle for the next 7 battles.",
+      "flavorText": "Such a lucky find! A rarity amongst rarities will surely lead to an exalted run."
+    },
+    {
+      "name": "Mysterious Core",
+      "tier": "Rare",
+      "pool": "Blue",
+      "description": "At the end of every even-numbered turn, Channel 1 random orb.",
+      "flavorText": "Secondary systems have reported anamalous charge generation. Observation recommended."
+    },
+    {
+      "name": "Snecko Tail",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you play a poison-related card, apply 1 Dizzy to the target(s).",
+      "flavorText": "The tail of a fearsome Snecko. The fluids it secretes are excellent for transferring your toxins."
+    },
+    {
+      "name": "Art of War (read)",
+      "tier": "Special",
+      "pool": "",
+      "description": "If you do not play any Attacks during your turn, gain an additional [E] and attacks deal double damage next turn.",
+      "flavorText": "This ancient manuscript contains wisdom from a past age. You've taken it's teachings to heart."
+    },
+    {
+      "name": "Baby Byrd",
+      "tier": "Special",
+      "pool": "",
+      "description": "Teach your little companion about your tools of trade and he'll repay you in kind.\n\n(It does something at the start of battle once you have amassed enough charges.)",
+      "flavorText": "For better or for worse, you've decided that this untainted creature deserves a better life."
+    },
+    {
+      "name": "Nothing",
+      "tier": "Special",
+      "pool": "",
+      "description": "Does nothing.",
+      "flavorText": "I told you so."
+    },
+    {
+      "name": "Ritual Stick",
+      "tier": "Special",
+      "pool": "",
+      "description": "The first time you lose HP each combat, gain 1 Ritual [REMOVE_SPACE].",
+      "flavorText": "If only you could express yourself better."
+    },
+    {
+      "name": "Stabinomicon",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you deal unblocked attack damage, apply 2 Grievous \u03C0Wounds to the target.",
+      "flavorText": "\"How do you reach a heart? With a knife.\" - Blizzarre, runic archmagus"
+    },
+    {
+      "name": "Burster Core",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Replaces Cracked Core. Whenever an Orb is evoked by channeling with no empty slots, that Orb is evoked twice.",
+      "flavorText": "Goes off vigorously when filled to the brim."
+    },
+    {
+      "name": "Defect's Skillbook",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each combat, gain 2 Orb slots and Channel that many random Orbs.\nWhenever you play a Power [REMOVE_SPACE], Channel a random Orb at the start of your turn for 3 turns.\n\nMulticlass Defect",
+      "flavorText": "Pages upon pages filled with meticulously written 1s and 0s, what could this mean?"
+    },
+    {
+      "name": "Future Diary",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn.\nAt the start of each turn a random card in your hand is picked. You cannot play other cards while that card is in your hand.",
+      "flavorText": "It's hard to live in the present if your future is in your hand."
+    },
+    {
+      "name": "Ironclad's Skillbook",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the end of each turn, if you have more than 20 Block [REMOVE_SPACE], gain 1 Strength [REMOVE_SPACE]. At the end of combat, heal 4 HP.\n\nMulticlass Ironclad",
+      "flavorText": "An abused book that contains the hasty scribbles of an angry being."
+    },
+    {
+      "name": "Poet's Pen",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Every time you play an Attack [REMOVE_SPACE], play the top card of your draw pile if it's an Attack [REMOVE_SPACE], otherwise discard it.",
+      "flavorText": "In every piece of prose, lies a tiny spark of magic. With this tool, you may craft beauty even on this most dreary of canvasses."
+    },
+    {
+      "name": "Poet's Pen",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Every time you play an Attack [REMOVE_SPACE], play the top card of your draw pile.\nStart combat with 6 stacks of Weak [REMOVE_SPACE], Frail and Vulnerable on you, reduced by Experience [REMOVE_SPACE].",
+      "flavorText": "In every piece of prose, lies a tiny spark of magic. With this tool, you may craft beauty even on this most dreary of canvasses."
+    },
+    {
+      "name": "Random Nob Generator",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] [E] at the start of each turn. At the start of each combat, spawn a Gremlin Nob 40% of the time.",
+      "flavorText": "We spent so much time to see if we could, we didn't think about if we should."
+    },
+    {
+      "name": "Ritual Dagger",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Lose 3 HP at the start of your turn. When you would die in combat, heal to your Max HP instead and gain Awoken (works once).",
+      "flavorText": "With every move you make, you feel the dagger dig in deeper into your being. You fear what you may become if you give in."
+    },
+    {
+      "name": "Runic Spoon",
+      "tier": "Boss",
+      "pool": "",
+      "description": "In each combat, add a copy of every 3rd card you personally play into your hand.",
+      "flavorText": "Maybe you could read the runes if the spoon didn't wiggle around so much."
+    },
+    {
+      "name": "Secret Technique Scroll",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of your turn, draw 1 additional card. Whenever you shuffle your discard pile, add 3 random cards to your draw pile. They cost 0 until played.",
+      "flavorText": "\"Promise me you'll never use these\" - Teacher"
+    },
+    {
+      "name": "Silent's Skillbook",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you play 4 or more cards on your turn, at the start of your next turn, discard any number of cards then draw that many.\n\nMulticlass Silent",
+      "flavorText": "Pages filled with information on how to deal with this place. A talk with the author should be enlightening."
+    },
+    {
+      "name": "Stellarator",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever channeling an orb fills your orb slots, Evoke your next orb and aspiration:Fuse all remaining orbs.",
+      "flavorText": "Who needs the Inserter if you can just squeeze!"
+    },
+    {
+      "name": "Kaom's Heart",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Raise your Max HP by 100 and become unable to obtain new relics FOR THE ENTIRE RUN [REMOVE_SPACE].",
+      "flavorText": "The warrior who fears, will fail. Never look back. Never stop. Never surrender."
+    },
+    {
+      "name": "Nostalgia",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Upon pickup, obtain a random Starter Relic [REMOVE_SPACE].",
+      "flavorText": "Take heart in the memory of those that came before."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+  ],
+  "keywords": [
+  ]
+}

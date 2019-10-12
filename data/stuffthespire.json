@@ -1,0 +1,1380 @@
+{
+  "mod": {
+    "name": "Stuff the Spire",
+    "version": "1.5.15",
+    "authors": ["Lobbienjonsji (Code & Art)","McMake (Art)"],
+    "credits": "The Rapublic Discord for card ideas: LightningLord2.71828183 for the Rend and Clean hard drive card idea. Krasunir for the Purify card idea. WikkadGaming for too many ideas too name here, including blesssings. PurpleSmart & Gremlin Horn for the Harmony card idea.",
+    "description": "Adds new cards, relics, events and other stuff with partial GifTheSpireLib integration.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib","GifTheSpireLib"],
+    "optional_dependencies": ["archetypeapi"]
+  },
+  "cards": [
+    {
+      "name": "Chain Strike",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage.\nstuffthespire:Chain 1 random stuffthespire:linked card in your hand.\nstuffthespire:Archetype: Chain."
+    },
+    {
+      "name": "Chain Strike+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage.\nstuffthespire:Chain 2 random stuffthespire:linked cards in your hand.\nstuffthespire:Archetype: Chain."
+    },
+    {
+      "name": "Incineration",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage. Add !StuffTheSpire:Diminishing! stuffthespire:Flame_Bursts into you hand.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Incineration+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage. Add !StuffTheSpire:Diminishing! stuffthespire:Flame_Bursts into you hand.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Razor Storm",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "stuffthespire:Linked.\nDeal 2 damage 3 times.\nstuffthespire:Chain 1 random stuffthespire:linked card in your draw pile."
+    },
+    {
+      "name": "Razor Storm+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "stuffthespire:Linked.\nDeal 2 damage 4 times.\nstuffthespire:Chain 1 random stuffthespire:linked card in your draw pile."
+    },
+    {
+      "name": "Rock Throw",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damage. Draw 1 card.\nIf this card is exhausted add a copy of this card to your hand next turn. It costs 0 for the rest of combat."
+    },
+    {
+      "name": "Rock Throw+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damage. Draw 1 card.\nIf this card is exhausted add 2 copies of this card to your hand next turn. They cost 0 for the rest of combat."
+    },
+    {
+      "name": "Slingshot",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Exhaust a card. Deal 4 Damage. Apply 1 Vulnerable."
+    },
+    {
+      "name": "Slingshot+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Exhaust a card. Deal 4 Damage. Apply 2 Vulnerable."
+    },
+    {
+      "name": "Abyss Link",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn stuffthespire:chain 1 random stuffthespire:linked card from your discard pile."
+    },
+    {
+      "name": "Abyss Link+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn stuffthespire:chain 1 random stuffthespire:linked card from your discard pile."
+    },
+    {
+      "name": "Blood Clot",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain !StuffTheSpire:Diminishing! temporary HP when you loose health from a card next time.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Blood Clot+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain !StuffTheSpire:Diminishing! temporary HP when you loose health from a card next time.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Flow",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "stuffthespire:Linked.\nheal 2 HP.\nstuffthespire:Chain 1 random stuffthespire:linked card in your draw pile.\nExhaust."
+    },
+    {
+      "name": "Flow+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "stuffthespire:Linked.\nheal 2 HP.\nstuffthespire:Chain 1 random stuffthespire:linked card in your draw pile.\nExhaust."
+    },
+    {
+      "name": "Pyroclast",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 Damage to all enemies !StuffTheSpire:Diminishing! times.\nAdd a Burn into your hand.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Pyroclast+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 Damage to all enemies !StuffTheSpire:Diminishing! times.\nAdd a Burn into your hand.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Raging Bull",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 Damage. Gain 2 Dexterity. After you play 5 more cards loose 2 Dexterity."
+    },
+    {
+      "name": "Raging Bull+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 Damage. Gain 2 Dexterity. After you play 7 more cards loose 2 Dexterity."
+    },
+    {
+      "name": "Resist",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you exhaust a status, gain 2 temporary HP."
+    },
+    {
+      "name": "Resist+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you exhaust a status, gain 2 temporary HP.\nAdd 2 stuffthespire:Flame_Bursts into your hand."
+    },
+    {
+      "name": "Unleash",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "stuffthespire:Linked. \n Gain 2 Strength."
+    },
+    {
+      "name": "Unleash+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "stuffthespire:Linked. \n Gain 3 Strength."
+    },
+    {
+      "name": "Flurry",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "stuffthespire:Chain and exhaust all stuffthespire:linked cards in hand, draw- and discard pile.\nExhaust."
+    },
+    {
+      "name": "Flurry+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "stuffthespire:Chain and exhaust all stuffthespire:linked cards in hand, draw- and discard pile.\nExhaust."
+    },
+    {
+      "name": "Surge",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "stuffthespire:Linked.\nGain [E] [E].\nDraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Surge+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "stuffthespire:Linked.\nGain [E] [E] [E].\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Titan Form",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 4 stuffthespire:Dark_Fade. At the end of each turn loose 1 Strength."
+    },
+    {
+      "name": "Titan Form+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 6 stuffthespire:Dark_Fade. At the end of each turn loose 1 Strength."
+    },
+    {
+      "name": "Bump Up",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 Damage. Increase the Damage of all of your 2 cost cards by 20 %."
+    },
+    {
+      "name": "Bump Up+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 Damage. Increase the Damage of all of your 2 cost cards by 40 %."
+    },
+    {
+      "name": "Cluster Crunch",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard all Attacks. Deal damage equal to 3 times their total cost to all enemies."
+    },
+    {
+      "name": "Cluster Crunch+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard all Attacks. Deal damage equal to 4 times their total cost to all enemies."
+    },
+    {
+      "name": "Injection",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage.\nIf the target isn't poisoned, apply 7 Poison.\nExhaust."
+    },
+    {
+      "name": "Injection+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage.\nIf the target isn't poisoned, apply 10 Poison.\nExhaust."
+    },
+    {
+      "name": "Python",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply !StuffTheSpire:Diminishing! stuffthespire:Constricted.\nstuffthespire:Decreasing 1"
+    },
+    {
+      "name": "Python+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply !StuffTheSpire:Diminishing! stuffthespire:Constricted.\nstuffthespire:Decreasing 1"
+    },
+    {
+      "name": "Brimstone Blast",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage and apply 4 Poison to all enemies.\nAdd a Burn to your hand.\nExhaust."
+    },
+    {
+      "name": "Brimstone Blast+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage and apply 6 Poison to all enemies.\nAdd a Burn to your hand.\nExhaust."
+    },
+    {
+      "name": "Double Shiv",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 Shivs into your hand.\nExhaust."
+    },
+    {
+      "name": "Double Shiv+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 upgraded Shivs into your hand.\nExhaust."
+    },
+    {
+      "name": "Fury",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nDiscard all non-Attack cards."
+    },
+    {
+      "name": "Fury+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Discard all non-Attack cards.\nDraw 2 cards."
+    },
+    {
+      "name": "Incantation",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nstuffthespire:Fragile.\nWhen drawn gain 1 Strength.\nEthereal."
+    },
+    {
+      "name": "Incantation+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. When drawn gain 1 Strength.\nEthereal."
+    },
+    {
+      "name": "Incursion",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 stuffthespire:Dark_Fade. When you loose HP, loose twice as much for 2 turns.\nExhaust."
+    },
+    {
+      "name": "Incursion+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 stuffthespire:Dark_Fade. When you loose HP, loose twice as much for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Mirror Stance",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The first card you play next turn is played twice.\nExhaust."
+    },
+    {
+      "name": "Mirror Stance+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The first card you play next turn is played twice."
+    },
+    {
+      "name": "ReptileScales",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain !StuffTheSpire:Diminishing! Plated Armor.\nGain 1 Block.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "ReptileScales+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain !StuffTheSpire:Diminishing! Plated Armor.\nGain 1 Block.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Repulse",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block. Draw 1 card for every enemy that intends to attack."
+    },
+    {
+      "name": "Repulse+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block. Draw 2 cards for every enemy that intends to attack."
+    },
+    {
+      "name": "Shiver",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nDiscard a card.\nAdd 1 Shiv to your hand.\nApply 1 Weak to yourself and all enemies."
+    },
+    {
+      "name": "Shiver+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nDiscard a card.\nAdd 2 Shivs to your hand.\nApply 1 Weak to yourself and all enemies."
+    },
+    {
+      "name": "Sprint",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block. Increase the Block of a random card in your hand by 2."
+    },
+    {
+      "name": "Sprint+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block. Increase the Block of a random card in your hand by 4."
+    },
+    {
+      "name": "Final Struggle",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage and loose 5 Hp until the target has died. Heal all Hp lost from this card at the end of combat."
+    },
+    {
+      "name": "Final Struggle+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage and loose 4 Hp until the target has died. Heal all Hp lost from this card at the end of combat."
+    },
+    {
+      "name": "Overload",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Loose 1 Focus.\nChannel 1 Lightning. Next turn add a copy of stuffthespire:Discharge to your hand.\nExhaust."
+    },
+    {
+      "name": "Overload+",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Loose 1 Focus.\nChannel 2 Lightning. Next turn add a copy of stuffthespire:Discharge to your hand.\nExhaust."
+    },
+    {
+      "name": "Plug'n'play",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Lightning. Add a random power from your draw pile into your hand."
+    },
+    {
+      "name": "Plug'n'play+",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Lightning. Add a power from your draw pile into your hand."
+    },
+    {
+      "name": "Clean Hard Drive",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust !StuffTheSpire:Diminishing! cards from your draw pile.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Clean Hard Drive+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust !StuffTheSpire:Diminishing! cards from your draw pile.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Cold Hearted",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Frost. Gain 3 temporary HP."
+    },
+    {
+      "name": "Cold Hearted+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Frost. Gain 5 temporary HP."
+    },
+    {
+      "name": "Glass Shard",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "stuffthespire:Fragile.\nDeal 10 Damage.\nApply 2 Frail to yourself."
+    },
+    {
+      "name": "Glass Shard+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "stuffthespire:Fragile.\nDeal 14 Damage.\nApply 1 Frail to yourself."
+    },
+    {
+      "name": "Nuclear Reactor",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "5",
+      "description": "Costs [E] less for every Frost you evoked this turn.\nChannel 2 Plasma.\nApply 6 Poison to all enemies."
+    },
+    {
+      "name": "Nuclear Reactor+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "5",
+      "description": "Costs [E] less for every Frost you evoked this turn.\nChannel 2 Plasma.\nApply 9 Poison to all enemies."
+    },
+    {
+      "name": "Rend",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Claw cards apply 1 Vulnerable this turn. Draw 1 card."
+    },
+    {
+      "name": "Rend+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Claw cards apply 1 Vulnerable this turn. Draw 1 card."
+    },
+    {
+      "name": "Shield Generator",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nCan be upgraded any number of times.\nStartup: Gain 3 temporary HP"
+    },
+    {
+      "name": "Shield Generator+1",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nCan be upgraded any number of times.\nStartup: Gain 4 temporary HP"
+    },
+    {
+      "name": "Snap Shoot",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "If you have at least 3 orbs channeled, permanently add a stuffthespire:Snapshot that channels your 3 front most orbs to your deck.\nFleeting."
+    },
+    {
+      "name": "Snap Shoot+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "If you have at least 3 orbs channeled, permanently add an upgraded stuffthespire:Snapshot that channels your 3 front most orbs to your deck.\nFleeting."
+    },
+    {
+      "name": "Synthwave",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Lightning triggers it's passive an additional time."
+    },
+    {
+      "name": "Synthwave+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lightning triggers it's passive an additional time."
+    },
+    {
+      "name": "Event Horizon",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can only be played when you have at least 3 Dark channelled.\nGain 3 stuffthespire:Dark_Fade.\nExhaust."
+    },
+    {
+      "name": "Event Horizon+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can only be played when you have at least 3 Dark channelled.\nGain 4 stuffthespire:Dark_Fade.\nExhaust."
+    },
+    {
+      "name": "Launching Strike",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 Damage.\nApply stuffthespire:Flight.\nWhen the target loses stuffthespire:Flight, deal 16 Damage again."
+    },
+    {
+      "name": "Launching Strike+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 Damage.\nApply stuffthespire:Flight.\nWhen the target loses stuffthespire:Flight, deal 20 Damage again."
+    },
+    {
+      "name": "Purify",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Replace all Dark with Plasma. Draw 1 card for every Dark replaced."
+    },
+    {
+      "name": "Purify+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Replace all Dark with Plasma. Draw 2 cards for every Dark replaced."
+    },
+    {
+      "name": "foreach(){}",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Trigger the passive ability of all of your orbs !StuffTheSpire:Diminishing! times.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "foreach(){}+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Trigger the passive ability of all of your orbs !StuffTheSpire:Diminishing! times.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Deluminance",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 stuffthespire:Dark_Fade.\nExhaust."
+    },
+    {
+      "name": "Deluminance+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 stuffthespire:Dark_Fade.\nExhaust."
+    },
+    {
+      "name": "Discharge",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Evoke all of your orbs twice.\nGain 1 Focus.\nExhaust."
+    },
+    {
+      "name": "Discharge+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Evoke all of your orbs twice.\nGain 2 Focus.\nExhaust."
+    },
+    {
+      "name": "Snapshot",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Channel "
+    },
+    {
+      "name": "Snapshot+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel "
+    },
+    {
+      "name": "Flame Burst",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "",
+      "description": "Ethereal.\nDeal 1 Damage to all enemies when this card exhausts."
+    },
+    {
+      "name": "Free Real Estate",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "stuffthespire:Unique.\nGain !StuffTheSpire:Diminishing! Gold. Draw 1 card.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Free Real Estate+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "stuffthespire:Unique.\nGain !StuffTheSpire:Diminishing! Gold. Draw 1 card.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Plasma Pulse",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Block !StuffTheSpire:Diminishing! times. Draw 1 card.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Plasma Pulse+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Block !StuffTheSpire:Diminishing! times. Draw 1 card.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Plasma Punch",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 Damage !StuffTheSpire:Diminishing! times. Draw 1 card.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Plasma Punch+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 Damage !StuffTheSpire:Diminishing! times. Draw 1 card.\nstuffthespire:Decreasing 1."
+    },
+    {
+      "name": "Recharge",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "stuffthespire:Unique.\nstuffthespire:Recharge 3.\nPurge."
+    },
+    {
+      "name": "Recharge+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "stuffthespire:Unique.\nstuffthespire:Recharge 4.\nPurge."
+    },
+    {
+      "name": "Curious Curse",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nStartup: Add a random Curse to your draw pile.\nEthereal."
+    },
+    {
+      "name": "War",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "1",
+      "description": "At the end of your turn take 8 damage.\nFleeting."
+    },
+    {
+      "name": "You've been GNOMED!",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "When drawn lose 1 Strength.\nEthereal."
+    },
+    {
+      "name": "Ambrosia",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nStartup: gain 1 max. HP."
+    },
+    {
+      "name": "Ambrosia+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nStartup: gain 2 max. HP."
+    },
+    {
+      "name": "Brainwave",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nStartup: Reduce the cost of 4 cards in your draw pile to 0 this combat.\nEthereal."
+    },
+    {
+      "name": "Brainwave+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nStartup: Reduce the cost of 5 cards in your draw pile to 0 this combat.\nEthereal."
+    },
+    {
+      "name": "Brawn",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nstuffthespire:Fragile.\nWhen drawn gain 4 Strength for one turn and add a random attack from your draw pile to your hand."
+    },
+    {
+      "name": "Brawn+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nstuffthespire:Fragile.\nWhen drawn gain 4 Strength for one turn and add an attack from your draw pile to your hand."
+    },
+    {
+      "name": "Celestial Warden",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "0",
+      "description": "Gain 6 Block.\nGain 3 stuffthespire:Warding.\nGain 3 Plated Armor.\nExhaust."
+    },
+    {
+      "name": "Celestial Warden+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "0",
+      "description": "Gain 9 Block.\nGain 4 stuffthespire:Warding.\nGain 4 Plated Armor.\nExhaust."
+    },
+    {
+      "name": "Copia of Famine",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nStartup: A random enemy loses 4 Strength.\nEthereal."
+    },
+    {
+      "name": "Copia of Famine+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nWhen this card is exhausted, a random enemy looses 4 Strength.\nStartup: A random enemy loses 4 Strength.\nEthereal."
+    },
+    {
+      "name": "Death Note",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable. On turn 10 deal 200 damage to a random enemy. When drawn, draw 1 card. Current turn: 1"
+    },
+    {
+      "name": "Death Note+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable. On turn 10 deal 200 damage to all enemies. When drawn, draw 1 card. Current turn: 1"
+    },
+    {
+      "name": "Harmony",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nStartup: Gain 1 Regeneration for every 4 Skills in your draw pile."
+    },
+    {
+      "name": "Harmony+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nStartup: Gain 1 Regeneration for every 3 Skills in your draw pile."
+    },
+    {
+      "name": "Innocence",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nstuffthespire:Fragile.\nWhen drawn gain 1 Intangible."
+    },
+    {
+      "name": "Innocence+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nstuffthespire:Fragile.\nWhen drawn gain 1 Intangible and don't loose your Block at the start of your next turn."
+    },
+    {
+      "name": "Perfection",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nUpon pickup, upgrade 3 random cards."
+    },
+    {
+      "name": "Perfection+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "0",
+      "description": "Fleeting."
+    },
+    {
+      "name": "Pest Control",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nStartup: Apply 12 poison to a random enemy"
+    },
+    {
+      "name": "Pest Control+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nStartup: Apply 12 poison to all enemies"
+    },
+    {
+      "name": "Rapture",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nstuffthespire:Fragile.\nWhen drawn, draw 3 cards and gain [E] ."
+    },
+    {
+      "name": "Rapture+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nstuffthespire:Fragile.\nWhen drawn, draw 4 cards and gain [E] ."
+    },
+    {
+      "name": "Vigor",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nIf you play a card while this is in your hand gain 3 temporary HP.\nEthereal."
+    },
+    {
+      "name": "Vigor+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "",
+      "description": "Unplayable.\nIf you play a card while this is in your hand gain 4 temporary HP.\nEthereal."
+    },
+    {
+      "name": "War Groove",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "0",
+      "description": "Gain 7 Strength. Lose 1 Strength at the end of the next 7 turns. Add a stuffthespire:Curse_of_War to your Deck.\nExhaust."
+    },
+    {
+      "name": "War Groove+",
+      "color": "Blessing",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "0",
+      "description": "Gain 7 Strength. Lose 1 Strength at the end of the next 7 turns.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Barrel",
+      "tier": "Common",
+      "pool": "",
+      "description": "If you have 50 or less gold at the end of combat, heal 8 HP.",
+      "flavorText": "\"Money does not buy you happiness, therefore imma sit in this barrel now\" - Greek Philosophy Man"
+    },
+    {
+      "name": "Experiment 12",
+      "tier": "Common",
+      "pool": "",
+      "description": "Whenever you play a card that costs 2 or more gain 2 temporary HP.",
+      "flavorText": "Would you like some beer with your clichee?"
+    },
+    {
+      "name": "Grape Vine",
+      "tier": "Common",
+      "pool": "",
+      "description": "Every third Attack you play applies 2 stuffthespire:constricted.",
+      "flavorText": "In vino veritas"
+    },
+    {
+      "name": "Gunfinga",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of each turn gain 3 Strength until the end of the turn or until you play an Attack.",
+      "flavorText": "It's a bad man signal"
+    },
+    {
+      "name": "Mouthbags",
+      "tier": "Common",
+      "pool": "",
+      "description": "Upon Pickup choose a card and increase it's damage and Block by 4.",
+      "flavorText": "The better alternative to Ravioli."
+    },
+    {
+      "name": "Rolling Stone",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of each turn gain 3 Dexterity until the end of the turn or until you play a skill.",
+      "flavorText": "Sisyphos was here"
+    },
+    {
+      "name": "The old fever",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of your turn, if your discard pile is larger than your draw pile, discard a card and add a card from your discard pile to your hand.",
+      "flavorText": "And again and again, it's the same old songs."
+    },
+    {
+      "name": "Tinted Rock",
+      "tier": "Common",
+      "pool": "",
+      "description": "Gain 300% more gold from elite combats.",
+      "flavorText": "Don't miss it!"
+    },
+    {
+      "name": "Withered Skull",
+      "tier": "Common",
+      "pool": "Green",
+      "description": "While below 50% of your max. HP apply 3 Poison to all enemies at the end of your turn.",
+      "flavorText": "They are so rare"
+    },
+    {
+      "name": "Coconut",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon Pickup gain 5 max HP. At the start of each combat gain 3 stuffthespire:Juggernaut.",
+      "flavorText": "If you eat to much you'll get very fat."
+    },
+    {
+      "name": "Cold Mirror",
+      "tier": "Uncommon",
+      "pool": "Blue",
+      "description": "The first time you evoke an Orb each combat, channel 1 Frost.",
+      "flavorText": "You need at least seven brains to understand this."
+    },
+    {
+      "name": "Emerald Signet",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Heal 2 Hp whenever Weak is applied to you.",
+      "flavorText": "The Emerald comes alive when you are poisoned to heal your wounds."
+    },
+    {
+      "name": "Force Gauntlet",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Your attack damage is increased by 20%",
+      "flavorText": "Be gone!"
+    },
+    {
+      "name": "High Noon Tea",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "For every twelve cards you play, reduce the cost of all Attacks in your hand by 1 for one turn.",
+      "flavorText": "Dedicated to HighOnTea"
+    },
+    {
+      "name": "Point Blank",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Attacks that target multiple enemies deal 50% more damage if only one enemy is in the room.",
+      "flavorText": "Not the evil one."
+    },
+    {
+      "name": "Rhap's Scallions",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup remove a card from your deck, then gain max. HP equal to 60 divided by your deck size.",
+      "flavorText": "Get it? Because, like, scallions are a vegetable?"
+    },
+    {
+      "name": "Ruby Signet",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Heal 2 Hp whenever Vulnerable is applied to you",
+      "flavorText": "The Ruby comes alive when you are burning to heal your wounds."
+    },
+    {
+      "name": "Sapphire Signet",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Heal 2 Hp whenever Frail is applied to you.",
+      "flavorText": "The Sapphire comes alive when you are frozen to heal your wounds."
+    },
+    {
+      "name": "Bottled HeartBeat",
+      "tier": "Rare",
+      "pool": "Red",
+      "description": "Upon pickup choose a card that does not Exhaust on it's own. Whenever the card is exhausted, gain 2 max. HP",
+      "flavorText": "I I just... over you... a e can't get..."
+    },
+    {
+      "name": "Cup of Expresso",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of each turn reduce the cost of one of the cheapest cards in you hand to 0 for one turn.",
+      "flavorText": "Made from delicious java code beans."
+    },
+    {
+      "name": "Dark Steel Anvil",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upgrades are more effective.",
+      "flavorText": "Made from steel infused with obsidian."
+    },
+    {
+      "name": "Mayflowers",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Gain 3 Regeneration on turn 5",
+      "flavorText": "March winds and April showers..."
+    },
+    {
+      "name": "Neows Tribute",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Right Click during Combat: Consume 1 Charge to gain 1 Intangible. Defeat Elites to gain Charges.",
+      "flavorText": "It is said, that Neow rewards those who have achieved great things."
+    },
+    {
+      "name": "Nightcore",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of each combat gain 1 stuffthespire:Dark_fade.",
+      "flavorText": "Your eardrums are broken."
+    },
+    {
+      "name": "Wild Fire",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you play 3 Attacks in one turn, add a Skill from your draw pile to your hand.",
+      "flavorText": "Get Mad"
+    },
+    {
+      "name": "Blackout Curse",
+      "tier": "Special",
+      "pool": "",
+      "description": "Deal 50% less attack damage.",
+      "flavorText": "Hello Darkness"
+    },
+    {
+      "name": "Broken Rose",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of each turn gain 1 stuffthespire:Thorns.",
+      "flavorText": "Sah ein Knab ein R\u00F6slein stehn."
+    },
+    {
+      "name": "Chain Archetype",
+      "tier": "Special",
+      "pool": "",
+      "description": "Additional card rewards for the Chain Archetype may now appear with a 33% chance.",
+      "flavorText": "Only the cool kids could draw those back in the day."
+    },
+    {
+      "name": "Discard Archetype",
+      "tier": "Special",
+      "pool": "",
+      "description": "Additional card rewards for the Discard Archetype may now appear with a 33% chance.",
+      "flavorText": "Discarded and rejected. Not this time!"
+    },
+    {
+      "name": "Frost Archetype",
+      "tier": "Special",
+      "pool": "",
+      "description": "Additional card rewards for the Frost Archetype may now appear with a 33% chance.",
+      "flavorText": "You're as cold as ice!"
+    },
+    {
+      "name": "Greater Snecko Eye",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you play a card, randomize the cost of all other cards in your hand.",
+      "flavorText": "This one is even more confusing."
+    },
+    {
+      "name": "Lightning Archetype",
+      "tier": "Special",
+      "pool": "",
+      "description": "Additional card rewards for the Lightning Archetype may now appear with a 33% chance.",
+      "flavorText": "THUNDER oaoaoaoAAAAAOA!"
+    },
+    {
+      "name": "Occult Apparatus",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you play 3 Skills in one turn, the next card you play is exhausted and a copy of it is added to your hand next turn.",
+      "flavorText": "The intricate gearbox keeps the gears spinning indefinitely, providing an infinite source of power."
+    },
+    {
+      "name": "Shiv Archetype",
+      "tier": "Special",
+      "pool": "",
+      "description": "Additional card rewards for the Shiv Archetype may now appear with a 33% chance.",
+      "flavorText": "Stabby stab!"
+    },
+    {
+      "name": "Strike Archetype",
+      "tier": "Special",
+      "pool": "",
+      "description": "Additional card rewards for the Strike Archetype may now appear with a 33% chance.",
+      "flavorText": "Im struck."
+    },
+    {
+      "name": "Modem D'Avis",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn. You can't play more than 2 1 cost cards per turn.",
+      "flavorText": "Hallo. Ich bin Marcell D'Avis. Leiter f\u00FCr Kundenzufriedenheit bei 1&1!"
+    },
+    {
+      "name": "Paper K\u00E4ng\u00E4r\u00F6\u00F6",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn reduce all Buffs and Debuffs by 1 (Increase them if you have negative stacks). Whenever you gain a Buff, increase it by 2.",
+      "flavorText": "It's on my NotTodo\u2122 list."
+    },
+    {
+      "name": "Runic Confusion",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn. You can no longer see Card descriptions and Costs.",
+      "flavorText": "Wat?"
+    },
+    {
+      "name": "Runic Hypercube",
+      "tier": "Boss",
+      "pool": "",
+      "description": "After the first turn of combat gain 3 [E] and draw 5 additional cards at the start of each turn.\nAt the end of your turn count the total cost of all cards in your hand.\nLoose that much [E] and draw fewer cards equal to the total cost next turn.",
+      "flavorText": "It seems to shift in size and shape. Strange."
+    },
+    {
+      "name": "Bottled Essence",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Cards that exhaust when played have exhaustive 2 instead.",
+      "flavorText": "For when a spoon is just not enough."
+    },
+    {
+      "name": "Dull Razor",
+      "tier": "Shop",
+      "pool": "Red",
+      "description": "At the start of each turn trigger the effects of all cards, relics and powers that have an effect when taking damage.",
+      "flavorText": "It hurts a little bit."
+    },
+    {
+      "name": "History Book",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Cards in your draw pile are now always sorted in the order they were added to your deck.",
+      "flavorText": "Your entire past and future is written down here"
+    },
+    {
+      "name": "Saxophone",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Whenever you obtain a curse, also obtain a blessing.",
+      "flavorText": "Hot patotie, bless my soul!"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+  ],
+  "keywords": [
+  ]
+}
