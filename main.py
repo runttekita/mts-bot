@@ -83,7 +83,7 @@ async def card(channel, tokenized_message):
                 return
             else:
                 card = random.choice(cards[0]['cards'])
-                await channel.send(card_format(random.choice(card, card['mod'])))
+                await channel.send(card_format(card, card['mod']))
                 return
     if len(tokenized_message) == 2:
         if tokenized_message[1] == 'random':
