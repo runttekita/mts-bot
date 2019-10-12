@@ -17,21 +17,20 @@ class Mod_Data:
         self.data = self.get_data(id)
 
     def get_data(self, id):
+        data = []
         if os.path.exists(f'data/{id}.json'):
             with open(f'data/{id}.json') as json_file:
-                return json.load(json_file)
+                data.append(json.load(json_file))
         else:
-            data = dict()
             for file in os.listdir('data/'):
                 with open(f'data/{file}') as json_file:
-                    data.update(json.load(json_file))
-            print(data)
-            return data
+                    data.append(json.load(json_file))
+        return data 
 
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
-    print('Loading mod data')
+    print('Loaded mod data')
 
 def is_command(message):
     return message.content.startswith(prefix)
@@ -70,16 +69,17 @@ async def send_failure(channel, tokenized_message):
 
 @client.event
 async def card(channel, tokenized_message):
-    cards = Mod_Data(tokenized_message[1]).data['cards']
-    for card in cards:
-        if len(tokenized_message) == 3:
-            if tokenized_message[2] == card['name'].lower():
-                await channel.send(card_format(card))
-                return
-        else:
-            if tokenized_message[1] == card['name'].lower():
-                await channel.send(card_format(card))
-                return
+    cards = Mod_Data(tokenized_message[1]).data
+    for x in range(len(cards)):
+        for card in cards[x]['cards']:
+            if len(tokenized_message) == 3:
+                if tokenized_message[2] == card['name'].lower():
+                    await channel.send(card_format(card))
+                    return
+            else:
+                if tokenized_message[1] == card['name'].lower():
+                    await channel.send(card_format(card))
+                    return
     if len(tokenized_message) == 3:
         await channel.send(f'No card named {tokenized_message[2]} found in {tokenized_message[1]}.')
     else:
@@ -87,16 +87,17 @@ async def card(channel, tokenized_message):
 
 @client.event
 async def relic(channel, tokenized_message):
-    relics = Mod_Data(tokenized_message[1]).data['relics']
-    for relic in relics:
-        if len(tokenized_message) == 3:
-            if tokenized_message[2] == relic['name'].lower():
-                await channel.send(relic_format(relic))
-                return
-        else:
-            if tokenized_message[1] == relic['name'].lower():
-                await channel.send(relic_format(relic))
-                return
+    relics = Mod_Data(tokenized_message[1]).data
+    for x in range(len(relics)):
+        for relic in relics[x][relics]:
+            if len(tokenized_message) == 3:
+                if tokenized_message[2] == relic['name'].lower():
+                    await channel.send(relic_format(relic))
+                    return
+            else:
+                if tokenized_message[1] == relic['name'].lower():
+                    await channel.send(relic_format(relic))
+                    return
     if len(tokenized_message) == 3:
         await channel.send(f'No relic named {tokenized_message[2]} found in {tokenized_message[1]}.')
     else:
