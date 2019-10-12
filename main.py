@@ -4,7 +4,6 @@ import json
 import discord
 from dotenv import load_dotenv
 import os
-from os import path
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -18,7 +17,7 @@ class Mod_Data:
         self.data = self.get_data(id)
 
     def get_data(self, id):
-        if path.exists(f'data/{id}.json'):
+        if os.path.exists(f'data/{id}.json'):
             with open(f'data/{id}.json') as json_file:
                 return json.load(json_file)
         else:
