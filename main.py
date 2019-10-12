@@ -48,8 +48,10 @@ async def on_message(message):
         
 async def get_id(message):
     s = message.content.lower()
-    if (message.content == 'help'):
+    if message.content == 'help':
         await help_command(message.channel)
+    if message.content == 'praise' and message.author.id == 86261397213708288:
+        await message.channel.send('i love reina <3')
     if os.path.exists(f'data/{s.split(" ")[1]}.json'):
         tokenized_message  = s.split(' ', 2)
     else:
