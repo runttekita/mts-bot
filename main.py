@@ -102,12 +102,20 @@ async def card(channel, tokenized_message):
         for card in cards[x]['cards']:
             if len(tokenized_message) == 3:
                 if tokenized_message[2] == card['name'].lower():
-                    await channel.send(card_format(card))
-                    return
-            else:
-                if tokenized_message[1] == card['name'].lower():
-                    await channel.send(card_format(card))
-                    return
+                    if 'mod' in cards[x]:
+                        await channel.send(card_format(card, cards[x]['mod']['name']))
+                        return
+                    else:
+                        await channel.send(card_format(card, card['mod']))
+                        return
+                else:
+                    if tokenized_message[1] == card['name'].lower():
+                        if 'mod' in cards[x]:
+                            await channel.send(card_format(card, cards[x]['mod']['name']))
+                            return
+                        else:
+                            await channel.send(card_format(card, card['mod']))
+                            return
     if len(tokenized_message) == 3:
         await channel.send(f'No card named {tokenized_message[2]} found in {tokenized_message[1]}.')
     else:
