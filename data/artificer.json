@@ -1,0 +1,925 @@
+{
+  "mod": {
+    "name": "TheArtificer",
+    "version": "1.1",
+    "authors": ["Vex'd"],
+    "credits": "",
+    "description": "A very regular tinkerer.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+  ],
+  "relics": [
+    {
+      "name": "Bombinator",
+      "tier": "Starter",
+      "pool": "",
+      "description": "Activate: Deal 10 damage to ALL enemies. 3 Charges.",
+      "flavorText": "Emergency use only."
+    },
+    {
+      "name": "First Drone",
+      "tier": "Starter",
+      "pool": "",
+      "description": "Passive: Deal 1 damage to a random enemy and gain 1 Block.",
+      "flavorText": "The first drone you ever constructed. Certainly not near the last."
+    },
+    {
+      "name": "Multi-tool",
+      "tier": "Starter",
+      "pool": "",
+      "description": "Activate: Deal 6 damage and gain 6 Block. Cooldown 2.",
+      "flavorText": "A tiny, helpful bundle of tricks."
+    },
+    {
+      "name": "Snap-Guard",
+      "tier": "Starter",
+      "pool": "",
+      "description": "Activate: Gain 4 Block. Cooldown 3.",
+      "flavorText": "Out and ready in a flash!"
+    },
+    {
+      "name": "Suppression Spray",
+      "tier": "Starter",
+      "pool": "",
+      "description": "Activate: Apply 1 Weak. Cooldown 4.",
+      "flavorText": "Competitor to Louse-B-Gone."
+    },
+    {
+      "name": "Sword Launcher",
+      "tier": "Starter",
+      "pool": "",
+      "description": "Activate: Deal 10 damage to the frontmost enemy. Cooldown 3.",
+      "flavorText": "Especially helpful in simple combat."
+    },
+    {
+      "name": "Anchor Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Start each combat with 5 Block. Passive: Deal 1 damage to a random enemy.",
+      "flavorText": "But why does it carry this anchor!?"
+    },
+    {
+      "name": "Blastinator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 12 damage. 3 Charges.",
+      "flavorText": "Blast awaaaay!"
+    },
+    {
+      "name": "Cannon-inator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 15 damage to the backmost enemy. 3 Charges.",
+      "flavorText": "1...2...3... BLAM!"
+    },
+    {
+      "name": "Confusionator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Apply 2 Weak to ALL enemies. 3 Charges.",
+      "flavorText": "What was I doing again? Intending to attack?"
+    },
+    {
+      "name": "Defensinator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Gain 8 Block. 3 Charges.",
+      "flavorText": "You shall never pierce my defenses now! Bwahaha!"
+    },
+    {
+      "name": "Energinator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Reduce the Cooldown of your Tools on Cooldown by 1. 3 Charges.",
+      "flavorText": "I'm on the outsiiide now."
+    },
+    {
+      "name": "Fighter Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Passive: Alternates between gaining 3 Block and dealing 3 damage to ALL enemies.",
+      "flavorText": "Basic combat AI."
+    },
+    {
+      "name": "Flame Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Passive: Deal 3 damage to ALL enemies.",
+      "flavorText": "Liable to overheat."
+    },
+    {
+      "name": "Guard Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Passive: Gain 2 Block.",
+      "flavorText": "To serve, and protect."
+    },
+    {
+      "name": "Handgun",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 3 damage to a random enemy. Cooldown 2.",
+      "flavorText": "But where's the key?"
+    },
+    {
+      "name": "Heavy Medal",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Gain 10 Block. Cooldown 5.",
+      "flavorText": "Quite small, but still heavy."
+    },
+    {
+      "name": "Hecklinator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 5 damage. Apply 1 Weak. 4 Charges.",
+      "flavorText": "BOO! BOO! YOU MAKE MY PARTS ACHE!"
+    },
+    {
+      "name": "Iron-Wavinator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 5 damage. Gain 5 Block. 6 Charges.",
+      "flavorText": "An immense amount of mean output!',"
+    },
+    {
+      "name": "Louse-B-Gone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Apply 1 Weak to ALL enemies. Cooldown 5.",
+      "flavorText": "Got a Louse in your house? No problem."
+    },
+    {
+      "name": "Megacharginator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 7 damage. Reduce the Cooldown of a random Tool on Cooldown by 1. 4 Charges.",
+      "flavorText": "Damage and boosting? Count me in."
+    },
+    {
+      "name": "Mini Tazer",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 9 damage. Cooldown 3.",
+      "flavorText": "Tastes electrifying."
+    },
+    {
+      "name": "Neurotoxinator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Apply 5 Poison to ALL enemies. 3 Charges.",
+      "flavorText": "The 'deadly' was in massive sarcasm quotes."
+    },
+    {
+      "name": "Pester Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Passive: A random enemy loses 1 Strength this turn.",
+      "flavorText": "The most annoying drone known."
+    },
+    {
+      "name": "Portable Cannonball",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 15 damage to the backmost enemy. Cooldown 5.",
+      "flavorText": "More of a WHUNK than a WHAM."
+    },
+    {
+      "name": "Prevention Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Start each combat with 2 Temporary_HP. Passive: Gain 1 Block.",
+      "flavorText": "Blood Vial tech meets a defensive core!"
+    },
+    {
+      "name": "Punchometer",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 5 damage and apply 1 Weak to the frontmost enemy. Cooldown 4.",
+      "flavorText": "Bif! Baf! Boof."
+    },
+    {
+      "name": "Reducer",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Reduce the Cooldown of a random Tool on Cooldown by 2. Cooldown 3.",
+      "flavorText": "Simple yet effective."
+    },
+    {
+      "name": "Reductionator",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Enemy loses 3 Strength this turn. 4 Charges.",
+      "flavorText": "A reduction in attack power, okay!?"
+    },
+    {
+      "name": "Science Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Passive: Reduce the Cooldown of a random Tool on Cooldown by 1.",
+      "flavorText": "An invaluable adviser."
+    },
+    {
+      "name": "Second Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Passive: Deal 2 damage to a random enemy and gain 1 Block.",
+      "flavorText": "A basic design outlined and executed well. An improvement on First Drone."
+    },
+    {
+      "name": "Shield-O-Tron",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Gain 6 Block. Cooldown 3.",
+      "flavorText": "Provides armor upon request."
+    },
+    {
+      "name": "Spraygun",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 9 damage to ALL enemies. Cooldown 4.",
+      "flavorText": "But does it spray water ... or bullets!?"
+    },
+    {
+      "name": "Sword Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Passive: Deal 3 damage to the frontmost enemy.",
+      "flavorText": "A drone, for swording."
+    },
+    {
+      "name": "Thorny Drone",
+      "tier": "Common",
+      "pool": "",
+      "description": "Start each combat with 2 Thorns. Passive: Deal 1 damage to a random enemy.",
+      "flavorText": "A spiked defensive and offensive trooper."
+    },
+    {
+      "name": "Whackaball",
+      "tier": "Common",
+      "pool": "",
+      "description": "Activate: Deal 6 damage, increased by 2 for each stack of Weak the enemy has. Cooldown 3.",
+      "flavorText": "Spikes and spinning and chains, oh my!"
+    },
+    {
+      "name": "All-Round Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Passive: Deal 1 damage to a random enemy. Gain 1 Block. Reduce the Cooldown of a random Tool on Cooldown by 1.",
+      "flavorText": "Simple and effective. Useful no matter what."
+    },
+    {
+      "name": "Bedazzler",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Deal 8damage. Apply 1 Weak. Cooldown 5.",
+      "flavorText": "As opposed to the Gem Gun."
+    },
+    {
+      "name": "Bolster Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Passive: Gain 1 Temporary_HP.",
+      "flavorText": "Helps boost your defensive capabilities."
+    },
+    {
+      "name": "Bomb Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Passive: Deal 2 damage to the frontmost enemy. Deal 1 damage to ALL enemies.",
+      "flavorText": "More of a piercing weapon drone."
+    },
+    {
+      "name": "Buffinator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Gain 8 Temporary_HP. 3 Charges.",
+      "flavorText": "No, not the scaling kind."
+    },
+    {
+      "name": "Card Generationator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Add a Stolen Card into your hand. 4 Charges.",
+      "flavorText": "Offers 50 flavors of Strike and Defend!"
+    },
+    {
+      "name": "Card Pirater",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Add a Stolen Card into your hand. Cooldown 4.",
+      "flavorText": "Ha, totally stole that idea!"
+    },
+    {
+      "name": "Charger Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you enter a Rest Site, reset the Cooldown of your Tools. Passive: Deal 1 damage to the frontmost enemy.",
+      "flavorText": "Plugging in and CCHARGIN UP!!!"
+    },
+    {
+      "name": "Cheerleader Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you Activate a Tool, gain 1 Block. Passive: Gain 1 Block.",
+      "flavorText": "Please no fanart."
+    },
+    {
+      "name": "Crashinator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Deal 8 damage. Deal 8 damage to ALL enemies. 3 Charges.",
+      "flavorText": "From a past age."
+    },
+    {
+      "name": "Curse Launcher",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Enemy takes 4 damage at the end of each of its turns. Cooldown 4.",
+      "flavorText": "We don't do that bestowing thing here."
+    },
+    {
+      "name": "Daze Bomb",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: ALL enemies lose 4 Strength this turn. Cooldown 4.",
+      "flavorText": "Confusingly catastrophic!"
+    },
+    {
+      "name": "Debuff-Pow-Inator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Apply 1 Weak to ALL enemies. Reduce the Cooldown of a random Tool on Cooldown by 1. 5 Charges.",
+      "flavorText": "Debuff em, then POW!"
+    },
+    {
+      "name": "Debuffinator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: ALL enemies lose 1 Strength. 3 Charges.",
+      "flavorText": "Yes, the unscaling kind."
+    },
+    {
+      "name": "Drain-o-tron",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Deal 8 damage. Gain 4 Temporary_HP. Cooldown 6.",
+      "flavorText": "Deeply offensive."
+    },
+    {
+      "name": "Drone DJ",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Trigger the Passive abilities of your Drones. Cooldown 4.",
+      "flavorText": "Just the guy to keep your Drones feeling peppy."
+    },
+    {
+      "name": "Drone Feeder",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Trigger the Passive ability of a random held Drone. Cooldown 3.",
+      "flavorText": "Flavor is mainly nuts and bolts."
+    },
+    {
+      "name": "Drone-Charge-inator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Trigger the Passive abilities of your Drones. 5 Charges.",
+      "flavorText": "A ridiculous yet suitable name."
+    },
+    {
+      "name": "Fighter Drone Mk. II",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Passive: Alternates between gaining 2 Temporary_HP and applying 2 Poison to a random enemy.",
+      "flavorText": "Not a direct improvement on Fighter Drone..."
+    },
+    {
+      "name": "First-Striker Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of each combat, deal 8 damage to ALL enemies. Passive: Deal 2 damage to the frontmost enemy.",
+      "flavorText": "Aww yeah, get the drop on 'em!"
+    },
+    {
+      "name": "Gas Cloud",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Apply 4 Poison to a random enemy. Cooldown 3.",
+      "flavorText": "One breath... and it's over."
+    },
+    {
+      "name": "Gem Gun",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "The first time you Activate this each combat, gain 8 Gold. Activate: Deal 8 damage. Cooldown 4.",
+      "flavorText": "A bejeweled weapon..."
+    },
+    {
+      "name": "Golden Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever an enemy dies, gain 5 Gold.\nPassive: Deal 1 damage to a random enemy.",
+      "flavorText": "Gold is ineffective for combat purposes."
+    },
+    {
+      "name": "Goldinator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Gain 10 Gold. Deal 10 damage. 4 Charges.",
+      "flavorText": "B-but gold is truly a very soft metal!"
+    },
+    {
+      "name": "Optimizinator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Reduce the base Cooldown of a random Tool by 1 this combat. 4 Charges.",
+      "flavorText": "Perfect for data enthusiasts."
+    },
+    {
+      "name": "Overcharged Printer",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Add an Upgraded Stolen Card into your hand. Cooldown 4.",
+      "flavorText": "Slap one Infernal Forge on and..."
+    },
+    {
+      "name": "Refreshment Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you enter a Rest Site, raise your Max HP by 2. Passive: Deal 2 damage to a random enemy.",
+      "flavorText": "Mmm, soda! Just what I was looking for."
+    },
+    {
+      "name": "Resetinator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Reset the Cooldown of a random Tool on Cooldown. 4 Charges.",
+      "flavorText": "More like Rebootinator."
+    },
+    {
+      "name": "Sadness Spray",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Enemy loses 8 Strength this turn. Cooldown 8.",
+      "flavorText": "Add a dash of sadness to your life with three easy payments!"
+    },
+    {
+      "name": "Scrapper Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you Scrap, gain an additional 50 Gold. Passive: Deal 1 damage to ALL enemies.",
+      "flavorText": "All too eager to dismantle former comrades..."
+    },
+    {
+      "name": "Tanglinator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Enemy takes 4 damage at the end of each of its turns. 5 Charges.",
+      "flavorText": "Augh, it's all over me!"
+    },
+    {
+      "name": "Upgraded Cardinator",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Add an Upgraded Stolen Card into your hand. 5 Charges.",
+      "flavorText": "A tiny Ironclad Smiths endlessly within."
+    },
+    {
+      "name": "Waiter Drone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Passive: Gain 2 Block.",
+      "flavorText": "Not tables, just Cooldowns."
+    },
+    {
+      "name": "Wheat-Bran",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Gain 5 Temporary HP. Cooldown 4.",
+      "flavorText": "Delicious! Good for your heart!"
+    },
+    {
+      "name": "Wind-Upper",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Activate: Reduce the Cooldown of the Tool on the lowest Cooldown by 1. Cooldown 2.",
+      "flavorText": "As opposed to the box-jacker."
+    },
+    {
+      "name": "Adapter",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Give a random Machine 1 additional Charge. Cooldown 12.",
+      "flavorText": "Supports Lightning and USB-3."
+    },
+    {
+      "name": "Booster Drone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you enter a Rest Site, give a random held Machine 1 additional Charge. Passive: Deal damage to a random enemy equal to the number of held Machines with 0 Charges.",
+      "flavorText": "A plug allows this Drone to interface with Machines."
+    },
+    {
+      "name": "Card Blaster",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Deal 8 damage. Add a Stolen Card into your hand. Cooldown 5.",
+      "flavorText": "Utilized in Showman tricks infrequently."
+    },
+    {
+      "name": "Cleric Drone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the end of combat, raise your Max HP by 1. Passive: Deal 1 damage to a random enemy.",
+      "flavorText": "No debuff clearing? Not a good Cleric."
+    },
+    {
+      "name": "Constrictor Drone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Passive: Frontmost enemy takes 1 damage at the end of each of its turns.",
+      "flavorText": "Long arms squeeze and entangle. Exemplary!"
+    },
+    {
+      "name": "Coolinator",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Reduce the base Cooldown of your Tools by 1 this combat. 2 Charges.",
+      "flavorText": "Mr. Freeze, no!"
+    },
+    {
+      "name": "Cracked Core???",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Start each combat with 3 Orb slots. Activate: Channel 1 Lightning. Cooldown 5.",
+      "flavorText": "Pillaged this off some defective wreck. Ha!"
+    },
+    {
+      "name": "Crippler Drone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Passive: Apply 1 Weak to a random enemy.",
+      "flavorText": "Spams Leg Sweep with reckless abandon."
+    },
+    {
+      "name": "Drone-blast-inator",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Trigger the Passive abilities of your Drones 2 times. 3 Charges.",
+      "flavorText": "I should phone security!"
+    },
+    {
+      "name": "Dual Cardinator",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Add 2 Stolen Cards into your hand. 4 Charges.",
+      "flavorText": "Double the cards, half the power."
+    },
+    {
+      "name": "Emergency Shieldinator",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Gain 1 Intangible. 3 Charges.",
+      "flavorText": "FOR EMERGENCIES ONLY"
+    },
+    {
+      "name": "Fighter Drone Mk. III",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Passive: Alternates between adding a Stolen Card into your hand and reducing an enemy's Strength by 2 this turn.",
+      "flavorText": "The final iteration of Fighter Drone."
+    },
+    {
+      "name": "Finger-O-Death Drone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Start each combat with 4 Temporary_HP. Passive: Deal damage equal to your Temporary_HP to a random enemy.",
+      "flavorText": "Shockingly effective!"
+    },
+    {
+      "name": "Gold Tossinator",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Lose 24 Gold. Deal 12 damage to ALL enemies. 8 Charges.",
+      "flavorText": "Wasteful yet incredibly effective."
+    },
+    {
+      "name": "Gravity Launcher",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Deal 15 damage and apply 2 Weak to ALL enemies. Cooldown 8.",
+      "flavorText": "A rather bardic invention."
+    },
+    {
+      "name": "Megabuffer",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Reduce the base Cooldown of a random Tool by 1 this combat. Cooldown 8.",
+      "flavorText": "Alternatively, you could have 1 Artifact right now."
+    },
+    {
+      "name": "Mimic Drone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Passive: Copies the Passive of a random held Drone.",
+      "flavorText": "Hey, this isn't a drone at all!"
+    },
+    {
+      "name": "Mimic Machine",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Copies the Activate of a random held Machine. 5 Charges.",
+      "flavorText": "Gross, it's slimy!"
+    },
+    {
+      "name": "Mimic Tool",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Copies the Activate of a random held Tool. Cooldown 3.",
+      "flavorText": "But the sticky note says 'NOT A MIMIC'!"
+    },
+    {
+      "name": "Mirror Drone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you receive attack damage, deal 50% of that damage back. Passive: Gain 1 Block.",
+      "flavorText": "A unique drone enord euqinu A"
+    },
+    {
+      "name": "Orbinator",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Start each combat with 3 Orb slots. Activate: Channel 1 Lightning and 1 Frost. 4 Charges.",
+      "flavorText": "Not an Orbitater."
+    },
+    {
+      "name": "Phylactinator",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you would receive lethal damage, if this has Charges, this loses Charges instead. Activate: Deal 2 damage. 15 Charges.",
+      "flavorText": "Soul-lockin, and totally hip!"
+    },
+    {
+      "name": "Pocket Sand",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Stun the enemy for 1 turn. Cooldown 10.",
+      "flavorText": "MY EYES!!!"
+    },
+    {
+      "name": "Recharginator",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Reset the Cooldown of your Tools. 4 Charges.",
+      "flavorText": "The solution to all our energy problems! Not Energy problems, though."
+    },
+    {
+      "name": "Resettear",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Reset the Cooldown of a random Tool on Cooldown. Cooldown 4.",
+      "flavorText": "Resets like crazy."
+    },
+    {
+      "name": "Shield Drone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Reduce all your HP loss by 1. Passive: Deal 1 damage to a random enemy.",
+      "flavorText": "First Drone with a shield attached. Incredible."
+    },
+    {
+      "name": "Techie Drone",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Passive: Reduce the Cooldown of the Tool on the highest Cooldown by 2.",
+      "flavorText": "Can you come over? I accidentally installed a toolbar!"
+    },
+    {
+      "name": "Throne of Doom",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Deal 5 damage. Reduce this tool's Cooldown by 1 this combat. Cooldown 3.",
+      "flavorText": "Not very throne-y."
+    },
+    {
+      "name": "Two Handed Wheel",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Activate: Add 2 Stolen Cards into your hand. Cooldown 7.",
+      "flavorText": "Whoa, how do you drive this?"
+    },
+    {
+      "name": "Collector Drone",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Passive: Add a Stolen Card into your hand.",
+      "flavorText": "The Last Drone."
+    },
+    {
+      "name": "Damage-Blockinator",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Activate: Gain 10 Block. Deal 10 damage. 10 Charges.",
+      "flavorText": "Isn't that what we all are?"
+    },
+    {
+      "name": "Deheatinator",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Activate: Reduce the Cooldown of a random Tool on Cooldown by 1. 15 Charges.",
+      "flavorText": "Cooling down. Dooling cown..."
+    },
+    {
+      "name": "Drone Leader",
+      "tier": "Boss",
+      "pool": "",
+      "description": "You can carry 1 additional Drone. Passive: Trigger the Passive abilities of your other Drones.",
+      "flavorText": "Typically relaxes in a hoard."
+    },
+    {
+      "name": "Ghost Suit",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Activate: Gain 1 Intangible. Cooldown 6.",
+      "flavorText": "Ooooo, spooky."
+    },
+    {
+      "name": "Hoarder Drone",
+      "tier": "Boss",
+      "pool": "",
+      "description": "You can carry 2 additional Tools, Machines, and Drones. Passive: Deal 1 damage to a random enemy.",
+      "flavorText": "NEEDS MORE BOLTS"
+    },
+    {
+      "name": "Immortal Armor",
+      "tier": "Boss",
+      "pool": "",
+      "description": "When you would die, if this is not on Cooldown, put it on Cooldown and heal to 1 HP instead. Activate: Gain 5 Block. Cooldown 12.",
+      "flavorText": "I am INVINCIBLE! After 12 turns."
+    },
+    {
+      "name": "Machine King",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Activate: Give your other Machines 1 additional charge. 2 Charges.",
+      "flavorText": "Lord of the Inators."
+    },
+    {
+      "name": "Machine Necromancer Drone",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Passive: Activate a random Machine.",
+      "flavorText": "Gesundheit!"
+    },
+    {
+      "name": "Safe Nuclear Reactor",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Activate: Reset the Cooldown of your other Tools. Cooldown 6.",
+      "flavorText": "Among the unicorns."
+    },
+    {
+      "name": "Stuninator",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Activate: Stun the enemy for 1 turn. 3 Charges.",
+      "flavorText": "Almost named Power Word: Stuninator."
+    },
+    {
+      "name": "Tezzeret's Necklace",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Activate: Give your Machines 1 additional Charge. Cooldown 10.",
+      "flavorText": "Who owned this?"
+    },
+    {
+      "name": "The Real Cannon",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Activate: Deal 33 damage to ALL enemies. Cooldown 10.",
+      "flavorText": "BOOOOOOM!"
+    },
+    {
+      "name": "Toolmaster Drone",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each combat, reduce the base Cooldown of your Tools by 1. Passive: None.",
+      "flavorText": "Alas, if only I could be a tool too..."
+    },
+    {
+      "name": "Top Tier Cardinator",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Activate: Add 2 Upgraded Stolen Cards into your hand. 5 Charges.",
+      "flavorText": "Ban and nerf incoming."
+    },
+    {
+      "name": "Toxidrone",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Passive: Apply 2 Poison to ALL enemies.",
+      "flavorText": "I wassss the true Firssst Drone... and I shall be... the lassst..."
+    },
+    {
+      "name": "Amongator",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Activate: Trigger a random Tool, Drone, and other Machine. 3 Charges.",
+      "flavorText": "We are all among the gator."
+    },
+    {
+      "name": "Courier Drone",
+      "tier": "Shop",
+      "pool": "",
+      "description": "You can carry 1 additional Tool, Machine, and Drone. Passive: Deal 1 damage to a random enemy.",
+      "flavorText": "No PLATINUM CHIP detected."
+    },
+    {
+      "name": "Guardian Drone",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Passive: Gain 1 Artifact.",
+      "flavorText": "SO USEFUL... or is it?"
+    },
+    {
+      "name": "Last Resortinator",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Activate: Does something. 6 Charges.",
+      "flavorText": "Anomalous and dangerous."
+    },
+    {
+      "name": "Life Tapper",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Activate: Lose 9 Max HP. Deal 20 damage. Cooldown 0.",
+      "flavorText": "Taps anything... except enchantments."
+    },
+    {
+      "name": "Mastermind Drone",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Passive: Reduce the Cooldown of 2 random Tools on Cooldown by 1, then Activate ALL usable Tools.",
+      "flavorText": "More of an idle game kind of Drone."
+    },
+    {
+      "name": "Plated Arminator",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Activate: Gain 2 Plated Armor. 4 Charges.",
+      "flavorText": "Newfangled tech! Not as strong as a pen and needle."
+    },
+    {
+      "name": "Recharger Drone",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Whenever you Recharge a Machine, it gains 1 additional Charge. Passive: Gain 1 Block.",
+      "flavorText": "What a cutie!"
+    },
+    {
+      "name": "Sand-blast-inator",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Activate: Stun a random enemy for 1 turn. 2 Charges.",
+      "flavorText": "Pocket sand without the pocket."
+    },
+    {
+      "name": "Sapper",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Activate: Enemy loses 1 Strength. Cooldown 5.",
+      "flavorText": "It's so... hard to walk..."
+    },
+    {
+      "name": "Smokinator",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Activate: Escape from a non-boss combat. Receive no rewards. 2 Charges.",
+      "flavorText": "Poof! I'm gone."
+    },
+    {
+      "name": "Treasure Hunter Drone",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Combats contain 10 more Gold. Passive: Deal 2 damage to a random enemy.",
+      "flavorText": "The HP loss is from rolling boulder traps."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Artificer",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+  ]
+}

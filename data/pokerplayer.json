@@ -1,0 +1,1728 @@
+{
+  "mod": {
+    "name": "The Poker Player",
+    "version": "0.8.10",
+    "authors": ["Celicath"],
+    "credits": "HSymbol - original game\nRita-Bernstein - ZHS translation",
+    "description": "Adds a character called The Poker Player, who fights with his own rule inspired from poker.\n\n- Adds 87 cards and 13 relics.\n- Disables some base game contents which are unbalanced or confusing to the Poker Player. If you don't like this behavior, check out the mod config.\n\nv0.8.0 (2019-04-23)\n- Many balance changes.\n\nv0.8.6 (2019-06-16)\n- Changes to Super Bite card, Splitter relic, Exordium Club, other bug fixes\n\nv0.8.7 (2019-07-02)\n- Updated for v1.1 release\n\nv0.8.9 (2019-07-14)\n- Now you can see Poker Cards in library event, transform effects, Draft & Sealed Deck Custom Mod!\n- Added KOR text for Harden buff.\n- Fixed UI when you play Club Dance+ with Broken Clock relic.\n\nv0.8.10 (2019-07-20)\n- If you have Slay the Streamer mod enabled, the starting deck selection now contains Poker cards.\n\nFor the past patch notes, visit https://steamcommunity.com/sharedfiles/filedetails/changelog/1710999325\n\n",
+    "mts_version": "3.7.0",
+    "sts_version": "07-17-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": ["versus"]
+  },
+  "cards": [
+    {
+      "name": "Super Bite",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage.\nHeal 4 HP."
+    },
+    {
+      "name": "Super Bite+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 24 damage.\nHeal 5 HP."
+    },
+    {
+      "name": "Bad Joker",
+      "color": "Poker_player_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 of 2 random pokerplayer:non-Heart Poker Cards to add to your hand. It has Ethereal."
+    },
+    {
+      "name": "Bad Joker+",
+      "color": "Poker_player_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 of 3 random pokerplayer:non-Heart Poker Cards to add to your hand. It has Ethereal."
+    },
+    {
+      "name": "Mulligan",
+      "color": "Poker_player_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard any number of cards.\nDraw cards until you have 5 cards in hand."
+    },
+    {
+      "name": "Mulligan+",
+      "color": "Poker_player_gray",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard any number of cards.\nDraw cards until you have 5 cards in hand."
+    },
+    {
+      "name": "Trump Strike",
+      "color": "Poker_player_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 0 damage (number of Poker cards in your deck).\nDraw 1 card."
+    },
+    {
+      "name": "Trump Strike+",
+      "color": "Poker_player_gray",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 0 damage (number of Poker cards in your deck).\nDraw 2 cards."
+    },
+    {
+      "name": "1 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 1"
+    },
+    {
+      "name": "1 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 1"
+    },
+    {
+      "name": "1 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 1"
+    },
+    {
+      "name": "1 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 1"
+    },
+    {
+      "name": "10 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 10"
+    },
+    {
+      "name": "10 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 10"
+    },
+    {
+      "name": "10 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 10"
+    },
+    {
+      "name": "10 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 10"
+    },
+    {
+      "name": "2 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 2"
+    },
+    {
+      "name": "2 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 2"
+    },
+    {
+      "name": "2 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 2"
+    },
+    {
+      "name": "2 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 2"
+    },
+    {
+      "name": "2 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 2"
+    },
+    {
+      "name": "2 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 2"
+    },
+    {
+      "name": "2 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 2"
+    },
+    {
+      "name": "2 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 2"
+    },
+    {
+      "name": "2 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 2"
+    },
+    {
+      "name": "2 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 2"
+    },
+    {
+      "name": "2 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 2"
+    },
+    {
+      "name": "2 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 2"
+    },
+    {
+      "name": "3 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 3"
+    },
+    {
+      "name": "3 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 3"
+    },
+    {
+      "name": "3 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 3"
+    },
+    {
+      "name": "3 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 3"
+    },
+    {
+      "name": "3 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 3"
+    },
+    {
+      "name": "3 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 3"
+    },
+    {
+      "name": "3 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 3"
+    },
+    {
+      "name": "3 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 3"
+    },
+    {
+      "name": "3 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 3"
+    },
+    {
+      "name": "3 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 3"
+    },
+    {
+      "name": "3 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 3"
+    },
+    {
+      "name": "3 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 3"
+    },
+    {
+      "name": "4 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 4"
+    },
+    {
+      "name": "4 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 4"
+    },
+    {
+      "name": "4 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 4"
+    },
+    {
+      "name": "4 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 4"
+    },
+    {
+      "name": "4 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 4"
+    },
+    {
+      "name": "4 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 4"
+    },
+    {
+      "name": "4 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 4"
+    },
+    {
+      "name": "4 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 4"
+    },
+    {
+      "name": "4 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 4"
+    },
+    {
+      "name": "4 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 4"
+    },
+    {
+      "name": "4 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 4"
+    },
+    {
+      "name": "4 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 4"
+    },
+    {
+      "name": "5 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 5"
+    },
+    {
+      "name": "5 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 5"
+    },
+    {
+      "name": "5 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 5"
+    },
+    {
+      "name": "5 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 5"
+    },
+    {
+      "name": "5 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 5"
+    },
+    {
+      "name": "5 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 5"
+    },
+    {
+      "name": "5 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 5"
+    },
+    {
+      "name": "5 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 5"
+    },
+    {
+      "name": "5 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 5"
+    },
+    {
+      "name": "5 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 5"
+    },
+    {
+      "name": "5 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 5"
+    },
+    {
+      "name": "5 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 5"
+    },
+    {
+      "name": "6 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 6"
+    },
+    {
+      "name": "6 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 6"
+    },
+    {
+      "name": "6 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 6"
+    },
+    {
+      "name": "6 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 6"
+    },
+    {
+      "name": "6 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 6"
+    },
+    {
+      "name": "6 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 6"
+    },
+    {
+      "name": "6 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 6"
+    },
+    {
+      "name": "6 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 6"
+    },
+    {
+      "name": "6 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 6"
+    },
+    {
+      "name": "6 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 6"
+    },
+    {
+      "name": "6 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 6"
+    },
+    {
+      "name": "6 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 6"
+    },
+    {
+      "name": "7 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 7"
+    },
+    {
+      "name": "7 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 7"
+    },
+    {
+      "name": "7 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 7"
+    },
+    {
+      "name": "7 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 7"
+    },
+    {
+      "name": "7 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 7"
+    },
+    {
+      "name": "7 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 7"
+    },
+    {
+      "name": "7 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 7"
+    },
+    {
+      "name": "7 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 7"
+    },
+    {
+      "name": "7 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 7"
+    },
+    {
+      "name": "7 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 7"
+    },
+    {
+      "name": "7 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 7"
+    },
+    {
+      "name": "7 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 7"
+    },
+    {
+      "name": "8 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 8"
+    },
+    {
+      "name": "8 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 8"
+    },
+    {
+      "name": "8 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 8"
+    },
+    {
+      "name": "8 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 8"
+    },
+    {
+      "name": "8 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 8"
+    },
+    {
+      "name": "8 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 8"
+    },
+    {
+      "name": "8 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 8"
+    },
+    {
+      "name": "8 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 8"
+    },
+    {
+      "name": "8 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 8"
+    },
+    {
+      "name": "8 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 8"
+    },
+    {
+      "name": "8 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 8"
+    },
+    {
+      "name": "8 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 8"
+    },
+    {
+      "name": "9 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 9"
+    },
+    {
+      "name": "9 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 9"
+    },
+    {
+      "name": "9 of Clubs",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Club 9"
+    },
+    {
+      "name": "9 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 9"
+    },
+    {
+      "name": "9 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 9"
+    },
+    {
+      "name": "9 of Diamonds",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Diamond 9"
+    },
+    {
+      "name": "9 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 9"
+    },
+    {
+      "name": "9 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 9"
+    },
+    {
+      "name": "9 of Hearts",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "Ethereal.\npokerplayer:Heart 9"
+    },
+    {
+      "name": "9 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 9"
+    },
+    {
+      "name": "9 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 9"
+    },
+    {
+      "name": "9 of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Unknown",
+      "cost": "1",
+      "description": "pokerplayer:Spade 9"
+    },
+    {
+      "name": "Thinking Time",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 0 Block\n(number of Poker cards in your deck).\nDraw 1 card."
+    },
+    {
+      "name": "Thinking Time+",
+      "color": "Poker_player_gray",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 0 Block\n(number of Poker cards in your deck).\nDraw 2 cards."
+    },
+    {
+      "name": "Card Burn",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nDraw 2 Cards."
+    },
+    {
+      "name": "Card Burn+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 Cards.\nExhaust 1 card."
+    },
+    {
+      "name": "Cloak and Diamond",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd a 4 of pokerplayer:Diamonds with Ethereal into your hand."
+    },
+    {
+      "name": "Cloak and Diamond+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd a 7 of pokerplayer:Diamonds with Ethereal into your hand."
+    },
+    {
+      "name": "Clubs Club",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 1 card.\nDeal 10 damage for each pokerplayer:Club in your hand."
+    },
+    {
+      "name": "Clubs Club+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 1 card.\nDeal 13 damage for each pokerplayer:Club in your hand."
+    },
+    {
+      "name": "Configure",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards. Put a card from your hand onto the top of your draw pile."
+    },
+    {
+      "name": "Configure+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards. Put a card from your hand onto the top of your draw pile."
+    },
+    {
+      "name": "Dart Throw",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nEnemy loses 2 Strength this turn."
+    },
+    {
+      "name": "Dart Throw+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage.\nEnemy loses 3 Strength this turn."
+    },
+    {
+      "name": "Diamond Strike",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nAdd a 4 of pokerplayer:Diamonds with Ethereal into your hand."
+    },
+    {
+      "name": "Diamond Strike+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nAdd a 6 of pokerplayer:Diamonds with Ethereal into your hand."
+    },
+    {
+      "name": "Fold",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 13 Block.\nDiscard 2 cards."
+    },
+    {
+      "name": "Fold+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 16 Block.\nDiscard 2 cards."
+    },
+    {
+      "name": "Magic Trick",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw until you have 7 cards in hand.\nDiscard 2 cards."
+    },
+    {
+      "name": "Magic Trick+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw until you have 8 cards in hand.\nDiscard 3 cards."
+    },
+    {
+      "name": "Raise",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nYou may increase the pokerplayer:Rank of one Poker Card by 1."
+    },
+    {
+      "name": "Raise+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nYou may increase the pokerplayer:Rank of one Poker Card by 1."
+    },
+    {
+      "name": "Spade Strike",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nAdd a 4 of pokerplayer:Spades with Ethereal into your hand."
+    },
+    {
+      "name": "Spade Strike+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nAdd a 6 of pokerplayer:Spades with Ethereal into your hand."
+    },
+    {
+      "name": "Trickery",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Trickery+",
+      "color": "Poker_player_gray",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nApply 3 Weak."
+    },
+    {
+      "name": "Card Printer <3>",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, shuffle a pokerplayer:non-Heart, pokerplayer:Rank 3 Poker card to your draw pile. Can be upgraded 7 times."
+    },
+    {
+      "name": "Card Printer <4>",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, shuffle a pokerplayer:non-Heart, pokerplayer:Rank 4 Poker card to your draw pile. Can be upgraded 6 more times."
+    },
+    {
+      "name": "Card Printer <4>",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, shuffle a pokerplayer:non-Heart, pokerplayer:Rank 4 Poker card to your draw pile. Can be upgraded 6 more times."
+    },
+    {
+      "name": "Club Dance",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 random pokerplayer:Clubs to add to your hand. It has Ethereal."
+    },
+    {
+      "name": "Club Dance+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 5 random pokerplayer:Clubs to add to your hand. It has Ethereal."
+    },
+    {
+      "name": "Club Shade",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your pokerplayer:Clubs give you 2 Block as an additional pokerplayer:Showdown effect."
+    },
+    {
+      "name": "Club Shade+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Draw 1 card.\nYour pokerplayer:Clubs give you 2 Block as an additional pokerplayer:Showdown effect."
+    },
+    {
+      "name": "Club Strike",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nAdd a 6 of pokerplayer:Clubs with Ethereal into your hand."
+    },
+    {
+      "name": "Club Strike+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nAdd a 7 of pokerplayer:Clubs with Ethereal into your hand."
+    },
+    {
+      "name": "Damn Straight",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "pokerplayer:Showdown bonus from Straight is doubled.\n(200% -> 400%)"
+    },
+    {
+      "name": "Damn Straight+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Draw 1 card.\npokerplayer:Showdown bonus from Straight is doubled.\n(200% -> 400%)"
+    },
+    {
+      "name": "Extraction",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card from your hand. If it is a Poker card, gain energy equal to its pokerplayer:Rank."
+    },
+    {
+      "name": "Extraction+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card from your hand. If it is a Poker card, gain energy equal to its pokerplayer:Rank."
+    },
+    {
+      "name": "Fill the Pot",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 3 random non-Poker cards from your draw pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Fill the Pot+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 4 random non-Poker cards from your draw pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Flying Card",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 3 Block and deal 3 damage for each card generated in this combat."
+    },
+    {
+      "name": "Flying Card+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 4 Block and deal 4 damage for each card generated in this combat."
+    },
+    {
+      "name": "Harden",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your pokerplayer:Spades give you 2 Block next turn as an additional pokerplayer:Showdown effect."
+    },
+    {
+      "name": "Harden+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Draw 1 card.\nYour pokerplayer:Spades give you 2 Block next turn as an additional pokerplayer:Showdown effect."
+    },
+    {
+      "name": "Heart Strike",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nAdd a 3 of pokerplayer:Hearts into your hand.\nExhaust."
+    },
+    {
+      "name": "Heart Strike+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nAdd a 5 of pokerplayer:Hearts into your hand.\nExhaust."
+    },
+    {
+      "name": "Hidden Card",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fetch a Poker Card from your discard pile."
+    },
+    {
+      "name": "Hidden Card+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fetch a Poker Card from your discard pile. Gain Block equal to its pokerplayer:Rank."
+    },
+    {
+      "name": "Hot Shot Cut",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Exhaust all Poker cards in your hand.\nDeal 10 damage to a random enemy for each of them.\nExhaust."
+    },
+    {
+      "name": "Hot Shot Cut+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Exhaust all Poker cards in your hand.\nDeal 13 damage to a random enemy for each of them.\nExhaust."
+    },
+    {
+      "name": "Jack of Spades",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nApply 11 Weak.\nApply 11 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Jack of Spades+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nApply 11 Weak.\nApply 11 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Manipulation",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "For the next X turns, gain [E] [E].\nYou may increase the pokerplayer:Rank of one Poker Card by X.\nExhaust."
+    },
+    {
+      "name": "Manipulation+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "For the next X turns, gain [E] [E].\nYou may increase the pokerplayer:Rank of one Poker Card by X."
+    },
+    {
+      "name": "Overdeal",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal X damage.\nAdd X random Poker cards into your hand.\nExhaust."
+    },
+    {
+      "name": "Overdeal+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal X+1 damage. Add X+1 random Poker cards into your hand.\nExhaust."
+    },
+    {
+      "name": "Poor Copy",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose One: Draw 1 card; or copy a Poker card from your hand and reduce the pokerplayer:Rank of the copy by 1."
+    },
+    {
+      "name": "Poor Copy+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose One: Draw 1 card; or copy a Poker card from your hand and reduce the pokerplayer:Rank of the copy by 1."
+    },
+    {
+      "name": "Risky Bet",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard a card and draw a card. If they are both Poker cards with the same pokerplayer:Suit, gain [E] and draw 3 cards."
+    },
+    {
+      "name": "Risky Bet+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard a card and draw a card. If they are both Poker cards with the same pokerplayer:Suit, gain [E] and draw 4 cards."
+    },
+    {
+      "name": "Second Chance",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 1 card.\nRepeat until you have 5 cards in hand."
+    },
+    {
+      "name": "Second Chance+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw 1 card.\nRepeat until you have 5 cards in hand."
+    },
+    {
+      "name": "Sharpen",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your pokerplayer:Diamonds deal 2 more damage during pokerplayer:Showdown."
+    },
+    {
+      "name": "Sharpen+",
+      "color": "Poker_player_gray",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Draw 1 card.\nYour pokerplayer:Diamonds deal 2 more damage during pokerplayer:Showdown."
+    },
+    {
+      "name": "Duplicate",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose a Poker Card from your hand. Add a copy of that card into your hand."
+    },
+    {
+      "name": "Duplicate+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a Poker Card from your hand. Add a copy of that card into your hand."
+    },
+    {
+      "name": "Fake Symbols",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "You score a Flush if you have 4 or more Poker Cards with same pokerplayer:Suit during pokerplayer:Showdown."
+    },
+    {
+      "name": "Fake Symbols+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Draw 1 card.\nYou score a Flush if you have 4 or more Poker Cards with same pokerplayer:Suit during pokerplayer:Showdown."
+    },
+    {
+      "name": "Flip Table",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nGain 3 Strength.\nGain 3 Dexterity."
+    },
+    {
+      "name": "Flip Table+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage.\nGain 4 Strength.\nGain 4 Dexterity."
+    },
+    {
+      "name": "Gambler Form",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "If you score Two Pair or better, the pokerplayer:Showdown effect of all Poker cards are increased by 3 ."
+    },
+    {
+      "name": "Gambler Form+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Draw 1 card.\nIf you score Two Pair or better, the pokerplayer:Showdown effect of all Poker cards are increased by 3 ."
+    },
+    {
+      "name": "It's Showtime!",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw 1 card.\nTrigger the pokerplayer:Showdown.\nExhaust."
+    },
+    {
+      "name": "It's Showtime!+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nTrigger the pokerplayer:Showdown.\nExhaust."
+    },
+    {
+      "name": "Promotion",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Raise the pokerplayer:Rank of ALL Poker cards by 1 for the rest of combat.\nExhaust."
+    },
+    {
+      "name": "Promotion+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Raise the pokerplayer:Rank of ALL Poker cards by 1 for the rest of combat.\nExhaust."
+    },
+    {
+      "name": "Royal Strike",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard a Poker card.\nDeal damage equal to 5 times the pokerplayer:Rank of it."
+    },
+    {
+      "name": "Royal Strike+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard a Poker card.\nDeal damage equal to 6 times the pokerplayer:Rank of it."
+    },
+    {
+      "name": "Secret Dealer",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards."
+    },
+    {
+      "name": "Secret Dealer+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards."
+    },
+    {
+      "name": "Stacked Deck",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, Look at the top 2 cards of your draw pile and discard any of them."
+    },
+    {
+      "name": "Stacked Deck+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Draw 1 card.\nAt the start of your turn, Look at the top 2 cards of your draw pile and discard any of them."
+    },
+    {
+      "name": "The Die is Cast!",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Throw a die.\nChoose any number of Poker cards in your hand to change their pokerplayer:Rank to the die roll."
+    },
+    {
+      "name": "The Die is Cast!+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Throw a loaded die.\nChoose any number of Poker cards in your hand to change their pokerplayer:Rank to the die roll."
+    },
+    {
+      "name": "Variety Attack",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage to ALL enemies. Damage is doubled for each unique pokerplayer:Suit of Poker Cards in your hand."
+    },
+    {
+      "name": "Variety Attack+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage to ALL enemies. Damage is doubled for each unique pokerplayer:Suit of Poker Cards in your hand."
+    },
+    {
+      "name": "Waste Collection",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fetch 3 Poker cards ranked 3 or less from your draw pile. They have double pokerplayer:Showdown Effect for this combat.\nExhaust."
+    },
+    {
+      "name": "Waste Collection+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fetch 4 Poker cards ranked 3 or less from your draw pile. They have double pokerplayer:Showdown Effect for this combat.\nExhaust."
+    },
+    {
+      "name": "Wild Card",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose 1 from ALL Poker Cards to add into your hand.\nExhaust."
+    },
+    {
+      "name": "Wild Card+",
+      "color": "Poker_player_gray",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 from ALL Poker Cards to add into your hand.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Deck Case",
+      "tier": "Starter",
+      "pool": "Poker_player_gray",
+      "description": "Each combat, the first 6 Status cards entering your deck are exhausted.",
+      "flavorText": "Having this calms you down and help you quickly recover from bad conditions."
+    },
+    {
+      "name": "Bottled Poker",
+      "tier": "Common",
+      "pool": "Poker_player_gray",
+      "description": "Upon pick up, choose up to 3 Poker cards. Start each combat with these cards in your hand.",
+      "flavorText": "You feel nostalgic while looking at this bottle."
+    },
+    {
+      "name": "Splitter",
+      "tier": "Common",
+      "pool": "Poker_player_gray",
+      "description": "Whenever you play a Poker card pokerplayer:ranked 3 or less, deal 5 damage to ALL enemies.",
+      "flavorText": "The magical abilities of lower Poker cards shine!"
+    },
+    {
+      "name": "Broken Clock",
+      "tier": "Uncommon",
+      "pool": "Poker_player_gray",
+      "description": "When you would add a Poker Card into your hand, you may choose to draw 1 card instead.",
+      "flavorText": "Only you know that this clock moves slowly."
+    },
+    {
+      "name": "Club Pass",
+      "tier": "Uncommon",
+      "pool": "Poker_player_gray",
+      "description": "Whenever you play a card containing \"Club\", your pokerplayer:Clubs deal 1 more damage until the end of combat.",
+      "flavorText": "Of course it's the Club of Joking."
+    },
+    {
+      "name": "Cool Box",
+      "tier": "Uncommon",
+      "pool": "Poker_player_gray",
+      "description": "At the start of each combat, add a 10 of pokerplayer:Spades with Ethereal into your hand. It costs 0.",
+      "flavorText": "Contains tools for cooling your cool head."
+    },
+    {
+      "name": "Fair License",
+      "tier": "Uncommon",
+      "pool": "Poker_player_gray",
+      "description": "If you do not play any Poker cards during your turn and score any Poker hand, gain [E] [E] next turn.",
+      "flavorText": "Great present for honest people."
+    },
+    {
+      "name": "Energetic Bat",
+      "tier": "Rare",
+      "pool": "Poker_player_gray",
+      "description": "Whenever you play a Strike card, gain [E] .",
+      "flavorText": "This lively bat strikes enemies before you even realize it."
+    },
+    {
+      "name": "Jackpot Machine",
+      "tier": "Rare",
+      "pool": "Poker_player_gray",
+      "description": "If you have 3 or more Poker Cards with pokerplayer:Rank 7 during Showdown, deal 52 damage to ALL enemies.",
+      "flavorText": "Looks like a jackpot machine, but actually a calendar."
+    },
+    {
+      "name": "Stuffed Pocket",
+      "tier": "Rare",
+      "pool": "Poker_player_gray",
+      "description": "You receive the pokerplayer:Showdown effects from all Poker cards in your hand instead of max. 5 cards.",
+      "flavorText": "Warning: Poker hand might be determined unexpectedly."
+    },
+    {
+      "name": "Ace Card",
+      "tier": "Boss",
+      "pool": "Poker_player_gray",
+      "description": "pokerplayer:Rank 1 Poker Cards cost 0 and gives you 2 Block when played.",
+      "flavorText": "The single card to trump the opponents."
+    },
+    {
+      "name": "Pen and Eraser",
+      "tier": "Shop",
+      "pool": "Poker_player_gray",
+      "description": "Upon pickup, raise the pokerplayer:Rank of two random Poker Cards by 3.",
+      "flavorText": "The best tool for \"modifying\" poker cards."
+    },
+    {
+      "name": "Pendant of Escape",
+      "tier": "Shop",
+      "pool": "Poker_player_gray",
+      "description": "Once per combat, right click to activate.\nDiscard your hand and draw 5 cards.",
+      "flavorText": "Touch this if you feel hopeless."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Poker Player",
+      "type": "Player",
+      "minHP": "52",
+      "maxHP": "52"
+    }
+  ],
+  "keywords": [
+  ]
+}

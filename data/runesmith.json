@@ -1,0 +1,1340 @@
+{
+  "mod": {
+    "name": "The Runesmith",
+    "version": "0.7.1",
+    "authors": ["Blizzarre","PureStream"],
+    "credits": "\nBDWSSBB - Card descriptions wording improvements.\nDalamzi - Korean translation.\nRita-Bernstein - Chinese translation.\nSlathos - Polish translation.",
+    "description": "Add a new class called The Runesmith",
+    "mts_version": "3.11.0",
+    "sts_version": "07-17-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Aqua Decay",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 2 runesmith:Potency this turn.\nLose all runesmith:Aqua.\nGain runesmith:Ignis and runesmith:Terra equal to runesmith:Aqua lost."
+    },
+    {
+      "name": "Aqua Decay+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 2 runesmith:Potency this turn.\nLose all runesmith:Aqua.\nGain runesmith:Ignis and runesmith:Terra equal to runesmith:Aqua lost."
+    },
+    {
+      "name": "Ignis Decay",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 6 damage.\nLose all runesmith:Ignis.\nGain runesmith:Terra and runesmith:Aqua equal to runesmith:Ignis lost."
+    },
+    {
+      "name": "Ignis Decay+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 6 damage.\nLose all runesmith:Ignis.\nGain runesmith:Terra and runesmith:Aqua equal to runesmith:Ignis lost."
+    },
+    {
+      "name": "Terra Decay",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Gain 5 Block.\nLose all runesmith:Terra.\nGain runesmith:Ignis and runesmith:Aqua equal to runesmith:Terra lost."
+    },
+    {
+      "name": "Terra Decay+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Gain 5 Block.\nLose all runesmith:Terra.\nGain runesmith:Ignis and runesmith:Aqua equal to runesmith:Terra lost."
+    },
+    {
+      "name": "Craft Firestone",
+      "color": "Runesmith_beige",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "1 runesmith:Ignis: runesmith:Craft a runesmith:Firestone Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Firestone+",
+      "color": "Runesmith_beige",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "1 runesmith:Ignis: runesmith:Craft a runesmith:Firestone Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Defend",
+      "color": "Runesmith_beige",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Runesmith_beige",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Fortify",
+      "color": "Runesmith_beige",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nrunesmith:Enhance a random card in your hand."
+    },
+    {
+      "name": "Fortify+",
+      "color": "Runesmith_beige",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nrunesmith:Enhance a card in your hand."
+    },
+    {
+      "name": "Strike",
+      "color": "Runesmith_beige",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Runesmith_beige",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Backup Battery",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 of each runesmith:Element.\nDraw 1 card.\nCan be upgraded 4 times.\nExhaust."
+    },
+    {
+      "name": "Backup Battery+1",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 of each runesmith:Element.\nDraw 1 card.\nCan be upgraded 4 times.\nExhaust."
+    },
+    {
+      "name": "Chisel Stab",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 Damage.\nGain 2 runesmith:Ignis."
+    },
+    {
+      "name": "Chisel Stab+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 Damage.\nGain 2 runesmith:Ignis."
+    },
+    {
+      "name": "Craft Magma",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Ignis 2 runesmith:Terra: runesmith:Craft a runesmith:Magma Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Magma+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Ignis 2 runesmith:Terra: runesmith:Craft a runesmith:Magma Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Protectio",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Terra: runesmith:Craft a runesmith:Protectio Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Protectio+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Terra: runesmith:Craft a runesmith:Protectio Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Earth Shield",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 2 runesmith:Terra."
+    },
+    {
+      "name": "Earth Shield+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nGain 2 runesmith:Terra."
+    },
+    {
+      "name": "Energized Chisel",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nGain 3 Block.\nApply 1 Weak.\nGain 1 runesmith:Ignis and 1 runesmith:Aqua."
+    },
+    {
+      "name": "Energized Chisel+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nGain 4 Block.\nApply 2 Weak.\nGain 1 runesmith:Ignis and 1 runesmith:Aqua."
+    },
+    {
+      "name": "Grindstone",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nThis turn, whenever you play a card,\nUpgrade it.\nrunesmith:Enhance the card if it cannot be upgraded."
+    },
+    {
+      "name": "Grindstone+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nFor 2 turns, whenever you play a card,\nUpgrade it.\nrunesmith:Enhance the card if it cannot be upgraded."
+    },
+    {
+      "name": "Hammer Throw",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDraw 1 card and Upgrade it."
+    },
+    {
+      "name": "Hammer Throw+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 2 cards and Upgrade them."
+    },
+    {
+      "name": "Heat Exchange",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nThis card gains 1 additional damage for each of your runesmith:Ignis.\nLose 1 runesmith:Ignis."
+    },
+    {
+      "name": "Heat Exchange+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nThis card gains 2 additional damage for each of your runesmith:Ignis.\nLose 1 runesmith:Ignis."
+    },
+    {
+      "name": "Heated Chisel",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 1 Vulnerable.\nGain 1 runesmith:Ignis and 1 runesmith:Terra."
+    },
+    {
+      "name": "Heated Chisel+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 2 Vulnerable.\nGain 1 runesmith:Ignis and 1 runesmith:Terra."
+    },
+    {
+      "name": "Makeshift Armor",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "runesmith:Downgrade a random card in your draw pile, hand, or discard pile.\nGain 11 Block.\nGain 1 runesmith:Terra."
+    },
+    {
+      "name": "Makeshift Armor+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "runesmith:Downgrade a random card in your draw pile, hand, or discard pile.\nGain 15 Block.\nGain 1 runesmith:Terra."
+    },
+    {
+      "name": "Overpower",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nrunesmith:Downgrade 2 random cards in your hand."
+    },
+    {
+      "name": "Overpower+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nrunesmith:Downgrade 2 random cards in your hand."
+    },
+    {
+      "name": "Repurpose",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card.\nAttack: Gain 2 runesmith:Ignis.\nSkill: Gain 2 runesmith:Terra.\nPower: Gain 2 runesmith:Aqua.\nStatus: Gain 1 of each."
+    },
+    {
+      "name": "Repurpose+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card.\nAttack: Gain 3 runesmith:Ignis.\nSkill: Gain 3 runesmith:Terra.\nPower: Gain 3 runesmith:Aqua.\nStatus: Gain 1 of each.\nCurse: Gain 2 of each."
+    },
+    {
+      "name": "Rune Hurl",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "runesmith:Break your oldest Rune to deal 10 damage.\nIf you don't have any Runes, draw 1 card."
+    },
+    {
+      "name": "Rune Hurl+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "runesmith:Break your oldest Rune to deal 14 damage.\nIf you don't have any Runes, draw 1 card."
+    },
+    {
+      "name": "Shifting Strike",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nrunesmith:Downgrade a card in your hand, then Upgrade one."
+    },
+    {
+      "name": "Shifting Strike+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nrunesmith:Downgrade a card in your hand, then Upgrade one."
+    },
+    {
+      "name": "Static Cage",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "runesmith:Break your oldest Rune.\nrunesmith:Stasis a card in your hand.\nGain 7 Block."
+    },
+    {
+      "name": "Static Cage+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "runesmith:Break your oldest Rune.\nrunesmith:Stasis a card in your hand.\nGain 10 Block."
+    },
+    {
+      "name": "Unstable Hammer",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\nrunesmith:Craft a runesmith:Dud Rune.\nGain 1 random runesmith:Element."
+    },
+    {
+      "name": "Unstable Hammer+",
+      "color": "Runesmith_beige",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage.\nrunesmith:Craft a runesmith:Dud Rune.\nGain 1 random runesmith:Element."
+    },
+    {
+      "name": "Accelerate",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDraw 1 card.\nrunesmith:Break your oldest Rune to draw 1 more card."
+    },
+    {
+      "name": "Accelerate+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDraw 1 card.\nrunesmith:Break your oldest Rune to draw 2 more card."
+    },
+    {
+      "name": "Attraction",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 1 runesmith:Craft card from draw, discard or exhaust pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Attraction+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 2 runesmith:Craft card from draw, discard or exhaust pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Augment",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nLose all runesmith:Aqua.\nGain 1 Artifact for every 2 runesmith:Aqua lost.\nExhaust."
+    },
+    {
+      "name": "Augment+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nLose half your runesmith:Aqua.\nGain 1 Artifact for each runesmith:Aqua lost.\nExhaust."
+    },
+    {
+      "name": "Chaotic Blast",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage to ALL enemies.\n1 of each runesmith:Element: runesmith:Craft 1 random Rune."
+    },
+    {
+      "name": "Chaotic Blast+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage to ALL enemies.\n2 of each runesmith:Element: runesmith:Craft 2 random Runes."
+    },
+    {
+      "name": "Charged Hammer",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nSpend 3 random runesmith:Elements and runesmith:Break your oldest runesmith:Dud Rune to runesmith:Craft a random non-Dud Rune."
+    },
+    {
+      "name": "Charged Hammer+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nSpend 2 random runesmith:Elements and runesmith:Break your oldest runesmith:Dud Rune to runesmith:Craft a random non-Dud Rune."
+    },
+    {
+      "name": "Craft Incendium",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "3 runesmith:Ignis: runesmith:Craft an runesmith:Incendium Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Incendium+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "3 runesmith:Ignis: runesmith:Craft an runesmith:Incendium Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Obretio",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Terra 1 runesmith:Aqua: runesmith:Craft an runesmith:Obretio Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Obretio+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Terra 1 runesmith:Aqua: runesmith:Craft an runesmith:Obretio Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Reservo",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Aqua: runesmith:Craft a [#EFC851]Reservo Rune."
+    },
+    {
+      "name": "Craft Reservo+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Aqua: runesmith:Craft a [#EFC851]Reservo+ Rune."
+    },
+    {
+      "name": "Craft Spiculum",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Ignis 1 runesmith:Aqua: runesmith:Craft a runesmith:Spiculum Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Spiculum+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "2 runesmith:Ignis 1 runesmith:Aqua: runesmith:Craft a runesmith:Spiculum Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Vitae",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "1 runesmith:Ignis 2 runesmith:Terra: runesmith:Craft a runesmith:Vitae Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Craft Vitae+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "1 runesmith:Ignis 2 runesmith:Terra: runesmith:Craft a runesmith:Vitae Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Discharge",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "runesmith:Break your oldest non-Dud Rune to gain 12 Block, deal 12 damage, and runesmith:Craft a runesmith:Dud Rune."
+    },
+    {
+      "name": "Discharge+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "runesmith:Break your oldest non-Dud Rune to gain 16 Block, deal 16 damage, and runesmith:Craft a runesmith:Dud Rune."
+    },
+    {
+      "name": "Double Up",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nUpgrade and runesmith:Enhance 1 card in your hand."
+    },
+    {
+      "name": "Double Up+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nUpgrade and runesmith:Enhance 2 cards in your hand."
+    },
+    {
+      "name": "Electrocute",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nTake 3 damage.\nrunesmith:Stasis a card in your draw pile."
+    },
+    {
+      "name": "Electrocute+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nTake 2 damage.\nrunesmith:Stasis a card in your draw pile."
+    },
+    {
+      "name": "Elementary Particles",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an runesmith:Element to runesmith:Decay."
+    },
+    {
+      "name": "Elementary Particles+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an runesmith:Element to runesmith:Decay.\nDraw 1 card."
+    },
+    {
+      "name": "Empowerment",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Strength equal to your runesmith:Ignis this turn.\nGain Dexterity equal to your runesmith:Terra this turn."
+    },
+    {
+      "name": "Empowerment+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain Strength equal to your runesmith:Ignis this turn.\nGain Dexterity equal to your runesmith:Terra this turn."
+    },
+    {
+      "name": "Fiery Hammer",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to ALL enemies.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Fiery Hammer+1",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to ALL enemies.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Firestorm",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 runesmith:Ignis and 1 runesmith:Terra."
+    },
+    {
+      "name": "Firestorm+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, gain 1 runesmith:Ignis and 1 runesmith:Terra."
+    },
+    {
+      "name": "Firewall",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\n3 runesmith:Ignis: runesmith:Craft 2 runesmith:Firestone Runes with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Firewall+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block.\n3 runesmith:Ignis: runesmith:Craft 2 runesmith:Firestone Runes with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Frozen Chisel",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nApply 1 Slow.\nApply 3 runesmith:Ice-Cold.\nGain 1 runesmith:Terra and 1 runesmith:Aqua."
+    },
+    {
+      "name": "Frozen Chisel+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nApply 1 Slow.\nApply 4 runesmith:Ice-Cold.\nGain 1 runesmith:Terra and 1 runesmith:Aqua."
+    },
+    {
+      "name": "Go With The Flow",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 2 runesmith:Aqua.\nGain 1 runesmith:Potency.\nExhaust."
+    },
+    {
+      "name": "Go With The Flow+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nGain 3 runesmith:Aqua.\nGain 1 runesmith:Potency.\nExhaust."
+    },
+    {
+      "name": "Hammer Time",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": " Deal 14 damage.\nrunesmith:Enhance ALL your other cards containing \"Hammer\"."
+    },
+    {
+      "name": "Hammer Time+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nrunesmith:Enhance ALL your other cards containing \"Hammer\" twice."
+    },
+    {
+      "name": "Hammer and Chisel",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add a random Hammer card and a random Chisel card into your hand. They cost 1 less this combat.\nExhaust."
+    },
+    {
+      "name": "Hammer and Chisel+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add a random upgraded Hammer card and a random upgraded Chisel card into your hand. They cost 1 less this combat.\nExhaust."
+    },
+    {
+      "name": "Lithium Ion",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 runesmith:Potency."
+    },
+    {
+      "name": "Lithium Ion+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 runesmith:Potency."
+    },
+    {
+      "name": "Malloc",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "runesmith:Downgrade any number of cards in your hand.\nGain [E] for each card runesmith:Downgraded."
+    },
+    {
+      "name": "Malloc+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] .\nrunesmith:Downgrade any number of cards in your hand.\nGain [E] for each card runesmith:Downgraded."
+    },
+    {
+      "name": "Nanites Cloud",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL characters lose 13 Strength this turn.\nExhaust."
+    },
+    {
+      "name": "Nanites Cloud+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL characters lose 18 Strength this turn.\nExhaust."
+    },
+    {
+      "name": "Negative Space",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block, reduced by 2 Block for each active Rune.\nDeal 3 damage for each active Rune."
+    },
+    {
+      "name": "Negative Space+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block, reduced by 2 Block for each active Rune.\nDeal 4 damage for each active Rune."
+    },
+    {
+      "name": "One for Everyone",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "runesmith:Break your oldest Rune to\ngain [E] , gain 1 Block,\ndeal 1 damage,\napply 1 Weak and Vulnerable to ALL enemies,\ngain 1 of each runesmith:Element and draw 1 card."
+    },
+    {
+      "name": "One for Everyone+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "runesmith:Break your oldest Rune to\ngain [E] , gain 1 Block,\ndeal 1 damage,\napply 1 Weak and Vulnerable to ALL enemies,\ngain 1 of each runesmith:Element and draw 1 card."
+    },
+    {
+      "name": "Perfect Chisel",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 1 of each runesmith:Element.\nGain 1 runesmith:Potency this turn."
+    },
+    {
+      "name": "Perfect Chisel+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nGain 1 of each runesmith:Element.\nGain 2 runesmith:Potency this turn."
+    },
+    {
+      "name": "Permafrost",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Lose at most half your Block at the start of your turn.\nGain 1 runesmith:Terra and 1 runesmith:Aqua."
+    },
+    {
+      "name": "Permafrost+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose at most half your Block at the start of your turn.\nGain 1 runesmith:Terra and 1 runesmith:Aqua."
+    },
+    {
+      "name": "Powered Anvil",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you runesmith:Enhance a card, runesmith:Enhance it 1 additional time."
+    },
+    {
+      "name": "Powered Anvil+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you runesmith:Enhance a card, runesmith:Enhance it 1 additional time.\nrunesmith:Enhance a card in your hand."
+    },
+    {
+      "name": "Prism",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain Block equal to 2 times the number of all your runesmith:Elements.\nLose half your runesmith:Elements."
+    },
+    {
+      "name": "Prism+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain Block equal to 3 times the number of all your runesmith:Elements.\nLose half your runesmith:Elements."
+    },
+    {
+      "name": "Refine",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "runesmith:Enhance a card X times.\nRefund 1."
+    },
+    {
+      "name": "Refine+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "runesmith:Enhance a card X+1 times.\nRefund 1."
+    },
+    {
+      "name": "Reinforce",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nUpgrade all cards in your hand.\nExhaust."
+    },
+    {
+      "name": "Reinforce+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nUpgrade and runesmith:Enhance all cards in your hand.\nExhaust."
+    },
+    {
+      "name": "Retool",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle all upgraded or runesmith:enhanced cards from your discard pile into your draw pile. \nDraw 3 cards."
+    },
+    {
+      "name": "Retool+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle all upgraded or runesmith:enhanced cards from your discard pile into your draw pile. \nDraw 4 cards."
+    },
+    {
+      "name": "Runic Blueprint",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random runesmith:Craft card into your hand.\nIt costs 0 and does not need runesmith:Elements this turn.\nGain 2 runesmith:Aqua.\nExhaust."
+    },
+    {
+      "name": "Runic Blueprint+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random runesmith:Craft card into your hand.\nIt costs 0 and does not need runesmith:Elements this turn.\nGain 2 runesmith:Aqua.\nExhaust."
+    },
+    {
+      "name": "Superposition",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 26 damage.\nrunesmith:Break your oldest Rune to gain 13 Block."
+    },
+    {
+      "name": "Superposition+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 34 damage.\nrunesmith:Break your oldest Rune to gain 18 Block."
+    },
+    {
+      "name": "Terraform",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 runesmith:Terra.\nGain Block equals to 2 times the number of your runesmith:Terra."
+    },
+    {
+      "name": "Terraform+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 runesmith:Terra.\nGain Block equals to 3 times the number of your runesmith:Terra."
+    },
+    {
+      "name": "White Balance",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equals to 4 times the number of runesmith:Elements gained this turn."
+    },
+    {
+      "name": "White Balance+",
+      "color": "Runesmith_beige",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equals to 5 times the number of runesmith:Elements gained this turn."
+    },
+    {
+      "name": "Arc Reactor",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 runesmith:Potency.\nAt the start of your turn, gain 1 runesmith:Potency.\nWhenever you runesmith:Craft a Rune, lose 2 runesmith:Potency."
+    },
+    {
+      "name": "Arc Reactor+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 runesmith:Potency.\nAt the start of your turn, gain 1 runesmith:Potency.\nWhenever you runesmith:Craft a Rune, lose 2 runesmith:Potency."
+    },
+    {
+      "name": "Craft Industria",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "3 runesmith:Aqua: runesmith:Craft an [#EFC851]Industria Rune."
+    },
+    {
+      "name": "Craft Industria+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "3 runesmith:Aqua: runesmith:Craft an [#EFC851]Industria+ Rune."
+    },
+    {
+      "name": "Craft Medicinae",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "5 runesmith:Terra: runesmith:Craft a runesmith:Medicinae Rune with !RS:Pot! runesmith:Potency.\nExhaust.\nCannot be runesmith:Stasis."
+    },
+    {
+      "name": "Craft Medicinae+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "5 runesmith:Terra: runesmith:Craft a runesmith:Medicinae Rune with !RS:Pot! runesmith:Potency.\nExhaust.\nCannot be runesmith:Stasis."
+    },
+    {
+      "name": "Craft Prismatica",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "2 of each runesmith:Element: runesmith:Craft a [#EFC851]Prismatica Rune."
+    },
+    {
+      "name": "Craft Prismatica+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "2 of each runesmith:Element: runesmith:Craft a [#EFC851]Prismatica+ Rune."
+    },
+    {
+      "name": "Creator Form",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, runesmith:Enhance 2 cards."
+    },
+    {
+      "name": "Creator Form+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, runesmith:Enhance 3 cards."
+    },
+    {
+      "name": "Duct Tape",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, runesmith:Stasis up to 1 card."
+    },
+    {
+      "name": "Duct Tape+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, runesmith:Stasis up to 2 card."
+    },
+    {
+      "name": "Duplicate",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, create a copy of the next Rune you runesmith:Craft."
+    },
+    {
+      "name": "Duplicate+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, create a copy of the next 2 Runes you runesmith:Craft."
+    },
+    {
+      "name": "Fission Hammer",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nDeal 4 damage to ALL enemies.\nrunesmith:Break your oldest Rune twice."
+    },
+    {
+      "name": "Fission Hammer+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDeal 6 damage to ALL enemies.\nrunesmith:Break your oldest Rune twice."
+    },
+    {
+      "name": "Generate Forcefield",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "runesmith:Break your X oldest non-Dud Runes. Prevent the next time you would lose HP for each Rune runesmith:Broken.\nExhaust."
+    },
+    {
+      "name": "Generate Forcefield+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "runesmith:Break your X+1 oldest non-Dud Runes. Prevent the next time you would lose HP for each Rune runesmith:Broken.\nExhaust."
+    },
+    {
+      "name": "Grand Slam",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nrunesmith:Enhance all cards in your hand."
+    },
+    {
+      "name": "Grand Slam+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nrunesmith:Enhance all cards in your hand twice."
+    },
+    {
+      "name": "Last Stand",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "runesmith:Downgrade ALL your cards. Lose all runesmith:Elements. At the end of next turn, deal damage equals to 5 times the number of runesmith:downgraded cards to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Last Stand+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "runesmith:Downgrade ALL your cards. Lose all runesmith:Elements. At the end of next turn, deal damage equals to 7 times the number of runesmith:downgraded cards to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Lightning Rod",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For 2 turns, you lose runesmith:Elements instead of HP. Gain 2 of each runesmith:Element."
+    },
+    {
+      "name": "Lightning Rod+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For 3 turns, you lose runesmith:Elements instead of HP. Gain 2 of each runesmith:Element."
+    },
+    {
+      "name": "Metallurgical Research",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Upgrade and runesmith:Enhance ALL your cards after 2 turns.\nExhaust."
+    },
+    {
+      "name": "Metallurgical Research+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Upgrade and runesmith:Enhance ALL your cards after 1 turn.\nExhaust."
+    },
+    {
+      "name": "Replicating Barrier",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "2 runesmith:Terra: runesmith:Craft a runesmith:Protectio Rune with !RS:Pot! runesmith:Potency.\nEvery 2 turns, 2 runesmith:Terra: runesmith:Craft a runesmith:Protectio Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Replicating Barrier+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "2 runesmith:Terra: runesmith:Craft a runesmith:Protectio Rune with !RS:Pot! runesmith:Potency.\nEvery 2 turns, 2 runesmith:Terra: runesmith:Craft a runesmith:Protectio Rune with !RS:Pot! runesmith:Potency."
+    },
+    {
+      "name": "Supernova",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "runesmith:Break all your Runes.\nDraw 1 card and gain [E] for each non-Dud Rune runesmith:Broken."
+    },
+    {
+      "name": "Supernova+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "runesmith:Break all your Runes.\nDraw 1 card and gain [E] for each non-Dud Rune runesmith:Broken."
+    },
+    {
+      "name": "Unlimited Power",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "runesmith:Elements are no longer needed for runesmith:Crafting."
+    },
+    {
+      "name": "Unlimited Power+",
+      "color": "Runesmith_beige",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nrunesmith:Elements are no longer needed for runesmith:Crafting."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Broken Ruby",
+      "tier": "Starter",
+      "pool": "Runesmith_beige",
+      "description": "At the start of each combat, gain 2 runesmith:Ignis.\nAt the start of your turn, Enhance a random card in your hand.",
+      "flavorText": "A crystal that resembles a red gem. Although it is broken, faint energy still remains."
+    },
+    {
+      "name": "AutoHammer",
+      "tier": "Common",
+      "pool": "",
+      "description": "Every time you play 3 Skills in 1 turn, runesmith:Enhance a random card in your hand.",
+      "flavorText": "An automatic hammer which never stops hammering."
+    },
+    {
+      "name": "Emergency Provisions",
+      "tier": "Common",
+      "pool": "Runesmith_beige",
+      "description": "Every time you play a Craft card, gain 1 random runesmith:Element.",
+      "flavorText": "A self-contained, individual field ration in lightweight packaging."
+    },
+    {
+      "name": "Minicore",
+      "tier": "Common",
+      "pool": "Runesmith_beige",
+      "description": "Gain 1 runesmith:Potency at the start of the combat.",
+      "flavorText": "This peculiar orb was once used as an energy storage."
+    },
+    {
+      "name": "Nanobots",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of combat, runesmith:Enhance all cards in your hand.",
+      "flavorText": "\"These tiny machines have wondrous properties.\" -Ranwid"
+    },
+    {
+      "name": "Locket",
+      "tier": "Rare",
+      "pool": "Runesmith_beige",
+      "description": "One time each combat, if your health drops below 15%, add Last Stand to the top of your draw pile.",
+      "flavorText": "An image of unknown yet familiar figure resides within."
+    },
+    {
+      "name": "Core Crystal",
+      "tier": "Boss",
+      "pool": "Runesmith_beige",
+      "description": "Replaces Broken Ruby. All runesmith:Element gains are increased by 50%. Raises maximum runesmith:Elements to 20.",
+      "flavorText": ""
+    },
+    {
+      "name": "Pocket Reactor",
+      "tier": "Boss",
+      "pool": "Runesmith_beige",
+      "description": "runesmith:Elements are no longer needed for crafting. All cards lose 2 runesmith:Potency.",
+      "flavorText": ""
+    },
+    {
+      "name": "Uranium Anvil",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn. runesmith:Downgrade a random card in your draw pile, hand, or discard pile each turn.",
+      "flavorText": "This block of metal holds massive amount of energy but weakens anyone who come near it."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Runesmith",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+  ]
+}

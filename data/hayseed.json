@@ -1,0 +1,1456 @@
+{
+  "mod": {
+    "name": "The Hayseed",
+    "version": "0.9.1",
+    "authors": ["jwoolley"],
+    "credits": "Thanks to: \n\nSpleen \u2014 for amazing relic art. \n\nsolderist.park \u2014 whose Cursed mod source code I used to get started (use Default Mod!)\n\nHarryWardp, Basilisk, Greuben, CannonballFun, and Toddells \u2014 for invaluable playtesting and feedback.",
+    "description": "A simple farmer with a head like a pinewood block.",
+    "mts_version": "3.8.3",
+    "sts_version": "07-17-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Frostbite",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you play a card, increase the cost of a random card in your hand by 1 this turn."
+    },
+    {
+      "name": "Gnats",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nYou cannot play 0-cost cards this turn."
+    },
+    {
+      "name": "Nettles",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, apply 1 Thorns to a random enemy."
+    },
+    {
+      "name": "Spoilage",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt end of turn, put this card on top of your draw pile if you played 3 or more cards this turn."
+    },
+    {
+      "name": "Defend",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Haymaker",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nHeal 4 HP.\nApply 1 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Haymaker+",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nHeal 6 HP.\nApply 1 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Reap and Sow",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to ALL enemies.\nPlant 1 Potatoes, then add a Cultivate to your discard pile if you have any Mature Crops."
+    },
+    {
+      "name": "Reap and Sow+",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nPlant 2 Potatoes, then add a Cultivate to your discard pile if you have any Mature Crops."
+    },
+    {
+      "name": "Reap and Squash",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to ALL enemies. Gain 4 Block.\nPlant 1 Squash, then add a Cultivate to your discard pile if you have any Mature Crops."
+    },
+    {
+      "name": "Reap and Squash+",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies. Gain 6 Block.\nPlant 2 Squash, then add a Cultivate to your discard pile if you have any Mature Crops."
+    },
+    {
+      "name": "Reek and Sow",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage and apply 4 Burning to ALL enemies.\nPlant 2 Onions, then add a Cultivate to your discard pile if you have any Mature Crops."
+    },
+    {
+      "name": "Reek and Sow+",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage and apply 6 Burning to ALL enemies.\nPlant 3 Onions, then add a Cultivate to your discard pile if you have any Mature Crops."
+    },
+    {
+      "name": "Strike",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "The_simpleton_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Aerate",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 Block.\nPlant 2 of your newest Crop."
+    },
+    {
+      "name": "Aerate+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nPlant 2 of your newest Crop."
+    },
+    {
+      "name": "Bumper Crop",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nHarvest 1 of your newest Crop."
+    },
+    {
+      "name": "Bumper Crop+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nHarvest 1 of your newest Crop."
+    },
+    {
+      "name": "Close Scrape",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nPlant 1 of your oldest Crop."
+    },
+    {
+      "name": "Close Scrape+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nPlant 1 of your oldest Crop."
+    },
+    {
+      "name": "Culling Strike",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you've Harvested this turn, deal 7 damage again."
+    },
+    {
+      "name": "Culling Strike+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf you've Harvested this turn, deal 9 damage again."
+    },
+    {
+      "name": "Double Barrel",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nIf the enemy is Weak, gain [E] and deal 6 damage again."
+    },
+    {
+      "name": "Double Barrel+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf the enemy is Weak, gain [E] and deal 9 damage again."
+    },
+    {
+      "name": "Ferment",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 2 cards from your hand into your draw pile.\nGain [E] [E]."
+    },
+    {
+      "name": "Ferment+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 2 cards from your hand into your draw pile, then draw a card.\nGain [E] [E]."
+    },
+    {
+      "name": "Fertilaser",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nPlant 1 more of each Crop."
+    },
+    {
+      "name": "Fertilaser+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nPlant 1 more of each Crop."
+    },
+    {
+      "name": "Onion Bloom",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nPlant 1 Onion.\n Draw a card.\nDiscard a card.\nExhaust."
+    },
+    {
+      "name": "Onion Bloom+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nPlant 1 Onion.\nDraw a card.\nDiscard a card."
+    },
+    {
+      "name": "Onions",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 3 Onions."
+    },
+    {
+      "name": "Onions+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Plant 3 Onions."
+    },
+    {
+      "name": "Pest Management",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nNext turn, gain 8 Block."
+    },
+    {
+      "name": "Pest Management+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nNext turn, gain 10 Block."
+    },
+    {
+      "name": "Potatoes",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 3 Potatoes."
+    },
+    {
+      "name": "Potatoes+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Plant 3 Potatoes."
+    },
+    {
+      "name": "Pruning",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Harvest all of your oldest Crop, then Plant 1 stack."
+    },
+    {
+      "name": "Pruning+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Harvest all of your oldest Crop, then Plant 2 stacks."
+    },
+    {
+      "name": "Rototilling",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nExhaust a card from your hand."
+    },
+    {
+      "name": "Rototilling+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nExhaust a card from your hand."
+    },
+    {
+      "name": "Salad Shooter",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to a random enemy.\nRepeat for each time you've Harvested this turn."
+    },
+    {
+      "name": "Salad Shooter+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to a random enemy.\nRepeat for each time you've Harvested this turn."
+    },
+    {
+      "name": "Seed Coat",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nThe first time this card is played this combat, decrease its Block by 8 and it gains Exhaust."
+    },
+    {
+      "name": "Seed Coat+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nThe first time this card is played this combat, decrease its Block by 4 and it gains Exhaust."
+    },
+    {
+      "name": "Slash And Burn",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 7 Burning."
+    },
+    {
+      "name": "Slash And Burn+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nApply 10 Burning."
+    },
+    {
+      "name": "Spice Up",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 10 Burning.\nDraw 1 card."
+    },
+    {
+      "name": "Spice Up+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 12 Burning.\nDraw 2 cards."
+    },
+    {
+      "name": "Squash",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 3 Squash."
+    },
+    {
+      "name": "Squash+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Plant 3 Squash."
+    },
+    {
+      "name": "Swelter",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Weak and 4 Burning.\nGain 4 Block."
+    },
+    {
+      "name": "Swelter+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak and 6 Burning.\nGain 6 Block."
+    },
+    {
+      "name": "Toughen Up",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf you have any Squash, Plant 1 Squash."
+    },
+    {
+      "name": "Toughen Up+",
+      "color": "The_simpleton_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf you have any Squash, Plant 2 Squash."
+    },
+    {
+      "name": "Artichokes",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Plant 2 Artichokes."
+    },
+    {
+      "name": "Artichokes+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 2 Artichokes."
+    },
+    {
+      "name": "Controlled Burn",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 14 Burning.\nExhaust if the enemy didn't already have Burning."
+    },
+    {
+      "name": "Controlled Burn+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 20 Burning.\nExhaust if the enemy didn't already have Burning."
+    },
+    {
+      "name": "Corn",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 1 Corn."
+    },
+    {
+      "name": "Corn+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 2 Corn."
+    },
+    {
+      "name": "Crop Rotation",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Harvest all of a random Crop.\nGain a random In-Season Crop Power card."
+    },
+    {
+      "name": "Crop Rotation+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Harvest all of a random Crop.\nGain a random In-Season Crop Power card."
+    },
+    {
+      "name": "Dig In",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 10 Block.\nAdd a Depletion to your discard pile."
+    },
+    {
+      "name": "Dig In+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 14 Block.\nAdd a Depletion to your discard pile."
+    },
+    {
+      "name": "Germinate",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If your newest Crop is Mature, gain 14 Block. Otherwise, Plant 2 of that Crop."
+    },
+    {
+      "name": "Germinate+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If your newest Crop is Mature, gain 18 Block. Otherwise, Plant 2 of that Crop."
+    },
+    {
+      "name": "Go to Market",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw a card for each different type of Crop you have."
+    },
+    {
+      "name": "Go to Market+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card for each different type of Crop you have."
+    },
+    {
+      "name": "Innovate",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random card with Harvest to your hand. It costs 0 this turn."
+    },
+    {
+      "name": "Innovate+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random card with Harvest to your hand. It costs 0 this combat."
+    },
+    {
+      "name": "Keen Edge",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 9 damage.\nIncrease this card's damage by 9 and its cost by 1 this combat."
+    },
+    {
+      "name": "Keen Edge+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIncrease this card's damage by 9 and its cost by 1 this combat."
+    },
+    {
+      "name": "Mulch",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card, then gain an effect based on its type:\nNL Attack: Gain 6 Block.\nSkill: Apply 4 Burning to ALL.\nAll Others: Draw 2 cards."
+    },
+    {
+      "name": "Mulch+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card, then gain an effect based on its type:\nNL Attack: Gain 6 Block.\nSkill: Apply 4 Burning to ALL.\nAll Others: Draw 2 cards."
+    },
+    {
+      "name": "Polyculture",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 2 random Crop Power cards into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Polyculture+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 3 random Crop Power cards into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Rake",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "Rake+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Root Down",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nPlant 1 Turnips."
+    },
+    {
+      "name": "Root Down+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 6 damage.\nPlant 1 Turnips."
+    },
+    {
+      "name": "Soil Sample",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle up to 3 cards from your discard pile into your draw pile, then draw a card. It costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Soil Sample+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle up to 3 cards from your discard pile into your draw pile, then Draw a card. It costs 0 this turn."
+    },
+    {
+      "name": "Stock the Cellar",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 6 Block.\nEach time this card is shuffled into your draw pile, increase its Block by 2 for this combat."
+    },
+    {
+      "name": "Stock the Cellar+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 8 Block.\nEach time this card is shuffled into your draw pile, increase its Block by 3 for this combat."
+    },
+    {
+      "name": "Sunchoke",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nEach Weak enemy that takes damage also gains 7 Burning."
+    },
+    {
+      "name": "Sunchoke+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies.\nEach Weak enemy that takes damage also gains 11 Burning."
+    },
+    {
+      "name": "Sunflowers",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 1 Sunflower."
+    },
+    {
+      "name": "Sunflowers+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 2 Sunflowers."
+    },
+    {
+      "name": "Sunseed",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "When drawn, copy this card if your discard is empty.\nDeal 3 damage and gain [E].\nExhaust."
+    },
+    {
+      "name": "Sunseed+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate. When drawn, copy this card if your discard is empty.\nDeal 3 damage and gain [E].\nExhaust."
+    },
+    {
+      "name": "Thresh",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 22 damage.\nCosts [E] less for each time you Harvest this turn."
+    },
+    {
+      "name": "Thresh+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 28 damage.\nCosts [E] less for each time you Harvest this turn."
+    },
+    {
+      "name": "Turnips",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 2 Turnips."
+    },
+    {
+      "name": "Turnips+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 3 Turnips."
+    },
+    {
+      "name": "Vine Ripen",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Plant 2 Squash.\nIf Squash is Mature, Block is not removed at the start of your next turn."
+    },
+    {
+      "name": "Vine Ripen+",
+      "color": "The_simpleton_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Plant 2 Squash.\nIf Squash is Mature, Block is not removed at the start of your next turn."
+    },
+    {
+      "name": "Asparagus",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 1 Asparagus."
+    },
+    {
+      "name": "Asparagus+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 2 Asparagus."
+    },
+    {
+      "name": "Barnstorm",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 6 damage to a random enemy for each Crop stack you have.\nStun each enemy damaged 6 or more times this way."
+    },
+    {
+      "name": "Barnstorm+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 6 damage to a random enemy for each Crop stack you have.\nStun each enemy damaged 6 or more times this way."
+    },
+    {
+      "name": "Biorefinement",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first time each turn that you play a card with Harvest, reduce the cost of a random card in your hand by 1 this combat."
+    },
+    {
+      "name": "Biorefinement+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time each turn that you play a card with Harvest, reduce the cost of a random card in your hand by 1 this combat."
+    },
+    {
+      "name": "Birdfeeder",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "The next 3 times you play a Power card this combat, heal 4 HP."
+    },
+    {
+      "name": "Birdfeeder+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "The next 5 times you play a Power card this combat, heal 4 HP."
+    },
+    {
+      "name": "Buzz Bomb",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage to a random enemy 2 times.\nPlant 2 Sunflowers for each enemy killed this way."
+    },
+    {
+      "name": "Buzz Bomb+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage to a random enemy 3 times.\nPlant 2 Sunflowers for each enemy killed this way."
+    },
+    {
+      "name": "Chilis",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 3 Chilis."
+    },
+    {
+      "name": "Chilis+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Plant 3 Chilis."
+    },
+    {
+      "name": "Crack of Dawn",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "In 2 turns, deal 16 damage to ALL enemies, Plant 3 Corn, and gain [E] [E] [E] ."
+    },
+    {
+      "name": "Crack of Dawn+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "In 2 turns, deal 16 damage to ALL enemies, Plant 3 Corn, and gain [E] [E] [E] ."
+    },
+    {
+      "name": "Crop Diversity",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 of 2 random Crop Power cards to your hand. It costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Crop Diversity+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 of 3 random Crop Power cards to your hand. It costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Desperate Plunge",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Costs [E] less for each Power card played this turn.\nGain 30 Block.\nNext turn, lose [E]."
+    },
+    {
+      "name": "Desperate Plunge+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Costs [E] less for each Power card played this turn.\nGain 40 Block.\nNext turn, lose [E]."
+    },
+    {
+      "name": "Double Digging",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, the next card you play that costs 1 or less is played twice."
+    },
+    {
+      "name": "Double Digging+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, the next 2 cards you play that cost 1 or less are played twice."
+    },
+    {
+      "name": "Erosion Control",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Harvest all crops.\nGain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Erosion Control+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Harvest all crops.\nGain 2 Intangible.\nExhaust."
+    },
+    {
+      "name": "Fan the Flames",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Apply 10 Burning, then double the enemy's Burning.\nExhaust."
+    },
+    {
+      "name": "Fan the Flames+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Apply 10 Burning to ALL enemies, then double each enemy's Burning.\nExhaust."
+    },
+    {
+      "name": "Fecundity",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 1 Abundance."
+    },
+    {
+      "name": "Fecundity+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Abundance."
+    },
+    {
+      "name": "Flash Pasteurize",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage to ALL characters.\nRemove all of your Debuffs.\nExhaust."
+    },
+    {
+      "name": "Flash Pasteurize+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage to ALL characters.\nRemove all of your Debuffs.\nGain 7 Block.\nExhaust."
+    },
+    {
+      "name": "Hit the Sack",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 7 damage X times.\nPlant X Potatoes."
+    },
+    {
+      "name": "Hit the Sack+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 7 damage X+1 times.\nPlant X+1 Potatoes."
+    },
+    {
+      "name": "Land Grant",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Plot."
+    },
+    {
+      "name": "Land Grant+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 2 Plots."
+    },
+    {
+      "name": "Mushrooms",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Plant 2 Mushrooms."
+    },
+    {
+      "name": "Mushrooms+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 2 Mushrooms."
+    },
+    {
+      "name": "Photosynthesis",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, spend all your unused Energy and Plant that many random In-Season Crops."
+    },
+    {
+      "name": "Photosynthesis+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the end of your turn, spend all your unused Energy and Plant that many random In-Season Crops."
+    },
+    {
+      "name": "Research Grant",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 16 Block.\nAdd 2 copies of Soil Sample to your discard pile.\nExhaust."
+    },
+    {
+      "name": "Research Grant+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 20 Block.\nAdd 3 copies of Soil Sample to your discard pile.\nExhaust."
+    },
+    {
+      "name": "Resistant Strain",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, gain 4 Block."
+    },
+    {
+      "name": "Resistant Strain+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, gain 5 Block."
+    },
+    {
+      "name": "Salt the Earth",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage to ALL enemies.\nAdd 2 Depletions to your hand."
+    },
+    {
+      "name": "Salt the Earth+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 32 damage to ALL enemies.\nAdd 2 Depletions to your hand."
+    },
+    {
+      "name": "Spinach",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Plant 2 Spinach."
+    },
+    {
+      "name": "Spinach+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 2 Spinach."
+    },
+    {
+      "name": "Strawberries",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 2 Strawberries."
+    },
+    {
+      "name": "Strawberries+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Plant 3 Strawberries."
+    },
+    {
+      "name": "Surplus",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 random Common Crop Power cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Surplus+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 random Common Crop Power cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Take Heart",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 16 Block.\nHeal 5 HP.\nPlant 2 Artichokes.\nDo this again if your HP is at 50% or less.\nExhaust."
+    },
+    {
+      "name": "Take Heart+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nHeal 5 HP.\nPlant 2 Artichokes.\nDo this again if your HP is at 50% or less.\nExhaust."
+    },
+    {
+      "name": "Volatile Fumes",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you attack an enemy with Weak, apply 4 Burning."
+    },
+    {
+      "name": "Volatile Fumes+",
+      "color": "The_simpleton_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you attack an enemy with Weak, apply 6 Burning."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Night Soil",
+      "tier": "Starter",
+      "pool": "The_simpleton_blue",
+      "description": "Whenever you shuffle your deck, for each of your Crops that isn't Mature, Plant 1 more.",
+      "flavorText": "It grows on you."
+    },
+    {
+      "name": "Spud of the Innocent",
+      "tier": "Starter",
+      "pool": "The_simpleton_blue",
+      "description": "At the start of your turn, if you have no crops, Plant 2 Potatoes.",
+      "flavorText": "Salvation for the thin-skinned."
+    },
+    {
+      "name": "Trusty Sickle",
+      "tier": "Starter",
+      "pool": "The_simpleton_blue",
+      "description": "Whenever you Plant a Crop, if you then have more stacks than its Maturity level, Harvest all excess stacks.",
+      "flavorText": "Its purpose is clear-cut."
+    },
+    {
+      "name": "Weed Puller",
+      "tier": "Common",
+      "pool": "The_simpleton_blue",
+      "description": "At the start of each combat, choose up to 2 cards from your hand to exhaust, then draw that many.",
+      "flavorText": "Suitable for plant matter ONLY."
+    },
+    {
+      "name": "Cash Crop",
+      "tier": "Uncommon",
+      "pool": "The_simpleton_blue",
+      "description": "Whenever you Harvest a Crop for the fist time each combat, gain 5 Gold.",
+      "flavorText": "Cold, but not hard."
+    },
+    {
+      "name": "Gardening Glove",
+      "tier": "Uncommon",
+      "pool": "The_simpleton_blue",
+      "description": "At the end of your turn, if you have exactly one Power card in hand, retain it.",
+      "flavorText": "Sometimes you need to get into the dirt."
+    },
+    {
+      "name": "Gas Can",
+      "tier": "Uncommon",
+      "pool": "The_simpleton_blue",
+      "description": "Whenever you apply Burning, apply half that amount to each other enemy.",
+      "flavorText": "What can expand to fill any container?"
+    },
+    {
+      "name": "Honeycomb",
+      "tier": "Uncommon",
+      "pool": "The_simpleton_blue",
+      "description": "Whenever you Plant a Crop, deal 1 damage to a random enemy.",
+      "flavorText": "It may sting a little."
+    },
+    {
+      "name": "Hot Potato",
+      "tier": "Uncommon",
+      "pool": "The_simpleton_blue",
+      "description": "Harvesting Potatoes now yields Flaming Spuds, which also apply Burning damage.",
+      "flavorText": "There's no topping this one."
+    },
+    {
+      "name": "Jug of Moonshine",
+      "tier": "Uncommon",
+      "pool": "The_simpleton_blue",
+      "description": "On turn 3, gain 5 temporary Strength, then gain [E] and draw an extra card.\nRandomize the cost of cards drawn that turn.",
+      "flavorText": "A carefully-guarded family recipe, the distillation process has claimed its share of casualties."
+    },
+    {
+      "name": "Pickling Jar",
+      "tier": "Uncommon",
+      "pool": "The_simpleton_blue",
+      "description": "Upon pickup, choose a card. Every 3 times you shuffle your draw pile, add a copy of that card to your hand. It costs 0 that turn.",
+      "flavorText": "Sour, salty, and full of dark magic."
+    },
+    {
+      "name": "Planter Box",
+      "tier": "Uncommon",
+      "pool": "The_simpleton_blue",
+      "description": "Start each combat with 1 additional Plot.",
+      "flavorText": "Imported soil tends to produce a less twisted harvest."
+    },
+    {
+      "name": "Horn Of Plenty",
+      "tier": "Rare",
+      "pool": "The_simpleton_blue",
+      "description": "At the start of each combat, add a random in-season Crop Power card to your hand. Then gain 1 Abundance which lasts until end of turn.",
+      "flavorText": "More than adequate."
+    },
+    {
+      "name": "Gourd Charm",
+      "tier": "Boss",
+      "pool": "The_simpleton_blue",
+      "description": "At the start of your turn, if you have no crops, Plant 2 Squash.",
+      "flavorText": "Crafted specially for adventurers who prefer Hard Mode."
+    },
+    {
+      "name": "Onion Belt",
+      "tier": "Boss",
+      "pool": "The_simpleton_blue",
+      "description": "At the start of your turn, if you have no crops, Plant 2 Onions.",
+      "flavorText": "Once wielded by the Elders, now largely out of style."
+    },
+    {
+      "name": "Spud of the Martyr",
+      "tier": "Boss",
+      "pool": "The_simpleton_blue",
+      "description": "Replaces Spud of the Innocent. Whenever you take attack damage, and at the start of each combat, Plant 2 Potatoes.",
+      "flavorText": "Roasted for a good cause."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Bloom Potion",
+      "rarity": "Uncommon",
+      "description": "Gain 2 Abundance.\nAt the end of your turn, lose 2 Abundance."
+    },
+    {
+      "name": "Kindling Potion",
+      "rarity": "Uncommon",
+      "description": "Apply 15 Burning to ALL enemies."
+    },
+    {
+      "name": "Swig of Moonshine",
+      "rarity": "Uncommon",
+      "description": "Discard your hand and draw 5 cards. Gain 5 Strength and become Intoxicated until the end of your turn."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Hayseed",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Abundance",
+      "description": "Increases the number of Crop stacks Planted by cards."
+    },
+    {
+      "name": "Artichoke",
+      "description": "Crop. Grants Thorns when harvested."
+    },
+    {
+      "name": "Asparagus",
+      "description": "Crop. Grants Dexterity when harvested."
+    },
+    {
+      "name": "Burning",
+      "description": "Burning creatures take damage at the end of their turn, then lose Burning."
+    },
+    {
+      "name": "Chili",
+      "description": "Crop. Deals damage and applies Burning to all enemies when harvested."
+    },
+    {
+      "name": "Coffee",
+      "description": "Crop. Gain energy when harvested."
+    },
+    {
+      "name": "Corn",
+      "description": "Crop. Draw cards when harvested."
+    },
+    {
+      "name": "Crop",
+      "description": "Crops provide beneficial effects when harvested."
+    },
+    {
+      "name": "Depletion",
+      "description": "Depletions are playable status cards that reduce your Energy and Draw next turn."
+    },
+    {
+      "name": "Gnawberry",
+      "description": "Gnawberries are attack cards that deal moderate damage and heal HP."
+    },
+    {
+      "name": "Harvest",
+      "description": "Harvest different Crops for various effects."
+    },
+    {
+      "name": "Husk",
+      "description": "Husks 0-cost skill cards that exhaust to grant a small amount of Block."
+    },
+    {
+      "name": "Mature",
+      "description": "A Crop is mature if you have stacks equal to its maturity level. One stack of each mature crop is Harvested at the start of your turn."
+    },
+    {
+      "name": "Mushroom",
+      "description": "Crop. Gain random colorless cards when harvested."
+    },
+    {
+      "name": "Numb",
+      "description": "Temporarily increases the cost of a random card in hand when a card is played."
+    },
+    {
+      "name": "Onion",
+      "description": "Crop. Applies Weak to a random enemy when harvested."
+    },
+    {
+      "name": "Plant",
+      "description": "Gain that many Crop stacks."
+    },
+    {
+      "name": "Plot",
+      "description": "Slot for planting Crops. Your Plots determine how many different Crops you can have at one time."
+    },
+    {
+      "name": "Potato",
+      "description": "Crop. Yields 0-cost Spud attack cards when harvested."
+    },
+    {
+      "name": "Spinach",
+      "description": "Crop. Grants Strength when harvested."
+    },
+    {
+      "name": "Spud",
+      "description": "Spuds are 0-cost attack cards that exhaust to deal modest damage."
+    },
+    {
+      "name": "Squash",
+      "description": "Crop. Grants Block When harvested."
+    },
+    {
+      "name": "Strawberry",
+      "description": "Crop. Yields Gnawberry attack cards when harvested that also heal a small amount of HP."
+    },
+    {
+      "name": "Sunflower",
+      "description": "Crop. Gain energy when harvested."
+    },
+    {
+      "name": "Turnip",
+      "description": "Crop. Yields an attack card when harvested which deals scaling damage to all enemies and adds a Turnips card to your discard pile."
+    }
+  ]
+}
