@@ -11,53 +11,54 @@ client = discord.Client()
 cirno_data = None
 prefix = '!'
 
+class Mod_Data:
+    def __init__(self, id):
+        self.data = self.get_data(id)
+
+    def get_data(self, id):
+        with open(f'data/{id}/items.json') as json_file:
+            return json.load(json_file)
+
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
     print('Loading mod data')
-    load_data(cirno_data, 'cirno')
-    
-def load_data(data_field, mod_id):
-    with open(f'data/{mod_id}/items.json') as json_file:
-        data_field = json.load(json_file)
-    print(f'Loaded {mod_id}!')
 
 def is_command(message):
     return message.content.startswith(prefix)
 
 def del_char(string, index):
-    return ''.join((char for idx, char in enumerate(string) if idx not in indexes))
+    return string[1:]
 
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
     if is_command(message):
-        message.content = del_char(message, len(prefix))
-        get_id(message)
+        print(message.content)
+        message.content = del_char(message.content, len(prefix))
+        await get_id(message)
         
-def get_id(message):
+async def get_id(message):
     s = message.content.lower()
-    tokenized_message  = s.split(' ')[0]
-    id_map(message.channel, tokenized_message)
+    tokenized_message  = s.split(' ')
+    await do_command(message.channel, tokenized_message)
     
-def id_map(channel, tokenized_message):
-    map = {
-            'cirno': cirno_data
-    }
-    do_command(channel, tokenized_message, map.get(tokenized_message[1], print('wtf are u doing')))
-    
-
-def do_command(channel, tokenized_message, data):
+async def do_command(channel, tokenized_message):
     commands = {
         'card': card
     }
-    callback = commands.get(tokenized_message[0])
-    callback(channel, tokenized_message, data)
+    callback = commands.get(tokenized_message[0], print('???'))
+    await callback(channel, tokenized_message)
 
 @client.event
-async def card(channel, tokenized_message, data):
-    await channel.send('pog')
+async def card(channel, tokenized_message):
+    cards = Mod_Data(tokenized_message[1]).data['cards']
+    for card in cards:
+        if tokenized_message[2] == card['name'].lower():
+            await channel.send(card)
+            return
+    await channel.send(f'No card named {tokenized_message[2]} found in {tokenized_message[1]}')
 
 client.run(token)
 
