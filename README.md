@@ -6,7 +6,7 @@ A bot that spits out modded info from little json files for slay the spire
 
 please contribute
 
-Open a pull request with your mod's `items.json` from [Spire Exporter](https://steamcommunity.com/sharedfiles/filedetails/?id=1615557269) in the `data` folder with the id of your mod being the name of the file.
+Open a pull request with your mod's `items.json` from [Spire Exporter](https://steamcommunity.com/sharedfiles/filedetails/?id=1615557269) in the `data` folder with the id of your mod being the name of the file and make sure the file name is all lowercase.
 
 # run it yourself?
 
