@@ -16,6 +16,14 @@ Open a pull request with your mod's `items.json` from [Spire Exporter](https://s
 # python main.py
 ```
 
+# opt in for receiving feedback
+
 ## Please support me I'm broke. Click:
+
+Add your discord ID as a key in `suggestables` here:
+
+https://github.com/velvet-halation/mts-bot/blob/master/mtsbotdata.py
+
+And then followed by an array of strings of the ids of the mods you want to receive feedback for.
 
 [![Click to Support Me!](https://i.imgur.com/cAdBKeb.png)](https://ko-fi.com/velvet_halation)
