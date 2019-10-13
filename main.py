@@ -134,6 +134,9 @@ async def card(channel, tokenized_message):
 @client.event
 async def relic(channel, tokenized_message):
     relics = Mod_Data(tokenized_message[1]).data
+    if 'star compass' in tokenized_message:
+        await channel.send('Oops, I dropped it. Oh well.')
+        return
     if len(tokenized_message) == 3:
         if tokenized_message[2] == 'random' and channel.id == 384046138610941953:
             if 'mod' in relics[0]:
