@@ -8,6 +8,8 @@ import random
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
+pin_links=['https://media.discordapp.net/attachments/398373038732738570/543527729077682187/sts-check-the-pins.gif',
+    'https://media.discordapp.net/attachments/504438263012917254/542101742377107467/kumikopins.gif']
 
 client = discord.Client()
 prefix = '?'
@@ -70,8 +72,17 @@ async def get_id(message):
     if s == 'default':
         await message.channel.send('https://github.com/Gremious/StS-DefaultModBase')
         return
-    if s == 'pins':
-        await message.channel.send('https://media.discordapp.net/attachments/398373038732738570/543527729077682187/sts-check-the-pins.gif')
+    if s == 'pins' or s == 'pin':
+        await message.channel.send(random.choice(pin_links))
+        return
+    if s == 'xy':
+        await message.channel.send('http://xyproblem.info/')
+        return
+    if s == 'debugger':
+        await message.channel.send('https://stackoverflow.com/questions/25385173/what-is-a-debugger-and-how-can-it-help-me-diagnose-problems')
+        return
+    if s == 'spirepatch':
+        await message.channel.send('https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch')
         return
     if os.path.exists(f'data/{s.split(" ")[1]}.json'):
         tokenized_message  = s.split(' ', 2)
