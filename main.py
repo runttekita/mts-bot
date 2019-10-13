@@ -11,7 +11,9 @@ from mtsbotdata import aliases
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 pin_links=['https://media.discordapp.net/attachments/398373038732738570/543527729077682187/sts-check-the-pins.gif',
-    'https://media.discordapp.net/attachments/504438263012917254/542101742377107467/kumikopins.gif']
+    'https://media.discordapp.net/attachments/504438263012917254/542101742377107467/kumikopins.gif',
+    'https://cdn.discordapp.com/attachments/504438263012917254/632966857292513320/fireworks.gif',
+    'https://cdn.discordapp.com/attachments/504438263012917254/632966856596127745/ruiPins.gif']
 
 client = discord.Client()
 prefix = '?'
