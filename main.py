@@ -135,8 +135,15 @@ async def do_command(channel, tokenized_message):
 @client.event
 async def dm_modder(channel, tokenized_message):
     if len(tokenized_message) == 2:
-        await channel.send('No mod ID supplied! If you want to contact a mod developer then please put in their mod ID.')
-    print(client.get_user_info(86261397213708288))
+        await channel.send('No mod ID or feedback supplied!')
+        return
+    target_mod = Mod_Data(tokenized_message[1]).data[0]
+    if 'discord' in target_mod:
+        modder = await client.fetch_user(int(target_mod['discord']['id']))
+        await modder.send(tokenized_message[2])
+        await channel.send(f'Feedback sent to developer of {tokenized_message[1]}!')
+    else:
+        await channel.send(f'{tokenized_message[1].capitalize()} does not current accept feedback.')
 
 @client.event
 async def card(channel, tokenized_message):
