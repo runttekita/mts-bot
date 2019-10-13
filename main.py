@@ -126,26 +126,44 @@ async def relic(channel, tokenized_message):
     relics = Mod_Data(tokenized_message[1]).data
     if len(tokenized_message) == 3:
         if tokenized_message[2] == 'random':
-            await channel.send(relic_format(random.choice(relics[0]['relics'])))
-            return
+            if 'mod' in relics[0]:
+                await channel.send(relic_format(random.choice(relics[0]['relics']), relics[0]['mod']['name']))
+                return
+            else:
+                relic = random.choice(relics[0]['relics'])
+                await channel.send(relic_format(relic, relic['mod']))
+                return
     if len(tokenized_message) == 2:
         if tokenized_message[1] == 'random':
             mod_object = random.choice(relics)
             if len(mod_object['relics']) == 0:
                 await relic(channel, tokenized_message)
-            relic_object = random.choice(mod_object['relics'])
-            await channel.send(relic_format(relic_object))
-            return
+                return
+            relics_object = random.choice(mod_object['relics'])
+            if 'mod' in mod_object:
+                await channel.send(relic_format(relics_object, mod_object['mod']['name']))
+                return
+            else:
+                await channel.send(relic_format(relics_object, relics_object['mod']))
+                return
     for x in range(len(relics)):
         for relic in relics[x]['relics']:
             if len(tokenized_message) == 3:
                 if tokenized_message[2] == relic['name'].lower():
-                    await channel.send(relic_format(relic))
-                    return
-            else:
-                if tokenized_message[1] == relic['name'].lower():
-                    await channel.send(relic_format(relic))
-                    return
+                    if 'mod' in relics[x]:
+                        await channel.send(relic_format(relic, relics[x]['mod']['name']))
+                        return
+                    else:
+                        await channel.send(relic_format(relic, relic['mod']))
+                        return
+                else:
+                    if tokenized_message[1] == relic['name'].lower():
+                        if 'mod' in relics[x]:
+                            await channel.send(relic_format(relic, relics[x]['mod']['name']))
+                            return
+                        else:
+                            await channel.send(relic_format(relic, relic['mod']))
+                            return
     if len(tokenized_message) == 3:
         await channel.send(f'No relic named {tokenized_message[2]} found in {tokenized_message[1]}.')
     else:
@@ -191,11 +209,11 @@ async def help_command(channel):
 def card_format(card, id):
     return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['color'], id, remove_keyword_prefixes(card['description']))
 
-def relic_format(relic):
+def relic_format(relic, id):
     if relic['pool'] == '':
-        return "**{0}**\n`{1}`\n{2}\n*{3}*".format(relic['name'], relic['tier'], relic['description'], relic['flavorText'])
+        return "**{0}**\n`{1}`, `{2}`\n{3}\n*{4}*".format(relic['name'], relic['tier'], id, relic['description'], relic['flavorText'])
 
-    return "**{0}**\n`{1}` `{2}`\n{3}\n*{4}*".format(relic['name'], relic['tier'], relic['pool'], relic['description'], relic['flavorText'])
+    return "**{0}**\n`{1}` `{2}` `{3}`\n{4}\n*{5}*".format(relic['name'], relic['tier'], relic['pool'], id, relic['description'], relic['flavorText'])
 
 def keyword_format_mod(keyword, name, mod):
     return "**{0}**\n {1}".format(name.capitalize(), keyword['description'])
