@@ -5,6 +5,8 @@ import discord
 from dotenv import load_dotenv
 import os
 import random
+import mtsbotdata
+from mtsbotdata import aliases
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')

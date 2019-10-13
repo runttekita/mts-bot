@@ -1,0 +1,6 @@
+aliases = {
+    'replaythespire': [
+        'replay',
+        'rts'
+    ]
+}
