@@ -19,7 +19,7 @@ pin_links=['https://media.discordapp.net/attachments/398373038732738570/54352772
 client = discord.Client()
 prefix = '?'
 
-uncolor = re.compile(r"^\[#[0-9A-Fa-f]{6}\](\S+?)(?:\[]){0,1}$")
+uncolor = re.compile(r"^\[#[0-9A-Fa-f]{6}\](\S+?)$")
 
 class Mod_Data:
     def __init__(self, id):
@@ -301,7 +301,7 @@ def remove_keyword_prefixes(description):
     for word in description:
         res = uncolor.match(word)
         if (res):
-            final_description += res.group(1) + ' '
+            final_description += res.group(1).replace('[]', '', 1) + ' '
             continue
         if word.startswith('!'):
             continue
