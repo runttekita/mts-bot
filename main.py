@@ -9,7 +9,6 @@ import random
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 pin_links=['https://media.discordapp.net/attachments/398373038732738570/543527729077682187/sts-check-the-pins.gif',
-    'https://media.discordapp.net/attachments/398373038732738570/543535771014004737/AILBhpFZ23.gif',
     'https://media.discordapp.net/attachments/504438263012917254/542101742377107467/kumikopins.gif']
 
 client = discord.Client()
