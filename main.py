@@ -45,7 +45,7 @@ async def on_message(message):
     if message.content.lower() == 'update body text' and message.author.id == 114667440507453441:
         await message.channel.send('UPDATE BODY TEXT')
         return
-    if message.content.lower() == 'big thanks papa kio' and message.author.id == 95258954090676224:
+    if message.content.lower() == 'big thanks papa kio!' and message.author.id == 95258954090676224:
         await message.channel.send('Big thanks papa Kio!')
         return
     if is_command(message):
