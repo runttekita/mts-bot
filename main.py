@@ -67,6 +67,12 @@ async def get_id(message):
     if s == 'list':
         await message.channel.send('https://github.com/velvet-halation/mts-bot/tree/master/data')
         return
+    if s == 'default':
+        await message.channel.send('https://github.com/Gremious/StS-DefaultModBase')
+        return
+    if s == 'pins':
+        await message.channel.send('https://media.discordapp.net/attachments/398373038732738570/543527729077682187/sts-check-the-pins.gif')
+        return
     if os.path.exists(f'data/{s.split(" ")[1]}.json'):
         tokenized_message  = s.split(' ', 2)
     else:
