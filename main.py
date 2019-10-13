@@ -127,10 +127,6 @@ async def do_command(channel, tokenized_message):
     await callback(channel, tokenized_message)
 
 @client.event
-async def send_failure(channel, tokenized_message):
-    await channel.send(f'Unable to find mod {tokenized_message[1]}')
-
-@client.event
 async def card(channel, tokenized_message):
     cards = Mod_Data(tokenized_message[1]).data
     if len(tokenized_message) == 3:
