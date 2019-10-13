@@ -259,7 +259,7 @@ def remove_keyword_prefixes(description):
     return final_description
 
 def is_keyword(word):
-    return not word[0].isupper() and ':' in word
+    return not word[0].isupper() and ':' in word and word.index(':') < len(word) - 1
 
 client.run(token)
 
