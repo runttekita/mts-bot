@@ -63,7 +63,7 @@ async def get_id(message):
         await help_command(message.channel)
         return
     if s == 'praise' and (message.author.id == 86261397213708288 or message.author.id == 132940023522656256):
-        await message.channel.send('i love reina <3')
+        await message.channel.send('i love alchy <3')
         return
     if s == 'contribute':
         await message.channel.send('https://github.com/velvet-halation/mts-bot#contributing')
