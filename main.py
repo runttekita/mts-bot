@@ -73,6 +73,15 @@ async def get_id(message):
     if s == 'pins':
         await message.channel.send('https://media.discordapp.net/attachments/398373038732738570/543527729077682187/sts-check-the-pins.gif')
         return
+    if s == 'xy':
+        await message.channel.send('http://xyproblem.info/')
+        return
+    if s == 'debugger':
+        await message.channel.send('https://stackoverflow.com/questions/25385173/what-is-a-debugger-and-how-can-it-help-me-diagnose-problems')
+        return
+    if s == 'spirepatch':
+        await message.channel.send('https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch')
+        return
     if os.path.exists(f'data/{s.split(" ")[1]}.json'):
         tokenized_message  = s.split(' ', 2)
     else:
