@@ -29,7 +29,7 @@ class Mod_Data:
             for file in os.listdir('data/'):
                 with open(f'data/{file}') as json_file:
                     data.append(json.load(json_file))
-        return data 
+        return data
 
 @client.event
 async def on_ready():
@@ -86,11 +86,30 @@ async def get_id(message):
     if s == 'spirepatch':
         await message.channel.send('https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch')
         return
-    if os.path.exists(f'data/{s.split(" ")[1]}.json'):
-        tokenized_message  = s.split(' ', 2)
-    else:
-        tokenized_message = s.split(' ', 1)
+    if len(s.split(" ")) == 1:
+        return
+
+    tokenized_message = tokenize_message(s)
     await do_command(message.channel, tokenized_message)
+
+def tokenize_message(message):
+    if len(message.split(' ')) == 3:
+        for mod in aliases:
+            names = aliases.get(mod)
+            if message.split(' ')[1] in names:
+                message.split(' ', 2)[1] = mod
+                return message.split(' ', 2)
+    if os.path.exists(f'data/{message.split(" ")[1]}.json'):
+            return message.split(' ', 2)
+    else:
+        return message.split(' ', 1)
+
+def check_for_aliases(self, id):
+        print(id)
+        for mod in aliases:
+            mod_aliases = aliases.get(mod)
+            if id in mod_aliases:
+                return mod
 
 async def do_command(channel, tokenized_message):
     commands = {

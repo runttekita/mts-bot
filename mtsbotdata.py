@@ -1,5 +1,5 @@
 aliases = {
-    'replaythespire': [
+    'replaythespiremod': [
         'replay',
         'rts'
     ],
@@ -18,11 +18,11 @@ aliases = {
         'glutton'
     ],
     'hollowmod': [
-        'hollow knight',
-        'bug knight'
+        'hollowknight',
+        'bugknight'
     ],
     'madsciencemod': [
-        'mad scientist'
+        'madscientist'
     ],
     'pokerplayer': [
         'poker'
