@@ -55,6 +55,8 @@ async def get_id(message):
         await message.channel.send('i love reina <3')
     if s == 'contribute':
         await message.channel.send('https://github.com/velvet-halation/mts-bot#contributing')
+    if s == 'list':
+        await message.channel.send('https://github.com/velvet-halation/mts-bot/tree/master/data')
     if os.path.exists(f'data/{s.split(" ")[1]}.json'):
         tokenized_message  = s.split(' ', 2)
     else:
