@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.11.22",
+    "version": "1.12.0-beta",
     "authors": ["JohnnyBazooka89"],
     "credits": "Jedi - Russian localization, Vex'd - Cannonball animations, various visual effects",
     "description": "Adds The Blackbeard as a new playable character.\n\nMore info: https://steamcommunity.com/sharedfiles/filedetails/?id=1612105245\n\nGithub: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
@@ -76,6 +76,86 @@
       "description": "Deal 9 damage."
     },
     {
+      "name": "Cannonball",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nExhaust."
+    },
+    {
+      "name": "Cannonball+",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nExhaust."
+    },
+    {
+      "name": "Sword of Chaos",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 3 / 3 Weapon.\nWhenever you attack with this Weapon, add a random card into your hand."
+    },
+    {
+      "name": "Sword of Chaos+",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 3 / 4 Weapon.\nWhenever you attack with this Weapon, add a random card into your hand."
+    },
+    {
+      "name": "Sword of Fire",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 3 / 3 Weapon.\nWhenever you attack with this Weapon, deal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Sword of Fire+",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 3 / 4 Weapon.\nWhenever you attack with this Weapon, deal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Sword of Wisdom",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 3 / 3 Weapon.\nWhenever you attack with this Weapon, draw a card."
+    },
+    {
+      "name": "Sword of Wisdom+",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Equip a 3 / 4 Weapon.\nWhenever you attack with this Weapon, draw a card."
+    },
+    {
+      "name": "Vampiric Scepter",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 7 / 3 Weapon.\nWhenever you attack with this Weapon, heal !blackbeard:M2! HP."
+    },
+    {
+      "name": "Vampiric Scepter+",
+      "color": "Blackbeard_black",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 8 / 3 Weapon.\nWhenever you attack with this Weapon, heal !blackbeard:M2! HP."
+    },
+    {
       "name": "Beat Up",
       "color": "Blackbeard_black",
       "rarity": "Common",
@@ -113,7 +193,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block.\nAdd a Cannonball into your hand."
+      "description": "Gain 5 Block.\nAdd a *Cannonball into your hand."
     },
     {
       "name": "Cloak and Cannonball+",
@@ -121,7 +201,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nAdd an upgraded Cannonball into your hand."
+      "description": "Gain 7 Block.\nAdd an upgraded *Cannonball into your hand."
     },
     {
       "name": "Dagger",
@@ -138,6 +218,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "Equip a 2 / 4 Weapon.\nAt the start of your turn,\n1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
+    },
+    {
+      "name": "Deadly Arsenal",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nDraw 1 card for each unique Weapon you have currently equipped."
+    },
+    {
+      "name": "Deadly Arsenal+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDraw 1 card for each unique Weapon you have currently equipped."
     },
     {
       "name": "Fencing",
@@ -481,7 +577,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Add X Cannonballs into your hand."
+      "description": "Add X *Cannonballs into your hand."
     },
     {
       "name": "Cannon Barrage+",
@@ -489,7 +585,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Add X+1 Cannonballs into your hand."
+      "description": "Add X+1 *Cannonballs into your hand."
     },
     {
       "name": "Cannonball Supply",
@@ -497,7 +593,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Add 3 Cannonballs into your hand.\nExhaust."
+      "description": "Add 3 *Cannonballs into your hand.\nExhaust."
     },
     {
       "name": "Cannonball Supply+",
@@ -505,7 +601,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Add 3 Cannonballs into your hand."
+      "description": "Add 3 *Cannonballs into your hand."
     },
     {
       "name": "Captain's Cabin",
@@ -513,7 +609,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 12 Block.\nAdd 1 Cannonball into your hand."
+      "description": "Gain 12 Block.\nAdd 1 *Cannonball into your hand."
     },
     {
       "name": "Captain's Cabin+",
@@ -521,7 +617,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 12 Block.\nAdd 2 Cannonballs into your hand."
+      "description": "Gain 12 Block.\nAdd 2 *Cannonballs into your hand."
     },
     {
       "name": "Cat O' Nine Tails",
@@ -609,7 +705,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage.\nAdd a Cannonball into your hand.\nExhaust."
+      "description": "Deal 6 damage.\nAdd a *Cannonball into your hand.\nExhaust."
     },
     {
       "name": "Double Cannonball+",
@@ -617,7 +713,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nAdd an upgraded Cannonball into your hand.\nExhaust."
+      "description": "Deal 8 damage.\nAdd an upgraded *Cannonball into your hand.\nExhaust."
     },
     {
       "name": "Eyepatch",
@@ -689,7 +785,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "At the start of your turn, add a Cannonball into your hand."
+      "description": "At the start of your turn, add a *Cannonball into your hand."
     },
     {
       "name": "Infinite Barrage+",
@@ -697,7 +793,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Innate.\nAt the start of your turn, add a Cannonball into your hand."
+      "description": "Innate.\nAt the start of your turn, add a *Cannonball into your hand."
     },
     {
       "name": "Jolly Roger",
@@ -730,6 +826,22 @@
       "type": "Power",
       "cost": "0",
       "description": "Gain 2 Artifact."
+    },
+    {
+      "name": "Pirate Hook",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf this deals at least 12 damage, deal 8 damage again."
+    },
+    {
+      "name": "Pirate Hook+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nIf this deals at least 12 damage, deal 11 damage again."
     },
     {
       "name": "Powder Keg",
@@ -849,7 +961,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 2 / 4 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat.\nExhaust."
+      "description": "Equip a 2 / 4 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand for the rest of combat.\nExhaust."
     },
     {
       "name": "Smithing Hammer+",
@@ -857,7 +969,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 2 / 6 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat.\nExhaust."
+      "description": "Equip a 2 / 6 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand for the rest of combat.\nExhaust."
     },
     {
       "name": "Terror of the Seas",
@@ -1319,7 +1431,7 @@
       "name": "Magical Cauldron",
       "tier": "Rare",
       "pool": "Blackbeard_black",
-      "description": "At the start of each combat, obtain a random potion.",
+      "description": "At the end of each combat, obtain a random potion.",
       "flavorText": "Fully automatic."
     },
     {
@@ -1340,7 +1452,7 @@
       "name": "Sober-minded",
       "tier": "Boss",
       "pool": "Blackbeard_black",
-      "description": "Gain [E] at the start of your turn. At the start of each combat, and then every 4 turns, lose 1 Resistance.",
+      "description": "Gain [E] at the start of your turn. At the start of each combat, and then every 6 turns, lose 1 Resistance.",
       "flavorText": "Being sober is not a natural state for The Blackbeard."
     },
     {
@@ -1360,14 +1472,19 @@
   ],
   "potions": [
     {
-      "name": "Bottle of Rum",
+      "name": "Orange Juice",
+      "rarity": "Uncommon",
+      "description": "Heal 8 HP. Remove all of your Debuffs."
+    },
+    {
+      "name": "Rum",
       "rarity": "Uncommon",
       "description": "Gain 2 Resistance."
     },
     {
-      "name": "Quick Shots of Rum",
+      "name": "Upgrade Potion",
       "rarity": "Uncommon",
-      "description": "Gain 4 Resistance. At the start of your next turn, lose 4 Resistance."
+      "description": "Give all your equipped Weapons +3 / +3."
     }
   ],
   "creatures": [
