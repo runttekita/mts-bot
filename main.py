@@ -129,6 +129,7 @@ async def do_command(channel, tokenized_message):
 @client.event
 async def card(channel, tokenized_message):
     cards = Mod_Data(tokenized_message[1]).data
+    random.shuffle(cards)
     if len(tokenized_message) == 3:
         if tokenized_message[2] == 'random' and (channel.id == 384046138610941953 or channel.id == 632350690479570950):
             if 'mod' in cards[0]:
@@ -177,6 +178,7 @@ async def card(channel, tokenized_message):
 @client.event
 async def relic(channel, tokenized_message):
     relics = Mod_Data(tokenized_message[1]).data
+    random.shuffle(relics)
     if 'star compass' in tokenized_message:
         await channel.send('Oops, I dropped it. Oh well.')
         return
