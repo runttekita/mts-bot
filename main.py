@@ -208,7 +208,7 @@ async def keyword(channel, tokenized_message):
 
 @client.event
 async def help_command(channel):
-    await channel.send(f'I can look up modded info with {prefix}card, {prefix}relic or {prefix}keyword!')
+    await channel.send(f'I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!' + '\n' + f'Additionally you can use {prefix}help, {prefix}list, or {prefix}contribute!')
 
 def card_format(card, id):
     return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['color'], id, remove_keyword_prefixes(card['description']))
