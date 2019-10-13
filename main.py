@@ -93,6 +93,9 @@ async def get_id(message):
     if s == 'spirepatch':
         await message.channel.send('https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch')
         return
+    if s == 'optin':
+        await message.channel.send('https://github.com/velvet-halation/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback')
+        return
     if len(s.split(" ")) == 1:
         return
 
