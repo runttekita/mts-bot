@@ -304,7 +304,7 @@ def remove_keyword_prefixes(description):
             final_description += res.group(1).replace('[]', '', 1) + ' '
             continue
         if word.startswith('!'):
-            continue
+            final_description += '# '
         if is_keyword(word):
             if word.split(':', 1)[1][len(word.split(':', 1)[1]) - 1] == '.':
                 final_description += word.split(':', 1)[1]
