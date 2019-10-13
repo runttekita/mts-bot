@@ -131,7 +131,7 @@ async def send_failure(channel, tokenized_message):
 async def card(channel, tokenized_message):
     cards = Mod_Data(tokenized_message[1]).data
     if len(tokenized_message) == 3:
-        if tokenized_message[2] == 'random' and channel.id == 384046138610941953:
+        if tokenized_message[2] == 'random' and (channel.id == 384046138610941953 or channel.id == 632350690479570950):
             if 'mod' in cards[0]:
                 await channel.send(card_format(random.choice(cards[0]['cards']), cards[0]['mod']['name']))
                 return
@@ -140,7 +140,7 @@ async def card(channel, tokenized_message):
                 await channel.send(card_format(card, card['mod']))
                 return
     if len(tokenized_message) == 2:
-        if tokenized_message[1] == 'random' and channel.id == 384046138610941953:
+        if tokenized_message[1] == 'random' and (channel.id == 384046138610941953 or channel.id == 632350690479570950):
             mod_object = random.choice(cards)
             if len(mod_object['cards']) == 0:
                 await card(channel, tokenized_message)
@@ -182,7 +182,7 @@ async def relic(channel, tokenized_message):
         await channel.send('Oops, I dropped it. Oh well.')
         return
     if len(tokenized_message) == 3:
-        if tokenized_message[2] == 'random' and channel.id == 384046138610941953:
+        if tokenized_message[2] == 'random' and (channel.id == 384046138610941953 or channel.id == 632350690479570950):
             if 'mod' in relics[0]:
                 await channel.send(relic_format(random.choice(relics[0]['relics']), relics[0]['mod']['name']))
                 return
@@ -191,7 +191,7 @@ async def relic(channel, tokenized_message):
                 await channel.send(relic_format(relic, relic['mod']))
                 return
     if len(tokenized_message) == 2:
-        if tokenized_message[1] == 'random' and channel.id == 384046138610941953:
+        if tokenized_message[1] == 'random' and (channel.id == 384046138610941953 or channel.id == 632350690479570950):
             mod_object = random.choice(relics)
             if len(mod_object['relics']) == 0:
                 await relic(channel, tokenized_message)
