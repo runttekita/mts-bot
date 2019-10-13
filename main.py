@@ -93,13 +93,14 @@ async def get_id(message):
     await do_command(message.channel, tokenized_message)
 
 def tokenize_message(message):
-    if len(message.split(' ')) == 3:
+    if len(message.split(' ')) >= 3:
         for mod in aliases:
             names = aliases.get(mod)
             if message.split(' ')[1] in names:
                 tokenized_message = message.split(' ', 2)
                 del tokenized_message[1]
                 tokenized_message.insert(1, mod)
+                print(tokenized_message)
                 return tokenized_message
     if os.path.exists(f'data/{message.split(" ")[1]}.json'):
             return message.split(' ', 2)
