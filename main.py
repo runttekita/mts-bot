@@ -112,14 +112,14 @@ async def card(channel, tokenized_message):
                     else:
                         await channel.send(card_format(card, card['mod']))
                         return
-                else:
-                    if tokenized_message[1] == card['name'].lower():
-                        if 'mod' in cards[x]:
-                            await channel.send(card_format(card, cards[x]['mod']['name']))
-                            return
-                        else:
-                            await channel.send(card_format(card, card['mod']))
-                            return
+            else:
+                if tokenized_message[1] == card['name'].lower():
+                    if 'mod' in cards[x]:
+                        await channel.send(card_format(card, cards[x]['mod']['name']))
+                        return
+                    else:
+                        await channel.send(card_format(card, card['mod']))
+                        return
     if len(tokenized_message) == 3:
         await channel.send(f'No card named {tokenized_message[2]} found in {tokenized_message[1]}.')
     else:
@@ -160,14 +160,14 @@ async def relic(channel, tokenized_message):
                     else:
                         await channel.send(relic_format(relic, relic['mod']))
                         return
-                else:
-                    if tokenized_message[1] == relic['name'].lower():
-                        if 'mod' in relics[x]:
-                            await channel.send(relic_format(relic, relics[x]['mod']['name']))
-                            return
-                        else:
-                            await channel.send(relic_format(relic, relic['mod']))
-                            return
+            else:
+                if tokenized_message[1] == relic['name'].lower():
+                    if 'mod' in relics[x]:
+                        await channel.send(relic_format(relic, relics[x]['mod']['name']))
+                        return
+                    else:
+                        await channel.send(relic_format(relic, relic['mod']))
+                        return
     if len(tokenized_message) == 3:
         await channel.send(f'No relic named {tokenized_message[2]} found in {tokenized_message[1]}.')
     else:
@@ -215,9 +215,9 @@ def card_format(card, id):
 
 def relic_format(relic, id):
     if relic['pool'] == '':
-        return "**{0}**\n`{1}`, `{2}`\n{3}\n*{4}*".format(relic['name'], relic['tier'], id, relic['description'], relic['flavorText'])
+        return "**{0}**\n`{1}`  `{2}`\n{3}\n*{4}*".format(relic['name'], relic['tier'], id, relic['description'], relic['flavorText'])
 
-    return "**{0}**\n`{1}` `{2}` `{3}`\n{4}\n*{5}*".format(relic['name'], relic['tier'], relic['pool'], id, relic['description'], relic['flavorText'])
+    return "**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(relic['name'], relic['tier'], relic['pool'], id, relic['description'], relic['flavorText'])
 
 def keyword_format_mod(keyword, name, mod):
     return "**{0}**\n {1}".format(name.capitalize(), keyword['description'])
