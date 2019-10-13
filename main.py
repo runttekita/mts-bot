@@ -144,7 +144,7 @@ async def dm_modder(channel, tokenized_message):
     target_mod = Mod_Data(tokenized_message[1]).data[0]
     if 'discord' in target_mod:
         modder = await client.fetch_user(int(target_mod['discord']['id']))
-        await modder.send(tokenized_message[0] + ':' + tokenized_message[2])
+        await modder.send(tokenized_message[0] + ' for ' + tokenized_message[1] + '\n' + tokenized_message[2])
         await channel.send(f'Feedback sent to developer of {tokenized_message[1]}!')
     else:
         await channel.send(f'{tokenized_message[1].capitalize()} does not currently accept feedback.')
