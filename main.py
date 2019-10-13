@@ -124,10 +124,19 @@ async def do_command(channel, tokenized_message):
         'help': help_command,
         'card': card,
         'relic': relic,
-        'keyword': keyword
+        'keyword': keyword,
+        'suggestion': dm_modder,
+        'bug': dm_modder ,
+        'feedback': dm_modder
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
+
+@client.event
+async def dm_modder(channel, tokenized_message):
+    if len(tokenized_message) == 2:
+        await channel.send('No mod ID supplied! If you want to contact a mod developer then please put in their mod ID.')
+    print(client.get_user_info(86261397213708288))
 
 @client.event
 async def card(channel, tokenized_message):
