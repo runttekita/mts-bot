@@ -97,8 +97,10 @@ def tokenize_message(message):
         for mod in aliases:
             names = aliases.get(mod)
             if message.split(' ')[1] in names:
-                message.split(' ', 2)[1] = mod
-                return message.split(' ', 2)
+                tokenized_message = message.split(' ', 2)
+                del tokenized_message[1]
+                tokenized_message.insert(1, mod)
+                return tokenized_message
     if os.path.exists(f'data/{message.split(" ")[1]}.json'):
             return message.split(' ', 2)
     else:
