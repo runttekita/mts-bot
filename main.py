@@ -57,12 +57,16 @@ async def get_id(message):
     s = message.content.lower()
     if s == 'help':
         await help_command(message.channel)
+        return
     if s == 'praise' and message.author.id == 86261397213708288:
         await message.channel.send('i love reina <3')
+        return
     if s == 'contribute':
         await message.channel.send('https://github.com/velvet-halation/mts-bot#contributing')
+        return
     if s == 'list':
         await message.channel.send('https://github.com/velvet-halation/mts-bot/tree/master/data')
+        return
     if os.path.exists(f'data/{s.split(" ")[1]}.json'):
         tokenized_message  = s.split(' ', 2)
     else:
