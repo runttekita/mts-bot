@@ -281,7 +281,9 @@ async def keyword(channel, tokenized_message):
 
 @client.event
 async def help_command(channel):
-    await channel.send(f'I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!' + '\n' + f'Additionally you can use {prefix}help, {prefix}list or {prefix}contribute!')
+    await channel.send(f'I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!' + '\n'
+        + f'You can use {prefix}help, {prefix}list or {prefix}contribute to get information!' + '\n'
+        + f'You can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in.')
 
 def card_format(card, id):
     if card['cost'] == '':
