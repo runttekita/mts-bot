@@ -217,6 +217,8 @@ async def help_command(channel):
     await channel.send(f'I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!' + '\n' + f'Additionally you can use {prefix}help, {prefix}list, or {prefix}contribute!')
 
 def card_format(card, id):
+    if card['cost'] == '':
+        return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`\n{5}".format(card['name'], card['type'], card['rarity'], card['color'], id, remove_keyword_prefixes(card['description']))
     return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(card['name'], energy_string(card['cost']), card['type'], card['rarity'], card['color'], id, remove_keyword_prefixes(card['description']))
 
 def relic_format(relic, id):
