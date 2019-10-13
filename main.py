@@ -19,6 +19,8 @@ pin_links=['https://media.discordapp.net/attachments/398373038732738570/54352772
 client = discord.Client()
 prefix = '?'
 
+banned_users = []
+
 uncolor = re.compile(r"^\[#[0-9A-Fa-f]{6}\](\S+?)$")
 
 class Mod_Data:
@@ -95,6 +97,8 @@ async def get_id(message):
         return
 
     tokenized_message = tokenize_message(s)
+    if message.author.id in banned_users and tokenized_message[1] == 'bug' or tokenized_message[1] == 'feedback' or tokenized_message[1] == 'suggestion':
+        return
     await do_command(message.channel, tokenized_message)
 
 def tokenize_message(message):
