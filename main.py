@@ -7,7 +7,7 @@ import os
 import re
 import random
 import mtsbotdata
-from mtsbotdata import aliases
+from mtsbotdata import aliases, suggestables
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -141,13 +141,14 @@ async def dm_modder(channel, tokenized_message):
     if len(tokenized_message) == 2:
         await channel.send('No mod ID or feedback supplied!')
         return
-    target_mod = Mod_Data(tokenized_message[1]).data[0]
-    if 'discord' in target_mod:
-        modder = await client.fetch_user(int(target_mod['discord']['id']))
-        await modder.send(tokenized_message[0] + ' for ' + tokenized_message[1] + '\n' + tokenized_message[2])
-        await channel.send(f'Feedback sent to developer of {tokenized_message[1]}!')
-    else:
-        await channel.send(f'{tokenized_message[1].capitalize()} does not currently accept feedback.')
+    for id in suggestables:
+        mods = suggestables.get(id)
+        if (tokenized_message[1] in mods):
+            modder = await client.fetch_user(id)
+            await modder.send(tokenized_message[0].capitalize() + ' for ' + tokenized_message[1].capitalize() + '\n' + tokenized_message[2])
+            await channel.send(f'Feedback sent to developer of {tokenized_message[1]}!')
+            return
+    await channel.send(f'{tokenized_message[1].capitalize()} does not currently accept feedback.')
 
 @client.event
 async def card(channel, tokenized_message):
