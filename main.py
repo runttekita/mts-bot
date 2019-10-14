@@ -114,6 +114,10 @@ async def get_id(message):
                                     'Uncommon: 36 (8 Attacks/20 Skills/8 Powers)\n' +
                                     'Rare: 17 (5 Attacks/6 Skills/6 Powers)\n' +
                                     '24 Attacks/37 Skills/14 Powers')
+    if s == 'console':
+        await message.channel.send('Enable it on the Main Menu by going to Mods>BaseMod>Config>Enable console.\n' +
+                                    'Then hit ` while in a run.')
+    
     if len(s.split(" ")) == 1:
         return
 
