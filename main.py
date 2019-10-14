@@ -179,7 +179,7 @@ async def do_command(channel, tokenized_message):
         "suggestion": dm_modder,
         "bug": dm_modder,
         "feedback": dm_modder,
-        "find": find
+        "find": find,
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
@@ -200,13 +200,15 @@ async def find(channel, tokenized_message):
                             first_match.update({cards[x]["mod"]["name"]: card})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({cards[x]["mod"]["name"]: card['name']})
+                                other_results.update(
+                                    {cards[x]["mod"]["name"]: card["name"]}
+                                )
                     else:
                         if not first_match:
                             first_match.update({card["mod"]: card})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({card["mod"]: card['name']})
+                                other_results.update({card["mod"]: card["name"]})
             else:
                 if tokenized_message[1] in card["description"].lower():
                     if "mod" in cards[x]:
@@ -214,13 +216,15 @@ async def find(channel, tokenized_message):
                             first_match.update({cards[x]["mod"]["name"]: card})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({cards[x]["mod"]["name"]: card['name']})
+                                other_results.update(
+                                    {cards[x]["mod"]["name"]: card["name"]}
+                                )
                     else:
                         if not first_match:
                             first_match.update({card["mod"]: card})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({card["mod"]: card['name']})
+                                other_results.update({card["mod"]: card["name"]})
     message = ""
     if first_match:
         for key in first_match:
