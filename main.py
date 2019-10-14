@@ -96,24 +96,6 @@ async def get_id(message):
     if s == 'optin':
         await message.channel.send('https://github.com/velvet-halation/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback')
         return
-    if s == 'basestats':
-        await message.channel.send('Ironclad - 75\n' +
-                                    'Common: 23 (16 Attacks/7 Skills)\n' +
-                                    'Uncommon: 36 (11 Attacks/17 Skills/8 Powers)\n' +
-                                    'Rare: 16 (5 Attacks/5 Skills/6 Powers)\n' +
-                                    '32 Attacks/29 Skills/14 Powers\n' +
-''
-                                    'Silent - 75\n' +
-                                    'Common: 23 (11 Attacks/12 Skills)\n' +
-                                    'Uncommon: 33 (13 Attacks/14 Skills/6 Powers)\n' +
-                                    'Rare: 19 (4 Attacks/10 Skills/5 Powers)\n' +
-                                    '28 Attacks/36 Skills/11 Powers)\n' +
-''
-                                    'Defect - 75\n' +
-                                    'Common: 22 (11 Attacks/11 Skills)\n' +
-                                    'Uncommon: 36 (8 Attacks/20 Skills/8 Powers)\n' +
-                                    'Rare: 17 (5 Attacks/6 Skills/6 Powers)\n' +
-                                    '24 Attacks/37 Skills/14 Powers')
     if s == 'console':
         await message.channel.send('Enable it on the Main Menu by going to Mods>BaseMod>Config>Enable console.\n' +
                                     'Then hit ` while in a run.')
