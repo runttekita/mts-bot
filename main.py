@@ -179,9 +179,40 @@ async def do_command(channel, tokenized_message):
         "suggestion": dm_modder,
         "bug": dm_modder,
         "feedback": dm_modder,
+        "find": find
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
+
+
+@client.event
+async def find(channel, tokenized_message):
+    cards = Mod_Data(tokenized_message[1]).data
+    random.shuffle(cards)
+    for x in range(len(cards)):
+        for card in cards[x]["cards"]:
+            if len(tokenized_message) == 3:
+                if tokenized_message[2] in card["description"].lower():
+                    if "mod" in cards[x]:
+                        await channel.send(card_format(card, cards[x]["mod"]["name"]))
+                        return
+                    else:
+                        await channel.send(card_format(card, card["mod"]))
+                        return
+            else:
+                if tokenized_message[1] in card["description"].lower():
+                    if "mod" in cards[x]:
+                        await channel.send(card_format(card, cards[x]["mod"]["name"]))
+                        return
+                    else:
+                        await channel.send(card_format(card, card["mod"]))
+                        return
+    if len(tokenized_message) == 3:
+        await channel.send(
+            f"No card with {tokenized_message[2]} found in {tokenized_message[1]}."
+        )
+    else:
+        await channel.send(f"No card with {tokenized_message[1]} found.")
 
 
 @client.event
@@ -381,7 +412,7 @@ async def help_command(channel):
     await channel.send(
         f"I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!"
         + "\n"
-        + f"You can use {prefix}help, {prefix}list or {prefix}contribute to get information!"
+        + f"You can use {prefix}help, {prefix}list, {prefix}find or {prefix}contribute to get information!"
         + "\n"
         + f"You can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in."
     )
