@@ -203,7 +203,7 @@ async def find(channel, tokenized_message):
                                 other_results.update({cards[x]["mod"]["name"]: card['name']})
                     else:
                         if not first_match:
-                            first_match.update({cards[x]["mod"]["name"]: card})
+                            first_match.update({card["mod"]: card})
                         else:
                             if len(other_results) < 3:
                                 other_results.update({card["mod"]: card['name']})
@@ -217,7 +217,7 @@ async def find(channel, tokenized_message):
                                 other_results.update({cards[x]["mod"]["name"]: card['name']})
                     else:
                         if not first_match:
-                            first_match.update({cards[x]["mod"]["name"]: card})
+                            first_match.update({card["mod"]: card})
                         else:
                             if len(other_results) < 3:
                                 other_results.update({card["mod"]: card['name']})
