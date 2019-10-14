@@ -53,6 +53,9 @@ async def get_id(message):
         await help_command(message.channel)
     if message.content == 'praise' and message.author.id == 86261397213708288:
         await message.channel.send('i love reina <3')
+    if message.content == 'bruh' and (message.author.id == 360242872584241172):
+        await message.channel.send(':warning: BRUH :warning:') # Dont deny it Reina >:(
+      
     if os.path.exists(f'data/{s.split(" ")[1]}.json'):
         tokenized_message  = s.split(' ', 2)
     else:
