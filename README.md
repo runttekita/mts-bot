@@ -8,14 +8,6 @@ please contribute
 
 Open a pull request with your mod's `items.json` from [Spire Exporter](https://steamcommunity.com/sharedfiles/filedetails/?id=1615557269) in the `data` folder with the id of your mod being the name of the file and make sure the file name is all lowercase.
 
-# run it yourself?
-
-```
-# git clone git@github.com:velvet-halation/mts-bot.git
-# cd mts-bot
-# python main.py
-```
-
 # opt in for receiving feedback
 
 Add your discord ID as a key in `suggestables` here:
@@ -29,3 +21,11 @@ After you've done that submit a PR and I'll accept it if you've done everything 
 ## Please support me I'm broke. Click:
 
 [![Click to Support Me!](https://i.imgur.com/cAdBKeb.png)](https://ko-fi.com/velvet_halation)
+
+# run it yourself?
+
+```
+# git clone git@github.com:velvet-halation/mts-bot.git
+# cd mts-bot
+# python main.py
+```
