@@ -117,7 +117,8 @@ async def get_id(message):
     if s == 'console':
         await message.channel.send('Enable it on the Main Menu by going to Mods>BaseMod>Config>Enable console.\n' +
                                     'Then hit ` while in a run.')
-    
+    if s == 'relic:124':
+        await message.channel.send('https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings')
     if len(s.split(" ")) == 1:
         return
 
