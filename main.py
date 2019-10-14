@@ -197,7 +197,8 @@ async def find(channel, tokenized_message):
     for x in range(len(cards)):
         for card in cards[x]["cards"]:
             if len(tokenized_message) == 3:
-                if tokenized_message[2] in card["description"].lower():
+                regex = re.compile(tokenized_message[2])
+                if regex.match(card["description"].lower()):
                     if "mod" in cards[x]:
                         if not first_match:
                             first_match.update({cards[x]["mod"]["name"]: card})
@@ -213,7 +214,8 @@ async def find(channel, tokenized_message):
                             if len(other_results) < 3:
                                 other_results.update({card["mod"]: card["name"]})
             else:
-                if tokenized_message[1] in card["description"].lower():
+                regex = re.compile(tokenized_message[1])
+                if regex.match(card["description"].lower()):
                     if "mod" in cards[x]:
                         if not first_match:
                             first_match.update({cards[x]["mod"]["name"]: card})
