@@ -43,7 +43,6 @@ class Mod_Data:
 @client.event
 async def on_ready():
     print(f"{client.user} has connected to Discord!")
-    print("Loaded mod data")
 
 
 def is_command(message):
@@ -132,6 +131,10 @@ async def get_id(message):
             "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings"
         )
         return
+    if s == "cansuggest":
+        await message.channel.send(
+            "https://github.com/velvet-halation/mts-bot/blob/master/mtsbotdata.py#L32"
+        )
     if len(s.split(" ")) == 1:
         return
 
