@@ -283,6 +283,8 @@ async def dm_modder(channel, tokenized_message):
 async def card(channel, tokenized_message):
     cards = Mod_Data(tokenized_message[1]).data
     random.shuffle(cards)
+    first_match = {}
+    other_results = {}
     if len(tokenized_message) == 3:
         if tokenized_message[2] == "random" and (
             channel.id == 384046138610941953 or channel.id == 632350690479570950
@@ -318,19 +320,48 @@ async def card(channel, tokenized_message):
             if len(tokenized_message) == 3:
                 if tokenized_message[2] == card["name"].lower():
                     if "mod" in cards[x]:
-                        await channel.send(card_format(card, cards[x]["mod"]["name"]))
-                        return
+                        if not first_match:
+                            first_match.update({cards[x]["mod"]["name"]: card})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update(
+                                    {cards[x]["mod"]["name"]: card["name"]}
+                                )
                     else:
-                        await channel.send(card_format(card, card["mod"]))
-                        return
+                        if not first_match:
+                            first_match.update({card["mod"]: card})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({card["mod"]: card["name"]})
             else:
                 if tokenized_message[1] == card["name"].lower():
                     if "mod" in cards[x]:
-                        await channel.send(card_format(card, cards[x]["mod"]["name"]))
-                        return
+                        if not first_match:
+                            first_match.update({cards[x]["mod"]["name"]: card})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update(
+                                    {cards[x]["mod"]["name"]: card["name"]}
+                                )
                     else:
-                        await channel.send(card_format(card, card["mod"]))
-                        return
+                        if not first_match:
+                            first_match.update({card["mod"]: card})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({card["mod"]: card["name"]})
+    message = ""
+    if first_match:
+        for key in first_match:
+            message += card_format(first_match.get(key), key) + "\n"
+        if len(other_results) > 3:
+            other_results = other_results[:2]
+        if other_results:
+            message += "Other matches include:\n"
+            for match in other_results:
+                name = other_results.get(match)
+                message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
+        await channel.send(message)
+        return
     if len(tokenized_message) == 3:
         await channel.send(
             f"No card named {tokenized_message[2]} found in {tokenized_message[1]}."
@@ -343,6 +374,8 @@ async def card(channel, tokenized_message):
 async def relic(channel, tokenized_message):
     relics = Mod_Data(tokenized_message[1]).data
     random.shuffle(relics)
+    first_match = {}
+    other_results = {}
     if "star compass" in tokenized_message:
         await channel.send("Oops, I dropped it. Oh well.")
         return
@@ -383,23 +416,48 @@ async def relic(channel, tokenized_message):
             if len(tokenized_message) == 3:
                 if tokenized_message[2] == relic["name"].lower():
                     if "mod" in relics[x]:
-                        await channel.send(
-                            relic_format(relic, relics[x]["mod"]["name"])
-                        )
-                        return
+                        if not first_match:
+                            first_match.update({relics[x]["mod"]["name"]: relic})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update(
+                                    {relics[x]["mod"]["name"]: relic["name"]}
+                                )
                     else:
-                        await channel.send(relic_format(relic, relic["mod"]))
-                        return
+                        if not first_match:
+                            first_match.update({relic["mod"]: relic})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({relic["mod"]: relic["name"]})
             else:
                 if tokenized_message[1] == relic["name"].lower():
                     if "mod" in relics[x]:
-                        await channel.send(
-                            relic_format(relic, relics[x]["mod"]["name"])
-                        )
-                        return
+                        if not first_match:
+                            first_match.update({relics[x]["mod"]["name"]: relic})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update(
+                                    {relics[x]["mod"]["name"]: relic["name"]}
+                                )
                     else:
-                        await channel.send(relic_format(relic, relic["mod"]))
-                        return
+                        if not first_match:
+                            first_match.update({relic["mod"]: relic})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({relic["mod"]: relic["name"]})
+    message = ""
+    if first_match:
+        for key in first_match:
+            message += relic_format(first_match.get(key), key) + "\n"
+        if len(other_results) > 3:
+            other_results = other_results[:2]
+        if other_results:
+            message += "Other matches include:\n"
+            for match in other_results:
+                name = other_results.get(match)
+                message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
+        await channel.send(message)
+        return
     if len(tokenized_message) == 3:
         await channel.send(
             f"No relic named {tokenized_message[2]} found in {tokenized_message[1]}."
