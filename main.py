@@ -189,30 +189,67 @@ async def do_command(channel, tokenized_message):
 async def find(channel, tokenized_message):
     cards = Mod_Data(tokenized_message[1]).data
     random.shuffle(cards)
+    first_match = {}
+    other_results = {}
     for x in range(len(cards)):
         for card in cards[x]["cards"]:
             if len(tokenized_message) == 3:
                 if tokenized_message[2] in card["description"].lower():
                     if "mod" in cards[x]:
-                        await channel.send(card_format(card, cards[x]["mod"]["name"]))
-                        return
+                        if not first_match:
+                            first_match.update({cards[x]["mod"]["name"]: card})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({cards[x]["mod"]["name"]: card['name']})
                     else:
-                        await channel.send(card_format(card, card["mod"]))
-                        return
+                        if not first_match:
+                            first_match.update({cards[x]["mod"]["name"]: card})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({card["mod"]: card['name']})
             else:
                 if tokenized_message[1] in card["description"].lower():
                     if "mod" in cards[x]:
-                        await channel.send(card_format(card, cards[x]["mod"]["name"]))
-                        return
+                        if not first_match:
+                            first_match.update({cards[x]["mod"]["name"]: card})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({cards[x]["mod"]["name"]: card['name']})
                     else:
-                        await channel.send(card_format(card, card["mod"]))
-                        return
+                        if not first_match:
+                            first_match.update({cards[x]["mod"]["name"]: card})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({card["mod"]: card['name']})
+    message = ""
+    if first_match:
+        for key in first_match:
+            message += card_format(first_match.get(key), key) + "\n"
+        if len(other_results) > 3:
+            other_results = other_results[:2]
+        if other_results:
+            message += "Other matches include:\n"
+            for match in other_results:
+                name = other_results.get(match)
+                message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
+        await channel.send(message)
+        return
     if len(tokenized_message) == 3:
         await channel.send(
             f"No card with {tokenized_message[2]} found in {tokenized_message[1]}."
         )
     else:
         await channel.send(f"No card with {tokenized_message[1]} found.")
+
+
+def makeCaps(string):
+    split_word = string.split(" ")
+    for word in split_word:
+        word.capitalize()
+        if split_word.index(word) != len(split_word) - 1:
+            word += " "
+    final_string = ""
+    return final_string.join(split_word)
 
 
 @client.event
