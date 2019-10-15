@@ -138,6 +138,10 @@ async def get_id(message):
         await message.channel.send(
             "https://github.com/velvet-halation/mts-bot/blob/master/mtsbotdata.py#L32"
         )
+    if s == "pathwater":
+        await message.channel.send(
+            "https://cdn.discordapp.com/attachments/398373038732738570/633779880873689110/FB_IMG_1570999646277.png"
+        )
     if len(s.split(" ")) == 1:
         return
 
@@ -186,7 +190,7 @@ async def do_command(channel, tokenized_message):
         "bug": dm_modder,
         "feedback": dm_modder,
         "find": find,
-        "modder": get_mods_by_author
+        "modder": get_mods_by_author,
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
@@ -197,14 +201,24 @@ async def get_mods_by_author(channel, tokenized_message):
     mod_list = []
     author_name = "reina" if tokenized_message[1] == "reina" else None
     for mod in Mod_Data("").data:
-        if "mod" in mod and "authors" in mod["mod"] and tokenized_message[1] in [author.lower() for author in mod["mod"]["authors"]]:
+        if (
+            "mod" in mod
+            and "authors" in mod["mod"]
+            and tokenized_message[1]
+            in [author.lower() for author in mod["mod"]["authors"]]
+        ):
             mod_list.append("`%s`" % mod["mod"]["name"])
             if author_name is None:
-                author_name = mod["mod"]["authors"][[author.lower() for author in mod["mod"]["authors"]].index(tokenized_message[1])] # Ugly way to get the correct caps for a name since tokenized_message is always lowercase
+                author_name = mod["mod"]["authors"][
+                    [author.lower() for author in mod["mod"]["authors"]].index(
+                        tokenized_message[1]
+                    )
+                ]  # Ugly way to get the correct caps for a name since tokenized_message is always lowercase
     if len(mod_list) == 0:
         await channel.send("**%s** does not have any mods" % tokenized_message[1])
     else:
         await channel.send("**%s**\n%s" % (author_name, "  ".join(mod_list)))
+
 
 @client.event
 async def find(channel, tokenized_message):
