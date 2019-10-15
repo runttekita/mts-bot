@@ -22,6 +22,24 @@ prefix = "?"
 banned_users = []
 
 uncolor = re.compile(r"^\[#[0-9A-Fa-f]{6}\](\S+?)$")
+energy = re.compile(r"^\[RGBWE](.?)$")
+
+default_energy = ":red_energy:"
+
+icon_dictionary = { 
+    "[R]": ":red_energy:", 
+    "[G]": ":green_energy:", 
+    "[B]": ":blue_energy:", 
+    "[W]": ":purple_energy:"
+}
+
+color_dictionary = {
+    "Red": ":red_energy:", 
+    "Green":  ":green_energy:", 
+    "Blue": ":blue_energy:", 
+    "Purple": ":purple_energy:",
+    "Colorless": ":colorless_energy:"
+}
 
 
 class Mod_Data:
@@ -562,7 +580,7 @@ def card_format(card, id):
             card["rarity"],
             card["color"],
             id,
-            remove_keyword_prefixes(card["description"]),
+            format_card_description(card["description"], card["color"]),
         )
     return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(
         card["name"],
@@ -571,14 +589,14 @@ def card_format(card, id):
         card["rarity"],
         card["color"],
         id,
-        remove_keyword_prefixes(card["description"]),
+        format_card_description(card["description"], card["color"]),
     )
 
 
 def relic_format(relic, id):
     if relic["pool"] == "":
         return "**{0}**\n`{1}`  `{2}`\n{3}\n*{4}*".format(
-            relic["name"], relic["tier"], id, relic["description"], relic["flavorText"]
+            relic["name"], relic["tier"], id, format_relic_description(relic["description"]), relic["flavorText"]
         )
 
     return "**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(
@@ -586,7 +604,7 @@ def relic_format(relic, id):
         relic["tier"],
         relic["pool"],
         id,
-        relic["description"],
+        format_relic_description(relic["description"]),
         relic["flavorText"],
     )
 
@@ -609,16 +627,59 @@ def energy_string(cost):
         s += "[E] "
     return s
 
-
-def remove_keyword_prefixes(description):
-    description = description.replace("\n", "\n ")
+                     
+def format_relic_description(description):
+    description = description.replace("\n", " \n ")
     description = description.split(" ")
     final_description = ""
     for word in description:
+        if len(word) == 0:
+            continue
+        
+        if word == "[E]":
+            final_description += default_energy + " "
+            continue
+		
+        res = energy.match(word)
+        if res:
+			if word.startsWith("[E]"):
+				final_description += default_energy + res.group(1) + " "
+				continue
+            final_description += icon_dictionary.get(word, default_energy) + res.group(1) + " " #i don't think relics should have non-[E] energy...
+            continue
+					  
+		#a few relics have unique keyword text in their descriptions - not many, though.
+        if is_keyword(word):
+            final_description += word.split(":", 1)[1] + " "
+            continue
+        
+        final_description += word + " "
+    
+    final_description = final_description.replace("\n ", "\n")
+    return final_description
+
+                      
+def format_card_description(description, color):
+    description = description.replace("\n", " \n ")
+    description = description.split(" ")
+    final_description = ""
+    for word in description:
+        if len(word) == 0: #should prevent extra spaces.
+            continue
+                      
+        res = energy.match(word)
+        if res:
+			if word.startsWith("[E]"):
+				final_description += color_dictionary.get(color, default_energy) + res.group(1) + " "
+				continue
+            final_description += icon_dictionary.get(word, default_energy) + res.group(1) + " "
+            continue
+        
         res = uncolor.match(word)
         if res:
             final_description += res.group(1).replace("[]", "", 1) + " "
             continue
+        
         if word.startswith("!"):
             if word.find("!", 1) > 0:
                 final_description += "#"
@@ -626,12 +687,15 @@ def remove_keyword_prefixes(description):
                     final_description += word[word.index("!", 1) + 1 :]
                 final_description += " "
                 continue
+        
         if is_keyword(word):
-            if word.split(":", 1)[1][len(word.split(":", 1)[1]) - 1] == ".":
-                final_description += word.split(":", 1)[1]
-            else:
-                final_description += word.split(":", 1)[1] + " "
+            #i gotta be honest I have no idea how this can add extra spaces so I'm literally doing this to see if it actually does because right now this results in a missing space in a case where someone is dumb and has a keyword ending in a period and continues without a newline
+            #if word.split(":", 1)[1][len(word.split(":", 1)[1]) - 1] == ".":
+            #    final_description += word.split(":", 1)[1]
+            #else:
+            final_description += word.split(":", 1)[1] + " "
             continue
+        
         final_description += word + " "
     final_description = final_description.replace("\n ", "\n")
     return final_description
@@ -639,8 +703,7 @@ def remove_keyword_prefixes(description):
 
 def is_keyword(word):
     return (
-        len(word) > 0
-        and not word[0].isupper()
+        not word[0].isupper()
         and ":" in word
         and word.find(":") < len(word) - 1
         and word[word.find(":") + 1] != "\n"
