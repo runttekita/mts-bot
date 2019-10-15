@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import re
 import random
 from mtsbotdata import aliases, suggestables
+import timeout
 
 load_dotenv()
 token = os.getenv("DISCORD_TOKEN")
@@ -104,6 +105,9 @@ async def get_id(message):
     ):
         await message.channel.send("i love alchy <3")
         return
+    if s == "notneh" and message.author.id == 125669982041276416:
+        await message.channel.send("djbtkdkfndn")
+        return
     if s == "contribute":
         await message.channel.send(
             "https://github.com/velvet-halation/mts-bot#contributing"
@@ -153,6 +157,10 @@ async def get_id(message):
         await message.channel.send(
             "https://github.com/velvet-halation/mts-bot/blob/master/mtsbotdata.py#L32"
         )
+    if s == "pathwater":
+        await message.channel.send(
+            "https://cdn.discordapp.com/attachments/398373038732738570/633779880873689110/FB_IMG_1570999646277.png"
+        )
     if len(s.split(" ")) == 1:
         return
 
@@ -201,72 +209,101 @@ async def do_command(channel, tokenized_message):
         "bug": dm_modder,
         "feedback": dm_modder,
         "find": find,
+        "modder": get_mods_by_author,
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
 
 
 @client.event
-async def find(channel, tokenized_message):
-    cards = Mod_Data(tokenized_message[1]).data
-    random.shuffle(cards)
-    first_match = {}
-    other_results = {}
-    for x in range(len(cards)):
-        for card in cards[x]["cards"]:
-            if len(tokenized_message) == 3:
-                regex = re.compile(tokenized_message[2])
-                if regex.match(card["description"].lower()):
-                    if "mod" in cards[x]:
-                        if not first_match:
-                            first_match.update({cards[x]["mod"]["name"]: card})
-                        else:
-                            if len(other_results) < 3:
-                                other_results.update(
-                                    {cards[x]["mod"]["name"]: card["name"]}
-                                )
-                    else:
-                        if not first_match:
-                            first_match.update({card["mod"]: card})
-                        else:
-                            if len(other_results) < 3:
-                                other_results.update({card["mod"]: card["name"]})
-            else:
-                regex = re.compile(tokenized_message[1])
-                if regex.match(card["description"].lower()):
-                    if "mod" in cards[x]:
-                        if not first_match:
-                            first_match.update({cards[x]["mod"]["name"]: card})
-                        else:
-                            if len(other_results) < 3:
-                                other_results.update(
-                                    {cards[x]["mod"]["name"]: card["name"]}
-                                )
-                    else:
-                        if not first_match:
-                            first_match.update({card["mod"]: card})
-                        else:
-                            if len(other_results) < 3:
-                                other_results.update({card["mod"]: card["name"]})
-    message = ""
-    if first_match:
-        for key in first_match:
-            message += card_format(first_match.get(key), key) + "\n"
-        if len(other_results) > 3:
-            other_results = other_results[:2]
-        if other_results:
-            message += "Other matches include:\n"
-            for match in other_results:
-                name = other_results.get(match)
-                message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
-        await channel.send(message)
-        return
-    if len(tokenized_message) == 3:
-        await channel.send(
-            f"No card with {tokenized_message[2]} found in {tokenized_message[1]}."
-        )
+async def get_mods_by_author(channel, tokenized_message):
+    mod_list = []
+    author_name = "reina" if tokenized_message[1] == "reina" else None
+    for mod in Mod_Data("").data:
+        if (
+            "mod" in mod
+            and "authors" in mod["mod"]
+            and tokenized_message[1]
+            in [author.lower() for author in mod["mod"]["authors"]]
+        ):
+            mod_list.append("`%s`" % mod["mod"]["name"])
+            if author_name is None:
+                author_name = mod["mod"]["authors"][
+                    [author.lower() for author in mod["mod"]["authors"]].index(
+                        tokenized_message[1]
+                    )
+                ]  # Ugly way to get the correct caps for a name since tokenized_message is always lowercase
+    if len(mod_list) == 0:
+        await channel.send("**%s** does not have any mods" % tokenized_message[1])
     else:
-        await channel.send(f"No card with {tokenized_message[1]} found.")
+        await channel.send("**%s**\n%s" % (author_name, "  ".join(mod_list)))
+
+
+@client.event
+async def find(channel, tokenized_message):
+    try:
+        with timeout.timeout(1):
+            cards = Mod_Data(tokenized_message[1]).data
+            random.shuffle(cards)
+            first_match = {}
+            other_results = {}
+            for x in range(len(cards)):
+                for card in cards[x]["cards"]:
+                    if len(tokenized_message) == 3:
+                        regex = re.compile(tokenized_message[2])
+                        if regex.search(card["description"].lower()):
+                            if "mod" in cards[x]:
+                                if not first_match:
+                                    first_match.update({cards[x]["mod"]["name"]: card})
+                                else:
+                                    if len(other_results) < 3:
+                                        other_results.update(
+                                            {cards[x]["mod"]["name"]: card["name"]}
+                                        )
+                            else:
+                                if not first_match:
+                                    first_match.update({card["mod"]: card})
+                                else:
+                                    if len(other_results) < 3:
+                                        other_results.update({card["mod"]: card["name"]})
+                    else:
+                        regex = re.compile(tokenized_message[1])
+                        if regex.search(card["description"].lower()):
+                            if "mod" in cards[x]:
+                                if not first_match:
+                                    first_match.update({cards[x]["mod"]["name"]: card})
+                                else:
+                                    if len(other_results) < 3:
+                                        other_results.update(
+                                            {cards[x]["mod"]["name"]: card["name"]}
+                                        )
+                            else:
+                                if not first_match:
+                                    first_match.update({card["mod"]: card})
+                                else:
+                                    if len(other_results) < 3:
+                                        other_results.update({card["mod"]: card["name"]})
+            message = ""
+            if first_match:
+                for key in first_match:
+                    message += card_format(first_match.get(key), key) + "\n"
+                if len(other_results) > 3:
+                    other_results = other_results[:2]
+                if other_results:
+                    message += "Other matches include:\n"
+                    for match in other_results:
+                        name = other_results.get(match)
+                        message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
+                await channel.send(message)
+                return
+            if len(tokenized_message) == 3:
+                await channel.send(
+                    f"No card with {tokenized_message[2]} found in {tokenized_message[1]}."
+                )
+            else:
+                await channel.send(f"No card with {tokenized_message[1]} found.")
+    except TimeoutError:
+        await channel.send("Unable to find a match in time!")
 
 
 def makeCaps(string):
@@ -548,7 +585,7 @@ def card_format(card, id):
             card["rarity"],
             card["color"],
             id,
-            format_card_description(card["description"], card["color"]),
+            format_card_description(card["description"]),
         )
     return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(
         card["name"],
@@ -557,7 +594,7 @@ def card_format(card, id):
         card["rarity"],
         card["color"],
         id,
-        format_card_description(card["description"], card["color"]),
+        format_card_description(card["description"]),
     )
 
 
@@ -594,7 +631,6 @@ def energy_string(cost):
     for i in range(0, cost):
         s += "[E] "
     return s
-
                      
 def format_relic_description(description):
     description = description.replace("\n", " \n ")
@@ -603,14 +639,10 @@ def format_relic_description(description):
     for word in description:
         if len(word) == 0:
             continue
-        
-        if word == "[E]":
-            final_description += default_energy + " "
-            continue
                       
         res = energy.match(word)
         if res:
-            if word.startsWith("[E]"):
+            if word.startswith("[E]"):
                 final_description += default_energy + res.group(1) + " "
                 continue
             final_description += icon_dictionary.get(word, default_energy) + res.group(1) + " " #i don't think relics should have non-[E] energy...
@@ -626,9 +658,8 @@ def format_relic_description(description):
     final_description = final_description.replace("\n ", "\n")
     return final_description
 
-                      
-def format_card_description(description, color):
-    description = description.replace("\n", " \n ")
+def format_card_description(description):
+    description = description.replace("\n", "\n ")
     description = description.split(" ")
     final_description = ""
     for word in description:
@@ -647,7 +678,6 @@ def format_card_description(description, color):
         if res:
             final_description += res.group(1).replace("[]", "", 1) + " "
             continue
-        
         if word.startswith("!"):
             if word.find("!", 1) > 0:
                 final_description += "#"
@@ -655,15 +685,12 @@ def format_card_description(description, color):
                     final_description += word[word.index("!", 1) + 1 :]
                 final_description += " "
                 continue
-        
         if is_keyword(word):
-            #i gotta be honest I have no idea how this can add extra spaces so I'm literally doing this to see if it actually does because right now this results in a missing space in a case where someone is dumb and has a keyword ending in a period and continues without a newline
-            #if word.split(":", 1)[1][len(word.split(":", 1)[1]) - 1] == ".":
-            #    final_description += word.split(":", 1)[1]
-            #else:
-            final_description += word.split(":", 1)[1] + " "
+            if word.split(":", 1)[1][len(word.split(":", 1)[1]) - 1] == ".":
+                final_description += word.split(":", 1)[1]
+            else:
+                final_description += word.split(":", 1)[1] + " "
             continue
-        
         final_description += word + " "
     final_description = final_description.replace("\n ", "\n")
     return final_description
@@ -671,7 +698,8 @@ def format_card_description(description, color):
 
 def is_keyword(word):
     return (
-        not word[0].isupper()
+        len(word) > 0
+        and not word[0].isupper()
         and ":" in word
         and word.find(":") < len(word) - 1
         and word[word.find(":") + 1] != "\n"
