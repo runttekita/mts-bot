@@ -86,6 +86,9 @@ async def get_id(message):
     ):
         await message.channel.send("i love alchy <3")
         return
+    if s == "notneh" and message.author.id == 125669982041276416:
+        await message.channel.send("djbtkdkfndn")
+        return
     if s == "contribute":
         await message.channel.send(
             "https://github.com/velvet-halation/mts-bot#contributing"
