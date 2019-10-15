@@ -25,7 +25,7 @@ After you've done that submit a PR and I'll accept it if you've done everything 
 # run it yourself?
 
 ```
-# git clone git@github.com:velvet-halation/mts-bot.git
+# git clone https://github.com/velvet-halation/mts-bot.git
 # cd mts-bot
 # python main.py
 ```
