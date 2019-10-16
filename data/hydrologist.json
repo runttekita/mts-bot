@@ -1,0 +1,1252 @@
+{
+  "mod": {
+    "name": "The Hydrologist",
+    "version": "0.1.0",
+    "authors": ["JohnnyDevo"],
+    "credits": "",
+    "description": "Adds a new character: The Hydrologist.",
+    "mts_version": "3.14.1",
+    "sts_version": "10-15-2019",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Raincloud",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nDraw a card.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Raincloud+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block.\nDraw a card.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Defend",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Ice Barrier",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nWhen hydrologistmod:Transmuted, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Ice Barrier+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nWhen hydrologistmod:Transmuted, deal 9 damage to ALL enemies."
+    },
+    {
+      "name": "Strike",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Unstable Strike",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Unstable Strike+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Water Whip",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nhydrologistmod:Swappable.\nWhen hydrologistmod:Swapped, lose [E]."
+    },
+    {
+      "name": "Water Whip+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nhydrologistmod:Swappable.\nWhen hydrologistmod:Swapped, lose [E]."
+    },
+    {
+      "name": "Block of Ice",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block."
+    },
+    {
+      "name": "Block of Ice+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block."
+    },
+    {
+      "name": "Cascade",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "hydrologistmod:Flow.\nGain 3 Block for each card discarded this way."
+    },
+    {
+      "name": "Cascade+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "hydrologistmod:Flow.\nGain 4 Block for each card discarded this way."
+    },
+    {
+      "name": "Debilitating Explosion",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Weak and Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Debilitating Explosion+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Dehydrate",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 4 Temporary_HP.\nDeal 5 damage."
+    },
+    {
+      "name": "Dehydrate+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 6 Temporary_HP.\nDeal 7 damage."
+    },
+    {
+      "name": "Fog of War",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy intends to attack, apply 3 Weak."
+    },
+    {
+      "name": "Fog of War+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If the enemy intends to attack, apply 3 Weak."
+    },
+    {
+      "name": "Force of Erosion",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nhydrologistmod:Transmute a card in your hand."
+    },
+    {
+      "name": "Force of Erosion+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nhydrologistmod:Transmute a card in your hand."
+    },
+    {
+      "name": "Ghostly Mist",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you played a hydrologistmod:Corporeal card this turn, deal 7 damage again."
+    },
+    {
+      "name": "Ghostly Mist+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf you played a hydrologistmod:Corporeal card this turn, deal 10 damage again."
+    },
+    {
+      "name": "Glacial Strike",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nIf the enemy is Vulnerable, gain 8 Block.\nIf the enemy is Weak, deal an additional 10 damage."
+    },
+    {
+      "name": "Glacial Strike+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nIf the enemy is Vulnerable, gain 10 Block.\nIf the enemy is Weak, deal an additional 13 damage."
+    },
+    {
+      "name": "Hail",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nIncrease the damage of ALL *Ice cards by 3 this combat."
+    },
+    {
+      "name": "Hail+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nIncrease the damage of ALL *Ice cards by 4 this combat."
+    },
+    {
+      "name": "Hydraulics",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf the enemy intends to attack, hydrologistmod:Flow."
+    },
+    {
+      "name": "Hydraulics+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf the enemy intends to attack, hydrologistmod:Flow."
+    },
+    {
+      "name": "Occluding Mist",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Occluding Mist+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Pure Ice",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nWhen hydrologistmod:Transmuted, gain 3 Block."
+    },
+    {
+      "name": "Pure Ice+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nWhen hydrologistmod:Transmuted, gain 5 Block."
+    },
+    {
+      "name": "Pure Steam",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nWhen hydrologistmod:Transmuted, deal 4 damage to a random enemy."
+    },
+    {
+      "name": "Pure Steam+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nWhen hydrologistmod:Transmuted, deal 6 damage to a random enemy."
+    },
+    {
+      "name": "Pure Water",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "hydrologistmod:Flow.\nWhen hydrologistmod:Transmuted, hydrologistmod:Flow."
+    },
+    {
+      "name": "Pure Water+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "hydrologistmod:Flow.\nDraw a card.\nWhen hydrologistmod:Transmuted, hydrologistmod:Flow."
+    },
+    {
+      "name": "Steady Tide",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nhydrologistmod:Flow."
+    },
+    {
+      "name": "Steady Tide+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nhydrologistmod:Flow."
+    },
+    {
+      "name": "Sweltering Strike",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage."
+    },
+    {
+      "name": "Sweltering Strike+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage."
+    },
+    {
+      "name": "Tidal Wave",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Tidal Wave+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Aqueducts",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "hydrologistmod:Flow.\nWhenever you draw an extra card, deal 1 damage to ALL enemies."
+    },
+    {
+      "name": "Aqueducts+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "hydrologistmod:Flow.\nWhenever you draw an extra card, deal 2 damage to ALL enemies."
+    },
+    {
+      "name": "Condensation",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nDraw a card.\nIf your next card played is a *Water card, draw a card."
+    },
+    {
+      "name": "Condensation+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nDraw a card.\nIf your next card played is a *Water card, draw 2 cards."
+    },
+    {
+      "name": "Cryogenics",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen hydrologistmod:Transmuted, add an additional copy of the new card to your hand. It costs 0 this turn."
+    },
+    {
+      "name": "Cryogenics+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen hydrologistmod:Transmuted, add two additional copies of the new card to your hand. They cost 0 this turn."
+    },
+    {
+      "name": "Crystallization",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block.\nDraw a card.\nIf your next card played is an *Ice card, hydrologistmod:Transmute a card in your hand."
+    },
+    {
+      "name": "Crystallization+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nDraw a card.\nIf your next card played is an *Ice card, hydrologistmod:Transmute a card in your hand."
+    },
+    {
+      "name": "Deep Freeze",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Your *Ice cards that gain Block gain 1 additional Block.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Deep Freeze+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Your *Ice cards that gain Block gain 2 additional Block.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Dimensional Icicles",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nUpgrade a hydrologistmod:Corporeal card in your hand for the rest of combat."
+    },
+    {
+      "name": "Dimensional Icicles+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nUpgrade a hydrologistmod:Corporeal card in your hand for the rest of combat."
+    },
+    {
+      "name": "Drying Pond",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose any number of cards in your hand to hydrologistmod:Transmute.\nExhaust.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Drying Pond+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose any number of cards in your hand to hydrologistmod:Transmute.\nExhaust.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Endothermodynamics",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you hydrologistmod:Transmute a card, gain 4 Block.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Endothermodynamics+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you hydrologistmod:Transmute a card, gain 6 Block.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Evaporation",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block.\nDraw a card.\nIf your next card played is a *Steam card, apply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Evaporation+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nDraw a card.\nIf your next card played is a *Steam card, apply 3 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Flash Flood",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen hydrologistmod:Transmuted, deal 12 damage to ALL enemies."
+    },
+    {
+      "name": "Flash Flood+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen hydrologistmod:Transmuted, deal 16 damage to ALL enemies."
+    },
+    {
+      "name": "Flowing Currents",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "hydrologistmod:Flow.\nWhen hydrologistmod:Swapped, you cannot swap away from this card again this turn.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Flowing Currents+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card, then hydrologistmod:Flow.\nWhen hydrologistmod:Swapped, you cannot swap away from this card again this turn.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Frozen Capsule",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nhydrologistmod:Transmute this card. The new card costs 0 this combat."
+    },
+    {
+      "name": "Frozen Capsule+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nhydrologistmod:Transmute this card. The new card costs 0 this combat and is Upgraded."
+    },
+    {
+      "name": "Giraffe",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, Retain up to 2 hydrologistmod:Corporeal cards."
+    },
+    {
+      "name": "Giraffe+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the end of your turn, Retain up to 2 hydrologistmod:Corporeal cards."
+    },
+    {
+      "name": "Glacial Synthesis",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nhydrologistmod:Transmute a card into an Ice card."
+    },
+    {
+      "name": "Glacial Synthesis+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nhydrologistmod:Transmute a card into an Ice card."
+    },
+    {
+      "name": "Hailstorm",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nWhenever you play an *Ice card, the enemy takes 5 damage."
+    },
+    {
+      "name": "Hailstorm+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nWhenever you play an *Ice card, the enemy takes 8 damage."
+    },
+    {
+      "name": "Heat Blast",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nApply 2 Vulnerable.\nDamage amount is multiplied once for each stack of Vulnerable."
+    },
+    {
+      "name": "Heat Blast+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nApply 3 Vulnerable.\nDamage amount is multiplied once for each stack of Vulnerable."
+    },
+    {
+      "name": "High Tide",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nhydrologistmod:Flow.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "High Tide+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nhydrologistmod:Flow.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Hot Springs",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to any enemy, remove the same debuff from yourself."
+    },
+    {
+      "name": "Hot Springs+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you apply a debuff to any enemy, remove the same debuff from yourself."
+    },
+    {
+      "name": "Jet Propulsion",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable. If the enemy does NOT intend to attack, draw 2 cards."
+    },
+    {
+      "name": "Jet Propulsion+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Vulnerable. If the enemy does NOT intend to attack, draw 3 cards."
+    },
+    {
+      "name": "Layered Shell",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nIncrease the damage dealt by the *Paired card by 4 this combat.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Layered Shell+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nIncrease the damage dealt by the *Paired card by 7 this combat.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Liquidation",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block.\nDraw a card.\nIf your next card played is a *Water card, apply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Liquidation+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nDraw a card.\nIf your next card played is a *Water card, apply 3 Weak to ALL enemies."
+    },
+    {
+      "name": "Manifestation",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "hydrologistmod:Corporeal cards deal 1 additional damage and gain 1 additional Block."
+    },
+    {
+      "name": "Manifestation+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "hydrologistmod:Corporeal cards deal 2 additional damage and gain 2 additional Block."
+    },
+    {
+      "name": "Pressure Buildup",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you play 10 hydrologistmod:Corporeal cards, deal 20 damage to ALL enemies."
+    },
+    {
+      "name": "Pressure Buildup+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you play 10 hydrologistmod:Corporeal cards, deal 20 damage to ALL enemies."
+    },
+    {
+      "name": "Purifying Steam",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Purifying Steam+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Resonant Crystal",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you hydrologistmod:Transmute a card, the new card is Upgraded."
+    },
+    {
+      "name": "Resonant Crystal+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you hydrologistmod:Transmute a card, the new card is Upgraded."
+    },
+    {
+      "name": "Ripcurrent",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double the enemy's Weak amount.\nExhaust.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Ripcurrent+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double the enemy's Weak amount.\nExhaust.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Sauna",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block for every hydrologistmod:Corporeal card in your hand."
+    },
+    {
+      "name": "Sauna+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block for every hydrologistmod:Corporeal card in your hand."
+    },
+    {
+      "name": "Soggy Synthesis",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDeal 5 damage.\nhydrologistmod:Transmute a card into a *Water card."
+    },
+    {
+      "name": "Soggy Synthesis+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDeal 7 damage.\nhydrologistmod:Transmute a card into a *Water card."
+    },
+    {
+      "name": "Solidification",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nDraw a Card.\nIf your next card played is an *Ice card, gain 5 Block."
+    },
+    {
+      "name": "Solidification+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nDraw a Card.\nIf your next card played is an *Ice card, gain 8 Block."
+    },
+    {
+      "name": "Steam Engine",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first hydrologistmod:Corporeal card you play each turn is played twice."
+    },
+    {
+      "name": "Steam Engine+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nThe first hydrologistmod:Corporeal card you play each turn is played twice."
+    },
+    {
+      "name": "Steam Power",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen hydrologistmod:Transmuted, draw 2 cards."
+    },
+    {
+      "name": "Steam Power+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen hydrologistmod:Transmuted, draw 3 cards."
+    },
+    {
+      "name": "Sublimation",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nDraw a card.\nIf your next card played is a *Steam card, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Sublimation+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nDraw a card.\nIf your next card played is a *Steam card, deal 9 damage to ALL enemies."
+    },
+    {
+      "name": "Sweltering Synthesis",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nhydrologistmod:Transmute a card into a *Steam card."
+    },
+    {
+      "name": "Sweltering Synthesis+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nhydrologistmod:Transmute a card into a *Steam card."
+    },
+    {
+      "name": "Upstream",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nIf the enemy intends to attack, gain 5 Block."
+    },
+    {
+      "name": "Upstream+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nIf the enemy intends to attack, gain 8 Block."
+    },
+    {
+      "name": "Water Wheel",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "hydrologistmod:Flow.\nAt the start of next turn, gain X [E] .\nExhaust."
+    },
+    {
+      "name": "Water Wheel+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "hydrologistmod:Flow.\nAt the start of next turn, gain X+1 [E] .\nExhaust."
+    },
+    {
+      "name": "Yawning Abyss",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage.\nDeal 5 damage an additional time for each stack of Weak on the enemy.\nApply 2 Weak."
+    },
+    {
+      "name": "Yawning Abyss+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nDeal 8 damage an additional time for each stack of Weak on the enemy.\nApply 3 Weak."
+    },
+    {
+      "name": "Branching Creeks",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you hydrologistmod:Transmute a card, choose between 1 additional cards."
+    },
+    {
+      "name": "Branching Creeks+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you hydrologistmod:Transmute a card, choose between 2 additional cards."
+    },
+    {
+      "name": "Crystal Ice",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Block is not removed at the start of your turn.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Crystal Ice+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Block is not removed at the start of your turn.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Crystal Lattice",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nhydrologistmod:Transmute a card in your hand. Fill your hand with copies of the new card.\nExhaust."
+    },
+    {
+      "name": "Crystal Lattice+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nhydrologistmod:Transmute a card in your hand. Fill your hand with copies of the new card.\nExhaust."
+    },
+    {
+      "name": "Flowing Form",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play a *Water card, you may discard a card. If you do, draw 1 cards.\nhydrologistmod:Swaps to *Fleeting *Form."
+    },
+    {
+      "name": "Flowing Form+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play a *Water card, you may discard a card. If you do, draw 2 cards.\nhydrologistmod:Swaps to *Fleeting *Form."
+    },
+    {
+      "name": "Freeze",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf this kills an enemy that is Weak, Upgrade a random card in your deck.\nExhaust."
+    },
+    {
+      "name": "Freeze+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nIf this kills an enemy that is Weak, Upgrade a random card in your deck.\nExhaust."
+    },
+    {
+      "name": "Gentle Snowfall",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "hydrologistmod:Flow.\nIf you discard 9 cards this way, gain 1 Intangible."
+    },
+    {
+      "name": "Gentle Snowfall+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "hydrologistmod:Flow.\nIf you discard 8 cards this way, gain 1 Intangible."
+    },
+    {
+      "name": "Icy Floe",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you hydrologistmod:Flow, draw a card for each card discarded."
+    },
+    {
+      "name": "Icy Floe+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you hydrologistmod:Flow, draw a card for each card discarded."
+    },
+    {
+      "name": "Packed Snow",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "The next *Ice, *Water, and *Steam cards you play this combat are played twice.\nExhaust."
+    },
+    {
+      "name": "Packed Snow+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "The next *Ice, *Water, and *Steam cards you play this combat are played twice.\nExhaust."
+    },
+    {
+      "name": "Personal Raincloud",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nDraw a card.\nCreate a *Raincloud and *Pair it with a card in your hand.\nExhaust."
+    },
+    {
+      "name": "Personal Raincloud+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block.\nDraw a card.\nCreate a *Raincloud and *Pair it with a card in your hand.\nExhaust."
+    },
+    {
+      "name": "Pneumatics",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "hydrologistmod:Flow.\nAt the start of the next 2 turns, hydrologistmod:Flow.\nExhaust."
+    },
+    {
+      "name": "Pneumatics+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "hydrologistmod:Flow.\nAt the start of the next 3 turns, hydrologistmod:Flow.\nExhaust."
+    },
+    {
+      "name": "Pressure Blast",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 6 damage X+ 0 times.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Pressure Blast+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 9 damage X+ 0 times.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Release Valve",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you hydrologistmod:Flow, the enemy takes 4 damage for each card discarded.\nExhaust."
+    },
+    {
+      "name": "Release Valve+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you hydrologistmod:Flow, the enemy takes 5 damage for each card discarded.\nExhaust."
+    },
+    {
+      "name": "Reservoir",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate, Ethereal.\nWhen hydrologistmod:Swapped, lose [E] [E] and discard this card.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "Reservoir+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate, Ethereal.\nWhen hydrologistmod:Swapped, lose [E] and discard this card.\nhydrologistmod:Swappable."
+    },
+    {
+      "name": "River Of Time",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next hydrologistmod:Swappable card is also played *Swapped."
+    },
+    {
+      "name": "River Of Time+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next 2 hydrologistmod:Swappable cards are also played *Swapped."
+    },
+    {
+      "name": "Scalding Geyser",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Innate.\nDeal 20 damage.\nApply 3 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Scalding Geyser+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Innate.\nDeal 25 damage.\nApply 5 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Transfusion",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf this kills an enemy that is Vulnerable, raise your Max HP by 3.\nExhaust."
+    },
+    {
+      "name": "Transfusion+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nIf this kills an enemy that is Vulnerable, raise your Max HP by 4.\nExhaust."
+    },
+    {
+      "name": "Water Turbine",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "hydrologistmod:Flow.\nNext turn, gain [E] equal to the number of cards discarded this way.\nExhaust."
+    },
+    {
+      "name": "Water Turbine+",
+      "color": "Hydrologist_cyan",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "hydrologistmod:Flow.\nNext turn, gain [E] equal to the number of cards discarded this way.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Distillery",
+      "tier": "Starter",
+      "pool": "Hydrologist_cyan",
+      "description": "Every three turns, choose a card in your hand to hydrologistmod:Transmute.",
+      "flavorText": "A chemical factory intended for separating liquids into its constituent parts."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Hydrologist",
+      "type": "Player",
+      "minHP": "77",
+      "maxHP": "77"
+    }
+  ],
+  "keywords": [
+  ]
+}
