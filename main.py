@@ -217,8 +217,14 @@ async def get_mod_info(channel, tokenized_message):
     mod = Mod_Data(tokenized_message[1]).data
 
     # If a mod name is supplied that a file doesn't exist for, `Mod_Data` will load all mod data
-    if len(mod) > 1:
+    if len(mod) != 1:
         await channel.send(f"**{tokenized_message[1]}** is not a mod! (Or the author has not uploaded the data to me)")
+        return
+
+    # Mod has a file but doesn't have mod info
+    if "mod" not in mod[0]:
+        # await channel.send(f"**{tokenized_message[1]}** does not have a correctly formatted data file. Complain to the mod author")
+        print(f"**{tokenized_message[1]}** does not have a correctly formatted data file. Complain to the mod author")
         return
 
     mod_data = mod[0]["mod"]
