@@ -200,6 +200,20 @@ async def do_command(channel, tokenized_message):
 
 @client.event
 async def get_mod_info(channel, tokenized_message):
+    """
+    Get the info for a mod for the `?mod` command
+
+    Example: ?mod challengethespire
+    Input:  ["mod", "challengethespire"]
+    Output: **Challenge The Spire**
+            Author:	alexdriedger
+            Boss Rush, Elite Rush, & Sneaky Strike!! Challenge The Spire adds a variety of challenge modes to Slay The Spire.
+
+    :param channel: Channel to send message to
+    :param tokenized_message: List of Strings with length == 2. The first string should be "mod" and the second string
+                                should be the file name (without the .json) of the mod to get information about
+    :return: None
+    """
     mod = Mod_Data(tokenized_message[1]).data
 
     # If a mod name is supplied that a file doesn't exist for, `Mod_Data` will load all mod data
