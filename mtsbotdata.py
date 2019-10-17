@@ -7,7 +7,8 @@ aliases = {
     "hollowmod": ["hollowknight", "bugknight"],
     "madsciencemod": ["madscientist"],
     "pokerplayer": ["poker"],
-    "hydrologist": ["hydrologistmod"]
+    "hydrologist": ["hydrologistmod"],
+    "challengethespire": ["challenge the spire", "cts"]
 }
 
 suggestables = {
