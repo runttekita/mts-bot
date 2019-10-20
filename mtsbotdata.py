@@ -8,7 +8,8 @@ aliases = {
     "madsciencemod": ["madscientist"],
     "pokerplayer": ["poker"],
     "hydrologist": ["hydrologistmod"],
-    "challengethespire": ["challenge the spire", "cts"]
+    "challengethespire": ["challenge the spire", "cts"],
+    "basegame": ["sts", "base", "slaythespire"],
 }
 
 suggestables = {

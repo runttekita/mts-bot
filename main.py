@@ -92,12 +92,12 @@ async def get_id(message):
         return
     if s == "contribute":
         await message.channel.send(
-            "https://github.com/velvet-halation/mts-bot#contributing"
+            "https://github.com/runttekita/mts-bot/blob/master/CONTRIBUTING.md"
         )
         return
     if s == "list":
         await message.channel.send(
-            "https://github.com/velvet-halation/mts-bot/tree/master/data"
+            "https://github.com/runttekita/mts-bot/tree/master/data"
         )
         return
     if s == "default":
