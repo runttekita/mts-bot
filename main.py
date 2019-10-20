@@ -192,9 +192,70 @@ async def do_command(channel, tokenized_message):
         "feedback": dm_modder,
         "find": find,
         "modder": get_mods_by_author,
+        "mod": get_mod_info
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
+
+
+@client.event
+async def get_mod_info(channel, tokenized_message):
+    """
+    Get the info for a mod for the `?mod` command
+
+    Example: ?mod challengethespire
+    Input:  ["mod", "challengethespire"]
+    Output: **Challenge The Spire**
+            Author:	alexdriedger
+            Boss Rush, Elite Rush, & Sneaky Strike!! Challenge The Spire adds a variety of challenge modes to Slay The Spire.
+
+    :param channel: Channel to send message to
+    :param tokenized_message: List of Strings with length == 2. The first string should be "mod" and the second string
+                                should be the file name (without the .json) of the mod to get information about
+    :return: None
+    """
+    mod = Mod_Data(tokenized_message[1]).data
+
+    # If a mod name is supplied that a file doesn't exist for, `Mod_Data` will load all mod data
+    if len(mod) != 1:
+        await channel.send(f"**{tokenized_message[1]}** is not a mod! (Or the author has not uploaded the data to me)")
+        return
+
+    # Mod has a file but doesn't have mod info
+    if "mod" not in mod[0]:
+        # await channel.send(f"**{tokenized_message[1]}** does not have a correctly formatted data file. Complain to the mod author")
+        print(f"**{tokenized_message[1]}** does not have a correctly formatted data file. Complain to the mod author")
+        return
+
+    mod_data = mod[0]["mod"]
+
+    # Check if the file is incorrectly formatted
+    if (
+        mod_data["name"] is None
+        or mod_data["authors"] is None
+        or len(mod_data["authors"]) == 0
+        or mod_data["description"] is None
+    ):
+        await channel.send(f"**{tokenized_message[1]}** does not have a correctly formatted data file. Complain to the mod author")
+        return
+
+    # Formatted message should resemble
+    # My Awesome Mod
+    # Author: Casey Yano
+    # This mod makes the spire more awesome by updating body text
+
+    message = f"""**{mod_data["name"]}**\n"""
+
+    message += "Authors:\t" if len(mod_data["authors"]) > 1 else "Author:\t"
+    for author in mod_data["authors"]:
+        message += author
+        message += ", "
+    message = message[: -2]  # Remove last comma and space
+    message += "\n"
+
+    message += mod_data["description"]
+
+    await channel.send(message)
 
 
 @client.event
