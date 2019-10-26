@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "TheVagrant",
-    "version": "0.3.1",
+    "version": "0.6.6",
     "authors": ["Vex'd"],
     "credits": "",
     "description": "A vagrant.",
@@ -33,7 +33,7 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
-      "description": "Ethereal.\nExhaust a card in your hand.\nIncrease this card's damage by 10 times its cost.\nIf this card is Exhausted, deal !quantum! damage to ALL enemies."
+      "description": "Ethereal.\nExhaust a card in your hand.\nIncrease this card's damage by 8 times its cost.\nIf this card is Exhausted, deal !quantum! damage to ALL enemies."
     },
     {
       "name": "Photon Blast+",
@@ -76,20 +76,52 @@
       "description": "Deal 9 damage."
     },
     {
-      "name": "Absorption Field",
+      "name": "Paradox",
       "color": "Firefly_color",
-      "rarity": "Common",
+      "rarity": "Special",
       "type": "Skill",
-      "cost": "1",
-      "description": "Ethereal.\nGain 6 Block.\nBlock lost this turn increases the damage of Absorption Fields.\nWhen Exhausted, deal 0 damage to ALL enemies."
+      "cost": "0",
+      "description": "Apply 10 Unreality.\nGain 3 Unreality."
     },
     {
-      "name": "Absorption Field+",
+      "name": "Paradox+",
+      "color": "Firefly_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 14 Unreality.\nGain 3 Unreality."
+    },
+    {
+      "name": "Artillery Beam",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage to ALL enemies."
+    },
+    {
+      "name": "Artillery Beam+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage to ALL enemies."
+    },
+    {
+      "name": "Blink",
       "color": "Firefly_color",
       "rarity": "Common",
       "type": "Skill",
-      "cost": "1",
-      "description": "Ethereal.\nGain 9 Block.\nBlock lost this turn increases the damage of Absorption Fields.\nWhen Exhausted, deal 0 damage to ALL enemies."
+      "cost": "0",
+      "description": "Gain 5 Block.\nDiscard a random card.\nDraw 1 card."
+    },
+    {
+      "name": "Blink+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nDiscard a random card.\nDraw 2 cards."
     },
     {
       "name": "Boost",
@@ -108,22 +140,6 @@
       "description": "Gain 9 Block.\nNext turn, draw 1 additional card."
     },
     {
-      "name": "Charged Laser",
-      "color": "Firefly_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 4 damage.\nWhenever you draw this card, increase its damage by 3 this combat."
-    },
-    {
-      "name": "Charged Laser+",
-      "color": "Firefly_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 4 damage.\nWhenever you draw this card, increase its damage by 5 this combat."
-    },
-    {
       "name": "Covering Fire",
       "color": "Firefly_color",
       "rarity": "Common",
@@ -137,23 +153,23 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\nGain 4 Block."
+      "description": "Deal 10 damage.\nGain 4 Block."
     },
     {
-      "name": "Decoy Shot",
+      "name": "Distort",
       "color": "Firefly_color",
       "rarity": "Common",
-      "type": "Attack",
+      "type": "Skill",
       "cost": "1",
-      "description": "Deal 8 damage.\nGain 1 thevagrant:Stealth."
+      "description": "Apply 7 thevagrant:Unreality.\nthevagrant:Return a random card."
     },
     {
-      "name": "Decoy Shot+",
+      "name": "Distort+",
       "color": "Firefly_color",
       "rarity": "Common",
-      "type": "Attack",
+      "type": "Skill",
       "cost": "1",
-      "description": "Deal 12 damage.\nGain 1 thevagrant:Stealth."
+      "description": "Apply 10 thevagrant:Unreality.\nthevagrant:Return a random card."
     },
     {
       "name": "EMP",
@@ -161,7 +177,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Remove all Block from the enemy.\nApply 1 Vulnerable.\nApply 1 Weak.\nExhaust."
+      "description": "Remove all Block and apply 1 Vulnerable, 1 Weak to ALL enemies.\nExhaust."
     },
     {
       "name": "EMP+",
@@ -169,7 +185,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Remove all Block from the enemy.\nApply 2 Vulnerable.\nApply 2 Weak.\nExhaust."
+      "description": "Remove all Block and apply 2 Vulnerable, 2 Weak to ALL enemies.\nExhaust."
     },
     {
       "name": "Evasive Maneuver",
@@ -225,7 +241,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 17 Block."
+      "description": "Gain 16 Block."
     },
     {
       "name": "Flight+",
@@ -233,23 +249,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 23 Block."
-    },
-    {
-      "name": "Missile",
-      "color": "Firefly_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 12 damage.\nExhaust."
-    },
-    {
-      "name": "Missile+",
-      "color": "Firefly_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 16 damage.\nExhaust."
+      "description": "Gain 22 Block."
     },
     {
       "name": "Pacify",
@@ -273,7 +273,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Play the top card of your draw pile.\nGain [E] .\nAdd 1 Void into your discard pile."
+      "description": "Draw 2 cards.\nGain [E] .\nAdd 1 Void into your discard pile."
     },
     {
       "name": "Quantum Tunneling+",
@@ -281,7 +281,23 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Play the top card of your draw pile.\nGain [E] .\nAdd 1 Void into your discard pile."
+      "description": "Draw 2 cards.\nGain [E] [E] .\nAdd 1 Void into your discard pile."
+    },
+    {
+      "name": "Rend",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to the enemy's thevagrant:Unreality.\nApply 5 thevagrant:Unreality."
+    },
+    {
+      "name": "Rend+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 5 thevagrant:Unreality.\nDeal damage equal to the enemy's thevagrant:Unreality."
     },
     {
       "name": "Reposition",
@@ -305,7 +321,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "thevagrant:Return 1 card, then thevagrant:Provision 1 card."
+      "description": "thevagrant:Return 1 card, then thevagrant:Provision 1 card.\nExhaust."
     },
     {
       "name": "Roll Back+",
@@ -313,7 +329,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "thevagrant:Return 2 cards, then thevagrant:Provision 2 cards."
+      "description": "thevagrant:Return 1 card, then thevagrant:Provision 1 card."
     },
     {
       "name": "Shield Array",
@@ -330,22 +346,6 @@
       "type": "Skill",
       "cost": "1",
       "description": "Gain 2 Block 4 times."
-    },
-    {
-      "name": "Siege Laser",
-      "color": "Firefly_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 8 damage.\nIf the enemy does not intend to attack, deal 8 damage again."
-    },
-    {
-      "name": "Siege Laser+",
-      "color": "Firefly_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 11 damage.\nIf the enemy does not intend to attack, deal 11 damage again."
     },
     {
       "name": "Star Cinder",
@@ -377,7 +377,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 thevagrant:Precision."
+      "description": "Gain 4 thevagrant:Precision."
     },
     {
       "name": "Stored Power",
@@ -385,31 +385,15 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain [E] equal to the turn number.\nExhaust."
+      "description": "Gain 0 [E] .\n[E] gain increases by 1 when drawn.\nExhaust."
     },
     {
       "name": "Stored Power+",
       "color": "Firefly_color",
       "rarity": "Common",
       "type": "Skill",
-      "cost": "0",
-      "description": "Gain [E] equal to the turn number.\nExhaust."
-    },
-    {
-      "name": "Artillery Beam",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 13 damage to ALL enemies."
-    },
-    {
-      "name": "Artillery Beam+",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 17 damage to ALL enemies."
+      "cost": "1",
+      "description": "Gain 1 [E] .\n[E] gain increases by 1 when drawn.\nExhaust."
     },
     {
       "name": "Auto-Targeting",
@@ -428,22 +412,6 @@
       "description": "At the start of your turn, gain 2 thevagrant:Precision."
     },
     {
-      "name": "Blink",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 5 Block.\nDiscard a random card.\nDraw 1 card."
-    },
-    {
-      "name": "Blink+",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 5 Block.\nDiscard a random card.\nDraw 2 cards."
-    },
-    {
       "name": "Bombardment",
       "color": "Firefly_color",
       "rarity": "Uncommon",
@@ -458,6 +426,22 @@
       "type": "Attack",
       "cost": "2",
       "description": "Deal 10 damage to a random enemy 3 times."
+    },
+    {
+      "name": "Charged Laser",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nWhenever you draw this card, increase its damage by 6 this combat."
+    },
+    {
+      "name": "Charged Laser+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nWhenever you draw this card, increase its damage by 8 this combat."
     },
     {
       "name": "Cosmogenesis",
@@ -489,7 +473,23 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Add a random card into your hand.\nWhenever you draw this card, shuffle a copy of it into your draw pile.\nExhaust."
+      "description": "Add a random Upgraded card into your hand.\nWhenever you draw this card, shuffle a copy of it into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Decoy Shot",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 1 thevagrant:Stealth."
+    },
+    {
+      "name": "Decoy Shot+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 1 thevagrant:Stealth."
     },
     {
       "name": "Energy Shield",
@@ -529,7 +529,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 3 thevagrant:Stealth.\nYou cannot play Attacks for 3 turns."
+      "description": "Gain 2 thevagrant:Stealth.\nYou cannot play Attacks for 2 turns."
     },
     {
       "name": "Exile+",
@@ -545,7 +545,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 1 thevagrant:Stealth.\nGain 9 Block.\nAdd 1 Dazed into your draw pile."
+      "description": "Gain 1 thevagrant:Stealth.\nGain 9 Block.\nShuffle 1 Dazed into your draw pile."
     },
     {
       "name": "Full Projection+",
@@ -553,7 +553,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 1 thevagrant:Stealth.\nGain 12 Block.\nAdd 1 Dazed into your draw pile."
+      "description": "Gain 1 thevagrant:Stealth.\nGain 12 Block.\nShuffle 1 Dazed into your draw pile."
     },
     {
       "name": "Hyper Focus",
@@ -585,7 +585,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you gain Block, deal 2 damage back when attacked this turn."
+      "description": "Whenever you gain Block, deal 3 damage back when attacked this turn."
     },
     {
       "name": "Lamentation",
@@ -657,7 +657,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 12 Block.\nNext turn, deal damage to ALL enemies equal to Block lost this turn."
+      "description": "Gain 10 Block.\nNext turn, deal damage to ALL enemies equal to Block lost this turn."
     },
     {
       "name": "Mirror Shield+",
@@ -665,14 +665,14 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 18 Block.\nNext turn, deal damage to ALL enemies equal to Block lost this turn."
+      "description": "Gain 14 Block.\nNext turn, deal damage to ALL enemies equal to Block lost this turn."
     },
     {
       "name": "Nebula Veil",
       "color": "Firefly_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "2",
+      "cost": "1",
       "description": "Whenever you Exhaust 3 cards, gain 1 thevagrant:Stealth."
     },
     {
@@ -681,7 +681,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you Exhaust 3 cards, gain 1 thevagrant:Stealth."
+      "description": "Innate.\nWhenever you Exhaust 3 cards, gain 1 thevagrant:Stealth."
     },
     {
       "name": "Phantom Strike",
@@ -689,7 +689,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Enemy loses 10 HP."
+      "description": "Enemy loses 7 HP for each Stealth you have."
     },
     {
       "name": "Phantom Strike+",
@@ -697,23 +697,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Enemy loses 14 HP."
-    },
-    {
-      "name": "Phase Shift",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 1 thevagrant:Stealth.\nDraw 1 card.\nExhaust."
-    },
-    {
-      "name": "Phase Shift+",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 2 thevagrant:Stealth.\nDraw 1 card.\nExhaust."
+      "description": "Enemy loses 10 HP for each Stealth you have."
     },
     {
       "name": "Potent Ammunition",
@@ -753,7 +737,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Ethereal.\nGain 7 Block.\nAdd a copy of this card into your draw pile."
+      "description": "Ethereal.\nGain 6 Block.\nShuffle a copy of this card into your draw pile."
     },
     {
       "name": "Quine+",
@@ -761,7 +745,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 7 Block.\nAdd a copy of this card into your draw pile.\nExhaust."
+      "description": "Gain 6 Block.\nShuffle a copy of this card into your draw pile.\nExhaust."
     },
     {
       "name": "Recollection",
@@ -796,6 +780,38 @@
       "description": "Gain 11 Block. thevagrant:Return the last card in your discard pile."
     },
     {
+      "name": "Ruminate",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a random card in your hand.\nAdd a thevagrant:Paradox into your hand."
+    },
+    {
+      "name": "Ruminate+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card in your hand.\nAdd a thevagrant:Paradox+ into your hand."
+    },
+    {
+      "name": "Searing Enigma",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "When drawn, gain 5 thevagrant:Unreality.\nApply 10 thevagrant:Fissure."
+    },
+    {
+      "name": "Searing Enigma+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "When drawn, gain 5 thevagrant:Unreality.\nApply 15 thevagrant:Fissure."
+    },
+    {
       "name": "Shield Generator",
       "color": "Firefly_color",
       "rarity": "Uncommon",
@@ -810,22 +826,6 @@
       "type": "Power",
       "cost": "1",
       "description": "Gain 5 Plated Armor."
-    },
-    {
-      "name": "Stealthed Weapon",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "Gain 1 thevagrant:Stealth.\nYour next 3 Attacks do not reduce thevagrant:Stealth."
-    },
-    {
-      "name": "Stealthed Weapon+",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "Gain 1 thevagrant:Stealth.\nYour next 4 Attacks do not reduce thevagrant:Stealth."
     },
     {
       "name": "Account Uncertainty",
@@ -849,7 +849,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Lose all thevagrant:Stealth.\nGain 2 thevagrant:Precision for each thevagrant:Stealth lost.\nDraw 2 cards."
+      "description": "Lose all thevagrant:Stealth.\nGain 3 thevagrant:Precision for each thevagrant:Stealth lost.\nDraw 1 card for each thevagrant:Stealth lost."
     },
     {
       "name": "Alpha Strike+",
@@ -857,7 +857,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Lose all thevagrant:Stealth.\nGain 2 thevagrant:Precision for each thevagrant:Stealth lost.\nDraw 3 cards."
+      "description": "Lose all thevagrant:Stealth.\nGain 3 thevagrant:Precision for each thevagrant:Stealth lost.\nDraw 2 cards for each thevagrant:Stealth lost."
     },
     {
       "name": "Boltzmann Brain",
@@ -881,7 +881,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 20 damage.\nApply 3 Vulnerable.\nEnemy cannot gain Block for 3 turns.\nExhaust."
+      "description": "Deal 20 damage.\nApply 3 Vulnerable.\nApply 3 Weak.\nExhaust."
     },
     {
       "name": "Breach Missile+",
@@ -889,7 +889,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 30 damage.\nApply 5 Vulnerable.\nEnemy cannot gain Block for 5 turns.\nExhaust."
+      "description": "Deal 30 damage.\nApply 5 Vulnerable.\nApply 5 Weak.\nExhaust."
     },
     {
       "name": "Create Clone",
@@ -897,7 +897,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Next time you would die this combat, come back with 50% Max HP."
+      "description": "Revive from your next death this combat with 50% Max HP, or gain 2 Max HP at the end of combat."
     },
     {
       "name": "Create Clone+",
@@ -905,7 +905,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Next time you would die this combat, come back with 50% Max HP."
+      "description": "Revive from your next death this combat with 50% Max HP, or gain 2 Max HP at the end of combat."
     },
     {
       "name": "Dematerialize",
@@ -913,7 +913,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 2 thevagrant:Stealth.\nGain 2 Frail."
+      "description": "Gain 3 thevagrant:Stealth.\nGain 2 Frail."
     },
     {
       "name": "Dematerialize+",
@@ -921,7 +921,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 2 thevagrant:Stealth.\nGain 1 Frail."
+      "description": "Gain 3 thevagrant:Stealth.\nGain 1 Frail."
     },
     {
       "name": "Ephemeron Form",
@@ -938,22 +938,6 @@
       "type": "Power",
       "cost": "2",
       "description": "At the start of your turn, gain 1 thevagrant:Stealth.\nAt the end of your turn, Exhaust your hand."
-    },
-    {
-      "name": "FTL!",
-      "color": "Firefly_color",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "3",
-      "description": "Escape from a non-boss combat.\nRecieve no rewards."
-    },
-    {
-      "name": "FTL!+",
-      "color": "Firefly_color",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "2",
-      "description": "Escape from a non-boss combat.\nRecieve no rewards."
     },
     {
       "name": "Hyperspace Assault",
@@ -977,7 +961,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 28 damage to ALL enemies.\nTake 10 damage."
+      "description": "Deal 32 damage to ALL enemies.\nTake 10 damage."
     },
     {
       "name": "Kugelblitz+",
@@ -985,7 +969,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 36 damage to ALL enemies.\nTake 10 damage."
+      "description": "Deal 40 damage to ALL enemies.\nTake 10 damage."
     },
     {
       "name": "Lust for Eternity",
@@ -1041,7 +1025,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Exhaust your hand.\nAdd a thevagrant:Plasma_Wisp into your hand for each card Exhausted."
+      "description": "Exhaust your hand.\nAdd 1 thevagrant:Plasma_Wisp into your hand for each card Exhausted."
     },
     {
       "name": "Nova+",
@@ -1049,7 +1033,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Exhaust your hand.\nAdd a thevagrant:Plasma_Wisp+ into your hand for each card Exhausted."
+      "description": "Exhaust your hand.\nAdd 1 thevagrant:Plasma_Wisp+ into your hand for each card Exhausted."
     },
     {
       "name": "Preload",
@@ -1098,22 +1082,6 @@
       "type": "Attack",
       "cost": "2",
       "description": "Deal damage equal to 2 times the number of unique cards in your deck."
-    },
-    {
-      "name": "Spatial Rift",
-      "color": "Firefly_color",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "4",
-      "description": "Deal 17 damage to ALL enemies.\nCosts 1 less for each thevagrant:Stealth stack."
-    },
-    {
-      "name": "Spatial Rift+",
-      "color": "Firefly_color",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "4",
-      "description": "Deal 23 damage to ALL enemies.\nCosts 1 less for each thevagrant:Stealth stack."
     },
     {
       "name": "Tachyon Beam",
