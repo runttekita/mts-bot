@@ -1,0 +1,281 @@
+{
+  "mod": {
+    "name": "The Jungle",
+    "version": "1.5.1",
+    "authors": ["BDWSSBB","Blank The Evil","CaptainTechnicality","Celicath","Chronometrics","CutToTheChase","erasels","Gremious","Hyro Rizen","Johnny Devo","jonasdasdefekte","kiooeht","kobting","Kyloman","Michael Mayhem","Moocowsgomoo","Reina","Slimer509","The_Evil_Pickle","twanvl","Villfuk02","zwolfiez"],
+    "credits": "",
+    "description": "We made an act.",
+    "mts_version": "3.7.0",
+    "sts_version": "07-01-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Gourd",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Temporary HP."
+    },
+    {
+      "name": "Gourd+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Temporary HP."
+    },
+    {
+      "name": "Pet Snecko",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nRandomize the cost of all cards in your hand this turn."
+    },
+    {
+      "name": "Pet Snecko+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nRandomize the cost of all cards in your hand this turn."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Birthday Cake of Shame",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, raise your Max HP by 20. At the start of combat, shuffle a Shame into your draw pile.",
+      "flavorText": "It's tasty, but you feel only shame from eating it."
+    },
+    {
+      "name": "Creamberry",
+      "tier": "Special",
+      "pool": "",
+      "description": "Uncommon and Rare cards in future card rewards are upgraded.",
+      "flavorText": "A strawberry filled with natural vanilla cream. Delicious!"
+    },
+    {
+      "name": "Flamango",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you play an Attack, deal 2 damage to ALL enemies at the end of your turn.",
+      "flavorText": "A mango concentrated with a forgotten firepower. Spicy!"
+    },
+    {
+      "name": "Paper Faux",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you apply Weak, apply an additional 1 Weak. Whenever you apply Vulnerable, apply an additional 1 Vulnerable.",
+      "flavorText": "A silent effigy you found in the forest clearing. It seems to be watching you."
+    },
+    {
+      "name": "Par Snip",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, Upgrade all Basic cards.",
+      "flavorText": "Definitely more than your average vegetable, despite the name. Rich in vitamins!"
+    },
+    {
+      "name": "Shell Peas",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you are attacked, gain 2 Temporary_HP.",
+      "flavorText": "These huge peas actually contain normal-sized peas inside. It has an interesting texture as you chew."
+    },
+    {
+      "name": "Slice of Birthday Cake",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, raise your Max HP by 5.",
+      "flavorText": "A nice slice of birthday cake to celebrate."
+    },
+    {
+      "name": "Snecko Autograph",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right click in a shop to activate.\nRandomly obtain one of the relics.",
+      "flavorText": "To Snecko's #0-3 fan."
+    },
+    {
+      "name": "Spirit Disease",
+      "tier": "Special",
+      "pool": "",
+      "description": "The next non-boss chest you open will have its relic replaced with Spirit Poop.",
+      "flavorText": "A strange plague from drinking strange water... You don't feel too well.."
+    },
+    {
+      "name": "Wild Mango",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, raise your Max HP by 14. Start each combat with Slow.",
+      "flavorText": "A succulent fruit grown within the spire, not meant to be consumed by the untainted."
+    },
+    {
+      "name": "Wild Pear",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, raise your Max HP by 10. Start each combat with 1 Slothful.",
+      "flavorText": "Not even this fruit was spared from the blight."
+    },
+    {
+      "name": "Wild Strawberry",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, raise your Max HP by 7 and take 14 damage.",
+      "flavorText": "A delicious fruit tainted ever so slightly by the blight."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Antidote",
+      "rarity": "Jungle",
+      "description": "Remove all Poison Frail Weakness and Vulnerable and heal for each point removed."
+    },
+    {
+      "name": "Haunted Gourd",
+      "rarity": "Jungle",
+      "description": "Discover a Skill Power and Attack which cost 0 this turn. Add a random Curse and Slimed to your hand."
+    },
+    {
+      "name": "Jungle Juice",
+      "rarity": "Jungle",
+      "description": "Gain 5 Strength and receive 5 Poison."
+    },
+    {
+      "name": "Snecko Extract",
+      "rarity": "Jungle",
+      "description": "Drink this and something extremely random will happen."
+    },
+    {
+      "name": "Spyder Venom",
+      "rarity": "Jungle",
+      "description": "Gain 1 Envenom."
+    },
+    {
+      "name": "Twisted Elixir",
+      "rarity": "Jungle",
+      "description": "Make an enemy stronger and gain special rewards based on the size of its health when this is thrown."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Cassacara",
+      "type": "Elite",
+      "minHP": "151",
+      "maxHP": "151"
+    },
+    {
+      "name": "Energetic Mushroom",
+      "type": "Normal",
+      "minHP": "37",
+      "maxHP": "37"
+    },
+    {
+      "name": "Flameango",
+      "type": "Normal",
+      "minHP": "89",
+      "maxHP": "89"
+    },
+    {
+      "name": "Giant Wrat",
+      "type": "Normal",
+      "minHP": "93",
+      "maxHP": "93"
+    },
+    {
+      "name": "Jungle Hunter",
+      "type": "Normal",
+      "minHP": "56",
+      "maxHP": "56"
+    },
+    {
+      "name": "Lyon",
+      "type": "Normal",
+      "minHP": "97",
+      "maxHP": "97"
+    },
+    {
+      "name": "Mama Snecko",
+      "type": "Elite",
+      "minHP": "157",
+      "maxHP": "157"
+    },
+    {
+      "name": "Mawshroom",
+      "type": "Boss",
+      "minHP": "360",
+      "maxHP": "360"
+    },
+    {
+      "name": "Phrog",
+      "type": "Elite",
+      "minHP": "104",
+      "maxHP": "104"
+    },
+    {
+      "name": "Pointy Mushroom",
+      "type": "Normal",
+      "minHP": "28",
+      "maxHP": "28"
+    },
+    {
+      "name": "Shy Mushroom",
+      "type": "Normal",
+      "minHP": "31",
+      "maxHP": "31"
+    },
+    {
+      "name": "Slimy Jungle Vines",
+      "type": "Normal",
+      "minHP": "118",
+      "maxHP": "118"
+    },
+    {
+      "name": "Snecko Cultist",
+      "type": "Normal",
+      "minHP": "53",
+      "maxHP": "53"
+    },
+    {
+      "name": "Spyder Defender",
+      "type": "Normal",
+      "minHP": "21",
+      "maxHP": "21"
+    },
+    {
+      "name": "Spyder Hunter",
+      "type": "Normal",
+      "minHP": "19",
+      "maxHP": "19"
+    },
+    {
+      "name": "Spyder Queen",
+      "type": "Boss",
+      "minHP": "190",
+      "maxHP": "190"
+    },
+    {
+      "name": "Swinging Axe Trap",
+      "type": "Normal",
+      "minHP": "75",
+      "maxHP": "75"
+    },
+    {
+      "name": "Totem Speaker",
+      "type": "Boss",
+      "minHP": "50",
+      "maxHP": "50"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Slothful",
+      "description": "Negates buffs."
+    }
+  ]
+}
