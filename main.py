@@ -23,7 +23,7 @@ prefix = "?"
 banned_users = []
 
 uncolor = re.compile(r"^\[#[0-9A-Fa-f]{6}\](\S+?)$")
-energy = re.compile(r"^\[[RGBWE]](.?)$")
+energy = re.compile(r"^(\[[RGBWE]])(.?)$")
 
 default_energy = ":red_energy:"
 
@@ -643,9 +643,9 @@ def format_relic_description(description):
         res = energy.match(word)
         if res:
             if word.startswith("[E]"):
-                final_description += default_energy + res.group(1) + " "
+                final_description += default_energy + res.group(2) + " "
                 continue
-            final_description += icon_dictionary.get(word, default_energy) + res.group(1) + " " #i don't think relics should have non-[E] energy...
+            final_description += icon_dictionary.get(res.group(1), default_energy) + res.group(2) + " " #i don't think relics should have non-[E] energy...
             continue
                       
         #a few relics have unique keyword text in their descriptions - not many, though.
@@ -669,9 +669,9 @@ def format_card_description(description):
         res = energy.match(word)
         if res:
             if word.startswith("[E]"):
-                final_description += color_dictionary.get(color, default_energy) + res.group(1) + " "
+                final_description += color_dictionary.get(color, default_energy) + res.group(2) + " "
                 continue
-            final_description += icon_dictionary.get(word, default_energy) + res.group(1) + " "
+            final_description += icon_dictionary.get(res.group(1), default_energy) + res.group(2) + " "
             continue
         
         res = uncolor.match(word)
