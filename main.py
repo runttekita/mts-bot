@@ -694,9 +694,9 @@ def remove_keyword_prefixes(description):
                 continue
         if is_keyword(word):
             if word.split(":", 1)[1][len(word.split(":", 1)[1]) - 1] == ".":
-                final_description += word.split(":", 1)[1]
+                final_description += word.split(":", 1)[1].replace("_", " ")
             else:
-                final_description += word.split(":", 1)[1] + " "
+                final_description += word.split(":", 1)[1].replace("_", " ") + " "
             continue
         final_description += word + " "
     final_description = final_description.replace("\n ", "\n")
