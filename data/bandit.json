@@ -65,7 +65,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 12 damage.\nwariomod:Move 12.\nExhaust."
+      "description": "Deal 10 damage.\nwariomod:Move 10.\nExhaust."
     },
     {
       "name": "Extended Jump+",
@@ -73,7 +73,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "2",
-      "description": "Retain.\nDeal 12 damage.\nwariomod:Move 12.\nExhaust."
+      "description": "Retain.\nDeal 10 damage.\nwariomod:Move 10.\nExhaust."
     },
     {
       "name": "Step",
@@ -161,15 +161,15 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Shuffle 1 wariomod:Kaboom into your draw pile.\nAdd 1 wariomod:Kaboom into your discard pile."
+      "description": "Shuffle 1 wariomod:Kaboom into your draw and discard piles."
     },
     {
-      "name": "Boom Boom Boom+",
+      "name": "Boom Boom+",
       "color": "Bandit_weird_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Shuffle 1 wariomod:Kaboom into your draw pile.\nAdd 2 wariomod:Kaboom into your discard pile."
+      "description": "Shuffle 1 wariomod:Kaboom+ into your draw and discard piles."
     },
     {
       "name": "Boomsmack",
@@ -244,20 +244,20 @@
       "description": "Deal 3 damage.\nwariomod:Move 1.\nRepeat this once."
     },
     {
-      "name": "Double Dip",
+      "name": "Game",
       "color": "Bandit_weird_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 damage twice.\nActivate the Space 4 ahead of you.\nwariomod:Move 4."
+      "description": "Deal 8 damage.\nwariomod:Move 4.\nIf you passed Go, deal 8 damage again."
     },
     {
-      "name": "Double Dip+",
+      "name": "Game+",
       "color": "Bandit_weird_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage twice.\nActivate the Space 4 ahead of you.\nwariomod:Move 4."
+      "description": "Deal 10 damage.\nwariomod:Move 6.\nIf you passed Go, deal 10 damage again."
     },
     {
       "name": "Go-Blast",
@@ -281,7 +281,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nwariomod:Move 6.\nwariomod:Move 1."
+      "description": "Gain 7 Block.\nwariomod:Move 5.\nwariomod:Move 1."
     },
     {
       "name": "Hopshield+",
@@ -289,7 +289,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 9 Block.\nwariomod:Move 8.\nwariomod:Move 1."
+      "description": "Gain 9 Block.\nwariomod:Move 6.\nwariomod:Move 1."
     },
     {
       "name": "Jumpslam",
@@ -444,6 +444,22 @@
       "description": "Choose a Space.\nIt activates when passed as well as landed upon.\nExhaustive !stslib:ex!."
     },
     {
+      "name": "Blockbombs",
+      "color": "Bandit_weird_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a wariomod:Kaboom goes boom, gain 2 Block.\nAdd 1 wariomod:Kaboom into your discard pile."
+    },
+    {
+      "name": "Blockbombs+",
+      "color": "Bandit_weird_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a wariomod:Kaboom goes boom, gain 2 Block.\nShuffle 1 wariomod:Kaboom into your discard and draw piles."
+    },
+    {
       "name": "Bomb-time",
       "color": "Bandit_weird_color",
       "rarity": "Uncommon",
@@ -528,7 +544,7 @@
       "color": "Bandit_weird_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "1",
+      "cost": "2",
       "description": "\u03C0Transform 2 random Empty Spaces into wariomod:Draw_Spaces.\nwariomod:Draw_Spaces draw 1 card when passed."
     },
     {
@@ -537,7 +553,15 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "\u03C0Transform 3 random Empty Spaces into wariomod:Draw_Spaces.\nwariomod:Draw_Spaces draw 1 card when passed."
+      "description": "\u03C0Transform 2 random Empty Spaces into wariomod:Draw_Spaces.\nwariomod:Draw_Spaces draw 1 card when passed."
+    },
+    {
+      "name": "Double Dip",
+      "color": "Bandit_weird_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage twice.\nActivate the Space 3 ahead of you.\nwariomod:Move 3."
     },
     {
       "name": "Emptied Mind",
@@ -577,7 +601,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nStartup: Play the top card of your draw pile."
+      "description": "Unplayable.\nWhenever you draw this card, you may add 1 of 3 random cards into your hand."
     },
     {
       "name": "Free Card!?+",
@@ -585,23 +609,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nEthereal.\nStartup: Play the top card of your draw pile."
-    },
-    {
-      "name": "Game",
-      "color": "Bandit_weird_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 8 damage.\nwariomod:Move 4.\nIf you passed Go, deal 8 damage again."
-    },
-    {
-      "name": "Game+",
-      "color": "Bandit_weird_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 10 damage.\nwariomod:Move 6.\nIf you passed Go, deal 10 damage again."
+      "description": "Unplayable.\nWhenever you draw this card, gain [E] and you may add 1 of 3 random cards into your hand."
     },
     {
       "name": "Greater Guard",
@@ -780,22 +788,6 @@
       "description": "Apply 1 Weak.\nGain 10 Block.\nPrevent the next 2 times you would wariomod:Move."
     },
     {
-      "name": "Silence Bombs",
-      "color": "Bandit_weird_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "Add 1 wariomod:Kaboom into your discard pile.\nWhenever a wariomod:Kaboom goes boom, ALL enemies lose 2 Strength this turn."
-    },
-    {
-      "name": "Silence Bombs+",
-      "color": "Bandit_weird_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "Shuffle 1 wariomod:Kaboom into your discard and draw piles.\nWhenever a wariomod:Kaboom goes boom, ALL enemies lose 2 Strength this turn."
-    },
-    {
       "name": "Space Swap",
       "color": "Bandit_weird_color",
       "rarity": "Uncommon",
@@ -876,6 +868,14 @@
       "description": "At the start of your turn, add a card into your hand that wariomod:Moves up to 3 Spaces."
     },
     {
+      "name": "Triple Dip+",
+      "color": "Bandit_weird_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice.\nActivate the Space 3 ahead of you twice.\nwariomod:Move 3."
+    },
+    {
       "name": "bruh",
       "color": "Bandit_weird_color",
       "rarity": "Uncommon",
@@ -945,7 +945,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Grave.\nAt the start of your turn, shuffle 1 wariomod:Kaboom into your draw and discard piles."
+      "description": "Grave.\nAt the end of your turn, shuffle 1 wariomod:Kaboom into your draw and discard piles."
     },
     {
       "name": "Boom Form+",
@@ -953,7 +953,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Grave.\nAt the start of your turn, shuffle 2 wariomod:Kaboom into your draw and discard piles."
+      "description": "Grave.\nAt the end of your turn, shuffle 2 wariomod:Kaboom into your draw and discard piles."
     },
     {
       "name": "Cheat Death",
@@ -1018,6 +1018,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Retain.\nFor each card in your hand, \u03C0Transform a random Empty Space into a Space that activates that card's effects."
+    },
+    {
+      "name": "Fabricate Friend",
+      "color": "Bandit_weird_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nCreate a Drone on a random Space that wariomod:Moves when you do and activates Space effects for you."
+    },
+    {
+      "name": "Fabricate Friend+",
+      "color": "Bandit_weird_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Ethereal.\nCreate a Drone on a random Space that wariomod:Moves when you do and activates Space effects for you."
     },
     {
       "name": "Fabulous Prizes",
@@ -1088,16 +1104,16 @@
       "color": "Bandit_weird_color",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "1",
-      "description": "wariomod:Move 5.\nwariomod:Move 4.\nwariomod:Move 3.\nwariomod:Move 2.\nwariomod:Move 1.\nExhaust."
+      "cost": "2",
+      "description": "wariomod:Move 0 3 times.\nExhaust."
     },
     {
       "name": "Jumpy!+",
       "color": "Bandit_weird_color",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "1",
-      "description": "wariomod:Move 6.\nwariomod:Move 5.\nwariomod:Move 4.\nwariomod:Move 3.\nwariomod:Move 2.\nwariomod:Move 1.\nExhaust."
+      "cost": "2",
+      "description": "wariomod:Move 0 5 times.\nExhaust."
     },
     {
       "name": "Massive Party",
@@ -1116,28 +1132,12 @@
       "description": "Activate all positive Spaces.\nExhaustive !stslib:ex!."
     },
     {
-      "name": "Metal Form",
-      "color": "Bandit_weird_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "Ethereal.\nCreate a Drone on a random Space that wariomod:Moves when you do and activates Space effects for you."
-    },
-    {
-      "name": "Metal Form+",
-      "color": "Bandit_weird_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "Ethereal.\nCreate a Drone on a random Space that wariomod:Moves when you do and activates Space effects for you."
-    },
-    {
       "name": "Poisoned Bombs",
       "color": "Bandit_weird_color",
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Shuffle 1 wariomod:Kaboom into your draw pile.\nWhenever a wariomod:Kaboom goes boom, apply 3 Poison to ALL enemies."
+      "description": "Whenever a wariomod:Kaboom goes boom, apply 3 Poison to ALL enemies.\nShuffle 1 wariomod:Kaboom into your draw pile."
     },
     {
       "name": "Poisoned Bombs+",
@@ -1145,7 +1145,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Shuffle 1 wariomod:Kaboom into your draw and discard piles.\nWhenever a wariomod:Kaboom goes boom, apply 3 Poison to ALL enemies."
+      "description": "Whenever a wariomod:Kaboom goes boom, apply 3 Poison to ALL enemies.\nShuffle 1 wariomod:Kaboom into your draw and discard piles."
     },
     {
       "name": "Ship Smash",
@@ -1185,7 +1185,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "wariomod:Go_Spaces 10 additional damage."
+      "description": "wariomod:Go_Spaces deal 10 additional damage."
     },
     {
       "name": "The Key Finisher+",
@@ -1193,7 +1193,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "wariomod:Go_Spaces 15 additional damage."
+      "description": "wariomod:Go_Spaces deal 15 additional damage."
     },
     {
       "name": "Very Long Jump",
@@ -1232,7 +1232,7 @@
       "color": "Bandit_weird_color",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "2",
+      "cost": "3",
       "description": "Grave.\n\u03C0Transform ALL negative Spaces into Empty Spaces.\nExhaust."
     },
     {
@@ -1241,7 +1241,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "\u03C0Transform ALL negative Spaces into Empty Spaces.\nExhaust."
+      "description": "Grave.\n\u03C0Transform ALL negative Spaces into Empty Spaces.\nExhaust."
     }
   ],
   "relics": [
