@@ -1,0 +1,1252 @@
+{
+  "mod": {
+    "name": "The Ghost of Christmas Present",
+    "version": "0.0.2",
+    "authors": ["Tony Youssef"],
+    "credits": "",
+    "description": "A tanky character mod by Tony Youssef",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "The Big Gift",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 50 damage. Exhaust."
+    },
+    {
+      "name": "The Big Gift+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 70 damage. Exhaust."
+    },
+    {
+      "name": "Brawn",
+      "color": "Gred",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Temporary_HP."
+    },
+    {
+      "name": "Brawn+",
+      "color": "Gred",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Temporary_HP."
+    },
+    {
+      "name": "Defend",
+      "color": "Gred",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Gred",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Gred",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Gred",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Advent Candle",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Grave.\nDeal 6 damage. Apply 2 Vulnerable."
+    },
+    {
+      "name": "Advent Candle+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Grave.\nDeal 8 damage. Apply 3 Vulnerable."
+    },
+    {
+      "name": "Belch Flame",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies. Deals 4 additional damage if you have no potions."
+    },
+    {
+      "name": "Belch Flame+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies. Deals 6 additional damage if you have no potions."
+    },
+    {
+      "name": "Candy",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Temporary_HP. Exhaust."
+    },
+    {
+      "name": "Candy+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Temporary_HP. Exhaust."
+    },
+    {
+      "name": "Crook Strike",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Grave.\nDeal 5 damage. Gain 9 Block."
+    },
+    {
+      "name": "Crook Strike+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Grave.\nDeal 9 damage. Gain 9 Block."
+    },
+    {
+      "name": "Excessive Packaging",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ghostxmas:Regift. Gain 6 Block."
+    },
+    {
+      "name": "Excessive Packaging+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ghostxmas:Regift. Gain 9 Block."
+    },
+    {
+      "name": "Frankincense",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Temporary HP. Then if you have at least 60 ghostxmas:Total_HP, apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Frankincense+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Temporary HP. Then if you have at least 60 ghostxmas:Total_HP, apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Hit Back",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The first time you take an unblocked ghostxmas:Hit before your next turn, deal 16 damage to the offending enemy."
+    },
+    {
+      "name": "Hit Back+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The first time you take an unblocked ghostxmas:Hit before your next turn, deal 21 damage to the offending enemy."
+    },
+    {
+      "name": "Ho Ho Ho",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage 3 times."
+    },
+    {
+      "name": "Ho Ho Ho+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage 4 times."
+    },
+    {
+      "name": "Hunger",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 2 Temporary HP. Deal 7 damage."
+    },
+    {
+      "name": "Hunger+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 3 Temporary HP. Deal 8 damage."
+    },
+    {
+      "name": "Jolly Jab",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage for every 10 ghostxmas:Total_HP you have.\n(Deals 0 damage.)"
+    },
+    {
+      "name": "Jolly Jab+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage for every 10 ghostxmas:Total_HP you have.\n(Deals 0 damage.)"
+    },
+    {
+      "name": "Jolly Tough",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 1 Block for every 10 ghostxmas:Total_HP you have.\n(Gains 0 block.)"
+    },
+    {
+      "name": "Jolly Tough+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Block for every 10 ghostxmas:Total_HP you have.\n(Gains 0 block.)"
+    },
+    {
+      "name": "Knuckle Sandwich",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "ghostxmas:Regift. Deal 8 damage."
+    },
+    {
+      "name": "Knuckle Sandwich+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "ghostxmas:Regift. Deal 11 damage."
+    },
+    {
+      "name": "Naughty or Nice",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Look at the top two cards of your deck. Put one into your hand and exhaust the other. Exhaust."
+    },
+    {
+      "name": "Naughty or Nice+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at the top two cards of your deck. Put one into your hand and exhaust the other. Exhaust."
+    },
+    {
+      "name": "Recover",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put a card from your discard pile into your hand. Exhaust."
+    },
+    {
+      "name": "Recover+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put a card from your discard pile into your hand. Exhaust."
+    },
+    {
+      "name": "Room at the Inn",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Grave.\nGain 4 Block. Gain [E]."
+    },
+    {
+      "name": "Room at the Inn+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Grave.\nGain 6 Block. Gain [E]."
+    },
+    {
+      "name": "Sober Strike",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage. If you have negative Dexterity, gain [E] and gain 1 Dexterity."
+    },
+    {
+      "name": "Sober Strike+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. If you have negative Dexterity, gain [E] and gain 1 Dexterity."
+    },
+    {
+      "name": "Stomp",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. If you have negative Dexterity, deal 7 damage again."
+    },
+    {
+      "name": "Stomp+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. If you have negative Dexterity, deal 10 damage again."
+    },
+    {
+      "name": "Unwrap",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random Uncommon or Rare card into your hand. It costs 0 less this turn. Exhaust."
+    },
+    {
+      "name": "Unwrap+",
+      "color": "Gred",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random Uncommon or Rare card into your hand. It costs 1 less this turn. Exhaust."
+    },
+    {
+      "name": "Belly Bash",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage. Lose 2 Dexterity."
+    },
+    {
+      "name": "Belly Bash+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 13 damage. Lose 2 Dexterity."
+    },
+    {
+      "name": "Belly Block",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block. Lose 1 Dexterity."
+    },
+    {
+      "name": "Belly Block+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 9 Block. Lose 1 Dexterity."
+    },
+    {
+      "name": "Celebration",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card with Grave, deal 4 damage to ALL enemies."
+    },
+    {
+      "name": "Celebration+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card with Grave, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Dawn",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "ghostxmas:Regift. Draw 1 cards. Exhaust."
+    },
+    {
+      "name": "Dawn+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "ghostxmas:Regift. Draw 2 cards. Exhaust."
+    },
+    {
+      "name": "Down the Chimney",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "At the start of your next turn, gain X+ 2 temporary Strength. Exhaust."
+    },
+    {
+      "name": "Down the Chimney+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "At the start of your next turn, gain X+ 3 temporary Strength. Exhaust."
+    },
+    {
+      "name": "Drunken Brawl",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to a random enemy. Deals 4 additional damage if you have no potions."
+    },
+    {
+      "name": "Drunken Brawl+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage to a random enemy. Deals 6 additional damage if you have no potions."
+    },
+    {
+      "name": "Fury",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage 4 times. Costs 1 less for each time you lost HP last turn."
+    },
+    {
+      "name": "Fury+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage 4 times. Costs 1 less for each time you lost HP last turn."
+    },
+    {
+      "name": "Gift of Justice",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ghostxmas:Regift. If the enemy has 20 or less HP, set their HP to 0."
+    },
+    {
+      "name": "Gift of Justice+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ghostxmas:Regift. If the enemy has 25 or less HP, set their HP to 0."
+    },
+    {
+      "name": "Gold",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If you have at least 80 ghostxmas:Total_HP, gain 20 Gold. Exhaust."
+    },
+    {
+      "name": "Gold+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If you have at least 80 ghostxmas:Total_HP, gain 25 Gold. Exhaust."
+    },
+    {
+      "name": "Gremlin Elbow",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 temporary Strength. Whenever an enemy dies, gain 3 temporary Strength."
+    },
+    {
+      "name": "Gremlin Elbow+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 temporary Strength. Whenever an enemy dies, gain 4 temporary Strength."
+    },
+    {
+      "name": "Gremlin Eye",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Next turn, gain [E]. Whenever an enemy dies, gain [E]."
+    },
+    {
+      "name": "Gremlin Eye+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Next turn, gain [E] [E]. Whenever an enemy dies, gain [E] [E]."
+    },
+    {
+      "name": "Gremlin Foot",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 5 Block. Whenever an enemy dies, gain 5 Block."
+    },
+    {
+      "name": "Gremlin Foot+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 7 Block. Whenever an enemy dies, gain 7 Block."
+    },
+    {
+      "name": "Gremlin Hand",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Draw 2 cards. Whenever an enemy dies, draw 2 cards."
+    },
+    {
+      "name": "Gremlin Hand+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Draw 3 cards. Whenever an enemy dies, draw 3 cards."
+    },
+    {
+      "name": "Gremlins",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Grave. Trigger your Gremlins. Exhaust."
+    },
+    {
+      "name": "Gremlins+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Grave. Trigger your Gremlins. Exhaust."
+    },
+    {
+      "name": "Jolly Good",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card for every 20 ghostxmas:Total_HP you have. Exhaust."
+    },
+    {
+      "name": "Jolly Good+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card for every 20 ghostxmas:Total_HP you have. Exhaust."
+    },
+    {
+      "name": "Light the Way",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 temporary Strength. Apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Light the Way+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 temporary Strength. Apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Lumber",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nLose 1 Dexterity."
+    },
+    {
+      "name": "Lumber+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nGain 1 Strength.\nLose 1 Dexterity."
+    },
+    {
+      "name": "Milk and Cookies",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 1 Temporary HP. Deal 1 damage. Draw 1 card."
+    },
+    {
+      "name": "Milk and Cookies+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 3 Temporary HP. Deal 2 damage. Draw 1 card."
+    },
+    {
+      "name": "Nurse",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal an enemy for 15 if able to gain [E] [E]."
+    },
+    {
+      "name": "Nurse+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal an enemy for 10 if able to gain [E] [E]."
+    },
+    {
+      "name": "Obesity",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 4 Temporary HP and lose 1 Dexterity."
+    },
+    {
+      "name": "Obesity+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 5 Temporary HP and lose 1 Dexterity."
+    },
+    {
+      "name": "Peace",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal an enemy for 20. Gain Block equal to the HP healed. Exhaust."
+    },
+    {
+      "name": "Peace+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal an enemy for 20. Gain Block equal to the HP healed."
+    },
+    {
+      "name": "Philanthropunch",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Whenever you buy a card from a shop, increase this card's damage by 3 permanently."
+    },
+    {
+      "name": "Philanthropunch+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Whenever you buy a card from a shop, increase this card's damage by 5 permanently."
+    },
+    {
+      "name": "Resolutions",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ghostxmas:Regift. Exhaust all Status and Curse cards in your discard pile."
+    },
+    {
+      "name": "Resolutions+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "ghostxmas:Regift. Exhaust all Status and Curse cards in your discard pile."
+    },
+    {
+      "name": "Russian Dance",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage if the enemy intends to attack."
+    },
+    {
+      "name": "Russian Dance+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 28 damage if the enemy intends to attack."
+    },
+    {
+      "name": "Sack of Toys",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "ghostxmas:Regift. At the start of your turn, gain [E]."
+    },
+    {
+      "name": "Sack of Toys+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "ghostxmas:Regift. At the start of your turn, gain [E]."
+    },
+    {
+      "name": "Silent Night",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start of your next turn, gain 11 Block. If you attack that turn, lose that Block."
+    },
+    {
+      "name": "Silent Night+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start of your next turn, gain 15 Block. If you attack that turn, lose that Block."
+    },
+    {
+      "name": "Sleigh Crash",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage. Randomize, without increasing, the costs of 3 random cards in your hand this turn."
+    },
+    {
+      "name": "Sleigh Crash+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage. Randomize, without increasing, the costs of 4 random cards in your hand this turn."
+    },
+    {
+      "name": "Snowdrift",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. Increase this card's Block by 3 this combat."
+    },
+    {
+      "name": "Snowdrift+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. Increase this card's Block by 5 this combat."
+    },
+    {
+      "name": "Snowman",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, deal 8 damage to the enemy with the least HP."
+    },
+    {
+      "name": "Snowman+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, deal 12 damage to the enemy with the least HP."
+    },
+    {
+      "name": "Stoutness",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "If you would gain Temporary HP, gain 1 additional Temporary HP."
+    },
+    {
+      "name": "Stoutness+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "If you would gain Temporary HP, gain 2 additional Temporary HP."
+    },
+    {
+      "name": "Stupor",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Temporary HP. If you have no potions, also gain 4 Block."
+    },
+    {
+      "name": "Stupor+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Temporary HP. If you have no potions, also gain 6 Block."
+    },
+    {
+      "name": "Swell",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 Temporary HP X times."
+    },
+    {
+      "name": "Swell+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 5 Temporary HP X times."
+    },
+    {
+      "name": "Telegraphed Strike",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Grave. Deal 42 damage. Exhaust."
+    },
+    {
+      "name": "Telegraphed Strike+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Grave. Deal 42 damage."
+    },
+    {
+      "name": "Uraken",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage for each negative Dexterity you have."
+    },
+    {
+      "name": "Uraken+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage for each negative Dexterity you have."
+    },
+    {
+      "name": "Visit Every Home",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, shuffle your discard pile into your draw pile."
+    },
+    {
+      "name": "Visit Every Home+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of your turn, shuffle your discard pile into your draw pile."
+    },
+    {
+      "name": "Wrap",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 2 random Common cards into your hand. They cost 0 this turn. Exhaust."
+    },
+    {
+      "name": "Wrap+",
+      "color": "Gred",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 random Common cards into your hand. They cost 0 this turn. Exhaust."
+    },
+    {
+      "name": "Advent Wreath",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Grave. Gain 4 Temporary HP. Gain 4 Block. Deal 4 damage."
+    },
+    {
+      "name": "Advent Wreath+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Grave. Gain 5 Temporary HP. Gain 5 Block. Deal 5 damage."
+    },
+    {
+      "name": "Anticipate",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, you have a 20% chance to add The Big Gift into your hand once per combat."
+    },
+    {
+      "name": "Anticipate+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, you have a 20% chance to add The Big Gift into your hand once per combat."
+    },
+    {
+      "name": "Baubles",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Orb slot. Add a Ball Lightning or Cold Snap to your hand."
+    },
+    {
+      "name": "Baubles+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Orb slot. Add a Ball Lightning+ or Cold Snap+ to your hand."
+    },
+    {
+      "name": "Centerpiece",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 Vulnerable and deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Centerpiece+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 Vulnerable and deal 14 damage to ALL enemies."
+    },
+    {
+      "name": "Dynamo",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you take an unblocked ghostxmas:Hit,\ngain [E] [E] at the start of your next turn."
+    },
+    {
+      "name": "Dynamo+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you take an unblocked ghostxmas:Hit,\ngain [E] [E] at the start of your next turn."
+    },
+    {
+      "name": "Eggnog",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have no potions, obtain a random potion. Exhaust."
+    },
+    {
+      "name": "Eggnog+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If you have no potions, obtain a random potion. Exhaust."
+    },
+    {
+      "name": "Gaudete",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Grave. Return 2 cards from your discard pile to your hand. Exhaust."
+    },
+    {
+      "name": "Gaudete+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Grave. Return 3 cards from your discard pile to your hand. Exhaust."
+    },
+    {
+      "name": "Ice Creamery",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Shuffle 2 Voids into your draw pile. Energy is now conserved between turns."
+    },
+    {
+      "name": "Ice Creamery+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Shuffle 1 Voids into your draw pile. Energy is now conserved between turns."
+    },
+    {
+      "name": "Myrrh",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Temporary HP. Then if you have at least 100 ghostxmas:Total_HP, gain 1 Intangible. Exhaust."
+    },
+    {
+      "name": "Myrrh+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Temporary HP. Then if you have at least 100 ghostxmas:Total_HP, gain 1 Intangible. Exhaust."
+    },
+    {
+      "name": "New Year",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next time you take an unblocked ghostxmas:Hit, Upgrade ALL of your cards for the rest of combat. Exhaust."
+    },
+    {
+      "name": "New Year+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The next time you take an unblocked ghostxmas:Hit, Upgrade ALL of your cards for the rest of combat. Exhaust."
+    },
+    {
+      "name": "Quadraticlobber",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal X damage to ALL enemies X times."
+    },
+    {
+      "name": "Quadraticlobber+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "ghostxmas:Regift. Deal X damage to ALL enemies X times."
+    },
+    {
+      "name": "Reindeer Form",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play an Attack, deal 5 damage to ALL enemies."
+    },
+    {
+      "name": "Reindeer Form+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play an Attack, deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Sleep",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose all Block.\nGain 1 Intangible.\nEnd the turn.\nExhaust."
+    },
+    {
+      "name": "Sleep+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose all Block.\nGain 1 Intangible.\nEnd the turn.\nExhaust."
+    },
+    {
+      "name": "Spark",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a card with ghostxmas:Regift,\ngain [E]."
+    },
+    {
+      "name": "Spark+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card with ghostxmas:Regift,\ngain [E]."
+    },
+    {
+      "name": "Sugarplums",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal. If an enemy intends to attack, heal 12 HP. Exhaust."
+    },
+    {
+      "name": "Sugarplums+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal. If an enemy intends to attack, heal 16 HP. Exhaust."
+    },
+    {
+      "name": "Surprise Gift",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 30 damage. Add a random card into your deck permanently. Exhaust."
+    },
+    {
+      "name": "Surprise Gift+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 45 damage. Add a random card into your deck permanently. Exhaust."
+    },
+    {
+      "name": "Tis the Season",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Grave. At the start of your turn, draw 1 additional card."
+    },
+    {
+      "name": "Tis the Season+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Grave. At the start of your turn, draw 2 additional card."
+    },
+    {
+      "name": "Year's End",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "At the start of your next turn, escape this combat if able and get no rewards."
+    },
+    {
+      "name": "Year's End+",
+      "color": "Gred",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start of your next turn, escape this combat if able and get no rewards."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Christmas Tree",
+      "tier": "Starter",
+      "pool": "Gred",
+      "description": "Whenever you climb a floor, gain 1 Max HP.",
+      "flavorText": "Merry Christmas."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Ghost of Christmas Present",
+      "type": "Player",
+      "minHP": "90",
+      "maxHP": "90"
+    }
+  ],
+  "keywords": [
+  ]
+}
