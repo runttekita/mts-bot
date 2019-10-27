@@ -81,11 +81,11 @@ async def get_id(message):
     if s == "help":
         await help_command(message.channel)
         return
-    if s == "praise" and (
-        message.author.id == 86261397213708288
-        or message.author.id == 132940023522656256
-    ):
-        await message.channel.send("i love alchy <3")
+    if s == "praise":
+        if message.author.id == 132940023522656256:
+            await message.channel.send("i love reina <3")
+        if message.author.id == 86261397213708288:
+            await message.channel.send("i love alchy <3")
         return
     if s == "notneh" and message.author.id == 125669982041276416:
         await message.channel.send("djbtkdkfndn")
