@@ -650,7 +650,7 @@ def format_relic_description(description):
                       
         #a few relics have unique keyword text in their descriptions - not many, though.
         if is_keyword(word):
-            final_description += word.split(":", 1)[1] + " "
+            final_description += word.split(":", 1)[1].replace("_", " ") + " "
             continue
         
         final_description += word + " "
