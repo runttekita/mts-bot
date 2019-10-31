@@ -2,7 +2,7 @@
   "mod": {
     "name": "Oz Mod",
     "version": "0.0.1",
-    "authors": ["Ozole"],
+    "authors": ["ozole"],
     "credits": "",
     "description": "A content mod adding in various things for different characters.",
     "mts_version": "3.8.0",
@@ -252,6 +252,22 @@
       "description": "Deal 3 damage X times.\nGain X [E] ."
     },
     {
+      "name": "Purify",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enter ozmod:Purity.\nExhaust."
+    },
+    {
+      "name": "Purify+",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enter ozmod:Purity.\nExhaust."
+    },
+    {
       "name": "Focus Power",
       "color": "Purple",
       "rarity": "Rare",
@@ -266,9 +282,39 @@
       "type": "Skill",
       "cost": "1",
       "description": "Your next attack does 3 times damage.\nYour turn ends."
+    },
+    {
+      "name": "Perfect Self",
+      "color": "Purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nAt the start of your turn, Enter ozmod:Purity."
+    },
+    {
+      "name": "Perfect Self+",
+      "color": "Purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Ethereal.\nAt the start of your turn, Enter ozmod:Purity."
     }
   ],
   "relics": [
+    {
+      "name": "The One's Blight",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you play an Attack, lose 2 HP.",
+      "flavorText": "You took too much power. You can feel your body tearing to shreds whenever you use it."
+    },
+    {
+      "name": "Infinity Feather",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of your turn, Gain 1 Ritual. Upon pickup, obtain a special blight.",
+      "flavorText": "The feather has been endowed with power many times over many generations, perhaps since the beginning of time."
+    }
   ],
   "potions": [
     {
