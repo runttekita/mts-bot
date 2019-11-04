@@ -284,17 +284,80 @@ async def get_mods_by_author(channel, tokenized_message):
 
 @client.event
 async def find(channel, tokenized_message):
+    """
+    find a card
+    -n causes to search name rather than description
+    -c=amount specifies a card cost
+    -t=attack/skill/power to specify card type
+    -r= to specify rarity
+    """
     try:
         with timeout.timeout(1):
             cards = Mod_Data(tokenized_message[1]).data
             random.shuffle(cards)
             first_match = {}
             other_results = {}
+            
+            search_field = "description"
+            cost = None
+            type = None
+            rarity = None
+            
+            if len(tokenized_message) == 3:
+                tokens = tokenized_message[2].split()
+            else:
+                tokens = tokenized_message[1].split()
+            
+            data = ""
+            
+            for item in tokens:
+                if data == "": # Once any value is found, the rest should be input regex
+                    if item == "-n" and search_field != "name":
+                        search_field = "name"
+                        continue
+                    if cost is None and item.startswith("-c=") and len(item) > 3:
+                        cost = item[3:]
+                        continue
+                    if type is None and item.startswith("-t=") and len(item) > 3:
+                        type = item[3:]
+                        continue
+                    if rarity is None and item.startswith("-r=") and len(item) > 3:
+                        rarity = item[3:]
+                        continue
+                
+                data += item + " "
+                
+            data = data[:-1]
+
+            if data == "":
+                data = "^[\s\S]*$"
+                
+            regex = re.compile(data)
+            
+            failure = "No card "
+            if cost is not None:
+                failure += "with cost " + cost + " "
+            if type is not None:
+                failure += "with type " + type + " "
+            if rarity is not None:
+                failure += "with rarity " + rarity + " "
+                
+            if len(tokenized_message) == 3:
+                failure += f"with {data} in the {search_field} found in {tokenized_message[1]}."
+            else:
+                failure += f"with {data} in the {search_field} found."
+                
             for x in range(len(cards)):
                 for card in cards[x]["cards"]:
+                    if cost is not None and card["cost"] != cost:
+                        continue
+                    if type is not None and card["type"] != type:
+                        continue
+                    if rarity is not None and card["rarity"] != rarity:
+                        continue
+                    
                     if len(tokenized_message) == 3:
-                        regex = re.compile(tokenized_message[2])
-                        if regex.search(card["description"].lower()):
+                        if regex.search(card[search_field].lower()):
                             if "mod" in cards[x]:
                                 if not first_match:
                                     first_match.update({cards[x]["mod"]["name"]: card})
@@ -310,8 +373,7 @@ async def find(channel, tokenized_message):
                                     if len(other_results) < 3:
                                         other_results.update({card["mod"]: card["name"]})
                     else:
-                        regex = re.compile(tokenized_message[1])
-                        if regex.search(card["description"].lower()):
+                        if regex.search(card[search_field].lower()):
                             if "mod" in cards[x]:
                                 if not first_match:
                                     first_match.update({cards[x]["mod"]["name"]: card})
@@ -339,12 +401,7 @@ async def find(channel, tokenized_message):
                         message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
                 await channel.send(message)
                 return
-            if len(tokenized_message) == 3:
-                await channel.send(
-                    f"No card with {tokenized_message[2]} found in {tokenized_message[1]}."
-                )
-            else:
-                await channel.send(f"No card with {tokenized_message[1]} found.")
+            await channel.send(failure)
     except TimeoutError:
         await channel.send("Unable to find a match in time!")
 
