@@ -1,0 +1,1251 @@
+{
+  "mod": {
+    "name": "Arcane Archer",
+    "version": "0.0.2",
+    "authors": ["Tony Youssef"],
+    "credits": "",
+    "description": "Combines the power of archery and magic.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Arcane_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Arcane_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Long Shot",
+      "color": "Arcane_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nALL enemies lose 2 Strength this turn."
+    },
+    {
+      "name": "Long Shot+",
+      "color": "Arcane_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nALL enemies lose 3 Strength this turn."
+    },
+    {
+      "name": "Strike",
+      "color": "Arcane_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Arcane_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Bleeding Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 1 arcanearcher:Shred."
+    },
+    {
+      "name": "Bleeding Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 2 arcanearcher:Shred."
+    },
+    {
+      "name": "Crushing Fist",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 3 damage.\nApply 3 arcanearcher:Shred.\nApply 3 arcanearcher:Shrink.\nExhaust."
+    },
+    {
+      "name": "Crushing Fist+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 3 damage.\nApply 3 arcanearcher:Shred.\nApply 3 arcanearcher:Shrink."
+    },
+    {
+      "name": "Fire Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDeal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Fire Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDeal 4 damage to ALL enemies."
+    },
+    {
+      "name": "Frost Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "Frost Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Identify",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put a card from your discard pile on top of your draw pile 2 times."
+    },
+    {
+      "name": "Identify+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put a card from your discard pile on top of your draw pile 3 times."
+    },
+    {
+      "name": "Leaping Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 3 Block.\n( arcanearcher:Momentum: Gain 3 Block again.)\nDeal 6 damage."
+    },
+    {
+      "name": "Leaping Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 6 Block.\n( arcanearcher:Momentum: Gain 6 Block again.)\nDeal 6 damage."
+    },
+    {
+      "name": "Mind Ray",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to the number of cards in your hand + 0.\n(Deals 0 damage.)"
+    },
+    {
+      "name": "Mind Ray+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to the number of cards in your hand + 2.\n(Deals 0 damage.)"
+    },
+    {
+      "name": "Pavise",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nGain 1 arcanearcher:Quiver."
+    },
+    {
+      "name": "Pavise+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nGain 1 arcanearcher:Quiver."
+    },
+    {
+      "name": "Poison Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 8 Poison.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Poison Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 12 Poison.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Quivering Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 2 arcanearcher:Quiver."
+    },
+    {
+      "name": "Quivering Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGain 2 arcanearcher:Quiver."
+    },
+    {
+      "name": "Raining Shafts",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Raining Shafts+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, deal 15 damage to ALL enemies."
+    },
+    {
+      "name": "Rest",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Obtain 1 arcanearcher:Rest potions. Exhaust."
+    },
+    {
+      "name": "Rest+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Obtain 2 arcanearcher:Rest potions. Exhaust."
+    },
+    {
+      "name": "Shattering Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Shattering Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Shrink",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 arcanearcher:Shrink."
+    },
+    {
+      "name": "Shrink+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nApply 1 arcanearcher:Shrink."
+    },
+    {
+      "name": "Snecko Mask",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko. Gain 7 Block. Apply 1 Vulnerable to each enemy that attacks you this turn."
+    },
+    {
+      "name": "Snecko Mask+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko. Gain 10 Block. Apply 1 Vulnerable to each enemy that attacks you this turn."
+    },
+    {
+      "name": "Speed",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 temporary Dexterity."
+    },
+    {
+      "name": "Speed+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 temporary Dexterity."
+    },
+    {
+      "name": "Sprint",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies lose 3 Strength this turn.\n( arcanearcher:Momentum: Draw 3 cards.)"
+    },
+    {
+      "name": "Sprint+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies lose 4 Strength this turn.\n( arcanearcher:Momentum: Draw 4 cards.)"
+    },
+    {
+      "name": "Stop Drop Roll",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 4 Block. At the start of your next 2 turns, gain 4 Block."
+    },
+    {
+      "name": "Stop Drop Roll+",
+      "color": "Arcane_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 6 Block. At the start of your next 2 turns, gain 6 Block."
+    },
+    {
+      "name": "Acid Rain",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 6 HP. Apply 6 Poison to ALL enemies."
+    },
+    {
+      "name": "Acid Rain+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 3 HP. Apply 6 Poison to ALL enemies."
+    },
+    {
+      "name": "Aim",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "An Attack in your hand costs 0 this turn. Exhaust."
+    },
+    {
+      "name": "Aim+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "An Attack in your hand costs 0 this turn."
+    },
+    {
+      "name": "Bag of Holding",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 random Attacks into your hand. They cost 0 this turn.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Bag of Holding+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 3 random Attacks into your hand. They cost 0 this turn.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Bloodthirst",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you use or destroy a potion, gain 1 Strength."
+    },
+    {
+      "name": "Bloodthirst+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you use or destroy a potion, gain 2 Strength."
+    },
+    {
+      "name": "Boast",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, gain 2 Block."
+    },
+    {
+      "name": "Boast+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, gain 3 Block."
+    },
+    {
+      "name": "Bolt of Wonder",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko.\nIn a random (1-3) number of turns, deal a random (1- 60) amount of damage to a random enemy."
+    },
+    {
+      "name": "Bolt of Wonder+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko.\nIn a random (1-3) number of turns, deal a random (1- 99) amount of damage to a random enemy."
+    },
+    {
+      "name": "Catch Arrows",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you are attacked this turn, draw a card."
+    },
+    {
+      "name": "Catch Arrows+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you are attacked this turn, draw a card."
+    },
+    {
+      "name": "Clairvoyance",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle your discard pile into your draw pile. Scry 6."
+    },
+    {
+      "name": "Clairvoyance+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle your discard pile into your draw pile. Scry 8."
+    },
+    {
+      "name": "Color Spray",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 random debuff to each enemy."
+    },
+    {
+      "name": "Color Spray+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 random debuff to each enemy."
+    },
+    {
+      "name": "Control Weather",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Artifact.\nApply 1 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Control Weather+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Artifact.\nApply 2 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Energy Drain",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to a random enemy twice.\n( arcanearcher:Momentum:\nGain [E] [E] .)\nExhaust."
+    },
+    {
+      "name": "Energy Drain+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to a random enemy twice.\n( arcanearcher:Momentum:\nGain [E] [E] .)\nExhaust."
+    },
+    {
+      "name": "Enlarge Self",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\n( arcanearcher:Momentum: Gain 2 Strength.)"
+    },
+    {
+      "name": "Enlarge Self+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\n( arcanearcher:Momentum: Gain 3 Strength.)"
+    },
+    {
+      "name": "Fireball",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 30 damage to ALL enemies."
+    },
+    {
+      "name": "Fireball+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 40 damage to ALL enemies."
+    },
+    {
+      "name": "Fletching",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, gain 1 arcanearcher:Quiver."
+    },
+    {
+      "name": "Fletching+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of your turn, gain 1 arcanearcher:Quiver."
+    },
+    {
+      "name": "Forget",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nExhaust your hand.\nExhaust."
+    },
+    {
+      "name": "Forget+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust your hand.\nExhaust."
+    },
+    {
+      "name": "Free Shot",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you refill your arcanearcher:Quiver, deal 10 damage to a random enemy."
+    },
+    {
+      "name": "Free Shot+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you refill your arcanearcher:Quiver, deal 14 damage to a random enemy."
+    },
+    {
+      "name": "Full Quiver",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 arcanearcher:Quiver."
+    },
+    {
+      "name": "Full Quiver+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 arcanearcher:Quiver."
+    },
+    {
+      "name": "Illusory Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Illusory Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Illusory Wall",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Illusory Wall+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Lucky Miss",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko.\nGain 10 Block.\nGain 1 arcanearcher:Quiver."
+    },
+    {
+      "name": "Lucky Miss+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko.\nGain 13 Block.\nGain 1 arcanearcher:Quiver."
+    },
+    {
+      "name": "Lucky Shot",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Snecko.\nDeal 12 damage.\nGain 1 arcanearcher:Quiver."
+    },
+    {
+      "name": "Lucky Shot+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Snecko.\nDeal 15 damage.\nGain 1 arcanearcher:Quiver."
+    },
+    {
+      "name": "Oversleep",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Obtain a arcanearcher:Rest potion. Add a Void into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Oversleep+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nObtain a arcanearcher:Rest potion. Add a Void into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Perception",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an Attack, gain 4 Block.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Perception+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an Attack, gain 6 Block.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Phaser",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Innate.\nDeal 15 damage.\nPut this card on top of your draw pile."
+    },
+    {
+      "name": "Phaser+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Innate.\nDeal 19 damage.\nPut this card on top of your draw pile."
+    },
+    {
+      "name": "Provisions",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw cards until your hand is full.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Provisions+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw cards until your hand is full.\nGain [E] .\narcanearcher:Hoard."
+    },
+    {
+      "name": "Rain of Embers",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage to a random enemy for each turn you had.\n(Had 0 turns.)"
+    },
+    {
+      "name": "Rain of Embers+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to a random enemy for each turn you had.\n(Had 0 turns.)"
+    },
+    {
+      "name": "Range",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies lose 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Range+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies lose 3 Strength.\nExhaust."
+    },
+    {
+      "name": "Shoot and Loot",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. If this kills an enemy, obtain a arcanearcher:Rest potion.\nExhaust."
+    },
+    {
+      "name": "Shoot and Loot+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. If this kills an enemy, obtain a arcanearcher:Rest potion.\nExhaust."
+    },
+    {
+      "name": "Slime Armor",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 4 Plated Armor. Add 4 Slimed into your discard pile."
+    },
+    {
+      "name": "Slime Armor+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 5 Plated Armor. Add 4 Slimed into your discard pile."
+    },
+    {
+      "name": "Snecko Armor",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "X",
+      "description": "Snecko.\nGain 3 Plated Armor."
+    },
+    {
+      "name": "Snecko Armor+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "X",
+      "description": "Snecko.\nGain 4 Plated Armor."
+    },
+    {
+      "name": "Stopwatch",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block. If you play 3 Attacks this turn, gain 1 Dexterity."
+    },
+    {
+      "name": "Stopwatch+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. If you play 3 Attacks this turn, gain 1 Dexterity."
+    },
+    {
+      "name": "Strafe",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage to ALL enemies.\nWhenever you are attacked this turn, deal 3 damage back."
+    },
+    {
+      "name": "Strafe+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage to ALL enemies.\nWhenever you are attacked this turn, deal 4 damage back."
+    },
+    {
+      "name": "Tiny Hut",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next time you use or destroy a potion this combat, gain 7 Block."
+    },
+    {
+      "name": "Tiny Hut+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next time you use or destroy a potion this combat, gain 10 Block."
+    },
+    {
+      "name": "Tragic Missle",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\n( arcanearcher:Momentum: Deal 13 damage again.)"
+    },
+    {
+      "name": "Tragic Missle+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\n( arcanearcher:Momentum: Deal 17 damage again.)"
+    },
+    {
+      "name": "Vampiric Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage.\nGain 6 HP.\nExhaust."
+    },
+    {
+      "name": "Vampiric Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nGain 8 HP.\nExhaust."
+    },
+    {
+      "name": "Warp Metal",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all Block from the enemy. Gain that much Block.\nDraw a card."
+    },
+    {
+      "name": "Warp Metal+",
+      "color": "Arcane_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all Block from the enemy. Gain that much Block.\nDraw a card."
+    },
+    {
+      "name": "Death Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage. If the enemy has Weak, Vulnerable, arcanearcher:Shred, and arcanearcher:Shrink, deal 50 damage instead."
+    },
+    {
+      "name": "Death Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage. If the enemy has Weak, Vulnerable, arcanearcher:Shred, and arcanearcher:Shrink, deal 100 damage instead."
+    },
+    {
+      "name": "Double Dash",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Gain 20 Block.\nDeal 20 damage."
+    },
+    {
+      "name": "Double Dash+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Gain 26 Block.\nDeal 26 damage."
+    },
+    {
+      "name": "Energy",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Obtain an Energy potion.\nExhaust."
+    },
+    {
+      "name": "Energy+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Obtain an Energy potion.\nExhaust."
+    },
+    {
+      "name": "Finger of Death",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "If the enemy has 15 times X or less HP, set their HP to 0."
+    },
+    {
+      "name": "Finger of Death+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "If the enemy has 20 times X or less HP, set their HP to 0."
+    },
+    {
+      "name": "For the Hoard",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card with arcanearcher:Hoard you've played this act. Add a copy of it into your hand.\narcanearcher:Hoard."
+    },
+    {
+      "name": "For the Hoard+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card with arcanearcher:Hoard you've played this act. Add a copy of it into your hand.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Full Cure",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the end of combat, heal to full HP.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Full Cure+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Ethereal.\nAt the end of combat, heal to full HP.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Giga Strike",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Deal 60 damage."
+    },
+    {
+      "name": "Giga Strike+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Deal 72 damage."
+    },
+    {
+      "name": "Hourglass",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 5 Dexterity.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Hourglass+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 7 Dexterity.\narcanearcher:Hoard."
+    },
+    {
+      "name": "Loadout",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Quiver.\nObtain a 6 HP potion.\nExhaust."
+    },
+    {
+      "name": "Loadout+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Quiver.\nObtain a 6 HP potion.\nExhaust."
+    },
+    {
+      "name": "Monster Form",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you use or destroy a potion, gain [E] [E] ."
+    },
+    {
+      "name": "Monster Form+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you use or destroy a potion, gain [E] [E] [E] ."
+    },
+    {
+      "name": "Multiclassing",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 2 delayed Weak.\nAt the start of your turn, gain [E]."
+    },
+    {
+      "name": "Multiclassing+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 delayed Weak.\nAt the start of your turn, gain [E]."
+    },
+    {
+      "name": "Nemesis Arrow",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\n( arcanearcher:Momentum: Gain 1 Intangible.)\nExhaust."
+    },
+    {
+      "name": "Nemesis Arrow+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\n( arcanearcher:Momentum: Gain 1 Intangible.)\nExhaust."
+    },
+    {
+      "name": "Open Wounds",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage. Apply that much arcanearcher:Shred."
+    },
+    {
+      "name": "Open Wounds+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage. Apply that much arcanearcher:Shred."
+    },
+    {
+      "name": "Power Armor",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 Block. This amount is doubled X times.\nExhaust."
+    },
+    {
+      "name": "Power Armor+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 5 Block. This amount is doubled X times.\nExhaust."
+    },
+    {
+      "name": "Sadism",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you apply a debuff to an enemy, they take 8 damage."
+    },
+    {
+      "name": "Sadism+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you apply a debuff to an enemy, they take 10 damage."
+    },
+    {
+      "name": "Snake Eyes",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko.\nGain [E] [E] [E] .\nExhaust."
+    },
+    {
+      "name": "Snake Eyes+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Snecko.\nGain [E] [E] [E] [E] .\nExhaust."
+    },
+    {
+      "name": "THAC0",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Your Attacks deal 50% more damage."
+    },
+    {
+      "name": "THAC0+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your Attacks deal 50% more damage."
+    },
+    {
+      "name": "Wing Strike",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. If this wins the combat, you may ignore paths when choosing the next room to travel to."
+    },
+    {
+      "name": "Wing Strike+",
+      "color": "Arcane_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. If this wins the combat, you may ignore paths when choosing the next room to travel to."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Pre-igniter",
+      "tier": "Starter",
+      "pool": "Arcane_orange",
+      "description": "At the start of your first combat, obtain up to 4 Flame potions.",
+      "flavorText": "I have come to bring fire on the earth, and how I wish it were already kindled! - Luke 12:49"
+    }
+  ],
+  "potions": [
+    {
+      "name": "CureLite Potion",
+      "rarity": "Placeholder",
+      "description": "Heal 6 HP."
+    },
+    {
+      "name": "Flame Potion",
+      "rarity": "Placeholder",
+      "description": "Deal 10 damage."
+    },
+    {
+      "name": "Rest Potion",
+      "rarity": "Placeholder",
+      "description": "Gain 1 Energy."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Arcane Archer",
+      "type": "Player",
+      "minHP": "76",
+      "maxHP": "76"
+    }
+  ],
+  "keywords": [
+  ]
+}
