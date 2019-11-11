@@ -349,11 +349,11 @@ async def find(channel, tokenized_message):
                 
             for x in range(len(cards)):
                 for card in cards[x]["cards"]:
-                    if cost is not None and card["cost"] != cost:
+                    if cost is not None and card["cost"].lower() != cost:
                         continue
-                    if type is not None and card["type"] != type:
+                    if type is not None and card["type"].lower() != type:
                         continue
-                    if rarity is not None and card["rarity"] != rarity:
+                    if rarity is not None and card["rarity"].lower() != rarity:
                         continue
                     
                     if len(tokenized_message) == 3:
