@@ -1,0 +1,236 @@
+{
+  "mod": {
+    "name": "Quarter Circle Forward PUNCH!",
+    "version": "0.17.0-UnstableGithub",
+    "authors": ["Levender"],
+    "credits": "Current translations:\r\n English (Levender) \r\n Simplified Chinese (Rita Bernstein) \r\n \r\nOriginal creators of original CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) images that \r\nwere then modified by myself for the mod: \r\n \r\nLorc (http://lorcblog.blogspot.com/) - Basis of a lot of boots, Duffel Bag, Fighting Gloves, Handcuffs, Killian Engine Alpha, White Boots and Handcuffs. \r\n \r\nDelapouite (http://delapouite.com/) - Basis of Cattail, Dark Gi, Mixed Paint Bucket, Red Gi, Red Headband, School Backpack and Wrestler's Cloak.\r\n \r\nsbed (https://opengameart.org/users/sbed) - Basis of Necklace of Skulls. \r\n \r\nAll images above came from http://game-icons.net. \r\n \r\nBig thanks for all people who helped with testing, suggestions, ideas and criticism! More detailed thanks at https://github.com/Clauvin/Quarter_Circle_Forward_PUNCH_Mod",
+    "description": "A Slay The Spire mod, inspired mostly by SF2's main characters (also other fighting games). \r\n \r\nCurrently it adds 32 relics (two need The Artist Mod, one is Custom Mode only), 12 custom game modifiers, 1 event and 1 potion, all in English and simplified Chinese. \r\n \r\nv1.0 will have 34+ relics. \r\n \r\nMost of the images in this mod are temporary and will be substituted/improved on v1.0.",
+    "mts_version": "3.11.0",
+    "sts_version": "07-17-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": ["infinitespire","TheArtist"]
+  },
+  "cards": [
+  ],
+  "relics": [
+    {
+      "name": "\"Strongest\" Style Manual",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of your turn, add a random qcfpunch:Weakest card to your hand.\nYour max hand size is increased by 1.",
+      "flavorText": "\"My god, I must unlearn what I've read. WHY WOULD ANYONE FIGHT LIKE THIS?!\""
+    },
+    {
+      "name": "Army Boots",
+      "tier": "Common",
+      "pool": "",
+      "description": "The first time your Block is broken each combat, lose 1 Frail, Weak and Vulnerable.",
+      "flavorText": "Excellent grip. Sadly, not your size."
+    },
+    {
+      "name": "Black Training Shirt",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of combat, gain 2 Strength. The first time each combat, when you use a Skill card lose 2 Strength.",
+      "flavorText": "Training is important, even in the Spire."
+    },
+    {
+      "name": "Broken Tusk",
+      "tier": "Common",
+      "pool": "",
+      "description": "The first Curse or Status drawn each turn gives one extra 2 damage hit to your Attacks that turn.",
+      "flavorText": "Some things are very hard to forgive."
+    },
+    {
+      "name": "Red Beret",
+      "tier": "Common",
+      "pool": "",
+      "description": "Each combat, the first time you gain Block, draw 2 cards.",
+      "flavorText": "Used for guiding the enemy attention, then repositioning yourself."
+    },
+    {
+      "name": "Red Headband",
+      "tier": "Common",
+      "pool": "",
+      "description": "The first time you draw a Status or Curse each turn, discard it and draw a card.",
+      "flavorText": "Wearing it gives some focus against distractions."
+    },
+    {
+      "name": "Wrestler's Cloak",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of Elite and Boss fights, gain 5 Temporary_HP. Right click during your turn to gain 5 Temporary_HP and lose this relic.",
+      "flavorText": "Never underestimate the power of a good entrance before a fight."
+    },
+    {
+      "name": "Chain With Nametags",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you gain Block, gain 34% of it as Temporary_HP instead.",
+      "flavorText": "A surprisingly resilient chain with two faded nametags."
+    },
+    {
+      "name": "Green Leotard",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "For each card drawn from effects, gain 2 Block.",
+      "flavorText": "Very unusual, but excellent for moving around unhindered, since nothing can get on the way."
+    },
+    {
+      "name": "Necklace of Skulls",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "When you remove a card, Upgrade a card in your deck. (Won't work with the Vampires event by now)",
+      "flavorText": "\"Hatred begets weakness. Cultivate your heart.\" Who said that?"
+    },
+    {
+      "name": "Red Gi",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "If you play 3 Attacks in a row this turn, draw 1 card. If it's an Attack, it costs 1 less this turn.",
+      "flavorText": "Made of good fabric that doesn't hinder movements and inspires to be offensive."
+    },
+    {
+      "name": "School Backpack",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "The next 5 combats drop an additional card reward of a non-modded color other than your own.",
+      "flavorText": "Full of physical mementos from a world tour."
+    },
+    {
+      "name": "Spiky Bracers",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Each combat, the first 2 Skills played that cost 2 or more cost 1 less.",
+      "flavorText": "Good for balancing your body weight, but the pointy spikes make you use them sparingly."
+    },
+    {
+      "name": "White Boots",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Every 3 Attacks drawn, deal 4 damage to the last single enemy attacked. Every upgraded Attack drawn, deal 1 damage to that enemy.",
+      "flavorText": "Very, very worn shoes... as much from hitting as from walking."
+    },
+    {
+      "name": "Wild Herbs Ointment",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "If you start a combat with more than 30% Max HP and end it with, at most, less 30% Max HP, gain 4 Max HP.",
+      "flavorText": "Made from herbs commonly found in siberian climate. Good for deep cuts and lacerations."
+    },
+    {
+      "name": "Combat Fatigues",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of your turn, if you gained Block and didn't play Attacks last turn, gain 2 Temporary Strength and your next Attack deals double damage.",
+      "flavorText": "\"Not made for peace. Remember to take them off eventually, will ya?\" - Ranwid"
+    },
+    {
+      "name": "Duffel Bag",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the next 4 non event non boss fights won, gain respectively 1 Bandage Up, 1 Panacea and at the last 2, 1 random common relic.",
+      "flavorText": "Very practical when wandering."
+    },
+    {
+      "name": "Fighting Gloves",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Starts with 1 charge. At Rest Sites, you can use all charges to Upgrade a card per charge, as a free choice (if chosen first). Each 4 rooms, gain 1 charge.",
+      "flavorText": "\"Inspiring! Who wants to train with me?\" - Ranwid."
+    },
+    {
+      "name": "Handcuffs",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Each combat, the first enemy that receives unblocked damage gains 2 qcfpunch:Unsteady and is qcfpunch:Stunned for 1 turn.",
+      "flavorText": "An old tool used for those who once fought for law and order."
+    },
+    {
+      "name": "Lotus Statue",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Right click at a Rest Site before picking an option to remove at most 1 card per charge spent. Gain 1 charge when you remove a card without using this relic's effect. (Won't work with the Vampires event by now)",
+      "flavorText": "\"Meditate now... Then the answers you seek will be revealed.\""
+    },
+    {
+      "name": "Red Cyclone Teachings",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Each combat, the first 2 Attacks used that cost 3-or-more Stun their target(s), then Exhaust.",
+      "flavorText": "\"'Because in Mother Russia, YOU nail the bears down!' ...what's Russia, what are bears and what's a mother?\" - Ranwid."
+    },
+    {
+      "name": "Special Ops Insignia",
+      "tier": "Rare",
+      "pool": "Green",
+      "description": "Once each turn, if you draw 4 cards by effects in a turn, add Setup and Forethought with Ethereal and Exhaust to your hand.",
+      "flavorText": "A solid set-up, a knack for improvisation and a decisive resolution are all part of the job."
+    },
+    {
+      "name": "Unceasing Flame",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Right click during combat: your next Attack's single target loses HP as the damage caused (min of 2 HP). Recharges every 6 Attacks.",
+      "flavorText": "\"Glorious! A divine fire of a daring dragon, if the ancient texts are right.\" - Ranwid."
+    },
+    {
+      "name": "Extra Skeleton",
+      "tier": "Special",
+      "pool": "",
+      "description": "Gain 1 Buffer every 5 turns.",
+      "flavorText": "It's not the REAL skeleton breaking, so it's fine. Really!"
+    },
+    {
+      "name": "Neverending Blood",
+      "tier": "Special",
+      "pool": "",
+      "description": "The first 7 times you lose HP, increase your Regen at most to 1/3 of the lost HP. Regains 2 uses when healing outside of combat.",
+      "flavorText": "There's so much blood inside now, that it almost feels like it can leak out."
+    },
+    {
+      "name": "Rainbow Brush",
+      "tier": "Special",
+      "pool": "",
+      "description": "Every 5 cards played, add this turn's randomized card to your hand. It costs 1-less and has Ethereal (won't cost 0) or Exhaust, unless it's a Status or Curse.",
+      "flavorText": "Red Blue paints, the clouds pierce Darkness blocks twin star Nothing until the cycle restarts"
+    },
+    {
+      "name": "Crimson Sash",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn. You recover 50% less HP from healing.",
+      "flavorText": "A grim reminder that no matter how skilled, no one avoids their own end forever."
+    },
+    {
+      "name": "Dark Gi",
+      "tier": "Boss",
+      "pool": "",
+      "description": "When you spend [E] to play a card, draw a card. Lose 35% of your Max HP.",
+      "flavorText": "A master of the fist's power is hard to wield."
+    },
+    {
+      "name": "Killian Engine Alpha",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, obtain up to 5 from 25 random cards of other classes. Then, remove the same amount of cards from your deck.",
+      "flavorText": "Here, a vast amount of fighting information rests."
+    },
+    {
+      "name": "Cattail",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Upon pickup and after 7 rooms, obtain 1 Smoke Bomb.",
+      "flavorText": "It feels like it shouldn't be here, and that meaning becomes solid in your hands."
+    }
+  ],
+  "potions": [
+    {
+      "name": "New Challenger Coin",
+      "rarity": "Rare",
+      "description": "The next floor non-combat rooms you can normally go will be, instead, Elite rooms."
+    }
+  ],
+  "keywords": [
+  ]
+}
