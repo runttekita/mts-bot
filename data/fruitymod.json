@@ -1,0 +1,1298 @@
+{
+  "mod": {
+    "name": "FruityMod",
+    "version": "1.0.0",
+    "authors": ["Fruitstrike","DarkVexon","ColdRain451","test447","fiiiiilth","Blank The Evil","Pal","Grumpai","Jrawly","Butcherberries"],
+    "credits": "",
+    "description": "Adds The Seeker as a new playable character.",
+    "mts_version": "3.1.0",
+    "sts_version": "08-30-2018",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Astral Haze",
+      "color": "Seeker_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal. The first time each enemy attacks you this turn, apply 2 Vulnerable and 2 Weak to it."
+    },
+    {
+      "name": "Astral Haze+",
+      "color": "Seeker_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal. The first time each enemy attacks you this turn, apply 3 Vulnerable and 3 Weak to it."
+    },
+    {
+      "name": "Defend",
+      "color": "Seeker_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Seeker_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Seeker_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Seeker_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Dazed",
+      "color": "Seeker_purple",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Ethereal.\nGain 0 Block.\nDeal 0 damage."
+    },
+    {
+      "name": "Arcane Armor",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block. Every time you draw this card, increase its Block by 2 for this combat."
+    },
+    {
+      "name": "Arcane Armor+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block. Every time you draw this card, increase its Block by 2 for this combat."
+    },
+    {
+      "name": "Channel",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nTop-Cycle a card.\nIf it is Ethereal, deal 7 more damage."
+    },
+    {
+      "name": "Channel+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nTop-Cycle a card.\nIf it is Ethereal, deal 10 more damage."
+    },
+    {
+      "name": "Comet",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage for each other card in your hand."
+    },
+    {
+      "name": "Comet+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage for each other card in your hand."
+    },
+    {
+      "name": "Convergence",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. When you draw this card, upgrade a card in your hand."
+    },
+    {
+      "name": "Convergence+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. When you draw this card, draw another card and upgrade a card in your hand."
+    },
+    {
+      "name": "Disruption Field",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nRecycle a Dazed."
+    },
+    {
+      "name": "Disruption Field+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nRecycle a Dazed."
+    },
+    {
+      "name": "Essence Dart",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played if you have an Ethereal card in your hand.\nDeal 11 damage."
+    },
+    {
+      "name": "Essence Dart+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played if you have an Ethereal card in your hand.\nDeal 15 damage."
+    },
+    {
+      "name": "Flicker",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reverse the effects of Frail, Weak, and Vulnerable on you for 1 turn."
+    },
+    {
+      "name": "Flicker+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reverse the effects of Frail, Weak, and Vulnerable on you for 2 turns."
+    },
+    {
+      "name": "Flux",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nGain 6 Block.\nDeal 6 damage."
+    },
+    {
+      "name": "Flux+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nGain 8 Block.\nDeal 8 damage."
+    },
+    {
+      "name": "Genesis",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 6 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Genesis+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 9 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Irradiate",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage and apply 1 Weak and 1 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Irradiate+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage and apply 2 Weak and 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Magic Missile",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 3 damage 4 times. Exhaust."
+    },
+    {
+      "name": "Magic Missile+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 3 damage 5 times. Exhaust."
+    },
+    {
+      "name": "Nebula",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block for each other card in your hand."
+    },
+    {
+      "name": "Nebula+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block for each other card in your hand."
+    },
+    {
+      "name": "Null Storm",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Recycle a Dazed. Deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Null Storm+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Recycle a Dazed. Deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Phase Coil",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage. Every time you draw this card, increase its damage by 3 for this combat."
+    },
+    {
+      "name": "Phase Coil+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage. Every time you draw this card, increase its damage by 3 for this combat."
+    },
+    {
+      "name": "Prismatic Sphere",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 7 damage.\nDraw 2 cards."
+    },
+    {
+      "name": "Prismatic Sphere+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 11 damage.\nDraw 2 cards."
+    },
+    {
+      "name": "Pulse Barrier",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nGain 2 Frail."
+    },
+    {
+      "name": "Pulse Barrier+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Block.\nGain 2 Frail."
+    },
+    {
+      "name": "Retrograde",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage. At the end of the turn, Recycle a copy of this card."
+    },
+    {
+      "name": "Retrograde+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage. At the end of the turn, Recycle a copy of this card."
+    },
+    {
+      "name": "Surge",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you are Weak, Frail, or Vulnerable, deal 7 damage again."
+    },
+    {
+      "name": "Surge+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf you are Weak, Frail, or Vulnerable, deal 10 damage again."
+    },
+    {
+      "name": "Unstable Orb",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 2 Weak."
+    },
+    {
+      "name": "Unstable Orb+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 damage.\nGain 2 Weak."
+    },
+    {
+      "name": "Void Ray",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Recycle a Dazed. Deal 10 damage."
+    },
+    {
+      "name": "Void Ray+",
+      "color": "Seeker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Recycle a Dazed. Deal 14 damage."
+    },
+    {
+      "name": "Anomaly",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you apply Vulnerable or Weak to an enemy, apply 1 additional stack."
+    },
+    {
+      "name": "Anomaly+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you apply Vulnerable or Weak to an enemy, apply 2 additional stacks."
+    },
+    {
+      "name": "Archives",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] for every 10 cards in your draw pile."
+    },
+    {
+      "name": "Archives+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] for every 7 cards in your draw pile."
+    },
+    {
+      "name": "Brainstorm",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Recycle this card, your discard pile and a Dazed. Next turn, draw 1 more card."
+    },
+    {
+      "name": "Brainstorm+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Recycle this card, your discard pile and a Dazed. Next turn, draw 2 more cards."
+    },
+    {
+      "name": "Coalescence",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of turn, gain 2 Block for each stack of Frail, Weak, or Vulnerable you have."
+    },
+    {
+      "name": "Coalescence+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of turn, gain 3 Block for each stack of Frail, Weak, or Vulnerable you have."
+    },
+    {
+      "name": "Corona",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, draw 1 card. Whenever you draw this card, increase that amount by 1 this combat."
+    },
+    {
+      "name": "Corona+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, draw 1 card. Whenever you draw this card, increase that amount by 1 this combat."
+    },
+    {
+      "name": "Creativity",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, Recycle a Dazed, then draw a card."
+    },
+    {
+      "name": "Creativity+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, Recycle a Dazed, then draw a card."
+    },
+    {
+      "name": "Dark Matter",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage for each Exhausted Ethereal card this combat."
+    },
+    {
+      "name": "Dark Matter+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage for each Exhausted Ethereal card this combat."
+    },
+    {
+      "name": "Disperse",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nGain 1 Artifact."
+    },
+    {
+      "name": "Disperse+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nGain 1 Artifact."
+    },
+    {
+      "name": "Enigma",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Dazed can now be played to gain 1 Block and deal 1 damage to ALL enemies."
+    },
+    {
+      "name": "Enigma+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Dazed can now be played to gain 2 Block and deal 2 damage to ALL enemies."
+    },
+    {
+      "name": "Entropy",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal. Enemy loses 2 Strength this turn, increasing by 1 each time you draw this card this combat."
+    },
+    {
+      "name": "Entropy+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal. Enemy loses 3 Strength this turn, increasing by 1 each time you draw this card this combat."
+    },
+    {
+      "name": "Equinox",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if your discard pile is empty or your draw pile is empty. Deal 20 damage."
+    },
+    {
+      "name": "Equinox+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if your discard pile is empty or your draw pile is empty. Deal 30 damage."
+    },
+    {
+      "name": "Ether Blast",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal. Deal 6 damage, plus 2 damage for ALL of your Ethereal cards."
+    },
+    {
+      "name": "Ether Blast+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal. Deal 10 damage, plus 3 damage for ALL of your Ethereal cards."
+    },
+    {
+      "name": "Event Horizon",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each enemy loses HP equal to the amount of Weak and Vulnerable it has at the start of its turn."
+    },
+    {
+      "name": "Event Horizon+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Each enemy loses HP equal to the amount of Weak and Vulnerable it has at the start of its turn."
+    },
+    {
+      "name": "Flare",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Flare+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Flow",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nRetain all excess Energy at the end of turn. Draw 1 extra card next turn."
+    },
+    {
+      "name": "Flow+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nRetain all excess Energy at the end of turn. Draw 1 extra card next turn."
+    },
+    {
+      "name": "Gravity Well",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy is Weak, it loses 3 Strength. Exhaust."
+    },
+    {
+      "name": "Gravity Well+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy is Weak, it loses 4 Strength. Exhaust."
+    },
+    {
+      "name": "Hypothesis",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card. If it is Ethereal, add a Dazed to your hand and draw another card."
+    },
+    {
+      "name": "Hypothesis+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card. If it is Ethereal, add a Dazed to your hand and draw 2 more cards."
+    },
+    {
+      "name": "Illuminate",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Create 1 copy of an Ethereal card in your hand. Top-Cycle that copy."
+    },
+    {
+      "name": "Illuminate+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Create 2 copies of an Ethereal card in your hand. Top-Cycle those copies."
+    },
+    {
+      "name": "Magnetize",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block.\nApply 1 Weak."
+    },
+    {
+      "name": "Magnetize+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nApply 2 Weak."
+    },
+    {
+      "name": "Nova",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 24 damage to ALL enemies."
+    },
+    {
+      "name": "Nova+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage to ALL enemies."
+    },
+    {
+      "name": "Overload",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Vulnerable. Gain 2 Energy, decaying by 1 each time this card is played this combat."
+    },
+    {
+      "name": "Overload+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Vulnerable. Gain 3 Energy, decaying by 1 each time this card is played this combat."
+    },
+    {
+      "name": "Plasma Wave",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Spend all [E]. Deal 3 damage to ALL enemies X times. Vulnerable enemies take double damage."
+    },
+    {
+      "name": "Plasma Wave+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Spend all [E]. Deal 5 damage to ALL enemies X times. Vulnerable enemies take double damage."
+    },
+    {
+      "name": "Shimmer",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nAll cards in hand become Ethereal.\nExhaust."
+    },
+    {
+      "name": "Shimmer+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 16 Block.\nAll cards in hand become Ethereal.\nExhaust."
+    },
+    {
+      "name": "Singularity",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Ethereal.\nGain 12 Block.\nDeal 12 damage.\nNext turn gain [E]."
+    },
+    {
+      "name": "Singularity+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Ethereal.\nGain 15 Block.\nDeal 15 damage.\nNext turn gain [E]."
+    },
+    {
+      "name": "Siphon Power",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nApply 1 Vulnerable.\nGain 1 Strength."
+    },
+    {
+      "name": "Siphon Power+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nApply 2 Vulnerable.\nGain 1 Strength."
+    },
+    {
+      "name": "Siphon Speed",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 Block.\nApply 1 Weak.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Siphon Speed+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nApply 2 Weak.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Starburst",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage twice to one enemy and once to ALL other enemies."
+    },
+    {
+      "name": "Starburst+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage twice to one enemy and once to ALL other enemies."
+    },
+    {
+      "name": "Stroke of Genius",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose to add a random Attack, Skill or Power to your hand.\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Stroke of Genius+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose to add a random Attack, Skill or Power to your hand.\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Syzygy",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal. Deal 5 damage to a random enemy 3 times. Recycle a Dazed. Exhaust."
+    },
+    {
+      "name": "Syzygy+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal. Deal 7 damage to a random enemy 3 times. Recycle a Dazed. Exhaust."
+    },
+    {
+      "name": "Transference",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Transfer all of your Weak and Vulnerable to an enemy. Draw a card."
+    },
+    {
+      "name": "Transference+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Transfer all of your Weak and Vulnerable to an enemy. Draw a card."
+    },
+    {
+      "name": "Umbra",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nGain 3 Block.\nIf you are Weak, Frail, or Vulnerable, repeat these effects."
+    },
+    {
+      "name": "Umbra+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 5 Block.\nIf you are Weak, Frail, or Vulnerable, repeat these effects."
+    },
+    {
+      "name": "Vacuum",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all of your Weak, Frail, and Vulnerable. Deal 4 damage per stack removed."
+    },
+    {
+      "name": "Vacuum+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all of your Weak, Frail, and Vulnerable. Deal 6 damage per stack removed."
+    },
+    {
+      "name": "Vortex",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw until your hand is full.\nTop-Cycle 4 Dazed.\nExhaust."
+    },
+    {
+      "name": "Vortex+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw until your hand is full.\nTop-Cycle 4 Dazed.\nExhaust."
+    },
+    {
+      "name": "Wormhole",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you draw an Ethereal card, deal 3 damage to a random enemy."
+    },
+    {
+      "name": "Wormhole+",
+      "color": "Seeker_purple",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you draw an Ethereal card, deal 5 damage to a random enemy."
+    },
+    {
+      "name": "Brilliance",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Recycle 3 Dazed.\nWhenever you draw a Dazed, draw 1 card."
+    },
+    {
+      "name": "Brilliance+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Recycle 3 Dazed. Whenever you draw a Dazed, draw 2 cards."
+    },
+    {
+      "name": "Chaos Form",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, Recycle a random Ethereal card."
+    },
+    {
+      "name": "Chaos Form+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, Recycle a random Ethereal card. It costs 0 until played."
+    },
+    {
+      "name": "Dimension Door",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nGain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Dimension Door+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nGain 1 Intangible."
+    },
+    {
+      "name": "Echo",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next Ethereal card is played twice."
+    },
+    {
+      "name": "Echo+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next 2 Ethereal cards are played twice."
+    },
+    {
+      "name": "Eclipse",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Top-Cycle an Exhausted Ethereal card.\nExhaust."
+    },
+    {
+      "name": "Eclipse+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Top-Cycle an Exhausted Ethereal card.\nExhaust."
+    },
+    {
+      "name": "Eureka!",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Recycle 2 Dazed. Draw 2 cards. Gain [E] [E].\nExhaust."
+    },
+    {
+      "name": "Eureka!+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Recycle 2 Dazed. Draw 3 cards. Gain [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Feedback",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all Weak and Vulnerable from an Enemy. It loses 6 HP per stack removed."
+    },
+    {
+      "name": "Feedback+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all Weak and Vulnerable from an Enemy. It loses 9 HP per stack removed."
+    },
+    {
+      "name": "Force Ripple",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 12 damage X times. Gain X Weak, X Frail, and X Vulnerable."
+    },
+    {
+      "name": "Force Ripple+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 16 damage X times. Gain X Weak, X Frail, and X Vulnerable."
+    },
+    {
+      "name": "Implosion",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 38 damage. Top-Cycle 1 card from your hand."
+    },
+    {
+      "name": "Implosion+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 48 damage. Top-Cycle 1 card from your hand."
+    },
+    {
+      "name": "Meteor Shower",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage to ALL enemies for each card in your draw pile. Exhaust."
+    },
+    {
+      "name": "Meteor Shower+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate. Deal 1 damage to ALL enemies for each card in your draw pile. Exhaust."
+    },
+    {
+      "name": "Mind Over Matter",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all Frail, Weak, and Vulnerable. Gain 5 Block, plus 3 Block for each stack removed."
+    },
+    {
+      "name": "Mind Over Matter+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all Frail, Weak, and Vulnerable. Gain 5 Block, plus 8 Block for each stack removed."
+    },
+    {
+      "name": "Nexus",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you draw a non-Ethereal Attack or Skill, Recycle an Ethereal copy of it."
+    },
+    {
+      "name": "Nexus+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw a non-Ethereal Attack or Skill, Recycle an Ethereal copy of it."
+    },
+    {
+      "name": "Periapt of Celerity",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever an Ethereal card is Exhausted, gain 1 Dexterity."
+    },
+    {
+      "name": "Periapt of Celerity+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever an Ethereal card is Exhausted, gain 1 Dexterity."
+    },
+    {
+      "name": "Periapt of Potency",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever an Ethereal card is Exhausted, gain 1 Strength."
+    },
+    {
+      "name": "Periapt of Potency+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever an Ethereal card is Exhausted, gain 1 Strength."
+    },
+    {
+      "name": "Power Overwhelming",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Strength.\nWhenever you play an attack, Recycle a Dazed."
+    },
+    {
+      "name": "Power Overwhelming+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 6 Strength.\nWhenever you play an attack, Recycle a Dazed."
+    },
+    {
+      "name": "Reflection Ward",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Block and 3 Reflect per 4 cards in your draw pile."
+    },
+    {
+      "name": "Reflection Ward+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Block and 3 Reflect per 3 cards in your draw pile."
+    },
+    {
+      "name": "Thought Raze",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all Ethereal cards in your draw pile. Deal 7 damage for each."
+    },
+    {
+      "name": "Thought Raze+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all Ethereal cards in your draw pile. Deal 10 damage for each."
+    },
+    {
+      "name": "Zenith",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "After paying this card's cost, double your remaining [E]. Exhaust."
+    },
+    {
+      "name": "Zenith+",
+      "color": "Seeker_purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "After paying this card's cost, double your remaining [E]."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Arcanosphere",
+      "tier": "Starter",
+      "pool": "Seeker_purple",
+      "description": "At the end of your turn, you may Top-Cycle 1 card.",
+      "flavorText": "The Arcanosphere is a powerful relic brought by The Seeker from the Astral Plane."
+    },
+    {
+      "name": "Rod of Negation",
+      "tier": "Common",
+      "pool": "Seeker_purple",
+      "description": "You may discard 1 card from your starting hand to gain 1 Artifact.",
+      "flavorText": "Imbued with chaotic power, this rod emits a ghastly purple glow on those around it."
+    },
+    {
+      "name": "Blueberries",
+      "tier": "Uncommon",
+      "pool": "Seeker_purple",
+      "description": "Gain 1 max HP for each Ethereal card in your deck.",
+      "flavorText": "Delicious. Very blue."
+    },
+    {
+      "name": "Paper Pengwin",
+      "tier": "Uncommon",
+      "pool": "Seeker_purple",
+      "description": "When you are Frail, Weak, or Vulnerable, gain 1 Strength and 1 Dexterity.",
+      "flavorText": "Squaaawk!"
+    },
+    {
+      "name": "Solar Egg",
+      "tier": "Uncommon",
+      "pool": "Seeker_purple",
+      "description": "Whenever you add an Ethereal card to your deck, it is Upgraded",
+      "flavorText": "An egg-shaped meteorite that fell from the sun. It glows warmly."
+    },
+    {
+      "name": "Telescope",
+      "tier": "Rare",
+      "pool": "Seeker_purple",
+      "description": "Choose any number of cards in your starting hand to gain Ethereal.",
+      "flavorText": "With this telescope, one can see further than ever before."
+    },
+    {
+      "name": "Cosmic Sieve",
+      "tier": "Boss",
+      "pool": "Seeker_purple",
+      "description": "Whenever an Ethereal card enters your Exhaust Pile, heal 1 HP.",
+      "flavorText": "Phases in and out of existence. Cool to the touch."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Seeker",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Recycle",
+      "description": "When you Recycle a card, shuffle it randomly into your draw pile."
+    },
+    {
+      "name": "Reflect",
+      "description": "Whenever you are attacked this turn, deal this amount of damage back to ALL enemies."
+    },
+    {
+      "name": "Top-cycle",
+      "description": "When you Top-Cycle a card, place it on top of your draw pile."
+    }
+  ]
+}

@@ -1,4 +1,15 @@
 {
+  "mod": {
+    "name": "The Hierophant",
+    "version": "1.6.1",
+    "authors": ["Corax"],
+    "credits": "",
+    "description": "A holy creature of grand aspirations, tested by greed. Converts its enemies through benevolence or bribery.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
   "cards": [
     {
       "name": "Church Coffers",
@@ -6,17 +17,15 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "2",
-      "description": "Draw 2 cards.\ngain [E] [E].\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Draw 2 cards.\nGain [E] [E].\nhierophant:Tithe."
     },
     {
       "name": "Church Coffers+",
       "color": "Hierophant_gold_color",
       "rarity": "Basic",
       "type": "Skill",
-      "cost": "1",
-      "description": "Draw 2 cards.\ngain [E] [E].\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "cost": "2",
+      "description": "Draw 2 cards.\nGain [E] [E] [E].\nhierophant:Tithe."
     },
     {
       "name": "Defend",
@@ -24,8 +33,7 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block.",
-      "mod": "The Hierophant"
+      "description": "Gain 5 Block."
     },
     {
       "name": "Defend+",
@@ -33,8 +41,7 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.",
-      "mod": "The Hierophant"
+      "description": "Gain 8 Block."
     },
     {
       "name": "Punish",
@@ -42,8 +49,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 8 damage.\nGain !hierophant:P! hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Deal 8 damage.\nGain !hierophant:P! hierophant:Piety."
     },
     {
       "name": "Punish+",
@@ -51,8 +57,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 12 damage.\nGain !hierophant:P! hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Deal 10 damage.\nGain !hierophant:P! hierophant:Piety."
     },
     {
       "name": "Strike",
@@ -60,8 +65,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage.",
-      "mod": "The Hierophant"
+      "description": "Deal 6 damage."
     },
     {
       "name": "Strike+",
@@ -69,8 +73,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.",
-      "mod": "The Hierophant"
+      "description": "Deal 9 damage."
     },
     {
       "name": "Auric Beam",
@@ -78,8 +81,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Lose 10% of your Gold.\nDeal that much damage.",
-      "mod": "The Hierophant"
+      "description": "Lose 10% of your Gold.\nDeal that much damage."
     },
     {
       "name": "Auric Beam+",
@@ -87,8 +89,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Lose 10% of your Gold.\nDeal that much damage.",
-      "mod": "The Hierophant"
+      "description": "Lose 10% of your Gold.\nDeal that much damage."
     },
     {
       "name": "Display Of Power",
@@ -96,8 +97,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Place a card on top of your draw pile.\nDeal damage equal to 5 times its cost.",
-      "mod": "The Hierophant"
+      "description": "Place a card on top of your draw pile.\nDeal damage equal to 5 times its cost."
     },
     {
       "name": "Display Of Power+",
@@ -105,8 +105,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Place a card on top of your draw pile.\nDeal damage equal to 8 times its cost.",
-      "mod": "The Hierophant"
+      "description": "Place a card on top of your draw pile.\nDeal damage equal to 8 times its cost."
     },
     {
       "name": "Doubloon",
@@ -114,8 +113,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 1 card.\nExhaust.\nhierophant:Hoard 8.",
-      "mod": "The Hierophant"
+      "description": "Draw 1 card.\nLose 4 Gold.\nExhaust.\nhierophant:Hoard 12."
     },
     {
       "name": "Doubloon+",
@@ -123,8 +121,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 1 card.\nExhaust.\nhierophant:Hoard 16.",
-      "mod": "The Hierophant"
+      "description": "Draw 1 card.\nExhaust.\nhierophant:Hoard 16."
     },
     {
       "name": "Encroach",
@@ -132,8 +129,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nDraw 2 cards if any enemy has Block.",
-      "mod": "The Hierophant"
+      "description": "Gain 7 Block.\nDraw 2 cards if any enemy has Block."
     },
     {
       "name": "Encroach+",
@@ -141,8 +137,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 9 Block.\nDraw 3 cards if any enemy has Block.",
-      "mod": "The Hierophant"
+      "description": "Gain 9 Block.\nDraw 3 cards if any enemy has Block."
     },
     {
       "name": "Fiery Strike",
@@ -150,8 +145,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nGain 6 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Deal 8 damage.\nGain 6 hierophant:Fervor."
     },
     {
       "name": "Fiery Strike+",
@@ -159,8 +153,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nGain 8 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Deal 10 damage.\nGain 8 hierophant:Fervor."
     },
     {
       "name": "Flaming Chariot",
@@ -168,8 +161,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 15 damage.\nDoesn't consume hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Deal 15 damage.\nBenefits from hierophant:Fervor without consuming it."
     },
     {
       "name": "Flaming Chariot+",
@@ -177,8 +169,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 22 damage.\nDoesn't consume hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Deal 22 damage.\nBenefits from hierophant:Fervor without consuming it."
     },
     {
       "name": "Hammer And Anvil",
@@ -186,8 +177,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Give an enemy 10 Block.\nGain hierophant:Fervor equal to that enemy's Block.",
-      "mod": "The Hierophant"
+      "description": "Give an enemy 10 Block.\nGain 10 hierophant:Fervor, doubled if that enemy already had Block."
     },
     {
       "name": "Hammer And Anvil+",
@@ -195,8 +185,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Give an enemy 16 Block.\nGain hierophant:Fervor equal to that enemy's Block.",
-      "mod": "The Hierophant"
+      "description": "Give an enemy 15 Block.\nGain 15 hierophant:Fervor, doubled if that enemy already had Block."
     },
     {
       "name": "Holy Verse",
@@ -204,8 +193,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain !hierophant:P! hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Gain !hierophant:P! hierophant:Piety."
     },
     {
       "name": "Holy Verse+",
@@ -213,8 +201,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain !hierophant:P! hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Gain !hierophant:P! hierophant:Piety."
     },
     {
       "name": "Morning Prayer",
@@ -222,8 +209,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 12 Block.\nGain 2 hierophant:Enlightened.",
-      "mod": "The Hierophant"
+      "description": "Gain 12 Block.\nGain 2 hierophant:Enlightened."
     },
     {
       "name": "Morning Prayer+",
@@ -231,8 +217,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 16 Block.\nGain 2 hierophant:Enlightened.",
-      "mod": "The Hierophant"
+      "description": "Gain 16 Block.\nGain 2 hierophant:Enlightened."
     },
     {
       "name": "Ornate Buckler",
@@ -240,8 +225,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.\nhierophant:Hoard 3.",
-      "mod": "The Hierophant"
+      "description": "Gain 8 Block.\nhierophant:Hoard 3."
     },
     {
       "name": "Ornate Buckler+",
@@ -249,8 +233,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 11 Block.\nhierophant:Hoard 4.",
-      "mod": "The Hierophant"
+      "description": "Gain 11 Block.\nhierophant:Hoard 4."
     },
     {
       "name": "Passing Bell",
@@ -258,8 +241,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nGain 1 hierophant:Enlightened.",
-      "mod": "The Hierophant"
+      "description": "Deal 8 damage.\nGain 1 hierophant:Enlightened."
     },
     {
       "name": "Passing Bell+",
@@ -267,8 +249,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nGain 2 hierophant:Enlightened.",
-      "mod": "The Hierophant"
+      "description": "Deal 10 damage.\nGain 2 hierophant:Enlightened."
     },
     {
       "name": "Purify",
@@ -276,8 +257,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Heal an enemy 5 HP.\nDeal 20 damage.",
-      "mod": "The Hierophant"
+      "description": "Heal an enemy 10 HP.\nDeal 20 damage.\nhierophant:Tithe."
     },
     {
       "name": "Purify+",
@@ -285,8 +265,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Heal an enemy 10 HP.\nDeal 30 damage.",
-      "mod": "The Hierophant"
+      "description": "Heal an enemy 15 HP.\nDeal 30 damage.\nhierophant:Tithe."
     },
     {
       "name": "Remorse",
@@ -294,8 +273,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage.\nDeals 2 additional damage per Doubloon in your Exhaust pile.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Deal 7 damage.\nDeals 3 additional damage per Doubloon in your Exhaust pile.\nhierophant:Gilded."
     },
     {
       "name": "Remorse+",
@@ -303,8 +281,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\nDeals 3 additional damage per Doubloon in your Exhaust pile.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Deal 10 damage.\nDeals 4 additional damage per Doubloon in your Exhaust pile.\nhierophant:Gilded."
     },
     {
       "name": "Repressed Violence",
@@ -312,8 +289,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 3 damage.\nEthereal.\nWhen Exhausted, permanently increase its damage by 2.",
-      "mod": "The Hierophant"
+      "description": "Deal 1 damage.\nEthereal.\nWhen Exhausted, permanently increase its damage by 2."
     },
     {
       "name": "Repressed Violence+",
@@ -321,8 +297,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 3 damage.\nEthereal.\nWhen Exhausted, permanently increase its damage by 3.",
-      "mod": "The Hierophant"
+      "description": "Deal 1 damage.\nEthereal.\nWhen Exhausted, permanently increase its damage by 3."
     },
     {
       "name": "Rusty Crate",
@@ -330,8 +305,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nhierophant:Hoard 4.\nhierophant:Gilded 2.",
-      "mod": "The Hierophant"
+      "description": "Unplayable.\nhierophant:Hoard 8.\nhierophant:Gilded 2."
     },
     {
       "name": "Rusty Crate+",
@@ -339,8 +313,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nhierophant:Hoard 8.\nhierophant:Gilded 2.",
-      "mod": "The Hierophant"
+      "description": "Unplayable.\nhierophant:Hoard 16.\nhierophant:Gilded 2."
     },
     {
       "name": "Seal Away",
@@ -348,8 +321,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nEnemy gains 10 Block.",
-      "mod": "The Hierophant"
+      "description": "Deal 10 damage.\nEnemy gains 10 Block."
     },
     {
       "name": "Seal Away+",
@@ -357,8 +329,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 10 damage.\nEnemy gains 10 Block.",
-      "mod": "The Hierophant"
+      "description": "Deal 10 damage.\nEnemy gains 10 Block."
     },
     {
       "name": "Sermon",
@@ -366,8 +337,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 1 Weak to ALL enemies.\nGain 6 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Apply 1 Weak to ALL enemies.\nGain 6 hierophant:Fervor."
     },
     {
       "name": "Sermon+",
@@ -375,8 +345,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 2 Weak to ALL enemies.\nGain 6 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Apply 2 Weak to ALL enemies.\nGain 6 hierophant:Fervor."
     },
     {
       "name": "Shelter",
@@ -384,8 +353,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 10 Block.\nALL enemies gain 10 Block.",
-      "mod": "The Hierophant"
+      "description": "Gain 8 Block.\nALL enemies gain 8 Block."
     },
     {
       "name": "Shelter+",
@@ -393,8 +361,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 15 Block.\nALL enemies gain 15 Block.",
-      "mod": "The Hierophant"
+      "description": "Gain 12 Block.\nALL enemies gain 12 Block."
     },
     {
       "name": "Smite",
@@ -402,8 +369,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Gain !hierophant:P! hierophant:Piety.\nDeal damage equal to your hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Gain !hierophant:P! hierophant:Piety.\nDeal damage equal to the hierophant:Piety gained this turn."
     },
     {
       "name": "Smite+",
@@ -411,8 +377,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Gain !hierophant:P! hierophant:Piety.\nDeal damage equal to your hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Gain !hierophant:P! hierophant:Piety.\nDeal damage equal to the hierophant:Piety gained this turn."
     },
     {
       "name": "Three Lashes",
@@ -420,8 +385,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 1 damage three times.\nGain 5 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Deal 1 damage three times.\nGain 5 hierophant:Fervor."
     },
     {
       "name": "Three Lashes+",
@@ -429,8 +393,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 2 damage three times.\nGain 5 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Deal 2 damage three times.\nGain 5 hierophant:Fervor."
     },
     {
       "name": "Zeal",
@@ -438,8 +401,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nGain hierophant:Piety equal to twice the damage blocked.",
-      "mod": "The Hierophant"
+      "description": "Deal 8 damage.\nGain hierophant:Piety equal to twice the damage blocked."
     },
     {
       "name": "Zeal+",
@@ -447,17 +409,15 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage.\nGain hierophant:Piety equal to twice the damage blocked.",
-      "mod": "The Hierophant"
+      "description": "Deal 11 damage.\nGain hierophant:Piety equal to twice the damage blocked."
     },
     {
       "name": "Alms",
       "color": "Hierophant_gold_color",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "1",
-      "description": "Discard your hand, then draw cards equal to the combined cost discarded.",
-      "mod": "The Hierophant"
+      "cost": "0",
+      "description": "Discard your hand, then draw cards equal to the combined cost discarded.\nExhaust."
     },
     {
       "name": "Alms+",
@@ -465,8 +425,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Discard your hand, then draw cards equal to the combined cost discarded.",
-      "mod": "The Hierophant"
+      "description": "Draw cards equal to the combined cost of your hand.\nExhaust."
     },
     {
       "name": "Archangel Shield",
@@ -474,8 +433,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "When you spend hierophant:Fervor, gain that much Block.",
-      "mod": "The Hierophant"
+      "description": "When you spend hierophant:Fervor, gain that much Block."
     },
     {
       "name": "Archangel Shield+",
@@ -483,8 +441,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "When you spend hierophant:Fervor, gain that much Block.",
-      "mod": "The Hierophant"
+      "description": "When you spend hierophant:Fervor, gain that much Block."
     },
     {
       "name": "Auric Shield",
@@ -492,8 +449,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain Block equal to 5% of your Gold.",
-      "mod": "The Hierophant"
+      "description": "Lose 5% of your Gold.\nGain that much block."
     },
     {
       "name": "Auric Shield+",
@@ -501,8 +457,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain Block equal to 8% of your Gold.",
-      "mod": "The Hierophant"
+      "description": "Lose 8% of your Gold.\nGain that much block."
     },
     {
       "name": "Blessing",
@@ -510,8 +465,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Heal 7.\nHeal ALL enemies 7.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Heal 7.\nHeal ALL enemies 7.\nExhaust."
     },
     {
       "name": "Blessing+",
@@ -519,8 +473,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Heal 10.\nHeal ALL enemies 10.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Heal 10.\nHeal ALL enemies 10.\nExhaust."
     },
     {
       "name": "Bribe",
@@ -528,8 +481,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "4",
-      "description": "NL ALL enemies lose 3 Strength.\nhierophant:Tithe.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "NL ALL enemies lose 3 Strength.\nhierophant:Tithe.\nExhaust."
     },
     {
       "name": "Bribe+",
@@ -537,8 +489,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "4",
-      "description": "NL ALL enemies lose 4 Strength.\nhierophant:Tithe.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "NL ALL enemies lose 4 Strength.\nhierophant:Tithe.\nExhaust."
     },
     {
       "name": "Charity",
@@ -546,8 +497,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "When you draw a Doubloon, gain 5 hierophant:Piety.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "When you play a Doubloon, gain 5 hierophant:Piety.\nhierophant:Gilded."
     },
     {
       "name": "Charity+",
@@ -555,8 +505,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "When you draw a Doubloon, gain 8 hierophant:Piety.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "When you play a Doubloon, gain 8 hierophant:Piety.\nhierophant:Gilded."
     },
     {
       "name": "Chorus",
@@ -564,8 +513,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 4 hierophant:Fervor.\nDouble your hierophant:Fervor.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Gain 4 hierophant:Fervor.\nDouble your hierophant:Fervor.\nExhaust."
     },
     {
       "name": "Chorus+",
@@ -573,8 +521,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 4 hierophant:Fervor.\nDouble your hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Gain 4 hierophant:Fervor.\nDouble your hierophant:Fervor."
     },
     {
       "name": "Coin Fling",
@@ -582,8 +529,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "NL Discard a card.\nDeal 6 damage.\nDeals double damage if you discarded a Doubloon.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Discard a card.\nDeal 6 damage.\nDeals double damage if you discarded a Doubloon.\nhierophant:Gilded."
     },
     {
       "name": "Coin Fling+",
@@ -591,8 +537,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "NL Discard a card.\nDeal 9 damage.\nDeals double damage if you discarded a Doubloon.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Discard a card.\nDeal 9 damage.\nDeals double damage if you discarded a Doubloon.\nhierophant:Gilded."
     },
     {
       "name": "Community",
@@ -600,8 +545,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "When an enemy gains Block, gain that much Block.",
-      "mod": "The Hierophant"
+      "description": "When an enemy gains Block, gain that much Block."
     },
     {
       "name": "Community+",
@@ -609,8 +553,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "When an enemy gains Block, gain that much Block.\nInnate.",
-      "mod": "The Hierophant"
+      "description": "When an enemy gains Block, gain that much Block.\nInnate."
     },
     {
       "name": "Convert Currency",
@@ -618,8 +561,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Exhaust a card.\nGain [E] , then\n[E] [E] if you Exhausted a Doubloon.\nhierophant:Gilded. ",
-      "mod": "The Hierophant"
+      "description": "Exhaust a card.\nGain [E] , then\n[E] [E] if you Exhausted a Doubloon.\nhierophant:Gilded. "
     },
     {
       "name": "Convert Currency+",
@@ -627,26 +569,23 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Exhaust a card.\nGain [E] [E] , then\n[E] [E] if you Exhausted a Doubloon.\nhierophant:Gilded. ",
-      "mod": "The Hierophant"
+      "description": "Exhaust a card.\nGain [E] [E] , then\n[E] [E] if you Exhausted a Doubloon.\nhierophant:Gilded. "
     },
     {
       "name": "Cursed Gold",
       "color": "Hierophant_gold_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "1",
-      "description": "At the start of your turn, shuffle 1 Doubloon from your Exhaust pile into your discard pile.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "cost": "0",
+      "description": "At the start of your turn, shuffle 1 Doubloon from your Exhaust pile into your discard pile.\nhierophant:Gilded."
     },
     {
       "name": "Cursed Gold+",
       "color": "Hierophant_gold_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "1",
-      "description": "At the start of your turn, shuffle 2 Doubloons from your Exhaust pile into your discard pile.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "cost": "0",
+      "description": "At the start of your turn, shuffle 2 Doubloons from your Exhaust pile into your discard pile.\nhierophant:Gilded."
     },
     {
       "name": "Dazzle",
@@ -654,8 +593,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 4 Block.\nGain 3 Block for each Doubloon in your hand.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Gain 4 Block.\nGain 4 Block for each Doubloon in your hand.\nhierophant:Gilded."
     },
     {
       "name": "Dazzle+",
@@ -663,8 +601,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 6 Block.\nGain 4 Block for each Doubloon in your hand.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Gain 6 Block.\nGain 6 Block for each Doubloon in your hand.\nhierophant:Gilded."
     },
     {
       "name": "Doomsaying",
@@ -672,8 +609,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain Energy equal to the highest cost among the top 3 cards of your draw pile.",
-      "mod": "The Hierophant"
+      "description": "Gain Energy equal to the highest cost among the top 3 cards of your draw pile."
     },
     {
       "name": "Doomsaying+",
@@ -681,8 +617,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain Energy equal to the highest cost among the top 3 cards of your draw pile.",
-      "mod": "The Hierophant"
+      "description": "Gain Energy equal to the highest cost among the top 3 cards of your draw pile."
     },
     {
       "name": "Embezzle",
@@ -690,8 +625,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 40 Gold.\nAt the end of combat, return any of the 40 Gold you did not spend.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Gain 40 Gold.\nAt the end of combat, return any of the 40 Gold you did not spend.\nExhaust."
     },
     {
       "name": "Embezzle+",
@@ -699,8 +633,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 60 Gold.\nAt the end of combat, return any of the 60 Gold you did not spend.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Gain 60 Gold.\nAt the end of combat, return any of the 60 Gold you did not spend.\nExhaust."
     },
     {
       "name": "Empathy",
@@ -708,8 +641,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Heal ALL enemies 12.\nApply 1 Weak and 1 Vulnerable per 6 HP healed.",
-      "mod": "The Hierophant"
+      "description": "Heal ALL enemies 12.\nApply 1 Weak and 1 Vulnerable per 6 HP healed."
     },
     {
       "name": "Empathy+",
@@ -717,8 +649,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Heal ALL enemies 12.\nApply 1 Weak and 1 Vulnerable per 4 HP healed.",
-      "mod": "The Hierophant"
+      "description": "Heal ALL enemies 12.\nApply 1 Weak and 1 Vulnerable per 4 HP healed."
     },
     {
       "name": "Endure",
@@ -726,8 +657,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.\nWhenever you are attacked this turn, gain 2 hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Gain 8 Block.\nWhenever you are attacked this turn, gain 3 hierophant:Piety."
     },
     {
       "name": "Endure+",
@@ -735,8 +665,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 12 Block.\nWhenever you are attacked this turn, gain 3 hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Gain 12 Block.\nWhenever you are attacked this turn, gain 5 hierophant:Piety."
     },
     {
       "name": "Exaltation",
@@ -744,8 +673,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain hierophant:Piety equal to your hierophant:Fervor and hierophant:Fervor equal to\nyour hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Gain hierophant:Piety equal to your hierophant:Fervor and hierophant:Fervor equal to\nyour hierophant:Piety."
     },
     {
       "name": "Exaltation+",
@@ -753,8 +681,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain hierophant:Piety equal to your hierophant:Fervor and hierophant:Fervor equal to\nyour hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Gain hierophant:Piety equal to your hierophant:Fervor and hierophant:Fervor equal to\nyour hierophant:Piety."
     },
     {
       "name": "Eye For Coin",
@@ -762,8 +689,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Permanently add a Doubloon to your deck.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Permanently add a Doubloon to your deck.\nExhaust."
     },
     {
       "name": "Eye For Coin+",
@@ -771,8 +697,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Permanently add an Upgraded Doubloon to your deck.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Permanently add an Upgraded Doubloon to your deck.\nExhaust."
     },
     {
       "name": "Faith Healing",
@@ -780,8 +705,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Exhaust ALL Status cards in your hand.\nGain !hierophant:P! hierophant:Piety per card Exhausted.",
-      "mod": "The Hierophant"
+      "description": "Exhaust ALL Curses and Status cards in your hand.\nGain !hierophant:P! hierophant:Piety per card Exhausted."
     },
     {
       "name": "Faith Healing+",
@@ -789,8 +713,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Exhaust ALL Status cards in your hand.\nGain !hierophant:P! hierophant:Piety per card Exhausted.",
-      "mod": "The Hierophant"
+      "description": "Exhaust ALL Curses and Status cards in your hand.\nGain !hierophant:P! hierophant:Piety per card Exhausted."
     },
     {
       "name": "Flagellation",
@@ -798,8 +721,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Add 2 Wounds to your hand.\nGain !hierophant:P! hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Add 2 Wounds to your hand.\nGain !hierophant:P! hierophant:Piety."
     },
     {
       "name": "Flagellation+",
@@ -807,8 +729,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Add 2 Wounds to your hand.\nGain !hierophant:P! hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Add 2 Wounds to your hand.\nGain !hierophant:P! hierophant:Piety."
     },
     {
       "name": "Glossolalia",
@@ -816,8 +737,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "3",
-      "description": "When you draw a card, gain hierophant:Fervor equal to its cost.",
-      "mod": "The Hierophant"
+      "description": "When you draw a card, gain hierophant:Fervor equal to its cost."
     },
     {
       "name": "Glossolalia+",
@@ -825,26 +745,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "When you draw a card, gain hierophant:Fervor equal to its cost.",
-      "mod": "The Hierophant"
-    },
-    {
-      "name": "Levitation",
-      "color": "Hierophant_gold_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "5",
-      "description": "Gain 1 Intangible.\nExhaust.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
-    },
-    {
-      "name": "Levitation+",
-      "color": "Hierophant_gold_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "5",
-      "description": "Gain 1 Intangible.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "When you draw a card, gain hierophant:Fervor equal to its cost."
     },
     {
       "name": "Martyrdom",
@@ -852,8 +753,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Shuffle three Wounds into your draw pile.\nWhenever you draw a Status card, gain 5 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Shuffle three Wounds into your draw pile.\nWhenever you draw a Status card, gain 5 hierophant:Fervor."
     },
     {
       "name": "Martyrdom+",
@@ -861,8 +761,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Shuffle three Wounds into your draw pile.\nWhenever you draw a Status card, gain 7 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Shuffle three Wounds into your draw pile.\nWhenever you draw a Status card, gain 7 hierophant:Fervor."
     },
     {
       "name": "Mercenaries",
@@ -870,8 +769,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 1 damage per Gold lost this turn.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Deal 1 damage per Gold lost this turn.\nhierophant:Tithe."
     },
     {
       "name": "Mercenaries+",
@@ -879,8 +777,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 3 damage per 2 Gold lost this turn.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Deal 3 damage per 2 Gold lost this turn.\nhierophant:Tithe."
     },
     {
       "name": "Mirror Shield",
@@ -888,8 +785,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain Block equal to an enemy's Block.",
-      "mod": "The Hierophant"
+      "description": "Gain Block equal to an enemy's Block."
     },
     {
       "name": "Mirror Shield+",
@@ -897,8 +793,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain Block equal to an enemy's Block.\nDraw a card.",
-      "mod": "The Hierophant"
+      "description": "Gain Block equal to an enemy's Block.\nDraw a card."
     },
     {
       "name": "Ornate Javelin",
@@ -906,8 +801,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 18 damage.\nExhaust.\nhierophant:Hoard 4.",
-      "mod": "The Hierophant"
+      "description": "Deal 18 damage.\nExhaust.\nhierophant:Hoard 4."
     },
     {
       "name": "Ornate Javelin+",
@@ -915,8 +809,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 24 damage.\nExhaust.\nhierophant:Hoard 6.",
-      "mod": "The Hierophant"
+      "description": "Deal 24 damage.\nExhaust.\nhierophant:Hoard 6."
     },
     {
       "name": "Patience",
@@ -924,8 +817,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain hierophant:Piety equal to twice an enemy's Block.",
-      "mod": "The Hierophant"
+      "description": "Gain hierophant:Piety equal to an enemy's Block."
     },
     {
       "name": "Patience+",
@@ -933,8 +825,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain hierophant:Piety equal to twice an enemy's Block.",
-      "mod": "The Hierophant"
+      "description": "Gain hierophant:Piety equal to an enemy's Block."
     },
     {
       "name": "Pristine Soul",
@@ -942,8 +833,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain !hierophant:P! hierophant:Piety.\nGain Block equal to your hierophant:Piety.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Gain !hierophant:P! hierophant:Piety.\nGain Block equal to your hierophant:Piety.\nExhaust."
     },
     {
       "name": "Pristine Soul+",
@@ -951,8 +841,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain !hierophant:P! Piety.\nGain Block equal to your hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Gain !hierophant:P! Piety.\nGain Block equal to your hierophant:Piety."
     },
     {
       "name": "Prophecy",
@@ -960,8 +849,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Play the highest cost card among the top X cards of your draw pile.",
-      "mod": "The Hierophant"
+      "description": "Play the highest cost card among the top X cards of your draw pile."
     },
     {
       "name": "Prophecy+",
@@ -969,8 +857,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Play the highest cost card among the top X+1 cards of your draw pile.",
-      "mod": "The Hierophant"
+      "description": "Play the highest cost card among the top X+1 cards of your draw pile."
     },
     {
       "name": "Racketeering",
@@ -978,8 +865,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Give an enemy 5 Block. Draw a card for each 5 Block on that enemy.",
-      "mod": "The Hierophant"
+      "description": "Give an enemy 10 Block. Draw a card for each 5 Block on that enemy.\nExhaust."
     },
     {
       "name": "Racketeering+",
@@ -987,8 +873,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Give an enemy 10 Block. Draw a card for each 5 Block on that enemy.",
-      "mod": "The Hierophant"
+      "description": "Give an enemy 15 Block. Draw a card for each 5 Block on that enemy.\nExhaust."
     },
     {
       "name": "Rebuild",
@@ -996,8 +881,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Everyone loses 30 Block.\nEveryone gains 15 Block.",
-      "mod": "The Hierophant"
+      "description": "Everyone loses ALL Block.\nEveryone gains 15 Block."
     },
     {
       "name": "Rebuild+",
@@ -1005,8 +889,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Everyone loses 30 Block.\nEveryone gains 15 Block.",
-      "mod": "The Hierophant"
+      "description": "Everyone loses ALL Block.\nEveryone gains 15 Block."
     },
     {
       "name": "Recall Funds",
@@ -1014,8 +897,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Return up to 3 Doubloons from your Exhaust pile to\nyour hand.\nExhaust.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Return up to 3 Doubloons from your Exhaust pile to\nyour hand.\nExhaust.\nhierophant:Gilded."
     },
     {
       "name": "Recall Funds+",
@@ -1023,26 +905,23 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Return up to 5 Doubloons from your Exhaust pile to\nyour hand.\nExhaust.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Return up to 5 Doubloons from your Exhaust pile to\nyour hand.\nExhaust.\nhierophant:Gilded."
     },
     {
       "name": "Refuge",
       "color": "Hierophant_gold_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "0",
-      "description": "When you play a Doubloon, everyone gains 4 Block.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "cost": "1",
+      "description": "When you draw a Doubloon, everyone gains 4 Block.\nhierophant:Gilded."
     },
     {
       "name": "Refuge+",
       "color": "Hierophant_gold_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "0",
-      "description": "When you play a Doubloon, everyone gains 7 Block.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "cost": "1",
+      "description": "When you draw a Doubloon, everyone gains 6 Block.\nhierophant:Gilded."
     },
     {
       "name": "Repentance",
@@ -1050,8 +929,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "At the end of this turn, instead of losing hierophant:Piety, gain that much hierophant:Piety.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "At the end of this turn, instead of losing hierophant:Piety, gain twice that much hierophant:Piety.\nExhaust."
     },
     {
       "name": "Repentance+",
@@ -1059,8 +937,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "At the end of this turn, instead of losing hierophant:Piety, gain that much hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "At the end of this turn, instead of losing hierophant:Piety, gain twice that much hierophant:Piety."
     },
     {
       "name": "Secret Stash",
@@ -1068,8 +945,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Ethereal.\nhierophant:Hoard 20.",
-      "mod": "The Hierophant"
+      "description": "Ethereal.\nhierophant:Hoard 20."
     },
     {
       "name": "Secret Stash+",
@@ -1077,8 +953,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Ethereal.\nhierophant:Hoard 30.",
-      "mod": "The Hierophant"
+      "description": "Ethereal.\nhierophant:Hoard 30."
     },
     {
       "name": "Solar Flare",
@@ -1086,8 +961,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "5",
-      "description": "Gain Block equal to your hierophant:Fervor.\nDeal 24 damage.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Gain Block equal to your hierophant:Fervor.\nDeal 24 damage.\nhierophant:Tithe."
     },
     {
       "name": "Solar Flare+",
@@ -1095,8 +969,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "5",
-      "description": "Gain Block equal to your hierophant:Fervor.\nDeal 32 damage.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Gain Block equal to your hierophant:Fervor.\nDeal 32 damage.\nhierophant:Tithe."
     },
     {
       "name": "Toll The Bells",
@@ -1104,8 +977,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain [E] [E].\nGain 2 hierophant:Enlightened.\nShuffle 2 Dazed into your draw pile.",
-      "mod": "The Hierophant"
+      "description": "Gain [E] [E].\nGain 2 hierophant:Enlightened.\nShuffle 2 Dazed into your draw pile."
     },
     {
       "name": "Toll The Bells+",
@@ -1113,8 +985,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [E] [E].\nGain 2 hierophant:Enlightened.\nShuffle 2 Dazed into your draw pile.",
-      "mod": "The Hierophant"
+      "description": "Gain [E] [E].\nGain 2 hierophant:Enlightened.\nShuffle 2 Dazed into your draw pile."
     },
     {
       "name": "Upheaval",
@@ -1122,8 +993,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal damage to ALL enemies equal to twice their Block.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Deal damage to ALL enemies equal to twice their Block."
     },
     {
       "name": "Upheaval+",
@@ -1131,8 +1001,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal damage to ALL enemies equal to twice their Block.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Deal damage to ALL enemies equal to twice their Block."
     },
     {
       "name": "Anathema",
@@ -1140,8 +1009,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 3 damage per hierophant:Piety.\nLose all hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Deal 3 damage per hierophant:Piety.\nLose all hierophant:Piety."
     },
     {
       "name": "Anathema+",
@@ -1149,8 +1017,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 3 damage per hierophant:Piety.\nLose all hierophant:Piety.",
-      "mod": "The Hierophant"
+      "description": "Deal 3 damage per hierophant:Piety.\nLose all hierophant:Piety."
     },
     {
       "name": "Auric Form",
@@ -1158,8 +1025,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "At the start of your turn, lose 5% of your gold, then gain that much hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "At the start of your turn, lose 5% of your gold, then gain that much hierophant:Fervor and hierophant:Piety."
     },
     {
       "name": "Auric Form+",
@@ -1167,8 +1033,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "At the start of your turn, lose 8% of your gold, then gain that much hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "At the start of your turn, lose 8% of your gold, then gain that much hierophant:Fervor and hierophant:Piety."
     },
     {
       "name": "Batter",
@@ -1176,8 +1041,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 13 damage.\nIf any damage is blocked, deal 13 additional damage.",
-      "mod": "The Hierophant"
+      "description": "Deal 11 damage.\nIf any damage is blocked, deal 11 additional damage."
     },
     {
       "name": "Batter+",
@@ -1185,8 +1049,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 20 damage.\nIf any damage is blocked, deal 20 additional damage.",
-      "mod": "The Hierophant"
+      "description": "Deal 16 damage.\nIf any damage is blocked, deal 16 additional damage."
     },
     {
       "name": "Bulky Chest",
@@ -1194,8 +1057,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nWhen you draw this card, lose [E].\nhierophant:Hoard 40.",
-      "mod": "The Hierophant"
+      "description": "Unplayable.\nWhen you draw this card, lose [E].\nhierophant:Hoard 50."
     },
     {
       "name": "Bulky Chest+",
@@ -1203,8 +1065,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nWhen you draw this card, lose [E].\nhierophant:Hoard 60.",
-      "mod": "The Hierophant"
+      "description": "Unplayable.\nWhen you draw this card, lose [E].\nhierophant:Hoard 80."
     },
     {
       "name": "Cornucopia",
@@ -1212,8 +1073,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "Add X Doubloons to your hand.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Add X+1 Doubloons to your hand.\nExhaust."
     },
     {
       "name": "Cornucopia+",
@@ -1221,8 +1081,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "Add X Upgraded Doubloons to your hand.\nExhaust.",
-      "mod": "The Hierophant"
+      "description": "Add X+1 Upgraded Doubloons to your hand.\nExhaust."
     },
     {
       "name": "Death Knell",
@@ -1230,8 +1089,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Your Attacks deal no damage for 3 turns.\nAfter 3 turns, gain 40 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Your Attacks deal no damage for 2 turns.\nAfter 2 turns, gain 40 hierophant:Fervor."
     },
     {
       "name": "Death Knell+",
@@ -1239,8 +1097,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Your Attacks deal no damage for 2 turns.\nAfter 2 turns, gain 40 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Your Attacks deal no damage for 2 turns.\nAfter 2 turns, gain 60 hierophant:Fervor."
     },
     {
       "name": "Determination",
@@ -1248,8 +1105,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "When you defeat an enemy, heal for a third of its remaining HP.",
-      "mod": "The Hierophant"
+      "description": "When you defeat an enemy, heal for a third of its remaining HP."
     },
     {
       "name": "Determination+",
@@ -1257,8 +1113,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "When you defeat an enemy, heal for a third of its remaining HP.",
-      "mod": "The Hierophant"
+      "description": "When you defeat an enemy, heal for a third of its remaining HP."
     },
     {
       "name": "Divine intervention",
@@ -1266,8 +1121,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Heal an enemy 15 HP.\nGain 2 hierophant:Piety per HP healed.",
-      "mod": "The Hierophant"
+      "description": "Heal an enemy 15 HP.\nGain 2 hierophant:Piety per HP healed."
     },
     {
       "name": "Divine intervention+",
@@ -1275,8 +1129,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Heal an enemy 30 HP.\nGain 2 hierophant:Piety per HP healed.",
-      "mod": "The Hierophant"
+      "description": "Heal an enemy 30 HP.\nGain 2 hierophant:Piety per HP healed."
     },
     {
       "name": "Generosity",
@@ -1284,8 +1137,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Whenever you play a Doubloon, draw an additional card.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Whenever you play a Doubloon, draw an additional card.\nhierophant:Gilded."
     },
     {
       "name": "Generosity+",
@@ -1293,8 +1145,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you play a Doubloon, draw an additional card.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Whenever you play a Doubloon, draw an additional card.\nhierophant:Gilded."
     },
     {
       "name": "Gold Fever",
@@ -1302,8 +1153,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 5 damage for each Doubloon in your deck.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Deal 6 damage for each Doubloon in your discard pile.\nhierophant:Gilded."
     },
     {
       "name": "Gold Fever+",
@@ -1311,8 +1161,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 8 damage for each Doubloon in your deck.\nhierophant:Gilded.",
-      "mod": "The Hierophant"
+      "description": "Deal 10 damage for each Doubloon in your discard pile.\nhierophant:Gilded."
     },
     {
       "name": "Invocation",
@@ -1320,8 +1169,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "4",
-      "description": "Gain [E] [E] [E]\n[E] [E] [E].\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Gain [E] [E] [E]\n[E] [E] [E].\nhierophant:Tithe."
     },
     {
       "name": "Invocation+",
@@ -1329,8 +1177,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "4",
-      "description": "Gain [E] [E] [E] [E]\n[E] [E] [E] [E].\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Gain [E] [E] [E] [E]\n[E] [E] [E] [E].\nhierophant:Tithe."
     },
     {
       "name": "Kindle",
@@ -1338,8 +1185,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Strength.\nGain 8 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Gain 1 Strength.\nGain 8 hierophant:Fervor."
     },
     {
       "name": "Kindle+",
@@ -1347,8 +1193,23 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 1 Strength.\nGain 8 hierophant:Fervor.",
-      "mod": "The Hierophant"
+      "description": "Gain 1 Strength.\nGain 8 hierophant:Fervor."
+    },
+    {
+      "name": "Levitation",
+      "color": "Hierophant_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Gain 1 Intangible.\nExhaust.\nhierophant:Tithe."
+    },
+    {
+      "name": "Levitation+",
+      "color": "Hierophant_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "6",
+      "description": "Gain 2 Intangible.\nExhaust.\nhierophant:Tithe."
     },
     {
       "name": "Locust Plague",
@@ -1356,8 +1217,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 3 damage to a random enemy, times the combined cost of your hand.",
-      "mod": "The Hierophant"
+      "description": "Deal 4 damage to a random enemy, times the combined cost of your hand."
     },
     {
       "name": "Locust Plague+",
@@ -1365,8 +1225,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 5 damage to a random enemy, times the combined cost of your hand.",
-      "mod": "The Hierophant"
+      "description": "Deal 6 damage to a random enemy, times the combined cost of your hand."
     },
     {
       "name": "Wrath Of God",
@@ -1374,8 +1233,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "6",
-      "description": "Deal 40 damage to all enemies and a fifth ( 8 ) to you.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Deal 40 damage to all enemies and a fifth ( 8 ) to you.\nhierophant:Tithe."
     },
     {
       "name": "Wrath Of God+",
@@ -1383,8 +1241,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "6",
-      "description": "Deal 60 damage to all enemies and a fifth ( 12 ) to you.\nhierophant:Tithe.",
-      "mod": "The Hierophant"
+      "description": "Deal 60 damage to all enemies and a fifth ( 12 ) to you.\nhierophant:Tithe."
     }
   ],
   "relics": [
@@ -1393,16 +1250,14 @@
       "tier": "Starter",
       "pool": "Hierophant_gold_color",
       "description": "Retain the highest cost card of your hand (Chosen at random when tied).",
-      "flavorText": "For and from the heavens.",
-      "mod": "The Hierophant"
+      "flavorText": "For and from the heavens."
     },
     {
       "name": "Donation Box",
       "tier": "Uncommon",
       "pool": "Hierophant_gold_color",
       "description": "At the end of each combat, earn enough gold to reach a total of 80.",
-      "flavorText": "Beggars can't be choosers.",
-      "mod": "The Hierophant"
+      "flavorText": "Beggars can't be choosers."
     }
   ],
   "potions": [
@@ -1412,370 +1267,9 @@
       "name": "The Hierophant",
       "type": "Player",
       "minHP": "75",
-      "maxHP": "75",
-      "mod": "The Hierophant"
+      "maxHP": "75"
     }
   ],
   "keywords": [
-    {
-      "name": "[B]",
-      "description": "Energy is used to play cards from your hand.",
-      "names": [],
-      "mod": ""
-    },
-    {
-      "name": "[E]",
-      "description": "Energy is used to play cards from your hand.",
-      "names": ["[E]"],
-      "mod": "BaseMod"
-    },
-    {
-      "name": "[G]",
-      "description": "Energy is used to play cards from your hand.",
-      "names": [],
-      "mod": ""
-    },
-    {
-      "name": "[R]",
-      "description": "Energy is used to play cards from your hand.",
-      "names": [],
-      "mod": ""
-    },
-    {
-      "name": "Artifact",
-      "description": "Negates the next debuff.",
-      "names": ["artifact"],
-      "mod": ""
-    },
-    {
-      "name": "Autoplay",
-      "description": "This card automatically plays itself when drawn.",
-      "names": ["autoplay"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Block",
-      "description": "Until next turn, prevents damage.",
-      "names": ["block","blocks"],
-      "mod": ""
-    },
-    {
-      "name": "Burn",
-      "description": "Burns are unplayable status cards that damage you.",
-      "names": ["burn","burns"],
-      "mod": ""
-    },
-    {
-      "name": "Channel",
-      "description": "Channeling an Orb puts it into your first empty slot. If you have no empty slots, your first Orb is automatically Evoked to make room.",
-      "names": ["channel","channeled"],
-      "mod": ""
-    },
-    {
-      "name": "Confused",
-      "description": "Whenever you draw a card, randomize its cost.",
-      "names": ["confused"],
-      "mod": ""
-    },
-    {
-      "name": "Curse",
-      "description": "Curse cards are negative cards that stay in your deck.",
-      "names": ["curse"],
-      "mod": ""
-    },
-    {
-      "name": "Dark",
-      "description": "Orb: Increases damage every turn. When Evoked, deals damage to the enemy with the least HP.",
-      "names": ["dark","dark+"],
-      "mod": ""
-    },
-    {
-      "name": "Dazed",
-      "description": "Dazed are unplayable status cards.",
-      "names": ["dazed"],
-      "mod": ""
-    },
-    {
-      "name": "Dexterity",
-      "description": "Dexterity improves Block gained from cards.",
-      "names": ["dexterity"],
-      "mod": ""
-    },
-    {
-      "name": "Ethereal",
-      "description": "If this card is in your hand at the end of turn, it is exhausted. Exhausted cards are removed from your deck until the end of combat.",
-      "names": ["ethereal"],
-      "mod": ""
-    },
-    {
-      "name": "Evoke",
-      "description": "Consume your rightmost Orb and use its Evoke effect.",
-      "names": ["evoke","evoked"],
-      "mod": ""
-    },
-    {
-      "name": "Exhaust",
-      "description": "Removed until end of combat.",
-      "names": ["exhaust","exhausted","exhausts"],
-      "mod": ""
-    },
-    {
-      "name": "Exhaustive",
-      "description": "Exhausts after a certain number of uses.",
-      "names": ["exhaustive"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Fetch",
-      "description": "Choose a specified card from a specified pile and place it into your hand.",
-      "names": ["fetch"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Fleeting",
-      "description": "This card Purges and is removed from your deck on use.",
-      "names": ["fleeting"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Focus",
-      "description": "Focus increases the effectiveness of Channeled Orbs.",
-      "names": ["focus"],
-      "mod": ""
-    },
-    {
-      "name": "Frail",
-      "description": "While Frail, gain 25% less Block from cards.",
-      "names": ["frail"],
-      "mod": ""
-    },
-    {
-      "name": "Frost",
-      "description": "Orb: Gains Block.",
-      "names": ["frost","frost+"],
-      "mod": ""
-    },
-    {
-      "name": "Grave",
-      "description": "Start each combat with this card in your discard pile.",
-      "names": ["grave"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Hierophant:Multiword Keyword",
-      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword.",
-      "names": ["hierophant:Multiword Keyword","hierophant:multikey","hierophant:multikeyword","hierophant:multiword_keyword","hierophant:multiword_keywords"],
-      "mod": ""
-    },
-    {
-      "name": "Hierophant:enlightened",
-      "description": "Gain an additional 50% Piety while Enlightened.",
-      "names": ["hierophant:enlightened"],
-      "mod": ""
-    },
-    {
-      "name": "Hierophant:fervor",
-      "description": "Your next attack this turn deals 10% additional damage per level of Fervor.",
-      "names": ["hierophant:fervor"],
-      "mod": ""
-    },
-    {
-      "name": "Hierophant:gilded",
-      "description": "When you add this card to your deck, add a Doubloon to your deck.",
-      "names": ["hierophant:gilded"],
-      "mod": ""
-    },
-    {
-      "name": "Hierophant:hoard",
-      "description": "Earn gold at the end of combat if this card is not exhausted.",
-      "names": ["hierophant:hoard"],
-      "mod": ""
-    },
-    {
-      "name": "Hierophant:piety",
-      "description": "At the end of your turn, defeat ANY enemies with HP equal or lower than your Piety and lose a third of your Piety.",
-      "names": ["hierophant:piety"],
-      "mod": ""
-    },
-    {
-      "name": "Hierophant:tithe",
-      "description": "When your energy is insufficient, can be partially paid with gold at a rate of 10 gold per missing Energy.",
-      "names": ["hierophant:tithe"],
-      "mod": ""
-    },
-    {
-      "name": "Hierophant:vow",
-      "description": "Special Power that imposes a restriction in exchange for an advantage.",
-      "names": ["hierophant:vow","hierophant:vows"],
-      "mod": ""
-    },
-    {
-      "name": "Innate",
-      "description": "Start each combat with this card in your hand.",
-      "names": ["innate"],
-      "mod": ""
-    },
-    {
-      "name": "Intangible",
-      "description": "Reduce ALL damage taken and HP loss to 1.",
-      "names": ["intangible"],
-      "mod": ""
-    },
-    {
-      "name": "Lightning",
-      "description": "Orb: Deals damage to random enemies.",
-      "names": ["lightning","lightning+"],
-      "mod": ""
-    },
-    {
-      "name": "Lock-on",
-      "description": "Lock-On targets receive 50% more damage from Orbs.",
-      "names": ["lock-on"],
-      "mod": ""
-    },
-    {
-      "name": "Locked",
-      "description": "This card has yet to be unlocked.",
-      "names": ["locked"],
-      "mod": ""
-    },
-    {
-      "name": "Opener",
-      "description": "Opener cards may only be played as the first card each turn.",
-      "names": ["opener"],
-      "mod": ""
-    },
-    {
-      "name": "Plasma",
-      "description": "Orb: Gains Energy.",
-      "names": ["plasma","plasma+"],
-      "mod": ""
-    },
-    {
-      "name": "Poison",
-      "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1.",
-      "names": ["poison","poisoned"],
-      "mod": ""
-    },
-    {
-      "name": "Purge",
-      "description": "Removed until end of combat. Does NOT go to your exhaust pile.",
-      "names": ["purge"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Refund",
-      "description": "Returns energy spent on playing the card, up to the Refund value.",
-      "names": ["refund","refunds"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Retain",
-      "description": "Not discarded at the end of your turn.",
-      "names": ["retain"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Shiv",
-      "description": "Shivs are 0 cost Attack cards which Exhaust.",
-      "names": ["shiv","shivs"],
-      "mod": ""
-    },
-    {
-      "name": "Snecko",
-      "description": "When drawn, this card randomizes its cost.",
-      "names": ["snecko"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Soulbound",
-      "description": "Cannot be removed from your deck.",
-      "names": ["soulbound"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Startup",
-      "description": "Triggers at the start of each combat.",
-      "names": ["startup"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Status",
-      "description": "Status cards are removed at the end of combat.",
-      "names": ["status"],
-      "mod": ""
-    },
-    {
-      "name": "Strength",
-      "description": "Strength adds additional damage to attacks.",
-      "names": ["strength"],
-      "mod": ""
-    },
-    {
-      "name": "Strike",
-      "description": "Any card with the word \"Strike\" in its name.",
-      "names": ["strike"],
-      "mod": ""
-    },
-    {
-      "name": "Temporary hp",
-      "description": "Temporary HP disappears at the end of combat.",
-      "names": ["temporary hp","temporary_hp"],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Thorns",
-      "description": "When receiving Attack damage, deals damage back.",
-      "names": ["thorns"],
-      "mod": ""
-    },
-    {
-      "name": "Transform",
-      "description": "Transformed cards become a random card of any rarity.",
-      "names": ["transform"],
-      "mod": ""
-    },
-    {
-      "name": "Unknown",
-      "description": "This card has yet to be encountered.",
-      "names": ["unknown"],
-      "mod": ""
-    },
-    {
-      "name": "Unplayable",
-      "description": "Unplayable cards cannot be played from your hand.",
-      "names": ["unplayable"],
-      "mod": ""
-    },
-    {
-      "name": "Upgrade",
-      "description": "Upgrading cards makes them more powerful. Cards can only be upgraded once.",
-      "names": ["upgrade","upgraded"],
-      "mod": ""
-    },
-    {
-      "name": "Void",
-      "description": "Voids are unplayable status cards that consume energy when drawn.",
-      "names": ["void","voids"],
-      "mod": ""
-    },
-    {
-      "name": "Vulnerable",
-      "description": "Vulnerable creatures take 50% more damage from Attacks.",
-      "names": ["vulnerable"],
-      "mod": ""
-    },
-    {
-      "name": "Weak",
-      "description": "Weakened creatures deal 25% less damage with Attacks.",
-      "names": ["weak","weaken","weakened","weakens"],
-      "mod": ""
-    },
-    {
-      "name": "Wound",
-      "description": "Wounds are unplayable status cards.",
-      "names": ["wound","wounds"],
-      "mod": ""
-    }
   ]
 }

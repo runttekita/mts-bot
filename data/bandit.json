@@ -201,7 +201,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "wariomod:Move 1.\nIf you landed on an Empty Space, repeat this.\nwariomod:Move 1."
+      "description": "wariomod:Move 1.\nIf you landed on an Empty Space, repeat this.\nDraw 1 card."
     },
     {
       "name": "Confounding Moves",
@@ -308,7 +308,7 @@
       "description": "Deal 10 damage to ALL enemies.\nwariomod:Move 6."
     },
     {
-      "name": "SIDEWAYS Barrier",
+      "name": "Sideways Barrier",
       "color": "Bandit_weird_color",
       "rarity": "Common",
       "type": "Skill",
@@ -316,7 +316,7 @@
       "description": "Gain 8 Block.\nActivate the Space 2 behind you."
     },
     {
-      "name": "SIDEWAYS Barrier+",
+      "name": "Sideways Barrier+",
       "color": "Bandit_weird_color",
       "rarity": "Common",
       "type": "Skill",
@@ -329,7 +329,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\n\u03C0Transform the next Space into a wariomod:Damage_Space."
+      "description": "Deal 8 damage.\n\u03C0Transform a random Empty Space into a wariomod:Damage_Space."
     },
     {
       "name": "Smack Slam+",
@@ -337,7 +337,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 12 damage.\n\u03C0Transform the next Space into a wariomod:Damage_Space."
+      "description": "Deal 12 damage.\n\u03C0Transform a random Empty Space into a wariomod:Damage_Space."
     },
     {
       "name": "Smackflip",
@@ -377,7 +377,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 2 Block.\n\u03C0Transform a random Empty Space into a positive Space.\nwariomod:Move 1.\nExhaust."
+      "description": "\u03C0Transform a random Empty Space into a positive Space.\nwariomod:Move 1.\nExhaust."
     },
     {
       "name": "Terraforming+",
@@ -385,7 +385,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Retain.\nGain 2 Block.\n\u03C0Transform a random Empty Space into a positive Space.\nwariomod:Move 1.\nExhaust."
+      "description": "\u03C0Transform a random Empty Space into a positive Space.\nwariomod:Move 1.\nExhaustive !stslib:ex!."
     },
     {
       "name": "That's Not All!",
@@ -564,6 +564,14 @@
       "description": "Deal 3 damage twice.\nActivate the Space 3 ahead of you.\nwariomod:Move 3."
     },
     {
+      "name": "Double Dip+",
+      "color": "Bandit_weird_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage twice.\nActivate the Space 3 ahead of you.\nwariomod:Move 3."
+    },
+    {
       "name": "Emptied Mind",
       "color": "Bandit_weird_color",
       "rarity": "Uncommon",
@@ -594,22 +602,6 @@
       "type": "Attack",
       "cost": "1",
       "description": "Deal 10 damage to ALL enemies.\n\u03C0Transform a random Empty Space into a Space with this card's effects.\nExhaust."
-    },
-    {
-      "name": "Free Card!?",
-      "color": "Bandit_weird_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "",
-      "description": "Unplayable.\nWhenever you draw this card, you may add 1 of 3 random cards into your hand."
-    },
-    {
-      "name": "Free Card!?+",
-      "color": "Bandit_weird_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "",
-      "description": "Unplayable.\nWhenever you draw this card, gain [E] and you may add 1 of 3 random cards into your hand."
     },
     {
       "name": "Greater Guard",
@@ -729,7 +721,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 13 Block.\n\u03C0Transform 2 random Empty Spaces into wariomod:Spike_Spaces.\nExhaust."
+      "description": "Gain 14 Block.\n\u03C0Transform 2 random Empty Spaces into wariomod:Spike_Spaces.\nExhaust."
     },
     {
       "name": "Pay It Forwards+",
@@ -737,7 +729,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 16 Block.\n\u03C0Transform 2 random Empty Spaces into wariomod:Spike_Spaces.\nExhaust."
+      "description": "Gain 18 Block.\n\u03C0Transform 2 random Empty Spaces into wariomod:Spike_Spaces.\nExhaust."
     },
     {
       "name": "Purify",
@@ -841,7 +833,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "\u03C0Transform a random Empty Space into a random Rare Space.\nExhaustive !stslib:ex!."
+      "description": "\u03C0Transform a random Empty Space into a random rare Space.\nExhaustive !stslib:ex!."
     },
     {
       "name": "Treasure Dig+",
@@ -849,7 +841,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "\u03C0Transform a random Empty Space into a random Rare Space.\nExhaustive !stslib:ex!."
+      "description": "\u03C0Transform a random Empty Space into a random rare Space.\nExhaustive !stslib:ex!."
     },
     {
       "name": "Trek Time!",
@@ -866,14 +858,6 @@
       "type": "Power",
       "cost": "1",
       "description": "At the start of your turn, add a card into your hand that wariomod:Moves up to 3 Spaces."
-    },
-    {
-      "name": "Triple Dip+",
-      "color": "Bandit_weird_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 4 damage twice.\nActivate the Space 3 ahead of you twice.\nwariomod:Move 3."
     },
     {
       "name": "bruh",
@@ -1041,7 +1025,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "Gain 3 Block X times.\n\u03C0Transform the next X Spaces into random Rare Spaces.\nExhaust."
+      "description": "Gain 3 Block X times.\n\u03C0Transform the next X Spaces into random rare Spaces.\nExhaust."
     },
     {
       "name": "Fabulous Prizes+",
@@ -1049,7 +1033,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "Gain 3 Block X+1 times.\n\u03C0Transform the next X+1 Spaces into random Rare Spaces.\nExhaust."
+      "description": "Gain 3 Block X+1 times.\n\u03C0Transform the next X+1 Spaces into random rare Spaces.\nExhaust."
     },
     {
       "name": "Game Over",
@@ -1112,15 +1096,15 @@
       "color": "Bandit_weird_color",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "2",
-      "description": "wariomod:Move 0 5 times.\nExhaust."
+      "cost": "1",
+      "description": "wariomod:Move 0 3 times.\nExhaust."
     },
     {
       "name": "Massive Party",
       "color": "Bandit_weird_color",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "2",
+      "cost": "3",
       "description": "Activate all positive Spaces.\nExhaust."
     },
     {
@@ -1129,7 +1113,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Activate all positive Spaces.\nExhaustive !stslib:ex!."
+      "description": "Activate all positive Spaces.\nExhaust."
     },
     {
       "name": "Poisoned Bombs",
@@ -1261,10 +1245,17 @@
     },
     {
       "name": "Angry Hat",
-      "tier": "Rare",
+      "tier": "Uncommon",
       "pool": "Bandit_weird_color",
       "description": "At the start of combat, Transform a random negative Space into an Empty Space.",
       "flavorText": "ARRRRRGH, this conflict is coming to a head."
+    },
+    {
+      "name": "Sunglasses Hat",
+      "tier": "Rare",
+      "pool": "Bandit_weird_color",
+      "description": "The first time a rare Space would fade each combat, prevent it.",
+      "flavorText": "B)"
     },
     {
       "name": "Doom Hat",
@@ -1277,7 +1268,7 @@
       "name": "Propeller Hat",
       "tier": "Boss",
       "pool": "Bandit_weird_color",
-      "description": "Activate the first positive Space you Move over each turn.",
+      "description": "Activate the first positive Space you pass each turn.",
       "flavorText": "get it, like u r flying"
     },
     {

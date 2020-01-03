@@ -1,0 +1,1403 @@
+{
+  "mod": {
+    "name": "Bartender",
+    "version": "0.1.0",
+    "authors": ["GuilelessMonk"],
+    "credits": "",
+    "description": "Adds Bartender as a playable class.",
+    "mts_version": "2.6.0",
+    "sts_version": "03-29-2018",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Bottle",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage and apply 3 stacks of bartender:Bleed.\nExhaust."
+    },
+    {
+      "name": "Bottle+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 Damage and apply 5 stacks of bartender:Bleed.\nExhaust."
+    },
+    {
+      "name": "Dodge",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Intangible, add a bartender:Tired to your Draw pile. bartender:Flip: bartender:Dart."
+    },
+    {
+      "name": "Dodge+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Intangible. bartender:Flip: bartender:Dart."
+    },
+    {
+      "name": "Drop",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage to all Enemies.\nbartender:Flip: bartender:Soar."
+    },
+    {
+      "name": "Drop+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 Damage to all Enemies.\nbartender:Flip: upgraded bartender:Soar."
+    },
+    {
+      "name": "Final Heaven",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage 7 times.\nExhaust. Ethereal."
+    },
+    {
+      "name": "Final Heaven+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage 7 times.\nExhaust. Ethereal."
+    },
+    {
+      "name": "Hailstorm",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 Damage to all Enemies.\nGain bartender:Frozen.\nbartender:Flip: bartender:Glacier."
+    },
+    {
+      "name": "Hailstorm+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 Damage to all Enemies.\nGain bartender:Frozen.\nbartender:Flip: upgraded bartender:Glacier."
+    },
+    {
+      "name": "Haymaker",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 Damage.\nbartender:Flip: bartender:Windup."
+    },
+    {
+      "name": "Haymaker+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 36 Damage.\nbartender:Flip: upgraded bartender:Windup"
+    },
+    {
+      "name": "Jab",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage.\nExhaust.\nbartender:Combo: Upgrade Card."
+    },
+    {
+      "name": "Jab+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 Damage.\nExhaust.\nbartender:Combo: Upgrade Card."
+    },
+    {
+      "name": "Sting",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 bartender:Flow.\nbartender:Combo: Apply bartender:Gash on attack.\nbartender:Flip: bartender:Float."
+    },
+    {
+      "name": "Sting+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 bartender:Flow.\nbartender:Combo: Apply bartender:Gash on attack.\nbartender:Flip: upgraded bartender:Float."
+    },
+    {
+      "name": "Tired",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "",
+      "description": "bartender:Heavy. Ethereal."
+    },
+    {
+      "name": "Defend",
+      "color": "Tifa",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Tifa",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Somersault",
+      "color": "Tifa",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nbartender:Dredge: 2."
+    },
+    {
+      "name": "Somersault+",
+      "color": "Tifa",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nbartender:Dredge: 3."
+    },
+    {
+      "name": "Strike",
+      "color": "Tifa",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Tifa",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Ball Of Ice",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain bartender:Frozen.\nEthereal, Exhaust."
+    },
+    {
+      "name": "Ball Of Ice+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain bartender:Frozen.\nExhaust."
+    },
+    {
+      "name": "Bitters",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Gain 2 bartender:Flow when drawn.\nUnplayable."
+    },
+    {
+      "name": "Bitters+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Gain 3 bartender:Flow when drawn.\nUnplayable."
+    },
+    {
+      "name": "Center Self",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 block.\nbartender:Combo: Apply 3 stacks of bartender:Bleed on attack."
+    },
+    {
+      "name": "Center Self+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 block.\nbartender:Combo: Apply 5 stacks of bartender:Bleed on attack."
+    },
+    {
+      "name": "Cross",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage.\nbartender:Combo: Apply Weak on attack."
+    },
+    {
+      "name": "Cross+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 Damage.\nbartender:Combo 2: Apply Weak on attack."
+    },
+    {
+      "name": "Dancing Jab",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 3 times.\nbartender:Heavy."
+    },
+    {
+      "name": "Dancing Jab+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times.\nbartender:Heavy."
+    },
+    {
+      "name": "Dragonkick",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage. Apply 5 stacks of bartender:Bleed."
+    },
+    {
+      "name": "Dragonkick+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage. Apply 7 stacks of bartender:Bleed."
+    },
+    {
+      "name": "Fading Blow",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 Damage.\nGain 4 bartender:Ebb."
+    },
+    {
+      "name": "Fading Blow+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage.\nGain 5 bartender:Ebb."
+    },
+    {
+      "name": "Feint",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 block.\nbartender:Combo: Apply a stack of Vulnerable on attack."
+    },
+    {
+      "name": "Feint+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 block.\nbartender:Combo 2: Apply a stack of Vulnerable on attack."
+    },
+    {
+      "name": "Foot-Thrust",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 Damage.\nbartender:Combo: Double Block generated."
+    },
+    {
+      "name": "Foot-Thrust+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage.\nbartender:Combo: Double Block generated."
+    },
+    {
+      "name": "Free Pour",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Gain 4 bartender:Ebb when drawn.\nUnplayable."
+    },
+    {
+      "name": "Free Pour+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Gain 6 bartender:Ebb when drawn.\nUnplayable."
+    },
+    {
+      "name": "Greased Lightning",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a Card. Exhaust."
+    },
+    {
+      "name": "Greased Lightning+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 Cards. Exhaust."
+    },
+    {
+      "name": "Hook",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage.\nbartender:Combo: Apply Vulnerable on attack."
+    },
+    {
+      "name": "Hook+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage.\nbartender:Combo 2: Apply Vulnerable on attack."
+    },
+    {
+      "name": "On The Rocks",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "On Draw: Gain bartender:Frozen. bartender:Heavy."
+    },
+    {
+      "name": "On The Rocks+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "On Draw: Gain bartender:Frozen and 2 bartender:Ebb. bartender:Heavy."
+    },
+    {
+      "name": "Pony Shot",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "On Draw: Deal 3 damage to a random enemy. Unplayable."
+    },
+    {
+      "name": "Pony Shot+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "On Draw: Deal 5 damage to a random enemy. Unplayable."
+    },
+    {
+      "name": "Power Up Punch",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 bartender:Flow.\nDeal 7 Damage."
+    },
+    {
+      "name": "Power Up Punch+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 2 bartender:Flow.\nDeal 9 Damage."
+    },
+    {
+      "name": "Press Forward",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nbartender:Combo 2: Apply Weak on attack."
+    },
+    {
+      "name": "Press Forward+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nbartender:Combo 3: Apply Weak on attack."
+    },
+    {
+      "name": "Ripple",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 bartender:Ebb.\nExhaust."
+    },
+    {
+      "name": "Ripple+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 bartender:Ebb.\nExhaust."
+    },
+    {
+      "name": "Scoop",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bartender:Dredge.\nExhaust."
+    },
+    {
+      "name": "Scoop+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bartender:Dredge."
+    },
+    {
+      "name": "Snap Punch",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage.\nbartender:Combo 2: Upgrade Card."
+    },
+    {
+      "name": "Snap Punch+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage.\nbartender:Combo 3: Upgrade Card."
+    },
+    {
+      "name": "Step of the Wind",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 bartender:Ebb.\nbartender:Slip: Step of the Wind."
+    },
+    {
+      "name": "Step of the Wind+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 bartender:Ebb.\nbartender:Slip: upgraded Step of the Wind."
+    },
+    {
+      "name": "Stick and Move",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage twice.\nbartender:Slip: Stick and Move."
+    },
+    {
+      "name": "Stick and Move+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage twice.\nbartender:Slip: upgraded Stick and Move."
+    },
+    {
+      "name": "Sucker Punch",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 Damage.\nInnate. Exhaust."
+    },
+    {
+      "name": "Sucker Punch+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 Damage.\nInnate. Exhaust."
+    },
+    {
+      "name": "With A Twist",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "On Draw: Apply 4 stacks of Bleed to all enemies.\nUnplayable."
+    },
+    {
+      "name": "With A Twist+",
+      "color": "Tifa",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "On Draw: Apply 6 stacks of Bleed to all enemies.\nUnplayable."
+    },
+    {
+      "name": "Alacrity",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reduce Cost of a random card in hand to 0 for this turn.\nExhaust."
+    },
+    {
+      "name": "Alacrity+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reduce Cost of a card in hand to 0 for this turn.\nExhaust."
+    },
+    {
+      "name": "Axe Heel Kick",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 Damage.\nbartender:Combo: Double Damage."
+    },
+    {
+      "name": "Axe Heel Kick+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 Damage.\nbartender:Combo: Double Damage."
+    },
+    {
+      "name": "Bicycle Kick",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage.\nApply 4 bartender:Bleed and a stack of bartender:Gash."
+    },
+    {
+      "name": "Bicycle Kick+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage.\nApply 7 bartender:Bleed and a stack of bartender:Gash."
+    },
+    {
+      "name": "Bloodbath",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Pass the bartender:Bleed stacks on one enemy onto all Enemies. Exhaust."
+    },
+    {
+      "name": "Bloodbath+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Pass the bartender:Bleed stacks on one enemy onto all Enemies."
+    },
+    {
+      "name": "Bouncer",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "You may discard a card at the start of your turn. If you do, draw a card."
+    },
+    {
+      "name": "Bouncer+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "You may discard up to 2 cards at the start of your turn. Draw that many cards."
+    },
+    {
+      "name": "Coeurl Form",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When attacked, apply 3 stacks on bartender:Bleed to the attacker."
+    },
+    {
+      "name": "Coeurl Form+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When attacked, apply 4 stacks on bartender:Bleed to the attacker."
+    },
+    {
+      "name": "Dart",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nbartender:Flip: bartender:Dodge."
+    },
+    {
+      "name": "Dart+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nbartender:Flip: upgraded bartender:Dodge."
+    },
+    {
+      "name": "Elbow Slash",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage.\nbartender:Combo: Apply 1 bartender:Gash."
+    },
+    {
+      "name": "Elbow Slash+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 Damage.\nbartender:Combo: Apply 1 bartender:Gash."
+    },
+    {
+      "name": "Fight Dirty",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply 2 stacks of bartender:Bleed on attack."
+    },
+    {
+      "name": "Fight Dirty+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply 3 stacks of bartender:Bleed on attack."
+    },
+    {
+      "name": "Four Point Fury",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage to a random enemy Four times.\nAdd a bartender:Tired to the draw pile."
+    },
+    {
+      "name": "Four Point Fury+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage to a random enemy Four times.\nAdd a bartender:Tired to the draw pile."
+    },
+    {
+      "name": "Glacier",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nWhenever you are attacked this turn, apply 3 stacks of bartender:Bleed back.\nbartender:Flip: bartender:Hailstorm."
+    },
+    {
+      "name": "Glacier+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nWhenever you are attacked this turn, apply 5 stacks of bartender:Bleed back.\nbartender:Flip: upgraded bartender:Hailstorm."
+    },
+    {
+      "name": "Glare",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust.\nbartender:Combo: Apply Vulnerable on attack."
+    },
+    {
+      "name": "Glare+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust.\nbartender:Combo 2: Apply Vulnerable on attack."
+    },
+    {
+      "name": "Insight",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 bartender:Ebb.\nbartender:Dredge 4."
+    },
+    {
+      "name": "Insight+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 bartender:Ebb.\nbartender:Dredge 4."
+    },
+    {
+      "name": "Meditate",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add 2 X bartender:Alacrities to your draw pile."
+    },
+    {
+      "name": "Meditate+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add 2 X upgraded bartender:Alacrities to your draw pile."
+    },
+    {
+      "name": "Meteodrive",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 Damage 1 to 5 times."
+    },
+    {
+      "name": "Meteodrive+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 Damage 1 to 7 times."
+    },
+    {
+      "name": "Mirage",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 bartender:Ebb.\nbartender:Combo: Add Duplicate of Card to draw pile."
+    },
+    {
+      "name": "Mirage+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 bartender:Ebb.\nbartender:Combo: Add Duplicate of Card to draw pile."
+    },
+    {
+      "name": "On The House",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "On Draw: Reduce the cost of a random card in hand to 0 for this turn.\nUnplayable, bartender:Heavy."
+    },
+    {
+      "name": "On The House+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "On Draw: Reduce Cost of a card in hand to 0 for this turn.\nUnplayable, bartender:Heavy."
+    },
+    {
+      "name": "Opo-Opo Form",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Deal an additional 10% damage for every card you have played this turn."
+    },
+    {
+      "name": "Opo-Opo Form+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Deal an additional 10% damage for every card you have played this turn.\nInnate."
+    },
+    {
+      "name": "Perfect Balance",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 bartender:Ebb.\nExhaust."
+    },
+    {
+      "name": "Perfect Balance+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 bartender:Ebb.\nExhaust."
+    },
+    {
+      "name": "Phantom Blow",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 6 stacks of bartender:Bleed.\nScales with Damage."
+    },
+    {
+      "name": "Phantom Blow+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 9 stacks of bartender:Bleed.\nScales with Damage."
+    },
+    {
+      "name": "Raptor Form",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain a stack of bartender:Flow every other card played."
+    },
+    {
+      "name": "Raptor Form+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain a stack of bartender:Flow every other card played.\nInnate."
+    },
+    {
+      "name": "RockBreaker",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deals 14 Damage. bartender:Limitless: increase damage by 8."
+    },
+    {
+      "name": "Rope a Dope",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 bartender:Ebb when attacked."
+    },
+    {
+      "name": "Rope a Dope+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 bartender:Ebb when attacked."
+    },
+    {
+      "name": "Scowl",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust.\nbartender:Combo: Apply Weak on attack."
+    },
+    {
+      "name": "Scowl+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust.\nbartender:Combo 2: Apply Weak on attack."
+    },
+    {
+      "name": "Smash 'em",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Triple the bartender:Bleed stacks an enemy has. Exhaust."
+    },
+    {
+      "name": "Smash 'em+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Triple the bartender:Bleed stacks an enemy has."
+    },
+    {
+      "name": "Soar",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 Damage to a random Enemy Twice.\nbartender:Slip: bartender:Drop."
+    },
+    {
+      "name": "Soar+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage to a random Enemy Twice.\nbartender:Slip: upgraded bartender:Drop."
+    },
+    {
+      "name": "StoneBreaker",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deals 14 Damage. bartender:Limitless: increase damage by 13."
+    },
+    {
+      "name": "Tornadokick",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 Damage. Deal damage equal to the amount of bartender:Bleed stacks target has."
+    },
+    {
+      "name": "Tornadokick+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 Damage. Deal damage equal to the amount of bartender:Bleed stacks target has."
+    },
+    {
+      "name": "Training Dummy",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 4 bartender:Jabs to your draw pile."
+    },
+    {
+      "name": "Training Dummy+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 5 bartender:Jabs to your draw pile."
+    },
+    {
+      "name": "Wall of Ice",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 bartender:Ebb.\nGain bartender:Frozen."
+    },
+    {
+      "name": "Wall of Ice+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 bartender:Ebb.\nGain bartender:Frozen."
+    },
+    {
+      "name": "Waterkick",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage and target loses 2 Strength this turn."
+    },
+    {
+      "name": "Waterkick+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 Damage and target loses 3 Strength this turn."
+    },
+    {
+      "name": "Well Drinks",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 bartender:Ebb. Put a random Unplayable Bartender Card into your hand."
+    },
+    {
+      "name": "Well Drinks+",
+      "color": "Tifa",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 bartender:Ebb. Put a random upgraded Unplayable Bartender Card into your hand."
+    },
+    {
+      "name": "Be Like Water",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Block gained from Bartender cards is turned into bartender:Ebb."
+    },
+    {
+      "name": "Be Like Water+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Block gained from Bartender cards is turned into bartender:Ebb.\nInnate."
+    },
+    {
+      "name": "Beat Rush",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage. Add a bartender:Jab to your hand."
+    },
+    {
+      "name": "Beat Rush+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage. Add 2 bartender:Jabs to your hand."
+    },
+    {
+      "name": "Breathe Deep",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 8 bartender:Ebb. Reduce the cost of a random card in hand to 0."
+    },
+    {
+      "name": "Breathe Deep+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 10 bartender:Ebb. Reduce the cost of 2 random cards in hand to 0."
+    },
+    {
+      "name": "Cold Blooded",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 bartender:Flow and bartender:Frozen."
+    },
+    {
+      "name": "Cold Blooded+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 5 bartender:Flow and bartender:Frozen."
+    },
+    {
+      "name": "Combo Master",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "bartender:Combos last for an extra card."
+    },
+    {
+      "name": "Combo Master+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "bartender:Combos last for 2 extra cards."
+    },
+    {
+      "name": "Dolphin Blow",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Double bartender:Flow and deal 4 Damage.\nExhaust."
+    },
+    {
+      "name": "Dolphin Blow+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Double bartender:Flow and deal 4 Damage."
+    },
+    {
+      "name": "Float",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 bartender:Ebb.\nScales like Block.\nbartender:Slip: bartender:Sting."
+    },
+    {
+      "name": "Float+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 bartender:Ebb.\nScales with block.\nbartender:Slip: upgraded bartender:Sting."
+    },
+    {
+      "name": "Form Shift",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add bartender:Opo-Opo Form, bartender:Raptor Form, or bartender:Coeurl Form to hand, costs 0 this turn."
+    },
+    {
+      "name": "Form Shift+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add bartender:Opo-Opo Form, bartender:Raptor Form, or bartender:Coeurl Form to hand, costs 0 this turn."
+    },
+    {
+      "name": "High Tide",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Turn bartender:Ebb into bartender:Flow.\nExhaust."
+    },
+    {
+      "name": "High Tide+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Turn bartender:Ebb into bartender:Flow."
+    },
+    {
+      "name": "Moonsault Kick",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 Damage.\nbartender:Combo: Card Played Twice."
+    },
+    {
+      "name": "Moonsault Kick+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 Damage.\nbartender:Combo: Card Played Twice."
+    },
+    {
+      "name": "Patience",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "0 cost cards aren't discarded at the end of your turn."
+    },
+    {
+      "name": "Patience+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "0 cost cards aren't discarded at the end of your turn. Innate."
+    },
+    {
+      "name": "Skim",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you bartender:Dredge, the card(s) goes into your hand."
+    },
+    {
+      "name": "Skim+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you bartender:Dredge, the card(s) goes into your hand.\nInnate."
+    },
+    {
+      "name": "Spirits Within",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Add an bartender:Bottle to the Draw Pile whenever you draw an Unplayable Bartender card."
+    },
+    {
+      "name": "Spirits Within+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Add an bartender:Bottle to the Draw Pile whenever you draw an Unplayable Bartender card."
+    },
+    {
+      "name": "Storage",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Put an bartender:Bottle in hand whenever you play a Power."
+    },
+    {
+      "name": "Storage+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Put an bartender:Bottle in hand whenever you play a Power.\nInnate."
+    },
+    {
+      "name": "Top Shelf",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 bartender:Flow.\nAdd an bartender:Bottle to your hand."
+    },
+    {
+      "name": "Top Shelf+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 bartender:Flow.\nAdd 2 bartender:Bottles to your hand."
+    },
+    {
+      "name": "Windup",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bartender:Combo: Apply Vulnerable on Attack.\nbartender:Slip: bartender:Haymaker."
+    },
+    {
+      "name": "Windup+",
+      "color": "Tifa",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bartender:Combo 2: Apply Vulnerable on Attack.\nbartender:Slip: upgraded bartender:Haymaker."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Sprint Shoes",
+      "tier": "Starter",
+      "pool": "Tifa",
+      "description": "Draw a card when you play a Bartender card.",
+      "flavorText": "Speedy shoes for faster movement."
+    },
+    {
+      "name": "Protect_Vest",
+      "tier": "Common",
+      "pool": "",
+      "description": "Start combat with 6 Ebb.",
+      "flavorText": "A Nilfheim-made vest that can resist bullets."
+    },
+    {
+      "name": "Coral Ring",
+      "tier": "Uncommon",
+      "pool": "Tifa",
+      "description": "Ebb and Flow Decrease by 1/4 instead of 1/2 at the end of every turn.",
+      "flavorText": "Ring infused with the power of water."
+    },
+    {
+      "name": "Cowpoke Hat",
+      "tier": "Uncommon",
+      "pool": "Tifa",
+      "description": "Combos last for an extra card.",
+      "flavorText": "Howdy."
+    },
+    {
+      "name": "Piano Music",
+      "tier": "Uncommon",
+      "pool": "Tifa",
+      "description": "Every 25 hp lost add a Final Heaven to your hand (Costs 0, deal damage to an enemy 6 times).",
+      "flavorText": "Memories of childhood..."
+    },
+    {
+      "name": "Power Wrist",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Start combat with 3 Flow.",
+      "flavorText": "A leather band that martial artists wear on their wrists."
+    },
+    {
+      "name": "White Cape",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Gain a stack of Artifact every 3 turns.",
+      "flavorText": "Ring infused with the power of water."
+    },
+    {
+      "name": "Choco Feather",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Start combat with 2 extra Jabs in hand.",
+      "flavorText": "A feather from a fast and cute bird."
+    },
+    {
+      "name": "Silver Glasses",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Every 9 cards played make 1 card in hand free for this turn.",
+      "flavorText": "Silver-rimmed spectacles."
+    },
+    {
+      "name": "Vampire_Cape",
+      "tier": "Shop",
+      "pool": "Tifa",
+      "description": "Heal 5 hp every time an enemy dies from Bleed.",
+      "flavorText": "A cape drenched in blood."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Bartender",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+  ]
+}

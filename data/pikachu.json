@@ -1,0 +1,548 @@
+{
+  "mod": {
+    "name": "Pikachu Mod",
+    "version": "0.0.2",
+    "authors": ["WardenclyffeMedia"],
+    "credits": "",
+    "description": "Adds Pikachu as a playable character!",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Dig_",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deals 0 Damage equal to your Block."
+    },
+    {
+      "name": "Dig_+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deals 0 Damage equal to your Block."
+    },
+    {
+      "name": "Thunder Shock",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage."
+    },
+    {
+      "name": "Thunder Shock+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage."
+    },
+    {
+      "name": "Body Slam",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to the number of cards in your draw deck."
+    },
+    {
+      "name": "Body Slam+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate. Deal damage equal to the number of cards in your draw deck.\n(0 Damage)"
+    },
+    {
+      "name": "Charge Beam",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Orb Slot and Channel 1 Lightning.\nDraw a Card."
+    },
+    {
+      "name": "Charge Beam+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Orb Slot and Channel 1 Lightning.\nDraw a Card."
+    },
+    {
+      "name": "Electro Ball",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Dexterity.  Channel 1 Lightning. Evoke."
+    },
+    {
+      "name": "Electro Ball+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Dexterity.  Channel 2 Lightning. Evoke."
+    },
+    {
+      "name": "Feint",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 Damage. Apply 2 Frail."
+    },
+    {
+      "name": "Feint+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage. Apply 2 Frail."
+    },
+    {
+      "name": "Flash",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Lightning."
+    },
+    {
+      "name": "Flash+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Channel 1 Lightning."
+    },
+    {
+      "name": "Growl",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block. Apply 2 weak."
+    },
+    {
+      "name": "Growl+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. Apply 2 weak."
+    },
+    {
+      "name": "Iron Tail",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage and apply !Pikachu:SecondMagic! Vulnerable. Gain 1 Strength until end of turn."
+    },
+    {
+      "name": "Iron Tail+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage and apply !Pikachu:SecondMagic! Vulnerable. Gain 2 Strength until end of turn."
+    },
+    {
+      "name": "Quick Attack",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 Damage."
+    },
+    {
+      "name": "Quick Attack+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate. Deal 6 Damage."
+    },
+    {
+      "name": "Rain Dance",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 pikachu:Conductive."
+    },
+    {
+      "name": "Rain Dance+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 pikachu:Conductive."
+    },
+    {
+      "name": "Slam",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage twice."
+    },
+    {
+      "name": "Slam+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage twice."
+    },
+    {
+      "name": "Spark",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 Damage. Gain [E] next turn."
+    },
+    {
+      "name": "Spark+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 Damage. Gain [E] next turn."
+    },
+    {
+      "name": "Tail Whip",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 vulnerable."
+    },
+    {
+      "name": "Tail Whip+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 vulnerable."
+    },
+    {
+      "name": "Take Down",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage and lose 2 HP."
+    },
+    {
+      "name": "Take Down+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage and lose 2 HP."
+    },
+    {
+      "name": "Wild Charge",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage and gain 1 Vulnerable. Shuffle a Dazed into your deck."
+    },
+    {
+      "name": "Wild Charge+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage and gain 1 Vulnerable."
+    },
+    {
+      "name": "Agility",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 Dexterity. Gain !Pikachu:SecondMagic! Block at the end of each turn."
+    },
+    {
+      "name": "Agility+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 3 Dexterity. Gain !Pikachu:SecondMagic! Block at the end of each turn."
+    },
+    {
+      "name": "Discharge",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 to all enemies.\nEvoke all Orbs."
+    },
+    {
+      "name": "Discharge+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 to all enemies.\nEvoke all Orbs."
+    },
+    {
+      "name": "Double Team",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block 2 times."
+    },
+    {
+      "name": "Double Team+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block 2 times."
+    },
+    {
+      "name": "Light Screen",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible. Exhaust."
+    },
+    {
+      "name": "Light Screen+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Intangible. Exhaust."
+    },
+    {
+      "name": "Mega Punch",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 7 damage X times."
+    },
+    {
+      "name": "Mega Punch+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 10 damage X times."
+    },
+    {
+      "name": "Secret Power",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Plasma. Exhaust."
+    },
+    {
+      "name": "Secret Power+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Channel 1 Plasma. Exhaust."
+    },
+    {
+      "name": "Swift",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Bypass enemy's block and deal 12 damage."
+    },
+    {
+      "name": "Swift+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Bypass enemy's block and deal 15 damage."
+    },
+    {
+      "name": "Thunderbolt",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage and apply Vulnerable to all enemies."
+    },
+    {
+      "name": "Thunderbolt+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage and apply Vulnerable to all enemies."
+    },
+    {
+      "name": "Volt Switch",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 1 Lightning and gain 11 block. Place a card from discard on top of your deck."
+    },
+    {
+      "name": "Volt Switch+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 1 Lightning and gain 16 block. Place a card from discard on top of your deck."
+    },
+    {
+      "name": "Dig",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Gain 11 Block and 1 Intangible. At the beginning of next turn, deal damage equal to your Block to a random enemy."
+    },
+    {
+      "name": "Dig+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Gain 16 Block and 1 Intangible. At the beginning of next turn, deal damage equal to your Block to a random enemy."
+    },
+    {
+      "name": "Metronome",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, add a random Attack Card to your hand. It costs 0 that turn."
+    },
+    {
+      "name": "Metronome+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, add a random Attack Card to your hand. It costs 0 that turn."
+    },
+    {
+      "name": "Rest",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 15 Block, Heal 5 HP, and End Turn. Exhaust."
+    },
+    {
+      "name": "Rest+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 25 Block, Heal 5 HP, and End Turn. Exhaust."
+    },
+    {
+      "name": "Thunder",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage and apply 1 Vulnerable to all enemies."
+    },
+    {
+      "name": "Thunder Wave",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Channel 1 Lightning. If enemy is vulnerable, apply stslib:Stun. Exhaust."
+    },
+    {
+      "name": "Thunder Wave+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 1 Lightning. If enemy is vulnerable, apply stslib:Stun. Exhaust."
+    },
+    {
+      "name": "Thunder+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 25 damage and apply 2 Vulnerable to all enemies."
+    },
+    {
+      "name": "Toxic",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Double an Enemy's Poison.\nThen, apply 5 Poison."
+    },
+    {
+      "name": "Toxic+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Double an Enemy's Poison.\nThen, apply 5 Poison."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Leftovers",
+      "tier": "Starter",
+      "pool": "Default_gray_color",
+      "description": "At the start of each combat, heal 2 HP.",
+      "flavorText": "You found these on the floor somewhere."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Pikachu",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+  ]
+}

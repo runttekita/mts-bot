@@ -1,0 +1,1204 @@
+{
+  "mod": {
+    "name": "TheFirefly",
+    "version": "1.0.1",
+    "authors": ["Vex'd"],
+    "credits": "",
+    "description": "A firefly..?",
+    "mts_version": "3.8.0",
+    "sts_version": "2.0",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Firefly_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Firefly_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Photon Blast",
+      "color": "Firefly_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nExhaust a card in your hand.\nIncrease this card's damage by 8 times its cost.\nIf this card is Exhausted, deal !quantum! damage to ALL enemies."
+    },
+    {
+      "name": "Photon Blast+",
+      "color": "Firefly_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nExhaust 2 cards in your hand.\nIncrease this card's damage by 8 times their costs.\nIf this card is Exhausted, deal !quantum! damage to ALL enemies."
+    },
+    {
+      "name": "Stealth Mode",
+      "color": "Firefly_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "X",
+      "description": "Gain X thefirefly:Stealth.\nAdd a copy of this into your draw pile in 3 turns."
+    },
+    {
+      "name": "Stealth Mode+",
+      "color": "Firefly_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "X",
+      "description": "Gain X+1 thefirefly:Stealth.\nAdd a copy of this into your draw pile in 3 turns."
+    },
+    {
+      "name": "Strike",
+      "color": "Firefly_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Firefly_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Paradox",
+      "color": "Firefly_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 10 Unreality.\nGain 3 thefirefly:Unreality."
+    },
+    {
+      "name": "Paradox+",
+      "color": "Firefly_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 14 Unreality.\nGain 3 thefirefly:Unreality."
+    },
+    {
+      "name": "Artillery Beam",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage to ALL enemies."
+    },
+    {
+      "name": "Artillery Beam+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage to ALL enemies."
+    },
+    {
+      "name": "Blink",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nDiscard a random card.\nDraw 1 card."
+    },
+    {
+      "name": "Blink+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nDiscard a random card.\nDraw 2 cards."
+    },
+    {
+      "name": "Boost",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nNext turn, draw 1 additional card."
+    },
+    {
+      "name": "Boost+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nNext turn, draw 1 additional card."
+    },
+    {
+      "name": "Covering Fire",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 3 Block."
+    },
+    {
+      "name": "Covering Fire+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nGain 4 Block."
+    },
+    {
+      "name": "Distort",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 7 thefirefly:Unreality.\nthefirefly:Retrieve a random card."
+    },
+    {
+      "name": "Distort+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 10 thefirefly:Unreality.\nthefirefly:Retrieve a random card."
+    },
+    {
+      "name": "EMP",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all Block from ALL enemies. If no block was removed, apply 1 Vulnerable and 1 Weak instead.\nExhaust."
+    },
+    {
+      "name": "EMP+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all Block from ALL enemies. If no block was removed, apply 2 Vulnerable and 2 Weak instead.\nExhaust."
+    },
+    {
+      "name": "Evasive Maneuver",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Dexterity this turn."
+    },
+    {
+      "name": "Evasive Maneuver+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Dexterity this turn."
+    },
+    {
+      "name": "Flak Cannon",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nDiscard 1 random card."
+    },
+    {
+      "name": "Flak Cannon+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nDiscard 1 random card."
+    },
+    {
+      "name": "Flare Screen",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nWhenever you are attacked this turn, deal 3 damage back."
+    },
+    {
+      "name": "Flare Screen+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nWhenever you are attacked this turn, deal 4 damage back."
+    },
+    {
+      "name": "Flight",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block."
+    },
+    {
+      "name": "Flight+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block."
+    },
+    {
+      "name": "Intercepting Shot",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the enemy intends to attack, they lose 2 Strength this turn."
+    },
+    {
+      "name": "Intercepting Shot+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf the enemy intends to attack, they lose 3 Strength this turn."
+    },
+    {
+      "name": "Pacify",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 3 Strength until attacked.\nExhaust."
+    },
+    {
+      "name": "Pacify+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 4 Strength until attacked.\nExhaust."
+    },
+    {
+      "name": "Quantum Tunneling",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nGain [E] .\nShuffle 1 Void into your draw pile."
+    },
+    {
+      "name": "Quantum Tunneling+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nGain [E] [E] .\nShuffle 1 Void into your draw pile."
+    },
+    {
+      "name": "Rend",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to the enemy's thefirefly:Unreality.\nApply 5 thefirefly:Unreality."
+    },
+    {
+      "name": "Rend+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 5 thefirefly:Unreality.\nDeal damage equal to the enemy's thefirefly:Unreality."
+    },
+    {
+      "name": "Reposition",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nthefirefly:Provision 1 card."
+    },
+    {
+      "name": "Reposition+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nthefirefly:Provision 1 card."
+    },
+    {
+      "name": "Roll Back",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thefirefly:Retrieve 1 card, then thefirefly:Provision 1 card.\nExhaust."
+    },
+    {
+      "name": "Roll Back+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thefirefly:Retrieve 1 card, then thefirefly:Provision 1 card."
+    },
+    {
+      "name": "Shield Array",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block 3 times."
+    },
+    {
+      "name": "Shield Array+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block 4 times."
+    },
+    {
+      "name": "Star Cinder",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 thefirefly:Plasma_Wisp into your hand.\nExhaust."
+    },
+    {
+      "name": "Star Cinder+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 thefirefly:Plasma_Wisp into your hand."
+    },
+    {
+      "name": "Steady Aim",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 thefirefly:Precision."
+    },
+    {
+      "name": "Steady Aim+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 thefirefly:Precision."
+    },
+    {
+      "name": "Stored Power",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 0 [E] .\n[E] gain increases by 1 when drawn.\nExhaust."
+    },
+    {
+      "name": "Stored Power+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 [E] .\n[E] gain increases by 1 when drawn.\nExhaust."
+    },
+    {
+      "name": "Account Uncertainty",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, draw 1 card, then thefirefly:Provision 1 card in your hand."
+    },
+    {
+      "name": "Account Uncertainty+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of each turn, darw 1 card, then thefirefly:Provision 1 card in your hand."
+    },
+    {
+      "name": "Auroral Discharge",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nIf your hand contains a Power, add 1 thefirefly:Plasma_Wisp into your hand."
+    },
+    {
+      "name": "Auroral Discharge+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nIf your hand contains a Power, add 1 thefirefly:Plasma_Wisp into your hand."
+    },
+    {
+      "name": "Auto-Targeting",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 thefirefly:Precision."
+    },
+    {
+      "name": "Auto-Targeting+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 2 thefirefly:Precision."
+    },
+    {
+      "name": "Bombardment",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to a random enemy 2 times."
+    },
+    {
+      "name": "Bombardment+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to a random enemy 3 times."
+    },
+    {
+      "name": "Charged Laser",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nWhenever you draw this card, increase its damage by 6 this combat."
+    },
+    {
+      "name": "Charged Laser+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nWhenever you draw this card, increase its damage by 8 this combat."
+    },
+    {
+      "name": "Data Miner",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random Common card into your hand.\nWhenever you draw this card, shuffle a copy of it into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Data Miner+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random card into your hand.\nWhenever you draw this card, shuffle a copy of it into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Decoy Shot",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 1 thefirefly:Stealth."
+    },
+    {
+      "name": "Decoy Shot+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 1 thefirefly:Stealth."
+    },
+    {
+      "name": "Energy Shield",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 Block X times.\nBlock is not removed at the start of your next X turns.\nExhaust."
+    },
+    {
+      "name": "Energy Shield+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 6 Block X times.\nBlock is not removed at the start of your next X turns.\nExhaust."
+    },
+    {
+      "name": "Erratic Motions",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you thefirefly:Provision or thefirefly:Retrieve a card, gain 3 Block."
+    },
+    {
+      "name": "Erratic Motions+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you thefirefly:Provision or thefirefly:Retrieve a card, gain 4 Block."
+    },
+    {
+      "name": "Exile",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 thefirefly:Stealth.\nYou cannot play Attacks for 2 turns."
+    },
+    {
+      "name": "Exile+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 3 thefirefly:Stealth.\nYou cannot play Attacks for 2 turns."
+    },
+    {
+      "name": "Full Projection",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 thefirefly:Stealth.\nGain 9 Block.\nShuffle 1 Dazed into your draw pile."
+    },
+    {
+      "name": "Full Projection+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 thefirefly:Stealth.\nGain 12 Block.\nShuffle 1 Dazed into your draw pile."
+    },
+    {
+      "name": "Hyper Focus",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard all but one card from your hand.\nGain 2 thefirefly:Precision for each card discarded."
+    },
+    {
+      "name": "Hyper Focus+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard all but one card from your hand.\nGain 2 thefirefly:Precision for each card discarded."
+    },
+    {
+      "name": "Ionized Barrier",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain Block, deal 2 damage back when attacked this turn."
+    },
+    {
+      "name": "Ionized Barrier+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain Block, deal 3 damage back when attacked this turn."
+    },
+    {
+      "name": "Lamentation",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Exhaust a card, deal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Lamentation+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Exhaust a card, deal 5 damage to ALL enemies."
+    },
+    {
+      "name": "Laser Barrage",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage to a random enemy X times."
+    },
+    {
+      "name": "Laser Barrage+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 9 damage to a random enemy X+1 times."
+    },
+    {
+      "name": "Laser Mail",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain !quantum! Dexterity.\nGain 2 Thorns."
+    },
+    {
+      "name": "Laser Mail+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain !quantum! Dexterity.\nGain 3 Thorns."
+    },
+    {
+      "name": "Life Support",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nHeal 6 HP.\nExhaust."
+    },
+    {
+      "name": "Life Support+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nHeal 9 HP.\nExhaust."
+    },
+    {
+      "name": "Mirror Shield",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nNext turn, deal damage to ALL enemies equal to Block lost this turn."
+    },
+    {
+      "name": "Mirror Shield+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nNext turn, deal damage to ALL enemies equal to Block lost this turn."
+    },
+    {
+      "name": "Nebula Veil",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Exhaust 3 cards, gain 1 thefirefly:Stealth."
+    },
+    {
+      "name": "Nebula Veil+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you Exhaust 3 cards, gain 1 thefirefly:Stealth."
+    },
+    {
+      "name": "Phantom Strike",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 7 HP for each Stealth you have."
+    },
+    {
+      "name": "Phantom Strike+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 10 HP for each Stealth you have."
+    },
+    {
+      "name": "Potent Ammunition",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase the damage of an Attack in your hand by 5."
+    },
+    {
+      "name": "Potent Ammunition+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase the damage of an Attack in your hand by 8."
+    },
+    {
+      "name": "Preload",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All Attacks in your hand cost 0 until played.\nExhaust."
+    },
+    {
+      "name": "Preload+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "All Attacks in your hand cost 0 until played.\nExhaust."
+    },
+    {
+      "name": "Prominence",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Add 1 thefirefly:Plasma_Wisp into your hand.\nWhenever a thefirefly:Plasma_Wisp is Exhausted, deal 5 damage to ALL enemies."
+    },
+    {
+      "name": "Prominence+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Add 1 thefirefly:Plasma_Wisp into your hand.\nWhenever a thefirefly:Plasma_Wisp is Exhausted, deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Quine",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nGain 6 Block.\nShuffle a copy of this card into your draw pile."
+    },
+    {
+      "name": "Quine+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Block.\nShuffle a copy of this card into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Recollection",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, thefirefly:Retrieve 1 card."
+    },
+    {
+      "name": "Recollection+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, thefirefly:Retrieve 1 card."
+    },
+    {
+      "name": "Reverse Engine",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block. thefirefly:Retrieve the last card in your discard pile."
+    },
+    {
+      "name": "Reverse Engine+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block. thefirefly:Retrieve the last card in your discard pile."
+    },
+    {
+      "name": "Ruminate",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a random card in your hand.\nAdd a thefirefly:Paradox into your hand."
+    },
+    {
+      "name": "Ruminate+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card in your hand.\nAdd a thefirefly:Paradox+ into your hand."
+    },
+    {
+      "name": "Searing Enigma",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 10 thefirefly:Fissure. At the end of your turn, if this is in your hand, take 6 damage."
+    },
+    {
+      "name": "Searing Enigma+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 15 thefirefly:Fissure. At the end of your turn, if this is in your hand, take 6 damage."
+    },
+    {
+      "name": "Shield Generator",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Plated Armor."
+    },
+    {
+      "name": "Shield Generator+",
+      "color": "Firefly_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 5 Plated Armor."
+    },
+    {
+      "name": "Alpha Strike",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose all thefirefly:Stealth.\nGain 2 thefirefly:Precision and draw 1 card for each thefirefly:Stealth lost.\nDeal 10 damage."
+    },
+    {
+      "name": "Alpha Strike+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose all thefirefly:Stealth.\nGain 2 thefirefly:Precision and draw 2 cards for each thefirefly:Stealth lost.\nDeal 10 damage."
+    },
+    {
+      "name": "Boltzmann Brain",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, put a random playable card from any pile into your hand."
+    },
+    {
+      "name": "Boltzmann Brain+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, put a random playable card from any pile into your hand."
+    },
+    {
+      "name": "Breach Missile",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage.\nApply 3 Vulnerable.\nApply 3 Weak.\nExhaust."
+    },
+    {
+      "name": "Breach Missile+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 30 damage.\nApply 5 Vulnerable.\nApply 5 Weak.\nExhaust."
+    },
+    {
+      "name": "Cosmogenesis",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Exhaust 3 cards, add a random card into your hand."
+    },
+    {
+      "name": "Cosmogenesis+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you Exhaust 3 cards, add a random card into your hand."
+    },
+    {
+      "name": "Create Clone",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Revive from your next death this combat with 50% Max HP, or gain 2 Max HP at the end of combat."
+    },
+    {
+      "name": "Create Clone+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Revive from your next death this combat with 50% Max HP, or gain 2 Max HP at the end of combat."
+    },
+    {
+      "name": "Dematerialize",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 3 thefirefly:Stealth.\nGain 2 Frail."
+    },
+    {
+      "name": "Dematerialize+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 4 thefirefly:Stealth.\nGain 2 Frail."
+    },
+    {
+      "name": "Ephemeron Form",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, gain 1 thefirefly:Stealth.\nAt the end of your turn, Exhaust your hand."
+    },
+    {
+      "name": "Ephemeron Form+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, gain 2 thefirefly:Stealth.\nAt the end of your turn, Exhaust your hand."
+    },
+    {
+      "name": "Hyperspace Assault",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 thefirefly:Precision.\nCards do not reduce thefirefly:Precision or thefirefly:Stealth this turn."
+    },
+    {
+      "name": "Hyperspace Assault+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 thefirefly:Precision.\nCards do not reduce thefirefly:Precision or thefirefly:Stealth this turn."
+    },
+    {
+      "name": "Kugelblitz",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 32 damage to ALL enemies.\nTake 10 damage."
+    },
+    {
+      "name": "Kugelblitz+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 40 damage to ALL enemies.\nTake 10 damage."
+    },
+    {
+      "name": "Lust for Eternity",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Cards do not reduce thefirefly:Precision or thefirefly:Stealth for 5 turns."
+    },
+    {
+      "name": "Lust for Eternity+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Cards do not reduce thefirefly:Precision or thefirefly:Stealth for 99 turns."
+    },
+    {
+      "name": "Mind Control",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "If the enemy intends to attack, it attacks a random enemy.\nStun the enemy for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Mind Control+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "If the enemy intends to attack, it attacks a random enemy.\nStun the enemy for 1 turn."
+    },
+    {
+      "name": "Nano-Gel",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Every other turn, prevent the next time you would lose HP."
+    },
+    {
+      "name": "Nano-Gel+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every other turn, prevent the next time you would lose HP."
+    },
+    {
+      "name": "Nova",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand.\nAdd 1 thefirefly:Plasma_Wisp into your hand for each card Exhausted.\nExhaust."
+    },
+    {
+      "name": "Nova+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand.\nAdd 1 thefirefly:Plasma_Wisp+ into your hand for each card Exhausted.\nExhaust."
+    },
+    {
+      "name": "Paradox Engine",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play a card this turn, draw 1 card and gain 3 thefirefly:Unreality."
+    },
+    {
+      "name": "Paradox Engine+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play a card this turn, draw 2 cards and gain 6 thefirefly:Unreality."
+    },
+    {
+      "name": "Reroute Circuit",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Draw 1 less card for the next 2 turns.\nGain [E] at the start of each turn."
+    },
+    {
+      "name": "Reroute Circuit+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Draw 1 less card for the next 2 turns.\nGain [E] at the start of each turn."
+    },
+    {
+      "name": "Soul Strike",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to 2 times the number of unique cards in your deck."
+    },
+    {
+      "name": "Soul Strike+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 2 times the number of unique cards in your deck."
+    },
+    {
+      "name": "Tachyon Beam",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 25 damage.\nAdd 2 Void into your draw pile."
+    },
+    {
+      "name": "Tachyon Beam+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 32 damage.\nAdd 2 Void into your draw pile."
+    },
+    {
+      "name": "Unburden",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you Exhaust a card this turn, gain 1 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Unburden+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you Exhaust a card this turn, gain 1 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Unweft",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose all thefirefly:Stealth.\nApply 4 thefirefly:Fissure to ALL enemies for each thefirefly:Stealth lost."
+    },
+    {
+      "name": "Unweft+",
+      "color": "Firefly_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose all thefirefly:Stealth.\nApply 6 thefirefly:Fissure to ALL enemies for each thefirefly:Stealth lost."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Stealth System",
+      "tier": "Starter",
+      "pool": "Firefly_color",
+      "description": "Start each combat with 2 Stealth.",
+      "flavorText": "WARNING - DAMAGE CRITICAL!"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Firefly",
+      "type": "Player",
+      "minHP": "55",
+      "maxHP": "55"
+    }
+  ],
+  "keywords": [
+  ]
+}
