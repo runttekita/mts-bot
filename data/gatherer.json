@@ -1,0 +1,1350 @@
+{
+  "mod": {
+    "name": "The Gatherer",
+    "version": "1.0.0",
+    "authors": ["Celicath"],
+    "credits": "Rita-Bernstein - Character art, ZHS translation\nMappyTheKat - Old character splash art\nJedi - RUS translation",
+    "description": "Adds The Gatherer as a new playable character with 75 cards, 7 relics.\n\nv1.0.0 (2020-01-15)\n- Art update: Removed all BETA watermarks and unmodified base game art.\n- Updated for 2.0 release (Watcher release).\n- Rework: 3 cards and 1 Relic.\n- Many balance changes.\n\nVisit https://steamcommunity.com/sharedfiles/filedetails/changelog/1611788501 for full change notes.",
+    "mts_version": "3.7.0",
+    "sts_version": "12-21-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Light!",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDraw a card.\nIncrease the damage of all *Shadow! in your hand by 8."
+    },
+    {
+      "name": "Light!+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nDraw a card.\nIncrease the damage of all *Shadow! in your hand by 11."
+    },
+    {
+      "name": "Shadow!",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDraw a card.\nIncrease the Block of all *Light! in your hand by 7."
+    },
+    {
+      "name": "Shadow!+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nDraw a card.\nIncrease the Block of all *Light! in your hand by 10."
+    },
+    {
+      "name": "Thrower",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal. Deal damage equal to the remaining Block at the start of this turn. Exhaust.\n(Deals 0 damage.)"
+    },
+    {
+      "name": "Thrower+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal. Deal damage equal to the remaining Block at the start of this turn +2. Exhaust.\n(Deals 2 damage.)"
+    },
+    {
+      "name": "Glitched",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "3",
+      "description": "Retain.\nExhaust.\nWhile in your hand, Upgrade Bag power is disabled."
+    },
+    {
+      "name": "Centralize",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fetch 2 cards from your draw pile.\ngatherer:Once: Upgrade 2 random cards in hand; Fetched cards get priority."
+    },
+    {
+      "name": "Centralize+",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fetch 2 cards from your draw pile.\ngatherer:Twice: Upgrade 2 random cards in hand; Fetched cards get priority."
+    },
+    {
+      "name": "Defend",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Flower Whip",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage 2 times.\nCan be Upgraded 3 times."
+    },
+    {
+      "name": "Flower Whip+1",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage 2 times.\nCan be Upgraded 2 more times."
+    },
+    {
+      "name": "Strike",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Spare Bottle <Norm>",
+      "color": "Gatherer_lime",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you use a Potion, gain 4 Block and deal 4 damage to a random enemy."
+    },
+    {
+      "name": "Spare Bottle+ <Norm>",
+      "color": "Gatherer_lime",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you use a Potion, gain 6 Block and deal 6 damage to a random enemy."
+    },
+    {
+      "name": "Acidic Spray",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage. Deal 4 damage for each debuff on the target. Apply 1 Weak."
+    },
+    {
+      "name": "Acidic Spray+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Deal 6 damage for each debuff on the target. Apply 2 Weak."
+    },
+    {
+      "name": "Aroma Protection",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nAdd a Dazed to your discard pile."
+    },
+    {
+      "name": "Aroma Protection+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 16 Block.\nAdd a Dazed to your discard pile."
+    },
+    {
+      "name": "Bambu Sword",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Play a basic Strike or Defend from your hand with no cost."
+    },
+    {
+      "name": "Bambu Sword+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. Play a basic Strike or Defend from your hand with no cost."
+    },
+    {
+      "name": "Careful Strike",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. Put up to 1 card on top of your draw pile."
+    },
+    {
+      "name": "Careful Strike+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage. Put up to 1 card on top of your draw pile."
+    },
+    {
+      "name": "Collector's Shot",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 1.5 times the number of gatherer:Unique cards with no duplicates in your deck."
+    },
+    {
+      "name": "Collector's Shot+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 2 times the number of gatherer:Unique cards with no duplicates in your deck."
+    },
+    {
+      "name": "Convert",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card.\nIf it is [#60B0C0]Uncommon,[]\ngain 25 Block.\nIf it is [#FFC050]Rare,[]\ngain 35 Block."
+    },
+    {
+      "name": "Convert+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card.\nIf it is [#60B0C0]Uncommon,[]\ngain 25 Block.\nIf it is [#FFC050]Rare,[]\ngain 35 Block."
+    },
+    {
+      "name": "Drug Power",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. If you used a Potion this turn, gain the effect of the last used Potion."
+    },
+    {
+      "name": "Drug Power+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage. If you used a Potion this turn, gain the effect of the last used Potion."
+    },
+    {
+      "name": "Energy Basket",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 gatherer:Lesser\u00A0Energy\u00A0Potions.\nRetain.\nExhaust."
+    },
+    {
+      "name": "Energy Basket+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 3 gatherer:Lesser\u00A0Energy\u00A0Potions.\nRetain.\nExhaust."
+    },
+    {
+      "name": "Flower Falling",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nExhaust.\nCan be Upgraded 3 times."
+    },
+    {
+      "name": "Flower Falling+1",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nExhaust.\nCan be Upgraded 2 more times."
+    },
+    {
+      "name": "Flower Shield",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nCan be Upgraded 3 times."
+    },
+    {
+      "name": "Flower Shield+1",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nCan be Upgraded 2 more times."
+    },
+    {
+      "name": "Fragile Hammer",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Deal 12 damage to a random enemy other than the target."
+    },
+    {
+      "name": "Fragile Hammer+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. Deal 16 damage to a random enemy other than the target."
+    },
+    {
+      "name": "Frenzy",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nApply 2 Vulnerable.\nAdd 2 Dazed to your discard pile."
+    },
+    {
+      "name": "Frenzy+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nApply 3 Vulnerable.\nAdd 2 Dazed to your discard pile."
+    },
+    {
+      "name": "Gather Material",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 3 random cards from your draw pile into your hand. Prioritizes cards not already in your hand."
+    },
+    {
+      "name": "Gather Material+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 4 random cards from your draw pile into your hand. Prioritizes cards not already in your hand."
+    },
+    {
+      "name": "Potential Slash",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 8 + half of your missing HP."
+    },
+    {
+      "name": "Potential Slash+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 14 + half of your missing HP."
+    },
+    {
+      "name": "Quick Synthesis",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 random gatherer:Lesser gatherer:Potion.\nExhaust."
+    },
+    {
+      "name": "Quick Synthesis+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nGain 1 random gatherer:Lesser gatherer:Potion.\nExhaust."
+    },
+    {
+      "name": "Save Valuables",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose up to 3 cards from your discard pile. Shuffle them into your draw pile."
+    },
+    {
+      "name": "Save Valuables+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose up to 5 cards from your discard pile. Shuffle them into your draw pile."
+    },
+    {
+      "name": "Scherry Throw",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nNext turn, gain [E]."
+    },
+    {
+      "name": "Scherry Throw+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nNext turn, gain [E]."
+    },
+    {
+      "name": "Snatch",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage.\ngatherer:Once: Gain a random gatherer:Lesser gatherer:Potion."
+    },
+    {
+      "name": "Snatch+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage.\ngatherer:Twice: Gain a random gatherer:Lesser gatherer:Potion."
+    },
+    {
+      "name": "Tactical Strike",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 2 cards."
+    },
+    {
+      "name": "Tactical Strike+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 2 cards.\nGain 2 Strength until end of turn."
+    },
+    {
+      "name": "Tree Growth",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 5 Block.\nGain 10 Block 2 turns later."
+    },
+    {
+      "name": "Tree Growth+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 7 Block.\nGain 14 Block 2 turns later."
+    },
+    {
+      "name": "Wool Gloves",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\ngatherer:Once: Draw 3 cards, then discard 3 cards."
+    },
+    {
+      "name": "Wool Gloves+",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\ngatherer:Twice: Draw 3 cards, then discard 3 cards."
+    },
+    {
+      "name": "Alchemy Trial",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 10 cards, gain a gatherer:Lesser gatherer:Potion depending on the 10th card played."
+    },
+    {
+      "name": "Alchemy Trial+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play 10 cards, gain a gatherer:Lesser gatherer:Potion depending on the 10th card played."
+    },
+    {
+      "name": "Balanced Growth",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain up to 1 Strength or Dexterity until they are equal."
+    },
+    {
+      "name": "Balanced Growth+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain up to 2 Strength or Dexterity until they are equal."
+    },
+    {
+      "name": "Big Pouch",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 Cards. Gain Block equal to the total cost of your cards in hand."
+    },
+    {
+      "name": "Big Pouch+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 Cards. Gain Block equal to the total cost of your cards in hand."
+    },
+    {
+      "name": "Duality <ATK>",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage. Retain. When Retained, its tag switches between <ATK> and <DEF>."
+    },
+    {
+      "name": "Duality+ <ATK>",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage. Retain. When Retained, its tag switches between <ATK> and <DEF>."
+    },
+    {
+      "name": "Duplicator",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain effects of all your gatherer:Lesser gatherer:Potions.\nExhaust."
+    },
+    {
+      "name": "Duplicator+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain effects of all your gatherer:Lesser gatherer:Potions."
+    },
+    {
+      "name": "Echo of Nature",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Gain 3 Block X times. Deal 4 Damage X times."
+    },
+    {
+      "name": "Echo of Nature+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Gain 4 Block X times. Deal 6 Damage X times."
+    },
+    {
+      "name": "Enchant",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a Strike in your hand to give it Cost + 1, Damage + 14 and boosts special effect if it has."
+    },
+    {
+      "name": "Enchant+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a Strike in your hand to give it Cost + 1, Damage + 18 and boosts special effect if it has."
+    },
+    {
+      "name": "Feeling Fine",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you use 3 Potions in a turn, remove all of your debuffs."
+    },
+    {
+      "name": "Feeling Fine+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you use 3 Potions in a turn, remove all of your debuffs."
+    },
+    {
+      "name": "Flower Beam",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage to the target, then deal 8 damage to ALL enemies.\nCan be Upgraded 3 times."
+    },
+    {
+      "name": "Flower Beam+1",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to the target, then deal 10 damage to ALL enemies.\nCan be Upgraded 2 more times."
+    },
+    {
+      "name": "Flower Power",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Weak, Frail, and Vulnerable. At the start of your turn, Draw 2 cards.\nCan be Upgraded 3 times."
+    },
+    {
+      "name": "Flower Power+1",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Weak and Frail. At the start of your turn, Draw 2 cards.\nCan be Upgraded 2 more times."
+    },
+    {
+      "name": "Fruit Force",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to 15 % of Max HP.\nWhen obtained, raise your Max HP by 4."
+    },
+    {
+      "name": "Fruit Force+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to 20 % of Max HP.\nWhen obtained, raise your Max HP by 4."
+    },
+    {
+      "name": "Glowing Plant",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 4.\nWhen obtained, add a *Light! and a *Shadow! to your deck."
+    },
+    {
+      "name": "Glowing Plant+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 6.\nWhen obtained, add a *Light! and a *Shadow! to your deck."
+    },
+    {
+      "name": "Herbalism",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E] for each card in your hand that costs 2 or more."
+    },
+    {
+      "name": "Herbalism+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] for each card in your hand that costs 2 or more."
+    },
+    {
+      "name": "Liquidism",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you use a Potion, gain 1 Strength or Dexterity randomly."
+    },
+    {
+      "name": "Liquidism+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you use a Potion, gain 1 Strength or Dexterity randomly."
+    },
+    {
+      "name": "Mining Strike",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. For every 10 unblocked damage, gain 1 Plated Armor."
+    },
+    {
+      "name": "Mining Strike+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage. For every 8 unblocked damage, gain 1 Plated Armor."
+    },
+    {
+      "name": "Misfortune",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage. Gain up to 1 gatherer:Lesser gatherer:Potion with debuff effect that the enemy already has."
+    },
+    {
+      "name": "Misfortune+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage. Gain up to 2 gatherer:Lesser gatherer:Potions with debuff effect that the enemy already has."
+    },
+    {
+      "name": "Nutrients",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nWhen obtained, Upgrade ALL your gatherer:Flower cards."
+    },
+    {
+      "name": "Nutrients+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nWhen obtained, Upgrade ALL your gatherer:Flower cards."
+    },
+    {
+      "name": "Odd Spoils",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. Add 1 random card not in your deck to your discard pile. It costs 0 until played."
+    },
+    {
+      "name": "Odd Spoils+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Add 2 random cards not in your deck to your discard pile. They cost 0 until played."
+    },
+    {
+      "name": "Pollute",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, apply 2 Poison, Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Pollute+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, apply 3 Poison, Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Polymorphism",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to number of other cards in your hand. If they are all gatherer:Unique, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Polymorphism+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to number of other cards in your hand. If they are all gatherer:Unique, gain [E] and draw 2 cards."
+    },
+    {
+      "name": "Recipe Change",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 from ALL gatherer:Lesser gatherer:Potions. Replace all your gatherer:Lesser gatherer:Potions with it. Exhaust."
+    },
+    {
+      "name": "Recipe Change+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 from ALL gatherer:Lesser gatherer:Potions. Replace all your gatherer:Lesser gatherer:Potions with it. Exhaust."
+    },
+    {
+      "name": "Recovery Herb",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Considered as using a Potion. Heal 10 % of your missing HP.\nExhaust."
+    },
+    {
+      "name": "Recovery Herb+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Considered as using a Potion. Heal 10 % of your missing HP.\nExhaust."
+    },
+    {
+      "name": "Rotten Stipe",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal ? damage.\nApply ?.\n[#C0B0C0](Each [#D0C8D0]Rotten [#D0C8D0]Stipe\n[#D0C8D0]has [#D0C8D0]randomly [#D0C8D0]chosen\n[#D0C8D0]damage [#D0C8D0]and [#D0C8D0]debuff.)"
+    },
+    {
+      "name": "Rotten Stipe+ ",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal ? damage.\nApply ?.\n[#C0B0C0](Each [#D0C8D0]Rotten [#D0C8D0]Stipe\n[#D0C8D0]has [#D0C8D0]randomly [#D0C8D0]chosen\n[#D0C8D0]damage [#D0C8D0]and [#D0C8D0]debuff.)"
+    },
+    {
+      "name": "Scent of Rosmari",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. Choose 2 cards to Retain. If they end up discarded, return them to your hand next turn."
+    },
+    {
+      "name": "Scent of Rosmari+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. Choose 3 cards to Retain. If they end up discarded, return them to your hand next turn."
+    },
+    {
+      "name": "Scroll Of Wall",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. Use a Potion to Retain this turn. All incoming Statuses are Exhausted."
+    },
+    {
+      "name": "Scroll Of Wall+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. Use a Potion to Retain this turn. All incoming Statuses are Exhausted and give 1 Plated Armor."
+    },
+    {
+      "name": "Sealed Bomb",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "7",
+      "description": "Deal 50 damage. While in your hand, using a Potion decreases its cost by 1 this combat."
+    },
+    {
+      "name": "Sealed Bomb+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "6",
+      "description": "Deal 60 damage. While in your hand, using a Potion decreases its cost by 1 this combat."
+    },
+    {
+      "name": "Smart Maneuver",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy deals half damage this turn. Gain a gatherer:Lesser\u00A0Swift\u00A0Potion."
+    },
+    {
+      "name": "Smart Maneuver+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy deals half damage this turn. Gain a gatherer:Lesser\u00A0Swift\u00A0Potion.\nRetain."
+    },
+    {
+      "name": "Solidify",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Repeat until your Sack is full: Spend 5 Block to gain a gatherer:Lesser\u00A0Block\u00A0Potion."
+    },
+    {
+      "name": "Solidify+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Repeat until your Sack is full: Spend 4 Block to gain a gatherer:Lesser\u00A0Block\u00A0Potion."
+    },
+    {
+      "name": "Transmute",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Transform a card from your hand. It costs 0 this turn."
+    },
+    {
+      "name": "Transmute+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Transform a card from your hand. It is Upgraded and costs 0 this turn."
+    },
+    {
+      "name": "Upgrade Bag",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Shuffle a *Glitched in your deck. Your gatherer:Lesser gatherer:Potions are 100% more potent."
+    },
+    {
+      "name": "Upgrade Bag+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Add a *Glitched+ in your discard pile. Your gatherer:Lesser gatherer:Potions are 100% more potent."
+    },
+    {
+      "name": "Uplift",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each turn, 1 card you play that costs 2 or more has Refund 1."
+    },
+    {
+      "name": "Uplift+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each turn, 2 cards you play that costs 2 or more has Refund 1."
+    },
+    {
+      "name": "Venom Barrier",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block. Whenever you are attacked this turn, apply 3 Poison to the attacker."
+    },
+    {
+      "name": "Venom Barrier+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block. Whenever you are attacked this turn, apply 3 Poison to the attacker."
+    },
+    {
+      "name": "Withering Strike",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Enemy loses 1 Strength."
+    },
+    {
+      "name": "Withering Strike+",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Enemy loses 1 Strength."
+    },
+    {
+      "name": "Black Tea",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Strength.\nLose 1 Dexterity.\nStartup: Gain a random gatherer:Lesser gatherer:Potion."
+    },
+    {
+      "name": "Black Tea+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Strength.\nLose 1 Dexterity.\nStartup: Gain a random gatherer:Lesser gatherer:Potion."
+    },
+    {
+      "name": "Bomber Form",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, gain a gatherer:LEP. All future gatherer:Lesser gatherer:Potions become gatherer:LEP and raise all gatherer:LEPs' damage by 1 when used."
+    },
+    {
+      "name": "Bomber Form+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, gain a gatherer:LEP. All future gatherer:Lesser gatherer:Potions become gatherer:LEP and raise all gatherer:LEPs' damage by 2 when used."
+    },
+    {
+      "name": "Bulldoze",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies for every 4 gatherer:Unique cards in your discard pile."
+    },
+    {
+      "name": "Bulldoze+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies for every 3 gatherer:Unique cards in your discard pile."
+    },
+    {
+      "name": "Colorful Garden",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, gain 1 Block per gatherer:Unique card you played this turn."
+    },
+    {
+      "name": "Colorful Garden+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the end of your turn, gain 1 Block per gatherer:Unique card you played this turn."
+    },
+    {
+      "name": "Cursed Blade",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 damage.\ngatherer:Once: Enemy loses 15 Strength this turn. When Obtained, become [#FF6563]Cursed[] [#FF6563]-[] [#FF6563]Normality.[]"
+    },
+    {
+      "name": "Cursed Blade+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 35 damage.\ngatherer:Twice: Enemy loses 15 Strength this turn. When Obtained, become [#FF6563]Cursed[] [#FF6563]-[] [#FF6563]Normality.[]"
+    },
+    {
+      "name": "Examine",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Look at the top 3 cards of your draw pile. Play one and discard others."
+    },
+    {
+      "name": "Examine+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Look at the top 5 cards of your draw pile. Play one and discard others."
+    },
+    {
+      "name": "Finishing Strike",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. If the enemy has less HP than yours, hit twice instead."
+    },
+    {
+      "name": "Finishing Strike+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage. If the enemy has less HP than yours, hit twice instead."
+    },
+    {
+      "name": "Flaming Bottle",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. Gain a gatherer:Lesser\u00A0Fire\u00A0Potion."
+    },
+    {
+      "name": "Flaming Bottle+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage. Gain a gatherer:Lesser\u00A0Fire\u00A0Potion."
+    },
+    {
+      "name": "Grow Book",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block, or permanently replace this with 1 of 3 cards from other color.\nExhaust."
+    },
+    {
+      "name": "Grow Book+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 10 Block, or permanently replace this with 1 of 3 Upgraded cards from other color.\nExhaust."
+    },
+    {
+      "name": "Heart to Fruit",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\nIf Fatal, raise your Max HP by 3. Exhaust."
+    },
+    {
+      "name": "Heart to Fruit+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage.\nIf Fatal, raise your Max HP by 4. Exhaust."
+    },
+    {
+      "name": "Lucky Clover",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Dexterity for each gatherer:Flower cards in your deck."
+    },
+    {
+      "name": "Lucky Clover+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Dexterity for each gatherer:Flower cards in your deck."
+    },
+    {
+      "name": "Mind Search",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 2 out of 4 gatherer:Lesser gatherer:Potions to gain with the help of Gatherer's thought.\nExhaust."
+    },
+    {
+      "name": "Mind Search+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 2 out of 4 gatherer:Lesser gatherer:Potions to gain with great help of Gatherer's thought.\nRetain. Exhaust."
+    },
+    {
+      "name": "Overflowing",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Gain [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Overflowing+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "  Gain [E] [E] [E].\nEnergy is conserved for the next turn.\nExhaust."
+    },
+    {
+      "name": "Photoscythe",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate. Upgrade ALL your gatherer:Flower cards for the combat. Deal damage equal to 3 X number of them. Exhaust."
+    },
+    {
+      "name": "Photoscythe+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate. Upgrade ALL your gatherer:Flower cards for the combat. Deal damage equal to 4 X number of them. Exhaust."
+    },
+    {
+      "name": "Poison Mastery",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain a gatherer:Lesser\u00A0Poison\u00A0Potion.\nPoison damage is increased by 100%."
+    },
+    {
+      "name": "Poison Mastery+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain a gatherer:Lesser\u00A0Poison\u00A0Potion.\nPoison damage is increased by 100%."
+    },
+    {
+      "name": "Scroll of Purity",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you use a Potion, draw 1 card and Exhaust up to 1 card."
+    },
+    {
+      "name": "Scroll of Purity+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you use a Potion, draw 2 cards and Exhaust up to 2 cards."
+    },
+    {
+      "name": "Stone Fence",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add 1 *Thrower to your hand."
+    },
+    {
+      "name": "Stone Fence+",
+      "color": "Gatherer_lime",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add 1 *Thrower+ to your hand."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Alchemy Bag",
+      "tier": "Starter",
+      "pool": "Gatherer_lime",
+      "description": "At the start of each combat, gain a random gatherer:Lesser\u00A0Potion.",
+      "flavorText": "A mysterious bag with the power of recurring potions."
+    },
+    {
+      "name": "Mist Generator",
+      "tier": "Common",
+      "pool": "Gatherer_lime",
+      "description": "The amount of enemy's Poison is not reduced each turn if 8 or less.",
+      "flavorText": "The mist can be deadly for some creatures."
+    },
+    {
+      "name": "Floral Egg",
+      "tier": "Uncommon",
+      "pool": "Gatherer_lime",
+      "description": "Upon pick up, upgrade ALL your gatherer:Flower cards. Whenever you add a gatherer:Flower card to your deck, it is Upgraded.",
+      "flavorText": "Eggs like flowers. Or they are eggs like flowers."
+    },
+    {
+      "name": "Flying Fruit",
+      "tier": "Uncommon",
+      "pool": "Gatherer_lime",
+      "description": "When you Exhaust 1/3/6/10 gatherer:Unique cards after picking this up, raise your Max HP by 4.",
+      "flavorText": "Fruit flies like a banana."
+    },
+    {
+      "name": "Leftovers",
+      "tier": "Rare",
+      "pool": "Gatherer_lime",
+      "description": "Every time you use 4 Potions in a combat, gain a random gatherer:Lesser\u00A0Potion.",
+      "flavorText": "How alchemists make new material from leftovers is a mystery."
+    },
+    {
+      "name": "Explorer's Path",
+      "tier": "Boss",
+      "pool": "Gatherer_lime",
+      "description": "Gain [E] at the start of your turn for the next 3 combats.\nYou can now see the pick ratio of cards in the reward screen.\nChoose the lowest-picked card to gain [E] for 1 more combat.\nSynergy: Question Card",
+      "flavorText": "Sometimes it's worth to explore the worst path."
+    },
+    {
+      "name": "Miracle Bag",
+      "tier": "Boss",
+      "pool": "Gatherer_lime",
+      "description": "Replaces Alchemy Bag.\nUpon pickup, gain 1 regular Potion Slot.\nAt the start of each combat, obtain a rare Potion to your regular Potion Slot.",
+      "flavorText": "Created with forbidden technology."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Gatherer",
+      "type": "Player",
+      "minHP": "72",
+      "maxHP": "72"
+    }
+  ],
+  "keywords": [
+  ]
+}
