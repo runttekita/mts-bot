@@ -16,6 +16,10 @@ pin_links = [
     "https://cdn.discordapp.com/attachments/504438263012917254/632966857292513320/fireworks.gif",
     "https://cdn.discordapp.com/attachments/504438263012917254/632966856596127745/ruiPins.gif",
 ]
+broken_mod_situation = [
+    "Thanks to the 2.0 update changing the game code, many mods that were compatible with 1.1 will probably have bugs or crash when used with 2.0, most mods should be fixed eventually (we hope).",
+    "Modders are working in mod fixing for 2.0, plz be patient :)"
+]
 
 client = discord.Client()
 prefix = "?"
@@ -105,6 +109,9 @@ async def get_id(message):
         return
     if s == "pins" or s == "pin":
         await message.channel.send(random.choice(pin_links))
+        return
+    if s == "brokenmod":
+        await message.channel.send(random.choice(broken_mod_situation))
         return
     if s == "xy":
         await message.channel.send("http://xyproblem.info/")
