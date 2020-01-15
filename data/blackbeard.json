@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.12.6",
+    "version": "1.14.0",
     "authors": ["JohnnyBazooka89"],
     "credits": "Jedi - Russian localization, Vex'd - Cannonball animations, various visual effects, Venim - card backgrounds",
     "description": "Adds The Blackbeard as a new playable character.\n\nMore info: https://steamcommunity.com/sharedfiles/filedetails/?id=1612105245\n\nGitHub: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
-    "mts_version": "3.11.0",
-    "sts_version": "07-17-2019",
+    "mts_version": "3.15.0",
+    "sts_version": "01-14-2020",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -961,7 +961,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 3 / 4 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand for the rest of combat.\nExhaust."
+      "description": "Equip a 3 / 4 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand for the rest of combat."
     },
     {
       "name": "Smithing Hammer+",
@@ -969,7 +969,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 3 / 6 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand for the rest of combat.\nExhaust."
+      "description": "Equip a 3 / 5 Weapon.\nAfter you attack with this Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand for the rest of combat."
     },
     {
       "name": "Terror of the Seas",
@@ -1009,7 +1009,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 12 damage.\nExhaust."
+      "description": "Gain 1 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 15 damage.\nExhaust."
     },
     {
       "name": "Vengeful Spirit+",
@@ -1017,7 +1017,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 8 damage.\nExhaust."
+      "description": "Gain 1 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 10 damage.\nExhaust."
     },
     {
       "name": "Weapon Proficiency",
@@ -1097,7 +1097,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 3 Strength.\nGain 2 Resistance."
+      "description": "Gain 3 Strength.\nGain 3 Resistance."
     },
     {
       "name": "Final Barrage",
@@ -1233,7 +1233,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
-      "description": "Ethereal. Grave.\nDeal 500 damage\u00A0\u00A0\u00A0\u00A0\nto a Normal enemy.\n(Cannot be used on Elite or Boss)."
+      "description": "Deal 500 damage\u00A0\u00A0\u00A0\u00A0\nto a non-Boss enemy.\nFleeting."
     },
     {
       "name": "Murder+",
@@ -1241,7 +1241,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
-      "description": "Ethereal. Grave.\nDeal 1000 damage\u00A0\u00A0\u00A0\u00A0\nto a Normal enemy.\n(Cannot be used on Elite or Boss)."
+      "description": "Deal 1000 damage\u00A0\u00A0\u00A0\u00A0\nto a non-Boss enemy.\nFleeting."
     },
     {
       "name": "Parrot",
@@ -1345,7 +1345,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 2 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 30 damage."
+      "description": "Gain 3 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 45 damage."
     },
     {
       "name": "Undead Form+",
@@ -1488,9 +1488,19 @@
   ],
   "potions": [
     {
+      "name": "Orange Juice",
+      "rarity": "Common",
+      "description": "Heal 8 HP. Remove all of your debuffs."
+    },
+    {
       "name": "Rum",
       "rarity": "Uncommon",
       "description": "Gain 2 Resistance."
+    },
+    {
+      "name": "Upgrade Potion",
+      "rarity": "Rare",
+      "description": "Give all your equipped Weapons +3 / +3."
     }
   ],
   "creatures": [
