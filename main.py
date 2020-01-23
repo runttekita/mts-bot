@@ -27,7 +27,24 @@ prefix = "?"
 banned_users = []
 
 uncolor = re.compile(r"^\[#[0-9A-Fa-f]{6}\](\S+?)$")
+energy = re.compile(r"^(\[[RGBWE]])(.?)$")
 
+default_energy = "<:red_energy:382625376838615061>"
+
+icon_dictionary = { 
+    "[R]": "<:red_energy:382625376838615061>", 
+    "[G]": "<:green_energy:646206147220471808>", 
+    "[B]": "<:blue_energy:668151236003889184>", 
+    "[W]": "<:purple_energy:620384758068674560>"
+}
+
+color_dictionary = {
+    "Red": "<:red_energy:382625376838615061>", 
+    "Green":  "<:green_energy:646206147220471808>", 
+    "Blue": "<:blue_energy:668151236003889184>", 
+    "Purple": "<:purple_energy:620384758068674560>",
+    "Colorless": "<:colorless_energy:382625433016991745>"
+}
 
 class Mod_Data:
     def __init__(self, id):
