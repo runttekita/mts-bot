@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "Infinite Spire",
-    "version": "0.20.0",
+    "version": "0.22.0",
     "authors": ["Blank The Evil"],
     "credits": "Contributors: The_Evil_Pickle, RedDyeNo5, Gremious, Len (for French translation)",
     "description": "Adds a new way to climb the spire forever, complete quests along the way, but be careful, the spire will not be kind to those who do not give up.\n\nAlso thanks to kiooeht, test477, The_Evil_Pickle, Moocowsgomoo, fiiiiilth, JohnnyDevo, Chronometrics, MichaelMayhem and Reina for helping me learn more about programming. \n\n Shoutouts to Fairy, gkjzhgffjh, Nafen, Jedi and JohnnyBazooka for being awesome members of the modding community.",
@@ -66,22 +66,6 @@
       "type": "Skill",
       "cost": "0",
       "description": "Draw 4 cards and Upgrade them."
-    },
-    {
-      "name": "Dark Harmony",
-      "color": "Infinite_black",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "2",
-      "description": "bard:Queue 2 [WildNote] ."
-    },
-    {
-      "name": "Dark Harmony+",
-      "color": "Infinite_black",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "2",
-      "description": "bard:Queue 3 [WildNote] ."
     },
     {
       "name": "Deaths Touch",
@@ -387,6 +371,13 @@
       "flavorText": "It feels like it holds great power..."
     },
     {
+      "name": "Eraser",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Right click during combat to activate.\nUsable only once per combat.\nRestart an elite combat against a different elite. The enemies will be stronger.\nCan be used 3 times.",
+      "flavorText": "Chewy!"
+    },
+    {
       "name": "Focusing Shard",
       "tier": "Uncommon",
       "pool": "",
@@ -429,13 +420,6 @@
       "flavorText": "Onward unto death! Die like a nail hammered into a coffin!"
     },
     {
-      "name": "Eraser",
-      "tier": "Rare",
-      "pool": "",
-      "description": "Right click during combat to activate.\nUsable only once per combat.\nRestart an elite combat against a different elite. The enemies will be stronger.\nCan be used 3 times.",
-      "flavorText": "Chewy!"
-    },
-    {
       "name": "Golem's Mask",
       "tier": "Rare",
       "pool": "",
@@ -460,7 +444,7 @@
       "name": "Magic Flask",
       "tier": "Rare",
       "pool": "",
-      "description": "At campfires, the rest option may now be taken for free. This consumes 1 use.\nStarts with 3 uses. Kill bosses to gain 2 more uses.",
+      "description": "At campfires, the rest option may now be taken for free. This consumes 1 use.\nStarts with 3 uses. Kill bosses to gain 2 more uses.\n\nSynergy: Bottled Heart",
       "flavorText": "The flames feel warmer..."
     },
     {
@@ -555,8 +539,8 @@
     {
       "name": "Voidling",
       "type": "Normal",
-      "minHP": "57",
-      "maxHP": "57"
+      "minHP": "51",
+      "maxHP": "51"
     }
   ],
   "keywords": [

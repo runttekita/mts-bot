@@ -1,0 +1,1461 @@
+{
+  "mod": {
+    "name": "Slumbering Mod",
+    "version": "0.5.2",
+    "authors": ["Nichilas"],
+    "credits": "",
+    "description": "The Slumbering character pack.",
+    "mts_version": "3.15.0",
+    "sts_version": "01-16-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Bomb",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, take 10 damage.\nEthereal."
+    },
+    {
+      "name": "Detonator",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, deal 2 damage to all enemies."
+    },
+    {
+      "name": "Mental Block",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nRetain.\nRemoved when discarded."
+    },
+    {
+      "name": "The Clock",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage.\n[#c9c9c9]Tick.[] [#bca6bf]Tock.[]"
+    },
+    {
+      "name": "The Clock+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage.\n[#c9c9c9]Tick.[] [#bca6bf]Tock.[]"
+    },
+    {
+      "name": "Bomb Toss",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Shuffle a *Detonator into your draw pile X times."
+    },
+    {
+      "name": "Bomb Toss+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Shuffle a *Detonator into your draw pile X times."
+    },
+    {
+      "name": "Explosives Cache",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 25 damage.\nShuffle a *Bomb into your draw pile."
+    },
+    {
+      "name": "Explosives Cache+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 30 damage.\nShuffle a *Bomb into your draw pile."
+    },
+    {
+      "name": "Stone Hearth",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal between 2 and 7 damage to a random enemy and gain that much Block."
+    },
+    {
+      "name": "Stone Hearth+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal between 5 and 12 damage to a random enemy and gain that much Block."
+    },
+    {
+      "name": "Seed",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "",
+      "description": "Blossoms after being played 5 times.\n(Currently has been played 0 times)"
+    },
+    {
+      "name": "Lingering Doubt",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "1",
+      "description": "If this card hasn't been played by the end of battle, lose !theSlumbering:Magic! Max HP.\nExhaust."
+    },
+    {
+      "name": "Sloth",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "1",
+      "description": "Start battles with !theSlumbering:Magic! additional theslumbering:Drowsy.\nLose !theSlumbering:Magic! theslumbering:Drowsy when played."
+    },
+    {
+      "name": "Basic Attack",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nGain 1 Block.\nYou are feeling [#666646]groggy...[]"
+    },
+    {
+      "name": "Basic Attack+",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 2 Block.\nYou are feeling [#666646]groggy...[]"
+    },
+    {
+      "name": "Basic Defend",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nYou hear [#666646]screams...[] in your mind."
+    },
+    {
+      "name": "Basic Defend+",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nLose 1 theslumbering:Drowsy.\nYou hear [#666646]screams...[] in your mind."
+    },
+    {
+      "name": "Defend",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Dream Eater",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 1 theslumbering:Drowsy."
+    },
+    {
+      "name": "Dream Eater+",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 1 theslumbering:Drowsy."
+    },
+    {
+      "name": "Invigorate",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nReduce theslumbering:Drowsy by 1.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Invigorate+",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nReduce theslumbering:Drowsy by 1.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Strike",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "First_teal_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Awakened Attack",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to all enemies.\nGain 3 Block.\nGain 1 theslumbering:Drowsy."
+    },
+    {
+      "name": "Awakened Attack+",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage to all enemies.\nGain 4 Block.\nGain 1 theslumbering:Drowsy."
+    },
+    {
+      "name": "Awakened Defend",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nIncreased by 1 this combat each time you theslumbering:Snooze a card.\nLose 1 theslumbering:Drowsy."
+    },
+    {
+      "name": "Awakened Defend+",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 9 Block.\nIncreased by 1 this combat each time you theslumbering:Snooze a card.\nLose 1 theslumbering:Drowsy."
+    },
+    {
+      "name": "Bag of Shields",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "theslumbering:Passive.\nPreserve Block at the start of your turn relative to your #bAwakening."
+    },
+    {
+      "name": "Drowsy Attack",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 2 Block.\nGain 1 theslumbering:Drowsy.\nYou can feel [#666646]energy[] returning to your body."
+    },
+    {
+      "name": "Drowsy Attack+",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 3 Block.\nGain 1 theslumbering:Drowsy.\nYou can feel [#666646]energy[] returning to your body."
+    },
+    {
+      "name": "Drowsy Defend",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nLose 1 theslumbering:Drowsy.\n[#666646]Whispers[] echo through your mind."
+    },
+    {
+      "name": "Drowsy Defend+",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 9 Block.\nLose 1 theslumbering:Drowsy.\n[#666646]Whispers[] echo through your mind."
+    },
+    {
+      "name": "Redemption",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "theslumbering:Passive.\nWhen HP reaches 0, regain 1 HP, and remove this card from your deck."
+    },
+    {
+      "name": "Spectral Defender",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "theslumbering:Passive.\nAt the end of your turn, double your Block. (Up to a maximum of 50 gained Block)"
+    },
+    {
+      "name": "Tough Skin",
+      "color": "First_teal_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "theslumbering:Passive.\nAt the start of your turn, gain Block relative to your #bAwakening.."
+    },
+    {
+      "name": "Alarmed Strike",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Alarmed Strike+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Curl Up",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nLose 1 Dexterity."
+    },
+    {
+      "name": "Curl Up+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 16 Block.\nLose 1 Dexterity."
+    },
+    {
+      "name": "Focused Strike",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you are not theslumbering:Drowsy, gain 1 theslumbering:Drowsy, and deal 7 damage again."
+    },
+    {
+      "name": "Focused Strike+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf you are not theslumbering:Drowsy, gain 1 theslumbering:Drowsy, and deal 10 damage 2 more times."
+    },
+    {
+      "name": "Forced Thought",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "theslumbering:Search - Any\n(Choose to search for an attack, a skill, or a power card)"
+    },
+    {
+      "name": "Forced Thought+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "theslumbering:Search - Any\n(Choose to search for an attack, a skill, or a power card)"
+    },
+    {
+      "name": "Full Guard",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 6 Block for each card played this turn."
+    },
+    {
+      "name": "Full Guard+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block for each card played this turn."
+    },
+    {
+      "name": "Jab",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 4 damage."
+    },
+    {
+      "name": "Jab+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 6 damage."
+    },
+    {
+      "name": "Nocturnal Gifts",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw a card.\nDraw a additional card for each theslumbering:Drowsy you have."
+    },
+    {
+      "name": "Nocturnal Gifts+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card.\nDraw a additional card for each theslumbering:Drowsy you have."
+    },
+    {
+      "name": "Reckless Blow",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Additionally costs !theSlumbering:Magic! Block.\nDeal 12 damage."
+    },
+    {
+      "name": "Reckless Blow+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Additionally costs !theSlumbering:Magic! Block.\nDeal 16 damage."
+    },
+    {
+      "name": "Sleepwalk",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "Unplayable.\nDeal 4 to a random enemy when drawn."
+    },
+    {
+      "name": "Sleepwalk+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "Unplayable.\nDeal 6 to a random enemy when drawn."
+    },
+    {
+      "name": "Sound Barrier",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block for each theslumbering:Snooze card in your deck."
+    },
+    {
+      "name": "Sound Barrier+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block for each theslumbering:Snooze card in your deck."
+    },
+    {
+      "name": "Stretch",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nMore powerful if played with *Yawn.\nExhaust."
+    },
+    {
+      "name": "Stretch+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nMore powerful if played with *Yawn.\nExhaust."
+    },
+    {
+      "name": "Strong Footing",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have 8 or less Block, double your Block."
+    },
+    {
+      "name": "Strong Footing+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have 14 or less Block, double your Block."
+    },
+    {
+      "name": "Wake-Up Slap",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Take !theSlumbering:Magic! damage.\nDraw a card.\nGain 2 Strength this turn."
+    },
+    {
+      "name": "Wake-Up Slap+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Take !theSlumbering:Magic! damage.\nDraw a card.\nGain 3 Strength this turn."
+    },
+    {
+      "name": "Yawn",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nMore powerful if played with *Stretch.\nExhaust."
+    },
+    {
+      "name": "Yawn+",
+      "color": "First_teal_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nMore powerful if played with *Stretch.\nExhaust."
+    },
+    {
+      "name": "Binding Blow",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "You cannot play other cards this turn until this card has been played.\nDeal 20 damage."
+    },
+    {
+      "name": "Binding Blow+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "You cannot play other cards this turn until this card has been played.\nDeal 26 damage."
+    },
+    {
+      "name": "Cloak of Thorns",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block.\nWhenever you are attacked this turn, deal 4 damage back."
+    },
+    {
+      "name": "Cloak of Thorns+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block.\nWhenever you are attacked this turn, deal 6 damage back."
+    },
+    {
+      "name": "Comfortable",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nGain [E] when drawn."
+    },
+    {
+      "name": "Comfortable+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, gain [E] and set Artifact to 1."
+    },
+    {
+      "name": "Counting Sheep",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "theslumbering:Search - Attack\nDeal 2 damage to all enemies for each card searched."
+    },
+    {
+      "name": "Counting Sheep+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "theslumbering:Search - Attack\nDeal 4 damage to all enemies for each card searched."
+    },
+    {
+      "name": "Dream: Death",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to an enemy. If it dies, return this card to you hand.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Dream: Death+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage to an enemy. If it dies, return this card to you hand and Refund.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Dream: Peace",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal an enemy for 10 percent of its max health and gain that much Block. (Gain double Block if enemy is not a Boss or Elite)\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Dream: Peace+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal an enemy for 15 percent of its max health and gain that much Block. (Gain double Block if enemy is not a Boss or Elite)\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Energy Shift",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Select a card.\nThis turn, it costs 2 less."
+    },
+    {
+      "name": "Energy Shift+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Select a card.\nThis turn, it costs 3 less."
+    },
+    {
+      "name": "Extra Arm",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, play a bonus attack."
+    },
+    {
+      "name": "Extra Arm+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, play a bonus attack."
+    },
+    {
+      "name": "False Nap",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Cannot be played if other cards have been played.\nDeal 7 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "False Nap+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Cannot be played if other cards have been played.\nDeal 13 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Guarded Swipe",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "When drawn, gain 3 Block.\nDeal 8 damage."
+    },
+    {
+      "name": "Guarded Swipe+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "When drawn, gain 5 Block.\nDeal 8 damage.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Hallucinations",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nPermanently gain !theSlumbering:Magic! damage the first time played each combat.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Heavy Sleeper",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you theslumbering:Snooze a card, gain 3 Block."
+    },
+    {
+      "name": "Heavy Sleeper+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you theslumbering:Snooze a card, gain 4 Block."
+    },
+    {
+      "name": "Hypersomnia",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 theslumbering:Drowsy.\nAt the end of this turn, lose !theSlumbering:Magic! theslumbering:Drowsy."
+    },
+    {
+      "name": "Hypersomnia+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 theslumbering:Drowsy.\nAt the end of this turn, lose !theSlumbering:Magic! theslumbering:Drowsy."
+    },
+    {
+      "name": "Imagine: Attack",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw two cards. If you draw an Attack, Refund this card's cost."
+    },
+    {
+      "name": "Imagine: Attack+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw two cards. For each Attack, Refund this card's cost."
+    },
+    {
+      "name": "Imagine: Skill",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw two cards. If you draw a Skill, Refund this card's cost."
+    },
+    {
+      "name": "Imagine: Skill+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw two cards. For each Skill, Refund this card's cost."
+    },
+    {
+      "name": "Induced Dream",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Look at 3 cards in your draw pile, choose 1 and add a copy of it to your hand.\nExhaust."
+    },
+    {
+      "name": "Induced Dream+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at 3 cards in your draw pile, choose 1 and add a copy of it to your hand.\nExhaust."
+    },
+    {
+      "name": "Induced Memory",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Look at 3 cards in your draw pile, choose 1 to draw."
+    },
+    {
+      "name": "Induced Memory+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Look at 3 cards in your draw pile, choose 1 to draw."
+    },
+    {
+      "name": "Last Resort",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if no other cards can be played.\nDeal 20 damage to ALL enemies."
+    },
+    {
+      "name": "Last Resort+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if no other cards can be played.\nDeal 30 damage to ALL enemies."
+    },
+    {
+      "name": "Lullaby",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies lose 1 Strength.\nApply !theSlumbering:Magic! Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Lullaby+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies lose 1 Strength.\nApply !theSlumbering:Magic! Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Narcoleptic Episode",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, gain 1 theslumbering:Drowsy and !theSlumbering:Magic! Strength.\nAt the end of this turn, lose 1 theslumbering:Drowsy and !theSlumbering:Magic! Strength."
+    },
+    {
+      "name": "Narcoleptic Episode+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, gain 2 theslumbering:Drowsy and !theSlumbering:Magic! Strength.\nAt the end of this turn, lose 2 theslumbering:Drowsy and !theSlumbering:Magic! Strength."
+    },
+    {
+      "name": "Night Terror",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage to a random enemy, and [#ebc634]Stun it for one turn.\nIncrease this card's cost by 1 this combat."
+    },
+    {
+      "name": "Night Terror+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to a random enemy, and [#ebc634]Stun it for one turn.\nIncrease this card's cost by 1 this combat."
+    },
+    {
+      "name": "Ready Gaze",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 theslumbering:Parry.\ntheslumbering:Renewable."
+    },
+    {
+      "name": "Ready Gaze+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 theslumbering:Parry.\ntheslumbering:Renewable."
+    },
+    {
+      "name": "Rested Punch",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage.\nWhen drawn, this card gains 5 damage until its next use.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Rested Punch+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nWhen drawn, this card gains 5 damage until its next use.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Safe Barrage",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if your Block is greater than !theSlumbering:Magic!.\nDeal 3 damage to a random enemy 6 times."
+    },
+    {
+      "name": "Safe Barrage+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if your Block is greater than !theSlumbering:Magic!.\nDeal 3 damage to a random enemy 8 times."
+    },
+    {
+      "name": "Shield Toss",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove all your Block.\nFor every 10 Block, deal 6 damage to a random enemy."
+    },
+    {
+      "name": "Shield Toss+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove all your Block.\nFor every 10 Block, deal 8 damage to a random enemy."
+    },
+    {
+      "name": "Side Sleeper",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The leftmost card in your hand ALWAYS costs 1."
+    },
+    {
+      "name": "Side Sleeper+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "The leftmost card in your hand ALWAYS costs 1."
+    },
+    {
+      "name": "Sleep Paralysis",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Negate the first 2 attacks this turn.\nEnd your turn.\nExhaust."
+    },
+    {
+      "name": "Sleep Paralysis+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Negate the first 2 attacks this turn.\nEnd your turn.\nExhaust."
+    },
+    {
+      "name": "Stumbling Blow",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 1 Weak."
+    },
+    {
+      "name": "Stumbling Blow+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nGain 1 Weak."
+    },
+    {
+      "name": "Taunt",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 30 Block.\nALL enemies gain 2 Strength."
+    },
+    {
+      "name": "Taunt+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 40 Block.\nALL enemies gain 1 Strength."
+    },
+    {
+      "name": "Trials of Hypnos",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Wager 10% of your gold to attempt a theslumbering:Trial_of_Hypnos.\nExhaust."
+    },
+    {
+      "name": "Trials of Hypnos+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Wager 10% of your gold to attempt a theslumbering:Trial_of_Hypnos.\nExhaust.\n(Upgrading unlocks harder, but more rewarding trials)"
+    },
+    {
+      "name": "Unrelenting",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Repeat the next card costing at least 1 that you play until it can no longer be played."
+    },
+    {
+      "name": "Unrelenting+",
+      "color": "First_teal_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Repeat the next card costing at least 1 that you play until it can no longer be played."
+    },
+    {
+      "name": "Dream: Freedom",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose an [#ebc634]Option.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Dream: Freedom+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Choose an [#ebc634]Option.\ntheslumbering:Snooze."
+    },
+    {
+      "name": "Eerie Nightmare",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 4 damage.\nDeals 7 additional damage for each theslumbering:Drowsy.\nReduce theslumbering:Drowsy by !theSlumbering:Magic!."
+    },
+    {
+      "name": "Eerie Nightmare+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 6 damage.\nDeals 9 additional damage for each theslumbering:Drowsy.\nReduce theslumbering:Drowsy by !theSlumbering:Magic!."
+    },
+    {
+      "name": "Entombed Blade",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage.\nCannot be upgraded normally.\nPlay 7 more times to upgrade this card."
+    },
+    {
+      "name": "Insomnia",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 8 Block.\nGain 6 additional Block for each theslumbering:Drowsy.\nReduce theslumbering:Drowsy by !theSlumbering:Magic!."
+    },
+    {
+      "name": "Insomnia+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 8 Block.\nGain 10 additional Block for each theslumbering:Drowsy.\nReduce theslumbering:Drowsy by !theSlumbering:Magic!."
+    },
+    {
+      "name": "Insomniac",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "",
+      "description": "theslumbering:Passive.\nAt the start of battle, shuffle a *Sleepwalk into your draw pile 2 times."
+    },
+    {
+      "name": "Mulligan",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle your hand and discard pile into your draw pile, then redraw your hand.\nExhaust."
+    },
+    {
+      "name": "Mulligan+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle your hand and discard pile into your draw pile, then redraw your hand."
+    },
+    {
+      "name": "Nocturnal Strike",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nIf theslumbering:Drowsy, gain that much Block."
+    },
+    {
+      "name": "Nocturnal Strike+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nIf theslumbering:Drowsy, gain that much Block.\nPlay the top card of your draw pile."
+    },
+    {
+      "name": "Panic Attack",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "[#ebc634]Stun all enemies for one turn, but add a random Curse to your deck."
+    },
+    {
+      "name": "Panic Attack+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#ebc634]Stun all enemies for one turn, but add a random Curse to your deck."
+    },
+    {
+      "name": "Parry",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 1 theslumbering:Parry.\nGain 7 Block.\ntheslumbering:Renewable."
+    },
+    {
+      "name": "Parry+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 1 theslumbering:Parry.\nGain 12 Block.\ntheslumbering:Renewable."
+    },
+    {
+      "name": "Prepare Alarm",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card. Give it theslumbering:Snooze for the rest of combat.\nExhaust."
+    },
+    {
+      "name": "Prepare Alarm+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card. Give it theslumbering:Snooze for the rest of combat.\nExhaust."
+    },
+    {
+      "name": "Recurring Dream",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Select a card in your hand.\nDraw all copies of it in your draw pile."
+    },
+    {
+      "name": "Recurring Dream+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Select a card in your hand.\nDraw all copies of it in your draw pile and discard pile."
+    },
+    {
+      "name": "Reflect",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you are attacked, reflect 20% of the damage."
+    },
+    {
+      "name": "Reflect+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you are attacked, reflect 20% of the damage."
+    },
+    {
+      "name": "Run The Gamut",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 50 damage.\nCannot be played if you've played fewer than !theSlumbering:Magic! cards this turn."
+    },
+    {
+      "name": "Run The Gamut+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 50 damage to all enemies.\nCannot be played if you've played fewer than !theSlumbering:Magic! cards this turn."
+    },
+    {
+      "name": "SNOOZE!",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Immediately theslumbering:Snooze your entire hand.\nGain !theSlumbering:Magic! Block for each card theslumbering:Snoozed. Draw 3 cards.\nExhaust."
+    },
+    {
+      "name": "SNOOZE!+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Immediately theslumbering:Snooze your entire hand.\nGain !theSlumbering:Magic! Block for each card theslumbering:Snoozed. Draw 4 cards.\nExhaust."
+    },
+    {
+      "name": "Selective Memory",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card in your hand. Remove that card and this card from your deck."
+    },
+    {
+      "name": "Sleep Arrhythmia",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw all your theslumbering:Snooze cards.\nExhaust."
+    },
+    {
+      "name": "Sleep Arrhythmia+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw all your theslumbering:Snooze cards.\nExhaust."
+    },
+    {
+      "name": "The Seed",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add a *Seed to your deck.\n(Removed from your deck after playing)"
+    },
+    {
+      "name": "The Seed+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a *Seed to your deck.\n(Removed from your deck after playing)"
+    },
+    {
+      "name": "Wake",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add theslumbering:Yawn and theslumbering:Stretch to your discard pile. Play both to wake up a little.\nExhaust."
+    },
+    {
+      "name": "Wake+",
+      "color": "First_teal_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add theslumbering:Yawn+ and theslumbering:Stretch+ to your discard pile. Play both to wake up a little.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Heart Collector",
+      "tier": "Starter",
+      "pool": "First_teal_color",
+      "description": "Accumulate hearts by defeating enemies.\nSpend a heart by Right Clicking.\nHearts grant Block relative to your Awakening.",
+      "flavorText": "It's hunger cannot be sated."
+    },
+    {
+      "name": "The Great Awakening",
+      "tier": "Starter",
+      "pool": "First_teal_color",
+      "description": "This relic will gain power as you wake up.\nRight Click to remove all theslumbering:Drowsy stacks, but fall deeper into your slumber...",
+      "flavorText": "Yaaaaaaaawn..."
+    },
+    {
+      "name": "Glass Shield",
+      "tier": "Common",
+      "pool": "",
+      "description": "If incoming damage would be Blocked, reduce it by 3.\nShatters after 120 hits.",
+      "flavorText": "WARNING: Fragile."
+    },
+    {
+      "name": "Slime Shield",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Negates 15 damage and then breaks. Regenerates between battles, but loses power.",
+      "flavorText": "Not very protective, but regenerates constantly."
+    },
+    {
+      "name": "Star Mobile",
+      "tier": "Uncommon",
+      "pool": "First_teal_color",
+      "description": "When theslumbering:Drowsy, deal 40% increased damage rather than 25%.",
+      "flavorText": "Twinkle, twinkle, little star..."
+    },
+    {
+      "name": "Crystal Effigy",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you win a battle, if you never took damage, gain 10 max HP.",
+      "flavorText": "Don't let it shatter."
+    },
+    {
+      "name": "Energy Drink",
+      "tier": "Special",
+      "pool": "",
+      "description": "While in the Exordium, gain [E] at the start of your turn during Elite and Boss encounters.",
+      "flavorText": "A short burst of vigor."
+    },
+    {
+      "name": "Cursed Anvil",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, upgrade every card in your deck.\nThen, remove 5 random upgraded cards and replace them with their base versions.",
+      "flavorText": "Improvement at a cost."
+    },
+    {
+      "name": "Enchanted Hammer",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you Smith a card, Upgrade another random card.",
+      "flavorText": "Blessed by a powerful being."
+    },
+    {
+      "name": "Power From Beyond",
+      "tier": "Boss",
+      "pool": "First_teal_color",
+      "description": "Your cards cost 0, however you cannot play more than 2 cards per turn.",
+      "flavorText": "UNLIMITED POWER! Itty-bitty living space."
+    },
+    {
+      "name": "Gambler's Folly",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Do you dare challenge the odds?",
+      "flavorText": "No gambler worth their salt has ever been able to resist."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Wake Potion",
+      "rarity": "Rare",
+      "description": "Wake up a little..."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Slumbering",
+      "type": "Player",
+      "minHP": "1",
+      "maxHP": "1"
+    },
+    {
+      "name": "Adrasteia",
+      "type": "Elite",
+      "minHP": "100",
+      "maxHP": "100"
+    },
+    {
+      "name": "Nightmare Slaver",
+      "type": "Normal",
+      "minHP": "45",
+      "maxHP": "45"
+    },
+    {
+      "name": "Nocturne Cultist",
+      "type": "Normal",
+      "minHP": "44",
+      "maxHP": "44"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Theslumbering:Trial of Hypnos",
+      "description": "Trials of Hypnos grant a task that must be completed by the end of the battle for a gold reward based on the offering."
+    },
+    {
+      "name": "Theslumbering:bomb",
+      "description": "Bombs are unplayable status cards that damage you."
+    },
+    {
+      "name": "Theslumbering:detonator",
+      "description": "When drawn, damage all enemies."
+    },
+    {
+      "name": "Theslumbering:drowsy",
+      "description": "You gain 1 fewer [E] but Attacks deal 25% more damage.\nThis effect stacks."
+    },
+    {
+      "name": "Theslumbering:parry",
+      "description": "If the next attack this turn is fully blocked, the attacker takes the damage instead. If not, take double damage."
+    },
+    {
+      "name": "Theslumbering:passive",
+      "description": "Unplayable cards that are automatically put into effect at the start of battle.\nCannot be upgraded."
+    },
+    {
+      "name": "Theslumbering:renewable",
+      "description": "Return this card to your discard pile after its power is removed."
+    },
+    {
+      "name": "Theslumbering:search",
+      "description": "Discard from your draw pile until you find a certain card, or the draw pile is empty.\nKeep the last card, regardless of type."
+    },
+    {
+      "name": "Theslumbering:seed",
+      "description": "Seeds are unplayable curse cards that will grow if cared for."
+    },
+    {
+      "name": "Theslumbering:sleepwalk",
+      "description": "Sleepwalks are unplayable Attack cards which deal damage when drawn."
+    },
+    {
+      "name": "Theslumbering:snooze",
+      "description": "Snoozed cards are shuffled back into your draw pile if they are not played."
+    },
+    {
+      "name": "Theslumbering:stretch",
+      "description": "Stretches are Attack cards which Exhaust."
+    },
+    {
+      "name": "Theslumbering:yawn",
+      "description": "Yawns are Skill cards which grant Block and Exhaust."
+    }
+  ]
+}
