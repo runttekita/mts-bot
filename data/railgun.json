@@ -1,0 +1,956 @@
+{
+  "mod": {
+    "name": "Railgun Mod",
+    "version": "1.0.0",
+    "authors": ["GeminiDark, LegendBegins"],
+    "credits": "",
+    "description": "A mod to add Mikoto Misaka from A Certain Magical Index.",
+    "mts_version": "3.15.0",
+    "sts_version": "01-21-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 Damage."
+    },
+    {
+      "name": "Needle",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 Damage."
+    },
+    {
+      "name": "Needle+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 Damage."
+    },
+    {
+      "name": "Battery Pack",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Energy."
+    },
+    {
+      "name": "Battery Pack+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Energy.\nDraw 1 Card."
+    },
+    {
+      "name": "Charge",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lightning Orb."
+    },
+    {
+      "name": "Charge+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lightning Orb.\nGain 2 Strength."
+    },
+    {
+      "name": "Coin Flip",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lightning Orb.\nDraw 1 Card."
+    },
+    {
+      "name": "Coin Flip+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lightning Orb.\nDraw 2 Cards."
+    },
+    {
+      "name": "Crack",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 Damage and Evoke an Orb."
+    },
+    {
+      "name": "Crack+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage and Evoke a single Orb twice."
+    },
+    {
+      "name": "Crackle",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damage for each Channeled Orb."
+    },
+    {
+      "name": "Crackle+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage for each Channeled Orb."
+    },
+    {
+      "name": "Discharge",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Evoke an Orb."
+    },
+    {
+      "name": "Discharge+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Evoke an Orb.\nGain 2 Dexterity."
+    },
+    {
+      "name": "Electrical Fire",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage to each enemy."
+    },
+    {
+      "name": "Electrical Fire+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 Damage to each enemy."
+    },
+    {
+      "name": "Gekota Phone",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust 1 Card and Draw 1 Card."
+    },
+    {
+      "name": "Gekota Phone+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust 2 Cards and Draw 1 Card."
+    },
+    {
+      "name": "Hypercharge",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 Cards and Discard 3 Cards."
+    },
+    {
+      "name": "Hypercharge+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 Cards and Discard 2 Cards."
+    },
+    {
+      "name": "Iron-Dust Vial",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 Cards."
+    },
+    {
+      "name": "Iron-Dust Vial+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 4 Cards."
+    },
+    {
+      "name": "Negative Field",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Strength."
+    },
+    {
+      "name": "Negative Field+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Strength."
+    },
+    {
+      "name": "Positive Field",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Dexterity."
+    },
+    {
+      "name": "Positive Field+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Dexterity."
+    },
+    {
+      "name": "Pull",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 Card."
+    },
+    {
+      "name": "Pull+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 Card.\nChannel an Electric Orb."
+    },
+    {
+      "name": "Push",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 1 Card."
+    },
+    {
+      "name": "Push+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 1 Card.\nChannel an Electric Orb."
+    },
+    {
+      "name": "Recharge",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard a card and gain Energy equal to its Cost.\nExhaust."
+    },
+    {
+      "name": "Recharge+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard a card and gain Energy equal to its Cost.\nExhaust."
+    },
+    {
+      "name": "Sister Network",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 Card for each enemy."
+    },
+    {
+      "name": "Sister Network+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 Card for each enemy.\nChannel a Lightning Orb."
+    },
+    {
+      "name": "Sister Noise",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Energy."
+    },
+    {
+      "name": "Sister Noise+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Energy."
+    },
+    {
+      "name": "Spark",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damage plus 1 for each Channeled Orb."
+    },
+    {
+      "name": "Spark+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damaged plus 3 for each Channeled Orb."
+    },
+    {
+      "name": "Static",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage to each enemy."
+    },
+    {
+      "name": "Static+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 Damage to each enemy."
+    },
+    {
+      "name": "Teleporter",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Needles."
+    },
+    {
+      "name": "Teleporter+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Upgraded Needles."
+    },
+    {
+      "name": "Thunderbolt",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage.\nChannel a Lightning Orb."
+    },
+    {
+      "name": "Thunderbolt+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage.\nChannel a Lightning Orb."
+    },
+    {
+      "name": "Thundershock",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage"
+    },
+    {
+      "name": "Thundershock+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage.\nChannel a Lightning Orb."
+    },
+    {
+      "name": "Zap",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage.\nChannel a Lightning Orb."
+    },
+    {
+      "name": "Zap+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 Damage.\nChannel a Lightning Orb."
+    },
+    {
+      "name": "Zip",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lightning Orb."
+    },
+    {
+      "name": "Zip+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 2 Lightning Orbs."
+    },
+    {
+      "name": "Aerial Shot",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Requires Magnetic Flight or Magnetic Movement.\nDeal 12 Damage."
+    },
+    {
+      "name": "Aerial Shot+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Requires Magnetic Flight or Magnetic Movement.\nDeal 15 Damage."
+    },
+    {
+      "name": "Biribiri!",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 Strength and 2 Dexterity."
+    },
+    {
+      "name": "Biribiri!+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 3 Strength and 3 Dexterity."
+    },
+    {
+      "name": "Circuit Breaker",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Switch your Strength and Dexterity."
+    },
+    {
+      "name": "Circuit Breaker+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Switch your Strength and Dexterity.\nGain 1 Strength and 1 Dexterity."
+    },
+    {
+      "name": "Electric Fence",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block and deal 3 damage to each enemy that attacks you this turn."
+    },
+    {
+      "name": "Electric Fence+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block and deal 3 damage to each enemy that attacks you this turn."
+    },
+    {
+      "name": "Electrical Storm",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal X Damage twice."
+    },
+    {
+      "name": "Electrical Storm+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal X Damage twice to each enemy."
+    },
+    {
+      "name": "Gekotamania",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw until your hand is full.\nExhaust."
+    },
+    {
+      "name": "Gekotamania+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw until your hand is full.\nChannel 2 Electric Orbs.\nExhaust."
+    },
+    {
+      "name": "Heroinism",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Energy at the start of each turn."
+    },
+    {
+      "name": "Heroinism+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Energy at the start of each turn."
+    },
+    {
+      "name": "Iron-Dust Field",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Plated Armor."
+    },
+    {
+      "name": "Iron-Dust Field+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Plated Armor.\nGain 2 Thorns."
+    },
+    {
+      "name": "Iron-Dust Shield",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block."
+    },
+    {
+      "name": "Iron-Dust Shield+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nGain 2 Thorns."
+    },
+    {
+      "name": "Iron-Dust Sword",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 Damage 5 times."
+    },
+    {
+      "name": "Iron-Dust Sword+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 Damage 5 times."
+    },
+    {
+      "name": "Lightning Speed",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increase Damage dealt by 25%."
+    },
+    {
+      "name": "Lightning Speed+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increase Damage dealt by 25%.\nChannel an Electric Orb."
+    },
+    {
+      "name": "Lightningbolt",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 Damage.\nChannel a Lightning Orb."
+    },
+    {
+      "name": "Lightningbolt+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 Damage.\nChannel 2 Lightning Orbs."
+    },
+    {
+      "name": "Magnetic Movement",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Decrease damage taken from enemy attacks by 25%."
+    },
+    {
+      "name": "Magnetic Movement+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Decrease damage taken from enemy attacks by 25%."
+    },
+    {
+      "name": "Mental Out",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Apply STUN to an enemy."
+    },
+    {
+      "name": "Mental Out+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply STUN to an enemy."
+    },
+    {
+      "name": "Oneesama!!",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Needle each turn."
+    },
+    {
+      "name": "Oneesama!!+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Upgraded Needle each turn."
+    },
+    {
+      "name": "Scatter Railgun",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 to each enemy and remove Block."
+    },
+    {
+      "name": "Scatter Railgun+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 to each enemy and remove Block.\nChannel a Lightning Orb."
+    },
+    {
+      "name": "Stun-Shock",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 Damage and remove Block.\nApply 1 Vulnerable.\nApply 1 Weak."
+    },
+    {
+      "name": "Stun-Shock+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 Damage and remove Block.\nApply 1 Vulnerable.\nApply 1 Weak."
+    },
+    {
+      "name": "Taser",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Remove all buffs on non-Boss enemy."
+    },
+    {
+      "name": "Taser+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Remove all buffs on non-Boss enemy."
+    },
+    {
+      "name": "Thunderjolt",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Deal X Damage for each Channeled Orb."
+    },
+    {
+      "name": "Thunderjolt+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Deal X Damage for each Channeled Orb.\nChannel a Lightning Orb."
+    },
+    {
+      "name": "Token Collection",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 Card in your Discard Pile and add it to your hand."
+    },
+    {
+      "name": "Token Collection+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 2 Cards in your Discard Pile and add them to your hand."
+    },
+    {
+      "name": "Circuitous",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Lower your Dexterity by 10, then switch your Dexterity with an enemy."
+    },
+    {
+      "name": "Circuitous+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 10 Dexterity, then switch your Dexterity with an enemy."
+    },
+    {
+      "name": "Judgement Officer",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 6 Needles."
+    },
+    {
+      "name": "Judgement Officer+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 6 Upgraded Needles."
+    },
+    {
+      "name": "Level 6",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 6 Energy.\nGain 68 Strength.\nGain 8 Dexterity."
+    },
+    {
+      "name": "Level 6+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 6 Energy.\nGain 8 Strength.\nGain 8 Dexterity.\nRecover 20% HP."
+    },
+    {
+      "name": "Magnetic Flight",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Decrease damage taken from enemy attacks by 50%."
+    },
+    {
+      "name": "Magnetic Flight+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Decrease damage taken from enemy attacks by 50%."
+    },
+    {
+      "name": "Overload",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Lower the cost of all Cards by 1.\nTake 2 Damage at the end of each turn."
+    },
+    {
+      "name": "Overload+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lower the cost of all Cards by 1.\nTake 2 Damage at the end of each turn."
+    },
+    {
+      "name": "Railgun",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Remove an enemy's Block and deal 20 Damage.\nApply 5 Vulnerable and 5 Weak."
+    },
+    {
+      "name": "Railgun+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Remove an enemy's Block and deal 25 Damage.\nApply 5 Vulnerable and 5 Weak."
+    },
+    {
+      "name": "Rewiring",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Lower your Strength by 10 then switch your Strength with an enemy."
+    },
+    {
+      "name": "Rewiring+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Lower your Strength by 10 then switch your Strength with an enemy."
+    },
+    {
+      "name": "Supercharge",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Upgrade all Cards for the rest of the battle."
+    },
+    {
+      "name": "Supercharge+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Upgrade all Cards for the rest of the battle."
+    },
+    {
+      "name": "Thunder",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Channel X Lightning Orbs."
+    },
+    {
+      "name": "Thunder+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Channel X+1 Lightning Orbs."
+    },
+    {
+      "name": "Thundervolt",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 Damage for each Channeled Orb."
+    },
+    {
+      "name": "Thundervolt+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 30 Damage for each Channeled Orb."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Collector's Coin",
+      "tier": "Starter",
+      "pool": "Default_gray_color",
+      "description": "At the end of the turn, channel up to three lightning orbs equal to your remaining energy.",
+      "flavorText": "A coin from an arcade."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Mikoto Misaka",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Therailgun:Multiword Keyword",
+      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+    },
+    {
+      "name": "Therailgun:keyword",
+      "description": "Whenever you play a card, gain 1 dexterity this turn only."
+    }
+  ]
+}
