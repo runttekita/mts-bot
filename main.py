@@ -144,7 +144,7 @@ async def get_id(message):
         )
         return
     if s == "cardmods":
-        await message.challenge.send(
+        await message.channel.send(
             "https://github.com/daviscook477/BaseMod/wiki/CardModifiers"
         )
         return
