@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "The Gatherer",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "authors": ["Celicath"],
-    "credits": "Rita-Bernstein - Character art, ZHS translation\nMappyTheKat - Old character splash art\nJedi - RUS translation",
-    "description": "Adds The Gatherer as a new playable character with 75 cards, 7 relics.\n\nv1.0.0 (2020-01-15)\n- Art update: Removed all BETA watermarks and unmodified base game art.\n- Updated for 2.0 release (Watcher release).\n- Rework: 3 cards and 1 Relic.\n- Many balance changes.\n\nVisit https://steamcommunity.com/sharedfiles/filedetails/changelog/1611788501 for full change notes.",
+    "credits": "Rita-Bernstein - Character art, ZHS translation\nJedi - RUS translation\nMappyTheKat - Old character splash art",
+    "description": "Adds The Gatherer as a new playable character with 75 cards, 7 relics.\n\nv1.0.0 (2020-01-15)\n- Art update: Removed all BETA watermarks and unmodified base game art.\n- Updated for 2.0 release (Watcher release).\n- Rework: 3 cards and 1 Relic.\n- Many balance changes.\n\nv1.0.1 (2020-02-14)\n- Poison Potion is once again available when you play as the Gatherer.\n- KOR localization update.\n\nv1.0.2 (2020-02-20)\n- ZHS localization update.\n- Minor KOR localization update.\n\nVisit https://steamcommunity.com/sharedfiles/filedetails/changelog/1611788501 for full change notes.",
     "mts_version": "3.7.0",
-    "sts_version": "12-21-2019",
+    "sts_version": "01-27-2020",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -1346,5 +1346,105 @@
     }
   ],
   "keywords": [
+    {
+      "name": "Gatherer:alchemy trial tooltip",
+      "description": "Attack - Lesser Fire or Explosive Potion\nSkill - Lesser Block or Energy Potion\nPower - Lesser Strength or Dexterity Potion\nOther - Lesser Weak or Fear Potion"
+    },
+    {
+      "name": "Gatherer:bomberform tooltip",
+      "description": "If you play multiple Bomber Forms, damage boost is stacked but you only get 1 LEP per turn."
+    },
+    {
+      "name": "Gatherer:convert tooltip",
+      "description": "Uncommon = Blue Banner\nRare = Gold Banner"
+    },
+    {
+      "name": "Gatherer:flower",
+      "description": "Card containing Flower in its name. It can be upgraded 3 times, where 3rd upgrade is special."
+    },
+    {
+      "name": "Gatherer:flower beam tooltip",
+      "description": "3rd Upgrade makes this cost 1 instead of increasing damage."
+    },
+    {
+      "name": "Gatherer:flower falling tooltip",
+      "description": "3rd Upgrade makes this cost 0 and heal 4 HP instead of increasing damage."
+    },
+    {
+      "name": "Gatherer:flower power tooltip",
+      "description": "3rd Upgrade makes this cost 0 in addition to removing a debuff."
+    },
+    {
+      "name": "Gatherer:flower shield tooltip",
+      "description": "3rd Upgrade makes this cost 0 instead of increasing Block."
+    },
+    {
+      "name": "Gatherer:flower whip tooltip",
+      "description": "3rd Upgrade makes this attack 3 times in addition to damage increase."
+    },
+    {
+      "name": "Gatherer:glow\u00A0power",
+      "description": "Boosts the effect of Light! and Shadow."
+    },
+    {
+      "name": "Gatherer:grow book tooltip 0",
+      "description": "Choose 1 from Armaments, Havoc or Twin Strike. Feed is added to the list if upgraded."
+    },
+    {
+      "name": "Gatherer:grow book tooltip 1",
+      "description": "Choose 1 from Choke, Well-Laid Plans or Poisoned Stab. Alchemize is added to the list if upgraded."
+    },
+    {
+      "name": "Gatherer:grow book tooltip 2",
+      "description": "Choose 1 from Stack, Steam Barrier or All for one. Seek is added to the list if upgraded."
+    },
+    {
+      "name": "Gatherer:lep",
+      "description": "Stands for Lesser Explosive Potion, which normally deals 6 damage to all enemies."
+    },
+    {
+      "name": "Gatherer:lesser potion",
+      "description": "A \"Lesser\" version of regular potion which is gained to your Sack."
+    },
+    {
+      "name": "Gatherer:lesser\u00A0block\u00A0potion",
+      "description": "A Lesser Potion which gains 8 Block when used."
+    },
+    {
+      "name": "Gatherer:lesser\u00A0energy\u00A0potion",
+      "description": "A Lesser Potion which gives you 1 energy when used."
+    },
+    {
+      "name": "Gatherer:lesser\u00A0fear\u00A0potion",
+      "description": "A Lesser Potion which applies 2 Vulnerable to an enemy."
+    },
+    {
+      "name": "Gatherer:lesser\u00A0fire\u00A0potion",
+      "description": "A Lesser Potion which deals 10 damage to an enemy."
+    },
+    {
+      "name": "Gatherer:lesser\u00A0poison\u00A0potion",
+      "description": "A Lesser Potion which applies 4 Poison to an enemy."
+    },
+    {
+      "name": "Gatherer:lesser\u00A0swift\u00A0potion",
+      "description": "A Lesser Potion which draws 2 cards when used."
+    },
+    {
+      "name": "Gatherer:lesser\u00A0weak\u00A0potion",
+      "description": "A Lesser Potion which applies 2 Weak to an enemy."
+    },
+    {
+      "name": "Gatherer:once",
+      "description": "Only activates when you play this card first time in the combat."
+    },
+    {
+      "name": "Gatherer:twice",
+      "description": "Only activates for the first two times you play this card in combat. Becomes Once after one use."
+    },
+    {
+      "name": "Gatherer:unique",
+      "description": "Cards with different name (except for upgrades) are considered unique."
+    }
   ]
 }

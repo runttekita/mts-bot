@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "Hubris",
-    "version": "0.24.0",
+    "version": "0.24.5",
     "authors": ["kiooeht"],
     "credits": "",
     "description": "Content expansion mod. Adds new cards, relics, events, and monsters.",
     "mts_version": "3.11.0",
-    "sts_version": "07-17-2019",
+    "sts_version": "01-27-2020",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -466,6 +466,13 @@
       "flavorText": "The Champ's shield... maybe?"
     },
     {
+      "name": "Fox Tail",
+      "tier": "Common",
+      "pool": "Mystic_purple",
+      "description": "Cantrips are always considered Spells.",
+      "flavorText": "No foxes were harmed in the making of this relic."
+    },
+    {
       "name": "Old Nail",
       "tier": "Common",
       "pool": "",
@@ -807,6 +814,13 @@
       "pool": "",
       "description": "Start each combat with 3 Regen.\nRegen can go to -1.",
       "flavorText": "A foul smelling substance. Perhaps slathering it on your skin will heal your wounds."
+    },
+    {
+      "name": "Madman's Spell Book",
+      "tier": "Shop",
+      "pool": "Mystic_purple",
+      "description": "Reverse Spells and Artes.\nAll Spells are now Artes, all Artes are now Spells.",
+      "flavorText": "The scrawlings of a madman who spent too much time in the Spire."
     }
   ],
   "potions": [
@@ -838,5 +852,9 @@
     }
   ],
   "keywords": [
+    {
+      "name": "Hubris:piercing",
+      "description": "Ignores Block when dealing damage."
+    }
   ]
 }
