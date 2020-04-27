@@ -143,6 +143,11 @@ async def get_id(message):
             "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch"
         )
         return
+    if s == "cardmods":
+        await message.challenge.send(
+            "https://github.com/daviscook477/BaseMod/wiki/CardModifiers"
+        )
+        return
     if s == "optin":
         await message.channel.send(
             "https://github.com/velvet-halation/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback"
