@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "Energized Spire",
-    "version": "1.5.4",
+    "version": "1.7.3",
     "authors": ["JohnnyBazooka89"],
     "credits": "",
     "description": "This mod adds a lot of new Energy relics to the boss relic pool!\n\nMore info: https://steamcommunity.com/sharedfiles/filedetails/?id=1639939942\n\nGitHub: https://github.com/JohnnyBazooka89/StSModEnergizedSpire",
     "mts_version": "3.15.0",
-    "sts_version": "01-14-2020",
+    "sts_version": "01-27-2020",
     "dependencies": ["basemod"],
     "optional_dependencies": []
   },
@@ -81,8 +81,15 @@
       "name": "Magnifying Glass",
       "tier": "Boss",
       "pool": "",
-      "description": "Gain [E] at the start of your turn. Enemies in combats have 20% more HP.",
+      "description": "Gain [E] at the start of your turn. Enemies in combats have 25% more HP.",
       "flavorText": "The bigger they are, the harder they fall."
+    },
+    {
+      "name": "Never-Ending Sparkler",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn. 50% of Normal and Elite rooms are Burning Rooms.",
+      "flavorText": "It sparks joy."
     },
     {
       "name": "Ogre Head",
@@ -95,7 +102,7 @@
       "name": "Old TV",
       "tier": "Boss",
       "pool": "Blue",
-      "description": "Gain [E] at the start of your turn. At the start of combat, shuffle 1 energizedspire:Reception\u00A0Problems into your draw pile.",
+      "description": "Gain [E] at the start of your turn. At the start of combat, shuffle 1 Reception Problems into your draw pile.",
       "flavorText": "Too old to use, too good to throw away."
     },
     {
@@ -116,7 +123,7 @@
       "name": "Spider Web",
       "tier": "Boss",
       "pool": "",
-      "description": "Gain [E] at the start of your turn. Every 6 turns, gain Entangled for 1 turn.",
+      "description": "Gain [E] at the start of your turn. Start each combat with 2 Entangled and 3 Strength.",
       "flavorText": "Use it to catch your enemies, not to catch yourself..."
     },
     {
@@ -137,7 +144,7 @@
       "name": "Unstable Molecules",
       "tier": "Boss",
       "pool": "Blue",
-      "description": "Gain [E] at the start of your turn. When an orb triggers its passive ability 3 times, it is removed.",
+      "description": "Gain [E] at the start of your turn. When a Frost orb triggers its passive ability 3 times, it is removed.",
       "flavorText": "Maybe they should just visit a psychiatrist."
     }
   ],
@@ -147,12 +154,16 @@
   ],
   "keywords": [
     {
+      "name": "Energizedspire:burning\u00A0rooms",
+      "description": "Enemies are empowered and drop the Emerald Key."
+    },
+    {
       "name": "Energizedspire:depression",
       "description": "In this Stance, you draw 1 fewer card each turn."
     },
     {
       "name": "Energizedspire:reception\u00A0problems",
-      "description": "Reception Problems is an unplayable status card that when drawn makes you lose 2 Focus until the beginning of your next turn."
+      "description": "Reception Problems is an Unplayable Status card that when drawn makes you lose 2 Focus until the beginning of your next turn."
     }
   ]
 }
