@@ -1,0 +1,1332 @@
+{
+  "mod": {
+    "name": "The Kombatant",
+    "version": "0.7.6",
+    "authors": ["VenIM"],
+    "credits": "",
+    "description": "Mortal Kombat themed mod. Character Select Screen by Poser96 on Deviant Art. Mortal Kombat is property of Netherrealm Studios. This is just a work of love for MK.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Guard",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Guard+",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "High Strike",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage."
+    },
+    {
+      "name": "High Strike+",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Leg Sweep",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 4 damage."
+    },
+    {
+      "name": "Leg Sweep+",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 6 damage."
+    },
+    {
+      "name": "Throw",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Enemy loses 4 HP.\nIf the target was planning to attack, gain 4 Block."
+    },
+    {
+      "name": "Throw+",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Enemy loses 7 HP.\nIf the target was planning to attack, gain 7 Block."
+    },
+    {
+      "name": "Uppercut",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Uppercut+",
+      "color": "Kombat_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nApply 2 Weak. thekombatant:Extender."
+    },
+    {
+      "name": "Acid Spit",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nApply 3 Poison."
+    },
+    {
+      "name": "Acid Spit+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 5 Poison."
+    },
+    {
+      "name": "Arctic Assault",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 8 damage.\nApply 3 thekombatant:Chilled."
+    },
+    {
+      "name": "Arctic Assault+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 8 damage.\nApply 3 thekombatant:Chilled."
+    },
+    {
+      "name": "Elder Storm",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to an enemy 2 times.\nthekombatant:EX: Increase the number of hits by 1 this combat."
+    },
+    {
+      "name": "Elder Storm+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to an enemy 2 times.\nthekombatant:EX: Increase the number of hits by 1 this combat."
+    },
+    {
+      "name": "Enenra",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Temporary Strength for each Attack played so far this turn.\nExhaust.\n"
+    },
+    {
+      "name": "Enenra+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Temporary Strength for each Attack played so far this turn.\nExhaust.\n"
+    },
+    {
+      "name": "Evil Twin",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Evil Twin+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Extra Shades",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block. You may play a thekombatant:Kombo."
+    },
+    {
+      "name": "Extra Shades+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. You may play a thekombatant:Kombo."
+    },
+    {
+      "name": "Face Reveal",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 Kards.\nExhaust."
+    },
+    {
+      "name": "Face Reveal+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 Kards.\nTake an Attack from your discard into hand.\nExhaust."
+    },
+    {
+      "name": "Flame Port",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 thekombatant:Mixup damage. Apply 2 thekombatant:Toasty. thekombatant:Extender. Exhaust.\nthekombatant:EX: This kard isn't Exhausted."
+    },
+    {
+      "name": "Flame Port+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 thekombatant:Mixup damage. Apply 3 thekombatant:Toasty. thekombatant:Extender. Exhaust.\nthekombatant:EX: This kard isn't Exhausted."
+    },
+    {
+      "name": "God Fists",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to 2 random enemies. Each hit gains an additional 2 [#F4D03F]Meter[]."
+    },
+    {
+      "name": "God Fists+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to 3 random enemies. Each hit gains an additional 2 [#F4D03F]Meter[]."
+    },
+    {
+      "name": "Ice Klone",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block. Next turn gain [E].\nExhaust."
+    },
+    {
+      "name": "Ice Klone+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 13 Block. Next turn gain [E].\nExhaust."
+    },
+    {
+      "name": "Ice Slide",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nthekombatant:EX: Apply 2 thekombatant:Chilled to ALL enemies."
+    },
+    {
+      "name": "Ice Slide+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nthekombatant:EX: Apply 4 thekombatant:Chilled to ALL enemies."
+    },
+    {
+      "name": "Judgment",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nApply 2 thekombatant:Toasty."
+    },
+    {
+      "name": "Judgment+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 3 thekombatant:Toasty."
+    },
+    {
+      "name": "Rekindle",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 thekombatant:Mixup damage. Shuffle this kard into your draw pile.\nDraw 1 Kard."
+    },
+    {
+      "name": "Rekindle+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 thekombatant:Mixup damage. Shuffle this kard into your draw pile.\nDraw 1 Kard."
+    },
+    {
+      "name": "Roundhouse",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nPut 1 Roundhouse from your draw pile to your hand.\nIt's damage is increased by 2 for this combat."
+    },
+    {
+      "name": "Roundhouse+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nPut 1 Roundhouse from your draw pile to your hand.\nIt's damage is increased by 4 for this combat."
+    },
+    {
+      "name": "Run Kancel",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nthekombatant:Extender.\nExhaust."
+    },
+    {
+      "name": "Run Kancel+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nthekombatant:Extender. You may play another thekombatant:Kombo.\nExhaust."
+    },
+    {
+      "name": "Shedding Skin",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Apply 2 Poison.\nthekombatant:EX: Gain 9 Block."
+    },
+    {
+      "name": "Shedding Skin+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Apply 3 Poison.\nthekombatant:EX: Gain 14 Block."
+    },
+    {
+      "name": "Spark-Port",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nthekombatant:EX: Gain 1 [E]."
+    },
+    {
+      "name": "Spark-Port+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nthekombatant:EX: Gain 1 [E]."
+    },
+    {
+      "name": "Spear",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable.\nReturn the top kard of the Discard into hand.\nExhaust."
+    },
+    {
+      "name": "Spear+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable.\nReturn the top 2 kards of the Discard into hand.\nExhaust."
+    },
+    {
+      "name": "Swamp Strikes",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 10 damage.\nIf the target has Poison, apply 2 Vulnerable."
+    },
+    {
+      "name": "Swamp Strikes+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 10 damage.\nIf the target has Poison, apply 2 Vulnerable and thekombatant:Extender."
+    },
+    {
+      "name": "Vibrations",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. Gain 2 Temporary Dexterity."
+    },
+    {
+      "name": "Vibrations+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block. Gain 3 Temporary Dexterity."
+    },
+    {
+      "name": "We Win",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 5 damage to an enemy twice.\n[#F4D03F]Special[] thekombatant:Cancel."
+    },
+    {
+      "name": "We Win+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 7 damage to an enemy twice.\n[#F4D03F]Special[] thekombatant:Cancel."
+    },
+    {
+      "name": "White Lightning",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 5 damage. Gain 4 extra [#F4D03F]Meter."
+    },
+    {
+      "name": "White Lightning+",
+      "color": "Kombat_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 5 damage. Gain 4 extra [#F4D03F]Meter.\nthekombatant:Extender."
+    },
+    {
+      "name": "Acid Slide",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 thekombatant:Mixup damage.\nApply 4 Poison.\nthekombatant:EX: Gain 1 [E]."
+    },
+    {
+      "name": "Acid Slide+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 thekombatant:Mixup damage.\nApply 4 Poison.\nthekombatant:EX: Gain 1 [E]."
+    },
+    {
+      "name": "Breaker",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Spend 2 Bars of Meter to gain 1 Buffer."
+    },
+    {
+      "name": "Breaker+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Spend 2 Bars of Meter to gain 1 Buffer."
+    },
+    {
+      "name": "Certain Death",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 12 damage. Discard 2 kards. Deal half that damage again."
+    },
+    {
+      "name": "Certain Death+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 16 damage. Discard 1 kard. Deal half that damage again."
+    },
+    {
+      "name": "Damnation",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 7 damage.\nIf the target has thekombatant:Toasty, [#F4D03F]Special[] thekombatant:Cancel."
+    },
+    {
+      "name": "Damnation+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 11 damage.\nIf the target has thekombatant:Toasty, [#F4D03F]Special[] thekombatant:Cancel."
+    },
+    {
+      "name": "Darkness",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nGain 6 Block. Draw 1 kard."
+    },
+    {
+      "name": "Darkness+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nGain 7 Block.\nShuffle a kard from your Discard into your Draw Pile. Draw 1 kard. "
+    },
+    {
+      "name": "Drunken Fist",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increases the power of thekombatant:Mixup damage attacks by 2."
+    },
+    {
+      "name": "Drunken Fist+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increases the power of thekombatant:Mixup damage attacks by 3."
+    },
+    {
+      "name": "Fatality",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 9 damage. If Fatal, heal 10.\nExhaust."
+    },
+    {
+      "name": "Fatality+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 15 damage. If Fatal, heal 10.\nExhaust."
+    },
+    {
+      "name": "Force Bubble",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Poison to an enemy. Gain 11 Block.\nthekombatant:EX: [#F4D03F]Special thekombatant:Cancel."
+    },
+    {
+      "name": "Force Bubble+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 4 Poison to an enemy. Gain 15 Block.\nthekombatant:EX: [#F4D03F]Special thekombatant:Cancel."
+    },
+    {
+      "name": "Frost Bitten",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. \nDeals bonus damage to ALL enemies based upon target's thekombatant:Chilled.\n[#F4D03F]Special[] thekombatant:Cancel."
+    },
+    {
+      "name": "Frost Bitten+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage. \nDeals bonus damage to ALL enemies based upon target's thekombatant:Chilled.\n[#F4D03F]Special[] thekombatant:Cancel."
+    },
+    {
+      "name": "God's Rage",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to a random enemy.\nDiscard a kard. Draw 1 kard."
+    },
+    {
+      "name": "God's Rage+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to a random enemy.\nDiscard a kard. Draw 2 kards."
+    },
+    {
+      "name": "Gravedigger",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 4 damage twice. Return a Special from your discard to your hand."
+    },
+    {
+      "name": "Gravedigger+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 6 damage twice. Return a Special from your discard to your hand.\n[#F4D03F]Special thekombatant:Cancel."
+    },
+    {
+      "name": "Hellfire",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nWhenever you are attacked this turn, apply 1 thekombatant:Toasty to the attacker."
+    },
+    {
+      "name": "Hellfire+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nWhenever you are attacked this turn, apply 1 thekombatant:Toasty to the attacker."
+    },
+    {
+      "name": "High Garrote",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nThe first time you are attacked this turn, the attacker takes 8 damage per hit."
+    },
+    {
+      "name": "High Garrote+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nThe first time you are attacked this turn, the attacker takes 10 damage per hit."
+    },
+    {
+      "name": "Ice Ball",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 thekombatant:Chilled.\nthekombatant:EX: Convert half of all thekombatant:Chilled on the target to lost Strength."
+    },
+    {
+      "name": "Ice Ball+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 thekombatant:Chilled.\nthekombatant:Extender.\nthekombatant:EX: Convert half of all thekombatant:Chilled on the target to lost Strength."
+    },
+    {
+      "name": "Jump In",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block. You may play a thekombatant:Kombo."
+    },
+    {
+      "name": "Jump In+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block. You may play a thekombatant:Kombo."
+    },
+    {
+      "name": "Kenshi's Spirits",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#F4D03F]Special[] thekombatant:Cancel.\nExhaust."
+    },
+    {
+      "name": "Kenshi's Spirits+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "[#F4D03F]Special[] thekombatant:Cancel. You may play a thekombatant:Kombo.\nExhaust."
+    },
+    {
+      "name": "Kold Blooded",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 7 damage.\nDeals 2 additional damage for every Poison or thekombatant:Chilled on the target."
+    },
+    {
+      "name": "Kold Blooded+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 7 damage.\nDeals 3 additional damage for every Poison or thekombatant:Chilled on the target."
+    },
+    {
+      "name": "Kold Encounter",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 9 damage. You may play another thekombatant:Kombo."
+    },
+    {
+      "name": "Kold Encounter+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 10 damage.\nApply 2 thekombatant:Chilled. You may play another thekombatant:Kombo."
+    },
+    {
+      "name": "Low Parry",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 10 Block."
+    },
+    {
+      "name": "Low Parry+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 15 Block."
+    },
+    {
+      "name": "Meat and Greet",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you end your turn without playing a Skill, Heal 1 HP."
+    },
+    {
+      "name": "Meat and Greet+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you end your turn without playing a Skill, Heal 1 HP."
+    },
+    {
+      "name": "Possessed",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Whenever you play a thekombatant:Kombo this turn, Draw 1 Kard."
+    },
+    {
+      "name": "Possessed+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Whenever you play a thekombatant:Kombo this turn, Draw 1 Kard."
+    },
+    {
+      "name": "Rising Thunder",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 3 damage to 2 random enemies.\nMeter gain from this Kard is Doubled."
+    },
+    {
+      "name": "Rising Thunder+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 3 damage to 2 random enemies.\nMeter gain from this Kard is Tripled."
+    },
+    {
+      "name": "Short Hop",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 thekombatant:Mixup damage.\nDraw 2 Kards."
+    },
+    {
+      "name": "Short Hop+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 thekombatant:Mixup damage.\nDraw 2 Kards."
+    },
+    {
+      "name": "Smokescreen",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a thekombatant:Kombo, gain 2 Block."
+    },
+    {
+      "name": "Smokescreen+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play a thekombatant:Kombo, gain 2 Block."
+    },
+    {
+      "name": "Soul Ball",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. You may play a thekombatant:Kombo\nthekombatant:EX: thekombatant:Extender."
+    },
+    {
+      "name": "Soul Ball+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage. You may play a thekombatant:Kombo\nthekombatant:EX: thekombatant:Extender."
+    },
+    {
+      "name": "Soul Choke",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 10 damage.\nthekombatant:EX: Gain half the damage dealt as Temporary Health."
+    },
+    {
+      "name": "Soul Choke+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thekombatant:Kombo\nDeal 14 damage.\nthekombatant:EX: Gain half the damage dealt as Temporary Health."
+    },
+    {
+      "name": "Tarkatan Rage",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose Health, gain 2 Plated Armor."
+    },
+    {
+      "name": "Tarkatan Rage+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you lose Health, gain 2 Plated Armor."
+    },
+    {
+      "name": "Touch of Rain",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 6 thekombatant:Mixup damage.\nDraw 1 Kard.\nDiscard 1 Kard."
+    },
+    {
+      "name": "Touch of Rain+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thekombatant:Kombo\nDeal 10 thekombatant:Mixup damage.\nDraw 1 Kard.\nDiscard 1 Kard."
+    },
+    {
+      "name": "Undying Blaze",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Prevents thekombatant:Toasty from being removed from an enemy at the end of the turn.\nExhaust"
+    },
+    {
+      "name": "Undying Blaze+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Prevents thekombatant:Toasty from being removed from an enemy at the end of the turn."
+    },
+    {
+      "name": "Waterfall",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage."
+    },
+    {
+      "name": "Waterfall+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Whiff Punish",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If no enemy attacks you this turn, gain 3 Strength until the end of next turn."
+    },
+    {
+      "name": "Whiff Punish+",
+      "color": "Kombat_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If no enemy attacks you this turn, gain 5 Strength until the end of next turn."
+    },
+    {
+      "name": "Bicycle Kick",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thekombatant:Kombo\nDeal 4 damage 3 times.\nthekombatant:EX: Deal 4 damage 3 additional times."
+    },
+    {
+      "name": "Bicycle Kick+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thekombatant:Kombo\nDeal 6 damage 3 times.\nthekombatant:EX: Deal 6 damage 3 additional times."
+    },
+    {
+      "name": "Consult Elder Gods",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, draw 1 additional kard, Gain 10% Meter, Refund the cost of the first 1 Kard played."
+    },
+    {
+      "name": "Consult Elder Gods+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, draw 2 additional kards, Gain 20% Meter, Refund the cost of the first 2 Kards played."
+    },
+    {
+      "name": "Cyber Initiative",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand, then draw that many kards. Upgrade your new hand, and add a copy of it to the draw pile.\nExhaust."
+    },
+    {
+      "name": "Cyber Initiative+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust your hand, then draw that many kards. Upgrade your new hand, and add a copy of it to the draw pile.\nExhaust."
+    },
+    {
+      "name": "Ethereal Sais",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play 3 thekombatant:Kombos in a turn, thekombatant:Extender.\nThis effect cannot stack."
+    },
+    {
+      "name": "Ethereal Sais+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 3 thekombatant:Kombos in a turn, thekombatant:Extender.\nThis effect cannot stack."
+    },
+    {
+      "name": "Face Eater",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. Gain 8 Temporary HP.\nExhaust."
+    },
+    {
+      "name": "Face Eater+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. Gain 15 Temporary HP.\nExhaust."
+    },
+    {
+      "name": "Fannado",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the next played kard is a regular Attack, refund it's [E] cost."
+    },
+    {
+      "name": "Fannado+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf the next played kard is a regular Attack, refund it's [E] cost."
+    },
+    {
+      "name": "Flaming Fists",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 thekombatant:Toasty to an enemy that has thekombatant:Toasty."
+    },
+    {
+      "name": "Flaming Fists+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double an enemy's thekombatant:Toasty"
+    },
+    {
+      "name": "Flying Thunder God",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "thekombatant:EX: Deal 27 damage to ALL enemies."
+    },
+    {
+      "name": "Flying Thunder God+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "thekombatant:EX: Deal 36 damage to ALL enemies."
+    },
+    {
+      "name": "Hat Tricks",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Ethereal\nUsing thekombatant:Extender draws 1 additional kard."
+    },
+    {
+      "name": "Hat Tricks+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Using thekombatant:Extender draws 1 additional kard."
+    },
+    {
+      "name": "Kurse",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage for each attack played this turn.\n"
+    },
+    {
+      "name": "Kurse+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage for each attack played this turn.\n"
+    },
+    {
+      "name": "Quick Draw",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8  thekombatant:Mixup damage."
+    },
+    {
+      "name": "Quick Draw+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12  thekombatant:Mixup damage."
+    },
+    {
+      "name": "Reflect",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a kard. If you do, gain 8 Block."
+    },
+    {
+      "name": "Reflect+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a kard. If you do, gain 11 Block."
+    },
+    {
+      "name": "Restand",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thekombatant:Extender.\nRemove any Chained Power.\nExhaust."
+    },
+    {
+      "name": "Restand+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove any Chained Power. Remove any Weak and Frail as well.\nExhaust."
+    },
+    {
+      "name": "Secret Shang Tsung",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the beginning of your turn, alternate between gaining 1 Strength and 1 Dexterity."
+    },
+    {
+      "name": "Secret Shang Tsung+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the beginning of your turn, alternate between gaining 1 Strength and 1 Dexterity."
+    },
+    {
+      "name": "Stealth",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 3 Buffer.\nYou will not be able to play attacks next turn.\nExhaust."
+    },
+    {
+      "name": "Stealth+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 3 Buffer.\nYou will not be able to play attacks next turn.\nExhaust."
+    },
+    {
+      "name": "Teleslam",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage twice.\nIf played with [#F4D03F]Special thekombatant:Cancel, deal 8 damage again. Exhaust.\nthekombatant:EX: This kard isn't Exhausted."
+    },
+    {
+      "name": "Teleslam+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage twice.\nIf played with [#F4D03F]Special thekombatant:Cancel, deal 8 damage again. Exhaust.\nthekombatant:EX: This kard isn't Exhausted."
+    },
+    {
+      "name": "Toxic Aura",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, apply 5 Poison to a random enemy."
+    },
+    {
+      "name": "Toxic Aura+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 5 Poison to a random enemy."
+    },
+    {
+      "name": "You Suck!",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 25 damage.\nLose 5 HP. Exhaust."
+    },
+    {
+      "name": "You Suck!+",
+      "color": "Kombat_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 25 damage.\nLose 7 HP."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Shinnok's Amulet",
+      "tier": "Starter",
+      "pool": "Kombat_gold_color",
+      "description": "At the end of your turn, Retain 1 Kard for each unspent Bar (33%) of Meter.",
+      "flavorText": "Dark Tidings from the Past and Future."
+    },
+    {
+      "name": "Jinsei Basin",
+      "tier": "Common",
+      "pool": "Kombat_gold_color",
+      "description": "At the start of each combat, gain 1 Bar (33%) of Meter.",
+      "flavorText": "You feel the Lifeforce of Earthrealm."
+    },
+    {
+      "name": "Core: Cyrax",
+      "tier": "Uncommon",
+      "pool": "Kombat_gold_color",
+      "description": "When you play 5 Attacks in a turn, apply 2 Weak to ALL enemies.",
+      "flavorText": "Core - LK 4D4"
+    },
+    {
+      "name": "Core: Sektor",
+      "tier": "Uncommon",
+      "pool": "Kombat_gold_color",
+      "description": "When you play 5 Attacks in a turn, Deal 5 damage to ALL enemies.",
+      "flavorText": "Core - LK 9T9"
+    },
+    {
+      "name": "Core: Smoke",
+      "tier": "Uncommon",
+      "pool": "Kombat_gold_color",
+      "description": "When you play 5 Attacks in a turn, gain 6 Block.",
+      "flavorText": "Core - LK 7T2"
+    },
+    {
+      "name": "The Book of Boon",
+      "tier": "Uncommon",
+      "pool": "Kombat_gold_color",
+      "description": "After playing 25 Attacks, gain [E] [E] .",
+      "flavorText": "Your Eyebrows feel Powerful"
+    },
+    {
+      "name": "Taste of Salt",
+      "tier": "Rare",
+      "pool": "Kombat_gold_color",
+      "description": "Whenever you draw a Special, gain 2 Block.",
+      "flavorText": "Crouch, Crouch, Crouch, Crouch, Crouch."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Kombatant",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    },
+    {
+      "name": "Emperor Shao Kahn",
+      "type": "Boss",
+      "minHP": "580",
+      "maxHP": "580"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Thekombatant:Chilled",
+      "description": "Creature will deal less damage, the amount is halved after each of it's attacks."
+    },
+    {
+      "name": "Thekombatant:Extender",
+      "description": "Draw 1 kard and gain 1 [E] but deal 15% less damage for the rest of this turn."
+    },
+    {
+      "name": "Thekombatant:Kombo",
+      "description": "Kombo kards must be played after regular attack kards. (Unless specified.)"
+    },
+    {
+      "name": "Thekombatant:Meter_Burn",
+      "description": "Will spend 1 bar (33%) of Meter to apply this additional effect."
+    },
+    {
+      "name": "Thekombatant:Mixup",
+      "description": "Mixup damage is 200% effective against Block."
+    },
+    {
+      "name": "Thekombatant:Special Cancel",
+      "description": "If you follow this Kard with a Special, it will cost 1 less [E] ."
+    },
+    {
+      "name": "Thekombatant:Toasty",
+      "description": "When attacked this creature will take additional damage. Lasts until the end of the round."
+    },
+    {
+      "name": "Thekombatant:keyword",
+      "description": "Whenever you play a card, gain 1 dexterity this turn only."
+    }
+  ]
+}

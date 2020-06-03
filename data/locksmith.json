@@ -1,0 +1,1338 @@
+{
+  "mod": {
+    "name": "TheLocksmith",
+    "version": "1.5",
+    "authors": ["Vex'd"],
+    "credits": "",
+    "description": "A mysterious locksmith with nefarious plans. Ascends the Spire in search of greater powers.",
+    "mts_version": "3.8.0",
+    "sts_version": "2.0",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Key",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 3 damage.\nExhaust."
+    },
+    {
+      "name": "Key+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 5 damage.\nExhaust."
+    },
+    {
+      "name": "Shitty Key",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "nonplyabl.\ncounts as key.\netheral."
+    },
+    {
+      "name": "Shitty Key+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "nonplyabl.\ncounts as key.\netheral."
+    },
+    {
+      "name": "Defend",
+      "color": "Locksmith_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Locksmith_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Key Move",
+      "color": "Locksmith_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Key Move+",
+      "color": "Locksmith_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Lock Crash",
+      "color": "Locksmith_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Lock Crash+",
+      "color": "Locksmith_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Strike",
+      "color": "Locksmith_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Locksmith_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Block And Key",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Block And Key+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Buried Curse",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 1 Weak.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Buried Curse+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 2 Weak.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Capitalize",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf the enemy is locksmith:Crippled, locksmith:Equalize."
+    },
+    {
+      "name": "Capitalize+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf the enemy is locksmith:Crippled, locksmith:Equalize."
+    },
+    {
+      "name": "Curse",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 locksmith:Hexx."
+    },
+    {
+      "name": "Curse+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 7 locksmith:Hexx."
+    },
+    {
+      "name": "Cursed Key",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Counts as a *Key.\nDeal 7 damage.\nIf this card is Exhausted, apply 3 locksmith:Hexx to ALL enemies."
+    },
+    {
+      "name": "Cursed Key+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Counts as a *Key.\nDeal 9 damage.\nIf this card is Exhausted, apply 5 locksmith:Hexx to ALL enemies."
+    },
+    {
+      "name": "Death Glare",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nApply 4 locksmith:Hexx to ALL locksmith:Crippled enemies."
+    },
+    {
+      "name": "Death Glare+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nApply 6 locksmith:Hexx to ALL locksmith:Crippled enemies."
+    },
+    {
+      "name": "Exploding Dummy",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Dummy with 9 HP.\nIf it dies, it deals !todo! damage to ALL non-Dummy enemies."
+    },
+    {
+      "name": "Exploding Dummy+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Dummy with 9 HP.\nIf it dies, it deals !todo! damage to ALL non-Dummy enemies."
+    },
+    {
+      "name": "Grab",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage 2 times.\nIf this kills an enemy, add 1 *Key into your hand."
+    },
+    {
+      "name": "Grab+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage 3 times.\nIf this kills an enemy, add 1 *Key into your hand."
+    },
+    {
+      "name": "Hidden Power",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Strength."
+    },
+    {
+      "name": "Hidden Power+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 1 Strength."
+    },
+    {
+      "name": "Keychain Rain",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf your hand contains 3 or more *Keys, deal 7 damage again."
+    },
+    {
+      "name": "Keychain Rain+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf your hand contains 3 or more *Keys, deal 10 damage again."
+    },
+    {
+      "name": "Keysmack",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Keysmack+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Lock Block",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block."
+    },
+    {
+      "name": "Lock Block+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block."
+    },
+    {
+      "name": "Lock Smack",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nlocksmith:Lock the top card of your draw pile."
+    },
+    {
+      "name": "Lock Smack+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nlocksmith:Lock the top card of your draw pile."
+    },
+    {
+      "name": "Pocket Key",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength this turn.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Pocket Key+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Strength this turn.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Prep",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 *Key into your hand.\nlocksmith:Equalize."
+    },
+    {
+      "name": "Prep+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 *Key into your hand.\nlocksmith:Equalize twice."
+    },
+    {
+      "name": "Puppet Guard",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Dummy with 6 HP.\nIf it dies, it grants you 8 Block."
+    },
+    {
+      "name": "Puppet Guard+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Dummy with 6 HP.\nIf it dies, it grants you 11 Block."
+    },
+    {
+      "name": "Shrapnel Lock",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies."
+    },
+    {
+      "name": "Shrapnel Lock+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies."
+    },
+    {
+      "name": "Smack Smack Burn",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nDeal !sddy! damage.\nExhaust 1 card."
+    },
+    {
+      "name": "Smack Smack Burn+",
+      "color": "Locksmith_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDeal !sddy! damage.\nExhaust 1 card."
+    },
+    {
+      "name": "Absorb",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Summon a Dummy with 10 HP.\nWhenever an enemy dies, gain 1 Strength."
+    },
+    {
+      "name": "Absorb+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nSummon a Dummy with 10 HP.\nWhenever an enemy dies, gain 1 Strength."
+    },
+    {
+      "name": "Block Burn Draw",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nExhaust 1 card at random.\nDraw 2 cards."
+    },
+    {
+      "name": "Block Burn Draw+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nExhaust 1 card.\nDraw 2 cards."
+    },
+    {
+      "name": "Crippling Fake",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Dummy with 12 HP.\nIf it dies, it applies !todo! Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Crippling Fake+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Dummy with 12 HP.\nIf it dies, it applies !todo! Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "D-Dummy!",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Dummies attack you for 1 damage.\nWhenever a Dummy dies, gain 5 Block."
+    },
+    {
+      "name": "D-Dummy!+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Dummies attack you for 1 damage.\nWhenever a Dummy dies, gain 8 Block."
+    },
+    {
+      "name": "Dark Burst",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nTrigger all locksmith:Hexx."
+    },
+    {
+      "name": "Dark Burst+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nTrigger all locksmith:Hexx twice."
+    },
+    {
+      "name": "Dark Magic",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 7 locksmith:Hexx.\nApply !todo! Weak.\nApply !todo! Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Dark Magic+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 10 locksmith:Hexx.\nApply !todo! Weak.\nApply !todo! Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Double Key",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nCounts as a *Key.\nIf this card is Exhausted, add 1 *Key into your hand."
+    },
+    {
+      "name": "Draining Miasma",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is Exhausted, ALL enemies lose 2 HP."
+    },
+    {
+      "name": "Draining Miasma+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is Exhausted, ALL enemies lose 3 HP."
+    },
+    {
+      "name": "Dummy's Revenge",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Summon a Dummy with 10 HP.\nAt the end of your turn, each Dummy makes a random enemy lose 2 HP."
+    },
+    {
+      "name": "Dummy's Revenge+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Summon a Dummy with 10 HP.\nAt the end of your turn, each Dummy makes a random enemy lose 4 HP."
+    },
+    {
+      "name": "Exploit",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nIf the enemy is locksmith:Crippled, gain [E] [E] [E] ."
+    },
+    {
+      "name": "Exploit+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nIf the enemy is locksmith:Crippled, gain [E] [E] [E] ."
+    },
+    {
+      "name": "Feel No Feign",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is Exhausted, gain 2 Block next turn."
+    },
+    {
+      "name": "Feel No Feign+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever a card is Exhausted, gain 2 Block next turn."
+    },
+    {
+      "name": "Friendly Gift",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give the enemy 15 Temporary_HP.\nIf they die, add 3 *Keys into your hand."
+    },
+    {
+      "name": "Friendly Gift+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give the enemy 10 Temporary_HP.\nIf they die, add 3 *Keys into your hand."
+    },
+    {
+      "name": "Go Away",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nApply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Go Away+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nApply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Golf Gash",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage for each enemy in combat."
+    },
+    {
+      "name": "Golf Gash+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage for each enemy in combat."
+    },
+    {
+      "name": "Horrify",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 6 locksmith:Hexx to ALL locksmith:Crippled enemies.\nlocksmith:Equalize ALL enemies."
+    },
+    {
+      "name": "Horrify+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 9 locksmith:Hexx to ALL locksmith:Crippled enemies.\nlocksmith:Equalize ALL enemies."
+    },
+    {
+      "name": "Influx",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 *Shitty *Keys into your hand."
+    },
+    {
+      "name": "Influx+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nAdd 3 *Shitty *Keys into your hand."
+    },
+    {
+      "name": "Jingle Loan",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nAdd 2 *Keys into your hand.\nExhaust."
+    },
+    {
+      "name": "Jingle Loan+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nAdd 2 *Keys into your hand.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Long Dead Power",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 3 Strength."
+    },
+    {
+      "name": "Long Dead Power+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nGain 4 Strength."
+    },
+    {
+      "name": "Mirror Magic",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Dummy with 12 HP.\nWhenever it loses HP, all non-Dummy enemies gain that much locksmith:Hexx."
+    },
+    {
+      "name": "Mirror Magic+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Dummy with 16 HP.\nWhenever it loses HP, all non-Dummy enemies gain that much locksmith:Hexx."
+    },
+    {
+      "name": "Padlock",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 26 damage."
+    },
+    {
+      "name": "Padlock+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 32 damage."
+    },
+    {
+      "name": "Power Sap",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf the enemy is locksmith:Crippled, they lose 1 Strength and you gain 1 Strength."
+    },
+    {
+      "name": "Power Sap+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf the enemy is locksmith:Crippled, they lose 1 Strength and you gain 1 Strength."
+    },
+    {
+      "name": "Rejuvenation",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 7 Block.\nDeal 7 damage.\nIf you have no *Keys, add 2 *Keys into your hand."
+    },
+    {
+      "name": "Rejuvenation+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 9 Block.\nDeal 9 damage.\nIf you have no *Keys, add 2 *Keys into your hand."
+    },
+    {
+      "name": "Sapping Keys",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "*Keys make their targets lose 1 Strength this turn."
+    },
+    {
+      "name": "Sapping Keys+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "*Keys make their targets lose 1 Strength this turn.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Shielding Dummy",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Dummy with 18 HP.\nWhenever it loses HP, gain that much Block."
+    },
+    {
+      "name": "Shielding Dummy+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Dummy with 24 HP.\nWhenever it loses HP, gain that much Block."
+    },
+    {
+      "name": "Slice Slash",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nDeal !sddy! damage to ALL enemies."
+    },
+    {
+      "name": "Slice Slash+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies.\nDeal !sddy! damage to ALL enemies."
+    },
+    {
+      "name": "Soul Sucker",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, trigger the locksmith:Hexx of locksmith:Crippled enemies."
+    },
+    {
+      "name": "Soul Sucker+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, trigger the locksmith:Hexx of locksmith:Crippled enemies.\nApply 1 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Strength Dummy",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Dummy with 12 HP.\nIf it dies, you gain !todo! Strength."
+    },
+    {
+      "name": "Strength Dummy+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a Dummy with 12 HP.\nIf it dies, you gain !todo! Strength."
+    },
+    {
+      "name": "Trash Smash",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nDamage is increased by 1 for each card in your exhaust pile."
+    },
+    {
+      "name": "Trash Smash+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nDamage is increased by 1 for each card in your exhaust pile."
+    },
+    {
+      "name": "Trash To Treasure",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 locksmith:Hexx.\nIf the enemy is locksmith:Crippled, apply 5 locksmith:Hexx again."
+    },
+    {
+      "name": "Trash To Treasure+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 7 locksmith:Hexx.\nIf the enemy is locksmith:Crippled, apply 7 locksmith:Hexx again."
+    },
+    {
+      "name": "Triple Key+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nCounts as a *Key.\nIf this card is Exhausted, add 1 *Double *Key into your hand."
+    },
+    {
+      "name": "Tsundere",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf this kills a Dummy, apply 1 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Tsundere+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf this kills a Dummy, apply 1 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Unearth",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in your exhaust pile.\nPlay the chosen card and Exhaust it.\nExhaust."
+    },
+    {
+      "name": "Unearth+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in your exhaust pile.\nPlay the chosen card and Exhaust it.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Unlock!",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 12 Block.\nDeal 10 damage.\nDraw 1 card."
+    },
+    {
+      "name": "Unlock!+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 15 Block.\nDeal 12 damage.\nDraw 2 cards."
+    },
+    {
+      "name": "Value Select",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Summon a Dummy with 10 HP.\nIf it dies, draw 1 card and gain [E] ."
+    },
+    {
+      "name": "Value Select+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Summon a Dummy with 10 HP.\nIf it dies, draw 2 cards and gain [E] [E] ."
+    },
+    {
+      "name": "Wave Of Rudeness",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 5 locksmith:Hexx and !todo! Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Wave Of Rudeness+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 7 locksmith:Hexx and !todo! Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Za Hando",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nExhaust the middle card(s) of your hand."
+    },
+    {
+      "name": "Za Hando+",
+      "color": "Locksmith_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nExhaust the middle card(s) of your hand."
+    },
+    {
+      "name": "\"I Was Merely Fooling\"",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf this kills an enemy, it revives with full HP."
+    },
+    {
+      "name": "\"I Was Merely Fooling\"+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nIf this kills an enemy, it revives with full HP."
+    },
+    {
+      "name": "AOE Multi Attack + Key",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage to ALL enemies 5 times.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "AOE Multi Attack + Key+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to ALL enemies 5 times.\nAdd 1 *Key into your hand."
+    },
+    {
+      "name": "Anime",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 *Key into your hand.\n*Keys in your hand become *Keyblades with 7 bonus damage."
+    },
+    {
+      "name": "Anime+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 *Key into your hand.\n*Keys in your hand become *Keyblades with 12 bonus damage."
+    },
+    {
+      "name": "Burden",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever a card is Exhausted this turn, gain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Burden+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever a card is Exhausted this turn, gain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "DIO Dummy",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Dummy with 30 HP.\nIf it dies, take an extra turn.\nExhaust."
+    },
+    {
+      "name": "DIO Dummy+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a Dummy with 30 HP.\nIf it dies, take an extra turn.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "Dark Doom",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 12 locksmith:Hexx."
+    },
+    {
+      "name": "Dark Doom+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 16 locksmith:Hexx."
+    },
+    {
+      "name": "Enigma",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Kill ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Enigma+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Retain.\nKill ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Evil Keys",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "*Keys apply 1 locksmith:Hexx."
+    },
+    {
+      "name": "Evil Keys+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "*Keys apply 1 locksmith:Hexx."
+    },
+    {
+      "name": "Greater Evil",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nlocksmith:Equalize 3 times.\nExhaust."
+    },
+    {
+      "name": "Greater Evil+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nlocksmith:Equalize 5 times.\nExhaust."
+    },
+    {
+      "name": "Harvest",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in your draw pile and remove it.\nSummon a Dummy with 10 HP.\nIf it dies, play that card."
+    },
+    {
+      "name": "Harvest+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card in your draw pile and remove it.\nSummon a Dummy with 10 HP.\nIf it dies, play that card."
+    },
+    {
+      "name": "High Security",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 36 damage.\nlocksmith:Lock your hand."
+    },
+    {
+      "name": "High Security+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 44 damage.\nlocksmith:Lock your hand."
+    },
+    {
+      "name": "HitBurnDrawBurnBlockBurn",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nExhaust 1 card.\nDraw 2 cards.\nExhaust 1 card.\nGain 8 Block.\nExhaust 1 card."
+    },
+    {
+      "name": "HitBurnDrawBurnBlockBurn+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nExhaust 1 card.\nDraw 3 cards.\nExhaust 1 card.\nGain 10 Block.\nExhaust 1 card."
+    },
+    {
+      "name": "Infinite Keys",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a *Key into your hand."
+    },
+    {
+      "name": "Infinite Keys+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, add a *Key into your hand."
+    },
+    {
+      "name": "Insidious Power",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, gain 1 locksmith:Hexx and [E] ."
+    },
+    {
+      "name": "Insidious Power+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of your turn, gain 1 locksmith:Hexx and [E] ."
+    },
+    {
+      "name": "Skeleton Key",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 5 *Keys into your hand.\nExhaust."
+    },
+    {
+      "name": "Skeleton Key+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 5 *Keys into your hand.\nExhaust."
+    },
+    {
+      "name": "Slam Crush",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nIf the enemy is locksmith:Crippled, apply 16 locksmith:Hexx instead."
+    },
+    {
+      "name": "Slam Crush+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nIf the enemy is locksmith:Crippled, apply 20 locksmith:Hexx instead."
+    },
+    {
+      "name": "Slow Sapping",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, apply 1 locksmith:Hexx to ALL non-Dummy enemies and gain 1 Temporary_HP."
+    },
+    {
+      "name": "Slow Sapping+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, apply 2 locksmith:Hexx to ALL non-Dummy enemies and gain 2 Temporary_HP."
+    },
+    {
+      "name": "Storm of Shpiel",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Exhaust your hand.\nALL enemies lose 1 Strength for each card Exhausted."
+    },
+    {
+      "name": "Storm of Shpiel+",
+      "color": "Locksmith_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust your hand.\nALL enemies lose 1 Strength for each card Exhausted."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Freaky",
+      "tier": "Starter",
+      "pool": "Locksmith_color",
+      "description": "At the start of each combat, summon a Dummy with 6 HP. If it dies, add 2 Keys into your hand.",
+      "flavorText": "Wait, I thought it was a free key!"
+    },
+    {
+      "name": "Block Key",
+      "tier": "Common",
+      "pool": "Locksmith_color",
+      "description": "At the start of each combat, summon a Dummy with 12 HP. If it dies, gain 8 Block.",
+      "flavorText": "Why is it a key? Because I'm lazy at art."
+    },
+    {
+      "name": "Mean Key",
+      "tier": "Uncommon",
+      "pool": "Locksmith_color",
+      "description": "Keys deal 2 additional damage.",
+      "flavorText": "Grrrrr *unlocks*"
+    },
+    {
+      "name": "Unlocker",
+      "tier": "Rare",
+      "pool": "Locksmith_color",
+      "description": "At the start of each combat, remove all Locks from a random Locked card.",
+      "flavorText": "Boom. Macgyver'd."
+    },
+    {
+      "name": "Anti Key",
+      "tier": "Boss",
+      "pool": "Locksmith_color",
+      "description": "Gain [E] at the start of your turn. At the start of each combat, Lock 3 random cards.",
+      "flavorText": "A key that locks???"
+    },
+    {
+      "name": "Gremlin Horn???",
+      "tier": "Boss",
+      "pool": "Locksmith_color",
+      "description": "Whenever an enemy dies, gain [E] and draw 1 card.",
+      "flavorText": "WHAT"
+    },
+    {
+      "name": "Very Freaky",
+      "tier": "Boss",
+      "pool": "Locksmith_color",
+      "description": "Replaces Freaky.\nAt the start of even numbered turns, summon a Dummy with 6 HP. If one dies, add 2 Keys into your hand.",
+      "flavorText": "Now this is just weird."
+    },
+    {
+      "name": "Empty Key",
+      "tier": "Shop",
+      "pool": "Locksmith_color",
+      "description": "Raise your maximum hand size by 5.\nAt the start of each combat, add 1 Key into your hand.",
+      "flavorText": "Holds space for more Keys."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Key Potion",
+      "rarity": "Uncommon",
+      "description": "Add 3 Keys into your hand."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Locksmith",
+      "type": "Player",
+      "minHP": "79",
+      "maxHP": "79"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Locksmith:crippled",
+      "description": "An enemy is Crippled if it has both Weak and Vulnerable."
+    },
+    {
+      "name": "Locksmith:equalize",
+      "description": "If the enemy has Weak, apply 1 Vulnerable. If the enemy has Vulnerable, apply 1 Weak."
+    },
+    {
+      "name": "Locksmith:hexx",
+      "description": "Hexxed creatures lose HP at the start of their turn."
+    },
+    {
+      "name": "Locksmith:locked",
+      "description": "May only be played by paying the additional cost of Exhausting Keys from your hand from left to right."
+    }
+  ]
+}

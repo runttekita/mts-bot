@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "TheFirefly",
-    "version": "1.0.1",
+    "version": "1.3.3",
     "authors": ["Vex'd"],
     "credits": "",
     "description": "A firefly..?",
@@ -81,7 +81,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 10 Unreality.\nGain 3 thefirefly:Unreality."
+      "description": "Apply 10 Unreality.\nGain 3 thefirefly:Unreality.\nDraw 1 card."
     },
     {
       "name": "Paradox+",
@@ -89,7 +89,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 14 Unreality.\nGain 3 thefirefly:Unreality."
+      "description": "Apply 14 Unreality.\nGain 3 thefirefly:Unreality.\nDraw 1 card."
     },
     {
       "name": "Artillery Beam",
@@ -177,7 +177,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Remove all Block from ALL enemies. If no block was removed, apply 1 Vulnerable and 1 Weak instead.\nExhaust."
+      "description": "Remove all Block from ALL enemies. If no Block was removed, apply 1 Vulnerable and 1 Weak instead.\nExhaust."
     },
     {
       "name": "EMP+",
@@ -185,7 +185,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Remove all Block from ALL enemies. If no block was removed, apply 2 Vulnerable and 2 Weak instead.\nExhaust."
+      "description": "Remove all Block from ALL enemies. If no Block was removed, apply 2 Vulnerable and 2 Weak instead.\nExhaust."
     },
     {
       "name": "Evasive Maneuver",
@@ -282,6 +282,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Enemy loses 4 Strength until attacked.\nExhaust."
+    },
+    {
+      "name": "Prescience",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nProvision !quantum! card."
+    },
+    {
+      "name": "Prescience+",
+      "color": "Firefly_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nProvision !quantum! cards."
     },
     {
       "name": "Quantum Tunneling",
@@ -400,7 +416,7 @@
       "color": "Firefly_color",
       "rarity": "Common",
       "type": "Skill",
-      "cost": "1",
+      "cost": "0",
       "description": "Gain 0 [E] .\n[E] gain increases by 1 when drawn.\nExhaust."
     },
     {
@@ -408,7 +424,7 @@
       "color": "Firefly_color",
       "rarity": "Common",
       "type": "Skill",
-      "cost": "1",
+      "cost": "0",
       "description": "Gain 1 [E] .\n[E] gain increases by 1 when drawn.\nExhaust."
     },
     {
@@ -593,7 +609,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Discard all but one card from your hand.\nGain 2 thefirefly:Precision for each card discarded."
+      "description": "Discard all but one card from your hand.\nGain 1 thefirefly:Precision for each card discarded."
     },
     {
       "name": "Hyper Focus+",
@@ -601,7 +617,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Discard all but one card from your hand.\nGain 2 thefirefly:Precision for each card discarded."
+      "description": "Discard all but one card from your hand.\nGain 1 thefirefly:Precision for each card discarded."
     },
     {
       "name": "Ionized Barrier",
@@ -746,22 +762,6 @@
       "type": "Skill",
       "cost": "1",
       "description": "Increase the damage of an Attack in your hand by 8."
-    },
-    {
-      "name": "Preload",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "All Attacks in your hand cost 0 until played.\nExhaust."
-    },
-    {
-      "name": "Preload+",
-      "color": "Firefly_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "0",
-      "description": "All Attacks in your hand cost 0 until played.\nExhaust."
     },
     {
       "name": "Prominence",
@@ -1187,6 +1187,69 @@
       "pool": "Firefly_color",
       "description": "Start each combat with 2 Stealth.",
       "flavorText": "WARNING - DAMAGE CRITICAL!"
+    },
+    {
+      "name": "Long-Range Scanner",
+      "tier": "Common",
+      "pool": "Firefly_color",
+      "description": "Reveal the contents of ? rooms.",
+      "flavorText": "This device's design suggests potentially interstellar range."
+    },
+    {
+      "name": "Plasma Fairy",
+      "tier": "Common",
+      "pool": "Firefly_color",
+      "description": "At the start of combat, shuffle a Plasma Wisp+ into your draw pile.",
+      "flavorText": "It seems to want your attention."
+    },
+    {
+      "name": "Time Capsule",
+      "tier": "Uncommon",
+      "pool": "Firefly_color",
+      "description": "At the end of your turn, Provision 1 card.",
+      "flavorText": "ERROR: Matter collection procedure cannot terminate."
+    },
+    {
+      "name": "Weapon Pre-Loader",
+      "tier": "Uncommon",
+      "pool": "Firefly_color",
+      "description": "The first Attack you draw each turn costs 0 until played.",
+      "flavorText": "Weapon preignition complete. Welcome back, operator."
+    },
+    {
+      "name": "Absolute Terror",
+      "tier": "Rare",
+      "pool": "Firefly_color",
+      "description": "The first time you end your turn after playing 0 or 1 cards, gain 40 Block.",
+      "flavorText": "I am ... me!"
+    },
+    {
+      "name": "Phase Crystal",
+      "tier": "Rare",
+      "pool": "Firefly_color",
+      "description": "Whenever your Stealth is removed, gain 3 Strength this turn.",
+      "flavorText": "This crystal shard polarizes the temperature on each of its facets."
+    },
+    {
+      "name": "Stellar Engine",
+      "tier": "Boss",
+      "pool": "Firefly_color",
+      "description": "Gain [E] at the start of your turn.\nWhenever you play a Power, all enemies gain 3 Block at the end of each of their turns.",
+      "flavorText": "The light seeping from the miniature star within empowers everything it touches."
+    },
+    {
+      "name": "The Unseen",
+      "tier": "Boss",
+      "pool": "Firefly_color",
+      "description": "Replaces Stealth System.\nEvery 2 turns, gain 1 Stealth.",
+      "flavorText": "System reformation complete."
+    },
+    {
+      "name": "Repair Arm",
+      "tier": "Shop",
+      "pool": "Firefly_color",
+      "description": "Whenever you enter a Rest Site, convert Gold into HP until you are fully healed.",
+      "flavorText": "This automated construction arm cannot be controlled."
     }
   ],
   "potions": [
@@ -1200,5 +1263,37 @@
     }
   ],
   "keywords": [
+    {
+      "name": "Thefirefly:fissure",
+      "description": "Applies Unreality each turn."
+    },
+    {
+      "name": "Thefirefly:paradox",
+      "description": "Paradoxes are 0 cost Skill cards that apply Unreality to enemies and you, then draw a card."
+    },
+    {
+      "name": "Thefirefly:plasma wisp",
+      "description": "Plasma Wisps are 1 cost Ethereal Attack cards."
+    },
+    {
+      "name": "Thefirefly:precision",
+      "description": "Increases the damage of your next Attack by 20% per stack. Reduced by 1 whenever a non-Attack card is played."
+    },
+    {
+      "name": "Thefirefly:provision",
+      "description": "Shuffle a card from your hand into your draw pile."
+    },
+    {
+      "name": "Thefirefly:retrieve",
+      "description": "Return a card from your discard pile to your hand."
+    },
+    {
+      "name": "Thefirefly:stealth",
+      "description": "Halves incoming damage. Lose 1 Stealth at the end of your turn and when playing an Attack."
+    },
+    {
+      "name": "Thefirefly:unreality",
+      "description": "Reduces Max HP while applied. Your Unreality is removed at the end of combat."
+    }
   ]
 }

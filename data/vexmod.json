@@ -2,8 +2,8 @@
   "mod": {
     "name": "vexMod",
     "version": "2.0.0",
-    "authors": ["DarkVexon"],
-    "credits": "Slay the Spire Discord: Ideas, assistance, other help. Spleeninator, Lyman: Relic and enemy art. Raz: VFX \"inspiration\". Rincewind: ZHS translation.",
+    "authors": ["Vex'd"],
+    "credits": "Spleeninator, Lyman: Relic and enemy art. Raz: VFX \"inspiration\". Rincewind: ZHS translation.",
     "description": "A major content mod.",
     "mts_version": "3.8.0",
     "sts_version": "01-23-2019",
@@ -52,14 +52,6 @@
       "description": "Costs 1 more for each Act cleared.\nDeal damage equal to your floor number."
     },
     {
-      "name": "Fear",
-      "color": "Curse",
-      "rarity": "Curse",
-      "type": "Curse",
-      "cost": "1",
-      "description": "Ethereal.\nAt the end of your turn, gain 1 Vulnerable."
-    },
-    {
       "name": "The Ultimate Card",
       "color": "Curse",
       "rarity": "Curse",
@@ -70,18 +62,11 @@
   ],
   "relics": [
     {
-      "name": "Backup Battery",
-      "tier": "Common",
-      "pool": "Blue",
-      "description": "If you end your turn with any empty Orb slots, gain 3 Block.",
-      "flavorText": "Conserve energy! Shut off Orb slots when you're not using them."
-    },
-    {
-      "name": "Happy Drink",
+      "name": "Focus Sash",
       "tier": "Common",
       "pool": "",
-      "description": "Upon pickup, raise your Max HP by 2. Whenever you enter a shop, increase your Max HP by 2.",
-      "flavorText": "The shop offers free refills."
+      "description": "When you would die while you have at least 10 HP, heal to 1 HP instead.",
+      "flavorText": "It's super effective!"
     },
     {
       "name": "Last Will",
@@ -105,13 +90,6 @@
       "flavorText": "If you squeeze it hard enough you can remember the open beta."
     },
     {
-      "name": "Relic Launcher",
-      "tier": "Common",
-      "pool": "",
-      "description": "At the start of each combat, deal damage to a random enemy equal to the number of Relics you have.",
-      "flavorText": "Mostly an excuse to use the FX."
-    },
-    {
       "name": "Right Greave",
       "tier": "Common",
       "pool": "",
@@ -133,13 +111,6 @@
       "flavorText": "Tastes explosive!"
     },
     {
-      "name": "Better-O-Tron",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "The next 3 unupgraded cards you add into your deck are upgraded.",
-      "flavorText": "Mechanical device certain to improve your life somehow!"
-    },
-    {
       "name": "Bottled Tune",
       "tier": "Uncommon",
       "pool": "Bard_color",
@@ -150,29 +121,15 @@
       "name": "Consolation Prize",
       "tier": "Uncommon",
       "pool": "",
-      "description": "Whenever you lose HP in combat, gain that much Gold at the end of combat.",
+      "description": "Whenever you lose HP in combat, gain that much Gold.",
       "flavorText": "Gold oozes from your wounds."
     },
     {
       "name": "Dragon Fruit",
       "tier": "Uncommon",
       "pool": "",
-      "description": "Upon pickup, raise your Max HP by 5. At the end of your turn, deal 1 damage to ALL enemies for each Attack played this turn.",
+      "description": "Upon pickup, raise your Max HP by 5. Whenever you draw a Status or Curse card, deal 6 damage to ALL enemies.",
       "flavorText": "As a connoisseur would say, piquant."
-    },
-    {
-      "name": "Dusty Game Cartridge",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "Whenever you draw a card during your turn, gain 1 Block.",
-      "flavorText": "It's unclear which system the game was meant for."
-    },
-    {
-      "name": "Focus Sash",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "When you would die while you have at least 10 HP, heal to 1 HP instead.",
-      "flavorText": "It's super effective!"
     },
     {
       "name": "Galaxy Diorama",
@@ -182,18 +139,11 @@
       "flavorText": "Wholly innacurate."
     },
     {
-      "name": "Polyform Stone",
+      "name": "Invisible Cloak",
       "tier": "Uncommon",
       "pool": "",
-      "description": "Right click to stop.",
-      "flavorText": "What the fuck!?"
-    },
-    {
-      "name": "Randomized Relic",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "Has different qualities every time you find it.",
-      "flavorText": "Different every time!"
+      "description": "At the start of each combat, ALL enemies lose 1 Strength.",
+      "flavorText": "You're far too modest to \"wear\" this."
     },
     {
       "name": "Skull Hunter",
@@ -208,13 +158,6 @@
       "pool": "Astrologer",
       "description": "Every time you play or Exhaust 3 Stars in a single turn, gain 1 Strength.",
       "flavorText": "Unorthodox use for the stars, but it's OK."
-    },
-    {
-      "name": "Wand of Magic Missile",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "Whenever you shuffle your draw pile, deal 2-5 damage to a random enemy 3 times.",
-      "flavorText": "The end of this magic wand glows."
     },
     {
       "name": "Writhing Mask",
@@ -234,7 +177,7 @@
       "name": "Box of Bandaids",
       "tier": "Rare",
       "pool": "",
-      "description": "Whenever you add a card into your deck, heal 3 HP.",
+      "description": "Whenever you add a card into your deck, increase your Max HP by 2.",
       "flavorText": "Vends only when shown cool techniques."
     },
     {
@@ -250,20 +193,6 @@
       "pool": "",
       "description": "ALL future cards you find are Rare.",
       "flavorText": "Super-duper rare!"
-    },
-    {
-      "name": "Gravitational Rainbow",
-      "tier": "Rare",
-      "pool": "Astrologer",
-      "description": "At the start of every odd-numbered turn, put the bottom card of your draw pile into your hand.",
-      "flavorText": "\"But rainbows aren't affected by gravity!\" you say. Well, pah!"
-    },
-    {
-      "name": "Invisible Cloak",
-      "tier": "Rare",
-      "pool": "",
-      "description": "At the start of each combat, ALL enemies lose 1 Strength.",
-      "flavorText": "You're far too modest to \"wear\" this."
     },
     {
       "name": "Plasma Pancake",
@@ -313,13 +242,6 @@
       "pool": "",
       "description": "At the start of your turn, gain [E] in real life.",
       "flavorText": "What do you mean you're still tired?"
-    },
-    {
-      "name": "Juggling Balls",
-      "tier": "Special",
-      "pool": "",
-      "description": "Everything bounces.",
-      "flavorText": "Made of rubber."
     },
     {
       "name": "Mini Solar System",
@@ -434,17 +356,10 @@
       "flavorText": "You had no idea they could get this big."
     },
     {
-      "name": "Bot Bait",
-      "tier": "Boss",
-      "pool": "",
-      "description": "Gain [E] at the start of your turn.\nEvery 6 turns, a Mini-Bot joins battle.",
-      "flavorText": "Found in some mediocre Factory."
-    },
-    {
       "name": "Clock Rock",
       "tier": "Boss",
       "pool": "",
-      "description": "Gain [E] at the start of your turn. Upon pickup, set your run timer to -10 minutes. At the end of combat, rewind your run timer by 45 seconds. When your run timer hits 0, you lose.",
+      "description": "Gain [E] at the start of your turn. You have 600 seconds to live. Gain 60 seconds after each combat.",
       "flavorText": "Tick tock goes the clock rock."
     },
     {
@@ -490,13 +405,6 @@
       "flavorText": "Ahh, so THAT's how you make a card Innate!"
     },
     {
-      "name": "Lich's Phylactery",
-      "tier": "Boss",
-      "pool": "",
-      "description": "Prevent ALL HP loss. For every 10 damage prevented, remove a random card from your deck. When your deck has no cards, you lose.",
-      "flavorText": "It feels cold in your hands, no matter what you do..."
-    },
-    {
       "name": "Mall Pass",
       "tier": "Boss",
       "pool": "",
@@ -504,24 +412,17 @@
       "flavorText": "Now you can get the great discounts!"
     },
     {
-      "name": "Mind Devourer",
-      "tier": "Boss",
-      "pool": "",
-      "description": "Gain [E] at the start of your turn. At the end of combat, remove a random card from your deck.",
-      "flavorText": "Mm, shiny! Wait, what was your name again?"
-    },
-    {
       "name": "Mystery Boss Challenge",
       "tier": "Boss",
       "pool": "",
       "description": "Upon pickup, choose Energy or Non-Energy and obtain a random boss relic of that type.",
-      "flavorText": "It's fucking raw!"
+      "flavorText": "It's raw!"
     },
     {
       "name": "New, Clear Reactor",
       "tier": "Boss",
       "pool": "",
-      "description": "Energy is conserved between turns and combats. You no longer gain Energy each turn. Set your energy to 111 upon pickup and at the start of each Act.",
+      "description": "Energy is conserved between turns and combats. You no longer gain Energy each turn. Set your energy to 100 upon pickup and at the start of each Act.",
       "flavorText": "Totally safe! Good for the environment! Fosters mutations!"
     },
     {
@@ -560,13 +461,6 @@
       "flavorText": "Don't take this the wrong way."
     },
     {
-      "name": "Broken Bowl",
-      "tier": "Shop",
-      "pool": "",
-      "description": "Whenever you add a card to your deck, if it isn't Upgraded, Upgrade it and lose 2 Max HP.",
-      "flavorText": "Sand drains from it endlessly."
-    },
-    {
       "name": "Dead Requiem",
       "tier": "Shop",
       "pool": "Bard_color",
@@ -595,13 +489,6 @@
       "flavorText": "That was just the down payment."
     },
     {
-      "name": "Salvaging Tools",
-      "tier": "Shop",
-      "pool": "Green",
-      "description": "Whenever you discard a card, reduce the cost of a random card in your hand by 1 this turn.",
-      "flavorText": "\"Curious! These primitive things are utterly useless.\" -Ranwid"
-    },
-    {
       "name": "Sextant",
       "tier": "Shop",
       "pool": "",
@@ -621,13 +508,6 @@
       "pool": "Astrologer",
       "description": "The maximum Stellar Phase is now 63.",
       "flavorText": "Lets you see three times as many stars!"
-    },
-    {
-      "name": "Xtacy",
-      "tier": "Shop",
-      "pool": "",
-      "description": "After you play a cost X card, gain [E] .",
-      "flavorText": "Sure to liven up your nights!"
     }
   ],
   "potions": [
@@ -636,32 +516,32 @@
     {
       "name": "Bomb Belcher",
       "type": "Elite",
-      "minHP": "179",
-      "maxHP": "179"
+      "minHP": "175",
+      "maxHP": "175"
     },
     {
       "name": "Dagger Pharaoh",
       "type": "Boss",
-      "minHP": "176",
-      "maxHP": "176"
+      "minHP": "171",
+      "maxHP": "171"
     },
     {
       "name": "Infection Beast",
       "type": "Elite",
-      "minHP": "203",
-      "maxHP": "203"
+      "minHP": "205",
+      "maxHP": "205"
     },
     {
       "name": "Lich's Phylactery",
       "type": "Normal",
-      "minHP": "75",
-      "maxHP": "75"
+      "minHP": "61",
+      "maxHP": "61"
     },
     {
       "name": "Mechanical Combatant",
       "type": "Elite",
-      "minHP": "85",
-      "maxHP": "85"
+      "minHP": "86",
+      "maxHP": "86"
     },
     {
       "name": "Undercity Lichlord",

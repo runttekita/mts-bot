@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "Bard",
-    "version": "1.7.1",
+    "version": "1.9.0",
     "authors": ["kiooeht"],
     "credits": "Testing: Reina, Gremious, Blank The Evil, and Skyson",
     "description": "Adds a new playable character: The Bard.",
     "mts_version": "3.11.0",
-    "sts_version": "07-01-2019",
+    "sts_version": "01-27-2020",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -704,7 +704,7 @@
       "color": "Bard_color",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "1",
+      "cost": "2",
       "description": "Deal 8 damage.\nGain Temporary_HP for half the unblocked damage dealt."
     },
     {
@@ -712,7 +712,7 @@
       "color": "Bard_color",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "1",
+      "cost": "2",
       "description": "Deal 12 damage.\nGain Temporary_HP for half the unblocked damage dealt."
     },
     {
@@ -769,7 +769,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Gain 8 Block.\nDeal 8 damage.\nbard:Queue 2 bard:Rests."
+      "description": "Gain 6 Block.\nDeal 6 damage.\nbard:Queue 2 bard:Rests."
     },
     {
       "name": "Off-Key+",
@@ -777,7 +777,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Gain 11 Block.\nDeal 11 damage.\nbard:Queue 2 bard:Rests."
+      "description": "Gain 9 Block.\nDeal 9 damage.\nbard:Queue 2 bard:Rests."
     },
     {
       "name": "Prismatic Spray",
@@ -801,7 +801,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Remove all bard:Rests from your Note Queue.\nHeal 2 HP for each bard:Rest removed.\nExhaust."
+      "description": "bard:Queue !bard:M2! bard:Rests.\nHeal 2 HP for each bard:Rest in your Note Queue.\nExhaust."
     },
     {
       "name": "Rest+",
@@ -809,7 +809,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Remove all bard:Rests from your Note Queue.\nHeal 3 HP for each bard:Rest removed.\nExhaust."
+      "description": "bard:Queue !bard:M2! bard:Rests.\nHeal 3 HP for each bard:Rest in your Note Queue.\nExhaust."
     },
     {
       "name": "Shout",
@@ -874,6 +874,22 @@
       "type": "Attack",
       "cost": "3",
       "description": "Deal 15 damage to a random enemy for each living enemy.\nCosts 1 less [E]\nfor each living enemy."
+    },
+    {
+      "name": "Bottled Song",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Obtain a potion containing the bard:Notes currently in your Note Queue.\nExhaust."
+    },
+    {
+      "name": "Bottled Song+",
+      "color": "Bard_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Obtain a potion containing the bard:Notes currently in your Note Queue.\nExhaust."
     },
     {
       "name": "Covetous Aura",
@@ -1222,6 +1238,11 @@
   ],
   "potions": [
     {
+      "name": "Bottled Song",
+      "rarity": "Placeholder",
+      "description": "Queue the following Notes:\n[DebuffNote] [BlockNote]"
+    },
+    {
       "name": "Inspired Brew",
       "rarity": "Uncommon",
       "description": "Gain Inspiration 100."
@@ -1236,5 +1257,25 @@
     }
   ],
   "keywords": [
+    {
+      "name": "Bard:inspiration",
+      "description": "Inspiration increases the damage and Block of the next card played by a percentage. Stacks additively."
+    },
+    {
+      "name": "Bard:melody",
+      "description": "Sequences of Notes. Performing one gives you beneficial effects."
+    },
+    {
+      "name": "Bard:notes",
+      "description": "[AttackNote] [BlockNote] [BuffNote] [DebuffNote]"
+    },
+    {
+      "name": "Bard:queue",
+      "description": "Queueing a Note puts it at the end of your Note Queue. If your Note Queue is full, the leftmost Note is removed to make room."
+    },
+    {
+      "name": "Bard:rest",
+      "description": "Rests ( [RestNote] ) can be Queued like Notes but do not count as Notes for other effects."
+    }
   ]
 }

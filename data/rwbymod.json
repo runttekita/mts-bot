@@ -1,0 +1,1260 @@
+{
+  "mod": {
+    "name": "TheVelvet",
+    "version": "0.4.8",
+    "authors": ["Vex'd"],
+    "credits": "",
+    "description": "An bandit!",
+    "mts_version": "3.8.0",
+    "sts_version": "01-27-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Camera",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nAdd a random Attack into your hand with Ethereal and Exhaust.\nExhaust."
+    },
+    {
+      "name": "Camera+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nAdd a random Upgraded Attack into your hand with Ethereal and Exhaust.\nExhaust."
+    },
+    {
+      "name": "Dash",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nYour next Strike applies !zzz! Vulnerable."
+    },
+    {
+      "name": "Dash*",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nYour next Strike applies !zzz! Vulnerable."
+    },
+    {
+      "name": "Defend",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Ruyi Jingu Bang",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nActivate your Weapon.\nExhaust."
+    },
+    {
+      "name": "Ruyi Jingu Bang*",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nActivate your Weapon.\nExhaust."
+    },
+    {
+      "name": "Strike",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike*",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage."
+    },
+    {
+      "name": "Swap Strike",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nSwap Weapons."
+    },
+    {
+      "name": "Swap Strike*",
+      "color": "Huntress_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nSwap Weapons."
+    },
+    {
+      "name": "Camera Smack",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nAdd a *Camera into your hand."
+    },
+    {
+      "name": "Camera Smack*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nAdd a *Camera+ into your hand."
+    },
+    {
+      "name": "Cerberus Strike",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 10 damage."
+    },
+    {
+      "name": "Cerberus Strike+",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage."
+    },
+    {
+      "name": "Claws",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nPut an *Insight on top of your draw pile."
+    },
+    {
+      "name": "Claws+",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nPut an *Insight on top of your draw pile."
+    },
+    {
+      "name": "Crescent Strike",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 3 Block.\nDeal 3 damage.\nActivate your Weapon."
+    },
+    {
+      "name": "Crescent Strike+",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDeal 3 damage.\nActivate your Weapon."
+    },
+    {
+      "name": "Fierce Cry",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak.\nApply !zzz! Vulnerable.\nDraw 1 card."
+    },
+    {
+      "name": "Fierce Cry+",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nApply !zzz! Vulnerable.\nDraw 1 card."
+    },
+    {
+      "name": "Fulcrum Strike",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "Fulcrum Strike*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Glance Shot",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDraw 2 cards."
+    },
+    {
+      "name": "Glance Shot*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDraw 3 cards."
+    },
+    {
+      "name": "I Think Eye Patches Are Hot",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nIf the enemy intends to attack, apply 2 Weak."
+    },
+    {
+      "name": "I Think Eye Patches Are Hot+",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nIf the enemy intends to attack, apply 2 Weak."
+    },
+    {
+      "name": "Jinn's Knowledge",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Jinn's Knowledge*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nDraw 3 cards."
+    },
+    {
+      "name": "Prepare Attack",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Vulnerable.\nYour next Strike deals !zzz! additional damage."
+    },
+    {
+      "name": "Prepare Attack*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable.\nYour next Strike deals !zzz! additional damage."
+    },
+    {
+      "name": "Restrikeler",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nPut a random Strike from your draw pile into your hand."
+    },
+    {
+      "name": "Restrikeler*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nPut a Strike from your draw pile into your hand."
+    },
+    {
+      "name": "Slide",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nSwap Weapons."
+    },
+    {
+      "name": "Slide*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nSwap Weapons."
+    },
+    {
+      "name": "Snapshoot",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 *Camera into your hand.\nActivate your Weapon."
+    },
+    {
+      "name": "Snapshoot+",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 *Camera into your hand.\nActivate your Weapon."
+    },
+    {
+      "name": "Snipe",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nThe top card of your draw pile costs 0 this turn."
+    },
+    {
+      "name": "Snipe+",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nThe top card of your draw pile costs 0 this turn."
+    },
+    {
+      "name": "Strike Shield",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nYour next Strike grants 4 Block."
+    },
+    {
+      "name": "Strike Shield*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nYour next Strike grants 4 Block."
+    },
+    {
+      "name": "Weak and Wep",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak.\nActivate your Weapon."
+    },
+    {
+      "name": "Weak and Wep*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak.\nApply 1 Vulnerable.\nActivate your Weapon."
+    },
+    {
+      "name": "Yatsuhashi's Defence",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Yatsuhashi's Defence*",
+      "color": "Huntress_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Alternate Anesidora",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "After playing the first 3 cards in a turn, put 1 *Insight on top of your draw pile."
+    },
+    {
+      "name": "Alternate Anesidora+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "After playing the first 3 cards in a turn, put 1 *Insight on top of your draw pile."
+    },
+    {
+      "name": "Arc Fortify",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nReflect the next debuff applied to you this turn.\nExhaust."
+    },
+    {
+      "name": "Arc Fortify*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 7 Block.\nReflect the next debuff applied to you this turn.\nExhaust."
+    },
+    {
+      "name": "Array Blast",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Activate your Weapon, deal 4 damage to a random enemy."
+    },
+    {
+      "name": "Array Blast*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Activate your Weapon, deal 4 damage to a random enemy.\nActivate your Weapon."
+    },
+    {
+      "name": "Aura Amp",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Deal 25 % increased damage to enemies with at least 2 debuffs."
+    },
+    {
+      "name": "Aura Amp*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Deal 33 % increased damage to enemies with at least 2 debuffs."
+    },
+    {
+      "name": "Bit by Bit",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, deal 1 damage to ALL enemies for each card in your hand."
+    },
+    {
+      "name": "Bit by Bit*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, deal 1 damage to ALL enemies for each card in your hand.\nDraw 3 cards."
+    },
+    {
+      "name": "Bloodsight",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain [E] .\nPut an *Insight on top of your draw pile."
+    },
+    {
+      "name": "Bloodsight+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E] .\nPut an *Insight on top of your draw pile."
+    },
+    {
+      "name": "Camera Camera",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 *Cameras into your hand."
+    },
+    {
+      "name": "Camera Camera+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 *Cameras into your hand."
+    },
+    {
+      "name": "Camera Spamma",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a *Camera into your hand."
+    },
+    {
+      "name": "Camera Spamma+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, add a *Camera into your hand."
+    },
+    {
+      "name": "Care Package",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 1 Weak.\nApply 1 Vulnerable.\nAdd !zzz! *Camera into your hand."
+    },
+    {
+      "name": "Care Package*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Weak.\nApply 2 Vulnerable.\nAdd !zzz! *Camera into your hand."
+    },
+    {
+      "name": "Crescent Dexterity",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nDrawn hadesmod:Strikes gain hadesmod:Bloodcast this turn."
+    },
+    {
+      "name": "Crescent Dexterity*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw 2 cards.\nDrawn hadesmod:Strikes gain hadesmod:Bloodcast this turn."
+    },
+    {
+      "name": "Cut Dust",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next Strike grants [E] and draws !zzz! cards."
+    },
+    {
+      "name": "Cut Dust*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next Strike grants [E] [E] and draws !zzz! cards."
+    },
+    {
+      "name": "Dig In",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nGain 12 Block.\nSwap Weapons next turn."
+    },
+    {
+      "name": "Dig In+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 9 Block.\nSwap Weapons next turn."
+    },
+    {
+      "name": "Draw to Damage",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw a card during your turn, deal 2 damage to a random enemy."
+    },
+    {
+      "name": "Draw to Damage+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you draw a card during your turn, deal 2 damage to a random enemy."
+    },
+    {
+      "name": "Drawn Hit",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDamage is increased by 2 for each card drawn during your turn."
+    },
+    {
+      "name": "Drawn Hit*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nDamage is increased by 2 for each card drawn during your turn."
+    },
+    {
+      "name": "Expose Shot",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all Block from the enemy.\nDeal 8 damage."
+    },
+    {
+      "name": "Expose Shot+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nRemove all Block from the enemy.\nDeal 8 damage."
+    },
+    {
+      "name": "Flamesmash",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 18 damage."
+    },
+    {
+      "name": "Flamesmash*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage."
+    },
+    {
+      "name": "Focus",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random Strike of any color into your hand.\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Focus+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random Strike of any color into your hand.\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Guardy Wardy",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain Temporary_HP equal to the total amount of debuffs on the enemy."
+    },
+    {
+      "name": "Guardy Wardy+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain Temporary_HP equal to the total amount of debuffs on the enemy."
+    },
+    {
+      "name": "Hit Draw Burn",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDraw 2 cards.\nExhaust 1 card randomly."
+    },
+    {
+      "name": "Hit Draw Burn+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDraw 2 cards.\nExhaust 1 card randomly."
+    },
+    {
+      "name": "Hitpower",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E] for each Strike played this turn.\nExhaust."
+    },
+    {
+      "name": "Hitpower+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain [E] for each Strike played this turn.\nExhaust."
+    },
+    {
+      "name": "Magnhild Strike",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage."
+    },
+    {
+      "name": "Magnhild Strike+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 24 damage."
+    },
+    {
+      "name": "Mail Bomb",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 6 Block.\nDeal 8 damage.\nActivate your Weapon.\nDraw 2 cards."
+    },
+    {
+      "name": "Mail Bomb+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 8 Block.\nDeal 10 damage.\nActivate your Weapon.\nDraw 2 cards."
+    },
+    {
+      "name": "Quick Activate",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Activate your Weapon."
+    },
+    {
+      "name": "Quick Activate+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Activate your Weapon."
+    },
+    {
+      "name": "Revolver Strike",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Deals 1 additional damage for each debuff stack on the enemy."
+    },
+    {
+      "name": "Revolver Strike*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Deals 2 additional damage for each debuff stack on the enemy."
+    },
+    {
+      "name": "Sickening Strength",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff, gain 1 Strength this turn."
+    },
+    {
+      "name": "Sickening Strength+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you apply a debuff, gain 1 Strength this turn."
+    },
+    {
+      "name": "Slot Slash",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard your hand, then draw that many cards.\nExhaust all cards with Retain discarded and deal 3 damage to ALL enemies for each one."
+    },
+    {
+      "name": "Slot Slash+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard your hand, then draw that many cards.\nExhaust all cards with Retain discarded and deal 4 damage to ALL enemies for each one."
+    },
+    {
+      "name": "Snap Shot",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\n*Cameras in your hand become *Gun *Cameras that deal 4 damage."
+    },
+    {
+      "name": "Snap Shot+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 6 damage.\n*Cameras in your hand become *Gun *Cameras that deal 4 damage."
+    },
+    {
+      "name": "Spin",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nDraw 3 cards."
+    },
+    {
+      "name": "Spin*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nRetain.\nDraw 3 cards."
+    },
+    {
+      "name": "Splashy Hit",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Vulnerable.\nYour next Strike applies !zzz! Weak.\nExhaust."
+    },
+    {
+      "name": "Splashy Hit*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable.\nYour next Strike applies !zzz! Weak.\nExhaust."
+    },
+    {
+      "name": "Spooky Split",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Weak and !zzz! Vulnerable, split randomly among ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Spooky Split+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Weak and !zzz! Vulnerable, split randomly among ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Strike Booster",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Strikes deal 3 additional damage."
+    },
+    {
+      "name": "Strike Booster*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Strikes deal 4 additional damage."
+    },
+    {
+      "name": "Swap Trick",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Swap Weapons.\nYour next Strike Activates your Weapon."
+    },
+    {
+      "name": "Swap Trick+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nSwap Weapons.\nYour next Strike Activates your Weapon."
+    },
+    {
+      "name": "Tabloids",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a *Camera, apply 1 hadesmod:Pestered to ALL enemies."
+    },
+    {
+      "name": "Tabloids+",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a *Camera, apply 1 hadesmod:Pestered to ALL enemies."
+    },
+    {
+      "name": "Xactivate",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Activate your Weapon X times."
+    },
+    {
+      "name": "Xactivate*",
+      "color": "Huntress_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Swap Weapons.\nActivate your Weapon X times."
+    },
+    {
+      "name": "Array Strike",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nDraw 2 cards.\nGain [E] .\nExhaust."
+    },
+    {
+      "name": "Array Strike*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nDraw 3 cards.\nGain [E] [E] .\nExhaust."
+    },
+    {
+      "name": "Array's Embrace",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Activate your Weapon, draw 1 card."
+    },
+    {
+      "name": "Array's Embrace*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Activate your Weapon, draw 1 card."
+    },
+    {
+      "name": "Barrage Strike",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 6 damage.\nNext turn, add a copy of this card into your hand.\nExhaust."
+    },
+    {
+      "name": "Barrage Strike*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 9 damage.\nNext turn, add a copy of this card into your hand.\nExhaust."
+    },
+    {
+      "name": "Best Angle",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Cards from *Cameras cost 0 this turn."
+    },
+    {
+      "name": "Best Angle*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Cards from *Cameras cost 0 this turn.\nAdd 1 *Camera into your hand."
+    },
+    {
+      "name": "Deep Pull",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nYour next Strike is played twice.\nExhaust."
+    },
+    {
+      "name": "Deep Pull+",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nYour next Strike is played twice.\nExhaustive !stslib:ex!."
+    },
+    {
+      "name": "HERO MODE",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Cards in your hand cost 1 and become Strike Attacks with 6 bonus damage this combat.\nExhaust."
+    },
+    {
+      "name": "HERO MODE*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Cards in your hand cost 1 and become Strike Attacks with 6 bonus damage this combat.\nExhaust."
+    },
+    {
+      "name": "Midas Touch",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nGive all cards in your hand, draw pile, and discard pile hadesmod:Goldcast.\nExhaust."
+    },
+    {
+      "name": "Midas Touch*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nGive all cards in your hand, draw pile, and discard pile hadesmod:Goldcast.\nExhaust."
+    },
+    {
+      "name": "Milo and Akouo",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever enemy attacks damage your Block, apply 1 Vulnerable to the attacker."
+    },
+    {
+      "name": "Milo and Akouo+",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever enemy attacks damage your Block, apply 2 Vulnerable to the attacker."
+    },
+    {
+      "name": "Octo Smash",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 8 Block.\nDeal 8 damage.\nDraw 8 cards.\nExhaust."
+    },
+    {
+      "name": "Octo Smash*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 8 Block.\nDeal 8 damage.\nDraw 8 cards.\nExhaust."
+    },
+    {
+      "name": "Potion Slam",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Ethereal.\nDeal 50 damage.\nExhaust."
+    },
+    {
+      "name": "Potion Slam*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Ethereal.\nDeal 50 damage.\nExhaust."
+    },
+    {
+      "name": "Sap Power",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Steal up to 3 Strength.\nApply 3 Weak.\nApply 3 Vulnerable.\nApply 3 Poison.\nExhaust."
+    },
+    {
+      "name": "Sap Power+",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Steal up to 4 Strength.\nApply 4 Weak.\nApply 4 Vulnerable.\nApply 4 Poison.\nExhaust."
+    },
+    {
+      "name": "Selfie Form",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an Ethereal Attack, add 1 *Camera into your hand."
+    },
+    {
+      "name": "Selfie Form*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play an Ethereal Attack, add 1 *Camera into your hand."
+    },
+    {
+      "name": "Strength of Alistar",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf this kills an enemy, fill your hand with *Cameras."
+    },
+    {
+      "name": "Strength of Alistar*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf this kills an enemy, fill your hand with *Cameras+."
+    },
+    {
+      "name": "Velvet",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you draw a card during your turn, gain 2 Block."
+    },
+    {
+      "name": "Velvet+",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nWhenever you draw a card during your turn, gain 2 Block."
+    },
+    {
+      "name": "Weaponry Spam",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn, Activate your Weapon."
+    },
+    {
+      "name": "Weaponry Spam*",
+      "color": "Huntress_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, Activate your Weapon."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Snapshotter",
+      "tier": "Starter",
+      "pool": "Huntress_color",
+      "description": "At the start of each combat, add 1 Camera into your hand.",
+      "flavorText": "clik!"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Huntress",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Hadesmod:bloodcast",
+      "description": "A card with Bloodcast can be played if you don't have enough Energy. You lose 1 HP for each missing Energy."
+    },
+    {
+      "name": "Hadesmod:corpsecast",
+      "description": "A card with Corpsecast can be played if you don't have enough Energy. Destroy 1 monster corpse for each missing Energy."
+    },
+    {
+      "name": "Hadesmod:crescent rose",
+      "description": "While held, gain [E] at the start of your turn and played Attacks Exhaust. When Activated, choose 1 of 3 Attacks to add into your hand."
+    },
+    {
+      "name": "Hadesmod:crocea mors",
+      "description": "While held, gain 1 Block whenever you play a card. When Activated, apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Hadesmod:fulcrum",
+      "description": "While held, you have 1 additional Strength. When Activated, gain 1 Strength."
+    },
+    {
+      "name": "Hadesmod:gianduja",
+      "description": "While held, every time you play 3 cards, deal 3 damage to ALL enemies. When Activated, apply 1 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Hadesmod:goldcast",
+      "description": "A card with Goldcast can be played if you don't have enough Energy. You lose 10 Gold for each missing Energy."
+    },
+    {
+      "name": "Hadesmod:gremlincast",
+      "description": "A card with Gremlincast can be played if you don't have enough Energy. Summon 1 Gremlin for each missing Energy."
+    },
+    {
+      "name": "Hadesmod:leftcast",
+      "description": "Instead of spending Energy on a card with Leftcast, discard that many cards from your hand, starting from the left."
+    },
+    {
+      "name": "Hadesmod:pestered",
+      "description": "Pestered creatures take 25% more damage from Attacks."
+    },
+    {
+      "name": "Hadesmod:potioncast",
+      "description": "A card with Potioncast can be played if you don't have enough Energy. You lose 1 Potion for each missing Energy."
+    },
+    {
+      "name": "Hadesmod:relicast",
+      "description": "A card with Relicast can be played if you don't have enough Energy. You lose 1 random Relic for each missing Energy."
+    },
+    {
+      "name": "Hadesmod:retaincast",
+      "description": "Instead of spending Energy on a card with Retaincast, Exhaust that many cards with Retain from your hand, starting from the left."
+    },
+    {
+      "name": "Hadesmod:sharp retribution",
+      "description": "While held, every time you play 3 cards, draw 1 card. When Activated, gain [E] ."
+    },
+    {
+      "name": "Hadesmod:shivcast",
+      "description": "A card with Shivcast can be played if you don't have enough Energy. Add 1 Shiv into your hand for each missing Energy."
+    },
+    {
+      "name": "Hadesmod:strike",
+      "description": "Any card with \"Strike\" in its name."
+    },
+    {
+      "name": "Hadesmod:walltorchcast",
+      "description": "A card with Walltorchcast can be played if you don't have enough Energy. Snuff out 1 lit wall torch for each missing Energy."
+    },
+    {
+      "name": "Hadesmod:woundcast",
+      "description": "A card with Woundcast can be played if you don't have enough Energy. Add 1 Wound into your hand for each missing Energy."
+    }
+  ]
+}

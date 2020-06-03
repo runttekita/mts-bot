@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "Astrologer",
-    "version": "1.0.1",
+    "version": "1.1.6",
     "authors": ["Alchyr"],
     "credits": "",
     "description": "Astrologer.\nCredits: https://freesound.org/people/acclivity/sounds/32304/ \n https://freesound.org/people/Timbre/sounds/221683/ \n http://www.stephanie-davidson.com/",
-    "mts_version": "3.8.3",
-    "sts_version": "07-17-2019",
+    "mts_version": "3.14.1",
+    "sts_version": "01-14-2020",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -65,7 +65,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "0",
-      "description": "Innate.\nGain 7 Block.\nDeal 7 damage.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Exhaust."
+      "description": "Innate.\nGain 7 Block.\nDeal 7 damage.\n[#ccf3ff]Stellar[] !STELLAR!: Exhaust."
     },
     {
       "name": "The Fool+",
@@ -73,7 +73,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "0",
-      "description": "Innate.\nGain 9 Block.\nDeal 9 damage.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Exhaust."
+      "description": "Innate.\nGain 9 Block.\nDeal 9 damage.\n[#ccf3ff]Stellar[] !STELLAR!: Exhaust."
     },
     {
       "name": "Ominous Star",
@@ -128,16 +128,16 @@
       "color": "Astrologer",
       "rarity": "Common",
       "type": "Attack",
-      "cost": "1",
-      "description": "Deal 5 damage twice.\nastrologer:Lunar: Apply 1 Weak."
+      "cost": "2",
+      "description": "Deal 7 damage twice.\nastrologer:Lunar: Apply 2 Weak."
     },
     {
       "name": "Eclipse+",
       "color": "Astrologer",
       "rarity": "Common",
       "type": "Attack",
-      "cost": "1",
-      "description": "Deal 6 damage twice.\nastrologer:Lunar: Apply 2 Weak."
+      "cost": "2",
+      "description": "Deal 8 damage twice.\nastrologer:Lunar: Apply 3 Weak."
     },
     {
       "name": "Frozen Star",
@@ -145,7 +145,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "astrologer:Star.\nThe next time you play a astrologer:Star card, gain 9 Block."
+      "description": "astrologer:Star.\nThe next time you play a astrologer:Star card, gain 8 Block."
     },
     {
       "name": "Frozen Star+",
@@ -153,7 +153,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "astrologer:Star.\nThe next time you play a astrologer:Star card, gain 12 Block."
+      "description": "astrologer:Star.\nThe next time you play a astrologer:Star card, gain 11 Block."
     },
     {
       "name": "Meteor Shower",
@@ -177,7 +177,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.\nastrologer:Lunar: Draw a card."
+      "description": "Gain 7 Block.\nastrologer:Lunar: Draw a card."
     },
     {
       "name": "Moonlight+",
@@ -305,15 +305,15 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "5",
-      "description": "When this card is drawn, reduce its cost by 1 for the combat.\nDeal 26 damage to ALL enemies.\nExhaust."
+      "description": "When this card is drawn, reduce its cost by 1 for the combat.\nDeal 28 damage to ALL enemies.\nExhaust."
     },
     {
       "name": "Cataclysm+",
       "color": "Astrologer",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "5",
-      "description": "When this card is drawn, reduce its cost by 1 for the combat.\nDeal 32 damage to ALL enemies.\nExhaust."
+      "cost": "4",
+      "description": "When this card is drawn, reduce its cost by 1 for the combat.\nDeal 28 damage to ALL enemies.\nExhaust."
     },
     {
       "name": "Confirmation",
@@ -401,7 +401,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "astrologer:Star.\nDeal 16 damage.\nApply 1 astrologer:Starlit."
+      "description": "astrologer:Star.\nDeal 17 damage.\nApply 1 astrologer:Starlit."
     },
     {
       "name": "Fireball+",
@@ -409,7 +409,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "astrologer:Star.\nDeal 20 damage.\nApply 2 astrologer:Starlit."
+      "description": "astrologer:Star.\nDeal 21 damage.\nApply 2 astrologer:Starlit."
     },
     {
       "name": "Glass Star",
@@ -417,7 +417,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "astrologer:Star.\nExhaust the next card you play and gain Block equal to 5 times its cost."
+      "description": "astrologer:Star.\nExhaust the next card you play and gain Block equal to 6 times its cost."
     },
     {
       "name": "Glass Star+",
@@ -425,7 +425,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "astrologer:Star.\nExhaust the next card you play and gain Block equal to 7 times its cost."
+      "description": "astrologer:Star.\nExhaust the next card you play and gain Block equal to 8 times its cost."
     },
     {
       "name": "Glimpse",
@@ -449,7 +449,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 12 damage twice.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: If this kills a non-minion enemy, reduce its cost by 1 permanently."
+      "description": "Deal 12 damage twice.\n[#ccf3ff]Stellar[] !STELLAR!: If this kills a non-minion enemy, reduce its cost by 1 permanently."
     },
     {
       "name": "Judgement+",
@@ -457,7 +457,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 15 damage twice.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: If this kills a non-minion enemy, reduce its cost by 1 permanently."
+      "description": "Deal 15 damage twice.\n[#ccf3ff]Stellar[] !STELLAR!: If this kills a non-minion enemy, reduce its cost by 1 permanently."
     },
     {
       "name": "Justice",
@@ -465,7 +465,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "ALL creatures gain 8 Block.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: ALL enemies lose HP equal to double their current Block."
+      "description": "ALL creatures gain 8 Block.\n[#ccf3ff]Stellar[] !STELLAR!: ALL enemies lose HP equal to double their current Block."
     },
     {
       "name": "Justice+",
@@ -473,7 +473,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "ALL creatures gain 11 Block.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: ALL enemies lose HP equal to double their current Block."
+      "description": "ALL creatures gain 11 Block.\n[#ccf3ff]Stellar[] !STELLAR!: ALL enemies lose HP equal to double their current Block."
     },
     {
       "name": "Lonely Star",
@@ -544,16 +544,16 @@
       "color": "Astrologer",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "0",
-      "description": "Deal 4 damage.\nastrologer:Solar: Deal 2 times as much damage instead."
+      "cost": "1",
+      "description": "Deal 4 damage.\nastrologer:Solar: Deal 4 times as much damage instead."
     },
     {
       "name": "Perihelion+",
       "color": "Astrologer",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "0",
-      "description": "Deal 4 damage.\nastrologer:Solar: Deal 3 times as much damage instead."
+      "cost": "1",
+      "description": "Deal 4 damage.\nastrologer:Solar: Deal 5 times as much damage instead."
     },
     {
       "name": "Premeditation",
@@ -753,7 +753,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 1 Strength.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Gain 1 Strength for each enemy in combat."
+      "description": "Gain 1 Strength.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR!: Gain 1 Strength for each enemy in combat."
     },
     {
       "name": "Strength+",
@@ -761,15 +761,15 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 2 Strength.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Gain 2 Strength for each enemy in combat."
+      "description": "Gain 2 Strength.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR!: Gain 2 Strength for each enemy in combat."
     },
     {
       "name": "Temperance",
       "color": "Astrologer",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
-      "description": "Heal 2 HP.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Exhaust any number of cards in your hand. Heal 2 HP for each card Exhausted."
+      "cost": "1",
+      "description": "[#ccf3ff]Stellar[] !STELLAR!: Heal HP equal to the number of [#ccf3ff]Stellar[] cards in your deck.\nExhaust."
     },
     {
       "name": "Temperance+",
@@ -777,7 +777,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Heal 3 HP.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Exhaust any number of cards in your hand. Heal 3 HP for each card Exhausted."
+      "description": "[#ccf3ff]Stellar[] !STELLAR!: Heal HP equal to the number of [#ccf3ff]Stellar[] cards in your deck.\nExhaust."
     },
     {
       "name": "The Devil",
@@ -785,7 +785,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 10 damage.\nIf this does not kill the enemy, lose 6 HP.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Deals additional damage equal to your missing health."
+      "description": "Deal 10 damage.\nIf this does not kill the enemy, lose 6 HP.\n[#ccf3ff]Stellar[] !STELLAR!: Deals additional damage equal to your missing health."
     },
     {
       "name": "The Devil+",
@@ -793,7 +793,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 14 damage.\nIf this does not kill the enemy, lose 6 HP.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Deals additional damage equal to your missing health."
+      "description": "Deal 14 damage.\nIf this does not kill the enemy, lose 6 HP.\n[#ccf3ff]Stellar[] !STELLAR!: Deals additional damage equal to your missing health."
     },
     {
       "name": "The Emperor",
@@ -801,7 +801,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Enemy loses 4 Strength this turn.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Enemy loses three times as much Strength.\nExhaust."
+      "description": "Enemy loses 4 Strength this turn.\n[#ccf3ff]Stellar[] !STELLAR!: Enemy loses three times as much Strength.\nExhaust."
     },
     {
       "name": "The Emperor+",
@@ -809,7 +809,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Enemy loses 6 Strength this turn.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Enemy loses three times as much Strength.\nExhaust."
+      "description": "Enemy loses 6 Strength this turn.\n[#ccf3ff]Stellar[] !STELLAR!: Enemy loses three times as much Strength.\nExhaust."
     },
     {
       "name": "The Empress",
@@ -817,7 +817,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: ALL enemies lose HP equal to the total amount of damage they intend to deal."
+      "description": "[#ccf3ff]Stellar[] !STELLAR!: ALL enemies lose HP equal to the total amount of damage they intend to deal."
     },
     {
       "name": "The Empress+",
@@ -825,7 +825,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: ALL enemies lose HP equal to the total amount of damage they intend to deal."
+      "description": "[#ccf3ff]Stellar[] !STELLAR!: ALL enemies lose HP equal to the total amount of damage they intend to deal."
     },
     {
       "name": "The Hanged Man",
@@ -833,7 +833,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Whenever you draw a card this turn, the enemy loses 4 HP. [#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Draw 3 cards."
+      "description": "Whenever you draw a card this turn, the enemy loses 4 HP. [#ccf3ff]Stellar[] !STELLAR!: Draw 3 cards."
     },
     {
       "name": "The Hanged Man+",
@@ -841,7 +841,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Whenever you draw a card this turn, the enemy loses 7 HP. [#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Draw 3 cards."
+      "description": "Whenever you draw a card this turn, the enemy loses 7 HP. [#ccf3ff]Stellar[] !STELLAR!: Draw 3 cards."
     },
     {
       "name": "The Hermit",
@@ -849,7 +849,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 2 Block for each card played this turn.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Draw a card from the bottom of your draw pile. It costs 1 less this turn."
+      "description": "Gain 2 Block for each card played this turn.\n[#ccf3ff]Stellar[] !STELLAR!: Draw a card from the bottom of your draw pile. It costs 1 less this turn."
     },
     {
       "name": "The Hermit+",
@@ -857,7 +857,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 3 Block for each card played this turn.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Draw a card from the bottom of your draw pile. It costs 1 less this turn."
+      "description": "Gain 3 Block for each card played this turn.\n[#ccf3ff]Stellar[] !STELLAR!: Draw a card from the bottom of your draw pile. It costs 1 less this turn."
     },
     {
       "name": "The Hierophant",
@@ -865,7 +865,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 4 Block.\nGain 1 Dexterity. At the end of the turn, lose 1 Dexterity.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Remove all debuffs.\nExhaust."
+      "description": "Gain 4 Block.\nGain 1 Dexterity. At the end of the turn, lose 1 Dexterity.\n[#ccf3ff]Stellar[] !STELLAR!: Remove all debuffs.\nExhaust."
     },
     {
       "name": "The Hierophant+",
@@ -873,7 +873,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 4 Block.\nGain 2 Dexterity. At the end of the turn, lose 2 Dexterity.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Remove all debuffs.\nExhaust."
+      "description": "Gain 4 Block.\nGain 2 Dexterity. At the end of the turn, lose 2 Dexterity.\n[#ccf3ff]Stellar[] !STELLAR!: Remove all debuffs.\nExhaust."
     },
     {
       "name": "The High Priestess",
@@ -881,7 +881,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Double the base damage of a card in your hand for the combat.\nExhaust."
+      "description": "[#ccf3ff]Stellar[] !STELLAR!: Double the base damage of a card in your hand for the combat.\nExhaust."
     },
     {
       "name": "The High Priestess+",
@@ -889,7 +889,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Retain.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Double the base damage of a card in your hand for the combat.\nExhaust."
+      "description": "Retain.\n[#ccf3ff]Stellar[] !STELLAR!: Double the base damage of a card in your hand for the combat.\nExhaust."
     },
     {
       "name": "The Lovers",
@@ -897,7 +897,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Exchange the costs of two cards in your hand for the rest of combat.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: The chosen cards will be played twice the next time you play them."
+      "description": "Exchange the costs of two cards in your hand for the rest of combat.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR!: The chosen cards will be played twice the next time you play them."
     },
     {
       "name": "The Lovers+",
@@ -905,23 +905,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Exchange the costs of two cards in your hand for the rest of combat.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: The chosen cards will be played twice the next time you play them."
-    },
-    {
-      "name": "The Magician",
-      "color": "Astrologer",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Ethereal.\nDeal damage equal to the number of cards played this combat.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Play a random card from your draw pile."
-    },
-    {
-      "name": "The Magician+",
-      "color": "Astrologer",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal damage equal to the number of cards played this combat.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Play a random card from your draw pile."
+      "description": "Exchange the costs of two cards in your hand for the rest of combat.\nExhaust.\n[#ccf3ff]Stellar[] !STELLAR!: The chosen cards will be played twice the next time you play them."
     },
     {
       "name": "The Moon",
@@ -929,31 +913,47 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "astrologer:Lunar: Gain Block equal to half of the total damage enemies intend to do.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: ALL enemies lose 4 Strength. Exhaust."
+      "description": "astrologer:Lunar: Draw cards until your hand is full.\n[#ccf3ff]Stellar[] !STELLAR!: Gain 3 Block for each card drawn."
     },
     {
       "name": "The Moon+",
       "color": "Astrologer",
       "rarity": "Uncommon",
       "type": "Skill",
+      "cost": "2",
+      "description": "astrologer:Lunar: Draw cards until your hand is full.\n[#ccf3ff]Stellar[] !STELLAR!: Gain 4 Block for each card drawn."
+    },
+    {
+      "name": "The Star",
+      "color": "Astrologer",
+      "rarity": "Uncommon",
+      "type": "Attack",
       "cost": "1",
-      "description": "astrologer:Lunar: Gain Block equal to half of the total damage enemies intend to do.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: ALL enemies lose 4 Strength. Exhaust."
+      "description": "astrologer:Star.\nDeal damage equal to the current astrologer:Stellar_Phase to ALL enemies.\n[#ccf3ff]Stellar[] !STELLAR!: Deals twice as much damage."
+    },
+    {
+      "name": "The Star+",
+      "color": "Astrologer",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "astrologer:Star.\nDeal damage equal to the current astrologer:Stellar_Phase to ALL enemies.\n[#ccf3ff]Stellar[] !STELLAR!: Deals twice as much damage."
     },
     {
       "name": "The Tower",
       "color": "Astrologer",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "1",
-      "description": "Deal 7 damage to a random enemy.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Deal 7 damage to a random enemy 3 additional times."
+      "cost": "2",
+      "description": "Deal 16 damage to a random enemy.\n[#ccf3ff]Stellar[] !STELLAR!: Deal 16 damage to a random enemy 2 additional times."
     },
     {
       "name": "The Tower+",
       "color": "Astrologer",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "1",
-      "description": "Deal 7 damage to a random enemy.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Deal 7 damage to a random enemy 4 additional times."
+      "cost": "2",
+      "description": "Deal 19 damage to a random enemy.\n[#ccf3ff]Stellar[] !STELLAR!: Deal 19 damage to a random enemy 2 additional times."
     },
     {
       "name": "Alignment",
@@ -993,7 +993,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Purge all cards in your Exhaust pile.\nDeal 4 damage for each Purged card.\nExhaust."
+      "description": "Purge all cards in your Exhaust pile.\nDeal 5 damage for each Purged card.\nExhaust."
     },
     {
       "name": "Black Hole+",
@@ -1001,7 +1001,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Purge all cards in your Exhaust pile.\nDeal 6 damage for each Purged card.\nExhaust."
+      "description": "Purge all cards in your Exhaust pile.\nDeal 7 damage for each Purged card.\nExhaust."
     },
     {
       "name": "Dark Matter",
@@ -1025,7 +1025,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Ethereal.\nDeal 13 damage.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Kill the target non-boss enemy."
+      "description": "Ethereal.\nDeal 13 damage.\n[#ccf3ff]Stellar[] !STELLAR!: Kill the target non-boss enemy."
     },
     {
       "name": "Death+",
@@ -1033,7 +1033,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Ethereal.\nDeal 13 damage.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Kill the target non-boss enemy."
+      "description": "Ethereal.\nDeal 13 damage.\n[#ccf3ff]Stellar[] !STELLAR!: Kill the target non-boss enemy."
     },
     {
       "name": "Fate",
@@ -1121,7 +1121,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 10 Temporary_HP.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Gain 1 Intangible."
+      "description": "Gain 10 Temporary_HP.\n[#ccf3ff]Stellar[] !STELLAR!: Gain 1 Intangible."
     },
     {
       "name": "The Chariot+",
@@ -1129,23 +1129,23 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 14 Temporary_HP.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Gain 1 Intangible."
+      "description": "Gain 14 Temporary_HP.\n[#ccf3ff]Stellar[] !STELLAR!: Gain 1 Intangible."
     },
     {
-      "name": "The Star",
+      "name": "The Magician",
       "color": "Astrologer",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "1",
-      "description": "astrologer:Star.\nDeal damage equal to the current astrologer:Stellar_Phase to ALL enemies.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Deals twice as much damage."
+      "cost": "2",
+      "description": "Ethereal.\nDeal damage equal to the number of cards played this combat.\n[#ccf3ff]Stellar[] !STELLAR!: Play a random card from your draw pile."
     },
     {
-      "name": "The Star+",
+      "name": "The Magician+",
       "color": "Astrologer",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "0",
-      "description": "astrologer:Star.\nDeal damage equal to the current astrologer:Stellar_Phase to ALL enemies.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Deals twice as much damage."
+      "cost": "2",
+      "description": "Deal damage equal to the number of cards played this combat.\n[#ccf3ff]Stellar[] !STELLAR!: Play a random card from your draw pile."
     },
     {
       "name": "The Sun",
@@ -1153,7 +1153,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "astrologer:Star.\nastrologer:Solar: Deal 16 damage to ALL enemies.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: ALL enemies lose 33 HP."
+      "description": "astrologer:Star.\nastrologer:Solar: Deal 16 damage to ALL enemies.\n[#ccf3ff]Stellar[] !STELLAR!: ALL enemies lose 33 HP."
     },
     {
       "name": "The Sun+",
@@ -1161,7 +1161,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "astrologer:Star.\nastrologer:Solar: Deal 22 damage to ALL enemies.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: ALL enemies lose 44 HP."
+      "description": "astrologer:Star.\nastrologer:Solar: Deal 22 damage to ALL enemies.\n[#ccf3ff]Stellar[] !STELLAR!: ALL enemies lose 44 HP."
     },
     {
       "name": "The World",
@@ -1169,7 +1169,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Draw 4 cards.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Before drawing, reset your deck to the beginning of combat, except for this card.\nPurge."
+      "description": "[#ccf3ff]Stellar[] !STELLAR!: Play all of the cards in your exhaust pile."
     },
     {
       "name": "The World+",
@@ -1177,7 +1177,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Draw 5 cards.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Before drawing, reset your deck to the beginning of combat, except for this card.\nPurge."
+      "description": "Retain.\n[#ccf3ff]Stellar[] !STELLAR!: Play all of the cards in your exhaust pile."
     },
     {
       "name": "Trine",
@@ -1201,7 +1201,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Lose 10 Gold.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Play 2 random [#ccf3ff]Stellar[] cards. Their [#ccf3ff]Stellar[] effects are triggered."
+      "description": "Lose 10 Gold.\n[#ccf3ff]Stellar[] !STELLAR!: Play 2 random [#ccf3ff]Stellar[] cards. Their [#ccf3ff]Stellar[] effects are triggered."
     },
     {
       "name": "Wheel of Fortune+",
@@ -1209,7 +1209,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Lose 10 Gold.\n[#ccf3ff]Stellar[] !STELLAR_VARIABLE!: Play 3 random [#ccf3ff]Stellar[] cards. Their [#ccf3ff]Stellar[] effects are triggered."
+      "description": "Lose 10 Gold.\n[#ccf3ff]Stellar[] !STELLAR!: Play 3 random [#ccf3ff]Stellar[] cards. Their [#ccf3ff]Stellar[] effects are triggered."
     },
     {
       "name": "Wish",
@@ -1217,7 +1217,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "4",
-      "description": "Costs 1 less [E] for each astrologer:Star card Exhausted this combat.\nGain 12 Block.\nDraw 2 card."
+      "description": "Costs 1 less [E] for each astrologer:Star card Exhausted this combat.\nGain 12 Block.\nDraw 2 cards."
     },
     {
       "name": "Wish+",
@@ -1225,7 +1225,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "4",
-      "description": "Costs 1 less [E] for each astrologer:Star card Exhausted this combat.\nGain 18 Block.\nDraw 2 card."
+      "description": "Costs 1 less [E] for each astrologer:Star card Exhausted this combat.\nGain 18 Block.\nDraw 2 cards."
     }
   ],
   "relics": [
@@ -1255,5 +1255,25 @@
     }
   ],
   "keywords": [
+    {
+      "name": "Astrologer:ominous star",
+      "description": "Ominous Star is a 1 cost Star."
+    },
+    {
+      "name": "Astrologer:solar",
+      "description": "The Stellar Alignment can be either Solar or Lunar.\nStellar Alignment switches whenever a Star is played or Exhausted."
+    },
+    {
+      "name": "Astrologer:star",
+      "description": "When this card is played or Exhausted, increment the Stellar Phase and change the Stellar Alignment."
+    },
+    {
+      "name": "Astrologer:starlit",
+      "description": "Starlit creatures lose HP equal to the current Stellar Phase at the start of their turn. Each turn, Starlit is reduced by 1."
+    },
+    {
+      "name": "Astrologer:stellar phase",
+      "description": "The Stellar Phase starts at 1, and increases whenever a Star is played or Exhausted."
+    }
   ]
 }
