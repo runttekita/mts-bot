@@ -1,0 +1,1511 @@
+{
+  "mod": {
+    "name": "Potionbrewer",
+    "version": "1.0.3",
+    "authors": ["NotInTheFace"],
+    "credits": "",
+    "description": "Adds the Potionbrewer.\n        - Includes 16 new potions\n        - Catalyze mechanic (power up certain cards by using potions)\n        - Collect Reagents from monsters in the spire and use them to brew potions or create custom cards.",
+    "mts_version": "3.15.0",
+    "sts_version": "01-27-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Distill",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nBrew your rightmost potionbrewer:Reagent into a potion over 3 turns.\nExhaust"
+    },
+    {
+      "name": "Reaction",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, gain [E] and draw 2 cards.\nExhaust"
+    },
+    {
+      "name": "Reaction+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, gain [E] and draw 3 cards.\nExhaust"
+    },
+    {
+      "name": "Reagent",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 of 3 random potionbrewer:Reagents to collect."
+    },
+    {
+      "name": "Reagent",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 of 3 random potionbrewer:Reagents to collect."
+    },
+    {
+      "name": "Reagent",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 of 3 random potionbrewer:Reagents to collect."
+    },
+    {
+      "name": "Fire Potion",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "0",
+      "description": "Use a Fire Potion\n(Deal [#87ceebff]20[] damage.)"
+    },
+    {
+      "name": "Chemical Spill",
+      "color": "Brewer_cyan_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage.\npotionbrewer:Catalyze: Gain 10 block."
+    },
+    {
+      "name": "Chemical Spill+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 Damage.\npotionbrewer:Catalyze: Gain 15 block."
+    },
+    {
+      "name": "Collect",
+      "color": "Brewer_cyan_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Collect a potionbrewer:Reagent from an enemy. Add a *Distill to your hand.\nExhaust"
+    },
+    {
+      "name": "Collect+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nCollect a potionbrewer:Reagent from an enemy. Add a *Distill to your hand.\nExhaust"
+    },
+    {
+      "name": "Defend",
+      "color": "Brewer_cyan_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Brewer_cyan_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage."
+    },
+    {
+      "name": "Prototype Potion",
+      "color": "Brewer_cyan_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Has various effects based on the Reagents collected."
+    },
+    {
+      "name": "Bio-Hazard",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 potionbrewer:Infection to an enemy."
+    },
+    {
+      "name": "Bio-Hazard+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 potionbrewer:Infection to an enemy."
+    },
+    {
+      "name": "Blinding Spray",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage. Apply 1 Weak."
+    },
+    {
+      "name": "Blinding Spray+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage. Apply 2 Weak."
+    },
+    {
+      "name": "Brandish",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards. Discard all Skills drawn this way."
+    },
+    {
+      "name": "Brandish+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 5 cards. Discard all Skills drawn this way."
+    },
+    {
+      "name": "Caustic Barrier",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. Add a *Distill to your hand."
+    },
+    {
+      "name": "Caustic Barrier+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block. Add a *Distill to your hand."
+    },
+    {
+      "name": "Contingency",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 Damage. Choose a card from your draw pile and move it to the top of your draw pile."
+    },
+    {
+      "name": "Contingency+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 Damage. Choose a card from your draw pile and move it to the top of your draw pile."
+    },
+    {
+      "name": "Flash Powder",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage to all enemies.\npotionbrewer:Catalyze: Draw 1 card."
+    },
+    {
+      "name": "Flash-Bang Powder",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage to all enemies.\npotionbrewer:Catalyze: Draw 1 card."
+    },
+    {
+      "name": "Fortified Serum",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block."
+    },
+    {
+      "name": "Fortified Serum+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block."
+    },
+    {
+      "name": "One-Two Punch",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage. If the last card played cost 0, play this twice."
+    },
+    {
+      "name": "One-Two Punch+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage. If the last card played cost 0, play this twice."
+    },
+    {
+      "name": "Quick Step",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block. If you've played less than 3 cards this turn, draw a card."
+    },
+    {
+      "name": "Quick Step+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Block. If you've played less than 4 cards this turn, draw a card."
+    },
+    {
+      "name": "Refill",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block. Next turn, gain [E]."
+    },
+    {
+      "name": "Refill+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block. Next turn, gain [E]."
+    },
+    {
+      "name": "Shovel",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 Damage. Shuffle a *Reagent card into your draw pile."
+    },
+    {
+      "name": "Shovel+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 Damage. Shuffle a *Reagent card into your draw pile."
+    },
+    {
+      "name": "Smack",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage.\npotionbrewer:Catalyze: Gain 1 [E]."
+    },
+    {
+      "name": "Smack+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 Damage.\npotionbrewer:Catalyze: Gain 1 [E]."
+    },
+    {
+      "name": "Smokescreen",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\npotionbrewer:Catalyze: Draw a card."
+    },
+    {
+      "name": "Smokescreen+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\npotionbrewer:Catalyze: Draw a card."
+    },
+    {
+      "name": "Test Formula",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 2 random potionbrewer:Tonics to use immediately."
+    },
+    {
+      "name": "Test Formula+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 4 random potionbrewer:Tonics to use immediately."
+    },
+    {
+      "name": "Time Bomb",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage next turn."
+    },
+    {
+      "name": "Time Bomb+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 Damage next turn."
+    },
+    {
+      "name": "Toxicity",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 potionbrewer:Toxic to an enemy."
+    },
+    {
+      "name": "Toxicity+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 potionbrewer:Toxic to an enemy."
+    },
+    {
+      "name": "Unstable Formula",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 Damage.\nNext turn, deal 10 Damage."
+    },
+    {
+      "name": "Unstable Formula+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 Damage.\nNext turn, deal 14 Damage."
+    },
+    {
+      "name": "Volatile Solution",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 Damage. No cards will trigger their potionbrewer:Catalyze effects this turn."
+    },
+    {
+      "name": "Volatile Solution+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 25 Damage. No cards will trigger their potionbrewer:Catalyze effects this turn."
+    },
+    {
+      "name": "Acid Cloud",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. If the last card played cost 0, Apply 1 Vulnerable to all enemies."
+    },
+    {
+      "name": "Acid Fog",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block. If the last card played cost 0, Apply 2 Vulnerable to all enemies."
+    },
+    {
+      "name": "Another Round",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each turn, return 1 card that costs 0 to your hand from your discard pile."
+    },
+    {
+      "name": "Another Round+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate\nEach turn, return 1 card that costs 0 to your hand from your discard pile."
+    },
+    {
+      "name": "Backhand",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage. Draw 2 cards."
+    },
+    {
+      "name": "Backhand+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage. Draw 2 cards."
+    },
+    {
+      "name": "Balanced Formula",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 Damage. Move a 0 cost card from your draw pile and from your discard pile to your hand."
+    },
+    {
+      "name": "Balanced Formula+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 Damage. Move a 0 cost card from your draw pile and from your discard pile to your hand."
+    },
+    {
+      "name": "Blinding Mist",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block for each enemy in combat."
+    },
+    {
+      "name": "Blinding Mist+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block for each enemy in combat."
+    },
+    {
+      "name": "Chain Reaction",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Each turn, shuffle a *Reaction into your draw pile."
+    },
+    {
+      "name": "Chain Reaction+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nEach turn, shuffle a *Reaction into your draw pile."
+    },
+    {
+      "name": "Chemical Rage",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each time you use a Potion, deal 4 Damage to all enemies."
+    },
+    {
+      "name": "Chemical Rage+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each time you use a Potion, deal 6 Damage to all enemies."
+    },
+    {
+      "name": "Chemical Shroud",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Gain 12 Block. This costs 1 less for each potion used this combat."
+    },
+    {
+      "name": "Chemical Shroud+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Gain 16 Block. This costs 1 less for each potion used this combat."
+    },
+    {
+      "name": "Chemical Weapons",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage. Add a random *Tonic card to your hand."
+    },
+    {
+      "name": "Chemical Weapons+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 Damage. Add a random *Tonic card to your hand."
+    },
+    {
+      "name": "Choking Powder",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The target takes 3 damage each time you play a card this turn."
+    },
+    {
+      "name": "Choking Powder+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The target takes 5 damage each time you play a card this turn."
+    },
+    {
+      "name": "Cross-Reference",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Move X skills from your draw pile to your hand. They cost 0 this turn."
+    },
+    {
+      "name": "Cross-Reference+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Move X + 1 skills from your draw pile to your hand. They cost 0 this turn."
+    },
+    {
+      "name": "Dig Deep",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards. If the last card played cost 0, gain [E]"
+    },
+    {
+      "name": "Dig Deeper",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards. If the last card played cost 0, gain [E]"
+    },
+    {
+      "name": "Discombobulate",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage.\npotionbrewer:Catalyze: Exhaust this card and remove 2 Strength from the target."
+    },
+    {
+      "name": "Discombobulate+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage.\npotionbrewer:Catalyze: Exhaust this card and remove 3 Strength from the target."
+    },
+    {
+      "name": "Empty Bottle",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 Damage. When you use a potion, move this from the discard pile to your hand."
+    },
+    {
+      "name": "Empty Bottle+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 Damage. When you use a potion, move this from the discard pile to your hand."
+    },
+    {
+      "name": "Exothermic Reaction",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 Damage. If the last card played cost 0, another card costs 0 this turn."
+    },
+    {
+      "name": "Exothermic Reaction+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 Damage. If the last card played cost 0, another card costs 0 this turn."
+    },
+    {
+      "name": "Experimentation",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal\nRotate your rightmost potionbrewer:Reagent to the far left. If you have collected 3 *reagents, shuffle a *Prototype into your draw pile."
+    },
+    {
+      "name": "Experimentation+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal\nRotate your rightmost potionbrewer:Reagent to the far left. If you have collected 3 *reagents, shuffle a *Prototype into your draw pile."
+    },
+    {
+      "name": "Explosive Reaction",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 Damage. Sacrifice your rightmost potionbrewer:Reagent to do double damage."
+    },
+    {
+      "name": "Explosive Reaction+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 Damage. Sacrifice your rightmost potionbrewer:Reagent to do double damage."
+    },
+    {
+      "name": "Flare Up",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 Damage. Deal 2 more Damage for each potion played this combat."
+    },
+    {
+      "name": "Flare Up+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 Damage. Deal 3 more Damage for each potion played this combat."
+    },
+    {
+      "name": "Fuel",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle a *Reaction into your draw pile.\nGain 3 Block."
+    },
+    {
+      "name": "Fuel Cell",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nGain [E] [E]\nReduce energy gained from this card by 1 this combat."
+    },
+    {
+      "name": "Fuel Cell+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain [E] [E]\nReduce energy gained from this card by 1 this combat."
+    },
+    {
+      "name": "Fuel+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Shuffle a *Reaction into your draw pile.\nGain 5 Block."
+    },
+    {
+      "name": "Hazardous Materials",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Apply X potionbrewer:Toxic.\npotionbrewer:Catalyze: And X potionbrewer:Infection.\nExhaust"
+    },
+    {
+      "name": "Hazardous Materials+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Innate.\nApply X potionbrewer:Toxic.\npotionbrewer:Catalyze: And X potionbrewer:Infection.\nExhaust"
+    },
+    {
+      "name": "Iron Fist",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage.\npotionbrewer:Catalyze: Strength affects this 2 times."
+    },
+    {
+      "name": "Iron Heart",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 20 percent more Block when playing cards that grant Block."
+    },
+    {
+      "name": "Lab Accident",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "potionbrewer:Catalyze: Deal 30 Damage."
+    },
+    {
+      "name": "Lab Accident+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "potionbrewer:Catalyze: Deal 40 Damage."
+    },
+    {
+      "name": "Leftover Specimen",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nChoose 1 of 3 random potionbrewer:Reagents to collect.\nExhaust"
+    },
+    {
+      "name": "Leftover Specimen+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nChoose 1 of 3 random potionbrewer:Reagents to collect."
+    },
+    {
+      "name": "Microbe Spray",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Weak and 2 potionbrewer:Infection to all enemies.\nExhaust"
+    },
+    {
+      "name": "Microbe Spray+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Weak and 3 potionbrewer:Infection to all enemies.\nExhaust"
+    },
+    {
+      "name": "Portable Lab",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Consume any leftover energy after each turn. When 5 energy is consumed, add a *Potion *Card to your hand."
+    },
+    {
+      "name": "Portable Lab+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Consume any leftover energy after each turn. When 3 energy is consumed, add a *Potion *Card to your hand."
+    },
+    {
+      "name": "Private Reserves",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Each time you use a Potion, gain 5 block."
+    },
+    {
+      "name": "Private Reserves+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Each time you use a Potion, gain 7 block."
+    },
+    {
+      "name": "Spark",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage. Draw a *Reaction."
+    },
+    {
+      "name": "Spark+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 Damage. Draw a *Reaction."
+    },
+    {
+      "name": "Steel Fist",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 Damage.\npotionbrewer:Catalyze: Strength affects this 4 times."
+    },
+    {
+      "name": "Steel Heart",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 30 percent more Block when playing cards that grant Block."
+    },
+    {
+      "name": "Test Subject",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage.\npotionbrewer:Catalyze: Apply 3 potionbrewer:Infection. "
+    },
+    {
+      "name": "Test Subject+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 Damage.\npotionbrewer:Catalyze: Apply 4 potionbrewer:Infection. "
+    },
+    {
+      "name": "Wiz Bang",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage 2 times.\npotionbrewer:Catalyze: 3 times."
+    },
+    {
+      "name": "Wiz Bang Boom",
+      "color": "Brewer_cyan_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 Damage 2 times.\npotionbrewer:Catalyze: 3 times."
+    },
+    {
+      "name": "Accelerant",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw cards until your hand is full. Any cards remaining in your hand at the end of turn are Exhausted.\nExhaust"
+    },
+    {
+      "name": "Accelerant+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw cards until your hand is full. Half the cards remaining in your hand at the end of turn are Exhausted.\nExhaust"
+    },
+    {
+      "name": "Alchemist Form",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Each turn, convert 20 gold into a random potion if you have an empty potion slot.\nNon-minion enemies give 15 gold when defeated."
+    },
+    {
+      "name": "Alchemist Form+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Each turn, convert 15 gold into a random potion if you have an empty potion slot.\nNon-minion enemies give 15 gold when defeated."
+    },
+    {
+      "name": "Beat Down",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 Damage. If you've played another card with this in your hand, place this card on top of your draw pile."
+    },
+    {
+      "name": "Beat Down+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 Damage. If you've played another card with this in your hand, place this card on top of your draw pile."
+    },
+    {
+      "name": "Bottomless Flask",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Choose 1 of 10 potion cards. Replace this card permanently with your choice."
+    },
+    {
+      "name": "Bottomless Flask+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Choose 2 of 10 potion cards. Replace this card permanently with your choice."
+    },
+    {
+      "name": "Bribery",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you would lose HP, pay 1 gold to lose 3 less."
+    },
+    {
+      "name": "Bribery+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you would lose HP, pay 1 gold to lose 5 less."
+    },
+    {
+      "name": "Broken Beakers",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 Damage to all Enemies. Reduce this card's damage by 3 this combat."
+    },
+    {
+      "name": "Broken Beakers+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 Damage to all Enemies. Reduce this card's damage by 3 this combat."
+    },
+    {
+      "name": "Catalyze",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Use an Energy Tonic and a Swift Tonic.\nExhaust"
+    },
+    {
+      "name": "Catalyze+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Use an Energy Potion and a Swift Tonic.\nExhaust"
+    },
+    {
+      "name": "Equivalent Exchange",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first 3 cards played each turn are Exhausted and replaced with a random card."
+    },
+    {
+      "name": "Equivalent Exchange+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first 5 cards played each turn are Exhausted and replaced with a random card."
+    },
+    {
+      "name": "Hazardous Sludge",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate\nApply 2 potionbrewer:Slimed.\npotionbrewer:Catalyze: Exhaust this card and permanently increase potionbrewer:Slimed by 1."
+    },
+    {
+      "name": "Hazardous Waste",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 potionbrewer:Slimed.\npotionbrewer:Catalyze: Exhaust this card and permanently increase potionbrewer:Slimed by 1."
+    },
+    {
+      "name": "Hoarder",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 additional potionbrewer:Reagent slot. Each turn, collect a random *Reagent."
+    },
+    {
+      "name": "Hoarder+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 additional potionbrewer:Reagent slots. Each turn, collect a random *Reagent."
+    },
+    {
+      "name": "Iron Flesh",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nGain 12 Block next turn."
+    },
+    {
+      "name": "Potential Energy",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Ethereal\nWhenever you gain Strength or Dexterity, gain 1 more."
+    },
+    {
+      "name": "Potential Energy+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain Strength or Dexterity, gain 1 more."
+    },
+    {
+      "name": "Refined Process",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 Damage 3 times.\npotionbrewer:Catalyze: Permanently increase this card's damage by 1 and exhaust it."
+    },
+    {
+      "name": "Refined Process+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 Damage 4 times.\npotionbrewer:Catalyze: Permanently increase this card's damage by 1 and exhaust it."
+    },
+    {
+      "name": "Research Results",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "For X turns, add a *Random *Potion card to your hand.\nExhaust"
+    },
+    {
+      "name": "Research Results+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "For X turns, add a *Random *Potion card to your hand."
+    },
+    {
+      "name": "Special Formula",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 random potions to use.\nExhaust"
+    },
+    {
+      "name": "Special Formula+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 of 3 random potions to use.\nExhaust"
+    },
+    {
+      "name": "Steel Flesh",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nGain 16 Block next turn."
+    },
+    {
+      "name": "The Final Straw",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to 40 percent of the target's missing HP."
+    },
+    {
+      "name": "The Final Straw+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal damage equal to 60 percent of the target's missing HP."
+    },
+    {
+      "name": "Transmute",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 Damage.\nFatal: Choose 1 of 3 random potions to obtain.\nExhaust"
+    },
+    {
+      "name": "Transmute+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 Damage.\nFatal: Choose 1 of 3 random potions to obtain.\nExhaust"
+    },
+    {
+      "name": "Two For One",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Obtain another copy of the next Potion you use.\nExhaust"
+    },
+    {
+      "name": "Two For One+",
+      "color": "Brewer_cyan_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Obtain another copy of the next Potion you use.\nExhaust"
+    }
+  ],
+  "relics": [
+    {
+      "name": "Potion Kit",
+      "tier": "Starter",
+      "pool": "Brewer_cyan_color",
+      "description": "Add an additional Potion slot. Each battle brew a Tonic.",
+      "flavorText": "The essential tools of the Potion Brewer's trade."
+    },
+    {
+      "name": "Bunsen Burner",
+      "tier": "Common",
+      "pool": "Brewer_cyan_color",
+      "description": "Brewing a potion takes 2 turns instead of 3.",
+      "flavorText": "It's labeled 'Property of Citytown High'."
+    },
+    {
+      "name": "Torch",
+      "tier": "Common",
+      "pool": "",
+      "description": "Gain [E] on your second turn.",
+      "flavorText": "Burns brightly. Goes great with pitchforks."
+    },
+    {
+      "name": "Toy Autogyro",
+      "tier": "Common",
+      "pool": "",
+      "description": "Whenever you use a potion, gain 3 Temporary HP.",
+      "flavorText": "Vrooom, zoom zoom zoom!"
+    },
+    {
+      "name": "Bottled Elixir",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup, choose a card. The first time you use a potion, draw the chosen card.",
+      "flavorText": "A strange fluid that attracts matter through time and space."
+    },
+    {
+      "name": "Mortar and Pestle",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you discard a potion, heal 5 HP.",
+      "flavorText": "One of the quintessential tools of an Alchemist."
+    },
+    {
+      "name": "Paper Swan",
+      "tier": "Uncommon",
+      "pool": "Brewer_cyan_color",
+      "description": "Toxic removes 25% of current HP instead of 20%.",
+      "flavorText": "An elegant origami of a white bird."
+    },
+    {
+      "name": "Slide Rule",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "When you shuffle your draw pile, deal 5 damage to all enemies.",
+      "flavorText": "An archaic device of unknown origin."
+    },
+    {
+      "name": "War Medal",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Every time you play 10 cards, your next attack deals 5 bonus damage.",
+      "flavorText": "For service to King and Country."
+    },
+    {
+      "name": "Alchemist's Flask",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Every time you play 25 cards, choose 1 of 3 random potions to use.",
+      "flavorText": "It's labeled 'Property of Nicholas Flamel'."
+    },
+    {
+      "name": "Drinking Bird",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of each combat, begin brewing a random potion.",
+      "flavorText": "An odd contraption that somehow keeps drinking forever."
+    },
+    {
+      "name": "Elric's Monocle",
+      "tier": "Special",
+      "pool": "Brewer_cyan_color",
+      "description": "Right Click to use once per battle.\nExhaust your hand and replace each card with an upgraded Colorless card.",
+      "flavorText": "This curious lens is said to reveal Truth."
+    },
+    {
+      "name": "Alchemist Kit",
+      "tier": "Boss",
+      "pool": "Brewer_cyan_color",
+      "description": "Replaces Potion Kit. Obtain an additional copy of the first potion you use each combat.",
+      "flavorText": "Legendary tools of an Alchemist."
+    },
+    {
+      "name": "Bhaskara's Wheel",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Every 2 turns, shuffle a Reaction into your draw pile.",
+      "flavorText": "It just keeps turning forever and ever."
+    },
+    {
+      "name": "Booster Pack",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Add 3 common, 2 uncommon, and 1 rare card to your deck.",
+      "flavorText": "Add some might to your deck! Guaranteed Rare card in every pack!"
+    },
+    {
+      "name": "Keyblade",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Gain 1 Strength for each key (Emerald, Ruby, and Sapphire) you have collected.",
+      "flavorText": "A ridiculously impractical weapon."
+    },
+    {
+      "name": "Sales Contract",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Whenever you obtain a (non-tonic) potion, instead receive 20 gold.",
+      "flavorText": "Signed in blue ink."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Acid Potion",
+      "rarity": "Common",
+      "description": "Remove the target's Block and deal 5 damage."
+    },
+    {
+      "name": "Block Tonic",
+      "rarity": "Common",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Cleansing Potion",
+      "rarity": "Common",
+      "description": "Remove 2 debuffs from yourself."
+    },
+    {
+      "name": "Discount Potion",
+      "rarity": "Common",
+      "description": "A random card in your hand cost 0 this combat."
+    },
+    {
+      "name": "Energy Tonic",
+      "rarity": "Common",
+      "description": "Gain 1 energy."
+    },
+    {
+      "name": "Explosive Tonic",
+      "rarity": "Common",
+      "description": "Deal 4 Damage to all enemies."
+    },
+    {
+      "name": "Fear Tonic",
+      "rarity": "Common",
+      "description": "Apply 1 Vulnerable to an enemy."
+    },
+    {
+      "name": "Fire Tonic",
+      "rarity": "Common",
+      "description": "Deal 6 Damage to an enemy."
+    },
+    {
+      "name": "Fire Tonic",
+      "rarity": "Common",
+      "description": "Deal 6 Damage to an enemy."
+    },
+    {
+      "name": "Fire Tonic",
+      "rarity": "Common",
+      "description": "Deal 6 Damage to an enemy."
+    },
+    {
+      "name": "Flex Tonic",
+      "rarity": "Common",
+      "description": "Gain 2 Strength until the end of this turn."
+    },
+    {
+      "name": "Noxious Potion",
+      "rarity": "Common",
+      "description": "Deal 4 Damage each time you play a card this turn."
+    },
+    {
+      "name": "Speed Tonic",
+      "rarity": "Common",
+      "description": "Gain 2 Dexterity until the end of this turn."
+    },
+    {
+      "name": "Swift Tonic",
+      "rarity": "Common",
+      "description": "Draw 1 card."
+    },
+    {
+      "name": "Toxic Potion",
+      "rarity": "Common",
+      "description": "Apply 1 Toxic to an enemy."
+    },
+    {
+      "name": "Weak Tonic",
+      "rarity": "Common",
+      "description": "Apply 1 Weak to an enemy."
+    },
+    {
+      "name": "Barricade Potion",
+      "rarity": "Uncommon",
+      "description": "Double your Block."
+    },
+    {
+      "name": "Boundless Potion",
+      "rarity": "Uncommon",
+      "description": "Double your Strength."
+    },
+    {
+      "name": "Endurance Potion",
+      "rarity": "Uncommon",
+      "description": "Gain 10 Temporary HP"
+    },
+    {
+      "name": "Freezing Potion",
+      "rarity": "Uncommon",
+      "description": "Apply 5 Slow to an Enemy."
+    },
+    {
+      "name": "Infection Potion",
+      "rarity": "Uncommon",
+      "description": "Apply 3 Infection."
+    },
+    {
+      "name": "Midas Potion",
+      "rarity": "Uncommon",
+      "description": "Deal 10 Damage, if this defeats a non-minion enemy, gain 10 gold."
+    },
+    {
+      "name": "Splitting Potion",
+      "rarity": "Uncommon",
+      "description": "Obtain 2 random potions."
+    },
+    {
+      "name": "Blacksmith Potion",
+      "rarity": "Rare",
+      "description": "Permanently upgrade 1 random card. (Can only be used outside of combat)"
+    },
+    {
+      "name": "Haste Potion",
+      "rarity": "Rare",
+      "description": "Discard your hand, refill your energy, draw 5 cards."
+    },
+    {
+      "name": "Quicksilver Potion",
+      "rarity": "Rare",
+      "description": "Prevent the next time you would take damage."
+    },
+    {
+      "name": "Stun Potion",
+      "rarity": "Rare",
+      "description": "Stun an enemy for 1 turn."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Potionbrewer",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Potionbrewer:catalyze",
+      "description": "An additional effect that is triggered if you've played a potion this turn."
+    },
+    {
+      "name": "Potionbrewer:disease",
+      "description": "Reduces Damage dealt by half, and spreads Infection to all enemies."
+    },
+    {
+      "name": "Potionbrewer:infection",
+      "description": "Doubles each turn. Applies Disease (damage dealt is reduced by half) when infection is 10 or higher and is reduced by 10."
+    },
+    {
+      "name": "Potionbrewer:reagent",
+      "description": "A potent ingredient collected from one of the Spire's monsters. Can be brewed into a potion, or 3 can be combined into a unique card."
+    },
+    {
+      "name": "Potionbrewer:slimed",
+      "description": "Slimed enemies take 1 additional damage from each attack for each stack of Slimed."
+    },
+    {
+      "name": "Potionbrewer:tonic",
+      "description": "A smaller version of a regular potion that can't be found in shops or rewards."
+    },
+    {
+      "name": "Potionbrewer:toxic",
+      "description": "Lose 20% of current HP at the start of turn."
+    }
+  ]
+}
