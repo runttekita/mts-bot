@@ -1,0 +1,1252 @@
+{
+  "mod": {
+    "name": "The Immortal",
+    "version": "1.2.4",
+    "authors": ["squeeny"],
+    "credits": "",
+    "description": "Reach for the moon, Immortal Smoke!\nThis Mod adds Fujiwara no Mokou [\u85E4\u539F \u59B9\u7D05] from Touhou to Slay the Spire.\n\nWant to translate this?\nReach out to me!",
+    "mts_version": "3.8.0",
+    "sts_version": "01-14-2020",
+    "dependencies": ["basemod","stslib","CapriCore"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Mku_red_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Mku_red_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Heat Spark",
+      "color": "Mku_red_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nmokoumod:Burst:\nApply 3 mokoumod:Ignite."
+    },
+    {
+      "name": "Heat Spark+",
+      "color": "Mku_red_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nmokoumod:Burst:\nApply 5 mokoumod:Ignite."
+    },
+    {
+      "name": "Strike",
+      "color": "Mku_red_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Mku_red_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Adaptive Pyromancy",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nmokoumod:Burst:\nIf the enemy intends to attack, gain 4 mokoumod:Ignite\nOtherwise, apply 4 mokoumod:Ignite."
+    },
+    {
+      "name": "Adaptive Pyromancy+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nmokoumod:Burst:\nIf the enemy intends to attack, gain 5 mokoumod:Ignite\nOtherwise, apply 5 mokoumod:Ignite."
+    },
+    {
+      "name": "Blazing Comet",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nmokoumod:Burst:\nDraw 2 cards next turn."
+    },
+    {
+      "name": "Blazing Comet+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nmokoumod:Burst:\nDraw 3 cards next turn."
+    },
+    {
+      "name": "Burning Draft",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "mokoumod:Burst:\nDraw 2 Cards.\nGain [E]."
+    },
+    {
+      "name": "Burning Draft+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "mokoumod:Burst:\nDraw 2 Cards.\nGain [E] [E]."
+    },
+    {
+      "name": "Ember",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 3 mokoumod:Ignite.\nmokoumod:Unkindled:\nApply 3 mokoumod:Ignite."
+    },
+    {
+      "name": "Ember+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nApply 4 mokoumod:Ignite.\nmokoumod:Unkindled:\nApply 4 mokoumod:Ignite."
+    },
+    {
+      "name": "Eternal Burst Reactor",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage for each time mokoumod:Resonance was gained this turn."
+    },
+    {
+      "name": "Eternal Burst Reactor+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage for each time mokoumod:Resonance was gained this turn."
+    },
+    {
+      "name": "Firecracker",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nmokoumod:Burst:\nDraw 2 cards."
+    },
+    {
+      "name": "Firecracker+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nmokoumod:Burst:\nDraw 3 cards."
+    },
+    {
+      "name": "Flare Starter",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 mokoumod:Resonance."
+    },
+    {
+      "name": "Flare Starter+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nGain 1 mokoumod:Resonance."
+    },
+    {
+      "name": "Flickering Flame",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 1 Vulnerable.\nmokoumod:Burst:\nDraw !MKU:M2! card."
+    },
+    {
+      "name": "Flickering Flame+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 2 Vulnerable.\nmokoumod:Burst:\nDraw !MKU:M2! card."
+    },
+    {
+      "name": "Fujiyama Volcano",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 4 damage to ALL enemies and gain 2 mokoumod:Ignite X times."
+    },
+    {
+      "name": "Fujiyama Volcano+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 7 damage to ALL enemies and gain 3 mokoumod:Ignite X times."
+    },
+    {
+      "name": "Indiscriminate Ignition",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 mokoumod:Ignite to ALL Characters."
+    },
+    {
+      "name": "Indiscriminate Ignition+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 mokoumod:Ignite to ALL Characters."
+    },
+    {
+      "name": "Infernal Wave",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nmokoumod:Burst:\nReduce this card's cost by !MKU:M2! this combat."
+    },
+    {
+      "name": "Infernal Wave+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nGain [E]\nmokoumod:Burst:\nReduce this card's cost by !MKU:M2! this combat."
+    },
+    {
+      "name": "Overheat",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDraw a card."
+    },
+    {
+      "name": "Overheat+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDraw a card.\nAll attacks in your hand deal !MKU:M2! additional damage."
+    },
+    {
+      "name": "Resolute Flare",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nmokoumod:Enkindled\nDeal 9 damage."
+    },
+    {
+      "name": "Resolute Flare+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nmokoumod:Enkindled\nDeal 12 damage."
+    },
+    {
+      "name": "Roaring Flare",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "When drawn, gain 1 mokoumod:Resonance.\nDeal 5 damage."
+    },
+    {
+      "name": "Roaring Flare+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "When drawn, gain 1 mokoumod:Resonance.\nDeal 8 damage."
+    },
+    {
+      "name": "Scorching Column",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf any enemies are mokoumod:Enkindled:\nGain [E] "
+    },
+    {
+      "name": "Scorching Column+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf any enemies are mokoumod:Enkindled:\nGain [E] "
+    },
+    {
+      "name": "Sear",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 mokoumod:Ignite.\nApply !MKU:M2! Vulnerable."
+    },
+    {
+      "name": "Sear+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 mokoumod:Ignite.\nApply !MKU:M2! Vulnerable.\nmokoumod:Burst:\nDraw 2 cards. "
+    },
+    {
+      "name": "Searing Shot",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to ALL enemies.\nIf your HP is <= 50%\napply 1 Weak.\nIf your HP is >= 50%\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Searing Shot+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to ALL enemies.\nIf your HP is <= 50%\napply 2 Weak.\nIf your HP is >= 50%\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Singe",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "mokoumod:Burst:\nDeal 5 damage.\nConvert your mokoumod:Ignite into Vigor."
+    },
+    {
+      "name": "Singe+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "mokoumod:Burst:\nDeal 8 damage.\nConvert your mokoumod:Ignite into Vigor."
+    },
+    {
+      "name": "Stoke",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen this card is in your hand and an enemy gains mokoumod:Ignite, all attacks in your hand deal 2 additional damage.\nExhaust this card at the end of your turn."
+    },
+    {
+      "name": "Stoke+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen this card is in your hand and an enemy gains mokoumod:Ignite, all attacks in your hand deal 3 additional damage.\nExhaust this card at the end of your turn."
+    },
+    {
+      "name": "Temporal Fire Seal",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nmokoumod:Burst:\nEnemy loses 1 Strength."
+    },
+    {
+      "name": "Temporal Fire Seal+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nmokoumod:Burst:\nEnemy loses 2 Strength."
+    },
+    {
+      "name": "Uncontrollable Solar Reaction",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Playable if every enemy is mokoumod:Enkindled\nDeal 14 damage."
+    },
+    {
+      "name": "Uncontrollable Solar Reaction+",
+      "color": "Mku_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Playable if every enemy is mokoumod:Enkindled\nDeal 18 damage."
+    },
+    {
+      "name": "Afterburner",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "mokoumod:Burst:\nGain [E] [E]"
+    },
+    {
+      "name": "Afterburner+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "mokoumod:Burst:\nGain [E] [E]"
+    },
+    {
+      "name": "Burn",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nmokoumod:Burst:\nExhaust a card at random."
+    },
+    {
+      "name": "Burn+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nmokoumod:Burst:\nExhaust a card."
+    },
+    {
+      "name": "Cataclysm",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Exhaust all cards in the discard pile.\nDeal 2 damage for each Exhausted card."
+    },
+    {
+      "name": "Cataclysm+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Exhaust all cards in the discard pile.\nDeal 3 damage for each Exhausted card."
+    },
+    {
+      "name": "Combust",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage.\nmokoumod:Enkindled:\nDeal *50% more."
+    },
+    {
+      "name": "Combust+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage.\nmokoumod:Enkindled:\nDeal *50% more."
+    },
+    {
+      "name": "Controlled Combustion",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "mokoumod:Burst:\nExhaust your hand.\nDraw 6 cards."
+    },
+    {
+      "name": "Controlled Combustion+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "mokoumod:Burst:\nExhaust your hand.\nDraw 7 cards."
+    },
+    {
+      "name": "Crimson Armoury",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain !MKU:HMD! Block.\nScales 2x with damage."
+    },
+    {
+      "name": "Crimson Armoury+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain !MKU:HMD! Block.\nScales 2x with damage."
+    },
+    {
+      "name": "Crimson Flare",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nFor each mokoumod:Enkindled:\nGain 3 mokoumod:Ignite."
+    },
+    {
+      "name": "Crimson Flare+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nFor each mokoumod:Enkindled:\nGain 3 mokoumod:Ignite."
+    },
+    {
+      "name": "Dance of Flames",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When drawn,\nGain 3 mokoumod:Ignite.\nGain 5 Block for each !MKU:M2! mokoumod:Ignite you have."
+    },
+    {
+      "name": "Dance of Flames+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When drawn,\nGain 6 mokoumod:Ignite.\nGain 8 Block for each !MKU:M2! mokoumod:Ignite you have."
+    },
+    {
+      "name": "Fireball",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "mokoumod:Burst:\nDeal 18 damage to ALL enemies."
+    },
+    {
+      "name": "Fireball+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "mokoumod:Burst:\nDeal 24 damage to ALL enemies."
+    },
+    {
+      "name": "Flaming Fire Talons",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDouble your mokoumod:Ignite."
+    },
+    {
+      "name": "Flaming Fire Talons+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDouble your mokoumod:Ignite."
+    },
+    {
+      "name": "Fusion Flare",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 15 damage.\nmokoumod:Burst: Deal 15 damage."
+    },
+    {
+      "name": "Fusion Flare+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage.\nmokoumod:Burst: Deal 20 damage."
+    },
+    {
+      "name": "Guiding Smoke",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nmokoumod:Burst:\nPut a card from your discard pile into your hand."
+    },
+    {
+      "name": "Guiding Smoke+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nmokoumod:Burst:\nPut a card from your discard pile into your hand."
+    },
+    {
+      "name": "Heart of Fire",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you would lose Vigor, gain that much Strength. At the end of that turn, lose that much Strength."
+    },
+    {
+      "name": "Heart of Fire+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you would lose Vigor, gain that much Strength. At the end of that turn, lose that much Strength."
+    },
+    {
+      "name": "Heat Cyclone",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "mokoumod:Burst:\nGain 18 Block.\nGain 2 mokoumod:Resonance."
+    },
+    {
+      "name": "Heat Cyclone+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "mokoumod:Burst:\nGain 22 Block.\nGain 3 mokoumod:Resonance."
+    },
+    {
+      "name": "Heat Factory",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "mokoumod:Burst:\nLose 5 HP.\nRefresh your energy."
+    },
+    {
+      "name": "Heat Factory+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "mokoumod:Burst:\nLose 5 HP.\nRefresh your energy."
+    },
+    {
+      "name": "Heat Transfer",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For each mokoumod:Enkindled:\nDouble their mokoumod:Ignite.\nGain their total mokoumod:Ignite.\nRemove their total mokoumod:Ignite."
+    },
+    {
+      "name": "Heat Transfer+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For each mokoumod:Enkindled:\nTriple their mokoumod:Ignite.\nGain their total mokoumod:Ignite.\nRemove their total mokoumod:Ignite."
+    },
+    {
+      "name": "Icarus Dive",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nWhen this card is in your hand and you Exhaust a card, increase this card's damage by 3."
+    },
+    {
+      "name": "Icarus Dive+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nWhen this card is in your hand and you Exhaust a card, increase this card's damage by 3."
+    },
+    {
+      "name": "Igneous Blow",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nApply mokoumod:Ignite equal to unblocked damage dealt."
+    },
+    {
+      "name": "Igneous Blow+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nApply mokoumod:Ignite equal to unblocked damage dealt."
+    },
+    {
+      "name": "Ignition Barrier",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nWhenever you are attacked this turn, apply 3 mokoumod:Ignite back."
+    },
+    {
+      "name": "Ignition Barrier+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block.\nWhenever you are attacked this turn, apply 3 mokoumod:Ignite back."
+    },
+    {
+      "name": "Ignition Blast",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of each turn, ALL enemies lose HP equal to their mokoumod:Ignite."
+    },
+    {
+      "name": "Ignition Blast+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of each turn, ALL enemies lose HP equal to their mokoumod:Ignite."
+    },
+    {
+      "name": "Illusory Battlefield",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nApply 2 Weak & Vulnerable to ALL Enemies."
+    },
+    {
+      "name": "Illusory Battlefield+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nApply 3 Weak & Vulnerable to ALL Enemies."
+    },
+    {
+      "name": "Imperishable Flame",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This flame cannot be extinguished!\nApply 5 mokoumod:Ignite."
+    },
+    {
+      "name": "Imperishable Flame+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This flame cannot be extinguished!\nApply 7 mokoumod:Ignite."
+    },
+    {
+      "name": "Meltdown",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever mokoumod:Overheat is consumed, gain 6 Block."
+    },
+    {
+      "name": "Meltdown+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever mokoumod:Overheat is consumed, gain 9 Block."
+    },
+    {
+      "name": "Phoenix's Feathers",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust up to 2 cards and gain 1 Energy for each card Exhausted.\nWhen Exhausted, put a card from your exhaust pile into your hand."
+    },
+    {
+      "name": "Phoenix's Feathers+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust up to 2 cards and gain 1 Energy for each card Exhausted.\nWhen Exhausted, put a card from your exhaust pile into your hand and Upgrade it."
+    },
+    {
+      "name": "Refresh",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random mokoumod:Burst card to your hand.\nIt costs 0 turn."
+    },
+    {
+      "name": "Refresh+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 random mokoumod:Burst cards to your hand.\nThey cost 0 this turn."
+    },
+    {
+      "name": "Resonance Reactor",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 mokoumod:Resonance at the end of your turn."
+    },
+    {
+      "name": "Resonance Reactor+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 mokoumod:Resonance at the end of your turn."
+    },
+    {
+      "name": "Retain Temperature",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain !MKU:M2! Vigor.\nYour next attack does not Consume Vigor."
+    },
+    {
+      "name": "Retain Temperature+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain !MKU:M2! Vigor.\nYour next 2 attacks do not consume Vigor."
+    },
+    {
+      "name": "Rising Sun Barrier",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw or Exhaust a card,\nGain 1 Block."
+    },
+    {
+      "name": "Rising Sun Barrier+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw or Exhaust a card,\nGain 2 Block."
+    },
+    {
+      "name": "Scorch",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage 2 times.\nmokoumod:Burst: Gain [E]."
+    },
+    {
+      "name": "Scorch+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 3 times.\nmokoumod:Burst: Gain [E]."
+    },
+    {
+      "name": "Scorched Earth",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, any attacking enemies gain 3 mokoumod:Ignite."
+    },
+    {
+      "name": "Scorched Earth+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, any attacking enemies gain 4 mokoumod:Ignite."
+    },
+    {
+      "name": "Shift Ignition",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 mokoumod:Ignite.\nScales with damage."
+    },
+    {
+      "name": "Shift Ignition+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 mokoumod:Ignite.\nScales with damage."
+    },
+    {
+      "name": "Subterranean Core",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card.\nGain [E]"
+    },
+    {
+      "name": "Subterranean Core+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card.\nGain [E] [E]"
+    },
+    {
+      "name": "ThermalPressure",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 mokoumod:Ignite.\nAll enemies lose HP equal to their mokoumod:Ignite."
+    },
+    {
+      "name": "ThermalPressure+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 8 mokoumod:Ignite.\nAll enemies lose HP equal to their mokoumod:Ignite."
+    },
+    {
+      "name": "Trailblazer",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, mokoumod:Resonance can also be gained when not activating mokoumod:Burst."
+    },
+    {
+      "name": "Trailblazer+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, mokoumod:Resonance can also be gained when not activating mokoumod:Burst."
+    },
+    {
+      "name": "Warm Up",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 mokoumod:Resonance."
+    },
+    {
+      "name": "Warm Up+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 mokoumod:Resonance."
+    },
+    {
+      "name": "Wildfire",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random mokoumod:Ignite card to your hand.\nIt costs 0 turn."
+    },
+    {
+      "name": "Wildfire+",
+      "color": "Mku_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 random mokoumod:Ignite cards to your hand.\nThey cost 0 this turn."
+    },
+    {
+      "name": "Burning Hidden Bullet",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 6 damage.\nDeals 2 additional damage for each card with a mokoumod:Burst effect."
+    },
+    {
+      "name": "Burning Hidden Bullet+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 6 damage.\nDeals 3 additional damage for each card with a mokoumod:Burst effect."
+    },
+    {
+      "name": "Explosive Flame",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you play !MKU:M2! cards in a single turn, deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Explosive Flame+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you play !MKU:M2! cards in a single turn, deal 14 damage to ALL enemies."
+    },
+    {
+      "name": "Extinguish",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Purge your Exhaust pile.\nIf *75% of your master deck was purged, kill all enemies and gain a random rare relic."
+    },
+    {
+      "name": "Extinguish+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Purge your Exhaust pile.\nIf *66% of your master your deck was purged, kill all enemies and gain a random rare relic."
+    },
+    {
+      "name": "Forest of the Lost.",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "This combat, reduce the cost of all your cards by 1.\nAll of your cards gain Exhaust."
+    },
+    {
+      "name": "Forest of the Lost.+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "This combat, reduce the cost of all your cards by 1.\nAll of your cards gain Exhaust."
+    },
+    {
+      "name": "Geothermal",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nIf Fatal:\nGain Overheat at the start of next combat."
+    },
+    {
+      "name": "Geothermal+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nIf Fatal:\nGain Overheat at the start of next combat."
+    },
+    {
+      "name": "Hourai Forge",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain mokoumod:Overheat, Gain 1 more."
+    },
+    {
+      "name": "Hourai Forge+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you gain mokoumod:Overheat, Gain 1 more."
+    },
+    {
+      "name": "Phoenix Form",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Fill the mokoumod:Resonance Gauge.\nmokoumod:Resonance is now halved on use."
+    },
+    {
+      "name": "Phoenix Form+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Fill the mokoumod:Resonance Gauge.\nmokoumod:Resonance is now halved on use."
+    },
+    {
+      "name": "Profaned Flare",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All enemies lose Strength equal to your mokoumod:Ignite."
+    },
+    {
+      "name": "Profaned Flare+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All enemies lose Strength equal to your mokoumod:Ignite."
+    },
+    {
+      "name": "Radiant Blade",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Remove all Block from the enemy.\nDeal 25 damage.\nIf not Fatal:\nDie."
+    },
+    {
+      "name": "Radiant Blade+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Remove all Block from the enemy.\nDeal 30 damage.\nIf not Fatal:\nDie."
+    },
+    {
+      "name": "Rebirth",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "5",
+      "description": "Gain 1 mokoumod:Providence."
+    },
+    {
+      "name": "Rebirth+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 1 mokoumod:Providence."
+    },
+    {
+      "name": "Rekindle",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Move your Exhaust pile into your Discard pile.\nGain 1 [E] and draw 1 card for every 5 cards moved."
+    },
+    {
+      "name": "Rekindle+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Move your Exhaust pile into your Discard pile.\nGain 1 [E] and draw 1 card for every 4 cards moved."
+    },
+    {
+      "name": "Resonating Aura",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Gain Resonance, Gain 1 more."
+    },
+    {
+      "name": "Resonating Aura+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Gain Resonance, Gain 1 more."
+    },
+    {
+      "name": "Sacred Fire",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nmokoumod:Burst:\nPlay a random attack."
+    },
+    {
+      "name": "Sacred Fire+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nmokoumod:Burst:\nPlay a random upgraded attack."
+    },
+    {
+      "name": "Searing Blow",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nWhen this card is in your hand and mokoumod:Resonance is gained, Upgrade this card.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Searing Blow+1",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nWhen this card is in your hand and mokoumod:Resonance is gained, Upgrade this card.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Spontaneous Human Combustion",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, your attacks deal double damage."
+    },
+    {
+      "name": "Spontaneous Human Combustion+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, your attacks deal double damage."
+    },
+    {
+      "name": "Ventilation",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 [E] and 1 mokoumod:Resonance.\nIncrease the [E] and mokoumod:Resonance gained by this card by !MKU:M2!."
+    },
+    {
+      "name": "Ventilation+",
+      "color": "Mku_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 [E] and 1 mokoumod:Resonance.\nIncrease the [E] and mokoumod:Resonance gained by this card by !MKU:M2!."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Phoenix Feather",
+      "tier": "Starter",
+      "pool": "Mku_red_color",
+      "description": "Instead of losing all Vigor, lose 75% instead.",
+      "flavorText": "A fiery-red feather shed from a phoenix.Its feathers are patterned like a flame."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Immortal",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+  ]
+}
