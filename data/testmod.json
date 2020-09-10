@@ -1,10 +1,10 @@
 {
   "mod": {
-    "name": "TestMod(\u5F7C\u541BMod)",
-    "version": "2.0.8",
+    "name": "TestMod",
+    "version": "3.8.1",
     "authors": ["\u5F7C\u541B\u4E0D\u89E6"],
-    "credits": "",
-    "description": "\u5F00\u5C40\u9009\u62E9\u9057\u7269\u6216\u65E0\u8272\u724C\u4E4B\u540E\u53EF\u4EE5\u518D\u8FDB\u884C\u4E00\u6B21\u5BF9\u5E94\u7684\u53EF\u653E\u5F03\u76843\u90091\u6765\u83B7\u5F97\u521D\u59CB\u5956\u52B1\u3002\u8BD5\u505A\u4E86\u4E24\u4E2A\u4E8B\u4EF6\u548C3\u74F6\u836F\u6C34\u3002\u9700\u8981BaseMod\u548CSTSLib\u652F\u6301\u3002",
+    "credits": "localization:\n\u5F7C\u541B\u4E0D\u89E6 (Simplified Chinese)\nbrkfox (English)\n\u5F7C\u541B\u4E0D\u89E6 (English)",
+    "description": "You may choose relic or card reward and then choose 1 from 3 of that type from this mod at start of each run. Require 'STSLib'. \n\n\u5F00\u5C40\u9009\u62E9\u9057\u7269\u6216\u65E0\u8272\u724C\u4E4B\u540E\u53EF\u4EE5\u518D\u8FDB\u884C\u4E00\u6B21\u5BF9\u5E94\u7684\u53EF\u653E\u5F03\u76843\u90091\u6765\u83B7\u5F97\u521D\u59CB\u5956\u52B1\u3002\u8BD5\u505A\u4E86\u4E24\u4E2A\u4E8B\u4EF6\u548C4\u74F6\u836F\u6C34\u3002\u9700\u8981BaseMod\u548CSTSLib\u652F\u6301\u3002",
     "mts_version": "0.0.0",
     "sts_version": "",
     "dependencies": ["basemod","stslib"],
@@ -12,1174 +12,1977 @@
   },
   "cards": [
     {
-      "name": "\u5B8C\u7F8E\u8FDE\u51FB",
+      "name": "1 Man",
       "color": "Colorless",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "\u9020\u6210 15 \u70B9\u4F24\u5BB3\u3002\u80FD\u88AB\u591A\u6B21 \u5347\u7EA7 \u3002\u653B\u51FB\u65F6\uFF0C\u6709 20 %\u51E0\u7387\u518D\u653B\u51FB\u968F\u673A\u76EE\u6807\u4E00\u6B21\u3002\u4F60\u6BCF\u6709\u4E00\u5F20\u724C \u5347\u7EA7 \u8FC7\u4E00\u6B21\uFF0C\u51E0\u7387+1%\u3002"
-    },
-    {
-      "name": "\u5B8C\u7F8E\u8FDE\u51FB+1",
-      "color": "Colorless",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "\u9020\u6210 15 \u70B9\u4F24\u5BB3\u3002\u80FD\u88AB\u591A\u6B21 \u5347\u7EA7 \u3002\u653B\u51FB\u65F6\uFF0C\u6709 21 %\u51E0\u7387\u518D\u653B\u51FB\u968F\u673A\u76EE\u6807\u4E00\u6B21\u3002\u4F60\u6BCF\u6709\u4E00\u5F20\u724C \u5347\u7EA7 \u8FC7\u4E00\u6B21\uFF0C\u51E0\u7387+1%\u3002"
-    },
-    {
-      "name": "\u6311\u8845",
-      "color": "Colorless",
-      "rarity": "Uncommon",
+      "rarity": "Special",
       "type": "Skill",
-      "cost": "1",
-      "description": "\u83B7\u5F97 3 \u70B9 \u529B\u91CF \uFF0C\u4F7F\u654C\u4EBA\u83B7\u5F971\u5C42\u751F\u6C14\u3002"
+      "cost": "0",
+      "description": "Draw 1 cards. Exhaust. Ethereal."
     },
     {
-      "name": "\u6311\u8845+",
+      "name": "1 Man+",
       "color": "Colorless",
-      "rarity": "Uncommon",
+      "rarity": "Special",
       "type": "Skill",
-      "cost": "1",
-      "description": "\u83B7\u5F97 4 \u70B9 \u529B\u91CF \uFF0C\u4F7F\u654C\u4EBA\u83B7\u5F971\u5C42\u751F\u6C14\u3002"
+      "cost": "0",
+      "description": "Draw 2 cards. Exhaust. Ethereal."
     },
     {
-      "name": "\u638C\u4E0A\u5386\u77F3",
+      "name": "1 Pin",
       "color": "Colorless",
-      "rarity": "Uncommon",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Block. Next turn, Gain 1 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "1 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block. Next turn, Gain 2 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "1 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "\u9020\u6210\u56DE\u5408\u6570\u7684\u5E73\u65B9\u70B9\u4F24\u5BB3\u3002\u6253\u51FA\u8FD9\u5F20\u724C\u65F6\u5728\u672C\u573A\u6218\u6597\u8017\u80FD\u589E\u52A0 2 \u3002\u62BD\u5230\u8FD9\u5F20\u724C\u65F6\u5728\u672C\u573A\u6218\u6597\u8017\u80FD\u964D\u4F4E1\u3002"
+      "description": "Deal 1 damage to all enemies. Exhaust. Ethereal."
     },
     {
-      "name": "\u638C\u4E0A\u5386\u77F3+",
+      "name": "1 Sou+",
       "color": "Colorless",
-      "rarity": "Uncommon",
+      "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "\u9020\u6210\u56DE\u5408\u6570\u7684\u5E73\u65B9\u70B9\u4F24\u5BB3\u3002\u6253\u51FA\u8FD9\u5F20\u724C\u65F6\u5728\u672C\u573A\u6218\u6597\u8017\u80FD\u589E\u52A0 1 \u3002\u62BD\u5230\u8FD9\u5F20\u724C\u65F6\u5728\u672C\u573A\u6218\u6597\u8017\u80FD\u964D\u4F4E1\u3002"
+      "description": "Deal 2 damage to all enemies. Exhaust. Ethereal."
     },
     {
-      "name": "\u6590\u6CE2\u90A3\u5951\u7684\u5154\u5B50",
+      "name": "2 Man",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Scry 1 cards. Exhaust. Ethereal."
+    },
+    {
+      "name": "2 Man+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Scry 2 cards. Exhaust. Ethereal."
+    },
+    {
+      "name": "2 Pin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "2 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "2 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage. Exhaust. Ethereal."
+    },
+    {
+      "name": "2 Sou+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage. Exhaust. Ethereal."
+    },
+    {
+      "name": "3 Man",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Upgrade a card in your hand 1 times. Exhaust. Ethereal."
+    },
+    {
+      "name": "3 Man+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Upgrade all cards in your hand. Exhaust. Ethereal."
+    },
+    {
+      "name": "3 Pin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block. Next turn, Gain 3 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "3 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block. Next turn, Gain 4 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "3 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage to random enemy 2 times. Exhaust. Ethereal."
+    },
+    {
+      "name": "3 Sou+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage to random enemy 3 times. Exhaust. Ethereal."
+    },
+    {
+      "name": "4 Man",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 cards from draw pile add into your hand. Exhaust. Ethereal."
+    },
+    {
+      "name": "4 Man+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 2 cards from draw pile add into your hand. Exhaust. Ethereal."
+    },
+    {
+      "name": "4 Pin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "4 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "4 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage to all enemies. Exhaust. Ethereal."
+    },
+    {
+      "name": "4 Sou+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage to all enemies. Exhaust. Ethereal."
+    },
+    {
+      "name": "5 Man",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 1 random Mahjong into your hand.Exhaust. Ethereal."
+    },
+    {
+      "name": "5 Man+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 random Mahjong into your hand.Exhaust. Ethereal."
+    },
+    {
+      "name": "5 Pin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block. Next turn, Gain 5 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "5 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Block. Next turn, Gain 6 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "5 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. Exhaust. Ethereal."
+    },
+    {
+      "name": "5 Sou+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage. Exhaust. Ethereal."
+    },
+    {
+      "name": "6 Man",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 1 card fron discard pile into your hand. Exhaust. Ethereal."
+    },
+    {
+      "name": "6 Man+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 2 card fron discard pile into your hand. Exhaust. Ethereal."
+    },
+    {
+      "name": "6 Pin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "6 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "6 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage to random enemy 2 times. Exhaust. Ethereal."
+    },
+    {
+      "name": "6 Sou+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage to random enemy 3 times. Exhaust. Ethereal."
+    },
+    {
+      "name": "7 Man",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Exhume 1 cards Exhaust. Ethereal."
+    },
+    {
+      "name": "7 Man+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Exhume 2 cards Exhaust. Ethereal."
+    },
+    {
+      "name": "7 Pin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block. Next turn, Gain 7 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "7 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block. Next turn, Gain 8 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "7 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage to all enemies. Exhaust. Ethereal."
+    },
+    {
+      "name": "7 Sou+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage to all enemies. Exhaust. Ethereal."
+    },
+    {
+      "name": "8 Man",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Exhaust 1 cards in your hand. Exhaust. Ethereal."
+    },
+    {
+      "name": "8 Man+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Exhaust 2 cards in your hand. Exhaust. Ethereal."
+    },
+    {
+      "name": "8 Pin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "8 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 9 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "8 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. Exhaust. Ethereal."
+    },
+    {
+      "name": "8 Sou+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage. Exhaust. Ethereal."
+    },
+    {
+      "name": "9 Man",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Discard 1 cards in your hand. Exhaust. Ethereal."
+    },
+    {
+      "name": "9 Man+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Discard 2 cards in your hand. Exhaust. Ethereal."
+    },
+    {
+      "name": "9 Pin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 9 Block. Next turn, Gain 9 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "9 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 10 Block. Next turn, Gain 10 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "9 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage to random enemy 2 times. Exhaust. Ethereal."
+    },
+    {
+      "name": "9 Sou+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage to random enemy 3 times. Exhaust. Ethereal."
+    },
+    {
+      "name": "Candy",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 4 HP.\nUpgrade all cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Candy+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 4 HP.\nUpgrade ALL your cards for the rest of combat."
+    },
+    {
+      "name": "East",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever play a Mahjong card, Gain 1 Regen, Gain 1 Plated Armor. Ethereal."
+    },
+    {
+      "name": "East+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever play a Mahjong card, Gain 1 Regen, Gain 2 Plated Armor. Ethereal."
+    },
+    {
+      "name": "Ghost Costume",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 random power."
+    },
+    {
+      "name": "Ghost Costume+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 random power. At the start of your turn, gain 1 random power."
+    },
+    {
+      "name": "Green",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever play a Mahjong card, for each enemy Gain 1 Gold. Ethereal."
+    },
+    {
+      "name": "Green+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever play a Mahjong card, for each enemy Gain 2 Gold. Ethereal."
+    },
+    {
+      "name": "Halloween",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength and Dexterity. Gain [R]  and draw 1 card.\nCan be Upgraded any number of times. Exhaust."
+    },
+    {
+      "name": "Halloween+1",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Strength and Dexterity. Gain [R]  [R]  and draw 2 cards.\nCan be Upgraded any number of times. Exhaust."
+    },
+    {
+      "name": "North",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "When you would die next 1 times, heal to 1% of your max HP instead. Each cards you play increase 1% of your Max HP heal instead, reset after every resurrection. Ethereal."
+    },
+    {
+      "name": "North+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "When you would die next 2 times, heal to 1% of your max HP instead. Each cards you play increase 1% of your Max HP heal instead, reset after every resurrection. Ethereal."
+    },
+    {
+      "name": "Red",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of turn, trigger 1 times Mahjong Relic. Ethereal."
+    },
+    {
+      "name": "Red 5 Man",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 random Mahjong into your hand.Exhaust. Ethereal."
+    },
+    {
+      "name": "Red 5 Man+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 4 random Mahjong into your hand.Exhaust. Ethereal."
+    },
+    {
+      "name": "Red 5 Pin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 10 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "Red 5 Pin+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 11 Block. Exhaust. Ethereal."
+    },
+    {
+      "name": "Red 5 Sou",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage. Exhaust. Ethereal."
+    },
+    {
+      "name": "Red 5 Sou+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 11 damage. Exhaust. Ethereal."
+    },
+    {
+      "name": "Red+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of turn, trigger 2 times Mahjong Relic. Ethereal."
+    },
+    {
+      "name": "South",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever play a Mahjong card, Gain 1 Mantra. Ethereal."
+    },
+    {
+      "name": "South+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever play a Mahjong card, Gain 2 Mantra. Ethereal."
+    },
+    {
+      "name": "Trick",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies. Draw 1 card for each layer of Artifact. Gain 1 Artifact for each kind of debuff. Gain 1 temporary Strength."
+    },
+    {
+      "name": "Trick+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies. Draw 1 card for each layer of Artifact. Gain 1 Artifact for each kind of debuff. Gain 2 temporary Strength."
+    },
+    {
+      "name": "West",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever play a non-Attack card, multiplicatively increase your attack damage by 1 %. Ethereal."
+    },
+    {
+      "name": "West+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever play a non-Attack card, multiplicatively increase your attack damage by 2 %. Ethereal."
+    },
+    {
+      "name": "White",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Remove all your debuff, Gain 1 Artifact. Ethereal."
+    },
+    {
+      "name": "White+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Remove all your debuff, Gain 2 Artifact. Ethereal."
+    },
+    {
+      "name": "Automaton",
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "\u83B7\u5F97 1 \u70B9\u683C\u6321\u3002\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210 1 \u70B9\u4F24\u5BB3\u3002\u5C06\u8FD9\u5F20\u724C\u5728\u672C\u573A\u6218\u6597\u4E2D \u5347\u7EA7 \u4E00\u6B21\u3002\u80FD\u88AB\u591A\u6B21 \u5347\u7EA7 \u3002"
+      "description": "Whenever Auto-played, damage times +1 in this run. Damage times -1 in this combat. Deal 8 damage to random enemy 1 time."
     },
     {
-      "name": "\u6590\u6CE2\u90A3\u5951\u7684\u5154\u5B50+1",
+      "name": "Automaton+",
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "\u83B7\u5F97 2 \u70B9\u683C\u6321\u3002\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210 2 \u70B9\u4F24\u5BB3\u3002\u5C06\u8FD9\u5F20\u724C\u5728\u672C\u573A\u6218\u6597\u4E2D \u5347\u7EA7 \u4E00\u6B21\u3002\u80FD\u88AB\u591A\u6B21 \u5347\u7EA7 \u3002"
+      "description": "Whenever Auto-played, damage times +1 in this run. Damage times -1 in this combat. Deal 12 damage to random enemy 1 time."
     },
     {
-      "name": "\u6761\u4EF6\u53CD\u5C04",
-      "color": "Colorless",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "\u6BCF\u5931\u53BB\u4E00\u6B21\u751F\u547D\uFF0C\u83B7\u5F97 1 \u5C42 \u67D4\u97E7 \uFF0C\u5E76\u5728\u4E0B\u56DE\u5408\u5F00\u59CB\u65F6\u4F7F\u5176\u751F\u65481\u6B21\u3002"
-    },
-    {
-      "name": "\u6761\u4EF6\u53CD\u5C04+",
-      "color": "Colorless",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "\u6BCF\u5931\u53BB\u4E00\u6B21\u751F\u547D\uFF0C\u83B7\u5F97 2 \u5C42 \u67D4\u97E7 \uFF0C\u5E76\u5728\u4E0B\u56DE\u5408\u5F00\u59CB\u65F6\u4F7F\u5176\u751F\u65481\u6B21\u3002"
-    },
-    {
-      "name": "\u71C3\u70E7\u6781\u9650",
+      "name": "Backup Power",
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "\u5982\u679C\u4F60\u6253\u51FA\u7684\u4E0A\u4E00\u5F20\u724C\u4E5F\u662F\u71C3\u70E7\u6781\u9650\uFF0C\u5C06\u4F60\u7684 \u529B\u91CF \u7FFB\u500D\u3002\u5426\u5219\u83B7\u5F97 1 \u70B9 \u529B\u91CF \u3002"
+      "description": "Gain [E] [E]. If still in your hand at the end of the turn, Gain [E] next turn."
     },
     {
-      "name": "\u71C3\u70E7\u6781\u9650+",
+      "name": "Backup Power+",
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "\u5982\u679C\u4F60\u6253\u51FA\u7684\u4E0A\u4E00\u5F20\u724C\u4E5F\u662F\u71C3\u70E7\u6781\u9650\uFF0C\u5C06\u4F60\u7684 \u529B\u91CF \u7FFB\u500D\u3002\u5426\u5219\u83B7\u5F97 2 \u70B9 \u529B\u91CF \u3002"
+      "description": "Gain [E] [E] [E]. If still in your hand at the end of the turn, Gain [E] next turn."
     },
     {
-      "name": "\u4E34\u65F6\u5220\u9664",
+      "name": "Bloodthirsty",
       "color": "Colorless",
-      "rarity": "Rare",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Target lose 5 % of its Max HP, heal same amount. Double ratios of all 'Bloodthirsty'. Whenever other card played, decrease 2% (down to 1%)."
+    },
+    {
+      "name": "Bloodthirsty+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Target lose 7 % of its Max HP, heal same amount. Double ratios of all 'Bloodthirsty'. Whenever other card played, decrease 1% (down to 1%)."
+    },
+    {
+      "name": "Combo Master",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 1 damage to all enemies 1 times. Increase the damage and times of this card by 1 this combat."
+    },
+    {
+      "name": "Combo Master+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage to all enemies 2 times. Increase the damage and times of this card by 1 this combat."
+    },
+    {
+      "name": "Conditioned Reflex",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose HP: Gain 1 Melleable; at the start of your next turn, make it active 1 time."
+    },
+    {
+      "name": "Conditioned Reflex+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose HP: Gain 2 Melleable; at the start of your next turn, make it active 1 time."
+    },
+    {
+      "name": "Death Imprint",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage. If target has Imprint, remove it and increase base damage by 80 % of its amount. Otherwise, give Imprint."
+    },
+    {
+      "name": "Death Imprint+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage. If target has Imprint, remove it and increase base damage by 100 % of its amount. Otherwise, give Imprint."
+    },
+    {
+      "name": "Handmade Products",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage of the product of all cards' cost in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times."
+    },
+    {
+      "name": "Handmade Products+1",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage of the product of all cards' cost in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times."
+    },
+    {
+      "name": "Handmade Products+1",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage of the product of all cards' cost in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times."
+    },
+    {
+      "name": "Head Attack",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Change enemy's intention to next turn. Draw 1 cards. Ethereal."
+    },
+    {
+      "name": "Head Attack+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Change enemy's intention to next turn. Draw 2 cards. Ethereal."
+    },
+    {
+      "name": "Life Ruler",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply the maximum of the greatest common divisor of enemy's max-HP or HP Constricted. Exhaust."
+    },
+    {
+      "name": "Life Ruler+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply the maximum of the greatest common divisor of enemy's max-HP or HP Constricted."
+    },
+    {
+      "name": "Limit Flipper",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If last card you play is 'Limit Flipper', double your Strength. Otherwise Gain 1 Strength."
+    },
+    {
+      "name": "Limit Flipper+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If last card you play is 'Limit Flipper', double your Strength. Otherwise Gain 2 Strength."
+    },
+    {
+      "name": "Pain Detonator",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage of 30 % of HP Loss of the target ( 0 )."
+    },
+    {
+      "name": "Pain Detonator+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage of 50 % of HP Loss of the target ( 0 )."
+    },
+    {
+      "name": "Perfect Combo",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage. Can be Upgraded any number of times. When Attack, 20 % chance to attack a random enemy again. Each Upgrade, Gain 1% probability."
+    },
+    {
+      "name": "Perfect Combo+1",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage. Can be Upgraded any number of times. When Attack, 21 % chance to attack a random enemy again. Each Upgrade, Gain 1% probability."
+    },
+    {
+      "name": "Pocket Stone Calender",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage of square of turn number. Increase this cards cost by 2 this combat. Whenever you draw this card, reduce its cost by 1 this combat."
+    },
+    {
+      "name": "Pocket Stone Calender+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage of square of turn number. Increase this cards cost by 1 this combat. Whenever you draw this card, reduce its cost by 1 this combat."
+    },
+    {
+      "name": "Provocation",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Strength, Apply 1 Angry."
+    },
+    {
+      "name": "Provocation+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Strength, Apply 1 Angry."
+    },
+    {
+      "name": "Rabbit of Fibonacci",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 1 Block. Deal 1 damage to all enemies. Upgrade this card in this combat. Can be Upgraded any number of time."
+    },
+    {
+      "name": "Rabbit of Fibonacci+1",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 1 Block. Deal 1 damage to all enemies. Upgrade this card in this combat. Can be Upgraded any number of time."
+    },
+    {
+      "name": "Substitute by Subterfuge",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] . Choose any cards from draw pile and discard them, at the same time, shuffle discard pile into draw pile. Exhaust."
+    },
+    {
+      "name": "Substitute by Subterfuge+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] . Choose any cards from draw pile and discard them, at the same time, shuffle discard pile into draw pile."
+    },
+    {
+      "name": "Temporary Deletion",
+      "color": "Colorless",
+      "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "\u9009\u62E9\u4E00\u5F20\u724C\uFF0C\u5C06\u4E0E\u5176\u7A00\u6709\u5EA6\u76F8\u540C\u7684\u6240\u6709\u724C\u4ECE\u672C\u573A\u6218\u6597\u79FB\u9664\u3002\u6BCF\u56DE\u5408\u5F00\u59CB\u5C06\u4E00\u5F20\u5176\u7A00\u6709\u5EA6\u7684\u968F\u673A\u724C\u52A0\u5165\u624B\u724C\u3002 \u865A\u65E0 \u3002"
+      "description": "Choose a card, remove the same Rarity cards from deck this combat.At the start of turn, add a same Rarity random card into your hand. Ethereal."
     },
     {
-      "name": "\u4E34\u65F6\u5220\u9664+",
+      "name": "Temporary Deletion+",
       "color": "Colorless",
-      "rarity": "Rare",
+      "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "\u9009\u62E9\u4E00\u5F20\u724C\uFF0C\u5C06\u4E0E\u5176\u7A00\u6709\u5EA6\u76F8\u540C\u7684\u6240\u6709\u724C\u4ECE\u672C\u573A\u6218\u6597\u79FB\u9664\u3002\u6BCF\u56DE\u5408\u5F00\u59CB\u5C06\u4E00\u5F20\u5176\u7A00\u6709\u5EA6\u7684\u968F\u673A\u724C\u52A0\u5165\u624B\u724C\u3002 \u865A\u65E0 \u3002"
+      "description": "Choose a card, remove the same Rarity cards from deck this combat.At the start of turn, add a same Rarity random card into your hand. Ethereal."
     },
     {
-      "name": "\u4EE5\u65E7\u6362\u65B0",
+      "name": "Weakness Counterattack",
       "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
+      "rarity": "Uncommon",
+      "type": "Attack",
       "cost": "1",
-      "description": " \u6D88\u8017 \u4EFB\u610F\u5F20\u624B\u724C\u3002\u4ECE\u62BD\u724C\u5806\u4E2D\u9009\u62E9\u7B49\u91CF\u7684\u724C\u653E\u5165\u624B\u724C\uFF0C\u5176\u8017\u80FD\u5728\u672C\u56DE\u5408\u964D\u4F4E 1 \u4E14\u6253\u51FA\u65F6 \u6D88\u8017 \u3002 \u6D88\u8017 \u3002 \u865A\u65E0 \u3002"
+      "description": "Deal 6 to random enemy 1 times. Deal 1 more time for each time enemies intent to Attack."
     },
     {
-      "name": "\u4EE5\u65E7\u6362\u65B0+",
+      "name": "Weakness Counterattack+",
       "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
+      "rarity": "Uncommon",
+      "type": "Attack",
       "cost": "1",
-      "description": " \u6D88\u8017 \u4EFB\u610F\u5F20\u624B\u724C\u3002\u4ECE\u62BD\u724C\u5806\u4E2D\u9009\u62E9\u7B49\u91CF\u7684\u724C\u653E\u5165\u624B\u724C\uFF0C\u5176\u8017\u80FD\u5728\u672C\u56DE\u5408\u964D\u4F4E 2 \u4E14\u6253\u51FA\u65F6 \u6D88\u8017 \u3002 \u6D88\u8017 \u3002 \u865A\u65E0 \u3002"
+      "description": "Deal 6 to random enemy 2 times. Deal 1 more time for each time enemies intent to Attack."
     },
     {
-      "name": "\u5077\u5929\u6362\u65E5",
+      "name": "Adversity Counterattack",
       "color": "Colorless",
       "rarity": "Rare",
-      "type": "Skill",
-      "cost": "0",
-      "description": "\u83B7\u5F97 [R] \u3002\u4ECE\u4F60\u7684\u62BD\u724C\u5806\u4E2D\u9009\u62E9\u4E22\u5F03\u4EFB\u610F\u5F20\u724C\u3002\u540C\u65F6\u5C06\u4F60\u7684\u5F03\u724C\u5806\u6D17\u724C\u540E\u653E\u5165\u4F60\u7684\u62BD\u724C\u5806\u3002 \u6D88\u8017 \u3002"
-    },
-    {
-      "name": "\u5077\u5929\u6362\u65E5+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "0",
-      "description": "\u83B7\u5F97 [R] \u3002\u4ECE\u4F60\u7684\u62BD\u724C\u5806\u4E2D\u9009\u62E9\u4E22\u5F03\u4EFB\u610F\u5F20\u724C\u3002\u540C\u65F6\u5C06\u4F60\u7684\u5F03\u724C\u5806\u6D17\u724C\u540E\u653E\u5165\u4F60\u7684\u62BD\u724C\u5806\u3002"
-    },
-    {
-      "name": "\u5173\u673A",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
+      "type": "Attack",
       "cost": "1",
-      "description": "\u6BCF\u56DE\u5408\u5C061\u5F20\u91CD\u542F\u653E\u5165\u624B\u724C\u3002"
+      "description": "Apply 1 Artifact. Gain 1 Vulnerable and 1 Intangible. Deal the sum of enemy's Buff damage to a random enemy the sum of your Debuff times."
     },
     {
-      "name": "\u5173\u673A+",
+      "name": "Adversity Counterattack+",
       "color": "Colorless",
       "rarity": "Rare",
-      "type": "Power",
+      "type": "Attack",
       "cost": "1",
-      "description": "\u6BCF\u56DE\u5408\u5C061\u5F20\u91CD\u542F+\u653E\u5165\u624B\u724C\u3002"
+      "description": "Apply 2 Artifact. Gain 2 Vulnerable and 1 Intangible. Deal the sum of enemy's Buff damage to a random enemy the sum of your Debuff times."
     },
     {
-      "name": "\u524D\u60C5\u63D0\u8981",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\uFF0C\u6253\u51FA\u4F60\u4E0A\u4E00\u56DE\u5408\u6253\u51FA\u7684\u6700\u540E 1 \u5F20\u724C\u4E00\u6B21\u3002(\u9650\u73A9\u5BB6\u6253\u51FA)"
-    },
-    {
-      "name": "\u524D\u60C5\u63D0\u8981+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\uFF0C\u6253\u51FA\u4F60\u4E0A\u4E00\u56DE\u5408\u6253\u51FA\u7684\u6700\u540E 1 \u5F20\u724C\u4E00\u6B21\u3002(\u9650\u73A9\u5BB6\u6253\u51FA)"
-    },
-    {
-      "name": "\u5361\u724C\u7D22\u5F15",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "3",
-      "description": "\u521D\u6B21\u65F6\uFF0C\u4ECE\u4F60\u7684\u724C\u4E2D\u9009\u62E9 2 \u5F20\u724C\u4ECE\u6218\u6597\u79FB\u9664\u3002\u4E4B\u540E\u6253\u51FA\u4F1A\u89C6\u4F5C\u4F9D\u6B21\u6253\u51FA\u8FD9\u4E9B\u724C\u3002"
-    },
-    {
-      "name": "\u5361\u724C\u7D22\u5F15+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "3",
-      "description": "\u521D\u6B21\u65F6\uFF0C\u4ECE\u4F60\u7684\u724C\u4E2D\u9009\u62E9 3 \u5F20\u724C\u4ECE\u6218\u6597\u79FB\u9664\u3002\u4E4B\u540E\u6253\u51FA\u4F1A\u89C6\u4F5C\u4F9D\u6B21\u6253\u51FA\u8FD9\u4E9B\u724C\u3002"
-    },
-    {
-      "name": "\u53CD\u5C04",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u5728\u8FD9\u4E2A\u56DE\u5408\uFF0C\u4F60\u7684\u4E0B 1 \u5F20\u975E \u8BC5\u5492 \u3001 \u72B6\u6001 \u7684\u724C\u4F1A\u6253\u51FA\u4E24\u6B21\u3002"
-    },
-    {
-      "name": "\u53CD\u5C04+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u5728\u8FD9\u4E2A\u56DE\u5408\uFF0C\u4F60\u7684\u4E0B 2 \u5F20\u975E \u8BC5\u5492 \u3001 \u72B6\u6001 \u7684\u724C\u4F1A\u6253\u51FA\u4E24\u6B21\u3002"
-    },
-    {
-      "name": "\u540C\u5316\u7B26\u6587",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u5728\u672C\u56DE\u5408\u5185\uFF0C\u5C06\u5F53\u524D\u624B\u724C\u4E2D\u6240\u6709\u724C\u7684\u57FA\u7840\u4F24\u5BB3\u3001\u57FA\u7840\u683C\u6321\u63D0\u5347\u5230\u5F53\u524D\u624B\u724C\u4E2D\u7684\u6700\u9AD8\u503C\u3002"
-    },
-    {
-      "name": "\u540C\u5316\u7B26\u6587+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u5728\u672C\u56DE\u5408\u5185\uFF0C\u5C06\u5F53\u524D\u624B\u724C\u4E2D\u6240\u6709\u724C\u7684\u57FA\u7840\u4F24\u5BB3\u3001\u57FA\u7840\u683C\u6321\u63D0\u5347\u5230\u4F60\u6240\u6709\u724C\u4E2D\u7684\u6700\u9AD8\u503C\u3002"
-    },
-    {
-      "name": "\u55DC\u8840\u6210\u6027",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u5438\u53D6\u654C\u4EBA 5 %\u6700\u5927\u751F\u547D\u70B9\u751F\u547D\u3002\u5438\u8840\u540E\uFF0C\u5168\u55DC\u8840\u6210\u6027\u6BD4\u4F8B\u7FFB\u500D\u3002\u6253\u51FA\u5176\u4ED6\u724C\u964D\u4F4E2%(\u6700\u4F4E\u964D\u81F31%)\u3002"
-    },
-    {
-      "name": "\u55DC\u8840\u6210\u6027+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u5438\u53D6\u654C\u4EBA 7 %\u6700\u5927\u751F\u547D\u70B9\u751F\u547D\u3002\u5438\u8840\u540E\uFF0C\u5168\u55DC\u8840\u6210\u6027\u6BD4\u4F8B\u7FFB\u500D\u3002\u6253\u51FA\u5176\u4ED6\u724C\u964D\u4F4E1%(\u6700\u4F4E\u964D\u81F31%)\u3002"
-    },
-    {
-      "name": "\u5907\u7528\u80FD\u6E90",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u83B7\u5F97 [R]  [R] \u3002\u5982\u679C\u56DE\u5408\u7ED3\u675F\u65F6\u7559\u5728\u624B\u4E2D\uFF0C\u4E0B\u56DE\u5408\u5F00\u59CB\u83B7\u5F97 [R] \u3002"
-    },
-    {
-      "name": "\u5907\u7528\u80FD\u6E90+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u83B7\u5F97 [R]  [R]  [R] \u3002\u5982\u679C\u56DE\u5408\u7ED3\u675F\u65F6\u7559\u5728\u624B\u4E2D\uFF0C\u4E0B\u56DE\u5408\u5F00\u59CB\u83B7\u5F97 [R] \u3002"
-    },
-    {
-      "name": "\u590D\u8BFB\u5F62\u6001",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u9009\u62E9\u4E00\u5F20\u724C\u4ECE\u672C\u573A\u6218\u6597\u4E2D\u79FB\u9664\u3002\u6BCF\u56DE\u5408\u5C061\u5F20\u5176\u590D\u5236\u54C1\u52A0\u5165\u624B\u724C\u3002 \u865A\u65E0 \u3002"
-    },
-    {
-      "name": "\u590D\u8BFB\u5F62\u6001+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u9009\u62E9\u4E00\u5F20\u724C\u4ECE\u672C\u573A\u6218\u6597\u4E2D\u79FB\u9664\u3002\u6BCF\u56DE\u5408\u5C061\u5F20\u5176\u590D\u5236\u54C1\u52A0\u5165\u624B\u724C\u3002"
-    },
-    {
-      "name": "\u5934\u90E8\u653B\u51FB",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "0",
-      "description": "\u4F7F\u654C\u4EBA\u610F\u56FE\u6539\u53D8\u4E3A\u5176\u4E0B\u4E00\u56DE\u5408\u7684\u610F\u56FE\u3002\u62BD 1 \u5F20\u724C\u3002 \u865A\u65E0 \u3002"
-    },
-    {
-      "name": "\u5934\u90E8\u653B\u51FB+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "0",
-      "description": "\u4F7F\u654C\u4EBA\u610F\u56FE\u6539\u53D8\u4E3A\u5176\u4E0B\u4E00\u56DE\u5408\u7684\u610F\u56FE\u3002\u62BD 2 \u5F20\u724C\u3002 \u865A\u65E0 \u3002"
-    },
-    {
-      "name": "\u5B89\u6392\u4E00\u4E0B",
+      "name": "Arrangement",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "X",
-      "description": "\u83B7\u5F97X\u70B9 \u683C\u6321 \u3002\u9020\u6210X\u70B9\u4F24\u5BB3\u3002\u62BDX\u5F20\u724C\u3002 \u5347\u7EA7 \u6700\u591AX\u5F20\u624B\u724C\u4E2D\u7684\u724C\uFF0C\u6BCF\u5C11 \u5347\u7EA7 \u4E00\u5F20\uFF0C\u83B7\u5F97 [R] \u3002 \u6D88\u8017 \u3002"
+      "description": "Gain X Block. Deal X damage. Draw X cards. Upgrade X cards in your hand, for each Upgrade less, Gain [R] . Exhaust."
     },
     {
-      "name": "\u5B89\u6392\u4E00\u4E0B+",
+      "name": "Arrangement+",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "X",
-      "description": "\u83B7\u5F97 1 \u70B9 \u683C\u6321 X\u6B21\u3002\u9020\u6210 1 \u70B9\u4F24\u5BB3X\u6B21\u3002\u62BDX\u5F20\u724C\u3002 \u5347\u7EA7 \u6700\u591AX\u5F20\u624B\u724C\u4E2D\u7684\u724C\uFF0C\u6BCF\u5C11 \u5347\u7EA7 \u4E00\u5F20\uFF0C\u83B7\u5F97 [R] \u3002 \u6D88\u8017 \u3002"
+      "description": "Gain 1 Block X times. Deal 1 damage X times. Deal X cards. Upgrade X cards in your hand, for each Upgrade less, Gain [R] . Exhaust."
     },
     {
-      "name": "\u5B8C\u5168\u652F\u914D",
+      "name": "Assimilated Rune",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "\u4F60\u6253\u51FA\u7684\u4E0B\u4E00\u5F20\u653B\u51FB\u724C\u7684\u4F24\u5BB3\u7FFB\u500D\uFF0C\u4F46\u5176\u5C06\u88AB\u6D88\u8017\u3002"
+      "description": "Increase base damage and block of cards in your hand to the maximum in your hand in 1 turns."
     },
     {
-      "name": "\u5B8C\u5168\u652F\u914D+",
+      "name": "Assimilated Rune+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase base damage and block of cards in your hand to the maximum in your deck in 1 turns."
+    },
+    {
+      "name": "Auto Rebound System",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, Gain [R] Draw 1 cards. Put the first 1 cards you play this turn back on the top of your draw pile."
+    },
+    {
+      "name": "Auto Rebound System+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, Gain [R] [R] Draw 2 cards. Put the first 2 cards you play this turn back on the top of your draw pile."
+    },
+    {
+      "name": "Blood Blade",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increase attack damage by current HP loss / Max HP. When lose HP, increase attack damage by HP loss / Max HP."
+    },
+    {
+      "name": "Blood Blade+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Multiplicatively Increase attack damage by current HP loss / Max HP. When lose HP, multiplicatively increase attack damage by HP loss / Max HP."
+    },
+    {
+      "name": "Blood Shelter",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Arrange HP with target to make each has same ratio. Each gain the sum of change in HP amount Block . Exhaust."
+    },
+    {
+      "name": "Blood Shelter+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Arrange HP with target to make each has same ratio. Each gain the sum of change in HP amount Block . Exhaust."
+    },
+    {
+      "name": "Card Index",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Choose 2 cards to remove from this combat. For future play, play the chosen cards."
+    },
+    {
+      "name": "Card Index+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Choose 3 cards to remove from this combat. For future play, play the chosen cards."
+    },
+    {
+      "name": "Chaotic Core",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 1 Orb slot. Whenever you lose HP, Gain 1 Orb slot. If Orb slot has been full, or each your attack damage Channel 1 random Orb."
+    },
+    {
+      "name": "Chaotic Core+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 1 Orb slot. Whenever you lose HP, Gain 1 Orb slot. If Orb slot has been full, or each your attack damage Channel 2 random Orb."
+    },
+    {
+      "name": "Collector",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage to all enemies. Deal 1 additional damage for each relic you have."
+    },
+    {
+      "name": "Collector+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage to all enemies. Deal 2 additional damage for each relic you have."
+    },
+    {
+      "name": "Disillusionment Echo",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "The first card you play each turn will play\nX/ 3 more times."
+    },
+    {
+      "name": "Disillusionment Echo+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "The first card you play each turn will play\nX/ 2 more times."
+    },
+    {
+      "name": "Dream",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Add 'Infernal Blade', 'Distraction', 'White noise' and 'Discovery' into your hand. Which cost 0 this turn. Exhaust. Ethereal."
+    },
+    {
+      "name": "Dream+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Add 'Infernal Blade', 'Distraction', 'White noise' and 'Discovery' into your hand. Which cost 0 this turn. Ethereal."
+    },
+    {
+      "name": "Enhance Armerment",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next Attack deal double damage. Exhaust it."
+    },
+    {
+      "name": "Enhance Armerment+",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "\u4F60\u6253\u51FA\u7684\u4E0B\u4E00\u5F20\u653B\u51FB\u724C\u7684\u4F24\u5BB3\u7FFB\u500D\uFF0C\u4F46\u5176\u5C06\u88AB\u6D88\u8017\u3002"
+      "description": "Your next Attack deal double damage. Exhaust it."
     },
     {
-      "name": "\u5B9D\u85CF\u730E\u624B",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "2",
-      "description": "\u9020\u6210 8 \u70B9\u4F24\u5BB3\u3002\u4ECE3\u5F20\u968F\u673A\u7A00\u6709\u724C\u4E2D\u9009\u62E91\u5F20\u52A0\u5165\u624B\u724C\u3002 \u6D88\u8017 \u3002"
-    },
-    {
-      "name": "\u5B9D\u85CF\u730E\u624B+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "2",
-      "description": "\u9020\u6210 8 \u70B9\u4F24\u5BB3\u3002\u4ECE3\u5F20\u968F\u673A\u7A00\u6709\u724C\u4E2D\u9009\u62E91\u5F20\u52A0\u5165\u624B\u724C\u3002\u5982\u679C\u8FD9\u5F20\u724C\u6740\u6B7B\u654C\u4EBA\uFF0C\u540C\u65F6\u5C06\u5176\u52A0\u5165\u724C\u7EC4\u3002 \u6D88\u8017 \u3002"
-    },
-    {
-      "name": "\u5E7B\u706D\u56DE\u54CD",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "X",
-      "description": "\u4F60\u5728\u6BCF\u56DE\u5408\u6253\u51FA\u7684\u7B2C\u4E00\u5F20\u724C\uFF0C\u5C06\u4F1A\u989D\u5916\u6253\u51FAX/ 3 \u6B21\u3002"
-    },
-    {
-      "name": "\u5E7B\u706D\u56DE\u54CD+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "X",
-      "description": "\u4F60\u5728\u6BCF\u56DE\u5408\u6253\u51FA\u7684\u7B2C\u4E00\u5F20\u724C\uFF0C\u5C06\u4F1A\u989D\u5916\u6253\u51FAX/ 2 \u6B21\u3002"
-    },
-    {
-      "name": "\u6218\u610F",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u56DE\u5408\u5F00\u59CB\u65F6\uFF0C\u6BCF\u4E2A\u653B\u51FB\u610F\u56FE\u7684\u654C\u4EBA\u4F7F\u4F60\u83B7\u5F97 1 \u70B9 \u529B\u91CF \uFF0C\u4F7F\u653B\u51FB\u610F\u56FE\u7684\u654C\u4EBA\u5931\u53BB 1 \u70B9 \u529B\u91CF \u3002"
-    },
-    {
-      "name": "\u6218\u610F+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "\u56DE\u5408\u5F00\u59CB\u65F6\uFF0C\u6BCF\u4E2A\u653B\u51FB\u610F\u56FE\u7684\u654C\u4EBA\u4F7F\u4F60\u83B7\u5F97 1 \u70B9 \u529B\u91CF \uFF0C\u4F7F\u653B\u51FB\u610F\u56FE\u7684\u654C\u4EBA\u5931\u53BB 1 \u70B9 \u529B\u91CF \u3002"
-    },
-    {
-      "name": "\u6536\u85CF\u5BB6",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "2",
-      "description": "\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210 8 \u70B9\u4F24\u5BB3\u3002\u4F60\u7684\u6BCF\u4EF6\u9057\u7269\u589E\u52A0 1 \u70B9\u4F24\u5BB3\u3002"
-    },
-    {
-      "name": "\u6536\u85CF\u5BB6+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "2",
-      "description": "\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210 8 \u70B9\u4F24\u5BB3\u3002\u4F60\u7684\u6BCF\u4EF6\u9057\u7269\u589E\u52A0 2 \u70B9\u4F24\u5BB3\u3002"
-    },
-    {
-      "name": "\u67EF\u7F57\u8BFA\u65AF\u7684\u6C38\u6052",
+      "name": "Eternality of Khronos",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "\u7ACB\u5373\u7ED3\u675F\u4F60\u7684\u56DE\u5408\uFF0C\u654C\u4EBA\u5728\u8FD9\u56DE\u5408\u4E0D\u4F1A\u6267\u884C\u5176\u610F\u56FE\uFF0C\u7136\u540E\u5F00\u59CB\u4F60\u7684\u4E0B\u4E00\u56DE\u5408\u3002 \u865A\u65E0 \u3002 \u6D88\u8017 \u3002"
+      "description": "End your turn, Take an extra turn after this one. Exhaust. Ethereal."
     },
     {
-      "name": "\u67EF\u7F57\u8BFA\u65AF\u7684\u6C38\u6052+",
+      "name": "Eternality of Khronos+",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "\u7ACB\u5373\u7ED3\u675F\u4F60\u7684\u56DE\u5408\uFF0C\u654C\u4EBA\u5728\u8FD9\u56DE\u5408\u4E0D\u4F1A\u6267\u884C\u5176\u610F\u56FE\uFF0C\u7136\u540E\u5F00\u59CB\u4F60\u7684\u4E0B\u4E00\u56DE\u5408\u3002 \u865A\u65E0 \u3002"
+      "description": "End your turn, Take an extra turn after this one. Ethereal."
     },
     {
-      "name": "\u6843\u4E50\u4E1D\u7684\u9ED1\u732B",
+      "name": "Fighting Intention",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "\u6BCF\u5F53\u4F60\u5BF9\u654C\u4EBA\u9020\u6210\u5931\u53BB\u751F\u547D\u4EE5\u5916\u7C7B\u578B\u7684\u4F24\u5BB3\u65F6\uFF0C\u4F7F\u6240\u6709\u654C\u4EBA\u5747\u644A\u5931\u53BB\u603B\u5171 75 %\u5176\u6570\u503C\u7684\u751F\u547D\u3002"
+      "description": "At the start of your turn, for each enemy intend to Attack, Gain 1 Strength, these enemies lose 1 Strength."
     },
     {
-      "name": "\u6843\u4E50\u4E1D\u7684\u9ED1\u732B+",
+      "name": "Fighting Intention+",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "3",
-      "description": "\u6BCF\u5F53\u4F60\u5BF9\u654C\u4EBA\u9020\u6210\u5931\u53BB\u751F\u547D\u4EE5\u5916\u7C7B\u578B\u7684\u4F24\u5BB3\u65F6\uFF0C\u4F7F\u6240\u6709\u654C\u4EBA\u5747\u644A\u5931\u53BB\u603B\u5171 100 %\u5176\u6570\u503C\u7684\u751F\u547D\u3002"
-    },
-    {
-      "name": "\u68A6\u60F3",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "3",
-      "description": "\u5C06\u5730\u72F1\u4E4B\u5203\u3001\u58F0\u4E1C\u51FB\u897F\u3001\u767D\u566A\u58F0\u3001\u53D1\u73B0\u52A0\u5165\u624B\u724C\uFF0C\u5176\u8017\u80FD\u5728\u672C\u56DE\u5408\u53D8\u4E3A0\u3002 \u6D88\u8017 \u3002 \u865A\u65E0 \u3002"
-    },
-    {
-      "name": "\u68A6\u60F3+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "3",
-      "description": "\u5C06\u5730\u72F1\u4E4B\u5203\u3001\u58F0\u4E1C\u51FB\u897F\u3001\u767D\u566A\u58F0\u3001\u53D1\u73B0\u52A0\u5165\u624B\u724C\uFF0C\u5176\u8017\u80FD\u5728\u672C\u56DE\u5408\u53D8\u4E3A0\u3002 \u865A\u65E0 \u3002"
-    },
-    {
-      "name": "\u6B7B\u4EA1\u523B\u5370",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
       "cost": "2",
-      "description": "\u9020\u6210 8 \u70B9\u4F24\u5BB3\u3002\u5982\u679C\u654C\u4EBA\u6709\u6B7B\u4EA1\u523B\u5370\uFF0C\u5C06\u5176\u6D88\u53BB\u5E76\u5C06\u57FA\u7840\u4F24\u5BB3\u589E\u52A0\u5176\u5C42\u6570\u7684 80 %\u3002\u5426\u5219\u7ED9\u4E88\u654C\u4EBA\u6B7B\u4EA1\u523B\u5370\u3002"
+      "description": "At the start of your turn, for each enemy intend to Attack, Gain 1 Strength, these enemies lose 1 Strength."
     },
     {
-      "name": "\u6B7B\u4EA1\u523B\u5370+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "2",
-      "description": "\u9020\u6210 8 \u70B9\u4F24\u5BB3\u3002\u5982\u679C\u654C\u4EBA\u6709\u6B7B\u4EA1\u523B\u5370\uFF0C\u5C06\u5176\u6D88\u53BB\u5E76\u5C06\u57FA\u7840\u4F24\u5BB3\u589E\u52A0\u5176\u5C42\u6570\u7684 100 %\u3002\u5426\u5219\u7ED9\u4E88\u654C\u4EBA\u6B7B\u4EA1\u523B\u5370\u3002"
-    },
-    {
-      "name": "\u6B8B\u54CD",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u6BCF\u5F53\u4E00\u5F20\u975E \u8BC5\u5492 \u3001 \u72B6\u6001 \u724C \u6D88\u8017 \u65F6\uFF0C\u89E6\u53D1\u5176\u6253\u51FA\u65F6\u7684\u6548\u679C 1 \u6B21\u3002 \u865A\u65E0 \u3002"
-    },
-    {
-      "name": "\u6B8B\u54CD+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u6BCF\u5F53\u4E00\u5F20\u975E \u8BC5\u5492 \u3001 \u72B6\u6001 \u724C \u6D88\u8017 \u65F6\uFF0C\u89E6\u53D1\u5176\u6253\u51FA\u65F6\u7684\u6548\u679C 1 \u6B21\u3002"
-    },
-    {
-      "name": "\u6DF7\u6C8C\u539F\u6838",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u83B7\u5F971\u4E2A\u5145\u80FD\u7403\u680F\u4F4D\u3002\u6BCF\u53D7\u5230\u4E00\u6B21\u4F24\u5BB3\uFF0C\u83B7\u5F971\u4E2A\u5145\u80FD\u7403\u680F\u4F4D\uFF0C\u5DF2\u6EE1\u5219\u6539\u4E3A\u89E6\u53D1\u4E0B\u4E00\u4E2A\u6548\u679C\u3002\u6BCF\u9020\u6210\u4E00\u6B21\u653B\u51FB\u4F24\u5BB3\uFF0C \u751F\u6210  1 \u4E2A\u968F\u673A\u5145\u80FD\u7403\u3002"
-    },
-    {
-      "name": "\u6DF7\u6C8C\u539F\u6838+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u83B7\u5F971\u4E2A\u5145\u80FD\u7403\u680F\u4F4D\u3002\u6BCF\u53D7\u5230\u4E00\u6B21\u4F24\u5BB3\uFF0C\u83B7\u5F971\u4E2A\u5145\u80FD\u7403\u680F\u4F4D\uFF0C\u5DF2\u6EE1\u5219\u6539\u4E3A\u89E6\u53D1\u4E0B\u4E00\u4E2A\u6548\u679C\u3002\u6BCF\u9020\u6210\u4E00\u6B21\u653B\u51FB\u4F24\u5BB3\uFF0C \u751F\u6210  2 \u4E2A\u968F\u673A\u5145\u80FD\u7403\u3002"
-    },
-    {
-      "name": "\u751F\u547D\u6807\u5C3A",
+      "name": "Illusory",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "\u5BF9\u6240\u6709\u654C\u4EBA\u65BD\u52A0\u4F60\u4E0E\u76EE\u6807\u654C\u4EBA\u6700\u5927\u751F\u547D\u7684\u6700\u5927\u516C\u7EA6\u6570\u4E0E\u5F53\u524D\u751F\u547D\u7684\u6700\u5927\u516C\u7EA6\u6570\u4E2D\u7684\u8F83\u5927\u503C\u5C42\u7F20\u7ED5\u3002 \u6D88\u8017 \u3002"
+      "description": "Draw 1 cards, all cards in draw pile become Ethereal. For each card was Ethereal, Gain [E]. Exhaust. Ethereal."
     },
     {
-      "name": "\u751F\u547D\u6807\u5C3A+",
+      "name": "Illusory+",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "\u5BF9\u6240\u6709\u654C\u4EBA\u65BD\u52A0\u4F60\u4E0E\u76EE\u6807\u654C\u4EBA\u6700\u5927\u751F\u547D\u7684\u6700\u5927\u516C\u7EA6\u6570\u4E0E\u5F53\u524D\u751F\u547D\u7684\u6700\u5927\u516C\u7EA6\u6570\u4E2D\u7684\u8F83\u5927\u503C\u5C42\u7F20\u7ED5\u3002"
+      "description": "Draw 2 cards, all cards in draw pile become Ethereal. For each card was Ethereal, Gain [E]. Exhaust. Ethereal."
     },
     {
-      "name": "\u75DB\u695A\u8D77\u7206\u5668",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "1",
-      "description": "\u5BF9\u654C\u4EBA\u9020\u6210\u5176\u5DF2\u5931\u53BB\u751F\u547D\u7684 30 %\u7684\u4F24\u5BB3( 0 )\u3002"
-    },
-    {
-      "name": "\u75DB\u695A\u8D77\u7206\u5668+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "1",
-      "description": "\u5BF9\u654C\u4EBA\u9020\u6210\u5176\u5DF2\u5931\u53BB\u751F\u547D\u7684 50 %\u7684\u4F24\u5BB3( 0 )\u3002"
-    },
-    {
-      "name": "\u8109\u51B2\u5206\u914D\u5668",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u53D7\u5230n\u70B9\u975E\u5931\u53BB\u751F\u547D\u7684\u4F24\u5BB3\u65F6\uFF0C\u4E0D\u76F4\u63A5\u635F\u5931\u751F\u547D\u503C\uFF0C\u800C\u662F\u5728\u6B64\u56DE\u5408\u5F00\u59CB\u7684n+1\u4E2A\u56DE\u5408\u5185\u6BCF\u6B21\u654C\u4EBA\u56DE\u5408\u7ED3\u675F\u65F6\u5931\u53BB1\u70B9\u751F\u547D\u3002"
-    },
-    {
-      "name": "\u8109\u51B2\u5206\u914D\u5668+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u53D7\u5230n\u70B9\u975E\u5931\u53BB\u751F\u547D\u7684\u4F24\u5BB3\u65F6\uFF0C\u4E0D\u76F4\u63A5\u635F\u5931\u751F\u547D\u503C\uFF0C\u800C\u662F\u5728\u6B64\u56DE\u5408\u5F00\u59CB\u7684n\u4E2A\u56DE\u5408\u5185\u6BCF\u6B21\u654C\u4EBA\u56DE\u5408\u7ED3\u675F\u65F6\u5931\u53BB1\u70B9\u751F\u547D\u3002"
-    },
-    {
-      "name": "\u81EA\u52A8\u5F39\u56DE\u7CFB\u7EDF",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\u65F6\u83B7\u5F97 [R] \u5E76\u62BD 1 \u5F20\u724C\u3002\u4F60\u6BCF\u56DE\u5408\u6253\u51FA\u7684\u524D 1 \u5F20\u53EF\u88AB\u5F39\u56DE\u7684\u724C\uFF0C\u5C06\u56DE\u5230\u62BD\u724C\u5806\u9876\u90E8\u3002"
-    },
-    {
-      "name": "\u81EA\u52A8\u5F39\u56DE\u7CFB\u7EDF+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\u65F6\u83B7\u5F97 [R]  [R] \u5E76\u62BD 2 \u5F20\u724C\u3002\u4F60\u6BCF\u56DE\u5408\u6253\u51FA\u7684\u524D 2 \u5F20\u53EF\u88AB\u5F39\u56DE\u7684\u724C\uFF0C\u5C06\u56DE\u5230\u62BD\u724C\u5806\u9876\u90E8\u3002"
-    },
-    {
-      "name": "\u81EA\u6211\u8C03\u8282\u7CFB\u7EDF",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "\u6BCF\u56DE\u5408\u83B7\u5F97\u7684\u9996\u4E2A\u589E\u76CA\u72B6\u6001\u5C42\u6570\u589E\u52A0 1 \uFF0C\u9996\u4E2A\u51CF\u76CA\u72B6\u6001\u5C42\u6570\u51CF\u5C11 1 \u3002"
-    },
-    {
-      "name": "\u81EA\u6211\u8C03\u8282\u7CFB\u7EDF+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "\u6BCF\u56DE\u5408\u83B7\u5F97\u7684\u9996\u4E2A\u589E\u76CA\u72B6\u6001\u5C42\u6570\u589E\u52A0 1 \uFF0C\u9996\u4E2A\u51CF\u76CA\u72B6\u6001\u5C42\u6570\u51CF\u5C11 1 \u3002 \u56FA\u6709 \u3002"
-    },
-    {
-      "name": "\u866B\u6D1E",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u4ECE\u62BD\u724C\u5806\u3001\u5F03\u724C\u5806\u3001\u624B\u724C\u7684\u6240\u6709\u724C\u4E2D\u9009\u51FA\u4E00\u5F20\u724C\u5C06\u5176\u6253\u51FA\u5E76\u5C06\u5176 \u6D88\u8017 \u3002"
-    },
-    {
-      "name": "\u866B\u6D1E+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "1",
-      "description": "\u4ECE\u62BD\u724C\u5806\u3001\u5F03\u724C\u5806\u3001\u624B\u724C\u7684\u6240\u6709\u724C\u4E2D\u9009\u51FA\u4E00\u5F20\u724C\u5C06\u5176\u6253\u51FA\u3002\u5982\u679C\u662F \u8BC5\u5492 \u6216 \u72B6\u6001 \u724C\uFF0C\u5C06\u5176 \u6D88\u8017 \u3002"
-    },
-    {
-      "name": "\u8840\u4E4B\u5C4F\u969C",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "3",
-      "description": "\u4E0E\u76EE\u6807\u5E73\u8861\u5230\u76F8\u540C\u7684\u751F\u547D\u503C\u767E\u5206\u6BD4\u3002\u4F7F\u53CC\u65B9\u83B7\u5F97\u4E24\u8005\u751F\u547D\u503C\u53D8\u5316\u91CF\u7EDD\u5BF9\u503C\u4E4B\u548C\u70B9 \u683C\u6321 \u3002 \u6D88\u8017 \u3002"
-    },
-    {
-      "name": "\u8840\u4E4B\u5C4F\u969C+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "2",
-      "description": "\u4E0E\u76EE\u6807\u5E73\u8861\u5230\u76F8\u540C\u7684\u751F\u547D\u503C\u767E\u5206\u6BD4\u3002\u4F7F\u53CC\u65B9\u83B7\u5F97\u4E24\u8005\u751F\u547D\u503C\u53D8\u5316\u91CF\u7EDD\u5BF9\u503C\u4E4B\u548C\u70B9 \u683C\u6321 \u3002 \u6D88\u8017 \u3002"
-    },
-    {
-      "name": "\u8840\u6C14\u4E4B\u5203",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "\u63D0\u5347\u5DF2\u5931\u53BB\u751F\u547D/\u6700\u5927\u751F\u547D\u7684\u653B\u51FB\u4F24\u5BB3\u3002\u5931\u53BB\u751F\u547D\u65F6\uFF0C\u63D0\u5347\u5931\u53BB\u91CF/\u6700\u5927\u751F\u547D\u7684\u653B\u51FB\u4F24\u5BB3\u3002\u52A0\u6210\u4E4B\u95F4\u76F8\u52A0\u3002"
-    },
-    {
-      "name": "\u8840\u6C14\u4E4B\u5203+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "\u63D0\u5347\u5DF2\u5931\u53BB\u751F\u547D/\u6700\u5927\u751F\u547D\u7684\u653B\u51FB\u4F24\u5BB3\u3002\u5931\u53BB\u751F\u547D\u65F6\uFF0C\u63D0\u5347\u5931\u53BB\u91CF/\u6700\u5927\u751F\u547D\u7684\u653B\u51FB\u4F24\u5BB3\u3002\u52A0\u6210\u4E4B\u95F4\u76F8\u4E58\u3002"
-    },
-    {
-      "name": "\u8C1C",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "2",
-      "description": "\u5BF9\u968F\u673A\u654C\u4EBA\u9020\u6210 4 \u70B9\u4F24\u5BB3 1 \u6B21\u3002\u4F60\u5728\u672C\u5C40\u6E38\u620F\u6BCF\u5230\u8FBE\u8FC7\u4E00\u4E2A\u95EE\u53F7\u623F\u95F4\uFF0C\u4F24\u5BB3\u6B21\u6570\u589E\u52A01\u3002 \u6D88\u8017 \u3002"
-    },
-    {
-      "name": "\u8C1C+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Attack",
-      "cost": "2",
-      "description": "\u5BF9\u968F\u673A\u654C\u4EBA\u9020\u6210 6 \u70B9\u4F24\u5BB3 1 \u6B21\u3002\u4F60\u5728\u672C\u5C40\u6E38\u620F\u6BCF\u5230\u8FBE\u8FC7\u4E00\u4E2A\u95EE\u53F7\u623F\u95F4\uFF0C\u4F24\u5BB3\u6B21\u6570\u589E\u52A01\u3002 \u6D88\u8017 \u3002"
-    },
-    {
-      "name": "\u8D85\u5BFC\u4F53",
+      "name": "Librarian",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "\u672C\u56DE\u5408\u5185\uFF1A\u65E0\u6CD5\u83B7\u5F97\u80FD\u91CF\uFF0C\u624B\u724C\u4E2D\u6240\u6709\u724C\u8017\u80FD\u53D8\u4E3A0\uFF0C\u63A5\u4E0B\u6765\u62BD\u5230\u7684\u524DX\u5F20\u8017\u80FD\u5927\u4E8E0\u7684\u724C\u7684\u8017\u80FD\u964D\u4F4E1\u3002 \u6D88\u8017 \u3002"
+      "description": "Choose 1 cards from X random Colorless to add in your hand. Reduce these cards'cost to 0 this combat. Exhaust."
     },
     {
-      "name": "\u8D85\u5BFC\u4F53+",
+      "name": "Librarian+",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "\u672C\u56DE\u5408\u5185\uFF1A\u65E0\u6CD5\u83B7\u5F97\u80FD\u91CF\uFF0C\u624B\u724C\u4E2D\u6240\u6709\u724C\u8017\u80FD\u53D8\u4E3A0\uFF0C\u63A5\u4E0B\u6765\u62BD\u5230\u7684\u524DX\u5F20\u8017\u80FD\u5927\u4E8E0\u7684\u724C\u7684\u8017\u80FD\u964D\u4F4E1\u3002"
+      "description": "Choose 1 cards from X random Colorless to add in your hand. Reduce these cards' cost to 0 this combat. If win in the next X turn, add these cards in your deck. Exhaust."
     },
     {
-      "name": "\u8FDE\u51FB\u4E13\u5BB6",
+      "name": "Mystery",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210 1 \u70B9\u4F24\u5BB3 1 \u6B21\u3002\u6BCF\u6253\u51FA\u4E00\u6B21\uFF0C\u672C\u573A\u6218\u6597\u4E2D\u57FA\u7840\u4F24\u5BB3\u548C\u653B\u51FB\u6B21\u6570\u90FD\u589E\u52A01\u3002"
+      "description": "Deal 4 damage to a random enemy 1 times. For each ? room you entered this run, deal an extra damage. Exhaust."
     },
     {
-      "name": "\u8FDE\u51FB\u4E13\u5BB6+",
+      "name": "Mystery+",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210 2 \u70B9\u4F24\u5BB3 2 \u6B21\u3002\u6BCF\u6253\u51FA\u4E00\u6B21\uFF0C\u672C\u573A\u6218\u6597\u4E2D\u57FA\u7840\u4F24\u5BB3\u548C\u653B\u51FB\u6B21\u6570\u90FD\u589E\u52A01\u3002"
+      "description": "Deal 6 damage to a random enemy 1 times. For each ? room you entered this run, deal an extra damage. Exhaust."
     },
     {
-      "name": "\u9006\u5883\u53CD\u51FB",
+      "name": "Power Strike",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal. Reduce all enemies' HP to its logarithm, the base number is 1. 5 . Apply the number of enemies Intangible to all enemies. Can be Upgraded any number of time. Exhaust."
+    },
+    {
+      "name": "Power Strike+1",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal. Reduce all enemies' HP to its logarithm, the base number is 1. 6 . Apply the number of enemies Intangible to all enemies. Can be Upgraded any number of time. Exhaust."
+    },
+    {
+      "name": "Pulse Distributor",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "When you would receive n damage which is not type Lose HP, don't lose HP. Instead, in the next n+1 times of enemies turn end, lose 1 HP."
+    },
+    {
+      "name": "Pulse Distributor+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "When you would receive n damage which is not type Lose HP, don't lose HP. Instead, in the next n times of enemies turn end, lose 1 HP."
+    },
+    {
+      "name": "Recap",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, play the last 1 cards you played last turn."
+    },
+    {
+      "name": "Recap+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, play the last 1 cards you played last turn."
+    },
+    {
+      "name": "Reflect",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "In this turn, you will play the next 1 cards twice except Curse and Status."
+    },
+    {
+      "name": "Reflect+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "In this turn, you will play the next 2 cards twice except Curse and Status."
+    },
+    {
+      "name": "Repeat Form",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Choose a card and remove it this combat. At the start of your turn, add a copy of it into your hand. Ethereal."
+    },
+    {
+      "name": "Repeat Form+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Choose a card and remove it this combat. At the start of your turn, add a copy of it into your hand."
+    },
+    {
+      "name": "Reproduce",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate . Choose a card, make it Retain, goes back hand when played, increase its cost in turn by 1 ."
+    },
+    {
+      "name": "Reproduce+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate . Choose a card, make it Retain, goes back hand when played, increase its cost in turn by 1 ."
+    },
+    {
+      "name": "Reverberation",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever a card except Curse or Status Exhausts, function it 1 times. Ethereal."
+    },
+    {
+      "name": "Reverberation+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever a card except Curse or Status Exhausts, function it 1 times."
+    },
+    {
+      "name": "Self Regulating System",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first buff you Gain each turn will receive 1 more. The first debuff you Gain each turn will receive 1 fewer."
+    },
+    {
+      "name": "Self Regulating System+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate. The first buff you Gain each turn will receive 1 more. The first debuff you Gain each turn will receive 1 fewer."
+    },
+    {
+      "name": "Shut Down",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, add 1 'Reboot' into your hand."
+    },
+    {
+      "name": "Shut Down+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, add 1 'Reboot+' into your hand."
+    },
+    {
+      "name": "Superconductor",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "In this turn, you can Gain no [E] , reduce the cost of all cards in your hand to 0. Reduce cost of next X cards you draw which greater than 0 by 1 for one turn. Exhaust."
+    },
+    {
+      "name": "Superconductor+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "In this turn, you cannot Gain [E] , reduce the cost of all cards in your hand to 0. Reduce cost of next X cards you draw which greater than 0 by 1 for one turn."
+    },
+    {
+      "name": "Taurus' Black Cat",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you deal non-Lose-HP damage to enemy, all enemies lose 75 % of the damage HP in total."
+    },
+    {
+      "name": "Taurus' Black Cat+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you deal non-Lose-HP damage to enemy, all enemies lose 100 % of the damage HP in total."
+    },
+    {
+      "name": "Trade In",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Exhaust any number of cards in your hand, then draw that many cards, reduce the cost of all cards in your hand by 1 and make them Exhaust on play. Exhaust. Ethereal."
+    },
+    {
+      "name": "Trade In+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Exhaust any number of cards in your hand, then draw that many cards, reduce the cost of all cards in your hand by 2 and make them Exhaust on play. Exhaust. Ethereal."
+    },
+    {
+      "name": "Treasure Hunter",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "1",
-      "description": "\u7ED9\u4E88\u654C\u4EBA 1 \u5C42 \u4EBA\u5DE5\u5236\u54C1 \uFF0C\u83B7\u5F97 1 \u5C42 \u6613\u4F24 \u548C1\u5C42 \u65E0\u5B9E\u4F53 \u3002\u968F\u673A\u9020\u6210\u8BE5\u654C\u4EBA\u589E\u76CA\u72B6\u6001\u5C42\u6570\u70B9\u4F24\u5BB3\uFF0C\u81EA\u8EAB\u8D1F\u9762\u72B6\u6001\u5C42\u6570\u6B21\u3002"
+      "cost": "2",
+      "description": "Deal 8 damage. Choose a card from 3 random Rare card add into your hand. Exhaust."
     },
     {
-      "name": "\u9006\u5883\u53CD\u51FB+",
+      "name": "Treasure Hunter+",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage. Choose a card from 3 random Rare card add into your hand. If Fatal, add it into deck. Exhaust."
+    },
+    {
+      "name": "Wormhole",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
       "cost": "1",
-      "description": "\u7ED9\u4E88\u654C\u4EBA 2 \u5C42 \u4EBA\u5DE5\u5236\u54C1 \uFF0C\u83B7\u5F97 2 \u5C42 \u6613\u4F24 \u548C1\u5C42 \u65E0\u5B9E\u4F53 \u3002\u968F\u673A\u9020\u6210\u8BE5\u654C\u4EBA\u589E\u76CA\u72B6\u6001\u5C42\u6570\u70B9\u4F24\u5BB3\uFF0C\u81EA\u8EAB\u8D1F\u9762\u72B6\u6001\u5C42\u6570\u6B21\u3002"
+      "description": "Choose a card in your draw pile, discard pile or cards in your hand. Play the chosen card and Exhaust it."
     },
     {
-      "name": "\u5AC9\u5992",
+      "name": "Wormhole+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in your draw pile, discard pile or cards in your hand. Play the chosen card. If it is Curse or Status, Exhaust it. "
+    },
+    {
+      "name": "Envy",
       "color": "Curse",
       "rarity": "Special",
       "type": "Curse",
       "cost": "",
-      "description": " \u4E0D\u80FD\u88AB\u6253\u51FA \u3002\u5728\u624B\u724C\u65F6\uFF0C\u4E0D\u80FD\u6253\u51FA \u72B6\u6001 \u548C \u8BC5\u5492 \u724C\u3002\u6709\u654C\u4EBA\u7684\u610F\u56FE\u4E0D\u662F\u653B\u51FB/debuff\u6216\u9632\u5FA1/\u5F3A\u5316\u65F6\uFF0C\u4E0D\u80FD\u6253\u51FA \u653B\u51FB /\u6280\u80FD/ \u80FD\u529B \u724C\u3002"
+      "description": " Unplayable. While in hand, you cannot play Status and Curse. If no ememy intends to attack/ inflict a Negative Effect on you or defend/ use a buff, you cannot play Attact/ Skill/ Power."
     },
     {
-      "name": "\u6020\u60F0",
+      "name": "Gluttony",
       "color": "Curse",
       "rarity": "Special",
       "type": "Curse",
       "cost": "",
-      "description": " \u4E0D\u80FD\u88AB\u6253\u51FA \u3002\u7B2C\u4E8C\u56DE\u5408\u8D77\uFF0C\u5728\u624B\u724C\u65F6\uFF0C\u6BCF\u56DE\u5408\u51FA\u724C\u6570\u91CF\u4E0D\u80FD\u8D85\u8FC7\u672C\u573A\u6218\u6597\u6700\u5C11\u7684\u5355\u56DE\u5408\u51FA\u724C\u6570\u3002\u8FD9\u4E2A \u8BC5\u5492 \u5728\u7B2C\u4E00\u56DE\u5408\u65E0\u6CD5\u9003\u8131\u3002"
+      "description": " Unplayable. When Max HP is raised, Add a copy of this card into your deck. If transformed or removed from your deck, lose \uFF01M% Max HP."
     },
     {
-      "name": "\u66B4\u6012",
+      "name": "Greed",
       "color": "Curse",
       "rarity": "Special",
       "type": "Curse",
       "cost": "",
-      "description": " \u4E0D\u80FD\u88AB\u6253\u51FA \u3002\u62BD\u5230\u8FD9\u5F20\u724C\u65F6\uFF0C\u7ED9\u6240\u6709\u654C\u4EBA\u589E\u52A01\u5C42 \u751F\u6C14 \u3002\u5728\u624B\u724C\u65F6\uFF0C\u53EA\u80FD\u6253\u51FA \u653B\u51FB \u724C\u3002 \u865A\u65E0 \u3002"
+      "description": " Unplayable. At the end of your turn drawing this card, For each [E] remain, draw 1 fewer cards next turn. For each card in hand, gain 1 less [E] next turn."
     },
     {
-      "name": "\u66B4\u98DF",
+      "name": "Lust",
       "color": "Curse",
       "rarity": "Special",
       "type": "Curse",
       "cost": "",
-      "description": " \u4E0D\u80FD\u88AB\u6253\u51FA \u3002\u589E\u52A0\u6700\u5927\u751F\u547D\u65F6\uFF0C\u590D\u5236\u4E00\u5F20\u66B4\u98DF\u5230\u4F60\u7684\u724C\u5806\u3002\u8FD9\u5F20\u724C\u88AB\u79FB\u9664\u6216\u8F6C\u5316\u65F6\uFF0C\u964D\u4F4E20%\u6700\u5927\u751F\u547D\u3002"
+      "description": " Unplayable. At the end of your turn, lose 1 Strength, Dexterity, Focus, gain 3 Vulnerable, Weak, Frail. "
     },
     {
-      "name": "\u8272\u6B32",
+      "name": "Sloth",
       "color": "Curse",
       "rarity": "Special",
       "type": "Curse",
       "cost": "",
-      "description": " \u4E0D\u80FD\u88AB\u6253\u51FA \u3002\u56DE\u5408\u7ED3\u675F\u65F6\uFF0C\u5931\u53BB1 \u529B\u91CF \u30011 \u654F\u6377 \u30011 \u96C6\u4E2D \uFF0C\u83B7\u5F973\u5C42 \u6613\u4F24 \u30013\u5C42 \u865A\u5F31 \u30013\u5C42 \u8106\u5F31 \u3002"
+      "description": " Unplayable. After your second turn starts, While in hand, you cannot play more cards than the least turn. There is no escape from this Curse at frist turn."
     },
     {
-      "name": "\u8D2A\u5A6A",
+      "name": "Wrath",
       "color": "Curse",
       "rarity": "Special",
       "type": "Curse",
       "cost": "",
-      "description": " \u4E0D\u80FD\u88AB\u6253\u51FA \u3002\u62BD\u5230\u8FD9\u5F20\u724C\u7684\u56DE\u5408\u7ED3\u675F\u65F6\uFF0C\u6BCF\u6709\u4E00\u70B9 \u80FD\u91CF \u5269\u4F59\uFF0C\u4E0B\u56DE\u5408\u5C11\u62BD\u4E00\u5F20\u724C\uFF1B\u6BCF\u6709\u4E00\u5F20\u724C\u5269\u4F59\uFF0C\u4E0B\u56DE\u5408\u51CF\u5C11\u4E00\u70B9 \u80FD\u91CF \u3002"
+      "description": " Unplayable. When you draw this card, Apply 1 Angry to All enemies. While in hand, you can only play Attack. Ethereal."
     }
   ],
   "relics": [
     {
-      "name": "\u5DE5\u4E1A\u9769\u547D",
+      "name": "Antiphasic",
       "tier": "Common",
       "pool": "",
-      "description": "\u62E5\u6709\u8FC7 \u4EBA\u5DE5\u5236\u54C1 \u7684\u654C\u4EBA\uFF0C\u65E0\u6CD5\u7ED9\u5176\u81EA\u8EAB\u589E\u52A0\u589E\u76CA\u72B6\u6001\uFF0C\u65E0\u6CD5\u7ED9\u73A9\u5BB6\u589E\u52A0\u8D1F\u9762\u72B6\u6001\u3002",
-      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
-    },
-    {
-      "name": "\u4E00\u8840\u4F20\u5947",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "\u5F53\u4F60\u7684\u751F\u547D\u503C\u4E3A 1 \u65F6\uFF1A\u653B\u51FB\u6709\u4E00\u534A\u51E0\u7387\u53EF\u4EE5\u76F4\u63A5\u6740\u6B7B\u88AB\u51FB\u4E2D\u7684\u975EBoss\u654C\u4EBA\uFF1BBoss\u654C\u4EBA\u9020\u6210\u7684\u4F24\u5BB3\u964D\u4F4E 50% \uFF0C\u53D7\u5230\u7684\u653B\u51FB\u4F24\u5BB3\u548C\u672A\u88AB\u683C\u6321\u7684\u5176\u4F59\u4F24\u5BB3\u589E\u52A0 50% \u3002",
-      "flavorText": "\u4F60\u5DF2\u77E5\u6653\u6B7B\u4EA1\u3002"
-    },
-    {
-      "name": "\u5747\u8861\u62A4\u7B26",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "\u4F60\u7684\u6700\u5927\u751F\u547D\u503C\u4E0D\u4F1A\u518D\u53D8\u5316\u3002\u5F53\u4F60\u5C1D\u8BD5\u589E\u52A0\u548C\u51CF\u5C11\u6700\u5927\u751F\u547D\u503C\u65F6\uFF0C\u5206\u522B\u6539\u4E3A\u6539\u53D8\u5176\u6570\u503C 3 \u500D\u548C 1 \u500D\u7684\u751F\u547D\u3002",
-      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
-    },
-    {
-      "name": "\u8FBE\u82AC\u5947\u4E4B\u5FC3",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "\u4F60\u53EF\u4EE5\u83B7\u5F97\u5176\u4ED6\u89D2\u8272\u7684\u9057\u7269\u3002\u5982\u679C\u4F60\u5728\u62FE\u8D77\u65F6\u6CA1\u6709\u5145\u80FD\u7403\u680F\u4F4D\uFF0C\u6C38\u4E45\u83B7\u5F97 1 \u4E2A\u5145\u80FD\u7403\u680F\u4F4D\u3002\u6BCF\u5F53\u4F60\u83B7\u5F97\u5176\u4ED6\u89D2\u8272\u7684\u9057\u7269\u65F6\uFF0C\u53EF\u4EE5\u9009\u62E9\u4ECE 20 \u5F20\u8BE5\u89D2\u8272\u7684\u5361\u724C\u4E2D\u83B7\u5F97\u4E00\u5F20\u3002",
-      "flavorText": "\u4F60\u73B0\u5728\u611F\u89C9\u5230\u4F60\u4EFF\u4F5B\u80FD\u63A5\u53D7\u6240\u6709\u6069\u60E0\u3002"
-    },
-    {
-      "name": "\u9F99\u661F\u5E3D",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u5728\u4F11\u606F\u5904\u4F11\u606F\u540E\uFF0C\u6BCF\u6B21\u4F11\u606F\u5904\u540E\u7684\u7B2C\u4E00\u573A\u6218\u6597\u5F00\u59CB\u65F6\u989D\u5916\u83B7\u5F97 1 \u70B9 \u529B\u91CF \u3002\u53EF\u7D2F\u52A0\u3002",
-      "flavorText": "\u5E76\u6CA1\u6709\u5728\u5077\u61D2\u3002"
-    },
-    {
-      "name": "\u4E00\u89C6\u540C\u4EC1",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u4F60\u5728\u6BCF\u56DE\u5408\u6253\u51FA\u7684\u7B2C\u4E00\u5F20\u6307\u5411\u5355\u4E2A\u654C\u4EBA\u7684\u724C\uFF0C\u4E5F\u4F1A\u5BF9\u5176\u4F59\u6240\u6709\u654C\u4EBA\u5404\u751F\u6548\u4E00\u6B21\u3002",
-      "flavorText": "\u4E00\u4E2A\u90FD\u8DD1\u4E0D\u4E86\u3002"
-    },
-    {
-      "name": "\u4F20\u67D3\u6E90",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u4F60\u7684\u653B\u51FB\u4F24\u5BB3\u964D\u4F4E 50% \u3002\u88AB\u653B\u51FB\u51FB\u4E2D\u7684\u654C\u4EBA\u83B7\u5F97\u76F8\u540C\u70B9\u6570\u7684 \u4E2D\u6BD2 \uFF0C\u4F46\u53EA\u4F1A\u53D7\u5230 1 \u70B9\u4F24\u5BB3\u3002",
-      "flavorText": "\u4F60\u611F\u5230\u81EA\u5DF1\u53D8\u5F97\u865A\u5F31\u4E86\uFF0C\u4F46\u540C\u65F6\u53D8\u5F97\u80FD\u64CD\u7EB5\u75C5\u6BD2\u3002"
-    },
-    {
-      "name": "\u52C7\u6562",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u5982\u679C\u4F60\u5728\u56DE\u5408\u7ED3\u675F\u65F6\u6CA1\u6709\u4EFB\u4F55 \u683C\u6321 \uFF0C\u83B7\u5F97 3 \u529B\u91CF \u3002",
-      "flavorText": "\u201C\u52C7\u6562\u4E0D\u5728\u4E8E\u80FD\u591F\u8511\u89C6\u5371\u9669\uFF0C\u800C\u5728\u4E8E\u8BA4\u8BF7\u5371\u9669\u3001\u6218\u80DC\u5371\u9669\u3002\u201D \u2014\u2014 \u5E03\u52D2\u68EE\u4E1C"
-    },
-    {
-      "name": "\u5343\u652F\u5200",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u62BD\u5230\u6216\u6253\u51FA 0 \u8017\u80FD\u7684\u653B\u51FB\u724C\u65F6\uFF0C\u5206\u522B\u5C06\u4E00\u5F20\u5176\u590D\u5236\u54C1\u653E\u5165\u624B\u724C\u6216\u5F03\u724C\u5806\u3002\u6253\u51FA\u65F6\uFF0C\u624B\u724C\u4E2D\u6BCF\u6709\u4E00\u5F20 0 \u8017\u80FD\u7684\u653B\u51FB\u724C\uFF0C\u83B7\u5F97 1 \u683C\u6321\u3002",
-      "flavorText": "\u4E0D\u8981\u505C\u4E0B\u6765\u554A\u3002"
-    },
-    {
-      "name": "\u5386\u53F2\u6587\u732E",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\u83B7\u5F97\u4E00\u79CD\u968F\u673A\u7684\u88AB\u5C16\u5854\u5E9F\u5F03\u7684\u6B63\u9762\u6216\u8D1F\u9762\u72B6\u6001\u3002",
-      "flavorText": "\u7ED9\u7684\u72B6\u6001\u6709\u4EC0\u4E48\u95EE\u9898\u90FD\u4E0D\u662F\u6211\u7684\u95EE\u9898\uFF0C\u8BF7\u5411\u5C16\u5854\u53CD\u9988\u3002"
-    },
-    {
-      "name": "\u53CD\u566C\u7B26\u6587",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u6BCF\u5F53\u53D7\u5230\u5355\u6B21\u4F24\u5BB3\u6570\u503C\u4E0D\u4F4E\u4E8E 25% \u6700\u5927\u751F\u547D\u65F6\uFF0C\u5148\u589E\u52A0 5 \u70B9\u751F\u547D\u4E0A\u9650\u518D\u8FDB\u884C\u4F24\u5BB3\u7ED3\u7B97\u3002\u6700\u5927\u751F\u547D\u548C\u53D7\u5230\u4F24\u5BB3\u5747\u4E3A 1 \u65F6\u6B64\u9057\u7269\u4E0D\u751F\u6548\u3002",
+      "description": "Whenever you would lose HP not less than 25% Max HP, increase your Max HP by 5 before you lose HP. This relic will NOT be active when your Max HP and the damage amount are both 1.",
       "flavorText": "\u6211\u60F3\u8981\u6328\u4E00\u987F\u6BD2\u6253\uFF01"
     },
     {
-      "name": "\u5948\u4E9A\u62C9\u6258\u63D0\u666E",
-      "tier": "Rare",
+      "name": "Industrial Revolution",
+      "tier": "Common",
       "pool": "",
-      "description": "\u4F60\u6210\u529F\u6253\u51FA\u4E14\u751F\u6548\u7684\u724C\uFF0C\u540C\u65F6\u4F1A\u88AB\u989D\u5916\u89C6\u4E3A\u88AB \u6D88\u8017 \u548C\u88AB\u4ECE\u624B\u724C\u4E2D \u4E22\u5F03 \u548C\u4F7F\u7528\u4E86 \u80FD\u529B\u724C \u3002\u4F60 \u6D88\u8017 \u6216 \u4E22\u5F03 \u7684\u724C\uFF0C\u540C\u65F6\u4F1A\u88AB\u989D\u5916\u89C6\u4E3A\u53E6\u4E00\u79CD\u6548\u679C\u3002",
-      "flavorText": "\u73A9\u724C\u7C7B\u6E38\u620F\u7684\u65F6\u5019\u53EF\u4EE5\u65E0\u9650\u5236\u7684\u53D8\u51FAJoker\uFF0C\u56E0\u6B64\u7ACB\u4E8E\u4E0D\u8D25\u4E4B\u5730\u3002"
-    },
-    {
-      "name": "\u5996\u5200\u6751\u6B63",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u62BD\u5230\u6216\u6253\u51FA 0 \u8017\u80FD\u7684\u653B\u51FB\u724C\u6B21\u6570\u5408\u8BA1\u4E3A 2 \u65F6\uFF0C\u62BD 1 \u5F20\u724C\u3002",
+      "description": "Enemies that had Artifact, will not be able to give positive effects to themselves, nor negative effects to player.",
       "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
     },
     {
-      "name": "\u5C42\u53E0\u9632\u62A4\u7F69",
-      "tier": "Rare",
+      "name": "One Hit Wonder",
+      "tier": "Common",
       "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u83B7\u5F97\u4E00\u6B21 \u683C\u6321 \uFF0C\u672C\u56DE\u5408\u63A5\u4E0B\u6765\u83B7\u5F97\u7684 \u683C\u6321 \u6570\u503C\u90FD\u5C06\u589E\u52A0 1 \u3002",
+      "description": "Whenever your HP is 1: your attack has half chance cause non-Boss target to die; Boss enemies' damage is decreased by 50%, Boss enemies receive 50% more attack damage and unblocked non-attack damage.",
+      "flavorText": "\u4F60\u5DF2\u77E5\u6653\u6B7B\u4EA1\u3002"
+    },
+    {
+      "name": "The Acrobat",
+      "tier": "Common",
+      "pool": "",
+      "description": "During your turn, whenever the numbering of two cards you play in a row has different change direction from the previous one, gain 1 gold.",
       "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
     },
     {
-      "name": "\u5E0C\u671B",
-      "tier": "Rare",
+      "name": "Assault Learning",
+      "tier": "Uncommon",
       "pool": "",
-      "description": "\u6BCF\u53D7\u5230\u4E00\u6B21 \u653B\u51FB \u4F24\u5BB3\uFF0C\u6709 0.618% \u7684\u6982\u7387\u56DE\u590D\u6240\u6709\u751F\u547D\u5E76\u4F7F\u6240\u6709\u654C\u4EBA\u76F4\u63A5\u6B7B\u4EA1\u3002\u5F53\u624B\u724C\u7528\u5B8C\u65F6\uFF0C\u6709 6.18% \u7684\u6982\u7387\u53EF\u4EE5\u4ECE\u724C\u7EC4\u4E2D\u9009\u62E9\u5C06\u6700\u591A 10 \u5F20\u724C\u7684\u590D\u5236\u54C1\u653E\u5165\u624B\u724C\u3002\u6BCF\u6B21\u53D7\u5230 \u653B\u51FB \u4F24\u5BB3\u672A\u89E6\u53D1\u65F6\uFF0C\u5176\u89E6\u53D1\u6982\u7387\u589E\u52A0 0.618% \uFF0C\u89E6\u53D1\u540E\u589E\u52A0\u7684\u6982\u7387\u6E05\u96F6\u3002",
-      "flavorText": "\u201C\u5E0C\u671B\u662F\u575A\u97E7\u7684\u62D0\u6756\uFF0C\u5FCD\u8010\u662F\u65C5\u884C\u888B\uFF0C\u643A\u5E26\u5B83\u4EEC\uFF0C\u4EBA\u53EF\u4EE5\u767B\u4E0A\u6C38\u6052\u4E4B\u65C5\u3002\u201D \u2014\u2014 \u7F57\u7D20"
-    },
-    {
-      "name": "\u5FAA\u73AF\u62A4\u7B26",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u4F60\u7684\u6BCF\u5F20 \u6D88\u8017 \u724C\u5728\u6BCF\u573A\u6218\u6597\u4E2D\u7B2C\u4E00\u6B21\u88AB\u6253\u51FA\u65F6\u4E0D\u4F1A\u88AB \u6D88\u8017 \u3002",
-      "flavorText": "\u4E0D\u51C6\u8D70\uFF01\u518D\u6765\u4E00\u6B21\u3002"
-    },
-    {
-      "name": "\u6297\u6027\u62A4\u7B26",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u6BCF\u5F53\u53D7\u5230\u4F24\u5BB3\u540E\uFF0C\u63A5\u4E0B\u6765\u53D7\u5230\u7684\u4F24\u5BB3\u7684\u6700\u7EC8\u6570\u503C\u90FD\u5C06\u964D\u4F4E 1 \u3002\n\u5F53\u901A\u8FC7\u6B64\u9057\u7269\u5B8C\u5168\u683C\u6321\u4E00\u6B21\u4F24\u5BB3\u540E\uFF0C\u6570\u503C\u91CD\u7F6E\u3002",
-      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
-    },
-    {
-      "name": "\u65E2\u89C6\u611F",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u5982\u679C\u4F60\u5728\u56DE\u5408\u5185\u53EA\u51FA\u8FC7\u4E00\u79CD\u7C7B\u578B\u7684\u724C\uFF0C\u4E14\u56DE\u5408\u7ED3\u675F\u65F6\u6CA1\u6709\u80FD\u91CF\u5269\u4F59\uFF0C\u4E0B\u56DE\u5408\u5F00\u59CB\u65F6\u5C06\u8FD9\u4E9B\u724C\u7684\u590D\u5236\u54C1\u653E\u5165\u624B\u724C\uFF0C\u5176\u8017\u80FD\u5C06\u5728\u56DE\u5408\u5185\u53D8\u4E3A 0 \u4E14\u6253\u51FA\u65F6 \u6D88\u8017 \u3002",
-      "flavorText": "D\u00E9j\u00E0vu\u3002"
-    },
-    {
-      "name": "\u6B63\u4E49",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u83B7\u5F97\u8D1F\u9762\u72B6\u6001\u65F6\uFF0C\u83B7\u5F97 1 \u529B\u91CF \u3002",
-      "flavorText": "\u201C\u6709\u591A\u5C11\u90AA\u6076\uFF0C\u5C31\u6709\u591A\u5C11\u6B63\u4E49\u3002\u201D"
-    },
-    {
-      "name": "\u6C34\u6676\u62A4\u76FE",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u5982\u679C\u4F60\u5728\u4F60\u7684\u56DE\u5408\u83B7\u5F97\u8FC7 \u683C\u6321 \uFF0C\u8BE5\u56DE\u5408\u7ED3\u675F\u65F6\u83B7\u5F97 1 \u5C42 \u6B8B\u5F71 \u3002",
-      "flavorText": "\u4F60\u6784\u7B51\u7684\u9632\u5FA1\uFF0C\u900F\u8FC7\u8FD9\u4E2A\u62A4\u76FE\u540E\uFF0C\u770B\u8D77\u6765\u4EFF\u4F5B\u88AB\u6A21\u7CCA\u4E86\u3002"
-    },
-    {
-      "name": "\u6FC0\u5316\u523B\u5370",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u4F60\u6BCF\u5BF9\u654C\u4EBA\u9020\u6210\u4E00\u6B21\u4F24\u5BB3\uFF0C\u4F60\u5728\u4E0B\u4E00\u56DE\u5408\u5F00\u59CB\u524D\u5BF9\u654C\u4EBA\u9020\u6210\u4F24\u5BB3\u7684\u6700\u7EC8\u6570\u503C\u90FD\u4F1A\u589E\u52A0 1 \u3002",
-      "flavorText": "\u4F60\u8FD8\u80FD\u575A\u6301\u5230\u4EC0\u4E48\u65F6\u5019\u5462\uFF1F"
-    },
-    {
-      "name": "\u70BC\u91D1\u672F\u58EB",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u62FE\u8D77\u65F6\uFF0C\u83B7\u5F97 1 \u4E2A\u836F\u6C34\u680F\u4F4D\u3002\u6BCF\u573A\u6218\u6597\u4E2D\u6709 1 \u6B21\u673A\u4F1A\u53EF\u4EE5\u5728\u4F60\u7684\u56DE\u5408\u53F3\u51FB\u8BE5\u9057\u7269\u6765\u81EA\u52A8\u4F7F\u7528\u7B2C\u4E00\u74F6\u53EF\u4F7F\u7528\u7684\u836F\u6C34\uFF0C\u4F46\u8FD9\u74F6\u836F\u6C34\u4E0D\u4F1A\u6D88\u8017\u3002",
-      "flavorText": "\u65E0\u6CD5\u65E0\u4E2D\u751F\u6709\uFF0C\u5374\u53EF\u4EE5\u590D\u5236\u4E00\u4E2A\u5DF2\u6709\u7684\u6837\u672C\u3002"
-    },
-    {
-      "name": "\u771F\u6B63\u7684\u5386\u77F3",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u6BCF\u56DE\u5408\u7ED3\u675F\uFF0C\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210\u56DE\u5408\u6570\u7684\u5E73\u65B9\u7684\u4F24\u5BB3\u3002\u6BCF 7 \u56DE\u5408\u91CD\u7F6E\u8BA1\u7B97\u4F24\u5BB3\u7684\u56DE\u5408\u6570\u3002",
-      "flavorText": "\u6700\u5F3A\u9057\u7269\u2014\u2014\u5386\u77F3"
-    },
-    {
-      "name": "\u7A81\u51FB\u5B66\u4E60",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u4F60\u7684\u56DE\u5408\u5F00\u59CB\u65F6\uFF0C\u5C06\u4F60\u7684\u62BD\u724C\u5806\u9876\u90E8\u7B2C\u4E00\u5F20\u53EF \u5347\u7EA7 \u7684\u724C\u5728\u672C\u573A\u6218\u6597\u4E2D \u5347\u7EA7 \u3002",
+      "description": "At the start of each turn, pgrade the first upgradable card from top of your draw pile for rest of combat.",
       "flavorText": "\u505C\u4E00\u4E0B\uFF0C\u8BA9\u6211\u5148\u5B66\u4E00\u5B66\u3002"
     },
     {
-      "name": "\u7EA6\u675F\u7B26\u6587",
-      "tier": "Rare",
+      "name": "Balanced Periapt",
+      "tier": "Uncommon",
       "pool": "",
-      "description": "\u6218\u6597\u5F00\u59CB\u65F6\uFF0C\u5C06 1 \u5F20 \u707C\u4F24 \u6D17\u5165\u62BD\u724C\u5806\u3002\u56DE\u5408\u7ED3\u675F\u65F6\uFF0C\u4E0D\u8003\u8651\u80FD\u91CF\u56E0\u7D20\uFF0C\u4F60\u624B\u724C\u4E2D\u6BCF\u6709\u4E00\u5F20\u4E0D\u80FD\u88AB\u6253\u51FA\u7684\u724C\uFF0C\u6062\u590D 1 \u751F\u547D\u5E76\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210 10 \u70B9\u4F24\u5BB3\u3002",
-      "flavorText": "\u4EA4\u950B\u624D\u4E0D\u662F\u6700\u83DC\u7684\u5462\uFF01"
-    },
-    {
-      "name": "\u8001\u65E7\u7684\u56DE\u65CB\u9556",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u4F60\u5728\u4F60\u7684\u56DE\u5408\u4E2D\u6BCF\u6253\u51FA\u4E00\u5F20\u724C\uFF0C\u5BF9\u968F\u673A\u654C\u4EBA\u9020\u6210\u4F60\u5728\u8BE5\u56DE\u5408\u5DF2\u6253\u51FA\u7684\u724C\u6570\u7684\u4F24\u5BB3\u3002",
-      "flavorText": "\u4F60\u8D8A\u662F\u4F7F\u7528\u8FD9\u4E2A\u56DE\u65CB\u9556\uFF0C\u4F60\u8D8A\u4F1A\u6C89\u8FF7\u4E8E\u5176\u4E2D\u3002"
-    },
-    {
-      "name": "\u81EA\u6211\u9632\u5FA1\u7CFB\u7EDF",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u5728\u6218\u6597\u4E2D\u5931\u53BB\u751F\u547D\u540E\uFF0C\u7ACB\u5373\u83B7\u5F97\u5176\u6570\u503C\u7684 \u683C\u6321 \uFF0C\u6BCF\u5931\u53BB\u4E00\u6B21\uFF0C\u4E0B\u6B21\u989D\u5916\u83B7\u5F97 1 \u70B9\u3002",
+      "description": "Your Max HP will never change anymore. Whenever you would change your Max HP, change your HP instead by a factor of 3 if increase, 1 if decrease.",
       "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
     },
     {
-      "name": "\u81F4\u547D\u8FDE\u9501",
-      "tier": "Rare",
+      "name": "Heart Of Da Vinci",
+      "tier": "Uncommon",
       "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u6740\u6B7B\u654C\u4EBA\u65F6\uFF0C\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210\u51FB\u6740\u6EA2\u51FA\u4F24\u5BB3\u7684 2.718 \u500D\u7684\u4F24\u5BB3\u3002",
-      "flavorText": "Die! Die! Die!"
+      "description": "Other character's relics are now obtainable.\nWhenever you pickup another character's relic, choose and add 1 of 20 of that character's cards to your deck.",
+      "flavorText": "\u4F60\u73B0\u5728\u611F\u89C9\u5230\u4F60\u4EFF\u4F5B\u80FD\u63A5\u53D7\u6240\u6709\u6069\u60E0\u3002"
     },
     {
-      "name": "\u8346\u68D8\u82B1\u675F",
-      "tier": "Rare",
+      "name": "Hope",
+      "tier": "Uncommon",
       "pool": "",
-      "description": "\u6BCF\u573A\u6218\u6597\u5F00\u59CB\u65F6\uFF0C\u83B7\u5F97 1 \u5C42\u8346\u68D8\uFF1B\u6BCF\u53D7\u5230\u4E00\u6B21 \u653B\u51FB \uFF0C\u589E\u52A0 1 \u5C42\u8346\u68D8\uFF1B\u6BCF\u53D7\u5230\u4E00\u6B21 \u653B\u51FB \u4F24\u5BB3\uFF0C\u989D\u5916\u589E\u52A0 1 \u5C42\u8346\u68D8\uFF1B\u5982\u679C\u53D7\u5230\u7C7B\u578B\u4E3A\u5931\u53BB\u751F\u547D\u7684\u4F24\u5BB3\uFF0C\u589E\u52A0\u5931\u53BB\u751F\u547D\u70B9\u6570\u7684\u8346\u68D8\u3002",
-      "flavorText": "\u6367\u7740\u8FD9\u675F\u82B1\uFF0C\u4F60\u4EFF\u4F5B\u4E0D\u518D\u9700\u8981\u51FB\u9000\u4F60\u7684\u654C\u4EBA\u3002"
+      "description": "Whenever you receive unblocked attack damage, you have a probablity of 0.618% to be fully healed and make all enemies die. Whenever you don't have any cards in your hand, you have a probablity of 6.18% to choose copies of a maximum of 10 cards in your deck to put into your hand. Whenever receive attack damage without active, the probablity will be increased by a flat 0.618% till it actives.",
+      "flavorText": "\u201C\u5E0C\u671B\u662F\u575A\u97E7\u7684\u62D0\u6756\uFF0C\u5FCD\u8010\u662F\u65C5\u884C\u888B\uFF0C\u643A\u5E26\u5B83\u4EEC\uFF0C\u4EBA\u53EF\u4EE5\u767B\u4E0A\u6C38\u6052\u4E4B\u65C5\u3002\u201D \u2014\u2014 \u7F57\u7D20"
     },
     {
-      "name": "\u840A\u74E6\u6C40",
-      "tier": "Rare",
+      "name": "Life Armor",
+      "tier": "Uncommon",
       "pool": "",
-      "description": "\u62FE\u53D6\u65F6\u83B7\u5F97\u4E09\u5F20\u968F\u673A \u8BC5\u5492 \u3002\u6218\u6597\u5F00\u59CB\u65F6\u83B7\u5F97 3 \u70B9 \u529B\u91CF \u3002\u6BCF 3 \u56DE\u5408\u83B7\u5F97\u4F60\u724C\u7EC4\u4E2D\u8BC5\u5492\u724C\u6570\u91CF\u70B9 \u529B\u91CF \u3002",
-      "flavorText": "\u201CKA(\u5170)KA(\u5170)A(\u9732)\uFF01\u201D \u2014\u2014\u5317\u51C9"
+      "description": "Whenever you lose HP in combat, gain same amount of Block, and increase future Block gain through this relic by 1 for this combat.",
+      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
     },
     {
-      "name": "\u8840\u796D\u964D\u7075\u672F",
-      "tier": "Rare",
+      "name": "The Dragon Star Hat",
+      "tier": "Uncommon",
       "pool": "",
-      "description": "\u6218\u6597\u5F00\u59CB\u65F6\uFF0C\u53EF\u4EE5\u9009\u62E9\u5931\u53BB 10% \u6700\u5927\u751F\u547D(\u81F3\u5C11 1 )\u7684\u751F\u547D\uFF0C\u4ECE\u4F60\u7684\u6240\u6709\u724C\u4E2D\u9009\u62E9\u4E00\u5F20\u724C\uFF0C\u5C06\u5176\u5BF9\u968F\u673A\u76EE\u6807\u6253\u51FA\u3002\u82E5\u5176\u53EF\u88AB \u5347\u7EA7 \u5219\u5728\u6253\u51FA\u524D\u5C06\u5176\u5728\u672C\u5C40\u6E38\u620F \u5347\u7EA7 \u3002",
-      "flavorText": "\u8840\u796D\uFF0C\u964D\u4E34\u3002"
+      "description": "Whenever you Rest, increase Charge Capacity by 1. Whenever you enter a Rest Site, get fully charged. Whenever you enter a Rest Site, start next few combat with Charge amount of Strength and reduce it by 1.",
+      "flavorText": "\u5E76\u6CA1\u6709\u5728\u5077\u61D2\u3002"
     },
     {
-      "name": "\u91D1\u5E01\u8F89\u714C",
-      "tier": "Rare",
+      "name": "The Motorcycle",
+      "tier": "Uncommon",
       "pool": "",
-      "description": "\u6BCF\u573A\u6218\u6597\u5F00\u59CB\u65F6\u548C\u6BCF\u5F53\u654C\u4EBA\u6B7B\u4EA1\u65F6\uFF0C\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210\u5F53\u524D \u91D1\u5E01 \u6570\u91CF\u7684\u5E73\u65B9\u7684\u4E09\u6B21\u6839\u7684\u4E00\u534A\u7684\u4F24\u5BB3\u3002",
-      "flavorText": "\u58D5\u6C14\u903C\u4EBA"
-    },
-    {
-      "name": "\u963F\u5F25\u9640\u4F5B",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u975EBoss\u6218\u6597\u4E2D\u7B2C\u4E00\u56DE\u5408\u53EF\u4EE5\u53F3\u51FB\u8BE5\u9057\u7269\u9003\u8DD1\u3002\n( SL \u540E\u672C\u573A\u6218\u6597\u5931\u6548)",
+      "description": "When you are in the first turn of Non-Boss combat, you may right click on this relic to escape.\n(Disabled for one combat after SL)",
       "flavorText": "\u4EBA\u751F\u4E0D\u80FD\u91CD\u6765\u3002"
     },
     {
-      "name": "\u9EBB\u85AF",
+      "name": "Black Framed Glasses",
       "tier": "Rare",
       "pool": "",
-      "description": "\u4F60\u5728\u540C\u4E00\u56DE\u5408\u5185\u6253\u51FA 5 \u5F20 \u6280\u80FD\u724C \u65F6\uFF0C\u83B7\u5F97 1 \u5C42 \u65E0\u5B9E\u4F53 \u3002",
-      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
-    },
-    {
-      "name": "\u9ED1\u6846\u773C\u955C",
-      "tier": "Rare",
-      "pool": "",
-      "description": "\u6BCF\u56DE\u5408\u4F7F\u6240\u6709\u654C\u4EBA\u5931\u53BB 1 \u70B9\u751F\u547D\uFF0C\u5E76\u7ED9\u81EA\u5DF1\u6062\u590D 1 \u70B9\u751F\u547D\u3002\u5F53\u53D7\u5230\u5927\u4E8E\u7B49\u4E8E\u751F\u547D\u4E0A\u9650\u7684\u4E00\u534A\u7684\u4F24\u5BB3\u65F6\uFF0C\u5C06\u5176\u964D\u4E3A 1 \u70B9\uFF1B\u5982\u679C\u8BE5\u4F24\u5BB3\u6765\u81EA\u81EA\u5DF1\uFF0C\u5C06\u5176\u964D\u4E3A 0 \u70B9\u3002",
+      "description": "At the start of each turn, heal 1 HP, every enemies lose 1 HP. Whenever yoou would receive a unblocked damage not less than half of your Max HP, reduce it to 1; if it comes from yourself, reduce it to 0.",
       "flavorText": "\u8FD9\u4E2A\u773C\u955C\u8BA9\u4F60\u611F\u89C9\u8FD8\u80FD\u518D\u6491\u4E00\u79D2\u3002"
     },
     {
-      "name": "Test\u793C\u7269\u76D2",
-      "tier": "Special",
+      "name": "Bouquet With Thorns",
+      "tier": "Rare",
       "pool": "",
-      "description": "\u53F3\u952E\u5355\u51FB\u6216\u53F3\u952E\u53CC\u51FB\u672C\u9057\u7269\uFF0C\u4ECE\u9057\u7269\u548C\u5361\u724C\u4E2D\u9009\u62E9\u4E00\u7C7B\uFF0C\u518D\u4ECE\u968F\u673A\u7684 3 \u4EF6\u672C mod \u5185\u7684\u8BE5\u7C7B\u7269\u54C1\u4E2D\u9009\u62E9 1 \u4EF6\u83B7\u5F97\u3002\u4F7F\u7528\u540E\u672C\u9057\u7269\u5931\u6548\u3002",
-      "flavorText": "\u6765\u81EA\u5F7C\u541B\u7684\u793C\u7269\u3002"
+      "description": "At the start of each combat, gain 1 Throns. Whenever being attacked, gain 1 Throns; whenever you receive unblocked attack damage, gain 1 extra Throns. Whenever damaged by losing HP, gain 1 Throns for each HP lost in this damage.",
+      "flavorText": "\u6367\u7740\u8FD9\u675F\u82B1\uFF0C\u4F60\u4EFF\u4F5B\u4E0D\u518D\u9700\u8981\u51FB\u9000\u4F60\u7684\u654C\u4EBA\u3002"
     },
     {
-      "name": "\u4E03\u539F\u7F6A",
+      "name": "Brilliant",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever an enemy dies and at the start of each combat, deal an damage of half of your gold to the power of 2/3 to ALL enemies.",
+      "flavorText": "\u58D5\u6C14\u903C\u4EBA"
+    },
+    {
+      "name": "Casing Shield",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you gain Block, increase future Block gain by 1 for this turn.",
+      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
+    },
+    {
+      "name": "Constraint Periapt",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Start combats with 1 Burn in your draw pile. For each card that is Unplayable in your hand when you end your turn with, heal 1 and deal 10 damage to ALL enemies.",
+      "flavorText": "\u4EA4\u950B\u624D\u4E0D\u662F\u6700\u83DC\u7684\u5462\uFF01"
+    },
+    {
+      "name": "Crystal Shield",
+      "tier": "Rare",
+      "pool": "",
+      "description": "If you have gained any Block in your turn, gain 1 Blur when this turn ends.",
+      "flavorText": "\u4F60\u6784\u7B51\u7684\u9632\u5FA1\uFF0C\u900F\u8FC7\u8FD9\u4E2A\u62A4\u76FE\u540E\uFF0C\u770B\u8D77\u6765\u4EFF\u4F5B\u88AB\u6A21\u7CCA\u4E86\u3002"
+    },
+    {
+      "name": "Cyclic Periapt",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Cards which would Exhaust when played will instead discard at the first time.",
+      "flavorText": "\u4E0D\u51C6\u8D70\uFF01\u518D\u6765\u4E00\u6B21\u3002"
+    },
+    {
+      "name": "D\u00E9j\u00E0vu",
+      "tier": "Rare",
+      "pool": "",
+      "description": "If you end your turn without energy, and ALL the cards played this turn have same card type, add the copies of these cards into your hand, which cost 0 until the end of turn and Exhaust when played.",
+      "flavorText": "D\u00E9j\u00E0vu."
+    },
+    {
+      "name": "Equal Treatment",
+      "tier": "Rare",
+      "pool": "",
+      "description": "The first card you played which is targeting to single enemy each turn will also affect ALL other enemies.",
+      "flavorText": "\u4E00\u4E2A\u90FD\u8DD1\u4E0D\u4E86\u3002"
+    },
+    {
+      "name": "Fatal Chain",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you kills an enemy, deal a damage of 271.8% of the overkill of the fatal damage to ALL enemies.",
+      "flavorText": "Die! Die! Die!"
+    },
+    {
+      "name": "Fortitude",
+      "tier": "Rare",
+      "pool": "",
+      "description": "If you end your turn without Block, gain 3 Strength.",
+      "flavorText": "\u201C\u52C7\u6562\u4E0D\u5728\u4E8E\u80FD\u591F\u8511\u89C6\u5371\u9669\uFF0C\u800C\u5728\u4E8E\u8BA4\u8BF7\u5371\u9669\u3001\u6218\u80DC\u5371\u9669\u3002\u201D \u2014\u2014 \u5E03\u52D2\u68EE\u4E1C"
+    },
+    {
+      "name": "Infection Source",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Your attack damage is decreased by 50%. All enemies that attacked by you will gain same amount of Poison as the damage amount they should receive, however they will only lose 1 HP from your attack.",
+      "flavorText": "\u4F60\u611F\u5230\u81EA\u5DF1\u53D8\u5F97\u865A\u5F31\u4E86\uFF0C\u4F46\u540C\u65F6\u53D8\u5F97\u80FD\u64CD\u7EB5\u75C5\u6BD2\u3002"
+    },
+    {
+      "name": "Injury Resistance",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you lose HP, ALL future final HP loss would reduced by 1.\nWhen you completely block a HP loss through this relic, reset the reduction back to 0.",
+      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
+    },
+    {
+      "name": "Intensify Imprint",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you cause an unblocked damage to enemies, your final damage to enemies will be increased by 1 till next turn starts.",
+      "flavorText": "\u4F60\u8FD8\u80FD\u575A\u6301\u5230\u4EC0\u4E48\u65F6\u5019\u5462\uFF1F"
+    },
+    {
+      "name": "Justice",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever gain a negative effect, gain 1 Strength.",
+      "flavorText": "\u201C\u6709\u591A\u5C11\u90AA\u6076\uFF0C\u5C31\u6709\u591A\u5C11\u6B63\u4E49\u3002\u201D"
+    },
+    {
+      "name": "Laevatain",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon pickup, obtain 3 random Curse. At the start of each combat, gain 3 Strength. Every 3 turns, for each Curse in your deck, gain 1 Strength.",
+      "flavorText": "\u201CKA(\u5170)KA(\u5170)A(\u9732)\uFF01\u201D \u2014\u2014\u5317\u51C9"
+    },
+    {
+      "name": "Muramasa",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever the number of drawing and playing of 0 cost attacks sum up to 2, draw 1 card.",
+      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
+    },
+    {
+      "name": "Nyarlathotep",
+      "tier": "Rare",
+      "pool": "",
+      "description": "All the cards you played, will also be treated as being Exhausted, being Discarded and a Power. Whenever a card is Exhausted or Discarded, it will also be treated as the other one.",
+      "flavorText": "\u73A9\u724C\u7C7B\u6E38\u620F\u7684\u65F6\u5019\u53EF\u4EE5\u65E0\u9650\u5236\u7684\u53D8\u51FAJoker\uFF0C\u56E0\u6B64\u7ACB\u4E8E\u4E0D\u8D25\u4E4B\u5730\u3002"
+    },
+    {
+      "name": "Obsolete Boomerang",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever playing a card, deal a damage of the amount of cards played this turn to random enemy.",
+      "flavorText": "\u4F60\u8D8A\u662F\u4F7F\u7528\u8FD9\u4E2A\u56DE\u65CB\u9556\uFF0C\u4F60\u8D8A\u4F1A\u6C89\u8FF7\u4E8E\u5176\u4E2D\u3002"
+    },
+    {
+      "name": "The Alchemist",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon pickup, gain 1 Potion slot. For each combat, during your turn, you have 1 chance to right click on this relic to auto use your first usable Potion without consume it.",
+      "flavorText": "\u65E0\u6CD5\u65E0\u4E2D\u751F\u6709\uFF0C\u5374\u53EF\u4EE5\u590D\u5236\u4E00\u4E2A\u5DF2\u6709\u7684\u6837\u672C\u3002"
+    },
+    {
+      "name": "The Maize",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you play 5 Skill during your turn, gain 1 Intangible.",
+      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
+    },
+    {
+      "name": "The Real Stone Calender",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the end of each turn, deal the number of turn squared damage to ALL enemies. Reset turn counter for damage every 7 turns.",
+      "flavorText": "\u6700\u5F3A\u9057\u7269\u2014\u2014\u5386\u77F3"
+    },
+    {
+      "name": "Thousand Knives",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you draw a 0 cost Attack, add a copy to your hand. Whenever you play a 0 cost Attack, add a copy to your discard pile, and for each 0 cost Attack in your hand, gain 1 Block.",
+      "flavorText": "\u4E0D\u8981\u505C\u4E0B\u6765\u554A\u3002"
+    },
+    {
+      "name": "Ascension Heart",
       "tier": "Special",
       "pool": "",
-      "description": "\u62FE\u53D6\u65F6\uFF0C\u5982\u679C\u672A\u62E5\u6709\uFF0C\u83B7\u5F97\u6BD2\u5DEB\u5A03\u5A03\u3001\u9ED1\u77F3\u62A4\u7B26\u3001\u84DD\u8721\u70DB\uFF0C\u83B7\u5F97\u4E03\u539F\u7F6A\u8BC5\u5492\u3002\u5982\u679C\u724C\u7EC4\u4E2D\u5B58\u5728\u6BCF\u79CD\u4E03\u5927\u7F6A\uFF0C\u51FB\u8D25Boss\u540E\u80FD\u83B7\u5F97\u4E00\u4EF6\u989D\u5916\u7684Boss\u9057\u7269\u3002",
+      "description": "Gain benefit according to Ascension Level.",
+      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
+    },
+    {
+      "name": "Event celebration - Halloween",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, obtain Blue Candle.\nYou will only have Candy, Trick, Ghost Costume in your combat card rewards.\nWhenever you play a Curse, add a Halloween into your hand.",
+      "flavorText": "Trick or Treat!"
+    },
+    {
+      "name": "Seven Deadly Sins",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, if not having, obtain Du-Vu Doll, Darkstone Periapt, Blue Candle, Curses of Sins. Whenever defeating Boss with each kind of Sins, you may choose to obtain an extra Boss relic.",
       "flavorText": "\u539F\u7F6A\u662F\u4EBA\u7C7B\u7684\u672C\u6027\u3002"
     },
     {
-      "name": "\u8FDB\u9636\u4E4B\u5FC3",
+      "name": "Test Box",
       "tier": "Special",
       "pool": "",
-      "description": "\u4F9D\u636E \u8FDB\u9636\u7B49\u7EA7 \u83B7\u5F97\u589E\u76CA\u3002",
+      "description": "Right click or double right click on this relic to active relic reward or card reward. You may choose a reward from 3. This relic can ONLY active once. This relic can ONLY be used at floor 0.",
+      "flavorText": "\u6765\u81EA\u5F7C\u541B\u7684\u793C\u7269\u3002"
+    },
+    {
+      "name": "The Mahjong (Work In Progress)",
+      "tier": "Special",
+      "pool": "",
+      "description": "BUG ALERT. UNFINISHED RELIC. \u5728\u6218\u6597\u4E2D\u8FDB\u884C\u9EBB\u5C06\u6E38\u620F\uFF0C\u6BCF\u56DE\u5408\u5F00\u59CB\u6478\u4E00\u5F20\u9EBB\u5C06\u724C\u540E\u9009\u62E9\u5207\u51FA\u4E00\u5F20\uFF0C\u5C06\u5176\u52A0\u5165\u624B\u724C\u3002\u6253\u51FA \u5B9D\u724C \u7684\u6548\u679C\u7FFB\u500D\u3002\u6839\u636E\u548C\u724C\u70B9\u6570\u83B7\u5F97\u5176\u4ED6\u6548\u679C\u3002\n\u8FD9\u4EF6\u9057\u7269\u8FD8\u672A\u5236\u4F5C\u5B8C\u6210\uFF0C\u53EA\u80FD\u53D1\u6325\u4E00\u5C0F\u90E8\u5206\u6548\u679C\uFF0C\u5E76\u542B\u6709\u8BB8\u591Abug(\u521D\u6B21\u6218\u6597\u95EA\u9000\uFF0C\u91CD\u5F00\u81EA\u52A8\u4FEE\u590D)\u82E5\u76EE\u524D\u4E0D\u60F3\u6D4B\u8BD5\u672C\u9057\u7269\u53EF\u9009\u62E9\u91CD\u5F00\u3002",
       "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
     },
     {
-      "name": "\u2468",
+      "name": "(9)",
       "tier": "Boss",
       "pool": "",
-      "description": "\u6BCF\u6B21\u53D7\u5230\u81F4\u547D\u4F24\u5BB3\u65F6\u65E0\u6761\u4EF6\u5C06\u751F\u547D\u4E0A\u9650\u6570\u503C\u964D\u4F4E 9 \u70B9\uFF0C\u540C\u65F6\u5C06\u6B64\u6B21\u4F24\u5BB3\u964D\u4E3A 1 \u3002\u8BE5\u9057\u7269\u9020\u6210\u7684\u751F\u547D\u4E0A\u9650\u964D\u4F4E\u4E0D\u4F1A\u88AB\u5F71\u54CD\u3002",
+      "description": "Whenever you would die, lose 9 Max HP, and reduce the damage to 1. This Max HP reduction will not be affected.",
       "flavorText": "\u8FD9\u6837\u4F60\u8FD8GG\uFF0C\u90A3\u4F60\u5C31\u662F\u4E2ABAKA\uFF01"
     },
     {
-      "name": "\u4E30\u6536\u56FE\u817E",
+      "name": "Batch Processing System",
       "tier": "Boss",
       "pool": "",
-      "description": "\u62FE\u8D77\u65F6\uFF0C\u5C06\u4F60\u7684\u6700\u5927\u751F\u547D\u7FFB\u500D\u3002\u4F60\u589E\u52A0\u7684\u6700\u5927\u751F\u547D\u548C\u53D7\u5230\u7684\u6CBB\u7597\u6548\u679C\u7FFB\u500D\u3002\u4F60\u7684\u6240\u6709\u654C\u4EBA\u5C06\u4F1A\u62E5\u6709 1.5 \u500D\u7684\u6700\u5927\u751F\u547D\u3002",
-      "flavorText": "\u5C16\u5854\u4F4F\u6C11\u7948\u6C42\u4E30\u6536\u7684\u8C61\u5F81\uFF0C\u4EFF\u4F5B\u80FD\u7ED9\u5C16\u5854\u5E26\u6765\u751F\u547D\u529B\u3002"
-    },
-    {
-      "name": "\u4FBF\u643A\u796D\u575B",
-      "tier": "Boss",
-      "pool": "",
-      "description": "\u6218\u6597\u4E2D\u6BCF\u56DE\u5408\u5931\u53BB 1 \u70B9\u751F\u547D\u3002\u6BCF\u8FDB\u5165\u4E00\u4E2A\u623F\u95F4\uFF0C\u5931\u53BB 1 \u70B9\u6700\u5927\u751F\u547D\u3002\u62FE\u53D6\u540E\u6BCF\u901A\u8FC7\u8BE5\u9057\u7269\u5931\u53BB 5 \u70B9\u6700\u5927\u751F\u547D\uFF0C\u5728\u6218\u6597\u5F00\u59CB\u65F6\u83B7\u5F97 1 \u70B9 \u529B\u91CF \uFF0C 1 \u70B9 \u654F\u6377 \uFF0C 1 \u5C42 \u591A\u5C42\u62A4\u7532 \u3002",
-      "flavorText": "\u8FD9\u4E2A\u796D\u575B\u7ED9\u4E88\u4E86\u4F60\u5F3A\u5927\u7684\u80FD\u529B\uFF0C\u4F46\u4E5F\u8D2A\u5A6A\u5730\u541E\u566C\u7740\u4F60\u7684\u751F\u547D\u3002"
-    },
-    {
-      "name": "\u5B57\u7B26\u7C89\u788E\u673A",
-      "tier": "Boss",
-      "pool": "",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\u83B7\u5F97 [R] \u3002\u4F60\u5728\u6218\u6597\u4E2D\u65E0\u6CD5\u518D\u770B\u89C1\u6240\u6709\u724C\u7684\u6587\u5B57\u3002",
-      "flavorText": "\u8FD9\u53F0\u673A\u5668\u4E0A\u6CA1\u6709\u4EFB\u4F55\u6587\u5B57\uFF0C\u4F46\u4F60\u4E0D\u77E5\u4E3A\u4F55\u80FD\u7406\u89E3\u5B83\u7684\u7528\u9014\u3002"
-    },
-    {
-      "name": "\u5BBD\u5BB9",
-      "tier": "Boss",
-      "pool": "",
-      "description": "\u4F60\u53EF\u4EE5\u5728\u4F60\u7684\u56DE\u5408\u6253\u51FA\u4E00\u5207\u7531\u4E8E\u80FD\u91CF\u4E0D\u8DB3\u4EE5\u5916\u539F\u56E0\u800C\u4E0D\u80FD\u88AB\u6253\u51FA\u7684\u724C\u3002\u5982\u679C\u662F \u72B6\u6001 \u6216 \u8BC5\u5492 \uFF0C\u5C06\u5176 \u6D88\u8017 \u3002(\u8FDE\u7EED\u51FA\u724C\u8FC7\u5FEB\u53EF\u80FD\u5BFC\u81F4\u6682\u65F6\u65E0\u6CD5\u89E6\u53D1\u6548\u679C\uFF0C\u9700\u91CD\u65B0\u6253\u4E00\u5F20\u80FD\u6B63\u5E38\u6253\u51FA\u7684\u724C\u6765\u6062\u590D)",
-      "flavorText": "\u6709bug\u4E5F\u4E0D\u662F\u4EC0\u4E48\u91CD\u8981\u7684\u95EE\u9898\u5427\u3002"
-    },
-    {
-      "name": "\u6279\u91CF\u5904\u7406\u7CFB\u7EDF",
-      "tier": "Boss",
-      "pool": "",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\u51CF\u5C11 [R] \u3002\n\u6BCF\u5F53\u4F60\u5728\u540C\u4E00\u56DE\u5408\u5185\u8FDE\u7EED\u6253\u51FA\u7684\u4E24\u5F20\u724C\u8017\u80FD\u76F8\u540C\u65F6\uFF0C\u83B7\u5F97 [R] \u3002",
+      "description": "Lose [E] at the start of each turn.\nWhenever you play two cards of same cost in a row, gain [E] .",
       "flavorText": "\u6A21\u5757\u5316\u8FD0\u7B97\u3002"
     },
     {
-      "name": "\u65F6\u95F4\u65C5\u884C\u8005",
+      "name": "Blood Sacrifice Spiritualization",
       "tier": "Boss",
       "pool": "",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\u83B7\u5F97 [R] \u3002\u4F60\u521D\u59CB\u62E5\u6709 100 \u70B9(\u6700\u5927)\u7406\u6027\u503C\u3002\u6BCF\u6B21 SL \u635F\u5931 50% \u5F53\u524D\u7406\u6027\u503C\uFF0C\u6BCF\u6B21\u6218\u6597\u80DC\u5229\u6062\u590D 5 \u70B9\u7406\u6027\u503C\uFF0C\u6BCF\u6B21\u4F11\u606F\u6062\u590D 20 \u70B9\u7406\u6027\u503C\u3002\u5F53\u7406\u6027\u503C\u4F4E\u4E8E 20 \u65F6\u6BCF\u6B21\u6218\u6597\u7ED3\u675F\u5931\u53BB 10 \u70B9\u751F\u547D\u4E0A\u9650\u3002",
-      "flavorText": "El Psy Congroo"
+      "description": "At the start of each combat, you may choose to lose HP of 10% of your Max HP (at least 1), to choose a card from ALL your cards to auto play. Before auto playing it, if it is upgradable, Upgrade it for this run.",
+      "flavorText": "\u8840\u796D\uFF0C\u964D\u4E34\u3002"
     },
     {
-      "name": "\u68A6\u5E7B\u9986",
+      "name": "Dream House",
       "tier": "Boss",
       "pool": "",
-      "description": "\u62FE\u53D6\u65F6\u83B7\u5F97 \u5F00\u5FC3\u5C0F\u82B1 \u548C \u706F\u7B3C \u3002\u6BCF\u56DE\u5408\u5F00\u59CB\u83B7\u5F97 [R] \u3002\u4F60\u53EA\u80FD\u83B7\u5F97\u666E\u901A\u5361\u3002",
+      "description": "Upon pickup, obtain Happy Flower and Lantern. Gain [E] at the start of each turn. You can NLY obtain cards with Common Rarity.",
       "flavorText": "\u7B80\u5355\uFF0C\u7C97\u66B4\uFF0C\u76F4\u63A5\u3002"
     },
     {
-      "name": "\u711A\u70E7\u53D1\u7535\u673A",
+      "name": "Energy Check",
       "tier": "Boss",
       "pool": "",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\u83B7\u5F97 [R] \uFF0C \u6D88\u8017 \u4E00\u5F20\u724C\u3002",
-      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
-    },
-    {
-      "name": "\u767B\u5C71\u8005\u7684\u51B3\u5FC3",
-      "tier": "Boss",
-      "pool": "",
-      "description": "\u5728\u6BCF\u573A\u6218\u6597\u5185\uFF0C\u6BCF\u5F53\u4F60\u6253\u51FA\u7684\u724C\u7684\u8017\u80FD\u6BD4\u524D\u4E00\u5F20\u724C\u9AD8\u65F6\uFF0C\u6BCF\u9AD8\u51FA 1 \u70B9\uFF0C\u83B7\u5F97 [R] \uFF0C\u56DE\u590D 1 \u751F\u547D\uFF0C\u62BD 1 \u5F20\u724C\uFF0C\u5BF9\u6240\u6709\u654C\u4EBA\u9020\u6210 1 \u4F24\u5BB3\uFF0C\u83B7\u5F97 1 \u91D1\u5E01\u3002",
-      "flavorText": "\u7136\u800C\u67D0\u4E9B\u767B\u5C71\u8005\u603B\u662F\u559C\u6B22\u539F\u5730\u8E0F\u6B65\u3002"
-    },
-    {
-      "name": "\u7B26\u6587\u56DB\u9762\u4F53",
-      "tier": "Boss",
-      "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u6253\u51FA\u4E00\u5F20\u724C\u65F6\uFF0C\u5C06\u968F\u673A\u89E6\u53D1\u4EE5\u4E0B 4 \u79CD\u6548\u679C\u4E4B\u4E00\u3002\n\u5C06\u8FD9\u5F20\u724C \u6D88\u8017 \uFF0C\u56DE\u590D\u5176\u6D88\u8D39\u7684\u80FD\u91CF\uFF0C\u989D\u5916\u6253\u51FA\u4E00\u6B21\uFF0C \u591C\u9B47 \u8FD9\u5F20\u724C\u3002\n\u4F60\u53EF\u4EE5\u63D0\u524D\u77E5\u9053\u63A5\u4E0B\u6765\u4E00\u5F20\u724C\u5C06\u4F1A\u89E6\u53D1\u7684\u6548\u679C\u3002",
-      "flavorText": "\u4E0A\u9762\u7684\u7B26\u6587\u65E0\u6CD5\u8FA8\u8BC6\u3002"
-    },
-    {
-      "name": "\u7EB8\u724C\u9B54\u672F\u5E08",
-      "tier": "Boss",
-      "pool": "",
-      "description": "\u5728\u6BCF\u56DE\u5408\u5F00\u59CB\u83B7\u5F97 [R] \uFF0C\u5E76\u5C06\u4F60\u7684\u5F03\u724C\u5806\u6D17\u5165\u62BD\u724C\u5806\u3002",
-      "flavorText": "\u8F6C\u77AC\u5947\u8FF9\u3002"
-    },
-    {
-      "name": "\u80FD\u91CF\u652F\u7968",
-      "tier": "Boss",
-      "pool": "",
-      "description": "\u5F53\u524D\u80FD\u91CF\u4E0D\u8DB3\u4EE5\u6253\u51FA\u4E00\u5F20\u724C\u65F6\uFF0C\u53EF\u4EE5\u7528\u4E0B\u4E00\u56DE\u5408\u7684\u80FD\u91CF\u8865\u8DB3\u5F53\u524D \u80FD\u91CF \u3002\u5F53\u900F\u652F\u7684\u80FD\u91CF\u8D85\u8FC7\u6BCF\u56DE\u5408\u80FD\u91CF\u6700\u5927\u503C\u65F6\uFF0C\u8D85\u8FC7\u4E00\u70B9\u5931\u53BB 1 \u70B9\u751F\u547D\uFF1B\u6BCF\u591A\u8D85\u8FC7\u4E00\u70B9\u989D\u5916\u5931\u53BB 1 \u70B9\u751F\u547D\u3002",
+      "description": "If you have insufficient energy to play a card, you may advance energy next turn. If the amount of energy your advanced surpass your default energy each turn, for each energy surpassed, lose 1 HP; for each more energy surpassed, lose 1 more HP.",
       "flavorText": "\u6709\u501F\u6709\u8FD8\uFF0C\u9664\u975E\u6740\u5B8C\u3002"
     },
     {
-      "name": "\u8282\u5236",
+      "name": "Incineration Generator",
       "tier": "Boss",
       "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u5728\u724C\u7EC4\u4E2D\u589E\u52A0 3 \u5F20\u724C\uFF0C\u6709\u4E00\u6B21\u9009\u62E9\u79FB\u9664 1 \u5F20\u724C\u7684\u673A\u4F1A\u3002",
-      "flavorText": "\u201C\u8282\u5236\u662F\u6700\u597D\u7684\u533B\u672F\u3002\u201D \u2014\u2014 \u535A\u6069"
+      "description": "At the start of each turn: gain [E] , Exhaust a card.",
+      "flavorText": "\u8FD9\u4E2A\u4EBA\u5F88\u61D2\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709\u5199\u3002"
     },
     {
-      "name": "\u865A\u7A7A\u4E4B\u5319",
+      "name": "Portable Altar",
       "tier": "Boss",
       "pool": "",
-      "description": "\u6BCF\u573A\u6218\u6597\u7ED3\u675F\u65F6\uFF0C\u4F60\u6BCF\u6709\u4E00\u4EF6 Boss \u9057\u7269\uFF0C\u9009\u62E9\u79FB\u9664\u724C\u7EC4\u4E2D\u7684 1 \u5F20\u724C\u3002",
-      "flavorText": "\u865A\u7A7A\u662F\u8FD9\u4E2A\u4E16\u754C\u7684\u7EC8\u6781\u7B54\u6848\u3002"
+      "description": "At the start of each turn, lose 1 HP. Whenever you climb a floor, lose 1 Max HP. For every 5 Max HP lost through this relic: At the start of each combat, gain 1 Strength, Dexterity and Plated Armor; you will not lose HP from this relic in the first 1 turn of each combat.",
+      "flavorText": "\u8FD9\u4E2A\u796D\u575B\u7ED9\u4E88\u4E86\u4F60\u5F3A\u5927\u7684\u80FD\u529B\uFF0C\u4F46\u4E5F\u8D2A\u5A6A\u5730\u541E\u566C\u7740\u4F60\u7684\u751F\u547D\u3002"
     },
     {
-      "name": "\u897F\u884C\u5996",
+      "name": "Prudence",
       "tier": "Boss",
       "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u5BF9\u654C\u65B9\u9020\u6210\u4F24\u5BB3\u65F6\uFF0C\u56DE\u590D 1 \u70B9\u751F\u547D\u3002",
-      "flavorText": "\u90AA\u6076\u53C8\u4F18\u96C5\u7684\u4E0D\u7965\u4E4B\u7269"
+      "description": "In your turns, you can play all the cards that wouldn't be allowed to play if having sufficient energy. If it is Status or Curse, Exhaust it.",
+      "flavorText": "\u6709bug\u4E5F\u4E0D\u662F\u4EC0\u4E48\u91CD\u8981\u7684\u95EE\u9898\u5427\u3002"
     },
     {
-      "name": "\u8D1F\u9762\u60C5\u7EEA\u589E\u5F3A\u5668",
+      "name": "Recursion",
       "tier": "Boss",
       "pool": "",
-      "description": "\u5728\u6BCF\u56DE\u5408\u5F00\u59CB\u83B7\u5F97 [R] \uFF0C\u8F6E\u6D41\u83B7\u5F97 \u8106\u5F31 \u3001 \u865A\u5F31 \u3001 \u6613\u4F24 \u3002",
-      "flavorText": "\u6536\u96C6\uFF0C\u5206\u7C7B\uFF0C\u8F6C\u5316\u3002"
-    },
-    {
-      "name": "\u9012\u5F52",
-      "tier": "Boss",
-      "pool": "",
-      "description": "\u7B2C\u4E00\u56DE\u5408\u989D\u5916\u62BD 5 \u5F20\u724C\uFF0C\u4E4B\u540E\u7684\u6BCF\u4E00\u56DE\u5408\u6BD4\u524D\u4E00\u56DE\u5408\u5C11\u62BD 1 \u5F20\u724C\u3002\u6BCF 10 \u56DE\u5408\u91CD\u7F6E\u3002",
+      "description": "Draw 5 additional cards on the first turn of each combat. For rest of turns, draw 1 fewer card than the previous turn. Reset the progress every 10 turns.",
       "flavorText": "\u201C\u4EBA\u7406\u89E3\u8FED\u4EE3\uFF0C\u795E\u7406\u89E3\u9012\u5F52 \u3002\u201D \u2014\u2014 \u5F7C\u5F97\u675C\u5947"
     },
     {
-      "name": "\u4E07\u5B9D\u69CC",
-      "tier": "Shop",
+      "name": "Runic Tetrahedron",
+      "tier": "Boss",
       "pool": "",
-      "description": "\u6BCF\u56DE\u5408\u5F00\u59CB\uFF0C\u8BB0\u5F55\u624B\u724C\u4E2D\u7684\u6240\u6709\u724C\u7684\u8017\u80FD\u7684\u6700\u5C0F\u503C\u548C\u6700\u5927\u503C\uFF0C\u5C06\u4F60\u624B\u724C\u4E2D\u6240\u6709\u8017\u80FD\u4E3A\u8FD9\u4E24\u4E2A\u503C\u7684\u724C\u7684\u8017\u80FD\u5728\u672C\u573A\u6218\u6597\u4E2D\u53D8\u6210\u53E6\u4E00\u4E2A\u503C\u3002",
-      "flavorText": "\u4E0A\u9762\u7684\u6587\u5B57\u88AB\u4EBA\u62B9\u53BB\u4E86"
+      "description": "Whenever you play a card, one of the following 4 effects will become effective.\nExhaust this card, regain its energy cost, play it one more time, NightTerror the card.\nYou can know which the effect will become effective for the next card.",
+      "flavorText": "\u4E0A\u9762\u7684\u7B26\u6587\u65E0\u6CD5\u8FA8\u8BC6\u3002"
     },
     {
-      "name": "\u6148\u5584",
+      "name": "Saigiyou no You",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you cause unblocked damage to enemies, heal 1 HP.",
+      "flavorText": "\u90AA\u6076\u53C8\u4F18\u96C5\u7684\u4E0D\u7965\u4E4B\u7269"
+    },
+    {
+      "name": "String Disintegrator",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn. Cards will be TEXTLESS during combat.",
+      "flavorText": "\u8FD9\u53F0\u673A\u5668\u4E0A\u6CA1\u6709\u4EFB\u4F55\u6587\u5B57\uFF0C\u4F46\u4F60\u4E0D\u77E5\u4E3A\u4F55\u80FD\u7406\u89E3\u5B83\u7684\u7528\u9014\u3002"
+    },
+    {
+      "name": "Temperance",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you add 3 cards to your deck, you may remove 1 card from your deck.",
+      "flavorText": "\u201C\u8282\u5236\u662F\u6700\u597D\u7684\u533B\u672F\u3002\u201D \u2014\u2014 \u535A\u6069"
+    },
+    {
+      "name": "The Card Magician",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn, gain [E] and shuffle your discard pile into your draw pile.",
+      "flavorText": "\u8F6C\u77AC\u5947\u8FF9\u3002"
+    },
+    {
+      "name": "The Determination Of Climber",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you play a card cost more than the previous one, for every more cost, gain [E] , heal 1, draw 1, deal 1 damage to ALL enemies, gain 1 gold.",
+      "flavorText": "\u7136\u800C\u67D0\u4E9B\u767B\u5C71\u8005\u603B\u662F\u559C\u6B22\u539F\u5730\u8E0F\u6B65\u3002"
+    },
+    {
+      "name": "The Harvest Totem",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, doubles your Max HP. Your Max HP increase and healing are doubled. normal enemies have 110% Max HP, elites have 120% Max HP, Bosses have 150% Max HP.",
+      "flavorText": "\u5C16\u5854\u4F4F\u6C11\u7948\u6C42\u4E30\u6536\u7684\u8C61\u5F81\uFF0C\u4EFF\u4F5B\u80FD\u7ED9\u5C16\u5854\u5E26\u6765\u751F\u547D\u529B\u3002"
+    },
+    {
+      "name": "The Key Of The Void",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the end of combat, for each Boss relic you have, remove 1 card from your deck.",
+      "flavorText": "\u865A\u7A7A\u662F\u8FD9\u4E2A\u4E16\u754C\u7684\u7EC8\u6781\u7B54\u6848\u3002"
+    },
+    {
+      "name": "The Negative Emotion Enhancer",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn, gain [E] , gain Fragile, Weak, Vulnerable in order. Whenever an enemy dies, heal 1 HP. At the end of combat, increase your Max HP by 1.",
+      "flavorText": "\u6536\u96C6\uFF0C\u5206\u7C7B\uFF0C\u8F6C\u5316\u3002"
+    },
+    {
+      "name": "The Time Traveler",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn, gain [E] . You have 100 (Max) SAN by default. Whenever SL will decrease your SAN by 50%, at the end of combat, gain 5 SAN, gain 10 SAN when you Rest. Whenever you end combat with less than 20 SAN, lose 10 Max HP. Whenever you start a turn with less than 10 SAN, lose 1 HP.",
+      "flavorText": "El Psy Congroo"
+    },
+    {
+      "name": "Charity",
       "tier": "Shop",
       "pool": "",
-      "description": "\u6BCF\u6B21\u83B7\u5F97 \u91D1\u5E01 \u6570\u989D\u51CF\u5C11 1 \uFF0C\u4F46\u589E\u52A0 1 \u70B9\u6700\u5927\u751F\u547D\u3002",
+      "description": "Whenever you gain gold, gain 1 less, increase your Max HP by 1 instead.",
       "flavorText": "\u201C\u6148\u5584\u7684\u884C\u4E3A\u6BD4\u91D1\u94B1\u66F4\u80FD\u89E3\u9664\u522B\u4EBA\u7684\u75DB\u82E6\u3002\u201D \u2014\u2014 \u5362\u68AD"
     },
     {
-      "name": "\u6211\u5168\u90FD\u8981",
+      "name": "Faith",
       "tier": "Shop",
       "pool": "",
-      "description": "\u6709 10 \u6B21\u673A\u4F1A\uFF0C\u53EF\u4EE5\u5728\u6218\u6597\u5956\u52B1\u754C\u9762\u53F3\u952E\u70B9\u51FB\u6B64\u9057\u7269\uFF0C\u6DFB\u52A0\u4E00\u4EFD\u5B8C\u5168\u76F8\u540C\u7684\u8BE5\u6B21\u6218\u6597\u7684\u5361\u724C\u5956\u52B1\uFF0C\u6BCF\u573A\u6218\u6597\u53EA\u80FD\u4F7F\u7528\u4E00\u6B21\u3002",
-      "flavorText": "\u5C0F\u5B69\u5B50\u624D\u505A\u9009\u62E9\uFF1B\u800C\u6211\uFF0C\u5168\u90FD\u8981\uFF01"
-    },
-    {
-      "name": "\u8BDA\u4FE1",
-      "tier": "Shop",
-      "pool": "",
-      "description": "\u6BCF\u5F53\u4F60\u8FDB\u5165\u5546\u5E97\u65F6\uFF0C\u83B7\u5F97\u79BB\u5F00\u5546\u5E97\u5C31\u4F1A\u6D88\u5931\u7684\u5DE8\u989D\u91D1\u5E01\u3002\u4F60\u5728\u8BE5\u5546\u5E97\u8D2D\u4E70\u7B2C\u4E00\u4EF6\u5546\u54C1\u540E\uFF0C\u5C06\u91D1\u5E01\u6062\u590D\u5230\u83B7\u5F97\u91D1\u5E01\u524D\u7684\u6570\u503C\u3002\u4E0B\u4E00\u6B21\u8FDB\u5165\u5546\u5E97\u65F6\uFF0C\u6263\u9664\u6B64\u5546\u54C1\u4EF7\u683C\u7684\u91D1\u5E01\uFF0C\u5982\u679C\u4E0D\u8DB3\u5219\u5C06\u91D1\u5E01\u53D8\u4E3A 0 \u540E\u53D7\u5230 25% \u5F53\u524D\u751F\u547D\u7684\u4F24\u5BB3\uFF0C\u5E76\u5C06\u5269\u4F59\u6B20\u6B3E\u5EF6\u7EED\u81F3\u4E0B\u4E00\u4E2A\u5546\u5E97\u3002",
+      "description": "Whenever you enter a shop, gain a huge amount of gold which will be removed when leaving this shop. After purchasing the first product in this shop, reset your gold back to what it was before gaining the huge amount of gold. When entering next shop, lose the amount of gold of this product's price, if your gold is insufficient, set your gold to 0 and receive a damage of the maximum between 25% of current HP and 10% of the amount of overdraft, (at least 1), the overdraft will remain for next shop.",
       "flavorText": "\u4E03\u7F8E\u5FB7\u7EC8\u4E8E\u505A\u5B8C\u4E86\u3002"
     },
     {
-      "name": "\u9501\u5B58\u5668",
+      "name": "I Want All",
       "tier": "Shop",
       "pool": "",
-      "description": "\u4F60\u5728\u4E00\u573A\u6218\u6597\u4E2D\u62E5\u6709\u7684\u8D85\u8FC7 1 \u5C42\u7684\u72B6\u6001\u4F1A\u5728\u4E0B\u4E00\u573A\u6218\u6597\u5F00\u59CB\u518D\u6B21\u83B7\u5F97 1 \u5C42\u3002",
+      "description": "You have 10 chances to right click on this relic at the combat reward screen, to make a copy of the card reward, once maximum each combat.",
+      "flavorText": "\u5C0F\u5B69\u5B50\u624D\u505A\u9009\u62E9\uFF1B\u800C\u6211\uFF0C\u5168\u90FD\u8981\uFF01"
+    },
+    {
+      "name": "Magical Mallet",
+      "tier": "Shop",
+      "pool": "",
+      "description": "At the start of each turn, record the maximum and minimum cost of your hand, make all cards with these two costs in your hand switch to the other cost for rest of combat.",
+      "flavorText": "\u4E0A\u9762\u7684\u6587\u5B57\u88AB\u4EBA\u62B9\u53BB\u4E86"
+    },
+    {
+      "name": "Register",
+      "tier": "Shop",
+      "pool": "",
+      "description": "All the powers that were greater than 1 at the end of a combat will be saved, you will gain 1 of each of these powers at the start of next combat. ( SL will cause losing saved powers)",
       "flavorText": "\u5173\u673A\u524D\u81EA\u52A8\u4FDD\u5B58\uFF0C\u542F\u52A8\u65F6\u81EA\u52A8\u8BFB\u53D6\u3002"
     }
   ],
   "potions": [
     {
-      "name": "\u7A7A\u95F4\u836F\u6C34",
+      "name": "Bottled Space",
       "rarity": "Uncommon",
-      "description": "\u82E5\u836F\u6C34\u680F\u4F4D\u5C11\u4E8E 10 \u4E2A\uFF0C\u4F7F\u7528\u540E\u6C38\u4E45\u589E\u52A0 1 \u4E2A\u836F\u6C34\u680F\u4F4D\u3002\u5426\u5219\u83B7\u5F97 1 \u74F6\u968F\u673A\u836F\u6C34\u3002"
+      "description": "Gain 1 Potion slot. You will not gain slots if you have 10 or more slots, instead, gain same amount of random potions."
     },
     {
-      "name": "\u4E22\u4EBA\u836F\u6C34",
-      "rarity": "Rare",
-      "description": "\u4F7F\u4E00\u540D\u975EBoss\u654C\u4EBA\u7ACB\u5373\u9003\u8DD1\u3002"
+      "name": "Essence of Test",
+      "rarity": "Uncommon",
+      "description": "Choose 1 of 3 random Colorless cards 1 time(s), to add to your hand, it costs 0 this turn."
     },
     {
-      "name": "\u65F6\u95F4\u5973\u795E\u7684\u6076\u4F5C\u5267",
+      "name": "Essence of Kronos",
       "rarity": "Rare",
-      "description": "\u7ACB\u5373\u7ED3\u675F\u4F60\u7684\u56DE\u5408\uFF0C\u654C\u4EBA\u5728\u8FD9\u56DE\u5408\u4E0D\u4F1A\u6267\u884C\u5176\u610F\u56FE\uFF0C\u7136\u540E\u5F00\u59CB\u4F60\u7684\u4E0B\u4E00\u56DE\u5408\u3002"
+      "description": "End your turn, enemies will not do their intent this turn, then start your next turn."
+    },
+    {
+      "name": "Refined Shame",
+      "rarity": "Rare",
+      "description": "Make a non-Boss enemy escape."
     }
   ],
   "creatures": [
   ],
   "keywords": [
+    {
+      "name": "Imprint",
+      "description": "Imprint will increase the amount of damage whenever the owner loses HP."
+    },
+    {
+      "name": "Halloween",
+      "description": "Halloween is a 0 cost Skill card which can be Upgraded any number of times."
+    }
   ]
 }
