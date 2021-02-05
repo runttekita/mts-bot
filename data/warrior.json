@@ -1,0 +1,1272 @@
+{
+  "mod": {
+    "name": "The Warrior",
+    "version": "0.0.12",
+    "authors": ["yhrcyt"],
+    "credits": "No credits here.",
+    "description": "Sorry, no description yet.",
+    "mts_version": "3.4.0",
+    "sts_version": "10-18-2018",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Fatigue",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable. Doesn't discard at the end of the turn. At the end of your turn, draw 1 less card next turn."
+    },
+    {
+      "name": "Axe",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Axe+",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Blade Dance",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card. This turn, you're 25 % faster per card played when combo."
+    },
+    {
+      "name": "Blade Dance+",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card. This turn, you're 33 % faster per card played when combo."
+    },
+    {
+      "name": "Claw",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Claw+",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Dagger",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Dagger+",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Hammer",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer."
+    },
+    {
+      "name": "Hammer+",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer."
+    },
+    {
+      "name": "Prepare To Combo",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next combo deal extra 25 % damage per card."
+    },
+    {
+      "name": "Prepare To Combo+",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next combo deal extra 30 % damage per card."
+    },
+    {
+      "name": "Shield",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 3 * X block and receive 20 % ^ X less damage. You cannot attack this turn."
+    },
+    {
+      "name": "Shield+",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 5 * X block and receive 25 % ^ X less damage. You cannot attack this turn."
+    },
+    {
+      "name": "Special Dagger",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Special Dagger+",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Sword",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Sword+",
+      "color": "Warrior_grey",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Bleeding Poison",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give 3 Bleeding and 3 Poison to an enemy."
+    },
+    {
+      "name": "Bleeding Poison+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give 4 Bleeding and 4 Poison to an enemy."
+    },
+    {
+      "name": "Blood Excitement",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you give Bleeding to an enemy, gain 1 strength this turn."
+    },
+    {
+      "name": "Blood Excitement+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you give Bleeding to an enemy, gain 1 strength this turn."
+    },
+    {
+      "name": "Envenom",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card. This turn, whenever you deal attack damage to an enemy, give 2 Poison. "
+    },
+    {
+      "name": "Envenom+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card. This turn, whenever you deal attack damage to an enemy, give 3 Poison. "
+    },
+    {
+      "name": "Poisonous Axe",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm. When deal damage, give 3 Poison."
+    },
+    {
+      "name": "Poisonous Axe+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm. When deal damage, give 3 Poison."
+    },
+    {
+      "name": "Poisonous Claw",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Poisonous Claw+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Poisonous Dagger",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust. When deal damage, give 2 Poison."
+    },
+    {
+      "name": "Poisonous Dagger+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust. When deal damage, give 2 Poison."
+    },
+    {
+      "name": "Poisonous Hammer",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer. When deal damage, give 4 Poison."
+    },
+    {
+      "name": "Poisonous Hammer+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer. When deal damage, give 4 Poison."
+    },
+    {
+      "name": "Poisonous Shield",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 * X block and receive 20% ^ X less damage. Whenever receive damage, give 2 Poison. You cannot attack this turn."
+    },
+    {
+      "name": "Poisonous Shield+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 * X block and receive 20% ^ X less damage. Whenever receive damage, give 3 Poison. You cannot attack this turn."
+    },
+    {
+      "name": "Poisonous Sword",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike. When deal damage, give 3 Poison."
+    },
+    {
+      "name": "Poisonous Sword+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike. When deal damage, give 3 Poison."
+    },
+    {
+      "name": "Spiky Axe",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Spiky Axe+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Spiky Claw",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Spiky Claw+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Spiky Dagger",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Spiky Dagger+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Spiky Hammer",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer."
+    },
+    {
+      "name": "Spiky Hammer+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer."
+    },
+    {
+      "name": "Spiky Shield",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 * X block and receive 20% ^ X less damage. Whenever receive damage, give 2 Bleeding. You cannot attack this turn."
+    },
+    {
+      "name": "Spiky Shield+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 * X block and receive 20% ^ X less damage. Whenever receive damage, give 3 Bleeding. You cannot attack this turn."
+    },
+    {
+      "name": "Spiky Sword",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Spiky Sword+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Taunt",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Reduce all enemy's Vulnerable and Weakened to 1. gain strength this turn equal to stacks reduced."
+    },
+    {
+      "name": "Taunt+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reduce all enemy's Vulnerable and Weakened to 1. gain strength this turn equal to stacks reduced."
+    },
+    {
+      "name": "Weakening Claw",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Weakening Claw+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Weakening Dagger",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Weakening Dagger+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Wound Infection",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you give Bleeding to an enemy, also give 1 Poison."
+    },
+    {
+      "name": "Wound Infection+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you give Bleeding to an enemy, also give 2 Poison."
+    },
+    {
+      "name": "Wounding Axe",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Wounding Axe+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Wounding Hammer",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer."
+    },
+    {
+      "name": "Wounding Hammer+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer."
+    },
+    {
+      "name": "Wounding Sword",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Wounding Sword+",
+      "color": "Warrior_grey",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Bloody",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Double the enemy's Bleeding stack amount. Exhaust. "
+    },
+    {
+      "name": "Bloody Blade",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you deal attack damage to an enemy, give 2 Bleeding."
+    },
+    {
+      "name": "Bloody Blade+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you deal attack damage to an enemy, give 2 Bleeding."
+    },
+    {
+      "name": "Bloody Cloud",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, give all enemy 1 Bleeding."
+    },
+    {
+      "name": "Bloody Cloud+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, give all enemy 2 Bleeding."
+    },
+    {
+      "name": "Bloody Nature",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you give 1 stack Bleeding to an enemy, also deal 2 damage. "
+    },
+    {
+      "name": "Bloody Nature+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you give 1 stack Bleeding to an enemy, also deal 3 damage. "
+    },
+    {
+      "name": "Bloody+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Triple the enemy's Bleeding stack amount. Exhaust. "
+    },
+    {
+      "name": "Desperate Shield",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 8 * X block, receive 33 % ^ X less damage. Add 1 Fatigue to your hand and X dazed to your draw pile."
+    },
+    {
+      "name": "Desperate Shield+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 11 * X block, receive 42 % ^ X less damage. Add 1 Fatigue to your hand and X dazed to your draw pile."
+    },
+    {
+      "name": "Heavy Axe",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Heavy Axe+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Heavy Hammer",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer."
+    },
+    {
+      "name": "Heavy Hammer+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer."
+    },
+    {
+      "name": "Heavy Sword",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Heavy Sword+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Light Axe",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Strike, Chop, or Disarm. When deal damage, if enemy has Poison, give 3 Bleeding."
+    },
+    {
+      "name": "Light Axe+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Strike, Chop, or Disarm. When deal damage, if enemy has Poison, give 3 Bleeding."
+    },
+    {
+      "name": "Light Hammer",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Disarm, Blow, or Hammer. When deal damage, if enemy has Poison, give 4 Bleeding."
+    },
+    {
+      "name": "Light Hammer+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Disarm, Blow, or Hammer. When deal damage, if enemy has Poison, give 4 Bleeding."
+    },
+    {
+      "name": "Prepared",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card, discard 2 cards. Give all enemy 2 Bleeding and 2 Poison for each status card discarded."
+    },
+    {
+      "name": "Prepared+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 card, discard 3 cards. Give all enemy 2 Bleeding and 3 Poison for each status card discarded."
+    },
+    {
+      "name": "Scrap Shield",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 * X block, receive 18 % ^ X less damage. Discard up to X cards, gain 2 block and receive 10% less damage for each. Add a Slimed to draw pile. You cannot attack this turn."
+    },
+    {
+      "name": "Scrap Shield+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 * X block, receive 23 % ^ X less damage. Discard up to X cards, gain 4 block and receive 10% less damage for each. Add a Slimed to draw pile. You cannot attack this turn."
+    },
+    {
+      "name": "Sharp Claw",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Sharp Claw+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Sharp Dagger",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Sharp Dagger+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Short Claw",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Choose: Grasp, Scratch, or Feint. When deal damage, if enemy has Bleeding, give 2 Poison."
+    },
+    {
+      "name": "Short Claw+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Choose: Grasp, Scratch, or Feint. When deal damage, if enemy has Bleeding, give 2 Poison."
+    },
+    {
+      "name": "Short Dagger",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Choose: Feint, Cut, or Thrust. When deal damage, if enemy has Bleeding, give 2 Poison."
+    },
+    {
+      "name": "Short Dagger+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Choose: Feint, Cut, or Thrust. When deal damage, if enemy has Bleeding, give 2 Poison."
+    },
+    {
+      "name": "Short Sword",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Thrust, Slash, or Strike. When deal damage, if enemy has Bleeding, give 3 Poison."
+    },
+    {
+      "name": "Short Sword+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Thrust, Slash, or Strike. When deal damage, if enemy has Bleeding, give 3 Poison."
+    },
+    {
+      "name": "Special Axe",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Special Axe+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Special Claw",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Special Claw+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Special Hammer",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer. If this card finishes a combo, gain 2 strength and exhaust."
+    },
+    {
+      "name": "Special Hammer+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Disarm, Blow, or Hammer. If this card finishes a combo, gain 2 strength and exhaust."
+    },
+    {
+      "name": "Special Shield",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 * X block, receive 23 % ^ X less damage. Retain up to X cards, lose 3 blocks each. You cannot attack this turn."
+    },
+    {
+      "name": "Special Shield+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 6 * X block, receive 28 % ^ X less damage. Retain up to X cards, lose 3 blocks each. You cannot attack this turn."
+    },
+    {
+      "name": "Special Sword",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Special Sword+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Strong Axe",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Strong Axe+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Strong Claw",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Strong Claw+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Strong Dagger",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Strong Dagger+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Strong Hammer",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Choose: Disarm, Blow, or Hammer. When use, put a Fatigue in your hand."
+    },
+    {
+      "name": "Strong Hammer+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Choose: Disarm, Blow, or Hammer. When use, put a Fatigue in your hand."
+    },
+    {
+      "name": "Strong Sword",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Strong Sword+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "War Cry",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard all the status cards in your hand and gain 1 strength this turn for each."
+    },
+    {
+      "name": "War Cry+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard all the status cards in your hand and gain 1 strength this turn for each. Retain at the end of the turn."
+    },
+    {
+      "name": "Wound Pain",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "All enemy lose all their Bleeding and Poison. They receive damage equals to Bleeding stacks times Poison stacks. Exhaust."
+    },
+    {
+      "name": "Wound Pain+",
+      "color": "Warrior_grey",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All enemy lose all their Bleeding and Poison. They receive damage equals to Bleeding stacks times Poison stacks. Exhaust."
+    },
+    {
+      "name": "Anger",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, draw 1 card, put a dazed into your draw pile."
+    },
+    {
+      "name": "Anger+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate. At the start of your turn, draw 1 card, put a dazed into your draw pile."
+    },
+    {
+      "name": "Bloody Fumes",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Give all enemies 3 Poison, 3 Bleeding, 2 Weakened and 2 Vulnerable. Exhaust."
+    },
+    {
+      "name": "Bloody Fumes+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Give all enemies 5 Poison, 5 Bleeding, 3 Weakened and 3 Vulnerable. Exhaust. "
+    },
+    {
+      "name": "Charge",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard all status cards in your hand. Take 6 damage, gain 2 energy, draw 4 cards. Put a Wound into your draw pile. Exhaust."
+    },
+    {
+      "name": "Charge+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard all status cards in your hand. Take 6 damage, gain 3 energy, draw 6 cards. Put a Wound into your draw pile. Exhaust."
+    },
+    {
+      "name": "Combo Form",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "When combo finish, gain 1 energy and draw 1 extra card."
+    },
+    {
+      "name": "Combo Form+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "When combo finish, gain 1 energy and draw 1 extra card."
+    },
+    {
+      "name": "Double Combo",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Repeat your next combo with 50% faster speed, but can only deal damage and deal 25% less."
+    },
+    {
+      "name": "Double Combo+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Repeat your next combo with 50% faster speed, but can only deal damage and deal 25% less."
+    },
+    {
+      "name": "Faster",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Every turn, you're 33 % faster per card played."
+    },
+    {
+      "name": "Faster+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Every turn, you're 45 % faster per card played."
+    },
+    {
+      "name": "Halberd Axe",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Halberd Axe+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Strike, Chop, or Disarm."
+    },
+    {
+      "name": "Hawk Claw",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Hawk Claw+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Choose: Grasp, Scratch, or Feint."
+    },
+    {
+      "name": "Preparing Shield",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 * X block and receive 15 % ^ X less damage. Next turn, draw X/2 cards, gain X/2 energy. Next combo deal extra 5% * X damage per card. You cannot attack this turn."
+    },
+    {
+      "name": "Preparing Shield+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 * X block and receive 20 % ^ X less damage. Next turn, draw X/2 cards, gain X/2 energy. Next combo deal extra 7% * X damage per card. You cannot attack this turn."
+    },
+    {
+      "name": "Push Dagger",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Push Dagger+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Feint, Cut, or Thrust."
+    },
+    {
+      "name": "Stronger",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Combo deal extra 20 % damage per card."
+    },
+    {
+      "name": "Stronger+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Combo deal extra 25 % damage per card."
+    },
+    {
+      "name": "Throw Away",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard up to 3 cards, add a Dazed to your draw pile for each. If you discarded at least 3, gain 1 energy and draw 1 card. If you discarded at least 3 status cards, gain 1 Dexterity."
+    },
+    {
+      "name": "Throw Away+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard up to 5 cards, add a Dazed to your draw pile for each. If you discarded at least 3, gain 1 energy and draw 1 card. If you discarded at least 3 status cards, gain 1 Dexterity."
+    },
+    {
+      "name": "Ultimate Armor",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "Gain X Metallicize and 2 * X Plated Armor. You cannot attack this turn."
+    },
+    {
+      "name": "Ultimate Armor+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "Gain X Metallicize and 3 * X Plated Armor. You cannot attack this turn."
+    },
+    {
+      "name": "Ultralight Hammer",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Disarm, Blow, or Hammer. In this combo, you're 20 % faster per card played."
+    },
+    {
+      "name": "Ultralight Hammer+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose: Disarm, Blow, or Hammer. In this combo, you're 27 % faster per card played."
+    },
+    {
+      "name": "Wave Blade Sword",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    },
+    {
+      "name": "Wave Blade Sword+",
+      "color": "Warrior_grey",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Choose: Thrust, Slash, or Strike."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Unnamed Starting Relic",
+      "tier": "Starter",
+      "pool": "Warrior_grey",
+      "description": "When finish combo, draw 1 card.",
+      "flavorText": "No flavor yet."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Warrior",
+      "type": "Player",
+      "minHP": "150",
+      "maxHP": "150"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Bleeding",
+      "description": "Deal (stack amount / 2) damage every turn, enemy receive 1% more attack damage and poison damage for each stack."
+    },
+    {
+      "name": "Combo",
+      "description": "Each attack type can combo with specific attack types. When combo, card cost 1 less and deal 25% more damage; when combo finish, give dazed based on combo speed."
+    },
+    {
+      "name": "Dazed",
+      "description": "Dazed creature deal 1% less damage per stack. Reduces by half per turn. Stacks based on percentage instead of amount."
+    },
+    {
+      "name": "Distracted",
+      "description": "Distracted creature deal 1% less and receive 1% more damage per stack this turn."
+    },
+    {
+      "name": "Fatigue",
+      "description": "Fatigue is an unplayable status card. At the end of the turn, doesn't discard and makes you draw 1 less card next turn."
+    },
+    {
+      "name": "Grasped",
+      "description": "Grasped creature lose 1 strength per stack this turn. Wear off when you play a card."
+    },
+    {
+      "name": "Speed",
+      "description": "Combo give dazed amount = square root of (card played * 5000 / total speed amount)."
+    }
+  ]
+}

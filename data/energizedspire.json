@@ -1,13 +1,13 @@
 {
   "mod": {
     "name": "Energized Spire",
-    "version": "1.7.3",
+    "version": "1.8.1",
     "authors": ["JohnnyBazooka89"],
-    "credits": "",
+    "credits": "\u65C5\u6E1A - Simplified Chinese localization",
     "description": "This mod adds a lot of new Energy relics to the boss relic pool!\n\nMore info: https://steamcommunity.com/sharedfiles/filedetails/?id=1639939942\n\nGitHub: https://github.com/JohnnyBazooka89/StSModEnergizedSpire",
-    "mts_version": "3.15.0",
-    "sts_version": "01-27-2020",
-    "dependencies": ["basemod"],
+    "mts_version": "3.18.0",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
   "cards": [
@@ -17,7 +17,7 @@
       "rarity": "Common",
       "type": "Status",
       "cost": "",
-      "description": "Unplayable.\nWhenever this card is drawn, lose 2 Focus until the beginning of your next turn."
+      "description": "Unplayable.\nEthereal.\nWhenever this card is drawn, lose 2 Focus until the start of your next turn."
     }
   ],
   "relics": [
@@ -32,7 +32,7 @@
       "name": "Crystal Sphere",
       "tier": "Boss",
       "pool": "Purple",
-      "description": "The first time you Scry each turn, gain [E] [REMOVE_SPACE].",
+      "description": "The first time you Scry each turn, gain [E].",
       "flavorText": "You can use it to predict the future. But should you do it?"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Decaying Skull",
       "tier": "Boss",
       "pool": "Red",
-      "description": "Gain [E] at the start of your turn. At the end of your turn, if your HP is above 50%, take 3 damage.",
+      "description": "Gain [E] at the start of your turn. At the end of your turn, if your HP is above 50%, take 2 damage.",
       "flavorText": "Find the other one too! Is this the beginning of a new collection?"
     },
     {
@@ -154,16 +154,12 @@
   ],
   "keywords": [
     {
-      "name": "Energizedspire:burning\u00A0rooms",
+      "name": "Burning\u00A0Rooms",
       "description": "Enemies are empowered and drop the Emerald Key."
     },
     {
-      "name": "Energizedspire:depression",
+      "name": "Depression",
       "description": "In this Stance, you draw 1 fewer card each turn."
-    },
-    {
-      "name": "Energizedspire:reception\u00A0problems",
-      "description": "Reception Problems is an Unplayable Status card that when drawn makes you lose 2 Focus until the beginning of your next turn."
     }
   ]
 }

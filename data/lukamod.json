@@ -1,0 +1,1408 @@
+{
+  "mod": {
+    "name": "The Fake Hero",
+    "version": "1.2.6",
+    "authors": ["135jman"],
+    "credits": "",
+    "description": "Adds Luka as a new playable character.",
+    "mts_version": "3.14.0",
+    "sts_version": "07-30-2020",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Surrender",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nLose if you have not played any cards this turn."
+    },
+    {
+      "name": "Edging",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Set your own HP to 1.\nExhaust."
+    },
+    {
+      "name": "Edging+",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Set your own HP to 1. If you can survive this combat, raise your Max HP by 2.\nExhaust."
+    },
+    {
+      "name": "Flail Wildly",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Deal 0 damage to a random enemy 4 times."
+    },
+    {
+      "name": "Flail Wildly+",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Deal 1 damage to a random enemy 4 times."
+    },
+    {
+      "name": "Guard",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If the enemy intends to attack, gain 10 Block.\nEnd your turn.\nExhaust."
+    },
+    {
+      "name": "Guard+",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If the enemy intends to attack, gain 1 Buffer.\nEnd your turn.\nExhaust."
+    },
+    {
+      "name": "Light Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E].\nluka_mod:Ventus 1.\nluka_mod:Ignis 1."
+    },
+    {
+      "name": "Magma Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E].\nluka_mod:Ignis 1.\nluka_mod:Terra 1."
+    },
+    {
+      "name": "Meditation",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Heal 50% of your max HP."
+    },
+    {
+      "name": "Meditation+",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal 50% of your max HP."
+    },
+    {
+      "name": "Mist Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E].\nluka_mod:Ventus 1.\nluka_mod:Aqua 1."
+    },
+    {
+      "name": "Mud Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E].\nluka_mod:Terra 1.\nluka_mod:Aqua 1."
+    },
+    {
+      "name": "Salt",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage.\nApply 1 Weak.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Salt+",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 1 damage.\nApply 2 Weak.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Sand Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E].\nluka_mod:Terra 1.\nluka_mod:Ventus 1."
+    },
+    {
+      "name": "Steam Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E].\nluka_mod:Ignis 1.\nluka_mod:Aqua 1."
+    },
+    {
+      "name": "Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E]."
+    },
+    {
+      "name": "Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E]."
+    },
+    {
+      "name": "Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E]."
+    },
+    {
+      "name": "Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E]."
+    },
+    {
+      "name": "Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E]."
+    },
+    {
+      "name": "Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E]."
+    },
+    {
+      "name": "Wait",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nEnd your turn.\nIf this card is Exhausted,\nadd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Wait+",
+      "color": "Luka_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "End your turn.\nIf this card is Exhausted,\nadd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Daystar",
+      "color": "Luka_purple_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 30 damage."
+    },
+    {
+      "name": "Daystar+",
+      "color": "Luka_purple_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 40 damage."
+    },
+    {
+      "name": "Infinite VRS",
+      "color": "Luka_purple_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 1 damage to all enemies 5 times.\nluka_mod:Ignis 1."
+    },
+    {
+      "name": "Infinite VRS+",
+      "color": "Luka_purple_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 2 damage to all enemies 5 times.\nluka_mod:Ignis 2."
+    },
+    {
+      "name": "Calm",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 luka_mod:Calmness."
+    },
+    {
+      "name": "Calm+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 luka_mod:Calmness.\nDraw 1 card."
+    },
+    {
+      "name": "Demon Decapitation",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage."
+    },
+    {
+      "name": "Demon Decapitation+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage."
+    },
+    {
+      "name": "Demon Skull Beheading",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 28 damage."
+    },
+    {
+      "name": "Demon Skull Beheading+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 36 damage."
+    },
+    {
+      "name": "Earth Slash",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nluka_mod:Terra 1."
+    },
+    {
+      "name": "Earth Slash+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nluka_mod:Terra 2."
+    },
+    {
+      "name": "Feel",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 luka_mod:Feeling."
+    },
+    {
+      "name": "Feel+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 luka_mod:Feeling.\nDraw 1 card."
+    },
+    {
+      "name": "Fire Slash",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nluka_mod:Ignis 1."
+    },
+    {
+      "name": "Fire Slash+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nluka_mod:Ignis 2."
+    },
+    {
+      "name": "Flash Kill",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove all Block from the enemy.\nDeal 12 damage.\nluka_mod:Ventus 1."
+    },
+    {
+      "name": "Flash Kill+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove all Block from the enemy.\nDeal 16 damage.\nluka_mod:Ventus 2."
+    },
+    {
+      "name": "Guarded Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 6 Block.\nDeal 3 damage."
+    },
+    {
+      "name": "Guarded Strike+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDeal 5 damage."
+    },
+    {
+      "name": "Heroic Combo",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 6 damage X times."
+    },
+    {
+      "name": "Heroic Combo+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage X times."
+    },
+    {
+      "name": "Ilias's Judgement",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal.\nDeal 29 damage.\nAdd 3 luka_mod:Surrenders into your discard pile.\nIf this card is Exhausted,\nadd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Ilias's Judgement+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal.\nDeal 37 damage.\nAdd 3 luka_mod:Surrenders into your discard pile.\nIf this card is Exhausted,\nadd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Intense",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 luka_mod:Intensity."
+    },
+    {
+      "name": "Intense+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 luka_mod:Intensity.\nDraw 1 card."
+    },
+    {
+      "name": "Overexert",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGain 1 Artifact.\nAdd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Overexert+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 1 Artifact.\nAdd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Request",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 1 card from your draw pile into your hand.\nAdd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Request+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 2 cards from your draw pile into your hand.\nAdd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Restricted Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nGain [E]\nGain 1 Weak."
+    },
+    {
+      "name": "Restricted Strike+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage.\nGain [E]\nGain 1 Weak."
+    },
+    {
+      "name": "Stress Relief",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to missing health."
+    },
+    {
+      "name": "Stress Relief+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to missing health."
+    },
+    {
+      "name": "Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain [E]."
+    },
+    {
+      "name": "Strike+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nGain [E]."
+    },
+    {
+      "name": "Struggle",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 luka_mod:Struggling."
+    },
+    {
+      "name": "Struggle+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 luka_mod:Struggling.\nDraw 1 card."
+    },
+    {
+      "name": "Thunder Thrust",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to one enemy.\nPlus 10 damage if it is the first card played this turn."
+    },
+    {
+      "name": "Thunder Thrust+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage to one enemy.\nPlus 16 damage if it is the first card played this turn."
+    },
+    {
+      "name": "Water Slash",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nluka_mod:Aqua 1."
+    },
+    {
+      "name": "Water Slash+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nluka_mod:Aqua 2."
+    },
+    {
+      "name": "Wind Slash",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nluka_mod:Ventus 1."
+    },
+    {
+      "name": "Wind Slash+",
+      "color": "Luka_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nluka_mod:Ventus 2."
+    },
+    {
+      "name": "Alice's Guard",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nNext turn, gain 4 Block."
+    },
+    {
+      "name": "Alice's Guard+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Block.\nNext turn, gain 6 Block."
+    },
+    {
+      "name": "Angry Luka",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play an Attack this turn, gain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Angry Luka+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you play an Attack this turn, gain 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Beg Ilias",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Strength and 2 Dexterity.\nAdd 5 luka_mod:Surrenders into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Beg Ilias+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Strength and 3 Dexterity.\nAdd 5 luka_mod:Surrenders into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Blade of Howling Wind",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage.\nluka_mod:Ventus 3."
+    },
+    {
+      "name": "Blade of Howling Wind+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage.\nluka_mod:Ventus 5."
+    },
+    {
+      "name": "Blade of Raging Fire",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage.\nluka_mod:Ignis 3."
+    },
+    {
+      "name": "Blade of Raging Fire+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage.\nluka_mod:Ignis 5."
+    },
+    {
+      "name": "Blade of Solid Earth",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage.\nluka_mod:Terra 3."
+    },
+    {
+      "name": "Blade of Solid Earth+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage.\nluka_mod:Terra 5."
+    },
+    {
+      "name": "Blade of Still Water",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage.\nluka_mod:Aqua 3."
+    },
+    {
+      "name": "Blade of Still Water+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage.\nluka_mod:Aqua 5."
+    },
+    {
+      "name": "Critical Hit",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage.\nGain [E].\nExhaust."
+    },
+    {
+      "name": "Critical Hit+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 15 damage.\nGain [E].\nExhaust."
+    },
+    {
+      "name": "Cutscene",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play the top card of your draw pile."
+    },
+    {
+      "name": "Cutscene+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Play the top card of your draw pile."
+    },
+    {
+      "name": "Death Sword Chaos Star",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 7 damage to all enemies 5 times."
+    },
+    {
+      "name": "Death Sword Chaos Star+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 9 damage to all enemies 5 times."
+    },
+    {
+      "name": "Determination",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn gain 1 Artifact."
+    },
+    {
+      "name": "Determination+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn gain 2 Artifact."
+    },
+    {
+      "name": "Earth Rumbling Decapitation",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 32 damage.\nluka_mod:Terra 1."
+    },
+    {
+      "name": "Earth Rumbling Decapitation+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 34 damage.\nluka_mod:Terra 2."
+    },
+    {
+      "name": "Endless Guard",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 8 Block.\nAdd a copy of this card to the top of your draw pile."
+    },
+    {
+      "name": "Endless Guard+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 11 Block.\nAdd a copy of this card to the top of your draw pile."
+    },
+    {
+      "name": "Gnome",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 luka_mod:Struggling\nAt the end of your turn, gain 4 Block."
+    },
+    {
+      "name": "Gnome+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 luka_mod:Struggling\nAt the end of your turn, gain 5 Block."
+    },
+    {
+      "name": "Guard Training",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Guard Training+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Heavenly Demon Revival",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 40 damage.\nluka_mod:Terra 2."
+    },
+    {
+      "name": "Heavenly Demon Revival+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 45 damage.\nluka_mod:Terra 3."
+    },
+    {
+      "name": "Lightning Sword Flash",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage to one enemy.\nPlus 12 damage if it is the first card played this turn.\nluka_mod:Ventus 1."
+    },
+    {
+      "name": "Lightning Sword Flash+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to one enemy.\nPlus 13 damage if it is the first card played this turn.\nluka_mod:Ventus 2."
+    },
+    {
+      "name": "Never Surrender",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all luka_mod:Surrenders in your hand and draw cards for each card Exhausted."
+    },
+    {
+      "name": "Never Surrender+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust all luka_mod:Surrenders in your hand and draw cards for each card Exhausted."
+    },
+    {
+      "name": "Not Very Sharp",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Weak.\nDraw 4 cards.\nAdd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Not Very Sharp+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Weak.\nDraw 5 cards.\nAdd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Oi Alice",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random Alice card into your hand.\nit costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Oi Alice+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random Alice card into your hand.\nit costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Optimistic",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn heal 1 HP."
+    },
+    {
+      "name": "Optimistic+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn heal 2 HP."
+    },
+    {
+      "name": "Peace Preach",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak."
+    },
+    {
+      "name": "Peace Preach+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Weak."
+    },
+    {
+      "name": "Perfect Timing",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block.\nExhaust."
+    },
+    {
+      "name": "Perfect Timing+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 25 Block.\nExhaust."
+    },
+    {
+      "name": "Pray To Ilias",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random Ilias card into your hand.\nit costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Pray To Ilias+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random Ilias card into your hand.\nit costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Salamander",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 luka_mod:Intensity.\nGain 3 Strength."
+    },
+    {
+      "name": "Salamander+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 luka_mod:Intensity.\nGain 4 Strength."
+    },
+    {
+      "name": "Sara",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Deal 4 damage to a random enemy, at the end of each turn."
+    },
+    {
+      "name": "Sara+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Deal 6 damage to a random enemy, at the end of each turn."
+    },
+    {
+      "name": "Serene Demon Sword",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nluka_mod:Aqua 1."
+    },
+    {
+      "name": "Serene Demon Sword+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nluka_mod:Aqua 2."
+    },
+    {
+      "name": "Small Body",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nGain 2 Frail.\nAt the start of your turn, draw 1 additional card."
+    },
+    {
+      "name": "Small Body+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nGain 1 Frail.\nAt the start of your turn, draw 1 additional card."
+    },
+    {
+      "name": "Sylph",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 luka_mod:Feeling.\nAt the start of your turn, draw 1 additional card."
+    },
+    {
+      "name": "Sylph+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain 4 luka_mod:Feeling.\nAt the start of your turn, draw 1 additional card."
+    },
+    {
+      "name": "Touch Fluffy Tail",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Strength, Dexterity, luka_mod:Calmness, luka_mod:Feeling, luka_mod:Intensity and luka_mod:Struggling.\nAdd a luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Touch Fluffy Tail+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Strength, Dexterity, luka_mod:Calmness, luka_mod:Feeling, luka_mod:Intensity and luka_mod:Struggling."
+    },
+    {
+      "name": "Undine",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 3 luka_mod:Calmness.\nGain 1 Buffer."
+    },
+    {
+      "name": "Undine+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 4 luka_mod:Calmness.\nGain 2 Buffer."
+    },
+    {
+      "name": "Unused Poison",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 6 Poison."
+    },
+    {
+      "name": "Unused Poison+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 8 Poison."
+    },
+    {
+      "name": "Vaporizing Rebellion Sword",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 5 damage to all enemies 5 times.\nluka_mod:Ignis 1."
+    },
+    {
+      "name": "Vaporizing Rebellion Sword+",
+      "color": "Luka_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 6 damage to all enemies 5 times.\nluka_mod:Ignis 2."
+    },
+    {
+      "name": "Alice",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses 2 Strength.\nApply 2 Weak.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Alice's Fist",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage."
+    },
+    {
+      "name": "Alice's Fist+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 16 damage."
+    },
+    {
+      "name": "Alice+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses 3 Strength.\nApply 3 Weak.\nApply 3 Vulnerable."
+    },
+    {
+      "name": "Alma Elma",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Heal all of your HP.\nGain 7 Thorns.\nAt the start of your turn gain 1 luka_mod:Feeling."
+    },
+    {
+      "name": "Alma Elma+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Heal all of your HP.\nGain 10 Thorns.\nAt the start of your turn gain 2 luka_mod:Feeling."
+    },
+    {
+      "name": "Daystar",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "8",
+      "description": "Nullify all enemy damage for 1 turn.\nDeal 30 damage 3 times to all enemies if attacked.\nluka_mod:Aqua 1."
+    },
+    {
+      "name": "Daystar+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "8",
+      "description": "Nullify all enemy damage for 1 turn.\nDeal 40 damage 3 times to all enemies if attacked.\nluka_mod:Aqua 2."
+    },
+    {
+      "name": "Erubetie",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 16 Plated Armor.\nAt the end of your turn, gain 1 luka_mod:Calmness."
+    },
+    {
+      "name": "Erubetie+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 21 Plated Armor.\nAt the end of your turn, gain 2 luka_mod:Calmness."
+    },
+    {
+      "name": "Granberia",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 1 luka_mod:Intensity.\nAt the start of your turn, add an Infinite VRS into your hand.\nIt costs 0 this turn.\nAfterwards, gain 1 luka_mod:Intensity."
+    },
+    {
+      "name": "Granberia+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 1 luka_mod:Intensity.\nAt the start of your turn, add an Infinite VRS+ into your hand.\nIt costs 0 this turn.\nAfterwards, gain 1 luka_mod:Intensity."
+    },
+    {
+      "name": "Ilias",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 4 Strength and 2 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Ilias+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Strength and 3 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Ninefold Rakshasa",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "6",
+      "description": "Deal 8 damage to all enemies 9 times.\nluka_mod:Ignis 1."
+    },
+    {
+      "name": "Ninefold Rakshasa+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "6",
+      "description": "Deal 10 damage to all enemies 9 times.\nluka_mod:Ignis 2."
+    },
+    {
+      "name": "No Debuffs",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all debuffs."
+    },
+    {
+      "name": "No Debuffs+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all debuffs."
+    },
+    {
+      "name": "Ora!",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nGain [E]\nDecrease the damage of this card by 1 this combat.\nShuffle a copy of this card into your draw pile."
+    },
+    {
+      "name": "Ora!+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage.\nGain [E]\nDecrease the damage of this card by 1 this combat.\nShuffle a copy of this card into your draw pile."
+    },
+    {
+      "name": "SUPER ATTACK!",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 11 damage.\nGain [E]\nExhaust."
+    },
+    {
+      "name": "SUPER ATTACK!+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 15 damage.\nGain [E]\nExhaust."
+    },
+    {
+      "name": "Sealing Strike",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nApply 1 Weak.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Sealing Strike+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nApply 2 Weak.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Sensitive",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 99 Vulnerable.\nAt the start of your turn, draw 1 additional card, gain [E] and gain 1 Strength.\nAt the end of your turn, add 1 luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Sensitive+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nGain 99 Vulnerable.\nAt the start of your turn, draw 1 additional card, gain [E] and gain 1 Strength.\nAt the end of your turn, add 1 luka_mod:Surrender into your discard pile."
+    },
+    {
+      "name": "Spoiler Dance",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nGain 1 Buffer."
+    },
+    {
+      "name": "Spoiler Dance+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Buffer."
+    },
+    {
+      "name": "Spoiler Form",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "5",
+      "description": "At the start of your turn, add 1 random card into your hand from a small pool of cards.\nIt costs 0 this turn."
+    },
+    {
+      "name": "Spoiler Form+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "5",
+      "description": "At the start of your turn, add 1 random upgraded card into your hand from a small pool of cards.\nIt costs 0 this turn."
+    },
+    {
+      "name": "Tamamo",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "4",
+      "description": "Gain 3 Strength.\nGain 3 Dexterity.\nAt the end of your turn, gain 4 Block.\nAt the start of your turn, gain 1 luka_mod:Struggling."
+    },
+    {
+      "name": "Tamamo+",
+      "color": "Luka_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 3 Strength.\nGain 3 Dexterity.\nAt the end of your turn, gain 4 Block.\nAt the start of your turn, gain 2 luka_mod:Struggling."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Keepsake Ring",
+      "tier": "Starter",
+      "pool": "Luka_purple_color",
+      "description": "Energy is regained between turns.",
+      "flavorText": "A keepsake of Luka's mother. Nothing special, but it's a precious memory of Luka's mother."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Charlatan",
+      "type": "Player",
+      "minHP": "40",
+      "maxHP": "40"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Luka_mod:aqua",
+      "description": "Deal more damage based on how much Calmness you have."
+    },
+    {
+      "name": "Luka_mod:calmness",
+      "description": "Increases damage done by attacks with Aqua."
+    },
+    {
+      "name": "Luka_mod:feeling",
+      "description": "Increases damage done by attacks with Ventus."
+    },
+    {
+      "name": "Luka_mod:ignis",
+      "description": "Deal more damage based on how much Intensity you have."
+    },
+    {
+      "name": "Luka_mod:intensity",
+      "description": "Increases damage done by attacks with Ignis."
+    },
+    {
+      "name": "Luka_mod:struggling",
+      "description": "Increases damage done by attacks with Terra."
+    },
+    {
+      "name": "Luka_mod:surrender",
+      "description": "A Curse that kills you if you have not played any cards on the turn that you drew it."
+    },
+    {
+      "name": "Luka_mod:terra",
+      "description": "Deal more damage based on how much Struggling you have."
+    },
+    {
+      "name": "Luka_mod:ventus",
+      "description": "Deal more damage based on how much Feeling you have."
+    }
+  ]
+}
