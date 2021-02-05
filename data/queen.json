@@ -1,0 +1,1456 @@
+{
+  "mod": {
+    "name": "QueenMod",
+    "version": "0.9",
+    "authors": ["Dayvigilante"],
+    "credits": "",
+    "description": "A deposed queen, set to conquer the spire and seize it as her own hive.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Queen_yellow",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Queen_yellow",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Rapid Jabs",
+      "color": "Queen_yellow",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 2 times."
+    },
+    {
+      "name": "Rapid Jabs+",
+      "color": "Queen_yellow",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times."
+    },
+    {
+      "name": "Recruit",
+      "color": "Queen_yellow",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a queenmod:Hornet to your draw pile.\nAdd a queenmod:Bumblebee to your draw pile."
+    },
+    {
+      "name": "Recruit+",
+      "color": "Queen_yellow",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a queenmod:Hornet to your draw pile.\nAdd a queenmod:Bumblebee to your draw pile."
+    },
+    {
+      "name": "Strike",
+      "color": "Queen_yellow",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Queen_yellow",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "BumbleBee",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block."
+    },
+    {
+      "name": "BumbleBee+",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 13 Block."
+    },
+    {
+      "name": "Drone",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Drone+",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Hornet",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage."
+    },
+    {
+      "name": "Hornet+",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage."
+    },
+    {
+      "name": "Riposte",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nEthereal.\nExhaust."
+    },
+    {
+      "name": "Riposte+",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nEthereal.\nExhaust."
+    },
+    {
+      "name": "Worker Bee",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 queenmod:Nectar."
+    },
+    {
+      "name": "Worker Bee+",
+      "color": "Queen_yellow",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 queenmod:Nectar."
+    },
+    {
+      "name": "Attack Order",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nAdd a Hornet to your draw pile."
+    },
+    {
+      "name": "Attack Order+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nAdd a Hornet to your draw pile."
+    },
+    {
+      "name": "Charge!",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate.\nDeal 10 damage.\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Charge!+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate.\nDeal 13 damage.\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Conscripts",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nDraw a card.\nWhen you add this to your deck, add two additional copies."
+    },
+    {
+      "name": "Conscripts+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nDraw a card.\nWhen you add this to your deck, add two additional copies."
+    },
+    {
+      "name": "Cross-guard",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block for each Attack in your hand."
+    },
+    {
+      "name": "Cross-guard+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block for each Attack in your hand."
+    },
+    {
+      "name": "Defend Order",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 block.\nAdd a queenmod:Bumblebee to your draw pile."
+    },
+    {
+      "name": "Defend Order+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 block.\nAdd a queenmod:Bumblebee to your draw pile."
+    },
+    {
+      "name": "Fleche",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nExhaust two random skills in your draw pile."
+    },
+    {
+      "name": "Fleche+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 damage.\nExhaust two random skills in your draw pile."
+    },
+    {
+      "name": "Flyby",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage to all enemies. Add this card to your draw pile instead of your discard pile."
+    },
+    {
+      "name": "Flyby+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage to all enemies. Add this card to your draw pile instead of your discard pile."
+    },
+    {
+      "name": "Gather Order",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Inflict 2 queenmod:Pollinate.\nAdd a queenmod:Workerbee to your draw pile."
+    },
+    {
+      "name": "Gather Order+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Inflict 2 queenmod:Pollinate.\nAdd a queenmod:Workerbee to your draw pile."
+    },
+    {
+      "name": "Hex Guard",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nqueenmod:Honey-boost: Gain 4 Block."
+    },
+    {
+      "name": "Hex Guard+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block.\nqueenmod:Honey-boost: Gain 6 Block."
+    },
+    {
+      "name": "Hold Position",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 block.\nqueenmod:Lock your queenmod:Swarm on yourself for the turn."
+    },
+    {
+      "name": "Hold Position+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 block.\nqueenmod:Lock your queenmod:Swarm on yourself for the turn."
+    },
+    {
+      "name": "Honeycomb Smash",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage.\nApply 1 Weak.\nqueenmod:Honey-boost: Apply 2 more Weak. "
+    },
+    {
+      "name": "Honeycomb Smash+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage.\nApply 1 Weak.\nqueenmod:Honey-boost: Apply 2 more Weak. "
+    },
+    {
+      "name": "Incubate",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 queenmod:Swarm."
+    },
+    {
+      "name": "Incubate+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 queenmod:Swarm."
+    },
+    {
+      "name": "Mark",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Vulnerable.\nApply 1 queenmod:Pollinate.\nqueenmod:Lock your queenmod:Swarm on the target for the turn."
+    },
+    {
+      "name": "Mark+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable.\nApply 2 queenmod:Pollinate.\nqueenmod:Lock your queenmod:Swarm on the target for the turn."
+    },
+    {
+      "name": "Parry",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 block.\nApply 1 Vulnerable.\nAdd a queenmod:Riposte to your hand."
+    },
+    {
+      "name": "Parry+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 block.\nApply 1 Vulnerable.\nAdd a queenmod:Riposte+ to your hand."
+    },
+    {
+      "name": "Pollen Shot",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage and inflict 2 queenmod:Pollinate to all enemies."
+    },
+    {
+      "name": "Pollen Shot+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage and inflict 3 queenmod:Pollinate to all enemies."
+    },
+    {
+      "name": "Populate Order",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 Drones to your draw pile.\nGain 2 queenmod:Swarm."
+    },
+    {
+      "name": "Populate Order+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 Drones to your draw pile.\nGain 4 queenmod:Swarm."
+    },
+    {
+      "name": "Rally",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Strength this turn only.\nDraw a card."
+    },
+    {
+      "name": "Rally+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Strength this turn only.\nDraw a card."
+    },
+    {
+      "name": "Ravage",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to all enemies.\nqueenmod:Lock your queenmod:Swarm on all enemies this turn."
+    },
+    {
+      "name": "Ravage+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to all enemies.\nqueenmod:Lock your queenmod:Swarm on all enemies this turn."
+    },
+    {
+      "name": "Regroup",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 block.\nShuffle your discard pile into your deck."
+    },
+    {
+      "name": "Regroup+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 block.\nShuffle your discard pile into your deck."
+    },
+    {
+      "name": "Split Strike",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage.\nqueenmod:Lock half your queenmod:Swarm on yourself and half on the enemy this turn."
+    },
+    {
+      "name": "Split Strike+",
+      "color": "Queen_yellow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 Damage.\nqueenmod:Lock half your queenmod:Swarm on yourself and half on the enemy this turn."
+    },
+    {
+      "name": "Ambush",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "X random cards in your draw pile cost 0 until played."
+    },
+    {
+      "name": "Ambush+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "X+1 random cards in your draw pile cost 0 until played."
+    },
+    {
+      "name": "Assimilate",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all queenmod:Hive cards in your hand.\nGain 3 queenmod:Swarm for each."
+    },
+    {
+      "name": "Assimilate+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all queenmod:Hive cards in your hand.\nGain 4 queenmod:Swarm for each."
+    },
+    {
+      "name": "Beekeeping",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nAdd a queenmod:Bumblebee to your hand."
+    },
+    {
+      "name": "Beekeeping+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust 1 card.\nAdd a queenmod:Bumblebee to your hand."
+    },
+    {
+      "name": "Birthing Cells",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, add a Drone to your draw pile."
+    },
+    {
+      "name": "Birthing Cells+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a Drone to your draw pile."
+    },
+    {
+      "name": "Build Order",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Add 2 queenmod:Workerbees to your draw pile.\nAt the start of your turn, gain 1 queenmod:Nectar."
+    },
+    {
+      "name": "Build Order+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Add 2 queenmod:Workerbees to your draw pile.\nAt the start of your turn, gain 2 queenmod:Nectar."
+    },
+    {
+      "name": "Busy Bees",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you add a card to your draw pile, add an extra copy."
+    },
+    {
+      "name": "Busy Bees+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhen you add a card to your draw pile, add an extra copy."
+    },
+    {
+      "name": "Chain strike",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "If you've played 5 or more cards this turn, Deal 10 damage."
+    },
+    {
+      "name": "Chain strike+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "If you've played 5 or more cards this turn, Deal 14 damage."
+    },
+    {
+      "name": "Dignified Slap",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nGain 2 Strength this turn only."
+    },
+    {
+      "name": "Dignified Slap+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nGain 3 Strength this turn only."
+    },
+    {
+      "name": "Drone Workers",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When you play a queenmod:Drone this turn, add a queenmod:Workerbee to your draw pile."
+    },
+    {
+      "name": "Drone Workers+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "When you play a queenmod:Drone this turn, add a queenmod:Workerbee to your draw pile."
+    },
+    {
+      "name": "Feast",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 2 queenmod:Swarm to an enemy. Deal damage equal to your total queenmod:Swarm."
+    },
+    {
+      "name": "Feast+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 4 queenmod:Swarm to an enemy. Deal damage equal to your total queenmod:Swarm."
+    },
+    {
+      "name": "Feint",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If the last card played this combat was an Attack, Inflict 1 Weak and draw a card"
+    },
+    {
+      "name": "Feint+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If the last card played this combat was an Attack, Inflict 2 Weak and draw a card"
+    },
+    {
+      "name": "Flanking Manuevers",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 5 damage and apply 1 Vulnerable to all enemies.\nExhaust."
+    },
+    {
+      "name": "Flanking Manuevers+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 5 damage and apply 1 Vulnerable to all enemies."
+    },
+    {
+      "name": "Fortify",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 4 block for each queenmod:Hive card in your draw pile."
+    },
+    {
+      "name": "Fortify+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 5 block for each queenmod:Hive card in your draw pile."
+    },
+    {
+      "name": "Full Retreat",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nShuffle your hand into your draw pile."
+    },
+    {
+      "name": "Full Retreat+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block.\nShuffle your hand into your draw pile."
+    },
+    {
+      "name": "Garrison",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block. Add this card into your draw pile instead of your discard pile."
+    },
+    {
+      "name": "Garrison+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block. Add this card into your draw pile instead of your discard pile."
+    },
+    {
+      "name": "Gathering Swarm",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 queenmod:Swarm."
+    },
+    {
+      "name": "Gathering Swarm+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 2 queenmod:Swarm."
+    },
+    {
+      "name": "Gnat Squadron",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage 6 times."
+    },
+    {
+      "name": "Gnat Squadron+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage 7 times."
+    },
+    {
+      "name": "Hive Autodefenses",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nqueenmod:Honey-boost: At the start of your turn, if this is in your draw pile, deal 2 damage to a random enemy."
+    },
+    {
+      "name": "Hive Autodefenses+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nqueenmod:Honey-boost: At the start of your turn, if this is in your draw pile, deal 3 damage to a random enemy."
+    },
+    {
+      "name": "Hive Network",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards, For each queenmod:Hive card drawn, gain [E] ."
+    },
+    {
+      "name": "Hive Network+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards, For each queenmod:Hive card drawn, gain [E] ."
+    },
+    {
+      "name": "Honey Blaster",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 2 times.\nqueenmod:Honey-boost: Deal 4 damage."
+    },
+    {
+      "name": "Honey Blaster+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 2 times.\nqueenmod:Honey-boost: Deal 5 damage."
+    },
+    {
+      "name": "Honey Trap",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All enemies lose 4 Strength this turn.\nqueenmod:Honey-boost: They lose 2 more."
+    },
+    {
+      "name": "Honey Trap+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All enemies lose 6 Strength this turn.\nqueenmod:Honey-boost: They lose 2 more."
+    },
+    {
+      "name": "Honor Guards",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nAdd 2 Bumblebees to your hand.\nRetain. Exhaust."
+    },
+    {
+      "name": "Honor Guards+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nAdd 2 Upgraded Bumblebees to your hand.\nRetain. Exhaust."
+    },
+    {
+      "name": "Infest",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 4 queenmod:Swarm to all enemies and yourself.\nqueenmod:Honey-boost: Apply 2 more."
+    },
+    {
+      "name": "Infest+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 5 queenmod:Swarm to all enemies and yourself.\nqueenmod:Honey-boost: Apply 3 more."
+    },
+    {
+      "name": "Inspiring Strike",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nUpgrade a random card in your draw pile."
+    },
+    {
+      "name": "Inspiring Strike+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nUpgrade 2 random cards in your draw pile."
+    },
+    {
+      "name": "Killer Queen",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage.\nIf you have more Attacks than Skills in your combat deck, this costs 1 [E] ."
+    },
+    {
+      "name": "Killer Queen+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 30 damage.\nIf you have more Attacks than Skills in your combat deck, this costs 1 [E] ."
+    },
+    {
+      "name": "Lunge",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "If the last card you played was a skill, deal 4 damage and draw a card."
+    },
+    {
+      "name": "Lunge+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "If the last card you played was a skill, deal 6 damage and draw a card."
+    },
+    {
+      "name": "Mating Dance",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhile in your hand, play a series of card types in sequence to gain 4 queenmod:Swarm."
+    },
+    {
+      "name": "Mating Dance+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhile in your hand, play a series of card types in sequence to gain 6 queenmod:Swarm."
+    },
+    {
+      "name": "Overwhelming Force",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage to an enemy equal to the number of cards in your draw pile."
+    },
+    {
+      "name": "Overwhelming Force+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage to all enemies equal to the number of cards in your draw pile."
+    },
+    {
+      "name": "Perfect Landing",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If you've played 5 or more cards this turn, gain 7 block."
+    },
+    {
+      "name": "Perfect Landing+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If you've played 5 or more cards this turn, gain 10 block."
+    },
+    {
+      "name": "Pheremone Swap",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nSwitch your queenmod:Hornets and queenmod:Bumblebees.\nSwitch your queenmod:Workerbees and queenmod:Drones."
+    },
+    {
+      "name": "Pheremone Swap+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nSwitch your queenmod:Hornets and queenmod:Bumblebees.\nSwitch your queenmod:Workerbees and queenmod:Drones.\nDraw a card."
+    },
+    {
+      "name": "Protect The Queen!",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you would take attack damage, Exhaust a queenmod:Bumblebee from your draw pile to gain its Block.\nqueenmod:Recruit 2 queenmod:Bumblebees."
+    },
+    {
+      "name": "Protect The Queen!+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you would take attack damage, Exhaust a queenmod:Bumblebee from your draw pile to gain its Block.\nqueenmod:Recruit 2 queenmod:Bumblebees."
+    },
+    {
+      "name": "Reinforcements",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, play a queenmod:Hornet or queenmod:Bumblebee from your draw pile at random."
+    },
+    {
+      "name": "Reinforcements+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, play a queenmod:Hornet or queenmod:Bumblebee from your draw pile at random."
+    },
+    {
+      "name": "Royal Advisors",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nAdd a queenmod:Workerbee and a queenmod:Bumblebee to your hand.\nExhaust."
+    },
+    {
+      "name": "Royal Advisors+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nAdd a queenmod:Workerbee and a queenmod:Bumblebee to your hand."
+    },
+    {
+      "name": "Scouting Party",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nqueenmod:Honey-boost: Draw a card."
+    },
+    {
+      "name": "Scouting Party+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 4 cards.\nqueenmod:Honey-boost: Draw a card."
+    },
+    {
+      "name": "Sharper Stingers",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Hornets do 5 more damage.\nAdd 2 Hornets to your draw pile."
+    },
+    {
+      "name": "Sharper Stingers+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Hornets do 8 more damage.\nAdd 2 Hornets to your draw pile."
+    },
+    {
+      "name": "Strategic Genius",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When you draw a card this turn, gain 1 Strength this turn only."
+    },
+    {
+      "name": "Strategic Genius+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "When you draw a card this turn, gain 1 Strength this turn only."
+    },
+    {
+      "name": "Swarming Strike",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nApply queenmod:Swarm equal to the damage dealt."
+    },
+    {
+      "name": "Swarming Strike+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply queenmod:Swarm equal to the damage dealt."
+    },
+    {
+      "name": "War Buzz",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all Skills in your hand, replace them with Hornets."
+    },
+    {
+      "name": "War Buzz+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust all Skills in your hand, replace them with Hornets."
+    },
+    {
+      "name": "War Trumpet",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When you play an Attack this turn, add a queenmod:Drone to your Draw Pile."
+    },
+    {
+      "name": "War Trumpet+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "When you play an Attack this turn, add a queenmod:Drone to your Draw Pile."
+    },
+    {
+      "name": "Warrior Drones",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Add 2 Drones to your draw pile.\nDeal 4 damage to a random enemy when you play a Drone."
+    },
+    {
+      "name": "Warrior Drones+",
+      "color": "Queen_yellow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Add 2 Drones to your draw pile.\nDeal 6 damage to a random enemy when you play a Drone."
+    },
+    {
+      "name": "Art of War",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nReduce the cost of all attacks in your hand by 1 this turn.\nExhaust."
+    },
+    {
+      "name": "Art of War+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 4 cards.\nReduce the cost of all attacks in your hand by 1 this turn.\nExhaust."
+    },
+    {
+      "name": "Forced March",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, shuffle your discard pile into your deck, then draw a card."
+    },
+    {
+      "name": "Forced March+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, shuffle your discard pile into your deck, then draw a card."
+    },
+    {
+      "name": "Hive Officers",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add one of each queenmod:Hive card to your draw pile.\nUpgrade all queenmod:Hive cards in your draw pile.\nExhaust."
+    },
+    {
+      "name": "Hive Officers+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add one of each queenmod:Hive card to your draw pile.\nUpgrade all queenmod:Hive cards in your draw pile.\nExhaust."
+    },
+    {
+      "name": "Honey Shield",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you gain queenmod:Nectar, gain 1 Block."
+    },
+    {
+      "name": "Honey Shield+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you gain queenmod:Nectar, gain 2 Block."
+    },
+    {
+      "name": "Hornet Swarm",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "All Hornets in your hand and draw pile attack random targets.\nExhaust."
+    },
+    {
+      "name": "Hornet Swarm+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "All Hornets in your hand and draw pile attack random targets."
+    },
+    {
+      "name": "I Am The Swarm",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Exhaust your draw pile, and gain 1 queenmod:Swarm for each card exhausted."
+    },
+    {
+      "name": "I Am The Swarm+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Exhaust your draw pile, and gain 2 queenmod:Swarm for each card exhausted."
+    },
+    {
+      "name": "Killer Bee",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nWhile in your draw pile, increase this card's damage by 8 at the start of your turn.\nExhaust."
+    },
+    {
+      "name": "Killer Bee+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nWhile in your draw pile, increase this card's damage by 8 at the start of your turn.\nExhaust."
+    },
+    {
+      "name": "Knighting",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a queenmod:Hive card in your hand to your deck permanently.\nExhaust."
+    },
+    {
+      "name": "Knighting+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a queenmod:Hive card in your hand to your deck permanently.\nGain 5 Block.\nExhaust."
+    },
+    {
+      "name": "Royal Banquet",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nAdd a random queenmod:Hive card to your hand.\nqueenmod:Honey-boost: Add one more."
+    },
+    {
+      "name": "Royal Banquet+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block.\nAdd a random queenmod:Hive card to your hand.\nqueenmod:Honey-boost: Add one more."
+    },
+    {
+      "name": "Royal Orders",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Play one of each queenmod:Hive card from your draw pile."
+    },
+    {
+      "name": "Royal Orders+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play one of each queenmod:Hive card from your draw pile."
+    },
+    {
+      "name": "Secret Weapon",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "queenmod:Honey-boost: Deal 30 damage to all enemies."
+    },
+    {
+      "name": "Secret Weapon+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "queenmod:Honey-boost: Deal 40 damage to all enemies."
+    },
+    {
+      "name": "Swarm Tactics",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When you play a card this turn, gain 1 queenmod:Swarm."
+    },
+    {
+      "name": "Swarm Tactics+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When you play a card this turn, gain 2 queenmod:Swarm."
+    },
+    {
+      "name": "Torture Dance",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhile in your hand, play a series of card types in sequence to Deal 10 damage to all enemies."
+    },
+    {
+      "name": "Torture Dance+",
+      "color": "Queen_yellow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhile in your hand, play a series of card types in sequence to Deal 14 damage to all enemies."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Queen's Banner",
+      "tier": "Starter",
+      "pool": "Queen_yellow",
+      "description": "The first event of every act is a Hive Event.",
+      "flavorText": "As long as the banner remains, the nation will never die."
+    },
+    {
+      "name": "Draft Notice",
+      "tier": "Common",
+      "pool": "Queen_yellow",
+      "description": "At the start of combat, add 3 Drones to your draw pile. (Drones are 0-cost skills that draw 2 cards and exhaust.)",
+      "flavorText": "One of the perks of eusocial societies: no draft dodgers."
+    },
+    {
+      "name": "Honey Jar",
+      "tier": "Uncommon",
+      "pool": "Queen_yellow",
+      "description": "At the start of each combat, gain 5 Nectar.",
+      "flavorText": "A hereto unknown technology allowing the long term storage of nectar. Remarkable."
+    },
+    {
+      "name": "Bloated Manual",
+      "tier": "Rare",
+      "pool": "Queen_yellow",
+      "description": "At the start of the turn, draw a card for every 20 cards in your draw pile.",
+      "flavorText": "I assure you, every bit of information is essential."
+    },
+    {
+      "name": "Medal of Honor",
+      "tier": "Boss",
+      "pool": "Queen_yellow",
+      "description": "At the start of your turn, Hornets and Bumblebees in your hand cost 0.",
+      "flavorText": "Some troops will distinguish themselves on the battlefield, and fight not for money, but for their nation and their pride."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Queen",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Queenmod:aggressive",
+      "description": "Activated if your current deck contains more Attacks than Skills."
+    },
+    {
+      "name": "Queenmod:bumblebee",
+      "description": "Bumblebees are 1-cost skills that gain 10 block."
+    },
+    {
+      "name": "Queenmod:commander",
+      "description": "A commander is a Hive card that upgrades all Hive cards of the same type in your draw pile."
+    },
+    {
+      "name": "Queenmod:dance",
+      "description": "While this is in your hand, it will list a series of card types. Play them in sequence to reap the rewards!"
+    },
+    {
+      "name": "Queenmod:drone",
+      "description": "Drones are 0-cost skills that draw 2 cards and exhaust."
+    },
+    {
+      "name": "Queenmod:drone+",
+      "description": "A Drone+ is a 0-cost skill that draw 2 cards and Exhausts."
+    },
+    {
+      "name": "Queenmod:finisher",
+      "description": "Playing a finisher ends your turn immediately."
+    },
+    {
+      "name": "Queenmod:flight",
+      "description": "Take 50% less damage. On receiving attack damage, lose 1 Flight."
+    },
+    {
+      "name": "Queenmod:hive",
+      "description": "Hive cards are Hornets, Bumblebees, Workerbees and Drones."
+    },
+    {
+      "name": "Queenmod:honey-boost",
+      "description": "Activates once for every 10 Nectar you have."
+    },
+    {
+      "name": "Queenmod:hornet",
+      "description": "Hornets are 1-cost attacks that deal 11 damage."
+    },
+    {
+      "name": "Queenmod:lock",
+      "description": "Your swarm will not move from the target during this turn."
+    },
+    {
+      "name": "Queenmod:nectar",
+      "description": "For every 10 Nectar, you gain 1 [E] at the start of your turn, also activate Honey-boost effects on cards once each for every 10 Nectar when played."
+    },
+    {
+      "name": "Queenmod:pollinate",
+      "description": "When a Pollinated enemy is attacked, gain 1 Nectar. Gain 1 [E] for every 10 Nectar at the start of your turn."
+    },
+    {
+      "name": "Queenmod:production",
+      "description": "At the start of your turn, gain 1 Nectar for each Production."
+    },
+    {
+      "name": "Queenmod:recruit",
+      "description": "Transform a Drone in your hand or draw pile into the chosen hive card. Hand is checked before draw pile."
+    },
+    {
+      "name": "Queenmod:riposte",
+      "description": "A Riposte is a 1-cost Attack that deals 9 damage."
+    },
+    {
+      "name": "Queenmod:riposte+",
+      "description": "A Riposte+ is a 1-cost Attack that deals 11 damage."
+    },
+    {
+      "name": "Queenmod:swarm",
+      "description": "Swarm grants you block and damages enemies. It attacks enemies you target, and returns to you when you block."
+    },
+    {
+      "name": "Queenmod:workerbee",
+      "description": "Worker Bees are 0-cost skills that gain 5 Nectar. At the start of your turn, gain [E] for every 10 Nectar."
+    }
+  ]
+}

@@ -1,0 +1,1444 @@
+{
+  "mod": {
+    "name": "ChefMod",
+    "version": "1.1.0",
+    "authors": ["NotInTheFace"],
+    "credits": "",
+    "description": "Adds the Chef.\n        - Play Ingredients to complete Recipes.\n        - Freeze cards into a separate pile and play cards to interact with frozen cards.\n        - Collect new recipes from elite enemies.",
+    "mts_version": "3.18.1",
+    "sts_version": "11-30-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Fried Lagavulin",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "3 chefmod:Ingredients\nYou may only play 1 Attack each turn. It deals double damage."
+    },
+    {
+      "name": "Giant Marble Cake",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "4 chefmod:Ingredients\nDraw 2 cards. ALL attacks in your hand deal 5 more damage this combat."
+    },
+    {
+      "name": "Gremlin Goulash",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "4 chefmod:Ingredients\nChoose a card in your hand. It gets played twice this combat."
+    },
+    {
+      "name": "Nemesis Souffl\u00E9",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "4 chefmod:Ingredients\nGain 1 Intangible. Apply chefmod:Satiated to a random enemy."
+    },
+    {
+      "name": "Neow Nuggets",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "2 chefmod:Ingredients\nYour starter Strike and Defend cards are Upgraded and Exhaust.\nAdd a *Nugget *Strike to your chefmod:Frozen pile."
+    },
+    {
+      "name": "Nob Stew",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "3 chefmod:Ingredients\nEvery Skill you play gives a random Attack in your hand +2 damage."
+    },
+    {
+      "name": "Nugget Strike",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Nugget Strike+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Repto Dagger",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 2 times. Shuffle this card into your draw pile. It deals damage an additional time when next used."
+    },
+    {
+      "name": "Repto Dagger+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage 2 times. Shuffle this card into your draw pile. It deals damage an additional time when next used."
+    },
+    {
+      "name": "Repto-Ravioli",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "4 chefmod:Ingredients\nAdd a *Repto *Dagger to your hand."
+    },
+    {
+      "name": "Sentry Brittle",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "3 chefmod:Ingredients\nWhen you draw a Status, Exhaust it and deal 3 damage to all enemies."
+    },
+    {
+      "name": "Slaver Salad",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "4 chefmod:Ingredients\nAdd a *Bandage *Up, a *Blind, and a *Trip to your hand."
+    },
+    {
+      "name": "Spire Cr\u00EApes",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "2 chefmod:Ingredients\nFor the rest of this combat, *Today's *Special is played twice when used."
+    },
+    {
+      "name": "Stab Kabob",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "4 chefmod:Ingredients\nEach turn, put an attack from your draw pile into your hand."
+    },
+    {
+      "name": "Defend",
+      "color": "Chef_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block"
+    },
+    {
+      "name": "Defend+",
+      "color": "Chef_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block"
+    },
+    {
+      "name": "Quick Thaw",
+      "color": "Chef_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "chefmod:No-Freeze\nDeal 3 damage. Play the oldest chefmod:Frozen card. chefmod:Freeze 1."
+    },
+    {
+      "name": "Quick Thaw+",
+      "color": "Chef_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "chefmod:No-Freeze\nDeal 3 damage. Play the 2 oldest chefmod:Frozen cards. chefmod:Freeze 2."
+    },
+    {
+      "name": "Strike",
+      "color": "Chef_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage"
+    },
+    {
+      "name": "Strike+",
+      "color": "Chef_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage"
+    },
+    {
+      "name": "Today's Special",
+      "color": "Chef_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply chefmod:Hunger.\nThe first time you draw this, choose a chefmod:Recipe to cook."
+    },
+    {
+      "name": "Today's Special+",
+      "color": "Chef_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply chefmod:Hunger.\nThe first time you draw this, choose a chefmod:Recipe to cook."
+    },
+    {
+      "name": "Bao Buns",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block. Retain 1 card this turn."
+    },
+    {
+      "name": "Bao Buns+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. Retain 1 card this turn."
+    },
+    {
+      "name": "Chop",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage\nIf played while chefmod:Frozen, deal 8 damage twice."
+    },
+    {
+      "name": "Chop+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage\nIf played while chefmod:Frozen, deal 11 damage twice."
+    },
+    {
+      "name": "Cold Steel",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage\nWhen chefmod:Frozen, costs 1 less [E] this combat."
+    },
+    {
+      "name": "Cold Steel+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage\nWhen chefmod:Frozen, costs 1 less [E] this combat."
+    },
+    {
+      "name": "Defrost",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 chefmod:Frozen card to move to your hand."
+    },
+    {
+      "name": "Defrost+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 2 chefmod:Frozen cards to move to your hand."
+    },
+    {
+      "name": "Dino Kale",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nchefmod:Prepped: Gain 5 Block next turn."
+    },
+    {
+      "name": "Dino Kale+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nchefmod:Prepped: Gain 8 Block next turn."
+    },
+    {
+      "name": "Fillet",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. Make a copy of this card and chefmod:Freeze it."
+    },
+    {
+      "name": "Fillet+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. Make a copy of this card and chefmod:Freeze it."
+    },
+    {
+      "name": "Fire Up",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply chefmod:Hunger."
+    },
+    {
+      "name": "Fire Up+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nApply chefmod:Hunger."
+    },
+    {
+      "name": "Fry Pan",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "chefmod:No-Freeze\nDeal 9 damage."
+    },
+    {
+      "name": "Fry Pan+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "chefmod:No-Freeze\nDeal 12 damage."
+    },
+    {
+      "name": "Gelato",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "chefmod:Freeze 2 Skills.\nGain Block equal to 3 times their total cost."
+    },
+    {
+      "name": "Gelato+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "chefmod:Freeze 2 Skills.\nGain Block equal to 4 times their total cost."
+    },
+    {
+      "name": "Granita",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable.\nchefmod:Freeze 2 attacks."
+    },
+    {
+      "name": "Granita+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Vulnerable.\nchefmod:Freeze 2 attacks."
+    },
+    {
+      "name": "Hot Soup",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage. At the end of turn, chefmod:Freeze this if it's in your hand."
+    },
+    {
+      "name": "Hot Soup+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage. At the end of turn, chefmod:Freeze this if it's in your hand."
+    },
+    {
+      "name": "Ice Pick",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nchefmod:Freeze 1."
+    },
+    {
+      "name": "Ice Pick+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nchefmod:Freeze 1."
+    },
+    {
+      "name": "Slice & Dice",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nchefmod:Prepped: Deal 7 damage again."
+    },
+    {
+      "name": "Slice & Dice+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nchefmod:Prepped: Deal 10 damage again."
+    },
+    {
+      "name": "Sorbet",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply chefmod:Hunger.\nchefmod:Freeze 1 power."
+    },
+    {
+      "name": "Sorbet+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play your oldest chefmod:Frozen power.\nApply chefmod:Hunger.\nchefmod:Freeze 1 power."
+    },
+    {
+      "name": "Zaru Soba",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 chefmod:Frozen cards. chefmod:Freeze 2."
+    },
+    {
+      "name": "Zaru Soba+",
+      "color": "Chef_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 chefmod:Frozen cards. chefmod:Freeze 3."
+    },
+    {
+      "name": "5-Alarm Chili",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "chefmod:Recipe: 3 chefmod:Ingredients\nChoose a skill. It deals 10 damage to ALL enemies whenever you use it."
+    },
+    {
+      "name": "5-Alarm Chili+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "chefmod:Recipe: 3 chefmod:Ingredients\nChoose a skill. It deals 20 damage to ALL enemies whenever you use it."
+    },
+    {
+      "name": "All-you-can-eat",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply chefmod:Satiated for every Attack card in your hand."
+    },
+    {
+      "name": "All-you-can-eat+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw a card.\nApply chefmod:Satiated for every Attack card in your hand."
+    },
+    {
+      "name": "Aloo Gobi",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block. Whenever you chefmod:Freeze this card, increase its Block by 4."
+    },
+    {
+      "name": "Aloo Gobi+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block. Whenever you chefmod:Freeze this card, increase its Block by 6."
+    },
+    {
+      "name": "Bleed Out",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Whenever the target takes unblocked attack damage, Weaken it.\nExhaust"
+    },
+    {
+      "name": "Bleed Out+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate\nDeal 5 damage. Whenever the target takes unblocked attack damage, Weaken it.\nExhaust"
+    },
+    {
+      "name": "Bruschetta",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply chefmod:Hunger. Retain a card this turn."
+    },
+    {
+      "name": "Bruschetta+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply chefmod:Hunger. Retain a card this turn."
+    },
+    {
+      "name": "Cayenne Cloud",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies."
+    },
+    {
+      "name": "Cayenne Cloud+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to ALL enemies 3 times."
+    },
+    {
+      "name": "Clean House",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block. chefmod:Freeze 3 Status or Curse cards."
+    },
+    {
+      "name": "Clean House+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block. chefmod:Freeze 3 Status or Curse cards."
+    },
+    {
+      "name": "Cleavers",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage to ALL enemies.\nchefmod:Prepped: Deal 11 damage to a random enemy."
+    },
+    {
+      "name": "Cleavers+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage to ALL enemies.\nchefmod:Prepped: Deal 11 damage to two random enemies."
+    },
+    {
+      "name": "Cutting Board",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Retain a random card each turn."
+    },
+    {
+      "name": "Cutting Board+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Retain a random card each turn, prioritizing cards with chefmod:Prepped effects."
+    },
+    {
+      "name": "Dim Sum",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate\nApply chefmod:Hunger.\nchefmod:Prepped: Shuffle this into your draw pile."
+    },
+    {
+      "name": "Dim Sum+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate\nStartup: chefmod:Hunger deals 5 more damage.\nApply chefmod:Hunger."
+    },
+    {
+      "name": "Double Chop",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice.\nPut a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Double Chop+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice.\nPut a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Escargots",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "chefmod:Recipe: 2 chefmod:Ingredients\nUpgrade ALL your chefmod:Frozen cards."
+    },
+    {
+      "name": "Escargots+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "chefmod:Recipe: 2 chefmod:Ingredients\nUpgrade ALL your cards."
+    },
+    {
+      "name": "Farmer's Market",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fetch an chefmod:Ingredient from your Draw pile.\nExhaust"
+    },
+    {
+      "name": "Farmer's Market+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fetch 2 chefmod:Ingredients from your Draw pile. They cost 0 until played.\nExhaust"
+    },
+    {
+      "name": "Flamb\u00E9",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nchefmod:Prepped: Shuffle a copy of this card into your draw pile.\nExhaust"
+    },
+    {
+      "name": "Flamb\u00E9+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nchefmod:Prepped: Shuffle a copy of this card into your draw pile.\nExhaust"
+    },
+    {
+      "name": "Freeze Solid",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you chefmod:Freeze a card, gain 3 Block."
+    },
+    {
+      "name": "Freeze Solid+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you chefmod:Freeze a card, gain 4 Block."
+    },
+    {
+      "name": "Freezer Burn",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage for every chefmod:Frozen card."
+    },
+    {
+      "name": "Freezer Burn+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage for every card chefmod:Frozen this combat."
+    },
+    {
+      "name": "Fresh Produce",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an chefmod:Ingredient, draw a card."
+    },
+    {
+      "name": "Fresh Produce+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an chefmod:Ingredient, draw 2 cards."
+    },
+    {
+      "name": "Full Burn",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 23 damage to ALL enemies.\nchefmod:Prepped: gain [E] ."
+    },
+    {
+      "name": "Full Burn+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 28 damage to ALL enemies.\nchefmod:Prepped: gain [E] [E] ."
+    },
+    {
+      "name": "Grocery Delivery",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2X [E] next turn.\nExhaust"
+    },
+    {
+      "name": "Grocery Delivery+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2X [E] next turn."
+    },
+    {
+      "name": "Ice Cream Cone",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply chefmod:Satiated and chefmod:Supercooled. Play your oldest chefmod:Frozen attack."
+    },
+    {
+      "name": "Ice Cream Cone+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply chefmod:Satiated and chefmod:Supercooled. Play your 2 oldest chefmod:Frozen attacks."
+    },
+    {
+      "name": "Julienne",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nchefmod:Freeze the next card you use."
+    },
+    {
+      "name": "Julienne+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nchefmod:Freeze the next card you use."
+    },
+    {
+      "name": "Knife Flurry",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage 4 times."
+    },
+    {
+      "name": "Knife Flurry+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage 4 times."
+    },
+    {
+      "name": "Leftovers",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nWhenever you chefmod:Freeze this card, double its damage."
+    },
+    {
+      "name": "Leftovers+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nWhenever you chefmod:Freeze this card, double its damage."
+    },
+    {
+      "name": "Liquid Nitrogen",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage. Apply chefmod:Supercooled."
+    },
+    {
+      "name": "Liquid Nitrogen+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage. Apply chefmod:Supercooled."
+    },
+    {
+      "name": "Loco Moco",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "chefmod:Recipe: 2 chefmod:Ingredients\nApply chefmod:Satiated to ALL enemies. Draw 5 cards."
+    },
+    {
+      "name": "Loco Moco+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "chefmod:Recipe: 2 chefmod:Ingredients\nApply chefmod:Satiated to ALL enemies. Draw 5 cards. Attacks drawn this way cost 0 this combat."
+    },
+    {
+      "name": "Monster Bait",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. If the target has chefmod:Hunger, increase the damage by 5."
+    },
+    {
+      "name": "Monster Bait+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. If the target has chefmod:Hunger, increase the damage by 5."
+    },
+    {
+      "name": "New Menu",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards. If no attacks are drawn, apply chefmod:Hunger to ALL enemies."
+    },
+    {
+      "name": "New Menu+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards. For each non-attack drawn, apply chefmod:Hunger to ALL enemies."
+    },
+    {
+      "name": "No Soup For You",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply chefmod:Hunger. chefmod:Freeze an attack that costs 2 or more [E] ."
+    },
+    {
+      "name": "No Soup For You+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply chefmod:Hunger. chefmod:Freeze an attack that costs 2 or more [E] and play your oldest chefmod:Frozen card."
+    },
+    {
+      "name": "Old Cookbook",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random chefmod:Recipe to your hand.\nExhaust"
+    },
+    {
+      "name": "Old Cookbook+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random chefmod:Recipe to your hand. It costs 0 this turn.\nExhaust"
+    },
+    {
+      "name": "Omelette",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an attack. It deals 5 more damage.\nExhaust"
+    },
+    {
+      "name": "Omelette+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an attack. It deals 5 more damage. Whenever you play it, shuffle a copy of this card into your draw pile.\nExhaust"
+    },
+    {
+      "name": "Potato Gratin",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block. Apply chefmod:Satiated to ALL enemies."
+    },
+    {
+      "name": "Potato Gratin+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block. Apply chefmod:Satiated to ALL enemies."
+    },
+    {
+      "name": "Pur\u00E9e",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Gain 15 Block.\nDeal 15 damage.\nchefmod:Prepped: chefmod:Freeze this card."
+    },
+    {
+      "name": "Pur\u00E9e+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Gain 21 Block.\nDeal 21 damage.\nchefmod:Prepped: chefmod:Freeze this card."
+    },
+    {
+      "name": "Quick Chop",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nPlay the oldest chefmod:Frozen card."
+    },
+    {
+      "name": "Quick Chop+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nPlay the 3 oldest chefmod:Frozen cards."
+    },
+    {
+      "name": "Ratatouille",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nchefmod:Prepped: Increase this card's Block by 4 this combat."
+    },
+    {
+      "name": "Ratatouille+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block.\nchefmod:Prepped: Increase this card's Block by 6 this combat."
+    },
+    {
+      "name": "Save for Later",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card. Exhaust it and shuffle 2 copies into your draw pile."
+    },
+    {
+      "name": "Save for Later+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card. Exhaust it and shuffle 3 copies into your draw pile."
+    },
+    {
+      "name": "Seared Scallops",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Inflict chefmod:Hunger on ALL enemies."
+    },
+    {
+      "name": "Seared Scallops+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Inflict chefmod:Hunger on ALL enemies. Gain 3 Dexterity this turn."
+    },
+    {
+      "name": "Spaghetti Carbonara",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "chefmod:No-Freeze\nPlay the X oldest chefmod:Frozen cards."
+    },
+    {
+      "name": "Spaghetti Carbonara+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "chefmod:No-Freeze\nDraw the X oldest chefmod:Frozen cards. They cost 0 until played."
+    },
+    {
+      "name": "Tonkotsu Ramen",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "chefmod:No-Freeze\nPlay your oldest chefmod:Frozen card and put it on top of your draw pile."
+    },
+    {
+      "name": "Tonkotsu Ramen+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "chefmod:No-Freeze\nPlay your oldest chefmod:Frozen card and put it on top of your draw pile."
+    },
+    {
+      "name": "Vegetable Tart",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "8",
+      "description": "Costs 1 less [E] for each chefmod:Frozen card. Gain 16 Block."
+    },
+    {
+      "name": "Vegetable Tart+",
+      "color": "Chef_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "8",
+      "description": "Costs 1 less [E] for each chefmod:Frozen card. Gain 20 Block."
+    },
+    {
+      "name": "2-For-1 Coupon",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Your currently chefmod:Frozen cards are played twice the next time you use them.\nExhaust"
+    },
+    {
+      "name": "2-For-1 Coupon+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Your currently chefmod:Frozen cards are played twice this combat.\nExhaust"
+    },
+    {
+      "name": "Banana Split",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "chefmod:Recipe: 2 chefmod:Ingredients\nchefmod:Hunger deals 5 more damage this combat."
+    },
+    {
+      "name": "Banana Split+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "chefmod:Recipe: 2 chefmod:Ingredients\nchefmod:Hunger deals 5 more damage this combat. Play a copy of this chefmod:Recipe."
+    },
+    {
+      "name": "Canap\u00E9",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Apply chefmod:Hunger X times."
+    },
+    {
+      "name": "Canap\u00E9+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Apply chefmod:Hunger X + 1 times."
+    },
+    {
+      "name": "Candy Bowl",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "chefmod:Hunger deals 8 more damage this combat.\nExhaust"
+    },
+    {
+      "name": "Candy Bowl+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "chefmod:Hunger deals 8 more damage this combat."
+    },
+    {
+      "name": "Caprese Salad",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nWhen you shuffle, this card is always on top of the Draw Pile."
+    },
+    {
+      "name": "Caprese Salad+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nWhen you shuffle, this card is always on top of the Draw Pile."
+    },
+    {
+      "name": "Death by Chocolate",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "If the target has both chefmod:Hunger and chefmod:Satiated, deal 50 damage. Otherwise, deal 6 damage."
+    },
+    {
+      "name": "Death by Chocolate+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "If the target has both chefmod:Hunger and chefmod:Satiated, deal 50 damage. Otherwise, deal 9 damage."
+    },
+    {
+      "name": "DeepFreeze",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Move all your chefmod:Frozen cards to your discard pile. chefmod:Freeze your draw pile.\nExhaust"
+    },
+    {
+      "name": "DeepFreeze+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Move all your chefmod:Frozen cards to your discard pile. chefmod:Freeze your draw pile."
+    },
+    {
+      "name": "Frozen Tuna",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Startup: chefmod:Freeze this card.\nDeal 18 damage to ALL enemies."
+    },
+    {
+      "name": "Frozen Tuna+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Startup: chefmod:Freeze this card.\nDeal 18 damage to ALL enemies.\nWhenever this card is chefmod:Frozen, increase its damage by 6."
+    },
+    {
+      "name": "Full-Course Meal",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "chefmod:Recipe: 4 chefmod:Ingredients\nGain 25 Block."
+    },
+    {
+      "name": "Full-Course Meal+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "chefmod:Recipe: 4 chefmod:Ingredients\nGain 25 Block, and 25 Block next turn."
+    },
+    {
+      "name": "Mince",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "When drawn, draw a skill.\nDeal 7 damage to a random enemy 4 times."
+    },
+    {
+      "name": "Mince+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "When drawn, draw a skill.\nDeal 7 damage to a random enemy 5 times."
+    },
+    {
+      "name": "Order Up",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Each turn, play your oldest chefmod:Frozen card and chefmod:Freeze 1"
+    },
+    {
+      "name": "Order Up+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Each turn, play your oldest chefmod:Frozen card and chefmod:Freeze 1"
+    },
+    {
+      "name": "Prep Cook",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Retain a card, increase its Block and/or damage by 4 the next time you use it."
+    },
+    {
+      "name": "Prep Cook+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Retain a card, increase its Block and/or damage by 4 this combat."
+    },
+    {
+      "name": "Raid Pantry",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "chefmod:No-Freeze\nPlay all your chefmod:Frozen Attacks."
+    },
+    {
+      "name": "Raid Pantry+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "chefmod:No-Freeze\nPlay all your chefmod:Frozen Attacks."
+    },
+    {
+      "name": "Rising Dough",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards. Choose a card to put on top of the draw pile.\nExhaust"
+    },
+    {
+      "name": "Rising Dough+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards. Choose a card to put on top of the draw pile."
+    },
+    {
+      "name": "Sushi Platter",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "chefmod:Recipe: 3 chefmod:Ingredients\nYour attacks deal double damage this turn."
+    },
+    {
+      "name": "Sushi Platter+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "chefmod:Recipe: 3 chefmod:Ingredients\nYour attacks deal double damage this turn and next turn."
+    },
+    {
+      "name": "Tasty Distraction",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first time each turn you would take unblocked attack damage, instead play your oldest chefmod:Frozen card and Exhaust it."
+    },
+    {
+      "name": "Tasty Distraction+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first time each turn you would take unblocked attack damage, instead play your oldest chefmod:Frozen card and Exhaust it."
+    },
+    {
+      "name": "Tenderizer",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nchefmod:Prepped: Apply 9 Vulnerable."
+    },
+    {
+      "name": "Tenderizer+",
+      "color": "Chef_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nchefmod:Prepped: Apply 9 Vulnerable."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Trusty Pot",
+      "tier": "Starter",
+      "pool": "Chef_color",
+      "description": "Gain 5 Block whenever you play the first card you draw in each combat.",
+      "flavorText": "It's a pot. For cooking."
+    },
+    {
+      "name": "Rolling Pin",
+      "tier": "Common",
+      "pool": "Chef_color",
+      "description": "At the beginning of each combat, chefmod:Freeze 3.",
+      "flavorText": "Perfect for making pastries."
+    },
+    {
+      "name": "Wooden Spoon",
+      "tier": "Uncommon",
+      "pool": "Chef_color",
+      "description": "chefmod:Ingredients are Retained.",
+      "flavorText": "Sturdy and well-used, this spoon has stirred many a meal."
+    },
+    {
+      "name": "Spatula",
+      "tier": "Rare",
+      "pool": "Chef_color",
+      "description": "Whenever you chefmod:Freeze a card, deal 4 damage to a random enemy.",
+      "flavorText": "Recommended for SpireCo. Brand Pancakes."
+    },
+    {
+      "name": "Old Kettle",
+      "tier": "Boss",
+      "pool": "Chef_color",
+      "description": "Replaces Trusty Pot. The first attack card you draw each combat deals 5 additional damage.",
+      "flavorText": "Actually, it gets along quite well with all other cookware."
+    },
+    {
+      "name": "Pepper Mill",
+      "tier": "Boss",
+      "pool": "Chef_color",
+      "description": "Gain [E] each turn. Whenever you play a chefmod:Frozen card, lose [E] .",
+      "flavorText": "The essential tool for the essential spice."
+    },
+    {
+      "name": "Cookie Jar",
+      "tier": "Shop",
+      "pool": "Chef_color",
+      "description": "Gain 1 charge each time you climb a floor. chefmod:Hunger deals 1 more damage for each charge.",
+      "flavorText": "Sadly, it's empty."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Potion of Plenty",
+      "rarity": "Common",
+      "description": "Fetch 2 Ingredients from your draw pile. They cost 0 until played."
+    },
+    {
+      "name": "Antifreeze Potion",
+      "rarity": "Rare",
+      "description": "Play the oldest 5 Frozen cards."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Chef",
+      "type": "Player",
+      "minHP": "76",
+      "maxHP": "76"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Freeze",
+      "description": "Move the specified number of cards from the top of your draw pile to the frozen pile."
+    },
+    {
+      "name": "Frozen",
+      "description": "Frozen cards are kept in a separate pile, and can only be played or drawn by using cards that specifically interact with Frozen cards."
+    },
+    {
+      "name": "Hunger",
+      "description": "Enemies inflicted with Hunger deal half damage and take half damage from attacks for 1 turn. If an enemy already has Hunger, applying it again will deal 10 damage."
+    },
+    {
+      "name": "Ingredient",
+      "description": "When you play a Recipe, random cards are marked as Ingredients. Once the required number of Ingredients are played, the Recipe's effect is triggered."
+    },
+    {
+      "name": "No-Freeze",
+      "description": "This card cannot be Frozen."
+    },
+    {
+      "name": "Prepped",
+      "description": "Has additional effects if played from the leftmost spot in your hand."
+    },
+    {
+      "name": "Recipe",
+      "description": "A one-time effect that is triggered when you play enough Ingredients. Recipes are activated in order."
+    },
+    {
+      "name": "Satiated",
+      "description": "Enemies inflicted with Satiated deal double damage and take double damage from attacks for 1 turn. If an enemy already has Satiated, gain [E] when you apply it again."
+    },
+    {
+      "name": "Supercooled",
+      "description": "Frozen cards which normally target a single enemy will specifically target this enemy."
+    }
+  ]
+}
