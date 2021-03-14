@@ -1,15 +1,4 @@
 {
-  "mod": {
-    "name": "100% Spire Juice",
-    "version": "0.8.1",
-    "authors": ["MistressAlison"],
-    "credits": "Art Assets - Orange_Juice and Fruitbat Factory\nBaseMod, ModTheSpire, and StSLib - Bug Kiooeht\nStSDefaultModBase - Gremious\nBeta Testing - Spookalon, Skyson, Fenec250, Reina\nCharacter Animation Assistance - Darkglade\nMisc. Coding Assistance - Gk, Jobby, Kio, Darkglade, Jedi, Alchyr, Vex, Teafling, and many more from #modding-technical in general\nSimplified Chinese Translation - Anonymous User\nKorean Translation - Tsurumaki Maki",
-    "description": "Adds Star Breaker from 100% Orange Juice. \n\nIncluding 80+ cards and 0% original art!",
-    "mts_version": "3.18.2",
-    "sts_version": "12-22-2020",
-    "dependencies": ["basemod","stslib"],
-    "optional_dependencies": []
-  },
   "cards": [
     {
       "name": "Ambush",
@@ -17,7 +6,8 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Apply 1 Vulnerable.\nThen deal 5 damage."
+      "description": "Apply 1 Vulnerable.\nThen deal 5 damage.\nNorma 3: This Attack will moonworks:Pierce.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Ambush+",
@@ -25,7 +15,8 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Apply 2 Vulnerable.\nThen deal 7 damage."
+      "description": "Apply 2 Vulnerable.\nThen deal 7 damage.\nNorma 3: This Attack will moonworks:Pierce.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Defend",
@@ -33,7 +24,8 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block."
+      "description": "Gain 5 Block.\nNorma 1: +1 Block.\nNorma 3: +1 Block.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Defend+",
@@ -41,7 +33,8 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block."
+      "description": "Gain 8 Block.\nNorma 1: +1 Block.\nNorma 3: +1 Block.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Long-Distance Shot",
@@ -49,7 +42,8 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 3 moonworks:Piercing *Damage.\nDraw this card whenever you gain a *Norma level."
+      "description": "Deal 3 moonworks:Piercing Damage.\nDraw this card whenever you generate a Norma level.\nNorma 3: Draw 1 card if this effect has uses. Uses: 2.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Long-Distance Shot+",
@@ -57,7 +51,8 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 5 moonworks:Piercing *Damage.\nDraw this card whenever you gain a *Norma level."
+      "description": "Deal 5 moonworks:Piercing Damage.\nDraw this card whenever you generate a Norma level.\nNorma 3: Draw 1 card if this effect has uses. Uses: 3.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Strike",
@@ -65,7 +60,8 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage."
+      "description": "Deal 6 damage.\nNorma 2: +1 damage.\nNorma 4: +2 damage.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Strike+",
@@ -73,7 +69,8 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage."
+      "description": "Deal 9 damage.\nNorma 2: +1 damage.\nNorma 4: +2 damage.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Air Strike",
@@ -81,7 +78,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 20 moonworks:Splash *Damage to ALL enemies.\nPurge."
+      "description": "Deal 20 moonworks:Splash Damage to ALL enemies.\nPurge.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Air Strike+",
@@ -89,7 +87,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 30 moonworks:Splash *Damage to ALL enemies.\nPurge."
+      "description": "Deal 30 moonworks:Splash Damage to ALL enemies.\nPurge.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Big Rocket Cannon",
@@ -97,7 +96,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 moonworks:Splash *Damage.\nShuffle 1 *Air *Strike into your draw pile.\nPurge."
+      "description": "Deal 10 damage to ALL enemies.\nShuffle 1 Air Strike into your draw pile.\nPurge.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Big Rocket Cannon+",
@@ -105,7 +105,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 16 moonworks:Splash *Damage.\nShuffle 1 *Air *Strike into your draw pile.\nPurge."
+      "description": "Deal 15 damage to ALL enemies.\nShuffle 1 Air [diffAddS] Strike+ [diffAddE] into your draw pile.\nPurge. ",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Evil Spy Work Execution",
@@ -113,7 +114,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Autoplay.\nDeal 4 damage to ALL enemies.\nDraw 1 card.\nPurge."
+      "description": "Autoplay.\nDeal 4 damage to ALL enemies.\nDraw 1 card.\nPurge.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Evil Spy Work Execution+",
@@ -121,23 +123,26 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Autoplay.\nDeal 6 damage to ALL enemies.\nDraw 1 card.\nPurge."
+      "description": "Autoplay.\nDeal 6 damage to ALL enemies.\nDraw 1 card.\nPurge.",
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Leap Through Time",
+      "name": "Lulu's Luckiest Egg",
       "color": "White_ice_color",
       "rarity": "Special",
       "type": "Skill",
-      "cost": "0",
-      "description": "Rewind your personal timeline to when your moonworks:Temporal_Anchor was created.\nEach turn, moonworks:Divergence increases by 15 until this card is played."
+      "cost": "1",
+      "description": "Gain 5 Block 2 times.\nDraw 2 cards.\nGain 2 temporary Dexterity.",
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Leap Through Time+",
+      "name": "Lulu's Luckiest Egg+",
       "color": "White_ice_color",
       "rarity": "Special",
       "type": "Skill",
-      "cost": "0",
-      "description": "Rewind your personal timeline to when your moonworks:Temporal_Anchor was created.\nEach turn, moonworks:Divergence increases by 10 until this card is played."
+      "cost": "1",
+      "description": "Gain 5 Block 3 times.\nDraw 3 cards.\nGain 3 temporary Dexterity.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Magical Inferno",
@@ -145,7 +150,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 10 damage to ALL enemies for EACH alive enemy.\nPurge."
+      "description": "Deal 5 moonworks:Splash Damage to ALL enemies.\nGain 5 Vigor.\nExhaustive 0.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Magical Inferno+",
@@ -153,7 +159,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 13 damage to ALL enemies for EACH alive enemy.\nPurge."
+      "description": "Deal 7 moonworks:Splash Damage to ALL enemies.\nGain 7 Vigor.\nExhaustive 0.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Magical Massacre",
@@ -161,7 +168,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Remove 25 % of the target's total HP.\nPurge."
+      "description": "The healthiest enemy loses 8 HP and max HP.\nGain 5 moonworks:Steady.\nExhaustive 0.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Magical Massacre+",
@@ -169,7 +177,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Remove 33 % of the target's total HP.\nPurge."
+      "description": "The healthiest enemy loses 12 HP and max HP.\nGain 7 moonworks:Steady.\nExhaustive 0.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Magical Revenge",
@@ -177,7 +186,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal damage equal to your missing HP.\nHeal for 33 % the damage dealt.\nPurge."
+      "description": "Deal 25 % of your missing HP as moonworks:Revenge Damage with 33 % moonworks:Life_Steal.\n(Deals 0 damage.)\nExhaustive 0.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Magical Revenge+",
@@ -185,7 +195,8 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal damage equal to your missing HP.\nHeal for 50 % the damage dealt.\nPurge."
+      "description": "Deal 33 % of your missing HP as moonworks:Revenge Damage with 50 % moonworks:Life_Steal.\n(Deals 0 damage.)\nExhaustive 0.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Star Blasting Light",
@@ -193,7 +204,8 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 3 to 5 moonworks:Blasting_Light to ALL enemies.\nPurge."
+      "description": "Apply 3 to 5 moonworks:Blasting_Light to ALL enemies.\nPurge.\nNorma X: +X moonworks:Blasting_Light.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Star Blasting Light+",
@@ -201,7 +213,26 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 4 to 7 moonworks:Blasting_Light to ALL enemies.\nPurge."
+      "description": "Apply 4 to 7 moonworks:Blasting_Light to ALL enemies.\nPurge.\nNorma X: +X moonworks:Blasting_Light.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Truly Golden Egg",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nAdd 1 of 3 random Attack cards to your hand, it costs 0 this turn.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Truly Golden Egg+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nAdd 1 of 3 random Attack cards to your hand, it costs 0 this turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Assault",
@@ -209,7 +240,8 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 moonworks:Fixed damage.\nThis Attack ignores Block."
+      "description": "Deal 7 moonworks:Piercing Damage.\nNorma 2: The Pierce effect will be twice as strong.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Assault+",
@@ -217,23 +249,44 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 moonworks:Fixed damage.\nThis Attack ignores Block."
+      "description": "Deal 9 moonworks:Piercing Damage.\nNorma 2: The Pierce effect will be twice as strong.",
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Big Magnum",
+      "name": "Beast Witch",
       "color": "White_ice_color",
       "rarity": "Common",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Lose 5 HP.\nGain 7 Vigor.\nGain 0 Strength.\nExhaust."
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 2 temporary Strength.\nNorma 2: +2 damage.",
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Bigger Magnum",
+      "name": "Beast Witch+",
       "color": "White_ice_color",
       "rarity": "Common",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Lose 6 HP.\nGain 10 Vigor.\nGain 1 Strength.\nExhaust."
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 3 temporary Strength.\nNorma 2: +2 damage.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Blue Crow",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 2 Block.\nGains +2 Block for each Attack in your hand.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Blue Crow the Second",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": " [diffAddS] Retain.\n[diffAddE] Deal 6 damage.\nGain 2 Block.\nGains +2 Block for each Attack in your hand. ",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Cloud of Seagulls",
@@ -241,7 +294,8 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 2 moonworks:Fixed damage to a random target 2 times.\nShuffle 1 *Jonathan *Rush into your draw pile."
+      "description": "Deal 2 moonworks:Fixed Damage to a random target 2 times.\nAdd 1 Jonathan Rush to your hand.\nNorma 2: Draw 1 card.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Cloud of Seagulls+",
@@ -249,7 +303,44 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 2 moonworks:Fixed damage to a random enemy 3 times.\nShuffle 1 *Jonathan *Rush+ into your draw pile."
+      "description": "Deal 2 moonworks:Fixed Damage to a random [diffAddS] enemy [diffAddE] 3 times.\nAdd 1 Jonathan [diffAddS] Rush+ [diffAddE] to your hand. \nNorma 2: Draw 1 card.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Completion Reward",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deals damage for every card played this combat.\n(Deals 0 damage.)\nNorma 2: +6 damage.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Completion Reward+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deals damage for every card played this combat.\n(Deals 0 damage.)\nNorma 2: +6 damage.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Delta Field",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies gain 1 Vulnerable and lose 1 temporary Strength.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Delta Field+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies gain 1 Vulnerable and lose 2 temporary Strength.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Deploy Bits",
@@ -257,7 +348,8 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain a total of 10 randomly distributed Block and Vigor."
+      "description": "Gain a total of 10 randomly distributed Block and Vigor.\nNorma 4: Bit distribution is now moonworks:Optimized.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Deploy Bits+",
@@ -265,7 +357,26 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain a total of 14 randomly distributed Block and Vigor."
+      "description": "Gain a total of 14 randomly distributed Block and Vigor.\nNorma 4: Bit distribution is now moonworks:Optimized.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Desperate Modification",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the enemy intends to attack you, gain 12 Block and Exhaust instead.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Desperate Modification+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf the enemy intends to attack you, gain 16 Block and Exhaust instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Evil Spy Work Preparation",
@@ -273,7 +384,8 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Shuffle 3 *Evil *Spy *Work *Execution into your draw pile."
+      "description": "Shuffle 3 Evil Spy Work Execution into your draw pile.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Evil Spy Work Preparation+",
@@ -281,7 +393,44 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Shuffle 4 *Evil *Spy *Work *Execution into your draw pile."
+      "description": "Shuffle 4 Evil Spy Work Execution into your draw pile.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Extraordinary Specs",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 temporary Strength and Dexterity.\nDraw 1 card.\nExhaust.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Extraordinary Specs+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 temporary Strength and Dexterity.\nDraw 1 card.\nExhaust.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Golden Egg",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nShuffle a random Attack into your draw pile.\nNorma 2: Add the card to your hand instead.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Golden Egg+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nShuffle a random Attack into your draw pile.\nNorma 2: Add the card to your hand instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "I'm On Fire!",
@@ -289,7 +438,8 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 10 Vigor and 1 Vulnerable."
+      "description": "Gain 10 Vigor and 1 Vulnerable.\nNorma 4: -10 Vigor, gain double damage this turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "I'm On Fire!+",
@@ -297,7 +447,8 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 14 Vigor and 1 Vulnerable."
+      "description": "Gain 14 Vigor and 1 Vulnerable.\nNorma 4: -10 Vigor, gain double damage this turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Indiscriminate Fire",
@@ -305,7 +456,8 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 8 damage to ALL enemies X times.\nShuffle 2 Dazed into your draw pile."
+      "description": "Deal 7 damage to ALL enemies X times.\nShuffle 2 Dazed into your draw pile.\nNorma 2: Shuffle 1 less Dazed into your draw pile.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Indiscriminate Fire+",
@@ -313,7 +465,8 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 12 damage to ALL enemies X times.\nShuffle 2 Dazed into your draw pile."
+      "description": "Deal 10 damage to ALL enemies X times.\nShuffle 2 Dazed into your draw pile.\nNorma 2: Shuffle 1 less Dazed into your draw pile.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Jonathan Rush",
@@ -321,7 +474,8 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Autoplay.\nDeal 3 damage to a random enemy.\nIncrease the damage of ALL *Jonathan *Rush cards this combat by 2."
+      "description": "Autoplay.\nDeal 3 damage to a random enemy.\nIncrease the damage of ALL Jonathan Rush cards this combat by 2.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Jonathan Rush+",
@@ -329,7 +483,8 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Autoplay.\nDeal 3 damage to a random enemy.\nIncrease the damage of ALL *Jonathan *Rush cards this combat by 3."
+      "description": "Autoplay.\nDeal 3 damage to a random enemy.\nIncrease the damage of ALL Jonathan Rush cards this combat by 3.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Lulu's Lucky Egg",
@@ -337,7 +492,8 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block.\nTrigger 1 of 3 effects:\nDraw 2 cards.\nBlock is 2 times stronger.\nGain 2 temporary Dexterity."
+      "description": "Gain 5 Block.\nTrigger 1 of 3 effects:\nDraw 2 cards.\nGain Block 2 times instead.\nGain 2 temporary Dexterity.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Lulu's Lucky Egg+",
@@ -345,7 +501,8 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block.\nTrigger 1 of 3 effects:\nDraw 3 cards.\nBlock is 3 times stronger.\nGain 3 temporary Dexterity."
+      "description": "Gain 5 Block.\nTrigger 1 of 3 effects:\nDraw 3 cards.\nGain Block 3 times instead.\nGain 3 temporary Dexterity.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Nice Present",
@@ -353,7 +510,8 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 2 cards.\nExhaust."
+      "description": "Draw 2 cards.\nExhaust.\nNorma 2: Drawn cards will Retain this turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Nice Present+",
@@ -361,7 +519,62 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 3 cards.\nExhaust."
+      "description": "Draw 3 cards.\nExhaust.\nNorma 2: Drawn cards will Retain this turn.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Quick Restoration",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block 2 times.\nNorma 3: -1 Block, but gain Block +1 time.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Quick Restoration+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block 2 times.\nNorma 3: -1 Block, but gain Block +1 time.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Rainbow-Colored Circle",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Convert 6 Block into moonworks:Steady.\nNorma 2: +4 Block Conversion and Optimize.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Rainbow-Colored Circle+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Convert 6 Block into moonworks:Steady.\nNorma 2: +4 Block Conversion and Optimize.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Rbits",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nGain 2 moonworks:Steady.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Rbits+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nGain 3 moonworks:Steady.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Saki's Cookie",
@@ -369,7 +582,8 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Trigger 1 of 3 effects:\nHeal 2 HP.\nGain 3 Vigor.\nGain 3 moonworks:Steady.\nExhaust."
+      "description": "Heal 2 HP.\nExhaust.\nNorma 4: Also draw 1 card.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Saki's Cookie+",
@@ -377,7 +591,44 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Trigger 1 of 3 effects:\nHeal 3 HP.\nGain 5 Vigor.\nGain 5 moonworks:Steady.\nExhaust."
+      "description": "Heal 3 HP.\nExhaust.\nNorma 4: Also draw 1 card.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Unforgiving Avenger",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 moonworks:Revenge Damage.\nApply 1 Weak.\nNorma 2: +2 damage.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Unforgiving Avenger+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 moonworks:Revenge Damage.\nApply 2 Weak.\nNorma 2: +2 damage.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "White Christsmasher",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice.\nIf you are holding Red & Blue, this instead hits ALL enemies.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "White Christsmasher+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice.\nIf you are holding Red & Blue, this instead hits ALL enemies.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Angel Hand",
@@ -385,7 +636,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Retain.\nGain 10 Block.\nOn retain, this card changes into *Devil *Hand."
+      "description": "Retain.\nGain 10 Block.\nOn retain, this card changes into Devil Hand.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Angel Hand+",
@@ -393,7 +645,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Retain.\nGain 14 Block.\nOn retain, this card changes into *Devil *Hand."
+      "description": "Retain.\nGain 14 Block.\nOn retain, this card changes into Devil Hand.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Awakening Of Talent",
@@ -401,7 +654,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 7 damage.\nGain 7 Block.\nDraw 1 card.\nIf this kills an enemy, gain [E]."
+      "description": "Deal 7 damage.\nGain 7 Block.\nDraw 1 card.\nIf this kills an enemy, gain [E].\nNorma 4: Gain [E].",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Awakening Of Talent+",
@@ -409,7 +663,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 10 damage.\nGain 10 Block.\nDraw 1 card.\nIf this kills an enemy, gain [E]."
+      "description": "Deal 10 damage.\nGain 10 Block.\nDraw 1 card.\nIf this kills an enemy, gain [E].\nNorma 4: Gain [E].",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Backdoor Trade",
@@ -417,7 +672,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Raise your *Norma level by 1.\nExhaust."
+      "description": "Gain 1 moonworks:Norma.\nExhaust.\nNorma 5: Don't exhaust, draw 2 cards.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Backdoor Trade+",
@@ -425,7 +681,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Raise your *Norma level by 1.\nExhaust."
+      "description": "Gain 1 moonworks:Norma.\nExhaust.\nNorma 5: Don't exhaust, draw 2 cards.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Beyond Hell",
@@ -433,7 +690,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 2 Vigor for every 5 missing HP.\nExhaust."
+      "description": "Gain 2 Vigor for every 5 missing HP.\nExhaust.\nNorma 5: Gain Vigor for every 3 missing HP instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Beyond Hell+",
@@ -441,7 +699,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 3 Vigor for every 5 missing HP.\nExhaust."
+      "description": "Gain 3 Vigor for every 5 missing HP.\nExhaust.\nNorma 5: Gain Vigor for every 3 missing HP instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Big Bang Bell",
@@ -449,7 +708,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "The next time this target does not intend to attack, deal 10 damage.\nThis damage exponentially increases every turn."
+      "description": "Apply 10 Big Bang Bell.\nDraw this card whenever you generate a Norma level.\nExhaust.\nNorma 3: +5 base amount.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Big Bang Bell+",
@@ -457,7 +717,62 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "The next time this target does not intend to attack, deal 15 damage.\nThis damage exponentially increases every turn."
+      "description": "Apply 15 Big Bang Bell.\nDraw this card whenever you generate a Norma level.\nExhaust.\nNorma 3: +5 base amount.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Big Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 4 this combat.\nCan be upgraded 5 times.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Bigger Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 6 this combat.\nCan be upgraded 5 times.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Biggest Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 9 this combat.\nCan be upgraded 5 times.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Biggester Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 13 this combat.\nCan be upgraded 5 times.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Biggestest Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 18 this combat.\nCan be upgraded 5 times.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Biggestestest Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 24 this combat.\nCan be upgraded 5 times.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Binding Chains",
@@ -465,7 +780,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Target loses 8 Strength this turn. moonworks:Splash.\nDecrease this card's effect by 4 this combat."
+      "description": "Target loses 6 Strength this turn and gains 1 Vulnerable. moonworks:Splash.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Binding Chains+",
@@ -473,7 +789,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Target loses 12 Strength this turn. moonworks:Splash.\nDecrease this card's effect by 4 this combat."
+      "description": "Target loses 8 Strength this turn and gains 2 Vulnerable. moonworks:Splash.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Bloodlust",
@@ -481,7 +798,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 7.\nIn Hand: Take 4 damage at the beginning of your turn, but for each Attack played heal 2 HP.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Upon attacking, gain 2 temporary Strength for ALL attacks you make this turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Bloodlust+",
@@ -489,7 +807,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 10.\nIn Hand: Take 4 damage at the beginning of your turn, but for each Attack played heal 2 HP.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Upon attacking, gain 3 temporary Strength for ALL attacks you make this turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Cast Off",
@@ -497,7 +816,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Lose all Block.\nGain Vigor equal to the amount of Block lost.\nExhaust."
+      "description": "Lose all Block.\nGain Vigor equal to the amount of Block lost.\nExhaust.\nNorma 2: Gain 5 moonworks:Steady.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Cast Off+",
@@ -505,23 +825,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Lose all Block.\nGain Vigor equal to the amount of Block lost.\nExhaust."
-    },
-    {
-      "name": "Completion Reward",
-      "color": "White_ice_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deals damage for every card played this combat. moonworks:Reset.\n(Deals 0 damage.)"
-    },
-    {
-      "name": "Completion Reward+",
-      "color": "White_ice_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deals damage for every card played this combat. Half moonworks:Reset.\n(Deals 0 damage.)"
+      "description": "Lose all Block.\nGain Vigor equal to the amount of Block lost.\nExhaust.\nNorma 2: Gain 5 moonworks:Steady.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Cooking Time",
@@ -529,7 +834,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Everyone heals 3 HP. Deals damage equal to the amount healed.\nExhaust."
+      "description": "Everyone heals 3 HP. Deals damage equal to the amount healed.\nExhaust.\nNorma 3: +3 HP healed.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Cooking Time+",
@@ -537,7 +843,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Everyone heals 5 HP. Deals damage equal to the amount healed.\nExhaust."
+      "description": "Everyone heals 5 HP. Deals damage equal to the amount healed.\nExhaust.\nNorma 3: +3 HP healed.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Dash!",
@@ -545,7 +852,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [E].\nExhaust."
+      "description": "Gain [E].\nExhaust.\nNorma 2: Gain 5 Block.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Dash!+",
@@ -553,7 +861,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [E] [E].\nExhaust."
+      "description": "Gain [diffAddS] [E] [diffAddE] [E].\nExhaust. \nNorma 2: Gain 5 Block.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Devil Hand",
@@ -561,7 +870,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Retain.\nDeal 10 damage.\nOn retain, this card changes into *Angel *Hand."
+      "description": "Retain.\nDeal 10 damage.\nOn retain, this card changes into Angel Hand.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Devil Hand+",
@@ -569,7 +879,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Retain.\nDeal 14 damage.\nOn retain, this card changes into *Angel *Hand."
+      "description": "Retain.\nDeal 14 damage.\nOn retain, this card changes into Angel Hand.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Dinner",
@@ -577,7 +888,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 3 Regen to ALL targets.\nExhaust."
+      "description": "Apply 3 Regen to ALL targets.\nExhaust.\nNorma 2: Gain Block equal to the amount of Regen applied.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Dinner+",
@@ -585,7 +897,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 4 Regen to ALL targets.\nExhaust."
+      "description": "Apply 4 Regen to ALL targets.\nExhaust.\nNorma 2: Gain Block equal to the amount of Regen applied.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Extended Photon Rifle",
@@ -593,7 +906,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 0 damage X times. Strength is 3 times more effective for this card."
+      "description": "Deal 0 damage X times.\nStrength is 3 times more effective for this card.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Extended Photon Rifle+",
@@ -601,7 +915,26 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 0 damage X times. Strength is 4 times more effective for this card."
+      "description": "Deal 0 damage X times.\nStrength is 4 times more effective for this card.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Final Battle",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "For the next 10 turns, everyone's attacks deal double damage.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Final Battle+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "For the next 10 turns, everyone's attacks deal double damage.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Final Surgery",
@@ -609,7 +942,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 12 damage.\nIf the enemy has Vulnerable, deal 12 damage again."
+      "description": "Deal 12 damage.\nIf the enemy has Vulnerable or moonworks:Overheat, deal 12 damage again.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Final Surgery+",
@@ -617,7 +951,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 16 damage.\nIf the enemy has Vulnerable, deal 16 damage again."
+      "description": "Deal 16 damage.\nIf the enemy has Vulnerable or moonworks:Overheat, deal 16 damage again.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Flamethrower",
@@ -625,7 +960,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 12.\nIn Hand: Upon playing a card, deal 2 moonworks:Fixed damage to an enemy.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 12.\nIn Hand: Upon playing a card, deal 2 moonworks:Fixed Damage to an enemy.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Flamethrower+",
@@ -633,7 +969,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 12.\nIn Hand: Upon playing a card, deal 3 moonworks:Fixed damage to an enemy.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 12.\nIn Hand: Upon playing a card, deal 3 moonworks:Fixed Damage to an enemy.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Forced Revival",
@@ -641,7 +978,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Heal 5 HP.\nGain [E].\nGain 1 Vulnerable.\nExhaust."
+      "description": "Heal 4 HP.\nGain [E].\nGain 2 Weak.\nExhaust.\nNorma 3: -1 Weak.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Forced Revival+",
@@ -649,7 +987,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Heal 8 HP.\nGain [E] [E].\nGain 2 Vulnerable.\nExhaust."
+      "description": "Heal 6 HP.\nGain [diffAddS] [E] [diffAddE] [E].\nGain 2 Weak.\nExhaust. \nNorma 3: -1 Weak.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Full Speed Alicianrone",
@@ -657,7 +996,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nNext turn, draw 2 additional cards."
+      "description": "Deal 8 damage.\nNext turn, draw 2 additional cards.\nNorma 3: Deal damage to ALL enemies instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Full Speed Alicianrone+",
@@ -665,7 +1005,8 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage.\nNext turn, draw 2 additional cards."
+      "description": "Deal 11 damage.\nNext turn, draw 2 additional cards.\nNorma 3: Deal damage to ALL enemies instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Heat 300%",
@@ -673,15 +1014,35 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Remove all Block the next time it is gained."
+      "description": "Apply 2 moonworks:Overheat.\nExhaust.\nNorma 2: Overheat will apply a 50% bonus instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Heat 300%+",
       "color": "White_ice_color",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
-      "description": "Remove all Block the next time it is gained."
+      "cost": "1",
+      "description": "Apply 3 moonworks:Overheat.\nExhaust.\nNorma 2: Overheat will apply a 50% bonus instead.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Holy Night",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Once per turn, you may spend [E] to draw 2 cards.\nNorma 3: Uses per turn becomes unlimited.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Holy Night+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " [diffAddS] Innate.\n[diffAddE] Once per turn, you may spend [E] to draw 2 cards. \nNorma 3: Uses per turn becomes unlimited.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Immovable Object",
@@ -689,7 +1050,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 30 Block.\nBlock is not removed, but you may not play any Attack cards, for the next 2 turns.\nExhaust."
+      "description": "Gain 30 Block.\nGain 2 moonworks:Immobile.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Immovable Object+",
@@ -697,7 +1059,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 40 Block.\nBlock is not removed, but you may not play any Attack cards, for the next 2 turns.\nExhaust."
+      "description": "Gain 40 Block.\nGain 2 moonworks:Immobile.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Intelligence Officer",
@@ -705,7 +1068,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Scry 3 then For Each...\nAttack: Gain 3 Vigor.\nSkill: Gain 3 moonworks:Steady.\nOther: Draw 1 card."
+      "description": "Scry 3 then For Each...\nAttack: Gain 3 Vigor.\nSkill: Gain 3 moonworks:Steady.\nOther: Draw 1 card.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Intelligence Officer+",
@@ -713,7 +1077,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Scry 5 then For Each...\nAttack: Gain 3 Vigor.\nSkill: Gain 3 moonworks:Steady.\nOther: Draw 1 card."
+      "description": "Scry 5 then For Each...\nAttack: Gain 3 Vigor.\nSkill: Gain 3 moonworks:Steady.\nOther: Draw 1 card.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Lucky Charm",
@@ -721,7 +1086,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain [E] at the beginning of your turn.\nOn Play: Discard and use up to 3 [E] to regain moonworks:Gift_Uses."
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain [E] at the beginning of your turn.\nOn Play: Discard and use up to 3 [E] to regain moonworks:Gift_Uses.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Lucky Charm+",
@@ -729,7 +1095,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 4.\nIn Hand: Gain [E] at the beginning of your turn.\nOn Play: Discard and use up to 3 [E] to regain moonworks:Gift_Uses."
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Gain [E] at the beginning of your turn.\nOn Play: Discard and use up to 3 [E] to regain moonworks:Gift_Uses.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Miracle Walker",
@@ -737,7 +1104,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "Each time this card transforms, it costs 0 that turn."
+      "description": "moonworks:Transformative\nEach time this card transforms, it costs 0 that turn.\nNorma 5: Transformed Attack and Skill cards will not exhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Miracle Walker+",
@@ -745,7 +1113,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "Each time this card transforms, it costs 0 that turn.\nTransformed cards will be upgraded."
+      "description": "moonworks:Transformative\nEach time this card transforms, it costs 0 that turn. [diffAddS]\nTransformed cards will be upgraded. [diffAddE] \nNorma 5: Transformed Attack and Skill cards will not exhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Mix Phenomenon",
@@ -753,7 +1122,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Restore the moonworks:Gift_Uses of 1 random gift card and shuffle it into your draw pile.\nDraw 1 card.\nExhaust."
+      "description": "Restore the moonworks:Gift_Uses of 1 random gift card and shuffle it into your draw pile.\nDraw 1 card.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Mix Phenomenon+",
@@ -761,7 +1131,44 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Restore the moonworks:Gift_Uses of 1 gift card and shuffle it into your draw pile.\nDraw 1 card.\nExhaust."
+      "description": "Restore the moonworks:Gift_Uses of 1 [diffRmvS] random [diffRmvE] gift card and shuffle it into your draw pile.\nDraw 1 card.\nExhaust. ",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Out Of Ammo",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you have either no cards, or only moonworks:Gift and Unplayable Status cards, in your hand during your turn, draw a card.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Out Of Ammo+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you have either no cards, or only moonworks:Gift and Unplayable Status cards, in your hand during your turn, draw a card.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Poppo The Snatcher",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: If an enemy attempts to buff, the buff is applied to you instead.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Poppo The Snatcher+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: If an enemy attempts to buff, the buff is applied to you instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Poppoformation",
@@ -769,7 +1176,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "The next 2 times each enemy makes an intent, apply Weak, Frail, or Vulnerable based on the intent."
+      "description": "The next 2 times each enemy makes an intent, apply Weak, Frail, or Vulnerable based on the intent.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Poppoformation+",
@@ -777,39 +1185,80 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "The next 3 times each enemy makes an intent, apply Weak, Frail, or Vulnerable based on the intent."
+      "description": "The next 3 times each enemy makes an intent, apply Weak, Frail, or Vulnerable based on the intent.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Present For You",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 effect:\nShuffle 1 moonworks:Gift card into your draw pile.\nShuffle 1 moonworks:Trap card into your draw pile.\nExhaust.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Present For You+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 effect:\nShuffle 2 moonworks:Gift [diffAddS] cards [diffAddE] into your draw pile.\nShuffle 2 moonworks:Trap [diffAddS] cards [diffAddE] into your draw pile.\nExhaust. ",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Protagonist's Privilege",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nDraw 2 cards.\nIf both cards drawn are the same type, repeat this effect next turn.\nNorma 2: Heal 3 HP if unblocked damage was dealt.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Protagonist's Privilege+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nDraw 2 cards.\nIf both cards drawn are the same type, repeat this effect next turn.\nNorma 2: Heal 3 HP if unblocked damage was dealt.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Raging Madness",
       "color": "White_ice_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "2",
-      "description": "Whenever you receive unblocked damage, gain 1 Strength."
+      "cost": "1",
+      "description": "Whenever you receive unblocked damage, gain 2 Strength.\nNorma 3: Gain twice the Strength.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Raging Madness+",
       "color": "White_ice_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "2",
-      "description": "Innate.\nWhenever you receive unblocked damage, gain 1 Strength."
+      "cost": "1",
+      "description": " [diffAddS] Innate.\n[diffAddE] Whenever you receive unblocked damage, gain 2 Strength. \nNorma 3: Gain twice the Strength.",
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Red And Blue",
+      "name": "Red & Blue",
       "color": "White_ice_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain 4 Vigor and 4 moonworks:Steady at the beginning of your turn.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain 4 Vigor and 4 moonworks:Steady at the beginning of your turn.",
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Red And Blue+",
+      "name": "Red & Blue+",
       "color": "White_ice_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain 6 Vigor and 6 moonworks:Steady at the beginning of your turn.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain 6 Vigor and 6 moonworks:Steady at the beginning of your turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Red Bean Ice Cream",
@@ -817,7 +1266,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 2.\nIn Hand: Gain 2 temporary Strength.\nOn Play: Exhaust.\nOn Exhaust: Heal 5 HP."
+      "description": "moonworks:Gift_Uses 2.\nIn Hand: Gain 2 temporary Strength.\nOn Play: Exhaust.\nOn Exhaust: Heal 5 HP.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Red Bean Ice Cream+",
@@ -825,7 +1275,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain 2 temporary Strength.\nOn Play: Exhaust.\nOn Exhaust: Heal 5 HP."
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain 2 temporary Strength.\nOn Play: Exhaust.\nOn Exhaust: Heal 5 HP.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Reproduction of Records",
@@ -833,7 +1284,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Add a copy of the 2 most recent cards in your discard pile to your hand.\nExhaust."
+      "description": "Add a copy of the 3 most recent cards in your discard pile to your hand.\nExhaust.\nNorma 4: Gain [E].",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Reproduction of Records+",
@@ -841,7 +1293,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Retain.\nAdd a copy of the 2 most recent cards in your discard pile to your hand.\nExhaust."
+      "description": " [diffAddS] Retain.\n[diffAddE] Add a copy of the 3 most recent cards in your discard pile to your hand.\nExhaust. \nNorma 4: Gain [E].",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Scrambled Eve",
@@ -849,7 +1302,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Discard any number of cards, then draw that many plus 0."
+      "description": "Discard any number of cards, then draw that many plus 0.\nNorma 1: Draw +1 card.\nNorma 3: Draw +1 card",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Scrambled Eve+",
@@ -857,7 +1311,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Shuffle your discard pile into your draw pile.\nDiscard any number of cards, then draw that many plus 0."
+      "description": " [diffAddS] Shuffle your discard pile into your draw pile.\n[diffAddE] Discard any number of cards, then draw that many plus 0. \nNorma 1: Draw +1 card.\nNorma 3: Draw +1 card",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Sealed Memories",
@@ -865,31 +1320,17 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Retain.\nEnd your turn.\nRetain your hand and [E] this turn.\nBlock is not removed at the start of your next turn."
+      "description": "*Convert up to 1 card in your hand into a moonworks:Memory.\nRetain your hand this turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Sealed Memories+",
       "color": "White_ice_color",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
-      "description": "Innate. Retain.\nEnd your turn.\nRetain your hand and [E] this turn.\nBlock is not removed at the start of your next turn."
-    },
-    {
-      "name": "Self Destruct",
-      "color": "White_ice_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
       "cost": "1",
-      "description": "Gain 10 Block.\nLose half your HP. Deal this amount to ALL enemies."
-    },
-    {
-      "name": "Self Destruct+",
-      "color": "White_ice_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Gain 15 Block.\nLose half your HP. Deal this amount to ALL enemies."
+      "description": " [diffAddS] Retain.\n[diffAddE] Convert up to 1 card in your hand into a moonworks:Memory.\nRetain your hand this turn. ",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Stiff Crystal",
@@ -897,7 +1338,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Artifact.\nGain 0 Block.\nExhaust."
+      "description": "Gain 1 moonworks:Crystallize.\nGain 1 Block.\nExhaust.\nNorma 1: +4 Block.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Stiff Crystal+",
@@ -905,7 +1347,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 2 Artifact.\nGain 0 Block.\nExhaust."
+      "description": "Gain 1 moonworks:Crystallize.\nGain 7 Block.\nExhaust.\nNorma 1: +4 Block.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Sweet Battle",
@@ -913,7 +1356,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 3.\nOn Draw/Retain: Shuffle 1 *Saki's *Cookie into your draw pile.\nIn Hand: *Saki's *Cookies gain +2 to their effect and moonworks:Auto_Consume when drawn.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 3.\nOn Draw/Retain: Heal 2 HP.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Sweet Battle+",
@@ -921,7 +1365,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 4.\nOn Draw/Retain: Shuffle 1 *Saki's *Cookie into your draw pile.\nIn Hand: *Saki's *Cookies gain +2 to their effect and moonworks:Auto_Consume when drawn.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 4.\nOn Draw/Retain: Heal 2 HP.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Tactical Retreat",
@@ -929,7 +1374,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 10 Block.\nNext turn, gain [E] and 6 Block."
+      "description": "Gain 10 Block.\nNext turn, gain [E] and 6 Block.\nNorma 2: +2 Block both turns.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Tactical Retreat+",
@@ -937,7 +1383,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 13 Block.\nNext turn, gain [E] and 8 Block."
+      "description": "Gain 13 Block.\nNext turn, gain [E] and 8 Block.\nNorma 2: +2 Block both turns.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Treasure Thief",
@@ -945,7 +1392,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Once per turn, the next time you damage this target, draw 1 card.\nExhaust."
+      "description": "Once per turn, when you damage this target, draw 1 card.\nExhaust.\nNorma 3: Effect works twice per turn instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Treasure Thief+",
@@ -953,7 +1401,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Once per turn, the next time you damage this target, draw 1 card.\nExhaust."
+      "description": "Once per turn, when you damage this target, draw 1 card.\nExhaust.\nNorma 3: Effect works twice per turn instead.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Unlucky Charm",
@@ -961,7 +1410,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 3.\nIn Hand: ALL targets lose 1 temporary Dexterity.\nOn Exhaust: Gain 3 Dexterity.\nThis card can not be discarded by playing it."
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Any debuffs applied to you are applied to ALL enemies.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Unlucky Charm+",
@@ -969,7 +1419,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 3.\nIn Hand: ALL targets lose 1 temporary Dexterity.\nOn Exhaust: Gain 4 Dexterity.\nThis card can not be discarded by playing it."
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Any debuffs applied to you are applied to ALL enemies.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Unpaid Work",
@@ -977,7 +1428,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "The next card you play which does not purge and costs more than 0 will refund it's cost.\nExhaust."
+      "description": "The next card you play which does not purge and costs more than 0 will refund it's cost.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Unpaid Work+",
@@ -985,7 +1437,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "The next card you play which does not purge and costs more than 0 will refund it's cost.\nExhaust."
+      "description": "The next card you play which does not purge and costs more than 0 will refund it's cost.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Windy Enchantment",
@@ -993,7 +1446,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 3.\nOn Draw: Draw 2 cards.\nOn Retain: Draw 1 card.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 3.\nOn Draw: Draw 2 cards.\nOn Retain: Draw 1 card.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Windy Enchantment+",
@@ -1001,7 +1455,8 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "moonworks:Gift_Uses 4.\nOn Draw: Draw 2 cards.\nOn Retain: Draw 1 card.\nOn Play: Discard."
+      "description": "moonworks:Gift_Uses 4.\nOn Draw: Draw 2 cards.\nOn Retain: Draw 1 card.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "x1 Big Rocket",
@@ -1009,7 +1464,17 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 10 damage. Increase this card's damage by 6 this combat.\nCan be Upgraded to x16."
+      "description": "Deal 12 damage. Increase this card's damage by 6 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "x10 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 39 damage. Increase this card's damage by 33 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "x2 Big Rocket",
@@ -1017,7 +1482,71 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 12 damage. Increase this card's damage by 8 this combat.\nCan be Upgraded to x16."
+      "description": "Deal 15 damage. Increase this card's damage by 9 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "x3 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage. Increase this card's damage by 12 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "x4 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage. Increase this card's damage by 15 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "x5 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage. Increase this card's damage by 18 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "x6 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 27 damage. Increase this card's damage by 21 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "x7 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 damage. Increase this card's damage by 24 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "x8 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 33 damage. Increase this card's damage by 27 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "x9 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 36 damage. Increase this card's damage by 30 this combat.\nCan be Upgraded to x16.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Accel Hyper",
@@ -1025,7 +1554,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "This turn, your next Attack and Skill are played twice.\nExhaust."
+      "description": "This turn, your next Attack and Skill are played twice.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Accel Hyper+",
@@ -1033,7 +1563,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "This turn, your next Attack and Skill are played twice."
+      "description": "This turn, your next Attack and Skill are played twice. [diffRmvS]\nExhaust. [diffRmvE] ",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Accelerator",
@@ -1041,7 +1572,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Whenever a card is created in combat, create an additional copy of it. Has *exceptions."
+      "description": "Gain 1 Accelerator.\nNorma 5: Optional: Spend [E] to also Upgrade all newly created cards.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Accelerator+",
@@ -1049,7 +1581,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Whenever a card is created in combat, create 2 additional copies of it. Has *exceptions."
+      "description": "Gain 2 Accelerator.\nNorma 5: Optional: Spend [E] to also Upgrade all newly created cards.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Another Ultimate Weapon",
@@ -1057,7 +1590,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "X",
-      "description": "Gain X Strength and 5X Block."
+      "description": "Gain X Strength and 5X Block.\nNorma X: +X Strength and +5X Block.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Another Ultimate Weapon+",
@@ -1065,7 +1599,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "X",
-      "description": "Gain X+1 Strength and 5(X+1) Block."
+      "description": "Gain [diffAddS] X+1 [diffAddE] Strength and [diffAddS] 5(X+1) [diffAddE] Block. \nNorma X: +X Strength and +5X Block.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Blazing!",
@@ -1073,7 +1608,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "At the start of your turn, gain 3 Strength and -1 Dexterity."
+      "description": "At the start of your turn, apply 6 moonworks:Blasting_Light to ALL enemies and increase this amount by 3.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Blazing!+",
@@ -1081,7 +1617,26 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "At the start of your turn, gain 5 Strength and -2 Dexterity."
+      "description": "At the start of your turn, apply 6 moonworks:Blasting_Light to ALL enemies and increase this amount by 6.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Chef, Please Help Me!",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 moonworks:Revenge Damage.\nDeals double damage every 3 times HP is lost this combat.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Chef, Please Help Me!+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 moonworks:Revenge Damage.\nDeals double damage every 3 times HP is lost this combat.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Crystal Barrier",
@@ -1089,7 +1644,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Block is not removed at the start of your turn.\nGain 4 *Plated *Armor."
+      "description": "Block is not removed at the start of your turn.\nGain 4 Plated Armor.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Crystal Barrier+",
@@ -1097,23 +1653,44 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Block is not removed at the start of your turn.\nGain 6 *Plated *Armor."
+      "description": "Block is not removed at the start of your turn.\nGain 6 Plated Armor.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Dark Side of Business",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose all Norma.\nChoose 1 of 3 moonworks:Magical cards with charges equal to the amount of Norma lost.\nExhaust.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Dark Side of Business+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose all Norma.\nChoose 1 of 3 [diffAddS] upgraded [diffAddE] moonworks:Magical cards with charges equal to the amount of Norma lost.\nExhaust. ",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Encore",
       "color": "White_ice_color",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
-      "description": "The last card you play each turn has it's *effect repeated at the start of your turn."
+      "cost": "3",
+      "description": "The last card you play each turn has it's effect repeated at the start of your turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Encore+",
       "color": "White_ice_color",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "1",
-      "description": "The last card you play each turn has it's *effect repeated at the start of your turn."
+      "cost": "2",
+      "description": "The last card you play each turn has it's effect repeated at the start of your turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Evil Mastermind",
@@ -1121,7 +1698,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Trigger the *effect of ALL your *Trap cards on random enemies, excluding other *Evil *Masterminds."
+      "description": "Trigger the effect of ALL your Trap cards on random enemies, excluding other Evil Masterminds.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Evil Mastermind+",
@@ -1129,23 +1707,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Innate.\nTrigger the *effect of ALL your *Trap cards on random enemies, excluding other *Evil *Masterminds."
-    },
-    {
-      "name": "Final Battle",
-      "color": "White_ice_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "For the next 10 turns, everyone's attacks deal double damage."
-    },
-    {
-      "name": "Final Battle+",
-      "color": "White_ice_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "0",
-      "description": "For the next 10 turns, everyone's attacks deal double damage."
+      "description": " [diffAddS] Innate.\n[diffAddE] Trigger the effect of ALL your Trap cards on random enemies, excluding other Evil Masterminds. \nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Gamble!",
@@ -1153,7 +1716,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "A random target dies."
+      "description": "A random target dies.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Gamble!+",
@@ -1161,103 +1725,80 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "0",
-      "description": "Retain.\nA random target dies."
+      "description": " [diffAddS] Retain.\n[diffAddE] A random target dies. ",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Go Away",
       "color": "White_ice_color",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "1",
-      "description": "Ethereal.\nThe target is moonworks:Stunned for a turn.\nExhaust."
+      "cost": "3",
+      "description": "Ethereal.\nThe target is moonworks:Stunned for a turn.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Go Away+",
       "color": "White_ice_color",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "1",
-      "description": "The target is moonworks:Stunned for a turn.\nExhaust."
+      "cost": "3",
+      "description": " [diffRmvS] Ethereal.\n[diffRmvE] The target is moonworks:Stunned for a turn.\nExhaust. ",
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Holy Night",
+      "name": "Leap Through Spacetime",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Choose one effect:\nYou can borrow Energy from your next turn.\nYou can borrow Cards from your next turn.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Leap Through Spacetime+",
       "color": "White_ice_color",
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "At the start of your turn, draw 1 additional card."
-    },
-    {
-      "name": "Holy Night+",
-      "color": "White_ice_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "Innate.\nAt the start of your turn, draw 1 additional card."
-    },
-    {
-      "name": "Leap Through Space",
-      "color": "White_ice_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "Create a moonworks:Temporal_Anchor with a moonworks:Divergence of 15.\nAdd 1 *Leap *Through *Time to the bottom of your draw pile."
-    },
-    {
-      "name": "Leap Through Space+",
-      "color": "White_ice_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "0",
-      "description": "Create a moonworks:Temporal_Anchor with a moonworks:Divergence of 10.\nAdd 1 *Leap *Through *Time to the bottom of your draw pile."
+      "description": "Choose one effect:\nYou can borrow Energy from your next turn.\nYou can borrow Cards from your next turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Melting Memories",
       "color": "White_ice_color",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "3",
-      "description": "Choose 1 of 3 Magical cards, add it to your hand.\nExhaust."
+      "cost": "2",
+      "description": "Lose all Norma.\nThe first card you play each turn is Converted into a moonworks:Memory.\nRegain 1 lost Norma per turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Melting Memories+",
       "color": "White_ice_color",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "3",
-      "description": "Choose 1 of 3 upgraded Magical cards, add it to your hand.\nExhaust"
+      "cost": "2",
+      "description": "Lose all Norma.\nThe first card you play each turn is Converted into a [diffAddS] moonworks:Memory then upgraded. [diffAddE]\nRegain 1 lost Norma per turn. ",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Metallic Monocoque",
       "color": "White_ice_color",
       "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "Take 1 less *Direct damage.\nTake 2 less *Indirect damage."
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Whenever you would lose HP, lose 5 less for all attacks in that turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Metallic Monocoque+",
       "color": "White_ice_color",
       "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "Take 2 less *Direct damage.\nTake 3 less *Indirect damage."
-    },
-    {
-      "name": "Out Of Ammo",
-      "color": "White_ice_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "Whenever you have either no cards, or only moonworks:Gift and Unplayable Status cards, in your hand during your turn, draw a card."
-    },
-    {
-      "name": "Out Of Ammo+",
-      "color": "White_ice_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "Whenever you have either no cards, or only moonworks:Gift and Unplayable Status cards, in your hand during your turn, draw a card."
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Whenever you would lose HP, lose 6 less for all attacks in that turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Plushie Master",
@@ -1265,7 +1806,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 4 moonworks:Plushie_Marks to random enemies."
+      "description": "Apply 4 moonworks:Plushie_Marks to random enemies.\nNorma 2: +2 Marks.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Plushie Master+",
@@ -1273,7 +1815,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 6 moonworks:Plushie_Marks to random enemies."
+      "description": "Apply 6 moonworks:Plushie_Marks to random enemies.\nNorma 2: +2 Marks.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Reflective Shell",
@@ -1281,7 +1824,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Prevent the next time you would lose HP. Gain Vigor equal to the damage you would have taken."
+      "description": "Prevent the next time you would lose HP. Gain Vigor equal to the damage you would have taken.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Reflective Shell+",
@@ -1289,23 +1833,44 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Prevent the next time you would lose HP. Gain Vigor equal to the damage you would have taken."
+      "description": "Prevent the next time you would lose HP. Gain Vigor equal to the damage you would have taken.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Rival",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The healthiest enemy becomes your moonworks:Rival.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Rival+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "The healthiest enemy becomes your moonworks:Rival.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Rocket Cannon",
       "color": "White_ice_color",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "1",
-      "description": "Deal 7 damage.\nShuffle 1 *Big *Rocket *Cannon into your draw pile."
+      "cost": "0",
+      "description": "Deal 7 damage.\nShuffle 1 Big Rocket Cannon into your draw pile.\nNorma 2: Shuffle an additional card.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Rocket Cannon+",
       "color": "White_ice_color",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "1",
-      "description": "Deal 10 damage.\nShuffle 1 *Big *Rocket *Cannon into your draw pile."
+      "cost": "0",
+      "description": "Deal 10 damage.\nShuffle 1 Big Rocket [diffAddS] Cannon+ [diffAddE] into your draw pile. \nNorma 2: Shuffle an additional card.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Shield Counter",
@@ -1313,7 +1878,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 15 Block.\nGain 1 moonworks:Shield_Counter.\nExhaust."
+      "description": "Gain 15 Block.\nGain 1 moonworks:Shield_Counter.\nExhaust.\nNorma 3: moonworks:Shield_Counter will rollover.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Shield Counter+",
@@ -1321,7 +1887,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 20 Block.\nGain 1 moonworks:Shield_Counter.\nExhaust."
+      "description": "Gain 20 Block.\nGain 1 moonworks:Shield_Counter.\nExhaust.\nNorma 3: moonworks:Shield_Counter will rollover.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Sink Or Swim",
@@ -1329,7 +1896,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Gain [E] [E] at the start of every turn.\nGain 1 Vulnerable, Weak, and Frail for the next 3 turns."
+      "description": "Gain [E] [E] at the start of every turn.\nGain 3 Weak and Frail.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Sink Or Swim+",
@@ -1337,7 +1905,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "0",
-      "description": "Gain [E] [E] at the start of every turn.\nGain 1 Vulnerable, Weak, and Frail for the next 3 turns."
+      "description": "Gain [E] [E] at the start of every turn.\nGain 3 Weak and Frail.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Star Blasting Fuse",
@@ -1345,7 +1914,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply moonworks:Invisible_Bomb.\nShuffle this card into your draw pile.\nWhen you draw this card, ALL enemies with moonworks:Invisible_Bomb lose 30 HP."
+      "description": "Apply moonworks:Invisible_Bomb.\nShuffle this card into your draw pile.\nWhen you draw this card, ALL enemies with moonworks:Invisible_Bomb lose 30 HP.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Star Blasting Fuse+",
@@ -1353,7 +1923,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply moonworks:Invisible_Bomb.\nShuffle this card into your draw pile.\nWhen you draw this card, ALL enemies with moonworks:Invisible_Bomb lose 40 HP."
+      "description": "Apply moonworks:Invisible_Bomb.\nShuffle this card into your draw pile.\nWhen you draw this card, ALL enemies with moonworks:Invisible_Bomb lose 40 HP.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Subspace Tunnel",
@@ -1361,7 +1932,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Choose a card in any pile.\nMove that card to your hand and put this card where it was.\nThe card this swaps with costs 0 this turn."
+      "description": "Choose a card in any pile.\nMove that card to your hand and put this card where it was.\nThe card this swaps with costs 0 this turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Subspace Tunnel+",
@@ -1369,7 +1941,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Choose a card in any pile.\nMove that card to your hand and put this card where it was.\nThe card this swaps with costs 0 this turn."
+      "description": "Choose a card in any pile.\nMove that card to your hand and put this card where it was.\nThe card this swaps with costs 0 this turn.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Wanted",
@@ -1377,7 +1950,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 1 moonworks:Wanted.\nExhaust."
+      "description": "Apply 1 moonworks:Wanted.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Wanted+",
@@ -1385,7 +1959,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Retain.\nApply 1 moonworks:Wanted.\nExhaust."
+      "description": " [diffAddS] Retain.\n[diffAddE] Apply 1 moonworks:Wanted.\nExhaust. ",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "We Are Waruda",
@@ -1393,7 +1968,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Remove all debuffs from ALL targets.\nApply all removed debuffs to one target.\nExhaust."
+      "description": "Remove all debuffs from ALL targets.\nApply all removed debuffs to one target.\nExhaust.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "We Are Waruda+",
@@ -1401,7 +1977,26 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Remove all debuffs from ALL targets.\nApply all removed debuffs to one target.\nExhaust."
+      "description": "Remove all debuffs from ALL targets.\nApply all removed debuffs to one target.\nExhaust.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Whimsical Windmill",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the beginning of your turn, gain energy for each enemy who attacked you last turn.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Whimsical Windmill+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": " [diffAddS] Innate.\n[diffAddE] At the beginning of your turn, gain energy for each enemy who attacked you last turn. ",
+      "mod": "100% Spire Juice"
     }
   ],
   "relics": [
@@ -1409,50 +2004,229 @@
       "name": "Broken Bomb",
       "tier": "Starter",
       "pool": "White_ice_color",
-      "description": "Every 10th Skill you play raises your moonworks:Norma by 1 and adds 1 Star Blasting Light to your hand.",
-      "flavorText": "This looks dangerous."
+      "description": "Add 1 Star Blasting Light to your hand each time you generate moonworks:Norma.\nNote: By default, every 10th Skill you play raises your Norma by 1.",
+      "flavorText": "This looks dangerous.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Homemark",
       "tier": "Starter",
       "pool": "White_ice_color",
       "description": "Start every combat with Norma 0. Right click when out of combat to spend 120 Gold to permanently raise this effect, up to a maximum of 5.",
-      "flavorText": "It tastes like orange juice. Strange."
+      "flavorText": "It tastes like orange juice. Strange.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Bonus Panel",
+      "tier": "Common",
+      "pool": "White_ice_color",
+      "description": "Whenever you generate moonworks:Norma, gain 1 energy.",
+      "flavorText": "Tiny, but stars are stars. Part 3 of a series, can you collect them all?",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Heal Panel",
+      "tier": "Common",
+      "pool": "White_ice_color",
+      "description": "Whenever you generate moonworks:Norma, heal 2 HP.",
+      "flavorText": "Recommended by 0 out of 1 doctors wearing lab coats. Part 1 of a series, can you collect them all?",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Home Panel",
+      "tier": "Common",
+      "pool": "White_ice_color",
+      "description": "moonworks:Norma levels require 2 less cards to achieve.",
+      "flavorText": "If you get homesick, just step on it. Part 2 of a series, can you collect them all?",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Wide Potion Belt",
+      "tier": "Common",
+      "pool": "",
+      "description": "Upon pickup, gain 4 Potion slots.",
+      "flavorText": "I can hold even more Potions using this belt!",
+      "mod": "Wide Potions"
+    },
+    {
+      "name": "Wide Toy Ornithopter",
+      "tier": "Common",
+      "pool": "",
+      "description": "Whenever you use a potion, heal 5 HP.\nIf the potion is Wide, heal an additional 5 HP.",
+      "flavorText": "\"This little toy is the perfect companion for the lone adventurer!\"",
+      "mod": "Wide Potions"
+    },
+    {
+      "name": "A Truly Golden Egg",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Upon pickup, obtain a unique version of Lulu's Lucky Egg and Golden Egg that have stronger effects.",
+      "flavorText": "It's one in a million.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Bottled Orange",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Upon pickup, choose a card. Whenever you generate moonworks:Norma, move this card to your hand.",
+      "flavorText": "100% Orange. Juicer sold separately.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Damage Panel",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Whenever you generate moonworks:Norma, deal 7 damage to ALL enemies.",
+      "flavorText": "\"Ouch! What did I just step on?\" Part 4 of a series, can you collect them all?",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Draw Panel",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Whenever you generate moonworks:Norma, draw 1 card.",
+      "flavorText": "Imagine only being able to hold 3 cards in your hand... Part 5 of a series, can you collect them all?",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Fleeting Butterfly",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "The first card you play each combat is converted into a moonworks:Memory.",
+      "flavorText": "Take a picture, it'll last longer.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Little Gull",
       "tier": "Uncommon",
       "pool": "White_ice_color",
       "description": "At the beginning of your turn, and every time you play a Jonathan Rush or Cloud of Seagulls, deal 2 to 7 damage to a random enemy.",
-      "flavorText": "His favourite number is 7."
+      "flavorText": "His favourite number is 7.",
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Warp Panel",
-      "tier": "Special",
+      "name": "Scorching Sun",
+      "tier": "Uncommon",
       "pool": "White_ice_color",
-      "description": "Divergence will no longer stack higher than 80.",
-      "flavorText": "What a lucky roll!"
+      "description": "Whenever an attack deals unblocked damage, apply 1 moonworks:Blasting_Light.",
+      "flavorText": "CAUTION: HOT",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Searchlight",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "At the start of each combat, apply 2 moonworks:Overheat to the healthiest enemy.",
+      "flavorText": "It sees all.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Spare Bit",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Upon pickup, obtain 2 Deploy Bits. All Deploy Bits now increase bits by 2 when played each combat.",
+      "flavorText": "Not to be confused with a Sign Bit.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Wide Beast Statue",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Potions always appear in combat rewards.",
+      "flavorText": "A white statue of a wide creature you have never seen before.",
+      "mod": "Wide Potions"
+    },
+    {
+      "name": "Strange Present",
+      "tier": "Rare",
+      "pool": "White_ice_color",
+      "description": "At the end of turn 5, apply 4 Vulnerable and Weak to ALL enemies.",
+      "flavorText": "\"I wonder what's inside?\"",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "SB Bomb",
       "tier": "Boss",
       "pool": "White_ice_color",
-      "description": "Every 12th card you play raises your moonworks:Norma by 1 and adds 1 Star Blasting Light to your hand.",
-      "flavorText": "Don't drop this."
+      "description": "Add 1 Star Blasting Light to your hand each time you generate moonworks:Norma.\nEvery 12th card you play raises your Norma by 1 instead.",
+      "flavorText": "Don't drop this.",
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Golden Die",
       "tier": "Shop",
       "pool": "White_ice_color",
       "description": "Increase the Uses of your positive Gift cards by 50%.",
-      "flavorText": "Sadly, unable to roll zeros or sevens."
+      "flavorText": "Sadly, unable to roll zeros or sevens.",
+      "mod": "100% Spire Juice"
     }
   ],
   "potions": [
     {
       "name": "100% Orange Juice",
+      "rarity": "Common",
+      "description": "Achieve Norma 5. Heal 5 HP.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Blasting Potion",
+      "rarity": "Common",
+      "description": "Apply 14 Blasting Light. Splash.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Lubricant",
+      "rarity": "Common",
+      "description": "Apply 2 Vulnerable. Splash.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Steady Potion",
+      "rarity": "Common",
+      "description": "Gain 10 Steady.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Vigor Potion",
+      "rarity": "Common",
+      "description": "Gain 10 Vigor.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Liquid Chains",
+      "rarity": "Uncommon",
+      "description": "Target loses 6 temporary Strength.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Norma Potion",
+      "rarity": "Uncommon",
+      "description": "Generate 1 Norma for the next 3 turns.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Refund Potion",
+      "rarity": "Uncommon",
+      "description": "The next 2 cards you play have their cost refunded.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "200% Orange Juice",
       "rarity": "Rare",
-      "description": "Achieve Norma 6. Receive incredible power that you cannot safely contain."
+      "description": "Achieve Norma 6. Receive incredible power that you cannot safely contain.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Crystal Potion",
+      "rarity": "Rare",
+      "description": "Gain 2 Crystallize.",
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Overload",
+      "rarity": "Rare",
+      "description": "Multiply all your powers by 2.",
+      "mod": "100% Spire Juice"
     }
   ],
   "creatures": [
@@ -1460,133 +2234,316 @@
       "name": "the Star Breaker",
       "type": "Player",
       "minHP": "60",
-      "maxHP": "60"
+      "maxHP": "60",
+      "mod": "100% Spire Juice"
     }
   ],
   "keywords": [
     {
       "name": "Auto Consume",
-      "description": "The card's effect is automatically activated and the card is immediately purged. This does not count as playing the card."
+      "description": "The card's effect is automatically activated and the card is immediately purged. This does not count as playing the card.",
+      "names": ["moonworks:Auto Consume","moonworks:auto_consume"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Auto Effect",
-      "description": "This effect is automatically activated and does not count as playing the card."
+      "description": "This effect is automatically activated and does not count as playing the card.",
+      "names": ["moonworks:Auto Effect","moonworks:auto_effect"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Blast Off!",
-      "description": "Increases by the amount of damage received. At the start of your next turn, the target loses Blastoff and takes damage equal to it's amount"
+      "description": "Increases by the amount of damage received. At the start of your next turn, the target loses Blastoff and takes damage equal to it's amount",
+      "names": ["moonworks:Blast Off!","moonworks:blast_off"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Blasting Light",
-      "description": "Blasted creatures lose both HP and Max HP at the start of their turn. Each turn, the blast worsens, but the worse the blast is the more likely it is to wear off."
-    },
-    {
-      "name": "Moonworks:Degraded",
-      "description": "This card's base damage and block values are reduced by up to 3 each time it is drawn. The base values will not reduce lower than 1."
-    },
-    {
-      "name": "Moonworks:Divergence",
-      "description": "Divergence from the main timeline results in things not going back exactly the way you remembered them.\nAttempting to Leap with high Divergence may result in permanent unwanted effects."
-    },
-    {
-      "name": "Moonworks:Fixed",
-      "description": "This card is affected by Plushie Mark and Buffer, but unaffected by Strength, Dexterity, Weak, Frail, Vulnerable, and most other powers."
-    },
-    {
-      "name": "Moonworks:Fragile",
-      "description": "This card has a 1 in 3 chance of automatically exhausting when drawn."
+      "description": "Blasted creatures lose both HP and Max HP at the start of their turn. Each turn, the blast worsens, but the worse the blast is the more likely it is to wear off.",
+      "names": ["moonworks:Blasting Light","moonworks:blast","moonworks:blasting_light"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Free Draw",
-      "description": "If you do not draw this card at the start of combat, add it to your hand."
-    },
-    {
-      "name": "Moonworks:Gift",
-      "description": "This card's primary effects are active while in your hand. A Gift may also have an additional effects with triggers."
+      "description": "If you do not draw this card at the start of combat, add it to your hand.",
+      "names": ["moonworks:Free Draw","moonworks:free_draw"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Gift Uses",
-      "description": "Gift cards Retain while they have uses, and immediately Exhaust when they are out. One use is consumed when a Gift card's primary effect triggers."
+      "description": "Gift cards Retain while they have uses, and immediately Exhaust when they are out. One use is consumed when a Gift card's primary effect triggers.",
+      "names": ["moonworks:Gift Uses","moonworks:gift_uses"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Invisible Bomb",
-      "description": "Causes the target to lose HP each time a Star Blasting Fuse is drawn."
+      "description": "Causes the target to lose HP each time a Star Blasting Fuse is drawn.",
+      "names": ["moonworks:Invisible Bomb","moonworks:invisible_bomb","moonworks:invisible_bombs"],
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Multiword Keyword",
-      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
-    },
-    {
-      "name": "Moonworks:Norma",
-      "description": "Cards may have listed bonus effects at specific Norma levels."
-    },
-    {
-      "name": "Moonworks:Optimized",
-      "description": "This card gives only as much Block as needed, determined by your current block and the intent of your enemies. The remaining amount will be given as Vigor."
-    },
-    {
-      "name": "Moonworks:Piercing",
-      "description": "If this Attack damages the enemy's Block, they lose an equal amount of HP."
+      "name": "Life Steal",
+      "description": "Heal HP when dealing unblocked damage.",
+      "names": ["moonworks:Life Steal","moonworks:life_steal"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Plushie Mark",
-      "description": "If a target with a mark is hit for...\n6 or less damage: Raise the damage to 7 and Pierce.\n7 or more damage: Gain 3 temporary HP.\nOne mark then consumed."
-    },
-    {
-      "name": "Moonworks:Reduced",
-      "description": "This card's base values are lowered by 1."
-    },
-    {
-      "name": "Moonworks:Reset",
-      "description": "This card resets its conditional effect when played."
+      "description": "If a target is hit for 7 or less damage, raise the damage to 7 and Pierce.\nIf no Pierce was performed, gain 3 temporary HP.\nOne mark consumed per hit.",
+      "names": ["moonworks:Plushie Mark","moonworks:plushie_mark","moonworks:plushie_marks"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Shield Counter",
-      "description": "Any attack you fully block is reflected onto the attacker.\nIf you still have Block at the end of the turn and rollover is applied, you do not lose Shield Counter."
-    },
-    {
-      "name": "Moonworks:Special",
-      "description": "This card can not be obtained from normal card-drops."
-    },
-    {
-      "name": "Moonworks:Splash",
-      "description": "The primary target takes the full effect. ALL OTHER targets take half the amount."
-    },
-    {
-      "name": "Moonworks:Steady",
-      "description": "Gain more Block the next time a Block gaining card is played."
-    },
-    {
-      "name": "Moonworks:Stunned",
-      "description": "A stunned target does nothing this turn."
+      "description": "Any attack you fully block is reflected onto the attacker.\nIf you still have Block at the end of the turn and rollover is applied, you do not lose Shield Counter.",
+      "names": ["moonworks:Shield Counter","moonworks:shield_counter"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Temporal Anchor",
-      "description": "Your Temporal Anchor allows you to rewind your personal state to when it was created. All other entities are unaffected.\nA Temporal Anchor will undergo Divergence the longer you take between creating it and rewinding to it."
+      "description": "Your Temporal Anchor allows you to rewind your personal state to when it was created. All other entities are unaffected.\nA Temporal Anchor will undergo Divergence the longer you take between creating it and rewinding to it.",
+      "names": ["moonworks:Temporal Anchor","moonworks:temporal_anchor"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Temporary HP",
+      "description": "Temporary HP disappears at the end of combat.",
+      "names": ["temporary hp","temporary_hp"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "[E]",
+      "description": "Energy is used to play cards from your hand.",
+      "names": ["[E]"],
+      "mod": "BaseMod"
+    },
+    {
+      "name": "Autoplay",
+      "description": "This card automatically plays itself when drawn.",
+      "names": ["autoplay"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Exhaustive",
+      "description": "Exhausts after a certain number of uses.",
+      "names": ["exhaustive"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Fetch",
+      "description": "Choose a specified card from a specified pile and place it into your hand.",
+      "names": ["fetch"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Fleeting",
+      "description": "This card Purges and is removed from your deck on use.",
+      "names": ["fleeting"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Grave",
+      "description": "Start each combat with this card in your discard pile.",
+      "names": ["grave"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Moonworks:Crystallize",
+      "description": "Negates a debuff. Block is retained for a turn when a debuff is negated.",
+      "names": ["moonworks:Crystallize","moonworks:crystallize"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Degraded",
+      "description": "This card's base damage and block values are reduced by up to 3 each time it is drawn. The base values will not reduce lower than 1.",
+      "names": ["moonworks:Degraded","moonworks:degraded"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Divergence",
+      "description": "Divergence from the main timeline results in things not going back exactly the way you remembered them.\nAttempting to Leap with high Divergence may result in permanent unwanted effects.",
+      "names": ["moonworks:Divergence","moonworks:diverge","moonworks:divergence","moonworks:diverging"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Fixed",
+      "description": "This card is affected by Plushie Mark and Buffer, but unaffected by Strength, Dexterity, Weak, Frail, Vulnerable, and most other powers.",
+      "names": ["moonworks:Fixed","moonworks:fixed"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Fragile",
+      "description": "This card has a 1 in 3 chance of automatically exhausting when drawn.",
+      "names": ["moonworks:Fragile","moonworks:fragile"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Gift",
+      "description": "This card's primary effects are active while in your hand. A Gift may also have an additional effects with triggers.",
+      "names": ["moonworks:Gift","moonworks:gift"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Immobile",
+      "description": "Block is not removed at the start of your turn, but you may only play Attack cards if they are Ranged.",
+      "names": ["moonworks:Immobile","moonworks:immobile"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Magical",
+      "description": "Magical cards are created by spending Norma Levels and gain charges for each Level spent. One Norma is regained each time a Magical card expends a charge.",
+      "names": ["moonworks:Magical","moonworks:magical"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Memory",
+      "description": "A converted Memory is removed from play, but it's effect autoplayed at no cost when other cards of the same type are played. A turn based cooldown relative to it's original cost is then applied.",
+      "names": ["moonworks:Memory","moonworks:memories","moonworks:memory"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Norma",
+      "description": "Cards may have listed bonus effects at specific Norma levels.",
+      "names": ["moonworks:Norma","moonworks:norma"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Optimized",
+      "description": "This card gives only as much Block as needed, determined by your current block and the intent of your enemies. The remaining amount will be given as Vigor.",
+      "names": ["moonworks:Optimized","moonworks:optimized"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Overheat",
+      "description": "Attacks to this target will Pierce.\nIf this target has no Block, they take 30% more damage from attacks.",
+      "names": ["moonworks:Overheat","moonworks:overheat"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Piercing",
+      "description": "If this Attack damages the enemy's Block, they lose an equal amount of HP.",
+      "names": ["moonworks:Piercing","moonworks:pierce","moonworks:piercing"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Ranged",
+      "description": "Ranged attacks do not trigger Thorns and can be played while Immobile.",
+      "names": ["moonworks:Ranged","moonworks:ranged"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Reduced",
+      "description": "This card's base values are lowered by 1.",
+      "names": ["moonworks:Reduced","moonworks:reduced"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Reset",
+      "description": "This card resets its conditional effect when played.",
+      "names": ["moonworks:Reset","moonworks:reset"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Revenge",
+      "description": "This effect is 50% stronger if used on the last enemy who attacked you.",
+      "names": ["moonworks:Revenge","moonworks:revenge"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Rival",
+      "description": "Attacks against your Rival deal 10% additional damage. Increases by 10% if your Rival attacked you last turn.",
+      "names": ["moonworks:Rival","moonworks:rival"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Special",
+      "description": "This card can not be obtained from normal card-drops.",
+      "names": ["moonworks:Special","moonworks:special"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Splash",
+      "description": "The primary target takes the full effect. ALL OTHER targets take half the amount.",
+      "names": ["moonworks:Splash","moonworks:splash"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Steady",
+      "description": "Gain more Block the next time a Block gaining card is played.",
+      "names": ["moonworks:Steady","moonworks:steady"],
+      "mod": "100% Spire Juice"
+    },
+    {
+      "name": "Moonworks:Stunned",
+      "description": "A stunned target does nothing this turn.",
+      "names": ["moonworks:Stunned","moonworks:stun","moonworks:stunned"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Moonworks:Transformative",
-      "description": "This card Transforms when drawn or retained."
+      "description": "This card Transforms when drawn or retained.",
+      "names": ["moonworks:Transformative","moonworks:transformative"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Moonworks:Trap",
-      "description": "This card's effect ignores Artifact."
+      "description": "This card's effect ignores Artifact.",
+      "names": ["moonworks:Trap","moonworks:trap"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Moonworks:Voiding",
-      "description": "Lose 1 energy when you draw this card."
+      "description": "Lose 1 energy when you draw this card.",
+      "names": ["moonworks:Voiding","moonworks:voiding"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Moonworks:Wanted",
-      "description": "This turn, the Wanted enemy becomes the target of all attacks and negative effects.\nThe Wanted enemy will not injure itself by default."
+      "description": "This turn, the Wanted enemy becomes the target of all attacks and negative effects.\nThe Wanted enemy will not injure itself by default.",
+      "names": ["moonworks:Wanted","moonworks:wanted"],
+      "mod": "100% Spire Juice"
     },
     {
       "name": "Moonworks:Withering",
-      "description": "This card immediately exhausts, regardless of where it is."
+      "description": "This card immediately exhausts, regardless of where it is.",
+      "names": ["moonworks:Withering","moonworks:withering"],
+      "mod": "100% Spire Juice"
     },
     {
-      "name": "Moonworks:keyword",
-      "description": "Whenever you play a card, gain 1 dexterity this turn only."
+      "name": "Purge",
+      "description": "Removed until end of combat. Does NOT go to your exhaust pile.",
+      "names": ["purge"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Refund",
+      "description": "Returns energy spent on playing the card, up to the Refund value.",
+      "names": ["refund","refunds"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Retain",
+      "description": "Not discarded at the end of your turn.",
+      "names": ["retain","retained","retains"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Snecko",
+      "description": "When drawn, this card randomizes its cost.",
+      "names": ["snecko"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Soulbound",
+      "description": "Cannot be removed from your deck.",
+      "names": ["soulbound"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Startup",
+      "description": "Triggers at the start of each combat.",
+      "names": ["startup"],
+      "mod": "StSLib"
     }
   ]
 }
