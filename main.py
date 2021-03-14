@@ -187,27 +187,61 @@ async def get_id(message):
 
 
 def tokenize_message(message):
-    if len(message.split(" ")) >= 3:
-        for mod in aliases:
-            names = aliases.get(mod)
-            if message.split(" ")[1] in names:
-                tokenized_message = message.split(" ", 2)
-                del tokenized_message[1]
-                tokenized_message.insert(1, mod)
-                print(tokenized_message)
-                return tokenized_message
-    if os.path.exists(f'data/{message.split(" ")[1]}.json'):
-        return message.split(" ", 2)
+    """
+    Splits the message into a list of strings around spaces.
+
+    If a valid mod name exists as the second word, the output looks like
+    [command, mod name, any additional strings]
+
+    Otherwise, the output looks like
+    [command, any additional strings]
+
+    Example:
+    Input:  "checkmate mycoolmod foo bar update bodytext"
+    Output: ["checkmate", "mycoolmod", "foo bar update bodytext"]
+
+    :param message: Message to tokenize
+    :return: tokenized message
+    """
+    split_message = message.split(" ", maxsplit=1)
+
+    # Check if the message has one or fewer words
+    if len(split_message) <= 1:
+        return split_message
+
+    # If a mod has an alias, replace it with the mod name
+    command = split_message[0]
+    text_without_command = split_message[1]
+    text_without_command = replace_aliases(text_without_command)
+
+    # Recombine the command with the message
+    full_message = f"{command} {text_without_command}"
+
+    if os.path.exists(f'data/{text_without_command}.json'):
+        return full_message.split(" ", maxsplit=2)
     else:
-        return message.split(" ", 1)
+        return full_message.split(" ", maxsplit=1)
 
 
-def check_for_aliases(self, id):
-    print(id)
-    for mod in aliases:
-        mod_aliases = aliases.get(mod)
-        if id in mod_aliases:
-            return mod
+def replace_aliases(string):
+    """
+    If the string starts with an alias of a mod, it will replace the alias with the name of the mod used internally
+    This is the file name associated with the mod (without .json)
+
+    Example:    Input:  "Challenge the Spire blah bleh update BODY TEXT replay"
+                Output: "challengethespire blah bleh update BODY TEXT replay"
+
+    :param string: String to replace the alias in
+    :return: New string with the alias replaced
+    """
+    for mod_with_alias in aliases:
+        for alias in aliases.get(mod_with_alias):
+            if string.lower().startswith(alias):
+                # Alias is in the message. Replace the first instance of the alias with the mod name
+                return re.sub(alias, mod_with_alias, string, flags=re.IGNORECASE, count=1)
+
+    # No Alias found
+    return string
 
 
 async def do_command(channel, tokenized_message):
