@@ -1,10 +1,10 @@
 {
   "mod": {
     "name": "The Widow",
-    "version": "0.0.1",
-    "authors": ["wavewhyse"],
+    "version": "0.9",
+    "authors": ["wavewhyse\u1F320"],
     "credits": "Basemod, ModTheSpire, #modding",
-    "description": "character mod for The Widow (WIP)",
+    "description": "Character mod for The Widow (WIP)",
     "mts_version": "3.8.0",
     "sts_version": "12-22-2020",
     "dependencies": ["basemod","stslib"],
@@ -13,7 +13,7 @@
   "cards": [
     {
       "name": "Defend",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
@@ -21,7 +21,7 @@
     },
     {
       "name": "Defend+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
@@ -29,7 +29,7 @@
     },
     {
       "name": "Steelweave",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
@@ -37,7 +37,7 @@
     },
     {
       "name": "Steelweave+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
@@ -45,7 +45,7 @@
     },
     {
       "name": "Strike",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
@@ -53,7 +53,7 @@
     },
     {
       "name": "Strike+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
@@ -61,7 +61,7 @@
     },
     {
       "name": "String Shot",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
@@ -69,63 +69,47 @@
     },
     {
       "name": "String Shot+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
       "description": "Deal 8 damage. Gain 1 thewidow:Web."
     },
     {
-      "name": "Backup Battery",
-      "color": "Widow_black_color",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "0",
-      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 1."
-    },
-    {
-      "name": "Backup Battery+1",
-      "color": "Widow_black_color",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "0",
-      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 2."
-    },
-    {
       "name": "Desperation",
-      "color": "Widow_black_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 8 damage to ALL enemies.\nGain 2 Weak."
-    },
-    {
-      "name": "Desperation+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
       "description": "Deal 10 damage to ALL enemies.\nGain 2 Weak."
     },
     {
+      "name": "Desperation+",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 13 damage to ALL enemies.\nGain 2 Weak."
+    },
+    {
       "name": "Entrap",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 1 Weak.\nGain 1 thewidow:Web for each debuff affecting the target."
+      "description": "Apply 2 Weak.\nGain 2 thewidow:Web for each debuff affecting the target."
     },
     {
       "name": "Entrap+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 2 Weak.\nGain 1 thewidow:Web for each debuff affecting the target."
+      "description": "Apply 3 Weak.\nGain 2 thewidow:Web for each debuff affecting the target."
     },
     {
       "name": "Explosive Kick",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
@@ -133,7 +117,7 @@
     },
     {
       "name": "Extra Compartment",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
@@ -141,47 +125,95 @@
     },
     {
       "name": "Extra Compartment+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
       "description": "Gain 1 Potion Slot this turn. Obtain a thewidow:Grenade.\nExhaustive 3."
     },
     {
-      "name": "Gemini Bot",
-      "color": "Widow_black_color",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "",
-      "description": "thewidow:Beta. Unplayable.\nWhen you play another card in hand, play this as an un-Upgraded copy of that card and Exhaust."
-    },
-    {
-      "name": "Gemini Bot+1",
-      "color": "Widow_black_color",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "",
-      "description": "thewidow:Beta. Unplayable.\nWhen you play another card in hand, play this as a + 1 copy of that card and Exhaust."
-    },
-    {
       "name": "Harden",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "thewidow:Beta.\nGain 6 Block."
+      "description": "thewidow:Beta+.\nGain 8 Block."
     },
     {
       "name": "Harden+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "thewidow:Beta.\nGain 7 Block."
+      "description": "thewidow:Beta+.\nGain 9 Block."
+    },
+    {
+      "name": "Harden+2",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nGain 11 Block."
+    },
+    {
+      "name": "Harden+3",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nGain 14 Block."
+    },
+    {
+      "name": "Harden+4",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nGain 18 Block."
+    },
+    {
+      "name": "Harden+5",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nGain 23 Block."
+    },
+    {
+      "name": "Harden+6",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nGain 29 Block."
+    },
+    {
+      "name": "Harden+7",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nGain 36 Block."
+    },
+    {
+      "name": "Harden+8",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nGain 44 Block."
+    },
+    {
+      "name": "Harden+9",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nGain 53 Block."
     },
     {
       "name": "Hide",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
@@ -189,7 +221,7 @@
     },
     {
       "name": "Hide+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
@@ -197,7 +229,7 @@
     },
     {
       "name": "Improvised Explosive",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
@@ -205,7 +237,7 @@
     },
     {
       "name": "Improvised Explosive+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
@@ -213,7 +245,7 @@
     },
     {
       "name": "Ironthread",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
@@ -221,47 +253,127 @@
     },
     {
       "name": "Ironthread+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
       "description": "Upgrade 2 cards in your hand for the rest of combat."
     },
     {
+      "name": "Junk Heap",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 9 Block.\nGain 2 Frail."
+    },
+    {
+      "name": "Junk Heap+",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 13 Block.\nGain 2 Frail."
+    },
+    {
       "name": "Metal Burrs",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 16 damage. Costs less [E] per debuff affecting you."
+      "description": "Deal 4 damage 4 times. Costs less [E] per debuff affecting you."
     },
     {
       "name": "Metal Burrs+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 20 damage. Costs less [E] per debuff affecting you."
+      "description": "Deal 5 damage 4 times. Costs less [E] per debuff affecting you."
     },
     {
       "name": "Nanobots",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "thewidow:Beta.\nDeal 5 damage.\nWhen this card is Upgraded in combat, shuffle a copy into your draw pile."
+      "description": "thewidow:Beta.\nDeal 5 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
     },
     {
       "name": "Nanobots+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "thewidow:Beta.\nDeal 6 damage.\nWhen this card is Upgraded in combat, shuffle a copy into your draw pile."
+      "description": "thewidow:Beta.\nDeal 7 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
+    },
+    {
+      "name": "Nanobots+2",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thewidow:Beta.\nDeal 9 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
+    },
+    {
+      "name": "Nanobots+3",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thewidow:Beta.\nDeal 11 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
+    },
+    {
+      "name": "Nanobots+4",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thewidow:Beta.\nDeal 13 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
+    },
+    {
+      "name": "Nanobots+5",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thewidow:Beta.\nDeal 15 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
+    },
+    {
+      "name": "Nanobots+6",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thewidow:Beta.\nDeal 17 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
+    },
+    {
+      "name": "Nanobots+7",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thewidow:Beta.\nDeal 19 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
+    },
+    {
+      "name": "Nanobots+8",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thewidow:Beta.\nDeal 21 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
+    },
+    {
+      "name": "Nanobots+9",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thewidow:Beta.\nDeal 23 damage.\nWhen this card is Upgraded in combat, add a copy into your discard pile."
     },
     {
       "name": "Restock",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
@@ -269,7 +381,7 @@
     },
     {
       "name": "Restock+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
@@ -277,7 +389,7 @@
     },
     {
       "name": "Rocket Dash",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
@@ -285,79 +397,255 @@
     },
     {
       "name": "Rocket Dash+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
       "description": "thewidow:Beta.\nGain 15 Block.\nWhen this card is Upgraded, deal 6 damage to ALL enemies."
     },
     {
-      "name": "Scrap Heap",
-      "color": "Widow_black_color",
+      "name": "Rocket Dash+2",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
-      "cost": "0",
-      "description": "Gain 8 Block.\nGain 2 Frail."
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 16 Block.\nWhen this card is Upgraded, deal 6 damage to ALL enemies."
     },
     {
-      "name": "Scrap Heap+",
-      "color": "Widow_black_color",
+      "name": "Rocket Dash+3",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
-      "cost": "0",
-      "description": "Gain 11 Block.\nGain 2 Frail."
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 17 Block.\nWhen this card is Upgraded, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Rocket Dash+4",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 18 Block.\nWhen this card is Upgraded, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Rocket Dash+5",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 19 Block.\nWhen this card is Upgraded, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Rocket Dash+6",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 20 Block.\nWhen this card is Upgraded, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Rocket Dash+7",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 21 Block.\nWhen this card is Upgraded, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Rocket Dash+8",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 22 Block.\nWhen this card is Upgraded, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Rocket Dash+9",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 23 Block.\nWhen this card is Upgraded, deal 6 damage to ALL enemies."
     },
     {
       "name": "Searing Blade",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "thewidow:Beta.\nDeal 7 damage."
+      "description": "thewidow:Beta+.\nDeal 7 damage."
     },
     {
       "name": "Searing Blade+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "thewidow:Beta.\nDeal 8 damage."
+      "description": "thewidow:Beta+.\nDeal 9 damage."
     },
     {
-      "name": "Skitter",
-      "color": "Widow_black_color",
+      "name": "Searing Blade+2",
+      "color": "The_widow",
       "rarity": "Common",
-      "type": "Skill",
+      "type": "Attack",
       "cost": "1",
-      "description": "Innate.\nGain 1 thewidow:Web for each enemy. Exhaust."
+      "description": "thewidow:Beta+.\nDeal 12 damage."
     },
     {
-      "name": "Skitter+",
-      "color": "Widow_black_color",
+      "name": "Searing Blade+3",
+      "color": "The_widow",
       "rarity": "Common",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Innate.\nGain 1 thewidow:Web for each enemy. Exhaust."
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 16 damage."
+    },
+    {
+      "name": "Searing Blade+4",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 21 damage."
+    },
+    {
+      "name": "Searing Blade+5",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 27 damage."
+    },
+    {
+      "name": "Searing Blade+6",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 34 damage."
+    },
+    {
+      "name": "Searing Blade+7",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 42 damage."
+    },
+    {
+      "name": "Searing Blade+8",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 51 damage."
+    },
+    {
+      "name": "Searing Blade+9",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 61 damage."
+    },
+    {
+      "name": "Spiderbite",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 2 thewidow:Necrosis."
+    },
+    {
+      "name": "Spiderbite+",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply 3 thewidow:Necrosis."
     },
     {
       "name": "Spinnerets",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
-      "cost": "0",
-      "description": "thewidow:Beta.\nGain 1 thewidow:Web.\nExhaust."
-    },
-    {
-      "name": "Spinnerets+1",
-      "color": "Widow_black_color",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "0",
+      "cost": "1",
       "description": "thewidow:Beta.\nGain 2 thewidow:Web.\nExhaust."
     },
     {
+      "name": "Spinnerets+1",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta.\nGain 4 thewidow:Web.\nExhaust."
+    },
+    {
+      "name": "Spinnerets+2",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta.\nGain 6 thewidow:Web.\nExhaust."
+    },
+    {
+      "name": "Spinnerets+3",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta.\nGain 8 thewidow:Web.\nExhaust."
+    },
+    {
+      "name": "Spinnerets+4",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta.\nGain 10 thewidow:Web.\nExhaust."
+    },
+    {
+      "name": "Spinnerets+5",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta.\nGain 12 thewidow:Web.\nExhaust."
+    },
+    {
+      "name": "Spinnerets+6",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta.\nGain 14 thewidow:Web.\nExhaust."
+    },
+    {
+      "name": "Spinnerets+7",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta.\nGain 16 thewidow:Web.\nExhaust."
+    },
+    {
+      "name": "Spinnerets+8",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta.\nGain 18 thewidow:Web.\nExhaust."
+    },
+    {
+      "name": "Spinnerets+9",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thewidow:Beta.\nGain 20 thewidow:Web.\nExhaust."
+    },
+    {
       "name": "Stinger",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
@@ -365,7 +653,7 @@
     },
     {
       "name": "Stinger+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
@@ -373,23 +661,23 @@
     },
     {
       "name": "Toxic",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 1 Weak.\nApply 1 Vulnerable.\nExhaust."
+      "description": "Apply 2 Weak.\nApply 2 Necrosis.\nExhaust."
     },
     {
       "name": "Toxic+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 2 Weak.\nApply 2 Vulnerable.\nExhaust."
+      "description": "Apply 3 Weak.\nApply 3 Necrosis.\nExhaust."
     },
     {
       "name": "Underfoot",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
@@ -397,7 +685,7 @@
     },
     {
       "name": "Underfoot+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
@@ -405,39 +693,103 @@
     },
     {
       "name": "Unstable Cell",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "thewidow:Beta.\nDeal 10 damage.\nWhen this card is Upgraded in your hand, play it."
+      "description": "thewidow:Beta+.\nDeal 10 damage.\nWhen this card is Upgraded in combat, play it."
     },
     {
       "name": "Unstable Cell+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "thewidow:Beta.\nDeal 12 damage.\nWhen this card is Upgraded in your hand, play it."
+      "description": "thewidow:Beta+.\nDeal 12 damage.\nWhen this card is Upgraded in combat, play it."
+    },
+    {
+      "name": "Unstable Cell+2",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 15 damage.\nWhen this card is Upgraded in combat, play it."
+    },
+    {
+      "name": "Unstable Cell+3",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 19 damage.\nWhen this card is Upgraded in combat, play it."
+    },
+    {
+      "name": "Unstable Cell+4",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 24 damage.\nWhen this card is Upgraded in combat, play it."
+    },
+    {
+      "name": "Unstable Cell+5",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 30 damage.\nWhen this card is Upgraded in combat, play it."
+    },
+    {
+      "name": "Unstable Cell+6",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 37 damage.\nWhen this card is Upgraded in combat, play it."
+    },
+    {
+      "name": "Unstable Cell+7",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 45 damage.\nWhen this card is Upgraded in combat, play it."
+    },
+    {
+      "name": "Unstable Cell+8",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 54 damage.\nWhen this card is Upgraded in combat, play it."
+    },
+    {
+      "name": "Unstable Cell+9",
+      "color": "The_widow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 64 damage.\nWhen this card is Upgraded in combat, play it."
     },
     {
       "name": "Venom Strike",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nTarget loses 2 Strength this turn."
+      "description": "Deal 8 damage.\nEnemy loses 2 Strength this turn."
     },
     {
       "name": "Venom Strike+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage.\nTarget loses 3 Strength this turn."
+      "description": "Deal 11 damage.\nEnemy loses 3 Strength this turn."
     },
     {
       "name": "Weld",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
@@ -445,7 +797,7 @@
     },
     {
       "name": "Weld+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
@@ -453,7 +805,7 @@
     },
     {
       "name": "Ambush",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
@@ -461,143 +813,303 @@
     },
     {
       "name": "Ambush+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
       "description": "At the end of your turn, if you played no Attacks this turn, Retain your hand."
     },
     {
+      "name": "Backup Battery",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 1."
+    },
+    {
+      "name": "Backup Battery+1",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 2."
+    },
+    {
+      "name": "Backup Battery+2",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 3."
+    },
+    {
+      "name": "Backup Battery+3",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 4."
+    },
+    {
+      "name": "Backup Battery+4",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 5."
+    },
+    {
+      "name": "Backup Battery+5",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 6."
+    },
+    {
+      "name": "Backup Battery+6",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 7."
+    },
+    {
+      "name": "Backup Battery+7",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 8."
+    },
+    {
+      "name": "Backup Battery+8",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 9."
+    },
+    {
+      "name": "Backup Battery+9",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thewidow:Beta.\nGain [E] [E].\nExhaustive 10."
+    },
+    {
       "name": "Bio-Informatics",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "thewidow:Beta.\nGain 8 Block.\nDraw 1 card."
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 1 card."
     },
     {
       "name": "Bio-Informatics+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "thewidow:Beta.\nGain 8 Block.\nDraw 2 cards."
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Bio-Informatics+2",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 3 cards."
+    },
+    {
+      "name": "Bio-Informatics+3",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 4 cards."
+    },
+    {
+      "name": "Bio-Informatics+4",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 5 cards."
+    },
+    {
+      "name": "Bio-Informatics+5",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 6 cards."
+    },
+    {
+      "name": "Bio-Informatics+6",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 7 cards."
+    },
+    {
+      "name": "Bio-Informatics+7",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 8 cards."
+    },
+    {
+      "name": "Bio-Informatics+8",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 9 cards."
+    },
+    {
+      "name": "Bio-Informatics+9",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thewidow:Beta.\nGain 10 Block.\nDraw 10 cards."
     },
     {
       "name": "Chemistry",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "When you use a Potion, draw 1 card."
+      "description": "Whenever you use a Potion, draw 1 card."
     },
     {
       "name": "Chemistry+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "When you use a Potion, draw 2 cards."
+      "description": "Whenever you use a Potion, draw 2 cards."
     },
     {
       "name": "Cocoon",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 4 thewidow:Web.\nExhaust."
+      "description": "Obtain a thewidow:Silk_Potion.\nExhaust."
     },
     {
       "name": "Cocoon+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "2",
-      "description": "Gain 6 thewidow:Web.\nExhaust."
-    },
-    {
-      "name": "Conduit",
-      "color": "Widow_black_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
       "cost": "1",
-      "description": "When you deal unblocked Attack damage this turn, deal damage equal to your thewidow:Web.\nDeal 9 damage."
-    },
-    {
-      "name": "Conduit+",
-      "color": "Widow_black_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "When you deal unblocked Attack damage this turn, deal damage equal to your thewidow:Web.\nDeal 12 damage."
+      "description": "Obtain a thewidow:Silk_Potion.\nExhaust."
     },
     {
       "name": "Discharge Battery",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "At the start of your turn, apply 1 thewidow:Paralysis and Weak to a random enemy.\nGain 1 less [E] per turn."
+      "description": "If you end your turn with [E] remaining, spend it and apply that much thewidow:Paralysis to ALL enemies."
     },
     {
       "name": "Discharge Battery+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "1",
-      "description": "At the start of your turn, apply 1 thewidow:Paralysis and Weak to ALL enemies.\nGain 1 less [E] per turn."
+      "cost": "0",
+      "description": "If you end your turn with [E] remaining, spend it and apply that much thewidow:Paralysis to ALL enemies."
+    },
+    {
+      "name": "Egg Clutch",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Upgrade 1 card in this combat's card reward screen."
+    },
+    {
+      "name": "Egg Clutch+",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Upgrade 2 cards in this combat's card reward screen."
     },
     {
       "name": "Exploit",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 3 damage. If target is debuffed, deal another 3 damage and gain [E]."
+      "description": "Deal 3 damage. Your next attack deals 2 extra damage for each debuff on the target."
     },
     {
       "name": "Exploit+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 4 damage. If target is debuffed, deal another 4 damage and gain [E]."
+      "description": "Deal 4 damage. Your next attack deals 3 extra damage for each debuff on the target."
     },
     {
       "name": "Forge",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 12 damage.\nObtain a *Blessing *Of *The *Forge\nExhaust."
+      "description": "Deal 12 damage.\nObtain a Blessing Of The Forge.\nExhaust."
     },
     {
       "name": "Forge+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 18 damage.\nObtain a *Blessing *Of *The *Forge\nExhaust."
+      "description": "Deal 16 damage.\nObtain a Blessing Of The Forge.\nExhaust."
     },
     {
       "name": "Gash",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 5 damage.\nFor the next X turns, target takes 5 damage."
+      "description": "Deal 4 damage.\nFor the next X turns, target takes twice that much damage."
     },
     {
       "name": "Gash+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 6 damage.\nFor the next X turns, target takes 6 damage."
+      "description": "Deal 5 damage.\nFor the next X turns, target takes twice that much damage."
+    },
+    {
+      "name": "Gemini Bot",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you play another card in hand, play this as a non-Upgraded copy of that card and Exhaust."
+    },
+    {
+      "name": "Gemini Bot+",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you play another card in hand, play this as an Upgraded copy of that card and Exhaust."
     },
     {
       "name": "Grenadier",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
@@ -605,7 +1117,7 @@
     },
     {
       "name": "Grenadier+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
@@ -613,7 +1125,7 @@
     },
     {
       "name": "In For The Kill",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
@@ -621,31 +1133,47 @@
     },
     {
       "name": "In For The Kill+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
       "description": "Deal 14 damage. This card benefits from Vulnerable three times."
     },
     {
-      "name": "Iterate",
-      "color": "Widow_black_color",
+      "name": "Infect",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage.\nUpgrade all thewidow:Beta cards in your hand."
+      "description": "Deal 5 damage.\nWhen you debuff this enemy, also apply 1 thewidow:Necrosis.\nExhaust."
+    },
+    {
+      "name": "Infect+",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nWhen you debuff this enemy, also apply 2 thewidow:Necrosis.\nExhaust."
+    },
+    {
+      "name": "Iterate",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nUpgrade all thewidow:Beta cards in your hand for the rest of combat."
     },
     {
       "name": "Iterate+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\nUpgrade all thewidow:Beta cards in your hand."
+      "description": "Deal 11 damage.\nUpgrade all thewidow:Beta cards in your hand for the rest of combat."
     },
     {
       "name": "Lace",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
@@ -653,7 +1181,7 @@
     },
     {
       "name": "Lace+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
@@ -661,7 +1189,7 @@
     },
     {
       "name": "Lair",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
@@ -669,7 +1197,7 @@
     },
     {
       "name": "Lair+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
@@ -677,7 +1205,7 @@
     },
     {
       "name": "Laser Ray",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
@@ -685,15 +1213,79 @@
     },
     {
       "name": "Laser Ray+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "thewidow:Beta.\nDeal 16 damage. Apply 2 Weak. Apply 2 Vulnerable."
+      "description": "thewidow:Beta.\nDeal 14 damage. Apply 2 Weak. Apply 2 Vulnerable."
+    },
+    {
+      "name": "Laser Ray+2",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 14 damage. Apply 3 Weak. Apply 3 Vulnerable."
+    },
+    {
+      "name": "Laser Ray+3",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 14 damage. Apply 4 Weak. Apply 4 Vulnerable."
+    },
+    {
+      "name": "Laser Ray+4",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 14 damage. Apply 5 Weak. Apply 5 Vulnerable."
+    },
+    {
+      "name": "Laser Ray+5",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 14 damage. Apply 6 Weak. Apply 6 Vulnerable."
+    },
+    {
+      "name": "Laser Ray+6",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 14 damage. Apply 7 Weak. Apply 7 Vulnerable."
+    },
+    {
+      "name": "Laser Ray+7",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 14 damage. Apply 8 Weak. Apply 8 Vulnerable."
+    },
+    {
+      "name": "Laser Ray+8",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 14 damage. Apply 9 Weak. Apply 9 Vulnerable."
+    },
+    {
+      "name": "Laser Ray+9",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 14 damage. Apply 10 Weak. Apply 10 Vulnerable."
     },
     {
       "name": "Meltdown",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
@@ -701,7 +1293,7 @@
     },
     {
       "name": "Meltdown+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
@@ -709,7 +1301,7 @@
     },
     {
       "name": "Neuro-Jack",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
@@ -717,7 +1309,7 @@
     },
     {
       "name": "Neuro-Jack+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
@@ -725,7 +1317,7 @@
     },
     {
       "name": "Opportunist",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
@@ -733,7 +1325,7 @@
     },
     {
       "name": "Opportunist+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
@@ -741,7 +1333,7 @@
     },
     {
       "name": "Refine",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
@@ -749,7 +1341,7 @@
     },
     {
       "name": "Refine+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
@@ -757,39 +1349,39 @@
     },
     {
       "name": "Sadistic Intent",
-      "color": "Widow_black_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "2",
-      "description": "When you apply a debuff to an enemy, draw a card."
-    },
-    {
-      "name": "Sadistic Intent+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "When you apply a debuff to an enemy, draw a card."
+      "description": "At the start of your turn, if ALL enemies are debuffed, draw a card."
     },
     {
-      "name": "Scanner",
-      "color": "Widow_black_color",
+      "name": "Sadistic Intent+",
+      "color": "The_widow",
       "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Innate. thewidow:Beta.\nScry 4.\nExhaust."
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, if ALL enemies are debuffed, draw 2 cards."
     },
     {
-      "name": "Scanner+1",
-      "color": "Widow_black_color",
+      "name": "Salvage",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
-      "description": "Innate. thewidow:Beta.\nScry 6.\nExhaust."
+      "cost": "1",
+      "description": "Gain 6 Block.\nDiscard the first 4 un-Upgraded cards in your draw pile."
+    },
+    {
+      "name": "Salvage+",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDiscard the first 6 un-Upgraded cards in your draw pile."
     },
     {
       "name": "Scrapper",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
@@ -797,7 +1389,7 @@
     },
     {
       "name": "Scrapper+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
@@ -805,7 +1397,7 @@
     },
     {
       "name": "Scrapskin",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
@@ -813,7 +1405,7 @@
     },
     {
       "name": "Scrapskin+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
@@ -821,23 +1413,23 @@
     },
     {
       "name": "Self-Improvement",
-      "color": "Widow_black_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Exhaust a card in your hand. Gain 1 [E] and draw 1 card for each Upgrade on that card."
-    },
-    {
-      "name": "Self-Improvement+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Exhaust a card in your hand. Gain 1 [E] and draw 1 card for each Upgrade on that card."
+      "description": "Exhaust a card in your hand. Gain [E] and draw 1 card for each Upgrade on that card."
+    },
+    {
+      "name": "Self-Improvement+",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card in your hand. Gain [E] and draw 2 cards for each Upgrade on that card."
     },
     {
       "name": "Shock Emitters",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
@@ -845,47 +1437,111 @@
     },
     {
       "name": "Shock Emitters+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
       "description": "thewidow:Beta.\nDeal 8 damage.\nWhen target attacks this turn, it takes 5 damage."
     },
     {
-      "name": "Silkshield",
-      "color": "Widow_black_color",
+      "name": "Shock Emitters+2",
+      "color": "The_widow",
       "rarity": "Uncommon",
-      "type": "Skill",
+      "type": "Attack",
       "cost": "1",
-      "description": "thewidow:Beta.\nGain 8 Block.\nthewidow:Downgrade this card for the rest of combat."
+      "description": "thewidow:Beta.\nDeal 9 damage.\nWhen target attacks this turn, it takes 7 damage."
     },
     {
-      "name": "Silkshield+1",
-      "color": "Widow_black_color",
+      "name": "Shock Emitters+3",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta.\nDeal 10 damage.\nWhen target attacks this turn, it takes 9 damage."
+    },
+    {
+      "name": "Shock Emitters+4",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta.\nDeal 11 damage.\nWhen target attacks this turn, it takes 11 damage."
+    },
+    {
+      "name": "Shock Emitters+5",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta.\nDeal 12 damage.\nWhen target attacks this turn, it takes 13 damage."
+    },
+    {
+      "name": "Shock Emitters+6",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta.\nDeal 13 damage.\nWhen target attacks this turn, it takes 15 damage."
+    },
+    {
+      "name": "Shock Emitters+7",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta.\nDeal 14 damage.\nWhen target attacks this turn, it takes 17 damage."
+    },
+    {
+      "name": "Shock Emitters+8",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta.\nDeal 15 damage.\nWhen target attacks this turn, it takes 19 damage."
+    },
+    {
+      "name": "Shock Emitters+9",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta.\nDeal 16 damage.\nWhen target attacks this turn, it takes 21 damage."
+    },
+    {
+      "name": "Skitter",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "thewidow:Beta.\nGain 12 Block.\nthewidow:Downgrade this card for the rest of combat."
+      "description": "Innate.\nGain 1 thewidow:Web for each enemy. Exhaust."
+    },
+    {
+      "name": "Skitter+",
+      "color": "The_widow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nGain 1 thewidow:Web for each enemy. Exhaust."
     },
     {
       "name": "Sludge Wave",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "2",
-      "description": "Apply 2 Weak and 2 Vulnerable to EVERYONE."
+      "cost": "1",
+      "description": "Apply 2 Vulnerable and 2 Weak to EVERYONE.\nIf there are 3 or more enemies, Stun the one with the highest HP."
     },
     {
       "name": "Sludge Wave+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "2",
-      "description": "Apply 3 Weak and 3 Vulnerable to EVERYONE."
+      "cost": "1",
+      "description": "Apply 3 Vulnerable and 3 Weak to EVERYONE.\nIf there are 3 or more enemies, Stun the one with the highest HP."
     },
     {
       "name": "Spider Dance",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
@@ -893,39 +1549,39 @@
     },
     {
       "name": "Spider Dance+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
       "description": "Deal 5 damage 4 times."
     },
     {
-      "name": "Spiderbite",
-      "color": "Widow_black_color",
+      "name": "Vengeful",
+      "color": "The_widow",
       "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 7 damage.\nApply 3 thewidow:Necrosis."
+      "type": "Power",
+      "cost": "0",
+      "description": "When you are debuffed, gain 2 temporary Strength."
     },
     {
-      "name": "Spiderbite+",
-      "color": "Widow_black_color",
+      "name": "Vengeful+",
+      "color": "The_widow",
       "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 9 damage.\nApply 4 thewidow:Necrosis."
+      "type": "Power",
+      "cost": "0",
+      "description": "When you are debuffed, gain 3 temporary Strength."
     },
     {
       "name": "Weaving",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Draw a card and Upgrade it for the rest of combat."
+      "description": "Draw 2 cards and Upgrade 1 of them randomly for the rest of combat."
     },
     {
       "name": "Weaving+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
@@ -933,23 +1589,23 @@
     },
     {
       "name": "Black Venom",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 2 Vulnerable, 2 Weak, 2 thewidow:Paralysis, and 4 thewidow:Necrosis.\nExhaust."
+      "description": "Apply 4 thewidow:Paralysis and 4 thewidow:Necrosis. Target loses 1 Strength.\nExhaust."
     },
     {
       "name": "Black Venom+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 3 Vulnerable, 3 Weak, 3 thewidow:Paralysis, and 6 thewidow:Necrosis.\nExhaust."
+      "description": "Apply 6 thewidow:Paralysis and 6 thewidow:Necrosis. Target loses 2 Strength.\nExhaust."
     },
     {
       "name": "Bomb Launcher",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
@@ -957,7 +1613,7 @@
     },
     {
       "name": "Bomb Launcher+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
@@ -965,7 +1621,7 @@
     },
     {
       "name": "Distill",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
@@ -973,7 +1629,7 @@
     },
     {
       "name": "Distill+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
@@ -981,63 +1637,191 @@
     },
     {
       "name": "Dysphoria",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Curse",
       "cost": "",
-      "description": "Unplayable.\nWhen this is removed from your deck, Upgrade 12 random cards in your deck."
+      "description": "Unplayable.\nWhen this is removed from your deck, Upgrade 3 random cards in your deck and gain 6 maximum HP."
     },
     {
       "name": "Fiberglass Dagger",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "thewidow:Beta.\nDeal 10 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+      "description": "thewidow:Beta+.\nDeal 10 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
     },
     {
       "name": "Fiberglass Dagger+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "thewidow:Beta.\nDeal 13 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+      "description": "thewidow:Beta+.\nDeal 13 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+    },
+    {
+      "name": "Fiberglass Dagger+2",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 18 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+    },
+    {
+      "name": "Fiberglass Dagger+3",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 25 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+    },
+    {
+      "name": "Fiberglass Dagger+4",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 34 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+    },
+    {
+      "name": "Fiberglass Dagger+5",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 45 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+    },
+    {
+      "name": "Fiberglass Dagger+6",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 58 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+    },
+    {
+      "name": "Fiberglass Dagger+7",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 73 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+    },
+    {
+      "name": "Fiberglass Dagger+8",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 90 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
+    },
+    {
+      "name": "Fiberglass Dagger+9",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta+.\nDeal 109 damage.\nCompletely thewidow:Downgrade this card for the rest of combat."
     },
     {
       "name": "Fission Anvil",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "thewidow:Beta.\nDeal 16 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+      "description": "thewidow:Beta+.\nDeal 16 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
     },
     {
       "name": "Fission Anvil+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "thewidow:Beta.\nDeal 18 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+      "description": "thewidow:Beta+.\nDeal 18 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Fission Anvil+2",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 21 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Fission Anvil+3",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 25 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Fission Anvil+4",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 30 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Fission Anvil+5",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 36 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Fission Anvil+6",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 43 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Fission Anvil+7",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 51 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Fission Anvil+8",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 60 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Fission Anvil+9",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta+.\nDeal 70 damage.\nWhen this card is Upgraded, Upgrade all other cards in your hand for the rest of combat."
     },
     {
       "name": "Fusion Scythe",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "thewidow:Downgrade your hand. Deal 6 damage to ALL enemies for each card thewidow:Downgraded."
+      "description": "thewidow:Downgrade your hand. Deal 7 damage to ALL enemies for each card thewidow:Downgraded."
     },
     {
       "name": "Fusion Scythe+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "thewidow:Downgrade your hand. Deal 9 damage to ALL enemies for each card thewidow:Downgraded."
+      "description": "thewidow:Downgrade your hand. Deal 10 damage to ALL enemies for each card thewidow:Downgraded."
     },
     {
       "name": "Hermit Weave",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
@@ -1045,7 +1829,7 @@
     },
     {
       "name": "Hermit Weave+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
@@ -1053,23 +1837,23 @@
     },
     {
       "name": "Hydraulic Limbs",
-      "color": "Widow_black_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "The first Attack you play each turn deals double damage and Exhausts."
-    },
-    {
-      "name": "Hydraulic Limbs+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "The first Attack you play each turn deals double damage and Exhausts."
+      "description": "The first Attack you play each turn costs twice as much [E] and deals double damage."
+    },
+    {
+      "name": "Hydraulic Limbs+",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first Attack you play each turn costs twice as much [E] and deals double damage."
     },
     {
       "name": "Improbability Drive",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
@@ -1077,31 +1861,95 @@
     },
     {
       "name": "Improbability Drive+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
       "description": "thewidow:Beta.\nDraw X cards.\nGain [E] [E] [E].\nExhaust."
     },
     {
+      "name": "Improbability Drive+2",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thewidow:Beta.\nDraw X cards.\nGain [E] [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Improbability Drive+3",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thewidow:Beta.\nDraw X cards.\nGain [E] [E] [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Improbability Drive+4",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thewidow:Beta.\nDraw X cards.\nGain [E] [E] [E] [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Improbability Drive+5",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thewidow:Beta.\nDraw X cards.\nGain [E] [E] [E] [E] [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Improbability Drive+6",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thewidow:Beta.\nDraw X cards.\nGain [E] [E] [E] [E] [E] [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Improbability Drive+7",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thewidow:Beta.\nDraw X cards.\nGain [E] [E] [E] [E] [E] [E] [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Improbability Drive+8",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thewidow:Beta.\nDraw X cards.\nGain [E] [E] [E] [E] [E] [E] [E] [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Improbability Drive+9",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "thewidow:Beta.\nDraw X cards.\nGain [E] [E] [E] [E] [E] [E] [E] [E] [E] [E] [E].\nExhaust."
+    },
+    {
       "name": "Injection",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "2",
-      "description": "Deal 3 damage three times, applying 2 thewidow:Necrosis each time."
+      "cost": "1",
+      "description": "Deal 8 damage and apply 3 thewidow:Necrosis to ALL enemies."
     },
     {
       "name": "Injection+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "2",
-      "description": "Deal 4 damage three times, applying 3 thewidow:Necrosis each time."
+      "cost": "1",
+      "description": "Deal 11 damage and apply 4 thewidow:Necrosis to ALL enemies."
     },
     {
       "name": "Omni-Cannon",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "5",
@@ -1109,15 +1957,47 @@
     },
     {
       "name": "Omni-Cannon+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
       "description": "thewidow:Beta.\nDeal 32 damage to ALL enemies."
     },
     {
+      "name": "Omni-Cannon+2",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "thewidow:Beta.\nDeal 32 damage to ALL enemies."
+    },
+    {
+      "name": "Omni-Cannon+3",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 32 damage to ALL enemies."
+    },
+    {
+      "name": "Omni-Cannon+4",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thewidow:Beta.\nDeal 32 damage to ALL enemies."
+    },
+    {
+      "name": "Omni-Cannon+5",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thewidow:Beta.\nDeal 32 damage to ALL enemies."
+    },
+    {
       "name": "Rotary Blade",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
@@ -1125,15 +2005,79 @@
     },
     {
       "name": "Rotary Blade+1",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
       "description": "thewidow:Beta.\nDeal 4 damage 3 times.\nUpgrade this card for the rest of combat."
     },
     {
+      "name": "Rotary Blade+2",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 4 damage 4 times.\nUpgrade this card for the rest of combat."
+    },
+    {
+      "name": "Rotary Blade+3",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 4 damage 5 times.\nUpgrade this card for the rest of combat."
+    },
+    {
+      "name": "Rotary Blade+4",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 4 damage 6 times.\nUpgrade this card for the rest of combat."
+    },
+    {
+      "name": "Rotary Blade+5",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 4 damage 7 times.\nUpgrade this card for the rest of combat."
+    },
+    {
+      "name": "Rotary Blade+6",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 4 damage 8 times.\nUpgrade this card for the rest of combat."
+    },
+    {
+      "name": "Rotary Blade+7",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 4 damage 9 times.\nUpgrade this card for the rest of combat."
+    },
+    {
+      "name": "Rotary Blade+8",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 4 damage 10 times.\nUpgrade this card for the rest of combat."
+    },
+    {
+      "name": "Rotary Blade+9",
+      "color": "The_widow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thewidow:Beta.\nDeal 4 damage 11 times.\nUpgrade this card for the rest of combat."
+    },
+    {
       "name": "The Big One",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "3",
@@ -1141,7 +2085,7 @@
     },
     {
       "name": "The Big One+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "3",
@@ -1149,7 +2093,7 @@
     },
     {
       "name": "Transcendent Form",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
@@ -1157,7 +2101,7 @@
     },
     {
       "name": "Transcendent Form+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
@@ -1165,75 +2109,75 @@
     },
     {
       "name": "Unstoppable",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Remove all your Vulnerable, Weak, and Frail.\nDeal 14 damage, plus 1 for each stack removed."
+      "description": "Remove all your Vulnerable, Weak, and Frail.\nDeal 10 damage, plus 2 for each stack removed."
     },
     {
       "name": "Unstoppable+",
-      "color": "Widow_black_color",
+      "color": "The_widow",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Remove all your Vulnerable, Weak, and Frail.\nDeal 18 damage, plus 2 for each stack removed."
+      "description": "Remove all your Vulnerable, Weak, and Frail.\nDeal 14 damage, plus 3 for each stack removed."
     }
   ],
   "relics": [
     {
       "name": "Cyberheart",
       "tier": "Starter",
-      "pool": "Widow_black_color",
+      "pool": "The_widow",
       "description": "At the start of combat, Upgrade 3 random cards in your hand for the rest of combat.",
       "flavorText": "It beats just the way you designed it to."
     },
     {
       "name": "Anarchist's Cookbook",
       "tier": "Common",
-      "pool": "Widow_black_color",
+      "pool": "The_widow",
       "description": "At the start of combat, obtain a Grenade.",
       "flavorText": "Every good wife needs a good cookbook."
     },
     {
+      "name": "Sewing Kit",
+      "tier": "Common",
+      "pool": "The_widow",
+      "description": "Beta cards have an additional Upgrade.",
+      "flavorText": "A great way to pass the time, and make something useful too."
+    },
+    {
       "name": "Black Box",
       "tier": "Uncommon",
-      "pool": "Widow_black_color",
+      "pool": "The_widow",
       "description": "Enemies cannot gain Artifact.",
       "flavorText": "Just in case."
     },
     {
       "name": "Hourglass Mark",
       "tier": "Uncommon",
-      "pool": "Widow_black_color",
+      "pool": "The_widow",
       "description": "While you have at least 5 Web, gain 1 Strength and 1 Dexterity.",
       "flavorText": "Usually considered an omen of impending doom."
     },
     {
-      "name": "Sewing Kit",
-      "tier": "Uncommon",
-      "pool": "Widow_black_color",
-      "description": "Beta cards have an additional Upgrade.",
-      "flavorText": "A great way to pass the time, and make something useful too."
-    },
-    {
       "name": "Water Filter",
-      "tier": "Uncommon",
-      "pool": "Widow_black_color",
+      "tier": "Rare",
+      "pool": "The_widow",
       "description": "Potions have a 25% chance to not be used up.",
       "flavorText": "A bit stale, but it'll keep you going."
     },
     {
       "name": "Holo-Projector",
       "tier": "Boss",
-      "pool": "Widow_black_color",
+      "pool": "The_widow",
       "description": "At the start of your turn, gain [E] and Downgrade 2 random cards in your hand for the rest of combat.",
       "flavorText": "It's another you! Just not quite as coordinated."
     },
     {
       "name": "Perfect Heart",
       "tier": "Boss",
-      "pool": "Widow_black_color",
+      "pool": "The_widow",
       "description": "Replaces Cyberheart. At the start of your turn, Upgrade 2 random cards in your hand.",
       "flavorText": "Can you even call yourself human anymore?"
     }
@@ -1245,9 +2189,19 @@
       "description": "Gain 3 Web."
     },
     {
+      "name": "Venom Cocktail",
+      "rarity": "Uncommon",
+      "description": "Apply 6 Necrosis."
+    },
+    {
       "name": "Neurostimulant",
       "rarity": "Rare",
       "description": "Permanently Upgrade a card in your hand."
+    },
+    {
+      "name": "Distilled ",
+      "rarity": "Bomb",
+      "description": ""
     },
     {
       "name": "Grenade",
@@ -1257,7 +2211,7 @@
     {
       "name": "Mini-Nuke",
       "rarity": "Bomb",
-      "description": "Deal 30 damage to ALL enemies."
+      "description": "Deal 25 damage to ALL enemies."
     },
     {
       "name": "Pulse Bomb",
@@ -1275,31 +2229,31 @@
   ],
   "keywords": [
     {
-      "name": "Thewidow:Beta",
+      "name": "Beta",
       "description": "This card can be upgraded any number of times."
     },
     {
-      "name": "Thewidow:Downgrade",
-      "description": "Downgrading a card undoes the effects of any Upgrades that have been applied to it."
+      "name": "Beta+",
+      "description": "This card can be upgraded any number of times. Each upgrade is progressively better."
     },
     {
-      "name": "Thewidow:Grenade",
+      "name": "Downgrade",
+      "description": "Downgrading a card undoes the effects of one Upgrade that has been applied to it."
+    },
+    {
+      "name": "Grenade",
       "description": "Potion\nDeal 10 damage to an enemy."
     },
     {
-      "name": "Thewidow:Mini-nuke",
-      "description": "Potion\nDeal 30 damage to ALL enemies."
+      "name": "Mini-Nuke",
+      "description": "Potion\nDeal 25 damage to ALL enemies."
     },
     {
-      "name": "Multiword Keyword",
-      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+      "name": "Necrosis",
+      "description": "Increases damage taken from Attacks. Reduced by half each turn."
     },
     {
-      "name": "Thewidow:Necrosis",
-      "description": "Increases damage taken from attacks. Reduced by half each turn."
-    },
-    {
-      "name": "Thewidow:Paralysis",
+      "name": "Paralysis",
       "description": "Paralyzed enemies attack 1 less time when multi-attacking."
     },
     {
@@ -1307,12 +2261,12 @@
       "description": "Potion\nDeal 20 damage to an enemy and 10 damage to all other enemies."
     },
     {
-      "name": "Thewidow:Web",
-      "description": "Whenever you take Attack damage, reduce the damage by half and lose 1 Web."
+      "name": "Silk Potion",
+      "description": "Potion\nGain 3 Web."
     },
     {
-      "name": "Thewidow:keyword",
-      "description": "Whenever you play a card, gain 1 dexterity this turn only."
+      "name": "Web",
+      "description": "Reduce the damage of the next X Attacks by #b25%."
     }
   ]
 }
