@@ -1,0 +1,1138 @@
+{
+  "mod": {
+    "name": "Agumon",
+    "version": "0.5.2",
+    "authors": ["gAsOk"],
+    "credits": "Basemod, ModTheSpire, #modding",
+    "description": "Agumon Mod Test (2021.03.23)\nThis mod supports Korean, English, Japanese, Simplified Chinese.\nThe translation may be wrong.\nIf something is unnatural, I would appreciate it if you let me know in the comments.\nThis mod is based on Digimon Adventure: (2020).\nIf you haven't seen it, this mod could be a spoiler.\nex) Card image, Event",
+    "mts_version": "3.8.0",
+    "sts_version": "12-14-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Claw",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. "
+    },
+    {
+      "name": "Claw+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. "
+    },
+    {
+      "name": "Defend",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block."
+    },
+    {
+      "name": "Digivolution",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "1",
+      "description": "Retain.\nCan be used when the HP is less than 90%. Consumes 6 agumon:courage. Agumon agumon:digivolve into Greymon. At least HP : "
+    },
+    {
+      "name": "Digivolution+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "0",
+      "description": "Retain.\nCan be used when the HP is less than 90%. Consumes 6 agumon:courage. Agumon agumon:digivolve into Greymon. At least HP : "
+    },
+    {
+      "name": "Brave Tornado",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Brave Tornado+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage to ALL enemies."
+    },
+    {
+      "name": "Claw",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. "
+    },
+    {
+      "name": "Claw+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. "
+    },
+    {
+      "name": "Defend",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block."
+    },
+    {
+      "name": "Defend",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block."
+    },
+    {
+      "name": "Defend",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Gaia Force",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 3 agumon:courage. Deal 13 damage to ALL enemies. Apply 1 agumon:burn to ALL enemies."
+    },
+    {
+      "name": "Gaia Force(One Hand)",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 2 agumon:courage. Deal 12 damage. Apply 2 agumon:burn."
+    },
+    {
+      "name": "Gaia Force(One Hand)+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 2 agumon:courage. Deal 16 damage. Apply 3 agumon:burn."
+    },
+    {
+      "name": "Gaia Force+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 3 agumon:courage. Deal 16 damage to ALL enemies. Apply 2 agumon:burn to ALL enemies."
+    },
+    {
+      "name": "Giga Storm",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 3 agumon:courage. Deal 11 damage to ALL enemies. Apply 1 agumon:burn to ALL enemies."
+    },
+    {
+      "name": "Giga Storm+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 3 agumon:courage. Deal 14 damage to ALL enemies. Apply 2 agumon:burn to ALL enemies."
+    },
+    {
+      "name": "Mega Burst",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 3 agumon:courage. Deal 9 damage to ALL enemies. Apply 1 agumon:burn to ALL enemies."
+    },
+    {
+      "name": "Mega Burst+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 3 agumon:courage. Deal 12 damage to ALL enemies. Apply 2 agumon:burn to ALL enemies."
+    },
+    {
+      "name": "Mega Claw",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. "
+    },
+    {
+      "name": "Mega Claw+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. "
+    },
+    {
+      "name": "Mega Flame",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 2 agumon:courage. Deal 10 damage. Apply 2 agumon:burn."
+    },
+    {
+      "name": "Mega Flame+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 2 agumon:courage. Deal 14 damage. Apply 3 agumon:burn."
+    },
+    {
+      "name": "Over Flame",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 2 agumon:courage. Deal 11 damage. Apply 2 agumon:burn."
+    },
+    {
+      "name": "Over Flame+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 2 agumon:courage. Deal 15 damage. Apply 3 agumon:burn."
+    },
+    {
+      "name": "Super Digivolution",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Retain.\nCan only be used while fighting an elite or boss. Consumes 10 agumon:courage. Greymon Super agumon:digivolve into Metalgreymon."
+    },
+    {
+      "name": "Super Digivolution+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Retain.\nCan only be used while fighting an elite or boss. Consumes 10 agumon:courage. Greymon Super agumon:digivolve into Metalgreymon."
+    },
+    {
+      "name": "Tail Whip",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Tail Whip",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies."
+    },
+    {
+      "name": "Tail Whip+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage to ALL enemies."
+    },
+    {
+      "name": "Tail Whip+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies."
+    },
+    {
+      "name": "Trident Arm",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. "
+    },
+    {
+      "name": "Trident Arm+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. "
+    },
+    {
+      "name": "Ultimate Digivolution",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Retain.\nCan only be used while fighting an elite or boss. Consumes 10 agumon:courage. Metalgreymon Ultimate agumon:digivolve into Wargreymon."
+    },
+    {
+      "name": "Ultimate Digivolution+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Retain.\nCan only be used while fighting an elite or boss. Consumes 10 agumon:courage. Metalgreymon Ultimate agumon:digivolve into Wargreymon."
+    },
+    {
+      "name": "War of Past",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage the number of times Agumon digivolved in this game. Total : "
+    },
+    {
+      "name": "War of Past+",
+      "color": "Default_gray_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage the number of times Agumon digivolved in this game. Total : "
+    },
+    {
+      "name": "Baby Flame",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 2 agumon:courage. Deal 8 damage. Apply 1 agumon:burn."
+    },
+    {
+      "name": "Baby Flame+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 2 agumon:courage. Deal 12 damage. Apply 2 agumon:burn."
+    },
+    {
+      "name": "Brave Attack",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Gain 2 agumon:courage."
+    },
+    {
+      "name": "Brave Attack+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Gain 4 agumon:courage."
+    },
+    {
+      "name": "Burger Jack",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 4 HP.\nExhaust."
+    },
+    {
+      "name": "Burger Jack+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 7 HP.\nExhaust."
+    },
+    {
+      "name": "Cooperation",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card, gain 2 agumon:courage."
+    },
+    {
+      "name": "Cooperation+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card, gain 3 agumon:courage."
+    },
+    {
+      "name": "Cramped Way",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Consumes 4 agumon:courage. If there is only one enemy, gain 2 Strength and draw 1 card."
+    },
+    {
+      "name": "Cramped Way+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Consumes 4 agumon:courage. If there is only one enemy, gain 3 Strength and draw 1 cards."
+    },
+    {
+      "name": "Data Scan",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card. Gain agumon:courage for 3 times the cost of that card."
+    },
+    {
+      "name": "Data Scan+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card. Gain agumon:courage for 5 times the cost of that card."
+    },
+    {
+      "name": "Demilitarization",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Consumes 2 agumon:courage. Deal 10 damage. Enemy lose 1 Strength.\nExhaust"
+    },
+    {
+      "name": "Demilitarization+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Consumes 2 agumon:courage. Deal 13 damage. Enemy lose 2 Strength.\nExhaust"
+    },
+    {
+      "name": "Fury Claw",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Fury Claw+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies."
+    },
+    {
+      "name": "Last Hope",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played if there are no cards in your draw pile. Gain 8 agumon:courage ."
+    },
+    {
+      "name": "Last Hope+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played if there are no cards in your draw pile. Gain 12 agumon:courage ."
+    },
+    {
+      "name": "Posture Correction",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. If you played an Attack, draw 1 card."
+    },
+    {
+      "name": "Posture Correction+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block. If you played an Attack, draw 2 cards."
+    },
+    {
+      "name": "Vital Spot Attack",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Apply 1 Weak."
+    },
+    {
+      "name": "Vital Spot Attack+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Apply 2 Weak."
+    },
+    {
+      "name": "Weakness Analysis",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Vulnerable."
+    },
+    {
+      "name": "Weakness Analysis+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 4 Vulnerable."
+    },
+    {
+      "name": "Baby Burner",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 3 agumon:courage. Deal 7 damage to ALL enemies. Apply 1 agumon:burn to ALL enemies."
+    },
+    {
+      "name": "Baby Burner+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 3 agumon:courage. Deal 10 damage to ALL enemies. Apply 2 agumon:burn to ALL enemies."
+    },
+    {
+      "name": "Big Explosion",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Double ALL enemy agumon:burn. Deal -1 damage per agumon:burn to ALL enemy."
+    },
+    {
+      "name": "Big Explosion+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Triple ALL enemy agumon:burn. Deal -1 damage per agumon:burn to ALL enemy."
+    },
+    {
+      "name": "Body Slam",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can be used when agumon:level is above Champion. Lose 3 HP. Deal 10 damage. Draw 1 card."
+    },
+    {
+      "name": "Body Slam+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can be used when agumon:level is above Champion. Lose 3 HP. Deal 13 damage. Draw 2 cards."
+    },
+    {
+      "name": "Chase",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Consume 3 agumon:courage. Gain [E] .\nExhaust"
+    },
+    {
+      "name": "Chase+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Consume 3 agumon:courage. Gain [E] ."
+    },
+    {
+      "name": "Crisis",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If your HP is less than enemy, heal by 10% of the difference.\nExhaust Amount : "
+    },
+    {
+      "name": "Crisis+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate. If your HP is less than enemy, heal by 10% of the difference.\nExhaust Amount : "
+    },
+    {
+      "name": "Devolution",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Devolution 1 agumon:level. Lost ALL agumon:courage, heal 20% of MAX HP.\nExhaust"
+    },
+    {
+      "name": "Devolution+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Devolution 1 agumon:level. Lost ALL agumon:courage, heal 40% of MAX HP.\nExhaust"
+    },
+    {
+      "name": "Emergency Tool",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If HP is 25% or less 25%, you can play this card. Consumes 4 agumon:courage. Discards ALL cards. Draw 3 cards, gain [E] [E] [E]\nExhaust."
+    },
+    {
+      "name": "Emergency Tool+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If HP is 25% or less 25%, you can play this card. Consumes 4 agumon:courage. Discards ALL cards. Draw 4 cards, gain [E] [E] [E] [E]\nExhaust."
+    },
+    {
+      "name": "Friend's Leather",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Consumes 3 agumon:courage. Gain 2 Dexterity."
+    },
+    {
+      "name": "Friend's Leather+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Consumes 3 agumon:courage. Gain 3 Dexterity."
+    },
+    {
+      "name": "Frontal Defend",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can be used when agumon:level is above Champion. Gain 9 Block. If the enemy intends to attack, gain 3 agumon:courage."
+    },
+    {
+      "name": "Frontal Defend+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can be used when agumon:level is above Champion. Gain 12 Block. If the enemy intends to attack, gain 5 agumon:courage."
+    },
+    {
+      "name": "Good Rival",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "If you play 20 or more cards in this battle, gain 7 agumon:courage and gain 3 Strength."
+    },
+    {
+      "name": "Good Rival+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "If you play 15 or more cards in this battle, gain 10 agumon:courage and gain 6 Strength."
+    },
+    {
+      "name": "Helping Hand",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Consume 3 agumon:courage. Gain [E] . Discard 1 card."
+    },
+    {
+      "name": "Helping Hand+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Consume 3 agumon:courage. Gain [E] [E] . Discard 1 card."
+    },
+    {
+      "name": "Into The Storm",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is discarded from your hand, gain 3 agumon:courage and heal 2 HP."
+    },
+    {
+      "name": "Into The Storm+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is discarded from your hand, gain 3 agumon:courage and heal 5 HP."
+    },
+    {
+      "name": "Physical Shock",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 2 HP. Remove ALL debuffs for player. Gain 5 agumon:courage."
+    },
+    {
+      "name": "Physical Shock+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 2 HP. Remove ALL debuffs for player. Gain 7 agumon:courage."
+    },
+    {
+      "name": "Pressure",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can be used when agumon:level is above Ultimate. Gain 3 agumon:courage, apply 2 Weak and Vulnerable to ALL enemies.\nexhaust"
+    },
+    {
+      "name": "Pressure+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can be used when agumon:level is above Ultimate. Gain 3 agumon:courage, apply 2 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Ready for Camping",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards, discard 1 card."
+    },
+    {
+      "name": "Ready for Camping+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards, discard 1 card."
+    },
+    {
+      "name": "Rewarding Break",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal hp for 50% of agumon:courage you have. Draw 1 card.\nExhaust\nHeal : "
+    },
+    {
+      "name": "Rewarding Break+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal hp for 100% of agumon:courage you have. Draw 1 card.\nExhaust\nHeal : "
+    },
+    {
+      "name": "Sign of Evolution",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 agumon:courage."
+    },
+    {
+      "name": "Sign of Evolution+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. At the start of your turn, gain 1 agumon:courage."
+    },
+    {
+      "name": "Surprised party",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "For each time you play a card that restores HP, gain [E] ."
+    },
+    {
+      "name": "Surprised party+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "For each time you play a card that restores HP, gain [E] ."
+    },
+    {
+      "name": "Trample",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can be used when agumon:level is above Champion. Deal 10 damage, Gain 2 agumon:courage per monster in this room. Total : "
+    },
+    {
+      "name": "Trample+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can be used when agumon:level is above Champion. Deal 10 damage, Gain 3 agumon:courage per monster in this room. Total : "
+    },
+    {
+      "name": "Weakness Point",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Consumes 3 agumon:courage. Deal 8 damage. If enemy has Weak or Vulnerable, increase it 2."
+    },
+    {
+      "name": "Weakness Point+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Consumes 3 agumon:courage. Deal 8 damage. If enemy has Weak or Vulnerable, increase it 4."
+    },
+    {
+      "name": "Absorb Data",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Consumes 3 agumon:courage. Whenever you attack, heal 1 HP."
+    },
+    {
+      "name": "Absorb Data+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. Consumes 3 agumon:courage. Whenever you attack, heal 1 HP."
+    },
+    {
+      "name": "Brave Shield",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Wargreymon agumon:only. Consumes 2 agumon:courage. At the end of your turn, for each enemy with intent to attack gain 4 block."
+    },
+    {
+      "name": "Brave Shield+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Wargreymon agumon:only. Consumes 2 agumon:courage. At the end of your turn, for each enemy with intent to attack gain 5 block."
+    },
+    {
+      "name": "Bulk up",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 5 Gold. Gain 1 permanent MAX HP.  Something mights happen..."
+    },
+    {
+      "name": "Bulk up+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 3 Gold. Gain 1 permanent MAX HP.  Something mights happen..."
+    },
+    {
+      "name": "Digi Egg",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can be used when agumon:level is above Ultimate. Devolve to Rookie heal 30% of MAX hp. Gain 1 permenant MAX HP per each monster in this battle. Amount : "
+    },
+    {
+      "name": "Digi Egg+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can be used when agumon:level is above Ultimate. Devolve to Rookie heal 30% of MAX hp. Gain 2 permenant MAX HP per each monster in this battle. Amount : "
+    },
+    {
+      "name": "Finisher Blow",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Consumes 2 agumon:courage. Deal 6 damage for each cards played this turn. Total : "
+    },
+    {
+      "name": "Finisher Blow+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Consumes 2 agumon:courage. Deal 10 damage for each cards played this turn. Total : "
+    },
+    {
+      "name": "Giga Destroyer",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Metalgreymon agumon:only. Deal 15 twice, draw 2 cards."
+    },
+    {
+      "name": "Giga Destroyer+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Metalgreymon agumon:only. Deal 19 twice, draw 2 cards."
+    },
+    {
+      "name": "Headbutt",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 2 agumon:courage. Deal 13 damage. If the enemy intends to attack, it doubles the damage."
+    },
+    {
+      "name": "Headbutt+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Consumes 3 agumon:courage. Deal 13 damage. If the enemy intends to attack, it triples the damage."
+    },
+    {
+      "name": "Inherit Dragon",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose ALL agumon:courage. For this turn, as much strength as the lost agumon:courage gain Strength. Amount : "
+    },
+    {
+      "name": "Inherit Dragon+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose ALL agumon:courage. For this turn, as much strength as the lost agumon:courage gain Strength. Amount : "
+    },
+    {
+      "name": "One Point Attack",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage. If this kills a monster, draw 2 cards."
+    },
+    {
+      "name": "One Point Attack+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage. If this kills a monster, draw 3 cards."
+    },
+    {
+      "name": "Over Flowing",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Strength per 30 MAX HP. Gain : "
+    },
+    {
+      "name": "Over Flowing+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Strength per 25 MAX HP. Gain : "
+    },
+    {
+      "name": "Telecommunication",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card from your draw pile and place it into your hand. Its cost is reduced by 1 during this turn."
+    },
+    {
+      "name": "Telecommunication+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate. Choose a card from your draw pile and place it into your hand. Its cost is reduced by 1 during this turn."
+    },
+    {
+      "name": "Weird Face",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Protect enemy attacks 1 time.\nExhaust."
+    },
+    {
+      "name": "Weird Face+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Protect enemy attacks 2 times.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Digivice",
+      "tier": "Starter",
+      "pool": "Default_gray_color",
+      "description": "At the start of your turn, gain 2 agumon:courage.\nAt the start of each combat after clearing the Act 1 boss, there is a 60% chance to obtain the Crest Of Courage.",
+      "flavorText": "The medium that connects Digimon and humans."
+    },
+    {
+      "name": "Dramon Killer",
+      "tier": "Uncommon",
+      "pool": "Default_gray_color",
+      "description": "If you are an elite or boss room, gain 3 Strength at the start of the battle.",
+      "flavorText": "It is an unusual weapon that reacts strongly to certain enemies."
+    },
+    {
+      "name": "Ruby Gemstone",
+      "tier": "Uncommon",
+      "pool": "Default_gray_color",
+      "description": "Gain 250 Gold. At the start of battle, gain 4 Block.",
+      "flavorText": "Ruby picked up from the edge of a cliff"
+    },
+    {
+      "name": "Holly Ring",
+      "tier": "Rare",
+      "pool": "Default_gray_color",
+      "description": "Every time you play 4 cards, heal 1 HP.",
+      "flavorText": "This is the Holy Ring held by the Holy Digimon."
+    },
+    {
+      "name": "Power of Qinglongmon",
+      "tier": "Rare",
+      "pool": "Default_gray_color",
+      "description": "You can only use when agumon:level is Rookie and battle with Elite or Boss. You can Warp Digivolve to Mega.",
+      "flavorText": "Qinglongmon shared power for The DigiDestined Child"
+    },
+    {
+      "name": "Crest of Courage",
+      "tier": "Special",
+      "pool": "Default_gray_color",
+      "description": "If agumon has Crest, he can digivolve beyond a Ultimate.",
+      "flavorText": "Courage not afraid of death"
+    },
+    {
+      "name": "Holy Power",
+      "tier": "Special",
+      "pool": "Default_gray_color",
+      "description": "Gain 1 War Of Past.",
+      "flavorText": "It is the Power received from the holy Digimon. The light gets stronger as it #yagumon:digivolve ."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Agumon",
+      "type": "Player",
+      "minHP": "60",
+      "maxHP": "60"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Agumon:burn",
+      "description": "At the end of turn, Enemy lost 10% of MAX HP and Burn is reduce by 1"
+    },
+    {
+      "name": "Agumon:courage",
+      "description": "You can do powerful actions to use courage. Even attack cards do not attack, it is treated as an attack card. If you don't have enough Courage, the card will costs 0 and effect becomes 'Gain 1(2) of the Courage'."
+    },
+    {
+      "name": "Agumon:digivolve",
+      "description": "Digimon gets stronger and stronger through digivolution. Crest is required to digivolve beyond Champion."
+    },
+    {
+      "name": "Agumon:level",
+      "description": "Evolutionary stage of Digimon. The order is Rookie - Champion - Ultimate - Mega."
+    },
+    {
+      "name": "Agumon:only",
+      "description": "A card that can only be used by Digimon written on the front. It's created in Deck when you digivolve and disappears when you devolve."
+    }
+  ]
+}
