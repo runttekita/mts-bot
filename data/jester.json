@@ -1,0 +1,1365 @@
+{
+  "mod": {
+    "name": "JesterMod",
+    "version": "0.10.1",
+    "authors": ["Pingumask"],
+    "credits": "",
+    "description": "Adds the Jester character with his own deck and relics.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Detonate",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nDeal 10 damage to ALL enemies when drawn.\nEthereal."
+    },
+    {
+      "name": "Detonate+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nDeal 14 damage to ALL enemies when drawn.\nEthereal."
+    },
+    {
+      "name": "Hopeless",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, gain 1 Vulnerable and 1 Weakened.\nEthereal."
+    },
+    {
+      "name": "Juggling Ball",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable\njestermod:Bouncing, Ethereal.\nWhen this card is Discarded or Exhausted, deal 5 damage to a random enemy."
+    },
+    {
+      "name": "Juggling Ball+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable\njestermod:Bouncing, Ethereal.\nWhen this card is Discarded or Exhausted, deal 7 damage to a random enemy."
+    },
+    {
+      "name": "Prank",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "jestermod:Recycle 2.\nExhaust.\njestermod:Bouncing."
+    },
+    {
+      "name": "Prank+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "jestermod:Recycle 2.\nExhaust.\njestermod:Bouncing, Retain."
+    },
+    {
+      "name": "Defend",
+      "color": "Jester_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Jester_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Dodge",
+      "color": "Jester_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\njestermod:Recycle 1."
+    },
+    {
+      "name": "Dodge+",
+      "color": "Jester_orange",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\njestermod:Recycle 1."
+    },
+    {
+      "name": "Sickle",
+      "color": "Jester_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\njestermod:Recycle 1."
+    },
+    {
+      "name": "Sickle+",
+      "color": "Jester_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\njestermod:Recycle 2."
+    },
+    {
+      "name": "Strike",
+      "color": "Jester_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Jester_orange",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Seek",
+      "color": "Jester_orange",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nReplace this card with a *Hide."
+    },
+    {
+      "name": "Seek+",
+      "color": "Jester_orange",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nReplace this card with a *Hide+."
+    },
+    {
+      "name": "Anticipation",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block next turn."
+    },
+    {
+      "name": "Anticipation+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 10 Block next turn."
+    },
+    {
+      "name": "Bouncing Knife",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nWhen discarded, deal 7 damage to a random enemy.\njestermod:Bouncing."
+    },
+    {
+      "name": "Bouncing Knife+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nWhen discarded, deal 10 damage to a random enemy.\njestermod:Bouncing."
+    },
+    {
+      "name": "Butter Knife",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\njestermod:Elusive."
+    },
+    {
+      "name": "Butter Knife+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\njestermod:Elusive."
+    },
+    {
+      "name": "Dancing Mad",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand.\nDraw 3 cards.\njestermod:Elusive."
+    },
+    {
+      "name": "Dancing Mad+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand.\nDraw 3 cards."
+    },
+    {
+      "name": "Disposophobia",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When you discard a card, deal 3 damage to this enemy.\nExhaust."
+    },
+    {
+      "name": "Disposophobia+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When you discard a card, deal 3 damage to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Feint",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw a card for each card discarded this turn"
+    },
+    {
+      "name": "Feint+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw a card for each card discarded this turn"
+    },
+    {
+      "name": "Hide",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nReplace this card with a *Seek."
+    },
+    {
+      "name": "Hide+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nReplace this card with a *Seek+."
+    },
+    {
+      "name": "Jack In The Box",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nAdd a *Prank to your draw pile."
+    },
+    {
+      "name": "Jack In The Box+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nAdd a *Prank to your draw pile."
+    },
+    {
+      "name": "OblivionStrike",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you have discarded a card this turn, deal 7 damage again."
+    },
+    {
+      "name": "OblivionStrike+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf you have discarded a card this turn, deal 9 damage again."
+    },
+    {
+      "name": "Patience",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain [E] [E] [E] and draw 3 cards next turn."
+    },
+    {
+      "name": "Patience+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain [E] [E] [E] and draw 3 cards next turn."
+    },
+    {
+      "name": "Prankster",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Add a *Prank to your hand each turn."
+    },
+    {
+      "name": "Prankster+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Add a *Prank to your hand each turn.\nInnate."
+    },
+    {
+      "name": "Precipitation",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you shuffle your draw pile, deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Precipitation+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you shuffle your draw pile, deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Quick Strike",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDraw a card at the start of your next turn."
+    },
+    {
+      "name": "Quick Strike+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDraw a card at the start of your next turn."
+    },
+    {
+      "name": "Rebuff",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you are Weakened, deal 7 damage again."
+    },
+    {
+      "name": "Rebuff+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf you are Weakened, deal 10 damage again."
+    },
+    {
+      "name": "Reckless Strike",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nGain 1 Frail."
+    },
+    {
+      "name": "Reckless Strike+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nGain 1 Frail."
+    },
+    {
+      "name": "Self-Mockery",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd a *Prank to your draw pile."
+    },
+    {
+      "name": "Self-Mockery+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nAdd a *Prank to your draw pile."
+    },
+    {
+      "name": "Smoke Screen",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak to every monster.\nGain 1 Weak."
+    },
+    {
+      "name": "Smoke Screen+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak to every monster.\nGain 1 Weak."
+    },
+    {
+      "name": "Tinker",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nUpgrade a card in your hand for the rest of combat."
+    },
+    {
+      "name": "Tinker+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nUpgrade all cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Tricky Dodge",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nGain 1 Weak."
+    },
+    {
+      "name": "Tricky Dodge+",
+      "color": "Jester_orange",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Block.\nGain 1 Weak."
+    },
+    {
+      "name": "Arrythmia",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Alternatively gain [E] [E] or lose [E] at the start of your turn."
+    },
+    {
+      "name": "Arrythmia+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Alternatively gain [E] [E] or lose [E] at the start of your turn.\nInnate."
+    },
+    {
+      "name": "Contradiction",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever Weak, Vulnerable or Frail is applied to you, gain 1 Strength."
+    },
+    {
+      "name": "Contradiction+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever Weak, Vulnerable or Frail is applied to you, gain 1 Strength.\nInnate."
+    },
+    {
+      "name": "Dagger Rain",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage 6 times.\nExhaust."
+    },
+    {
+      "name": "Dagger Rain+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage 6 times."
+    },
+    {
+      "name": "Dance of Chaos",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Play the top X cards from your draw pile.\nExhaust."
+    },
+    {
+      "name": "Dance of Chaos+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Play the top X cards from your draw pile."
+    },
+    {
+      "name": "Desperate Strike",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nAdd a *Hopeless to your hand.\njestermod:Recycle 1."
+    },
+    {
+      "name": "Desperate Strike+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 22 damage.\nAdd a *Hopeless to your hand.\njestermod:Recycle 1."
+    },
+    {
+      "name": "Dilapidation",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDiscard all cards in your hand."
+    },
+    {
+      "name": "Dilapidation+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nDiscard all cards in your hand."
+    },
+    {
+      "name": "Discretion",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Block is not removed at the start of your next turn.\nExhaust"
+    },
+    {
+      "name": "Discretion+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Block is not removed at the start of your next turn."
+    },
+    {
+      "name": "Exasperation",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever Weak, Vulnerable or Frail is applied to you, deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Exasperation+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever Weak, Vulnerable or Frail is applied to you, deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Flame Dance",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nWhenever you are attacked this turn, deal 6 damage back."
+    },
+    {
+      "name": "Flame Dance+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nWhenever you are attacked this turn, deal 10 damage back."
+    },
+    {
+      "name": "Flee",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is discarded from your hand, gain 7 Block."
+    },
+    {
+      "name": "Flee+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable, jestermod:Bouncing.\nIf this card is discarded from your hand, gain 7 Block."
+    },
+    {
+      "name": "Frenzy",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an attack, gain 1 temporary Strength.\nWhenever you play a skill, Gain 1 temporary Dexterity."
+    },
+    {
+      "name": "Frenzy+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an attack, gain 1 temporary Strength.\nWhenever you play a skill, Gain 1 temporary Dexterity.\nInnate."
+    },
+    {
+      "name": "Haste",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you draw this card, draw 2 cards."
+    },
+    {
+      "name": "Haste+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you draw this card, draw 2 cards.\njestermod:Elusive."
+    },
+    {
+      "name": "Hit & Run",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nGain 12 Block at the start of your next turn."
+    },
+    {
+      "name": "Hit & Run+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nGain 15 Block at the start of your next turn."
+    },
+    {
+      "name": "Illness",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 99 Weak.\nExhaust."
+    },
+    {
+      "name": "Illness+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 99 Weak.\nExhaust."
+    },
+    {
+      "name": "Inspiration",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nGain [E] when drawn."
+    },
+    {
+      "name": "Inspiration+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nGain [E] when drawn.\njestermod:Elusive."
+    },
+    {
+      "name": "Juggler blade",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to a random enemy for each card discarded this turn."
+    },
+    {
+      "name": "Juggler blade+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to a random enemy for each card discarded this turn."
+    },
+    {
+      "name": "Light the Wick",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a *Detonate to your discard pile."
+    },
+    {
+      "name": "Light the Wick+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a *Detonate to your draw pile."
+    },
+    {
+      "name": "Loot",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Gold.\nExhaust."
+    },
+    {
+      "name": "Loot+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Gold.\nExhaust."
+    },
+    {
+      "name": "Mending",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you discard a card, gain 1 Block."
+    },
+    {
+      "name": "Mending+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you discard a card, gain 1 Block.\nInnate."
+    },
+    {
+      "name": "Mud Ball",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage.\nAdd a *Slimed to your draw pile."
+    },
+    {
+      "name": "Mud Ball+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 14 damage.\nAdd a *Slimed to your draw pile."
+    },
+    {
+      "name": "Pause",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard your hand.\nGain [E] next turn.\nExhaust."
+    },
+    {
+      "name": "Pause+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard your hand.\nGain [E] [E] next turn.\nExhaust."
+    },
+    {
+      "name": "Perfect Dodge",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Prevent the next time you would lose HP.\nYou cannot gain block from cards until the end of your next turn."
+    },
+    {
+      "name": "Perfect Dodge+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Prevent the next time you would lose HP.\nYou cannot gain block from cards until the end of your next turn."
+    },
+    {
+      "name": "Procrastination",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand.\nDraw that many cards next turn.\nExhaust."
+    },
+    {
+      "name": "Procrastination+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard your hand.\nDraw that many cards next turn.\nExhaust."
+    },
+    {
+      "name": "Schizophrenia",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, choose a red, green, blue or purple card to add to your hand."
+    },
+    {
+      "name": "Schizophrenia+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, choose a red, green, blue or purple card to add to your hand."
+    },
+    {
+      "name": "Swift Dodge",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Swift Dodge+1",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nCan be upgraded any number of times."
+    },
+    {
+      "name": "Swiftness",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 *Plated *Armor."
+    },
+    {
+      "name": "Swiftness+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 5 *Plated *Armor."
+    },
+    {
+      "name": "Talion",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to the enemy for each time you lost HP this combat."
+    },
+    {
+      "name": "Talion+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to the enemy for each time you lost HP this combat."
+    },
+    {
+      "name": "Taunt",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Vulnerable to every monster.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Taunt+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Vulnerable to every monster.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Twirl",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nIf you are Vulnerable, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Twirl+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf you are Vulnerable, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Unleash",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is discarded from your hand, deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Unleash+",
+      "color": "Jester_orange",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is discarded from your hand, deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Boil Down",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nIf Fatal obtain a random potion."
+    },
+    {
+      "name": "Boil Down+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage.\nIf Fatal obtain a random potion."
+    },
+    {
+      "name": "Butterfly Dance",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Shuffle X random attacks, skills AND powers into your draw pile. They cost 0 this combat.\nExhaust."
+    },
+    {
+      "name": "Butterfly Dance+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Innate.\nShuffle X random attacks, skills AND powers into your draw pile. They cost 0 this combat.\nExhaust."
+    },
+    {
+      "name": "Drunkenness",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain -2 to 3 Strength and -2 to 3 Dexterity."
+    },
+    {
+      "name": "Drunkenness+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain -2 to 3 Strength and -2 to 3 Dexterity.\nInnate."
+    },
+    {
+      "name": "Encore",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Replays the previous card.\nExhaust."
+    },
+    {
+      "name": "Encore+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Replays the previous card.\nExhaust, jestermod:Bouncing."
+    },
+    {
+      "name": "Experimental Treatment",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove any Weak, Frail and Vulnerable you have.\nGain as many HP.\njestermod:Buried, Exhaust."
+    },
+    {
+      "name": "Experimental Treatment+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove any Weak, Frail and Vulnerable you have.\nGain as many HP.\njestermod:Buried, Exhaust."
+    },
+    {
+      "name": "Finale",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 50 damage.\nYou cannot gain block from cards for 3 turns.\nExhaust."
+    },
+    {
+      "name": "Finale+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 50 damage.\nYou cannot gain block from cards for 2 turns.\nExhaust."
+    },
+    {
+      "name": "Frustration",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 30 damage to ALL enemies.\nOnly playable if you are Frail, Vulnerable or Weak."
+    },
+    {
+      "name": "Frustration+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 40 damage to ALL enemies.\nOnly playable if you are Frail, Vulnerable or Weak."
+    },
+    {
+      "name": "Hedgehog Form",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, gain 2 thorns."
+    },
+    {
+      "name": "Hedgehog Form+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, gain 3 thorns."
+    },
+    {
+      "name": "Juggle",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your hand.\nAdd that many *Juggling *Balls to your hand.\nExhaust."
+    },
+    {
+      "name": "Juggle+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Discard your hand.\nAdd that many *Juggling *Balls+ to your hand.\nExhaust."
+    },
+    {
+      "name": "Juggler",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "When you discard a card, add a *Juggling *Ball to your hand."
+    },
+    {
+      "name": "Juggler+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you discard a card, add a *Juggling *Ball to your hand."
+    },
+    {
+      "name": "Laughing Gas",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply -1 Strength.\njestermod:Buried, jestermod:Elusive."
+    },
+    {
+      "name": "Laughing Gas+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply -1 Strength to ALL enemies.\njestermod:Buried, jestermod:Elusive."
+    },
+    {
+      "name": "Leeches",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 12 HP.\nGain 6 *Regeneration."
+    },
+    {
+      "name": "Leeches+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 9 HP.\nGain 6 *Regeneration."
+    },
+    {
+      "name": "Momentum",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 1 *Plated *Armor."
+    },
+    {
+      "name": "Momentum+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 *Plated *Armor."
+    },
+    {
+      "name": "Overthink",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "jestermod:Recycle 3.\nGain [E].\nExhaust."
+    },
+    {
+      "name": "Overthink+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "jestermod:Recycle 3.\nGain [E] [E].\nExhaust."
+    },
+    {
+      "name": "Pillage",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a *Feed, *Lesson *Learned, *Boil *Down or *Hand *of *Greed to add to your hand.\nExhaust."
+    },
+    {
+      "name": "Pillage+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a *Feed, *Lesson *Learned, *Boil *Down or *Hand *of *Greed to add to your hand.\nExhaust, Retain."
+    },
+    {
+      "name": "Placebo",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Artifact.\njestermod:Elusive, jestermod:Buried."
+    },
+    {
+      "name": "Placebo+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Artifact.\njestermod:Buried."
+    },
+    {
+      "name": "Squander",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard the top 3 cards from your draw pile."
+    },
+    {
+      "name": "Squander+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard the top 4 cards from your draw pile."
+    },
+    {
+      "name": "Trance",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to a random enemy.\nDiscard the top card from your draw pile, if this is a skill card, play *Trance again."
+    },
+    {
+      "name": "Trance+",
+      "color": "Jester_orange",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to a random enemy.\nDiscard the top card from your draw pile, if this is a skill card, play *Trance again."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Jester's cap",
+      "tier": "Starter",
+      "pool": "Jester_orange",
+      "description": "Every time you shuffle your deck, draw a card.\n(Up to 3 times per turn)",
+      "flavorText": "Dreling Dreling."
+    },
+    {
+      "name": "Bag of Tricks",
+      "tier": "Common",
+      "pool": "Jester_orange",
+      "description": "At the start of battle add a Prank to your hand, discard pile and draw pile.",
+      "flavorText": ""
+    },
+    {
+      "name": "Large Sleeves",
+      "tier": "Uncommon",
+      "pool": "Jester_orange",
+      "description": "Every 10 times you discard a card, draw a card.",
+      "flavorText": "Sneeky sneeky !"
+    },
+    {
+      "name": "Jester's mask",
+      "tier": "Rare",
+      "pool": "Jester_orange",
+      "description": "Every time you shuffle your deck, gain 1 life.",
+      "flavorText": "Hide your sadness."
+    },
+    {
+      "name": "Philosopher's Amphora",
+      "tier": "Rare",
+      "pool": "Jester_orange",
+      "description": "At the start of your turn, Apply 1 Disposophobe to a random ennemy.",
+      "flavorText": "Smells weird, but you don't have the heart to throw it away."
+    },
+    {
+      "name": "Defect's Essence",
+      "tier": "Special",
+      "pool": "",
+      "description": "Blue cards can be obtained.\nGain 1 orb slot.",
+      "flavorText": "What remains of the defect."
+    },
+    {
+      "name": "Ironclad's Essence",
+      "tier": "Special",
+      "pool": "",
+      "description": "Red cards can be obtained.",
+      "flavorText": "What remains of the ironclad."
+    },
+    {
+      "name": "Silent's Essence",
+      "tier": "Special",
+      "pool": "",
+      "description": "Green cards can be obtained.",
+      "flavorText": "What remains of the silent."
+    },
+    {
+      "name": "Watcher's Essence",
+      "tier": "Special",
+      "pool": "",
+      "description": "Purple cards can be obtained.",
+      "flavorText": "What remains of the watcher."
+    },
+    {
+      "name": "HarlequinCap",
+      "tier": "Boss",
+      "pool": "Jester_orange",
+      "description": "When you shuffle your draw pile, choose a card from your draw pile and add it to your hand.\n(Up to 3 times per turn)\nReplaces Jester's Cap.",
+      "flavorText": "Dreling Dreling !"
+    },
+    {
+      "name": "Haunted Lute",
+      "tier": "Boss",
+      "pool": "Jester_orange",
+      "description": "At the start of your turn, Gain [E] and discard a random card.",
+      "flavorText": "Engraves music deep within your soul."
+    },
+    {
+      "name": "Joker Card",
+      "tier": "Boss",
+      "pool": "Jester_orange",
+      "description": "Every 4 times you shuffle your deck, gain 1 intangible.",
+      "flavorText": "Phase out of this world."
+    },
+    {
+      "name": "Loaded Dice",
+      "tier": "Boss",
+      "pool": "Jester_orange",
+      "description": "You can choose what cards are discarded when you recycle.",
+      "flavorText": "Cheater !"
+    },
+    {
+      "name": "Macho Brace",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of your turn, Gain [E] .\nYou can neither gain nor lose Strength or Dexterity.",
+      "flavorText": ""
+    },
+    {
+      "name": "Mirror Mask",
+      "tier": "Shop",
+      "pool": "",
+      "description": "When you become Vulnerable, apply as many Vulnerable to a random enemy.\nWhen you become Weakened, apply as many Weakened to a random enemy.",
+      "flavorText": "No U."
+    },
+    {
+      "name": "Ruski's Broom",
+      "tier": "Shop",
+      "pool": "Jester_orange",
+      "description": "When you discard a curse or status, Exhaust it.",
+      "flavorText": "Forget that."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Jester",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Jestermod:Bouncing",
+      "description": "When this card is discarded, it goes back to your hand."
+    },
+    {
+      "name": "Jestermod:Buried",
+      "description": "At the start of battle, this card is discarded from your draw pile."
+    },
+    {
+      "name": "Jestermod:Elusive",
+      "description": "When this card is drawn, you have 50% chance to discard it and draw another card."
+    },
+    {
+      "name": "Recycle",
+      "description": "Discard X cards and draw as many cards."
+    }
+  ]
+}

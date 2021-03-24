@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "The Immortal",
-    "version": "1.2.6",
+    "version": "1.3",
     "authors": ["squeeny"],
     "credits": "",
     "description": "Reach for the moon, Immortal Smoke!\nThis Mod adds Fujiwara no Mokou [\u85E4\u539F \u59B9\u7D05] from Touhou to Slay the Spire.\n\nWant to translate this?\nReach out to me!",
-    "mts_version": "3.8.0",
-    "sts_version": "01-14-2020",
+    "mts_version": "3.18.1",
+    "sts_version": "11-30-2020",
     "dependencies": ["basemod","stslib","CapriCore"],
     "optional_dependencies": []
   },
@@ -105,7 +105,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "mokoumod:Burst:\nDraw 2 Cards.\nGain [E] [E]."
+      "description": "mokoumod:Burst:\nDraw 2 Cards.\nGain [diffAddS] [E] [diffAddE] [E]. "
     },
     {
       "name": "Ember",
@@ -233,7 +233,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 13 damage.\nGain [E]\nmokoumod:Burst:\nReduce this card's cost by 1 this combat."
+      "description": "Deal 13 damage.\n[diffAddS] Gain [E]\n[diffAddE] mokoumod:Burst:\nReduce this card's cost by 1 this combat. "
     },
     {
       "name": "Overheat",
@@ -249,7 +249,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.\nDraw a card.\nAll attacks in your hand deal 2 additional damage."
+      "description": "Gain 8 Block.\nDraw a card. [diffAddS]\nAll attacks in your hand deal 2 additional damage. [diffAddE] "
     },
     {
       "name": "Resolute Flare",
@@ -313,7 +313,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 3 mokoumod:Ignite.\nApply 2 Vulnerable.\nmokoumod:Burst:\nDraw 2 cards. "
+      "description": "Apply 3 mokoumod:Ignite.\nApply 2 Vulnerable. [diffAddS]\nmokoumod:Burst:\nDraw 2 cards. [diffAddE] "
     },
     {
       "name": "Searing Shot",
@@ -425,7 +425,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 14 Block.\nmokoumod:Burst:\nExhaust a card."
+      "description": "Gain 14 Block.\nmokoumod:Burst:\nExhaust a [diffAddS] card. [diffAddE] "
     },
     {
       "name": "Cataclysm",
@@ -649,7 +649,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "For each mokoumod:Enkindled:\nTriple their mokoumod:Ignite.\nGain their total mokoumod:Ignite.\nRemove their total mokoumod:Ignite."
+      "description": "For each mokoumod:Enkindled:\n[diffAddS] Triple [diffAddE] their mokoumod:Ignite.\nGain their total mokoumod:Ignite.\nRemove their total mokoumod:Ignite. "
     },
     {
       "name": "Icarus Dive",
@@ -777,7 +777,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Exhaust up to 2 cards and gain 1 Energy for each card Exhausted.\nWhen Exhausted, put a card from your exhaust pile into your hand and Upgrade it."
+      "description": "Exhaust up to 2 cards and gain 1 Energy for each card Exhausted.\nWhen Exhausted, put a card from your exhaust pile into your [diffAddS] hand and Upgrade it. [diffAddE] "
     },
     {
       "name": "Refresh",
@@ -793,7 +793,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Add 2 random mokoumod:Burst cards to your hand.\nThey cost 0 this turn."
+      "description": "Add [diffAddS] 2 [diffAddE] random mokoumod:Burst [diffAddS] cards [diffAddE] to your hand.\n[diffAddS] They cost [diffAddE] 0 [diffAddS] this [diffAddE] turn. "
     },
     {
       "name": "Resonance Reactor",
@@ -825,7 +825,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 3 Vigor.\nYour next 2 attacks do not consume Vigor."
+      "description": "Gain 3 Vigor.\nYour next [diffAddS] 2 attacks do [diffAddE] not [diffAddS] consume [diffAddE] Vigor. "
     },
     {
       "name": "Rising Sun Barrier",
@@ -905,7 +905,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Exhaust a card.\nGain [E] [E]"
+      "description": "Exhaust a card.\nGain [E] [diffAddS] [E] [diffAddE] "
     },
     {
       "name": "ThermalPressure",
@@ -969,7 +969,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Add 2 random mokoumod:Ignite cards to your hand.\nThey cost 0 this turn."
+      "description": "Add [diffAddS] 2 [diffAddE] random mokoumod:Ignite [diffAddS] cards [diffAddE] to your hand.\n[diffAddS] They cost [diffAddE] 0 [diffAddS] this [diffAddE] turn. "
     },
     {
       "name": "Burning Hidden Bullet",
@@ -1017,7 +1017,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Purge your Exhaust pile.\nIf *66% of your master your deck was purged, kill all enemies and gain a random rare relic."
+      "description": "Purge your Exhaust pile.\nIf [diffAddS] *66% [diffAddE] of your master [diffAddS] your [diffAddE] deck was purged, kill all enemies and gain a random rare relic. "
     },
     {
       "name": "Forest of the Lost",
@@ -1177,7 +1177,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nmokoumod:Burst:\nPlay a random upgraded attack."
+      "description": "Deal 10 damage.\nmokoumod:Burst:\nPlay a random [diffAddS] upgraded [diffAddE] attack. "
     },
     {
       "name": "Searing Blow",
@@ -1248,33 +1248,5 @@
     }
   ],
   "keywords": [
-      {
-      "name": "Burst",
-      "description": "This effect triggers if the last card played was an Attack."
-    },
-    {
-      "name": "Enkindled",
-      "description": "An Enkindled target is an enemy which has Ignite. Enkindled effects happen before the card's effects."
-    },
-    {
-      "name": "Ignite",
-      "description": "When enemies take unblocked attack damage or when the player is attacked, consume ALL Ignite to give the player an equal amount of Vigor."
-    },
-    {
-      "name": "Overheat",
-      "description": "Overheat grants an additional effect when this card is played. When an Overheat card is played and you no longer have any more stacks, remove Overheat from ALL other cards."
-    },
-    {
-      "name": "Providence",
-      "description": "When you would die, heal 25% of your Max HP, clear all Debuffs and lose Providence."
-    },
-    {
-      "name": "Resonance",
-      "description": "Resonance fills the gauge at the top of the screen and is gained when you play an attack or through card effects. When the gauge fills, consume all stacks and gain Overheat."
-    },
-    {
-      "name": "Unkindled",
-      "description": "An Unkindled target is an enemy which does not have Ignite."
-    }
   ]
 }
