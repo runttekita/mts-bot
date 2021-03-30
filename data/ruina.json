@@ -1,0 +1,773 @@
+{
+  "mod": {
+    "name": "Ruina",
+    "version": "2.1.1",
+    "authors": ["Darkglade, squeeny"],
+    "credits": "",
+    "description": "An alternate Act mod based on Library of Ruina.",
+    "mts_version": "3.18.2",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod","stslib","actlikeit"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Dazzled",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "1",
+      "description": "When Retained, increase its cost by 1 this combat. If its cost is 4 or more, it becomes Unplayable."
+    },
+    {
+      "name": "Forest Keeper's Lock",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enemy loses 40 Strength this turn."
+    },
+    {
+      "name": "Forest Keeper's Lock+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enemy loses 60 Strength this turn."
+    },
+    {
+      "name": "Fragment of Bliss",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 30 Block.\nThis card is not affected by Block modifiers."
+    },
+    {
+      "name": "Stolen Time",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "0",
+      "description": "Draw 1 card."
+    },
+    {
+      "name": "Wisdom",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "1",
+      "description": "Draw 1 card.\nIf a Scarecrow exhausts this card, Stun it next turn."
+    },
+    {
+      "name": "Apocalypse",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage.\nDeals 50% more damage if your HP is at or below 50%.\nDeals 50% more damage to enemies with 50% or less HP."
+    },
+    {
+      "name": "Apocalypse+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 26 damage.\nDeals 50% more damage if your HP is at or below 50%.\nDeals 50% more damage to enemies with 50% or less HP."
+    },
+    {
+      "name": "Beak",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, reduce the cost of the highest cost card in your hand to 0 this combat and give it Exhaust."
+    },
+    {
+      "name": "Beak+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, reduce the cost of the highest cost card in your hand to 0 this combat and give it Exhaust."
+    },
+    {
+      "name": "Blind Rage",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 26 damage to ALL enemies.\nTake 6 damage.\nIf your HP is at or below 50%, this card costs 0."
+    },
+    {
+      "name": "Blind Rage+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 damage to ALL enemies.\nTake 4 damage.\nIf your HP is at or below 50%, this card costs 0."
+    },
+    {
+      "name": "Cobalt Scar",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 5 Attacks, deal 20 damage to ALL enemies."
+    },
+    {
+      "name": "Cobalt Scar+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 5 Attacks, deal 20 damage to ALL enemies."
+    },
+    {
+      "name": "Crimson Scar",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nScry 2.\nFor each card discarded, gain 3 Vigor."
+    },
+    {
+      "name": "Crimson Scar+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nScry 3.\nFor each card discarded, gain 3 Vigor."
+    },
+    {
+      "name": "Dead Silence",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 20 damage.\nTake an extra turn after this one.\nIf this card killed an enemy, gain [E] [E] next turn."
+    },
+    {
+      "name": "Dead Silence+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage.\nTake an extra turn after this one.\nIf this card killed an enemy, gain [E] [E] next turn."
+    },
+    {
+      "name": "Faded Memories",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card for every enemy in combat."
+    },
+    {
+      "name": "Faded Memories+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card for every enemy in combat."
+    },
+    {
+      "name": "False Throne",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, put ALL non-Status non-Curse cards from your exhaust pile into your hand and give them Ethereal."
+    },
+    {
+      "name": "False Throne+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, put ALL non-Status non-Curse cards from your exhaust pile into your hand and give them Ethereal."
+    },
+    {
+      "name": "Gold Rush",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 4 Strength.\nIf the last card played this combat was an Attack, double your Strength."
+    },
+    {
+      "name": "Gold Rush+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 6 Strength.\nIf the last card played this combat was an Attack, double your Strength."
+    },
+    {
+      "name": "Harvest",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 40 damage.\nThis card deals less damage as your HP percent drops (deals max damage at full HP)."
+    },
+    {
+      "name": "Harvest+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 40 damage.\nThis card deals less damage as your HP percent drops (deals max damage at full HP).\nGain 5 Block."
+    },
+    {
+      "name": "Heaven",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 8 Block X times.\nWhenever you are attacked this turn, deal damage back equal to your remaining Block."
+    },
+    {
+      "name": "Heaven+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 10 Block X times.\nWhenever you are attacked this turn, deal damage back equal to your remaining Block."
+    },
+    {
+      "name": "Homing Instinct",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Exhaust up to 1 card.\nAt the start of your turn, gain [E] equal to the cost of the exhausted card."
+    },
+    {
+      "name": "Homing Instinct+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Exhaust up to 1 card.\nAt the start of your turn, gain [E] equal to the cost of the exhausted card."
+    },
+    {
+      "name": "In the Name of Love and Hate",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 42 damage to ALL enemies."
+    },
+    {
+      "name": "In the Name of Love and Hate+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 54 damage to ALL enemies."
+    },
+    {
+      "name": "Justitia",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy's HP is at or below 30%, kill it.\nEnemy loses 11 HP."
+    },
+    {
+      "name": "Justitia+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy's HP is at or below 30%, kill it.\nEnemy loses 14 HP."
+    },
+    {
+      "name": "Lamp",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 4 Strength this turn.\nWhenever you are attacked this turn, deal 8 damage back."
+    },
+    {
+      "name": "Lamp+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 6 Strength this turn.\nWhenever you are attacked this turn, deal 10 damage back."
+    },
+    {
+      "name": "Lumber",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nExhaust up to 2 cards. For each Attack exhausted, add its base damage to this card's damage."
+    },
+    {
+      "name": "Lumber+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nExhaust up to 2 cards. For each Attack exhausted, add its base damage to this card's damage."
+    },
+    {
+      "name": "Mimicry",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 13 damage. Heal HP equal to unblocked damage."
+    },
+    {
+      "name": "Mimicry+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 16 damage. Heal HP equal to unblocked damage."
+    },
+    {
+      "name": "Nihil",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies lose 2 Strength.\nIf you have no cards in hand, this effect is doubled."
+    },
+    {
+      "name": "Nihil+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies lose 3 Strength.\nIf you have no cards in hand, this effect is doubled."
+    },
+    {
+      "name": "Paradise Lost",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, Exhaust up to 1 card.\nWhenever 12 cards are Exhausted, ALL enemies lose 666 HP."
+    },
+    {
+      "name": "Paradise Lost+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, Exhaust up to 2 cards.\nWhenever 12 cards are Exhausted, ALL enemies lose 666 HP."
+    },
+    {
+      "name": "Penitence",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 8 HP.\nRemove all of your debuffs."
+    },
+    {
+      "name": "Penitence+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 8 HP.\nRemove all of your debuffs."
+    },
+    {
+      "name": "Smile",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage and apply 2 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Smile+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage and apply 3 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Sound of a Star",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 10 damage to ALL enemies.\nThis card's damage is increased by the amount of Block you've gained this combat.\nExhaustive 2."
+    },
+    {
+      "name": "Sound of a Star+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to ALL enemies.\nThis card's damage is increased by the amount of Block you've gained this combat.\nExhaustive 2."
+    },
+    {
+      "name": "Sword Sharpened With Tears",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak.\nWhen you play this card on the same enemy 3 times, instead apply 1 Stun and exhaust this card."
+    },
+    {
+      "name": "Sword Sharpened With Tears+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak.\nShuffle this card into your draw pile.\nWhen you play this card on the same enemy 3 times, instead apply 1 Stun and exhaust this card."
+    },
+    {
+      "name": "Thirst",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 9 ruina:Bleed.\nThis turn, whenever you attack an enemy with ruina:Bleed, gain 1 Strength."
+    },
+    {
+      "name": "Thirst+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 9 ruina:Bleed.\nThis turn, whenever you attack an enemy with ruina:Bleed, gain 1 Strength."
+    },
+    {
+      "name": "Twilight",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "ruina:Manifest.\nDeal 15 damage and apply Weak equal to the [E] paid for by ruina:Manifest to ALL enemies."
+    },
+    {
+      "name": "Twilight+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "ruina:Manifest.\nDeal 20 damage and apply Weak equal to the [E] paid for by ruina:Manifest to ALL enemies."
+    }
+  ],
+  "relics": [
+    {
+      "name": "False Present",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, lose 7 Max HP. The first 2 cards you draw each combat cost 0 until played.",
+      "flavorText": "Poor Ozma. She didn't know that lying adults don't approach others without reason."
+    },
+    {
+      "name": "Four Trigrams",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of your turn, randomly activate an effect that hasn't been activated this combat:\nGain 1 Strength.\nGain 1 Dexterity.\nGain [E] .\nDraw 1 card.",
+      "flavorText": "The balance of the City must be upheld."
+    },
+    {
+      "name": "Goodbye",
+      "tier": "Special",
+      "pool": "",
+      "description": "The first Attack you play each combat deals double damage.",
+      "flavorText": "It tries to mimic humans. Looking into a mirror, mumbling to itself, trying to fix its skeletal structure . . . it's as if it was trying to become human."
+    },
+    {
+      "name": "Lowell's Gift",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of your 3rd turn, gain 2 Strength and 1 Dexterity.",
+      "flavorText": "For you I'd steal the stars."
+    },
+    {
+      "name": "Prescript",
+      "tier": "Special",
+      "pool": "",
+      "description": "Prescripts:\n1. Encounter 3 normal enemies. 0/3\n2. Obtain 3 Common cards. 0/3\nOnce completed, transforms into a special relic.",
+      "flavorText": "A set of bizarre instructions. Who in their right mind would come up with these?"
+    },
+    {
+      "name": "Prescript's Grace",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat, randomly chooses between Attack, Skill, and Power. The first card played of the chosen type is played twice.",
+      "flavorText": "It all made sense now. All those pointless endeavours converged onto a single, definite meaning."
+    },
+    {
+      "name": "Strongest",
+      "tier": "Special",
+      "pool": "",
+      "description": "When you deal 20 unblocked attack damage in a single turn, gain 2 Strength. Can only trigger once per turn.",
+      "flavorText": "The courage to protect others. That is what separates the mighty from the meek."
+    },
+    {
+      "name": "Yesterday's Promise",
+      "tier": "Special",
+      "pool": "",
+      "description": "When you have insufficient [E] to play a card, you may instead pay 3 HP for every missing [E] .",
+      "flavorText": "Let me lend you my eyeglass, so you can have a closer look at what you just signed."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Argalia",
+      "type": "Boss",
+      "minHP": "1500",
+      "maxHP": "1500"
+    },
+    {
+      "name": "Big Bird",
+      "type": "Elite",
+      "minHP": "400",
+      "maxHP": "400"
+    },
+    {
+      "name": "Big and Will Be Bad Wolf",
+      "type": "Normal",
+      "minHP": "84",
+      "maxHP": "84"
+    },
+    {
+      "name": "Bloodbath",
+      "type": "Normal",
+      "minHP": "90",
+      "maxHP": "90"
+    },
+    {
+      "name": "Burrowing Heaven",
+      "type": "Normal",
+      "minHP": "140",
+      "maxHP": "140"
+    },
+    {
+      "name": "Chesed",
+      "type": "Boss",
+      "minHP": "160",
+      "maxHP": "160"
+    },
+    {
+      "name": "Distorted Yan",
+      "type": "Boss",
+      "minHP": "250",
+      "maxHP": "250"
+    },
+    {
+      "name": "Eyeball Chick",
+      "type": "Normal",
+      "minHP": "46",
+      "maxHP": "46"
+    },
+    {
+      "name": "Heart of Aspiration",
+      "type": "Normal",
+      "minHP": "55",
+      "maxHP": "55"
+    },
+    {
+      "name": "Hermit of the Azure Forest",
+      "type": "Elite",
+      "minHP": "197",
+      "maxHP": "197"
+    },
+    {
+      "name": "Jester of Nihil",
+      "type": "Boss",
+      "minHP": "600",
+      "maxHP": "600"
+    },
+    {
+      "name": "Judgement Bird",
+      "type": "Normal",
+      "minHP": "250",
+      "maxHP": "250"
+    },
+    {
+      "name": "King of Greed",
+      "type": "Normal",
+      "minHP": "119",
+      "maxHP": "119"
+    },
+    {
+      "name": "Knight of Despair",
+      "type": "Normal",
+      "minHP": "160",
+      "maxHP": "160"
+    },
+    {
+      "name": "Little Red Riding Hooded Mercenary",
+      "type": "Boss",
+      "minHP": "150",
+      "maxHP": "150"
+    },
+    {
+      "name": "Lungs of Craving",
+      "type": "Normal",
+      "minHP": "42",
+      "maxHP": "42"
+    },
+    {
+      "name": "Mountain of Smiling Bodies",
+      "type": "Elite",
+      "minHP": "125",
+      "maxHP": "125"
+    },
+    {
+      "name": "Nosferatu",
+      "type": "Normal",
+      "minHP": "93",
+      "maxHP": "93"
+    },
+    {
+      "name": "Ozma",
+      "type": "Boss",
+      "minHP": "500",
+      "maxHP": "500"
+    },
+    {
+      "name": "Pinocchio",
+      "type": "Normal",
+      "minHP": "170",
+      "maxHP": "170"
+    },
+    {
+      "name": "Price of Silence",
+      "type": "Normal",
+      "minHP": "82",
+      "maxHP": "82"
+    },
+    {
+      "name": "Prophet",
+      "type": "Boss",
+      "minHP": "100",
+      "maxHP": "100"
+    },
+    {
+      "name": "Punishing Bird",
+      "type": "Normal",
+      "minHP": "150",
+      "maxHP": "150"
+    },
+    {
+      "name": "Puppeteer",
+      "type": "Boss",
+      "minHP": "600",
+      "maxHP": "600"
+    },
+    {
+      "name": "Queen of Hatred",
+      "type": "Normal",
+      "minHP": "102",
+      "maxHP": "102"
+    },
+    {
+      "name": "Remnant of Time",
+      "type": "Normal",
+      "minHP": "86",
+      "maxHP": "86"
+    },
+    {
+      "name": "Road Home",
+      "type": "Elite",
+      "minHP": "100",
+      "maxHP": "100"
+    },
+    {
+      "name": "Roland",
+      "type": "Boss",
+      "minHP": "750",
+      "maxHP": "750"
+    },
+    {
+      "name": "Runaway Bird",
+      "type": "Normal",
+      "minHP": "42",
+      "maxHP": "42"
+    },
+    {
+      "name": "Sage of the Forest",
+      "type": "Normal",
+      "minHP": "300",
+      "maxHP": "300"
+    },
+    {
+      "name": "Sanguine Bat",
+      "type": "Normal",
+      "minHP": "37",
+      "maxHP": "37"
+    },
+    {
+      "name": "Scarecrow",
+      "type": "Normal",
+      "minHP": "49",
+      "maxHP": "49"
+    },
+    {
+      "name": "Servant of Wrath",
+      "type": "Elite",
+      "minHP": "300",
+      "maxHP": "300"
+    },
+    {
+      "name": "Shrine to the Blue Star",
+      "type": "Elite",
+      "minHP": "200",
+      "maxHP": "200"
+    },
+    {
+      "name": "Snow Queen",
+      "type": "Elite",
+      "minHP": "230",
+      "maxHP": "230"
+    },
+    {
+      "name": "The Red Mist",
+      "type": "Boss",
+      "minHP": "300",
+      "maxHP": "300"
+    },
+    {
+      "name": "Twilight",
+      "type": "Boss",
+      "minHP": "550",
+      "maxHP": "550"
+    },
+    {
+      "name": "Warm-Hearted Woodsman",
+      "type": "Normal",
+      "minHP": "140",
+      "maxHP": "140"
+    },
+    {
+      "name": "Wolf in Her Nightmares",
+      "type": "Boss",
+      "minHP": "450",
+      "maxHP": "450"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Bleed",
+      "description": "Whenever this creature attacks this turn, it takes damage equal to the amount of Bleed it has."
+    },
+    {
+      "name": "Contract",
+      "description": "When you have insufficient [E] to play this card, you may instead pay 3 HP for every missing [E] ."
+    },
+    {
+      "name": "Manifest",
+      "description": "When you have insufficient [E] to play this card, you may instead Exhaust 1 card for every missing [E] ."
+    }
+  ]
+}
