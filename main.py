@@ -107,18 +107,20 @@ async def get_id(message):
             await message.channel.send("i love reina <3")
         if message.author.id == 86261397213708288:
             await message.channel.send("i love alchy <3")
+        if message.author.id == 138858311410909184:
+            await message.channel.send("i love reina AND alchy <3")
         return
     if s == "notneh" and message.author.id == 125669982041276416:
         await message.channel.send("djbtkdkfndn")
         return
     if s == "contribute":
         await message.channel.send(
-            "https://github.com/runttekita/mts-bot/blob/master/CONTRIBUTING.md"
+            "https://github.com/JohnnyDevo/mts-bot/blob/master/CONTRIBUTING.md"
         )
         return
     if s == "list":
         await message.channel.send(
-            "https://github.com/runttekita/mts-bot/tree/master/data"
+            "https://github.com/JohnnyDevo/mts-bot/tree/master/data"
         )
         return
     if s == "default":
@@ -150,7 +152,7 @@ async def get_id(message):
         return
     if s == "optin":
         await message.channel.send(
-            "https://github.com/velvet-halation/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback"
+            "https://github.com/JohnnyDevo/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback"
         )
         return
     if s == "console":
@@ -166,7 +168,7 @@ async def get_id(message):
         return
     if s == "cansuggest":
         await message.channel.send(
-            "https://github.com/velvet-halation/mts-bot/blob/master/mtsbotdata.py#L32"
+            "https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32"
         )
     if s == "pathwater":
         await message.channel.send(
