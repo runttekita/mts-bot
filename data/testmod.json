@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "TestMod",
-    "version": "4.2.6",
+    "version": "4.4.2",
     "authors": ["\u5F7C\u541B\u4E0D\u89E6"],
     "credits": "localization:\n\u5F7C\u541B\u4E0D\u89E6 280chan (Simplified Chinese)\nbrkfox (English)\n\u5F7C\u541B\u4E0D\u89E6 280chan (English)",
     "description": "You may choose relic or card reward and then choose 1 from 3 of that type from this mod at start of each run. Require 'STSLib'. \n\n\u5F00\u5C40\u9009\u62E9\u9057\u7269\u6216\u65E0\u8272\u724C\u4E4B\u540E\u53EF\u4EE5\u518D\u8FDB\u884C\u4E00\u6B21\u5BF9\u5E94\u7684\u53EF\u653E\u5F03\u76843\u90091\u6765\u83B7\u5F97\u521D\u59CB\u5956\u52B1\u3002\u8BD5\u505A\u4E86\u4E24\u4E2A\u4E8B\u4EF6\u548C4\u74F6\u836F\u6C34\u3002\u9700\u8981BaseMod\u548CSTSLib\u652F\u6301\u3002",
@@ -737,7 +737,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 1 Strength and Dexterity. Gain [R]  and draw 1 card.\nCan be Upgraded any number of times. Exhaust."
+      "description": "Gain 1 Strength and Dexterity. Gain [E]  and draw 1 card.\nCan be Upgraded any number of times. Exhaust."
     },
     {
       "name": "Halloween+1",
@@ -745,7 +745,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 2 Strength and Dexterity. Gain [R]  [R]  and draw 2 cards.\nCan be Upgraded any number of times. Exhaust."
+      "description": "Gain 2 Strength and Dexterity. Gain [E] [E]  and draw 2 cards.\nCan be Upgraded any number of times. Exhaust."
     },
     {
       "name": "North",
@@ -1169,7 +1169,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Gain 1 Block. Deal 1 damage to all enemies. Upgrade this card in this combat. Can be Upgraded any number of time."
+      "description": "Gain 2 Block. Deal 2 damage to all enemies. Upgrade this card in this combat. Can be Upgraded any number of time."
     },
     {
       "name": "Substitute by Subterfuge",
@@ -1801,6 +1801,13 @@
       "flavorText": "\u4F60\u5DF2\u77E5\u6653\u6B7B\u4EA1\u3002"
     },
     {
+      "name": "Retro Filter",
+      "tier": "Common",
+      "pool": "",
+      "description": "Price of Colorless cards in shop is reduced from 120% of normal card price to 60%, for each normal card you have decrease an extra 1%. Whenever you play a Colorless card, gain 1 Gold.",
+      "flavorText": "\u8FD9\u4E2A\u9634\u95F4\u6EE4\u955C\u80FD\u8BA9\u5546\u4EBA\u89C6\u7070\u8272\u5982\u7CAA\u571F\u2026\u8FD9\u5BB6\u4F19\u8FD9\u4E48\u7CBE\u660E\u662F\u600E\u4E48\u88AB\u9A97\u8FC7\u53BB\u7684\uFF1F"
+    },
+    {
       "name": "The Acrobat",
       "tier": "Common",
       "pool": "",
@@ -1827,6 +1834,20 @@
       "pool": "",
       "description": "Your Max HP will never change anymore. Whenever you would change your Max HP, change your HP instead by a factor of 3 if increase, 1 if decrease.",
       "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Casing Shield",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you gain Block, increase future Block gain by 1 for this turn.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Fortitude",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "If you end your turn without Block, gain 3 Strength.",
+      "flavorText": "\u201C\u52C7\u6562\u4E0D\u5728\u4E8E\u80FD\u591F\u8511\u89C6\u5371\u9669\uFF0C\u800C\u5728\u4E8E\u8BA4\u8BF7\u5371\u9669\u3001\u6218\u80DC\u5371\u9669\u3002\u201D \u2014\u2014 \u5E03\u52D2\u68EE\u4E1C"
     },
     {
       "name": "Heart Of Da Vinci",
@@ -1881,14 +1902,14 @@
       "name": "Black Framed Glasses",
       "tier": "Rare",
       "pool": "",
-      "description": "At the start of each turn, heal 1 HP, every enemies lose 1 HP. Whenever yoou would receive a unblocked damage not less than half of your Max HP, reduce it to 1; if it comes from yourself, reduce it to 0.",
+      "description": "At the start of each turn, heal 1 HP, every enemies lose 1 HP. Whenever you would receive an unblocked damage not less than half of your Max HP, reduce it to 1; if it is from yourself, reduce it to 0.",
       "flavorText": "\u8FD9\u4E2A\u773C\u955C\u8BA9\u4F60\u611F\u89C9\u8FD8\u80FD\u518D\u6491\u4E00\u79D2\u3002"
     },
     {
       "name": "Bouquet With Thorns",
       "tier": "Rare",
       "pool": "",
-      "description": "At the start of each combat, gain 1 Throns. Whenever being attacked, gain 1 Throns; whenever you receive unblocked attack damage, gain 1 extra Throns. Whenever damaged by losing HP, gain 1 Throns for each HP lost in this damage.",
+      "description": "At the start of each combat, gain 1 Thorns. Whenever being attacked, gain 1 Thorns; whenever you receive unblocked attack damage, gain 1 extra Thorns. Whenever damaged by losing HP, gain 1 Thorns for each HP lost in this damage.",
       "flavorText": "\u6367\u7740\u8FD9\u675F\u82B1\uFF0C\u4F60\u4EFF\u4F5B\u4E0D\u518D\u9700\u8981\u51FB\u9000\u4F60\u7684\u654C\u4EBA\u3002"
     },
     {
@@ -1897,13 +1918,6 @@
       "pool": "",
       "description": "Whenever an enemy dies and at the start of each combat, deal an damage of half of your gold to the power of 2/3 to ALL enemies.",
       "flavorText": "Brilliant!"
-    },
-    {
-      "name": "Casing Shield",
-      "tier": "Rare",
-      "pool": "",
-      "description": "Whenever you gain Block, increase future Block gain by 1 for this turn.",
-      "flavorText": "The author is lazy, nothing has been written."
     },
     {
       "name": "Constraint Periapt",
@@ -1946,13 +1960,6 @@
       "pool": "",
       "description": "Whenever you kills an enemy, deal a damage of 271.8% of the overkill of the fatal damage to ALL enemies.",
       "flavorText": "Die! Die! Die!"
-    },
-    {
-      "name": "Fortitude",
-      "tier": "Rare",
-      "pool": "",
-      "description": "If you end your turn without Block, gain 3 Strength.",
-      "flavorText": "\u201C\u52C7\u6562\u4E0D\u5728\u4E8E\u80FD\u591F\u8511\u89C6\u5371\u9669\uFF0C\u800C\u5728\u4E8E\u8BA4\u8BF7\u5371\u9669\u3001\u6218\u80DC\u5371\u9669\u3002\u201D \u2014\u2014 \u5E03\u52D2\u68EE\u4E1C"
     },
     {
       "name": "Heart of Strike",
@@ -2126,7 +2133,7 @@
       "name": "Dream House",
       "tier": "Boss",
       "pool": "",
-      "description": "Upon pickup, obtain Happy Flower and Lantern. Gain [E] at the start of each turn. You can NLY obtain cards with Common Rarity.",
+      "description": "Upon pickup, obtain Happy Flower and Lantern. Gain [E] at the start of each turn. You can ONLY obtain cards with Common Rarity.",
       "flavorText": "\u7B80\u5355\uFF0C\u7C97\u66B4\uFF0C\u76F4\u63A5\u3002"
     },
     {
@@ -2140,7 +2147,7 @@
       "name": "Fanaticism",
       "tier": "Boss",
       "pool": "",
-      "description": "At the start of each turn, gain [E], Wrath: gain [E]. At the end of each turn, Wrath: exit Wrath. Otherwise, enter Wrath. Whenever you lose hp, for each point you lose, gain 1% hp absorb, Wrath: gain double.",
+      "description": "At the start of each turn, gain [E] , Wrath: gain [E] . At the end of each turn, Wrath: exit Wrath. Otherwise, enter Wrath. Whenever you lose hp, for each point you lose, gain 1% hp absorb, Wrath: gain double.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -2148,6 +2155,13 @@
       "tier": "Boss",
       "pool": "",
       "description": "Upon pickup, lose 75% of your Maximum hp. Whenever receive a fatal damage, instead of losing hp, lose same amount of Gold, if you don't have enough Gold, lose all and take rest of damage.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Gremlin Balance",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At start of each turn, gain [E] for each enemy has no more hp than you, draw 1 card for each enemy has no less hp than you.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -2200,6 +2214,13 @@
       "flavorText": "\u201C\u8282\u5236\u662F\u6700\u597D\u7684\u533B\u672F\u3002\u201D \u2014\u2014 \u535A\u6069"
     },
     {
+      "name": "Temporary Barricade",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At start of each turn, if you have Block, gain [E] . Right click this relic to toggle. When active: Gain Barricade at start of each combat. At start of each turn, reduce your Block to its natural logarithm raised to power of 2.5 .",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "The Card Magician",
       "tier": "Boss",
       "pool": "",
@@ -2224,7 +2245,7 @@
       "name": "The Key Of The Void",
       "tier": "Boss",
       "pool": "",
-      "description": "At the end of combat, for each Boss relic you have, remove 1 card from your deck.",
+      "description": "At the end of combat, for each other Boss relic you have, remove 1 card from your deck.",
       "flavorText": "\u865A\u7A7A\u662F\u8FD9\u4E2A\u4E16\u754C\u7684\u7EC8\u6781\u7B54\u6848\u3002"
     },
     {
@@ -2259,7 +2280,7 @@
       "name": "I Want All",
       "tier": "Shop",
       "pool": "",
-      "description": "You have 10 chances to right click on this relic at the combat reward screen, to make a copy of the card reward, once maximum each combat.",
+      "description": "You have 10 chances to right click on this relic at the combat reward screen, to make a copy of the card reward.",
       "flavorText": "\u5C0F\u5B69\u5B50\u624D\u505A\u9009\u62E9\uFF1B\u800C\u6211\uFF0C\u5168\u90FD\u8981\uFF01"
     },
     {
