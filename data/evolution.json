@@ -1,0 +1,1346 @@
+{
+  "mod": {
+    "name": "The Evolution",
+    "version": "1.3.3",
+    "authors": ["Fenec250"],
+    "credits": "\n - Syvaron for most card art and the game that inspired this character. If you are above 18 or 21 years old you can check out his game, Portals of Phereon. \n - Verburner for the character model, additional card arts and extensive playtesting. Check out his character, The Marked, as well as his other mods! \n - Johnny Devo for the Mystic, which I used as a base. There might be a few assets haven't replaced yet, those are his. \n - The STS modding community on Discord. Thanks for your help and companionship!",
+    "description": "\nAdds a new character: The Evolution. \n\nWielding the powers of a fallen god this shapeshifter climbs the Spire to save her fading worlds.",
+    "mts_version": "3.15.0",
+    "sts_version": "01-14-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Drone",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nIf this is in you hand at the end of your turn gain 2 Block.\nExhaust. Ethereal."
+    },
+    {
+      "name": "Drone+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nIf this is in you hand at the end of your turn gain 5 Block.\nExhaust. Ethereal."
+    },
+    {
+      "name": "Feather",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card and discard a card.\nHarpy evolutionmod:Form: return a Feather Storm from your discard pile to your hand."
+    },
+    {
+      "name": "Feather+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card. You may discard a card.\nHarpy evolutionmod:Form: return a Feather Storm from your discard pile to your hand."
+    },
+    {
+      "name": "Defend",
+      "color": "Evolution_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Evolution_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 block."
+    },
+    {
+      "name": "Loyal Companion",
+      "color": "Evolution_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nExhaust.\nRandomized evolutionmod:Form: gain 4 more Block."
+    },
+    {
+      "name": "Loyal Companion+",
+      "color": "Evolution_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nExhaust.\nStartup: Channel a Randomized gene and trigger its effect."
+    },
+    {
+      "name": "Loyal Warrior",
+      "color": "Evolution_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nExhaust.\nRandomized evolutionmod:Form: deal 4 more damage."
+    },
+    {
+      "name": "Loyal Warrior+",
+      "color": "Evolution_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nExhaust.\nStartup: Channel a Randomized gene and trigger its effect."
+    },
+    {
+      "name": "Strike",
+      "color": "Evolution_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Evolution_blue",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Barkskin",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain 1 Growth.\nPlant evolutionmod:Form: Gain 1 Growth."
+    },
+    {
+      "name": "Barkskin+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nGain 1 Growth.\nPlant evolutionmod:Form: Gain 1 Growth."
+    },
+    {
+      "name": "Charm",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Block.\nApply 2 Lust.\nSuccubus evolutionmod:Form: apply 2 Vulnerable."
+    },
+    {
+      "name": "Charm+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Block.\nApply 4 Lust.\nSuccubus evolutionmod:Form: apply 2 Vulnerable."
+    },
+    {
+      "name": "Chimera Defense",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nevolutionmod:Adapt with your oldest gene up to a maximum of 4."
+    },
+    {
+      "name": "Chimera Defense+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nevolutionmod:Adapt with your oldest gene up to a maximum of 6."
+    },
+    {
+      "name": "Chimera Strike",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nevolutionmod:Adapt with your oldest gene up to a maximum of 4."
+    },
+    {
+      "name": "Chimera Strike+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nevolutionmod:Adapt with your oldest gene up to a maximum of 6."
+    },
+    {
+      "name": "Claw slash",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nBeast evolutionmod:Form: Refund 1."
+    },
+    {
+      "name": "Claw slash+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nBeast evolutionmod:Form: Refund 1."
+    },
+    {
+      "name": "Crystal Shard",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nRandomized evolutionmod:Form:\nadd 4 damage.\nRandomized evolutionmod:Form:\ndraw a card.\nExhaust."
+    },
+    {
+      "name": "Crystal Shard+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nRandomized evolutionmod:Form:\nadd 5 damage.\nRandomized evolutionmod:Form:\ndraw a card.\nExhaust."
+    },
+    {
+      "name": "Crystal Stone",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nRandomized evolutionmod:Form:\nadd 3 Block.\nRandomized evolutionmod:Form:\nRefund 1.\nExhaust."
+    },
+    {
+      "name": "Crystal Stone+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nRandomized evolutionmod:Form:\nadd 4 Block.\nRandomized evolutionmod:Form:\nRefund 1.\nExhaust."
+    },
+    {
+      "name": "Dive",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block.\nMerfolk evolutionmod:Form: gain 2 more Block."
+    },
+    {
+      "name": "Dive+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nChannel a Merfolk gene."
+    },
+    {
+      "name": "Flame Strike",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to ALL enemies.\nChannel a Lavafolk gene."
+    },
+    {
+      "name": "Flame Strike+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to ALL enemies.\nChannel a Lavafolk gene."
+    },
+    {
+      "name": "Hatch",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 3 Drones to your hand.\nChannel an Insect gene."
+    },
+    {
+      "name": "Hatch+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 3 Drones to your hand.\nChannel an Insect gene.\nGain 4 Block."
+    },
+    {
+      "name": "Heavy Kick",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage 2 times.\nCentaur evolutionmod:Form: hit 1 more time."
+    },
+    {
+      "name": "Heavy Kick+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage 2 times.\nCentaur evolutionmod:Form: hit 1 more time."
+    },
+    {
+      "name": "Poison Fangs",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nLizard evolutionmod:Form: Apply 4 Poison."
+    },
+    {
+      "name": "Poison Fangs+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nLizard evolutionmod:Form: Apply 5 Poison."
+    },
+    {
+      "name": "Shadowbolt",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nShadow evolutionmod:Form: gain 2 Shadows."
+    },
+    {
+      "name": "Shadowbolt+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nShadow evolutionmod:Form: gain 3 Shadows."
+    },
+    {
+      "name": "Shifting guard",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nTrigger your first gene.\nShift your first gene."
+    },
+    {
+      "name": "Shifting guard+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nTrigger your first 2 genes and Shift them."
+    },
+    {
+      "name": "Shifting strike",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nTrigger your first gene.\nShift your first gene."
+    },
+    {
+      "name": "Shifting strike+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nTrigger your first 2 genes and Shift them."
+    },
+    {
+      "name": "Talon strike",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage\nHarpy evolutionmod:Form: draw a card and discard a card."
+    },
+    {
+      "name": "Talon strike+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage\nHarpy evolutionmod:Form: draw a card and discard a card."
+    },
+    {
+      "name": "Visions",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fate 3 cards.\nAdd a Dazed to your draw pile.\nLymean evolutionmod:Form: Draw a card after Fate."
+    },
+    {
+      "name": "Visions+",
+      "color": "Evolution_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fate 3 cards.\nDraw a card.\nAdd a Dazed to your draw pile.\nLymean evolutionmod:Form: Fate 2 more cards."
+    },
+    {
+      "name": "Adaptation",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "evolutionmod:Adapt with your X oldest genes."
+    },
+    {
+      "name": "Adaptation+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "evolutionmod:Adapt with X channeled genes of your choice."
+    },
+    {
+      "name": "Antidote",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nExhaust up to 2 random Status from your draw pile.\nLymean evolutionmod:Form: Channel a Lizard gene."
+    },
+    {
+      "name": "Antidote+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nExhaust up to 3 random Status from your draw pile.\nLymean evolutionmod:Form: Channel a Lizard gene."
+    },
+    {
+      "name": "Aphrodisiac",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Lust at the start of next turn.\nSuccubus evolutionmod:Form: apply 2 Lust.\nLizard evolutionmod:Form: trigger Poison."
+    },
+    {
+      "name": "Aphrodisiac+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Lust at the start of next turn.\nSuccubus evolutionmod:Form: apply 3 Lust.\nLizard evolutionmod:Form: trigger Poison."
+    },
+    {
+      "name": "Battleborn",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nCentaur evolutionmod:Form: gain 1 Strength."
+    },
+    {
+      "name": "Battleborn+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Strength.\nCentaur evolutionmod:Form ->\nBeast evolutionmod:Form: gain 1 Strength."
+    },
+    {
+      "name": "Black Cat",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to ALL enemies.\nBeast evolutionmod:Form: deal 3 more damage.\nShadow evolutionmod:Form: trigger Shadows immediately."
+    },
+    {
+      "name": "Black Cat+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nBeast evolutionmod:Form: deal 3 more damage.\nShadow evolutionmod:Form: trigger Shadows immediately."
+    },
+    {
+      "name": "Calm the Waters",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block.\nFate 2 Skills.\nMerfolk evolutionmod:Form: gain 3 more Block.\nLymean evolutionmod:Form: Fate an additional Skill. "
+    },
+    {
+      "name": "Calm the Waters+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nFate 2 Skills.\nChannel a Merfolk gene.\nLymean evolutionmod:Form: Fate an additional Skill."
+    },
+    {
+      "name": "Channel magic",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lavafolk gene.\nFate 2 cards and trigger the gene for each card discarded.\nLymean evolutionmod:Form: Fate 1 more card."
+    },
+    {
+      "name": "Channel magic+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lavafolk gene.\nFate 3 cards and trigger the gene for each card discarded.\nLymean evolutionmod:Form: Fate 1 more card."
+    },
+    {
+      "name": "Crystal Dust",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Randomized evolutionmod:Form: draw 2 cards.\nExhaust.\nStartup: shuffle a copy of this card in your draw pile."
+    },
+    {
+      "name": "Crystal Dust+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Randomized evolutionmod:Form: draw 2 cards.\nExhaust.\nStartup: shuffle 2 copies of this card in your draw pile."
+    },
+    {
+      "name": "Currents Dancer",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time you draw a card after the beginning of your turn gain 4 Block.\nMerfolk evolutionmod:Form: draw a card."
+    },
+    {
+      "name": "Currents Dancer+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time you draw a card after the beginning of your turn gain 6 Block.\nMerfolk evolutionmod:Form: draw a card."
+    },
+    {
+      "name": "Cursed Touch",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nApply 1 Weak.\nShadow evolutionmod:Form: evolutionmod:Adapt this with a Shadow gene."
+    },
+    {
+      "name": "Cursed Touch+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 2 Weak.\nShadow evolutionmod:Form: evolutionmod:Adapt this with a Shadow gene."
+    },
+    {
+      "name": "Dark Desires",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you apply a debuff to an enemy deal 4 damage to it. Succubus evolutionmod:Form: Channel a Shadow gene."
+    },
+    {
+      "name": "Dark Desires+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you apply a debuff to an enemy deal 6 damage to it. Succubus evolutionmod:Form: Channel a Shadow gene."
+    },
+    {
+      "name": "Depths Lurker",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Trigger Shadows immediately.\nMerfolk evolutionmod:Form: gain Block equal to 2 times your Shadows threshold."
+    },
+    {
+      "name": "Depths Lurker+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Trigger Shadows immediately.\nMerfolk evolutionmod:Form: gain Block equal to 3 times your Shadows threshold."
+    },
+    {
+      "name": "Fire Ants",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lavafolk gene.\nInsect evolutionmod:Form: Whenever a Drone is Exhausted this turn trigger your oldest Lavafolk gene."
+    },
+    {
+      "name": "Fire Ants+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lavafolk gene.\nWhenever a Drone is Exhausted this turn trigger your oldest Lavafolk gene.\nInsect evolutionmod:Form: gain a Drone"
+    },
+    {
+      "name": "Firebloom",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel a Lavafolk gene.\nPlant evolutionmod:Form: gain 1 Growth for each Lavafolk gene you have."
+    },
+    {
+      "name": "Firebloom+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 2 Lavafolk genes.\nPlant evolutionmod:Form: gain 1 Growth for each Lavafolk gene you have."
+    },
+    {
+      "name": "Gene Mastery",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you channel an Imprinted gene, trigger its effect.\nImprinted evolutionmod:Form: gain an Orb slot"
+    },
+    {
+      "name": "Gene Mastery",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you channel an Imprinted gene, trigger its effect.\nGain an Orb slot and Channel the Imprinted gene."
+    },
+    {
+      "name": "Heightened senses",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards. Discard any non-Attack drawn this way and gain 1 Rage for each.\nHarpy evolutionmod:Form: draw 1 more.\nBeast evolutionmod:Form: draw 1 more."
+    },
+    {
+      "name": "Heightened senses+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards. Discard any non-Attack drawn this way and gain 1 Rage for each.\nHarpy evolutionmod:Form: draw 1 more.\nBeast evolutionmod:Form: draw 1 more."
+    },
+    {
+      "name": "Hivemind",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fate 1 card for each Drone in your hand.\nInsect evolutionmod:Form: add a Drone to your hand first."
+    },
+    {
+      "name": "Hivemind+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fate 1 card for each Drone in your hand.\nInsect evolutionmod:Form: add a Drone to your hand first.\nLymean evolutionmod:Form: add a Drone to your hand first."
+    },
+    {
+      "name": "Leaf Bird",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard up to 2 cards\nHarpy evolutionmod:Form: draw that many.\nPlant evolutionmod:Form: Refund 1."
+    },
+    {
+      "name": "Leaf Bird+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard up to 3 cards\nHarpy evolutionmod:Form: draw that many.\nPlant evolutionmod:Form: Refund 1."
+    },
+    {
+      "name": "Mutate",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 of 3 genes you don't already have and Channel it."
+    },
+    {
+      "name": "Mutate+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 of 3 genes you don't already have. Channel it and trigger its effect."
+    },
+    {
+      "name": "Night Mare",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nGain Shadows equal to half the unblocked damage dealt.\nShadow evolutionmod:Form: Channel a Centaur gene."
+    },
+    {
+      "name": "Night Mare+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nGain Shadows equal to half the unblocked damage dealt.\nShadow evolutionmod:Form: Channel a Centaur gene."
+    },
+    {
+      "name": "Pegasus Descent",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nRepeat for each 3 [E] cost of cards in your hand.\n[#FFFF80]Harpy[] evolutionmod:Form: Channel a [#888888]Centaur[] gene."
+    },
+    {
+      "name": "Pegasus Descent+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nRepeat for each 3 [E] cost of cards in your hand.\n[#FFFF80]Harpy[] evolutionmod:Form: Channel a [#888888]Centaur[] gene."
+    },
+    {
+      "name": "Pheromones",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Plant evolutionmod:Form ->\nSuccubus evolutionmod:Form:\napply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Pheromones+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Vulnerable to ALL enemies.\nPlant evolutionmod:Form ->\nSuccubus evolutionmod:Form:\napply 2 more."
+    },
+    {
+      "name": "Phoenix",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nChannel a Lavafolk gene.\nHarpy evolutionmod:Form: evolutionmod:Adapt with your oldest Lavafolk gene."
+    },
+    {
+      "name": "Phoenix+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nChannel a Lavafolk gene and evolutionmod:Adapt with your oldest one.\nHarpy evolutionmod:Form: evolutionmod:Adapt with all your Lavafolk genes."
+    },
+    {
+      "name": "Playing Rough",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nApply Lust equal to half the unblocked damage dealt.\nSuccubus evolutionmod:Form: Channel a Centaur gene."
+    },
+    {
+      "name": "Playing Rough+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nApply Lust equal to half the unblocked damage dealt.\nSuccubus evolutionmod:Form: Channel a Centaur gene."
+    },
+    {
+      "name": "Salamander",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your Lizard genes also deal 2 damage.\nYour Lavafolk genes deal 1 more damage.\nLizard evolutionmod:Form: Channel a Lavafolk gene."
+    },
+    {
+      "name": "Salamander+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your Lizard genes also deal 2 damage.\nYour Lavafolk genes deal 1 more damage.\nChannel a Lizard gene and a Lavafolk gene."
+    },
+    {
+      "name": "Sea Serpent",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nLizard evolutionmod:Form: Channel a Merfolk gene."
+    },
+    {
+      "name": "Sea Serpent+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nChannel a Lizard gene.\nChannel a Merfolk gene."
+    },
+    {
+      "name": "Sea Wolf",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nBeast evolutionmod:Form: Refund 1.\nMerfolk evolutionmod:Form: gain 3 Block first."
+    },
+    {
+      "name": "Sea Wolf+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nBeast evolutionmod:Form: Refund 1.\nMerfolk evolutionmod:Form: gain 4 Block first."
+    },
+    {
+      "name": "Shifting power",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Trigger your first gene.\nShift a number of genes equal to your current energy."
+    },
+    {
+      "name": "Shifting power+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Trigger your first 2 genes.\nShift a number of genes equal to your current energy."
+    },
+    {
+      "name": "Shrink",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 1 Orb slot.\nAt the start of your turn, draw 1 additional card."
+    },
+    {
+      "name": "Shrink+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nLose 1 Orb slot.\nAt the start of your turn, draw 1 additional card."
+    },
+    {
+      "name": "Spider Bite",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nAdd 1 damage for each Drone in your Exhaust pile.\nInsect evolutionmod:Form: create and Exhaust 2 Drones."
+    },
+    {
+      "name": "Spider Bite+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nAdd 2 damage for each Drone in your Exhaust pile.\nInsect evolutionmod:Form: create and Exhaust 2 Drones."
+    },
+    {
+      "name": "Strengthen",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fate 2 Attacks.\nYour next attack deals additional damage equal to 2 times their cost."
+    },
+    {
+      "name": "Strengthen+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Fate 2 Attacks.\nYour next attack deals additional damage equal to 2 times their cost .\nLymean evolutionmod:Form: Fate 1 more Attack."
+    },
+    {
+      "name": "Strip Armor",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nSuccubus evolutionmod:Form: Remove all Block from the enemy first.\nBeast evolutionmod:Form: add 5 damage."
+    },
+    {
+      "name": "Strip Armor+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nSuccubus evolutionmod:Form: Remove all Block from the enemy first.\nBeast evolutionmod:Form: add 7 damage."
+    },
+    {
+      "name": "Symbiotes",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever Growth produces energy add a Drone to your hand.\nPlant evolutionmod:Form: gain 1 Growth."
+    },
+    {
+      "name": "Symbiotes+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever Growth produces energy add a Drone to your hand.\nGain 1 Growth.\nPlant evolutionmod:Form: gain 1 Growth."
+    },
+    {
+      "name": "Toxin",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Poison.\nLizard evolutionmod:Form ->\nPlant evolutionmod:Form:\napply additional Poison equal to 10 % of the enemy's maximum health and Exhaust."
+    },
+    {
+      "name": "Toxin+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Poison.\nLizard evolutionmod:Form ->\nPlant evolutionmod:Form:\napply additional Poison equal to 15 % of the enemy's maximum health and Exhaust."
+    },
+    {
+      "name": "Treasure",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a Crystal Stone, Shard or Dust to add to your hand.\nExhaust."
+    },
+    {
+      "name": "Treasure+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose an upgraded Crystal Stone, Shard or Dust to add to your hand.\nExhaust."
+    },
+    {
+      "name": "Venom Glands",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lizard evolutionmod:Form: Whenever an Attack deals unblocked damage this turn, apply 2 Poison.\nInsect evolutionmod:Form: add a Drone to your hand."
+    },
+    {
+      "name": "Venom Glands+",
+      "color": "Evolution_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever an Attack deals unblocked damage this turn, apply 2 Poison.\nLizard evolutionmod:Form: add a Drone to your hand.\nInsect evolutionmod:Form: add a Drone to your hand."
+    },
+    {
+      "name": "Absorption",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Consume your oldest gene.\nAt the start of your turn trigger its effect."
+    },
+    {
+      "name": "Absorption+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Consume your oldest 2 genes.\nAt the start of your turn trigger their effect."
+    },
+    {
+      "name": "Broodmother",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Your Drones deal 2 more damage and apply 2 more Block.\nChannel two Insect genes."
+    },
+    {
+      "name": "Broodmother+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Your Drones deal 3 more damage and apply 3 more Block.\nChannel two Insect genes."
+    },
+    {
+      "name": "Drown",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 Block\nAt the end of this turn the enemy will take damage equal to your Block.\nChannel a Merfolk gene"
+    },
+    {
+      "name": "Drown+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block\nAt the end of this turn the enemy will take damage equal to your Block.\nChannel a Merfolk gene"
+    },
+    {
+      "name": "Eruption",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every 8 times you deal damage deal 18 damage to ALL enemies."
+    },
+    {
+      "name": "Eruption+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every 8 times you deal damage deal 24 damage to ALL enemies."
+    },
+    {
+      "name": "Feather Storm",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nThe first time this is played each combat shuffle 2 Feathers into your deck."
+    },
+    {
+      "name": "Feather Storm+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nThe first time this is played each combat shuffle 3 Feathers into your deck."
+    },
+    {
+      "name": "Frenzy",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nAdd 3 damage per [E] spent on attacks this turn.\n[#B06060]Beast[] evolutionmod:Form: gain 2 Rage."
+    },
+    {
+      "name": "Frenzy+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nAdd 5 damage per [E] spent on attacks this turn.\n[#B06060]Beast[] evolutionmod:Form: gain 3 Rage."
+    },
+    {
+      "name": "Godly Powers",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Each turn the first 2 evolutionmod:Form that Channel a gene also apply their conditional effect."
+    },
+    {
+      "name": "Godly Powers+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Each turn the first 3 evolutionmod:Form that Channel a gene also apply their conditional effect."
+    },
+    {
+      "name": "Grow",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Orb slot. Startup: shuffle a copy of this card in your draw pile."
+    },
+    {
+      "name": "Grow+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Orb slot. Startup: shuffle 2 copies of this card in your draw pile."
+    },
+    {
+      "name": "Human Form",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nEvoke all your genes.\nWhen you Channel a gene, Evoke it 2 times."
+    },
+    {
+      "name": "Human Form+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Evoke all your genes.\nWhen you Channel a gene, Evoke it 2 times."
+    },
+    {
+      "name": "Lifesteal",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage\nGain Block equal to the unblocked damage.\nExhaust.\nSuccubus evolutionmod:Form: you are healed instead."
+    },
+    {
+      "name": "Lifesteal+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage\nGain Block equal to the unblocked damage.\nExhaust.\nSuccubus evolutionmod:Form: you are healed instead."
+    },
+    {
+      "name": "Photosynthesis",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 5 Block X times. Whenever you are attacked this turn, deal 2  X damage back.\nPlant evolutionmod:Form: evolutionmod:Adapt this with a Plant gene."
+    },
+    {
+      "name": "Photosynthesis+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 7 Block X times. Whenever you are attacked this turn, deal 2  X damage back.\nPlant evolutionmod:Form: evolutionmod:Adapt this with a Plant gene."
+    },
+    {
+      "name": "Ritual",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Permanently evolutionmod:Adapt this with your oldest gene not already adapted.\nExhaust."
+    },
+    {
+      "name": "Ritual+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Permanently evolutionmod:Adapt this with your oldest gene not already adapted.\nEthereal."
+    },
+    {
+      "name": "Stalker",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage and apply 6 Poison to all enemies that have Poison.\nChannel a Lizard gene."
+    },
+    {
+      "name": "Stalker+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage and apply 9 Poison to all enemies that have Poison.\nChannel a Lizard gene."
+    },
+    {
+      "name": "Stampede",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage.\nDeal 6 damage to ALL enemies twice.\nChannel a Centaur gene."
+    },
+    {
+      "name": "Stampede+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nDeal 8 damage to ALL enemies twice.\nChannel a Centaur gene."
+    },
+    {
+      "name": "The Future Is Now",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Play cards from your draw pile until their cost would exceed X.\nExhaust.\nLymean evolutionmod:Form: Fate 2 cards first."
+    },
+    {
+      "name": "The Future Is Now+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Play cards from your draw pile until their cost would exceed X.\nLymean evolutionmod:Form: Fate 2 cards first."
+    },
+    {
+      "name": "The Night",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Increase the damage dealt by each stack of Shadows by 2.\nChannel a Shadow gene."
+    },
+    {
+      "name": "The Night+",
+      "color": "Evolution_blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Increase the damage dealt by each stack of Shadows by 3.\nChannel a Shadow gene."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Tori's gift",
+      "tier": "Starter",
+      "pool": "Evolution_blue",
+      "description": "Start each combat with a random Gene.",
+      "flavorText": "A gift from your mentor."
+    },
+    {
+      "name": "Nimble Boots",
+      "tier": "Common",
+      "pool": "Evolution_blue",
+      "description": "Whenever you play 5 or more cards in a turn, draw an additional card at the start of your next turn.",
+      "flavorText": ""
+    },
+    {
+      "name": "Power Focus",
+      "tier": "Uncommon",
+      "pool": "Evolution_blue",
+      "description": "The first Gene you Evoke each turn is evoked twice.",
+      "flavorText": "It tickles!"
+    },
+    {
+      "name": "Magic Focus",
+      "tier": "Rare",
+      "pool": "Evolution_blue",
+      "description": "The first Skill you play each combat is played twice.",
+      "flavorText": "AN_3 loved these."
+    },
+    {
+      "name": "Scout Medal",
+      "tier": "Rare",
+      "pool": "Evolution_blue",
+      "description": "At the start of the combat Fate 1 card of each type.",
+      "flavorText": "Always prepared."
+    },
+    {
+      "name": "Strength Focus",
+      "tier": "Rare",
+      "pool": "Evolution_blue",
+      "description": "The first Attack you play each combat is played twice.",
+      "flavorText": "I'm not sure if it still works."
+    },
+    {
+      "name": "Old Outfit",
+      "tier": "Boss",
+      "pool": "Evolution_blue",
+      "description": "Gain [E] at the start of your turn. The first Gene you Channel each turn is removed.",
+      "flavorText": "My favourite outfit, when I was human."
+    },
+    {
+      "name": "Tori",
+      "tier": "Boss",
+      "pool": "Evolution_blue",
+      "description": "Start each combat with 1 additional Orb slot and random genes in all Orb slots.",
+      "flavorText": "She's found her way back to you."
+    },
+    {
+      "name": "Whip",
+      "tier": "Shop",
+      "pool": "Evolution_blue",
+      "description": "Whenever you apply a debuff to an enemy, they take 2 damage.",
+      "flavorText": "I can use this as a weapon?"
+    }
+  ],
+  "potions": [
+    {
+      "name": "Mutagen",
+      "rarity": "Common",
+      "description": "Select up to 2 genes you don't already have and Channel them."
+    },
+    {
+      "name": "Eat Me Cake",
+      "rarity": "Rare",
+      "description": "Gain 2 Orb slots."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Evolution",
+      "type": "Player",
+      "minHP": "77",
+      "maxHP": "77"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Growth",
+      "description": "Upon reaching 2 Growth gain 1 Energy and reduce Growth by 2"
+    },
+    {
+      "name": "Vigor",
+      "description": "Increases the damage of your next Attack."
+    },
+    {
+      "name": "Drone",
+      "description": "Drones are 0 cost attacks which benefit from Potency, are Ethereal and Exhaust when played."
+    },
+    {
+      "name": "Adapt",
+      "description": "Consume a channeled Gene. Add its effect to the card until the end of the combat and shuffle this card in your draw pile.\nAdapted effects target the same enemy as the card if possible."
+    },
+    {
+      "name": "Form",
+      "description": "Trigger the following effect if you have a Gene of this type, otherwise Channel one."
+    },
+    {
+      "name": "Fate X",
+      "description": "Put random cards from your draw pile matching X on top of your draw pile, then Scry them."
+    },
+    {
+      "name": "Lust",
+      "description": "Reduce the base damage of the next attack by this amount."
+    },
+    {
+      "name": "Rage",
+      "description": "Whenever you play an Attack this turn, gain this amount of Block."
+    },
+    {
+      "name": "Randomized",
+      "description": "Randomized Forms are selected when the card is created and vary from a card to another."
+    },
+    {
+      "name": "Shadows",
+      "description": "When Shadows reaches its threshold it deals 2 damage per stack and applies 1 Weak to all enemies. The first threshold is 1."
+    },
+    {
+      "name": "Shift",
+      "description": "Recreate the gene at the back of the orb line."
+    }
+  ]
+}
