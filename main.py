@@ -161,7 +161,7 @@ async def get_id(message):
             + "Then hit ` while in a run."
         )
         return
-    if s == "relic:124":
+    if s == "relic:124" or s == "124":
         await message.channel.send(
             "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings"
         )
