@@ -174,6 +174,10 @@ async def get_id(message):
         await message.channel.send(
             "https://cdn.discordapp.com/attachments/398373038732738570/633779880873689110/FB_IMG_1570999646277.png"
         )
+    if s == "autoadd":
+        await message.channel.send(
+            "https://github.com/daviscook477/BaseMod/wiki/AutoAdd"
+        )
     if len(s.split(" ")) == 1:
         return
 
