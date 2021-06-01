@@ -1,15 +1,4 @@
 {
-  "mod": {
-    "name": "Ruina",
-    "version": "2.1.1",
-    "authors": ["Darkglade, squeeny"],
-    "credits": "",
-    "description": "An alternate Act mod based on Library of Ruina.",
-    "mts_version": "3.18.2",
-    "sts_version": "12-22-2020",
-    "dependencies": ["basemod","stslib","actlikeit"],
-    "optional_dependencies": []
-  },
   "cards": [
     {
       "name": "Dazzled",
@@ -17,7 +6,8 @@
       "rarity": "Special",
       "type": "Status",
       "cost": "1",
-      "description": "When Retained, increase its cost by 1 this combat. If its cost is 4 or more, it becomes Unplayable."
+      "description": "When Retained, increase its cost by 1 this combat. If its cost is 4 or more, it becomes Unplayable.",
+      "mod": "Ruina"
     },
     {
       "name": "Forest Keeper's Lock",
@@ -25,7 +15,8 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Enemy loses 40 Strength this turn."
+      "description": "Enemy loses 40 Strength this turn.",
+      "mod": "Ruina"
     },
     {
       "name": "Forest Keeper's Lock+",
@@ -33,7 +24,8 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Enemy loses 60 Strength this turn."
+      "description": "Enemy loses 60 Strength this turn.",
+      "mod": "Ruina"
     },
     {
       "name": "Fragment of Bliss",
@@ -41,7 +33,8 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 30 Block.\nThis card is not affected by Block modifiers."
+      "description": "Gain 30 Block.\nThis card is not affected by Block modifiers.",
+      "mod": "Ruina"
     },
     {
       "name": "Stolen Time",
@@ -49,7 +42,8 @@
       "rarity": "Special",
       "type": "Status",
       "cost": "0",
-      "description": "Draw 1 card."
+      "description": "Draw 1 card.",
+      "mod": "Ruina"
     },
     {
       "name": "Wisdom",
@@ -57,7 +51,17 @@
       "rarity": "Special",
       "type": "Status",
       "cost": "1",
-      "description": "Draw 1 card.\nIf a Scarecrow exhausts this card, Stun it next turn."
+      "description": "Draw 1 card.\nIf a Scarecrow exhausts this card, Stun it next turn.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Guilt",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "4",
+      "description": "ruina:Manifest.\nAt the end of your turn, a random enemy gains 2 Strength next turn.\nIf this is Exhausted without being played, add a copy of it into your discard pile.",
+      "mod": "Ruina"
     },
     {
       "name": "Apocalypse",
@@ -65,7 +69,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 22 damage.\nDeals 50% more damage if your HP is at or below 50%.\nDeals 50% more damage to enemies with 50% or less HP."
+      "description": "Deal 22 damage.\nDeals 50% more damage if your HP is at or below 50%.\nDeals 50% more damage to enemies with 50% or less HP.",
+      "mod": "Ruina"
     },
     {
       "name": "Apocalypse+",
@@ -73,23 +78,44 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 26 damage.\nDeals 50% more damage if your HP is at or below 50%.\nDeals 50% more damage to enemies with 50% or less HP."
+      "description": "Deal 26 damage.\nDeals 50% more damage if your HP is at or below 50%.\nDeals 50% more damage to enemies with 50% or less HP.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Aspiration",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Strength.\nLose half of your current HP. At the end of combat, heal the HP lost by this card.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Aspiration+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Strength.\nLose half of your current HP. At the end of combat, heal the HP lost by this card.",
+      "mod": "Ruina"
     },
     {
       "name": "Beak",
       "color": "Ego",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
-      "description": "At the start of your turn, reduce the cost of the highest cost card in your hand to 0 this combat and give it Exhaust."
+      "cost": "1",
+      "description": "At the start of your turn, reduce the cost of the highest cost card in your hand to 0 this combat and give it Exhaust.",
+      "mod": "Ruina"
     },
     {
       "name": "Beak+",
       "color": "Ego",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
-      "description": "At the start of your turn, reduce the cost of the highest cost card in your hand to 0 this combat and give it Exhaust."
+      "cost": "1",
+      "description": "At the start of your turn, reduce the cost of the highest cost card in your hand to 0 this combat and give it Exhaust.",
+      "mod": "Ruina"
     },
     {
       "name": "Blind Rage",
@@ -97,7 +123,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 26 damage to ALL enemies.\nTake 6 damage.\nIf your HP is at or below 50%, this card costs 0."
+      "description": "Deal 26 damage to ALL enemies.\nTake 6 damage.\nIf your HP is at or below 50%, this card costs 0.",
+      "mod": "Ruina"
     },
     {
       "name": "Blind Rage+",
@@ -105,7 +132,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 30 damage to ALL enemies.\nTake 4 damage.\nIf your HP is at or below 50%, this card costs 0."
+      "description": "Deal 30 damage to ALL enemies.\nTake 4 damage.\nIf your HP is at or below 50%, this card costs 0.",
+      "mod": "Ruina"
     },
     {
       "name": "Cobalt Scar",
@@ -113,7 +141,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you play 5 Attacks, deal 20 damage to ALL enemies."
+      "description": "Whenever you play 5 Attacks, deal 20 damage to ALL enemies.",
+      "mod": "Ruina"
     },
     {
       "name": "Cobalt Scar+",
@@ -121,7 +150,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you play 5 Attacks, deal 20 damage to ALL enemies."
+      "description": "Whenever you play 5 Attacks, deal 20 damage to ALL enemies.",
+      "mod": "Ruina"
     },
     {
       "name": "Crimson Scar",
@@ -129,7 +159,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 10 Block.\nScry 2.\nFor each card discarded, gain 3 Vigor."
+      "description": "Gain 10 Block.\nScry 2.\nFor each card discarded, gain 3 Vigor.",
+      "mod": "Ruina"
     },
     {
       "name": "Crimson Scar+",
@@ -137,7 +168,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 12 Block.\nScry 3.\nFor each card discarded, gain 3 Vigor."
+      "description": "Gain 12 Block.\nScry 3.\nFor each card discarded, gain 3 Vigor.",
+      "mod": "Ruina"
     },
     {
       "name": "Dead Silence",
@@ -145,7 +177,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
-      "description": "Deal 20 damage.\nTake an extra turn after this one.\nIf this card killed an enemy, gain [E] [E] next turn."
+      "description": "Deal 20 damage.\nTake an extra turn after this one.\nIf this card killed an enemy, gain [E] [E] next turn.",
+      "mod": "Ruina"
     },
     {
       "name": "Dead Silence+",
@@ -153,7 +186,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 20 damage.\nTake an extra turn after this one.\nIf this card killed an enemy, gain [E] [E] next turn."
+      "description": "Deal 20 damage.\nTake an extra turn after this one.\nIf this card killed an enemy, gain [E] [E] next turn.",
+      "mod": "Ruina"
     },
     {
       "name": "Faded Memories",
@@ -161,7 +195,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 1 card for every enemy in combat."
+      "description": "Draw 1 card for every enemy in combat.",
+      "mod": "Ruina"
     },
     {
       "name": "Faded Memories+",
@@ -169,7 +204,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 1 card for every enemy in combat."
+      "description": "Draw 1 card for every enemy in combat.",
+      "mod": "Ruina"
     },
     {
       "name": "False Throne",
@@ -177,7 +213,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Next turn, put ALL non-Status non-Curse cards from your exhaust pile into your hand and give them Ethereal."
+      "description": "Next turn, put ALL non-Status non-Curse cards from your exhaust pile into your hand and give them Ethereal.",
+      "mod": "Ruina"
     },
     {
       "name": "False Throne+",
@@ -185,7 +222,44 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Next turn, put ALL non-Status non-Curse cards from your exhaust pile into your hand and give them Ethereal."
+      "description": "Next turn, put ALL non-Status non-Curse cards from your exhaust pile into your hand and give them Ethereal.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Finale",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage to ALL enemies .",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Finale+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 23 damage to ALL enemies .",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Frost Splinter",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain [E] , draw 1 card, and ruina:Freeze 1 card.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Frost Splinter+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain [E] , draw 1 card, and ruina:Freeze 1 card.",
+      "mod": "Ruina"
     },
     {
       "name": "Gold Rush",
@@ -193,7 +267,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 4 Strength.\nIf the last card played this combat was an Attack, double your Strength."
+      "description": "Gain 4 Strength.\nIf the last card played this combat was an Attack, double your Strength.",
+      "mod": "Ruina"
     },
     {
       "name": "Gold Rush+",
@@ -201,7 +276,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 6 Strength.\nIf the last card played this combat was an Attack, double your Strength."
+      "description": "Gain 6 Strength.\nIf the last card played this combat was an Attack, double your Strength.",
+      "mod": "Ruina"
     },
     {
       "name": "Harvest",
@@ -209,7 +285,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 40 damage.\nThis card deals less damage as your HP percent drops (deals max damage at full HP)."
+      "description": "Deal 40 damage.\nThis card deals less damage as your HP percent drops (deals max damage at full HP).",
+      "mod": "Ruina"
     },
     {
       "name": "Harvest+",
@@ -217,7 +294,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 40 damage.\nThis card deals less damage as your HP percent drops (deals max damage at full HP).\nGain 5 Block."
+      "description": "Deal 40 damage.\nThis card deals less damage as your HP percent drops (deals max damage at full HP).\nGain 5 Block.",
+      "mod": "Ruina"
     },
     {
       "name": "Heaven",
@@ -225,7 +303,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "Gain 8 Block X times.\nWhenever you are attacked this turn, deal damage back equal to your remaining Block."
+      "description": "Gain 8 Block X times.\nWhenever you are attacked this turn, deal damage back equal to your remaining Block.",
+      "mod": "Ruina"
     },
     {
       "name": "Heaven+",
@@ -233,7 +312,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "Gain 10 Block X times.\nWhenever you are attacked this turn, deal damage back equal to your remaining Block."
+      "description": "Gain 10 Block X times.\nWhenever you are attacked this turn, deal damage back equal to your remaining Block.",
+      "mod": "Ruina"
     },
     {
       "name": "Homing Instinct",
@@ -241,7 +321,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Exhaust up to 1 card.\nAt the start of your turn, gain [E] equal to the cost of the exhausted card."
+      "description": "Exhaust up to 1 card.\nAt the start of your turn, gain [E] equal to the cost of the exhausted card.",
+      "mod": "Ruina"
     },
     {
       "name": "Homing Instinct+",
@@ -249,7 +330,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Exhaust up to 1 card.\nAt the start of your turn, gain [E] equal to the cost of the exhausted card."
+      "description": "Exhaust up to 1 card.\nAt the start of your turn, gain [E] equal to the cost of the exhausted card.",
+      "mod": "Ruina"
     },
     {
       "name": "In the Name of Love and Hate",
@@ -257,7 +339,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
-      "description": "Deal 42 damage to ALL enemies."
+      "description": "Deal 42 damage to ALL enemies.",
+      "mod": "Ruina"
     },
     {
       "name": "In the Name of Love and Hate+",
@@ -265,7 +348,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
-      "description": "Deal 54 damage to ALL enemies."
+      "description": "Deal 54 damage to ALL enemies.",
+      "mod": "Ruina"
     },
     {
       "name": "Justitia",
@@ -273,7 +357,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "If the enemy's HP is at or below 30%, kill it.\nEnemy loses 11 HP."
+      "description": "If the enemy's HP is at or below 30%, kill it.\nEnemy loses 11 HP.",
+      "mod": "Ruina"
     },
     {
       "name": "Justitia+",
@@ -281,7 +366,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "If the enemy's HP is at or below 30%, kill it.\nEnemy loses 14 HP."
+      "description": "If the enemy's HP is at or below 30%, kill it.\nEnemy loses 14 HP.",
+      "mod": "Ruina"
     },
     {
       "name": "Lamp",
@@ -289,7 +375,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Enemy loses 4 Strength this turn.\nWhenever you are attacked this turn, deal 8 damage back."
+      "description": "Enemy loses 4 Strength this turn.\nWhenever you are attacked this turn, deal 8 damage back.",
+      "mod": "Ruina"
     },
     {
       "name": "Lamp+",
@@ -297,7 +384,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Enemy loses 6 Strength this turn.\nWhenever you are attacked this turn, deal 10 damage back."
+      "description": "Enemy loses 6 Strength this turn.\nWhenever you are attacked this turn, deal 10 damage back.",
+      "mod": "Ruina"
     },
     {
       "name": "Lumber",
@@ -305,7 +393,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nExhaust up to 2 cards. For each Attack exhausted, add its base damage to this card's damage."
+      "description": "Deal 10 damage.\nExhaust up to 2 cards. For each Attack exhausted, add its base damage to this card's damage.",
+      "mod": "Ruina"
     },
     {
       "name": "Lumber+",
@@ -313,7 +402,26 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nExhaust up to 2 cards. For each Attack exhausted, add its base damage to this card's damage."
+      "description": "Deal 10 damage.\nExhaust up to 2 cards. For each Attack exhausted, add its base damage to this card's damage.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Marionette",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nDraw 2 cards.\nIncrease this card's cost by 1 this combat.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Marionette+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nDraw 2 cards.\nIncrease this card's cost by 1 this combat.",
+      "mod": "Ruina"
     },
     {
       "name": "Mimicry",
@@ -321,7 +429,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 13 damage. Heal HP equal to unblocked damage."
+      "description": "Deal 13 damage. Heal HP equal to unblocked damage.",
+      "mod": "Ruina"
     },
     {
       "name": "Mimicry+",
@@ -329,7 +438,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 16 damage. Heal HP equal to unblocked damage."
+      "description": "Deal 16 damage. Heal HP equal to unblocked damage.",
+      "mod": "Ruina"
     },
     {
       "name": "Nihil",
@@ -337,7 +447,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "ALL enemies lose 2 Strength.\nIf you have no cards in hand, this effect is doubled."
+      "description": "ALL enemies lose 2 Strength.\nIf you have no cards in hand, this effect is doubled.",
+      "mod": "Ruina"
     },
     {
       "name": "Nihil+",
@@ -345,7 +456,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "ALL enemies lose 3 Strength.\nIf you have no cards in hand, this effect is doubled."
+      "description": "ALL enemies lose 3 Strength.\nIf you have no cards in hand, this effect is doubled.",
+      "mod": "Ruina"
     },
     {
       "name": "Paradise Lost",
@@ -353,7 +465,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "At the start of your turn, Exhaust up to 1 card.\nWhenever 12 cards are Exhausted, ALL enemies lose 666 HP."
+      "description": "At the start of your turn, Exhaust up to 1 card.\nWhenever 12 cards are Exhausted, ALL enemies lose 150 HP.",
+      "mod": "Ruina"
     },
     {
       "name": "Paradise Lost+",
@@ -361,7 +474,8 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "At the start of your turn, Exhaust up to 2 cards.\nWhenever 12 cards are Exhausted, ALL enemies lose 666 HP."
+      "description": "At the start of your turn, Exhaust up to 1 card.\nWhenever 12 cards are Exhausted, ALL enemies lose 200 HP.",
+      "mod": "Ruina"
     },
     {
       "name": "Penitence",
@@ -369,7 +483,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Heal 8 HP.\nRemove all of your debuffs."
+      "description": "Heal 8 HP.\nRemove all of your debuffs.",
+      "mod": "Ruina"
     },
     {
       "name": "Penitence+",
@@ -377,7 +492,26 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Heal 8 HP.\nRemove all of your debuffs."
+      "description": "Heal 8 HP.\nRemove all of your debuffs.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Remorse",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "ruina:Manifest.\nDeal 25 damage.\nApply 3 Weak and Vulnerable.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Remorse+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "ruina:Manifest.\nDeal 25 damage.\nApply 3 Weak and Vulnerable.",
+      "mod": "Ruina"
     },
     {
       "name": "Smile",
@@ -385,7 +519,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 16 damage and apply 2 Weak and Vulnerable to ALL enemies."
+      "description": "Deal 16 damage and apply 2 Weak and Vulnerable to ALL enemies.",
+      "mod": "Ruina"
     },
     {
       "name": "Smile+",
@@ -393,7 +528,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 16 damage and apply 3 Weak and Vulnerable to ALL enemies."
+      "description": "Deal 16 damage and apply 3 Weak and Vulnerable to ALL enemies.",
+      "mod": "Ruina"
     },
     {
       "name": "Sound of a Star",
@@ -401,7 +537,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 10 damage to ALL enemies.\nThis card's damage is increased by the amount of Block you've gained this combat.\nExhaustive 2."
+      "description": "Deal 10 damage to ALL enemies.\nThis card's damage is increased by the amount of Block you've gained this combat.\nExhaustive 2.",
+      "mod": "Ruina"
     },
     {
       "name": "Sound of a Star+",
@@ -409,7 +546,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 10 damage to ALL enemies.\nThis card's damage is increased by the amount of Block you've gained this combat.\nExhaustive 2."
+      "description": "Deal 10 damage to ALL enemies.\nThis card's damage is increased by the amount of Block you've gained this combat.\nExhaustive 2.",
+      "mod": "Ruina"
     },
     {
       "name": "Sword Sharpened With Tears",
@@ -417,7 +555,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 2 Weak.\nWhen you play this card on the same enemy 3 times, instead apply 1 Stun and exhaust this card."
+      "description": "Apply 2 Weak.\nWhen you play this card on the same enemy 3 times, instead apply 1 Stun and exhaust this card.",
+      "mod": "Ruina"
     },
     {
       "name": "Sword Sharpened With Tears+",
@@ -425,7 +564,80 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 2 Weak.\nShuffle this card into your draw pile.\nWhen you play this card on the same enemy 3 times, instead apply 1 Stun and exhaust this card."
+      "description": "Apply 2 Weak.\nShuffle this card into your draw pile.\nWhen you play this card on the same enemy 3 times, instead apply 1 Stun and exhaust this card.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The First Movement",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nReplace this card in your Deck with The Second Movement",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The First Movement+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies.\nReplace this card in your Deck with The Second Movement",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The Fourth Movement",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 damage to ALL enemies.\nReplace this card in your Deck with The Fourth Movement",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The Fourth Movement+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage to ALL enemies.\nReplace this card in your Deck with The Fourth Movement",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The Second Movement",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies.\nReplace this card in your Deck with The Third Movement",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The Second Movement+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage to ALL enemies.\nReplace this card in your Deck with The Third Movement",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The Third Movement",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage to ALL enemies.\nReplace this card in your Deck with The Fourth Movement",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The Third Movement+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 damage to ALL enemies.\nReplace this card in your Deck with The Fourth Movement",
+      "mod": "Ruina"
     },
     {
       "name": "Thirst",
@@ -433,7 +645,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 9 ruina:Bleed.\nThis turn, whenever you attack an enemy with ruina:Bleed, gain 1 Strength."
+      "description": "Apply 9 ruina:Bleed.\nThis turn, whenever you attack an enemy with ruina:Bleed, gain 1 Strength.",
+      "mod": "Ruina"
     },
     {
       "name": "Thirst+",
@@ -441,7 +654,8 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 9 ruina:Bleed.\nThis turn, whenever you attack an enemy with ruina:Bleed, gain 1 Strength."
+      "description": "Apply 9 ruina:Bleed.\nThis turn, whenever you attack an enemy with ruina:Bleed, gain 1 Strength.",
+      "mod": "Ruina"
     },
     {
       "name": "Twilight",
@@ -449,7 +663,8 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "ruina:Manifest.\nDeal 15 damage and apply Weak equal to the [E] paid for by ruina:Manifest to ALL enemies."
+      "description": "ruina:Manifest.\nDeal 15 damage and apply Weak equal to the [E] paid for by ruina:Manifest to ALL enemies.",
+      "mod": "Ruina"
     },
     {
       "name": "Twilight+",
@@ -457,317 +672,737 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "ruina:Manifest.\nDeal 20 damage and apply Weak equal to the [E] paid for by ruina:Manifest to ALL enemies."
+      "description": "ruina:Manifest.\nDeal 20 damage and apply Weak equal to the [E] paid for by ruina:Manifest to ALL enemies.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Wrist Cutter",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E] .\nAdd 1 Wound to your hand with Retain.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Wrist Cutter+",
+      "color": "Ego",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E] .\nAdd 1 Wound to your hand with Retain.",
+      "mod": "Ruina"
     }
   ],
   "relics": [
+    {
+      "name": "Book of Someone",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the end of combat, heal 35% of your HP.",
+      "flavorText": "Some must fight so that all may be free.",
+      "mod": "Ruina"
+    },
     {
       "name": "False Present",
       "tier": "Special",
       "pool": "",
       "description": "Upon pickup, lose 7 Max HP. The first 2 cards you draw each combat cost 0 until played.",
-      "flavorText": "Poor Ozma. She didn't know that lying adults don't approach others without reason."
+      "flavorText": "Poor Ozma. She didn't know that lying adults don't approach others without reason.",
+      "mod": "Ruina"
     },
     {
       "name": "Four Trigrams",
       "tier": "Special",
       "pool": "",
       "description": "At the start of your turn, randomly activate an effect that hasn't been activated this combat:\nGain 1 Strength.\nGain 1 Dexterity.\nGain [E] .\nDraw 1 card.",
-      "flavorText": "The balance of the City must be upheld."
+      "flavorText": "The balance of the City must be upheld.",
+      "mod": "Ruina"
     },
     {
       "name": "Goodbye",
       "tier": "Special",
       "pool": "",
       "description": "The first Attack you play each combat deals double damage.",
-      "flavorText": "It tries to mimic humans. Looking into a mirror, mumbling to itself, trying to fix its skeletal structure . . . it's as if it was trying to become human."
+      "flavorText": "It tries to mimic humans. Looking into a mirror, mumbling to itself, trying to fix its skeletal structure . . . it's as if it was trying to become human.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Life Fibers",
+      "tier": "Special",
+      "pool": "",
+      "description": "On Pickup, lose 50% of your max HP and store it in this relic.\nWhen you would die, fully heal to your current Max HP instead, and then increase your max HP by the amount stored by this relic. (works once)",
+      "flavorText": "When night falls in the Backstreets, they will come.",
+      "mod": "Ruina"
     },
     {
       "name": "Lowell's Gift",
       "tier": "Special",
       "pool": "",
       "description": "At the start of your 3rd turn, gain 2 Strength and 1 Dexterity.",
-      "flavorText": "For you I'd steal the stars."
+      "flavorText": "For you I'd steal the stars.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Malice",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of your turn, deal 2 damage to ALL enemies. If your HP is at or below 50%, deal 5 damage to ALL enemies instead.",
+      "flavorText": "The inherent malice caused all life to crumble as soon as it bloomed.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Overexertion",
+      "tier": "Special",
+      "pool": "",
+      "description": "Start each combat with an additional [E] [E] .\nGain 1 Weak and Frail at the start of your second turn.",
+      "flavorText": "Placeholder",
+      "mod": "Ruina"
     },
     {
       "name": "Prescript",
       "tier": "Special",
       "pool": "",
       "description": "Prescripts:\n1. Encounter 3 normal enemies. 0/3\n2. Obtain 3 Common cards. 0/3\nOnce completed, transforms into a special relic.",
-      "flavorText": "A set of bizarre instructions. Who in their right mind would come up with these?"
+      "flavorText": "A set of bizarre instructions. Who in their right mind would come up with these?",
+      "mod": "Ruina"
     },
     {
       "name": "Prescript's Grace",
       "tier": "Special",
       "pool": "",
       "description": "At the start of combat, randomly chooses between Attack, Skill, and Power. The first card played of the chosen type is played twice.",
-      "flavorText": "It all made sense now. All those pointless endeavours converged onto a single, definite meaning."
+      "flavorText": "It all made sense now. All those pointless endeavours converged onto a single, definite meaning.",
+      "mod": "Ruina"
     },
     {
       "name": "Strongest",
       "tier": "Special",
       "pool": "",
-      "description": "When you deal 20 unblocked attack damage in a single turn, gain 2 Strength. Can only trigger once per turn.",
-      "flavorText": "The courage to protect others. That is what separates the mighty from the meek."
+      "description": "When you deal 15 unblocked attack damage in a single turn, gain 1 Strength. Can only trigger once per turn.",
+      "flavorText": "The courage to protect others. That is what separates the mighty from the meek.",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The Seventh Bullet",
+      "tier": "Special",
+      "pool": "",
+      "description": "Gain 2 Strength at the start of combat. Whenever you play 7 Attacks, take 5 damage.",
+      "flavorText": "One day, the marksman realized the Devil no longer followed him. He pondered why, then realized that his soul had already fallen to Hell from the beginning.",
+      "mod": "Ruina"
     },
     {
       "name": "Yesterday's Promise",
       "tier": "Special",
       "pool": "",
       "description": "When you have insufficient [E] to play a card, you may instead pay 3 HP for every missing [E] .",
-      "flavorText": "Let me lend you my eyeglass, so you can have a closer look at what you just signed."
+      "flavorText": "Let me lend you my eyeglass, so you can have a closer look at what you just signed.",
+      "mod": "Ruina"
     }
   ],
   "potions": [
   ],
   "creatures": [
     {
+      "name": "All-Around Helper",
+      "type": "Elite",
+      "minHP": "51",
+      "maxHP": "51",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Alriune",
+      "type": "Elite",
+      "minHP": "76",
+      "maxHP": "76",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Angelica",
+      "type": "Boss",
+      "minHP": "600",
+      "maxHP": "600",
+      "mod": "Ruina"
+    },
+    {
       "name": "Argalia",
       "type": "Boss",
       "minHP": "1500",
-      "maxHP": "1500"
+      "maxHP": "1500",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Baral",
+      "type": "Boss",
+      "minHP": "3000",
+      "maxHP": "3000",
+      "mod": "Ruina"
     },
     {
       "name": "Big Bird",
       "type": "Elite",
       "minHP": "400",
-      "maxHP": "400"
+      "maxHP": "400",
+      "mod": "Ruina"
     },
     {
       "name": "Big and Will Be Bad Wolf",
       "type": "Normal",
-      "minHP": "84",
-      "maxHP": "84"
+      "minHP": "80",
+      "maxHP": "80",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Binah",
+      "type": "Boss",
+      "minHP": "120",
+      "maxHP": "120",
+      "mod": "Ruina"
     },
     {
       "name": "Bloodbath",
       "type": "Normal",
-      "minHP": "90",
-      "maxHP": "90"
+      "minHP": "92",
+      "maxHP": "92",
+      "mod": "Ruina"
     },
     {
       "name": "Burrowing Heaven",
       "type": "Normal",
       "minHP": "140",
-      "maxHP": "140"
+      "maxHP": "140",
+      "mod": "Ruina"
     },
     {
       "name": "Chesed",
       "type": "Boss",
-      "minHP": "160",
-      "maxHP": "160"
+      "minHP": "130",
+      "maxHP": "130",
+      "mod": "Ruina"
     },
     {
       "name": "Distorted Yan",
       "type": "Boss",
-      "minHP": "250",
-      "maxHP": "250"
+      "minHP": "350",
+      "maxHP": "350",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Eileen",
+      "type": "Boss",
+      "minHP": "1000",
+      "maxHP": "1000",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Elena",
+      "type": "Boss",
+      "minHP": "500",
+      "maxHP": "500",
+      "mod": "Ruina"
     },
     {
       "name": "Eyeball Chick",
       "type": "Normal",
-      "minHP": "46",
-      "maxHP": "46"
+      "minHP": "41",
+      "maxHP": "41",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Forsaken Murderer",
+      "type": "Normal",
+      "minHP": "45",
+      "maxHP": "45",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Gebura",
+      "type": "Boss",
+      "minHP": "200",
+      "maxHP": "200",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Greta",
+      "type": "Boss",
+      "minHP": "750",
+      "maxHP": "750",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Happy Teddy Bear",
+      "type": "Normal",
+      "minHP": "54",
+      "maxHP": "54",
+      "mod": "Ruina"
     },
     {
       "name": "Heart of Aspiration",
       "type": "Normal",
-      "minHP": "55",
-      "maxHP": "55"
+      "minHP": "49",
+      "maxHP": "49",
+      "mod": "Ruina"
     },
     {
       "name": "Hermit of the Azure Forest",
       "type": "Elite",
-      "minHP": "197",
-      "maxHP": "197"
+      "minHP": "194",
+      "maxHP": "194",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Hod",
+      "type": "Boss",
+      "minHP": "130",
+      "maxHP": "130",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Hokma",
+      "type": "Boss",
+      "minHP": "160",
+      "maxHP": "160",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Jae-heon",
+      "type": "Boss",
+      "minHP": "800",
+      "maxHP": "800",
+      "mod": "Ruina"
     },
     {
       "name": "Jester of Nihil",
       "type": "Boss",
       "minHP": "600",
-      "maxHP": "600"
+      "maxHP": "600",
+      "mod": "Ruina"
     },
     {
       "name": "Judgement Bird",
       "type": "Normal",
       "minHP": "250",
-      "maxHP": "250"
+      "maxHP": "250",
+      "mod": "Ruina"
     },
     {
       "name": "King of Greed",
       "type": "Normal",
       "minHP": "119",
-      "maxHP": "119"
+      "maxHP": "119",
+      "mod": "Ruina"
     },
     {
       "name": "Knight of Despair",
       "type": "Normal",
       "minHP": "160",
-      "maxHP": "160"
+      "maxHP": "160",
+      "mod": "Ruina"
     },
     {
       "name": "Little Red Riding Hooded Mercenary",
       "type": "Boss",
       "minHP": "150",
-      "maxHP": "150"
+      "maxHP": "150",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Lulu",
+      "type": "Elite",
+      "minHP": "95",
+      "maxHP": "95",
+      "mod": "Ruina"
     },
     {
       "name": "Lungs of Craving",
       "type": "Normal",
-      "minHP": "42",
-      "maxHP": "42"
+      "minHP": "45",
+      "maxHP": "45",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Malkuth",
+      "type": "Boss",
+      "minHP": "150",
+      "maxHP": "150",
+      "mod": "Ruina"
     },
     {
       "name": "Mountain of Smiling Bodies",
       "type": "Elite",
       "minHP": "125",
-      "maxHP": "125"
+      "maxHP": "125",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Musicians of Bremen",
+      "type": "Boss",
+      "minHP": "850",
+      "maxHP": "850",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Netzach",
+      "type": "Boss",
+      "minHP": "160",
+      "maxHP": "160",
+      "mod": "Ruina"
     },
     {
       "name": "Nosferatu",
       "type": "Normal",
-      "minHP": "93",
-      "maxHP": "93"
+      "minHP": "95",
+      "maxHP": "95",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Oswald",
+      "type": "Boss",
+      "minHP": "700",
+      "maxHP": "700",
+      "mod": "Ruina"
     },
     {
       "name": "Ozma",
       "type": "Boss",
       "minHP": "500",
-      "maxHP": "500"
+      "maxHP": "500",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Philip",
+      "type": "Boss",
+      "minHP": "700",
+      "maxHP": "700",
+      "mod": "Ruina"
     },
     {
       "name": "Pinocchio",
       "type": "Normal",
       "minHP": "170",
-      "maxHP": "170"
+      "maxHP": "170",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Pluto",
+      "type": "Boss",
+      "minHP": "900",
+      "maxHP": "900",
+      "mod": "Ruina"
     },
     {
       "name": "Price of Silence",
       "type": "Normal",
-      "minHP": "82",
-      "maxHP": "82"
+      "minHP": "83",
+      "maxHP": "83",
+      "mod": "Ruina"
     },
     {
       "name": "Prophet",
       "type": "Boss",
       "minHP": "100",
-      "maxHP": "100"
+      "maxHP": "100",
+      "mod": "Ruina"
     },
     {
       "name": "Punishing Bird",
       "type": "Normal",
       "minHP": "150",
-      "maxHP": "150"
-    },
-    {
-      "name": "Puppeteer",
-      "type": "Boss",
-      "minHP": "600",
-      "maxHP": "600"
+      "maxHP": "150",
+      "mod": "Ruina"
     },
     {
       "name": "Queen of Hatred",
       "type": "Normal",
-      "minHP": "102",
-      "maxHP": "102"
+      "minHP": "105",
+      "maxHP": "105",
+      "mod": "Ruina"
     },
     {
       "name": "Remnant of Time",
       "type": "Normal",
-      "minHP": "86",
-      "maxHP": "86"
+      "minHP": "84",
+      "maxHP": "84",
+      "mod": "Ruina"
     },
     {
       "name": "Road Home",
       "type": "Elite",
       "minHP": "100",
-      "maxHP": "100"
+      "maxHP": "100",
+      "mod": "Ruina"
     },
     {
       "name": "Roland",
       "type": "Boss",
-      "minHP": "750",
-      "maxHP": "750"
+      "minHP": "650",
+      "maxHP": "650",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Roland",
+      "type": "Boss",
+      "minHP": "600",
+      "maxHP": "600",
+      "mod": "Ruina"
     },
     {
       "name": "Runaway Bird",
       "type": "Normal",
-      "minHP": "42",
-      "maxHP": "42"
+      "minHP": "37",
+      "maxHP": "37",
+      "mod": "Ruina"
     },
     {
       "name": "Sage of the Forest",
       "type": "Normal",
-      "minHP": "300",
-      "maxHP": "300"
+      "minHP": "500",
+      "maxHP": "500",
+      "mod": "Ruina"
     },
     {
       "name": "Sanguine Bat",
       "type": "Normal",
-      "minHP": "37",
-      "maxHP": "37"
+      "minHP": "39",
+      "maxHP": "39",
+      "mod": "Ruina"
     },
     {
       "name": "Scarecrow",
       "type": "Normal",
+      "minHP": "54",
+      "maxHP": "54",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Scorched Girl",
+      "type": "Normal",
       "minHP": "49",
-      "maxHP": "49"
+      "maxHP": "49",
+      "mod": "Ruina"
     },
     {
       "name": "Servant of Wrath",
       "type": "Elite",
       "minHP": "300",
-      "maxHP": "300"
+      "maxHP": "300",
+      "mod": "Ruina"
     },
     {
       "name": "Shrine to the Blue Star",
       "type": "Elite",
       "minHP": "200",
-      "maxHP": "200"
+      "maxHP": "200",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Silent Girl",
+      "type": "Boss",
+      "minHP": "480",
+      "maxHP": "480",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Silent Orchestra",
+      "type": "Boss",
+      "minHP": "260",
+      "maxHP": "260",
+      "mod": "Ruina"
     },
     {
       "name": "Snow Queen",
       "type": "Elite",
       "minHP": "230",
-      "maxHP": "230"
+      "maxHP": "230",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Tanya",
+      "type": "Boss",
+      "minHP": "450",
+      "maxHP": "450",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The Black Silence",
+      "type": "Boss",
+      "minHP": "1000",
+      "maxHP": "1000",
+      "mod": "Ruina"
+    },
+    {
+      "name": "The Black Silence",
+      "type": "Boss",
+      "minHP": "1300",
+      "maxHP": "1300",
+      "mod": "Ruina"
     },
     {
       "name": "The Red Mist",
       "type": "Boss",
       "minHP": "300",
-      "maxHP": "300"
+      "maxHP": "300",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Tiphereth",
+      "type": "Boss",
+      "minHP": "300",
+      "maxHP": "300",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Today's Shy Look",
+      "type": "Normal",
+      "minHP": "70",
+      "maxHP": "70",
+      "mod": "Ruina"
     },
     {
       "name": "Twilight",
       "type": "Boss",
       "minHP": "550",
-      "maxHP": "550"
+      "maxHP": "550",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Vermilion Cross",
+      "type": "Boss",
+      "minHP": "600",
+      "maxHP": "600",
+      "mod": "Ruina"
     },
     {
       "name": "Warm-Hearted Woodsman",
       "type": "Normal",
-      "minHP": "140",
-      "maxHP": "140"
+      "minHP": "147",
+      "maxHP": "147",
+      "mod": "Ruina"
     },
     {
       "name": "Wolf in Her Nightmares",
       "type": "Boss",
       "minHP": "450",
-      "maxHP": "450"
+      "maxHP": "450",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Yesod",
+      "type": "Boss",
+      "minHP": "160",
+      "maxHP": "160",
+      "mod": "Ruina"
+    },
+    {
+      "name": "Zena",
+      "type": "Boss",
+      "minHP": "3000",
+      "maxHP": "3000",
+      "mod": "Ruina"
     }
   ],
   "keywords": [
     {
       "name": "Bleed",
-      "description": "Whenever this creature attacks this turn, it takes damage equal to the amount of Bleed it has."
+      "description": "Whenever this creature attacks this turn, it takes damage equal to the amount of Bleed it has.",
+      "names": [],
+      "mod": "Ruina"
     },
     {
       "name": "Contract",
-      "description": "When you have insufficient [E] to play this card, you may instead pay 3 HP for every missing [E] ."
+      "description": "When you have insufficient [E] to play this card, you may instead pay 3 HP for every missing [E] .",
+      "names": [],
+      "mod": "Ruina"
+    },
+    {
+      "name": "Freeze",
+      "description": "Frozen cards are Unplayable and Retain.",
+      "names": [],
+      "mod": "Ruina"
     },
     {
       "name": "Manifest",
-      "description": "When you have insufficient [E] to play this card, you may instead Exhaust 1 card for every missing [E] ."
+      "description": "When you have insufficient [E] to play this card, you may instead Exhaust 1 card for every missing [E] .",
+      "names": [],
+      "mod": "Ruina"
+    },
+    {
+      "name": "Temporary HP",
+      "description": "Temporary HP disappears at the end of combat.",
+      "names": ["temporary_hp"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "[E]",
+      "description": "Energy is used to play cards from your hand.",
+      "names": [],
+      "mod": "BaseMod"
+    },
+    {
+      "name": "Autoplay",
+      "description": "This card automatically plays itself when drawn.",
+      "names": [],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Exhaustive",
+      "description": "Exhausts after a certain number of uses.",
+      "names": [],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Fetch",
+      "description": "Choose a specified card from a specified pile and place it into your hand.",
+      "names": [],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Fleeting",
+      "description": "This card Purges and is removed from your deck on use.",
+      "names": [],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Grave",
+      "description": "Start each combat with this card in your discard pile.",
+      "names": [],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Purge",
+      "description": "Removed until end of combat. Does NOT go to your exhaust pile.",
+      "names": [],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Refund",
+      "description": "Returns energy spent on playing the card, up to the Refund value.",
+      "names": ["refunds"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Retain",
+      "description": "Not discarded at the end of your turn.",
+      "names": ["retained","retains"],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Snecko",
+      "description": "When drawn, this card randomizes its cost.",
+      "names": [],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Soulbound",
+      "description": "Cannot be removed from your deck.",
+      "names": [],
+      "mod": "StSLib"
+    },
+    {
+      "name": "Startup",
+      "description": "Triggers at the start of each combat.",
+      "names": [],
+      "mod": "StSLib"
     }
   ]
 }
