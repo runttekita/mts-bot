@@ -815,7 +815,7 @@ def card_format(card, id):
             card["rarity"],
             card["color"],
             id,
-            remove_keyword_prefixes(card["description"]),
+            format_card_description(card["description"]),
         )
     return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(
         card["name"],
@@ -824,14 +824,14 @@ def card_format(card, id):
         card["rarity"],
         card["color"],
         id,
-        remove_keyword_prefixes(card["description"]),
+        format_card_description(card["description"]),
     )
 
 
 def relic_format(relic, id):
     if relic["pool"] == "":
         return "**{0}**\n`{1}`  `{2}`\n{3}\n*{4}*".format(
-            relic["name"], relic["tier"], id, relic["description"], relic["flavorText"]
+            relic["name"], relic["tier"], id, format_relic_description(relic["description"]), relic["flavorText"]
         )
 
     return "**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(
@@ -839,7 +839,7 @@ def relic_format(relic, id):
         relic["tier"],
         relic["pool"],
         id,
-        relic["description"],
+        format_relic_description(relic["description"]),
         relic["flavorText"],
     )
 
@@ -863,11 +863,49 @@ def energy_string(cost):
     return s
 
 
-def remove_keyword_prefixes(description):
+def format_relic_description(description):
+    description = description.replace("\n", " \n ")
+    description = description.split(" ")
+    final_description = ""
+    for word in description:
+        if len(word) == 0:
+            continue
+                      
+        res = energy.match(word)
+        if res:
+            if word.startswith("[E]"):
+                final_description += default_energy + res.group(2) + " "
+                continue
+            final_description += icon_dictionary.get(res.group(1), default_energy) + res.group(2) + " " #i don't think relics should have non-[E] energy...
+            continue
+                      
+        #a few relics have unique keyword text in their descriptions - not many, though.
+        if is_keyword(word):
+            final_description += word.split(":", 1)[1].replace("_", " ") + " "
+            continue
+        
+        final_description += word + " "
+    
+    final_description = final_description.replace("\n ", "\n")
+    return final_description
+
+
+def format_card_description(description):
     description = description.replace("\n", "\n ")
     description = description.split(" ")
     final_description = ""
     for word in description:
+        if len(word) == 0: #should prevent extra spaces.
+            continue
+                      
+        res = energy.match(word)
+        if res:
+            if word.startswith("[E]"):
+                final_description += color_dictionary.get(color, default_energy) + res.group(2) + " "
+                continue
+            final_description += icon_dictionary.get(res.group(1), default_energy) + res.group(2) + " "
+            continue
+        
         res = uncolor.match(word)
         if res:
             final_description += res.group(1).replace("[]", "", 1) + " "
