@@ -33,19 +33,20 @@ default_energy = "<:red_energy:382625376838615061>"
 
 icon_dictionary = {
     "[E]": "<:red_energy:382625376838615061>",
-    "[R]": "<:red_energy:382625376838615061>", 
-    "[G]": "<:green_energy:646206147220471808>", 
-    "[B]": "<:blue_energy:668151236003889184>", 
+    "[R]": "<:red_energy:382625376838615061>",
+    "[G]": "<:green_energy:646206147220471808>",
+    "[B]": "<:blue_energy:668151236003889184>",
     "[W]": "<:purple_energy:620384758068674560>"
 }
 
 color_dictionary = {
-    "Red": "<:red_energy:382625376838615061>", 
-    "Green":  "<:green_energy:646206147220471808>", 
-    "Blue": "<:blue_energy:668151236003889184>", 
+    "Red": "<:red_energy:382625376838615061>",
+    "Green": "<:green_energy:646206147220471808>",
+    "Blue": "<:blue_energy:668151236003889184>",
     "Purple": "<:purple_energy:620384758068674560>",
     "Colorless": "<:colorless_energy:382625433016991745>"
 }
+
 
 class Mod_Data:
     def __init__(self, id):
@@ -81,14 +82,14 @@ async def on_message(message):
     if message.author == client.user:
         return
     if (
-        message.content.lower() == "update body text"
-        and message.author.id == 114667440507453441
+            message.content.lower() == "update body text"
+            and message.author.id == 114667440507453441
     ):
         await message.channel.send("UPDATE BODY TEXT")
         return
     if (
-        message.content.lower() == "big thanks papa kio!"
-        and message.author.id == 95258954090676224
+            message.content.lower() == "big thanks papa kio!"
+            and message.author.id == 95258954090676224
     ):
         await message.channel.send("Big thanks papa Kio!")
         return
@@ -184,10 +185,10 @@ async def get_id(message):
 
     tokenized_message = tokenize_message(s)
     if (
-        message.author.id in banned_users
-        and tokenized_message[1] == "bug"
-        or tokenized_message[1] == "feedback"
-        or tokenized_message[1] == "suggestion"
+            message.author.id in banned_users
+            and tokenized_message[1] == "bug"
+            or tokenized_message[1] == "feedback"
+            or tokenized_message[1] == "suggestion"
     ):
         return
     await do_command(message.channel, tokenized_message)
@@ -270,12 +271,13 @@ async def get_mod_info(channel, tokenized_message):
 
     # Check if the file is incorrectly formatted
     if (
-        mod_data["name"] is None
-        or mod_data["authors"] is None
-        or len(mod_data["authors"]) == 0
-        or mod_data["description"] is None
+            mod_data["name"] is None
+            or mod_data["authors"] is None
+            or len(mod_data["authors"]) == 0
+            or mod_data["description"] is None
     ):
-        await channel.send(f"**{tokenized_message[1]}** does not have a correctly formatted data file. Complain to the mod author")
+        await channel.send(
+            f"**{tokenized_message[1]}** does not have a correctly formatted data file. Complain to the mod author")
         return
 
     # Formatted message should resemble
@@ -303,10 +305,10 @@ async def get_mods_by_author(channel, tokenized_message):
     author_name = "reina" if tokenized_message[1] == "reina" else None
     for mod in Mod_Data("").data:
         if (
-            "mod" in mod
-            and "authors" in mod["mod"]
-            and tokenized_message[1]
-            in [author.lower() for author in mod["mod"]["authors"]]
+                "mod" in mod
+                and "authors" in mod["mod"]
+                and tokenized_message[1]
+                in [author.lower() for author in mod["mod"]["authors"]]
         ):
             mod_list.append("`%s`" % mod["mod"]["name"])
             if author_name is None:
@@ -336,21 +338,21 @@ async def find(channel, tokenized_message):
             random.shuffle(cards)
             first_match = {}
             other_results = {}
-            
+
             search_field = "description"
             cost = None
             type = None
             rarity = None
-            
+
             if len(tokenized_message) == 3:
                 tokens = tokenized_message[2].split()
             else:
                 tokens = tokenized_message[1].split()
-            
+
             data = ""
-            
+
             for item in tokens:
-                if data == "": # Once any value is found, the rest should be input regex
+                if data == "":  # Once any value is found, the rest should be input regex
                     if item == "-n" and search_field != "name":
                         search_field = "name"
                         continue
@@ -363,16 +365,16 @@ async def find(channel, tokenized_message):
                     if rarity is None and item.startswith("-r=") and len(item) > 3:
                         rarity = item[3:]
                         continue
-                
+
                 data += item + " "
-                
+
             data = data[:-1]
 
             if data == "":
                 data = "^[\s\S]*$"
-                
+
             regex = re.compile(data)
-            
+
             failure = "No card "
             if cost is not None:
                 failure += "with cost " + cost + " "
@@ -380,12 +382,12 @@ async def find(channel, tokenized_message):
                 failure += "of type " + type + " "
             if rarity is not None:
                 failure += "of rarity " + rarity + " "
-                
+
             if len(tokenized_message) == 3:
                 failure += f"with {data} in the {search_field} found in {tokenized_message[1]}."
             else:
                 failure += f"with {data} in the {search_field} found."
-                
+
             for x in range(len(cards)):
                 for card in cards[x]["cards"]:
                     if cost is not None and card["cost"].lower() != cost:
@@ -394,7 +396,7 @@ async def find(channel, tokenized_message):
                         continue
                     if rarity is not None and card["rarity"].lower() != rarity:
                         continue
-                    
+
                     if len(tokenized_message) == 3:
                         if regex.search(card[search_field].lower()):
                             if "mod" in cards[x]:
@@ -459,20 +461,20 @@ async def findrelic(channel, tokenized_message):
             random.shuffle(relics)
             first_match = {}
             other_results = {}
-            
+
             search_field = "description"
             tier = None
             color = None
-            
+
             if len(tokenized_message) == 3:
                 tokens = tokenized_message[2].split()
             else:
                 tokens = tokenized_message[1].split()
-            
+
             data = ""
-            
+
             for item in tokens:
-                if data == "": # Once any value is found, the rest should be input regex
+                if data == "":  # Once any value is found, the rest should be input regex
                     if item == "-n" and search_field != "name":
                         search_field = "name"
                         continue
@@ -482,34 +484,34 @@ async def findrelic(channel, tokenized_message):
                     if tier is None and item.startswith("-t=") and len(item) > 3:
                         tier = item[3:]
                         continue
-                
+
                 data += item + " "
-                
+
             data = data[:-1]
 
             if data == "":
                 data = "^[\s\S]*$"
-                
+
             regex = re.compile(data)
-            
+
             failure = "No relic "
             if color is not None:
                 failure += "of color " + color + " "
             if tier is not None:
                 failure += "of tier " + tier + " "
-                
+
             if len(tokenized_message) == 3:
                 failure += f"with {data} in the {search_field} found in {tokenized_message[1]}."
             else:
                 failure += f"with {data} in the {search_field} found."
-                
+
             for x in range(len(relics)):
                 for relic in relics[x]["relics"]:
                     if tier is not None and relic["tier"].lower() != tier:
                         continue
                     if color is not None and relic["pool"].lower() != color:
                         continue
-                    
+
                     if regex.search(relic[search_field].lower()):
                         if "mod" in relics[x]:
                             if not first_match:
@@ -525,7 +527,7 @@ async def findrelic(channel, tokenized_message):
                             else:
                                 if len(other_results) < 3:
                                     other_results.update({relic["mod"]: relic["name"]})
-                                    
+
             message = ""
             if first_match:
                 for key in first_match:
@@ -542,7 +544,7 @@ async def findrelic(channel, tokenized_message):
             await channel.send(failure)
     except TimeoutError:
         await channel.send("Unable to find a match in time!")
-        
+
 
 def makeCaps(string):
     split_word = string.split(" ")
@@ -585,7 +587,7 @@ async def card(channel, tokenized_message):
     other_results = {}
     if len(tokenized_message) == 3:
         if tokenized_message[2] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
+                channel.id == 384046138610941953 or channel.id == 632350690479570950
         ):
             if "mod" in cards[0]:
                 await channel.send(
@@ -600,7 +602,7 @@ async def card(channel, tokenized_message):
                 return
     if len(tokenized_message) == 2:
         if tokenized_message[1] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
+                channel.id == 384046138610941953 or channel.id == 632350690479570950
         ):
             mod_object = random.choice(cards)
             if len(mod_object["cards"]) == 0:
@@ -679,7 +681,7 @@ async def relic(channel, tokenized_message):
         return
     if len(tokenized_message) == 3:
         if tokenized_message[2] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
+                channel.id == 384046138610941953 or channel.id == 632350690479570950
         ):
             if "mod" in relics[0]:
                 await channel.send(
@@ -694,7 +696,7 @@ async def relic(channel, tokenized_message):
                 return
     if len(tokenized_message) == 2:
         if tokenized_message[1] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
+                channel.id == 384046138610941953 or channel.id == 632350690479570950
         ):
             mod_object = random.choice(relics)
             if len(mod_object["relics"]) == 0:
@@ -772,7 +774,7 @@ async def potion(channel, tokenized_message):
     other_results = {}
     if len(tokenized_message) == 3:
         if tokenized_message[2] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
+                channel.id == 384046138610941953 or channel.id == 632350690479570950
         ):
             if "mod" in potions[0]:
                 await channel.send(
@@ -787,7 +789,7 @@ async def potion(channel, tokenized_message):
                 return
     if len(tokenized_message) == 2:
         if tokenized_message[1] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
+                channel.id == 384046138610941953 or channel.id == 632350690479570950
         ):
             mod_object = random.choice(potions)
             if len(mod_object["potions"]) == 0:
@@ -908,17 +910,23 @@ async def help_command(channel):
     )
 
 
+def energy_replace(strIn):
+    retVal = strIn
+    for key, value in icon_dictionary:
+        retVal = retVal.replace(key, value)
+    return retVal
+
 def card_format(card, id):
     if card["cost"] == "":
-        return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`\n{5}".format(
+        return energy_replace("**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`\n{5}".format(
             card["name"],
             card["type"],
             card["rarity"],
             card["color"],
             id,
             remove_keyword_prefixes(card["description"]),
-        )
-    return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(
+        ))
+    return energy_replace("**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(
         card["name"],
         energy_string(card["cost"]),
         card["type"],
@@ -926,23 +934,23 @@ def card_format(card, id):
         card["color"],
         id,
         remove_keyword_prefixes(card["description"]),
-    )
+    ))
 
 
 def relic_format(relic, id):
     if relic["pool"] == "":
-        return "**{0}**\n`{1}`  `{2}`\n{3}\n*{4}*".format(
+        return energy_replace("**{0}**\n`{1}`  `{2}`\n{3}\n*{4}*".format(
             relic["name"], relic["tier"], id, relic["description"], relic["flavorText"]
-        )
+        ))
 
-    return "**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(
+    return energy_replace("**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(
         relic["name"],
         relic["tier"],
         relic["pool"],
         id,
         relic["description"],
         relic["flavorText"],
-    )
+    ))
 
 
 def potion_format(potion, id):
@@ -983,7 +991,7 @@ def remove_keyword_prefixes(description):
             if word.find("!", 1) > 0:
                 final_description += "#"
                 if word.find("!", 1) + 1 < len(word):
-                    final_description += word[word.index("!", 1) + 1 :]
+                    final_description += word[word.index("!", 1) + 1:]
                 final_description += " "
                 continue
         if is_keyword(word):
@@ -999,11 +1007,11 @@ def remove_keyword_prefixes(description):
 
 def is_keyword(word):
     return (
-        len(word) > 0
-        and not word[0].isupper()
-        and ":" in word
-        and word.find(":") < len(word) - 1
-        and word[word.find(":") + 1] != "\n"
+            len(word) > 0
+            and not word[0].isupper()
+            and ":" in word
+            and word.find(":") < len(word) - 1
+            and word[word.find(":") + 1] != "\n"
     )
 
 
