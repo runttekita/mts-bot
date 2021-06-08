@@ -47,6 +47,7 @@ color_dictionary = {
     "Colorless": "<:colorless_energy:382625433016991745>"
 }
 
+
 class Mod_Data:
     def __init__(self, id):
         self.data = self.get_data(id)
@@ -908,17 +909,23 @@ async def help_command(channel):
     )
 
 
+def energy_replace(strIn):
+    retVal = strIn
+    for key, value in icon_dictionary.items():
+        retVal = retVal.replace(key, value)
+    return retVal
+
 def card_format(card, id):
     if card["cost"] == "":
-        return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`\n{5}".format(
+        return energy_replace("**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`\n{5}".format(
             card["name"],
             card["type"],
             card["rarity"],
             card["color"],
             id,
             remove_keyword_prefixes(card["description"]),
-        )
-    return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(
+        ))
+    return energy_replace("**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(
         card["name"],
         energy_string(card["cost"]),
         card["type"],
@@ -926,23 +933,23 @@ def card_format(card, id):
         card["color"],
         id,
         remove_keyword_prefixes(card["description"]),
-    )
+    ))
 
 
 def relic_format(relic, id):
     if relic["pool"] == "":
-        return "**{0}**\n`{1}`  `{2}`\n{3}\n*{4}*".format(
+        return energy_replace("**{0}**\n`{1}`  `{2}`\n{3}\n*{4}*".format(
             relic["name"], relic["tier"], id, relic["description"], relic["flavorText"]
-        )
+        ))
 
-    return "**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(
+    return energy_replace("**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(
         relic["name"],
         relic["tier"],
         relic["pool"],
         id,
         relic["description"],
         relic["flavorText"],
-    )
+    ))
 
 
 def potion_format(potion, id):
