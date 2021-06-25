@@ -147,11 +147,11 @@ async def get_id(message):
             "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch"
         )
         return
-	if s == "spirepatch2":
-		await message.channel.send(
-			"https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch2"
-		)
-		return
+    if s == "spirepatch2":
+        await message.channel.send(
+            "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch2"
+        )
+        return
     if s == "cardmods":
         await message.channel.send(
             "https://github.com/daviscook477/BaseMod/wiki/CardModifiers"
