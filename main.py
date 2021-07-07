@@ -111,6 +111,11 @@ async def get_id(message):
     if s == "notneh" and message.author.id == 125669982041276416:
         await message.channel.send("djbtkdkfndn")
         return
+    if s == "bottledsoul": 
+        await message.channel.send(
+            "Status: Broken"
+        )
+        return
     if s == "contribute":
         await message.channel.send(
             "https://github.com/runttekita/mts-bot/blob/master/CONTRIBUTING.md"
