@@ -18,7 +18,7 @@ pin_links = [
 ]
 broken_mod_situation = [
     "Thanks to the 2.0 update changing the game code, many mods that were compatible with 1.1 will probably have bugs or crash when used with 2.0, most mods should be fixed eventually (we hope).",
-    "Modders are working in mod fixing for 2.0, plz be patient :)"
+    "Modders are working on mod fixing for 2.0, plz be patient :)"
 ]
 
 client = discord.Client()
