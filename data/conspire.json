@@ -1,0 +1,453 @@
+{
+  "mod": {
+    "name": "Conspire",
+    "version": "1.7.0",
+    "authors": ["twanvl"],
+    "credits": "translation: Rita-B",
+    "description": "Adds new monsters, elites, bosses, relics, cards, potions and events.",
+    "mts_version": "3.0.0",
+    "sts_version": "01-16-2020",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Charge",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDeals an additional 3 damage for each turn of combat."
+    },
+    {
+      "name": "Charge+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDeals an additional 4 damage for each turn of combat."
+    },
+    {
+      "name": "Explosive Barrier",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nIf your Block is broken this turn, deal 18 damage to the attacker."
+    },
+    {
+      "name": "Explosive Barrier+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block.\nIf your Block is broken this turn, deal 22 damage to the attacker."
+    },
+    {
+      "name": "Hit Where it Hurts",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nDamage is multiplied by 125% for each Vulnerable."
+    },
+    {
+      "name": "Hit Where it Hurts+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nDamage is multiplied by 150% for each Vulnerable."
+    },
+    {
+      "name": "Purge",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 5 HP.\nExhaust a card in your hand and permanently remove it from your deck.\nExhaust."
+    },
+    {
+      "name": "Purge+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 5 HP.\nExhaust a card in your hand and permanently remove it from your deck.\nExhaust."
+    },
+    {
+      "name": "Doubling Dagger",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 Shiv to your hand.\nEvery time this card is played, increase its shiv count by 1 for this combat."
+    },
+    {
+      "name": "Doubling Dagger+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 Shivs to your hand.\nEvery time this card is played, increase its shiv count by 1 for this combat."
+    },
+    {
+      "name": "Poison Weapons",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "All unblocked attack damage is converted to Poison this turn.\nExhaust."
+    },
+    {
+      "name": "Poison Weapons+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "All unblocked attack damage is converted to Poison this turn.\nExhaust."
+    },
+    {
+      "name": "Rain",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Water.\nExhaust."
+    },
+    {
+      "name": "Rain+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 Water."
+    },
+    {
+      "name": "Shared Library",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain all powers an enemy has.\n(Only applies to powers that you can have)"
+    },
+    {
+      "name": "Shared Library+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain all powers an enemy has.\n(Only applies to powers that you can have)"
+    },
+    {
+      "name": "Defend",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 8 Block."
+    },
+    {
+      "name": "Infernal Berry",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove 1 Holy.\nExhaust."
+    },
+    {
+      "name": "Infernal Berry",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove 1 Holy.\nExhaust."
+    },
+    {
+      "name": "Infernal Berry",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove 1 Holy.\nExhaust."
+    },
+    {
+      "name": "SpireCo Stock",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Gold.\nExhaust.\nValue may change over time."
+    },
+    {
+      "name": "SpireCo Stock+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Gold.\nExhaust.\nValue may change over time."
+    },
+    {
+      "name": "Strike",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 9 damage."
+    },
+    {
+      "name": "Pyramid Rune",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "1",
+      "description": "Retain.\nExhaust."
+    },
+    {
+      "name": "Treasure",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "1",
+      "description": "Gain 2 Gold.\nExhaust."
+    },
+    {
+      "name": "Banana",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 permanent Max HP.\nExhaust."
+    },
+    {
+      "name": "Banana+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 permanent Max HP.\nExhaust."
+    },
+    {
+      "name": "Blindness",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nAt the end of your turn, you become unable to see enemy intents for this combat."
+    },
+    {
+      "name": "Necrotic Wound",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhen this card is drawn, shuffle a Wound into your draw pile."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Top Hat",
+      "tier": "Common",
+      "pool": "",
+      "description": "If your hand is full when drawing a card, draw an extra card next turn instead.",
+      "flavorText": "This stylish hat can also be used to store rabbits and excess cards."
+    },
+    {
+      "name": "Bottled Yo-Yo",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Upon pickup, choose a card. When it is put into your discard pile, shuffle it into your draw pile.",
+      "flavorText": "Yo, yo."
+    },
+    {
+      "name": "Decoder Ring",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "When you play 3 Attacks, then 2 Skills, then 2 Attacks, then 1 Skill, deal 30 damage to all enemies.",
+      "flavorText": "Up, up, down, down, left, right, left, right, B, A."
+    },
+    {
+      "name": "Deflated Dodgeball",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "You have a 10% chance to dodge attacks.",
+      "flavorText": ""
+    },
+    {
+      "name": "Dentures",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you play a Power, add a copy of it to your discard pile 50% of the time.",
+      "flavorText": "You don't know what elderly monster these belonged to."
+    },
+    {
+      "name": "Flyswatter",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At future Card Reward screens you will no longer be offered cards that you have previously skipped.",
+      "flavorText": "There are insects all over inside the spire. This swatter only works for the small ones."
+    },
+    {
+      "name": "Boomerang",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Place the first Attack card you play each turn on top of your draw pile.",
+      "flavorText": "Always comes back to you."
+    },
+    {
+      "name": "Gift Box",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon pickup, choose and add 1 rare card to your deck.",
+      "flavorText": "It could be anything."
+    },
+    {
+      "name": "Glowing Rock",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the end of your turn you may Exhaust a card from your hand.",
+      "flavorText": "It is slightly warm to the touch."
+    },
+    {
+      "name": "Ice Cream Scoop",
+      "tier": "Rare",
+      "pool": "Blue",
+      "description": "You can rearrange your Orbs by dragging them.",
+      "flavorText": "Makes nice spheres."
+    },
+    {
+      "name": "Infinite Journal",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Cards can be upgraded any number of times.",
+      "flavorText": "It just goes on forever."
+    },
+    {
+      "name": "Royal Goblet",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn.\nDraw 1 fewer card each turn.",
+      "flavorText": "Fit to serve a king. Or maybe made from cheap plastic."
+    },
+    {
+      "name": "Runic Octahedron",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Draw 1 fewer card each turn. Every time you play 2 cards in a single turn, draw a card.",
+      "flavorText": "The runes are indecipherable."
+    },
+    {
+      "name": "Severed Torchhead",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn.\nWhenever you play an Attack, lose 1 Dexterity for the turn.\nWhenever you play a Skill, lose 1 Strength for the turn.",
+      "flavorText": "The flame has died, so the owner will not miss it."
+    },
+    {
+      "name": "Slow Cooker",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of each turn.\nOn the first turn of combat lose 2 Energy instead.",
+      "flavorText": "Allows you to prepare a hearty spire-stew. Not for the impatient."
+    },
+    {
+      "name": "Special Sausage",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, choose to start each combat with 2 Strength, 2 Dexterity, or 2 Focus.",
+      "flavorText": "Found lying around the spire. Should be safe to eat."
+    },
+    {
+      "name": "Treasure Map",
+      "tier": "Shop",
+      "pool": "",
+      "description": "The map now shows what relics can be found in treasure and elite rooms.",
+      "flavorText": "X marks the spot."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Time Travel Potion",
+      "rarity": "Rare",
+      "description": "Set your HP to what it was at the end of your last turn."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Fuzzy Die",
+      "type": "Normal",
+      "minHP": "61",
+      "maxHP": "61"
+    },
+    {
+      "name": "Head Louse",
+      "type": "Normal",
+      "minHP": "114",
+      "maxHP": "114"
+    },
+    {
+      "name": "Holy Bat",
+      "type": "Normal",
+      "minHP": "103",
+      "maxHP": "103"
+    },
+    {
+      "name": "Mimic",
+      "type": "Elite",
+      "minHP": "55",
+      "maxHP": "55"
+    },
+    {
+      "name": "Mirror Image",
+      "type": "Normal",
+      "minHP": "78",
+      "maxHP": "78"
+    },
+    {
+      "name": "Mysterious Rune",
+      "type": "Elite",
+      "minHP": "304",
+      "maxHP": "304"
+    },
+    {
+      "name": "Ornate Mirror",
+      "type": "Boss",
+      "minHP": "450",
+      "maxHP": "450"
+    },
+    {
+      "name": "Rose Bush",
+      "type": "Normal",
+      "minHP": "33",
+      "maxHP": "33"
+    },
+    {
+      "name": "Snecko Ghost",
+      "type": "Elite",
+      "minHP": "143",
+      "maxHP": "143"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Water",
+      "description": "Orb: Draws cards."
+    }
+  ]
+}
