@@ -1,0 +1,1330 @@
+{
+  "mod": {
+    "name": "The Shade",
+    "version": "0.0.3",
+    "authors": ["lumberjacksparrow"],
+    "credits": "Basemod, ModTheSpire",
+    "description": "Adds the Shade character and some associated cards/relics/potions/events.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Fatigue",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "1",
+      "description": "Retain.\nAt the start of your turn, if you have any theshadethatfades:Fatigues in hand, lose 1 energy (Doesn't stack)."
+    },
+    {
+      "name": "Purge",
+      "color": "Shade_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Set your theshadethatfades:Corruption to 0.\nHeal 6 HP.\nExhaust."
+    },
+    {
+      "name": "Purge+",
+      "color": "Shade_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": " [diffAddS] Retain.\n[diffAddE] Set your theshadethatfades:Corruption to 0.\nHeal 6 HP.\nExhaust. "
+    },
+    {
+      "name": "Shadows",
+      "color": "Shade_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible. Shuffle a theshadethatfades:Fatigue into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Shadows+",
+      "color": "Shade_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible. Shuffle a theshadethatfades:Fatigue into your [diffAddS] discard [diffAddE] pile.\nExhaust. "
+    },
+    {
+      "name": "Strike",
+      "color": "Shade_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Shade_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage."
+    },
+    {
+      "name": "Arcane Barrier",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nApply 1 Weak."
+    },
+    {
+      "name": "Arcane Barrier+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nApply 2 Weak."
+    },
+    {
+      "name": "Arcane Fire",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 theshadethatfades:Burning to ANY target."
+    },
+    {
+      "name": "Arcane Fire+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 theshadethatfades:Burning to ANY target. [diffAddS]\nDraw a card. [diffAddE] "
+    },
+    {
+      "name": "Arcane Lightning",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 Damage to a random enemy 2 times."
+    },
+    {
+      "name": "Arcane Lightning+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 Damage to a random enemy 2 times."
+    },
+    {
+      "name": "Contaminate",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage.\nApply 3 theshadethatfades:Corruption."
+    },
+    {
+      "name": "Contaminate+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 Damage.\nApply 3 theshadethatfades:Corruption."
+    },
+    {
+      "name": "Corrupted Blade",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage.\nApply 2 theshadethatfades:Wither."
+    },
+    {
+      "name": "Corrupted Blade+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage.\nApply 3 theshadethatfades:Wither."
+    },
+    {
+      "name": "Descend",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nGain 3 theshadethatfades:Corruption."
+    },
+    {
+      "name": "Descend+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nGain 4 theshadethatfades:Corruption."
+    },
+    {
+      "name": "Encroaching Shadows",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, gain 1 theshadethatfades:Corruption."
+    },
+    {
+      "name": "Encroaching Shadows+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": " [diffAddS] Innate.\n[diffAddE] At the start of each turn, gain 1 theshadethatfades:Corruption. "
+    },
+    {
+      "name": "Exert",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nShuffle a random Curse into your draw pile."
+    },
+    {
+      "name": "Exert+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nShuffle a random Curse into your draw pile."
+    },
+    {
+      "name": "Fade",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If you have taken unblocked damage this turn, gain 1 Intangible."
+    },
+    {
+      "name": "Fade+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have taken unblocked damage this turn, gain 1 Intangible."
+    },
+    {
+      "name": "Feint",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Force an enemy that intends to attack to attack, and apply 1 Vulnerable to them.\nDraw a card."
+    },
+    {
+      "name": "Feint+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Force an enemy that intends to attack to attack, and apply 2 Vulnerable to them.\nDraw a card."
+    },
+    {
+      "name": "Final Strike",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 Damage.\nGrave."
+    },
+    {
+      "name": "Final Strike+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 Damage.\nGrave."
+    },
+    {
+      "name": "Forbidden Thoughts",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nPlace Shame on top of your draw pile."
+    },
+    {
+      "name": "Forbidden Thoughts+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nPlace Shame on top of your draw pile."
+    },
+    {
+      "name": "Mark of the Witness",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply theshadethatfades:Deteriorate to an enemy.\nExhaust."
+    },
+    {
+      "name": "Mark of the Witness+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply theshadethatfades:Deteriorate to an enemy.\nExhaust."
+    },
+    {
+      "name": "Pursuit",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 Damage.\nShuffle 3 Strikes into your draw pile."
+    },
+    {
+      "name": "Pursuit+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 Damage.\nShuffle 3 [diffAddS] Upgraded [diffAddE] Strikes into your draw pile. "
+    },
+    {
+      "name": "Shadow Strike",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 Damage.\nThis attack gets double the damage bonus from theshadethatfades:Corruption."
+    },
+    {
+      "name": "Shadow Strike+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage.\nThis attack gets double the damage bonus from theshadethatfades:Corruption."
+    },
+    {
+      "name": "Shroud",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nApply 3 theshadethatfades:Wither to ANY target."
+    },
+    {
+      "name": "Shroud+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nApply 4 theshadethatfades:Wither to ANY target."
+    },
+    {
+      "name": "Siphon Strength",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Steal an enemy's Strength (minimum 2) until the end of their turn."
+    },
+    {
+      "name": "Siphon Strength+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": " [diffAddS] Retain.\n[diffAddE] Steal an enemy's Strength (minimum 2) until the end of their turn. "
+    },
+    {
+      "name": "Spite",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 Damage.\nCounts as a Curse during combat."
+    },
+    {
+      "name": "Spite+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 Damage.\nCounts as a Curse during combat."
+    },
+    {
+      "name": "Torture",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 Damage.\nTake 1 Damage."
+    },
+    {
+      "name": "Torture+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 Damage.\nTake 1 Damage."
+    },
+    {
+      "name": "Vessel of Suffering",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you take unblocked damage during your turn, gain 1 [E]."
+    },
+    {
+      "name": "Vessel of Suffering+",
+      "color": "Shade_purple_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you take unblocked [diffAddS] damage, [diffAddE] gain 1 [E]. "
+    },
+    {
+      "name": "Anoint",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an enemy. Give it a copy of your theshadethatfades:Corruption.\nExhaust."
+    },
+    {
+      "name": "Anoint+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose an enemy. Give it a copy of your theshadethatfades:Corruption.\nExhaust."
+    },
+    {
+      "name": "Black Heart",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 theshadethatfades:Corruption X times.\nExhaust."
+    },
+    {
+      "name": "Black Heart+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 5 theshadethatfades:Corruption X times.\nExhaust."
+    },
+    {
+      "name": "Black Lightning",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 Damage to a random enemy for each Curse in your draw pile."
+    },
+    {
+      "name": "Black Lightning+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Damage to a random enemy for each Curse in your draw pile."
+    },
+    {
+      "name": "Blight Bolt",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 29 damage to a debuffed enemy. Reduce their debuffs by 1."
+    },
+    {
+      "name": "Blight Bolt+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 36 damage to a debuffed enemy. Reduce their debuffs by 1."
+    },
+    {
+      "name": "Chaos Storm",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of each turn, randomly apply 3 theshadethatfades:Corruption, 2 theshadethatfades:Wither, or 4 theshadethatfades:Burning, or deal 6 damage, to a random enemy."
+    },
+    {
+      "name": "Chaos Storm+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of each turn, randomly apply 3 theshadethatfades:Corruption, 2 theshadethatfades:Wither, or 4 theshadethatfades:Burning, or deal 6 damage, to [diffAddS] each [diffAddE] enemy. "
+    },
+    {
+      "name": "Dark Tendrils",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage.\nApply 6 theshadethatfades:Constrict."
+    },
+    {
+      "name": "Dark Tendrils+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nApply 8 theshadethatfades:Constrict."
+    },
+    {
+      "name": "Deception",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to your theshadethatfades:Corruption, plus 6."
+    },
+    {
+      "name": "Deception+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to your theshadethatfades:Corruption, plus 9."
+    },
+    {
+      "name": "Defense vs. Dark Arts",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, add an Ethereal theshadethatfades:Rebuff to your hand."
+    },
+    {
+      "name": "Defense vs. Dark Arts+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, add an [diffAddS] upgraded [diffAddE] Ethereal theshadethatfades:Rebuff to your hand. "
+    },
+    {
+      "name": "Defile",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Transform every card in your hand into a random Curse. Deal 5 Damage to ALL enemies for each one."
+    },
+    {
+      "name": "Defile+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Transform every card in your hand into a random Curse. Deal 7 Damage to ALL enemies for each one."
+    },
+    {
+      "name": "Delve",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 4 theshadethatfades:Corruption."
+    },
+    {
+      "name": "Delve+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 7 theshadethatfades:Corruption."
+    },
+    {
+      "name": "Distortion",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Curses are playable. Whenever you play a Curse, gain 1 energy."
+    },
+    {
+      "name": "Distortion+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Curses are playable. Whenever you play a Curse, gain 1 energy."
+    },
+    {
+      "name": "Dusk",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Shuffle 3 theshadethatfades:Shadows into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Dusk+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Shuffle 3 [diffAddS] upgraded [diffAddE] theshadethatfades:Shadows into your draw pile.\nExhaust. "
+    },
+    {
+      "name": "Enkindle",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Strength and 3 theshadethatfades:Burning."
+    },
+    {
+      "name": "Enkindle+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 3 Strength and 3 theshadethatfades:Burning."
+    },
+    {
+      "name": "Execute",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Your next attack is played 2 additional times if that would kill the target."
+    },
+    {
+      "name": "Execute+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Your next attack is played 3 additional times if that would kill the target."
+    },
+    {
+      "name": "Faltering Blade",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 Damage.\nDeal 2 less damage for each stack of theshadethatfades:Corruption on you."
+    },
+    {
+      "name": "Faltering Blade+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 15 Damage.\nDeal 2 less damage for each stack of theshadethatfades:Corruption on you."
+    },
+    {
+      "name": "Forbidden Knowledge",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card for each Curse in your draw pile.\nExhaust."
+    },
+    {
+      "name": "Forbidden Knowledge+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card for each Curse in your draw pile. [diffRmvS]\nExhaust. [diffRmvE] "
+    },
+    {
+      "name": "Haunt",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose an enemy. At the start of its turns, it is theshadethatfades:Shackled for 4. Exhaust."
+    },
+    {
+      "name": "Haunt+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose an enemy. At the start of its turns, it is theshadethatfades:Shackled for 6. Exhaust."
+    },
+    {
+      "name": "Midnight Horizon",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Your next attack is replayed against each enemy."
+    },
+    {
+      "name": "Midnight Horizon+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next attack is replayed against each enemy."
+    },
+    {
+      "name": "Overdrive",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you gain theshadethatfades:Corruption, gain twice as much."
+    },
+    {
+      "name": "Overdrive+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain theshadethatfades:Corruption, gain twice as much."
+    },
+    {
+      "name": "Possession",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 25 damage.\nIf this kills an enemy, gain 1 Intangible."
+    },
+    {
+      "name": "Possession+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 30 damage.\nIf this kills an enemy, gain 1 Intangible."
+    },
+    {
+      "name": "Prolonged Suffering",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff, apply 1 theshadethatfades:Wither."
+    },
+    {
+      "name": "Prolonged Suffering+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff, apply 2 theshadethatfades:Wither."
+    },
+    {
+      "name": "Rebuff",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block for each enemy.\nLose 4 stacks of theshadethatfades:Corruption."
+    },
+    {
+      "name": "Rebuff+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block for each enemy.\nLose 8 stacks of theshadethatfades:Corruption."
+    },
+    {
+      "name": "Remission",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Set your theshadethatfades:Corruption to 0.\nGain 5 Regen.\nExhaust."
+    },
+    {
+      "name": "Remission+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Set your theshadethatfades:Corruption to 0.\nGain 7 Regen.\nExhaust."
+    },
+    {
+      "name": "Schadenfreude",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 3 Regen.\nExhaust."
+    },
+    {
+      "name": "Schadenfreude+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 4 Regen.\nExhaust."
+    },
+    {
+      "name": "Scourge",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage.\nTrigger any start-of-turn and end-of-turn effects on the target."
+    },
+    {
+      "name": "Scourge+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 Damage.\nTrigger any start-of-turn and end-of-turn effects on the [diffAddS] target twice. [diffAddE] "
+    },
+    {
+      "name": "Shade-dance",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Apply 1 Intangible to EVERYONE.\nExhaust."
+    },
+    {
+      "name": "Shade-dance+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 1 Intangible to EVERYONE.\nExhaust."
+    },
+    {
+      "name": "Soul Bind",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an enemy.\nSummon a doll with HP equal to half of theirs.\nAny damage or healing done to the doll also affects the enemy."
+    },
+    {
+      "name": "Soul Bind+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an enemy.\nSummon a doll with HP equal to [diffAddS] 75% [diffAddE] of theirs.\nAny damage or healing done to the doll also affects the enemy. "
+    },
+    {
+      "name": "Spreading Corruption",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start and end of your turn, apply theshadethatfades:Deteriorate to all enemies that are not Deteriorating."
+    },
+    {
+      "name": "Spreading Corruption+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start and end of your turn, apply theshadethatfades:Deteriorate to all enemies that are not Deteriorating."
+    },
+    {
+      "name": "Tarnish",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Take 1 Damage. Gain 11 Block."
+    },
+    {
+      "name": "Tarnish+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Take 1 Damage. Gain 15 Block."
+    },
+    {
+      "name": "Torment",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nApply theshadethatfades:Deteriorate."
+    },
+    {
+      "name": "Torment+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nApply theshadethatfades:Deteriorate."
+    },
+    {
+      "name": "Witch Fire",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 theshadethatfades:Burning and 2 theshadethatfades:Wither to ANY target."
+    },
+    {
+      "name": "Witch Fire+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 theshadethatfades:Burning and 2 theshadethatfades:Wither to [diffAddS] ALL enemies. [diffAddE] "
+    },
+    {
+      "name": "Writhing Flame",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 18 Block.\nWhenever you are attacked this turn, apply 4 theshadethatfades:Burning to the attacker."
+    },
+    {
+      "name": "Writhing Flame+",
+      "color": "Shade_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 24 Block.\nWhenever you are attacked this turn, apply 4 theshadethatfades:Burning to the attacker."
+    },
+    {
+      "name": "Arcane Inferno",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 theshadethatfades:Burning to EVERYONE, 3 times.\nExhaust."
+    },
+    {
+      "name": "Arcane Inferno+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 theshadethatfades:Burning to EVERYONE, 4 times.\nExhaust."
+    },
+    {
+      "name": "Arcane Tempest",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage to a random enemy X times."
+    },
+    {
+      "name": "Arcane Tempest+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage to a random enemy X [diffAddS] + 1 [diffAddE] times. "
+    },
+    {
+      "name": "Conflagration",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an attack, if you are not Intangible, apply 3 Burning to ALL enemies."
+    },
+    {
+      "name": "Conflagration+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an attack, if you are not Intangible, apply 4 Burning to ALL enemies."
+    },
+    {
+      "name": "Death Sentence",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply theshadethatfades:Deteriorate and 99 theshadethatfades:Wither to ANY target.\nExhaust."
+    },
+    {
+      "name": "Death Sentence+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply theshadethatfades:Deteriorate and 99 theshadethatfades:Wither to ANY target.\nExhaust."
+    },
+    {
+      "name": "Eidolon Form",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, Exhaust your hand.\nGain 1 Intangible for every 5 cards Exhausted.\nGrave."
+    },
+    {
+      "name": "Eidolon Form+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, Exhaust your hand.\nGain 1 Intangible for every 5 cards Exhausted. [diffRmvS]\nGrave. [diffRmvE] "
+    },
+    {
+      "name": "Elixir of Noctis",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Choose ANY target. Put them to sleep for 2 turns. While they sleep, at the end of your turn, they recover 30 HP.\nExhaust."
+    },
+    {
+      "name": "Elixir of Noctis+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Choose ANY target. Put them to sleep for 3 turns. While they sleep, at the end of your turn, they recover [diffAddS] 50 [diffAddE] HP.\nExhaust. "
+    },
+    {
+      "name": "Etheric Shift",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make all cards in your hand Ethereal, and reduce their cost by 1, until the end of the turn."
+    },
+    {
+      "name": "Etheric Shift+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make all cards in your hand Ethereal, and reduce their cost by 2, until the end of the turn."
+    },
+    {
+      "name": "Fexnil",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage to the leftmost enemy, then do it again to each consecutive enemy, doubling the damage each time."
+    },
+    {
+      "name": "Fexnil+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to the leftmost enemy, then do it again to each consecutive enemy, doubling the damage each time."
+    },
+    {
+      "name": "Grudge",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle a copy of your draw pile into your discard pile."
+    },
+    {
+      "name": "Grudge+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " [diffAddS] Duplicate [diffAddE] your draw pile. "
+    },
+    {
+      "name": "Imbue",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 6 theshadethatfades:Corruption."
+    },
+    {
+      "name": "Imbue+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 10 theshadethatfades:Corruption."
+    },
+    {
+      "name": "Mutual Annihilation",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nIf you have taken unblocked damage 13 times this combat, deal 80 damage to ALL enemies."
+    },
+    {
+      "name": "Mutual Annihilation+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nIf you have taken unblocked damage 13 times this combat, deal 100 damage to ALL enemies."
+    },
+    {
+      "name": "Oblivion",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 25 damage.\nShuffle 3 random Curses into your draw pile."
+    },
+    {
+      "name": "Oblivion+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 30 damage.\nShuffle 5 random Curses into your draw pile."
+    },
+    {
+      "name": "Pure Strike",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if you have 0 theshadethatfades:Corruption.\nDeal 40 damage to ALL enemies."
+    },
+    {
+      "name": "Pure Strike+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if you have 0 theshadethatfades:Corruption.\nDeal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Shadow Barrier",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to your theshadethatfades:Corruption.\nSet your theshadethatfades:Corruption to 0. At the start of your next turn, gain it all back.\nExhaust."
+    },
+    {
+      "name": "Shadow Barrier+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to your theshadethatfades:Corruption.\nSet your theshadethatfades:Corruption to 0. At the start of your next turn, gain it all back. [diffRmvS]\nExhaust. [diffRmvE] "
+    },
+    {
+      "name": "Shadow Blend",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn 3 turns from now, replay all cards you played between now and then with the same targets."
+    },
+    {
+      "name": "Shadow Blend+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn 3 turns from now, replay all cards you played between now and then with the same targets."
+    },
+    {
+      "name": "Subversion",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose ANY target. During your turn, all damage they take is converted into healing. During enemy turn, all healing they receive is converted into damage. Lasts for 1 round.\nExhaust."
+    },
+    {
+      "name": "Subversion+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose ANY target. During your turn, all damage they take is converted into healing. During enemy turn, all healing they receive is converted into damage. Lasts for [diffAddS] 2 rounds. [diffAddE]\nExhaust. "
+    },
+    {
+      "name": "Ultimate Strike",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage twice."
+    },
+    {
+      "name": "Ultimate Strike+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage twice."
+    },
+    {
+      "name": "Unveil",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Transform a card in your hand into a random Curse.\nGain 17 block."
+    },
+    {
+      "name": "Unveil+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Transform a card in your hand into a random Curse.\nGain 22 block."
+    },
+    {
+      "name": "Vivid Nightmare",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 27 damage.\nApply 5 Regen."
+    },
+    {
+      "name": "Vivid Nightmare+",
+      "color": "Shade_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 32 damage.\nApply 7 Regen."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Twisted Sorcery",
+      "tier": "Starter",
+      "pool": "Shade_purple_color",
+      "description": "At the start of each turn, gain 1 theshadethatfades:Corruption.",
+      "flavorText": "The influence of the Dark Ones can be an addicting source of power."
+    },
+    {
+      "name": "Hellfire Talisman",
+      "tier": "Uncommon",
+      "pool": "Shade_purple_color",
+      "description": "Applying theshadethatfades:Burning to enemies that are not burning also makes them Vulnerable.",
+      "flavorText": "Say what you want about demons, but they sure know their arson."
+    },
+    {
+      "name": "Wilting Rose",
+      "tier": "Uncommon",
+      "pool": "Shade_purple_color",
+      "description": "Applying theshadethatfades:Wither to enemies that are not withering also makes them Weak.",
+      "flavorText": "Typical Rose, always meddling with eldritch horrors."
+    },
+    {
+      "name": "Fifth Shadow",
+      "tier": "Rare",
+      "pool": "Shade_purple_color",
+      "description": "At the start of turn 5, gain Intangible.",
+      "flavorText": "Better sew it to your shoes this time."
+    },
+    {
+      "name": "Abyssal Tome",
+      "tier": "Boss",
+      "pool": "Shade_purple_color",
+      "description": "Draw 1 additional card each turn. At the start of combat, add a theshadethatfades:Fatigue to your hand.",
+      "flavorText": "The fatigue is from carrying around such a heavy tome."
+    },
+    {
+      "name": "Burning Tome",
+      "tier": "Boss",
+      "pool": "Shade_purple_color",
+      "description": "Draw 1 additional card each turn. At the start of combat, gain 3 theshadethatfades:Burning.",
+      "flavorText": "Burns your hand when held. This tome ironically doesn't contain much info about fire magic."
+    },
+    {
+      "name": "Diabolical Sorcery",
+      "tier": "Boss",
+      "pool": "Shade_purple_color",
+      "description": "Replaces TwistedSorcery. At the start of your turn, everyone gains 1 theshadethatfades:Corruption.",
+      "flavorText": "No one is safe from the influence of the Dark Ones."
+    },
+    {
+      "name": "Titan Tome",
+      "tier": "Boss",
+      "pool": "Shade_purple_color",
+      "description": "Draw 1 additional card each turn. At the start of each of their turns after turn 7, all enemies heal for 50 HP.",
+      "flavorText": "Stone Calendar's worst enemy."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Brew of Shadows",
+      "rarity": "Common",
+      "description": "Gain 5 Corruption."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Shade",
+      "type": "Player",
+      "minHP": "60",
+      "maxHP": "60"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Theshadethatfades:Multiword Keyword",
+      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+    },
+    {
+      "name": "Theshadethatfades:burning",
+      "description": "A damage over time effect that decays by half each turn."
+    },
+    {
+      "name": "Theshadethatfades:constrict",
+      "description": "A debuff that deals damage at the end of each turn, and does not decay."
+    },
+    {
+      "name": "Theshadethatfades:corruption",
+      "description": "A status effect that increases both damage done and taken from attacks."
+    },
+    {
+      "name": "Theshadethatfades:deteriorate",
+      "description": "A debuff that deals damage equal to the player's Corruption at the end of each turn. Deteriorating entities do not get the damage bonus from their own Corruption."
+    },
+    {
+      "name": "Theshadethatfades:fatigue",
+      "description": "A 1 cost Curse that retains, and saps your energy at the start of each turn."
+    },
+    {
+      "name": "Theshadethatfades:keyword",
+      "description": "Whenever you play a card, gain 1 dexterity this turn only."
+    },
+    {
+      "name": "Theshadethatfades:purge",
+      "description": "A 2 cost skill that removes Corruption."
+    },
+    {
+      "name": "Theshadethatfades:rebuff",
+      "description": "A 1 cost skill that reduces Corruption and gives Block."
+    },
+    {
+      "name": "Theshadethatfades:shackled",
+      "description": "Temporary strength down."
+    },
+    {
+      "name": "Theshadethatfades:shadows",
+      "description": "A 1 cost skill that makes you Intangible, but shuffles a curse into your draw pile."
+    },
+    {
+      "name": "Theshadethatfades:wither",
+      "description": "A debuff that prevents other debuffs from decaying over time."
+    }
+  ]
+}
