@@ -1,75 +1,2899 @@
 {
   "mod": {
     "name": "The Dragonkin",
-    "version": "0.1.1",
+    "version": "1.2.5",
     "authors": ["Lyren"],
     "credits": "Basemod, ModTheSpire",
     "description": "A Warrior of Fire and Faith. Determined the slay the Evils of the Spire.",
     "mts_version": "3.8.0",
     "sts_version": "2.3",
-    "dependencies": ["basemod","stslib"],
+    "dependencies": ["basemod","stslib","actlikeit"],
     "optional_dependencies": []
   },
   "cards": [
     {
-      "name": "Meteor Storm",
+      "name": "Banshee",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thedragonkin:Exile 1.\nApply 2 Weak to ALL enemies.\nWhen thedragonkin:Exiled - gain 8 Block"
+    },
+    {
+      "name": "Banshee+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thedragonkin:Exile 1.\nApply 5 Weak to ALL enemies.\nWhen thedragonkin:Exiled - gain 8 Block"
+    },
+    {
+      "name": "Bone Dragon",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Attack",
-      "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 3 damage twice.\nGain 3 Block twice.\nreturn this from the discard pile to your hand."
+      "cost": "2",
+      "description": "Deal 13 damage\nGain 13 Block.\nWhen thedragonkin:Exiled - Add 4 random #yUndead Skeletons to your hand."
     },
     {
-      "name": "Meteor Storm+",
+      "name": "Bone Dragon+",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Attack",
-      "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 5 damage twice.\nGain 5 Block twice.\nreturn this from the discard pile to your hand."
+      "cost": "2",
+      "description": "Deal 13 damage\nGain 13 Block.\nWhen thedragonkin:Exiled - Add 4 random #yUndead Skeletons to your hand."
     },
     {
-      "name": "Haunting Voice",
-      "color": "Curse",
+      "name": "Invoke Death",
+      "color": "Colorless",
       "rarity": "Special",
-      "type": "Curse",
-      "cost": "1",
-      "description": "Take 3 damage. Exhaust."
-    },
-    {
-      "name": "Insanity",
-      "color": "Curse",
-      "rarity": "Special",
-      "type": "Curse",
-      "cost": "0",
-      "description": "Soulbound. AutoPlay.\nAt the start of your turn add a *Haunting *Voice to your hand.\nExhaust."
-    },
-    {
-      "name": "Suffering",
-      "color": "Curse",
-      "rarity": "Special",
-      "type": "Curse",
+      "type": "Attack",
       "cost": "",
-      "description": "Ethereal.\nAfter you play a card, take 1 damage."
+      "description": "Deal 50 damage to ALL enemies."
     },
     {
-      "name": "Blazing Breath",
-      "color": "Dragonkin_red_color",
-      "rarity": "Basic",
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
       "type": "Attack",
-      "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 6 damage.\nApply 2 thedragonkin:Scorch."
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
     },
     {
-      "name": "Blazing Breath+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Basic",
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Death",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke Pestilence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Deal 2 damage to enemies you debuff."
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Invoke War",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 4 thedragonkin:Spell_Power"
+    },
+    {
+      "name": "Pale Rider",
+      "color": "Colorless",
+      "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 8 damage.\nApply 3 thedragonkin:Scorch."
+      "description": "When played or thedragonkin:Exiled\nDeal 8 damage to ALL enemies.\nGain 4 thedragonkin:Judgement."
+    },
+    {
+      "name": "Pale Rider+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "When played or thedragonkin:Exiled\nDeal 8 damage to ALL enemies.\nGain 4 thedragonkin:Judgement."
+    },
+    {
+      "name": "Phantom",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thedragonkin:Exile 1.\nApply 2 Vulnerable to ALL enemies.\nWhen thedragonkin:Exiled - Deal 5 damage to a random enemy twice."
+    },
+    {
+      "name": "Phantom+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thedragonkin:Exile 1.\nApply 5 Vulnerable to ALL enemies.\nWhen thedragonkin:Exiled - Deal 5 damage to a random enemy twice."
+    },
+    {
+      "name": "Poltergeist",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thedragonkin:Exile 1.\nGain 7 Block.\nWhen thedragonkin:Exiled - Deal damage to ALL enemies for each card currently Exhausted"
+    },
+    {
+      "name": "Poltergeist+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thedragonkin:Exile 1.\nGain 7 Block.\nWhen thedragonkin:Exiled - Deal damage to ALL enemies for each card currently Exhausted"
+    },
+    {
+      "name": "Skeleton",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nWhen thedragonkin:Exiled - Gain 7 Block."
+    },
+    {
+      "name": "Skeleton Archer",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nWhen thedragonkin:Exiled - Deal 7 damage to a random enemy."
+    },
+    {
+      "name": "Skeleton Archer+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nWhen thedragonkin:Exiled - Deal 10 damage to a random enemy."
+    },
+    {
+      "name": "Skeleton Cryomancer",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 [IceIcon] damage to ALL enemies. When thedragonkin:Exiled - Gain 15 [IceIcon] Block."
+    },
+    {
+      "name": "Skeleton Cryomancer+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [IceIcon] damage to ALL enemies. When thedragonkin:Exiled - Gain 15 [IceIcon] Block."
+    },
+    {
+      "name": "Skeleton Guard",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. When thedragonkin:Exiled - Gain 9 Block."
+    },
+    {
+      "name": "Skeleton Guard+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block. When thedragonkin:Exiled - Gain 12 Block."
+    },
+    {
+      "name": "Skeleton Knight",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage\nGain 8 Block. When thedragonkin:Exiled - Gain 8 Block and Deal 8 damage to a random enemy."
+    },
+    {
+      "name": "Skeleton Knight+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage\nGain 10 Block. When thedragonkin:Exiled - Gain 10 Block and Deal 10 damage to a random enemy."
+    },
+    {
+      "name": "Skeleton+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nWhen thedragonkin:Exiled - Gain 9 Block."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Sky",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6: draw 3 cards.\nWhen thedragonkin:Cycled gain 4 thedragonkin:Mastery."
+    },
+    {
+      "name": "Spectre",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thedragonkin:Exile 1.\nDeal -1 damage to ALL enemies.\nWhen thedragonkin:Exiled - gain -1 Block."
+    },
+    {
+      "name": "Spectre+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thedragonkin:Exile 1.\nDeal -1 damage to ALL enemies.\nWhen thedragonkin:Exiled - gain -1 Block."
     },
     {
       "name": "Defend",
-      "color": "Dragonkin_red_color",
+      "color": "Windwalker_jade_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block"
+    },
+    {
+      "name": "Defend+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block"
+    },
+    {
+      "name": "Looping Current",
+      "color": "Windwalker_jade_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Activate the Passive ability of your right most orb.\nthedragonkin:Spirit_Burst 2: Activate the Passive ability your right most Orb."
+    },
+    {
+      "name": "Looping Current+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Activate the Passive ability of your right most orb.\nthedragonkin:Spirit_Burst 2: Activate the Passive ability your right most Orb."
+    },
+    {
+      "name": "Strike",
+      "color": "Windwalker_jade_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage"
+    },
+    {
+      "name": "Strike+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage"
+    },
+    {
+      "name": "Sunrise Strike",
+      "color": "Windwalker_jade_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 [ElectricIcon] damage.\nChannel 2 thedragonkin:Nimbus.\nGain [Chi]"
+    },
+    {
+      "name": "Sunrise Strike+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 [ElectricIcon] damage.\nChannel 2 thedragonkin:Nimbus.\nGain [Chi]"
+    },
+    {
+      "name": "Air Cutter",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [WindIcon] damage.\nGain [WindIcon] thedragonkin:Chakra"
+    },
+    {
+      "name": "Air Cutter+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 [WindIcon] damage.\nGain [WindIcon] thedragonkin:Chakra"
+    },
+    {
+      "name": "Brewing Storm",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exit your stance.\nNext Turn, Enter thedragonkin:Conduit and gain [E]"
+    },
+    {
+      "name": "Brewing Storm+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enter thedragonkin:Zephyr.\nNext Turn, Enter thedragonkin:Conduit and gain [E]"
+    },
+    {
+      "name": "Cold Front",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nChannel 1 thedragonkin:Rain."
+    },
+    {
+      "name": "Cold Front+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nChannel 1 thedragonkin:Rain."
+    },
+    {
+      "name": "Cyclonic Winds",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 [WindIcon] damage\nGain 5 Block.\nEnter thedragonkin:Typhoon"
+    },
+    {
+      "name": "Cyclonic Winds+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 [WindIcon] damage\nGain 8 Block.\nEnter thedragonkin:Typhoon"
+    },
+    {
+      "name": "Gentle Rainfall",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 [WaterIcon] damage to a random enemy 3 times.\nChannel thedragonkin:Rain"
+    },
+    {
+      "name": "Gentle Rainfall+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 [WaterIcon] damage to a random enemy 4 times.\nChannel thedragonkin:Rain"
+    },
+    {
+      "name": "Ripple Barrier",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 [DrainIcon] Block.\nGain [DrainIcon] thedragonkin:Chakra"
+    },
+    {
+      "name": "Ripple Barrier+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 [DrainIcon] Block.\nGain [DrainIcon] thedragonkin:Chakra"
+    },
+    {
+      "name": "Ripple Breath",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [Chi] [Chi]"
+    },
+    {
+      "name": "Ripple Breath+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [Chi] [Chi] [Chi]"
+    },
+    {
+      "name": "River Tide",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 [WaterIcon] damage\nGain [WaterIcon] thedragonkin:Chakra"
+    },
+    {
+      "name": "River Tide+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 [WaterIcon] damage\nGain [WaterIcon] thedragonkin:Chakra"
+    },
+    {
+      "name": "Sky Talon",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nDeal 10 damage.\nGain 8 Block."
+    },
+    {
+      "name": "Sky Talon+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nDeal 12 damage.\nGain 10 Block."
+    },
+    {
+      "name": "Slip Stream",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nEnter thedragonkin:Zephyr"
+    },
+    {
+      "name": "Slip Stream+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nEnter thedragonkin:Zephyr"
+    },
+    {
+      "name": "Spar",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 2 thedragonkin:Mastery."
+    },
+    {
+      "name": "Spar+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 2 thedragonkin:Mastery."
+    },
+    {
+      "name": "Spirit Claw",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [DrainIcon] damage.\nGain [Chi]"
+    },
+    {
+      "name": "Spirit Claw+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 [DrainIcon] damage.\nGain [Chi]"
+    },
+    {
+      "name": "Spirit Focus",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nGain [Chi]"
+    },
+    {
+      "name": "Spirit Focus+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nGain [Chi] [Chi]"
+    },
+    {
+      "name": "Storm Throw",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nDeal 8 [ElectricIcon] damage\nGain [Chi]\nChannel 1 thedragonkin:Razor_Wind"
+    },
+    {
+      "name": "Storm Throw+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nDeal 11 [ElectricIcon] damage\nGain [Chi]\nChannel 1 thedragonkin:Razor_Wind"
+    },
+    {
+      "name": "Stormstrike",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [WaterIcon] [ElectricIcon] damage."
+    },
+    {
+      "name": "Stormstrike+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 [WaterIcon] [ElectricIcon] damage."
+    },
+    {
+      "name": "Warding Zap",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 [ElectricIcon] damage\nGain 4 Block."
+    },
+    {
+      "name": "Warding Zap+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 [ElectricIcon] damage\nGain 4 Block."
+    },
+    {
+      "name": "Air Slash",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 [WindIcon] damage to ALL enemies.\nChannel 1 thedragonkin:Razor_Wind"
+    },
+    {
+      "name": "Air Slash+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [WindIcon] damage to ALL enemies.\nChannel 1 thedragonkin:Razor_Wind"
+    },
+    {
+      "name": "Chain Lightning",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nChannel 1 thedragonkin:Nimbus.\nTrigger the passive effects of all your thedragonkin:nimbus orbs."
+    },
+    {
+      "name": "Chain Lightning+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nChannel 2 thedragonkin:Nimbus.\nTrigger the passive effects of all your thedragonkin:nimbus orbs."
+    },
+    {
+      "name": "Chi Flow",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [Chi] [Chi] [Chi] [Chi] [Chi]\nExhaust."
+    },
+    {
+      "name": "Chi Flow+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [Chi] [Chi] [Chi] [Chi] [Chi]\nExhaust."
+    },
+    {
+      "name": "Crystal Wind",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [WindIcon] damage.\nthedragonkin:Spirit_Burst 2: Channel thedragonkin:Rain."
+    },
+    {
+      "name": "Crystal Wind+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 [WindIcon] damage.\nthedragonkin:Spirit_Burst 3: Channel thedragonkin:Rain."
+    },
+    {
+      "name": "Downburst",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 [WindIcon] damage.\nGain [ElectricIcon] thedragonkin:Chakra"
+    },
+    {
+      "name": "Downburst+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 [WindIcon] damage.\nGain [ElectricIcon] thedragonkin:Chakra"
+    },
+    {
+      "name": "Force Palm",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 [ElectricIcon] damage twice."
+    },
+    {
+      "name": "Force Palm+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 [ElectricIcon] damage twice."
+    },
+    {
+      "name": "Heian Godan",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Strikes deal 3 additional damage.\nDefends gain 3 extra Block."
+    },
+    {
+      "name": "Heian Godan+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Strikes deal 5 additional damage.\nDefends gain 5 extra Block."
+    },
+    {
+      "name": "Pivot Sweep",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nDeal 4 damage.\nApply 2 Weak\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Pivot Sweep+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nDeal 6 damage.\nApply 2 Weak\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Rain of Strikes",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [WaterIcon] damage.\nAdd 2 [WaterIcon] damage strikes to your hand."
+    },
+    {
+      "name": "Rain of Strikes+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 [WaterIcon] damage.\nAdd 3 [WaterIcon] damage strikes to your hand."
+    },
+    {
+      "name": "Rending Fang",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nDeal 14 damage.\nChannel 1 thedragonkin:Jade_Spirit"
+    },
+    {
+      "name": "Rending Fang+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nDeal 14 damage.\nChannel 1 thedragonkin:Jade_Spirit"
+    },
+    {
+      "name": "Skyfall",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you gain [Chi] , activate the passive effect of your right-most Orb"
+    },
+    {
+      "name": "Skyfall+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain [Chi] , activate the passive effect of your right-most Orb"
+    },
+    {
+      "name": "Spirit Charge",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 thedragonkin:Jade_Spirit.\nGain [Chi] [Chi] .\nEnter thedragonkin:Conduit."
+    },
+    {
+      "name": "Spirit Charge+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 thedragonkin:Jade_Spirit.\nGain [Chi] [Chi] .\nEnter thedragonkin:Conduit."
+    },
+    {
+      "name": "Spirit Combo",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain [Chi] for every third card you play."
+    },
+    {
+      "name": "Spirit Combo+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain [Chi] for every third card you play."
+    },
+    {
+      "name": "Spirit Pulse",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [DrainIcon] damage to a random enemy.\nthedragonkin:Spirit_Burst 3: Deal 8 [DrainIcon] [DrainIcon] damage to a random enemy"
+    },
+    {
+      "name": "Spirit Pulse+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 [DrainIcon] damage to a random enemy.\nthedragonkin:Spirit_Burst 3: Deal 12 [DrainIcon] [DrainIcon] damage to a random enemy"
+    },
+    {
+      "name": "Static Aura",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 [DrainIcon] [ElectricIcon] damage."
+    },
+    {
+      "name": "Static Aura+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [DrainIcon] [ElectricIcon] damage."
+    },
+    {
+      "name": "Static Barrier",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 [ElectricIcon] Block.\nAdd a [ElectricIcon] Defend to your hand"
+    },
+    {
+      "name": "Static Barrier+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 [ElectricIcon] Block.\nAdd a [ElectricIcon] Defend to your hand"
+    },
+    {
+      "name": "Static Bite",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 22 [ElectricIcon] damage."
+    },
+    {
+      "name": "Static Bite+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 24 [ElectricIcon] damage."
+    },
+    {
+      "name": "Stratus Shield",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nChannel thedragonkin:Nimbus\nEnter thedragonkin:Zephyr"
+    },
+    {
+      "name": "Stratus Shield+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nChannel thedragonkin:Nimbus\nEnter thedragonkin:Zephyr"
+    },
+    {
+      "name": "Substitution",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 8 Block.\nApply 1 Weak to ALL enemies.\nGain 1 thedragonkin:Mastery."
+    },
+    {
+      "name": "Substitution+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 8 Block.\nApply 1 Weak to ALL enemies.\nGain 1 thedragonkin:Mastery."
+    },
+    {
+      "name": "Temper",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [Chi] [Chi] .\nGain 5 Vigor\nEnter thedragonkin:Typhoon."
+    },
+    {
+      "name": "Temper+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [Chi] [Chi] .\nGain 8 Vigor\nEnter thedragonkin:Typhoon."
+    },
+    {
+      "name": "Triple Shield",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 [DrainIcon] Defend, 1 [WaterIcon] Defend, and 1 [WindIcon] Defend to your hand."
+    },
+    {
+      "name": "Triple Shield+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 [DrainIcon] Defend, 1 [WaterIcon] Defend, and 1 [WindIcon] Defend to your hand."
+    },
+    {
+      "name": "Twister",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 [WindIcon] damage.\nEnter thedragonkin:Typhoon."
+    },
+    {
+      "name": "Twister+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 [WindIcon] damage.\nEnter thedragonkin:Typhoon."
+    },
+    {
+      "name": "Whirlwind Shield",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nthedragonkin:Spirit_Burst 2: Draw 2 cards."
+    },
+    {
+      "name": "Whirlwind Shield+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nthedragonkin:Spirit_Burst 3: Draw 2 cards."
+    },
+    {
+      "name": "Wind Boarder",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enter thedragonkin:Zephyr.\nGain 10 Block.\nChannel thedragonkin:Razor_Wind"
+    },
+    {
+      "name": "Wind Boarder+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enter thedragonkin:Zephyr.\nGain 14 Block.\nChannel thedragonkin:Razor_Wind"
+    },
+    {
+      "name": "Winds of Change",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nGain 10 Block.\nDraw 2 Cards."
+    },
+    {
+      "name": "Winds of Change+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nGain 10 Block.\nDraw 2 Cards."
+    },
+    {
+      "name": "Zen Focus",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Spend [Chi] [Chi] [Chi] to play this.\nGain 1 orb slot."
+    },
+    {
+      "name": "Zen Focus+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Spend [Chi] [Chi] [Chi] to play this.\nGain 1 orb slot."
+    },
+    {
+      "name": "Chi Blast",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage to ALL enemies.\nthedragonkin:Spirit_Burst 5: Deal 8 damage to ALL enemies"
+    },
+    {
+      "name": "Chi Blast+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage to ALL enemies.\nthedragonkin:Spirit_Burst 5: Deal 12 damage to ALL enemies"
+    },
+    {
+      "name": "Clear Sky",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Evoke all your orbs.\nGain [E] for each.\nExhaust."
+    },
+    {
+      "name": "Clear Sky+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Evoke all your orbs.\nGain [E] [Chi] for each.\nExhaust."
+    },
+    {
+      "name": "Concussive Shout",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 [WindIcon] [ElectricIcon] damage to ALL enemies."
+    },
+    {
+      "name": "Concussive Shout+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 [WindIcon] [ElectricIcon] damage to ALL enemies."
+    },
+    {
+      "name": "Cyclone Kick",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 [WindIcon] damage to ALL enemies.\nEnter thedragonkin:Typhoon\nthedragonkin:Spirit_Burst 3: Activate the passive effect of your right most orb."
+    },
+    {
+      "name": "Cyclone Kick+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 [WindIcon] damage to ALL enemies.\nEnter thedragonkin:Typhoon\nthedragonkin:Spirit_Burst 3: Activate the passive effect of your right most orb."
+    },
+    {
+      "name": "Deathtouch",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Spend [Chi] [Chi] [Chi] [Chi] [Chi]\nto play this.\nDeal 80 [DrainIcon] damage.\nExhaust."
+    },
+    {
+      "name": "Deathtouch+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Spend [Chi] [Chi] [Chi] [Chi] [Chi]\nto play this.\nDeal 90 [DrainIcon] damage.\nExhaust."
+    },
+    {
+      "name": "Final Cutter",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 [ElectricIcon] damage.\nEnter thedragonkin:Typhoon"
+    },
+    {
+      "name": "Final Cutter+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 [ElectricIcon] damage.\nEnter thedragonkin:Typhoon"
+    },
+    {
+      "name": "Hurricane Kata",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 [WindIcon] damage to ALL enemies.\nEnter thedragonkin:Conduit\nthedragonkin:Spirit_Burst 2: Channel thedragonkin:Razor_Wind"
+    },
+    {
+      "name": "Hurricane Kata+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 [WindIcon] damage to ALL enemies.\nEnter thedragonkin:Conduit\nthedragonkin:Spirit_Burst 2: Channel thedragonkin:Razor_Wind"
+    },
+    {
+      "name": "Occluded Sky",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nEnter thedragonkin:Zephyr\nEvoke your Right most orb, Lose an orb Slot.\nGain 1 Focus."
+    },
+    {
+      "name": "Occluded Sky+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nEnter thedragonkin:Zephyr\nEvoke your Right most orb, Lose an orb Slot.\nGain 2 Focus."
+    },
+    {
+      "name": "Pivot Shock",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nActivate the passive effect of your thedragonkin:Nimbus Orbs Twice.\nGain 1 Focus."
+    },
+    {
+      "name": "Pivot Shock+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Tempo.\nActivate the passive effect of your thedragonkin:Nimbus Orbs Twice.\nGain 1 Focus."
+    },
+    {
+      "name": "Stagnant Zone",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nEnter thedragonkin:Zephyr"
+    },
+    {
+      "name": "Stagnant Zone+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block.\nEnter thedragonkin:Zephyr"
+    },
+    {
+      "name": "Storm Infusion",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enter thedragonkin:Conduit.\nActivate the passive effect of your orbs Twice."
+    },
+    {
+      "name": "Storm Infusion+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enter thedragonkin:Conduit.\nActivate the passive effect of your orbs 3 times."
+    },
+    {
+      "name": "Wind's Fuidity",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Block after you play a card."
+    },
+    {
+      "name": "Wind's Fuidity+",
+      "color": "Windwalker_jade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Block after you play a card."
+    },
+    {
+      "name": "Blazing Breath",
+      "color": "Justicar_red_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thedragonkin:Storm 2 - Draw a card.\nDeal 5 damage and Apply 3 thedragonkin:Scorch."
+    },
+    {
+      "name": "Blazing Breath+",
+      "color": "Justicar_red_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thedragonkin:Storm 2 - Draw a card.\nDeal 7 damage and Apply 4 thedragonkin:Scorch."
+    },
+    {
+      "name": "Defend",
+      "color": "Justicar_red_color",
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
@@ -77,7 +2901,7 @@
     },
     {
       "name": "Defend+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
@@ -85,23 +2909,23 @@
     },
     {
       "name": "Holy Smite",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Basic",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 5 damage 1 Times.\napply 1 Weak and Vulnerable."
+      "description": "thedragonkin:Radiant 5.\nDeal 3 damage twice. apply 2 Vulnerable\napply 2 Weak"
     },
     {
       "name": "Holy Smite+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Basic",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 8 damage 1 Times.\napply 1 Weak and Vulnerable."
+      "description": "thedragonkin:Radiant 5.\nDeal 6 damage twice. apply 2 Vulnerable\napply 2 Weak"
     },
     {
       "name": "Strike",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
@@ -109,319 +2933,383 @@
     },
     {
       "name": "Strike+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
       "description": "Deal 10 damage."
     },
     {
-      "name": "Acidic Breath",
-      "color": "Dragonkin_red_color",
+      "name": "Condemn",
+      "color": "Justicar_red_color",
       "rarity": "Common",
-      "type": "Attack",
+      "type": "Skill",
       "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 8 damage.\nApply 1 Weak."
+      "description": "Apply 4 thedragonkin:Penance"
     },
     {
-      "name": "Acidic Breath+",
-      "color": "Dragonkin_red_color",
+      "name": "Condemn+",
+      "color": "Justicar_red_color",
       "rarity": "Common",
-      "type": "Attack",
+      "type": "Skill",
       "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 10 damage.\nApply 1 Weak."
+      "description": "Apply 6 thedragonkin:Penance"
     },
     {
-      "name": "Burning Rage",
-      "color": "Dragonkin_red_color",
+      "name": "Defiant Guard",
+      "color": "Justicar_red_color",
       "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 8 damage.\napply 2 thedragonkin:Scorch.\nthedragonkin:Scorched : Gain 5 *Fury."
+      "type": "Skill",
+      "cost": "2",
+      "description": "Costs 1 less [E] for each debuff you have\nGain 10 Block."
     },
     {
-      "name": "Burning Rage+",
-      "color": "Dragonkin_red_color",
+      "name": "Defiant Guard+",
+      "color": "Justicar_red_color",
       "rarity": "Common",
-      "type": "Attack",
+      "type": "Skill",
       "cost": "1",
-      "description": "Deal 11 damage.\napply 2 thedragonkin:Scorch.\nthedragonkin:Scorched : Gain 5 *Fury."
+      "description": "Costs 1 less [E] for each debuff you have\nGain 10 Block."
     },
     {
-      "name": "Controlled Breath",
-      "color": "Dragonkin_red_color",
+      "name": "Divine Strike",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
-      "cost": "1",
-      "description": "Deal 8 damage.\nDo not Release your thedragonkin:Dragon_Breaths this turn."
+      "cost": "2",
+      "description": "Deal 8 damage.\nGain Block equal to unblocked damage dealt."
     },
     {
-      "name": "Controlled Breath+",
-      "color": "Dragonkin_red_color",
+      "name": "Divine Strike+",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nGain Block equal to unblocked damage dealt."
+    },
+    {
+      "name": "Dragonfire",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Skill",
       "cost": "0",
-      "description": "Deal 8 damage.\nDo not Release your thedragonkin:Dragon_Breaths this turn."
+      "description": "thedragonkin:Storm 6 : Gain 10 thedragonkin:Auraflame.\nWhen thedragonkin:Cycled Deal 8 damage to a random enemy"
     },
     {
-      "name": "Divine Breath",
-      "color": "Dragonkin_red_color",
+      "name": "Dragonfire+",
+      "color": "Justicar_red_color",
       "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 6 damage.\nGain 1 *Zeal.\nExhaust."
-    },
-    {
-      "name": "Divine Breath+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 8 damage.\nGain 2 *Zeal.\nExhaust."
+      "type": "Skill",
+      "cost": "0",
+      "description": "thedragonkin:Storm 6 : Gain 12 thedragonkin:Auraflame.\nWhen thedragonkin:Cycled Deal 10 damage to a random enemy"
     },
     {
       "name": "Ember Swipe",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage to ALL enemies.\nApply 2 thedragonkin:Scorch\nto ALL enemies "
+      "description": "Deal 5 damage and Apply 2 thedragonkin:Scorch to ALL enemies."
     },
     {
       "name": "Ember Swipe+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage to ALL enemies.\nApply 4 thedragonkin:Scorch\nto ALL enemies "
-    },
-    {
-      "name": "Flame Breath",
-      "color": "Dragonkin_red_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 10 damage."
-    },
-    {
-      "name": "Flame Breath+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 14 damage."
+      "description": "Deal 7 damage and Apply 3 thedragonkin:Scorch to ALL enemies."
     },
     {
       "name": "Flame Claw",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 12 damage. shuffle 1 burn into your discard pile."
+      "description": "Deal 12 [FireIcon] damage.\nshuffle 1 Burn into your draw pile."
     },
     {
       "name": "Flame Claw+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 16 damage. shuffle 2 burns into your discard pile."
+      "description": "Deal 17 [FireIcon] damage.\nshuffle 1 Burn into your draw pile."
     },
     {
       "name": "Flame Ward",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 14 Block.\nAdd 2 Burns to your discard pile."
+      "description": "thedragonkin:Storm 3.\nGain 14 Block.\nShuffle 2 Burns to your draw pile."
     },
     {
       "name": "Flame Ward+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 18 Block.\nAdd 3 Burns to your discard pile."
+      "description": "thedragonkin:Storm 3.\nGain 18 Block.\nShuffle 2 Burns to your draw pile."
+    },
+    {
+      "name": "Flareburst",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 [FireIcon] damage.\nthedragonkin:Cycle 1 card."
+    },
+    {
+      "name": "Flareburst+",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 [FireIcon] damage.\nthedragonkin:Cycle 2 cards."
+    },
+    {
+      "name": "Flarestrike",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [FireIcon] damage.\ndraw 2 Burns.\nthedragonkin:Sealed: Deals 2 extra damage this combat."
+    },
+    {
+      "name": "Flarestrike+",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 [FireIcon] damage.\ndraw 2 Burns.\nthedragonkin:Sealed: Deals 2 extra damage this combat."
+    },
+    {
+      "name": "Fleeting Faith",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Block.\nApply 3 thedragonkin:Penance.\nGain 3 thedragonkin:Penance."
+    },
+    {
+      "name": "Fleeting Faith+",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 19 Block.\nApply 3 thedragonkin:Penance.\nGain 3 thedragonkin:Penance."
     },
     {
       "name": "Heat Shield",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block. if you have a burn in your hand, discard it and return this to your hand."
+      "description": "Gain 7 Block.\nthedragonkin:Cycle a card\nif you Cycle a Status return this to your hand."
     },
     {
       "name": "Heat Shield+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block. if you have a burn in your hand, discard it and return this to your hand."
+      "description": "Gain 10 Block.\nthedragonkin:Cycle a card\nif you Cycle a Status return this to your hand."
     },
     {
       "name": "Holy Barrier",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Temporary HP. Exhaustive: 2."
+      "description": "thedragonkin:Radiant 1.\nGain 8 thedragonkin:Divine_Armor."
     },
     {
       "name": "Holy Barrier+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Temporary HP. Exhaustive: 2."
+      "description": "thedragonkin:Radiant 1.\nGain 11 thedragonkin:Divine_Armor."
     },
     {
       "name": "Holy Fire",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\napply 2 thedragonkin:Scorch."
+      "description": "thedragonkin:Radiant 1.\nDeal 8 [LightIcon] [FireIcon] damage.\napply 3 thedragonkin:Scorch."
     },
     {
       "name": "Holy Fire+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\napply 4 thedragonkin:Scorch."
+      "description": "thedragonkin:Radiant 1.\nDeal 10 [LightIcon] [FireIcon] damage.\napply 4 thedragonkin:Scorch."
     },
     {
-      "name": "Miasma Breath",
-      "color": "Dragonkin_red_color",
+      "name": "Latent Power",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thedragonkin:Cycle 2 cards.\nif any are Blessings, gain 8 thedragonkin:Divine_Armor"
+    },
+    {
+      "name": "Latent Power+",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thedragonkin:Cycle 2 cards.\nif any are Blessings, gain 10 thedragonkin:Divine_Armor"
+    },
+    {
+      "name": "Liebreaker",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nApply 6 thedragonkin:Dissolve.\nALL enemies lose HP Equal to their thedragonkin:Dissolve."
+      "description": "thedragonkin:Cycle 3 cards.\nApply 4 thedragonkin:Penance to a random enemy for each Blessing Cycled."
     },
     {
-      "name": "Miasma Breath+",
-      "color": "Dragonkin_red_color",
+      "name": "Liebreaker+",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nApply 8 thedragonkin:Dissolve.\nALL enemies lose HP Equal to their thedragonkin:Dissolve."
+      "description": "thedragonkin:Cycle 3 cards.\nApply 5 thedragonkin:Penance to a random enemy for each Blessing Cycled."
     },
     {
       "name": "Penance Shock",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage and apply 1 Weak to a random enemy."
+      "description": "thedragonkin:Radiant 5.\nDeal 5 [LightIcon] damage to a random enemy Twice."
     },
     {
       "name": "Penance Shock+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage and apply 2 Weak to a random enemy 2 times."
+      "description": "thedragonkin:Radiant 5.\nDeal 5 [LightIcon] damage to a random enemy Twice."
     },
     {
-      "name": "Sand Breath",
-      "color": "Dragonkin_red_color",
+      "name": "Razor Wind",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nDeals 3 additional damage for each unique Debuff you and your target have."
+    },
+    {
+      "name": "Razor Wind+",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nDeals 4 additional damage for each unique Debuff you and your target have."
+    },
+    {
+      "name": "Searing Light",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nGain 2 Temporary_HP.\nApply 1 Weak."
+      "description": "Take 5 damage.\nGain 15 thedragonkin:Divine_Armor"
     },
     {
-      "name": "Sand Breath+",
-      "color": "Dragonkin_red_color",
+      "name": "Searing Light+",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nGain 4 Temporary_HP.\nApply 1 Weak."
+      "description": "Take 2 damage.\nGain 15 thedragonkin:Divine_Armor"
     },
     {
-      "name": "Sizzle",
-      "color": "Dragonkin_red_color",
+      "name": "Skyward Strike",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf you thedragonkin:Cycled a card this turn gain [E]."
+    },
+    {
+      "name": "Skyward Strike+",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nIf you thedragonkin:Cycled a card this turn gain [E]."
+    },
+    {
+      "name": "Sunburst",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 [FireIcon] damage.\nthedragonkin:Flux 2: Gain 5 thedragonkin:Divine_Armor\nthis Fluxes [#548dff]Blessings[] instead of [#990702]Runes[]"
+    },
+    {
+      "name": "Sunburst+",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 [FireIcon] damage.\nthedragonkin:Flux 3: Gain 5 thedragonkin:Divine_Armor\nthis Fluxes [#548dff]Blessings[] instead of [#990702]Runes[]"
+    },
+    {
+      "name": "Tail Sweep",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block.\nGain 1 Vulnerable.\nApply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Tail Sweep+",
+      "color": "Justicar_red_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 22 Block.\nGain 1 Vulnerable.\nApply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Vengeance",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Target loses HP equal to  it's thedragonkin:Dissolve"
+      "description": "thedragonkin:Storm 4 : Gain 6 thedragonkin:Deflecting_Scales.\nWhen thedragonkin:Cycled gain 8 Block"
     },
     {
-      "name": "Sizzle+",
-      "color": "Dragonkin_red_color",
+      "name": "Vengeance+",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "ALL enemies lose HP equal to their thedragonkin:Dissolve"
+      "description": "thedragonkin:Storm 4 : Gain 8 thedragonkin:Deflecting_Scales.\nWhen thedragonkin:Cycled gain 10 Block"
     },
     {
-      "name": "Slow Burn",
-      "color": "Dragonkin_red_color",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Whenever you apply a debuff to this enemy, deal 4 damage to it.\nExhaust."
-    },
-    {
-      "name": "Slow Burn+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Whenever you apply a debuff to this enemy, deal 6 damage to it.\nExhaust."
-    },
-    {
-      "name": "Sulfuric Bile",
-      "color": "Dragonkin_red_color",
+      "name": "Wrath",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
-      "cost": "1",
-      "description": "Remove all Block from the enemy.\nTarget loses HP equal to it's thedragonkin:Dissolve."
+      "cost": "",
+      "description": "thedragonkin:Reckoning: Deal 10 damage to a random enemy."
     },
     {
-      "name": "Sulfuric Bile+",
-      "color": "Dragonkin_red_color",
+      "name": "Wrath+",
+      "color": "Justicar_red_color",
       "rarity": "Common",
       "type": "Attack",
-      "cost": "1",
-      "description": "Remove all Block from the enemy.\nTarget loses HP equal to it's thedragonkin:Dissolve twice"
-    },
-    {
-      "name": "Acid Armor",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "When you Apply a debuff, Gain 3 Block."
-    },
-    {
-      "name": "Acid Armor+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "When you Apply a debuff, Gain 3 Block."
-    },
-    {
-      "name": "Acid Rain",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 4 and Apply 2 Vulnerable to a random enemy 2 times."
-    },
-    {
-      "name": "Acid Rain+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 6 and Apply 2 Vulnerable to a random enemy 3 times."
+      "cost": "",
+      "description": "thedragonkin:Reckoning: Deal 12 damage to a random enemy."
     },
     {
       "name": "Ancestral Seance",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
@@ -429,95 +3317,127 @@
     },
     {
       "name": "Ancestral Seance+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
       "description": "Choose 1 of 3 Primal cards.\nAdd it to your hand it costs 0 this turn.\nExhaust."
     },
     {
-      "name": "Ash Breath",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Exhaust a Status in your hand to return this to your hand. thedragonkin:Dragon_Breath.\nGain 4 Block.\nDeal 4 damage."
-    },
-    {
-      "name": "Ash Breath+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Exhaust a Status in your hand to return this to your hand. thedragonkin:Dragon_Breath.\nGain 6 Block.\nDeal 6 damage."
-    },
-    {
-      "name": "Ashfall",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "2",
-      "description": "When you draw a Status card, Attack a random enemy for 8 damage."
-    },
-    {
-      "name": "Ashfall+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "2",
-      "description": "When you draw a Status card, Attack a random enemy for 11 damage."
-    },
-    {
-      "name": "Cauterize",
-      "color": "Dragonkin_red_color",
+      "name": "Blank Runestone",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Heal 15 HP. Gain 4 thedragonkin:Scorched.\nExhaust."
+      "description": "Gain 6 Block.\nFlux 1: Exhaust cards thedragonkin:Cycled and add a random Rune to your Discard pile."
     },
     {
-      "name": "Cauterize+",
-      "color": "Dragonkin_red_color",
+      "name": "Blank Runestone+",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
-      "description": "Heal 15 HP. Gain 3 thedragonkin:Scorched.\nExhaust."
+      "cost": "1",
+      "description": "Gain 6 Block.\nFlux 3: Exhaust cards thedragonkin:Cycled and add a random Rune to your Discard pile."
+    },
+    {
+      "name": "Blazing Gambit",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nTake 6 damage.\nthedragonkin:Flux 3: Deal 4 [FireIcon] damage to a random enemy."
+    },
+    {
+      "name": "Blazing Gambit+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nTake 6 damage.\nthedragonkin:Flux 4: Deal 6 [FireIcon] damage to a random enemy."
+    },
+    {
+      "name": "Blessed Shield",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 7 Block.\nthedragonkin:Reckoning: increase this cards Block by 3."
+    },
+    {
+      "name": "Blessed Shield+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 10 Block.\nthedragonkin:Reckoning: increase this cards Block by 3."
+    },
+    {
+      "name": "Blessed Strike",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 8 damage.\nthedragonkin:Reckoning: increase this cards damage by 3."
+    },
+    {
+      "name": "Blessed Strike+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 10 damage.\nthedragonkin:Reckoning: increase this cards damage by 4."
     },
     {
       "name": "Chains of Truth",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 12 damage to all enemies.\nApply 2 Vulnerable to all enemies."
+      "description": "thedragonkin:Radiant 5.\nDeal 6 [LightIcon] damage to all enemies.\nApply 2 Vulnerable to all enemies."
     },
     {
       "name": "Chains of Truth+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "1",
-      "description": "Deal 12 damage to all enemies.\nApply 2 Vulnerable to all enemies."
+      "cost": "2",
+      "description": "thedragonkin:Radiant 5.\nDeal 8 [LightIcon] damage to all enemies.\nApply 2 Vulnerable to all enemies."
     },
     {
-      "name": "Choking Goo",
-      "color": "Dragonkin_red_color",
+      "name": "Chemical Star",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage.\nApply 4 thedragonkin:Dissolve.\nALL enemies lose HP Equal to their thedragonkin:Dissolve."
+      "description": "Deal 4 damage, Heal equal to unblocked damage dealt.\nAdd a Burn to your discard pile."
     },
     {
-      "name": "Choking Goo+",
-      "color": "Dragonkin_red_color",
+      "name": "Chemical Star+",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage.\nApply 5 thedragonkin:Dissolve.\nALL enemies lose HP Equal to their thedragonkin:Dissolve."
+      "description": "Deal 5 damage, Heal equal to unblocked damage dealt.\nAdd a Burn to your discard pile."
+    },
+    {
+      "name": "Deflection",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 10 : Reduce target Strength by 9.\nWhen thedragonkin:Cycled Apply 3 Weak to ALL enemies."
+    },
+    {
+      "name": "Deflection+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 10 : Reduce target Strength by 9.\nWhen thedragonkin:Cycled Apply 5 Weak to ALL enemies."
     },
     {
       "name": "Divine Prayer",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
@@ -525,7 +3445,7 @@
     },
     {
       "name": "Divine Prayer+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
@@ -533,375 +3453,423 @@
     },
     {
       "name": "Divine Shield",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Gain 3 Temporary_HP X + 2 Times.\nExhaust."
+      "description": "Gain 5 thedragonkin:Divine_Armor X + 1 Times.\nExhaust."
     },
     {
       "name": "Divine Shield+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Gain 5 Temporary_HP X + 2 Times.\nExhaust."
+      "description": "Gain 7 thedragonkin:Divine_Armor X + 1 Times.\nExhaust."
     },
     {
       "name": "Divine Vision",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 2 *Zeal."
+      "description": "Gain 3 thedragonkin:Zeal."
     },
     {
       "name": "Divine Vision+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 4 *Zeal."
-    },
-    {
-      "name": "Enduring Agony",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "2",
-      "description": "Whenever you Apply thedragonkin:Dissolve Apply 3 thedragonkin:Scorch.\nWhenever you Apply thedragonkin:Scorch Apply 3 thedragonkin:Dissolve"
-    },
-    {
-      "name": "Enduring Agony+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "Whenever you Apply thedragonkin:Dissolve Apply 3 thedragonkin:Scorch.\nWhenever you Apply thedragonkin:Scorch Apply 3 thedragonkin:Dissolve"
+      "description": "Gain 5 thedragonkin:Zeal."
     },
     {
       "name": "Flashpoint",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Draw 1 card.\nGain 8 *Fury."
+      "description": "thedragonkin:Storm 3.\nDraw 3 Status or Rune cards.\nFlux 2: Exhaust cards thedragonkin:Cycled"
     },
     {
       "name": "Flashpoint+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Draw 1 card.\nGain 10 *Fury."
+      "description": "thedragonkin:Storm 3.\nDraw 6 Status or Rune cards.\nFlux 2: Exhaust cards thedragonkin:Cycled"
+    },
+    {
+      "name": "Fortitude",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Reckoning: Give another card in your hand Retain this turn."
+    },
+    {
+      "name": "Fortitude+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Reckoning: Give another card in your hand Retain this turn.\nGain 1 thedragonkin:Divine_Armor"
     },
     {
       "name": "Golden Flame",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\ngain 3 Temporary_HP.\nExhaust."
+      "description": "thedragonkin:Radiant 3.\nDeal 4 [FireIcon] damage.\ngain 6 thedragonkin:Divine_Armor."
     },
     {
       "name": "Golden Flame+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 12 damage.\ngain 6 Temporary_HP.\nExhaust."
-    },
-    {
-      "name": "Hallowed Ground",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 6 damage to all enemies, gain 5 Temporary_HP for each enemy.\nExhaustive: 2."
-    },
-    {
-      "name": "Hallowed Ground+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 6 damage to all enemies, gain 5 Temporary_HP for each enemy.\nExhaustive: 3."
+      "description": "thedragonkin:Radiant 3.\nDeal 7 [FireIcon] damage.\ngain 9 thedragonkin:Divine_Armor."
     },
     {
       "name": "Hammer Of Wrath",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 14 damage.\ngain 1 *Zeal.\nExhaust."
+      "description": "Deal 14 damage.\ngain 1 thedragonkin:Zeal."
     },
     {
       "name": "Hammer Of Wrath+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\ngain 2 thedragonkin:Zeal."
+    },
+    {
+      "name": "Hasty Judgement",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
       "cost": "1",
-      "description": "Deal 14 damage.\ngain 1 *Zeal.\nExhaust."
+      "description": "thedragonkin:Radiant 4.\nApply 2 thedragonkin:Penance.\nDraw 2 Cards."
+    },
+    {
+      "name": "Hasty Judgement+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thedragonkin:Radiant 4.\nApply 4 thedragonkin:Penance.\nDraw 2 Cards."
     },
     {
       "name": "Holy Aegis",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block 2 times."
+      "description": "thedragonkin:Radiant 2.\nGain 5 thedragonkin:Divine_Armor Twice."
     },
     {
       "name": "Holy Aegis+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 6 Block 3 times."
+      "description": "thedragonkin:Radiant 1.\nGain 5 thedragonkin:Divine_Armor Twice."
     },
     {
-      "name": "Holy Flask",
-      "color": "Dragonkin_red_color",
+      "name": "Incendiary Flow",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 4 thedragonkin:Dissolve to a random enemy 4 times."
+      "description": "thedragonkin:Storm 3 - Whenever you thedragonkin:Cycle a card Gain 4 Block.\nthedragonkin:Flux 2: Gain 2 Strength."
     },
     {
-      "name": "Holy Flask+",
-      "color": "Dragonkin_red_color",
+      "name": "Incendiary Flow+",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 5 thedragonkin:Dissolve to a random enemy 5 times."
+      "description": "thedragonkin:Storm 3 - Whenever you thedragonkin:Cycle a card Gain 4 Block.\nthedragonkin:Flux 2: Gain 4 Strength."
     },
     {
-      "name": "Holy Shock",
-      "color": "Dragonkin_red_color",
+      "name": "Inner Fire",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 12 damage.\nEnemy loses 6 Strength this turn."
+      "type": "Skill",
+      "cost": "1",
+      "description": "Take 2 Damage\nGain 12 thedragonkin:Divine_Armor.\nthedragonkin:Flux 2: gain 2 thedragonkin:Zeal.\nthis Fluxes Blessings instead of Runes"
     },
     {
-      "name": "Holy Shock+",
-      "color": "Dragonkin_red_color",
+      "name": "Inner Fire+",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 14 damage.\nEnemy loses 6 Strength this turn."
+      "type": "Skill",
+      "cost": "1",
+      "description": "Take 2 Damage\nGain 15 thedragonkin:Divine_Armor.\nthedragonkin:Flux 2: gain 3 thedragonkin:Zeal.\nthis Fluxes Blessings instead of Runes"
+    },
+    {
+      "name": "Magma Armor",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nthedragonkin:Sealed: Gains 4 extra Block this turn."
+    },
+    {
+      "name": "Magma Armor+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nthedragonkin:Sealed: Gains 6 extra Block this turn."
     },
     {
       "name": "Magma Scales",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "When attacked apply 2 thedragonkin:Scorch back."
+      "description": "After you lose HP apply 1 thedragonkin:Scorch to ALL enemies."
     },
     {
       "name": "Magma Scales+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "When attacked apply 3 thedragonkin:Scorch back."
+      "description": "After you lose HP apply 2 thedragonkin:Scorch to ALL enemies."
     },
     {
-      "name": "Magnus's Corona",
-      "color": "Dragonkin_red_color",
+      "name": "Might",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Reckoning: Gain 2 Strength\nTake 2 damage\nDiscard this."
+    },
+    {
+      "name": "Might+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Reckoning: Gain 3 Strength\nTake 2 damage\nDiscard this."
+    },
+    {
+      "name": "Pain Syphon",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "2",
-      "description": "After you release a thedragonkin:Dragon_Breath gain 4 *Fury."
+      "cost": "1",
+      "description": "When you Apply a debuff, Gain 3 Block."
     },
     {
-      "name": "Magnus's Corona+",
-      "color": "Dragonkin_red_color",
+      "name": "Pain Syphon+",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "2",
-      "description": "After you release a thedragonkin:Dragon_Breath gain 6 *Fury."
-    },
-    {
-      "name": "Molten Breath",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "thedragonkin:Dragon_Breath.\nGain 8 Block.\nDeal 8 damage.\nApply 2 thedragonkin:Scorch."
-    },
-    {
-      "name": "Molten Breath+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "thedragonkin:Dragon_Breath.\nGain 12 Block.\nDeal 12 damage.\nApply 3 thedragonkin:Scorch."
-    },
-    {
-      "name": "Plague Swipe",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "2",
-      "description": "Apply 6 thedragonkin:Dissolve to ALL Enemies.\nALL enemies lose HP Equal to their thedragonkin:Dissolve."
-    },
-    {
-      "name": "Plague Swipe+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
       "cost": "1",
-      "description": "Apply 6 thedragonkin:Dissolve to ALL Enemies.\nALL enemies lose HP Equal to their thedragonkin:Dissolve."
+      "description": "When you Apply a debuff, Gain 4 Block."
     },
     {
-      "name": "Prismatic Breath",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nGain 6 Temporary_HP.\nGain 1 *Zeal. \nExhaust."
-    },
-    {
-      "name": "Prismatic Breath+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nGain 8 Temporary_HP.\nGain 2 *Zeal. \nExhaust."
-    },
-    {
-      "name": "Ravage",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 8 damage to ALL enemies.\nGain 6 *Fury."
-    },
-    {
-      "name": "Ravage+",
-      "color": "Dragonkin_red_color",
+      "name": "Parting Shot",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage to ALL enemies.\nGain 6 *Fury."
+      "description": "Deal 8 damage.\nGain 1 Vulnerable.\nIf you played another Attack this turn Apply and Gain 1 Weak."
     },
     {
-      "name": "Revelation Breath",
-      "color": "Dragonkin_red_color",
+      "name": "Parting Shot+",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "2",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 12 damage.\nGain 5 Temporary_HP."
-    },
-    {
-      "name": "Revelation Breath+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "2",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 14 damage.\nGain 8 Temporary_HP."
-    },
-    {
-      "name": "Shield Glare",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
       "cost": "1",
-      "description": "Enemies that attack you this turn are Stunned next turn.\nExhaust"
+      "description": "Deal 10 damage.\nGain 1 Vulnerable.\nIf you played another Attack this turn Apply and Gain 1 Weak."
     },
     {
-      "name": "Shield Glare+",
-      "color": "Dragonkin_red_color",
+      "name": "Sacred Trial",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
-      "type": "Skill",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Take 7 damage.\nDeal 14 [LightIcon] damage to ALL enemies."
+    },
+    {
+      "name": "Sacred Trial+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Take 5 damage.\nDeal 15 [LightIcon] damage to ALL enemies."
+    },
+    {
+      "name": "Shatter",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
       "cost": "0",
-      "description": "Enemies that attack you this turn are Stunned next turn.\nExhaust"
+      "description": "thedragonkin:Storm 12 : Deal 18 Damage.\nWhen thedragonkin:Cycled Apply 3 Vulnerable to a random enemy"
     },
     {
-      "name": "Storm Cell",
-      "color": "Dragonkin_red_color",
+      "name": "Shatter+",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "2",
-      "description": "After you release 4 or more thedragonkin:Dragon_Breaths in a turn, Shuffle a *Divine *Wind into your draw pile."
-    },
-    {
-      "name": "Storm Cell+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "2",
-      "description": "Innate.\nAfter you release 3 or more thedragonkin:Dragon_Breaths in a turn, Shuffle a *Divine *Wind into your draw pile"
-    },
-    {
-      "name": "Tirnoch's Patience",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Retain.\nGain 5 Block for each thedragonkin:Dragon_Breath stored.\nDo not Release your thedragonkin:Dragon_Breaths this turn."
-    },
-    {
-      "name": "Tirnoch's Patience+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
+      "type": "Attack",
       "cost": "0",
-      "description": "Retain.\nGain 5 Block for each thedragonkin:Dragon_Breath stored.\nDo not Release your thedragonkin:Dragon_Breaths this turn."
+      "description": "thedragonkin:Storm 12 : Deal 20 Damage.\nWhen thedragonkin:Cycled Apply 5 Vulnerable to a random enemy"
     },
     {
-      "name": "Twin Breath",
-      "color": "Dragonkin_red_color",
+      "name": "Steel Will",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Add *Corrosive *Breath to your hand.\nthedragonkin:Dragon_Breath.\nDeal 6 Damage.\nApply 4 thedragonkin:Scorch."
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate\nEach turn after you receive 15 or more damage, Debuffs applied to you become harmless."
     },
     {
-      "name": "Twin Breath+",
-      "color": "Dragonkin_red_color",
+      "name": "Steel Will+",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Add *Corrosive *Breath+ to your hand.\nthedragonkin:Dragon_Breath.\nDeal 8 Damage.\nApply 5 thedragonkin:Scorch."
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate\nEach turn after you receive 15 or more damage, Debuffs applied to you become harmless."
     },
     {
-      "name": "Voice of Order",
-      "color": "Dragonkin_red_color",
+      "name": "Suffering Synapses",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
-      "type": "Skill",
+      "type": "Attack",
       "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nGain 14 Block.\nApply 1 Weak and Vulnerable."
+      "description": "Apply 2 Weak.\nDeal 4 damage for each Debuff the target has to ALL enemies."
     },
     {
-      "name": "Voice of Order+",
-      "color": "Dragonkin_red_color",
+      "name": "Suffering Synapses+",
+      "color": "Justicar_red_color",
       "rarity": "Uncommon",
-      "type": "Skill",
+      "type": "Attack",
       "cost": "1",
-      "description": "thedragonkin:Dragon_Breath.\nGain 16 Block.\nApply 1 Weak and Vulnerable."
+      "description": "Apply 2 Weak.\nDeal 6 damage for each Debuff the target has to ALL enemies."
     },
     {
-      "name": "Akatirn's Decree",
-      "color": "Dragonkin_red_color",
-      "rarity": "Rare",
+      "name": "Sunbeam",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 1 Weak.\nAdd a random Blessing to your discard pile."
+    },
+    {
+      "name": "Sunbeam+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply 2 Weak.\nAdd a random Blessing to your discard pile."
+    },
+    {
+      "name": "Tail Slam",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 14 damage.\nApply 1 Weak and Vulnerable.\nRemove all debuffs from yourself."
+      "description": "Gain 15 Block.\nDeal 10 damage to ALL enemies.\nGain 1 Vulnerable."
     },
     {
-      "name": "Akatirn's Decree+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Rare",
+      "name": "Tail Slam+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "thedragonkin:Dragon_Breath.\nDeal 18 damage.\nApply 1 Weak and Vulnerable.\nRemove all debuffs from yourself."
+      "description": "Gain 18 Block.\nDeal 11 damage to ALL enemies.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Unbroken",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "After you receive or apply a debuff gain 2 thedragonkin:Deflecting_Scales."
+    },
+    {
+      "name": "Unbroken+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "After you receive or apply a debuff gain 3 thedragonkin:Deflecting_Scales."
+    },
+    {
+      "name": "Weight of Contrition",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thedragonkin:Radiant 3.\nApply 3 thedragonkin:Sinner's_Burden.\nthedragonkin:Adjudicate."
+    },
+    {
+      "name": "Weight of Contrition+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thedragonkin:Radiant 3.\nApply 5 thedragonkin:Sinner's_Burden.\nthedragonkin:Adjudicate."
+    },
+    {
+      "name": "Wings of Light",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn, Take 2 damage and gain 7 thedragonkin:Divine_Armor"
+    },
+    {
+      "name": "Wings of Light+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate\nAt the end of your turn, Take 3 damage and gain 9 thedragonkin:Divine_Armor"
+    },
+    {
+      "name": "Wisdom",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Reckoning: draw a card."
+    },
+    {
+      "name": "Wisdom+",
+      "color": "Justicar_red_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "thedragonkin:Reckoning: draw a card.\nnext turn draw a card"
+    },
+    {
+      "name": "Absolution",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 8 thedragonkin:Penance.\nApply 4 thedragonkin:Sinner's_Burden\nthedragonkin:Reckoning: thedragonkin:Adjudicate ALL enemies."
+    },
+    {
+      "name": "Absolution+",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 12 thedragonkin:Penance.\nApply 6 thedragonkin:Sinner's_Burden\nthedragonkin:Reckoning: thedragonkin:Adjudicate ALL enemies."
     },
     {
       "name": "Ashen Armor",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
@@ -909,15 +3877,47 @@
     },
     {
       "name": "Ashen Armor+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
+      "cost": "1",
       "description": "When you draw a Status card, Gain 6 Block."
     },
     {
+      "name": "Ashfall",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you draw a Status card, Deal 8 damage to a random enemy."
+    },
+    {
+      "name": "Ashfall+",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you draw a Status card, Deal 11 damage to a random enemy."
+    },
+    {
+      "name": "Bloodthirst",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 10 : Deal 8 damage to a random enemy 3 times.\nWhen thedragonkin:Cycled increase the number of times this attacks by 1."
+    },
+    {
+      "name": "Bloodthirst+",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "thedragonkin:Storm 10 : Deal 10 damage to a random enemy 5 times.\nWhen thedragonkin:Cycled increase the number of times this attacks by 1."
+    },
+    {
       "name": "Burn After Reading",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
@@ -925,7 +3925,7 @@
     },
     {
       "name": "Burn After Reading+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
@@ -933,167 +3933,199 @@
     },
     {
       "name": "Cinderstorm",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Exhaust all Status cards in your hand, deal 15 damage to a random enemy for each."
+      "description": "Deal 15 [FireIcon] damage.\nthedragonkin:Flux 10: Deal 15 [FireIcon] damage to a random enemy\nExhaust cards thedragonkin:Cycled by this card."
     },
     {
       "name": "Cinderstorm+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Exhaust all Status cards in your hand, deal 20 damage to a random enemy for each."
+      "description": "Deal 20 [FireIcon] damage.\nthedragonkin:Flux 10: Deal 20 [FireIcon] damage to a random enemy\nExhaust cards thedragonkin:Cycled by this card."
     },
     {
       "name": "Condemnation",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "In 3 turns, Deal 40 damage to ALL enemies."
+      "description": "In 3 turns, Deal 40 damage to ALL enemies.\nthedragonkin:Storm 5 - Next Turn instead."
     },
     {
       "name": "Condemnation+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "In 3 turns, Deal 50 damage to ALL enemies."
-    },
-    {
-      "name": "Crusader Form",
-      "color": "Dragonkin_red_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "When you play a non-Holy card, gain 2 *Zeal this turn."
-    },
-    {
-      "name": "Crusader Form+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "When you play a non-Holy card, gain 2 *Zeal this turn."
+      "description": "In 3 turns, Deal 50 damage to ALL enemies.\nthedragonkin:Storm 5 - Next Turn instead."
     },
     {
       "name": "Detox",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Ethereal.\nGain 2 Strength and Dexterity for each Debuff an enemy has.\nHalve each one.\nExhaust"
+      "description": "Ethereal.\nGain 1 Strength and Dexterity for each Debuff an enemy has.\nHalve each one.\nExhaust"
     },
     {
       "name": "Detox+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Strength and Dexterity for each Debuff an enemy has.\nExhaust"
+    },
+    {
+      "name": "Divine Retribution",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn Gain temporary thedragonkin:Zeal for each Blessing in your hand and Take 3 damage"
+    },
+    {
+      "name": "Divine Retribution+",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Power",
       "cost": "1",
-      "description": "Gain 2 Strength and Dexterity for each Debuff an enemy has.\nExhaust"
+      "description": "At the start of your turn Gain temporary thedragonkin:Zeal for each Blessing in your hand and Take 3 damage"
     },
     {
       "name": "Divine Storm",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 15 damage to a random enemy X + 0 times.\nExhaust."
+      "description": "thedragonkin:Radiant 2.\nDeal 9 [LightIcon] damage to a random enemy X + 0 times.\nExhaust."
     },
     {
       "name": "Divine Storm+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "X",
-      "description": "Retain.\nDeal 15 damage to a random enemy X + 0 times.\nExhaust."
+      "description": " thedragonkin:Radiant 2.\nRetain.\nDeal 9 [LightIcon] damage to a random enemy X + 0 times.\nExhaust."
     },
     {
-      "name": "Flash of Light",
-      "color": "Dragonkin_red_color",
+      "name": "Flamestrike",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
-      "type": "Skill",
-      "cost": "2",
-      "description": "Heal 6 HP.\nGain 6 Temporary_HP.\nExhaust."
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 [FireIcon] damage to ALL enemies.\nthedragonkin:Sealed: Deals 2 extra damage this combat."
     },
     {
-      "name": "Flash of Light+",
-      "color": "Dragonkin_red_color",
+      "name": "Flamestrike+",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
-      "type": "Skill",
-      "cost": "2",
-      "description": "Heal 10 HP.\nGain 10 Temporary_HP.\nExhaust."
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 [FireIcon] damage to ALL enemies.\nthedragonkin:Sealed: Deals 2 extra damage this combat."
     },
     {
       "name": "Inferno Ward",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Exhaust all Burns in your draw and Discard piles, gain 6 block for each one.\nExhaust."
+      "description": "Gain 8 Block.\nGain 5 thedragonkin:Auraflame\nthedragonkin:Flux 10: Exhaust cards thedragonkin:Cycled."
     },
     {
       "name": "Inferno Ward+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Exhaust all Burns in your draw and Discard piles, gain 9 block for each one.\nExhaust."
+      "description": "Gain 11 Block.\nGain 5 thedragonkin:Auraflame\nthedragonkin:Flux 10: Exhaust cards thedragonkin:Cycled."
     },
     {
-      "name": "Mirror Breath",
-      "color": "Dragonkin_red_color",
+      "name": "Lightspeed",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "this Fluxes Blessings instead of Runes\nthedragonkin:Reckoning: thedragonkin:Flux 5: Gain [E] and 5 block.\nDiscard this"
+    },
+    {
+      "name": "Lightspeed+",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "this Fluxes Blessings instead of Runes\nthedragonkin:Reckoning: thedragonkin:Flux 5: Gain [E] and 7 block.\nDiscard this"
+    },
+    {
+      "name": "Pandemic",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply a copy of each of an enemies Debuffs to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Pandemic+",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Play a copy of your last played thedragonkin:Dragon_Breath."
+      "description": "Apply a copy of each of an enemies Debuffs to ALL enemies.\nExhaust."
     },
     {
-      "name": "Mirror Breath+",
-      "color": "Dragonkin_red_color",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Play a copy of your last played thedragonkin:Dragon_Breath."
-    },
-    {
-      "name": "Shield Bash",
-      "color": "Dragonkin_red_color",
+      "name": "Prismatic Blast",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 14 damage, Stun the target next turn.\nPurge"
+      "description": "Deal [LightIcon] damage equal to twice your thedragonkin:Divine_Armor to ALL enemies.\nLose all your Divine Armor.\nExhaust."
     },
     {
-      "name": "Shield Bash+",
-      "color": "Dragonkin_red_color",
+      "name": "Prismatic Blast+",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 16 damage, Stun the target next turn.\nPurge"
+      "description": "Deal [LightIcon] damage equal to twice your thedragonkin:Divine_Armor to ALL enemies.\nLose half your Divine Armor.\nExhaust."
     },
     {
-      "name": "Smaug's Smog",
-      "color": "Dragonkin_red_color",
+      "name": "Pyroblast",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "2",
-      "description": "thedragonkin:Dragon_Breath.\nGain 6 Block.\nDeal 12 damage.\nApply 1 Vulnerable."
+      "cost": "10",
+      "description": "thedragonkin:Snekproof\nDeal 100 [FireIcon] damage.\nthedragonkin:Sealed: Costs 1 less [E] until played. "
     },
     {
-      "name": "Smaug's Smog+",
-      "color": "Dragonkin_red_color",
+      "name": "Pyroblast+",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "2",
-      "description": "thedragonkin:Dragon_Breath.\nGain 8 Block.\nDeal 14 damage.\nApply 1 Vulnerable."
+      "cost": "10",
+      "description": "thedragonkin:Snekproof\nRetain.\nDeal 100 [FireIcon] damage.\nthedragonkin:Sealed: Costs 1 less [E] until played."
+    },
+    {
+      "name": "Seraph Form",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nThe first card played each turn gives you 4 thedragonkin:Divine_Armor and increase this gain by 2"
+    },
+    {
+      "name": "Seraph Form+",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first card played each turn gives you 4 thedragonkin:Divine_Armor and increase this gain by 2"
     },
     {
       "name": "Subdue",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
@@ -1101,319 +4133,658 @@
     },
     {
       "name": "Subdue+",
-      "color": "Dragonkin_red_color",
+      "color": "Justicar_red_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
       "description": "Retain.\nReduce an enemy's Attack to 1 this turn.\nExhaust."
+    },
+    {
+      "name": "Three Point Strike",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 9 [FireIcon] damage.\nDeal 9 [LightIcon] damage.\nDeal 9 damage.\nApply 2 thedragonkin:Scorch.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Three Point Strike+",
+      "color": "Justicar_red_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 [FireIcon] damage.\nDeal 12 [LightIcon] damage.\nDeal 12 damage.\nApply 2 thedragonkin:Scorch.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Black Blast",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Black Blast+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Defend",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Souldrain",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nGain 3 Block.\nGain 2 thedragonkin:Mana."
+    },
+    {
+      "name": "Souldrain+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nGain 4 Block.\nGain 4 thedragonkin:Mana."
+    },
+    {
+      "name": "Strike",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage."
+    },
+    {
+      "name": "Wraith Walk",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 12 Block"
+    },
+    {
+      "name": "Wraith Walk+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 12 Block"
+    },
+    {
+      "name": "Blighted Blade",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 3 thedragonkin:Blight."
+    },
+    {
+      "name": "Blighted Blade+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nApply 4 thedragonkin:Blight."
+    },
+    {
+      "name": "Dark Summons",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 2 random thedragonkin:Undead cards to your discard pile."
+    },
+    {
+      "name": "Dark Summons+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 5 random thedragonkin:Undead cards to your discard pile."
+    },
+    {
+      "name": "Death Approaches",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 1 thedragonkin:Judgement."
+    },
+    {
+      "name": "Death Approaches+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGain 3 thedragonkin:Judgement."
+    },
+    {
+      "name": "Ghostly Barrier",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thedragonkin:Channeling\nGain 8 Block."
+    },
+    {
+      "name": "Ghostly Barrier+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thedragonkin:Channeling\nGain 8 Block."
+    },
+    {
+      "name": "Mana Tide",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 6 thedragonkin:Mana"
+    },
+    {
+      "name": "Mana Tide+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 thedragonkin:Mana"
+    },
+    {
+      "name": "Soul Cloak",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block\nGain 4 thedragonkin:Mana"
+    },
+    {
+      "name": "Soul Cloak+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block\nGain 5 thedragonkin:Mana"
+    },
+    {
+      "name": "Soul Strike",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 3 thedragonkin:Mana"
+    },
+    {
+      "name": "Soul Strike+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nGain 4 thedragonkin:Mana"
+    },
+    {
+      "name": "Toxic Burst",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "3",
+      "description": "thedragonkin:Channeling\nApply 5 Poison."
+    },
+    {
+      "name": "Toxic Burst+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "3",
+      "description": "thedragonkin:Channeling\nApply 7 Poison."
+    },
+    {
+      "name": "Infernal Beam",
+      "color": "Deathspeaker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "8",
+      "description": "Deal 12 damage.\nApply 6 thedragonkin:Infernal_Watch"
+    },
+    {
+      "name": "Infernal Beam+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "8",
+      "description": "Deal 12 damage.\nApply 7 thedragonkin:Infernal_Watch"
+    },
+    {
+      "name": "Well of Souls",
+      "color": "Deathspeaker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "8",
+      "description": "thedragonkin:Exile 4\nDeal 8 damage\nthedragonkin:Incantation 0 - increase this cards damage by 4 this combat."
+    },
+    {
+      "name": "Well of Souls+",
+      "color": "Deathspeaker_purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "8",
+      "description": "thedragonkin:Exile 4\nDeal 8 damage\nthedragonkin:Incantation 0 - increase this cards damage by 4 this combat."
     }
   ],
   "relics": [
     {
       "name": "Garnet Scales",
       "tier": "Starter",
-      "pool": "Dragonkin_red_color",
-      "description": "After you play your first Holy card each turn, gain 4 Block.",
+      "pool": "Justicar_red_color",
+      "description": "After you play your first Holy card each turn, gain 2 Block.",
       "flavorText": "They Pulse with the Warmth of a Dragon's Fury."
     },
     {
-      "name": "Burning Fragment",
-      "tier": "Common",
-      "pool": "Dragonkin_red_color",
-      "description": "The First time you draw a Status each turn draw a card and gain 6 Temporary HP.",
-      "flavorText": "It's warm to the touch."
+      "name": "Guider Lamp",
+      "tier": "Starter",
+      "pool": "Deathspeaker_purple",
+      "description": "After you Exhaust a non-#yUndead card, add 2 Skeletons to your Draw pile.",
+      "flavorText": "Filled with souls of the fallen, they whisper knowledge ceaselessly."
+    },
+    {
+      "name": "Serpent Idol",
+      "tier": "Starter",
+      "pool": "Windwalker_jade_color",
+      "description": "Start each combat with 2 Mastery.",
+      "flavorText": "A finely crafted idol of a Sky Dragon."
     },
     {
       "name": "Ferno's Bellows",
       "tier": "Uncommon",
-      "pool": "Dragonkin_red_color",
-      "description": "After you Generate a Burn Apply 4 Scorch to all Enemies.",
+      "pool": "Justicar_red_color",
+      "description": "After you Generate a Burn Apply 2 Scorch to all Enemies.",
       "flavorText": "Forge Dragon Bellows turn the slightest Spark into a Roaring Blaze."
     },
     {
-      "name": "Muky Sludge",
+      "name": "Sunlight Fragment",
       "tier": "Uncommon",
-      "pool": "Dragonkin_red_color",
-      "description": "At the end of your Turn, ALL enemies lose HP equal to their Dissolve.",
-      "flavorText": "A Toxic Sludge that can dissolve even metal."
-    },
-    {
-      "name": "Book of Hymns",
-      "tier": "Rare",
-      "pool": "Dragonkin_red_color",
-      "description": "The first time you lose Temporary HP or Block each combat gain 2 Zeal.",
-      "flavorText": "A Book of Crusader Hymns, telling tales of Heroism in the name of Naruuin."
-    },
-    {
-      "name": "Bottled Voice",
-      "tier": "Rare",
-      "pool": "Dragonkin_red_color",
-      "description": "Upon pickup, choose a Dragon Breath. Play it at the start of each combat.",
-      "flavorText": "\"Zulko,Gol Ahrk,Lokbo,Pahfen Honhiin Rein!\" - A Draconic Proverb"
+      "pool": "Justicar_red_color",
+      "description": "The First time you draw a Status each turn draw a card and gain 4 Divine Armor.",
+      "flavorText": "It's warm to the touch."
     },
     {
       "name": "Tilera's Shield",
       "tier": "Rare",
-      "pool": "Dragonkin_red_color",
+      "pool": "Justicar_red_color",
       "description": "Upon pickup, heal 1 for each relic you have. Whenever you obtain a relic, gain 3 max HP.",
       "flavorText": "The Aegis of Great Commander Tilera, It stopped many weapons and armored her in Golden Light."
     },
     {
-      "name": "Sunblessed Charm",
-      "tier": "Special",
-      "pool": "Dragonkin_red_color",
-      "description": "Gain 1 Zeal at the start of each combat.",
-      "flavorText": ""
-    },
-    {
-      "name": "Crystallized Dragonbreath",
-      "tier": "Boss",
-      "pool": "Dragonkin_red_color",
-      "description": "You first Dragon Breath played each turn Costs 0 and draws you a card. Your Dragon Breaths take an extra turn to release.",
-      "flavorText": "An Airborne Deposition of gaseous Dragonbreath, simply bottling this substance as a gas has countless alchemical applications."
-    },
-    {
       "name": "Obsidian Scales",
       "tier": "Boss",
-      "pool": "Dragonkin_red_color",
-      "description": "Replaces Garnet Scales.\nAfter you play your first Primal card each turn, gain 4 Fury.",
-      "flavorText": "These cursed Scales whisper terrible things, You feel like your Thoughts are no longer your own."
+      "pool": "Justicar_red_color",
+      "description": "Replaces Garnet Scales.\nGain 1 Block and Fury after you play an Attack.",
+      "flavorText": "Obsidian power, mastery of flame and acid powers that ruled the primordial world"
+    },
+    {
+      "name": "Serpent Talisman",
+      "tier": "Boss",
+      "pool": "Windwalker_jade_color",
+      "description": "Replaces Serpent Idol.\nAt the start of each combat, Choose a Windwalker Stance to Enter.",
+      "flavorText": "A Sky Dragon idol crafted of the purest Jade."
     },
     {
       "name": "Sulfurian",
       "tier": "Boss",
-      "pool": "Dragonkin_red_color",
-      "description": "Gain [E] at the start of your turn. Shuffle 1 Burns into your Discard pile after taking unblocked damage.",
+      "pool": "Justicar_red_color",
+      "description": "Gain [E] at the start of your turn. Shuffle 1 Burn into your Discard pile after taking unblocked damage.",
       "flavorText": "The Great Mace of the Molten Core, known to incinerate anything."
+    },
+    {
+      "name": "Paper Jragon",
+      "tier": "Shop",
+      "pool": "Justicar_red_color",
+      "description": "Scorch Also reduces damage dealt by monsters, and is reduced when they attack.",
+      "flavorText": "Even the most foolish of mortals knew to fear our ancient might and fury."
     }
   ],
   "potions": [
     {
-      "name": "Gatlok Brew",
+      "name": "Draught of Fervor",
       "rarity": "Common",
+      "description": "Gain 3 Zeal"
+    },
+    {
+      "name": "Gatlok Brew",
+      "rarity": "Uncommon",
       "description": "Apply 6 Scorch to ALL enemies"
     },
     {
       "name": "Naruuin's Glow",
-      "rarity": "Uncommon",
-      "description": "Gain 14 Temporary HP"
-    },
-    {
-      "name": "Draught of Fervor",
       "rarity": "Rare",
-      "description": "Gain 2 Zeal"
+      "description": "Gain 23 Divine Armor"
     }
   ],
   "creatures": [
     {
-      "name": "the dragonkin",
+      "name": "the Justicar",
       "type": "Player",
       "minHP": "85",
       "maxHP": "85"
     },
     {
-      "name": "The Acolyte",
-      "type": "Boss",
-      "minHP": "450",
-      "maxHP": "450"
+      "name": "the Wind Walker",
+      "type": "Player",
+      "minHP": "65",
+      "maxHP": "65"
+    },
+    {
+      "name": "the deathspeaker",
+      "type": "Player",
+      "minHP": "50",
+      "maxHP": "50"
     }
   ],
   "keywords": [
     {
-      "name": "Thedragonkin:Afterglow",
-      "description": "Afterglow effects are activated when you play your next Magic card Dark card excluded, playing a dark card will remove any afterglow effects you have."
+      "name": "Thedragonkin:Adjudicate",
+      "description": "If the target has Penance, immediately trigger the End of Turn effect of their Penance."
     },
     {
-      "name": "Thedragonkin:Chill",
-      "description": "Chilled enemies take 1 more damage from Ice cards per stack of chill, when a monster has 10 or more points of chill remove them and apply Freeze."
+      "name": "Auraflame",
+      "description": "Auraflame damages a random enemy and is reduced by 1 after you play a card."
     },
     {
-      "name": "Thedragonkin:Crossroads",
-      "description": "Choose one of the listed effects to use."
+      "name": "Thedragonkin:Blessing",
+      "description": "Blessing cards are Unplayable Holy cards with Reckoning Effects"
     },
     {
-      "name": "Thedragonkin:Dark",
-      "description": "Dark cards are not effected by Strength or Dexterity. Playing dark cards will remove your Afterglow and can apply Darken."
+      "name": "Blight",
+      "description": "Blighted creatures take damage equal to their Blight and reduce their Blight by 1 when they receive a debuff other then Blight.\nBlight is reduced by 1 each turn."
     },
     {
-      "name": "Dark Exposure",
-      "description": "Increases damage from Magic for a limited time."
+      "name": "Chakra",
+      "description": "Chakra's are buffs with no duration which impart the associated Damage Type on to your Normal damage Strikes and Defends\nYou may not have more then 1 Chakra at a time"
     },
     {
-      "name": "Thedragonkin:Darken",
-      "description": "Darken effects are activated when you play your next Magic card Light card excluded, playing a light card will remove any darken effects you have."
+      "name": "Channeling",
+      "description": "At the start of your turn, play this from any location for it's cost with the same target if you played it the turn before."
     },
     {
-      "name": "Deep Frost",
-      "description": "Increases damage and Block gain for Ice cards."
+      "name": "Chi",
+      "description": "Chi is generated and spent by Windwalker cards, you may not have more than 5 Chi at once.\nExcess Chi becomes Temporary Strength and Focus"
     },
     {
-      "name": "Dragon Breath",
-      "description": "At the end of turn, Split all Effects listed after this equally between ALL enemies.\nEach Dragon Breath increases Future Breaths damage by 2 and other values by 1 this turn."
+      "name": "Conduit",
+      "description": "Stance : While in this stance increase the effectiveness of orbs by 5."
     },
     {
-      "name": "Thedragonkin:Duplicate",
-      "description": "Create an exact copy of this card in the discard pile on use."
+      "name": "Thedragonkin:Cycle",
+      "description": "Discard a card and draw a new card to replace it."
     },
     {
-      "name": "Energy Shield",
-      "description": "Increases block gained by your next block card."
+      "name": "Cyclone",
+      "description": "Stance : Gain 3 additional Block from cards.\n Attacks deal 3 additional damage.\nWhen you exit this Stance : Channel 1 Razor Wind."
     },
     {
-      "name": "Thedragonkin:Fire",
-      "description": "Fire cards are not effected by Strength or Dexterity. Playing a fire card gives you Hot Streak until you play a non-fire card."
+      "name": "Deflecting Scales",
+      "description": "Deflecting Scales damages a random enemy and is reduced by 1 after you receive damage."
     },
     {
-      "name": "Thedragonkin:Follow-up",
-      "description": "When played add a 0 cost copy of the card without follow-up that Purges to you hand."
+      "name": "Divine [LightIcon]",
+      "description": "Divine damage applies Penance equal to half the Unblocked damage it deals."
     },
     {
-      "name": "Thedragonkin:Freeze",
-      "description": "Frozen enemies take no Ice damage and triple non-magical damage, remove this when effected receives non-magical damage."
+      "name": "Divine Armor",
+      "description": "Until lost, prevents damage before block."
     },
     {
-      "name": "Hot Streak",
-      "description": "During your turn, if the last card you played was a Fire card activate the following effect."
+      "name": "Divine",
+      "description": "Block : At the start of your turn, Heal for every point of this block you have."
     },
     {
-      "name": "Hunters Focus",
-      "description": "When you have 10 or more Hunters Focus your next attack does triple damage and resets Hunters Focus."
+      "name": "Downdraft",
+      "description": "Stance : Gain 3 additional Block from cards.\nIncreases effectiveness of orbs by 3\nWhen you exit this Stance : Channel 1 Jade Spirit."
     },
     {
-      "name": "Thedragonkin:Ice",
-      "description": "Ice cards are not effected by Strength or Dexterity. Dealing damage with Ice cards applies Chill to the target."
+      "name": "Duplicate",
+      "description": "Add an exact copy to your discard pile"
     },
     {
-      "name": "Thedragonkin:Jolt",
-      "description": "Jolted enemies take 10% less Thunder damage per jolted stack."
+      "name": "Exile",
+      "description": "Purge X cards in your Exhaust pile"
     },
     {
-      "name": "Thedragonkin:Light",
-      "description": "Light cards are not effected by Strength or Dexterity. Playing light cards will remove your Darken and can apply Afterglow."
-    },
-    {
-      "name": "Loptyrian Shadow",
-      "description": "Increases damage and Block gain for Dark cards."
-    },
-    {
-      "name": "Natural Spikes",
-      "description": "Natural Spikes damage attackers, but are dulled when you receive unblocked damage."
-    },
-    {
-      "name": "Thedragonkin:Tailwind",
-      "description": "Every second wind card you play costs 1 less."
-    },
-    {
-      "name": "Thedragonkin:Thunder",
-      "description": "Thunder cards are not effected by Strength or Dexterity. Dealing damage with Thunder cards applies Jolt to the target."
-    },
-    {
-      "name": "Thedragonkin:Wind",
-      "description": "Wind cards are not effected by Strength or Dexterity. Every second wind card you play has Tailwind reducing it's cost by 1"
-    },
-    {
-      "name": "Thedragonkin:alignment",
-      "description": "Play Lunar or Solar cards to modify your alignment, leaving Neutral alignment at 2 or more points of either type."
-    },
-    {
-      "name": "Thedragonkin:antiquity",
-      "description": "You may only have 1 Antiquity power active. Playing an Antiquity power will override other Antiquity powers you may have."
-    },
-    {
-      "name": "Thedragonkin:arcana",
-      "description": "Increases damage and Block gain for Magic cards."
-    },
-    {
-      "name": "Thedragonkin:arcane",
-      "description": "Arcane cards are only effected by Arcana and Dark Exposure."
-    },
-    {
-      "name": "Casts",
-      "description": "When you play a spell card, reduce it's cast count by 1. When a spell's cast count is 0, it becomes Depleted and unplayable. At rest sites you can Rest to Heal and Replenish spells or Meditate to replenish more spells."
-    },
-    {
-      "name": "Thedragonkin:charged-up",
-      "description": "Increases damage and Block gain for Thunder cards."
-    },
-    {
-      "name": "Thedragonkin:cure",
-      "description": "Removed the listed number of debuffs from yourself, and perform the listed action equal to it's potency."
-    },
-    {
-      "name": "Depleted",
-      "description": "Unplayable until Casts are restored at a rest site or at the end of the Act."
-    },
-    {
-      "name": "Thedragonkin:dissolve",
-      "description": "Loses HP when you play certain Acid cards."
-    },
-    {
-      "name": "Thedragonkin:enchant",
-      "description": "Enchanted cards are both Physical and Magical. Being affected the same as a magic card of it's enchantment element as well as a physical card."
-    },
-    {
-      "name": "Thedragonkin:entangled",
-      "description": "Entangled enemies become Stunned at the start of their turn if they intend to Attack."
-    },
-    {
-      "name": "Thedragonkin:faded",
+      "name": "Thedragonkin:Faded",
       "description": "Cannot be Played or Upgraded."
     },
     {
-      "name": "Thedragonkin:fading",
-      "description": "Becomes unplayable after being played the listed number of times."
+      "name": "Thedragonkin:Fading",
+      "description": "Becomes unplayable after being played X times."
     },
     {
-      "name": "Thedragonkin:fury",
-      "description": "Fury modifies Primal card damage and is increased by unblocked attack damage."
+      "name": "Fear",
+      "description": "Feared creatures deal 10% less and take 10% more damage per Fear to a maximum of 70%.\nFear is reduced by 1 each turn."
     },
     {
-      "name": "Thedragonkin:galeforce",
-      "description": "Increases damage and Block gain for Wind cards."
+      "name": "Fire [FireIcon]",
+      "description": "Fire damage is increased by your Fury."
     },
     {
-      "name": "Thedragonkin:holy",
-      "description": "Holy Cards deal more damage and have increased Block gain equal to your Zeal.\nHoly Cards also have their other values increased by 1 for every 5 points of Zeal."
+      "name": "Fire",
+      "description": "Block : Applies Scorch to the Attacker."
     },
     {
-      "name": "Thedragonkin:kindling",
-      "description": "Increases damage and Block gain for Fire cards."
+      "name": "Thedragonkin:Flux",
+      "description": "When played, Cycle to up X Status or Rune cards in your hand and activate the listed effect for each one."
     },
     {
-      "name": "Thedragonkin:luminance",
-      "description": "Increases damage and Block gain for Light cards."
+      "name": "Frost [IceIcon]",
+      "description": "Frost damage grants [IceIcon] Block equal to the damage it deals."
     },
     {
-      "name": "Thedragonkin:lunar",
-      "description": "Perform the listed action if your Lunar Aligntment is equal or greater then the listed value."
+      "name": "Frost",
+      "description": "Block : Does not Decay at the start of your turn but applies weak to you at the start of your turn if you have any."
     },
     {
-      "name": "Thedragonkin:moonstruck",
-      "description": "Moonstruck enemies Lose HP equal to your Lunar Alignment when you play a Lunar card a limited number of times."
+      "name": "Thedragonkin:Fury",
+      "description": "Gained by playing Primal Cards.\nCan be used instead of energy to play Storm cards."
     },
     {
-      "name": "Thedragonkin:primal",
-      "description": "Primal Attacks consume Fury to increase damage by half the Fury amount."
+      "name": "Thedragonkin:Heat",
+      "description": "Heat can be spent to play Status cards to Exhaust them and Activate Cycle activated effects and Cycled card's end of turn effects"
+    },
+    {
+      "name": "Thedragonkin:Holy",
+      "description": "Holy Cards are modified by Zeal.\nZeal increases damage and Block gain for Holy cards"
+    },
+    {
+      "name": "Incantation",
+      "description": "Exhaust up to X cards in hand, and attach the listed effect to this card"
+    },
+    {
+      "name": "Infernal Watch",
+      "description": "Watched enemies take damage at the end of your turn.\nInfernal Watch returns to you when it's target dies.\nWhen you target an enemy while you have Infernal Watch give your Infernal Watch to that enemy."
+    },
+    {
+      "name": "Intensity",
+      "description": "Intensity increases the damage dealt and Block gained from your next Spell."
+    },
+    {
+      "name": "Jade Spirit",
+      "description": "Orb: Deals [DrainIcon] Damage to random enemies."
+    },
+    {
+      "name": "Judgement",
+      "description": "When you obtain 10 Judgement, Choose one : Gain 4 Strength Dexterity and Spell Power, deal 2 damage to enemies you Debuff, or Deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Lightning [ElectricIcon]",
+      "description": "Lightning Damage applies Static equal to half of unblocked damage dealt."
+    },
+    {
+      "name": "Lightning",
+      "description": "Block : Applies Static to the attacker when broken"
+    },
+    {
+      "name": "Thedragonkin:Mana",
+      "description": "Mana is spent instead of Energy to play Spells"
+    },
+    {
+      "name": "Martial",
+      "description": "Martial cards count as Strikes and Defends."
+    },
+    {
+      "name": "Mastery",
+      "description": "Increase the damage and Block of ALL copies of the next x cards you play by 2 for the combat"
+    },
+    {
+      "name": "Miasma",
+      "description": "A bonus effect that triggers if at least one enemy is Poisoned.\nHostile Miasma Effects will target ALL Poisoned enemies."
+    },
+    {
+      "name": "Nimbus",
+      "description": "Orb: Deals [ElectricIcon] Damage to random enemies and increases effectiveness."
+    },
+    {
+      "name": "Thedragonkin:Penance",
+      "description": "Creatures with 8 or more Penance lose 20 HP and 8 Penance at the end of their turn.\nWhen a creature loses HP from Penance, it gains 8 Sinner\u2019s Burden, increasing the HP lost from Penance"
+    },
+    {
+      "name": "Thedragonkin:Primal",
+      "description": "Primal Cards generate Fury equal to the energy spent when played.\nFury is spent to activate Storm Effects."
+    },
+    {
+      "name": "Thedragonkin:Radiant",
+      "description": "Radiant cards have their secondary values increased by 1 for every X Zeal you have."
+    },
+    {
+      "name": "Rain",
+      "description": "Orb: Grants Block and increases the number of cards effected when evoked, when Evoked reduces the cost of random cards in hand by 1."
+    },
+    {
+      "name": "Razor Wind",
+      "description": "Orb: Deals [WindIcon] Damage to ALL enemies."
+    },
+    {
+      "name": "Thedragonkin:Reckoning",
+      "description": "Reckoning effects trigger whenever you receive damage while this is in your hand."
+    },
+    {
+      "name": "Thedragonkin:Rune",
+      "description": "Rune cards are Primal cards that are Unplayable without Storm and have effects when Cycled"
+    },
+    {
+      "name": "Thedragonkin:Sealed",
+      "description": "Sealed cards are improved whenever you Cycle a Status."
+    },
+    {
+      "name": "Sinner's Burden",
+      "description": "Increases HP Lost from Penance."
+    },
+    {
+      "name": "Thedragonkin:Snekproof",
+      "description": "Snekproof cards cannot have their costs modified by anything other then itself."
+    },
+    {
+      "name": "Spell",
+      "description": "This card is a Spell, and is played using Mana instead of [E] . Spells do not benefit from Strength or Dexterity."
+    },
+    {
+      "name": "Spell Power",
+      "description": "Spell Power increases the damage dealt and Block gained from Spells."
+    },
+    {
+      "name": "Spirit [DrainIcon]",
+      "description": "Spirit Damage Ignores Block, and Creatures dealt Spirit Damage gain Spirit Wound instead of losing HP."
+    },
+    {
+      "name": "Spirit Burst",
+      "description": "Spend up to X Chi and activate the following effect."
+    },
+    {
+      "name": "Spirit Wound",
+      "description": "Spirit Wound kills it's target if Spirit Wound equals or exceeds it's health."
+    },
+    {
+      "name": "Spirit",
+      "description": "Block : Does not Decay at start of turn\nWhen broken : applies Spirit Wound to you and the attacker"
+    },
+    {
+      "name": "Static",
+      "description": "Static reduces damage dealt, reduced after attacking.\nStuns and is reduced to 0 if Static is greater then 20"
+    },
+    {
+      "name": "Thedragonkin:Storm",
+      "description": "Can spend X Fury instead of energy to play this and activate the listed bonus."
+    },
+    {
+      "name": "Tempest",
+      "description": "Stance : Attacks deal 3 additional damage.\nIncreases effectiveness of orbs by 3\nWhen you exit this Stance : Channel 1 Rain"
+    },
+    {
+      "name": "Tempo",
+      "description": "Unplayable and Automatically play this card on a random enemy after you change stances while this is in your hand."
+    },
+    {
+      "name": "Typhoon",
+      "description": "Stance : Attacks deal 5 additional damage.."
+    },
+    {
+      "name": "Undead",
+      "description": "Undead cards are special cards with Exhaust and effects when Exiled.\nAfter you play an Undead card all Undead of the same Type your hand are played aswell."
+    },
+    {
+      "name": "Water [WaterIcon]",
+      "description": "Water Damage Strikes an additional random enemy equal to half the unblocked damage it deals."
+    },
+    {
+      "name": "Water",
+      "description": "Block : lost at the start of your turn granting [E] based on how much you had."
+    },
+    {
+      "name": "Whirlwind",
+      "description": "Stance : at the start of your turn and when you Enter this Stance, draw an additional card"
+    },
+    {
+      "name": "Wind [WindIcon]",
+      "description": "Wind Damage Ignores Block and does 20% less damage to targets with Block."
+    },
+    {
+      "name": "Wind",
+      "description": "Block : takes less damage from Debuffing intents.\nreduces debuffs applied by 1 expending 3 of this block to do so."
+    },
+    {
+      "name": "Thedragonkin:Zeal",
+      "description": "Increases Holy card damage and Block gain."
+    },
+    {
+      "name": "Zephyr",
+      "description": "Stance : Gain 5 additional Block from cards."
     },
     {
       "name": "Thedragonkin:scorch",
-      "description": "Scorched creatures take additional damage from Attacks, when attacked reduce this by half"
-    },
-    {
-      "name": "Thedragonkin:solar",
-      "description": "Perform the listed action if your Solar Aligntment is equal or greater then the listed value."
-    },
-    {
-      "name": "Thedragonkin:sunburn",
-      "description": "Sunburned enemies Give you Block equal to your Solar Alignment when you play Solar cards on them limited number of times."
-    },
-    {
-      "name": "Thedragonkin:transmute",
-      "description": "Transmuted cards have their Element temporarily set to the transmutation's element."
-    },
-    {
-      "name": "Thedragonkin:zeal",
-      "description": "Zeal modifies Holy cards."
+      "description": "Scorched creatures take damage equal to their scorch and lose 1 scorch when Attacked"
     }
   ]
 }
