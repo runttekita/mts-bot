@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "TestMod",
-    "version": "4.4.2",
+    "version": "4.8.1",
     "authors": ["\u5F7C\u541B\u4E0D\u89E6"],
     "credits": "localization:\n\u5F7C\u541B\u4E0D\u89E6 280chan (Simplified Chinese)\nbrkfox (English)\n\u5F7C\u541B\u4E0D\u89E6 280chan (English)",
     "description": "You may choose relic or card reward and then choose 1 from 3 of that type from this mod at start of each run. Require 'STSLib'. \n\n\u5F00\u5C40\u9009\u62E9\u9057\u7269\u6216\u65E0\u8272\u724C\u4E4B\u540E\u53EF\u4EE5\u518D\u8FDB\u884C\u4E00\u6B21\u5BF9\u5E94\u7684\u53EF\u653E\u5F03\u76843\u90091\u6765\u83B7\u5F97\u521D\u59CB\u5956\u52B1\u3002\u8BD5\u505A\u4E86\u4E24\u4E2A\u4E8B\u4EF6\u548C4\u74F6\u836F\u6C34\u3002\u9700\u8981BaseMod\u548CSTSLib\u652F\u6301\u3002",
@@ -11,438 +11,6 @@
     "optional_dependencies": []
   },
   "cards": [
-    {
-      "name": "1 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Draw 1 cards. Exhaust. Ethereal."
-    },
-    {
-      "name": "1 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Draw 2 cards. Exhaust. Ethereal."
-    },
-    {
-      "name": "1 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 1 Block. Next turn, Gain 1 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "1 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 2 Block. Next turn, Gain 2 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "1 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 1 damage to all enemies. Exhaust. Ethereal."
-    },
-    {
-      "name": "1 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 2 damage to all enemies. Exhaust. Ethereal."
-    },
-    {
-      "name": "2 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": " Scry 1 cards. Exhaust. Ethereal."
-    },
-    {
-      "name": "2 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": " Scry 2 cards. Exhaust. Ethereal."
-    },
-    {
-      "name": "2 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 2 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "2 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 3 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "2 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 2 damage. Exhaust. Ethereal."
-    },
-    {
-      "name": "2 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 3 damage. Exhaust. Ethereal."
-    },
-    {
-      "name": "3 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": " Upgrade a card in your hand 1 times. Exhaust. Ethereal."
-    },
-    {
-      "name": "3 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Upgrade all cards in your hand. Exhaust. Ethereal."
-    },
-    {
-      "name": "3 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 3 Block. Next turn, Gain 3 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "3 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 4 Block. Next turn, Gain 4 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "3 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 3 damage to random enemy 2 times. Exhaust. Ethereal."
-    },
-    {
-      "name": "3 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 3 damage to random enemy 3 times. Exhaust. Ethereal."
-    },
-    {
-      "name": "4 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Choose 1 cards from draw pile add into your hand. Exhaust. Ethereal."
-    },
-    {
-      "name": "4 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Choose 2 cards from draw pile add into your hand. Exhaust. Ethereal."
-    },
-    {
-      "name": "4 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 4 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "4 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 5 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "4 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 4 damage to all enemies. Exhaust. Ethereal."
-    },
-    {
-      "name": "4 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 5 damage to all enemies. Exhaust. Ethereal."
-    },
-    {
-      "name": "5 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Add 1 random Mahjong into your hand.Exhaust. Ethereal."
-    },
-    {
-      "name": "5 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Add 2 random Mahjong into your hand.Exhaust. Ethereal."
-    },
-    {
-      "name": "5 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 5 Block. Next turn, Gain 5 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "5 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 6 Block. Next turn, Gain 6 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "5 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 5 damage. Exhaust. Ethereal."
-    },
-    {
-      "name": "5 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 6 damage. Exhaust. Ethereal."
-    },
-    {
-      "name": "6 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Put 1 card fron discard pile into your hand. Exhaust. Ethereal."
-    },
-    {
-      "name": "6 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Put 2 card fron discard pile into your hand. Exhaust. Ethereal."
-    },
-    {
-      "name": "6 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 6 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "6 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 7 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "6 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 6 damage to random enemy 2 times. Exhaust. Ethereal."
-    },
-    {
-      "name": "6 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 6 damage to random enemy 3 times. Exhaust. Ethereal."
-    },
-    {
-      "name": "7 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": " Exhume 1 cards Exhaust. Ethereal."
-    },
-    {
-      "name": "7 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": " Exhume 2 cards Exhaust. Ethereal."
-    },
-    {
-      "name": "7 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 7 Block. Next turn, Gain 7 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "7 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 8 Block. Next turn, Gain 8 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "7 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 7 damage to all enemies. Exhaust. Ethereal."
-    },
-    {
-      "name": "7 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 8 damage to all enemies. Exhaust. Ethereal."
-    },
-    {
-      "name": "8 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": " Exhaust 1 cards in your hand. Exhaust. Ethereal."
-    },
-    {
-      "name": "8 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": " Exhaust 2 cards in your hand. Exhaust. Ethereal."
-    },
-    {
-      "name": "8 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 8 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "8 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 9 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "8 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 8 damage. Exhaust. Ethereal."
-    },
-    {
-      "name": "8 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 9 damage. Exhaust. Ethereal."
-    },
-    {
-      "name": "9 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": " Discard 1 cards in your hand. Exhaust. Ethereal."
-    },
-    {
-      "name": "9 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": " Discard 2 cards in your hand. Exhaust. Ethereal."
-    },
-    {
-      "name": "9 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 9 Block. Next turn, Gain 9 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "9 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 10 Block. Next turn, Gain 10 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "9 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 9 damage to random enemy 2 times. Exhaust. Ethereal."
-    },
-    {
-      "name": "9 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 9 damage to random enemy 3 times. Exhaust. Ethereal."
-    },
     {
       "name": "Candy",
       "color": "Colorless",
@@ -684,22 +252,6 @@
       "description": "Whenever you apply an AOE damage, repeat 1 times."
     },
     {
-      "name": "East",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever play a Mahjong card, Gain 1 Regen, Gain 1 Plated Armor. Ethereal."
-    },
-    {
-      "name": "East+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever play a Mahjong card, Gain 1 Regen, Gain 2 Plated Armor. Ethereal."
-    },
-    {
       "name": "Ghost Costume",
       "color": "Colorless",
       "rarity": "Special",
@@ -714,22 +266,6 @@
       "type": "Power",
       "cost": "1",
       "description": "Gain 1 random power. At the start of your turn, gain 1 random power."
-    },
-    {
-      "name": "Green",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever play a Mahjong card, for each enemy Gain 1 Gold. Ethereal."
-    },
-    {
-      "name": "Green+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever play a Mahjong card, for each enemy Gain 2 Gold. Ethereal."
     },
     {
       "name": "Halloween",
@@ -748,102 +284,6 @@
       "description": "Gain 2 Strength and Dexterity. Gain [E] [E]  and draw 2 cards.\nCan be Upgraded any number of times. Exhaust."
     },
     {
-      "name": "North",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "When you would die next 1 times, heal to 1% of your max HP instead. Each cards you play increase 1% of your Max HP heal instead, reset after every resurrection. Ethereal."
-    },
-    {
-      "name": "North+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "When you would die next 2 times, heal to 1% of your max HP instead. Each cards you play increase 1% of your Max HP heal instead, reset after every resurrection. Ethereal."
-    },
-    {
-      "name": "Red",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "At the start of turn, trigger 1 times Mahjong Relic. Ethereal."
-    },
-    {
-      "name": "Red 5 Man",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Add 2 random Mahjong into your hand.Exhaust. Ethereal."
-    },
-    {
-      "name": "Red 5 Man+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Add 4 random Mahjong into your hand.Exhaust. Ethereal."
-    },
-    {
-      "name": "Red 5 Pin",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 10 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "Red 5 Pin+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 11 Block. Exhaust. Ethereal."
-    },
-    {
-      "name": "Red 5 Sou",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 10 damage. Exhaust. Ethereal."
-    },
-    {
-      "name": "Red 5 Sou+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 11 damage. Exhaust. Ethereal."
-    },
-    {
-      "name": "Red+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "At the start of turn, trigger 2 times Mahjong Relic. Ethereal."
-    },
-    {
-      "name": "South",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever play a Mahjong card, Gain 1 Mantra. Ethereal."
-    },
-    {
-      "name": "South+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever play a Mahjong card, Gain 2 Mantra. Ethereal."
-    },
-    {
       "name": "Trick",
       "color": "Colorless",
       "rarity": "Special",
@@ -858,38 +298,6 @@
       "type": "Attack",
       "cost": "1",
       "description": "Deal 12 damage to ALL enemies. Draw 1 card for each layer of Artifact. Gain 1 Artifact for each kind of debuff. Gain 2 temporary Strength."
-    },
-    {
-      "name": "West",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever play a non-Attack card, multiplicatively increase your attack damage by 1 %. Ethereal."
-    },
-    {
-      "name": "West+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever play a non-Attack card, multiplicatively increase your attack damage by 2 %. Ethereal."
-    },
-    {
-      "name": "White",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Remove all your debuff, Gain 1 Artifact. Ethereal."
-    },
-    {
-      "name": "White+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Remove all your debuff, Gain 2 Artifact. Ethereal."
     },
     {
       "name": "Automaton",
@@ -913,7 +321,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain [E] [E]. If still in your hand at the end of the turn, Gain [E] next turn."
+      "description": "Gain [E] [E] . If still in your hand at the end of the turn, Gain [E] next turn."
     },
     {
       "name": "Backup Power+",
@@ -921,7 +329,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain [E] [E] [E]. If still in your hand at the end of the turn, Gain [E] next turn."
+      "description": "Gain [E] [E] [E] . If still in your hand at the end of the turn, Gain [E] next turn."
     },
     {
       "name": "Bloodthirsty",
@@ -960,7 +368,7 @@
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "2",
+      "cost": "1",
       "description": "Deal 1 damage to all enemies 1 times. Increase the damage and times of this card by 1 this combat."
     },
     {
@@ -968,8 +376,8 @@
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "2",
-      "description": "Deal 2 damage to all enemies 2 times. Increase the damage and times of this card by 1 this combat."
+      "cost": "1",
+      "description": "Deal 2 damage to all enemies 2 times. Increase the damage and times of this card by 2 this combat."
     },
     {
       "name": "Conditioned Reflex",
@@ -1009,7 +417,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal damage of the product of all cards' cost in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times."
+      "description": "Deal damage of the product of all cards' [cost plus 1] in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times. Upgrade will set cost to 1."
     },
     {
       "name": "Handmade Products+1",
@@ -1017,22 +425,14 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal damage of the product of all cards' cost in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times."
-    },
-    {
-      "name": "Handmade Products+1",
-      "color": "Colorless",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal damage of the product of all cards' cost in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times."
+      "description": "Deal damage of the product of all cards' [cost plus 1] in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times. Upgrade will set cost to 1."
     },
     {
       "name": "Head Attack",
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
+      "cost": "1",
       "description": "Change enemy's intention to next turn. Draw 1 cards. Ethereal."
     },
     {
@@ -1040,7 +440,7 @@
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
+      "cost": "1",
       "description": "Change enemy's intention to next turn. Draw 2 cards. Ethereal."
     },
     {
@@ -1065,7 +465,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "If last card you play is 'Limit Flipper', double your Strength. Otherwise Gain 1 Strength."
+      "description": "If last card you play is 'Limit Flipper', double your Strength. Otherwise Gain 2 Strength."
     },
     {
       "name": "Limit Flipper+",
@@ -1073,7 +473,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "If last card you play is 'Limit Flipper', double your Strength. Otherwise Gain 2 Strength."
+      "description": "If last card you play is Colorless, double your Strength. Otherwise Gain 3 Strength."
     },
     {
       "name": "Mystery",
@@ -1145,7 +545,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 3 Strength, Apply 1 Angry."
+      "description": "Gain 6 Strength. If target doesn't have Angry, apply 1 Angry."
     },
     {
       "name": "Provocation+",
@@ -1153,7 +553,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 4 Strength, Apply 1 Angry."
+      "description": "Gain 9 Strength. If target doesn't have Angry, apply 1 Angry."
     },
     {
       "name": "Rabbit of Fibonacci",
@@ -1209,7 +609,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 to random enemy 1 times. Deal 1 more time for each time enemies intent to Attack."
+      "description": "Deal 9 to random enemy 2 times. Deal 1 more time for each time enemies intent to Attack."
     },
     {
       "name": "Weakness Counterattack+",
@@ -1217,7 +617,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 to random enemy 2 times. Deal 1 more time for each time enemies intent to Attack."
+      "description": "Deal 9 to random enemy 3 times. Deal 1 more time for each time enemies intent to Attack."
     },
     {
       "name": "Adversity Counterattack",
@@ -1273,7 +673,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "At the start of your turn, Gain [R] Draw 1 cards. Put the first 1 cards you play this turn back on the top of your draw pile."
+      "description": "At the start of your turn, Gain [E] Draw 1 cards. Put the first 1 cards you play this turn back on the top of your draw pile."
     },
     {
       "name": "Auto Rebound System+",
@@ -1281,7 +681,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "At the start of your turn, Gain [R] [R] Draw 2 cards. Put the first 2 cards you play this turn back on the top of your draw pile."
+      "description": "At the start of your turn, Gain [E] [E] Draw 2 cards. Put the first 2 cards you play this turn back on the top of your draw pile."
     },
     {
       "name": "Blood Blade",
@@ -1289,7 +689,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Increase attack damage by current HP loss / Max HP. When lose HP, increase attack damage by HP loss / Max HP."
+      "description": "Increase attack damage by rate of missing HP / Max HP. Whenever lose HP, increase attack damage by HP loss / Max HP."
     },
     {
       "name": "Blood Blade+",
@@ -1297,7 +697,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Multiplicatively Increase attack damage by current HP loss / Max HP. When lose HP, multiplicatively increase attack damage by HP loss / Max HP."
+      "description": "Multiplicatively Increase attack damage by rate of missing HP / Max HP. Whenever lose HP, multiplicatively increase attack damage by HP loss / Max HP."
     },
     {
       "name": "Blood Shelter",
@@ -1444,6 +844,22 @@
       "description": "Draw 2 cards, all cards in draw pile become Ethereal. For each card was Ethereal, Gain [E]. Exhaust. Ethereal."
     },
     {
+      "name": "Lexicography",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal ( 0 ) damage same as average length of buffs target has."
+    },
+    {
+      "name": "Lexicography+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal ( 0 ) damage to All enemies same as average length of buffs target has."
+    },
+    {
       "name": "Librarian",
       "color": "Colorless",
       "rarity": "Rare",
@@ -1460,12 +876,44 @@
       "description": "Choose 1 cards from X random Colorless to add in your hand. Reduce these cards' cost to 0 this combat. If win in the next X turn, add these cards in your deck. Exhaust."
     },
     {
+      "name": "Money Shot",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Attack enemy with damages of each digit of your gold. Whenever Fatal an enemy, gain gold equals to the fatal damage amount."
+    },
+    {
+      "name": "Money Shot+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Attack ALL enemies with damages of each digits of your gold. Whenever Fatal an enemy, gain gold equals to the fatal damage amount."
+    },
+    {
+      "name": "Plague",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "At start of each turn, apply X Poison, Constricted and Choked to random enemy. Whenever you play a Power card, make all enemies' Poison and Constricted affect once. Ethereal."
+    },
+    {
+      "name": "Plague+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "At start of each turn, apply X Poison, Constricted and Choked to random enemy. Whenever you play a Power card, make all enemies' Poison and Constricted affect once."
+    },
+    {
       "name": "Power Strike",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "3",
-      "description": "Ethereal. Reduce all enemies' HP to its logarithm, the base number is 1. 5 . Apply the number of enemies Intangible to all enemies. Can be Upgraded any number of time. Exhaust."
+      "description": "Ethereal. Reduce all enemies' HP to its logarithm, the base number is 1.5. Apply the number of enemies Intangible to all enemies. Can be Upgraded any number of time. Exhaust."
     },
     {
       "name": "Power Strike+1",
@@ -1481,7 +929,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "When you would receive n damage which is not type Lose HP, don't lose HP. Instead, in the next n+1 times of enemies turn end, lose 1 HP."
+      "description": "When you would receive n damage which is not type Lose HP, don't lose HP. Instead, in the next n times of enemies turn end, lose 1 HP."
     },
     {
       "name": "Pulse Distributor+",
@@ -1489,7 +937,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "When you would receive n damage which is not type Lose HP, don't lose HP. Instead, in the next n times of enemies turn end, lose 1 HP."
+      "description": "When you would receive n damage which is not type Lose HP, don't lose HP. Instead, in the next n-1 times of enemies turn end, lose 1 HP."
     },
     {
       "name": "Recap",
@@ -1544,7 +992,7 @@
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
+      "cost": "1",
       "description": "Innate . Choose a card, make it Retain, goes back hand when played, increase its cost in turn by 1 ."
     },
     {
@@ -1552,7 +1000,7 @@
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "1",
+      "cost": "0",
       "description": "Innate . Choose a card, make it Retain, goes back hand when played, increase its cost in turn by 1 ."
     },
     {
@@ -1569,7 +1017,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Whenever a card except Curse or Status Exhausts, function it 1 times."
+      "description": "Whenever a card except Curse or Status Exhausts, function it 2 times."
     },
     {
       "name": "Self Regulating System",
@@ -1641,7 +1089,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Whenever you deal non-Lose-HP damage to enemy, all enemies lose 75 % of the damage HP in total."
+      "description": "Whenever you deal non-Lose-HP damage to enemy, all enemies lose 80 % of the damage HP in total."
     },
     {
       "name": "Taurus' Black Cat+",
@@ -1673,7 +1121,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 8 damage. Choose a card from 3 random Rare card add into your hand. Exhaust."
+      "description": "Deal 15 damage. Choose a card from 3 random Rare card add into your hand. Exhaust."
     },
     {
       "name": "Treasure Hunter+",
@@ -1681,7 +1129,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 8 damage. Choose a card from 3 random Rare card add into your hand. If Fatal, add it into deck. Exhaust."
+      "description": "Deal 20 damage. Choose a card from 3 random Rare card add into your hand. If Fatal, add it into deck. Exhaust."
     },
     {
       "name": "Virtual Reality",
@@ -1780,6 +1228,13 @@
       "flavorText": "\u505C\u4E00\u4E0B\uFF0C\u8BA9\u6211\u5148\u5B66\u4E00\u5B66\u3002"
     },
     {
+      "name": "Hyperplastic Tissue",
+      "tier": "Common",
+      "pool": "",
+      "description": "Increase maximum hand size by 1 for rest of the run. Whenever you draw a Status or Curse card, increase maximum hand size by 1 for rest of the combat.",
+      "flavorText": "\u6740\u4E0D\u6B7B\u4F60\u7684\uFF0C\u90FD\u4F1A\u8BA9\u4F60\u66F4\u52A0\u5F3A\u5927\u3002"
+    },
+    {
       "name": "Industrial Revolution",
       "tier": "Common",
       "pool": "",
@@ -1819,6 +1274,13 @@
       "tier": "Common",
       "pool": "",
       "description": "Increase base damage of all your cards by amount of its cost.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Twinkling Star",
+      "tier": "Common",
+      "pool": "",
+      "description": "Whenever an relic other than Twinkling Star flashes, damages All Enemies by 1. For every 100 effects, double the damage.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1885,6 +1347,20 @@
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
+      "name": "Resonance Stone",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you Upgrade a card in your deck, Upgrade all cards with same name in your deck which are Upgradable. Whenever a card is pgraded by this relic, gain 1 Gold and max health, each active increase future effect by 1.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Shadow Amulet",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you lose n Block, you gain 1 Block when turn ends for the following n turns.",
+      "flavorText": "\u4F60\u5931\u53BB\u7684\u90A3\u4E9B\u4E00\u5207\uFF0C\u90FD\u4F1A\u6084\u65E0\u58F0\u606F\u7684\u5B88\u62A4\u7740\u4F60\u3002"
+    },
+    {
       "name": "The Dragon Star Hat",
       "tier": "Uncommon",
       "pool": "",
@@ -1934,11 +1410,18 @@
       "flavorText": "\u4F60\u6784\u7B51\u7684\u9632\u5FA1\uFF0C\u900F\u8FC7\u8FD9\u4E2A\u62A4\u76FE\u540E\uFF0C\u770B\u8D77\u6765\u4EFF\u4F5B\u88AB\u6A21\u7CCA\u4E86\u3002"
     },
     {
-      "name": "Cyclic Periapt",
+      "name": "Dominator of Weakness",
       "tier": "Rare",
       "pool": "",
-      "description": "Cards which would Exhaust when played will instead discard at the first time.",
-      "flavorText": "\u4E0D\u51C6\u8D70\uFF01\u518D\u6765\u4E00\u6B21\u3002"
+      "description": " Vulnerable and Weakened no longer only affect once on enemies, instead it will affect its amount times.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Dye",
+      "tier": "Rare",
+      "pool": "",
+      "description": "One chance each combat, right click this relic during your turn, choose a card from your hand, replace all cards in your draw pile and discard pile to a copy of the card.",
+      "flavorText": "The author is lazy, nothing has been written."
     },
     {
       "name": "D\u00E9j\u00E0vu",
@@ -1960,6 +1443,20 @@
       "pool": "",
       "description": "Whenever you kills an enemy, deal a damage of 271.8% of the overkill of the fatal damage to ALL enemies.",
       "flavorText": "Die! Die! Die!"
+    },
+    {
+      "name": "Giant Killer",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Enemies have more Max HP than you, for each 1% higher, receive 1% more damage.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Greedy Devil",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you kill an enemy, gain same amount of Gold as the overkill of the fatal damage. At most 100 Gold at a time.",
+      "flavorText": "\u5B83\u5728\u4F60\u7684\u80A9\u5934\u98DE\u884C\u7740\uFF0C\u6E34\u6C42\u7740\u8FC7\u91CF\u7684\u732E\u8840\u3002"
     },
     {
       "name": "Heart of Strike",
@@ -2053,6 +1550,20 @@
       "flavorText": "\u4E0D\u8981\u505C\u4E0B\u6765\u554A\u3002"
     },
     {
+      "name": "Trainee Economist",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you kill an enemy, your future Gold gain increase by 5% (add), shops prices decrease by 5% (multiply). Killing Elites and Boss enemy would be counted as 2 and 3 enemies respectively. ( Gold amount will not change in rewards)",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Venture Capital",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon pick up, lose ll Gold. Whenever you gain Gold, lose 1 Gold. For each 1 Gold you lose, increase future Gold gain by 1% (add). ( Gold amount will not change in rewards)",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "Ascension Heart",
       "tier": "Special",
       "pool": "",
@@ -2081,6 +1592,13 @@
       "flavorText": "Merry Christmas"
     },
     {
+      "name": "Glass Soul",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you get a relic, record it into list. Whenever you win a combat without losing hp, gain 1 count. Outside combat you can right click this relic to choose a relic from list, use 1 count or 10% its price to get it again. Whenever you get a relic through this relic, same relic will increase cost by 10%.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "Runic Tetrahedron",
       "tier": "Special",
       "pool": "",
@@ -2100,13 +1618,6 @@
       "pool": "",
       "description": "Right click or double right click on this relic to active relic reward or card reward. You may choose a reward from 3. This relic can ONLY active once. This relic can ONLY be used at floor 0.",
       "flavorText": "My present."
-    },
-    {
-      "name": "The Mahjong (Work In Progress)",
-      "tier": "Special",
-      "pool": "",
-      "description": "BUG ALERT. UNFINISHED RELIC. \u5728\u6218\u6597\u4E2D\u8FDB\u884C\u9EBB\u5C06\u6E38\u620F\uFF0C\u6BCF\u56DE\u5408\u5F00\u59CB\u6478\u4E00\u5F20\u9EBB\u5C06\u724C\u540E\u9009\u62E9\u5207\u51FA\u4E00\u5F20\uFF0C\u5C06\u5176\u52A0\u5165\u624B\u724C\u3002\u6253\u51FA \u5B9D\u724C \u7684\u6548\u679C\u7FFB\u500D\u3002\u6839\u636E\u548C\u724C\u70B9\u6570\u83B7\u5F97\u5176\u4ED6\u6548\u679C\u3002\n\u8FD9\u4EF6\u9057\u7269\u8FD8\u672A\u5236\u4F5C\u5B8C\u6210\uFF0C\u53EA\u80FD\u53D1\u6325\u4E00\u5C0F\u90E8\u5206\u6548\u679C\uFF0C\u5E76\u542B\u6709\u8BB8\u591Abug(\u521D\u6B21\u6218\u6597\u95EA\u9000\uFF0C\u91CD\u5F00\u81EA\u52A8\u4FEE\u590D)\u82E5\u76EE\u524D\u4E0D\u60F3\u6D4B\u8BD5\u672C\u9057\u7269\u53EF\u9009\u62E9\u91CD\u5F00\u3002",
-      "flavorText": "The author is lazy, nothing has been written."
     },
     {
       "name": "(9)",
@@ -2170,6 +1681,13 @@
       "pool": "",
       "description": "At the start of each turn: gain [E] , Exhaust a card.",
       "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Magical Mallet",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn, gain [E] . At the start of each turn, record the maximum and minimum cost of your hand, make all cards with these two costs in your hand switch to the other cost for rest of combat. Once each combat, you can right click this relic to active the effect.",
+      "flavorText": "\u4E0A\u9762\u7684\u6587\u5B57\u88AB\u4EBA\u62B9\u53BB\u4E86"
     },
     {
       "name": "Portable Altar",
@@ -2263,11 +1781,25 @@
       "flavorText": "El Psy Congroo"
     },
     {
+      "name": "Void Shard",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn, gain [E] . You receive 300% damage outside combats.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "Charity",
       "tier": "Shop",
       "pool": "",
       "description": "Whenever you gain gold, gain 1 less, increase your Max HP by 1 instead.",
       "flavorText": "\u201C\u6148\u5584\u7684\u884C\u4E3A\u6BD4\u91D1\u94B1\u66F4\u80FD\u89E3\u9664\u522B\u4EBA\u7684\u75DB\u82E6\u3002\u201D \u2014\u2014 \u5362\u68AD"
+    },
+    {
+      "name": "Cyclic Periapt",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Cards which would Exhaust when played will instead discard at the first time.",
+      "flavorText": "\u4E0D\u51C6\u8D70\uFF01\u518D\u6765\u4E00\u6B21\u3002"
     },
     {
       "name": "Faith",
@@ -2284,18 +1816,18 @@
       "flavorText": "\u5C0F\u5B69\u5B50\u624D\u505A\u9009\u62E9\uFF1B\u800C\u6211\uFF0C\u5168\u90FD\u8981\uFF01"
     },
     {
-      "name": "Magical Mallet",
-      "tier": "Shop",
-      "pool": "",
-      "description": "At the start of each turn, record the maximum and minimum cost of your hand, make all cards with these two costs in your hand switch to the other cost for rest of combat.",
-      "flavorText": "\u4E0A\u9762\u7684\u6587\u5B57\u88AB\u4EBA\u62B9\u53BB\u4E86"
-    },
-    {
       "name": "Register",
       "tier": "Shop",
       "pool": "",
       "description": "All the powers that were greater than 1 at the end of a combat will be saved, you will gain 1 of each of these powers at the start of next combat. ( SL will cause losing saved powers)",
       "flavorText": "\u5173\u673A\u524D\u81EA\u52A8\u4FDD\u5B58\uFF0C\u542F\u52A8\u65F6\u81EA\u52A8\u8BFB\u53D6\u3002"
+    },
+    {
+      "name": "Restrained",
+      "tier": "Shop",
+      "pool": "",
+      "description": "At the start of each turn, gain [E] . You cannot play Power Card at first turn of each combat.",
+      "flavorText": "The author is lazy, nothing has been written."
     }
   ],
   "potions": [
