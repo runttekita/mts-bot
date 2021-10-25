@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "The Gatherer",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "authors": ["Celicath"],
     "credits": "Rita-Bernstein - Character art, ZHS translation\nJedi - RUS translation\nMappyTheKat - Old character splash art",
-    "description": "Adds The Gatherer as a new playable character with 75 cards, 7 relics.\n\nv1.0.6 (2020-11-30)\n- Update for Slay the Spire v2.2\n- Mind Search now considers your current energy while determining Lesser Energy Potion probability.\n\nVisit https://steamcommunity.com/sharedfiles/filedetails/changelog/1611788501 for full change notes.",
+    "description": "Adds The Gatherer as a new playable character with 75 cards, 7 relics.\n\nv1.0.6 (2020-11-30)\n- Update for Slay the Spire v2.2\n- Mind Search now considers your current energy while determining Lesser Energy Potion probability.\n\nv1.0.7 (2021-10-13)\n- Fixed crash on MacOS\n- Localization updated for ENG, KOR, RUS.\n\nVisit https://steamcommunity.com/sharedfiles/filedetails/changelog/1611788501 for full change notes.",
     "mts_version": "3.7.0",
-    "sts_version": "11-29-2020",
+    "sts_version": "12-22-2020",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -17,7 +17,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nDraw a card.\nIncrease the damage of all *Shadow! in your hand by 8."
+      "description": "Gain 7 Block.\nDraw a card.\nIncrease the damage of all Shadow! in your hand by 8."
     },
     {
       "name": "Light!+",
@@ -25,7 +25,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 10 Block.\nDraw a card.\nIncrease the damage of all *Shadow! in your hand by 11."
+      "description": "Gain 10 Block.\nDraw a card.\nIncrease the damage of all Shadow! in your hand by 11."
     },
     {
       "name": "Shadow!",
@@ -33,7 +33,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nDraw a card.\nIncrease the Block of all *Light! in your hand by 7."
+      "description": "Deal 8 damage.\nDraw a card.\nIncrease the Block of all Light! in your hand by 7."
     },
     {
       "name": "Shadow!+",
@@ -41,7 +41,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage.\nDraw a card.\nIncrease the Block of all *Light! in your hand by 10."
+      "description": "Deal 11 damage.\nDraw a card.\nIncrease the Block of all Light! in your hand by 10."
     },
     {
       "name": "Thrower",
@@ -65,7 +65,7 @@
       "rarity": "Common",
       "type": "Status",
       "cost": "3",
-      "description": "Retain.\nExhaust.\nWhile in your hand, Upgrade Bag power is disabled."
+      "description": "Retain.\nExhaust.\nWhile in your hand, []Upgrade Bag's power is disabled."
     },
     {
       "name": "Centralize",
@@ -114,6 +114,22 @@
       "type": "Attack",
       "cost": "0",
       "description": "Deal 4 damage 2 times.\nCan be Upgraded 2 more times."
+    },
+    {
+      "name": "Flower Whip+2",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage 2 times.\nCan be Upgraded 1 more time."
+    },
+    {
+      "name": "Flower Whip+3",
+      "color": "Gatherer_lime",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage 3 times."
     },
     {
       "name": "Strike",
@@ -292,6 +308,22 @@
       "description": "Deal 18 damage.\nExhaust.\nCan be Upgraded 2 more times."
     },
     {
+      "name": "Flower Falling+2",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 22 damage.\nExhaust.\nCan be Upgraded 1 more time."
+    },
+    {
+      "name": "Flower Falling+3",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 22 damage.\nHeal 4 HP.\nExhaust."
+    },
+    {
       "name": "Flower Shield",
       "color": "Gatherer_lime",
       "rarity": "Common",
@@ -306,6 +338,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Gain 11 Block.\nCan be Upgraded 2 more times."
+    },
+    {
+      "name": "Flower Shield+2",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nCan be Upgraded 1 more time."
+    },
+    {
+      "name": "Flower Shield+3",
+      "color": "Gatherer_lime",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 14 Block."
     },
     {
       "name": "Fragile Hammer",
@@ -628,6 +676,22 @@
       "description": "Deal 10 damage to the target, then deal 10 damage to ALL enemies.\nCan be Upgraded 2 more times."
     },
     {
+      "name": "Flower Beam+2",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage to the target, then deal 12 damage to ALL enemies.\nCan be Upgraded 1 more time."
+    },
+    {
+      "name": "Flower Beam+3",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to the target, then deal 12 damage to ALL enemies."
+    },
+    {
       "name": "Flower Power",
       "color": "Gatherer_lime",
       "rarity": "Uncommon",
@@ -644,12 +708,28 @@
       "description": "Gain 2 Weak and Frail. At the start of your turn, Draw 2 cards.\nCan be Upgraded 2 more times."
     },
     {
+      "name": "Flower Power+2",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Weak. At the start of your turn, Draw 2 cards.\nCan be Upgraded 1 more time."
+    },
+    {
+      "name": "Flower Power+3",
+      "color": "Gatherer_lime",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, Draw 2 cards."
+    },
+    {
       "name": "Fruit Force",
       "color": "Gatherer_lime",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal damage equal to 15 % of Max HP.\nWhen obtained, raise your Max HP by 4."
+      "description": "Deal damage equal to 15 % of your Max HP.\nWhen obtained, raise your Max HP by 4."
     },
     {
       "name": "Fruit Force+",
@@ -657,7 +737,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal damage equal to 20 % of Max HP.\nWhen obtained, raise your Max HP by 4."
+      "description": "Deal damage equal to 20 % of your Max HP.\nWhen obtained, raise your Max HP by 4."
     },
     {
       "name": "Glowing Plant",
@@ -665,7 +745,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Scry 4.\nWhen obtained, add a *Light! and a *Shadow! to your deck."
+      "description": "Scry 4.\nWhen obtained, add a Light! and a Shadow! to your deck."
     },
     {
       "name": "Glowing Plant+",
@@ -673,7 +753,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Scry 6.\nWhen obtained, add a *Light! and a *Shadow! to your deck."
+      "description": "Scry 6.\nWhen obtained, add a Light! and a Shadow! to your deck."
     },
     {
       "name": "Herbalism",
@@ -953,7 +1033,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Shuffle a *Glitched in your deck. Your gatherer:Lesser gatherer:Potions are 100% more potent."
+      "description": "Shuffle a Glitched in your draw pile. Your gatherer:Lesser gatherer:Potions are 100% more potent."
     },
     {
       "name": "Upgrade Bag+",
@@ -961,7 +1041,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Add a *Glitched+ in your discard pile. Your gatherer:Lesser gatherer:Potions are 100% more potent."
+      "description": "Add a Glitched+ in your discard pile. Your gatherer:Lesser gatherer:Potions are 100% more potent."
     },
     {
       "name": "Uplift",
@@ -1081,7 +1161,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 30 damage.\ngatherer:Once: Enemy loses 15 Strength this turn. When Obtained, become Cursed - Normality."
+      "description": "Deal 30 damage.\ngatherer:Once: Enemy loses 15 Strength this turn. When obtained, become Cursed - Normality."
     },
     {
       "name": "Cursed Blade+",
@@ -1089,7 +1169,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 35 damage.\ngatherer:Twice: Enemy loses 15 Strength this turn. When Obtained, become Cursed - Normality."
+      "description": "Deal 35 damage.\ngatherer:Twice: Enemy loses 15 Strength this turn. When obtained, become Cursed - Normality."
     },
     {
       "name": "Examine",
@@ -1273,7 +1353,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "At the start of your turn, add 1 *Thrower to your hand."
+      "description": "At the start of your turn, add 1 Thrower to your hand."
     },
     {
       "name": "Stone Fence+",
@@ -1281,7 +1361,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "At the start of your turn, add 1 *Thrower+ to your hand."
+      "description": "At the start of your turn, add 1 Thrower+ to your hand."
     }
   ],
   "relics": [
