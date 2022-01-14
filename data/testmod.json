@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "TestMod",
-    "version": "4.8.1",
+    "version": "5.1.4",
     "authors": ["\u5F7C\u541B\u4E0D\u89E6"],
     "credits": "localization:\n\u5F7C\u541B\u4E0D\u89E6 280chan (Simplified Chinese)\nbrkfox (English)\n\u5F7C\u541B\u4E0D\u89E6 280chan (English)",
     "description": "You may choose relic or card reward and then choose 1 from 3 of that type from this mod at start of each run. Require 'STSLib'. \n\n\u5F00\u5C40\u9009\u62E9\u9057\u7269\u6216\u65E0\u8272\u724C\u4E4B\u540E\u53EF\u4EE5\u518D\u8FDB\u884C\u4E00\u6B21\u5BF9\u5E94\u7684\u53EF\u653E\u5F03\u76843\u90091\u6765\u83B7\u5F97\u521D\u59CB\u5956\u52B1\u3002\u8BD5\u505A\u4E86\u4E24\u4E2A\u4E8B\u4EF6\u548C4\u74F6\u836F\u6C34\u3002\u9700\u8981BaseMod\u548CSTSLib\u652F\u6301\u3002",
@@ -352,7 +352,7 @@
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "2",
+      "cost": "1",
       "description": "Deal 8 damage to all enemies. Deal 1 additional damage for each relic you have."
     },
     {
@@ -360,7 +360,7 @@
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "2",
+      "cost": "1",
       "description": "Deal 8 damage to all enemies. Deal 2 additional damage for each relic you have."
     },
     {
@@ -401,7 +401,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage. If target has Imprint, remove it and increase base damage by 80 % of its amount. Otherwise, give Imprint."
+      "description": "Deal 8 damage. If target has Imprint, remove it and increase base damage by 100 % of its amount. Otherwise, give Imprint."
     },
     {
       "name": "Death Imprint+",
@@ -409,7 +409,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage. If target has Imprint, remove it and increase base damage by 100 % of its amount. Otherwise, give Imprint."
+      "description": "Deal 8 damage. If target has Imprint, remove it and increase base damage by 120 % of its amount. Otherwise, give Imprint."
     },
     {
       "name": "Handmade Products",
@@ -417,7 +417,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal damage of the product of all cards' [cost plus 1] in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times. Upgrade will set cost to 1."
+      "description": "Deal damage of the product of all cards' [cost plus 1 ] in your hand. If kills enemy, increase this card's cost by 1. Can be Upgraded any number of times. Upgrade will set cost to 1."
     },
     {
       "name": "Handmade Products+1",
@@ -425,7 +425,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal damage of the product of all cards' [cost plus 1] in your hand. If kills enemy, increase this card's cost by 1 . Can be Upgraded any number of times. Upgrade will set cost to 1."
+      "description": "Deal damage of the product of all cards' [cost plus 1 ] in your hand. If kills enemy, increase this card's cost by 1. Can be Upgraded any number of times. Upgrade will set cost to 1."
     },
     {
       "name": "Head Attack",
@@ -433,7 +433,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Change enemy's intention to next turn. Draw 1 cards. Ethereal."
+      "description": "Change enemy's intention to next turn. Draw 2 cards. Ethereal."
     },
     {
       "name": "Head Attack+",
@@ -441,7 +441,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Change enemy's intention to next turn. Draw 2 cards. Ethereal."
+      "description": "Change enemy's intention to next turn. Draw 3 cards. Ethereal."
     },
     {
       "name": "Life Ruler",
@@ -497,7 +497,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal damage of 30 % of HP Loss of the target ( 0 )."
+      "description": "Deal damage of 50 % of HP Loss of the target ( 0 )."
     },
     {
       "name": "Pain Detonator+",
@@ -505,7 +505,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal damage of 50 % of HP Loss of the target ( 0 )."
+      "description": "Deal damage of 60 % of HP Loss of the target ( 0 )."
     },
     {
       "name": "Perfect Combo",
@@ -592,7 +592,7 @@
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "2",
+      "cost": "1",
       "description": "Choose a card, remove the same Rarity cards from deck this combat.At the start of turn, add a same Rarity random card into your hand. Ethereal."
     },
     {
@@ -600,8 +600,24 @@
       "color": "Colorless",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "1",
+      "cost": "0",
       "description": "Choose a card, remove the same Rarity cards from deck this combat.At the start of turn, add a same Rarity random card into your hand. Ethereal."
+    },
+    {
+      "name": "Virtual Reality",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 40 Block. Lose Block by amount of Block you gained last turn."
+    },
+    {
+      "name": "Virtual Reality+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 50 Block. Lose Block by amount of Block you gained last turn."
     },
     {
       "name": "Weakness Counterattack",
@@ -780,12 +796,28 @@
       "description": "Add 'Infernal Blade', 'Distraction', 'White noise' and 'Discovery' into your hand. Which cost 0 this turn. Ethereal."
     },
     {
+      "name": "Enchant",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card from all your cards, set its magic number to 2 times, and it becomes Exhaust on use. Exhaust."
+    },
+    {
+      "name": "Enchant+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card from all your cards, set its magic number to 2 times, and it becomes Exhaust on use."
+    },
+    {
       "name": "Enhance Armerment",
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Your next Attack deal double damage. Exhaust it."
+      "description": "Your next Attack card's damage is doubled 1 time. But it will Exhaust."
     },
     {
       "name": "Enhance Armerment+",
@@ -793,7 +825,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Your next Attack deal double damage. Exhaust it."
+      "description": "Your next Attack card's damage is doubled 1 time. But it will Exhaust."
     },
     {
       "name": "Eternality of Khronos",
@@ -880,7 +912,7 @@
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "1",
+      "cost": "0",
       "description": "Attack enemy with damages of each digit of your gold. Whenever Fatal an enemy, gain gold equals to the fatal damage amount."
     },
     {
@@ -888,7 +920,7 @@
       "color": "Colorless",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "1",
+      "cost": "0",
       "description": "Attack ALL enemies with damages of each digits of your gold. Whenever Fatal an enemy, gain gold equals to the fatal damage amount."
     },
     {
@@ -897,7 +929,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "X",
-      "description": "At start of each turn, apply X Poison, Constricted and Choked to random enemy. Whenever you play a Power card, make all enemies' Poison and Constricted affect once. Ethereal."
+      "description": "At start of each turn, apply X Poison, Constricted and Choked to random enemy. Whenever you play a Power card, make all enemies' Poison and Constricted affect 1 time. Ethereal."
     },
     {
       "name": "Plague+",
@@ -905,7 +937,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "X",
-      "description": "At start of each turn, apply X Poison, Constricted and Choked to random enemy. Whenever you play a Power card, make all enemies' Poison and Constricted affect once."
+      "description": "At start of each turn, apply X Poison, Constricted and Choked to random enemy. Whenever you play a Power card, make all enemies' Poison and Constricted affect 1 time."
     },
     {
       "name": "Power Strike",
@@ -913,7 +945,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "3",
-      "description": "Ethereal. Reduce all enemies' HP to its logarithm, the base number is 1.5. Apply the number of enemies Intangible to all enemies. Can be Upgraded any number of time. Exhaust."
+      "description": "Ethereal. Reduce all enemies' HP to its logarithm, the base number is 1. 5 . Apply the number of enemies Intangible to all enemies. Can be Upgraded any number of time. Exhaust."
     },
     {
       "name": "Power Strike+1",
@@ -1132,22 +1164,6 @@
       "description": "Deal 20 damage. Choose a card from 3 random Rare card add into your hand. If Fatal, add it into deck. Exhaust."
     },
     {
-      "name": "Virtual Reality",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 40 Block. Lose Block by amount of Block you gained last turn."
-    },
-    {
-      "name": "Virtual Reality+",
-      "color": "Colorless",
-      "rarity": "Rare",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain 50 Block. Lose Block by amount of Block you gained last turn."
-    },
-    {
       "name": "Wormhole",
       "color": "Colorless",
       "rarity": "Rare",
@@ -1280,7 +1296,7 @@
       "name": "Twinkling Star",
       "tier": "Common",
       "pool": "",
-      "description": "Whenever an relic other than Twinkling Star flashes, damages All Enemies by 1. For every 100 effects, double the damage.",
+      "description": "Whenever an relic other than Twinkling Star flashes, damages All Enemies by 1. For every 128 effects, doubles the damage. Next doubling at 128",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1302,6 +1318,13 @@
       "tier": "Uncommon",
       "pool": "",
       "description": "Whenever you gain Block, increase future Block gain by 1 for this turn.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Evil Dagger",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of each combat, an Attack card of yours is attached. Whenever that Attack card kills a non-minion enemy, cause extra effect of one of Feed, Lesson Learned and Hand of Greed.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1333,11 +1356,25 @@
       "flavorText": "\u4F60\u611F\u5230\u81EA\u5DF1\u53D8\u5F97\u865A\u5F31\u4E86\uFF0C\u4F46\u540C\u65F6\u53D8\u5F97\u80FD\u64CD\u7EB5\u75C5\u6BD2\u3002"
     },
     {
+      "name": "Injury Resistance",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you lose HP, ALL future final HP loss would reduced by 1.\nWhen you completely block a HP loss through this relic, reset the reduction back to 0.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "Justice",
       "tier": "Uncommon",
       "pool": "",
       "description": "Whenever gain a negative effect, gain 1 Strength.",
       "flavorText": "\u201C\u6709\u591A\u5C11\u90AA\u6076\uFF0C\u5C31\u6709\u591A\u5C11\u6B63\u4E49\u3002\u201D"
+    },
+    {
+      "name": "Metronome",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "When your first n cards played in a combat is same as last combat, gain n Max HP.",
+      "flavorText": "The author is lazy, nothing has been written."
     },
     {
       "name": "Random Test",
@@ -1445,6 +1482,13 @@
       "flavorText": "Die! Die! Die!"
     },
     {
+      "name": "Gather",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of each combat, if you have two relics with same length description, you can choose to select one of them to convert to a same-tier relic and win the combat.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "Giant Killer",
       "tier": "Rare",
       "pool": "",
@@ -1466,10 +1510,10 @@
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
-      "name": "Injury Resistance",
+      "name": "Holy Light Protection",
       "tier": "Rare",
       "pool": "",
-      "description": "Whenever you lose HP, ALL future final HP loss would reduced by 1.\nWhen you completely block a HP loss through this relic, reset the reduction back to 0.",
+      "description": "If multiple enemies appeared in a combat, only the first two can cause damage on you.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1485,6 +1529,13 @@
       "pool": "",
       "description": "Upon pickup, obtain 3 random Curse. At the start of each combat, gain 3 Strength. Every 3 turns, for each Curse in your deck, gain 1 Strength.",
       "flavorText": "\u201CKA(\u5170)KA(\u5170)A(\u9732)\uFF01\u201D \u2014\u2014\u5317\u51C9"
+    },
+    {
+      "name": "Mist Core",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Change ALL normal combat rooms into ? room, except the first room in Each Act. Whenever enters ? room, gain 1 Max HP, otherwise lose 1 Max HP.",
+      "flavorText": "The author is lazy, nothing has been written."
     },
     {
       "name": "Muramasa",
@@ -1595,7 +1646,7 @@
       "name": "Glass Soul",
       "tier": "Special",
       "pool": "",
-      "description": "Whenever you get a relic, record it into list. Whenever you win a combat without losing hp, gain 1 count. Outside combat you can right click this relic to choose a relic from list, use 1 count or 10% its price to get it again. Whenever you get a relic through this relic, same relic will increase cost by 10%.",
+      "description": "Whenever you get a relic, record it into list when you enter next room. Whenever you win a combat without losing hp, gain 1 count. Outside combat you can right click this relic to choose a relic from list, use 1 count or 10% its price to get it again. Whenever you get a relic through this relic, same relic will increase cost by 10%.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1618,13 +1669,6 @@
       "pool": "",
       "description": "Right click or double right click on this relic to active relic reward or card reward. You may choose a reward from 3. This relic can ONLY active once. This relic can ONLY be used at floor 0.",
       "flavorText": "My present."
-    },
-    {
-      "name": "(9)",
-      "tier": "Boss",
-      "pool": "",
-      "description": "Whenever you would die, lose 9 Max HP, and reduce the damage to 1. This Max HP reduction will not be affected.",
-      "flavorText": "\u8FD9\u6837\u4F60\u8FD8GG\uFF0C\u90A3\u4F60\u5C31\u662F\u4E2ABAKA\uFF01"
     },
     {
       "name": "Batch Processing System",
@@ -1665,7 +1709,7 @@
       "name": "Golden Soul",
       "tier": "Boss",
       "pool": "",
-      "description": "Upon pickup, lose 75% of your Maximum hp. Whenever receive a fatal damage, instead of losing hp, lose same amount of Gold, if you don't have enough Gold, lose all and take rest of damage.",
+      "description": "Upon pickup, lose 75% of your Maximum hp. Whenever receive a fatal damage, instead of losing hp, lose same amount of Gold, if you don't have enough Gold, lose all and take rest of damage. For each fatal damage this relic blocks, you gain 10% more gold in future.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1683,13 +1727,6 @@
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
-      "name": "Magical Mallet",
-      "tier": "Boss",
-      "pool": "",
-      "description": "At the start of each turn, gain [E] . At the start of each turn, record the maximum and minimum cost of your hand, make all cards with these two costs in your hand switch to the other cost for rest of combat. Once each combat, you can right click this relic to active the effect.",
-      "flavorText": "\u4E0A\u9762\u7684\u6587\u5B57\u88AB\u4EBA\u62B9\u53BB\u4E86"
-    },
-    {
       "name": "Portable Altar",
       "tier": "Boss",
       "pool": "",
@@ -1700,7 +1737,7 @@
       "name": "Prudence",
       "tier": "Boss",
       "pool": "",
-      "description": "In your turns, you can play all the cards that wouldn't be allowed to play if having sufficient energy. If it is Status or Curse, Exhaust it.",
+      "description": "If you have sufficient energy, you can play all the cards that wouldn't be allowed to play. If it is Status or Curse, Exhaust it.",
       "flavorText": "\u6709bug\u4E5F\u4E0D\u662F\u4EC0\u4E48\u91CD\u8981\u7684\u95EE\u9898\u5427\u3002"
     },
     {
@@ -1788,6 +1825,13 @@
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
+      "name": "(9)",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Whenever you would die, lose 9 Max HP, and reduce the damage to 1. This Max HP reduction will not be affected.",
+      "flavorText": "\u8FD9\u6837\u4F60\u8FD8GG\uFF0C\u90A3\u4F60\u5C31\u662F\u4E2ABAKA\uFF01"
+    },
+    {
       "name": "Charity",
       "tier": "Shop",
       "pool": "",
@@ -1814,6 +1858,13 @@
       "pool": "",
       "description": "You have 10 chances to right click on this relic at the combat reward screen, to make a copy of the card reward.",
       "flavorText": "\u5C0F\u5B69\u5B50\u624D\u505A\u9009\u62E9\uFF1B\u800C\u6211\uFF0C\u5168\u90FD\u8981\uFF01"
+    },
+    {
+      "name": "Magical Mallet",
+      "tier": "Shop",
+      "pool": "",
+      "description": "At the start of each turn, gain [E] . At the start of each turn, record the maximum and minimum cost of your hand, make all cards with these two costs in your hand switch to the other cost for the turn. Once each combat, you can right click this relic to active the effect.",
+      "flavorText": "\u4E0A\u9762\u7684\u6587\u5B57\u88AB\u4EBA\u62B9\u53BB\u4E86"
     },
     {
       "name": "Register",
