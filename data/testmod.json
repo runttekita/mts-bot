@@ -1,10 +1,10 @@
 {
   "mod": {
     "name": "TestMod",
-    "version": "5.1.4",
+    "version": "5.5.13",
     "authors": ["\u5F7C\u541B\u4E0D\u89E6"],
-    "credits": "localization:\n\u5F7C\u541B\u4E0D\u89E6 280chan (Simplified Chinese)\nbrkfox (English)\n\u5F7C\u541B\u4E0D\u89E6 280chan (English)",
-    "description": "You may choose relic or card reward and then choose 1 from 3 of that type from this mod at start of each run. Require 'STSLib'. \n\n\u5F00\u5C40\u9009\u62E9\u9057\u7269\u6216\u65E0\u8272\u724C\u4E4B\u540E\u53EF\u4EE5\u518D\u8FDB\u884C\u4E00\u6B21\u5BF9\u5E94\u7684\u53EF\u653E\u5F03\u76843\u90091\u6765\u83B7\u5F97\u521D\u59CB\u5956\u52B1\u3002\u8BD5\u505A\u4E86\u4E24\u4E2A\u4E8B\u4EF6\u548C4\u74F6\u836F\u6C34\u3002\u9700\u8981BaseMod\u548CSTSLib\u652F\u6301\u3002",
+    "credits": "localization:\n\u5F7C\u541B\u4E0D\u89E6 280chan (Simplified Chinese)\nbrkfox (English)\n\u5F7C\u541B\u4E0D\u89E6 280chan (English)\nart:\n\u592A\u6781\u7092\u996D\nother artists",
+    "description": "You may choose relic or card reward and then choose 1 from 3 of that type from this mod at start of each run. Require 'STSLib'. \n\n\u5F00\u5C40\u9009\u62E9\u9057\u7269\u6216\u65E0\u8272\u724C\u4E4B\u540E\u53EF\u4EE5\u518D\u8FDB\u884C\u4E00\u6B21\u5BF9\u5E94\u7684\u53EF\u653E\u5F03\u76843\u90091\u6765\u83B7\u5F97\u521D\u59CB\u5956\u52B1\u3002\u8BD5\u505A\u4E863\u4E2A\u4E8B\u4EF6\u548C4\u74F6\u836F\u6C34\u3002\u9700\u8981BaseMod\u548CSTSLib\u652F\u6301\u3002",
     "mts_version": "0.0.0",
     "sts_version": "",
     "dependencies": ["basemod","stslib"],
@@ -860,6 +860,22 @@
       "description": "At the start of your turn, for each enemy intend to Attack, Gain 1 Strength, these enemies lose 1 Strength."
     },
     {
+      "name": "Form Form",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Play all other *Form cards 1 time. At the start of your turn, lose [E] [E] [E] ."
+    },
+    {
+      "name": "Form Form+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Play all other upgraded *Form cards 1 time. At the start of your turn, lose [E] [E] [E] ."
+    },
+    {
       "name": "Illusory",
       "color": "Colorless",
       "rarity": "Rare",
@@ -1244,6 +1260,13 @@
       "flavorText": "\u505C\u4E00\u4E0B\uFF0C\u8BA9\u6211\u5148\u5B66\u4E00\u5B66\u3002"
     },
     {
+      "name": "Conjure Blade",
+      "tier": "Common",
+      "pool": "",
+      "description": "Base damage and Block of All cards in your hand are increased by the sum of Cost of their neighboring cards.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "Hyperplastic Tissue",
       "tier": "Common",
       "pool": "",
@@ -1377,6 +1400,13 @@
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
+      "name": "Phase Pocket Watch",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "You no longer lose HP during enemy turn, instead increase relic counter. At the start of your turn, choose from Lose 2 HP [ counter/2 ] times and Lose [ counter/2 ] HP 2 times. You can right click this relic during your turn or outside combat to switch between Choose Everytime and Always 2xn and Always nx2 .",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "Random Test",
       "tier": "Uncommon",
       "pool": "",
@@ -1389,13 +1419,6 @@
       "pool": "",
       "description": "Whenever you Upgrade a card in your deck, Upgrade all cards with same name in your deck which are Upgradable. Whenever a card is pgraded by this relic, gain 1 Gold and max health, each active increase future effect by 1.",
       "flavorText": "The author is lazy, nothing has been written."
-    },
-    {
-      "name": "Shadow Amulet",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "Whenever you lose n Block, you gain 1 Block when turn ends for the following n turns.",
-      "flavorText": "\u4F60\u5931\u53BB\u7684\u90A3\u4E9B\u4E00\u5207\uFF0C\u90FD\u4F1A\u6084\u65E0\u58F0\u606F\u7684\u5B88\u62A4\u7740\u4F60\u3002"
     },
     {
       "name": "The Dragon Star Hat",
@@ -1466,6 +1489,13 @@
       "pool": "",
       "description": "If you end your turn without energy, and ALL the cards played this turn have same card type, add the copies of these cards into your hand, which cost 0 until the end of turn and Exhaust when played.",
       "flavorText": "D\u00E9j\u00E0vu."
+    },
+    {
+      "name": "Encyclopedia",
+      "tier": "Rare",
+      "pool": "",
+      "description": "For each time you meet an enemy, you deal 50% more damage to enemies with same name in this run.",
+      "flavorText": "The author is lazy, nothing has been written."
     },
     {
       "name": "Equal Treatment",
@@ -1566,10 +1596,24 @@
       "flavorText": "The shoes shine light with changing color when walking."
     },
     {
+      "name": "Shadow Amulet",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Whenever you lose n Block, you gain 1 Block when turn ends for the following n turns.",
+      "flavorText": "\u4F60\u5931\u53BB\u7684\u90A3\u4E9B\u4E00\u5207\uFF0C\u90FD\u4F1A\u6084\u65E0\u58F0\u606F\u7684\u5B88\u62A4\u7740\u4F60\u3002"
+    },
+    {
+      "name": "Spire Nexus",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you encounter random Event, choose from 3 Events instead. Outside combat, right click on this relic to toggle it on and off.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "The Alchemist",
       "tier": "Rare",
       "pool": "",
-      "description": "Upon pickup, gain 1 Potion slot. For each combat, during your turn, you have 1 chance to right click on this relic to auto use your first usable Potion without consume it.",
+      "description": "Upon pickup, gain 1 Potion slot. For each combat, during your turn, you have 1 chance to right click on this relic to use your first usable Potion without consume it. Outside combat, right click on this relic to change the order of your potions.",
       "flavorText": "\u65E0\u6CD5\u65E0\u4E2D\u751F\u6709\uFF0C\u5374\u53EF\u4EE5\u590D\u5236\u4E00\u4E2A\u5DF2\u6709\u7684\u6837\u672C\u3002"
     },
     {
@@ -1646,7 +1690,7 @@
       "name": "Glass Soul",
       "tier": "Special",
       "pool": "",
-      "description": "Whenever you get a relic, record it into list when you enter next room. Whenever you win a combat without losing hp, gain 1 count. Outside combat you can right click this relic to choose a relic from list, use 1 count or 10% its price to get it again. Whenever you get a relic through this relic, same relic will increase cost by 10%.",
+      "description": "Whenever you get a relic, record it into list when you enter next room. Whenever you win a combat without losing hp, gain 1 count. Outside combat you can right click this relic to choose a relic from list, for each same relic you have, use 1 count or 10% its price to get it again.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1695,7 +1739,7 @@
       "name": "Energy Check",
       "tier": "Boss",
       "pool": "",
-      "description": "If you have insufficient energy to play a card, you may advance energy next turn. If the amount of energy your advanced surpass your default energy each turn, for each energy surpassed, lose 1 HP; for each more energy surpassed, lose 1 more HP.",
+      "description": "Right click this relic to advance energy next turn. If the amount of energy your advanced surpass your default energy each turn, for nth energy surpassed, lose n HP.",
       "flavorText": "\u6709\u501F\u6709\u8FD8\uFF0C\u9664\u975E\u6740\u5B8C\u3002"
     },
     {
@@ -1703,6 +1747,13 @@
       "tier": "Boss",
       "pool": "",
       "description": "At the start of each turn, gain [E] , Wrath: gain [E] . At the end of each turn, Wrath: exit Wrath. Otherwise, enter Wrath. Whenever you lose hp, for each point you lose, gain 1% hp absorb, Wrath: gain double.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Golden Contract",
+      "tier": "Boss",
+      "pool": "",
+      "description": "You gain 50% less Gold, each time you gain Gold, you gain 10% less Gold in future. Your base Attack damage is increased by amount of your Gold, whenever you play an Attack card, lose 5% Gold (at least 1 ).",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1727,11 +1778,25 @@
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
+      "name": "Match 3",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn after drawing cards, if you have multiple of 3 relics, gain [E] , or else draw 1 card; if you have multiple of 3 cards in draw pile, gain [E] , or else draw 1 card.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "Portable Altar",
       "tier": "Boss",
       "pool": "",
       "description": "At the start of each turn, lose 1 HP. Whenever you climb a floor, lose 1 Max HP. For every 5 Max HP lost through this relic: At the start of each combat, gain 1 Strength, Dexterity and Plated Armor; you will not lose HP from this relic in the first 1 turn of each combat.",
       "flavorText": "\u8FD9\u4E2A\u796D\u575B\u7ED9\u4E88\u4E86\u4F60\u5F3A\u5927\u7684\u80FD\u529B\uFF0C\u4F46\u4E5F\u8D2A\u5A6A\u5730\u541E\u566C\u7740\u4F60\u7684\u751F\u547D\u3002"
+    },
+    {
+      "name": "Portable Portal",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn, gain [E] . When you enter the first room after pickup, you will teleport to Boss room.",
+      "flavorText": "The author is lazy, nothing has been written."
     },
     {
       "name": "Prudence",
@@ -1753,6 +1818,13 @@
       "pool": "",
       "description": "Whenever you cause unblocked damage to enemies, heal 1 HP.",
       "flavorText": "\u90AA\u6076\u53C8\u4F18\u96C5\u7684\u4E0D\u7965\u4E4B\u7269"
+    },
+    {
+      "name": "Stomach Of Gluttonous",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you kill an enemy that is Elite or Boss, gain current hp / max hp count , and fully heal. Whenever you increase max hp, increase count % more.",
+      "flavorText": "\u8FD9\u4E2A\u662F\u6211\u6539\u52A8\u540E\u7684\u6700\u7EC8\u7248\u3002\u8FD9\u4E2A\u6539\u52A8\u53EF\u4EE5\u5728\u6253\u4E09\u67F1\u8FD9\u79CD\u7CBE\u82F1\u65F6\u56DE\u591A\u6B21\u8840\u3002\u2014\u2014Little Wolf\u5F71\u5E7D"
     },
     {
       "name": "String Disintegrator",
@@ -1821,7 +1893,7 @@
       "name": "Void Shard",
       "tier": "Boss",
       "pool": "",
-      "description": "At the start of each turn, gain [E] . You receive 300% damage outside combats.",
+      "description": "At the start of each turn, gain [E] . You receive 250% damage outside combats.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1885,17 +1957,17 @@
     {
       "name": "Bottled Space",
       "rarity": "Uncommon",
-      "description": "Gain 1 Potion slot. You will not gain slots if you have 10 or more slots, instead, gain same amount of random potions."
+      "description": "Gain 1 Potion slot(s). If you don't have Alchemist, you will not gain slots if you have 10 or more slots, instead, gain same amount of random potions."
     },
     {
       "name": "Essence of Test",
       "rarity": "Uncommon",
-      "description": "Choose 1 of 3 random Test cards 1 time(s), to add to your hand, it costs 0 this turn."
+      "description": "Choose 1 of 3 random Test cards 1 time(s) to add to your hand, it costs 0 this turn."
     },
     {
       "name": "Essence of Kronos",
       "rarity": "Rare",
-      "description": "End your turn, enemies will not do their intent this turn, then start your next turn."
+      "description": "End your turn, enemies will not perform their intent this turn, then start your next turn."
     },
     {
       "name": "Refined Shame",
@@ -1906,6 +1978,10 @@
   "creatures": [
   ],
   "keywords": [
+    {
+      "name": "Angry",
+      "description": "Upon receiving attack damage, gains 1 Strength."
+    },
     {
       "name": "Imprint",
       "description": "Imprint will increase the amount of damage whenever the owner loses HP."
