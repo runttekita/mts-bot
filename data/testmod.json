@@ -1,10 +1,10 @@
 {
   "mod": {
     "name": "TestMod",
-    "version": "5.5.13",
+    "version": "5.8.16",
     "authors": ["\u5F7C\u541B\u4E0D\u89E6"],
-    "credits": "localization:\n\u5F7C\u541B\u4E0D\u89E6 280chan (Simplified Chinese)\nbrkfox (English)\n\u5F7C\u541B\u4E0D\u89E6 280chan (English)\nart:\n\u592A\u6781\u7092\u996D\nother artists",
-    "description": "You may choose relic or card reward and then choose 1 from 3 of that type from this mod at start of each run. Require 'STSLib'. \n\n\u5F00\u5C40\u9009\u62E9\u9057\u7269\u6216\u65E0\u8272\u724C\u4E4B\u540E\u53EF\u4EE5\u518D\u8FDB\u884C\u4E00\u6B21\u5BF9\u5E94\u7684\u53EF\u653E\u5F03\u76843\u90091\u6765\u83B7\u5F97\u521D\u59CB\u5956\u52B1\u3002\u8BD5\u505A\u4E863\u4E2A\u4E8B\u4EF6\u548C4\u74F6\u836F\u6C34\u3002\u9700\u8981BaseMod\u548CSTSLib\u652F\u6301\u3002",
+    "credits": "localization:\n\u5F7C\u541B\u4E0D\u89E6 280chan (Simplified Chinese)\nbrkfox (English)\n\u5F7C\u541B\u4E0D\u89E6 280chan (English)\n\nart:\n\u592A\u6781\u7092\u996D\nother artists\n\npart of flavor text:\ncyxw",
+    "description": "You may choose relic or card reward and then choose 1 from 3 of that type from this mod at start of each run. Require 'STSLib'. \n\n\u5F00\u5C40\u9009\u62E9\u9057\u7269\u6216\u65E0\u8272\u724C\u4E4B\u540E\u53EF\u4EE5\u518D\u8FDB\u884C\u4E00\u6B21\u5BF9\u5E94\u7684\u53EF\u653E\u5F03\u76843\u90091\u6765\u83B7\u5F97\u521D\u59CB\u5956\u52B1\u3002\u8BD5\u505A\u4E863\u4E2A\u4E8B\u4EF6\u548C5\u74F6\u836F\u6C34\u3002\u9700\u8981BaseMod\u548CSTSLib\u652F\u6301\u3002",
     "mts_version": "0.0.0",
     "sts_version": "",
     "dependencies": ["basemod","stslib"],
@@ -401,7 +401,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage. If target has Imprint, remove it and increase base damage by 100 % of its amount. Otherwise, give Imprint."
+      "description": "Deal 8 damage. If target has imprint, remove it and increase base damage by 100 % of its amount. Otherwise, give imprint."
     },
     {
       "name": "Death Imprint+",
@@ -409,7 +409,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage. If target has Imprint, remove it and increase base damage by 120 % of its amount. Otherwise, give Imprint."
+      "description": "Deal 8 damage. If target has imprint, remove it and increase base damage by 120 % of its amount. Otherwise, give imprint."
     },
     {
       "name": "Handmade Products",
@@ -801,7 +801,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Choose a card from all your cards, set its magic number to 2 times, and it becomes Exhaust on use. Exhaust."
+      "description": "Choose a card from all your cards, set its magicnumber to 2 times original, and it becomes Exhaust on use. Exhaust."
     },
     {
       "name": "Enchant+",
@@ -809,7 +809,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Choose a card from all your cards, set its magic number to 2 times, and it becomes Exhaust on use."
+      "description": "Choose a card from all your cards, set its magicnumber to 2 times original, and it becomes Exhaust on use."
     },
     {
       "name": "Enhance Armerment",
@@ -954,6 +954,22 @@
       "type": "Power",
       "cost": "X",
       "description": "At start of each turn, apply X Poison, Constricted and Choked to random enemy. Whenever you play a Power card, make all enemies' Poison and Constricted affect 1 time."
+    },
+    {
+      "name": "Portable Transcript",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Innate. At start of each turn, function all Power cards in your discard pile 1 times and make them Ethereal."
+    },
+    {
+      "name": "Portable Transcript+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Innate. At start of each turn, function all Power cards in your discard pile 2 times and make them Ethereal."
     },
     {
       "name": "Power Strike",
@@ -1201,7 +1217,7 @@
       "rarity": "Special",
       "type": "Curse",
       "cost": "1",
-      "description": "Exhaust. While in hand, you cannot play Status and Curse. If no ememy intends to attack/ inflict a Negative Effect on you or defend/ use a buff, you cannot play Attact/ Skill/ Power."
+      "description": "Exhaust. While in hand, If no ememy intends to attack/ inflict a Negative Effect on you or defend/ use a buff, you cannot play Attact/ Skill/ Power."
     },
     {
       "name": "Gluttony",
@@ -1217,7 +1233,7 @@
       "rarity": "Special",
       "type": "Curse",
       "cost": "1",
-      "description": "Exhaust. At the end of your turn drawing this card, For each [E] remain, draw 1 fewer cards next turn. For each card in hand, gain 1 less [E] next turn."
+      "description": "Exhaust. At the end of your turn drawing this card, if you have [E] remain, draw 1 fewer cards next turn. If you have card in hand, gain 1 less [E] next turn."
     },
     {
       "name": "Lust",
@@ -1225,7 +1241,7 @@
       "rarity": "Special",
       "type": "Curse",
       "cost": "1",
-      "description": "At the end of your turn, lose 1 Strength, Dexterity, Focus, gain 3 Vulnerable, Weak, Frail. "
+      "description": "At the end of your turn, gain 1 Vulnerable, Weak, Frail. "
     },
     {
       "name": "Sloth",
@@ -1264,6 +1280,13 @@
       "tier": "Common",
       "pool": "",
       "description": "Base damage and Block of All cards in your hand are increased by the sum of Cost of their neighboring cards.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
+      "name": "Fission Device",
+      "tier": "Common",
+      "pool": "",
+      "description": "Once per turn, right click on this relic to choose a card from your hand which has Cost greater than 1, remove it from current combat, but add its Cost copies with all values 1 / Cost of original to your hand, remainder become an extra 0 Cost copy. All copies exhaust when use.\n",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1421,6 +1444,13 @@
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
+      "name": "Reverse",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you gain a buff or debuff with negative amount, change its amount to absolute value of original amount.",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "The Dragon Star Hat",
       "tier": "Uncommon",
       "pool": "",
@@ -1433,6 +1463,13 @@
       "pool": "",
       "description": "When you are in the first turn of Non-Boss combat, you may right click on this relic to escape.\n(Disabled for one combat after SL)",
       "flavorText": "\u4EBA\u751F\u4E0D\u80FD\u91CD\u6765\u3002"
+    },
+    {
+      "name": "Abnormality Killer",
+      "tier": "Rare",
+      "pool": "",
+      "description": "For each debuff an enemy has, it receives 25% more damage.",
+      "flavorText": "The author is lazy, nothing has been written."
     },
     {
       "name": "Black Framed Glasses",
@@ -1468,6 +1505,13 @@
       "pool": "",
       "description": "If you have gained any Block in your turn, gain 1 Blur when this turn ends.",
       "flavorText": "\u4F60\u6784\u7B51\u7684\u9632\u5FA1\uFF0C\u900F\u8FC7\u8FD9\u4E2A\u62A4\u76FE\u540E\uFF0C\u770B\u8D77\u6765\u4EFF\u4F5B\u88AB\u6A21\u7CCA\u4E86\u3002"
+    },
+    {
+      "name": "Demon Summon",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the first turn each combat, gain 1 Demon Form, for each turn starts after first turn, gain Turn Count Demon Summon of tier Turn Count. Tier n Demon Summon gives you its amount Demon Summon of tier one lower, tier 2 Demon Summon gives you Demon Form instead of Demon Summon.",
+      "flavorText": "The author is lazy, nothing has been written."
     },
     {
       "name": "Dominator of Weakness",
@@ -1515,7 +1559,7 @@
       "name": "Gather",
       "tier": "Rare",
       "pool": "",
-      "description": "At the start of each combat, if you have two relics with same length description, you can choose to select one of them to convert to a same-tier relic and win the combat.",
+      "description": "At the start of each combat, if you have two relics with same length description, you can choose to select one of them to convert to a same-tier relic and kill a random enemy.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1743,6 +1787,13 @@
       "flavorText": "\u6709\u501F\u6709\u8FD8\uFF0C\u9664\u975E\u6740\u5B8C\u3002"
     },
     {
+      "name": "Extravagant",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Right click on this relic during your turn, if your max hand size is not 0, reduce it by half for the combat, play all cards in your hand, the size of your hand times (at most max energy times).",
+      "flavorText": "The author is lazy, nothing has been written."
+    },
+    {
       "name": "Fanaticism",
       "tier": "Boss",
       "pool": "",
@@ -1858,7 +1909,7 @@
       "name": "The Determination Of Climber",
       "tier": "Boss",
       "pool": "",
-      "description": "Whenever you play a card cost more than the previous one, for every more cost, gain [E] , heal 1, draw 1, deal 1 damage to ALL enemies, gain 1 gold.",
+      "description": "Lose [E] at the start of each turn.\nWhenever you play a card cost more than the previous one, for every more cost, gain [E] , heal 1, draw 1, deal 1 damage to ALL enemies, gain 1 gold.",
       "flavorText": "\u7136\u800C\u67D0\u4E9B\u767B\u5C71\u8005\u603B\u662F\u559C\u6B22\u539F\u5730\u8E0F\u6B65\u3002"
     },
     {
@@ -1893,7 +1944,7 @@
       "name": "Void Shard",
       "tier": "Boss",
       "pool": "",
-      "description": "At the start of each turn, gain [E] . You receive 250% damage outside combats.",
+      "description": "At the start of each turn, gain [E] . You receive 200% damage outside combats.",
       "flavorText": "The author is lazy, nothing has been written."
     },
     {
@@ -1965,6 +2016,11 @@
       "description": "Choose 1 of 3 random Test cards 1 time(s) to add to your hand, it costs 0 this turn."
     },
     {
+      "name": "Manifold Potion",
+      "rarity": "Uncommon",
+      "description": "Last non Manifold Potion you used, triggers its effect 1 times."
+    },
+    {
       "name": "Essence of Kronos",
       "rarity": "Rare",
       "description": "End your turn, enemies will not perform their intent this turn, then start your next turn."
@@ -1983,12 +2039,16 @@
       "description": "Upon receiving attack damage, gains 1 Strength."
     },
     {
-      "name": "Imprint",
-      "description": "Imprint will increase the amount of damage whenever the owner loses HP."
-    },
-    {
       "name": "Halloween",
       "description": "Halloween is a 0 cost Skill card which can be Upgraded any number of times."
+    },
+    {
+      "name": "Imprint",
+      "description": "Imprint will increase by the amount of damage whenever the owner loses HP."
+    },
+    {
+      "name": "Magicnumber",
+      "description": "Magic Number is number in card that is not damage or block."
     }
   ]
 }
