@@ -879,8 +879,13 @@ async def keyword(channel, tokenized_message):
                     if len(tokenized_message) == 3:
                         if tokenized_message[2] == keyword_name.lower():
                             if len(split_keyword) == 2:
+                                mod_name = split_keyword[0]
+                                if "mod" in keywords[x]:
+                                    if "name" in keywords[x]["mod"]:
+                                        mod_name = keywords[x]["mod"]["name"]
+                                
                                 await channel.send(
-                                    keyword_format_mod(keyword, keyword_name, split_keyword[0])
+                                    keyword_format_mod(keyword, keyword_name, mod_name)
                                 )
                                 return
                             else:
@@ -888,6 +893,12 @@ async def keyword(channel, tokenized_message):
                                 return
                     else:
                         if tokenized_message[1] == keyword_name.lower():
+                            if "mod" in keywords[x]:
+                                if "name" in keywords[x]["mod"]:
+                                    await channel.send(
+                                        keyword_format_mod(keyword, keyword_name, keywords[x]["mod"]["name"])
+                                    )
+                                    return
                             if len(split_keyword) == 2:
                                 await channel.send(
                                     keyword_format_mod(keyword, keyword_name, split_keyword[0])
@@ -966,7 +977,7 @@ def potion_format(potion, id):
 
 
 def keyword_format_mod(keyword, name, mod):
-    return "**{0}**\n {1}".format(name.capitalize(), keyword["description"])
+    return "**{0}** ({1})\n{2}".format(name.capitalize(), mod, keyword["description"])
 
 
 def keyword_format(keyword, name):
