@@ -867,33 +867,36 @@ async def potion(channel, tokenized_message):
 async def keyword(channel, tokenized_message):
     keywords = Mod_Data(tokenized_message[1]).data
     for x in range(len(keywords)):
-        for keyword in keywords[x]["keywords"]:
-            keyword_name = ""
-            split_keyword = keyword["name"].split(":")
-            if len(split_keyword) == 2:
-                keyword_name = split_keyword[1]
-            else:
-                keyword_name = split_keyword[0]
-            if len(tokenized_message) == 3:
-                if tokenized_message[2] == keyword_name.lower():
+        if "keywords" in keywords[x]:
+            for keyword in keywords[x]["keywords"]:
+                keyword_name = ""
+                if "name" in keyword:
+                    split_keyword = keyword["name"].split(":")
                     if len(split_keyword) == 2:
-                        await channel.send(
-                            keyword_format_mod(keyword, keyword_name, split_keyword[0])
-                        )
-                        return
+                        keyword_name = split_keyword[1]
                     else:
-                        await channel.send(keyword_format(keyword, keyword_name))
-                        return
-            else:
-                if tokenized_message[1] == keyword_name.lower():
-                    if len(split_keyword) == 2:
-                        await channel.send(
-                            keyword_format_mod(keyword, keyword_name, split_keyword[0])
-                        )
-                        return
+                        keyword_name = keyword["name"]
+                    if len(tokenized_message) == 3:
+                        if tokenized_message[2] == keyword_name.lower():
+                            if len(split_keyword) == 2:
+                                await channel.send(
+                                    keyword_format_mod(keyword, keyword_name, split_keyword[0])
+                                )
+                                return
+                            else:
+                                await channel.send(keyword_format(keyword, keyword_name))
+                                return
                     else:
-                        await channel.send(keyword_format(keyword, keyword_name))
-                        return
+                        if tokenized_message[1] == keyword_name.lower():
+                            if len(split_keyword) == 2:
+                                await channel.send(
+                                    keyword_format_mod(keyword, keyword_name, split_keyword[0])
+                                )
+                                return
+                            else:
+                                await channel.send(keyword_format(keyword, keyword_name))
+                                return
+
     if len(tokenized_message) == 3:
         await channel.send(
             f"No keyword named {tokenized_message[2]} found in {tokenized_message[1]}."
