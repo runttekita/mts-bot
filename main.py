@@ -894,7 +894,6 @@ async def keyword(channel, tokenized_message):
                     else:
                         await channel.send(keyword_format(keyword, keyword_name))
                         return
-
     if len(tokenized_message) == 3:
         await channel.send(
             f"No keyword named {tokenized_message[2]} found in {tokenized_message[1]}."
