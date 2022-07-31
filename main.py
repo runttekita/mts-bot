@@ -40,7 +40,9 @@ wiki_dictionary = {
     "hooks": "https://github.com/daviscook477/BaseMod/wiki/Hooks",
     "stslib": "https://github.com/kiooeht/StSLib/wiki",
     "cardmods": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
-    "card modifiers": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers"
+    "card modifiers": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
+    "debug": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging",
+    "debugging": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging"
 }
 
 icon_dictionary = {
