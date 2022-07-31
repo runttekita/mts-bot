@@ -31,6 +31,20 @@ energy = re.compile(r"^(\[[RGBWE]])(.?)$")
 
 default_energy = "<:red_energy:382625376838615061>"
 
+wiki_dictionary = {
+    "mts": "https://github.com/kiooeht/ModTheSpire/wiki/",
+    "modthespire": "https://github.com/kiooeht/ModTheSpire/wiki/",
+    "spirepatch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
+    "patch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
+    "basemod": "https://github.com/daviscook477/BaseMod/wiki",
+    "hooks": "https://github.com/daviscook477/BaseMod/wiki/Hooks",
+    "stslib": "https://github.com/kiooeht/StSLib/wiki",
+    "cardmods": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
+    "card modifiers": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
+    "debug": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging",
+    "debugging": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging"
+}
+
 icon_dictionary = {
     "[E]": "<:red_energy:382625376838615061>",
     "[R]": "<:red_energy:382625376838615061>", 
@@ -237,7 +251,8 @@ async def do_command(channel, tokenized_message):
         "findrelic": findrelic,
         "modder": get_mods_by_author,
         "mod": get_mod_info,
-        "potion": potion
+        "potion": potion,
+        "wiki": wiki
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
@@ -926,6 +941,15 @@ async def help_command(channel):
         + f"You can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in."
     )
 
+@client.event
+async def wiki(channel, tokenized_message):
+    if len(tokenized_message) < 2:
+        return
+    wikipage = " ".join(tokenized_message[1:])
+    await channel.send(
+        wiki_dictionary.get(wikipage, "Wiki page not found.")
+    )
+    
 
 def energy_replace(strIn):
     retVal = strIn
