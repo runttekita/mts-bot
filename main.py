@@ -37,6 +37,7 @@ wiki_dictionary = {
     "spirepatch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
     "patch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
     "basemod": "https://github.com/daviscook477/BaseMod/wiki",
+    "hooks": "https://github.com/daviscook477/BaseMod/wiki/Hooks",
     "stslib": "https://github.com/kiooeht/StSLib/wiki",
     "cardmods": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
     "card modifiers": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers"
