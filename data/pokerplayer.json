@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "The Poker Player",
-    "version": "1.0.0",
+    "version": "1.0.7",
     "authors": ["Celicath"],
     "credits": "HSymbol - original game\nRita-Bernstein - ZHS translation",
-    "description": "Adds a character called The Poker Player, who fights with his own rule inspired from poker.\n\n- Adds 87 cards and 13 relics.\n- Disables some base game contents which are unbalanced or confusing to the Poker Player. If you don't like this behavior, check out the mod config.\n\nv1.0.0 (2020-01-15)\n- Updated for 2.0 release (Watcher release).\n- Poker Manual was added!\n- Poker Score Viewer tooltip now shows the effect of each Suit.\n- Card changes: Fill the Pot, It's Show Time!, Card Printer, Manipulation\n- Relic changes: Club Pass\n\nFor the full patch notes, visit https://steamcommunity.com/sharedfiles/filedetails/changelog/1710999325\n\n",
+    "description": "Adds a character called The Poker Player, who fights with his own rule inspired from poker.\n\n- Adds 87 cards and 13 relics.\n- Disables some base game contents which are unbalanced or confusing to the Poker Player. If you don't like this behavior, check out the mod config.\n\nv1.0.7 (2020-01-21)\n- Bugfix: Wild Card can no longer give you Hearts with Broken Clock relic.\n\nFor the full patch notes, visit https://steamcommunity.com/sharedfiles/filedetails/changelog/1710999325\n\n",
     "mts_version": "3.7.0",
-    "sts_version": "07-17-2019",
+    "sts_version": "12-22-2020",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": ["versus"]
   },
@@ -148,60 +148,12 @@
       "description": "pokerplayer:Club 2"
     },
     {
-      "name": "2 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 2"
-    },
-    {
-      "name": "2 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 2"
-    },
-    {
       "name": "2 of Diamonds",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "pokerplayer:Diamond 2"
-    },
-    {
-      "name": "2 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 2"
-    },
-    {
-      "name": "2 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 2"
-    },
-    {
-      "name": "2 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 2"
-    },
-    {
-      "name": "2 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 2"
     },
     {
       "name": "2 of Hearts",
@@ -220,60 +172,12 @@
       "description": "pokerplayer:Spade 2"
     },
     {
-      "name": "2 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 2"
-    },
-    {
-      "name": "2 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 2"
-    },
-    {
       "name": "3 of Clubs",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "pokerplayer:Club 3"
-    },
-    {
-      "name": "3 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 3"
-    },
-    {
-      "name": "3 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 3"
-    },
-    {
-      "name": "3 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 3"
-    },
-    {
-      "name": "3 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 3"
     },
     {
       "name": "3 of Diamonds",
@@ -292,60 +196,12 @@
       "description": "Ethereal.\npokerplayer:Heart 3"
     },
     {
-      "name": "3 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 3"
-    },
-    {
-      "name": "3 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 3"
-    },
-    {
       "name": "3 of Spades",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "pokerplayer:Spade 3"
-    },
-    {
-      "name": "3 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 3"
-    },
-    {
-      "name": "3 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 3"
-    },
-    {
-      "name": "4 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 4"
-    },
-    {
-      "name": "4 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 4"
     },
     {
       "name": "4 of Clubs",
@@ -364,60 +220,12 @@
       "description": "pokerplayer:Diamond 4"
     },
     {
-      "name": "4 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 4"
-    },
-    {
-      "name": "4 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 4"
-    },
-    {
       "name": "4 of Hearts",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "Ethereal.\npokerplayer:Heart 4"
-    },
-    {
-      "name": "4 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 4"
-    },
-    {
-      "name": "4 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 4"
-    },
-    {
-      "name": "4 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 4"
-    },
-    {
-      "name": "4 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 4"
     },
     {
       "name": "4 of Spades",
@@ -436,60 +244,12 @@
       "description": "pokerplayer:Club 5"
     },
     {
-      "name": "5 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 5"
-    },
-    {
-      "name": "5 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 5"
-    },
-    {
       "name": "5 of Diamonds",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "pokerplayer:Diamond 5"
-    },
-    {
-      "name": "5 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 5"
-    },
-    {
-      "name": "5 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 5"
-    },
-    {
-      "name": "5 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 5"
-    },
-    {
-      "name": "5 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 5"
     },
     {
       "name": "5 of Hearts",
@@ -508,60 +268,12 @@
       "description": "pokerplayer:Spade 5"
     },
     {
-      "name": "5 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 5"
-    },
-    {
-      "name": "5 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 5"
-    },
-    {
       "name": "6 of Clubs",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "pokerplayer:Club 6"
-    },
-    {
-      "name": "6 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 6"
-    },
-    {
-      "name": "6 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 6"
-    },
-    {
-      "name": "6 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 6"
-    },
-    {
-      "name": "6 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 6"
     },
     {
       "name": "6 of Diamonds",
@@ -580,60 +292,12 @@
       "description": "Ethereal.\npokerplayer:Heart 6"
     },
     {
-      "name": "6 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 6"
-    },
-    {
-      "name": "6 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 6"
-    },
-    {
       "name": "6 of Spades",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "pokerplayer:Spade 6"
-    },
-    {
-      "name": "6 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 6"
-    },
-    {
-      "name": "6 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 6"
-    },
-    {
-      "name": "7 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 7"
-    },
-    {
-      "name": "7 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 7"
     },
     {
       "name": "7 of Clubs",
@@ -652,60 +316,12 @@
       "description": "pokerplayer:Diamond 7"
     },
     {
-      "name": "7 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 7"
-    },
-    {
-      "name": "7 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 7"
-    },
-    {
       "name": "7 of Hearts",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "Ethereal.\npokerplayer:Heart 7"
-    },
-    {
-      "name": "7 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 7"
-    },
-    {
-      "name": "7 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 7"
-    },
-    {
-      "name": "7 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 7"
-    },
-    {
-      "name": "7 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 7"
     },
     {
       "name": "7 of Spades",
@@ -724,60 +340,12 @@
       "description": "pokerplayer:Club 8"
     },
     {
-      "name": "8 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 8"
-    },
-    {
-      "name": "8 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 8"
-    },
-    {
       "name": "8 of Diamonds",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "pokerplayer:Diamond 8"
-    },
-    {
-      "name": "8 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 8"
-    },
-    {
-      "name": "8 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 8"
-    },
-    {
-      "name": "8 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 8"
-    },
-    {
-      "name": "8 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 8"
     },
     {
       "name": "8 of Hearts",
@@ -796,38 +364,6 @@
       "description": "pokerplayer:Spade 8"
     },
     {
-      "name": "8 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 8"
-    },
-    {
-      "name": "8 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 8"
-    },
-    {
-      "name": "9 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 9"
-    },
-    {
-      "name": "9 of Clubs",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Club 9"
-    },
-    {
       "name": "9 of Clubs",
       "color": "Poker_player_gray",
       "rarity": "Special",
@@ -844,60 +380,12 @@
       "description": "pokerplayer:Diamond 9"
     },
     {
-      "name": "9 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 9"
-    },
-    {
-      "name": "9 of Diamonds",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Diamond 9"
-    },
-    {
       "name": "9 of Hearts",
       "color": "Poker_player_gray",
       "rarity": "Special",
       "type": "Poker",
       "cost": "1",
       "description": "Ethereal.\npokerplayer:Heart 9"
-    },
-    {
-      "name": "9 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 9"
-    },
-    {
-      "name": "9 of Hearts",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "Ethereal.\npokerplayer:Heart 9"
-    },
-    {
-      "name": "9 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 9"
-    },
-    {
-      "name": "9 of Spades",
-      "color": "Poker_player_gray",
-      "rarity": "Special",
-      "type": "Poker",
-      "cost": "1",
-      "description": "pokerplayer:Spade 9"
     },
     {
       "name": "9 of Spades",
@@ -1106,14 +594,6 @@
       "type": "Power",
       "cost": "1",
       "description": "At the start of your turn, shuffle a pokerplayer:non-Heart, pokerplayer:Rank 3 Poker card to your draw pile. Can be upgraded 7 times."
-    },
-    {
-      "name": "Card Printer <4>",
-      "color": "Poker_player_gray",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "At the start of your turn, shuffle a pokerplayer:non-Heart, pokerplayer:Rank 4 Poker card to your draw pile. Can be upgraded 6 more times."
     },
     {
       "name": "Card Printer <4>",
@@ -1609,7 +1089,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Choose 1 from ALL Poker Cards to add into your hand.\nExhaust."
+      "description": "Choose 1 from ALL pokerplayer:non-Heart Poker Cards to add into your hand.\nExhaust."
     },
     {
       "name": "Wild Card+",
@@ -1617,7 +1097,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Choose 1 from ALL Poker Cards to add into your hand.\nExhaust."
+      "description": "Choose 1 from ALL pokerplayer:non-Heart Poker Cards to add into your hand.\nExhaust."
     }
   ],
   "relics": [
@@ -1629,11 +1109,11 @@
       "flavorText": "Having this calms you down and help you quickly recover from bad conditions."
     },
     {
-      "name": "Bottled Poker",
+      "name": "Fair License",
       "tier": "Common",
       "pool": "Poker_player_gray",
-      "description": "Upon pick up, choose up to 3 Poker cards. Start each combat with these cards in your hand.",
-      "flavorText": "You feel nostalgic while looking at this bottle."
+      "description": "If you do not play any Poker cards during your turn, gain [E] next turn.",
+      "flavorText": "Great present for honest people."
     },
     {
       "name": "Splitter",
@@ -1641,6 +1121,13 @@
       "pool": "Poker_player_gray",
       "description": "Whenever you play a Poker card pokerplayer:ranked 3 or less, deal 5 damage to ALL enemies.",
       "flavorText": "The magical abilities of lower Poker cards shine!"
+    },
+    {
+      "name": "Bottled Poker",
+      "tier": "Uncommon",
+      "pool": "Poker_player_gray",
+      "description": "Upon pick up, choose up to 3 Poker cards. Start each combat with these cards in your hand.",
+      "flavorText": "You feel nostalgic while looking at this bottle."
     },
     {
       "name": "Broken Clock",
@@ -1653,7 +1140,7 @@
       "name": "Club Pass",
       "tier": "Uncommon",
       "pool": "Poker_player_gray",
-      "description": "Every time you play 2 cards containing \"Club\", gain 1 Club Power. (Your pokerplayer:Clubs deal additional damage equal to Club Power [REMOVE_SPACE].)",
+      "description": "Every time you play 2 cards containing \"Club\", gain 1 Club Power. (Your pokerplayer:Clubs deal additional damage equal to Club Power.)",
       "flavorText": "Of course it's the Club of Joke."
     },
     {
@@ -1662,13 +1149,6 @@
       "pool": "Poker_player_gray",
       "description": "At the start of each combat, add a 10 of pokerplayer:Spades with Ethereal into your hand. It costs 0.",
       "flavorText": "Contains tools for cooling your cool head."
-    },
-    {
-      "name": "Fair License",
-      "tier": "Uncommon",
-      "pool": "Poker_player_gray",
-      "description": "If you do not play any Poker cards during your turn and score any Poker hand, gain [E] [E] next turn.",
-      "flavorText": "Great present for honest people."
     },
     {
       "name": "Energetic Bat",
@@ -1713,8 +1193,7 @@
       "flavorText": "Touch this if you feel hopeless."
     }
   ],
-  "potions": [
-  ],
+  "potions": [],
   "creatures": [
     {
       "name": "the Poker Player",
@@ -1724,5 +1203,37 @@
     }
   ],
   "keywords": [
+    {
+      "name": "Club",
+      "description": "Showdown Effect: Deal X damage to all enemies."
+    },
+    {
+      "name": "Diamond",
+      "description": "Showdown Effect: Deal X damage to the enemy with the lowest HP."
+    },
+    {
+      "name": "Heart",
+      "description": "Showdown Effect: Heal X HP.\n(Hearts have Ethereal.)"
+    },
+    {
+      "name": "Poker Card",
+      "description": "Play to draw a card, or keep them until the end of your turn to enter Showdown."
+    },
+    {
+      "name": "Pokerplayer:rank",
+      "description": "The number of symbols on Poker Cards. The Showdown effect is proportional to the Rank."
+    },
+    {
+      "name": "Pokerplayer:showdown",
+      "description": "Receive the Showdown Effects from Poker Cards in your hand (max. 5 cards). They're boosted by Poker Hand you score."
+    },
+    {
+      "name": "Spade",
+      "description": "Showdown Effect: Gain X Block."
+    },
+    {
+      "name": "Pokerplayer:suit",
+      "description": "The shape of Poker Cards determining the effect."
+    }
   ]
 }

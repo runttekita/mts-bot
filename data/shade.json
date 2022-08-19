@@ -1,0 +1,1258 @@
+{
+  "mod": {
+    "name": "Shade Mod",
+    "version": "1.1",
+    "authors": ["Jove"],
+    "credits": "",
+    "description": "Adds the Shade character to the game. Art credits to CausticImp and all the other mods we borrowed art from.",
+    "mts_version": "3.16.0",
+    "sts_version": "1-27-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Animate Dead",
+      "color": "Shade_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon 1 shade:Zombie and 2 shade:Skeletons."
+    },
+    {
+      "name": "Animate Dead+",
+      "color": "Shade_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon 2 shade:Zombies and 2 shade:Skeletons."
+    },
+    {
+      "name": "Careful Cut",
+      "color": "Shade_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nDraw 1 card.\nExhaust a card."
+    },
+    {
+      "name": "Careful Cut+",
+      "color": "Shade_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDraw 1 card.\nExhaust a card."
+    },
+    {
+      "name": "Defend",
+      "color": "Shade_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Shade_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Shade_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Shade_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Ancient Spear",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage.\nExhaust."
+    },
+    {
+      "name": "Ancient Spear+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 29 damage.\nExhaust."
+    },
+    {
+      "name": "Bone Shards",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Sacrifice up to 2 shade:Skeletons to deal 9 damage each."
+    },
+    {
+      "name": "Bone Shards+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Sacrifice up to 4 shade:Skeletons to deal 12 damage each."
+    },
+    {
+      "name": "Bonestorm",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to all enemies.\nSummon 1 shade:Skeleton."
+    },
+    {
+      "name": "Bonestorm+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to all enemies.\nSummon 2 shade:Skeletons."
+    },
+    {
+      "name": "Brains",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a shade:Zombie.\nDraw 2 cards."
+    },
+    {
+      "name": "Brains+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon two shade:Zombies.\nDraw 2 cards."
+    },
+    {
+      "name": "Claw Back",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nReturn a random shade:Buried card to your draw pile."
+    },
+    {
+      "name": "Claw Back+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nReturn a random shade:Buried card to your draw pile."
+    },
+    {
+      "name": "Coffin Dance",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf your total number of shade:Zombies and shade:Skeletons is a multiple of 4, summon 2 shade:Zombies."
+    },
+    {
+      "name": "Coffin Dance+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nIf your total number of shade:Zombies and shade:Skeletons is a multiple of 4, summon 3 shade:Zombies."
+    },
+    {
+      "name": "Command Soldier",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a shade:Skeleton and trigger up to 2 shade:Skeleton attacks."
+    },
+    {
+      "name": "Command Soldier+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a shade:Skeleton and trigger up to 4 shade:Skeleton attacks."
+    },
+    {
+      "name": "Extra Limbs",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage 2 times.\nWhen Exhausted, increase the number of strikes by 1 this combat.\nExhaust."
+    },
+    {
+      "name": "Extra Limbs+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage 2 times.\nWhen Exhausted, increase the number of strikes by 1 this combat.\nExhaust."
+    },
+    {
+      "name": "Feral Strike",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to all enemies.\nAdd a *Wound to your hand.\nExhaust."
+    },
+    {
+      "name": "Feral Strike+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage to all enemies.\nAdd a *Wound to your hand.\nExhaust."
+    },
+    {
+      "name": "Finger of Death",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf it kills the target, summon 2 shade:Zombies."
+    },
+    {
+      "name": "Finger of Death+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nIf it kills the target, summon 2 shade:Zombies."
+    },
+    {
+      "name": "Flesh To Flesh",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon 3 shade:Zombies.\nAdd a *Wound to your discard pile."
+    },
+    {
+      "name": "Flesh To Flesh+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon 4 shade:Zombies.\nAdd a *Wound to your discard pile."
+    },
+    {
+      "name": "Frenzy",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Strength and Dexterity until next turn.\nExhaust."
+    },
+    {
+      "name": "Frenzy+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Strength and Dexterity until next turn.\nExhaust."
+    },
+    {
+      "name": "Fresh Bones",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a shade:Skeleton.\nYour shade:Skeletons deal 3 more damage for 1 turn."
+    },
+    {
+      "name": "Fresh Bones+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a shade:Skeleton.\nYour shade:Skeletons deal 3 more damage for 2 turns."
+    },
+    {
+      "name": "Funerary Armor",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nExhaust."
+    },
+    {
+      "name": "Funerary Armor+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 13 Block.\nExhaust."
+    },
+    {
+      "name": "Grave Stillness",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nYour shade:Zombies and shade:Skeletons decay by 1 less this turn."
+    },
+    {
+      "name": "Grave Stillness+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nYour shade:Zombies and shade:Skeletons decay by 1 less this turn."
+    },
+    {
+      "name": "Grey Bargain",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Return a shade:Buried card to your draw pile by exhausting a card in your hand."
+    },
+    {
+      "name": "Grey Bargain+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Return a shade:Buried card to your draw pile by exhausting a card in your hand.\nDraw a card."
+    },
+    {
+      "name": "Premonition",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nWhenever you summon a shade:Wraith, move this to your hand from wherever it is."
+    },
+    {
+      "name": "Premonition+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block.\nWhenever you summon a shade:Wraith, move this to your hand from wherever it is."
+    },
+    {
+      "name": "Skeleton Hug",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Summon a shade:Skeleton.\nDeal 7 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Skeleton Hug+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Summon a shade:Skeleton.\nDeal 10 damage.\nApply 3 Weak."
+    },
+    {
+      "name": "Trample",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to 4 times your number of shade:Zombies."
+    },
+    {
+      "name": "Trample+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to 5 times your number of shade:Zombies."
+    },
+    {
+      "name": "Wall of Flesh",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon 2 shade:Zombies and gain 8 Block."
+    },
+    {
+      "name": "Wall of Flesh+",
+      "color": "Shade_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon 2 shade:Zombies and gain 12 Block."
+    },
+    {
+      "name": "Ablative Armor",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Sacrifice a shade:Zombie to apply 2 Weak to all enemies and gain 1 Dexterity."
+    },
+    {
+      "name": "Ablative Armor+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Sacrifice a shade:Zombie to apply 3 Weak to all enemies and gain 1 Dexterity."
+    },
+    {
+      "name": "Asphyxiate",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Apply 7 Poison.\nDeal damage equal to the enemy's Poison.\nExhaust."
+    },
+    {
+      "name": "Asphyxiate+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Apply 9 Poison.\nDeal damage equal to the enemy's Poison.\nExhaust."
+    },
+    {
+      "name": "Aura of Unlife",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increase the decay constant by 2, slowing the decay of your shade:Zombies and shade:Skeletons."
+    },
+    {
+      "name": "Aura of Unlife+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Increase the decay constant by 2, slowing the decay of your shade:Zombies and shade:Skeletons."
+    },
+    {
+      "name": "Awaken",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Before your next turn, choose a shade:Buried card and return it to your hand.\nExhaust."
+    },
+    {
+      "name": "Awaken+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Before your next turn, choose a shade:Buried card and return it to your hand.\nExhaust."
+    },
+    {
+      "name": "Bite",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nHeal 2 HP."
+    },
+    {
+      "name": "Bite+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nHeal 3 HP."
+    },
+    {
+      "name": "Call Wraith",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose 5 HP.\nSummon a shade:Wraith.\nExhaust"
+    },
+    {
+      "name": "Call Wraith+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 5 HP.\nSummon a shade:Wraith.\nExhaust"
+    },
+    {
+      "name": "Call of the Grave",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, play a random shade:Buried skill and shade:Purge it."
+    },
+    {
+      "name": "Call of the Grave+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, play a random shade:Buried skill and shade:Purge it."
+    },
+    {
+      "name": "Carnophage",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw a Status or Curse card, summon a shade:Zombie."
+    },
+    {
+      "name": "Carnophage+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you draw a Status or Curse card, summon a shade:Zombie."
+    },
+    {
+      "name": "Cloud of Shrapnel",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Sacrifice a shade:Skeleton to deal 8 damage to all enemies and gain 1 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Cloud of Shrapnel+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Sacrifice a shade:Skeleton to deal 12 damage to all enemies and gain 1 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Dangerous Ritual",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 18 damage to all enemies.\nCosts 1 less per 2 cards Exhausted this combat."
+    },
+    {
+      "name": "Dangerous Ritual+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 24 damage to all enemies.\nCosts 1 less per 2 cards Exhausted this combat."
+    },
+    {
+      "name": "Doomsay",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage twice.\nScry 4."
+    },
+    {
+      "name": "Doomsay+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice.\nScry 6."
+    },
+    {
+      "name": "Excise",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nExhaust a card. If it's a Status or Curse, gain [E] and draw a card."
+    },
+    {
+      "name": "Excise+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nExhaust a card. If it's a Status or Curse, gain [E] and draw a card."
+    },
+    {
+      "name": "Flesh Like Oak",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nGain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Flesh Like Oak+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nGain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Flesh Offering",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Summon a shade:Wraith.\nGain 13 Block.\nAdd 4 *Wounds to your discard pile."
+    },
+    {
+      "name": "Flesh Offering+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Summon a shade:Wraith.\nGain 18 Block.\nAdd 4 *Wounds to your discard pile."
+    },
+    {
+      "name": "Funerary Jewels",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block. Draw 1 card. Gain [E].\nExhaust."
+    },
+    {
+      "name": "Funerary Jewels+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. Draw 1 card. Gain [E].\nExhaust."
+    },
+    {
+      "name": "Go Digging",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Sacrifice up to 2 shade:Skeletons. At the start of next turn, summon 2 shade:Zombies for each one sacrificed."
+    },
+    {
+      "name": "Go Digging+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Sacrifice up to 4 shade:Skeletons. At the start of next turn, summon 2 shade:Zombies for each one sacrificed."
+    },
+    {
+      "name": "Haruspicy",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 5 and draw 2 cards.\nSacrifice a shade:Zombie or lose 4 HP."
+    },
+    {
+      "name": "Haruspicy+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 6 and draw 3 cards.\nSacrifice a shade:Zombie or lose 4 HP."
+    },
+    {
+      "name": "Lye Bath",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Convert all your shade:Zombies into shade:Skeletons.\nDraw a card."
+    },
+    {
+      "name": "Lye Bath+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Convert all your shade:Zombies into shade:Skeletons.\nDraw two cards."
+    },
+    {
+      "name": "Open Graves",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Summon either a shade:Zombie or a shade:Skeleton at the beginning of your turn, alternating."
+    },
+    {
+      "name": "Open Graves+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Summon a shade:Skeleton.\nSummon either a shade:Zombie or a shade:Skeleton at the beginning of your turn, alternating."
+    },
+    {
+      "name": "Patience",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain your hand this turn."
+    },
+    {
+      "name": "Patience+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain your hand and your unspent energy this turn."
+    },
+    {
+      "name": "Potion of Madness",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Strength.\nDecrease the decay constant by 1, speeding up the decay of your shade:Zombies and shade:Skeletons."
+    },
+    {
+      "name": "Potion of Madness+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Strength.\nDecrease the decay constant by 1, speeding up the decay of your shade:Zombies and shade:Skeletons."
+    },
+    {
+      "name": "Pound of Flesh",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nNext turn, summon 2 shade:Zombies."
+    },
+    {
+      "name": "Pound of Flesh+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nNext turn, summon 3 shade:Zombies."
+    },
+    {
+      "name": "Press the Attack",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nYour shade:Skeletons deal 3 more damage for 1 turn."
+    },
+    {
+      "name": "Press the Attack+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nYour shade:Skeletons deal 3 more damage for 2 turns."
+    },
+    {
+      "name": "Ravenous Horde",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Lose 2 HP.\nSummon 2 X shade:Zombies."
+    },
+    {
+      "name": "Ravenous Horde+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Lose 2 HP.\nSummon 2 X + 1 shade:Zombies."
+    },
+    {
+      "name": "Ritual Offering",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust up to 2 cards from your draw pile.\nExhaust."
+    },
+    {
+      "name": "Ritual Offering+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust up to 2 cards from your draw pile.\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Sanguine Ritual",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 2 HP.\nGain [E] [E].\nExhaust."
+    },
+    {
+      "name": "Sanguine Ritual+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 2 HP.\nGain [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Scuttling Hand",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nWhen you play a card that Exhausts, return this from the discard pile to your hand."
+    },
+    {
+      "name": "Scuttling Hand+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nWhen you play a card that Exhausts, return this from the discard pile to your hand."
+    },
+    {
+      "name": "Sense Prey",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Summon a shade:Zombie and a shade:Skeleton for each enemy in combat.\nExhaust."
+    },
+    {
+      "name": "Sense Prey+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nSummon a shade:Zombie and a shade:Skeleton for each enemy in combat.\nExhaust"
+    },
+    {
+      "name": "Skeleton Army",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Summon 5 shade:Skeletons."
+    },
+    {
+      "name": "Skeleton Army+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Summon 8 shade:Skeletons."
+    },
+    {
+      "name": "Soul Toxin",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nTarget loses 3 HP.\nIf you have a shade:Wraith, apply 15 Poison."
+    },
+    {
+      "name": "Soul Toxin+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nTarget loses 5 HP.\nIf you have a shade:Wraith, apply 25 Poison."
+    },
+    {
+      "name": "Spectral Strikes",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you play a card containing \"Strike,\" shade:Purge it, draw a card, and gain 1 Strength."
+    },
+    {
+      "name": "Spectral Strikes+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhen you play a card containing \"Strike,\" shade:Purge it, draw a card, and gain 1 Strength."
+    },
+    {
+      "name": "Spontaneous Ritual",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaust your hand.\nDeal damage equal to the number of cards Exhausted this combat."
+    },
+    {
+      "name": "Spontaneous Ritual+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Add 3 *Dazed to your hand.\nExhaust your hand.\nDeal damage equal to the number of cards Exhausted this combat."
+    },
+    {
+      "name": "Stitch Together",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The next time you draw a Status or Curse card, Exhaust it, draw a card, and heal 7 HP."
+    },
+    {
+      "name": "Stitch Together+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The next time you draw a Status or Curse card, Exhaust it, draw a card, and heal 10 HP."
+    },
+    {
+      "name": "Vengeful Dead",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, play a random shade:Buried attack and shade:Purge it."
+    },
+    {
+      "name": "Vengeful Dead+",
+      "color": "Shade_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, play a random shade:Buried attack and return it to your discard pile."
+    },
+    {
+      "name": "Consume",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust the top 3 cards of your deck.\nAdd 3 *Wounds to your discard pile.\nDeal 21 damage to all enemies."
+    },
+    {
+      "name": "Consume+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust the top 4 cards of your deck.\nAdd 4 *Wounds to your discard pile.\nDeal 28 damage to all enemies."
+    },
+    {
+      "name": "Coordination",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your shade:Skeletons' attacks hit all enemies."
+    },
+    {
+      "name": "Coordination+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your shade:Skeletons' attacks all enemies.\nTrigger up to 2 shade:Skeleton attacks."
+    },
+    {
+      "name": "Dark of Night",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Your next card that Exhausts this turn is played twice."
+    },
+    {
+      "name": "Dark of Night+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Your next two cards that Exhaust this turn are played twice."
+    },
+    {
+      "name": "Ethereal Offering",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "The next time you Exhaust 3 cards in one turn, summon a shade:Wraith."
+    },
+    {
+      "name": "Ethereal Offering+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "The next time you Exhaust 2 cards in one turn, summon a shade:Wraith."
+    },
+    {
+      "name": "Greater Animation",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Summon 1 shade:Zombie, 2 shade:Skeletons, and 1 shade:Wraith.\nLose 1 Strength and 1 Dexterity."
+    },
+    {
+      "name": "Greater Animation+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Summon 1 shade:Zombie, 2 shade:Skeletons, and 1 shade:Wraith."
+    },
+    {
+      "name": "Last Gasp",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nChoose a shade:Buried card, play it, and shade:Purge it."
+    },
+    {
+      "name": "Last Gasp+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a shade:Buried card, play it, and shade:Purge it."
+    },
+    {
+      "name": "Lich Form",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, summon 3 shade:Skeletons."
+    },
+    {
+      "name": "Lich Form+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, summon 5 shade:Skeletons."
+    },
+    {
+      "name": "Lose Control",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 *Wounds to your discard pile.\nDraw 3 cards."
+    },
+    {
+      "name": "Lose Control+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 2 *Wounds to your discard pile.\nDraw 4 cards."
+    },
+    {
+      "name": "Lunar Madness",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon 8 shade:Skeletons.\nAfter the end of your turn, your shade:Skeletons attack you."
+    },
+    {
+      "name": "Lunar Madness+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nSummon 8 shade:Skeletons.\nAfter the end of your turn, your shade:Skeletons attack you."
+    },
+    {
+      "name": "Ominous Ritual",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain Block and deal damage to all enemies equal to the number of cards Exhausted this combat."
+    },
+    {
+      "name": "Ominous Ritual+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Add 3 *Dazed to your hand.\nGain Block and deal damage to all enemies equal to the number of cards Exhausted this combat."
+    },
+    {
+      "name": "One Is Enough",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Sacrifice all your undead for 5 Block each.\nDeal 10 damage X times."
+    },
+    {
+      "name": "One Is Enough+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Sacrifice all your undead for 6 Block each.\nDeal 13 damage X times."
+    },
+    {
+      "name": "Putrefaction",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever a shade:Zombie dies, apply 2 Poison to all enemies."
+    },
+    {
+      "name": "Putrefaction+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a shade:Zombie dies, apply 2 Poison to all enemies."
+    },
+    {
+      "name": "Self-burial",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return all shade:Buried cards to your deck by exhausting your hand and next 10 cards.\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Self-burial+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return all shade:Buried cards to your deck by exhausting your hand and next 10 cards.\nDraw 5 cards.\nExhaust."
+    },
+    {
+      "name": "Soul Pierce",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your shade:Wraiths deal 40 more damage."
+    },
+    {
+      "name": "Soul Pierce+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your shade:Wraiths deal 60 more damage."
+    },
+    {
+      "name": "Tombstone",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 36 damage.\nExhaust."
+    },
+    {
+      "name": "Tombstone+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 48 damage.\nExhaust."
+    },
+    {
+      "name": "Unbar the Grave",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon 2 shade:Zombies and 2 shade:Skeletons.\nReturn 2 random shade:Buried cards to your draw pile.\nExhaust."
+    },
+    {
+      "name": "Unbar the Grave+",
+      "color": "Shade_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon 3 shade:Zombies and 3 shade:Skeletons.\nReturn 3 random shade:Buried cards to your draw pile.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Yorick's Skull",
+      "tier": "Starter",
+      "pool": "Shade_color",
+      "description": "Start each combat with a shade:Zombie. Whenever you play 10 cards, summon a shade:Zombie.",
+      "flavorText": "I knew him, alas."
+    },
+    {
+      "name": "Thing",
+      "tier": "Rare",
+      "pool": "Shade_color",
+      "description": "When you return a shade:Buried card to your hand or deck, gain 3 Block.",
+      "flavorText": "Its creepy."
+    },
+    {
+      "name": "Yorick's Polished Skull",
+      "tier": "Boss",
+      "pool": "Shade_color",
+      "description": "Start each combat with a shade:Zombie and 2 shade:Skeletons. Whenever you play 10 cards, summon a shade:Zombie and 2 shade:Skeletons.",
+      "flavorText": "I knew him, alas."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Shade",
+      "type": "Player",
+      "minHP": "65",
+      "maxHP": "65"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Buried",
+      "description": "A class card (not Colorless, Status, or Curse) from your exhaust pile."
+    },
+    {
+      "name": "Purge",
+      "description": "Removed from play until the end of combat."
+    },
+    {
+      "name": "Skeleton",
+      "description": "Undead that deal damage at the end of your turn."
+    },
+    {
+      "name": "Unearth",
+      "description": "Move a card from your exhaust pile."
+    },
+    {
+      "name": "Wraith",
+      "description": "Undead that render you intangible if attacked, and deal damage if not."
+    },
+    {
+      "name": "Zombie",
+      "description": "Undead that sacrifice themselves to block for you."
+    }
+  ]
+}

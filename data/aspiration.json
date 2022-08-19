@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "Aspiration",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "authors": ["erasels"],
     "credits": "",
     "description": "A mod adding relics, cards and events with varying themes. There's no real end goal behind it, just me implementing neat ideas that come my way via reddit, Discord, other games or even my imagination.\n\n For a full list of everything added and an up to date look at what I'm working on, you can take a look at my Github Repository here: https://github.com/erasels/Aspiration-StS/ \n\nLet me know if you have questions, suggestions or found an error.",
-    "mts_version": "3.8.0",
-    "sts_version": "01-23-2019",
+    "mts_version": "3.15.0",
+    "sts_version": "14-01-2019",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -42,22 +42,6 @@
       "type": "Skill",
       "cost": "1",
       "description": "aspiration:Fuse all your orbs.\nExhaustive !stslib:ex!."
-    },
-    {
-      "name": "Unbridled Hammer",
-      "color": "Runesmith_beige",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "X",
-      "description": "Deal 5 damage to a random enemy X times. runesmith:Enhance a random card in your hand X times."
-    },
-    {
-      "name": "Unbridled Hammer+",
-      "color": "Runesmith_beige",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "X",
-      "description": "Deal 5 damage to a random enemy X+1 times. runesmith:Enhance a random card in your hand X+1 times."
     }
   ],
   "relics": [
@@ -95,20 +79,6 @@
       "pool": "",
       "description": "Right click during combat to activate.Consume all charges and deal 3 damage to a random enemy for each.\nGain 1 Charge everytime you gain gold.",
       "flavorText": "A mysterious arcade coin that can store large amounts of electricity. If enough is stored, maybe you could create a railgun?"
-    },
-    {
-      "name": "Tome of Questing",
-      "tier": "Common",
-      "pool": "",
-      "description": "Whenever you complete a quest, obtain a new one.",
-      "flavorText": "Why does it tell you to move from one floor to another all the time?"
-    },
-    {
-      "name": "Trusty Knives",
-      "tier": "Common",
-      "pool": "Silver",
-      "description": "Whenever you lose a Knife [REMOVE_SPACE], gain 1 Protection [REMOVE_SPACE].",
-      "flavorText": "It would be embarrassing if you were to cut yourself."
     },
     {
       "name": "Vile Toxins",
@@ -209,6 +179,13 @@
       "flavorText": "The tail of a fearsome Snecko. The fluids it secretes are excellent for transferring your toxins."
     },
     {
+      "name": "The D6",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Right click to activate.Reroll all Relic and Potion rewards in the current reward screen. Works 6 times.",
+      "flavorText": "Destiny, but a dice roll away."
+    },
+    {
       "name": "Art of War (read)",
       "tier": "Special",
       "pool": "",
@@ -244,13 +221,6 @@
       "flavorText": "\"How do you reach a heart? With a knife.\" - Blizzarre, runic archmagus"
     },
     {
-      "name": "Bard's Skillbook",
-      "tier": "Boss",
-      "pool": "",
-      "description": "Each card you play may also bard:Queue bard:Notes. At the end of your turn, bard:Queue a [WildNote] [REMOVE_SPACE].\n\nMulticlass Bard",
-      "flavorText": "A notebook used as a book for notes."
-    },
-    {
       "name": "Burster Core",
       "tier": "Boss",
       "pool": "",
@@ -279,24 +249,17 @@
       "flavorText": "An abused book that contains the hasty scribbles of an angry being."
     },
     {
-      "name": "Mobile Forge",
-      "tier": "Boss",
-      "pool": "",
-      "description": "Whenever you play an upgraded card, runesmith:Enhance a random card in your hand. Whenever you play an enhanced card, Upgrade a random card in your hand.",
-      "flavorText": "A pet-like machine that started to follow you on your journey."
-    },
-    {
       "name": "Poet's Pen",
       "tier": "Boss",
       "pool": "",
-      "description": "Every time you play an Attack [REMOVE_SPACE], play the top card of your draw pile if it's an Attack [REMOVE_SPACE], otherwise discard it.",
+      "description": "Whenever you play an Attack [REMOVE_SPACE], play the top card of your draw pile if it's an Attack [REMOVE_SPACE], otherwise discard it.",
       "flavorText": "In every piece of prose, lies a tiny spark of magic. With this tool, you may craft beauty even on this most dreary of canvasses."
     },
     {
       "name": "Poet's Pen",
       "tier": "Boss",
       "pool": "",
-      "description": "Every time you play an Attack [REMOVE_SPACE], play the top card of your draw pile.\nStart combat with 6 stacks of Weak [REMOVE_SPACE], Frail and Vulnerable on you, reduced by Experience [REMOVE_SPACE].",
+      "description": "Whenever you play an Attack [REMOVE_SPACE], play the top card of your draw pile.\nStart combat with 6 stacks of Weak [REMOVE_SPACE], Frail and Vulnerable on you, reduced by Experience [REMOVE_SPACE].",
       "flavorText": "In every piece of prose, lies a tiny spark of magic. With this tool, you may craft beauty even on this most dreary of canvasses."
     },
     {
@@ -314,17 +277,10 @@
       "flavorText": "With every move you make, you feel the dagger dig in deeper into your being. You fear what you may become if you give in."
     },
     {
-      "name": "Runesmith's Skillbook",
-      "tier": "Boss",
-      "pool": "",
-      "description": "The first time you play an Attack each turn, for each prior turn ended without playing an Attack [REMOVE_SPACE], runesmith:Enhance that many random cards in your hand that amount of times.\n\nMulticlass Runesmith",
-      "flavorText": "This seems to be a beginners guide to arcane forgery. The hammer section has been taken special care of."
-    },
-    {
       "name": "Runic Spoon",
       "tier": "Boss",
       "pool": "",
-      "description": "In each combat, add a copy of every 3rd card you personally play into your hand.",
+      "description": "In each combat, add a copy of every 3rd card you manually play into your hand.",
       "flavorText": "Maybe you could read the runes if the spoon didn't wiggle around so much."
     },
     {
@@ -335,25 +291,11 @@
       "flavorText": "\"Promise me you'll never use these\" - Teacher"
     },
     {
-      "name": "Servant's Skillbook",
-      "tier": "Boss",
-      "pool": "",
-      "description": "At the start of each turn, if you took no HP damage last turn, gain 3 Sattelites [REMOVE_SPACE]. Whenever a Sattelite is used, gain Protection equal to its damage.\n\nMulticlass Servant",
-      "flavorText": "An elegant list on how to clean a... mansion? graces these pages."
-    },
-    {
       "name": "Silent's Skillbook",
       "tier": "Boss",
       "pool": "",
       "description": "Whenever you play 4 or more cards on your turn, at the start of your next turn, discard any number of cards then draw that many.\n\nMulticlass Silent",
       "flavorText": "Pages filled with information on how to deal with this place. A talk with the author should be enlightening."
-    },
-    {
-      "name": "Spell Scribe's Skillbook",
-      "tier": "Boss",
-      "pool": "",
-      "description": "Whenever you gain a buff [REMOVE_SPACE], gain a random scribe:Spell_Effect [REMOVE_SPACE].\n\nMulticlass Spell Scribe",
-      "flavorText": "A tome filled to the brim with spells of all sorts."
     },
     {
       "name": "Stellarator",
@@ -363,11 +305,11 @@
       "flavorText": "Who needs the Inserter if you can just squeeze!"
     },
     {
-      "name": "Earplugs",
-      "tier": "Shop",
-      "pool": "Bard_color",
-      "description": "Whenever you would gain bard:Inspiration [REMOVE_SPACE], apply 1 Weak and Vulnerable for every 25 inspiration to a random enemy instead.",
-      "flavorText": "Faith in ones skills is always useful in one way or another."
+      "name": "Watcher's Skillbook",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you spend 2 or more [E] [REMOVE_SPACE], gain Mantra equal to the amount spent.\n\nMulticlass Watcher",
+      "flavorText": ""
     },
     {
       "name": "Kaom's Heart",
@@ -389,5 +331,9 @@
   "creatures": [
   ],
   "keywords": [
+    {
+      "name": "Aspiration:Fuse",
+      "description": "Combine multiple orbs and their effects into a single orb."
+    }
   ]
 }

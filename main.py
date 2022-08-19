@@ -143,6 +143,11 @@ async def get_id(message):
             "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch"
         )
         return
+    if s == "cardmods":
+        await message.channel.send(
+            "https://github.com/daviscook477/BaseMod/wiki/CardModifiers"
+        )
+        return
     if s == "optin":
         await message.channel.send(
             "https://github.com/velvet-halation/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback"
@@ -215,6 +220,8 @@ async def do_command(channel, tokenized_message):
         "bug": dm_modder,
         "feedback": dm_modder,
         "find": find,
+        "findcard": find,
+        "findrelic": findrelic,
         "modder": get_mods_by_author,
         "mod": get_mod_info
     }
@@ -362,9 +369,9 @@ async def find(channel, tokenized_message):
             if cost is not None:
                 failure += "with cost " + cost + " "
             if type is not None:
-                failure += "with type " + type + " "
+                failure += "of type " + type + " "
             if rarity is not None:
-                failure += "with rarity " + rarity + " "
+                failure += "of rarity " + rarity + " "
                 
             if len(tokenized_message) == 3:
                 failure += f"with {data} in the {search_field} found in {tokenized_message[1]}."
@@ -429,6 +436,105 @@ async def find(channel, tokenized_message):
     except TimeoutError:
         await channel.send("Unable to find a match in time!")
 
+
+@client.event
+async def findrelic(channel, tokenized_message):
+    """
+    find a relic
+    -n causes to search name rather than description
+    -c= to specify a color
+    -t= to specify tier
+    """
+    try:
+        with timeout.timeout(1):
+            relics = Mod_Data(tokenized_message[1]).data
+            random.shuffle(relics)
+            first_match = {}
+            other_results = {}
+            
+            search_field = "description"
+            tier = None
+            color = None
+            
+            if len(tokenized_message) == 3:
+                tokens = tokenized_message[2].split()
+            else:
+                tokens = tokenized_message[1].split()
+            
+            data = ""
+            
+            for item in tokens:
+                if data == "": # Once any value is found, the rest should be input regex
+                    if item == "-n" and search_field != "name":
+                        search_field = "name"
+                        continue
+                    if color is None and item.startswith("-c=") and len(item) > 3:
+                        color = item[3:]
+                        continue
+                    if tier is None and item.startswith("-t=") and len(item) > 3:
+                        tier = item[3:]
+                        continue
+                
+                data += item + " "
+                
+            data = data[:-1]
+
+            if data == "":
+                data = "^[\s\S]*$"
+                
+            regex = re.compile(data)
+            
+            failure = "No relic "
+            if color is not None:
+                failure += "of color " + color + " "
+            if tier is not None:
+                failure += "of tier " + tier + " "
+                
+            if len(tokenized_message) == 3:
+                failure += f"with {data} in the {search_field} found in {tokenized_message[1]}."
+            else:
+                failure += f"with {data} in the {search_field} found."
+                
+            for x in range(len(relics)):
+                for relic in relics[x]["relics"]:
+                    if tier is not None and relic["tier"].lower() != tier:
+                        continue
+                    if color is not None and relic["pool"].lower() != color:
+                        continue
+                    
+                    if regex.search(relic[search_field].lower()):
+                        if "mod" in relics[x]:
+                            if not first_match:
+                                first_match.update({relics[x]["mod"]["name"]: relic})
+                            else:
+                                if len(other_results) < 3:
+                                    other_results.update(
+                                        {relics[x]["mod"]["name"]: relic["name"]}
+                                    )
+                        else:
+                            if not first_match:
+                                first_match.update({relic["mod"]: relic})
+                            else:
+                                if len(other_results) < 3:
+                                    other_results.update({relic["mod"]: relic["name"]})
+                                    
+            message = ""
+            if first_match:
+                for key in first_match:
+                    message += relic_format(first_match.get(key), key) + "\n"
+                if len(other_results) > 3:
+                    other_results = other_results[:2]
+                if other_results:
+                    message += "Other matches include:\n"
+                    for match in other_results:
+                        name = other_results.get(match)
+                        message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
+                await channel.send(message)
+                return
+            await channel.send(failure)
+    except TimeoutError:
+        await channel.send("Unable to find a match in time!")
+        
 
 def makeCaps(string):
     split_word = string.split(" ")

@@ -1,0 +1,2131 @@
+{
+  "mod": {
+    "name": "100% Spire Juice",
+    "version": "0.9.0",
+    "authors": ["MistressAlison"],
+    "credits": "Art Assets - Orange_Juice and Fruitbat Factory\nBaseMod, ModTheSpire, and StSLib - Bug Kiooeht\nStSDefaultModBase - Gremious\nBeta Testing - Spookalon, Skyson, Fenec250, reina\nCharacter Animation Assistance - Darkglade\nMisc. Coding Assistance - Gk, Jobby, Kio, Darkglade, Jedi, Alchyr, Vex, Teafling, and many more from #modding-technical in general\nSimplified Chinese Translation - Anonymous User\nKorean Translation - Tsurumaki Maki",
+    "description": "Adds Star Breaker from 100% Orange Juice. \n\nIncluding 80+ cards and 0% original art!",
+    "mts_version": "3.19.1",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Ambush",
+      "color": "White_ice_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 1 Vulnerable.\nThen deal 5 damage.\nNorma 3: This Attack will moonworks:Pierce."
+    },
+    {
+      "name": "Ambush+",
+      "color": "White_ice_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable.\nThen deal 7 damage.\nNorma 3: This Attack will moonworks:Pierce."
+    },
+    {
+      "name": "Defend",
+      "color": "White_ice_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nNorma 1: +1 Block.\nNorma 3: +1 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "White_ice_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nNorma 1: +1 Block.\nNorma 3: +1 Block."
+    },
+    {
+      "name": "Long-Distance Shot",
+      "color": "White_ice_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 moonworks:Piercing Damage.\nDraw this card whenever you generate a Norma level.\nNorma 3: Draw 1 card if this effect has uses. Uses: 2."
+    },
+    {
+      "name": "Long-Distance Shot+",
+      "color": "White_ice_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 moonworks:Piercing Damage.\nDraw this card whenever you generate a Norma level.\nNorma 3: Draw 1 card if this effect has uses. Uses: 3."
+    },
+    {
+      "name": "Strike",
+      "color": "White_ice_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nNorma 2: +1 damage.\nNorma 4: +2 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "White_ice_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nNorma 2: +1 damage.\nNorma 4: +2 damage."
+    },
+    {
+      "name": "Air Strike",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 moonworks:Splash Damage to ALL enemies.\nPurge."
+    },
+    {
+      "name": "Air Strike+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 moonworks:Splash Damage to ALL enemies.\nPurge."
+    },
+    {
+      "name": "Big Rocket Cannon",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies.\nShuffle 1 Air Strike into your draw pile.\nPurge."
+    },
+    {
+      "name": "Big Rocket Cannon+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage to ALL enemies.\nShuffle 1 Air [diffAddS] Strike+ [diffAddE] into your draw pile.\nPurge. "
+    },
+    {
+      "name": "Evil Spy Work Execution",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Autoplay.\nDeal 4 damage to ALL enemies.\nDraw 1 card.\nPurge."
+    },
+    {
+      "name": "Evil Spy Work Execution+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Autoplay.\nDeal 6 damage to ALL enemies.\nDraw 1 card.\nPurge."
+    },
+    {
+      "name": "Lulu's Luckiest Egg",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block 2 times.\nDraw 2 cards.\nGain 2 temporary Dexterity."
+    },
+    {
+      "name": "Lulu's Luckiest Egg+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block 3 times.\nDraw 3 cards.\nGain 3 temporary Dexterity."
+    },
+    {
+      "name": "Magical Inferno",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 moonworks:Splash Damage to ALL enemies.\nGain 5 Vigor.\nExhaustive 0."
+    },
+    {
+      "name": "Magical Inferno+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 moonworks:Splash Damage to ALL enemies.\nGain 7 Vigor.\nExhaustive 0."
+    },
+    {
+      "name": "Magical Massacre",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "The healthiest enemy loses 8 HP and max HP.\nGain 5 moonworks:Steady.\nExhaustive 0."
+    },
+    {
+      "name": "Magical Massacre+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "The healthiest enemy loses 12 HP and max HP.\nGain 7 moonworks:Steady.\nExhaustive 0."
+    },
+    {
+      "name": "Magical Revenge",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 25 % of your missing HP as moonworks:Revenge Damage with 33 % moonworks:Life_Steal.\n(Deals 0 damage.)\nExhaustive 0."
+    },
+    {
+      "name": "Magical Revenge+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 33 % of your missing HP as moonworks:Revenge Damage with 50 % moonworks:Life_Steal.\n(Deals 0 damage.)\nExhaustive 0."
+    },
+    {
+      "name": "Star Blasting Light",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 to 5 moonworks:Blasting_Light to ALL enemies.\nPurge.\nNorma X: +X moonworks:Blasting_Light."
+    },
+    {
+      "name": "Star Blasting Light+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 4 to 7 moonworks:Blasting_Light to ALL enemies.\nPurge.\nNorma X: +X moonworks:Blasting_Light."
+    },
+    {
+      "name": "Truly Golden Egg",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nAdd 1 of 3 random Attack cards to your hand, it costs 0 this turn."
+    },
+    {
+      "name": "Truly Golden Egg+",
+      "color": "White_ice_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nAdd 1 of 3 random Attack cards to your hand, it costs 0 this turn."
+    },
+    {
+      "name": "Assault",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 moonworks:Piercing Damage.\nNorma 2: The Pierce effect will be twice as strong."
+    },
+    {
+      "name": "Assault+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 moonworks:Piercing Damage.\nNorma 2: The Pierce effect will be twice as strong."
+    },
+    {
+      "name": "Beast Witch",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 2 temporary Strength.\nNorma 2: +2 damage."
+    },
+    {
+      "name": "Beast Witch+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 3 temporary Strength.\nNorma 2: +2 damage."
+    },
+    {
+      "name": "Blue Crow",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 2 Block.\nGains +2 Block for each Attack in your hand."
+    },
+    {
+      "name": "Blue Crow the Second",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": " [diffAddS] Retain.\n[diffAddE] Deal 6 damage.\nGain 2 Block.\nGains +2 Block for each Attack in your hand. "
+    },
+    {
+      "name": "Cloud of Seagulls",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 moonworks:Fixed Damage to a random target 2 times.\nAdd 1 Jonathan Rush to your hand.\nNorma 2: Draw 1 card."
+    },
+    {
+      "name": "Cloud of Seagulls+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 moonworks:Fixed Damage to a random [diffAddS] enemy [diffAddE] 3 times.\nAdd 1 Jonathan [diffAddS] Rush+ [diffAddE] to your hand. \nNorma 2: Draw 1 card."
+    },
+    {
+      "name": "Completion Reward",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deals damage for every card played this combat.\n(Deals 0 damage.)\nNorma 2: +6 damage."
+    },
+    {
+      "name": "Completion Reward+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deals damage for every card played this combat.\n(Deals 0 damage.)\nNorma 2: +6 damage."
+    },
+    {
+      "name": "Delta Field",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies gain 1 Vulnerable and lose 1 temporary Strength."
+    },
+    {
+      "name": "Delta Field+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ALL enemies gain 1 Vulnerable and lose 2 temporary Strength."
+    },
+    {
+      "name": "Deploy Bits",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain a total of 10 randomly distributed Block and Vigor.\nNorma 4: Bit distribution is now moonworks:Optimized."
+    },
+    {
+      "name": "Deploy Bits+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain a total of 14 randomly distributed Block and Vigor.\nNorma 4: Bit distribution is now moonworks:Optimized."
+    },
+    {
+      "name": "Desperate Modification",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the enemy intends to attack you, gain 12 Block and Exhaust instead."
+    },
+    {
+      "name": "Desperate Modification+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf the enemy intends to attack you, gain 16 Block and Exhaust instead."
+    },
+    {
+      "name": "Evil Spy Work Preparation",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 3 Evil Spy Work Execution into your draw pile."
+    },
+    {
+      "name": "Evil Spy Work Preparation+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 4 Evil Spy Work Execution into your draw pile."
+    },
+    {
+      "name": "Extraordinary Specs",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 temporary Strength and Dexterity.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Extraordinary Specs+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 temporary Strength and Dexterity.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Golden Egg",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nShuffle a random Attack into your draw pile.\nNorma 2: Add the card to your hand instead."
+    },
+    {
+      "name": "Golden Egg+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nShuffle a random Attack into your draw pile.\nNorma 2: Add the card to your hand instead."
+    },
+    {
+      "name": "I'm On Fire!",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Vigor and 1 Vulnerable.\nNorma 4: -10 Vigor, gain double damage this turn."
+    },
+    {
+      "name": "I'm On Fire!+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Vigor and 1 Vulnerable.\nNorma 4: -10 Vigor, gain double damage this turn."
+    },
+    {
+      "name": "Indiscriminate Fire",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 7 damage to ALL enemies X times.\nShuffle 2 Dazed into your draw pile.\nNorma 2: Shuffle 1 less Dazed into your draw pile."
+    },
+    {
+      "name": "Indiscriminate Fire+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 10 damage to ALL enemies X times.\nShuffle 2 Dazed into your draw pile.\nNorma 2: Shuffle 1 less Dazed into your draw pile."
+    },
+    {
+      "name": "Jonathan Rush",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Autoplay.\nDeal 3 damage to a random enemy.\nIncrease the damage of ALL Jonathan Rush cards this combat by 2."
+    },
+    {
+      "name": "Jonathan Rush+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Autoplay.\nDeal 3 damage to a random enemy.\nIncrease the damage of ALL Jonathan Rush cards this combat by 3."
+    },
+    {
+      "name": "Lulu's Lucky Egg",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nTrigger 1 of 3 effects:\nDraw 2 cards.\nGain Block 2 times instead.\nGain 2 temporary Dexterity."
+    },
+    {
+      "name": "Lulu's Lucky Egg+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nTrigger 1 of 3 effects:\nDraw 3 cards.\nGain Block 3 times instead.\nGain 3 temporary Dexterity."
+    },
+    {
+      "name": "Nice Present",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nExhaust.\nNorma 2: Drawn cards will Retain this turn."
+    },
+    {
+      "name": "Nice Present+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nExhaust.\nNorma 2: Drawn cards will Retain this turn."
+    },
+    {
+      "name": "Quick Restoration",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block 2 times.\nNorma 3: -1 Block, but gain Block +1 time."
+    },
+    {
+      "name": "Quick Restoration+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block 2 times.\nNorma 3: -1 Block, but gain Block +1 time."
+    },
+    {
+      "name": "Rainbow-Colored Circle",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Convert 6 Block into moonworks:Steady.\nNorma 2: +4 Block Conversion and Optimize."
+    },
+    {
+      "name": "Rainbow-Colored Circle+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Convert 6 Block into moonworks:Steady.\nNorma 2: +4 Block Conversion and Optimize."
+    },
+    {
+      "name": "Rbits",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nGain 2 moonworks:Steady."
+    },
+    {
+      "name": "Rbits+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nGain 3 moonworks:Steady."
+    },
+    {
+      "name": "Saki's Cookie",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 2 HP.\nExhaust.\nNorma 4: Also draw 1 card."
+    },
+    {
+      "name": "Saki's Cookie+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 3 HP.\nExhaust.\nNorma 4: Also draw 1 card."
+    },
+    {
+      "name": "Unforgiving Avenger",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 moonworks:Revenge Damage.\nApply 1 Weak.\nNorma 2: +2 damage."
+    },
+    {
+      "name": "Unforgiving Avenger+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 moonworks:Revenge Damage.\nApply 2 Weak.\nNorma 2: +2 damage."
+    },
+    {
+      "name": "White Christsmasher",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice.\nIf you are holding Red & Blue, this instead hits ALL enemies."
+    },
+    {
+      "name": "White Christsmasher+",
+      "color": "White_ice_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice.\nIf you are holding Red & Blue, this instead hits ALL enemies."
+    },
+    {
+      "name": "Angel Hand",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 10 Block.\nOn retain, this card changes into Devil Hand."
+    },
+    {
+      "name": "Angel Hand+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 14 Block.\nOn retain, this card changes into Devil Hand."
+    },
+    {
+      "name": "Awakening Of Talent",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nGain 7 Block.\nDraw 1 card.\nIf this kills an enemy, gain [E].\nNorma 4: Gain [E]."
+    },
+    {
+      "name": "Awakening Of Talent+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nGain 10 Block.\nDraw 1 card.\nIf this kills an enemy, gain [E].\nNorma 4: Gain [E]."
+    },
+    {
+      "name": "Backdoor Trade",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 moonworks:Norma.\nExhaust.\nNorma 5: Don't exhaust, draw 2 cards."
+    },
+    {
+      "name": "Backdoor Trade+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 moonworks:Norma.\nExhaust.\nNorma 5: Don't exhaust, draw 2 cards."
+    },
+    {
+      "name": "Beyond Hell",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Vigor for every 5 missing HP.\nExhaust.\nNorma 5: Gain Vigor for every 3 missing HP instead."
+    },
+    {
+      "name": "Beyond Hell+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Vigor for every 5 missing HP.\nExhaust.\nNorma 5: Gain Vigor for every 3 missing HP instead."
+    },
+    {
+      "name": "Big Bang Bell",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 10 Big Bang Bell.\nDraw this card whenever you generate a Norma level.\nExhaust.\nNorma 3: +5 base amount."
+    },
+    {
+      "name": "Big Bang Bell+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 15 Big Bang Bell.\nDraw this card whenever you generate a Norma level.\nExhaust.\nNorma 3: +5 base amount."
+    },
+    {
+      "name": "Big Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 4 this combat.\nCan be upgraded 5 times."
+    },
+    {
+      "name": "Bigger Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 6 this combat.\nCan be upgraded 5 times."
+    },
+    {
+      "name": "Biggest Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 9 this combat.\nCan be upgraded 5 times."
+    },
+    {
+      "name": "Biggester Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 13 this combat.\nCan be upgraded 5 times."
+    },
+    {
+      "name": "Biggestest Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 18 this combat.\nCan be upgraded 5 times."
+    },
+    {
+      "name": "Biggestestest Magnum",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 4 Vigor.\nIncrease this card's Vigor gain by 24 this combat.\nCan be upgraded 5 times."
+    },
+    {
+      "name": "Binding Chains",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Target loses 6 Strength this turn and gains 1 Vulnerable. moonworks:Splash.\nExhaust."
+    },
+    {
+      "name": "Binding Chains+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Target loses 8 Strength this turn and gains 2 Vulnerable. moonworks:Splash.\nExhaust."
+    },
+    {
+      "name": "Bloodlust",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Upon attacking, gain 2 temporary Strength for ALL attacks you make this turn."
+    },
+    {
+      "name": "Bloodlust+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Upon attacking, gain 3 temporary Strength for ALL attacks you make this turn."
+    },
+    {
+      "name": "Cast Off",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose all Block.\nGain Vigor equal to the amount of Block lost.\nExhaust.\nNorma 2: Gain 5 moonworks:Steady."
+    },
+    {
+      "name": "Cast Off+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose all Block.\nGain Vigor equal to the amount of Block lost.\nExhaust.\nNorma 2: Gain 5 moonworks:Steady."
+    },
+    {
+      "name": "Cooking Time",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Everyone heals 3 HP. Deals damage equal to the amount healed.\nExhaust.\nNorma 3: +3 HP healed."
+    },
+    {
+      "name": "Cooking Time+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Everyone heals 5 HP. Deals damage equal to the amount healed.\nExhaust.\nNorma 3: +3 HP healed."
+    },
+    {
+      "name": "Dash!",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E].\nExhaust.\nNorma 2: Gain 5 Block."
+    },
+    {
+      "name": "Dash!+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [diffAddS] [E] [diffAddE] [E].\nExhaust. \nNorma 2: Gain 5 Block."
+    },
+    {
+      "name": "Devil Hand",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 10 damage.\nOn retain, this card changes into Angel Hand."
+    },
+    {
+      "name": "Devil Hand+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 14 damage.\nOn retain, this card changes into Angel Hand."
+    },
+    {
+      "name": "Dinner",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Regen to ALL targets.\nExhaust.\nNorma 2: Gain Block equal to the amount of Regen applied."
+    },
+    {
+      "name": "Dinner+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 Regen to ALL targets.\nExhaust.\nNorma 2: Gain Block equal to the amount of Regen applied."
+    },
+    {
+      "name": "Extended Photon Rifle",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 0 damage X times.\nStrength is 3 times more effective for this card."
+    },
+    {
+      "name": "Extended Photon Rifle+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 0 damage X times.\nStrength is 4 times more effective for this card."
+    },
+    {
+      "name": "Final Battle",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "For the next 10 turns, everyone's attacks deal double damage."
+    },
+    {
+      "name": "Final Battle+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "For the next 10 turns, everyone's attacks deal double damage."
+    },
+    {
+      "name": "Final Surgery",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nIf the enemy has Vulnerable or moonworks:Overheat, deal 12 damage again."
+    },
+    {
+      "name": "Final Surgery+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nIf the enemy has Vulnerable or moonworks:Overheat, deal 16 damage again."
+    },
+    {
+      "name": "Flamethrower",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 12.\nIn Hand: Upon playing a card, deal 2 moonworks:Fixed Damage to an enemy."
+    },
+    {
+      "name": "Flamethrower+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 12.\nIn Hand: Upon playing a card, deal 3 moonworks:Fixed Damage to an enemy."
+    },
+    {
+      "name": "Forced Revival",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 4 HP.\nGain [E].\nGain 2 Weak.\nExhaust.\nNorma 3: -1 Weak."
+    },
+    {
+      "name": "Forced Revival+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 6 HP.\nGain [diffAddS] [E] [diffAddE] [E].\nGain 2 Weak.\nExhaust. \nNorma 3: -1 Weak."
+    },
+    {
+      "name": "Full Speed Alicianrone",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nNext turn, draw 2 additional cards.\nNorma 3: Deal damage to ALL enemies instead."
+    },
+    {
+      "name": "Full Speed Alicianrone+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nNext turn, draw 2 additional cards.\nNorma 3: Deal damage to ALL enemies instead."
+    },
+    {
+      "name": "Heat 300%",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 moonworks:Overheat.\nExhaust.\nNorma 2: Overheat will apply a 50% bonus instead."
+    },
+    {
+      "name": "Heat 300%+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 moonworks:Overheat.\nExhaust.\nNorma 2: Overheat will apply a 50% bonus instead."
+    },
+    {
+      "name": "Holy Night",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Once per turn, you may spend [E] to draw 2 cards.\nNorma 3: Uses per turn becomes unlimited."
+    },
+    {
+      "name": "Holy Night+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " [diffAddS] Innate.\n[diffAddE] Once per turn, you may spend [E] to draw 2 cards. \nNorma 3: Uses per turn becomes unlimited."
+    },
+    {
+      "name": "Immovable Object",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 30 Block.\nGain 2 moonworks:Immobile.\nExhaust."
+    },
+    {
+      "name": "Immovable Object+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 40 Block.\nGain 2 moonworks:Immobile.\nExhaust."
+    },
+    {
+      "name": "Intelligence Officer",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 3 then For Each...\nAttack: Gain 3 Vigor.\nSkill: Gain 3 moonworks:Steady.\nOther: Draw 1 card."
+    },
+    {
+      "name": "Intelligence Officer+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 5 then For Each...\nAttack: Gain 3 Vigor.\nSkill: Gain 3 moonworks:Steady.\nOther: Draw 1 card."
+    },
+    {
+      "name": "Lucky Charm",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain [E] at the beginning of your turn.\nOn Play: Discard and use up to 3 [E] to regain moonworks:Gift_Uses."
+    },
+    {
+      "name": "Lucky Charm+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Gain [E] at the beginning of your turn.\nOn Play: Discard and use up to 3 [E] to regain moonworks:Gift_Uses."
+    },
+    {
+      "name": "Miracle Walker",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Transformative\nEach time this card transforms, it costs 0 that turn.\nNorma 5: Transformed Attack and Skill cards will not exhaust."
+    },
+    {
+      "name": "Miracle Walker+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Transformative\nEach time this card transforms, it costs 0 that turn. [diffAddS]\nTransformed cards will be upgraded. [diffAddE] \nNorma 5: Transformed Attack and Skill cards will not exhaust."
+    },
+    {
+      "name": "Mix Phenomenon",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Restore the moonworks:Gift_Uses of 1 random gift card and shuffle it into your draw pile.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Mix Phenomenon+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Restore the moonworks:Gift_Uses of 1 [diffRmvS] random [diffRmvE] gift card and shuffle it into your draw pile.\nDraw 1 card.\nExhaust. "
+    },
+    {
+      "name": "Out Of Ammo",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you have either no cards, or only moonworks:Gift and Unplayable Status cards, in your hand during your turn, draw a card."
+    },
+    {
+      "name": "Out Of Ammo+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you have either no cards, or only moonworks:Gift and Unplayable Status cards, in your hand during your turn, draw a card."
+    },
+    {
+      "name": "Poppo The Snatcher",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: If an enemy attempts to buff, the buff is applied to you instead."
+    },
+    {
+      "name": "Poppo The Snatcher+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: If an enemy attempts to buff, the buff is applied to you instead."
+    },
+    {
+      "name": "Poppoformation",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next 2 times each enemy makes an intent, apply Weak, Frail, or Vulnerable based on the intent."
+    },
+    {
+      "name": "Poppoformation+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next 3 times each enemy makes an intent, apply Weak, Frail, or Vulnerable based on the intent."
+    },
+    {
+      "name": "Present For You",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 effect:\nShuffle 1 moonworks:Gift card into your draw pile.\nShuffle 1 moonworks:Trap card into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Present For You+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 effect:\nShuffle 2 moonworks:Gift [diffAddS] cards [diffAddE] into your draw pile.\nShuffle 2 moonworks:Trap [diffAddS] cards [diffAddE] into your draw pile.\nExhaust. "
+    },
+    {
+      "name": "Protagonist's Privilege",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nDraw 2 cards.\nIf both cards drawn are the same type, repeat this effect next turn.\nNorma 2: Heal 3 HP if unblocked damage was dealt."
+    },
+    {
+      "name": "Protagonist's Privilege+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nDraw 2 cards.\nIf both cards drawn are the same type, repeat this effect next turn.\nNorma 2: Heal 3 HP if unblocked damage was dealt."
+    },
+    {
+      "name": "Raging Madness",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you receive unblocked damage, gain 2 Strength.\nNorma 3: Gain twice the Strength."
+    },
+    {
+      "name": "Raging Madness+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " [diffAddS] Innate.\n[diffAddE] Whenever you receive unblocked damage, gain 2 Strength. \nNorma 3: Gain twice the Strength."
+    },
+    {
+      "name": "Red & Blue",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain 4 Vigor and 4 moonworks:Steady at the beginning of your turn."
+    },
+    {
+      "name": "Red & Blue+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain 6 Vigor and 6 moonworks:Steady at the beginning of your turn."
+    },
+    {
+      "name": "Red Bean Ice Cream",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 2.\nIn Hand: Gain 2 temporary Strength.\nOn Play: Exhaust.\nOn Exhaust: Heal 5 HP."
+    },
+    {
+      "name": "Red Bean Ice Cream+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Gain 2 temporary Strength.\nOn Play: Exhaust.\nOn Exhaust: Heal 5 HP."
+    },
+    {
+      "name": "Reproduction of Records",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add a copy of the 3 most recent cards in your discard pile to your hand.\nExhaust.\nNorma 4: Gain [E]."
+    },
+    {
+      "name": "Reproduction of Records+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": " [diffAddS] Retain.\n[diffAddE] Add a copy of the 3 most recent cards in your discard pile to your hand.\nExhaust. \nNorma 4: Gain [E]."
+    },
+    {
+      "name": "Scrambled Eve",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard any number of cards, then draw that many plus 0.\nNorma 1: Draw +1 card.\nNorma 3: Draw +1 card"
+    },
+    {
+      "name": "Scrambled Eve+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": " [diffAddS] Shuffle your discard pile into your draw pile.\n[diffAddE] Discard any number of cards, then draw that many plus 0. \nNorma 1: Draw +1 card.\nNorma 3: Draw +1 card"
+    },
+    {
+      "name": "Sealed Memories",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "*Convert up to 1 card in your hand into a moonworks:Memory.\nRetain your hand this turn."
+    },
+    {
+      "name": "Sealed Memories+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": " [diffAddS] Retain.\n[diffAddE] Convert up to 1 card in your hand into a moonworks:Memory.\nRetain your hand this turn. "
+    },
+    {
+      "name": "Stiff Crystal",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 moonworks:Crystallize.\nGain 1 Block.\nExhaust.\nNorma 1: +4 Block."
+    },
+    {
+      "name": "Stiff Crystal+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 moonworks:Crystallize.\nGain 7 Block.\nExhaust.\nNorma 1: +4 Block."
+    },
+    {
+      "name": "Sweet Battle",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nOn Draw/Retain: Heal 2 HP."
+    },
+    {
+      "name": "Sweet Battle+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nOn Draw/Retain: Heal 2 HP."
+    },
+    {
+      "name": "Tactical Retreat",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nNext turn, gain [E] and 6 Block.\nNorma 2: +2 Block both turns."
+    },
+    {
+      "name": "Tactical Retreat+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nNext turn, gain [E] and 8 Block.\nNorma 2: +2 Block both turns."
+    },
+    {
+      "name": "Treasure Thief",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Once per turn, when you damage this target, draw 1 card.\nExhaust.\nNorma 3: Effect works twice per turn instead."
+    },
+    {
+      "name": "Treasure Thief+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Once per turn, when you damage this target, draw 1 card.\nExhaust.\nNorma 3: Effect works twice per turn instead."
+    },
+    {
+      "name": "Unlucky Charm",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Any debuffs applied to you are applied to ALL enemies."
+    },
+    {
+      "name": "Unlucky Charm+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Any debuffs applied to you are applied to ALL enemies."
+    },
+    {
+      "name": "Unpaid Work",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next card you play which does not purge and costs more than 0 will refund it's cost.\nExhaust."
+    },
+    {
+      "name": "Unpaid Work+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The next card you play which does not purge and costs more than 0 will refund it's cost.\nExhaust."
+    },
+    {
+      "name": "Windy Enchantment",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nOn Draw: Draw 2 cards.\nOn Retain: Draw 1 card."
+    },
+    {
+      "name": "Windy Enchantment+",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nOn Draw: Draw 2 cards.\nOn Retain: Draw 1 card."
+    },
+    {
+      "name": "x1 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage. Increase this card's damage by 6 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "x10 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 39 damage. Increase this card's damage by 33 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "x2 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage. Increase this card's damage by 9 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "x3 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage. Increase this card's damage by 12 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "x4 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage. Increase this card's damage by 15 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "x5 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage. Increase this card's damage by 18 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "x6 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 27 damage. Increase this card's damage by 21 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "x7 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 damage. Increase this card's damage by 24 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "x8 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 33 damage. Increase this card's damage by 27 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "x9 Big Rocket",
+      "color": "White_ice_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 36 damage. Increase this card's damage by 30 this combat.\nCan be Upgraded to x16."
+    },
+    {
+      "name": "Accel Hyper",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next Attack and Skill are played twice.\nExhaust."
+    },
+    {
+      "name": "Accel Hyper+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next Attack and Skill are played twice. [diffRmvS]\nExhaust. [diffRmvE] "
+    },
+    {
+      "name": "Accelerator",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Accelerator.\nNorma 5: Optional: Spend [E] to also Upgrade all newly created cards."
+    },
+    {
+      "name": "Accelerator+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 Accelerator.\nNorma 5: Optional: Spend [E] to also Upgrade all newly created cards."
+    },
+    {
+      "name": "Another Ultimate Weapon",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "Gain X Strength and 5X Block.\nNorma X: +X Strength and +5X Block."
+    },
+    {
+      "name": "Another Ultimate Weapon+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "Gain [diffAddS] X+1 [diffAddE] Strength and [diffAddS] 5(X+1) [diffAddE] Block. \nNorma X: +X Strength and +5X Block."
+    },
+    {
+      "name": "Blazing!",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, apply 6 moonworks:Blasting_Light to ALL enemies and increase this amount by 3."
+    },
+    {
+      "name": "Blazing!+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, apply 6 moonworks:Blasting_Light to ALL enemies and increase this amount by 6."
+    },
+    {
+      "name": "Chef, Please Help Me!",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 moonworks:Revenge Damage.\nDeals double damage every 3 times HP is lost this combat."
+    },
+    {
+      "name": "Chef, Please Help Me!+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 moonworks:Revenge Damage.\nDeals double damage every 3 times HP is lost this combat."
+    },
+    {
+      "name": "Crystal Barrier",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Block is not removed at the start of your turn.\nGain 4 Plated Armor."
+    },
+    {
+      "name": "Crystal Barrier+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Block is not removed at the start of your turn.\nGain 6 Plated Armor."
+    },
+    {
+      "name": "Dark Side of Business",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose all Norma.\nChoose 1 of 3 moonworks:Magical cards with charges equal to the amount of Norma lost.\nExhaust."
+    },
+    {
+      "name": "Dark Side of Business+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose all Norma.\nChoose 1 of 3 [diffAddS] upgraded [diffAddE] moonworks:Magical cards with charges equal to the amount of Norma lost.\nExhaust. "
+    },
+    {
+      "name": "Encore",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The last card you play each turn has it's effect repeated at the start of your turn."
+    },
+    {
+      "name": "Encore+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The last card you play each turn has it's effect repeated at the start of your turn."
+    },
+    {
+      "name": "Evil Mastermind",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Trigger the effect of ALL your Trap cards on random enemies, excluding other Evil Masterminds.\nExhaust."
+    },
+    {
+      "name": "Evil Mastermind+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": " [diffAddS] Innate.\n[diffAddE] Trigger the effect of ALL your Trap cards on random enemies, excluding other Evil Masterminds. \nExhaust."
+    },
+    {
+      "name": "Gamble!",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "A random target dies."
+    },
+    {
+      "name": "Gamble!+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": " [diffAddS] Retain.\n[diffAddE] A random target dies. "
+    },
+    {
+      "name": "Go Away",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nThe target is moonworks:Stunned for a turn.\nExhaust."
+    },
+    {
+      "name": "Go Away+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": " [diffRmvS] Ethereal.\n[diffRmvE] The target is moonworks:Stunned for a turn.\nExhaust. "
+    },
+    {
+      "name": "Leap Through Spacetime",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Choose one effect:\nYou can borrow Energy from your next turn.\nYou can borrow Cards from your next turn."
+    },
+    {
+      "name": "Leap Through Spacetime+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Choose one effect:\nYou can borrow Energy from your next turn.\nYou can borrow Cards from your next turn."
+    },
+    {
+      "name": "Melting Memories",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Lose all Norma.\nThe first card you play each turn is Converted into a moonworks:Memory.\nRegain 1 lost Norma per turn."
+    },
+    {
+      "name": "Melting Memories+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Lose all Norma.\nThe first card you play each turn is Converted into a [diffAddS] moonworks:Memory then upgraded. [diffAddE]\nRegain 1 lost Norma per turn. "
+    },
+    {
+      "name": "Metallic Monocoque",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 3.\nIn Hand: Whenever you would lose HP, lose 5 less for all attacks in that turn."
+    },
+    {
+      "name": "Metallic Monocoque+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "moonworks:Gift_Uses 4.\nIn Hand: Whenever you would lose HP, lose 6 less for all attacks in that turn."
+    },
+    {
+      "name": "Plushie Master",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 moonworks:Plushie_Marks to random enemies.\nNorma 2: +2 Marks."
+    },
+    {
+      "name": "Plushie Master+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 6 moonworks:Plushie_Marks to random enemies.\nNorma 2: +2 Marks."
+    },
+    {
+      "name": "Reflective Shell",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Prevent the next time you would lose HP. Gain Vigor equal to the damage you would have taken."
+    },
+    {
+      "name": "Reflective Shell+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Prevent the next time you would lose HP. Gain Vigor equal to the damage you would have taken."
+    },
+    {
+      "name": "Rival",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The healthiest enemy becomes your moonworks:Rival."
+    },
+    {
+      "name": "Rival+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "The healthiest enemy becomes your moonworks:Rival."
+    },
+    {
+      "name": "Rocket Cannon",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\nShuffle 1 Big Rocket Cannon into your draw pile.\nNorma 2: Shuffle an additional card."
+    },
+    {
+      "name": "Rocket Cannon+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage.\nShuffle 1 Big Rocket [diffAddS] Cannon+ [diffAddE] into your draw pile. \nNorma 2: Shuffle an additional card."
+    },
+    {
+      "name": "Shield Counter",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Block.\nGain 1 moonworks:Shield_Counter.\nExhaust.\nNorma 3: moonworks:Shield_Counter will rollover."
+    },
+    {
+      "name": "Shield Counter+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 20 Block.\nGain 1 moonworks:Shield_Counter.\nExhaust.\nNorma 3: moonworks:Shield_Counter will rollover."
+    },
+    {
+      "name": "Sink Or Swim",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain [E] [E] at the start of every turn.\nGain 3 Weak and Frail."
+    },
+    {
+      "name": "Sink Or Swim+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain [E] [E] at the start of every turn.\nGain 3 Weak and Frail."
+    },
+    {
+      "name": "Star Blasting Fuse",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply moonworks:Invisible_Bomb.\nShuffle this card into your draw pile.\nWhen you draw this card, ALL enemies with moonworks:Invisible_Bomb lose 30 HP."
+    },
+    {
+      "name": "Star Blasting Fuse+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply moonworks:Invisible_Bomb.\nShuffle this card into your draw pile.\nWhen you draw this card, ALL enemies with moonworks:Invisible_Bomb lose 40 HP."
+    },
+    {
+      "name": "Subspace Tunnel",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose a card in any pile.\nMove that card to your hand and put this card where it was.\nThe card this swaps with costs 0 this turn."
+    },
+    {
+      "name": "Subspace Tunnel+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in any pile.\nMove that card to your hand and put this card where it was.\nThe card this swaps with costs 0 this turn."
+    },
+    {
+      "name": "Wanted",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 moonworks:Wanted.\nExhaust."
+    },
+    {
+      "name": "Wanted+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " [diffAddS] Retain.\n[diffAddE] Apply 1 moonworks:Wanted.\nExhaust. "
+    },
+    {
+      "name": "We Are Waruda",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all debuffs from ALL targets.\nApply all removed debuffs to one target.\nExhaust."
+    },
+    {
+      "name": "We Are Waruda+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all debuffs from ALL targets.\nApply all removed debuffs to one target.\nExhaust."
+    },
+    {
+      "name": "Whimsical Windmill",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the beginning of your turn, gain energy for each enemy who attacked you last turn."
+    },
+    {
+      "name": "Whimsical Windmill+",
+      "color": "White_ice_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": " [diffAddS] Innate.\n[diffAddE] At the beginning of your turn, gain energy for each enemy who attacked you last turn. "
+    }
+  ],
+  "relics": [
+    {
+      "name": "Broken Bomb",
+      "tier": "Starter",
+      "pool": "White_ice_color",
+      "description": "Add 1 Star Blasting Light to your hand each time you generate moonworks:Norma.\nNote: By default, every 10th Skill you play raises your Norma by 1.",
+      "flavorText": "This looks dangerous."
+    },
+    {
+      "name": "Homemark",
+      "tier": "Starter",
+      "pool": "White_ice_color",
+      "description": "Start every combat with Norma 0. Right click when out of combat to spend 120 Gold to permanently raise this effect, up to a maximum of 5.",
+      "flavorText": "It tastes like orange juice. Strange."
+    },
+    {
+      "name": "Bonus Panel",
+      "tier": "Common",
+      "pool": "White_ice_color",
+      "description": "Whenever you generate moonworks:Norma, gain 1 energy.",
+      "flavorText": "Tiny, but stars are stars. Part 3 of a series, can you collect them all?"
+    },
+    {
+      "name": "Heal Panel",
+      "tier": "Common",
+      "pool": "White_ice_color",
+      "description": "Whenever you generate moonworks:Norma, heal 2 HP.",
+      "flavorText": "Recommended by 0 out of 1 doctors wearing lab coats. Part 1 of a series, can you collect them all?"
+    },
+    {
+      "name": "Home Panel",
+      "tier": "Common",
+      "pool": "White_ice_color",
+      "description": "moonworks:Norma levels require 2 less cards to achieve.",
+      "flavorText": "If you get homesick, just step on it. Part 2 of a series, can you collect them all?"
+    },
+    {
+      "name": "A Truly Golden Egg",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Upon pickup, obtain a unique version of Lulu's Lucky Egg and Golden Egg that have stronger effects.",
+      "flavorText": "It's one in a million."
+    },
+    {
+      "name": "Bottled Orange",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Upon pickup, choose a card. Whenever you generate moonworks:Norma, move this card to your hand.",
+      "flavorText": "100% Orange. Juicer sold separately."
+    },
+    {
+      "name": "Damage Panel",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Whenever you generate moonworks:Norma, deal 7 damage to ALL enemies.",
+      "flavorText": "\"Ouch! What did I just step on?\" Part 4 of a series, can you collect them all?"
+    },
+    {
+      "name": "Draw Panel",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Whenever you generate moonworks:Norma, draw 1 card.",
+      "flavorText": "Imagine only being able to hold 3 cards in your hand... Part 5 of a series, can you collect them all?"
+    },
+    {
+      "name": "Fleeting Butterfly",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "The first card you play each combat is converted into a moonworks:Memory.",
+      "flavorText": "Take a picture, it'll last longer."
+    },
+    {
+      "name": "Little Gull",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "At the beginning of your turn, and every time you play a Jonathan Rush or Cloud of Seagulls, deal 2 to 7 damage to a random enemy.",
+      "flavorText": "His favourite number is 7."
+    },
+    {
+      "name": "Scorching Sun",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Whenever an attack deals unblocked damage, apply 1 moonworks:Blasting_Light.",
+      "flavorText": "CAUTION: HOT"
+    },
+    {
+      "name": "Searchlight",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "At the start of each combat, apply 2 moonworks:Overheat to the healthiest enemy.",
+      "flavorText": "It sees all."
+    },
+    {
+      "name": "Spare Bit",
+      "tier": "Uncommon",
+      "pool": "White_ice_color",
+      "description": "Upon pickup, obtain 2 Deploy Bits. All Deploy Bits now increase bits by 2 when played each combat.",
+      "flavorText": "Not to be confused with a Sign Bit."
+    },
+    {
+      "name": "Strange Present",
+      "tier": "Rare",
+      "pool": "White_ice_color",
+      "description": "At the end of turn 5, apply 4 Vulnerable and Weak to ALL enemies.",
+      "flavorText": "\"I wonder what's inside?\""
+    },
+    {
+      "name": "SB Bomb",
+      "tier": "Boss",
+      "pool": "White_ice_color",
+      "description": "Add 1 Star Blasting Light to your hand each time you generate moonworks:Norma.\nEvery 12th card you play raises your Norma by 1 instead.",
+      "flavorText": "Don't drop this."
+    },
+    {
+      "name": "Golden Die",
+      "tier": "Shop",
+      "pool": "White_ice_color",
+      "description": "Increase the Uses of your positive Gift cards by 50%.",
+      "flavorText": "Sadly, unable to roll zeros or sevens."
+    }
+  ],
+  "potions": [
+    {
+      "name": "100% Orange Juice",
+      "rarity": "Common",
+      "description": "Achieve Norma 5. Heal 5 HP."
+    },
+    {
+      "name": "Blasting Potion",
+      "rarity": "Common",
+      "description": "Apply 14 Blasting Light. Splash."
+    },
+    {
+      "name": "Lubricant",
+      "rarity": "Common",
+      "description": "Apply 2 Vulnerable. Splash."
+    },
+    {
+      "name": "Steady Potion",
+      "rarity": "Common",
+      "description": "Gain 10 Steady."
+    },
+    {
+      "name": "Vigor Potion",
+      "rarity": "Common",
+      "description": "Gain 10 Vigor."
+    },
+    {
+      "name": "Liquid Chains",
+      "rarity": "Uncommon",
+      "description": "Target loses 6 temporary Strength."
+    },
+    {
+      "name": "Norma Potion",
+      "rarity": "Uncommon",
+      "description": "Generate 1 Norma for the next 3 turns."
+    },
+    {
+      "name": "Refund Potion",
+      "rarity": "Uncommon",
+      "description": "The next 2 cards you play have their cost refunded."
+    },
+    {
+      "name": "200% Orange Juice",
+      "rarity": "Rare",
+      "description": "Achieve Norma 6. Receive incredible power that you cannot safely contain."
+    },
+    {
+      "name": "Crystal Potion",
+      "rarity": "Rare",
+      "description": "Gain 2 Crystallize."
+    },
+    {
+      "name": "Overload",
+      "rarity": "Rare",
+      "description": "Multiply all your powers by 2."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Star Breaker",
+      "type": "Player",
+      "minHP": "60",
+      "maxHP": "60"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Auto Consume",
+      "description": "The card's effect is automatically activated and the card is immediately purged. This does not count as playing the card."
+    },
+    {
+      "name": "Auto Effect",
+      "description": "This effect is automatically activated and does not count as playing the card."
+    },
+    {
+      "name": "Blast Off!",
+      "description": "Increases by the amount of damage received. At the start of your next turn, the target loses Blastoff and takes damage equal to it's amount"
+    },
+    {
+      "name": "Blasting Light",
+      "description": "Blasted creatures lose both HP and Max HP at the start of their turn. Each turn, the blast worsens, but the worse the blast is the more likely it is to wear off."
+    },
+    {
+      "name": "Moonworks:Crystallize",
+      "description": "Negates a debuff. Block is retained for a turn when a debuff is negated."
+    },
+    {
+      "name": "Moonworks:Degraded",
+      "description": "This card's base damage and block values are reduced by up to 3 each time it is drawn. The base values will not reduce lower than 1."
+    },
+    {
+      "name": "Moonworks:Divergence",
+      "description": "Divergence from the main timeline results in things not going back exactly the way you remembered them.\nAttempting to Leap with high Divergence may result in permanent unwanted effects."
+    },
+    {
+      "name": "Moonworks:Fixed",
+      "description": "This card is affected by Plushie Mark and Buffer, but unaffected by Strength, Dexterity, Weak, Frail, Vulnerable, and most other powers."
+    },
+    {
+      "name": "Moonworks:Fragile",
+      "description": "This card has a 1 in 3 chance of automatically exhausting when drawn."
+    },
+    {
+      "name": "Free Draw",
+      "description": "If you do not draw this card at the start of combat, add it to your hand."
+    },
+    {
+      "name": "Moonworks:Gift",
+      "description": "This card's primary effects are active while in your hand. A Gift may also have an additional effects with triggers."
+    },
+    {
+      "name": "Gift Uses",
+      "description": "Gift cards Retain while they have uses, and immediately Exhaust when they are out. One use is consumed when a Gift card's primary effect triggers."
+    },
+    {
+      "name": "Moonworks:Immobile",
+      "description": "Block is not removed at the start of your turn, but you may only play Attack cards if they are Ranged."
+    },
+    {
+      "name": "Invisible Bomb",
+      "description": "Causes the target to lose HP each time a Star Blasting Fuse is drawn."
+    },
+    {
+      "name": "Life Steal",
+      "description": "Heal HP when dealing unblocked damage."
+    },
+    {
+      "name": "Moonworks:Magical",
+      "description": "Magical cards are created by spending Norma Levels and gain charges for each Level spent. One Norma is regained each time a Magical card expends a charge."
+    },
+    {
+      "name": "Moonworks:Memory",
+      "description": "A converted Memory is removed from play, but it's effect autoplayed at no cost when other cards of the same type are played. A turn based cooldown relative to it's original cost is then applied."
+    },
+    {
+      "name": "Moonworks:Norma",
+      "description": "Cards may have listed bonus effects at specific Norma levels."
+    },
+    {
+      "name": "Moonworks:Optimized",
+      "description": "This card gives only as much Block as needed, determined by your current block and the intent of your enemies. The remaining amount will be given as Vigor."
+    },
+    {
+      "name": "Moonworks:Overheat",
+      "description": "Attacks to this target will Pierce.\nIf this target has no Block, they take 30% more damage from attacks."
+    },
+    {
+      "name": "Moonworks:Piercing",
+      "description": "If this Attack damages the enemy's Block, they lose an equal amount of HP."
+    },
+    {
+      "name": "Plushie Mark",
+      "description": "If a target is hit for 7 or less damage, raise the damage to 7 and Pierce.\nIf no Pierce was performed, gain 3 temporary HP.\nOne mark consumed per hit."
+    },
+    {
+      "name": "Moonworks:Ranged",
+      "description": "Ranged attacks do not trigger Thorns and can be played while Immobile."
+    },
+    {
+      "name": "Moonworks:Reduced",
+      "description": "This card's base values are lowered by 1."
+    },
+    {
+      "name": "Moonworks:Reset",
+      "description": "This card resets its conditional effect when played."
+    },
+    {
+      "name": "Moonworks:Revenge",
+      "description": "This effect is 50% stronger if used on the last enemy who attacked you."
+    },
+    {
+      "name": "Moonworks:Rival",
+      "description": "Attacks against your Rival deal 10% additional damage. Increases by 10% if your Rival attacked you last turn."
+    },
+    {
+      "name": "Shield Counter",
+      "description": "Any attack you fully block is reflected onto the attacker.\nIf you still have Block at the end of the turn and rollover is applied, you do not lose Shield Counter."
+    },
+    {
+      "name": "Moonworks:Special",
+      "description": "This card can not be obtained from normal card-drops."
+    },
+    {
+      "name": "Moonworks:Splash",
+      "description": "The primary target takes the full effect. ALL OTHER targets take half the amount."
+    },
+    {
+      "name": "Moonworks:Steady",
+      "description": "Gain more Block the next time a Block gaining card is played."
+    },
+    {
+      "name": "Moonworks:Stunned",
+      "description": "A stunned target does nothing this turn."
+    },
+    {
+      "name": "Temporal Anchor",
+      "description": "Your Temporal Anchor allows you to rewind your personal state to when it was created. All other entities are unaffected.\nA Temporal Anchor will undergo Divergence the longer you take between creating it and rewinding to it."
+    },
+    {
+      "name": "Moonworks:Transformative",
+      "description": "This card Transforms when drawn or retained."
+    },
+    {
+      "name": "Moonworks:Trap",
+      "description": "This card's effect ignores Artifact."
+    },
+    {
+      "name": "Moonworks:Voiding",
+      "description": "Lose 1 energy when you draw this card."
+    },
+    {
+      "name": "Moonworks:Wanted",
+      "description": "This turn, the Wanted enemy becomes the target of all attacks and negative effects.\nThe Wanted enemy will not injure itself by default."
+    },
+    {
+      "name": "Moonworks:Withering",
+      "description": "This card immediately exhausts, regardless of where it is."
+    }
+  ]
+}

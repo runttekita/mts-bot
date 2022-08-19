@@ -1,0 +1,1342 @@
+{
+  "mod": {
+    "name": "Hermit",
+    "version": "1.2",
+    "authors": ["PureQuestion, AlexMdle"],
+    "credits": "",
+    "description": "A lone undead gunslinger from a far away place.\nHaunted by the inescapable specter of the past.\n\nThe Hermit is a fully fleshed-out custom class that aims to do something fresh, yet familiar and flow seamlessly with the game's base content.\n\nFeatures of the class:\n- 75 cards, with all-new artwork and beta art.\n- 10 new class relics.\n- 3 new potions.\n- Splash and Ending artwork by the talented @Chaoclypse\n\n- Dead On: Cards with this keyword provide extra effects from the center of your hand.\n- Curse Synergy: Learn the many ways to reap the benefits of your curses.\n- It's High Noon: An archetype centered on your Strikes and Defends.\n\nLocalization Credits: Russian - Jedi515, Korean - \uBB3C\uAF2C\uAE30, Chinese - OldDrivers, French - AdmiralRazorbeard\n\nSpecial Thanks to Vex, Mari, Alchyr, Micheal Mayhem, Kiooeht and all the other cool people in #modding, as well as to BulletNick, BulletDuDe and Flan for testing and helping with beta art.\n\nAny feedback or bug reports are appreciated. We'll try to sort them out when we can.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-27-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Impending Doom",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nhermit:Dead_On:\nAt the end of your turn, deal 13 damage to EVERYONE."
+    },
+    {
+      "name": "Covet",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card. Draw a card. If you Exhaust a Curse, draw 1 more."
+    },
+    {
+      "name": "Covet+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card. Draw a card. If you Exhaust a Curse, draw 2 more."
+    },
+    {
+      "name": "Defend",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Snapshot",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage. hermit:Dead_On: Costs 0."
+    },
+    {
+      "name": "Snapshot+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage. hermit:Dead_On: Costs 0."
+    },
+    {
+      "name": "Strike",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Default_gray_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Body Armor",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block. \nAdd a *Defend to your discard pile.\nExhaust."
+    },
+    {
+      "name": "Body Armor+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 16 Block.\nAdd a *Defend+ to your discard pile.\nExhaust."
+    },
+    {
+      "name": "Called Shot",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your hand size.\nhermit:Dead_On:\nDraw 2 cards."
+    },
+    {
+      "name": "Called Shot+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to your hand size.\nhermit:Dead_On:\nDraw 2 cards."
+    },
+    {
+      "name": "Coalescence",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Dexterity. At the end of this turn, lose 3 Dexterity."
+    },
+    {
+      "name": "Coalescence+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Dexterity. At the end of this turn, lose 5 Dexterity."
+    },
+    {
+      "name": "Desperado",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nGain 2 Frail."
+    },
+    {
+      "name": "Desperado+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nGain 2 Frail."
+    },
+    {
+      "name": "Dive",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nhermit:Dead_On:\nGain 1 *Plated *Armor."
+    },
+    {
+      "name": "Dive+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nhermit:Dead_On:\nGain 2 *Plated *Armor."
+    },
+    {
+      "name": "Feint",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGains 4 additional Block if you lost HP last turn."
+    },
+    {
+      "name": "Feint+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGains 5 additional Block if you lost HP last turn."
+    },
+    {
+      "name": "Glare",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Weak.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Glare+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nRetain.\nApply 1 Weak.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Headshot",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nhermit:Dead_On: Deal double damage."
+    },
+    {
+      "name": "Headshot+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nhermit:Dead_On: Deal double damage."
+    },
+    {
+      "name": "High-Caliber",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nAdd a *Strike to your discard pile.\nExhaust."
+    },
+    {
+      "name": "High-Caliber+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nAdd a *Strike+ to your discard pile.\nExhaust."
+    },
+    {
+      "name": "Hole Up",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nGain 2 Weak."
+    },
+    {
+      "name": "Hole Up+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 16 Block.\nGain 2 Weak."
+    },
+    {
+      "name": "Itchy Trigger",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nhermit:Dead_On: Reduce the cost of a random card in your hand to 0 this turn."
+    },
+    {
+      "name": "Itchy Trigger+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nhermit:Dead_On: Reduce the cost of a random card in your hand to 0 this turn."
+    },
+    {
+      "name": "Low Profile",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGains 3 additional Block for each of your debuffs."
+    },
+    {
+      "name": "Low Profile+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGains 3 additional Block for each of your debuffs."
+    },
+    {
+      "name": "Manifest",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nDraw 2 *Curses."
+    },
+    {
+      "name": "Manifest+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 13 Block.\nDraw 2 *Curses."
+    },
+    {
+      "name": "Misfire",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage to a random enemy.\nShuffle a *Clumsy into your draw pile."
+    },
+    {
+      "name": "Misfire+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 damage to a random enemy.\nShuffle a *Clumsy into your draw pile."
+    },
+    {
+      "name": "Quickdraw",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 6 damage.\nApply 1 Weak.\nExhaust."
+    },
+    {
+      "name": "Quickdraw+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Innate.\nDeal 7 damage.\nApply 2 Weak.\nExhaust."
+    },
+    {
+      "name": "Ricochet",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nhermit:Dead_On:\nDeal 8 damage to a random enemy."
+    },
+    {
+      "name": "Ricochet+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nhermit:Dead_On:\nDeal 10 damage to a random enemy."
+    },
+    {
+      "name": "Roulette",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to a random enemy.\nDiscard your hand.\nDraw that many cards."
+    },
+    {
+      "name": "Roulette+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage to a random enemy.\nDiscard your hand.\nDraw that many cards."
+    },
+    {
+      "name": "Snipe",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Strength this turn. At the end of this turn, lose 3 Strength.\nGain 2 hermit:Concentration."
+    },
+    {
+      "name": "Snipe+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Strength this turn. At the end of this turn, lose 4 Strength.\nGain 3 hermit:Concentration."
+    },
+    {
+      "name": "Spray n' Pray",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to a random enemy 3 times.\nShuffle a *Doubt into your draw pile."
+    },
+    {
+      "name": "Spray n' Pray+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to a random enemy 3 times.\nShuffle a *Doubt into your draw pile."
+    },
+    {
+      "name": "Tracking Shot",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nhermit:Dead_On:\nGain 1 hermit:Concentration."
+    },
+    {
+      "name": "Tracking Shot+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nhermit:Dead_On:\nGain 1 hermit:Concentration."
+    },
+    {
+      "name": "Vantage",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nhermit:Dead_On:\nUpgrade 2 random cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Vantage+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nhermit:Dead_On:\nUpgrade 3 random cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Wide Open",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 6 damage.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Wide Open+",
+      "color": "Default_gray_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 7 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Brawl",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, apply 2 hermit:Bruise to ALL enemies."
+    },
+    {
+      "name": "Brawl+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, apply 3 hermit:Bruise to ALL enemies."
+    },
+    {
+      "name": "Cheat",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 3.\nPlay the top card of your draw pile.\nShuffle a *Shame into your draw pile."
+    },
+    {
+      "name": "Cheat+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 5.\nPlay the top card of your draw pile.\nShuffle a *Shame into your draw pile."
+    },
+    {
+      "name": "Combo",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you trigger a hermit:Dead_On effect, add a random card with hermit:Dead_On to your hand."
+    },
+    {
+      "name": "Combo+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you trigger a hermit:Dead_On effect, add a random card with hermit:Dead_On to your hand."
+    },
+    {
+      "name": "Cursed Weapon",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose 2 HP.\nDeal 4 damage.\nThis card permanently gains 3 damage.\nExhaust."
+    },
+    {
+      "name": "Cursed Weapon+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose 2 HP.\nDeal 4 damage.\nThis card permanently gains 4 damage.\nExhaust."
+    },
+    {
+      "name": "Dead Man's Hand",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand. Add the 3 rarest cards from your draw pile to your hand."
+    },
+    {
+      "name": "Dead Man's Hand+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard your hand. Add the 4 rarest cards from your draw pile to your hand."
+    },
+    {
+      "name": "Deadeye",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 1 Strength.\nExhaust.\nhermit:Dead_On:\nDon't Exhaust."
+    },
+    {
+      "name": "Deadeye+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nGain 1 Strength.\nExhaust.\nhermit:Dead_On:\nDon't Exhaust."
+    },
+    {
+      "name": "Determination",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a debuff is applied to you, gain 1 Strength."
+    },
+    {
+      "name": "Determination+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever a debuff is applied to you, gain 1 Strength."
+    },
+    {
+      "name": "Enervate",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nhermit:Dead_On:\nGain 1 [E] and draw a card."
+    },
+    {
+      "name": "Enervate+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nhermit:Dead_On:\nGain 1 [E] and draw a card."
+    },
+    {
+      "name": "Eye Of The Storm",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "hermit:Dead_On:\nGain Energy up to your maximum.\nExhaust."
+    },
+    {
+      "name": "Eye Of The Storm+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card.\nhermit:Dead_On:\nGain Energy up to your maximum.\nExhaust."
+    },
+    {
+      "name": "Flash Powder",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nALL enemies lose 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Flash Powder+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nALL enemies lose 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Fully Loaded",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw ALL your *Strikes and *Defends.\nExhaust."
+    },
+    {
+      "name": "Fully Loaded+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw ALL your *Strikes and *Defends.\nExhaust."
+    },
+    {
+      "name": "Gestalt",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 hermit:Rugged.\nGain 2 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Gestalt+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 hermit:Rugged.\nGain 1 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Ghostly Presence",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nGain 1 Dexterity.\nExhaust.\nhermit:Dead_On:\nDon't Exhaust."
+    },
+    {
+      "name": "Ghostly Presence+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain 1 Dexterity.\nExhaust.\nhermit:Dead_On:\nDon't Exhaust."
+    },
+    {
+      "name": "Golden Bullet",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 18 damage.\nIf Fatal, permanently decrease this card's cost by 1.\nExhaust."
+    },
+    {
+      "name": "Golden Bullet+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 24 damage.\nIf Fatal, permanently decrease this card's cost by 1.\nExhaust."
+    },
+    {
+      "name": "Grudge",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to all enemies.\nDeals 2 more for each Curse in your draw and discard piles."
+    },
+    {
+      "name": "Grudge+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to all enemies.\nDeals 3 more for each Curse in your draw and discard piles."
+    },
+    {
+      "name": "Horror",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 hermit:Bruised to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Horror+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 6 hermit:Bruised to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Lone Wolf",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card.\nIt costs 0 this combat.\nDiscard the rest of your hand."
+    },
+    {
+      "name": "Lone Wolf+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card.\nIt costs 0 this combat.\nDiscard the rest of your hand."
+    },
+    {
+      "name": "Luck of the Draw",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw until you draw 5 total [E] worth of cards."
+    },
+    {
+      "name": "Luck of the Draw+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw until you draw 7 total [E] worth of cards."
+    },
+    {
+      "name": "Maintenance",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Upgrade all *Strikes and *Defends this combat.\nThis can upgrade them any number of times."
+    },
+    {
+      "name": "Maintenance+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Upgrade all *Strikes and *Defends this combat.\nThis can upgrade them any number of times."
+    },
+    {
+      "name": "Malice",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust a card.\nDeal 16 damage.\nIf you Exhaust a Curse, deal 16 damage to ALL enemies instead."
+    },
+    {
+      "name": "Malice+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust a card.\nDeal 20 damage.\nIf you Exhaust a Curse, deal 20 damage to ALL enemies instead."
+    },
+    {
+      "name": "Midnight",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 12 Block.\nAdd an *Impending *Doom to your hand."
+    },
+    {
+      "name": "Midnight+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nAdd an *Impending *Doom to your hand."
+    },
+    {
+      "name": "No Holds Barred",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage and apply 3 hermit:Bruise to ALL enemies.\nGain 1 less [E] next turn."
+    },
+    {
+      "name": "No Holds Barred+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage and apply 3 hermit:Bruise to ALL enemies.\nGain 1 less [E] next turn."
+    },
+    {
+      "name": "Pistol Whip",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 3 hermit:Bruise."
+    },
+    {
+      "name": "Pistol Whip+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 4 hermit:Bruise."
+    },
+    {
+      "name": "Scavenge",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 *Plated *Armor.\nhermit:Dead_On:\nGain 5 Gold.\nExhaust."
+    },
+    {
+      "name": "Scavenge+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 *Plated *Armor.\nhermit:Dead_On:\nGain 7 Gold.\nExhaust."
+    },
+    {
+      "name": "Shadow Cloak",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw a Curse, gain 5 Block."
+    },
+    {
+      "name": "Shadow Cloak+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you draw a Curse, gain 7 Block."
+    },
+    {
+      "name": "Short Fuse",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 18 damage.\nCosts 1 less [E] per *Strike or *Defend played this turn."
+    },
+    {
+      "name": "Short Fuse+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 22 damage.\nCosts 1 less [E] per *Strike or *Defend played this turn."
+    },
+    {
+      "name": "Showdown",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 9 damage.\nPlay all *Strikes in your hand on random targets."
+    },
+    {
+      "name": "Showdown+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 9 damage.\nPlay all *Strikes in your hand on random targets."
+    },
+    {
+      "name": "Smoking Barrel",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you trigger a hermit:Dead_On effect, your next attack deals 3 more damage."
+    },
+    {
+      "name": "Smoking Barrel+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you trigger a hermit:Dead_On effect, your next attack deals 4 more damage."
+    },
+    {
+      "name": "Spite",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 2 *Curses.\nDeal 5 damage twice."
+    },
+    {
+      "name": "Spite+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Draw 3 *Curses.\nDeal 6 damage twice."
+    },
+    {
+      "name": "Take Aim",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 1 hermit:Concentration."
+    },
+    {
+      "name": "Take Aim+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 2 hermit:Concentration."
+    },
+    {
+      "name": "Take Cover",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X *Defends to your hand.\nThey cost 0 this combat.\nExhaust."
+    },
+    {
+      "name": "Take Cover+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X *Defends+ to your hand.\nThey cost 0 this combat.\nExhaust."
+    },
+    {
+      "name": "Virtue",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reduce each of your debuffs by 1."
+    },
+    {
+      "name": "Virtue+",
+      "color": "Default_gray_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nReduce each of your debuffs by 1."
+    },
+    {
+      "name": "Adapt",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, you can Exhaust up to 2 cards.\nGain 5 Block for each."
+    },
+    {
+      "name": "Adapt+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn, you can Exhaust up to 2 cards.\nGain 5 Block for each."
+    },
+    {
+      "name": "Black Wind",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal.\nDeal damage equal to your missing health.\nExhaust."
+    },
+    {
+      "name": "Black Wind+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal damage equal to your missing health.\nExhaust."
+    },
+    {
+      "name": "Dead Or Alive",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage X times.\nIf Fatal, get a hermit:Bounty.\nExhaust."
+    },
+    {
+      "name": "Dead Or Alive+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 11 damage X times.\nIf Fatal, get a hermit:Bounty.\nExhaust."
+    },
+    {
+      "name": "Dissolve",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block for each card in your discard pile.\nAdd 1 *Decay to your discard pile."
+    },
+    {
+      "name": "Dissolve+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block for each card in your discard pile.\nAdd 1 *Decay to your discard pile."
+    },
+    {
+      "name": "Eternal Form",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Your first 4 cards each turn cost 0.\nGain no [E] at start of turn."
+    },
+    {
+      "name": "Eternal Form+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Your first 5 cards each turn cost 0.\nGain no [E] at start of turn."
+    },
+    {
+      "name": "Fatal Desire",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, draw 2 cards and add an *Injury to your hand."
+    },
+    {
+      "name": "Fatal Desire+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, draw 2 cards and add an *Injury to your hand."
+    },
+    {
+      "name": "Final Canter",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 13 damage for each Curse in your hand.\nExhaust."
+    },
+    {
+      "name": "Final Canter+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 16 damage for each Curse in your hand.\nExhaust."
+    },
+    {
+      "name": "From Beyond",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For each card you've exhausted this combat, a random enemy loses 3 HP."
+    },
+    {
+      "name": "From Beyond+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For each card you've exhausted this combat, a random enemy loses 5 HP."
+    },
+    {
+      "name": "Gambit",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nPut 2 random Attacks from your discard pile into your hand. Exhaust."
+    },
+    {
+      "name": "Gambit+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nPut 3 random Attacks from your discard pile into your hand. Exhaust."
+    },
+    {
+      "name": "Heroic Bravado",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 hermit:Rugged.\nIncrease the cost of this card by 1 this combat."
+    },
+    {
+      "name": "Heroic Bravado+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 hermit:Rugged.\nIncrease the cost of this card by 1 this combat."
+    },
+    {
+      "name": "High Noon",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a *Strike or *Defend, draw a card."
+    },
+    {
+      "name": "High Noon+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a *Strike or *Defend, draw a card."
+    },
+    {
+      "name": "Magnum",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard 6 cards.\nFor each card, deal 6 damage."
+    },
+    {
+      "name": "Magnum+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard 6 cards.\nFor each card, deal 9 damage."
+    },
+    {
+      "name": "Overwhelming Power",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "After every 4 cards you play in a turn,\nlose 2 HP, gain [E] and draw a card."
+    },
+    {
+      "name": "Overwhelming Power+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "After every 4 cards you play in a turn,\nlose 2 HP, gain [E] and draw a card."
+    },
+    {
+      "name": "Purgatory",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 30 damage to EVERYONE."
+    },
+    {
+      "name": "Purgatory+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 36 damage to EVERYONE."
+    },
+    {
+      "name": "Reprieve",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust any number of *Curses from your draw pile.\nHeal 4 HP for each.\nExhaust."
+    },
+    {
+      "name": "Reprieve+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust any number of *Curses from your draw pile.\nHeal 4 HP for each.\nExhaust."
+    },
+    {
+      "name": "Roughhouse",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 24 damage. hermit:Dead_On:\nGain 16 Block."
+    },
+    {
+      "name": "Roughhouse+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 30 damage. hermit:Dead_On:\nGain 20 Block."
+    },
+    {
+      "name": "Roundhouse Kick",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to ALL enemies.\nStun any that don't intend to attack.\nExhaust."
+    },
+    {
+      "name": "Roundhouse Kick+",
+      "color": "Default_gray_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to ALL enemies.\nStun any that don't intend to attack.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Memento",
+      "tier": "Starter",
+      "pool": "Default_gray_color",
+      "description": "Pain, Decay, and Regret do not harm you. At the start of combat, shuffle a Regret into your draw pile.",
+      "flavorText": "There's a faded picture inside."
+    },
+    {
+      "name": "Rye Stalk",
+      "tier": "Common",
+      "pool": "Default_gray_color",
+      "description": "At the end of your first turn each combat, Retain any number of cards.",
+      "flavorText": "Still in mint condition, despite being chewed on for so long."
+    },
+    {
+      "name": "Horseshoe",
+      "tier": "Uncommon",
+      "pool": "Default_gray_color",
+      "description": "Whenever you would take unblocked damage equal to a multiple of 7, reduce that damage to 1.",
+      "flavorText": "Lucky charm. Somebody is gonna be missing this."
+    },
+    {
+      "name": "Spyglass",
+      "tier": "Uncommon",
+      "pool": "Default_gray_color",
+      "description": "Start every combat with 3 Concentration.",
+      "flavorText": "Property of Kestin Highfin."
+    },
+    {
+      "name": "Charred Glove",
+      "tier": "Rare",
+      "pool": "Default_gray_color",
+      "description": "Whenever you draw a Curse, your next attack deals 3 more damage.",
+      "flavorText": "Parts of the glove still glow with otherworldly cinders."
+    },
+    {
+      "name": "Red Scarf",
+      "tier": "Rare",
+      "pool": "Default_gray_color",
+      "description": "At the beginning of combat, discard up to 7 cards from your draw pile.",
+      "flavorText": "It's warm and fuzzy."
+    },
+    {
+      "name": "Bartender's Glass",
+      "tier": "Boss",
+      "pool": "Default_gray_color",
+      "description": "Gain a random potion after each of your first 2 potions each combat.",
+      "flavorText": "Any liquid placed inside changes into something else."
+    },
+    {
+      "name": "Clasped Locket",
+      "tier": "Boss",
+      "pool": "Default_gray_color",
+      "description": "Replaces Memento. Pain, Decay, and Regret heal you for 1 HP instead of harming you.",
+      "flavorText": "It won't open anymore."
+    },
+    {
+      "name": "Dented Plate",
+      "tier": "Boss",
+      "pool": "Default_gray_color",
+      "description": "Gain 32 Max HP. You do not heal between acts.",
+      "flavorText": "Several bullets are still lodged inside."
+    },
+    {
+      "name": "Pet Ghost",
+      "tier": "Shop",
+      "pool": "Default_gray_color",
+      "description": "If you would die, survive with 1 HP instead. You die at the end of your next turn. You cannot die before then.",
+      "flavorText": "Poor guy."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Tonic",
+      "rarity": "Common",
+      "description": "Gain 1 Rugged."
+    },
+    {
+      "name": "Black Bile",
+      "rarity": "Uncommon",
+      "description": "Apply 6 Bruise."
+    },
+    {
+      "name": "Eclipse Potion",
+      "rarity": "Rare",
+      "description": "Put 1 card from your exhaust pile into your hand. It costs 0 this turn."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Hermit",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Concentration",
+      "description": "Concentration makes your next card always get its Dead On effects, if it has any. Lasts until end of turn."
+    },
+    {
+      "name": "Dead On",
+      "description": "This card has a bonus effect if played from the middle of your hand."
+    },
+    {
+      "name": "Bounty",
+      "description": "Normal Enemy: 15 gold. Elite Enemy: 35 gold. Boss: 75 gold."
+    },
+    {
+      "name": "Bruise",
+      "description": "Bruised creatures take extra damage from attacks. After each hit, Bruise is reduced by 1."
+    },
+    {
+      "name": "Rugged",
+      "description": "If you would take unblocked damage, reduce it to 1 and lose 1 Rugged."
+    }
+  ]
+}

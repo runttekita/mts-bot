@@ -1,0 +1,1574 @@
+{
+  "mod": {
+    "name": "Reimu\uFF08\u535A\u4E3D\u7075\u68A6\uFF09",
+    "version": "1.1",
+    "authors": ["\u5DFE\u51E1","\u5730\u72F1\u732B\u71D0","Sam","\u5176\u4ED6\u5728\u7FA4\u91CC\u5E2E\u52A9\u6211\u4EEC\u7684\u5927\u5BB6"],
+    "credits": "",
+    "description": "\u6DFB\u52A0\u4E86 \u535A\u9E97\u9748\u5922 \u4F5C\u4E3A\u53EF\u9009\u89D2\u8272\u3002\u5E0C\u671B\u5927\u5BB6\u559C\u6B22\u3002",
+    "mts_version": "0.0.0",
+    "sts_version": "01-14-2020",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Advent Ceremony",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Chose 1 kind of Kami to Advent.\nExhaust."
+    },
+    {
+      "name": "Advent Ceremony+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Chose 1 kind of Kami to Advent.\nExhaust."
+    },
+    {
+      "name": "Fantasy Drunken Fist",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play 3 random Attacks of any color.\nAdd a *Dazed into your discard pile."
+    },
+    {
+      "name": "Fantasy Drunken Fist+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play 3 random upgraded Attacks of any color.\nAdd a *Dazed into your discard pile."
+    },
+    {
+      "name": "Kagura Ceremony",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Vigor.\nAdd a *Advent *Ceremony into discard pile.\nExhaust."
+    },
+    {
+      "name": "Kagura Ceremony+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Vigor.\nAdd a *Advent *Ceremony into draw pile.\nExhaust."
+    },
+    {
+      "name": "Poverty",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nEthereal.\nAt the end of your turn, lose 20 *Gold."
+    },
+    {
+      "name": "Defend",
+      "color": "Reimu_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Reimu_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Duplex Barrier",
+      "color": "Reimu_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Block twice.\nGain 3 Destruction Faith.\nAfter being played, Transform into *Danmaku *Barrier."
+    },
+    {
+      "name": "Duplex Barrier+",
+      "color": "Reimu_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 Block twice.\nGain 4 Destruction Faith.\nAfter being played, Transform into *Danmaku *Barrier+."
+    },
+    {
+      "name": "Floating",
+      "color": "Reimu_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Flight: Draw 2 card.\nOtherwise: Gain 1 Flight."
+    },
+    {
+      "name": "Floating+",
+      "color": "Reimu_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Flight: Draw 3 card.\nOtherwise: Gain 1 Flight."
+    },
+    {
+      "name": "Strike",
+      "color": "Reimu_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Reimu_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Air Strike",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 1 Wind Faith.\nFlight: Activate twice."
+    },
+    {
+      "name": "Air Strike+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nGain 1 Wind Faith.\nFlight: Activate twice."
+    },
+    {
+      "name": "Binding Border",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nApply 4 Constricted."
+    },
+    {
+      "name": "Binding Border+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 6 Constricted."
+    },
+    {
+      "name": "Cautionary Border",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nGain 5 Vigor.\nGain 2 Destruction Faith."
+    },
+    {
+      "name": "Cautionary Border+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nGain 8 Vigor.\nGain 3 Destruction Faith."
+    },
+    {
+      "name": "Colorful Path",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you draw this card, increase your highest Faith by 1 and gain 3 Vigor."
+    },
+    {
+      "name": "Colorful Path+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you draw this card, increase your highest Faith by 2 and gain 4 Vigor."
+    },
+    {
+      "name": "Dimensional Point Rift",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nFlight: enemy loses 8 Strength this turn.\nOtherwise: Gain 1 Flight."
+    },
+    {
+      "name": "Dimensional Point Rift+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nFlight: enemy loses 11 Strength this turn.\nOtherwise: Gain 1 Flight."
+    },
+    {
+      "name": "Emergency Take-off",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Flight.\nGain 1 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Emergency Take-off+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Flight.\nGain 2 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Evil-Sealing Circle",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Evil-Sealing Circle+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nApply 3 Vulnerable."
+    },
+    {
+      "name": "Expanding Barrier",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Mountain Faith.\nGain 5 Block.\nAll *Expanding *Barrier grant 2 additional Block this combat."
+    },
+    {
+      "name": "Expanding Barrier+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Mountain Faith.\nGain 8 Block.\nAll *Expanding *Barrier grant 2 additional Block this combat."
+    },
+    {
+      "name": "Expulsion",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to ALL enemies.\nGain 3 Flame Faith."
+    },
+    {
+      "name": "Expulsion+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to ALL enemies.\nGain 4 Flame Faith."
+    },
+    {
+      "name": "Homing Amulet",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nWhen you lose ALL Flight, return this card to your hand."
+    },
+    {
+      "name": "Homing Amulet+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 Block.\nWhen you lose ALL Flight, return this card to your hand."
+    },
+    {
+      "name": "Instant Dimensional Rift",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Until the next turn, deal 12 damage back to the enemy who first attacked you.\nGain 2 Thunderbolt Faith."
+    },
+    {
+      "name": "Instant Dimensional Rift+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Until the next turn, deal 16 damage back to the enemy who first attacked you.\nGain 2 Thunderbolt Faith."
+    },
+    {
+      "name": "Intuition",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 4.\nGain 1 Moon Faith."
+    },
+    {
+      "name": "Intuition+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 5.\nGain 2 Moon Faith."
+    },
+    {
+      "name": "Light Orb into Shade",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to a random enemy 2 times.\nGain 2 Destruction Faith."
+    },
+    {
+      "name": "Light Orb into Shade+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to a random enemy 3 times.\nGain 2 Destruction Faith."
+    },
+    {
+      "name": "Meditation",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played if every card in your hand is a Skill.\nGain [E] and 2 Moon Faith."
+    },
+    {
+      "name": "Meditation+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played if every card in your hand is a Skill.\nGain [E] [E] and 3 Moon Faith."
+    },
+    {
+      "name": "Nine-Syllable",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDraw 1 card for every 10 Faith."
+    },
+    {
+      "name": "Nine-Syllable+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nDraw 1 card for every 10 Faith."
+    },
+    {
+      "name": "Prosperity Prayer",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Destruction Faith.\nAdd a Career O-mikuji into your hand."
+    },
+    {
+      "name": "Prosperity Prayer+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Destruction Faith.\nAdd a Career O-mikuji into your hand.\n(It won't be Worst Luck)"
+    },
+    {
+      "name": "Rain Dance Ceremony",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card(s).\nGain [E] next turn.\nExhaust."
+    },
+    {
+      "name": "Rain Dance Ceremony+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 card(s).\nGain [E] next turn.\nExhaust."
+    },
+    {
+      "name": "Safety Prayer",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Mountain Faith.\nAdd a Safe O-mikuji into your hand."
+    },
+    {
+      "name": "Safety Prayer+",
+      "color": "Reimu_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Mountain Faith.\nAdd a Safe O-mikuji into your hand.\n(It won't be Worst Luck)"
+    },
+    {
+      "name": "Air Maneuver",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 Block.\nFlight: Gain 3 Wind Faith.\nOtherwise: Gain 1 Flight."
+    },
+    {
+      "name": "Air Maneuver+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nFlight: Gain 4 Wind Faith.\nOtherwise: Gain 1 Flight."
+    },
+    {
+      "name": "Ascension Kick",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nFlight: Gain [E] and\ndraw 1 card."
+    },
+    {
+      "name": "Ascension Kick+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nFlight: Gain [E] and\ndraw 1 card."
+    },
+    {
+      "name": "Bind",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever an O-mikuji is created during combat, Upgrade it."
+    },
+    {
+      "name": "Bind+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nWhenever an O-mikuji is created during combat, Upgrade it."
+    },
+    {
+      "name": "Campaign",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage. Gain 3 Thunderbolt Faith.\nIf the enemy intends to attack, deal double damage."
+    },
+    {
+      "name": "Campaign+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage. Gain 4 Thunderbolt Faith.\nIf the enemy intends to attack, deal double damage."
+    },
+    {
+      "name": "Danmaku Millionaire",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose [E] [E] [E] [E].\nLose 10 Gold for each insufficient [E].\nDeal 30 damage."
+    },
+    {
+      "name": "Danmaku Millionaire+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose [E] [E] [E].\nLose 10 Gold for each insufficient [E].\nDeal 30 damage."
+    },
+    {
+      "name": "Darkness of the Crow",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 Constricted to all enemies.\nFlight: Apply 1 Weak and Vulnerable to all enemies."
+    },
+    {
+      "name": "Darkness of the Crow+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 7 Constricted to all enemies.\nFlight: Apply 1 Weak and Vulnerable to all enemies."
+    },
+    {
+      "name": "Dichromatic Lotus Butterfly",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 4 Block twice.\nDeal 5 damage twice."
+    },
+    {
+      "name": "Dichromatic Lotus Butterfly+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 6 Block twice.\nDeal 7 damage twice."
+    },
+    {
+      "name": "Exorcising Border",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Exhaust a card.\nGain Flame Faith equal to it's cost.\nDeal damage equal to Flame Faith to ALL enemies."
+    },
+    {
+      "name": "Exorcising Border+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Exhaust a card.\nGain Flame Faith equal to double it's cost. Deal damage equal to Flame Faith to ALL enemies."
+    },
+    {
+      "name": "Fantasy Rift",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Ethereal.\nThis turn, whenever a card Exhausts, add a copy of it into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Fantasy Rift+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, whenever a card Exhausts, add a copy of it into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Fantasy Seal",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to a random enemy 4 times.\nTransform if this card is in your hand when a Kami Advents.\nTurn back when be played."
+    },
+    {
+      "name": "Fantasy Seal",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to a random enemy 5 times.\nTransform if this card is in your hand when a Kami Advents.\nTurn back when be played."
+    },
+    {
+      "name": "Fine Line Fantasy",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is exhausted, gain 1 Flame Faith."
+    },
+    {
+      "name": "Fine Line Fantasy+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever a card is exhausted, gain 1 Flame Faith."
+    },
+    {
+      "name": "Flying",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X Flight and Wind Faith.\nExhaust."
+    },
+    {
+      "name": "Flying+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X Flight and Wind Faith."
+    },
+    {
+      "name": "Forced Landing",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Flight: Lose 1 Flight and deal 17 damage to ALL enemies.\nGain 2 Thunderbolt Faith."
+    },
+    {
+      "name": "Forced Landing+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Flight: Lose 1 Flight and deal 21 damage to ALL enemies.\nGain 3 Thunderbolt Faith."
+    },
+    {
+      "name": "Foregathering Flowers",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase Vigor by 2 times."
+    },
+    {
+      "name": "Foregathering Flowers+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Increase Vigor by 3 times."
+    },
+    {
+      "name": "High-Speed Prayer",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Moon Faith.\nAdd a Learning O-mikuji into your hand."
+    },
+    {
+      "name": "High-Speed Prayer+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Moon Faith.\nAdd a Learning O-mikuji into your hand.\n(It won't be Worst Luck)"
+    },
+    {
+      "name": "Illusionary Moon",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 random cards to add into your hand. It costs 0 this turn.\nGain 2 random Faith.\nExhaust."
+    },
+    {
+      "name": "Illusionary Moon+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 random Upgraded cards to add into your hand. It costs 0 this turn.\nGain 3 random Faith.\nExhaust."
+    },
+    {
+      "name": "Kishin's Flame",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Non-attack damage taken by ALL enemies are doubled.\nExhaust."
+    },
+    {
+      "name": "Kishin's Flame+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Non-attack damage taken by ALL enemies are doubled.\nExhaust."
+    },
+    {
+      "name": "Lay to Rest",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to the number of unique buffs on you and unique debuffs on the target."
+    },
+    {
+      "name": "Lay to Rest+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain Block equal to the number of unique buffs on you and unique debuffs on the target."
+    },
+    {
+      "name": "Love Prayer",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Sun Faith.\nAdd a Romance O-mikuji into your hand."
+    },
+    {
+      "name": "Love Prayer+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Sun Faith.\nAdd a Romance O-mikuji into your hand.\n(It won't be Worst Luck)"
+    },
+    {
+      "name": "Miko Of Lucky",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, add 1 random O-mikuji into your hand.\n(It won't be Worst Luck)"
+    },
+    {
+      "name": "Miko Of Lucky+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, add 1 random O-mikuji into your hand.\n(It won't be Worst Luck)"
+    },
+    {
+      "name": "Mountain Wind",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Flight.\nPut a Attack from your discard pile into your hand,\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Mountain Wind+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Flight.\nPut a Attack from your discard pile into your hand,\nIt costs 0 this turn."
+    },
+    {
+      "name": "Oni-Binding Circle",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, apply 2 Constricted to ALL enemies."
+    },
+    {
+      "name": "Oni-Binding Circle+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, apply 3 Constricted to ALL enemies."
+    },
+    {
+      "name": "Permanent Border",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain 2 Thunderbolt Faith whenever you lose Flight.\nGain 2 Wind Faith whenever you lose HP."
+    },
+    {
+      "name": "Permanent Border+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nGain 2 Thunderbolt Faith whenever you lose Flight.\nGain 2 Wind Faith whenever you lose HP."
+    },
+    {
+      "name": "Preparation Ceremony",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 1 card from your draw or discard pile into the top of your draw pile.\nGain 3 Destruction Faith.\nGain 3 Mountain Faith.\nExhaust."
+    },
+    {
+      "name": "Preparation Ceremony+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 1 card from your draw or discard pile into the top of your draw pile.\nGain 5 Destruction Faith.\nGain 5 Mountain Faith.\nExhaust."
+    },
+    {
+      "name": "Quick-Witted Consecration",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn,\nGain 1 Block for each kind of Faith."
+    },
+    {
+      "name": "Quick-Witted Consecration+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn,\nGain 1 Block for each kind of Faith."
+    },
+    {
+      "name": "Recycle Ceremony",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return a card from your exhaust pile to your hand.\nExhaust."
+    },
+    {
+      "name": "Recycle Ceremony+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return a card from your exhaust pile to your hand and Upgrade it.\nExhaust."
+    },
+    {
+      "name": "Revelation",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 1.\nDraw 1 card.\nGain 1 Sun Faith."
+    },
+    {
+      "name": "Revelation+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 2.\nDraw 1 card.\nGain 2 Sun Faith."
+    },
+    {
+      "name": "Rule Violation Barrier",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, apply 1 stacks of an additional random debuff."
+    },
+    {
+      "name": "Rule Violation Barrier+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, apply 2 stacks of an additional random debuff."
+    },
+    {
+      "name": "Sacrifice Kami",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove a random non-Kagutsuchi Kami that is in Advent.\nGain 12 Flame Faith."
+    },
+    {
+      "name": "Sacrifice Kami+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove a random non-Kagutsuchi Kami that is in Advent.\nGain 16 Flame Faith."
+    },
+    {
+      "name": "Sealing Needle",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage. If it deals unblocked damage, the enemy loses 2 Strength.\nRepeat 2 times. Exhaust."
+    },
+    {
+      "name": "Sealing Needle+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage. If it deals unblocked damage, the enemy loses 3 Strength.\nRepeat 3 times. Exhaust."
+    },
+    {
+      "name": "Spiritual Outbreak",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to all enemies.\nThis attack does not spend Vigor."
+    },
+    {
+      "name": "Spiritual Outbreak+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to all enemies.\nThis attack does not spend Vigor."
+    },
+    {
+      "name": "Universal Spirituality",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Vigor whenever you play a card."
+    },
+    {
+      "name": "Universal Spirituality+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 Vigor whenever you play a card."
+    },
+    {
+      "name": "Yin-Yang Orb",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nDamage dealt is increased by 8 for every unique debuff on the target."
+    },
+    {
+      "name": "Yin-Yang Orb+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nDamage dealt is increased by 11 for every unique debuff on the target."
+    },
+    {
+      "name": "Yin-Yang Scattering",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain Faith, gain 1 of a random Faith that is not in Advent."
+    },
+    {
+      "name": "Yin-Yang Scattering+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you gain Faith, gain 1 of a random Faith that is not in Advent."
+    },
+    {
+      "name": "Yin-Yang Sign",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to the amount of Constricted on the target.\nGain [E] for each kind of DeBuff your target has."
+    },
+    {
+      "name": "Yin-Yang Sign+",
+      "color": "Reimu_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to the amount of Constricted on the target.\nGain [E] for each kind of DeBuff your target has."
+    },
+    {
+      "name": "Authority",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Sun Faith.\nIf Amaterasu is in Advent,\ngain 1 Buffer.\nExhaust."
+    },
+    {
+      "name": "Authority+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Sun Faith.\nIf Amaterasu is in Advent,\ngain 1 Buffer.\nExhaust."
+    },
+    {
+      "name": "Boundary of Divine",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Let Amaterasu and Tsukuyomi Advent.\n1 turn late, *remove your Sun Faith and Moon Faith."
+    },
+    {
+      "name": "Boundary of Divine+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Let Amaterasu and Tsukuyomi Advent.\n1 turn late, *halve your Sun Faith and Moon Faith."
+    },
+    {
+      "name": "Card Of Sanctity",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X random Upgraded O-mikuji into your hand.\nGain X random Faith.\n(It won't be Worst Luck)"
+    },
+    {
+      "name": "Card Of Sanctity+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X random Upgraded O-mikuji into your hand.\nGain X random Faith.\n(It won't be Worst Luck)"
+    },
+    {
+      "name": "Ceremonies Resonance",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Play all *Ceremony cards from your exhaust pile.\nExhaust."
+    },
+    {
+      "name": "Ceremonies Resonance+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Play all *Ceremony cards from your exhaust pile.\nExhaust."
+    },
+    {
+      "name": "Clean Ceremony",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Artifact.\nAdd a *Kagura *Ceremony into discard pile.\nExhaust."
+    },
+    {
+      "name": "Clean Ceremony+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Artifact.\nAdd a *Kagura *Ceremony+ draw pile.\nExhaust."
+    },
+    {
+      "name": "Determination",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your lost HP.\nExhaust."
+    },
+    {
+      "name": "Determination+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your lost HP."
+    },
+    {
+      "name": "Dragon-Slaying Circle",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 26 damage to ALL enemies.\nRemove all of your Faith."
+    },
+    {
+      "name": "Dragon-Slaying Circle+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 34 damage to ALL enemies.\nRemove all of your Faith."
+    },
+    {
+      "name": "Dream Battle",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nPlay a random card when this card is drawn."
+    },
+    {
+      "name": "Dream Battle+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nPlay a random Upgraded card when this card is drawn."
+    },
+    {
+      "name": "Fantasy Heaven",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 10 damage to ALL enemies.\nFor each Kami in Advent, repeat this effect."
+    },
+    {
+      "name": "Fantasy Heaven+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 14 damage to ALL enemies.\nFor each Kami in Advent, repeat this effect."
+    },
+    {
+      "name": "Fantasy Rift",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next card is played twice.\nExhaust."
+    },
+    {
+      "name": "Fantasy Rift+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next card is played twice."
+    },
+    {
+      "name": "Hakurei Illusion",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the end of target's turn, deals the damage equal to the amount of damage you dealt to it this turn.\nExhaust."
+    },
+    {
+      "name": "Hakurei Illusion+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the end of target's turn, deal the damage equal to the amount of damage you dealt to it this turn."
+    },
+    {
+      "name": "Kami Ceremony",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Let 1 random Kami Advent.\nExhaust."
+    },
+    {
+      "name": "Kami Ceremony+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Let 1 random Kami Advent.\nExhaust."
+    },
+    {
+      "name": "Mysterious Disappearance",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nYou don't take damage next round.\nSkip your next turn.\nExhaust."
+    },
+    {
+      "name": "Mysterious Disappearance+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nYou don't take damage next round.\nSkip your next turn.\nExhaust."
+    },
+    {
+      "name": "Prayer Ceremony",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose and add 1 Great Luck O-mikuji to your hand.\nExhaust."
+    },
+    {
+      "name": "Prayer Ceremony+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose and add 1 Great Luck O-mikuji to your hand.\nExhaust."
+    },
+    {
+      "name": "Sky-Conquering Kick",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage 0 time.\nIncrease the number of hits every time you gain Flight this combat."
+    },
+    {
+      "name": "Sky-Conquering Kick+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage 0 time.\nIncrease the number of hits every time you gain Flight this combat."
+    },
+    {
+      "name": "Spirit Medium Form",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, gain 4 random Faith."
+    },
+    {
+      "name": "Spirit Medium Form+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, gain 6 random Faith."
+    },
+    {
+      "name": "Wild Exorcism Dance",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "From within the top 3 cards of your draw pile, play all Attack cards and discard all non-Attack cards."
+    },
+    {
+      "name": "Wild Exorcism Dance+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "From within the top 5 cards of your draw pile, play all Attack cards and discard all non-Attack cards."
+    },
+    {
+      "name": "Yin-Yang Asuka'i",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 2 Flight.\nDeal damage equal to 4 times your Flight."
+    },
+    {
+      "name": "Yin-Yang Asuka'i+",
+      "color": "Reimu_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 2 Flight.\nDeal damage equal to 6 times your Flight."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Yin-Yang Orb",
+      "tier": "Starter",
+      "pool": "Reimu_color",
+      "description": "Gain 1 Flight at the start of each combat.",
+      "flavorText": "An orb containing spiritual energy found in the basement of a shrine."
+    },
+    {
+      "name": "Bow",
+      "tier": "Common",
+      "pool": "Reimu_color",
+      "description": "Whenever you lose Flight, deal 4 damage to all enemies.",
+      "flavorText": "The Hakureis isn't exactly known for their sharp fashion sense."
+    },
+    {
+      "name": "Insatiable Onusa",
+      "tier": "Common",
+      "pool": "",
+      "description": "Deal 6 damage to all enemies at the start of each combat. Each time you defeat an elite or boss, increase the damage dealt by 1 point.",
+      "flavorText": "A wooden wand used in exorcism rituals. This one in particular seems to slowly, yet constantly, grow in size."
+    },
+    {
+      "name": "Komainu",
+      "tier": "Common",
+      "pool": "",
+      "description": " Exhaust the first 2 Status cards you draw in battle. When you do so, draw an additional card.",
+      "flavorText": "A lion-like creature that serves as a guardian. This one is drawn on a card, so..."
+    },
+    {
+      "name": "Sky Orb",
+      "tier": "Common",
+      "pool": "Reimu_color",
+      "description": "The first time you lose all Flight each combat, gain 1 Flight.",
+      "flavorText": "An orb infused with the essence of the boundless skies."
+    },
+    {
+      "name": "Faded Rune",
+      "tier": "Uncommon",
+      "pool": "Reimu_color",
+      "description": "At the start of each combat, reduce the damage done by random enemies by 50% until it are attacked.",
+      "flavorText": "A magic rune worn by age. Time did not seem to dull its effects, however."
+    },
+    {
+      "name": "Shintai",
+      "tier": "Uncommon",
+      "pool": "Reimu_color",
+      "description": "Upon pickup, choose a Shintai. At the start of each combat, add that Shintai to your hand.",
+      "flavorText": "Worshipped as the physical repository of a god. Cats love it, for some reason."
+    },
+    {
+      "name": "Tea",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "If you have less than 50 Gold, heal 30% HP whenever you enter a Rest Site.",
+      "flavorText": "The water always comes AFTER the leaf."
+    },
+    {
+      "name": "Torch of Delirium",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of each combat, add 1 Madness+ into your hand.",
+      "flavorText": "Staring at it, you feel like your soul is being sucked in."
+    },
+    {
+      "name": "Exorcist's Salt",
+      "tier": "Rare",
+      "pool": "Reimu_color",
+      "description": "Whenever you apply a debuff to an enemy, they lose 4 HP.",
+      "flavorText": "Blessed salt used to ward off evil spirits"
+    },
+    {
+      "name": "Genbu's Shell",
+      "tier": "Rare",
+      "pool": "Reimu_color",
+      "description": "Increases damage reduction given by Flight from 50% to 75%.",
+      "flavorText": "The shell of a mythical turtle spirit. Maybe the spirit inside can help you climb by allowing you to ride on its back?"
+    },
+    {
+      "name": "Kagura Bell",
+      "tier": "Rare",
+      "pool": "Reimu_color",
+      "description": "Whenever a Kami Advents, gain [E] and draw 1 card.",
+      "flavorText": "It is said that each ring from this bell herald the coming of the gods."
+    },
+    {
+      "name": "Pure White",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Until you take HP damage each combat, at the start of your turn, draw 1 additional card.",
+      "flavorText": "This dress is very easy to soil."
+    },
+    {
+      "name": "Ema",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of each combat, choose and remove 1 card from your deck.\nAfter 2 turns, put it in your hand and reduce its cost to 0.",
+      "flavorText": "A sign created as means to deliver a wish to a god."
+    },
+    {
+      "name": "O-miki",
+      "tier": "Special",
+      "pool": "",
+      "description": "Add 1 Dazed into your discard pile and gain [E] at the start of your turn.",
+      "flavorText": "Wine meant to be an offering to the gods. Even just a small sip is enough to strongly intoxicate a person."
+    },
+    {
+      "name": "Tiny Shrine",
+      "tier": "Special",
+      "pool": "",
+      "description": "Right Click : Lose 1 Gold and add 1 random O-mikuji into your hand.\nThis effect can be used 3 times per combat.",
+      "flavorText": "People believe that money can bring good luck. They're not exactly wrong.."
+    },
+    {
+      "name": "Crown of the Heavens",
+      "tier": "Boss",
+      "pool": "Reimu_color",
+      "description": "Whenever a Kami Advents, deal 20 damage to ALL enemies.",
+      "flavorText": "Wearing it, you feel the power of the gods surging through you."
+    },
+    {
+      "name": "Donation Box",
+      "tier": "Boss",
+      "pool": "Reimu_color",
+      "description": "Increases the Advent threshold for all Faiths by 3. Gain [E] at the start of your turn.",
+      "flavorText": "There are many improbable events, such as someone actually reading the Bunbunmaru, and yet they're all still more plausible than someone putting money in this box."
+    },
+    {
+      "name": "Red Thread of Fate",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of the first 3 turns of each combat, put 1 card from your draw pile into your hand.",
+      "flavorText": "It is said that the gods use it to determine the fate of mortals."
+    },
+    {
+      "name": "Shining Orb",
+      "tier": "Boss",
+      "pool": "Reimu_color",
+      "description": "Replaces Yin-Yang Orb. Gain 3 Flight at the start of each combat.",
+      "flavorText": "The Yin-Yang orb, after careful polishing. Gazing at the light it reflects soothes one's soul."
+    },
+    {
+      "name": "Cheater's Sign",
+      "tier": "Shop",
+      "pool": "Reimu_color",
+      "description": "Whenever an O-mikuji is created during combat, it will always be at least Good Luck.",
+      "flavorText": "A fortune picker that only has the best of predictions written on it. Mystical problems require mundane solutions."
+    },
+    {
+      "name": "Tentacle Pot",
+      "tier": "Shop",
+      "pool": "",
+      "description": "At the start of each combat, apply 4 Constricted to all enemies.",
+      "flavorText": "Inside this pot are eldritch, perpetually hungry beings. Do not open."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Bottled Condemnations",
+      "rarity": "Common",
+      "description": "Add 1 to all stackable debuffs (e.g. Weak, Vulnerable) on the target."
+    },
+    {
+      "name": "Liquid Sky",
+      "rarity": "Common",
+      "description": "Gain 1 Flight."
+    },
+    {
+      "name": "Pink Potion",
+      "rarity": "Common",
+      "description": "From 3 random Pink (Reimu) cards choose 1 to add to your hand, it costs 0 this turn."
+    },
+    {
+      "name": "Bottled Kami",
+      "rarity": "Uncommon",
+      "description": "Advent random 1 Kami."
+    },
+    {
+      "name": "Grand Patriot's Elixir",
+      "rarity": "Uncommon",
+      "description": "Gain 13 Vigor."
+    },
+    {
+      "name": "Hakurei Potion",
+      "rarity": "Rare",
+      "description": "Add 1 to all stackable buffs (e.g. Strength, Dexterity) on you."
+    },
+    {
+      "name": "Magic Potion",
+      "rarity": "Rare",
+      "description": "Set your [E] to the amount it was at the start of this turn.\nGain 1 energy at the start of your next 3 turns."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Shrine Maiden",
+      "type": "Player",
+      "minHP": "65",
+      "maxHP": "65"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Advent",
+      "description": "Whenever a Faith reaches a certain amount (default 10), it Advents into a Kami. When this happens, remove all debuffs on you."
+    },
+    {
+      "name": "Amaterasu",
+      "description": "Goddess of the sun. If in Advent, gain [E] at the start of your turn."
+    },
+    {
+      "name": "Career",
+      "description": "GreatLuck :Deals 21 damage.\nGoodLuck :Deals 14 damage.\nPoorLuck :Deals 7 damage.\nWorstLuck :Deals 0 damage."
+    },
+    {
+      "name": "Constricted",
+      "description": "At the end of their turn, take damage equal to the amount of Constricted stacks."
+    },
+    {
+      "name": "Destruction",
+      "description": "Faith towards the storm god, Susano-o."
+    },
+    {
+      "name": "Faith",
+      "description": "Represents devotion towards a Kami. Gain enough amount to trigger Advent of Kami in combat."
+    },
+    {
+      "name": "Flame",
+      "description": "Faith towards the fire god, Kagutsuchi. Unlike other Faith counters, does not have an upper limit."
+    },
+    {
+      "name": "Flight",
+      "description": "Reduces damage taken from attacks. One stack is removed for each hit received when Flight is present."
+    },
+    {
+      "name": "Fortune",
+      "description": "GreatLuck :Gain 30 gold.\nGoodLuck :Gain 20 gold.\nPoorLuck :Gain 10 gold.\nWorstLuck :Gain 0 gold."
+    },
+    {
+      "name": "Kagutsuchi",
+      "description": "God of fire. If in Advent, deal damage equal to your Flame Faith to ALL enemies at the start of your turn."
+    },
+    {
+      "name": "Kami",
+      "description": "Unique buff that lasts for the entire combat, but only activates when they Advent."
+    },
+    {
+      "name": "Learning",
+      "description": "GreatLuck :Draw 4 cards.\nGoodLuck :Draw 3 cards.\nPoorLuck :Draw 2 cards.\nWorstLuck :Draw 0 cards."
+    },
+    {
+      "name": "Moon",
+      "description": "Faith towards the moon god, Tsukuyomi."
+    },
+    {
+      "name": "Mountain",
+      "description": "Faith towards the mountain god, Ohoyama-tsumi."
+    },
+    {
+      "name": "O-mikuji",
+      "description": "0-cost card that Exhaust when played and vary in effect depending on its type and Luck level."
+    },
+    {
+      "name": "Ohoyama-tsumi",
+      "description": "God of mountains. If in Advent, gain increased Block from playing cards."
+    },
+    {
+      "name": "Romance",
+      "description": "GreatLuck :Gain 3 energy.\nGoodLuck :Gain 2 energy.\nPoorLuck :Gain 1 energy.\nWorstLuck :Gain 0 energy."
+    },
+    {
+      "name": "Safe",
+      "description": "GreatLuck :Gain 15 Block.\nGoodLuck :Gain 10 Block.\nPoorLuck :Gain 5 Block.\nWorstLuck :Gain 0 Block."
+    },
+    {
+      "name": "Sun",
+      "description": "Faith towards the sun goddess, Amaterasu."
+    },
+    {
+      "name": "Susano-o",
+      "description": "God of storms. If in Advent, your attack deal increased damage."
+    },
+    {
+      "name": "Takemikazuchi",
+      "description": "God of thunder. If in Advent, inflict Divine Punishment on any enemy that hits you. Divine Punishment deals damage at the end of the turn."
+    },
+    {
+      "name": "Takeminakata",
+      "description": "God of the winds. If in Advent, gain Flight at the start of your turn."
+    },
+    {
+      "name": "Thunderbolt",
+      "description": "Faith towards the thunder god, Takemikazuchi."
+    },
+    {
+      "name": "Tsukuyomi",
+      "description": "God of the moon. If in Advent, Upgrade the top card in your draw pile and draw additional cards at the start of your turn."
+    },
+    {
+      "name": "Wind",
+      "description": "Faith towards the wind god, Takeminakata."
+    }
+  ]
+}
