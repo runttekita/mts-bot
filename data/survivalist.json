@@ -1,0 +1,1423 @@
+{
+  "mod": {
+    "name": "TheSurvivalist",
+    "version": "1.01",
+    "authors": ["Vex'd"],
+    "credits": "",
+    "description": "A survivalist who perseveres.",
+    "mts_version": "3.8.0",
+    "sts_version": "2.0",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Flare",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 4 Mark.\nDraw 1 card."
+    },
+    {
+      "name": "Flare+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 6 Mark.\nDraw 1 card."
+    },
+    {
+      "name": "Defend",
+      "color": "Survivor_brown",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nGain 1 survmod:Distance."
+    },
+    {
+      "name": "Defend+",
+      "color": "Survivor_brown",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain 1 survmod:Distance."
+    },
+    {
+      "name": "Sprint",
+      "color": "Survivor_brown",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 survmod:Distance.\nDraw 1 card.\nAdd 1 Dazed into your discard pile."
+    },
+    {
+      "name": "Sprint+",
+      "color": "Survivor_brown",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 survmod:Distance.\nDraw 1 card.\nAdd 1 Dazed into your discard pile."
+    },
+    {
+      "name": "Strike",
+      "color": "Survivor_brown",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Survivor_brown",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Versatile Offense",
+      "color": "Survivor_brown",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Has different effects depending on your survmod:Distance."
+    },
+    {
+      "name": "Versatile Offense+",
+      "color": "Survivor_brown",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Has different effects depending on your survmod:Distance."
+    },
+    {
+      "name": "Acid Trap",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make an survmod:Acid_Trap with 2 Poison."
+    },
+    {
+      "name": "Acid Trap+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make an survmod:Acid_Trap with 4 Poison."
+    },
+    {
+      "name": "Bear Trap",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a survmod:Bear_Trap with 2 Weak and Vulnerable."
+    },
+    {
+      "name": "Bear Trap+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a survmod:Bear_Trap with 4 Weak and Vulnerable."
+    },
+    {
+      "name": "Duck and Flare",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nAdd 1 *Flare into your hand."
+    },
+    {
+      "name": "Duck and Flare+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nAdd 2 *Flares into your hand."
+    },
+    {
+      "name": "Fence Trap",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a survmod:Fence_Trap with 9 Block."
+    },
+    {
+      "name": "Fence Trap+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a survmod:Fence_Trap with 14 Block."
+    },
+    {
+      "name": "Find Cover",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Can only be played at Long Range.\nGain 1 Intangible.\nALL enemies gain 1 Intangible."
+    },
+    {
+      "name": "Find Cover+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Can only be played at Long Range.\nGain 2 Intangible.\nALL enemies gain 1 Intangible."
+    },
+    {
+      "name": "Flashbang Trap",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a survmod:Flashbang_Trap with 10 Mark."
+    },
+    {
+      "name": "Flashbang Trap+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a survmod:Flashbang_Trap with 14 Mark."
+    },
+    {
+      "name": "Focused Fire",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage 3 times."
+    },
+    {
+      "name": "Focused Fire+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage 3 times."
+    },
+    {
+      "name": "Go for Face!",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, deal 6 damage to the enemy with the highest HP."
+    },
+    {
+      "name": "Go for Face!+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, deal 8 damage to the enemy with the highest HP."
+    },
+    {
+      "name": "Long Shot",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played at Long Range.\nDeal 20 damage."
+    },
+    {
+      "name": "Long Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played at Long Range.\nDeal 30 damage."
+    },
+    {
+      "name": "Marked Shot",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nALL enemies lose HP equal to their Mark."
+    },
+    {
+      "name": "Marked Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nALL enemies lose HP equal to their Mark."
+    },
+    {
+      "name": "Marked Trap",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a survmod:Marked_Trap."
+    },
+    {
+      "name": "Marked Trap+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Make a survmod:Marked_Trap."
+    },
+    {
+      "name": "Nock an Arrow",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nIf an enemy has Mark, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Nock an Arrow+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf an enemy has Mark, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Penetrating Shot",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played at Long Range.\nDeal 10 damage.\nIf the enemy has Mark, apply 2 Vulnerable."
+    },
+    {
+      "name": "Penetrating Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played at Long Range.\nDeal 15 damage.\nIf the enemy has Mark, apply 2 Vulnerable."
+    },
+    {
+      "name": "Pinning Snipe",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played at Long Range.\nDeal 10 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "Pinning Snipe+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played at Long Range.\nDeal 15 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Quick Dash",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played at Close Range.\nGain 4 Block.\nApply 1 Weak.\nGain 2 survmod:Distance.\nGain 2 survmod:Advantage."
+    },
+    {
+      "name": "Quick Dash+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played at Close Range.\nGain 5 Block.\nApply 2 Weak.\nGain 2 survmod:Distance.\nGain 2 survmod:Advantage."
+    },
+    {
+      "name": "Simple Mutation",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If the enemy intends to attack, gain 12 Block.\nOtherwise, gain 1 Artifact and deal 15 damage.\nAdd 1 *Injury into your discard pile."
+    },
+    {
+      "name": "Simple Mutation+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If the enemy intends to attack, gain 16 Block.\nOtherwise, gain 2 Artifact and deal 15 damage.\nAdd 1 *Injury into your discard pile."
+    },
+    {
+      "name": "Swift Kick",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played at Close Range.\nDeal 5 damage.\nApply 2 Vulnerable.\nGain 2 Advantage."
+    },
+    {
+      "name": "Swift Kick+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played at Close Range.\nDeal 6 damage.\nApply 3 Vulnerable.\nGain 2 Advantage."
+    },
+    {
+      "name": "Twin Shot",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to a random enemy twice.\nLose 2 survmod:Distance."
+    },
+    {
+      "name": "Twin Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to a random enemy twice.\nLose 2 survmod:Distance."
+    },
+    {
+      "name": "Unfortunate Escape",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nAdd 2 *Slimed into your hand."
+    },
+    {
+      "name": "Unfortunate Escape+",
+      "color": "Survivor_brown",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nAdd 2 *Slimed into your hand."
+    },
+    {
+      "name": "Acid Arrow",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove the enemy's Block.\nRemove all Artifact.\nApply 4 Poison, 1 Weak, and 1 Vulnerable."
+    },
+    {
+      "name": "Acid Arrow+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove the enemy's Block.\nRemove all Artifact.\nApply 4 Poison, 2 Weak, and 2 Vulnerable."
+    },
+    {
+      "name": "Adaptability",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a survmod:Trap is Activated, draw 1 card."
+    },
+    {
+      "name": "Adaptability+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a survmod:Trap is Activated, draw 2 cards."
+    },
+    {
+      "name": "Aim For The Liver",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nWhenever you Activate a Trap, increase this card's damage by 2 this combat."
+    },
+    {
+      "name": "Aim For The Liver+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nWhenever you Activate a Trap, increase this card's damage by 3 this combat."
+    },
+    {
+      "name": "Bend and Bow",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nGain 10 Block.\nLose 2 survmod:Distance."
+    },
+    {
+      "name": "Bend and Bow+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 19 damage.\nGain 10 Block.\nLose 2 survmod:Distance."
+    },
+    {
+      "name": "Complex Mutation",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Effect varies based on enemy Intent.\nExhaust."
+    },
+    {
+      "name": "Complex Mutation+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Effect varies based on enemy Intent.\nExhaust."
+    },
+    {
+      "name": "Explosive Trap",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make an survmod:Explosive_Trap with 14 damage."
+    },
+    {
+      "name": "Explosive Trap+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make an survmod:Explosive_Trap with 18 damage."
+    },
+    {
+      "name": "Flare Barrage",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 2 damage and apply 8 Mark to ALL enemies X times.\nLose X survmod:Distance."
+    },
+    {
+      "name": "Flare Barrage+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 3 damage and apply 10 Mark to ALL enemies X times.\nLose X survmod:Distance."
+    },
+    {
+      "name": "Flare Quiver",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an Attack, apply 4 Mark."
+    },
+    {
+      "name": "Flare Quiver+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an Attack, apply 4 Mark."
+    },
+    {
+      "name": "Flashbang Shot",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage and apply 8 Mark to ALL enemies."
+    },
+    {
+      "name": "Flashbang Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage and apply 12 Mark to ALL enemies."
+    },
+    {
+      "name": "Hail of Arrows",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 9 damage to a random enemy X times.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Hail of Arrows+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 9 damage to a random enemy X+1 times.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Hawkeye",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply double Mark this turn."
+    },
+    {
+      "name": "Hawkeye+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply double Mark this turn."
+    },
+    {
+      "name": "Hidden Tactic",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can only be played while in Long Range.\nGain 1 Intangible.\nDraw 2 cards.\nLose 3 survmod:Distance."
+    },
+    {
+      "name": "Hidden Tactic+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can only be played while in Long Range.\nGain 1 Intangible.\nDraw 4 cards.\nLose 3 survmod:Distance."
+    },
+    {
+      "name": "Know Thy Enemy",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 Block for each Mark on the enemy.\nRemove the enemy's Mark."
+    },
+    {
+      "name": "Know Thy Enemy+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 4 Block for each Mark on the enemy.\nRemove the enemy's Mark."
+    },
+    {
+      "name": "Marked from Afar",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can only be played while in Long Range.\nDeal 1 damage.\nALL enemies lose HP equal to their Mark twice.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Marked from Afar+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Can't be played in Close Range.\nDeal 1 damage.\nALL enemies lose HP equal to their Mark twice.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Marksmanship",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply Mark, increase the amount applied by 2."
+    },
+    {
+      "name": "Marksmanship+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply Mark, increase the amount applied by 4."
+    },
+    {
+      "name": "Overexerting Shot",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nAdd 2 Wounds into your hand.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Overexerting Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage.\nAdd 2 Wounds into your hand.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Overwhelming Assault",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "While in Close Range, attacks apply 1 Weak."
+    },
+    {
+      "name": "Overwhelming Assault+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "While in Close Range, attacks apply 2 Weak."
+    },
+    {
+      "name": "Personal Mark",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played at Close Range.\nALL enemies lose HP equal to their Mark.\nTake 5 damage.\nGain 2 survmod:Distance."
+    },
+    {
+      "name": "Personal Mark+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played at Close Range.\nALL enemies lose HP equal to their Mark.\nTake 2 damage.\nGain 2 survmod:Distance."
+    },
+    {
+      "name": "Piercing Shot",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to ALL enemies.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Piercing Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage to ALL enemies.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Poison Trap",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a survmod:Poison_Trap with 8 Poison."
+    },
+    {
+      "name": "Poison Trap+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a survmod:Poison_Trap with 10 Poison."
+    },
+    {
+      "name": "Quick Thinking",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played while in Close Range.\nDraw 2 cards and reduce their costs by 1 this turn.\nGain 2 survmod:Distance.\nGain 2 survmod:Advantage."
+    },
+    {
+      "name": "Quick Thinking+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played while in Close Range.\nDraw 3 cards and reduce their costs by 1 this turn.\nGain 2 survmod:Distance.\nGain 2 survmod:Advantage."
+    },
+    {
+      "name": "Reject Weakness",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all Status and Curse cards in your hand.\nDraw 1 card for each."
+    },
+    {
+      "name": "Reject Weakness+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust all Status and Curse cards in your hand.\nDraw 1 card for each."
+    },
+    {
+      "name": "Shrapnel Traps",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you activate a survmod:Trap, gain 4 Temporary Thorns."
+    },
+    {
+      "name": "Shrapnel Traps+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you activate a survmod:Trap, gain 6 Temporary Thorns."
+    },
+    {
+      "name": "Skillful Maneuver",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 survmod:Distance. Next turn, gain [E] .\nAdd 2 Dazed into your discard pile."
+    },
+    {
+      "name": "Skillful Maneuver+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 survmod:Distance. Next turn, gain [E] [E] .\nAdd 2 Dazed into your discard pile."
+    },
+    {
+      "name": "Surprise Trap",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Make a random survmod:Trap."
+    },
+    {
+      "name": "Surprise Trap+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Make a random survmod:Trap."
+    },
+    {
+      "name": "Tactical Maneuver",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Either gain or lose 3 survmod:Distance.\nShuffle 1 *Dazed into your discard pile."
+    },
+    {
+      "name": "Tactical Maneuver+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Either gain or lose 3 survmod:Distance.\nShuffle 1 *Dazed into your discard pile."
+    },
+    {
+      "name": "Take Aim",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, your next Attack deals 8 additional damage.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Take Aim+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, your next Attack deals 15 additional damage.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Trick Shot",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage to a random enemy.\nIf they don't intend to attack, deal 13 damage to a random enemy."
+    },
+    {
+      "name": "Trick Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage to a random enemy.\nIf they don't intend to attack, deal 15 damage to a random enemy."
+    },
+    {
+      "name": "Versatile Defense",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Has different effects depending on your survmod:Distance."
+    },
+    {
+      "name": "Versatile Defense+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Has different effects depending on your survmod:Distance."
+    },
+    {
+      "name": "Walled-Off Traps",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you activate a survmod:Trap, gain 4 Block."
+    },
+    {
+      "name": "Walled-Off Traps+",
+      "color": "Survivor_brown",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you activate a survmod:Trap, gain 6 Block."
+    },
+    {
+      "name": "Battering Strike",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played in Close Range.\nDeal 15 damage.\nGain 5 Block.\nGain 2 survmod:Distance.\nShuffle 3 *Dazed into your draw pile."
+    },
+    {
+      "name": "Battering Strike+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played in Close Range.\nDeal 17 damage.\nGain 7 Block.\nGain 2 survmod:Distance.\nShuffle 3 *Dazed into your draw pile."
+    },
+    {
+      "name": "Camouflage",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first time you enter Long Range each turn, gain 1 Intangible."
+    },
+    {
+      "name": "Camouflage+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first time you enter Long Range each turn, gain 1 Intangible."
+    },
+    {
+      "name": "Choking Bow",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played while in Close Range.\nDeal 8 damage.\nStun the enemy for 1 turn.\nYou can no longer play Attacks this turn.\nExhaust."
+    },
+    {
+      "name": "Choking Bow+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played while in Close Range.\nDeal 8 damage.\nStun the enemy for 1 turn.\nYou can no longer play Attacks this turn.\nExhaust."
+    },
+    {
+      "name": "Close Call",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Can only be played in Close Range.\nGain 10 Block, increased by missing HP.\nNext turn, gain 3 Distance.\nExhaust."
+    },
+    {
+      "name": "Close Call+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Can only be played in Close Range.\nGain 10 Block, increased by missing HP.\nNext turn, gain 3 Distance.\nExhaust."
+    },
+    {
+      "name": "Close Combat",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each time you enter Close Range, gain 1 Strength and Dexterity."
+    },
+    {
+      "name": "Close Combat+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Each time you enter Close Range, gain 2 Strength and Dexterity."
+    },
+    {
+      "name": "Concussive Shot",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nStun the enemy.\nLose 3 survmod:Distance.\nExhaust."
+    },
+    {
+      "name": "Concussive Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nStun the enemy.\nLose 3 survmod:Distance.\nExhaust."
+    },
+    {
+      "name": "Deadly Aim",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, Attacks deal 8 additional damage and trigger Mark. Exhaust."
+    },
+    {
+      "name": "Deadly Aim+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, Attacks deal 8 additional damage and trigger Mark. Exhaust."
+    },
+    {
+      "name": "Decoy",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose 1 Trap Slot.\nPrevent the next time you would lose HP.\nExhaust."
+    },
+    {
+      "name": "Decoy+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose 1 Trap Slot.\nPrevent the next time you would lose HP."
+    },
+    {
+      "name": "Desperate Ambush",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal damage equal to your survmod:Distance X times.\nLose all survmod:Distance.\nYou can't gain survmod:Distance next turn."
+    },
+    {
+      "name": "Desperate Ambush+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal damage equal to your survmod:Distance 2X times.\nLose all survmod:Distance.\nYou can't gain survmod:Distance next turn."
+    },
+    {
+      "name": "Detonation",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double an enemy's Mark.\nNext turn, at the end of the enemy turn, ALL enemies lose HP equal to their Mark.\nExhaust."
+    },
+    {
+      "name": "Detonation+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Double an enemy's Mark.\nNext turn, at the end of the enemy turn, ALL enemies lose HP equal to their Mark.\nExhaust."
+    },
+    {
+      "name": "Empty Quiver",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play all Attacks in your hand.\nAdd 3 *Wounds into your draw pile.\nYou can't gain survmod:Distance next turn."
+    },
+    {
+      "name": "Empty Quiver+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play all Attacks in your hand.\nAdd 2 *Wounds into your draw pile.\nYou can't gain survmod:Distance next turn."
+    },
+    {
+      "name": "Escape Mechanism",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever a Trap is Activated, gain 2 survmod:Distance."
+    },
+    {
+      "name": "Escape Mechanism+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever a Trap is Activated, gain 2 survmod:Distance."
+    },
+    {
+      "name": "Expert Sniper",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, if you're in Long Range, your first attack deals 6 extra damage."
+    },
+    {
+      "name": "Expert Sniper+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, if you're in Long Range, your first attack deals 9 extra damage."
+    },
+    {
+      "name": "Exploit",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever a Trap is Activated, gain [E] ."
+    },
+    {
+      "name": "Exploit+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever a Trap is Activated, gain [E] [E] ."
+    },
+    {
+      "name": "Heartseeker",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played at Long Range.\nDeal 50 damage.\nSkip your next turn.\nExhaust."
+    },
+    {
+      "name": "Heartseeker+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played at Long Range.\nDeal 70 damage.\nSkip your next turn.\nExhaust."
+    },
+    {
+      "name": "Leaping Shot",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nGain 3 survmod:Distance.\nShuffle 3 *Dazed into your draw pile."
+    },
+    {
+      "name": "Leaping Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nGain 3 survmod:Distance.\nShuffle 3 *Dazed into your draw pile."
+    },
+    {
+      "name": "Marked for Death",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses HP equal to 3 times their Mark.\nRemove the enemy's Mark.\nExhaust."
+    },
+    {
+      "name": "Marked for Death+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses HP equal to 3 times their Mark.\nRemove the enemy's Mark."
+    },
+    {
+      "name": "Merciful Shot",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played in Long Range.\nIf the enemy has at least 50% of its health, it loses 33% of its health.\nOtherwise, deal 15 damage.\nExhaust."
+    },
+    {
+      "name": "Merciful Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nCan only be played in Long Range.\nIf the enemy has at least 50% of its health, it loses 33% of its health.\nOtherwise, deal 15 damage.\nExhaust."
+    },
+    {
+      "name": "Mutant Energy",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you draw a Curse or Status card, gain [E] ."
+    },
+    {
+      "name": "Mutant Energy+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you draw a Curse or Status card, gain [E] ."
+    },
+    {
+      "name": "Mutant Form",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nGain 3 Flight.\nWhile Flying, you can't gain Block and don't lose survmod:Distance at the start of your turn."
+    },
+    {
+      "name": "Mutant Form+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nGain 4 Flight.\nWhile Flying, you can't gain Block and don't lose survmod:Distance at the start of your turn."
+    },
+    {
+      "name": "Needle Shot",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nRemove all enemy Block.\nApply 3 Vulnerable.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Needle Shot+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nRemove all enemy Block.\nApply 3 Vulnerable.\nLose 1 survmod:Distance."
+    },
+    {
+      "name": "Perfect Position",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can't be played at Close Range.\nEthereal.\nDeal 10 damage.\nGain 5 Block.\nAdd a *Perfect *Position into your hand.\nExhaust."
+    },
+    {
+      "name": "Perfect Position+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can't be played at Close Range.\nDeal 10 damage.\nGain 5 Block.\nAdd a *Perfect *Position+ into your hand.\nExhaust."
+    },
+    {
+      "name": "Rob From The Rich",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played while in Close Range.\nDeal 8 damage.\nGain 5 Gold for each point of unblocked damage dealt.\nExhaust."
+    },
+    {
+      "name": "Rob From The Rich+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played while in Close Range.\nDeal 8 damage.\nGain 10 Gold for each point of unblocked damage dealt.\nExhaust."
+    },
+    {
+      "name": "Trap Trap",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Make a survmod:Trap_Trap.\nExhaust."
+    },
+    {
+      "name": "Trap Trap+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Make a survmod:Trap_Trap.\nExhaust."
+    },
+    {
+      "name": "Unleash the Traps",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nActivate all survmod:Traps.\nExhaust."
+    },
+    {
+      "name": "Unleash the Traps+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nActivate all survmod:Traps."
+    },
+    {
+      "name": "Versatile Power",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Effect changes with survmod:Distance."
+    },
+    {
+      "name": "Versatile Power+",
+      "color": "Survivor_brown",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Effect changes with survmod:Distance."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Innate Mutation",
+      "tier": "Starter",
+      "pool": "Survivor_brown",
+      "description": "The first time you draw a Status or Curse card each turn, draw 1 card.",
+      "flavorText": "A symbol of ever-shifting and adaptation to your surroundings."
+    },
+    {
+      "name": "Running Shoes",
+      "tier": "Common",
+      "pool": "Survivor_brown",
+      "description": "The first time you gain Distance each turn, increase the Distance gained by 1.",
+      "flavorText": "You ought to move at a higher velocity than normal."
+    },
+    {
+      "name": "Trap Manual",
+      "tier": "Common",
+      "pool": "Survivor_brown",
+      "description": "Whenever you make 3 Traps, gain 1 Trap slot.",
+      "flavorText": "You should never forget the manual for your complex machinery."
+    },
+    {
+      "name": "Shot Glass",
+      "tier": "Uncommon",
+      "pool": "Survivor_brown",
+      "description": "Cards with 'shot' in the name deal 3 additional damage.",
+      "flavorText": "A reimagined spyglass strapped to the side of your bow. Doubles as a drink holder...?"
+    },
+    {
+      "name": "Signal Flare",
+      "tier": "Uncommon",
+      "pool": "Survivor_brown",
+      "description": "The first time you apply 10 Marked each turn, gain [E] .",
+      "flavorText": "Not really it's intended use, but to survive, you've got to improvise."
+    },
+    {
+      "name": "Ironskin Outfit",
+      "tier": "Rare",
+      "pool": "Survivor_brown",
+      "description": "When you receive attack damage in Close Range, gain 5 Plated Armor. Lose 1 more Distance at the start of each turn.",
+      "flavorText": "It may slow you down, but it gives you a different kind of survivability..."
+    },
+    {
+      "name": "Longbow",
+      "tier": "Rare",
+      "pool": "Survivor_brown",
+      "description": "Start each combat with 1 additional Distance.\nWhile in Long Range, gain 3 Strength.\nWhile in Close Range, lose 1 Strength.",
+      "flavorText": "The last thing they'll never see."
+    },
+    {
+      "name": "Sharpened Dagger",
+      "tier": "Rare",
+      "pool": "Survivor_brown",
+      "description": "Gain 3 Strength while in Close Range.",
+      "flavorText": "Good for skinning beasts, whittling new arrows, or slicing someone that gets too close."
+    },
+    {
+      "name": "Advanced Evolution",
+      "tier": "Boss",
+      "pool": "Survivor_brown",
+      "description": "Replaces Innate Mutation. Whenever you draw a Status or Curse card, draw 1 card. The first time you draw a Status or Curse card in a turn, gain [E].",
+      "flavorText": "When you're pushed to your limit, you start to go beyond what you thought was possible..."
+    },
+    {
+      "name": "Good Boy",
+      "tier": "Shop",
+      "pool": "Survivor_brown",
+      "description": "The first time you play an Attack each turn, ALL enemies lose HP equal to their Mark.",
+      "flavorText": "He's only the best boy in the whole wide world? Isn't he?! Yes he is!"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Survivalist",
+      "type": "Player",
+      "minHP": "50",
+      "maxHP": "50"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Acid Trap",
+      "description": "When you play 2 cards in a turn, remove Artifact from all enemies, and apply Poison, Weak, and Vulnerable."
+    },
+    {
+      "name": "Advantage",
+      "description": "Prevents the next instance of turn-based Distance loss."
+    },
+    {
+      "name": "Bear Trap",
+      "description": "When you lose 4 Distance in a turn, apply Weak and Vulnerable to all enemies."
+    },
+    {
+      "name": "Distance",
+      "description": "Reduces incoming damage by 10% each, up to 7. Reduced by 2 each turn. You are in Close Range at Distance 0-2, Mid Range at distance 3-6, and Long Range at 7 and above."
+    },
+    {
+      "name": "Explosive Trap",
+      "description": "When you gain 4 Distance in a turn, deal damage to ALL enemies."
+    },
+    {
+      "name": "Fence Trap",
+      "description": "When your Block is broken, gain Block and 1 Blur."
+    },
+    {
+      "name": "Flashbang Trap",
+      "description": "When you play 2 Skills in a turn, apply Mark to all enemies."
+    },
+    {
+      "name": "Marked Trap",
+      "description": "When you go a turn without being attacked, ALL enemies lose HP equal to their Mark."
+    },
+    {
+      "name": "Poison Trap",
+      "description": "When you play 3 Attacks in a turn, apply Poison to all enemies."
+    },
+    {
+      "name": "Trap",
+      "description": "Placed in a Trap Slot. Activates when certain conditions are met."
+    },
+    {
+      "name": "Trap Trap",
+      "description": "When you activate a Trap, fill your Trap slots with random Traps."
+    }
+  ]
+}

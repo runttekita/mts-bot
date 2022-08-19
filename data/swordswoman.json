@@ -1,0 +1,1308 @@
+{
+  "mod": {
+    "name": "TheSwordswoman",
+    "version": "1.5",
+    "authors": ["Vex'd"],
+    "credits": "",
+    "description": "A mod adding the character Narmaya from Granblue Fantasy, who uses a dual stance to aid in battle.",
+    "mts_version": "3.8.0",
+    "sts_version": "2.0",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Butterfly Effect",
+      "color": "Swordswoman_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "blazmod:Stance_Swap.\nGain 1 Strength.\nGain 2 Weak."
+    },
+    {
+      "name": "Butterfly Effect+",
+      "color": "Swordswoman_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "blazmod:Stance_Swap.\nGain 1 Strength.\nGain 1 Weak."
+    },
+    {
+      "name": "Defend",
+      "color": "Swordswoman_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Swordswoman_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Kyokasuigetsu",
+      "color": "Swordswoman_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Dawnfly: Gain 8 Block and apply 1 Weak.\n\u03C0Freeflutter: Deal 12 damage. If the enemy intends to attack, deal 12 damage again."
+    },
+    {
+      "name": "Kyokasuigetsu+",
+      "color": "Swordswoman_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Dawnfly: Gain 10 Block and apply 2 Weak.\n\u03C0Freeflutter: Deal 15 damage. If the enemy intends to attack, deal 15 damage again."
+    },
+    {
+      "name": "Strike",
+      "color": "Swordswoman_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Swordswoman_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Boulder Flash",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nGain Block equal to unblocked damage dealt.\nExhaust."
+    },
+    {
+      "name": "Boulder Flash+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nGain Block equal to unblocked damage dealt.\nExhaust."
+    },
+    {
+      "name": "Butter Flutter",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Dawnfly: Gain 14 Block. blazmod:Trance: Then remove half of your Block.\n\u03C0Freeflutter: Deal 14 damage. blazmod:Trance: That enemy gains 1 Strength."
+    },
+    {
+      "name": "Butter Flutter+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Dawnfly: Gain 16 Block. blazmod:Trance: Then remove half of your Block.\n\u03C0Freeflutter: Deal 16 damage. blazmod:Trance: That enemy gains 1 Strength."
+    },
+    {
+      "name": "Crosscut",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Gain 4 Block twice.\n\u03C0Freeflutter: Deal 4 damage twice."
+    },
+    {
+      "name": "Crosscut+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Gain 6 Block twice.\n\u03C0Freeflutter: Deal 6 damage twice."
+    },
+    {
+      "name": "Flash Rock",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nYou may discard 1 card.\nIf you do, draw 1 card."
+    },
+    {
+      "name": "Flash Rock+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nYou may discard 1 card.\nIf you do, draw 1 card."
+    },
+    {
+      "name": "Fleet of Foot",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 4 cards.\nDiscard 4 cards."
+    },
+    {
+      "name": "Fleet of Foot+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 5 cards.\nDiscard 4 cards."
+    },
+    {
+      "name": "Fortified Vigor",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies.\nblazmod:Trance: Exhaust."
+    },
+    {
+      "name": "Fortified Vigor+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies.\nblazmod:Trance: Exhaust."
+    },
+    {
+      "name": "Katana Swing",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Deal 8 damage to ALL enemies.\n\u03C0Freeflutter: Deal 10 damage."
+    },
+    {
+      "name": "Katana Swing+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Deal 10 damage to ALL enemies.\n\u03C0Freeflutter: Deal 10 damage and gain 1 Strength."
+    },
+    {
+      "name": "Mental Focus",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nblazmod:Trance: Lose 3 temporary Strength."
+    },
+    {
+      "name": "Mental Focus+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nblazmod:Trance: Lose 3 temporary Strength."
+    },
+    {
+      "name": "Physical Endurance",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nblazmod:Reverb: Gain 1 temporary Dexterity."
+    },
+    {
+      "name": "Physical Endurance+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nblazmod:Reverb: Gain 3 temporary Dexterity."
+    },
+    {
+      "name": "Sideway Solace",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 temporary Strength.\nGain 2 Vulnerable."
+    },
+    {
+      "name": "Sideway Solace+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 temporary Strength.\nGain 2 Vulnerable."
+    },
+    {
+      "name": "Stance Change",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "blazmod:Stance_Swap.\nGain 1 Strength.\nGain 1 Weak.\nExhaust."
+    },
+    {
+      "name": "Stance Change+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "blazmod:Stance_Swap.\nGain 1 Strength."
+    },
+    {
+      "name": "Transience of Eternity",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Deal 8 damage and draw 1 card.\n\u03C0Freeflutter: Deal 8 damage and apply 1 Vulnerable."
+    },
+    {
+      "name": "Transience of Eternity+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Deal 10 damage and draw 2 cards.\n\u03C0Freeflutter: Deal 10 damage and apply 2 Vulnerable."
+    },
+    {
+      "name": "Valiance",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nblazmod:Trance: Shuffle 2 *Dazed into your draw pile."
+    },
+    {
+      "name": "Valiance+",
+      "color": "Swordswoman_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nblazmod:Trance: Shuffle 1 *Dazed into your draw pile."
+    },
+    {
+      "name": "Apex of Nothingness",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Dawnfly: Deal 6 damage to ALL enemies X times.\n\u03C0Freeflutter: Draw X cards."
+    },
+    {
+      "name": "Apex of Nothingness+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Dawnfly: Deal 8 damage to ALL enemies X times.\n\u03C0Freeflutter: Draw X cards and Retain your hand this turn."
+    },
+    {
+      "name": "Be The Blade",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGain 2 Temporary Strength."
+    },
+    {
+      "name": "Be The Blade+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nGain 2 Temporary Strength."
+    },
+    {
+      "name": "Blade of Enlightenment",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Dawnfly: Deal 3 damage and draw 1 card.\n\u03C0Freeflutter: Gain 5 Block."
+    },
+    {
+      "name": "Blade of Enlightenment+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Dawnfly: Deal 5 damage and draw 1 card.\n\u03C0Freeflutter: Gain 7 Block."
+    },
+    {
+      "name": "Blind Blade",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Vigor.\nGain 3 Strength.\nYou cannot play Attacks this turn.\nExhaust."
+    },
+    {
+      "name": "Blind Blade+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Vigor.\nGain 5 Strength.\nYou cannot play Attacks this turn.\nExhaust."
+    },
+    {
+      "name": "Blinding Flash",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nblazmod:Reverb: Apply 1 Vulnerable."
+    },
+    {
+      "name": "Blinding Flash+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nDraw 1 card.\nblazmod:Reverb: Apply 1 Vulnerable."
+    },
+    {
+      "name": "Cast Away Dew",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Dawnfly: This turn, whenever you discard a card, gain 5 Block.\n\u03C0Freeflutter: Remove the enemy's Block."
+    },
+    {
+      "name": "Cast Away Dew+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Dawnfly: This turn, whenever you discard a card, gain 5 Block.\n\u03C0Freeflutter: Remove the enemy's Block."
+    },
+    {
+      "name": "Clear the Mind",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you discard a card, gain 2 Block."
+    },
+    {
+      "name": "Clear the Mind+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you discard a card, gain 3 Block."
+    },
+    {
+      "name": "Contingency",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever an Attack deals unblocked damage, put a random Basic card from your draw pile into your hand."
+    },
+    {
+      "name": "Contingency+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever an Attack deals unblocked damage, put a random Basic card from your draw pile into your hand."
+    },
+    {
+      "name": "Dance of the Gods",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses 1 Strength.\nblazmod:Reverb: Gain 1 Strength."
+    },
+    {
+      "name": "Dance of the Gods+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 1 Strength.\nblazmod:Reverb: Gain 1 Strength."
+    },
+    {
+      "name": "Dauntless Draw",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Dawnfly: Deal 10 damage and gain 10 Block.\n\u03C0Freeflutter: Deal 10 damage, twice if no damage was taken last turn."
+    },
+    {
+      "name": "Dauntless Draw+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Dawnfly: Deal 13 damage and gain 13 Block.\n\u03C0Freeflutter: Deal 13 damage, twice if no damage was taken last turn."
+    },
+    {
+      "name": "Devil Divine",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw 1 card.\nDiscard 1 card.\nGain [E] .\nGain 3 Block.\nblazmod:Reverb: Repeat all that."
+    },
+    {
+      "name": "Devil Divine+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw 1 card.\nDiscard 1 card.\nGain [E] .\nGain 5 Block.\nblazmod:Reverb: Repeat all that."
+    },
+    {
+      "name": "Dripping Water Hollows Stone",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play 7 cards in a turn, gain 1 Strength and blazmod:Stance_Swap."
+    },
+    {
+      "name": "Dripping Water Hollows Stone+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play 5 cards in a turn, gain 1 Strength and blazmod:Stance_Swap."
+    },
+    {
+      "name": "Fanciful Flutter",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Dexterity whenever you play a Skill, up to 3.\nAt the end of your turn, if you haven't played an Attack this combat, gain 1 blazmod:Reflection."
+    },
+    {
+      "name": "Fanciful Flutter+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Dexterity whenever you play a Skill, up to 5.\nAt the end of your turn, if you haven't played an Attack this combat, gain 1 blazmod:Reflection."
+    },
+    {
+      "name": "Fleeting Dawn",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Strength whenever you play an Attack, up to 3.\nblazmod:Trance: Lose 2 Strength."
+    },
+    {
+      "name": "Fleeting Dawn+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Strength whenever you play an Attack, up to 5.\nblazmod:Trance: Lose 2 Strength."
+    },
+    {
+      "name": "Fly, Fly Again",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time your Block is broken each turn, gain 1 blazmod:Reflection."
+    },
+    {
+      "name": "Fly, Fly Again+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nThe first time your Block is broken each turn, gain 1 blazmod:Reflection."
+    },
+    {
+      "name": "Focus Through Falls",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 7 Block.\nblazmod:Reverb: Gain 7 Block."
+    },
+    {
+      "name": "Focus Through Falls+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 1 card.\nGain 16 Block.\nblazmod:Reverb: Gain 16 Block."
+    },
+    {
+      "name": "Harmony Complete",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Dawnfly: Gain Block equal to the number of cards in your hand 3 times. Exhaust.\n\u03C0Freeflutter: Draw 4 cards. Deal damage equal to the number of cards in your hand. Discard 3 cards. Exhaust."
+    },
+    {
+      "name": "Harmony Complete+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Gain Block equal to the number of cards in your hand 4 times. Exhaust.\n\u03C0Freeflutter: Draw 6 cards. Deal damage equal to the number of cards in your hand. Discard 3 cards. Exhaust."
+    },
+    {
+      "name": "Lockswords",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 Block.\nNext turn, gain 1 Buffer.\nExhaust"
+    },
+    {
+      "name": "Lockswords+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nNext turn, gain 1 Buffer.\nExhaust"
+    },
+    {
+      "name": "Love and Honor",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you change Stances, gain 5 Block."
+    },
+    {
+      "name": "Love and Honor+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you change Stances, gain 7 Block."
+    },
+    {
+      "name": "Mind's Eye",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nblazmod:Reverb: Draw 1 card."
+    },
+    {
+      "name": "Mind's Eye+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nblazmod:Reverb: Draw 1 card."
+    },
+    {
+      "name": "Moonlight Blossoms",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 24 damage.\nApply 3 Vulnerable.\nIf you have no more than 0 energy, gain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Moonlight Blossoms+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 24 damage.\nApply 3 Vulnerable.\nIf you have no more than 1 energy, gain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "My Everything",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 blazmod:Reflection."
+    },
+    {
+      "name": "My Everything+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain 1 blazmod:Reflection."
+    },
+    {
+      "name": "Observant",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "blazmod:Stance_Swap.\nGain 1 Strength.\nGain Block equal to your Strength."
+    },
+    {
+      "name": "Observant+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "blazmod:Stance_Swap.\nGain 1 Strength.\nGain Block equal to your Strength."
+    },
+    {
+      "name": "Open Spirit",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "blazmod:Stance_Swap.\nGain 1 Strength.\nblazmod:Trance: Gain 3 Weak."
+    },
+    {
+      "name": "Open Spirit+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "blazmod:Stance_Swap.\nGain 1 Strength.\nblazmod:Trance: Gain 2 Weak."
+    },
+    {
+      "name": "Phoenix Plume",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Gain 8 Block and 1 temporary Dexterity.\n\u03C0Freeflutter: Deal 15 damage and discard 2 cards."
+    },
+    {
+      "name": "Phoenix Plume+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Gain 10 Block and 2 temporary Dexterity.\n\u03C0Freeflutter: Deal 20 damage and discard 2 cards."
+    },
+    {
+      "name": "Pure Of Soul",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Weak.\nApply 2 Vulnerable.\nblazmod:Trance: Apply to yourself too."
+    },
+    {
+      "name": "Pure Of Soul+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nApply 3 Vulnerable.\nblazmod:Trance: Apply to yourself too."
+    },
+    {
+      "name": "Quick as a Blade",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage to ALL enemies.\nIf this is the first card you played this turn, deal 7 damage to ALL enemies again."
+    },
+    {
+      "name": "Quick as a Blade+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to ALL enemies.\nIf this is the first card you played this turn, deal 10 damage to ALL enemies again."
+    },
+    {
+      "name": "Quickdraw",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Can only be played if no Attacks have been played this turn.\nGain 24 Block and 1 Blur.\nEnd the turn."
+    },
+    {
+      "name": "Quickdraw+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Can only be played if no Attacks have been played this turn.\nGain 30 Block and 1 Blur.\nEnd the turn."
+    },
+    {
+      "name": "Revolving Phoenix",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Frail.\nWhenever you change Stance, gain 1 Strength and draw 1 card."
+    },
+    {
+      "name": "Revolving Phoenix+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you change Stance, gain 1 Strength and draw 1 card."
+    },
+    {
+      "name": "Second Sight",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 1 card from your discard pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Second Sight+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 1 card from your discard pile into your hand."
+    },
+    {
+      "name": "Sure of Hand",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nYou may discard 1 card.\nIf you do, return 1 card from your discard pile to your hand."
+    },
+    {
+      "name": "Sure of Hand+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nYou may discard 1 card.\nIf you do, return 2 cards from your discard pile to your hand."
+    },
+    {
+      "name": "Swordstorm",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage to ALL enemies.\nblazmod:Reverb: Deal 2 damage to ALL enemies."
+    },
+    {
+      "name": "Swordstorm+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage to ALL enemies.\nblazmod:Reverb: Deal 3 damage to ALL enemies."
+    },
+    {
+      "name": "Tanden Katsu",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Strength.\nExhaust."
+    },
+    {
+      "name": "Tanden Katsu+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Strength.\nExhaust."
+    },
+    {
+      "name": "Travel Journal",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, if you took no damage last turn, draw 1 card."
+    },
+    {
+      "name": "Travel Journal+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, if you took no damage last turn, draw 1 card."
+    },
+    {
+      "name": "True of Heart",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time you play an Attack each turn, gain 1 Metallicize."
+    },
+    {
+      "name": "True of Heart+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time you play an Attack each turn, gain 2 Metallicize."
+    },
+    {
+      "name": "Under Purifying Waters",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you change Stances, draw 1 card, then Exhaust 1 card."
+    },
+    {
+      "name": "Under Purifying Waters+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you change Stances, draw 2 card, then Exhaust 2 card."
+    },
+    {
+      "name": "Unrestrained",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Dawnfly: Gain 15 Block if the enemy intends to attack. blazmod:Stance_Swap.\n\u03C0Freeflutter: Deal 20 damage to an enemy without Block. blazmod:Stance_Swap."
+    },
+    {
+      "name": "Unrestrained+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Dawnfly: Gain 19 Block if the enemy intends to attack. blazmod:Stance_Swap.\n\u03C0Freeflutter: Deal 24 damage to an enemy without Block. blazmod:Stance_Swap."
+    },
+    {
+      "name": "Walk 10,000 Miles",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nThe next Attack you play costs 0."
+    },
+    {
+      "name": "Walk 10,000 Miles+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nThe next Attack you play costs 0."
+    },
+    {
+      "name": "Wild Butterfly",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "The next card you play is played 2 additional times.\nExhaust."
+    },
+    {
+      "name": "Wild Butterfly+",
+      "color": "Swordswoman_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "The next card you play is played 2 additional times.\nExhaust."
+    },
+    {
+      "name": "Almighty Passage",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage to ALL enemies.\nKill all enemies with less than 20 HP."
+    },
+    {
+      "name": "Almighty Passage+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage to ALL enemies.\nKill all enemies with less than 25 HP."
+    },
+    {
+      "name": "Buttefly Form",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Your Stance split cards get both effects."
+    },
+    {
+      "name": "Buttefly Form+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Your Stance split cards get both effects."
+    },
+    {
+      "name": "Butterfly Blade",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Retain. Deal 10 damage. blazmod:Stance_Swap.\n\u03C0Freeflutter: Retain. Gain 10 Block. blazmod:Stance_Swap."
+    },
+    {
+      "name": "Butterfly Blade+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Dawnfly: Retain. Deal 12 damage. blazmod:Stance_Swap.\n\u03C0Freeflutter: Retain. Gain 12 Block. blazmod:Stance_Swap."
+    },
+    {
+      "name": "Crescent Moon",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nIf Fatal, increase your Max HP by 10.\nFleeting."
+    },
+    {
+      "name": "Crescent Moon+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nIf Fatal, increase your Max HP by 12.\nFleeting."
+    },
+    {
+      "name": "Dance of the Butterflies",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Dawnfly: Deal 24 damage and gain 3 Strength. Exhaust.\n\u03C0Freeflutter: Deal 24 damage and gain 2 Buffer. Exhaust."
+    },
+    {
+      "name": "Dance of the Butterflies+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Dawnfly: Deal 24 damage. Gain 3 Strength and 3 Vigor. Exhaust.\n\u03C0Freeflutter: Deal 24 damage. Gain 2 Buffer and remove your debuffs. Exhaust."
+    },
+    {
+      "name": "Eight-Life's Pilgrimage",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 8 damage.\nHeal 8 HP.\nGain 8 Block.\nDraw 8 cards.\nGain 8 Strength.\nExhaust."
+    },
+    {
+      "name": "Eight-Life's Pilgrimage+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 8 damage.\nHeal 8 HP.\nGain 8 Block.\nDraw 8 cards.\nGain 8 Strength.\nExhaust."
+    },
+    {
+      "name": "Forge Ways",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Autoplay.\nDeal 10 damage to ALL enemies.\nShuffle 1 copy of this card into your draw pile.\nblazmod:Reverb: Take 3 damage."
+    },
+    {
+      "name": "Forge Ways+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Autoplay.\nDeal 15 damage to ALL enemies.\nShuffle 1 copy of this card into your draw pile.\nblazmod:Reverb: Take 2 damage."
+    },
+    {
+      "name": "Glasswing Waltz",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next Stance split card gets both effects."
+    },
+    {
+      "name": "Glasswing Waltz+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Your next Stance split card gets both effects."
+    },
+    {
+      "name": "Houmatsu-Mugen Kochoiji",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 10 Block for each enemy that intends to attack.\nDeal 10 damage to ALL enemies for each enemy that doesn't.\nExhaust."
+    },
+    {
+      "name": "Houmatsu-Mugen Kochoiji+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 12 Block for each enemy that intends to attack.\nDeal 12 damage to ALL enemies for each enemy that doesn't.\nExhaust."
+    },
+    {
+      "name": "In Love And War",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nYour next Attack is played twice."
+    },
+    {
+      "name": "In Love And War+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage.\nYour next Attack is played twice."
+    },
+    {
+      "name": "Mind at Peace",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 20 Block.\nNext turn, gain Vigor equal to Block lost this turn.\nExhaust."
+    },
+    {
+      "name": "Mind at Peace+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 25 Block.\nNext turn, gain Vigor equal to Block lost this turn.\nExhaust."
+    },
+    {
+      "name": "Mirror Image",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first card you play each turn is played twice."
+    },
+    {
+      "name": "Mirror Image+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first 2 cards you play each turn are played twice."
+    },
+    {
+      "name": "Nature's Beauty",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Ethereal.\nThe first time you play a card each turn, put a card with its type from your draw pile into your hand."
+    },
+    {
+      "name": "Nature's Beauty+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first time you play a card each turn, put a card with its type from your draw pile into your hand."
+    },
+    {
+      "name": "One with Nature",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain Block equal to unblocked damage dealt.\nGain 1 blazmod:Reflection."
+    },
+    {
+      "name": "One with Nature+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain Block equal to unblocked damage dealt.\nGain 1 blazmod:Reflection."
+    },
+    {
+      "name": "Perennial Beauty",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 1 damage 8 times.\nExhaust."
+    },
+    {
+      "name": "Perennial Beauty+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 1 damage 8 times.\nExhaust."
+    },
+    {
+      "name": "Seismic Slash",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 2 [E] .\nDeal 6 damage.\nDraw 3 cards.\nExhaust.\nblazmod:Trance: Lose 3 [E] next turn."
+    },
+    {
+      "name": "Seismic Slash+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 3 [E] .\nDeal 6 damage.\nDraw 3 cards.\nExhaust.\nblazmod:Trance: Lose 2 [E] next turn."
+    },
+    {
+      "name": "Setsuna",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "5",
+      "description": "Exhaust.\nblazmod:Reverb: Discard your hand and take an extra turn."
+    },
+    {
+      "name": "Setsuna+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Exhaust.\nblazmod:Reverb: Discard your hand and take an extra turn."
+    },
+    {
+      "name": "True Self",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 9 damage.\nGain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "True Self+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Visions of Butterflies",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand, then draw that many cards.\nGain Temporary Strength equal to the number of cards discarded."
+    },
+    {
+      "name": "Visions of Butterflies+",
+      "color": "Swordswoman_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard your hand, then draw that many cards.\nGain Temporary Strength equal to the number of cards discarded."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Venustas",
+      "tier": "Starter",
+      "pool": "Swordswoman_color",
+      "description": "At the start of your turn and whenever you change Stances, draw 1 card, then discard 1 card.",
+      "flavorText": "Only a leader who helps people regardless of their background can wield this blade."
+    },
+    {
+      "name": "Raikiri",
+      "tier": "Common",
+      "pool": "Swordswoman_color",
+      "description": "The third time you change Stances each combat, remove all your debuffs.",
+      "flavorText": "Blade cuts, lightning follows."
+    },
+    {
+      "name": "Blade of Purification",
+      "tier": "Uncommon",
+      "pool": "Swordswoman_color",
+      "description": "The first time you play an Attack that costs 2 or more each turn, deal 5 damage to ALL enemies.",
+      "flavorText": "Those who completes this blade's trials are freed from all impure thoughts."
+    },
+    {
+      "name": "Confection Cutter",
+      "tier": "Rare",
+      "pool": "Swordswoman_color",
+      "description": "When you discard your 5th card each turn, gain 1 Strength.",
+      "flavorText": "Using a Katana to cut chocolate is far from State-of-the-art."
+    },
+    {
+      "name": "Eight-Life Katana",
+      "tier": "Rare",
+      "pool": "Swordswoman_color",
+      "description": "At the start of your turn, add a random card with Reverb from your draw pile to your hand.",
+      "flavorText": "The fate of every living creature in the sky rests within its eight gems."
+    },
+    {
+      "name": "Samurai Sword",
+      "tier": "Boss",
+      "pool": "Swordswoman_color",
+      "description": "Gain [E] at the start of your turn. Your first Attack each turn deals 1 damage.",
+      "flavorText": "A true Samurai can use any blade they come across. Even this model blade, Gozaru!"
+    },
+    {
+      "name": "Soshu Masamune",
+      "tier": "Boss",
+      "pool": "Swordswoman_color",
+      "description": "Replaces Venustas.\nAt the start of your turn and whenever you change Stances, draw 2 card, then discard 2 cards.",
+      "flavorText": "This blade shows its true worth only to those who have attained enlightenment."
+    },
+    {
+      "name": "Vyxaba",
+      "tier": "Boss",
+      "pool": "Swordswoman_color",
+      "description": "Upon pickup, duplicate a card in your deck.\nThe first time you play a card each turn, add a random card with that card's name from your draw pile to your hand.",
+      "flavorText": "Oira! Punk! Witness the true power of Vyrn, the likes of which you have never seen before."
+    },
+    {
+      "name": "Unsigned Blade",
+      "tier": "Shop",
+      "pool": "Swordswoman_color",
+      "description": "Whenever you apply a debuff to yourself, gain 5 Block.",
+      "flavorText": "A good blade needs no signation from its maker, its wielder is enough."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Swordswoman",
+      "type": "Player",
+      "minHP": "40",
+      "maxHP": "40"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Reflection",
+      "description": "This turn, deal fully blocked damage back to the attacker."
+    },
+    {
+      "name": "Reverb",
+      "description": "Effect activates once for each time you have played a card with this name this combat."
+    },
+    {
+      "name": "Stance Swap",
+      "description": "Switch between Dawnfly Stance and Freeflutter Stance."
+    },
+    {
+      "name": "Trance",
+      "description": "When you discard this card, activate its effects and its Trance effect."
+    }
+  ]
+}

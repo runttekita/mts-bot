@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "The Gatherer",
-    "version": "1.0.0",
+    "version": "1.0.6",
     "authors": ["Celicath"],
-    "credits": "Rita-Bernstein - Character art, ZHS translation\nMappyTheKat - Old character splash art\nJedi - RUS translation",
-    "description": "Adds The Gatherer as a new playable character with 75 cards, 7 relics.\n\nv1.0.0 (2020-01-15)\n- Art update: Removed all BETA watermarks and unmodified base game art.\n- Updated for 2.0 release (Watcher release).\n- Rework: 3 cards and 1 Relic.\n- Many balance changes.\n\nVisit https://steamcommunity.com/sharedfiles/filedetails/changelog/1611788501 for full change notes.",
+    "credits": "Rita-Bernstein - Character art, ZHS translation\nJedi - RUS translation\nMappyTheKat - Old character splash art",
+    "description": "Adds The Gatherer as a new playable character with 75 cards, 7 relics.\n\nv1.0.6 (2020-11-30)\n- Update for Slay the Spire v2.2\n- Mind Search now considers your current energy while determining Lesser Energy Potion probability.\n\nVisit https://steamcommunity.com/sharedfiles/filedetails/changelog/1611788501 for full change notes.",
     "mts_version": "3.7.0",
-    "sts_version": "12-21-2019",
+    "sts_version": "11-29-2020",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -169,7 +169,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 12 Block.\nAdd a Dazed to your discard pile."
+      "description": "Gain 12 Block.\nAdd a Dazed into your discard pile."
     },
     {
       "name": "Aroma Protection+",
@@ -177,7 +177,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 16 Block.\nAdd a Dazed to your discard pile."
+      "description": "Gain 16 Block.\nAdd a Dazed into your discard pile."
     },
     {
       "name": "Bambu Sword",
@@ -185,7 +185,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage. Play a basic Strike or Defend from your hand with no cost."
+      "description": "Deal 8 damage. Play a []Strike or Defend from your hand with no cost."
     },
     {
       "name": "Bambu Sword+",
@@ -193,7 +193,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage. Play a basic Strike or Defend from your hand with no cost."
+      "description": "Deal 11 damage. Play a []Strike or Defend from your hand with no cost."
     },
     {
       "name": "Careful Strike",
@@ -233,7 +233,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Exhaust a card.\nIf it is [#60B0C0]Uncommon,[]\ngain 25 Block.\nIf it is [#FFC050]Rare,[]\ngain 35 Block."
+      "description": "Exhaust a card.\nIf it is Uncommon,\ngain 25 Block.\nIf it is Rare,\ngain 35 Block."
     },
     {
       "name": "Convert+",
@@ -241,7 +241,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Exhaust a card.\nIf it is [#60B0C0]Uncommon,[]\ngain 25 Block.\nIf it is [#FFC050]Rare,[]\ngain 35 Block."
+      "description": "Exhaust a card.\nIf it is Uncommon,\ngain 25 Block.\nIf it is Rare,\ngain 35 Block."
     },
     {
       "name": "Drug Power",
@@ -329,7 +329,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nApply 2 Vulnerable.\nAdd 2 Dazed to your discard pile."
+      "description": "Deal 9 damage.\nApply 2 Vulnerable.\nAdd a Dazed into your discard pile."
     },
     {
       "name": "Frenzy+",
@@ -337,7 +337,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 13 damage.\nApply 3 Vulnerable.\nAdd 2 Dazed to your discard pile."
+      "description": "Deal 12 damage.\nApply 3 Vulnerable.\nAdd a Dazed into your discard pile."
     },
     {
       "name": "Gather Material",
@@ -841,7 +841,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal ? damage.\nApply ?.\n[#C0B0C0](Each [#D0C8D0]Rotten [#D0C8D0]Stipe\n[#D0C8D0]has [#D0C8D0]randomly [#D0C8D0]chosen\n[#D0C8D0]damage [#D0C8D0]and [#D0C8D0]debuff.)"
+      "description": "Deal ? damage.\nApply ?.\n(Each Rotten Stipe\nhas randomly chosen\ndamage and debuff.)"
     },
     {
       "name": "Rotten Stipe+ ",
@@ -849,7 +849,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal ? damage.\nApply ?.\n[#C0B0C0](Each [#D0C8D0]Rotten [#D0C8D0]Stipe\n[#D0C8D0]has [#D0C8D0]randomly [#D0C8D0]chosen\n[#D0C8D0]damage [#D0C8D0]and [#D0C8D0]debuff.)"
+      "description": "Deal ? damage.\nApply ?.\n(Each Rotten Stipe\nhas randomly chosen\ndamage and debuff.)"
     },
     {
       "name": "Scent of Rosmari",
@@ -969,7 +969,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Each turn, 1 card you play that costs 2 or more has Refund 1."
+      "description": "Each turn, the first card you play that costs 2 or more has Refund 1."
     },
     {
       "name": "Uplift+",
@@ -977,7 +977,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Each turn, 2 cards you play that costs 2 or more has Refund 1."
+      "description": "Each turn, the first 2 cards you play that cost 2 or more have Refund 1."
     },
     {
       "name": "Venom Barrier",
@@ -1081,7 +1081,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 30 damage.\ngatherer:Once: Enemy loses 15 Strength this turn. When Obtained, become [#FF6563]Cursed[] [#FF6563]-[] [#FF6563]Normality.[]"
+      "description": "Deal 30 damage.\ngatherer:Once: Enemy loses 15 Strength this turn. When Obtained, become Cursed - Normality."
     },
     {
       "name": "Cursed Blade+",
@@ -1089,7 +1089,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 35 damage.\ngatherer:Twice: Enemy loses 15 Strength this turn. When Obtained, become [#FF6563]Cursed[] [#FF6563]-[] [#FF6563]Normality.[]"
+      "description": "Deal 35 damage.\ngatherer:Twice: Enemy loses 15 Strength this turn. When Obtained, become Cursed - Normality."
     },
     {
       "name": "Examine",
@@ -1113,7 +1113,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 12 damage. If the enemy has less HP than yours, hit twice instead."
+      "description": "Deal 12 damage. If the enemy has less HP than you, hit 2 times instead."
     },
     {
       "name": "Finishing Strike+",
@@ -1121,7 +1121,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 16 damage. If the enemy has less HP than yours, hit twice instead."
+      "description": "Deal 16 damage. If the enemy has less HP than you, hit 2 times instead."
     },
     {
       "name": "Flaming Bottle",
@@ -1346,5 +1346,61 @@
     }
   ],
   "keywords": [
+    {
+      "name": "Alchemy Trial",
+      "description": "Attack - Lesser Fire or Explosive Potion\nSkill - Lesser Block or Energy Potion\nPower - Lesser Strength or Dexterity Potion\nOther - Lesser Weak or Fear Potion"
+    },
+    {
+      "name": "Gatherer:flower",
+      "description": "Card containing Flower in its name. It can be upgraded 3 times, where 3rd upgrade is special."
+    },
+    {
+      "name": "LEP",
+      "description": "Stands for Lesser Explosive Potion, which normally deals 6 damage to all enemies."
+    },
+    {
+      "name": "Lesser Potion",
+      "description": "A \"Lesser\" version of regular potion which is gained to your Sack."
+    },
+    {
+      "name": "Lesser Block Potion",
+      "description": "A Lesser Potion which gains 8 Block when used."
+    },
+    {
+      "name": "Lesser Energy Potion",
+      "description": "A Lesser Potion which gives you 1 energy when used."
+    },
+    {
+      "name": "Lesser Fear Potion",
+      "description": "A Lesser Potion which applies 2 Vulnerable to an enemy."
+    },
+    {
+      "name": "Lesser Fire Potion",
+      "description": "A Lesser Potion which deals 10 damage to an enemy."
+    },
+    {
+      "name": "Lesser Poison Potion",
+      "description": "A Lesser Potion which applies 4 Poison to an enemy."
+    },
+    {
+      "name": "Lesser Swift Potion",
+      "description": "A Lesser Potion which draws 2 cards when used."
+    },
+    {
+      "name": "Lesser Weak Potion",
+      "description": "A Lesser Potion which applies 2 Weak to an enemy."
+    },
+    {
+      "name": "Once",
+      "description": "Only activates when you play this card first time in the combat."
+    },
+    {
+      "name": "Twice",
+      "description": "Only activates for the first two times you play this card in combat. Becomes Once after one use."
+    },
+    {
+      "name": "Gatherer:unique",
+      "description": "Cards with different name (except for upgrades) are considered unique."
+    }
   ]
 }

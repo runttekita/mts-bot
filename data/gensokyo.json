@@ -1,31 +1,23 @@
 {
+  "mod": {
+    "name": "Gensokyo",
+    "version": "4.0.0",
+    "authors": ["Darkglade"],
+    "credits": "",
+    "description": "An alternate Act 1, 2, and 3 mod inspired by Touhou Project.",
+    "mts_version": "3.8.0",
+    "sts_version": "11-30-2020",
+    "dependencies": ["basemod","stslib","actlikeit"],
+    "optional_dependencies": []
+  },
   "cards": [
-    {
-      "name": "Apocalypse",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 20 damage to ALL enemies.\nTake 10 damage.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Apocalypse+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 30 damage to ALL enemies.\nTake 15 damage.",
-      "mod": "Gensokyo"
-    },
     {
       "name": "Crescent Moon Slash",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage to ALL enemies.\nIf this kills an enemy, repeat this effect.",
-      "mod": "Gensokyo"
+      "description": "Deal 9 damage to ALL enemies.\nIf this kills an enemy, repeat this effect."
     },
     {
       "name": "Crescent Moon Slash+",
@@ -33,296 +25,95 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 12 damage to ALL enemies.\nIf this kills an enemy, repeat this effect.",
-      "mod": "Gensokyo"
+      "description": "Deal 12 damage to ALL enemies.\nIf this kills an enemy, repeat this effect."
     },
     {
-      "name": "Eight Feet Tall",
+      "name": "Custom Potion",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Skill",
-      "cost": "2",
-      "description": "Target non-boss enemy dies in 5 turns.\nExhaust.",
-      "mod": "Gensokyo"
+      "cost": "X",
+      "description": ""
     },
     {
-      "name": "Eight Feet Tall+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Target non-boss enemy dies in 5 turns.\nExhaust.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Gap Woman",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Apply 99 Weak to ALL enemies.\nExhaust.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Gap Woman+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Apply 99 Weak to ALL enemies.\nExhaust.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "HAARP",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "2",
-      "description": "At the start of your turn, Channel 1 Lightning.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "HAARP+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "2",
-      "description": "At the start of your turn, Channel 2 Lightning.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Kunekune",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "2",
-      "description": "Apply 2 gensokyo:Lunacy.\nExhaust.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Kunekune+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Apply 2 gensokyo:Lunacy.\nExhaust.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Little Green Men",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Gain [E].\nPut a copy of this card on top of your draw pile.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Little Green Men+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Retain.\nGain [E].\nPut a copy of this card on top of your draw pile.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Loch Ness Monster",
+      "name": "Greater Split: Horizontal+",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Attack",
-      "cost": "3",
-      "description": "Deal 4 damage 8 times.",
-      "mod": "Gensokyo"
+      "cost": "5",
+      "description": "Deal 42 damage and apply 1 Stun to ALL enemies."
     },
     {
-      "name": "Loch Ness Monster+",
+      "name": "Greater Split: Vertical",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Attack",
-      "cost": "3",
-      "description": "Deal 4 damage 10 times.",
-      "mod": "Gensokyo"
+      "cost": "5",
+      "description": "Deal 39 damage.\nApply 1 Stun."
     },
     {
-      "name": "Manor of the Dishes",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "1",
-      "description": "Whenever you play !Gensokyo:SecondMagic! cards, gain 1 Intangible.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Manor of the Dishes+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever you play !Gensokyo:SecondMagic! cards, gain 1 Intangible.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Men in Black",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "2",
-      "description": "Retain.\nGain 1 Intangible.\nExhaust.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Men in Black+",
+      "name": "Private Square",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Skill",
       "cost": "1",
-      "description": "Retain.\nGain 1 Intangible.\nExhaust.",
-      "mod": "Gensokyo"
+      "description": "Take an extra turn after this one. End your turn.\nAdd a copy of this card that costs 2 more to your hand.\nIf any enemy takes damage while this is in your hand, exhaust it."
     },
     {
-      "name": "Miss Mary",
+      "name": "Private Square+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Take an extra turn after this one. End your turn.\nAdd a copy of this card that costs 2 more to your hand.\nIf any enemy takes damage while this is in your hand, exhaust it."
+    },
+    {
+      "name": "Shooting Star",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a copy of another card in your deck to your hand."
+    },
+    {
+      "name": "Shooting Star+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a copy of another card in your deck to your hand."
+    },
+    {
+      "name": "Taboo \"Four of a Kind\"",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 99 Vulnerable to ALL enemies.\nExhaust.",
-      "mod": "Gensokyo"
+      "description": "This turn, your next card is played 1 additional time(s).\nIncrease the effect of ALL copies of this card by 1 this combat.\nCan only be played once per turn."
     },
     {
-      "name": "Miss Mary+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Apply 99 Vulnerable to ALL enemies.\nExhaust.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Monkey's Paw",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Lose half of your current HP.\nGain 12 Gold for each HP lost this way.\nExhaust.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Monkey's Paw+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Lose half of your current HP.\nGain 15 Gold for each HP lost this way.\nExhaust.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Red Cape Blue Cape",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Gain 10 Block.\nDeal 10 damage.\nAdd gensokyo:Red_Cape and gensokyo:Blue_Cape to your hand.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Red Cape Blue Cape+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Gain 13 Block.\nDeal 13 damage.\nAdd gensokyo:Red_Cape+ and gensokyo:Blue_Cape+ to your hand.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Seven School Mysteries",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever you play !Gensokyo:SecondMagic! cards in a single turn, gain 3 Strength and 3 Dexterity.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Seven School Mysteries+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever you play !Gensokyo:SecondMagic! cards in a single turn, gain 4 Strength and 4 Dexterity.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Slit Mouthed Woman",
+      "name": "Taboo \"Four of a Kind\"+",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Skill",
       "cost": "1",
-      "description": "The next time you are attacked, apply 3 Vulnerable to the attacker.\nThe second next time you are attacked, the attacker loses 3 Strength.\nExhaust.",
-      "mod": "Gensokyo"
+      "description": "This turn, your next card is played 1 additional time(s).\nIncrease the effect of ALL copies of this card by 1 this combat.\nCan only be played once per turn."
     },
     {
-      "name": "Slit Mouthed Woman+",
+      "name": "Butterfly",
       "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "1",
-      "description": "The next time you are attacked, apply 4 Vulnerable to the attacker.\nThe second next time you are attacked, the attacker loses 4 Strength.\nExhaust.",
-      "mod": "Gensokyo"
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is exhausted, lose 2 Max HP this combat."
     },
     {
-      "name": "Spontaneous Human Combustion",
+      "name": "Embers of Love",
       "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
+      "rarity": "Common",
+      "type": "Status",
       "cost": "0",
-      "description": "Gain 5 Strength.\nAt the end of your turn, take !Gensokyo:SecondMagic! damage and increase the damage you will take from this power by !Gensokyo:SecondMagic!.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Spontaneous Human Combustion+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "0",
-      "description": "Gain 7 Strength.\nAt the end of your turn, take !Gensokyo:SecondMagic! damage and increase the damage you will take from this power by !Gensokyo:SecondMagic!.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Teke Teke",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "3",
-      "description": "Deal 7 damage !Gensokyo:SecondMagic! times to ALL enemies.\nIf this brings an enemy below half HP, increase this card's damage by 7 this combat.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Teke Teke+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "3",
-      "description": "Deal 10 damage !Gensokyo:SecondMagic! times to ALL enemies.\nIf this brings an enemy below half HP, increase this card's damage by 10 this combat.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Turbo Granny",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "2",
-      "description": "Gain 3 Dexterity.\nGain !Gensokyo:SecondMagic! Plated Armor.",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Turbo Granny+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "2",
-      "description": "Gain 4 Dexterity.\nGain !Gensokyo:SecondMagic! Plated Armor.",
-      "mod": "Gensokyo"
+      "description": "A random enemy gains 2 Strength."
     },
     {
       "name": "Frozen!",
@@ -330,8 +121,695 @@
       "rarity": "Common",
       "type": "Status",
       "cost": "3",
-      "description": "When this card is drawn, reduce its cost by 1 this combat.\nExhaust.",
-      "mod": "Gensokyo"
+      "description": "When this card is drawn, reduce its cost by 1 this combat."
+    },
+    {
+      "name": "Infected Wound",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "2",
+      "description": "While this card is in your hand, take 3 damage whenever you play an Attack."
+    },
+    {
+      "name": "Mind Shatter",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "1",
+      "description": "Shuffle ALL non-exhausting cards in your exhaust pile into your draw pile.\nLose 2 HP for each card moved this way."
+    },
+    {
+      "name": "Philosophy of the Despised",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "0",
+      "description": "At the end of your turn, take 15 damage."
+    },
+    {
+      "name": "Reflex Radar",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "1",
+      "description": "Draw 1 card."
+    },
+    {
+      "name": "Impossible Request",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "",
+      "description": "gensokyo:Impossible_Request."
+    },
+    {
+      "name": "All the World's Evil",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "0",
+      "description": "Apply 1 Vulnerable to ALL characters."
+    },
+    {
+      "name": "Apocalypse",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 20 damage to ALL enemies.\nTake 10 damage."
+    },
+    {
+      "name": "Apocalypse+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 30 damage to ALL enemies.\nTake 15 damage."
+    },
+    {
+      "name": "Doppelganger",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Scry X.\nYour next X cards are played twice."
+    },
+    {
+      "name": "Doppelganger+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Scry X + 1.\nYour next X + 1 cards are played twice."
+    },
+    {
+      "name": "Eight Feet Tall",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Target non-boss enemy dies in 4 turns."
+    },
+    {
+      "name": "Eight Feet Tall+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Target non-boss enemy dies in 4 turns."
+    },
+    {
+      "name": "Gap Woman",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 99 Weak to ALL enemies."
+    },
+    {
+      "name": "Gap Woman+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 99 Weak to ALL enemies."
+    },
+    {
+      "name": "HAARP",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, Channel 2 Lightning."
+    },
+    {
+      "name": "HAARP+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, Channel 2 Lightning."
+    },
+    {
+      "name": "Kunekune",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Apply 2 gensokyo:Lunacy."
+    },
+    {
+      "name": "Kunekune+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Apply 2 gensokyo:Lunacy."
+    },
+    {
+      "name": "Little Green Men",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nPut a copy of this card on top of your draw pile."
+    },
+    {
+      "name": "Little Green Men+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nPut a copy of this card on top of your draw pile."
+    },
+    {
+      "name": "Loch Ness Monster",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 5 damage 6 times."
+    },
+    {
+      "name": "Loch Ness Monster+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 5 damage 8 times."
+    },
+    {
+      "name": "Manor of the Dishes",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play 10 cards, gain 1 Intangible."
+    },
+    {
+      "name": "Manor of the Dishes+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 10 cards, gain 1 Intangible."
+    },
+    {
+      "name": "Men in Black",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Intangible."
+    },
+    {
+      "name": "Men in Black+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible."
+    },
+    {
+      "name": "Miss Mary",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 99 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Miss Mary+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 99 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Monkey's Paw",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose half of your current HP.\nGain 10 Gold for each HP lost this way."
+    },
+    {
+      "name": "Monkey's Paw+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose half of your current HP.\nGain 13 Gold for each HP lost this way."
+    },
+    {
+      "name": "Red Cape Blue Cape",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 10 Block.\nDeal 10 damage.\nAdd gensokyo:Red_Cape and gensokyo:Blue_Cape to your hand."
+    },
+    {
+      "name": "Red Cape Blue Cape+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 13 Block.\nDeal 13 damage.\nAdd gensokyo:Red_Cape+ and gensokyo:Blue_Cape+ to your hand."
+    },
+    {
+      "name": "Seven School Mysteries",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play 7 cards in a single turn, gain 2 Strength and 2 Dexterity."
+    },
+    {
+      "name": "Seven School Mysteries+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play 7 cards in a single turn, gain 2 Strength and 2 Dexterity."
+    },
+    {
+      "name": "Slit Mouthed Woman",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next time you are attacked, apply 3 Vulnerable to the attacker.\nThe second next time you are attacked, the attacker loses 3 Strength."
+    },
+    {
+      "name": "Slit Mouthed Woman+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next time you are attacked, apply 4 Vulnerable to the attacker.\nThe second next time you are attacked, the attacker loses 4 Strength."
+    },
+    {
+      "name": "Spontaneous Human Combustion",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 5 Strength.\nAt the end of your turn, take 1 damage and increase the damage you will take from this power by 1."
+    },
+    {
+      "name": "Spontaneous Human Combustion+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 7 Strength.\nAt the end of your turn, take 1 damage and increase the damage you will take from this power by 1."
+    },
+    {
+      "name": "Teke Teke",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 7 damage 3 times to ALL enemies.\nWhenever this brings an enemy below half HP, increase its damage by 7 and reduce its cost by 1 this combat."
+    },
+    {
+      "name": "Teke Teke+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 10 damage 3 times to ALL enemies.\nWhenever this brings an enemy below half HP, increase its damage by 10 and reduce its cost by 1 this combat."
+    },
+    {
+      "name": "Turbo Granny",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 3 Dexterity.\nGain 3 Plated Armor."
+    },
+    {
+      "name": "Turbo Granny+",
+      "color": "Urban Legend",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 4 Dexterity.\nGain 4 Plated Armor."
+    },
+    {
+      "name": "Blemished Steel",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Random rare relic.\ngensokyo:Evolve 4."
+    },
+    {
+      "name": "Depleted Generator",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Rare card reward.\ngensokyo:Evolve 2."
+    },
+    {
+      "name": "Lifeforce Converter",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Give ALL non-X-cost cards in your hand gensokyo:Bloodcast this combat.\ngensokyo:Item 2."
+    },
+    {
+      "name": "Locked Medkit",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal to full HP.\ngensokyo:Evolve 5."
+    },
+    {
+      "name": "Medicine Kit",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all of your debuffs and heal 2 HP for each debuff removed.\ngensokyo:Item 2."
+    },
+    {
+      "name": "Overcharged Core",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Strength, Dexterity, and Focus.\nLose 3 HP.\ngensokyo:Item 1."
+    },
+    {
+      "name": "RPG",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 25 damage to ALL enemies.\ngensokyo:Item 3."
+    },
+    {
+      "name": "Reactive Armor",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block for each enemy in combat.\ngensokyo:Item 3."
+    },
+    {
+      "name": "Rusty Chest",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "300 gold.\ngensokyo:Evolve 2."
+    },
+    {
+      "name": "Scrap Iron",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Random common relic.\ngensokyo:Evolve 2."
+    },
+    {
+      "name": "Shovel",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Random relic.\ngensokyo:Evolve 3."
+    },
+    {
+      "name": "Tarnished Gold",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "200 gold.\ngensokyo:Evolve 3."
+    },
+    {
+      "name": "Taser",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nApply 1 Stun.\ngensokyo:Item 2."
+    },
+    {
+      "name": "Training Manual",
+      "color": "Shop Special",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Upgraded card reward.\ngensokyo:Evolve 1."
+    },
+    {
+      "name": "Brilliant Dragon Bullet",
+      "color": "Lunar",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw 1 card. If it's an Attack, deal 10 damage again."
+    },
+    {
+      "name": "Brilliant Dragon Bullet+",
+      "color": "Lunar",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nDraw 1 card. If it's an Attack, deal 13 damage again."
+    },
+    {
+      "name": "Salamander Shield",
+      "color": "Lunar",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDraw 1 card. If it's a Skill, gain 9 Block again."
+    },
+    {
+      "name": "Salamander Shield+",
+      "color": "Lunar",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nDraw 1 card. If it's a Skill, gain 12 Block again."
+    },
+    {
+      "name": "Buddhist Diamond",
+      "color": "Lunar",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage.\nWhen this card is discarded by Scry, increase its damage by 16 this combat."
+    },
+    {
+      "name": "Buddhist Diamond+",
+      "color": "Lunar",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 30 damage.\nWhen this card is discarded by Scry, increase its damage by 20 this combat."
+    },
+    {
+      "name": "Everlasting Life",
+      "color": "Lunar",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block.\nScry 4."
+    },
+    {
+      "name": "Everlasting Life+",
+      "color": "Lunar",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 24 Block.\nScry 6."
+    },
+    {
+      "name": "Morning Mist",
+      "color": "Lunar",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nPut a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Morning Mist+",
+      "color": "Lunar",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block.\nPut a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "New Moon",
+      "color": "Lunar",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nPut a card from your hand on top of your draw pile."
+    },
+    {
+      "name": "New Moon+",
+      "color": "Lunar",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage.\nPut a card from your hand on top of your draw pile."
+    },
+    {
+      "name": "Dawn",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Whenever this card is drawn, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Dawn+",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Whenever this card is drawn, gain [E] [E] and draw 1 card."
+    },
+    {
+      "name": "Dreamlike Paradise",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 3.\nCards discarded this way cost 0 until played.\nWhenever this card is drawn, draw 1 card."
+    },
+    {
+      "name": "Dreamlike Paradise+",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 4.\nCards discarded this way cost 0 until played.\nWhenever this card is drawn, draw 1 card."
+    },
+    {
+      "name": "Hourai in a Pot",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard any number of cards then draw that many."
+    },
+    {
+      "name": "Hourai in a Pot+",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard any number of cards then draw that many.\nWhenever this card is drawn, draw 1 card."
+    },
+    {
+      "name": "Life Spring Infinity",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards. Gain 10 Block for every Skill drawn this way."
+    },
+    {
+      "name": "Life Spring Infinity+",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards. Gain 13 Block for every Skill drawn this way."
+    },
+    {
+      "name": "Morning Star",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 10 Block.\nDeal 10 damage.\nExhaust ALL your Status cards."
+    },
+    {
+      "name": "Morning Star+",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 13 Block.\nDeal 13 damage.\nExhaust ALL your Status cards."
+    },
+    {
+      "name": "Rainbow Danmaku",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage.\nScry 5.\nFor every Attack discarded this way, deal 20 damage again."
+    },
+    {
+      "name": "Rainbow Danmaku+",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 25 damage.\nScry 5.\nFor every Attack discarded this way, deal 25 damage again."
+    },
+    {
+      "name": "Rising World",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 3.\nCards discarded this way are Upgraded.\nWhenever this card is drawn, draw 1 card."
+    },
+    {
+      "name": "Rising World+",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Scry 4.\nCards discarded this way are Upgraded.\nWhenever this card is drawn, draw 1 card."
+    },
+    {
+      "name": "Unhurried Mind",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play the top 2 cards of your draw pile."
+    },
+    {
+      "name": "Unhurried Mind+",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Play the top 2 cards of your draw pile."
+    },
+    {
+      "name": "Unlikely Aid",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nChoose 1 of 3 cards from your master deck to add to your hand. It costs 0 this turn and exhausts."
+    },
+    {
+      "name": "Unlikely Aid+",
+      "color": "Lunar",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nChoose 1 of 5 cards from your master deck to add to your hand. It costs 0 this turn and exhausts."
     }
   ],
   "relics": [
@@ -339,281 +817,594 @@
       "name": "Bombinomicon",
       "tier": "Special",
       "pool": "",
-      "description": "At the start of combat, add The Bomb with Retain and Exhaust to your hand.",
-      "flavorText": "Explode spectacularly on death.",
-      "mod": "Gensokyo"
+      "description": "At the start of combat, add The Bomb+ with Retain and Exhaust to your hand.",
+      "flavorText": "Explode spectacularly on death."
     },
     {
       "name": "Book of Specters",
       "tier": "Special",
       "pool": "",
-      "description": "At the start of your turn, draw 3 cards. Discard all non-Attack cards drawn this way.",
-      "flavorText": "A book written by a lonely necromancer who just wanted to make some friends.",
-      "mod": "Gensokyo"
+      "description": "At the start of your turn, draw 2 cards. Discard all non-Attack cards drawn this way.",
+      "flavorText": "A book written by a lonely necromancer who just wanted to make some friends."
     },
     {
       "name": "Celestial's Flawless Clothing",
       "tier": "Special",
       "pool": "",
       "description": "When you would die, heal to full HP and add an Avatar of Death to the current encounter. Only works while in combat and will not trigger if an Avatar of Death is already present.",
-      "flavorText": "It feels heavenly.",
-      "mod": "Gensokyo"
+      "flavorText": "It feels heavenly."
+    },
+    {
+      "name": "Chorus of Joy",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat, gain [E] and discard 2 cards.",
+      "flavorText": "A joyful melody for dispirited times."
+    },
+    {
+      "name": "Conqueror of Fear",
+      "tier": "Special",
+      "pool": "",
+      "description": "While there are 10 or more cards in your discard pile, you have an additional 2 Strength and Dexterity.",
+      "flavorText": "The only thing we have to fear is fear itself."
+    },
+    {
+      "name": "Demon Mask",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the end of your turn, if you did not play any non-Attack cards this turn, gain 2 Strength.",
+      "flavorText": "A mask for thunderous surprise."
+    },
+    {
+      "name": "Dirge of Melancholy",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of combat, lose [E] and ALL enemies lose 2 Strength.",
+      "flavorText": "A mournful melody for nostalgic times."
+    },
+    {
+      "name": "Dual Wield",
+      "tier": "Special",
+      "pool": "",
+      "description": "Your single-target Attacks deal damage to ALL enemies.",
+      "flavorText": "Rip and tear, a bloody grin. Reap and sow, a horrid din."
+    },
+    {
+      "name": "Empty Grave",
+      "tier": "Special",
+      "pool": "",
+      "description": "After climbing 3 floors, heal 50% of your Max HP.",
+      "flavorText": "I am not there. I did not die."
+    },
+    {
+      "name": "Fox Mask",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you draw a Status card, draw 1 card.",
+      "flavorText": "A mask for the serious and determined."
     },
     {
       "name": "Justice",
       "tier": "Special",
       "pool": "",
-      "description": "The first time you play 2 Attacks each turn, deal 6 damage to ALL enemies.",
-      "flavorText": "The dead cannot cry out for justice. It is a duty of the living to do so for them.",
-      "mod": "Gensokyo"
+      "description": "The first time you play 2 Attacks each turn, deal 4 damage to ALL enemies.",
+      "flavorText": "The dead cannot cry out for justice. It is a duty of the living to do so for them."
+    },
+    {
+      "name": "Lion Mask",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you play a Skill, deal 2 damage to a random enemy.",
+      "flavorText": "A mask for the joyful and delighted."
     },
     {
       "name": "Lunatic Red Eyes",
       "tier": "Special",
       "pool": "",
       "description": "At the start of combat, apply 1 gensokyo:Lunacy to ALL enemies.",
-      "flavorText": "These eyes have no effect on you. After all, you're already insane.",
-      "mod": "Gensokyo"
+      "flavorText": "These eyes have no effect on you. After all, you're already insane."
+    },
+    {
+      "name": "Mask of Hope",
+      "tier": "Special",
+      "pool": "",
+      "description": "The first time you lose HP each combat, gain 10 Temporary HP.",
+      "flavorText": "A mask for humor and cheer."
     },
     {
       "name": "Mercy",
       "tier": "Special",
       "pool": "",
-      "description": "The first time you play 2 Skills each turn, gain 4 Block.",
-      "flavorText": "It is mercy, not justice or courage or even heroism, that alone can defeat evil.",
-      "mod": "Gensokyo"
+      "description": "The first time you play 2 Skills each turn, gain 3 Block.",
+      "flavorText": "It is mercy, not justice or courage or even heroism, that alone can defeat evil."
+    },
+    {
+      "name": "Moses's Miracle",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you shuffle your draw pile, add a Miracle to your hand.",
+      "flavorText": "\"A miracle that parts the sea. Which makes it easy to catch fish, apparently.\" - The Grimoire of Marisa"
     },
     {
       "name": "Nagashi-bina Doll",
       "tier": "Special",
       "pool": "",
       "description": "At the end of your turn, exhaust a random Curse in your hand.",
-      "flavorText": "If you look closely, you can almost see the tendrils of misfortune seeping into the doll.",
-      "mod": "Gensokyo"
+      "flavorText": "If you look closely, you can almost see the tendrils of misfortune seeping into the doll."
     },
     {
       "name": "Occult Ball",
       "tier": "Special",
       "pool": "",
       "description": "At the start of combat, add a random Urban Legend to your hand. Occasionally find more Occult Balls.",
-      "flavorText": "It is said that if you collect seven of them, they would make your wildest dreams come true.",
-      "mod": "Gensokyo"
+      "flavorText": "It is said that if you collect seven of them, they would make your wildest dreams come true."
     },
     {
       "name": "Perfect Cherry Blossom",
       "tier": "Special",
       "pool": "",
       "description": "The next time you would die, heal to 10% of your Max HP instead. Whenever you would die, kill ALL enemies.",
-      "flavorText": "A favor bestowed upon you for befriending a lonely girl.",
-      "mod": "Gensokyo"
+      "flavorText": "A favor bestowed upon you for befriending a lonely girl."
     },
     {
       "name": "Portable Gap",
       "tier": "Special",
       "pool": "",
-      "description": "You may ignore paths and distances when choosing the next room to travel to. Whenever you use this effect, lose 2 Max HP.",
-      "flavorText": "As you stare into the abyss, a thousand eyes stare back at you.",
-      "mod": "Gensokyo"
+      "description": "You may ignore paths and distances when choosing the next room to travel to. Whenever you use this effect, lose 3 Max HP.",
+      "flavorText": "As you stare into the abyss, a thousand eyes stare back at you."
+    },
+    {
+      "name": "Red Star",
+      "tier": "Special",
+      "pool": "",
+      "description": "Your Max HP is reduced by 50% for the next boss fight. After, obtain a special card.",
+      "flavorText": "An ill omen feared by many."
+    },
+    {
+      "name": "Song of Souls",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you play a Strike or Defend card, exhaust it.",
+      "flavorText": "A youthful melody for all of time."
+    },
+    {
+      "name": "Spider Mask",
+      "tier": "Special",
+      "pool": "",
+      "description": "The first time you play an Attack each turn, apply 1 Vulnerable to a random enemy.",
+      "flavorText": "A mask for the angry and enraged."
+    },
+    {
+      "name": "The Crow",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the end of your turn, gain 1 Ritual and take damage equal to the amount of Strength you have.",
+      "flavorText": "Power beckons, sweet and smile. Madness answers, bleak and vile."
+    },
+    {
+      "name": "The Day the Sea Split",
+      "tier": "Special",
+      "pool": "",
+      "description": "Your Skills exhaust when played for 3 combats. After, obtain a special relic.",
+      "flavorText": "The sea, once it casts its spell, holds one in its net of wonder forever."
+    },
+    {
+      "name": "Undefined Darkness",
+      "tier": "Special",
+      "pool": "",
+      "description": "Your cards are obscured for 1 combat. After, obtain a special relic.",
+      "flavorText": "Fear comes in all shapes and sizes."
     },
     {
       "name": "Youkai Flower",
       "tier": "Special",
       "pool": "",
       "description": "Every 3 turns, gain [E] [E] .",
-      "flavorText": "The flower seems to be watching you, always craning its neck to follow you around wherever you are.",
-      "mod": "Gensokyo"
+      "flavorText": "The flower seems to be watching you, always craning its neck to follow you around wherever you are."
     }
   ],
   "potions": [
   ],
   "creatures": [
     {
+      "name": "Ancient Guardian",
+      "type": "Normal",
+      "minHP": "103",
+      "maxHP": "103"
+    },
+    {
+      "name": "Angel Mirror",
+      "type": "Normal",
+      "minHP": "43",
+      "maxHP": "43"
+    },
+    {
+      "name": "Atlas Golem",
+      "type": "Normal",
+      "minHP": "180",
+      "maxHP": "180"
+    },
+    {
+      "name": "Big Mud Slime",
+      "type": "Normal",
+      "minHP": "110",
+      "maxHP": "110"
+    },
+    {
+      "name": "Chomper",
+      "type": "Normal",
+      "minHP": "94",
+      "maxHP": "94"
+    },
+    {
       "name": "Corrupted Treant",
       "type": "Normal",
+      "minHP": "52",
+      "maxHP": "52"
+    },
+    {
+      "name": "Cosmic Monolith",
+      "type": "Normal",
+      "minHP": "62",
+      "maxHP": "62"
+    },
+    {
+      "name": "Crimson Watchguard",
+      "type": "Boss",
+      "minHP": "500",
+      "maxHP": "500"
+    },
+    {
+      "name": "Daughter of Heaven",
+      "type": "Elite",
+      "minHP": "150",
+      "maxHP": "150"
+    },
+    {
+      "name": "Dawnsword",
+      "type": "Normal",
+      "minHP": "85",
+      "maxHP": "85"
+    },
+    {
+      "name": "Devil's Little Sister",
+      "type": "Boss",
+      "minHP": "666",
+      "maxHP": "666"
+    },
+    {
+      "name": "Duskaxe",
+      "type": "Normal",
+      "minHP": "81",
+      "maxHP": "81"
+    },
+    {
+      "name": "Feral Bat",
+      "type": "Normal",
+      "minHP": "33",
+      "maxHP": "33"
+    },
+    {
+      "name": "Gloop",
+      "type": "Normal",
       "minHP": "49",
-      "maxHP": "49",
-      "mod": "Gensokyo"
+      "maxHP": "49"
     },
     {
       "name": "Greater Fairy",
       "type": "Normal",
       "minHP": "10",
-      "maxHP": "10",
-      "mod": "Gensokyo"
+      "maxHP": "10"
     },
     {
       "name": "Greater Fairy",
       "type": "Normal",
-      "minHP": "9",
-      "maxHP": "9",
-      "mod": "Gensokyo"
+      "minHP": "8",
+      "maxHP": "8"
     },
     {
       "name": "Gryphon",
       "type": "Normal",
       "minHP": "47",
-      "maxHP": "47",
-      "mod": "Gensokyo"
+      "maxHP": "47"
+    },
+    {
+      "name": "Imaginary Personality Holder",
+      "type": "Elite",
+      "minHP": "167",
+      "maxHP": "167"
+    },
+    {
+      "name": "Kedama",
+      "type": "Normal",
+      "minHP": "23",
+      "maxHP": "23"
+    },
+    {
+      "name": "Kedama",
+      "type": "Normal",
+      "minHP": "19",
+      "maxHP": "19"
+    },
+    {
+      "name": "Kedama",
+      "type": "Normal",
+      "minHP": "21",
+      "maxHP": "21"
+    },
+    {
+      "name": "Kedama",
+      "type": "Normal",
+      "minHP": "24",
+      "maxHP": "24"
     },
     {
       "name": "Kitsune",
       "type": "Normal",
-      "minHP": "43",
-      "maxHP": "43",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Kodama",
-      "type": "Normal",
-      "minHP": "20",
-      "maxHP": "20",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Kodama",
-      "type": "Normal",
-      "minHP": "19",
-      "maxHP": "19",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Kodama",
-      "type": "Normal",
-      "minHP": "15",
-      "maxHP": "15",
-      "mod": "Gensokyo"
-    },
-    {
-      "name": "Kodama",
-      "type": "Normal",
-      "minHP": "21",
-      "maxHP": "21",
-      "mod": "Gensokyo"
+      "minHP": "50",
+      "maxHP": "50"
     },
     {
       "name": "Living Monolith",
       "type": "Normal",
-      "minHP": "47",
-      "maxHP": "47",
-      "mod": "Gensokyo"
+      "minHP": "49",
+      "maxHP": "49"
+    },
+    {
+      "name": "Lonely God",
+      "type": "Boss",
+      "minHP": "9999",
+      "maxHP": "9999"
+    },
+    {
+      "name": "Loud Bat",
+      "type": "Normal",
+      "minHP": "39",
+      "maxHP": "39"
+    },
+    {
+      "name": "Lunatic Moon Rabbit",
+      "type": "Elite",
+      "minHP": "140",
+      "maxHP": "140"
+    },
+    {
+      "name": "Mad Boulder",
+      "type": "Normal",
+      "minHP": "50",
+      "maxHP": "50"
     },
     {
       "name": "Maid Fairy",
       "type": "Normal",
-      "minHP": "6",
-      "maxHP": "6",
-      "mod": "Gensokyo"
+      "minHP": "8",
+      "maxHP": "8"
     },
     {
       "name": "Maiden of Many Faces",
       "type": "Boss",
       "minHP": "230",
-      "maxHP": "230",
-      "mod": "Gensokyo"
+      "maxHP": "230"
     },
     {
       "name": "Moon Rabbit",
       "type": "Normal",
       "minHP": "28",
-      "maxHP": "28",
-      "mod": "Gensokyo"
+      "maxHP": "28"
+    },
+    {
+      "name": "One Armed Horned Hermit",
+      "type": "Elite",
+      "minHP": "320",
+      "maxHP": "320"
+    },
+    {
+      "name": "Ordinary Magician",
+      "type": "Elite",
+      "minHP": "250",
+      "maxHP": "250"
+    },
+    {
+      "name": "Princess of the Netherworld",
+      "type": "Boss",
+      "minHP": "330",
+      "maxHP": "330"
     },
     {
       "name": "Python",
       "type": "Normal",
-      "minHP": "46",
-      "maxHP": "46",
-      "mod": "Gensokyo"
+      "minHP": "45",
+      "maxHP": "45"
+    },
+    {
+      "name": "Rafflesia",
+      "type": "Normal",
+      "minHP": "280",
+      "maxHP": "280"
     },
     {
       "name": "Reporter of Fantasy",
       "type": "Elite",
-      "minHP": "66",
-      "maxHP": "66",
-      "mod": "Gensokyo"
+      "minHP": "72",
+      "maxHP": "72"
+    },
+    {
+      "name": "Ruler of Dreams",
+      "type": "Elite",
+      "minHP": "250",
+      "maxHP": "250"
+    },
+    {
+      "name": "Scarlet Devil",
+      "type": "Boss",
+      "minHP": "120",
+      "maxHP": "120"
+    },
+    {
+      "name": "Sealed Great Magician",
+      "type": "Boss",
+      "minHP": "350",
+      "maxHP": "350"
+    },
+    {
+      "name": "Seed of Unknown",
+      "type": "Normal",
+      "minHP": "160",
+      "maxHP": "160"
+    },
+    {
+      "name": "Sharpion",
+      "type": "Normal",
+      "minHP": "165",
+      "maxHP": "165"
     },
     {
       "name": "Shrine Maiden of Paradise",
       "type": "Boss",
-      "minHP": "220",
-      "maxHP": "220",
-      "mod": "Gensokyo"
+      "minHP": "200",
+      "maxHP": "200"
+    },
+    {
+      "name": "Sinner of Eternity",
+      "type": "Boss",
+      "minHP": "60",
+      "maxHP": "60"
+    },
+    {
+      "name": "Slime Bunny",
+      "type": "Normal",
+      "minHP": "20",
+      "maxHP": "20"
     },
     {
       "name": "Strongest Fairy",
       "type": "Elite",
       "minHP": "21",
-      "maxHP": "21",
-      "mod": "Gensokyo"
+      "maxHP": "21"
     },
     {
       "name": "Sunflower Fairy",
       "type": "Normal",
       "minHP": "4",
-      "maxHP": "4",
-      "mod": "Gensokyo"
+      "maxHP": "4"
     },
     {
       "name": "Sunflower Fairy",
       "type": "Normal",
-      "minHP": "6",
-      "maxHP": "6",
-      "mod": "Gensokyo"
+      "minHP": "8",
+      "maxHP": "8"
+    },
+    {
+      "name": "Supreme Judge of Paradise",
+      "type": "Boss",
+      "minHP": "300",
+      "maxHP": "300"
+    },
+    {
+      "name": "Supremely Gifted Hermit",
+      "type": "Boss",
+      "minHP": "200",
+      "maxHP": "200"
+    },
+    {
+      "name": "Swordslinger",
+      "type": "Normal",
+      "minHP": "104",
+      "maxHP": "104"
     },
     {
       "name": "Tanuki Disguiser",
       "type": "Elite",
       "minHP": "90",
-      "maxHP": "90",
-      "mod": "Gensokyo"
+      "maxHP": "90"
+    },
+    {
+      "name": "Tanuki Dog",
+      "type": "Normal",
+      "minHP": "43",
+      "maxHP": "43"
+    },
+    {
+      "name": "Vampire Bat",
+      "type": "Normal",
+      "minHP": "35",
+      "maxHP": "35"
     },
     {
       "name": "Vengeful Spirit",
       "type": "Normal",
-      "minHP": "69",
-      "maxHP": "69",
-      "mod": "Gensokyo"
+      "minHP": "66",
+      "maxHP": "66"
+    },
+    {
+      "name": "Wraith",
+      "type": "Normal",
+      "minHP": "75",
+      "maxHP": "75"
     },
     {
       "name": "Youkai of Boundaries",
       "type": "Boss",
-      "minHP": "240",
-      "maxHP": "240",
-      "mod": "Gensokyo"
+      "minHP": "220",
+      "maxHP": "220"
     },
     {
       "name": "Zombie Fairy",
       "type": "Normal",
       "minHP": "4",
-      "maxHP": "4",
-      "mod": "Gensokyo"
+      "maxHP": "4"
     },
     {
       "name": "Zombie Fairy",
       "type": "Normal",
-      "minHP": "7",
-      "maxHP": "7",
-      "mod": "Gensokyo"
+      "minHP": "6",
+      "maxHP": "6"
     }
   ],
   "keywords": [
     {
-      "name": "Gensokyo:Blue Cape",
-      "description": "A 1 cost Skill that gains Block, Retains, and exhausts.",
-      "names": ["gensokyo:Blue Cape","gensokyo:Blue_Cape","gensokyo:blue_cape"],
-      "mod": ""
+      "name": "Bloodcast",
+      "description": "When you have insufficient [E] to play this card, you may instead pay 1 HP for every missing [E] ."
     },
     {
-      "name": "Gensokyo:Red Cape",
-      "description": "A 1 cost Attack that deals damage, Retains, and exhausts.",
-      "names": ["gensokyo:Red Cape","gensokyo:Red_Cape","gensokyo:red_cape"],
-      "mod": ""
+      "name": "Blue Cape",
+      "description": "A 1 cost Skill that gains Block, Retains, and exhausts."
+    },
+    {
+      "name": "Evolve",
+      "description": "Transforms into a special reward after being played the specified number of times."
+    },
+    {
+      "name": "Impossible Request",
+      "description": "Retain. Cannot be exhausted.\nYour progress on the requests is tracked no matter where this card is."
+    },
+    {
+      "name": "Item",
+      "description": "Removed from your master deck after being played the specified number of times."
+    },
+    {
+      "name": "Pet",
+      "description": "A summon that you can issue an order to every turn. If the pet dies, its respective pet card is removed from the deck. The pet\u2019s HP persists between combats and is fully restored when you rest at a campfire. You can only have one pet summoned at a time."
+    },
+    {
+      "name": "Red Cape",
+      "description": "A 1 cost Attack that deals damage, Retains, and exhausts."
+    },
+    {
+      "name": "Gensokyo:fortitude",
+      "description": "Fortified creatures receive 33% less attack damage."
     },
     {
       "name": "Gensokyo:lunacy",
-      "description": "Whenever a lunatic enemy attacks or applies a debuff, a random enemy is targeted instead.",
-      "names": ["gensokyo:lunacy"],
-      "mod": ""
+      "description": "Whenever a lunatic enemy attacks, a random enemy is targeted instead."
+    },
+    {
+      "name": "Gensokyo:sturdy",
+      "description": "Sturdy creatures gain 34% more block."
+    },
+    {
+      "name": "Gensokyo:vigor",
+      "description": "Vigorous creatures deal 34% more attack damage."
     }
   ]
 }

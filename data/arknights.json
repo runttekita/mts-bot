@@ -1,0 +1,1554 @@
+{
+  "mod": {
+    "name": "Arknights",
+    "version": "0.9.1",
+    "authors": ["FastCat","Kuiprux"],
+    "credits": "",
+    "description": "Character mod from a mobile game, Arknights.",
+    "mts_version": "3.18.0",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Armor Crushing Shot",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nats:SP 4 ats:Auto"
+    },
+    {
+      "name": "Armor Crushing Shot+",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nats:SP 4 ats:Auto"
+    },
+    {
+      "name": "Defend",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 block."
+    },
+    {
+      "name": "Emotion Absorption",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 ats:SP."
+    },
+    {
+      "name": "Emotion Absorption+",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 ats:SP.\nDraw a card."
+    },
+    {
+      "name": "Strike",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Doctor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Absolute Focus",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Select 1 card. Get a random card of which class is same as the selected card from your draw pile."
+    },
+    {
+      "name": "Absolute Focus+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Select 2 card. Get a random card of which class is same as the selected card from your draw pile."
+    },
+    {
+      "name": "Assault Order",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "(Default effect is empty)\nats:SP 10 ats:Auto"
+    },
+    {
+      "name": "Assault Order+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "(Default effect is empty)\nats:SP 7 ats:Auto"
+    },
+    {
+      "name": "Blood Oath",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nats:SP 4 ats:Auto"
+    },
+    {
+      "name": "Blood Oath+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nats:SP 3 ats:Auto"
+    },
+    {
+      "name": "Cat Scratch",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nats:SP 4 ats:Auto"
+    },
+    {
+      "name": "Cat Scratch+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nats:SP 4 ats:Auto"
+    },
+    {
+      "name": "Closed Bolt Burst Fire",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage 3 times.\nIf this kills an enemy, gain [E] [E]."
+    },
+    {
+      "name": "Closed Bolt Burst Fire+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage 3 times.\nIf this kills an enemy, gain [E] [E]."
+    },
+    {
+      "name": "Consecutive Shot: Auto",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 2 times."
+    },
+    {
+      "name": "Consecutive Shot: Auto+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage 2 times."
+    },
+    {
+      "name": "Curse Doll",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak. Apply 2 Vulnerable."
+    },
+    {
+      "name": "Curse Doll+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak. Apply 3 Vulnerable."
+    },
+    {
+      "name": "Explosion Area Strengthen",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Explosion Area Strengthen+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Flexible Camouflage",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Strength.\nAt the end of this turn, lose 2 Strength."
+    },
+    {
+      "name": "Flexible Camouflage+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Strength.\nAt the end of this turn, lose 4 Strength."
+    },
+    {
+      "name": "Guard Mode",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. Double when more than half of HP is lost."
+    },
+    {
+      "name": "Guard Mode+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block. Double when more than half of HP is lost."
+    },
+    {
+      "name": "Hammer On",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf this kills an enemy, gain [E]."
+    },
+    {
+      "name": "Hammer On+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nIf this kills an enemy, gain [E]."
+    },
+    {
+      "name": "Ignite",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Apply 2 ats:Burn."
+    },
+    {
+      "name": "Ignite+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. Apply 3 ats:Burn."
+    },
+    {
+      "name": "Just Like an Apocalypse",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 4 HP. Gain 4 ats:SP."
+    },
+    {
+      "name": "Just Like an Apocalypse+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 6 HP. Gain 6 ats:SP."
+    },
+    {
+      "name": "Leaping Hammer",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Gain 3 ats:SP."
+    },
+    {
+      "name": "Leaping Hammer+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Gain 3 ats:SP."
+    },
+    {
+      "name": "Poison Spread",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nats:SP 3 ats:Auto"
+    },
+    {
+      "name": "Poison Spread+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nats:SP 2 ats:Auto"
+    },
+    {
+      "name": "Powerful Strike",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nats:SP 3 ats:Auto"
+    },
+    {
+      "name": "Powerful Strike+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nats:SP 2 ats:Auto"
+    },
+    {
+      "name": "Revitalization",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Regen."
+    },
+    {
+      "name": "Revitalization+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Regen."
+    },
+    {
+      "name": "Shell Defense",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 block.\nats:SP 6 ats:Manual"
+    },
+    {
+      "name": "Shell Defense+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 block.\nats:SP 6 ats:Manual"
+    },
+    {
+      "name": "Very Hot Blade",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Draw a card.\nats:SP 5 ats:Auto"
+    },
+    {
+      "name": "Very Hot Blade+",
+      "color": "Doctor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. Draw a card.\nats:SP 3 ats:Auto"
+    },
+    {
+      "name": "Assault Mode",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 3 times.\nats:SP 6 ats:Auto"
+    },
+    {
+      "name": "Assault Mode+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times.\nats:SP 6 ats:Auto"
+    },
+    {
+      "name": "Automatic Cover",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 block. Gain 2 Dexterity. At the start of the next turn, lose 2 Dexterity."
+    },
+    {
+      "name": "Automatic Cover+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 block. Gain 3 Dexterity. At the start of the next turn, lose 3 Dexterity."
+    },
+    {
+      "name": "Beaten Up",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Dexterity. At the start of the next turn, lose 3 Dexterity. During enemy's turn, deal damage by Dexterity amount to the enemy attacked you."
+    },
+    {
+      "name": "Beaten Up+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Dexterity. At the start of the next turn, lose 4 Dexterity. During enemy's turn, deal damage by Dexterity amount to the enemy attacked you."
+    },
+    {
+      "name": "Burning Ground",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply 2 ats:Burn to ALL enemies when you use ats:Caster card."
+    },
+    {
+      "name": "Burning Ground+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply 3 ats:Burn to ALL enemies when you use ats:Caster card."
+    },
+    {
+      "name": "Chain Hook",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. Draw a card.\nats:SP 5 ats:Auto"
+    },
+    {
+      "name": "Chain Hook+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage. Draw a card.\nats:SP 5 ats:Auto"
+    },
+    {
+      "name": "Charging Defense",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 block.\nats:SP 16 ats:Auto"
+    },
+    {
+      "name": "Charging Defense+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 block.\nats:SP 16 ats:Auto"
+    },
+    {
+      "name": "Collapsing Strike",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard 1 cards. Deal 12 damage."
+    },
+    {
+      "name": "Collapsing Strike+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard 1 cards. Deal 16 damage."
+    },
+    {
+      "name": "Composite Medical Shells",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Deal damage to ALL enemies by heal amount."
+    },
+    {
+      "name": "Composite Medical Shells+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. Deal damage to ALL enemies by heal amount."
+    },
+    {
+      "name": "Counter Healing Mode",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 ats:SP when healed."
+    },
+    {
+      "name": "Counter Healing Mode+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 ats:SP when healed."
+    },
+    {
+      "name": "Defend Order",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 block when energy gained."
+    },
+    {
+      "name": "Defend Order+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 5 block when energy gained."
+    },
+    {
+      "name": "Demon Strength",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Strength. Lose 1 Dexterity."
+    },
+    {
+      "name": "Demon Strength+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Strength. Lose 1 Dexterity."
+    },
+    {
+      "name": "Directed Diagnosis",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove your Frail. Heal 5 HP.\nats:SP 15 ats:Auto"
+    },
+    {
+      "name": "Directed Diagnosis+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove your Frail. Heal 5 HP.\nats:SP 10 ats:Auto"
+    },
+    {
+      "name": "Encircling Forest",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 ats:Shelter.\nats:SP 10 ats:Manual"
+    },
+    {
+      "name": "Encircling Forest+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 ats:Shelter.\nats:SP 10 ats:Manual"
+    },
+    {
+      "name": "Flame Of Heaven",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain. Double ats:Burn amount. Exhaust."
+    },
+    {
+      "name": "Flame Of Heaven+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain. Double ats:Burn amount. Exhaust."
+    },
+    {
+      "name": "Guardian Obelisk",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain block by ats:Burn amount. When ats:Burn effect ends, instead, reduce to half."
+    },
+    {
+      "name": "Guardian Obelisk+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain block by ats:Burn amount. When ats:Burn effect ends, instead, reduce to half."
+    },
+    {
+      "name": "Healing Drone",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start and the end of your turn, heal 3 HP."
+    },
+    {
+      "name": "Healing Drone+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the start and the end of your turn, heal 4 HP."
+    },
+    {
+      "name": "Healing Strengthening",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 ats:Curative."
+    },
+    {
+      "name": "Healing Strengthening+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 ats:Curative."
+    },
+    {
+      "name": "Hook Shot",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 block. Draw a card. ats:SP 5 ats:Auto"
+    },
+    {
+      "name": "Hook Shot+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 block. Draw a card. ats:SP 5 ats:Auto"
+    },
+    {
+      "name": "LN2 Cannon",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all non-Attack cards in your hand. Deal 4 damage for each card Exhausted. Damage ignores block."
+    },
+    {
+      "name": "LN2 Cannon+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all non-Attack cards in your hand. Deal 6 damage for each card Exhausted. Damage ignores block."
+    },
+    {
+      "name": "Literary Storm",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Get a random card of each class from your draw pile.\nExhaust."
+    },
+    {
+      "name": "Literary Storm+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Get a random card of each class from your draw pile.\nExhaust."
+    },
+    {
+      "name": "Magnetic Hammer",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage to ALL enemies. Gain 8 block.\nats:SP 10 ats:Manual"
+    },
+    {
+      "name": "Magnetic Hammer+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage to ALL enemies. Gain 10 block.\nats:SP 10 ats:Manual"
+    },
+    {
+      "name": "Mental Burst",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage and apply ats:Burn 6 times to a random enemy.\nats:SP 7 ats:Auto"
+    },
+    {
+      "name": "Mental Burst+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage and apply ats:Burn 6 times to a random enemy.\nats:SP 7 ats:Auto"
+    },
+    {
+      "name": "Neurotoxin",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply 2 Poison to ALL enemies when you use ats:Sniper attack card."
+    },
+    {
+      "name": "Neurotoxin+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply 3 Poison to ALL enemies when you use ats:Sniper attack card."
+    },
+    {
+      "name": "Part Time Job",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Regen."
+    },
+    {
+      "name": "Part Time Job+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start and the end of your turn, heal 1 HP."
+    },
+    {
+      "name": "Phantom In The Mirror",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a ats:Specialist card, a random card in your hand costs 0 until played."
+    },
+    {
+      "name": "Phantom In The Mirror+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play a ats:Specialist card, a random card in your hand costs 0 until played."
+    },
+    {
+      "name": "Rapid Magazine",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "ats:SP of ats:Sniper attack card will be reduced by 2."
+    },
+    {
+      "name": "Rapid Magazine+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. ats:SP of ats:Sniper attack card will be reduced by 2."
+    },
+    {
+      "name": "Red Shift",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 4 times to a random enemy."
+    },
+    {
+      "name": "Red Shift+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 4 times to a random enemy."
+    },
+    {
+      "name": "Sashimi Platter",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Heal 6 HP."
+    },
+    {
+      "name": "Sashimi Platter+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. Heal 9 HP."
+    },
+    {
+      "name": "Serious Mode",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Block you gain will be reduced to half. Based on HP lost, increase Attack damage (increase 100% when 70% HP is lost)"
+    },
+    {
+      "name": "Serious Mode+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. Block you gain will be reduced to half. Based on HP lost, increase Attack damage (increase 100% when 70% HP is lost)"
+    },
+    {
+      "name": "Shadow Raid",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain. Gain 6 Dexterity.\nAt the start of the next turn, lose 6 Dexterity.\nExhaust"
+    },
+    {
+      "name": "Shadow Raid+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain. Gain 10 Dexterity.\nAt the start of the next turn, lose 10 Dexterity.\nExhaust"
+    },
+    {
+      "name": "Song Of Battle",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of turn, gain 3 ats:SP."
+    },
+    {
+      "name": "Song Of Battle+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of turn, gain 4 ats:SP."
+    },
+    {
+      "name": "Soul Absorption",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain block by next damage amount you dealt during this turn."
+    },
+    {
+      "name": "Soul Absorption+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain block by next damage amount you dealt during this turn."
+    },
+    {
+      "name": "Spore Proliferation",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nats:SP 15 ats:Manual"
+    },
+    {
+      "name": "Spore Proliferation+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nats:SP 10 ats:Manual"
+    },
+    {
+      "name": "Steam Pump",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard 1 cards. Gain 8 block."
+    },
+    {
+      "name": "Steam Pump+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard 1 cards. Gain 12 block."
+    },
+    {
+      "name": "Sunburst",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nats:SP 7 ats:Auto"
+    },
+    {
+      "name": "Sunburst+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies.\nats:SP 5 ats:Auto"
+    },
+    {
+      "name": "Support Order",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "(Default effect is empty)\nats:SP 10 ats:Auto"
+    },
+    {
+      "name": "Support Order+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "(Default effect is empty)\nats:SP 10 ats:Auto"
+    },
+    {
+      "name": "Sword Rain",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage to ALL enemies.\nats:SP 10 ats:Manual"
+    },
+    {
+      "name": "Sword Rain+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to ALL enemies.\nats:SP 7 ats:Manual"
+    },
+    {
+      "name": "Thermite Blade",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Damage ignores block with 50% chance.\nats:SP 5 ats:Manual"
+    },
+    {
+      "name": "Thermite Blade+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage. Damage ignores block with 50% chance.\nats:SP 5 ats:Manual"
+    },
+    {
+      "name": "Thorns",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Thorns. Gain 1 Dexterity."
+    },
+    {
+      "name": "Thorns+",
+      "color": "Doctor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Thorns. Gain 2 Dexterity."
+    },
+    {
+      "name": "Ambush",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. If you used ats:Sniper attack card during this turn, prevent receiving attack damage with 40 % chance."
+    },
+    {
+      "name": "Ambush+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate. If you used ats:Sniper attack card during this turn, prevent receiving attack damage with 60 % chance."
+    },
+    {
+      "name": "Burst Stimulant-Durian",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain. Lose 3 HP 5 times, damage reduced by Dexterity amount. (Maximum 2)\nAttack deals double damage for this turn.\nExhaust."
+    },
+    {
+      "name": "Burst Stimulant-Durian+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain. Lose 3 HP 5 times, damage reduced by Dexterity amount. (Maximum 2)\nAttack deals double damage for this turn.\nExhaust."
+    },
+    {
+      "name": "Calcification",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 block. Gain 1 Dexterity, Regen, and ats:SP."
+    },
+    {
+      "name": "Calcification+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 block. Gain 1 Dexterity, Regen, and ats:SP."
+    },
+    {
+      "name": "Disruption Kick",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain. Deal 1 damage to ALL enemies and Remove all powers of them.\nExhaust"
+    },
+    {
+      "name": "Disruption Kick+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain. Deal 1 damage to ALL enemies and Remove all powers of them.\nExhaust"
+    },
+    {
+      "name": "Dogmatic Field",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "When you gain block, heal HP instead of gaining block by block amount in excess of 5."
+    },
+    {
+      "name": "Dogmatic Field+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you gain block, heal HP instead of gaining block by block amount in excess of 5."
+    },
+    {
+      "name": "Echo Reverb",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove Artifact and apply Slow.\nExhaust."
+    },
+    {
+      "name": "Echo Reverb+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate. Remove Artifact and apply Slow.\nExhaust."
+    },
+    {
+      "name": "Fractured Body",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain. Your HP will not fall below 1. At the end of this effect, make your HP to 1. Exhaust.\nats:SP 10 ats:Auto"
+    },
+    {
+      "name": "Fractured Body+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain. Your HP will not fall below 1. At the end of this effect, make your HP to 1. Exhaust.\nats:SP 10 ats:Auto"
+    },
+    {
+      "name": "Nebulous Foxfire",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Weak and Vulnerable to ALL enemies. Gain 3 Regen."
+    },
+    {
+      "name": "Nebulous Foxfire+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 4 Weak and Vulnerable to ALL enemies. Gain 4 Regen."
+    },
+    {
+      "name": "Quick Draw",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 10 damage 2 times to ALL enemies.\nats:SP 40 ats:Manual"
+    },
+    {
+      "name": "Quick Draw+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 11 damage 2 times to ALL enemies.\nats:SP 30 ats:Manual"
+    },
+    {
+      "name": "Rat Pack",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Retain. Gain block by current health.\nExhaust."
+    },
+    {
+      "name": "Rat Pack+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain. Gain block by current health.\nExhaust."
+    },
+    {
+      "name": "Roar of Ursus",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 more energy when energy gained."
+    },
+    {
+      "name": "Roar of Ursus+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate. Gain 1 more energy when energy gained."
+    },
+    {
+      "name": "Soul Rend",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Heal 2 HP when you deal damage with ats:Guard card."
+    },
+    {
+      "name": "Soul Rend+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Heal 3 HP when you deal damage with ats:Guard card."
+    },
+    {
+      "name": "True Silver Slash",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 7 damage 3 times to ALL enemies. You cannot gain Block from cards for this turn.\nats:SP 30 ats:Auto"
+    },
+    {
+      "name": "True Silver Slash+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 9 damage 3 times to ALL enemies. You cannot gain Block from cards for this turn.\nats:SP 30 ats:Auto"
+    },
+    {
+      "name": "Volcano",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Apply 7 ats:Burn to ALL enemies.\nats:SP 40 ats:Auto"
+    },
+    {
+      "name": "Volcano+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Apply 9 ats:Burn to ALL enemies.\nats:SP 40 ats:Auto"
+    },
+    {
+      "name": "Wolf Pack",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain. Deal 1 damage to ALL enemies and Stun Them.\nExhaust"
+    },
+    {
+      "name": "Wolf Pack+",
+      "color": "Doctor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain. Deal 7 damage to ALL enemies and Stun Them.\nExhaust"
+    }
+  ],
+  "relics": [
+    {
+      "name": "Sanity",
+      "tier": "Starter",
+      "pool": "Doctor_color",
+      "description": "Return half of SP you consumed first during each turn. (Maximum 5)",
+      "flavorText": "\"Doctor, it's not to eat!\""
+    },
+    {
+      "name": "Ability Aura",
+      "tier": "Common",
+      "pool": "Doctor_color",
+      "description": "At the start of turn, Gain 2 SP.",
+      "flavorText": "\"ERA HASSEI-\""
+    },
+    {
+      "name": "Berate",
+      "tier": "Common",
+      "pool": "Doctor_color",
+      "description": "When you play 4 attack card, gain 2 SP.",
+      "flavorText": "\"Chen doesn't use this stuff.\""
+    },
+    {
+      "name": "Hidden Killer",
+      "tier": "Common",
+      "pool": "Doctor_color",
+      "description": "If you do not play any Attacks during your turn, gain 2 Strength for next turn.",
+      "flavorText": "Why don't you reach out your hand to her?"
+    },
+    {
+      "name": "Rhine Circuitry",
+      "tier": "Common",
+      "pool": "Doctor_color",
+      "description": "Whenever you play 6 cards, gain 2 SP.",
+      "flavorText": "\"Do not pass or read the manual to Ifrit.\""
+    },
+    {
+      "name": "Spiritual Recovery",
+      "tier": "Common",
+      "pool": "Doctor_color",
+      "description": "Gain 1 SP when healed.",
+      "flavorText": "It contains a small amount of mustard extract..."
+    },
+    {
+      "name": "Bonebreaker",
+      "tier": "Uncommon",
+      "pool": "Doctor_color",
+      "description": "Every attacks will have 2 minimum damage.",
+      "flavorText": "She's Walking on the wall as if it's obvious."
+    },
+    {
+      "name": "Industrial Water Cannon",
+      "tier": "Uncommon",
+      "pool": "Doctor_color",
+      "description": "When you consume SP 3 times, draw a card.",
+      "flavorText": "\"Chief... Theytheythey're barbecuinginthedormagain. Canyouplease stopthemforme! Aaaah! Someoneswapped myfireextinguisher withIfrit'sflamethrower! Areyouokay, Chief?\""
+    },
+    {
+      "name": "Lavender",
+      "tier": "Uncommon",
+      "pool": "Doctor_color",
+      "description": "At the end of turn, heal 1 HP.",
+      "flavorText": "Perfumer's botanical garden always smells like lavender."
+    },
+    {
+      "name": "Military Tradition",
+      "tier": "Uncommon",
+      "pool": "Doctor_color",
+      "description": "At the start of battle, gain 8 SP.",
+      "flavorText": "I guess Victoria should wear traditional clothing."
+    },
+    {
+      "name": "\"Gyao\" Ring",
+      "tier": "Rare",
+      "pool": "Doctor_color",
+      "description": "Gain 15 additional gold when you obtain gold.",
+      "flavorText": "It is the second most popular item after a photo of someone who is praised as a god of money."
+    },
+    {
+      "name": "Emergency Defibrillator",
+      "tier": "Rare",
+      "pool": "Doctor_color",
+      "description": "When attacked damage reduces your health to less than 25%, attacked damage reduced to 0 for this turn and heal 50% HP at the start of the next turn. (works once)",
+      "flavorText": "Do not act violently while the defibrillator is in operation."
+    },
+    {
+      "name": "Remnant Ash",
+      "tier": "Rare",
+      "pool": "Doctor_color",
+      "description": "When you gain critical damage, your HP will not fall below 1, but you will die after 2 turns. (works once)",
+      "flavorText": "L\u00E6vateinn!"
+    },
+    {
+      "name": "Originium Addiction",
+      "tier": "Special",
+      "pool": "Doctor_color",
+      "description": "Maximum SP increased by 10.",
+      "flavorText": "Closer is said to be looking for the missing pure Orginium."
+    },
+    {
+      "name": "Omniscience",
+      "tier": "Boss",
+      "pool": "Doctor_color",
+      "description": "Prevent 2 times you would lose HP each combat.",
+      "flavorText": "CAUTION: Very hot"
+    },
+    {
+      "name": "Sanity+",
+      "tier": "Boss",
+      "pool": "Doctor_color",
+      "description": "Replaces Sanity. Return half of SP you consumed first during each turn.\nMaximum SP Limit increased by 10.",
+      "flavorText": "\"Doctor, don't take it secretly and eat it!\""
+    },
+    {
+      "name": "Tactical Delivery",
+      "tier": "Boss",
+      "pool": "Doctor_color",
+      "description": "Gain [E] at the start of your turn. Maximum SP Limit decreased by 20.",
+      "flavorText": "It smells like seafood bibim sauce."
+    },
+    {
+      "name": "Arts",
+      "tier": "Shop",
+      "pool": "Doctor_color",
+      "description": "When you play Caster card, gain 1 SP.",
+      "flavorText": "There must be something to do with it."
+    },
+    {
+      "name": "Assault",
+      "tier": "Shop",
+      "pool": "Doctor_color",
+      "description": "When you play Vanguard card, gain 1 SP.",
+      "flavorText": "\"BIBITTENJYANE-!\""
+    },
+    {
+      "name": "Attack",
+      "tier": "Shop",
+      "pool": "Doctor_color",
+      "description": "When you play Guard card, gain 1 SP.",
+      "flavorText": "Attack is the best defense."
+    },
+    {
+      "name": "Cure",
+      "tier": "Shop",
+      "pool": "Doctor_color",
+      "description": "When you play Medic card, gain 1 SP.",
+      "flavorText": "\"Come here, please.\""
+    },
+    {
+      "name": "Defend",
+      "tier": "Shop",
+      "pool": "Doctor_color",
+      "description": "When you play Defender card, gain 1 SP.",
+      "flavorText": "Defense is the best attack."
+    },
+    {
+      "name": "Snipe",
+      "tier": "Shop",
+      "pool": "Doctor_color",
+      "description": "When you play Sniper card, gain 1 SP.",
+      "flavorText": "It's better to get rid of the hazard in advance."
+    },
+    {
+      "name": "Special",
+      "tier": "Shop",
+      "pool": "Doctor_color",
+      "description": "When you play Specialist card, gain 1 SP.",
+      "flavorText": "Whenever a specialist team gets together, they say they can't see two people."
+    },
+    {
+      "name": "Support",
+      "tier": "Shop",
+      "pool": "Doctor_color",
+      "description": "When you play Supporter card, gain 1 SP.",
+      "flavorText": "\"Mr. Blood, that's a waiting room for supporters.\""
+    }
+  ],
+  "potions": [
+    {
+      "name": "Emergency Sanity Potion",
+      "rarity": "Common",
+      "description": "Gain 10 SP."
+    },
+    {
+      "name": "Top Emergency Sanity Potion",
+      "rarity": "Uncommon",
+      "description": "Gain 20 SP."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Doctor",
+      "type": "Player",
+      "minHP": "72",
+      "maxHP": "72"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Auto",
+      "description": "Consume automatically if you have enough SP."
+    },
+    {
+      "name": "Burn",
+      "description": "At the start and the end of turn, lose HP."
+    },
+    {
+      "name": "Caster",
+      "description": "Caster"
+    },
+    {
+      "name": "Curative",
+      "description": "Increase heal amount."
+    },
+    {
+      "name": "Defender",
+      "description": "Defender"
+    },
+    {
+      "name": "Guard",
+      "description": "Guard"
+    },
+    {
+      "name": "Manual",
+      "description": "You can consume by Mode Change Button if you have enough SP."
+    },
+    {
+      "name": "Medic",
+      "description": "Medic"
+    },
+    {
+      "name": "Order",
+      "description": "At the start of turn, gain 1 energy."
+    },
+    {
+      "name": "Shelter",
+      "description": "Reduce 25% of attacked damage."
+    },
+    {
+      "name": "Sniper",
+      "description": "Sniper"
+    },
+    {
+      "name": "SP",
+      "description": "Use enhanced effect when you consume SP."
+    },
+    {
+      "name": "Specialist",
+      "description": "Specialist"
+    },
+    {
+      "name": "Supporter",
+      "description": "Supporter"
+    },
+    {
+      "name": "Vanguard",
+      "description": "Vanguard"
+    }
+  ]
+}

@@ -1,0 +1,1082 @@
+{
+  "mod": {
+    "name": "Dio Mod",
+    "version": "1.2",
+    "authors": ["Gremious"],
+    "credits": "",
+    "description": "KONO DIO DA!",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Dio_gold_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Dio_gold_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Dio_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Dio_gold_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage."
+    },
+    {
+      "name": "Fourteen Phrases",
+      "color": "Dio_gold_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Put an Over Heaven into your discard pile.\n Exhaust."
+    },
+    {
+      "name": "Fourteen Phrases+",
+      "color": "Dio_gold_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Put an Over Heaven into your discard pile.\n Exhaust."
+    },
+    {
+      "name": "Green Baby",
+      "color": "Dio_gold_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Put a Fourteen Phrases into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Green Baby+",
+      "color": "Dio_gold_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Put a Fourteen Phrases into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Over Heaven",
+      "color": "Dio_gold_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Kill an enemy."
+    },
+    {
+      "name": "Over Heaven+",
+      "color": "Dio_gold_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Kill an enemy."
+    },
+    {
+      "name": "Blend In",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block for every enemy in combat."
+    },
+    {
+      "name": "Blend In+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block for every enemy in combat."
+    },
+    {
+      "name": "Blood Shield",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 HP.\nGain 7 Block."
+    },
+    {
+      "name": "Blood Shield+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 HP.\nGain 10 Block."
+    },
+    {
+      "name": "Blood Splash",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 HP.\nApply 2 Weak."
+    },
+    {
+      "name": "Blood Splash+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 HP.\nApply 3 Weak."
+    },
+    {
+      "name": "Cautious Muda",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 8 Block.\nDeal 8 damage."
+    },
+    {
+      "name": "Cautious Muda+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 10 Block.\nDeal 10 damage."
+    },
+    {
+      "name": "Composed Muda",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nIf you lost HP this turn, gain [E] and draw a card."
+    },
+    {
+      "name": "Composed Muda+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf you lost HP this turn, gain [E] and draw a card."
+    },
+    {
+      "name": "Dagger Toss",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage to ALL enemies 3 times."
+    },
+    {
+      "name": "Dagger Toss+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to ALL enemies 3 times."
+    },
+    {
+      "name": "Fly Away",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Fly Away+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nDraw 3 cards."
+    },
+    {
+      "name": "Heavy Lifting",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E]  equal to the cost of a card in your hand.\nExhaust."
+    },
+    {
+      "name": "Heavy Lifting+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E]  equal to the cost of a card in your hand.\nExhaust."
+    },
+    {
+      "name": "Hiss",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable.\nDraw a card."
+    },
+    {
+      "name": "Hiss+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable.\nDraw 2 cards."
+    },
+    {
+      "name": "Laser Vision",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Laser Vision+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Muda",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 Damage. Put all Muda cards from your discard pile into your hand.\nExhaustive 3."
+    },
+    {
+      "name": "Muda+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 Damage. Put all Muda cards from your discard pile into your hand.\nExhaustive 4."
+    },
+    {
+      "name": "Roundabout",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nPut the next card you play this turn on top of your draw pile."
+    },
+    {
+      "name": "Roundabout+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nPut the next card you play this turn on top of your draw pile."
+    },
+    {
+      "name": "Secret Plan",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain [E] and draw a card."
+    },
+    {
+      "name": "Secret Plan+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain [E] [E] and draw a card."
+    },
+    {
+      "name": "Street Sign",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Street Sign+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Triple Threat",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. If that enemy is Vulnerable, deal 5 damage again. If that enemy is Weak, deal 5 damage again."
+    },
+    {
+      "name": "Triple Threat+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. If that enemy is Vulnerable, deal 7 damage again. If that enemy is Weak, deal 7 damage again."
+    },
+    {
+      "name": "Vengeful Muda",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage.\nWhenever you lose HP, increase this card's damage by 2 for the combat."
+    },
+    {
+      "name": "Vengeful Muda+",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage.\nWhenever you lose HP, increase this card's damage by 3 for the combat."
+    },
+    {
+      "name": "WRYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 5."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "WRYYYYY",
+      "color": "Dio_gold_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 7."
+    },
+    {
+      "name": "Blood Suck",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nHeal HP equal to unblocked damage dealt.\nExhaust."
+    },
+    {
+      "name": "Blood Suck+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nHeal HP equal to unblocked damage dealt.\nExhaust."
+    },
+    {
+      "name": "Blood Transfusion",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 2 HP.\nAt the end of combat, heal 10 HP."
+    },
+    {
+      "name": "Blood Transfusion+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 2 HP.\nAt the end of combat, heal 13 HP."
+    },
+    {
+      "name": "Coffin Bath",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Remove all of your debuffs.\nGain 10 Block.\nEnd your turn.\nExhaust."
+    },
+    {
+      "name": "Coffin Bath+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Remove all of your debuffs.\nGain 14 Block.\nEnd your turn.\nExhaust."
+    },
+    {
+      "name": "Combo Fever",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you deal attack damage this turn, gain 3 Block."
+    },
+    {
+      "name": "Combo Fever+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you deal attack damage this turn, gain 4 Block."
+    },
+    {
+      "name": "Cut Deep",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, they lose 1 temporary Strength."
+    },
+    {
+      "name": "Cut Deep+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, they lose 2 temporary Strength."
+    },
+    {
+      "name": "Dagger Spree",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage to a random enemy X times."
+    },
+    {
+      "name": "Dagger Spree+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 11 damage to a random enemy X times."
+    },
+    {
+      "name": "Dark Rebirth",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you would die, instead heal to 10 % HP."
+    },
+    {
+      "name": "Dark Rebirth+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you would die, instead heal to 20 % HP."
+    },
+    {
+      "name": "Disarming Voice",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Targeted enemy loses 6 Strength this turn."
+    },
+    {
+      "name": "Disarming Voice+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Targeted enemy loses 8 Strength this turn."
+    },
+    {
+      "name": "Diversion",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nPut a card on top of your draw pile."
+    },
+    {
+      "name": "Diversion+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nPut a card on top of your draw pile."
+    },
+    {
+      "name": "Dominating Presence",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nApply 1 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Dominating Presence+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nApply 2 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Donut",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If an enemy is Vulnerable, deal 25 damage."
+    },
+    {
+      "name": "Donut+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If an enemy is Vulnerable, deal 30 damage."
+    },
+    {
+      "name": "Double Time",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next card you play this turn is played twice.\nExhaust."
+    },
+    {
+      "name": "Double Time+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The next card you play this turn is played twice.\nExhaust."
+    },
+    {
+      "name": "Freeze",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nApply 1 Weak."
+    },
+    {
+      "name": "Freeze+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nApply 2 Weak."
+    },
+    {
+      "name": "Goodbye, JOJO!",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If an enemy has 30 or less HP, set their HP to 0.\nExhaust."
+    },
+    {
+      "name": "Goodbye, JOJO!+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nIf an enemy has 30 or less HP, set their HP to 0.\nExhaust."
+    },
+    {
+      "name": "Minions",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "X",
+      "description": "At the end of your turn, deal 3 damage to a random enemy X times."
+    },
+    {
+      "name": "Minions+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "X",
+      "description": "At the end of your turn, deal 3 damage to a random enemy X+1 times."
+    },
+    {
+      "name": "PLuck",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your even turns, draw 1 card. At the start of your odd turns, gain 1 Temporary Strength."
+    },
+    {
+      "name": "PLuck+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your even turns, draw 1 card. At the start of your odd turns, gain 1 Temporary Strength."
+    },
+    {
+      "name": "Sadistic Laugh",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Strength equal to the amount of Weak and Vulnerable an enemy has.\nExhaust."
+    },
+    {
+      "name": "Sadistic Laugh+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain Strength equal to the amount of Weak and Vulnerable an enemy has.\nExhaust."
+    },
+    {
+      "name": "Slash Through Time",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nScry 4."
+    },
+    {
+      "name": "Slash Through Time+",
+      "color": "Dio_gold_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nScry 5."
+    },
+    {
+      "name": "7 Page Muda",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 4 damage 7 times.\nExhaust."
+    },
+    {
+      "name": "7 Page Muda+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 6 damage 7 times.\nExhaust."
+    },
+    {
+      "name": "Despair",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If an enemy is Weak and Vulnerable, remove all of its Buffs.\nExhaust."
+    },
+    {
+      "name": "Despair+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If an enemy is Weak and Vulnerable, remove all of its Buffs.\nExhaust."
+    },
+    {
+      "name": "Gold Vial",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Regen.\nExhaust."
+    },
+    {
+      "name": "Gold Vial+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Regen.\nExhaust."
+    },
+    {
+      "name": "Kono Dio Da!",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put a card from your discard pile into your hand.\nIt costs 0 until played.\nExhaust."
+    },
+    {
+      "name": "Kono Dio Da!+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put a card from your discard pile into your hand.\nIt costs 0 until played.\nExhaust."
+    },
+    {
+      "name": "Muda Muda Muda",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you deal attack damage, gain 1 Temporary Strength."
+    },
+    {
+      "name": "Muda Muda Muda+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you deal unblocked attack damage, gain 1 Temporary Strength."
+    },
+    {
+      "name": "Path To Heaven",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Shuffle a Green Baby into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Path To Heaven+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Innate.\nShuffle a Green Baby into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Phantom Blood",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Reduce all unblocked attack damage to 1. At the start of your turn, lose 6 HP.\nEthereal."
+    },
+    {
+      "name": "Phantom Blood+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Reduce all unblocked attack damage to 1. At the start of your turn, lose 6 HP."
+    },
+    {
+      "name": "Refresh",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put all of your cards with the word 'Muda' in the name from your exhaust pile into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Refresh+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put all of your cards containing the word 'Muda' from your exhaust pile into your draw pile."
+    },
+    {
+      "name": "Regeneration",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you lose HP, heal 1 HP.\n(You can't heal more HP than you lost.)"
+    },
+    {
+      "name": "Regeneration+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you lose HP, heal 1 HP.\n(You can't heal more HP than you lost.)"
+    },
+    {
+      "name": "Road Roller",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 10 damage.\nDouble this card's damage for the combat."
+    },
+    {
+      "name": "Road Roller+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage.\nDouble this card's damage for the combat."
+    },
+    {
+      "name": "The Walk",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nDraw 2 cards.\nGain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "The Walk+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nDraw 3 cards.\nGain 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Ultimate Sacrifice",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw X cards.\nGain 2X [E] .\nLose 2 HP X times.\nExhaust."
+    },
+    {
+      "name": "Ultimate Sacrifice+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw X+1 cards.\nGain 2X+1 [E] .\nLose 2 HP X+1 times.\nExhaust."
+    },
+    {
+      "name": "Za Warudo",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Take an extra turn after this one.\nExhaust."
+    },
+    {
+      "name": "Za Warudo+",
+      "color": "Dio_gold_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Take an extra turn after this one.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Vampire Blood",
+      "tier": "Starter",
+      "pool": "Dio_gold_color",
+      "description": "Whenever you kill an enemy, heal 3 HP.",
+      "flavorText": "Sweet succulent blood"
+    },
+    {
+      "name": "Joestar Blood",
+      "tier": "Boss",
+      "pool": "Dio_gold_color",
+      "description": "Replaces Vampire Blood.\nGain [E] at the start of your turn.",
+      "flavorText": "THIS IS THE GREATEST HIGH!"
+    }
+  ],
+  "potions": [
+    {
+      "name": "Human Blood",
+      "rarity": "Common",
+      "description": "Gain 1 Strength and 3 Regen."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Dio",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    },
+    {
+      "name": "Avdol",
+      "type": "Boss",
+      "minHP": "120",
+      "maxHP": "120"
+    },
+    {
+      "name": "Esidisi",
+      "type": "Elite",
+      "minHP": "140",
+      "maxHP": "140"
+    },
+    {
+      "name": "Joseph",
+      "type": "Boss",
+      "minHP": "100",
+      "maxHP": "100"
+    },
+    {
+      "name": "Jotaro",
+      "type": "Boss",
+      "minHP": "350",
+      "maxHP": "350"
+    },
+    {
+      "name": "Kars",
+      "type": "Boss",
+      "minHP": "500",
+      "maxHP": "500"
+    },
+    {
+      "name": "Polnareff",
+      "type": "Boss",
+      "minHP": "110",
+      "maxHP": "110"
+    },
+    {
+      "name": "Wamuu",
+      "type": "Elite",
+      "minHP": "140",
+      "maxHP": "140"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Multiword Keyword",
+      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+    },
+    {
+      "name": "Diomod:keyword",
+      "description": "Whenever you play a card, gain 1 dexterity this turn only."
+    }
+  ]
+}

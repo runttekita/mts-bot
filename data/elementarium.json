@@ -1,0 +1,378 @@
+{
+  "mod": {
+    "name": "Elementarium",
+    "version": "1.1.3",
+    "authors": ["modargo"],
+    "credits": "",
+    "description": "An alternate act 2 themed around elementals and golems.",
+    "mts_version": "3.15.0",
+    "sts_version": "01-27-2020",
+    "dependencies": ["basemod","actlikeit"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Earth-blessed Blade",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies.\nGain 4 Plated Armor.\nGain 3 Thorns.\nExhaust."
+    },
+    {
+      "name": "Earth-blessed Blade+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies.\nGain 5 Plated Armor.\nGain 4 Thorns.\nExhaust."
+    },
+    {
+      "name": "Fire-blessed Blade",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nGain 1 Strength, 1 Dexterity, and 1 Focus.\nExhaust."
+    },
+    {
+      "name": "Fire-blessed Blade+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 20 damage.\nGain 2 Strength, 1 Dexterity, and 1 Focus.\nExhaust."
+    },
+    {
+      "name": "Gilded Defend",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nLose 1 Dexterity."
+    },
+    {
+      "name": "Gilded Defend+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nLose 1 Dexterity."
+    },
+    {
+      "name": "Gilded Essence",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Plated Armor."
+    },
+    {
+      "name": "Gilded Essence+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Plated Armor."
+    },
+    {
+      "name": "Gilded Form",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nGain 6 Plated Armor.\nGain 20 Gold.\nLose 1 Dexterity."
+    },
+    {
+      "name": "Gilded Form+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nGain 8 Plated Armor.\nGain 20 Gold.\nLose 1 Dexterity."
+    },
+    {
+      "name": "Gilded Strike",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Gilded Strike+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Ice-blessed Blade",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGain 1 Artifact.\nGain 1 Buffer.\nExhaust."
+    },
+    {
+      "name": "Ice-blessed Blade+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nGain 2 Artifact.\nGain 1 Buffer.\nExhaust."
+    },
+    {
+      "name": "Void-blessed Blade",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 2 times.\nEnemy loses 2 Strength.\nGain 1 Blur.\nExhaust."
+    },
+    {
+      "name": "Void-blessed Blade+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times.\nEnemy loses 3 Strength.\nGain 1 Blur.\nExhaust."
+    },
+    {
+      "name": "Wind-blessed Blade",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times.\nGain 4 Block 2 times.\nApply 2 Weak.\nExhaust."
+    },
+    {
+      "name": "Wind-blessed Blade+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 3 times.\nGain 6 Block 2 times.\nApply 3 Weak.\nExhaust."
+    },
+    {
+      "name": "Tar",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "1",
+      "description": "Gain 1 Weak at end of turn.\nEthereal.\nExhaust."
+    },
+    {
+      "name": "Sticky Tar",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nRemove one Sticky Tar from deck after winning an elite fight."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Elementarium Trophy",
+      "tier": "Special",
+      "pool": "",
+      "description": "A trophy of your victory in the Elementarium.",
+      "flavorText": "Shimmers with many different energies."
+    },
+    {
+      "name": "Flickering Lantern",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of your third turn, gain [E] .",
+      "flavorText": "It flickers with unearthly light, renewing itself and then fading."
+    },
+    {
+      "name": "Golden Mirage",
+      "tier": "Special",
+      "pool": "",
+      "description": "The first time you shuffle your deck each combat, gain 1 Intangible.",
+      "flavorText": "Beautiful. Untouchable."
+    },
+    {
+      "name": "Golem's Heart",
+      "tier": "Special",
+      "pool": "",
+      "description": "The first card you play each combat is played twice.",
+      "flavorText": "Still beating, very slowly."
+    },
+    {
+      "name": "Hatchling Phoenix",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you add a 1-cost card to your deck, it is Upgraded.",
+      "flavorText": "Hatched from a magical egg."
+    },
+    {
+      "name": "Hunter's Bracer",
+      "tier": "Special",
+      "pool": "",
+      "description": "Start each elite combat with 2 Thorns and Metallicize.",
+      "flavorText": "A protective bracer made out of the sharp scales of some creature."
+    },
+    {
+      "name": "Hunter's Elixir",
+      "tier": "Special",
+      "pool": "",
+      "description": "Start each elite combat with 1 Artifact and 4 Regen.",
+      "flavorText": "A fortifying elixir of unknown provenance."
+    },
+    {
+      "name": "Hunter's Sling",
+      "tier": "Special",
+      "pool": "",
+      "description": "Start each elite combat with 1 Strength and Dexterity.",
+      "flavorText": "A well-balanced sling crafted from hide and sinew."
+    },
+    {
+      "name": "Radiant Idol",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you add a card to your deck, heal 6 HP.",
+      "flavorText": "The idol now radiates intense heat."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Cyclone",
+      "type": "Normal",
+      "minHP": "117",
+      "maxHP": "117"
+    },
+    {
+      "name": "Elemental Portal",
+      "type": "Elite",
+      "minHP": "50",
+      "maxHP": "50"
+    },
+    {
+      "name": "Fire Phoenix",
+      "type": "Boss",
+      "minHP": "200",
+      "maxHP": "200"
+    },
+    {
+      "name": "Firelord",
+      "type": "Elite",
+      "minHP": "104",
+      "maxHP": "104"
+    },
+    {
+      "name": "Flame Herald",
+      "type": "Elite",
+      "minHP": "93",
+      "maxHP": "93"
+    },
+    {
+      "name": "Golden Angel",
+      "type": "Normal",
+      "minHP": "40",
+      "maxHP": "40"
+    },
+    {
+      "name": "Golden Dragon",
+      "type": "Boss",
+      "minHP": "380",
+      "maxHP": "380"
+    },
+    {
+      "name": "Golden Eagle",
+      "type": "Normal",
+      "minHP": "30",
+      "maxHP": "30"
+    },
+    {
+      "name": "Golden Lion",
+      "type": "Normal",
+      "minHP": "37",
+      "maxHP": "37"
+    },
+    {
+      "name": "Golem Emperor",
+      "type": "Boss",
+      "minHP": "290",
+      "maxHP": "290"
+    },
+    {
+      "name": "Ice Phoenix",
+      "type": "Boss",
+      "minHP": "200",
+      "maxHP": "200"
+    },
+    {
+      "name": "Living Stormcloud",
+      "type": "Normal",
+      "minHP": "28",
+      "maxHP": "28"
+    },
+    {
+      "name": "Mud Golem",
+      "type": "Normal",
+      "minHP": "41",
+      "maxHP": "41"
+    },
+    {
+      "name": "Opulent Offering",
+      "type": "Normal",
+      "minHP": "24",
+      "maxHP": "24"
+    },
+    {
+      "name": "Orb of Fire",
+      "type": "Normal",
+      "minHP": "33",
+      "maxHP": "33"
+    },
+    {
+      "name": "Ruby Golem",
+      "type": "Normal",
+      "minHP": "85",
+      "maxHP": "85"
+    },
+    {
+      "name": "Shimmering Mirage",
+      "type": "Normal",
+      "minHP": "30",
+      "maxHP": "30"
+    },
+    {
+      "name": "Stone Golem",
+      "type": "Normal",
+      "minHP": "52",
+      "maxHP": "52"
+    },
+    {
+      "name": "Tar Golem",
+      "type": "Normal",
+      "minHP": "42",
+      "maxHP": "42"
+    },
+    {
+      "name": "Void Beast",
+      "type": "Normal",
+      "minHP": "112",
+      "maxHP": "112"
+    },
+    {
+      "name": "Void Corruption",
+      "type": "Normal",
+      "minHP": "96",
+      "maxHP": "96"
+    },
+    {
+      "name": "War Golem",
+      "type": "Elite",
+      "minHP": "87",
+      "maxHP": "87"
+    }
+  ],
+  "keywords": [
+  ]
+}

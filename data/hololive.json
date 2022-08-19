@@ -1,0 +1,2094 @@
+{
+  "mod": {
+    "name": "HololiveMod",
+    "version": "0.3.2",
+    "authors": ["REME"],
+    "credits": "\u6D4B\u8BD5:PureCopper",
+    "description": "REME`s mod.If you have a nice time,I will be happy.:) \n \u589E\u52A0\u4E86\u4E00\u4E2A\u65B0\u7684\u4EBA\u7269\uFF1AHololive\u3002\u53EF\u4EE5\u53EC\u5524\u6210\u5458\u8FDB\u884C\u653B\u51FB\uFF0C\u5E76\u4E14\u5979\u4EEC\u4F1A\u4EE3\u66FF\u4F60\u53D7\u4F24\u3002\u5361\u724C\u4E4B\u95F4\u6709\u610F\u60F3\u4E0D\u5230\u7684\u914D\u5408\u6548\u679C\u3002\n \u56FE\u7247\u7D20\u6750\u6765\u6E90\u4E8E\u7F51\u7EDC\n \u6740\u622E\u5C16\u5854mod\u4EA4\u6D41\u7FA4\uFF1A723677239",
+    "mts_version": "3.15.0",
+    "sts_version": "01-14-2020",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Revenue Recovery",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nLose 8 Gold when drawn."
+    },
+    {
+      "name": "Yagoo Big Family",
+      "color": "Hololive_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Choose and add a summon card to your hand.\n Exhaust."
+    },
+    {
+      "name": "Yagoo Big Family+",
+      "color": "Hololive_blue",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Choose and add an upgraded summon card to your hand.\n Exhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Hololive_blue",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Hololive_blue",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Hololive_blue",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Hololive_blue",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Yeah",
+      "color": "Hololive_blue",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Poison.\n Retain , Exhaust "
+    },
+    {
+      "name": "Yeah+",
+      "color": "Hololive_blue",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 4 Poison.\n Retain , Exhaust "
+    },
+    {
+      "name": "Breathe",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 *Yeah to your hand."
+    },
+    {
+      "name": "Breathe+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 *Yeah to your hand."
+    },
+    {
+      "name": "Coco News",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Choose and give a vtuber + 2 / + 2 ,and attack once."
+    },
+    {
+      "name": "Coco News+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Choose and give a vtuber + 3 / + 3 ,and attack once."
+    },
+    {
+      "name": "Flying Pony Tails",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Innate .Gain 4 Block.Draw 1 card.\n Exhaust."
+    },
+    {
+      "name": "Flying Pony Tails+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Innate .Gain 6 Block.Draw 1 card.\n Exhaust."
+    },
+    {
+      "name": "Hunt Dinosaur",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "apply 1 Hunted.\n Exhaust. "
+    },
+    {
+      "name": "Hunt Dinosaur+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "apply 1 Hunted.\n Exhaust. "
+    },
+    {
+      "name": "Luck Potion(Poison1:30)",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Poison.\nAdd a skill card to your hand."
+    },
+    {
+      "name": "Luck Potion(Poison1:30)+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 4 Poison.\nAdd a skill card to your hand."
+    },
+    {
+      "name": "Magic:Rapid Spin",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Magic:Deal 1 damage 2 times.Draw 1 card.\nGain 1 Strength when you control *Shion ."
+    },
+    {
+      "name": "Magic:Rapid Spin+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Magic:Deal 1 damage 3 times.Draw 1 card.\nGain 1 Strength when you control *Shion ."
+    },
+    {
+      "name": "OvertimeWork",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nAdd a random colorless card to your hand."
+    },
+    {
+      "name": "OvertimeWork+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nAdd a random colorless card to your hand and costs 0 this turn."
+    },
+    {
+      "name": "Psychosis XD",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Choose and give a vtuber + 5 attack."
+    },
+    {
+      "name": "Psychosis XD+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": " Choose and give a vtuber + 7 attack."
+    },
+    {
+      "name": "Revenue Based Live",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Each enemy gives a *SuperChat of 1 Gold to each vtuber. \n Exhaust."
+    },
+    {
+      "name": "Revenue Based Live+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Each enemy gives a *SuperChat of 1 Gold to each vtuber. \n Exhaust."
+    },
+    {
+      "name": "Se-qua",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nAdd an attack card to your hand."
+    },
+    {
+      "name": "Se-qua+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nAdd an attack card to your hand."
+    },
+    {
+      "name": "Strength Champion",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Give a vtuber + 3 / 3 .\n(Dexterity and Strength bonus for each)\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Strength Champion+1",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Give a vtuber + 4 / 4 .\n(Dexterity and Strength bonus for each)\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Then You Are Enemy",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nDeal 6 damage to a random enemy.\n(Dexterity bonus for damage)"
+    },
+    {
+      "name": "Then You Are Enemy+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDeal 9 damage to a random enemy.\n(Dexterity bonus for damage)"
+    },
+    {
+      "name": "Trident",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nEnchant when drawn."
+    },
+    {
+      "name": "Trident+",
+      "color": "Hololive_blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nEnchant when drawn."
+    },
+    {
+      "name": "Black and White",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon *ShirakamiFubuki .\nSummon *Ufubuki instead when you control *ShirakamiFubuki .\n Exhaust."
+    },
+    {
+      "name": "Black and White+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon *ShirakamiFubuki+ .\nSummon *Ufubuki+ instead when you control *ShirakamiFubuki+ .\n Exhaust."
+    },
+    {
+      "name": "Bring Her To Trial!",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give all vtubers:\" Hurt :Deal 2 damage to random enemy.\"\n(Strength bonus for damage)"
+    },
+    {
+      "name": "Bring Her To Trial!+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give all vtubers:\" Hurt :Deal 3 damage to random enemy.\"\n(Strength bonus for damage)"
+    },
+    {
+      "name": "Build-up Of Manji",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 2 *Execute .Increase 1 damage of all *Execute for each ManjiMember you control."
+    },
+    {
+      "name": "Build-up Of Manji+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 3 *Execute .Increase 1 damage of all *Execute for each ManjiMember you control."
+    },
+    {
+      "name": "Candy Castle",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Dexterity , *Metallicize , *Plated *Armor .Gain 5 Block.\n Exhaust."
+    },
+    {
+      "name": "Candy Castle+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Dexterity , *Metallicize , *Plated *Armor .Gain 10 Block.\n Exhaust."
+    },
+    {
+      "name": "I Love You",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Choose and give a vtuber + 4 health and Taunt ."
+    },
+    {
+      "name": "I Love You+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Choose and give a vtuber + 6 health and Taunt ."
+    },
+    {
+      "name": "Magic:Teleport",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Magic:Return a vtuber to your hand and costs 0 this turn.\n Gain a copy when you control *Shion .\n Exhaust."
+    },
+    {
+      "name": "Magic:Teleport+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Magic:Return a vtuber to your hand and costs 0 this turn.\n Gain a copy when you control *Shion .\n Exhaust."
+    },
+    {
+      "name": "Neighbouring Spy",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give all vtubers:\" Pursuit :Gain +1/+1.\"\n Exhaust."
+    },
+    {
+      "name": "Neighbouring Spy+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Give all vtubers:\" Pursuit :Gain +1/+1.\"\n Exhaust."
+    },
+    {
+      "name": "Shy Devil",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": " Choose randomly:Summon *Towa or gain 20 Block.\n Exhaust."
+    },
+    {
+      "name": "Shy Devil+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Choose randomly:Summon *Towa or gain 14 Block.\n Exhaust."
+    },
+    {
+      "name": "Soul Catch",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to all enemies.\nGain a *Rasetsu and *Ashura to your hand when you control over 4 vtubers."
+    },
+    {
+      "name": "Soul Catch+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage to all enemies.\nGain a *Rasetsu and *Ashura to your hand when you control over 2 vtubers."
+    },
+    {
+      "name": "Summon:AZKi",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " StartLive :Add copies of all vtubers you control to your hand."
+    },
+    {
+      "name": "Summon:AZKi+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " StartLive :Add copies of all vtubers you control to your hand."
+    },
+    {
+      "name": "Summon:AkaiHaato",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " StartLive :Give all vtubers + 3 health."
+    },
+    {
+      "name": "Summon:AkaiHaato+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " StartLive :Give all vtubers + 4 health."
+    },
+    {
+      "name": "Summon:Aki Rosenthal",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Your choice card triggers once more."
+    },
+    {
+      "name": "Summon:Aki Rosenthal+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Your choice card triggers the effect of each option."
+    },
+    {
+      "name": "Summon:AmaneKanata",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " StartLive :Gain 1 Singing."
+    },
+    {
+      "name": "Summon:AmaneKanata+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " StartLive :Gain 1 Singing."
+    },
+    {
+      "name": "Summon:Civia",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Attack changed to power.\n EndLive :Deal damage to random enemy equal to power."
+    },
+    {
+      "name": "Summon:Civia+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Attack and hurt changed to power.\n EndLive :Deal damage to random enemy equal to power."
+    },
+    {
+      "name": "Summon:FriendA",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " Pursuit :Add a random colorless card to your draw pile."
+    },
+    {
+      "name": "Summon:FriendA+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " StartLive :Draw 2 cards.\n Pursuit :Add a random colorless card to your draw pile."
+    },
+    {
+      "name": "Summon:HimemoriLuna",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " StartLive :Add a not-upgraded copy of the last summon card you played."
+    },
+    {
+      "name": "Summon:HimemoriLuna+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " StartLive :Add a upgraded copy of the last summon card you played."
+    },
+    {
+      "name": "Summon:HoshimachiSuisei",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Attack all enemies.\nIf only one enemy deals twice the damage."
+    },
+    {
+      "name": "Summon:HoshimachiSuisei+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Attack all enemies.\nIf only one enemy deals 3 times the damage."
+    },
+    {
+      "name": "Summon:HoushouMarine",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " Pursuit :Summon a *Mariner ."
+    },
+    {
+      "name": "Summon:HoushouMarine+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " Pursuit :Summon a *Mariner+ ."
+    },
+    {
+      "name": "Summon:InugamiKorone",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " Pursuit :Apply 1 Weak and Vulnerable."
+    },
+    {
+      "name": "Summon:InugamiKorone+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " Pursuit :Apply 1 Weak and Vulnerable.\n EndLive :All enemies lose 1 Strength."
+    },
+    {
+      "name": "Summon:KiryuuCoco",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "5",
+      "description": "Cost 1 less for each vtuber you summoned this battle."
+    },
+    {
+      "name": "Summon:KiryuuCoco+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "4",
+      "description": "Cost 1 less for each vtuber you summoned this battle."
+    },
+    {
+      "name": "Summon:MinatoAqua",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Attack once for every two attack cards you use."
+    },
+    {
+      "name": "Summon:MinatoAqua+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Attack once for every two attack cards you use.\n EndLive :Gain 2 Strength."
+    },
+    {
+      "name": "Summon:MurasakiShion",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": " EndLive :Gain a copy of this."
+    },
+    {
+      "name": "Summon:MurasakiShion+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": " EndLive :Gain a copy of this."
+    },
+    {
+      "name": "Summon:NakiriAyame",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Pursuit :Add a *Rasetsu to your hand."
+    },
+    {
+      "name": "Summon:NakiriAyame+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Pursuit :Add a *Rasetsu and *Ashura to your hand."
+    },
+    {
+      "name": "Summon:NatsuiroMatsuri",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Hurt :Gain 1 *Yeah+ ."
+    },
+    {
+      "name": "Summon:NatsuiroMatsuri+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Hurt :Gain 2 *Yeah+ ."
+    },
+    {
+      "name": "Summon:NekomataOkayu",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Pursuit :trigger  Hurt  of all vtubers."
+    },
+    {
+      "name": "Summon:NekomataOkayu+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Pursuit :trigger  Hurt  of all vtubers.\n Hurt :Deal 3 damage to random enemy."
+    },
+    {
+      "name": "Summon:OkamiMio",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever a vtuber died,gain +1/+2."
+    },
+    {
+      "name": "Summon:OkamiMio+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever a vtuber died,gain +2/+3."
+    },
+    {
+      "name": "Summon:OzoraSubaru",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn,give all vtubers +1 attack."
+    },
+    {
+      "name": "Summon:OzoraSubaru+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end and start of your turn,give all vtubers +1 attack."
+    },
+    {
+      "name": "Summon:Roboco",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "When attack,work out and choose from *Attack *Once or *Gain *Block."
+    },
+    {
+      "name": "Summon:Roboco+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "When attack,work out and choose from *Attack *Once *And *Give *Program *Card or *Gain *Block."
+    },
+    {
+      "name": "Summon:SakuraMiko",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever vtuber attacks,gain 1 Gold."
+    },
+    {
+      "name": "Summon:SakuraMiko+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever vtuber attacks,gain 1 Gold.\n EndLive :Deal damage to random enemy equal to 1/25 of Gold."
+    },
+    {
+      "name": "Summon:ShirakamiFubuki",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you summon a vtuber,it attack once."
+    },
+    {
+      "name": "Summon:ShirakamiFubuki+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you summon a vtuber,it attack once.\n EndLive :Rightmost vtuber attacks once."
+    },
+    {
+      "name": "Summon:ShiranuiFlare",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a skill card,apply 1 Flare to random enemy."
+    },
+    {
+      "name": "Summon:ShiranuiFlare+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a skill card,apply 1 Flare to all enemies."
+    },
+    {
+      "name": "Summon:ShiroganeNoel",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": " Hurt :Attack once."
+    },
+    {
+      "name": "Summon:ShiroganeNoel+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Taunt\n Hurt :Attack once."
+    },
+    {
+      "name": "Summon:SpadeEcho",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": " StartLive :Draw 1 card.\n Pursuit :Gain 2 Gold."
+    },
+    {
+      "name": "Summon:SpadeEcho+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": " StartLive :Draw 1 card.Gain [E] .\n Pursuit :Gain 2 Gold."
+    },
+    {
+      "name": "Summon:TokinoSora",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn,the rightmost vtuber attack once."
+    },
+    {
+      "name": "Summon:TokinoSora+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn,the rightmost vtuber attack twice."
+    },
+    {
+      "name": "Summon:TokoyamiTowa",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Choose randomly:Attack once or gain Block."
+    },
+    {
+      "name": "Summon:TokoyamiTowa+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Choose randomly:Attack once or gain Block."
+    },
+    {
+      "name": "Summon:TsunomakiWatame",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " StartLive :Gain 3 *Plated *Armor."
+    },
+    {
+      "name": "Summon:TsunomakiWatame+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " Start , EndLive :Gain 3 *Plated *Armor."
+    },
+    {
+      "name": "Summon:UruhaRushia",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Pursuit :Summon a 4/4 copy of a vtuber that died this battle."
+    },
+    {
+      "name": "Summon:UruhaRushia+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": " Pursuit :Summon a 6/6 copy of a vtuber that died this battle."
+    },
+    {
+      "name": "Summon:UsadaPekora",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a card,apply 1 Poison to random enemy."
+    },
+    {
+      "name": "Summon:UsadaPekora+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a card,apply 1 Poison to all enemies."
+    },
+    {
+      "name": "Summon:Yogiri",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a summon card,add a *Knife to your hand."
+    },
+    {
+      "name": "Summon:Yogiri+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a summon card,add a *Knife+ to your hand."
+    },
+    {
+      "name": "Summon:YozoraMel",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " Pursuit :Gain health equal to attack.\n(No more than 10)"
+    },
+    {
+      "name": "Summon:YozoraMel+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " Pursuit :Gain health equal to attack and heal you.\n(No more than 10)"
+    },
+    {
+      "name": "Summon:YuzukiChoco",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " EndLive :Give a random vtuber +2/+2."
+    },
+    {
+      "name": "Summon:YuzukiChoco+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": " Start , EndLive :Give a random vtuber +2/+2."
+    },
+    {
+      "name": "Watashimo+1",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Trigger EndLive of all vtubers.\n Exhaust."
+    },
+    {
+      "name": "Watashimo+1+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Trigger EndLive of all vtubers.Draw 1 card.\n Exhaust."
+    },
+    {
+      "name": "Yo-Holo-On!",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 *AfterImage and *Juggernaut .\n Exhaust."
+    },
+    {
+      "name": "Yo-Holo-On!+",
+      "color": "Hololive_blue",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Gain 1 *AfterImage and *Juggernaut .\n Exhaust."
+    },
+    {
+      "name": "3D Live",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 slots.\n Exhaust."
+    },
+    {
+      "name": "3D Live+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 slots.\n Exhaust."
+    },
+    {
+      "name": "ASMR",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to the difference between vtubers` stats and original ones.\n Exhaust."
+    },
+    {
+      "name": "ASMR+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to the difference between vtubers` stats and original ones."
+    },
+    {
+      "name": "Angel Halo",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nResuscitate *Kanata with all Enchantments."
+    },
+    {
+      "name": "Angel Halo+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nResuscitate *Kanata with all Enchantments."
+    },
+    {
+      "name": "BE CAREFUL",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Double your and all enemies` buff and debuff.\n Exhaust."
+    },
+    {
+      "name": "BE CAREFUL+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your and all enemies` buff and debuff.\n Exhaust."
+    },
+    {
+      "name": "Criminal Gang",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Choose and double a vtuber`s health.\n Exhaust."
+    },
+    {
+      "name": "Criminal Gang+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Choose and double a vtuber`s health.\n Exhaust."
+    },
+    {
+      "name": "Diamond Strike",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 1/ 20 of your Gold. Gain a *SakuraMiko .\n Exhaust."
+    },
+    {
+      "name": "Diamond Strike+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to 1/ 18 of your Gold. Gain a *SakuraMiko .\n Exhaust."
+    },
+    {
+      "name": "Durable Live",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the end of your turn,give +1 health to all vtubers.\n Exhaust."
+    },
+    {
+      "name": "Durable Live+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.At the end of your turn,give +1 health to all vtubers.\n Exhaust."
+    },
+    {
+      "name": "Fire Will",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Flare.Summon a Flare with stats equal to the monster`s Flare."
+    },
+    {
+      "name": "Fire Will+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 Flare.Summon a Flare with stats equal to the monster`s Flare."
+    },
+    {
+      "name": "I am Thief!",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.Gain [E] .\n Exhaust."
+    },
+    {
+      "name": "I am Thief!+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.Gain [E] .\n Exhaust."
+    },
+    {
+      "name": "Idol Exercise",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give your vtubers +1/+1."
+    },
+    {
+      "name": "Idol Exercise+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give your vtubers +2/+2."
+    },
+    {
+      "name": "Ma-korone Gun",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Randomly make 3 vtuvers attack once."
+    },
+    {
+      "name": "Ma-korone Gun+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Randomly make 4 vtuvers attack once."
+    },
+    {
+      "name": "Nanodesu",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Destroy a vtuber.\nOther vtubers attack once."
+    },
+    {
+      "name": "Nanodesu+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Destroy a vtuber.\nOther vtubers attack once."
+    },
+    {
+      "name": "Necromancy:Rebirth",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Summon 3 vtubers that died this battle."
+    },
+    {
+      "name": "Necromancy:Rebirth+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon 3 vtubers that died this battle."
+    },
+    {
+      "name": "Open Up",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaust all summon cards in your hand.\nGain 1 attack card cost 0 for each card Exhausted.\n Exhaust."
+    },
+    {
+      "name": "Open Up+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Exhaust all summon cards in your hand.\nGain 1 attack card cost 0 for each card Exhausted.\n Exhaust."
+    },
+    {
+      "name": "Passionate Girl",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Swap attack and health of all vtubers."
+    },
+    {
+      "name": "Passionate Girl+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Swap attack and health of all vtubers.Draw 1 card."
+    },
+    {
+      "name": "Spiritual Pillar",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": " Unplayable ,Cant be upgraded.Gain 1 max HP when combat starts."
+    },
+    {
+      "name": "Wolf And Sheep",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give all vtubers:\" EndLive :Summon a 1 / 1  *Sheep .\""
+    },
+    {
+      "name": "Wolf And Sheep+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Give all vtubers:\" EndLive :Summon a 2 / 2  *Sheep .\""
+    },
+    {
+      "name": "Yagoo Big Family",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Choose and add a summon card to your hand."
+    },
+    {
+      "name": "Yagoo Big Family+",
+      "color": "Hololive_blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": " Choose and add an upgraded summon card to your hand."
+    },
+    {
+      "name": "ALL MEMBER",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *ALL MEMBER :Unlock new mode,but haven`t done"
+    },
+    {
+      "name": "ALL MEMBER",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *ALL MEMBER :Unlock new mode,but haven`t done"
+    },
+    {
+      "name": "ALL MEMBER",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *ALL MEMBER :Unlock new mode,but haven`t done"
+    },
+    {
+      "name": "AquaMarine",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *aqua + *marine :Gain 15 *Gold ."
+    },
+    {
+      "name": "AquaMarine",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *aqua + *marine :Gain 15 *Gold ."
+    },
+    {
+      "name": "AquaMarine",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *aqua + *marine :Gain 15 *Gold ."
+    },
+    {
+      "name": "Blond Hair",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *haato + *aki + *flare + *watame + *mel + *choco :Gain 3 DurableLive."
+    },
+    {
+      "name": "Blond Hair",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *haato + *aki + *flare + *watame + *mel + *choco :Gain 3 DurableLive."
+    },
+    {
+      "name": "Blond Hair",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *haato + *aki + *flare + *watame + *mel + *choco :Gain 3 DurableLive."
+    },
+    {
+      "name": "Cat And Dog",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *fubuki + *mio :Summon *Pinotaurs ."
+    },
+    {
+      "name": "Cat And Dog",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *fubuki + *mio :Summon *Pinotaurs ."
+    },
+    {
+      "name": "Cat And Dog",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *fubuki + *mio :Summon *Pinotaurs ."
+    },
+    {
+      "name": "Challenge1.Yagoo Big Family",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "yagoo-o,yagoo-o,yagoo-o,yagoo-o..."
+    },
+    {
+      "name": "Challenge1.Yagoo Big Family",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "yagoo-o,yagoo-o,yagoo-o,yagoo-o..."
+    },
+    {
+      "name": "Challenge1.Yagoo Big Family",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "yagoo-o,yagoo-o,yagoo-o,yagoo-o..."
+    },
+    {
+      "name": "Challenge2.One Syo-Jyo Army",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "You're just a puppy"
+    },
+    {
+      "name": "Challenge2.One Syo-Jyo Army",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "You're just a puppy"
+    },
+    {
+      "name": "Challenge2.One Syo-Jyo Army",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "You're just a puppy"
+    },
+    {
+      "name": "Challenge3.Top Up Money",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "and galgames:)"
+    },
+    {
+      "name": "Challenge3.Top Up Money",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "and galgames:)"
+    },
+    {
+      "name": "Challenge3.Top Up Money",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "and galgames:)"
+    },
+    {
+      "name": "Challenge4.Not Today",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "cant broadcast today yo"
+    },
+    {
+      "name": "Challenge4.Not Today",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "cant broadcast today yo"
+    },
+    {
+      "name": "Challenge4.Not Today",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "cant broadcast today yo"
+    },
+    {
+      "name": "Challenge5.Chaos",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "wanna play!"
+    },
+    {
+      "name": "Challenge5.Chaos",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "wanna play!"
+    },
+    {
+      "name": "Challenge5.Chaos",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "wanna play!"
+    },
+    {
+      "name": "FAMS",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *fubuki + *ayame + *mio + *subaru :All your cards cost 1 less this turn."
+    },
+    {
+      "name": "FAMS",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *fubuki + *ayame + *mio + *subaru :All your cards cost 1 less this turn."
+    },
+    {
+      "name": "FAMS",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *fubuki + *ayame + *mio + *subaru :All your cards cost 1 less this turn."
+    },
+    {
+      "name": "Four",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Four :Next time you gain *BUFF ,gain 4 extra."
+    },
+    {
+      "name": "Four",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Four :Next time you gain *BUFF ,gain 4 extra."
+    },
+    {
+      "name": "Four",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Four :Next time you gain *BUFF ,gain 4 extra."
+    },
+    {
+      "name": "Gamers",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *fubuki + *mio + *okayu + *korone :Copy your draw pile and shuffle into your discard pile."
+    },
+    {
+      "name": "Gamers",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *fubuki + *mio + *okayu + *korone :Copy your draw pile and shuffle into your discard pile."
+    },
+    {
+      "name": "Gamers",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *fubuki + *mio + *okayu + *korone :Copy your draw pile and shuffle into your discard pile."
+    },
+    {
+      "name": "Group Manji",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *aqua + *shion + *ayame :Whenever you play a attack card,give +1/+1 to random vtuber."
+    },
+    {
+      "name": "Group Manji",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *aqua + *shion + *ayame :Whenever you play a attack card,give +1/+1 to random vtuber."
+    },
+    {
+      "name": "Group Manji",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *aqua + *shion + *ayame :Whenever you play a attack card,give +1/+1 to random vtuber."
+    },
+    {
+      "name": "Happy Family",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *civia + *yogiri + *echo :Whenever you play a summon card,the leftmost vtuber attacks once."
+    },
+    {
+      "name": "Happy Family",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *civia + *yogiri + *echo :Whenever you play a summon card,the leftmost vtuber attacks once."
+    },
+    {
+      "name": "Happy Family",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *civia + *yogiri + *echo :Whenever you play a summon card,the leftmost vtuber attacks once."
+    },
+    {
+      "name": "MUSIC",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Suisei + *AZKi :Triple the effect of your first drawn card this combat."
+    },
+    {
+      "name": "MUSIC",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Suisei + *AZKi :Triple the effect of your first drawn card this combat."
+    },
+    {
+      "name": "MUSIC",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Suisei + *AZKi :Triple the effect of your first drawn card this combat."
+    },
+    {
+      "name": "MatsuriShion",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Matsuri + *Shion :Whenever you draw a summon card,change it to 7/7 and cost 1."
+    },
+    {
+      "name": "MatsuriShion",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Matsuri + *Shion :Whenever you draw a summon card,change it to 7/7 and cost 1."
+    },
+    {
+      "name": "MatsuriShion",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Matsuri + *Shion :Whenever you draw a summon card,change it to 7/7 and cost 1."
+    },
+    {
+      "name": "NatsuiroFubuki",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *matsuri + *fubuki :Gain 4 *Yeah ."
+    },
+    {
+      "name": "NatsuiroFubuki",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *matsuri + *fubuki :Gain 4 *Yeah ."
+    },
+    {
+      "name": "NatsuiroFubuki",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *matsuri + *fubuki :Gain 4 *Yeah ."
+    },
+    {
+      "name": "New Cat And Dog",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Korone + *okayu :All enemies gain 4 Flare."
+    },
+    {
+      "name": "New Cat And Dog",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Korone + *okayu :All enemies gain 4 Flare."
+    },
+    {
+      "name": "New Cat And Dog",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Korone + *okayu :All enemies gain 4 Flare."
+    },
+    {
+      "name": "NoelFlare",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Noel + *Flare :At the end of your turn,give the vtuber with the lowest HP +3 HP."
+    },
+    {
+      "name": "NoelFlare",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Noel + *Flare :At the end of your turn,give the vtuber with the lowest HP +3 HP."
+    },
+    {
+      "name": "NoelFlare",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Noel + *Flare :At the end of your turn,give the vtuber with the lowest HP +3 HP."
+    },
+    {
+      "name": "One",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *One :Enemies drop an additional card reward with 1 additional card to choose from."
+    },
+    {
+      "name": "One",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *One :Enemies drop an additional card reward with 1 additional card to choose from."
+    },
+    {
+      "name": "One",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *One :Enemies drop an additional card reward with 1 additional card to choose from."
+    },
+    {
+      "name": "PekoMiko",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *peko + *miko :Every time you gain Gold,apply 1 Poison to random enemy."
+    },
+    {
+      "name": "PekoMiko",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *peko + *miko :Every time you gain Gold,apply 1 Poison to random enemy."
+    },
+    {
+      "name": "PekoMiko",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *peko + *miko :Every time you gain Gold,apply 1 Poison to random enemy."
+    },
+    {
+      "name": "SoraA",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Sora + *A :Whenever you play a colorless card,gain [E] ."
+    },
+    {
+      "name": "SoraA",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Sora + *A :Whenever you play a colorless card,gain [E] ."
+    },
+    {
+      "name": "SoraA",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Sora + *A :Whenever you play a colorless card,gain [E] ."
+    },
+    {
+      "name": "Three",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Three :Play 3 cards at the top of draw pile."
+    },
+    {
+      "name": "Three",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Three :Play 3 cards at the top of draw pile."
+    },
+    {
+      "name": "Three",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Three :Play 3 cards at the top of draw pile."
+    },
+    {
+      "name": "Two",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Two :Gain 2 *Buffer .Gain [E]  [E] ."
+    },
+    {
+      "name": "Two",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Two :Gain 2 *Buffer .Gain [E]  [E] ."
+    },
+    {
+      "name": "Two",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Two :Gain 2 *Buffer .Gain [E]  [E] ."
+    },
+    {
+      "name": "Zero",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Zero : *RightClick the initial relic:Gain a summon card."
+    },
+    {
+      "name": "Zero",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Zero : *RightClick the initial relic:Gain a summon card."
+    },
+    {
+      "name": "Zero",
+      "color": "Achievements",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": " *Zero : *RightClick the initial relic:Gain a summon card."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Hololive",
+      "tier": "Starter",
+      "pool": "Hololive_blue",
+      "description": "At the start of each combat,if you have any combination, choose an ability.\nfor every 4 combinations you have, the number of ability choices increases once.",
+      "flavorText": "Shiny Smily Story\uFF01"
+    },
+    {
+      "name": "Fried Shrimp Lion",
+      "tier": "Common",
+      "pool": "Hololive_blue",
+      "description": "At the start of each combat,gain 1 Matsuri if you don`t have.Draw 1 card each time Matsuri Hurt.",
+      "flavorText": "My Good Friend"
+    },
+    {
+      "name": "Light Stick",
+      "tier": "Common",
+      "pool": "",
+      "description": "At the start of each combat,gain 1 orb slots if you don`t have,then randomly summon a vtuber with her StartLive triggered.",
+      "flavorText": "Just Like Idols!"
+    },
+    {
+      "name": "Chaos",
+      "tier": "Special",
+      "pool": "",
+      "description": "When you draw,randomly change its *Damage , *Block , *MagicNumber , *Stats .",
+      "flavorText": "wanna play!"
+    },
+    {
+      "name": "Not Today",
+      "tier": "Special",
+      "pool": "",
+      "description": "Your vtubers Cant deal damage when attack.",
+      "flavorText": "poyoyo"
+    },
+    {
+      "name": "One Syo-Jyo Army",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of each combat,summon Aqua ,reduce max slots to 1.If you control no vtubers,summon Aqua every 3 turns.",
+      "flavorText": "sorry.. yesterday...I overdo it.."
+    },
+    {
+      "name": "Top Up Your Money",
+      "tier": "Special",
+      "pool": "",
+      "description": "You cant get card rewards any more.\n Right Click this:Add a random card to your hand.It will cost 10 Gold .",
+      "flavorText": "Go!"
+    },
+    {
+      "name": "Yagoo Big Family",
+      "tier": "Special",
+      "pool": "",
+      "description": "Start game with 4 special Yagoo Big Family .",
+      "flavorText": "As you sow, so shall you reap..what`s this?"
+    },
+    {
+      "name": "Chaos",
+      "tier": "Boss",
+      "pool": "",
+      "description": "When you draw,randomly change its *Damage , *Block , *MagicNumber , *Stats .",
+      "flavorText": "wanna play!"
+    },
+    {
+      "name": "Finger",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn.Every 5 turns,add a random @rcurse card to your draw pile.",
+      "flavorText": "Finger~Finger~"
+    },
+    {
+      "name": "Top Up Your Money",
+      "tier": "Boss",
+      "pool": "",
+      "description": "You cant get card rewards any more.\n Right Click this:Add a random card to your hand.It will cost 20 Gold .",
+      "flavorText": "Go!"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Hololive",
+      "type": "Player",
+      "minHP": "35",
+      "maxHP": "35"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Choose",
+      "description": "Choose from some cards and trigger something."
+    },
+    {
+      "name": "Combination",
+      "description": "When you have specific cards in your master deck,trigger something."
+    },
+    {
+      "name": "Combination:ALL MEMBER",
+      "description": " Everyone!"
+    },
+    {
+      "name": "Combination:AquaMarine",
+      "description": " MinatoAqua + HoushouMarine"
+    },
+    {
+      "name": "Combination:BlondHair",
+      "description": " AkaiHaato + AkiRosenthal + YuzukiChoco + YzoraMel + TsunomakiWatame + ShiranuiFlare"
+    },
+    {
+      "name": "Combination:CatDog",
+      "description": " ShirakamiFubuki + OkamiMio"
+    },
+    {
+      "name": "Combination:FAMS",
+      "description": " ShirakamiFubuki + OkamiMio + NakiriAyame + OzoraSubaru"
+    },
+    {
+      "name": "Combination:Four",
+      "description": " TsunomakiWatame + TokoyamiTowa + KiryuuCoco + AmaneKanata + HimemoriLuna"
+    },
+    {
+      "name": "Combination:Gamers",
+      "description": " ShirakamiFubuki + OkamiMio + InugamiKorone + NekomataOkayu"
+    },
+    {
+      "name": "Combination:HappyFamily",
+      "description": " Yogiri + Civia + SpadeEcho"
+    },
+    {
+      "name": "Combination:MUSIC",
+      "description": " AZKi + HoshimachiSuisei"
+    },
+    {
+      "name": "Combination:Manji",
+      "description": " MinatoAqua + MurasakiShion + NakiriAyame"
+    },
+    {
+      "name": "Combination:MatsuriShion",
+      "description": " NatsuiroMatsuri + MurasakiShion"
+    },
+    {
+      "name": "Combination:NatsuiroFubuki",
+      "description": " NatsuiroMatsuri + ShirakamiFubuki"
+    },
+    {
+      "name": "Combination:NewCatDog",
+      "description": " InugamiKorone + NekomataOkayu"
+    },
+    {
+      "name": "Combination:NoelFlare",
+      "description": " ShiroganeNoel + ShiranuiFlare"
+    },
+    {
+      "name": "Combination:One",
+      "description": " YozoraMel + AkaiHaato + AkiRosenthal + ShirakamiFubuki + NatsuiroMatsuri"
+    },
+    {
+      "name": "Combination:PekoMiko",
+      "description": " UsadaPekora + SakuraMiko"
+    },
+    {
+      "name": "Combination:SoraA",
+      "description": " TokinoSora + FriendA"
+    },
+    {
+      "name": "Combination:Three",
+      "description": " UsadaPekora + UruhaRushia + ShiranuiFlare + HoushouMarine + ShirogameNoel"
+    },
+    {
+      "name": "Combination:Two",
+      "description": " OzoraSubaru + NakiriAyame + MinatoAqua + MurasakiShion + YuzukiChoco"
+    },
+    {
+      "name": "Combination:Zero",
+      "description": " TokinoSora + FriendA + Roboco + SakuraMiko + HoshimachiSuisei"
+    },
+    {
+      "name": "DurableLive",
+      "description": "At the end of your turn,give +1 health to all vtubers."
+    },
+    {
+      "name": "EndLive",
+      "description": "When vtuber died,trigger something."
+    },
+    {
+      "name": "Flare",
+      "description": "Whenever a vtuber died,receive 1 damage."
+    },
+    {
+      "name": "Hunted",
+      "description": "At the end of turn,receive 5 damage for each debuff you have."
+    },
+    {
+      "name": "Hurt",
+      "description": "When attacked,trigger something."
+    },
+    {
+      "name": "Magic",
+      "description": "Choose and enhanced when you control Shion.Cant be affected by Aki."
+    },
+    {
+      "name": "ManjiMember",
+      "description": "aqua,ayame,shion"
+    },
+    {
+      "name": "Program",
+      "description": "Exhaust when drawn,and draw 1 card if draw pile is not empty."
+    },
+    {
+      "name": "Pursuit",
+      "description": "When vtuber attacks,trigger something."
+    },
+    {
+      "name": "Singing",
+      "description": "Whenever you summon,give it +1/+1."
+    },
+    {
+      "name": "StartLive",
+      "description": "When played from hand,trigger something."
+    },
+    {
+      "name": "Taunt",
+      "description": "Vtubers with taunt receive damage first."
+    },
+    {
+      "name": "Vtuber",
+      "description": "Vtubers will attack at the end of your turn,and take damage for you."
+    }
+  ]
+}

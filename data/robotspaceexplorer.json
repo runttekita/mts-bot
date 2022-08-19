@@ -1,0 +1,1361 @@
+{
+  "mod": {
+    "name": "Robot Space Explorer",
+    "version": "1.0.8",
+    "authors": ["ResponsibleAlex"],
+    "credits": "Basemod, ModTheSpire\nSimplified Chinese: CaptainSnafu",
+    "description": "A collaboration with my 7-year-old son.\n\nHe created about 20 of the card designs and/or names, and about half of the card art.\n\nI built the rest of the character around his work.",
+    "mts_version": "3.8.0",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Static Buildup",
+      "color": "Colorless",
+      "rarity": "Common",
+      "type": "Status",
+      "cost": "",
+      "description": "At the end of your turn, take 1 damage and gain 1 Weak."
+    },
+    {
+      "name": "Defend",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Lucky Find",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "At the end of combat, obtain a random common relic.\nRemove this card from your deck."
+    },
+    {
+      "name": "Lucky Find+",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the end of combat, obtain a random common relic.\nRemove this card from your deck."
+    },
+    {
+      "name": "Mini Lasers",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage 2 times."
+    },
+    {
+      "name": "Mini Lasers+",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage 3 times."
+    },
+    {
+      "name": "Scan",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nrobotspaceexplorer:Salvage 1."
+    },
+    {
+      "name": "Scan+",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nrobotspaceexplorer:Salvage 1."
+    },
+    {
+      "name": "Strike",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Robot_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Aftershock",
+      "color": "Robot_orange_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 7 damage."
+    },
+    {
+      "name": "Aftershock+",
+      "color": "Robot_orange_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Ammunition",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Return 2 random Exhausted Attacks to your hand.\nExhaust."
+    },
+    {
+      "name": "Ammunition+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Return 2 random Exhausted Attacks to your hand.\nExhaust."
+    },
+    {
+      "name": "Counterblock",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDraw 1 card next turn."
+    },
+    {
+      "name": "Counterblock+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDraw 2 cards next turn."
+    },
+    {
+      "name": "Frantic Search",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "robotspaceexplorer:Salvage 2.\nDraw 1 card."
+    },
+    {
+      "name": "Frantic Search+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "robotspaceexplorer:Salvage 2.\nDraw 2 cards."
+    },
+    {
+      "name": "Frost Missile",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nApply 2 Weak.\nExhaust."
+    },
+    {
+      "name": "Frost Missile+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nApply 3 Weak.\nExhaust."
+    },
+    {
+      "name": "Glue Shot",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nApply 1 Weak.\nExhaust."
+    },
+    {
+      "name": "Glue Shot+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nApply 2 Weak.\nExhaust."
+    },
+    {
+      "name": "Improvised Attack",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nIf you have robotspaceexplorer:Salvaged this turn, do this 2 more times."
+    },
+    {
+      "name": "Improvised Attack+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nIf you have robotspaceexplorer:Salvaged this turn, do this 3 more times."
+    },
+    {
+      "name": "Metal Strike",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nApply 1 Weak.\nIf the enemy intends to attack, do this again."
+    },
+    {
+      "name": "Metal Strike+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nApply 1 Weak.\nIf the enemy intends to attack, do this again."
+    },
+    {
+      "name": "Mini Drones",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage to ALL enemies.\nGain 3 block."
+    },
+    {
+      "name": "Mini Drones+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage to ALL enemies.\nGain 5 block."
+    },
+    {
+      "name": "Probe",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nNext turn, robotspaceexplorer:Salvage 1."
+    },
+    {
+      "name": "Probe+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nNext turn, robotspaceexplorer:Salvage 1."
+    },
+    {
+      "name": "Pulsar",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain 1 robotspaceexplorer:Solar_Flare."
+    },
+    {
+      "name": "Pulsar+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nGain 2 robotspaceexplorer:Solar_Flare."
+    },
+    {
+      "name": "Scrap Missile",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nrobotspaceexplorer:Salvage 1.\nExhaust."
+    },
+    {
+      "name": "Scrap Missile+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nrobotspaceexplorer:Salvage 1.\nExhaust."
+    },
+    {
+      "name": "Shock Kick",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply 1 Weak.\nAdd a *Static *Buildup to your hand."
+    },
+    {
+      "name": "Shock Kick+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nApply 2 Weak.\nAdd a *Static *Buildup to your hand."
+    },
+    {
+      "name": "Shovel Strike",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nrobotspaceexplorer:Salvage 1."
+    },
+    {
+      "name": "Shovel Strike+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nrobotspaceexplorer:Salvage 2."
+    },
+    {
+      "name": "Slime Missile",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nAdd a Slimed to your hand.\nExhaust."
+    },
+    {
+      "name": "Slime Missile+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage.\nAdd a Slimed to your hand.\nExhaust."
+    },
+    {
+      "name": "Stun Grenade",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage and apply 1 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Stun Grenade+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage and apply 1 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Surging Shield",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain robotspaceexplorer:Surge 2."
+    },
+    {
+      "name": "Surging Shield+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain robotspaceexplorer:Surge 2."
+    },
+    {
+      "name": "Surging Strike",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain robotspaceexplorer:Surge 2."
+    },
+    {
+      "name": "Surging Strike+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nGain robotspaceexplorer:Surge 2."
+    },
+    {
+      "name": "Swift Step",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you play a card this turn, gain 2 Block."
+    },
+    {
+      "name": "Swift Step+",
+      "color": "Robot_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you play a card this turn, gain 2 Block.\nrobotspaceexplorer:Salvage 1."
+    },
+    {
+      "name": "Big Missile",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove all Block from the enemy.\nDeal 15 damage.\nExhaust."
+    },
+    {
+      "name": "Big Missile+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove all Block and Artifact from the enemy.\nDeal 20 damage.\nExhaust."
+    },
+    {
+      "name": "Blitz",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 14 damage.\nGain 14 block."
+    },
+    {
+      "name": "Blitz+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 18 damage.\nGain 18 block."
+    },
+    {
+      "name": "Calculate",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain [E] and robotspaceexplorer:Salvage 1."
+    },
+    {
+      "name": "Calculate+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain [E] [E] and robotspaceexplorer:Salvage 2."
+    },
+    {
+      "name": "Discharger",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "*Static *Buildup cards are now Ethereal. Status cards deal 4 damage to ALL enemies when Exhausted."
+    },
+    {
+      "name": "Discharger+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "*Static *Buildup cards are now Ethereal. Status cards deal 7 damage to ALL enemies when Exhausted."
+    },
+    {
+      "name": "Double Block",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 Block.\nNext turn, gain 9 Block."
+    },
+    {
+      "name": "Double Block+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block.\nNext turn, gain 13 Block."
+    },
+    {
+      "name": "Double Find",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 2 random cards into your hand. They cost 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Double Find+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 random cards into your hand. They cost 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Dual Core",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you play 5 cards in a single turn, gain 3 Vigor and 3 Block."
+    },
+    {
+      "name": "Dual Core+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you play 5 cards in a single turn, gain 5 Vigor and 5 Block."
+    },
+    {
+      "name": "Electropulse",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies.\nAdd a *Static *Buildup to your hand.\nGain robotspaceexplorer:Surge 2."
+    },
+    {
+      "name": "Electropulse+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to ALL enemies.\nAdd a *Static *Buildup to your hand.\nGain robotspaceexplorer:Surge 3."
+    },
+    {
+      "name": "Electroshield",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nAdd a *Static *Buildup to your hand."
+    },
+    {
+      "name": "Electroshield+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 19 Block.\nAdd a *Static *Buildup to your hand."
+    },
+    {
+      "name": "Exhaust Fan",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 2 Dexterity.\nGain 2 Block whenever you play an attack."
+    },
+    {
+      "name": "Exhaust Fan+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 2 Dexterity.\nGain 3 Block whenever you play an attack."
+    },
+    {
+      "name": "Fix",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Artifact.\nHeal 4 HP.\nExhaust."
+    },
+    {
+      "name": "Fix+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Artifact.\nHeal 6 HP.\nExhaust."
+    },
+    {
+      "name": "Freeze Ray",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you apply Weak to an enemy, deal 4 damage to it."
+    },
+    {
+      "name": "Freeze Ray+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you apply Weak to an enemy, deal 7 damage to it."
+    },
+    {
+      "name": "Freezing Shield",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nEnemy loses 1 Strength this turn."
+    },
+    {
+      "name": "Freezing Shield+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nEnemy loses 2 Strength this turn."
+    },
+    {
+      "name": "Gear Shield",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 Artifact.\nExhaust."
+    },
+    {
+      "name": "Gear Shield+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nGain 1 Artifact.\nExhaust."
+    },
+    {
+      "name": "Glue Spray",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X Glue Shots to your hand.\nExhaust."
+    },
+    {
+      "name": "Glue Spray+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X Upgraded Glue Shots to your hand.\nExhaust."
+    },
+    {
+      "name": "Iron Shell",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nIncrease this card's Block by 3 this combat."
+    },
+    {
+      "name": "Iron Shell+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIncrease this card's Block by 4 this combat."
+    },
+    {
+      "name": "Jetpack",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nGain 1 temporary Dexterity."
+    },
+    {
+      "name": "Jetpack+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nGain 2 temporary Dexterity."
+    },
+    {
+      "name": "Junk Dive",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "robotspaceexplorer:Salvage 3.\nExhaust."
+    },
+    {
+      "name": "Junk Dive+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "robotspaceexplorer:Salvage 4.\nExhaust."
+    },
+    {
+      "name": "Laser Burst",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage to a random enemy 4 times."
+    },
+    {
+      "name": "Laser Burst+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage to a random enemy 6 times."
+    },
+    {
+      "name": "Lucky Strike",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. Whenever you robotspaceexplorer:Salvage, if this is in your draw pile, play it."
+    },
+    {
+      "name": "Lucky Strike+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. Whenever you robotspaceexplorer:Salvage, if this is in your draw pile, play it."
+    },
+    {
+      "name": "Makeshift Volley",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Discard your hand.\nDeal 5 damage to a random enemy for each card discarded."
+    },
+    {
+      "name": "Makeshift Volley+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard your hand.\nDeal 5 damage to a random enemy for each card discarded."
+    },
+    {
+      "name": "MiniBoosters",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card costing 0, deal 1 damage to ALL enemies and gain 1 Block."
+    },
+    {
+      "name": "MiniBoosters+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card costing 0, deal 2 damage to ALL enemies and gain 2 Block."
+    },
+    {
+      "name": "Plasma Missile",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nGain 3 robotspaceexplorer:Solar_Flare.\nExhaust."
+    },
+    {
+      "name": "Plasma Missile+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nGain 5 robotspaceexplorer:Solar_Flare.\nExhaust."
+    },
+    {
+      "name": "Power Collector",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a power, gain 2 Strength."
+    },
+    {
+      "name": "Power Collector+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you play a power, gain 2 Strength."
+    },
+    {
+      "name": "Power Glove",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you would deal 5 or less unblocked attack damage,\nincrease it by 4."
+    },
+    {
+      "name": "Power Glove+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you would deal 5 or less unblocked attack damage,\nincrease it by 6."
+    },
+    {
+      "name": "Reload",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play a random Attack from your Exhaust pile."
+    },
+    {
+      "name": "Reload+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose and play an Attack from your Exhaust pile."
+    },
+    {
+      "name": "Rig Explosive",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Obtain a Fire Potion.\nExhaust."
+    },
+    {
+      "name": "Rig Explosive+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Obtain a Fire Potion.\nExhaust."
+    },
+    {
+      "name": "Scrap Shield",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nrobotspaceexplorer:Salvage 2."
+    },
+    {
+      "name": "Scrap Shield+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nrobotspaceexplorer:Salvage 2."
+    },
+    {
+      "name": "Scrap Toss",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nrobotspaceexplorer:Salvage 1.\nShuffle this card into your draw pile."
+    },
+    {
+      "name": "Scrap Toss+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nrobotspaceexplorer:Salvage 1.\nShuffle this card into your draw pile."
+    },
+    {
+      "name": "Self-Cleaning",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Slimed to your hand, then Exhaust all Status cards in your hand. Gain 3 Block and draw a card for each card Exhausted."
+    },
+    {
+      "name": "Self-Cleaning+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Slimed to your hand, then Exhaust all Status cards in your hand. Gain 5 Block and draw a card for each card Exhausted."
+    },
+    {
+      "name": "Smokescreen",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nApply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Smokescreen+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nApply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Star Dust",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of each turn, gain 1 less [E] and gain 5 robotspaceexplorer:Solar_Flare."
+    },
+    {
+      "name": "Star Dust+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of each turn, gain 1 less [E] and gain 8 robotspaceexplorer:Solar_Flare."
+    },
+    {
+      "name": "Star Lightning",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain 5 block.\nGain 2 robotspaceexplorer:Solar_Flare."
+    },
+    {
+      "name": "Star Lightning+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 7 block.\nGain 3 robotspaceexplorer:Solar_Flare."
+    },
+    {
+      "name": "Toxic Bomb",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 1 Weak to ALL enemies.\nAfter 2 turns, deal 14 damage to ALL enemies."
+    },
+    {
+      "name": "Toxic Bomb+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Weak to ALL enemies.\nAfter 2 turns, deal 18 damage to ALL enemies."
+    },
+    {
+      "name": "Turbo Dodge",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nNext turn, gain [E]."
+    },
+    {
+      "name": "Turbo Dodge+",
+      "color": "Robot_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block.\nNext turn, gain [E] [E]."
+    },
+    {
+      "name": "Accelerator",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first time you play a card costing 0 each turn, draw 1 card and gain [E]."
+    },
+    {
+      "name": "Accelerator+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first time you play a card costing 0 each turn, draw 1 card and gain [E]."
+    },
+    {
+      "name": "Arsenal",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Play a random attack from your Exhaust pile X times.\nExhaust."
+    },
+    {
+      "name": "Arsenal+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Play a random attack from your Exhaust pile X+1 times.\nExhaust."
+    },
+    {
+      "name": "Asteroid",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 23 damage."
+    },
+    {
+      "name": "Asteroid+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 33 damage."
+    },
+    {
+      "name": "Autoloader",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nChoose an attack in your hand and remove it from combat. At the start of each turn, play that card."
+    },
+    {
+      "name": "Autoloader+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Choose an attack in your hand and remove it from combat. At the start of each turn, play that card."
+    },
+    {
+      "name": "Blast Shield",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain Block equal to the amount an enemy intends to deal.\nExhaust."
+    },
+    {
+      "name": "Blast Shield+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain Block equal to the amount an enemy intends to deal.\nExhaust."
+    },
+    {
+      "name": "Blaster",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 1 Weak.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Blaster+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 2 Weak.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Charging Laser",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nIncrease this card's damage by 3 this combat."
+    },
+    {
+      "name": "Charging Laser+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nIncrease this card's damage by 6 this combat."
+    },
+    {
+      "name": "Comet",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 robotspaceexplorer:Solar_Flare, then deal damage equal to your robotspaceexplorer:Solar_Flare to ALL enemies."
+    },
+    {
+      "name": "Comet+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 robotspaceexplorer:Solar_Flare, then deal damage equal to your robotspaceexplorer:Solar_Flare to ALL enemies."
+    },
+    {
+      "name": "Drone Swarm",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "At the end of your turn, deal 2X damage to ALL enemies and gain 2X Block."
+    },
+    {
+      "name": "Drone Swarm+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "X",
+      "description": "Innate.\nAt the end of your turn, deal 2X damage to ALL enemies and gain 2X Block."
+    },
+    {
+      "name": "Exploration",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "4",
+      "description": "At the end of combat, obtain a random relic.\nRemove this card from your deck."
+    },
+    {
+      "name": "Exploration+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "At the end of combat, obtain a random relic.\nRemove this card from your deck."
+    },
+    {
+      "name": "Explosion",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Play a random robotspaceexplorer:Missile card, then play an Aftershock for each Attack Exhausted this combat."
+    },
+    {
+      "name": "Explosion+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Play a random Upgraded robotspaceexplorer:Missile card, then play an Aftershock+ for each Attack Exhausted this combat."
+    },
+    {
+      "name": "High Voltage",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage to ALL enemies.\nAdd 2 *Static *Buildups to your hand."
+    },
+    {
+      "name": "High Voltage+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 28 damage to ALL enemies.\nAdd 2 *Static *Buildups to your hand."
+    },
+    {
+      "name": "Multitool",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, upgrade a random card in your hand for the rest of combat."
+    },
+    {
+      "name": "Multitool+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Upgrade ALL cards in your hand for the rest of combat.\nAt the start of your turn, upgrade a random card in your hand for the rest of combat."
+    },
+    {
+      "name": "Scanner",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you robotspaceexplorer:Salvage, prioritize higher rarity cards."
+    },
+    {
+      "name": "Scanner+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you robotspaceexplorer:Salvage, prioritize higher rarity cards."
+    },
+    {
+      "name": "Shock Missile",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nEnemy loses 1 Strength.\nExhaust."
+    },
+    {
+      "name": "Shock Missile+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nEnemy loses 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Trailblazer Form",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nAt the start of your turn, gain 1 Artifact and 2 Plated Armor."
+    },
+    {
+      "name": "Trailblazer Form+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, gain 1 Artifact and 2 Plated Armor."
+    },
+    {
+      "name": "Wormhole",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in your hand. Permanently remove it and this card from your deck."
+    },
+    {
+      "name": "Wormhole+",
+      "color": "Robot_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a card in your hand. Permanently remove it and this card from your deck."
+    }
+  ],
+  "relics": [
+    {
+      "name": "RoboCore",
+      "tier": "Starter",
+      "pool": "Robot_orange_color",
+      "description": "At the start of each combat, gain 1 temporary Strength and draw 1 additional card.",
+      "flavorText": "Standard issue power drive that activates when danger is detected."
+    },
+    {
+      "name": "Clockwork Sextant",
+      "tier": "Common",
+      "pool": "Robot_orange_color",
+      "description": "At the start of your 2nd turn, gain 1 Artifact.",
+      "flavorText": "\"Was this ever used by sailors?\""
+    },
+    {
+      "name": "Foglands Knife",
+      "tier": "Common",
+      "pool": "Robot_orange_color",
+      "description": "Attacks that cost 0 deal 2 additional damage.",
+      "flavorText": "A small knife used by assassins that appears to have been discarded."
+    },
+    {
+      "name": "Bottled Gravity",
+      "tier": "Uncommon",
+      "pool": "Robot_orange_color",
+      "description": "Choose a card. It costs 1 less [E] in combat.",
+      "flavorText": "The essence of pure gravity somehow makes the bottle feel lighter."
+    },
+    {
+      "name": "Plasma Hourglass",
+      "tier": "Uncommon",
+      "pool": "Robot_orange_color",
+      "description": "At the start of your turn, gain 1 Solar Flare.",
+      "flavorText": "A scientific marvel that swirls with pure plasma."
+    },
+    {
+      "name": "Ring of the Newt",
+      "tier": "Rare",
+      "pool": "Robot_orange_color",
+      "description": "Every 2 turns, draw 1 additional card.",
+      "flavorText": "An odd fossilized ring that appears to have been discarded."
+    },
+    {
+      "name": "Tough Plating",
+      "tier": "Rare",
+      "pool": "Robot_orange_color",
+      "description": "Whenever you Salvage, gain 2 Block.",
+      "flavorText": "A strong exoskeleton useful for persevering while exploring the depths of space."
+    },
+    {
+      "name": "Reprocessor",
+      "tier": "Boss",
+      "pool": "Robot_orange_color",
+      "description": "At the start of your turn, Salvage 1.",
+      "flavorText": "This advanced device allows spacefarers to reuse valuable resources."
+    },
+    {
+      "name": "Search Specs",
+      "tier": "Boss",
+      "pool": "Robot_orange_color",
+      "description": "The first time you Salvage each turn, gain [E] .",
+      "flavorText": "This fashionable accessory is widely used by robotic explorers."
+    },
+    {
+      "name": "TurboCore",
+      "tier": "Boss",
+      "pool": "Robot_orange_color",
+      "description": "Replaces RoboCore.\nAt the start of each combat, gain 2 temporary Strength, draw 2 additional cards, and gain 1 [E] .",
+      "flavorText": "Upgraded power drive that activates when danger is detected."
+    },
+    {
+      "name": "Slide Rule",
+      "tier": "Shop",
+      "pool": "Robot_orange_color",
+      "description": "Whenever you shuffle your draw pile, play a random Attack from your Exhaust pile.",
+      "flavorText": "\"Log base 10 of 800 is 2.903...\""
+    }
+  ],
+  "potions": [
+    {
+      "name": "Recycle Potion",
+      "rarity": "Common",
+      "description": "Salvage 3 cards and upgrade them."
+    },
+    {
+      "name": "Plasma Flask",
+      "rarity": "Uncommon",
+      "description": "Gain 8 Solar Flare."
+    },
+    {
+      "name": "Liquid Fusion",
+      "rarity": "Rare",
+      "description": "Every card in your hand costs 0 until played this turn."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Robonaut",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Missile",
+      "description": "An exhausting Attack with \"Missile\" in its name."
+    },
+    {
+      "name": "Salvage",
+      "description": "Return a random card from your discard pile to your hand."
+    },
+    {
+      "name": "Solar Flare",
+      "description": "Deal damage to a random enemy at the end of your turn equal to your Solar Flare."
+    },
+    {
+      "name": "Surge",
+      "description": "At the start of your next turn, remove all Weak on you and gain temporary Strength equal to your Surge."
+    }
+  ]
+}
