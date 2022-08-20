@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Adventurer",
-    "version": "1.0",
+    "version": "1.33",
     "authors": ["Vex'd"],
     "credits": "",
     "description": "Adds a new playable character: The Adventurer.",
@@ -47,17 +47,17 @@
       "name": "Boot",
       "color": "Colorless",
       "rarity": "Special",
-      "type": "Skill",
+      "type": "Attack",
       "cost": "0",
-      "description": "Draw 1 card.\nExhaust."
+      "description": "Deal 1 damage.\nDraw 1 card.\nExhaust."
     },
     {
       "name": "Boot+",
       "color": "Colorless",
       "rarity": "Special",
-      "type": "Skill",
+      "type": "Attack",
       "cost": "0",
-      "description": "Draw 2 cards.\nExhaust."
+      "description": "Deal 3 damage.\nDraw 1 card.\nExhaust."
     },
     {
       "name": "Ceramic Fish",
@@ -428,28 +428,12 @@
       "description": "If the enemy has positive Strength, steal up to 3 of it.\nExhaust."
     },
     {
-      "name": "Surprise!",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "",
-      "description": "Unplayable. Ethereal. When this card is drawn, deal 12 damage to ALL enemies."
-    },
-    {
-      "name": "Surprise!+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "",
-      "description": "Unplayable. Ethereal. When this card is drawn, deal 16 damage to ALL enemies."
-    },
-    {
       "name": "Swordfish",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 11 damage.\nDraw 1 card.\nExhaust."
+      "description": "Deal 7 damage.\nDraw 1 card.\nExhaust."
     },
     {
       "name": "Swordfish+",
@@ -457,7 +441,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 15 damage.\nDraw 1 card.\nExhaust."
+      "description": "Deal 11 damage.\nDraw 1 card.\nExhaust."
     },
     {
       "name": "The Eternity Gem",
@@ -625,7 +609,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 damage twice.\nIf you have Block, draw 2 cards."
+      "description": "Deal 4 damage twice.\nStartup: ALL enemies lose 4 HP."
     },
     {
       "name": "Double Up+",
@@ -633,7 +617,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage twice.\nIf you have Block, draw 2 cards."
+      "description": "Deal 6 damage twice.\nStartup: ALL enemies lose 6 HP."
     },
     {
       "name": "Future Proofing",
@@ -705,7 +689,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nExhaust 1 card.\nIf it's a Curse or Status, gain [E] and draw a card."
+      "description": "Deal 8 damage.\nExhaust a card.\nIf it's a Status or Curse card, draw 1 card."
     },
     {
       "name": "Mop Up+",
@@ -713,7 +697,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage.\nExhaust 1 card.\nIf it's a Curse or Status, gain [E] and draw a card."
+      "description": "Deal 11 damage.\nExhaust a card.\nIf it's a Status or Curse card, draw 1 card."
     },
     {
       "name": "Nostalgic Strike",
@@ -721,7 +705,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\nReturn the rarest card in your discard pile to your hand."
+      "description": "Deal 9 damage.\nPut a random card from your discard pile into your hand."
     },
     {
       "name": "Nostalgic Strike+",
@@ -729,7 +713,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 12 damage.\nReturn the rarest card in your discard pile to your hand."
+      "description": "Deal 12 damage.\nPut a random card from your discard pile into your hand."
     },
     {
       "name": "Oblivious",
@@ -753,7 +737,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 damage to ALL enemies.\nDraw 1 card.\nIf you draw a fishing:Foil card, repeat this."
+      "description": "Deal 4 damage to a random enemy.\nDraw 1 card.\nIf you draw a fishing:Foil card, repeat this."
     },
     {
       "name": "Perfect Pull+",
@@ -761,7 +745,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage to ALL enemies.\nDraw 1 card.\nIf you draw a fishing:Foil card, repeat this."
+      "description": "Deal 6 damage to a random enemy.\nDraw 1 card.\nIf you draw a fishing:Foil card, repeat this."
     },
     {
       "name": "Plant Flag",
@@ -769,7 +753,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 2 Block.\nPut a Flag on top of your draw pile."
+      "description": "Gain 3 Block.\nPut a fishing:Foil Flag on top of your draw pile."
     },
     {
       "name": "Plant Flag+",
@@ -777,7 +761,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block.\nPut a Flag on top of your draw pile."
+      "description": "Gain 6 Block.\nPut a fishing:Foil Flag on top of your draw pile."
     },
     {
       "name": "Rod Slam",
@@ -809,7 +793,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Draw a non-Fish Attack.\nIt costs 0 this turn.\nApply 2 Vulnerable to a random enemy."
+      "description": "Draw a non-Fish Attack.\nIt costs 0 this turn.\nApply 1 Vulnerable to ALL enemies."
     },
     {
       "name": "Shiny Shots",
@@ -849,7 +833,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.\nfishing:Voyaged: Gain 3 Thorns."
+      "description": "Gain 8 Block.\nGain 1 Thorns.\nfishing:Voyaged: Gain 2 more Thorns."
     },
     {
       "name": "Thorny Personality+",
@@ -857,7 +841,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 10 Block.\nfishing:Voyaged: Gain 4 Thorns."
+      "description": "Gain 9 Block.\nGain 2 Thorns.\nfishing:Voyaged: Gain 3 more Thorns."
     },
     {
       "name": "Wander",
@@ -873,7 +857,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 14 damage to a random enemy.\nDiscard your hand, then draw 1 card."
+      "description": "Deal 13 damage to a random enemy.\nDiscard your hand, then draw 2 cards."
     },
     {
       "name": "All Out",
@@ -929,7 +913,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nIf you draw this after your turn starts, gain 6 Block and 1 Strength."
+      "description": "Unplayable.\nIf you draw this during your turn, gain 6 Block and 1 Strength."
     },
     {
       "name": "Bobber+",
@@ -937,23 +921,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nIf you draw this after your turn starts, gain 9 Block and 1 Strength."
-    },
-    {
-      "name": "Bomb Fishing",
-      "color": "Fishing_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Shuffle 1 Surprise! into your draw pile."
-    },
-    {
-      "name": "Bomb Fishing+",
-      "color": "Fishing_color",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Shuffle 1 Surprise!+ into your draw pile."
+      "description": "Unplayable.\nIf you draw this during your turn, gain 8 Block and 2 Strength."
     },
     {
       "name": "Box of Havoc",
@@ -1041,7 +1009,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 2 Strength.\nGain 4 Thorns.\nDraw 1 fewer card each turn."
+      "description": "Gain 4 Thorns.\nGain 4 Plated Armor.\nDraw 1 fewer card each turn."
     },
     {
       "name": "Fasting-B+",
@@ -1049,23 +1017,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 3 Strength.\nGain 6 Thorns.\nDraw 1 fewer card each turn."
-    },
-    {
-      "name": "Feeding Frenzy",
-      "color": "Fishing_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 6 damage to a random enemy for each fishing:Fish card played this turn."
-    },
-    {
-      "name": "Feeding Frenzy+",
-      "color": "Fishing_color",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 7 damage to a random enemy for each fishing:Fish card played this turn."
+      "description": "Gain 5 Thorns.\nGain 5 Plated Armor.\nDraw 1 fewer card each turn."
     },
     {
       "name": "Flaming Flip",
@@ -1105,7 +1057,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Remove your Weak and Vulnerable.\nIf you're not a Vampire, heal 4 HP.\nExhaust."
+      "description": "Remove your Weak and Frail.\nIf you're not a Vampire, heal 4 HP.\nExhaust."
     },
     {
       "name": "Garlic Clove+",
@@ -1113,7 +1065,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Remove your Weak and Vulnerable.\nIf you're not a Vampire, heal 6 HP.\nExhaust."
+      "description": "Remove your Weak and Frail.\nIf you're not a Vampire, heal 6 HP.\nExhaust."
     },
     {
       "name": "Glitter Glue",
@@ -1153,7 +1105,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "The second time you play a fishing:Foil card each turn, gain 4 Block."
+      "description": "The second time you play a fishing:Foil card each turn, gain 5 Block."
     },
     {
       "name": "Mint Condition+",
@@ -1161,7 +1113,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "The second time you play a fishing:Foil card each turn, gain 6 Block."
+      "description": "The second time you play a fishing:Foil card each turn, gain 7 Block."
     },
     {
       "name": "Pyramid Climb",
@@ -1184,7 +1136,7 @@
       "color": "Fishing_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "1",
+      "cost": "2",
       "description": "After you play an X-cost card, gain [E]."
     },
     {
@@ -1192,7 +1144,7 @@
       "color": "Fishing_color",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "0",
+      "cost": "1",
       "description": "After you play an X-cost card, gain [E]."
     },
     {
@@ -1201,7 +1153,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you play a Colorless card, deal 2 damage to a random enemy."
+      "description": "Whenever you play a Colorless card, deal 3 damage to a random enemy."
     },
     {
       "name": "Ridiculous Fishing+",
@@ -1209,7 +1161,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you play a Colorless card, deal 3 damage to a random enemy."
+      "description": "Whenever you play a Colorless card, deal 5 damage to a random enemy."
     },
     {
       "name": "Ring the Bell",
@@ -1308,12 +1260,44 @@
       "description": "Gain 15 Block.\nDeal 15 damage.\nThis card's damage and Block are reduced by 2 for each other card in your hand."
     },
     {
+      "name": "Standoff",
+      "color": "Fishing_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nIf there's only one enemy, gain 6 Block again."
+    },
+    {
+      "name": "Standoff+",
+      "color": "Fishing_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf there's only one enemy, gain 8 Block again."
+    },
+    {
+      "name": "The Fish-O-Pedia",
+      "color": "Fishing_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 2 fishing:Fish into your draw pile.\nfishing:Quest: Play 5 fishing:Fish with different names.\nReward: Gain 3 Strength."
+    },
+    {
+      "name": "The Fish-O-Pedia+",
+      "color": "Fishing_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 3 fishing:Fish into your draw pile.\nfishing:Quest: Play 5 fishing:Fish with different names.\nReward: Gain 3 Strength."
+    },
+    {
       "name": "The Lucky Pack",
       "color": "Fishing_color",
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage to a random enemy.\nfishing:Quest: Play 3 fishing:Foil cards with different names.\nReward: Play the last card twice."
+      "description": "Deal 8 damage.\nfishing:Quest: Play 3 fishing:Foil cards in a row.\nReward: Play the last card twice."
     },
     {
       "name": "The Lucky Pack+",
@@ -1321,7 +1305,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage to a random enemy.\nfishing:Quest: Play 3 fishing:Foil cards with different names.\nReward: Play the last card twice."
+      "description": "Deal 12 damage.\nfishing:Quest: Play 3 fishing:Foil cards in a row.\nReward: Play the last card twice."
     },
     {
       "name": "The Storm",
@@ -1409,7 +1393,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "0",
-      "description": "Gain 1 Strength.\nIf you have over 200 Gold, spend 15 to gain an extra 1 Strength."
+      "description": "Gain 1 Strength.\nIf you have over 200 Gold, spend 15 to gain an extra 2 Strength."
     },
     {
       "name": "Whaling+",
@@ -1417,7 +1401,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "0",
-      "description": "Gain 2 Strength.\nIf you have over 200 Gold, spend 15 to gain an extra 1 Strength."
+      "description": "Gain 1 Strength.\nIf you have over 200 Gold, spend 15 to gain an extra 2 Strength."
     },
     {
       "name": "Wizardry",
@@ -1457,7 +1441,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "The first 2 times you play a card each turn, draw a card."
+      "description": "The first 2 times you play a card each turn, draw 1 card."
     },
     {
       "name": "Angler Form+",
@@ -1465,7 +1449,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "The first 3 times you play a card each turn, draw a card."
+      "description": "The first 3 times you play a card each turn, draw 1 card."
     },
     {
       "name": "Caffeinated",
@@ -1504,7 +1488,7 @@
       "color": "Fishing_color",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
+      "cost": "1",
       "description": "Whenever you play an X-cost card, deal 12 damage to the frontmost enemy."
     },
     {
@@ -1512,8 +1496,8 @@
       "color": "Fishing_color",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
-      "description": "Whenever you play an X-cost card, deal 16 damage to the frontmost enemy."
+      "cost": "1",
+      "description": "Whenever you play an X-cost card, deal 15 damage to the frontmost enemy."
     },
     {
       "name": "Ends Of The Earth",
@@ -1521,7 +1505,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Can be played from your discard pile.\nGain 2 Block.\nDeal 5 damage."
+      "description": "Can be played from your discard pile.\nGain 2 Block.\nDeal 4 damage."
     },
     {
       "name": "Ends Of The Earth+",
@@ -1529,7 +1513,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Can be played from your discard pile.\nGain 3 Block.\nDeal 7 damage."
+      "description": "Can be played from your discard pile.\nGain 3 Block.\nDeal 6 damage."
     },
     {
       "name": "Finishing Touches",
@@ -1537,7 +1521,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Ethereal.\nWhen you play a card, if it's the only one in your hand, play it twice."
+      "description": "Ethereal.\nWhen you play a card, if it's the only card in your hand, play it twice."
     },
     {
       "name": "Finishing Touches+",
@@ -1545,7 +1529,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "When you play a card, if it's the only one in your hand, play it twice."
+      "description": "When you play a card, if it's the only card in your hand, play it twice."
     },
     {
       "name": "Fishbones",
@@ -1617,7 +1601,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 8 damage.\nX >= 1: Apply 1 Weak and Vulnerable.\nX >= 2: Gain 8 Block.\nX >= 4: Gain 2 Strength."
+      "description": "Deal 7 damage.\nX >= 1: Gain 7 Block.\nX >= 2: Apply 2 Vulnerable.\nX >= 4: Gain 2 Strength."
     },
     {
       "name": "Rated X+",
@@ -1625,7 +1609,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 10 damage.\nX >= 1: Apply 2 Weak and Vulnerable.\nX >= 2: Gain 10 Block.\nX >= 4: Gain 3 Strength."
+      "description": "Deal 9 damage.\nX >= 1: Gain 9 Block.\nX >= 2: Apply 3 Vulnerable.\nX >= 4: Gain 3 Strength."
     },
     {
       "name": "Rod of Hope",
@@ -1633,7 +1617,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage.\nfishing:Voyaged: Add 2 Star Shards into your hand and Exhaust."
+      "description": "Deal 6 damage.\nfishing:Voyaged: Add 1 Star Shard into your hand."
     },
     {
       "name": "Rod of Hope+",
@@ -1641,14 +1625,14 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nfishing:Voyaged: Add 2 Star Shards+ into your hand and Exhaust."
+      "description": "Deal 8 damage.\nfishing:Voyaged: Add 1 Star Shard+ into your hand."
     },
     {
       "name": "Sickly Shine",
       "color": "Fishing_color",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
+      "cost": "1",
       "description": "Whenever you play a fishing:Foil card, apply 1 Poison to ALL enemies."
     },
     {
@@ -1656,7 +1640,7 @@
       "color": "Fishing_color",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "1",
+      "cost": "0",
       "description": "Whenever you play a fishing:Foil card, apply 1 Poison to ALL enemies."
     },
     {
@@ -1681,7 +1665,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "fishing:Solo: Deal 32 damage to ALL enemies.\nIf this ends the combat, Upgrade it."
+      "description": "fishing:Solo: Deal 30 damage to ALL enemies.\nIf this ends the combat, Upgrade it."
     },
     {
       "name": "The Final Card+",
@@ -1689,7 +1673,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "fishing:Solo: Deal 40 damage to ALL enemies.\nThanks for playing."
+      "description": "fishing:Solo: Deal 36 damage to ALL enemies.\nThanks for playing."
     },
     {
       "name": "The Harpoon",
@@ -1713,7 +1697,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "fishing:Quest: Play a Common, Uncommon, Rare, and Special card.\nReward: Shuffle The Gem Search into your draw pile."
+      "description": "fishing:Quest: Play a Common, Uncommon, and Rare card in a turn.\nReward: Shuffle The Gem Search into your draw pile."
     },
     {
       "name": "The Prismatic Portal+",
@@ -1721,7 +1705,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "0",
-      "description": "fishing:Quest: Play a Common, Uncommon, Rare, and Special card.\nReward: Shuffle The Gem Search into your draw pile."
+      "description": "fishing:Quest: Play a Common, Uncommon, and Rare card in a turn.\nReward: Shuffle The Gem Search into your draw pile."
     },
     {
       "name": "Vexing Deal",
@@ -1729,7 +1713,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "0",
-      "description": "At the start of your turn, Exhaust 1 card and draw 1 card."
+      "description": "At the start of your turn, Exhaust 1 card and draw 1 card.\nIf it's Ascension 10 or higher, gain 3 Strength."
     },
     {
       "name": "Vexing Deal+",
@@ -1737,7 +1721,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "0",
-      "description": "Innate.\nAt the start of your turn, Exhaust 1 card and draw 1 card."
+      "description": "Innate.\nAt the start of your turn, Exhaust 1 card and draw 1 card.\nIf it's Ascension 10 or higher, gain 3 Strength."
     }
   ],
   "relics": [
@@ -1766,7 +1750,7 @@
       "name": "Signpost",
       "tier": "Uncommon",
       "pool": "Fishing_color",
-      "description": "The first time you play a Power card each combat, gain 6 Block.",
+      "description": "The first time you play a Power card each combat, gain 6 Block and draw 1 card.",
       "flavorText": "\"Welcome. You have come very far...\""
     },
     {
@@ -1859,7 +1843,7 @@
     },
     {
       "name": "Solo",
-      "description": "Effect triggers only if this card is the only one in your hand."
+      "description": "Effect triggers only if there are no other cards in your hand."
     },
     {
       "name": "Voyaged",
