@@ -1,0 +1,1501 @@
+{
+  "mod": {
+    "name": "The Blade Gunner",
+    "version": "1.5.0",
+    "authors": ["Chaofan"],
+    "credits": "BaseMod, ModTheSpire: Kiooeht and other contributors.\nSpire Exporter: twanvl.\nEnglish translation refine: Stanek.",
+    "description": "Add new character blade gunner to Slay the Spire.",
+    "mts_version": "3.8.0",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Reload",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Load ALL.\nGain 5 Block.\nWhenever you use ammo, put this card into your hand and Retain."
+    },
+    {
+      "name": "Reload+",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Load ALL.\nGain 8 Block.\nWhenever you use ammo, put this card into your hand and Retain."
+    },
+    {
+      "name": "Revolver",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of combat, if no gun is equipped, play this card.\nbladegunner:Equip bladegunner:Revolver."
+    },
+    {
+      "name": "Revolver+",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of combat, if no gun is equipped, play this card.\nbladegunner:Equip bladegunner:Revolver+."
+    },
+    {
+      "name": "Shoot",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Shoot+",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeals 4 more damage.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Strike",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Blade_gunner_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Golden Bullet",
+      "color": "Blade_gunner_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This card is treated as *Little *Bullet.\nbladegunner:Load 1.\nGain [E] [E].\nRetain.\nExhaust."
+    },
+    {
+      "name": "Golden Bullet+",
+      "color": "Blade_gunner_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This card is treated as *Little *Bullet.\nbladegunner:Load 1.\nGain [E] [E] [E].\nRetain.\nExhaust."
+    },
+    {
+      "name": "Jam",
+      "color": "Blade_gunner_color",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable.\nWhen you bladegunner:Shoot, Exhaust this and bladegunner:Unload 1.\nEthereal."
+    },
+    {
+      "name": "Little Bullet",
+      "color": "Blade_gunner_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bladegunner:Load 1.\nGain [E].\nRetain.\nExhaust."
+    },
+    {
+      "name": "Little Bullet+",
+      "color": "Blade_gunner_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bladegunner:Load 1.\nGain [E] [E].\nRetain.\nExhaust."
+    },
+    {
+      "name": "Ammo Box",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 8 Block.\nAdd 2 *Little *Bullet into your hand."
+    },
+    {
+      "name": "Ammo Box+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 12 Block.\nAdd 2 *Little *Bullet into your hand."
+    },
+    {
+      "name": "Bandolier",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to magazine capacity plus 2."
+    },
+    {
+      "name": "Bandolier+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain Block equal to magazine capacity plus 2."
+    },
+    {
+      "name": "Dual Shot",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If you have 2 ammo in the magazine,\ngain [E] [E].\n{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}."
+    },
+    {
+      "name": "Dual Shot+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If you have 2 ammo in the magazine,\ngain [E] [E].\n{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeal 150% damage."
+    },
+    {
+      "name": "Emergency Reload",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bladegunner:Load ALL.\nGain [E].\nAdd a *Jam into your discard pile."
+    },
+    {
+      "name": "Emergency Reload+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bladegunner:Load ALL.\nGain [E].\nDraw 1 card.\nAdd a *Jam into your discard pile."
+    },
+    {
+      "name": "Grenade",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nDeal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Grenade+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nDeal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Gunsmoke",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Unload 5.\nApply bladegunner:Burning equal to amount of removed ammo.\nTarget keeps bladegunner:Burning this turn."
+    },
+    {
+      "name": "Gunsmoke+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bladegunner:Unload 5.\nApply bladegunner:Burning equal to amount of removed ammo.\nTarget keeps bladegunner:Burning this turn."
+    },
+    {
+      "name": "Gunstock Strike",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDeal 3 additional damage for each of equipped bladegunner:Guns.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Gunstock Strike+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nDeal 4 additional damage for each of equipped bladegunner:Guns.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Headshot",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeal 130% damage."
+    },
+    {
+      "name": "Headshot+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bladegunner:Shoot !bladegunner:var.ShootCount! time.\nDeal [#7fff00]170%[] damage."
+    },
+    {
+      "name": "Ignite",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 bladegunner:Burning.\nbladegunner:Detonate.\nDeal damage equal to amount of bladegunner:Burning."
+    },
+    {
+      "name": "Ignite+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 7 bladegunner:Burning.\nbladegunner:Detonate.\nDeal damage equal to amount of bladegunner:Burning."
+    },
+    {
+      "name": "Low Ammo Anxiety",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf you have less than half of the ammo in magazine, deal 8 damage again."
+    },
+    {
+      "name": "Low Ammo Anxiety+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nIf you have less than half of the ammo in magazine, deal 11 damage again."
+    },
+    {
+      "name": "Preparing Stance",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nNext turn, gain [E].\nbladegunner:Exchange."
+    },
+    {
+      "name": "Preparing Stance+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nNext turn, gain [E].\nbladegunner:Exchange."
+    },
+    {
+      "name": "Rash'oot",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nAdd a *Jam into your draw pile."
+    },
+    {
+      "name": "Rash'oot+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nAdd a *Jam into your draw pile."
+    },
+    {
+      "name": "Reloading Practice",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nAdd a *Little *Bullet to draw pile.\nExhaust a random Status in draw pile."
+    },
+    {
+      "name": "Reloading Practice+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nAdd an Upgraded *Little *Bullet to draw pile.\nExhaust a random Status in draw pile."
+    },
+    {
+      "name": "Rolling Slash",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nGain 6 Block.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Rolling Slash+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 9 Block.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Russian Roulette",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if you equip Revolver with 1 ammo. bladegunner:Exchange to it. bladegunner:Shoot a random enemy. Deal 40 damage."
+    },
+    {
+      "name": "Russian Roulette+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Can only be played if you equip Revolver with 1 ammo. bladegunner:Exchange to it. bladegunner:Shoot a random enemy. Deal 55 damage."
+    },
+    {
+      "name": "Smoke Bomb",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Exchange.\nbladegunner:Load ALL.\nGain 8 Block."
+    },
+    {
+      "name": "Smoke Bomb+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Exchange.\nbladegunner:Load ALL.\nGain 11 Block."
+    },
+    {
+      "name": "Spinning Slash",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies.\nDraw cards equal to count of enemies."
+    },
+    {
+      "name": "Spinning Slash+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nDraw cards equal to count of enemies, at least 2 cards."
+    },
+    {
+      "name": "Sticky Bullets",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Replace ALL bullets in magazine with bladegunner:Sticky_bullets."
+    },
+    {
+      "name": "Sticky Bullets+",
+      "color": "Blade_gunner_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Replace ALL bullets in magazine with bladegunner:Sticky_bullets."
+    },
+    {
+      "name": "Accurate Shoot",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeals 1 more damage for each bladegunner:Shooting_card you have played in this combat."
+    },
+    {
+      "name": "Accurate Shoot+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeals 2 more damage for each bladegunner:Shooting_card you have played in this combat."
+    },
+    {
+      "name": "Aim Weakness",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nbladegunner:Detonate.\nDeals 2 more damage."
+    },
+    {
+      "name": "Aim Weakness+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bladegunner:Detonate.\n{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeals 2 more damage."
+    },
+    {
+      "name": "Airdrop",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, draw an additional card and reduce its cost by 1 in this turn."
+    },
+    {
+      "name": "Airdrop+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, draw an additional card and reduce its cost by 1 in this turn."
+    },
+    {
+      "name": "Armory",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random bladegunner:Gun_card into your hand and reduce its cost by 1.\nExhaust."
+    },
+    {
+      "name": "Armory+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 of 2 random bladegunner:Gun_cards to add into your hand and reduce its cost by 1.\nExhaust."
+    },
+    {
+      "name": "Backup",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in your hand. Add a copy of that card into your hand. The copy is Exhausted when played."
+    },
+    {
+      "name": "Backup+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose a card in your hand. Add 2 copies of that card into your hand. The copies are Exhausted when played."
+    },
+    {
+      "name": "Ballistic Vest",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nTake half damage from Attacks until your next turn."
+    },
+    {
+      "name": "Ballistic Vest+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nTake half damage from Attacks until your next turn."
+    },
+    {
+      "name": "Barrage of Bullets",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "bladegunner:Shoot N times, where N is count of *Little *Bullet in hand.\nExhaust a *Little *Bullet."
+    },
+    {
+      "name": "Barrage of Bullets+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "bladegunner:Shoot N times, where N is count of *Little *Bullet in hand."
+    },
+    {
+      "name": "Be Well-Armed",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nGain 3 additional Block for each of equipped bladegunner:Guns.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Be Well-Armed+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 4 additional Block for each of equipped bladegunner:Guns.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Blade Gun",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "bladegunner:Equip bladegunner:Blade_gun."
+    },
+    {
+      "name": "Blade Gun+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "bladegunner:Equip bladegunner:Blade_gun+."
+    },
+    {
+      "name": "Bullets in Sand",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Put 2 *Little *Bullet into your hand at the start of next X turn.\nExhaust."
+    },
+    {
+      "name": "Bullets in Sand+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Put 2 *Little *Bullet into your hand at the start of next X+1 turn.\nExhaust."
+    },
+    {
+      "name": "Combat Memories",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put a random bladegunner:Shooting_card from discard pile into your hand.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Combat Memories+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 2 random bladegunner:Shooting_cards from discard pile into your hand.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Crazy Shoot",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeal 60% damage."
+    },
+    {
+      "name": "Crazy Shoot+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeal 60% damage."
+    },
+    {
+      "name": "Dagger in Bullets",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 18 damage.\nCosts 1 less [E] each time you bladegunner:Load ALL."
+    },
+    {
+      "name": "Dagger in Bullets+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 23 damage.\nCosts 1 less [E] each time you bladegunner:Load ALL."
+    },
+    {
+      "name": "Disassemble",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "You may Exhaust a bladegunner:Gun_card. Gain [E] equal to its cost plus 1.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Disassemble+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "You may Exhaust a bladegunner:Gun_card. Gain [E] equal to its cost plus 1.\nDraw 1 card."
+    },
+    {
+      "name": "Eject",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bladegunner:Exchange.\nEmpty magazine.\nAdd 2 *Little *Bullet to hand.\nExhaust."
+    },
+    {
+      "name": "Eject+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bladegunner:Exchange.\nEmpty magazine.\nAdd 3 *Little *Bullet to hand.\nExhaust."
+    },
+    {
+      "name": "Fire Blade",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nApply 2 bladegunner:Burning."
+    },
+    {
+      "name": "Fire Blade+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nApply 2 bladegunner:Burning."
+    },
+    {
+      "name": "Flamethrower",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "bladegunner:Equip bladegunner:Flamethrower."
+    },
+    {
+      "name": "Flamethrower+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "bladegunner:Equip bladegunner:Flamethrower+."
+    },
+    {
+      "name": "Flashbang",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Weak to ALL enemies.\nGain 3 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Flashbang+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 4 Weak to ALL enemies.\nGain 4 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Gun as Shield",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain block equal to base damage of your current bladegunner:Gun.\nDraw a card."
+    },
+    {
+      "name": "Gun as Shield+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain block equal to base damage of your current bladegunner:Gun plus 4.\nDraw a card."
+    },
+    {
+      "name": "Gust",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of turn, enemies keep 50% amount of bladegunner:Burning."
+    },
+    {
+      "name": "Gust+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of turn, enemies keep 75% amount of bladegunner:Burning."
+    },
+    {
+      "name": "Increase Caliber",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Strength.\nGain 1 additional Strength if magazine is not empty.\nEmpty magazine."
+    },
+    {
+      "name": "Increase Caliber+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Strength.\nGain 1 additional Strength if magazine is not empty.\nEmpty magazine."
+    },
+    {
+      "name": "Laser Pistol",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "bladegunner:Equip bladegunner:Laser_pistol."
+    },
+    {
+      "name": "Laser Pistol+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "bladegunner:Equip bladegunner:Laser_pistol+."
+    },
+    {
+      "name": "Machine Gun",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "bladegunner:Equip bladegunner:Machine_gun."
+    },
+    {
+      "name": "Machine Gun+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "bladegunner:Equip bladegunner:Machine_gun+."
+    },
+    {
+      "name": "Mad Blade",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 temporary Strength.\nThis turn, each time you play a bladegunner:Non-shooting_Attack, keep 1 Strength."
+    },
+    {
+      "name": "Mad Blade+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 temporary Strength.\nThis turn, each time you play a bladegunner:Non-shooting_Attack, keep 1 Strength."
+    },
+    {
+      "name": "Magazine Expansion",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Increase magazine capacity by 3.\nbladegunner:Load 3."
+    },
+    {
+      "name": "Magazine Expansion+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nIncrease magazine capacity by 3.\nbladegunner:Load 3."
+    },
+    {
+      "name": "Master of Guns",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nDraw an additional card for each equipped bladegunner:Gun."
+    },
+    {
+      "name": "Master of Guns+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nDraw an additional card for each equipped bladegunner:Gun."
+    },
+    {
+      "name": "Offense to Defense",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nGain additional 3 Block for each Attack played in this turn."
+    },
+    {
+      "name": "Offense to Defense+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nGain additional 5 Block for each Attack played in this turn."
+    },
+    {
+      "name": "Pierce",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Pierce+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply 3 Vulnerable."
+    },
+    {
+      "name": "Quick Draw",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeal 30% damage."
+    },
+    {
+      "name": "Quick Draw+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bladegunner:Shoot !bladegunner:var.ShootCount! times.\nDeal [#7fff00]50%[] damage."
+    },
+    {
+      "name": "Rocket Launcher",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "bladegunner:Equip bladegunner:Rocket_launcher."
+    },
+    {
+      "name": "Rocket Launcher+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "bladegunner:Equip bladegunner:Rocket_launcher+."
+    },
+    {
+      "name": "Shell Defense",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever ammo is used or removed, gain 1 Block."
+    },
+    {
+      "name": "Shell Defense+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever ammo is used or removed, gain 2 Block."
+    },
+    {
+      "name": "Shooting Prepare",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Load ALL.\nDraw 2 card."
+    },
+    {
+      "name": "Shooting Prepare+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Load ALL.\nDraw 3 card."
+    },
+    {
+      "name": "Shotgun",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "bladegunner:Equip bladegunner:Shotgun."
+    },
+    {
+      "name": "Shotgun+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "bladegunner:Equip bladegunner:Shotgun+."
+    },
+    {
+      "name": "Sniper Rifle",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "bladegunner:Equip bladegunner:Sniper_rifle."
+    },
+    {
+      "name": "Sniper Rifle+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "bladegunner:Equip bladegunner:Sniper_rifle."
+    },
+    {
+      "name": "Special Vulnerary",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal HP equal to 2 multiply number of *Little *Bullet in hand.\nExhaust."
+    },
+    {
+      "name": "Special Vulnerary+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal HP equal to 3 multiply number of *Little *Bullet in hand.\nExhaust."
+    },
+    {
+      "name": "Speed Shooting",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Shooting_cards attack 2 more times in this turn."
+    },
+    {
+      "name": "Speed Shooting+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Shooting_cards attack 3 more times in this turn."
+    },
+    {
+      "name": "Spinning Shoot",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "{@@}bladegunner:Shoot ALL enemies !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nDeals 3 less damage.\nShuffle a *Jam into your draw pile."
+    },
+    {
+      "name": "Spinning Shoot+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bladegunner:Shoot ALL enemies !bladegunner:var.ShootCount! times.\nDeals [#7fff00]1[] less damage.\nShuffle a *Jam into your draw pile."
+    },
+    {
+      "name": "Tactical Retreat",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nYour next bladegunner:Shooting_card deals 3 more damage.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Tactical Retreat+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 Block.\nYour next bladegunner:Shooting_card deals 3 more damage.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Thrift",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a *Jam is Exhausted, put a *Little *Bullet into your hand."
+    },
+    {
+      "name": "Thrift+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever a *Jam is Exhausted, put a *Little *Bullet into your hand."
+    },
+    {
+      "name": "Throw Sand",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 2 Weak.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Throw Sand+",
+      "color": "Blade_gunner_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nApply 3 Weak.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Burning Land",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage to ALL enemies.\nApply 5 bladegunner:Burning.\nTargets keep bladegunner:Burning this turn."
+    },
+    {
+      "name": "Burning Land+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to ALL enemies.\nApply 5 bladegunner:Burning.\nTargets keep bladegunner:Burning this turn."
+    },
+    {
+      "name": "Camouflage",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 Intangible.\nCannot play Attacks whose damage are less than 22 in 2 turns.\nExhaust."
+    },
+    {
+      "name": "Camouflage+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 3 Intangible.\nCannot play Attacks whose damage are less than 22 in 3 turns.\nExhaust."
+    },
+    {
+      "name": "Combination Attack",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a bladegunner:Non-shooting_Attack, bladegunner:Shoot 1 time, which deals 50% damage."
+    },
+    {
+      "name": "Combination Attack+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you play a bladegunner:Non-shooting_Attack, bladegunner:Shoot 1 time, which deals 50% damage."
+    },
+    {
+      "name": "Dimensional Shoot",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nIf Fatal, permanently increase this card's Attack count by 1.\nExhaust."
+    },
+    {
+      "name": "Dimensional Shoot+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "{@@}bladegunner:Shoot !bladegunner:var.ShootCount! time{!bladegunner:var.ShootCount!|0,>1=s}.\nIf Fatal, permanently increase this card's Attack count by 1.\nExhaust."
+    },
+    {
+      "name": "Drop Gun",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard any bladegunner:Gun.\nIn this and next turn, gain [E] and draw cards equal to count of discarded cards.\nExhaust."
+    },
+    {
+      "name": "Drop Gun+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard any bladegunner:Gun.\nIn this and next turn, gain [E] and draw cards equal to 1 plus count of discarded cards.\nExhaust."
+    },
+    {
+      "name": "Exhausting Strike",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 30 damage.\nEmpty magazine and gain 1 Strength for each removed ammo, at most 9 Strength.\nEthereal."
+    },
+    {
+      "name": "Exhausting Strike+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 40 damage.\nEmpty magazine and gain 1 Strength for each removed ammo, at most 9 Strength.\nEthereal."
+    },
+    {
+      "name": "Hot Shells",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Deal 2 damage to ALL enemies whenever ammo is used."
+    },
+    {
+      "name": "Hot Shells+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Deal 3 damage to ALL enemies whenever ammo is used."
+    },
+    {
+      "name": "Infinite Ammo",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Shooting doesn't use ammo in this turn.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Infinite Ammo+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "bladegunner:Shooting doesn't use ammo in this turn.\nbladegunner:Exchange."
+    },
+    {
+      "name": "Mad Gun",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "bladegunner:Shoot X times.\nbladegunner:Auto_reload."
+    },
+    {
+      "name": "Mad Gun+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "bladegunner:Shoot X times.\nDeals 3 more damage.\nbladegunner:Auto_reload."
+    },
+    {
+      "name": "Mecha Form",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nEffect of this card depends on current bladegunner:Gun."
+    },
+    {
+      "name": "Mecha Form+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Effect of this card depends on current bladegunner:Gun."
+    },
+    {
+      "name": "Pursue",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "If you play bladegunner:Shooting_cards this turn, gain [E] next turn."
+    },
+    {
+      "name": "Pursue+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "If you play bladegunner:Shooting_cards this turn, gain [E] next turn."
+    },
+    {
+      "name": "Ricochet",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Deals same amount of damage to random enemy each time you bladegunner:Shoot. Lose this effect at the end of the turn it's triggered."
+    },
+    {
+      "name": "Ricochet+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Deals same amount of damage to random enemy each time you bladegunner:Shoot. Lose this effect at the end of the turn it's triggered."
+    },
+    {
+      "name": "Sandstorm",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage to ALL enemies.\nAdd 2 *Jam into your hand and Retain them."
+    },
+    {
+      "name": "Sandstorm+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 26 damage to ALL enemies.\nAdd 2 *Jam into your hand and Retain them."
+    },
+    {
+      "name": "Supplement",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Exchange.\nbladegunner:Load ALL.\nIf magazine is empty, draw 2 cards,\ngain [E] [E]."
+    },
+    {
+      "name": "Supplement+",
+      "color": "Blade_gunner_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "bladegunner:Exchange.\nbladegunner:Load ALL.\nIf magazine is empty, draw 3 cards,\ngain [E] [E] [E]."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Old Revolver",
+      "tier": "Starter",
+      "pool": "Blade_gunner_color",
+      "description": "The first time you play a bladegunner:Shooting_card each combat, add Little Bullet into your hand.",
+      "flavorText": "An old but good revolver."
+    },
+    {
+      "name": "Lucky Bullet",
+      "tier": "Common",
+      "pool": "Blade_gunner_color",
+      "description": "Whenever you use 6 ammo, add Little Bullet into your hand. This effect can only be triggered once per turn.",
+      "flavorText": "An old bullet from battlefield."
+    },
+    {
+      "name": "Empty Cylinder",
+      "tier": "Uncommon",
+      "pool": "Blade_gunner_color",
+      "description": "If magazine capacity is greater than 1, double damage from the last ammo in magazine.",
+      "flavorText": "Made with steel."
+    },
+    {
+      "name": "Gun Oil",
+      "tier": "Uncommon",
+      "pool": "Blade_gunner_color",
+      "description": "Jam is playable. When it's played, Exhaust it and draw 1 card.",
+      "flavorText": "A gun that is not carefully maintained is dangerous."
+    },
+    {
+      "name": "Bayonet",
+      "tier": "Rare",
+      "pool": "Blade_gunner_color",
+      "description": "When you play a bladegunner:Non-shooting_Attack, your next bladegunner:Shooting_card deals 2 more damage.",
+      "flavorText": "It's blade, and part of a gun."
+    },
+    {
+      "name": "Manual of Guns",
+      "tier": "Rare",
+      "pool": "Blade_gunner_color",
+      "description": "Keep equipped gun between combats.",
+      "flavorText": "How to use this?"
+    },
+    {
+      "name": "Sweet Rain",
+      "tier": "Special",
+      "pool": "Blade_gunner_color",
+      "description": "It seems that you are looking for it. You should take this and leave the spire.",
+      "flavorText": "It has magical power of summoning thunder and rain."
+    },
+    {
+      "name": "Golden Revolver",
+      "tier": "Boss",
+      "pool": "Blade_gunner_color",
+      "description": "Replaces Old Revolver. The first time you play a bladegunner:Shooting_card each combat, add Golden Bullet into your hand. At the end of combat, gain 12 Gold if Golden Bullet is in your hand.",
+      "flavorText": "One of the best guns in my collection."
+    },
+    {
+      "name": "Runic Holster",
+      "tier": "Boss",
+      "pool": "Blade_gunner_color",
+      "description": "Gain [E] at the start of your turn. When you bladegunner:Equip a gun, its magazine is empty.",
+      "flavorText": "This make me feel I can draw my gun even faster."
+    },
+    {
+      "name": "Tiny Oasis",
+      "tier": "Boss",
+      "pool": "Blade_gunner_color",
+      "description": "At the start of every 3 turns, choose a Skill card from draw pile and put it into your hand.",
+      "flavorText": "Light of life in desert."
+    },
+    {
+      "name": "Rifling Barrel",
+      "tier": "Shop",
+      "pool": "Blade_gunner_color",
+      "description": "At the start of first 3 turns, gain effect randomly from one of Infinite Ammo, Ricochet and Speed Shooting.",
+      "flavorText": "Just simple modification on barrel..."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Bullets in a Jar",
+      "rarity": "Common",
+      "description": "Add 2 Little Bullet to your hand."
+    },
+    {
+      "name": "Molotov Cocktail",
+      "rarity": "Uncommon",
+      "description": "Deal 7 damage and apply 7 Burning."
+    },
+    {
+      "name": "Dynamic Potion",
+      "rarity": "Rare",
+      "description": "Gain 2 Ricochet."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Blade Gunner",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Bladegunner:Auto Reload",
+      "description": "If magazine is empty during shooting, reduce Attack count by 1, then fill magazine up with ammo.\nAttack count limitation of Sniper rifle doesn't take effect."
+    },
+    {
+      "name": "Bladegunner:Blade Gun",
+      "description": "Base damage: 8.\nShooting cards are treated as Non-shooting Attacks. They deals damage equal to base damage of this gun multiply Attack count."
+    },
+    {
+      "name": "Bladegunner:Blade Gun+",
+      "description": "Base damage: 12.\nShooting cards are treated as Non-shooting Attacks. They deals damage equal to base damage of this gun multiply Attack count."
+    },
+    {
+      "name": "Bladegunner:Gun Card",
+      "description": "Gun cards are Power cards that contains Equip in description."
+    },
+    {
+      "name": "Bladegunner:Laser Pistol",
+      "description": "Magazine capacity: 7.\nBase damage: 3.\nIncrease base damage by 1 for each ammo in magazine."
+    },
+    {
+      "name": "Bladegunner:Laser Pistol+",
+      "description": "Magazine capacity: 7.\nBase damage: 5.\nIncrease base damage by 3 for every 2 ammo in magazine."
+    },
+    {
+      "name": "Bladegunner:Machine Gun",
+      "description": "Magazine capacity: 12.\nBase damage: 5.\nDouble attack count of Shooting cards.\nGain double capacity from Magazine expansion.\nGain double attack count from Speed shooting.\nHalf effect of Strength on Shooting cards."
+    },
+    {
+      "name": "Bladegunner:Machine Gun+",
+      "description": "Magazine capacity: 12.\nBase damage: 5.\nTriple attack count of Shooting cards.\nGain triple capacity from Magazine expansion.\nGain triple attack count from Speed shooting.\nHalf effect of Strength on Shooting cards."
+    },
+    {
+      "name": "Bladegunner:Non-shooting Attack",
+      "description": "Non-shooting Attack are Attack cards that doesn't contains Shoot in description. They don't use ammo and aren't affected by Jam."
+    },
+    {
+      "name": "Bladegunner:Rocket Launcher",
+      "description": "Magazine capacity: 1.\nBase damage: 18.\nShoot ALL enemies.\nMagazine expansion doesn't take effect.\nDouble effect of Strength on Shooting cards."
+    },
+    {
+      "name": "Bladegunner:Rocket Launcher+",
+      "description": "Magazine capacity: 1.\nBase damage: 23.\nShoot ALL enemies.\nMagazine expansion doesn't take effect.\nDouble effect of Strength on Shooting cards."
+    },
+    {
+      "name": "Bladegunner:Shooting Card",
+      "description": "Shooting cards are Attack cards that contains Shoot in description."
+    },
+    {
+      "name": "Bladegunner:Sniper Rifle",
+      "description": "Magazine capacity: 4.\nBase damage: 25.\nShooting cards can only attack 1 time.\nDouble effect of Strength on Shooting cards."
+    },
+    {
+      "name": "Bladegunner:Sticky Bullet",
+      "description": "At the end of enemies' turn, deal 3 additional damage and apply half amount of Burning."
+    },
+    {
+      "name": "Bladegunner:burning",
+      "description": "Take additional damage from Attacks until end of turn, in which damage value is equal to stack amount."
+    },
+    {
+      "name": "Bladegunner:detonate",
+      "description": "Trigger effect of Sticky bullets on target. Deal damage and apply same amount of Burning instead."
+    },
+    {
+      "name": "Bladegunner:equip",
+      "description": "Change equipped gun."
+    },
+    {
+      "name": "Bladegunner:exchange",
+      "description": "You may swap equipped gun with one of previously equipped guns."
+    },
+    {
+      "name": "Bladegunner:flamethrower",
+      "description": "Magazine capacity: 15.\nBase damage: 3.\nApply 1 Burning per shot."
+    },
+    {
+      "name": "Bladegunner:flamethrower+",
+      "description": "Magazine capacity: 15.\nBase damage: 6.\nApply 1 Burning per shot."
+    },
+    {
+      "name": "Bladegunner:load",
+      "description": "Fill magazine with ammo."
+    },
+    {
+      "name": "Bladegunner:revolver",
+      "description": "Magazine capacity: 6.\nBase damage: 8."
+    },
+    {
+      "name": "Bladegunner:revolver+",
+      "description": "Magazine capacity: 6.\nBase damage: 10."
+    },
+    {
+      "name": "Bladegunner:shoot",
+      "description": "Use 1 ammo per shot.\nDamage value depends on equipped gun.\nYou can't shoot if magazine is empty."
+    },
+    {
+      "name": "Bladegunner:shotgun",
+      "description": "Magazine capacity: 2.\nBase damage: 10.\nShoot ALL enemies."
+    },
+    {
+      "name": "Bladegunner:shotgun+",
+      "description": "Magazine capacity: 2.\nBase damage: 13.\nShoot ALL enemies."
+    },
+    {
+      "name": "Bladegunner:unload",
+      "description": "Remove ammo from magazine."
+    }
+  ]
+}
