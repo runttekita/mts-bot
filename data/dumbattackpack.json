@@ -1,0 +1,78 @@
+{
+  "mod": {
+    "name": "Dumb Attack Pack",
+    "version": "2.0.3",
+    "authors": ["EricB"],
+    "credits": "",
+    "description": "A strike based relic and some new strike scaling cards for the non-Ironclad characters.",
+    "mts_version": "3.18.2",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Rapid Strike",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage. Deal 5 damage again for every two of your other cards containing \"Strike\"."
+    },
+    {
+      "name": "Rapid Strike+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage. Deal 6 damage again for every two of your other cards containing \"Strike\"."
+    },
+    {
+      "name": "Defected Strike",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. Deals additional damage for ALL your cards containing \"Strike\" times unique Orbs channeled."
+    },
+    {
+      "name": "Defected Strike+",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. Deals additional damage for ALL your cards containing \"Strike\" times unique Orbs channeled.\nIf you have any empty orb slots, channel 1 random orb."
+    },
+    {
+      "name": "Patient Strike",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 0 damage to ALL enemies. Deals 1 damage for ALL your cards containing \"Strike\". When Retained, increase additional damage by 1 this combat."
+    },
+    {
+      "name": "Patient Strike+",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 0 damage to ALL enemies. Deals 2 damage for ALL your cards containing \"Strike\". When Retained, increase additional damage by 1 this combat."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Frying Pan",
+      "tier": "Shop",
+      "pool": "",
+      "description": "All attack cards are now strike cards.\nIf a card was already a strike card, it does 1 more damage.",
+      "flavorText": "Aah, you were at my side, all along. My true mentor..."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+  ],
+  "keywords": [
+  ]
+}
