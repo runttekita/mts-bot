@@ -1,0 +1,1013 @@
+{
+  "mod": {
+    "name": "Neat the Spire",
+    "version": "1.1",
+    "authors": ["Diamsword"],
+    "credits": "Basemod, ModTheSpire, Alchyr, StS Discord",
+    "description": "Improve your Slay the Spire experience with fitting content.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Flame Blow",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage twice.\nDraw 1 card.\nAdd a Burn to your hand.\nCan be upgraded 3 times."
+    },
+    {
+      "name": "Flame Blow+1",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage twice.\nDraw 2 cards.\nShuffle a Wound into your draw pile.\nCan be upgraded twice."
+    },
+    {
+      "name": "Flame Blow+2",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage twice.\nDraw 2 cards.\nAdd a Dazed to your discard pile.\nCan be upgraded once."
+    },
+    {
+      "name": "Flame Blow+3",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage 3 times.\nDraw 2 cards."
+    },
+    {
+      "name": "Inner Fire",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaust a non-Attack card in your hand to deal 3 extra damage.\nDeal 5 damage."
+    },
+    {
+      "name": "Inner Fire+",
+      "color": "Red",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Exhaust a non-Attack card in your hand to deal 7 extra damage.\nDeal 5 damage."
+    },
+    {
+      "name": "Double Blade",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nCreate a copy of a Strike card in your hand."
+    },
+    {
+      "name": "Double Blade+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nCreate 2 copies of a Strike card in your hand."
+    },
+    {
+      "name": "Lava Hand",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nUpgrade a card in your hand."
+    },
+    {
+      "name": "Lava Hand+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nUpgrade a card in your hand and ALL cards with the same name."
+    },
+    {
+      "name": "Oozing Gloves",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nShuffle a Slimed into your draw pile."
+    },
+    {
+      "name": "Oozing Gloves+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Block.\nShuffle a Slimed into your draw pile."
+    },
+    {
+      "name": "Piercing Strike",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\ndamage modifiers are applied to this card twice."
+    },
+    {
+      "name": "Piercing Strike+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\ndamage modifiers are applied to this card twice."
+    },
+    {
+      "name": "Pocket Blade",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 8 damage.\nIf this card is Exhausted,\ngain 5 Block."
+    },
+    {
+      "name": "Pocket Blade+",
+      "color": "Red",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 11 damage.\nIf this card is Exhausted,\ngain 8 Block."
+    },
+    {
+      "name": "Blood Rage",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 2 HP for every non-Attack card in your hand.\nDeal 22 damage."
+    },
+    {
+      "name": "Blood Rage+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 2 HP for every non-Attack card in your hand.\nDeal 27 damage."
+    },
+    {
+      "name": "Shieldrang",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your current Block and lose it. Gain Block equal to unblocked damage dealt."
+    },
+    {
+      "name": "Shieldrang+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to your current Block and lose it. Gain Block equal to unblocked damage dealt."
+    },
+    {
+      "name": "Simpleton",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every generated Status card is replaced by Slimed. If this card is Exhausted, gain the Power as well."
+    },
+    {
+      "name": "Simpleton+",
+      "color": "Red",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every generated Status card is replaced by Dazed. If this card is Exhausted, gain the Power as well."
+    },
+    {
+      "name": "Blurry Fumes",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Weak.\nBlock is not removed at the start of your next turn."
+    },
+    {
+      "name": "Blurry Fumes+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak.\nBlock is not removed at the start of your next turn."
+    },
+    {
+      "name": "Dodge And Dash",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nYour next Attack deals 4 additional damage."
+    },
+    {
+      "name": "Dodge And Dash+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nYour next Attack deals 6 additional damage."
+    },
+    {
+      "name": "Theater Mask",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block whether you play or discard this card."
+    },
+    {
+      "name": "Theater Mask+",
+      "color": "Green",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block whether you play or discard this card."
+    },
+    {
+      "name": "Droplets",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card that costs 0, apply 1 Poison to ALL enemies."
+    },
+    {
+      "name": "Droplets+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you play a card that costs 0, apply 1 Poison to ALL enemies."
+    },
+    {
+      "name": "Shred",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage twice.\nIf the target is not Weak, this card's cost is increased by 1 [E]."
+    },
+    {
+      "name": "Shred+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage twice.\nIf the target is not Weak, this card's cost is increased by 1 [E]."
+    },
+    {
+      "name": "Stalwart",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is discarded from your hand,\ngain 1 Dexterity."
+    },
+    {
+      "name": "Stalwart+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is discarded from your hand,\ngain 2 Dexterity."
+    },
+    {
+      "name": "Throw It",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Poison to a random enemy.\nDraw 1 card."
+    },
+    {
+      "name": "Throw It+",
+      "color": "Green",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 4 Poison to a random enemy.\nDraw 1 card."
+    },
+    {
+      "name": "Always Learn",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 Shivs into your hand.\nWhenever you play a Shiv this turn, gain 1 Accuracy."
+    },
+    {
+      "name": "Always Learn+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 Shivs into your hand.\nWhenever you play a Shiv this turn, gain 1 Accuracy."
+    },
+    {
+      "name": "Reload",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nDiscard all non-Skill cards, then draw that many cards."
+    },
+    {
+      "name": "Reload+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nDiscard all non-Skill cards, then draw that many cards."
+    },
+    {
+      "name": "Special Concoction",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 7 Poison,\nthen gain as much Block as Poison on the target.\nExhaust."
+    },
+    {
+      "name": "Special Concoction+",
+      "color": "Green",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 10 Poison,\nthen gain as much Block as Poison on the target.\nExhaust."
+    },
+    {
+      "name": "Deep Learning Core",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 1 damage.\nPermanently increase this card's damage by X.\nExhaust."
+    },
+    {
+      "name": "Deep Learning Core+",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 1 damage.\nPermanently increase this card's damage by X+1.\nExhaust."
+    },
+    {
+      "name": "Energy Drink",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Focus.\nAt the end of your turn, lose 2 Focus.\nAdd a Dazed into your discard pile."
+    },
+    {
+      "name": "Energy Drink+",
+      "color": "Blue",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Focus.\nAt the end of your turn, lose 3 Focus.\nAdd a Dazed into your discard pile."
+    },
+    {
+      "name": "Brightness",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nChannel 1 neatthespire:Light."
+    },
+    {
+      "name": "Brightness+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nChannel 1 neatthespire:Light."
+    },
+    {
+      "name": "Construct",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 1 Focus.\nGain 2 Orb slots."
+    },
+    {
+      "name": "Construct+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 1 Focus.\nGain 2 Orb slots."
+    },
+    {
+      "name": "Dispense",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block. If you have played at least 4 cards this turn, Evoke your next Orb."
+    },
+    {
+      "name": "Dispense+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block. If you have played at least 3 cards this turn, Evoke your next Orb."
+    },
+    {
+      "name": "Fine And Shine",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 1 neatthespire:Light.\nDraw 3 cards.\nPut a card from your hand on top of your draw pile."
+    },
+    {
+      "name": "Fine And Shine+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 1 neatthespire:Light.\nDraw 4 cards.\nPut a card from your hand on top of your draw pile."
+    },
+    {
+      "name": "Light Switch",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 neatthespire:Light.\nThen chose to Channel 1 Dark or 1 neatthespire:Magnetic.\nExhaust."
+    },
+    {
+      "name": "Light Switch+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 neatthespire:Light.\nThen chose to Channel 1 Dark or 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Polarization",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Polarization+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 neatthespire:Magnetic.\nTrigger the passive ability of orbs next to a neatthespire:Magnetic orb."
+    },
+    {
+      "name": "Reach Stability",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the difference in your draw and discard pile size is less than 4\ngain 2 Focus."
+    },
+    {
+      "name": "Reach Stability+",
+      "color": "Blue",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the difference in your draw and discard pile size is less than 6\ngain 2 Focus."
+    },
+    {
+      "name": "Closed Circuit",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you lose Focus,\nlose 1 less."
+    },
+    {
+      "name": "Closed Circuit+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "You don't lose Focus anymore."
+    },
+    {
+      "name": "Meteor Spin",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard 5 cards to\ndeal 24 damage and\nChannel 3 neatthespire:Magnetic."
+    },
+    {
+      "name": "Meteor Spin+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Discard 5 cards to\ndeal 30 damage and\nChannel 3 neatthespire:Magnetic."
+    },
+    {
+      "name": "Science Curiosity",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose 1 Focus.\nChannel 1 Plasma.\nChannel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Science Curiosity+",
+      "color": "Blue",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 1 Focus.\nChannel 1 Plasma.\nChannel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Desolation Strike",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Scry 1.\nDeal 7 damage times the cost of the top card of your draw pile."
+    },
+    {
+      "name": "Desolation Strike+",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Scry 1.\nDeal 10 damage times the cost of the top card of your draw pile."
+    },
+    {
+      "name": "Eye Beam",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nScry for the same amount."
+    },
+    {
+      "name": "Eye Beam+",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nScry for the same amount."
+    },
+    {
+      "name": "Impatient",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you are not in a Stance, enter Calm.\nOtherwise enter Wrath."
+    },
+    {
+      "name": "Impatient+",
+      "color": "Purple",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nIf you are not in a Stance, enter Calm.\nOtherwise enter Wrath."
+    },
+    {
+      "name": "Aspiration",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Deal damage equal to the damage of an attack in your hand."
+    },
+    {
+      "name": "Aspiration+",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Deal the flat damage of another attack in your hand.\nWhen you draw this card, draw an extra card."
+    },
+    {
+      "name": "Elevation",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 1 Mantra.\nIf this card is in your hand while you Scry, increase the Mantra gain by 1."
+    },
+    {
+      "name": "Elevation+",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 2 Mantra.\nIf this card is in your hand while you Scry, increase the Mantra gain by 1."
+    },
+    {
+      "name": "Fool Reality",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Safety into your hand.\nAdd a Smite into your hand.\nExhaust."
+    },
+    {
+      "name": "Fool Reality+",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Safety into your hand.\nAdd a Smite into your hand."
+    },
+    {
+      "name": "Use The Head",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nWhenever you create a card, return this from the discard pile to your hand."
+    },
+    {
+      "name": "Use The Head+",
+      "color": "Purple",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nWhenever you create a card, return this from the discard pile to your hand."
+    },
+    {
+      "name": "Ascended",
+      "color": "Purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Mantra.\nLose Mantra exceeding 10 and draw a card for each."
+    },
+    {
+      "name": "Ascended+",
+      "color": "Purple",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Double your Mantra.\nLose Mantra exceeding 10 and draw a card for each."
+    },
+    {
+      "name": "D\u00E9j\u00E0 Vu",
+      "color": "Purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Draw 1 card the first time you play a card with the same name of a card you played the same turn."
+    },
+    {
+      "name": "D\u00E9j\u00E0 Vu+",
+      "color": "Purple",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Draw 1 card the first time you play a card with the same name of a card you played the same turn."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn Off",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 Dark."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Turn On",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Channel 1 neatthespire:Magnetic."
+    },
+    {
+      "name": "Curse Of The Anvil",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "3",
+      "description": "Whenever this card is drawn, Exhaust another random upgraded card in your hand.\nExhaust.\nCan be upgraded twice.\nCannot be removed from your deck."
+    },
+    {
+      "name": "Curse Of The Anvil+1",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "2",
+      "description": "Exhaust.\nCan be upgraded once.\nCannot be removed from your deck."
+    },
+    {
+      "name": "Curse Of The Anvil+2",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "1",
+      "description": "Playing this card removes it from your main deck."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Bloody Claws",
+      "tier": "Common",
+      "pool": "Red",
+      "description": "At the end of combat, heal twice the HP lost on the last turn from cards.",
+      "flavorText": "Sliding your fingers in makes you so thirsty it's almost unbearable."
+    },
+    {
+      "name": "Fire Wall",
+      "tier": "Common",
+      "pool": "Blue",
+      "description": "Whenever you lose focus, gain 6 Block.",
+      "flavorText": "Hackers just keep burning their hands on this."
+    },
+    {
+      "name": "Gilt-head",
+      "tier": "Common",
+      "pool": "",
+      "description": "Raise your Max HP by 6 for each Key you own and obtain.",
+      "flavorText": "The gilt-head bream is generally considered the best-tasting of the breams."
+    },
+    {
+      "name": "Pocket Lightning",
+      "tier": "Common",
+      "pool": "Purple",
+      "description": "Keep your Mantra in between combats.",
+      "flavorText": "You kept that from your \"I am a god\" trip."
+    },
+    {
+      "name": "Prisoner Ball",
+      "tier": "Common",
+      "pool": "Green",
+      "description": "Whenever you draw an Unplayable card, gain 3 Block.",
+      "flavorText": "What went through your head when you deliberately attached this to your leg ?"
+    },
+    {
+      "name": "Seesaw",
+      "tier": "Common",
+      "pool": "",
+      "description": "If every card in your hand is an Attack, they deal 4 extra damage.\nIf every card in your hand is a Skill, they give 4 extra Block.",
+      "flavorText": "Why does it have to hurt ?"
+    },
+    {
+      "name": "Bottled Ice Cube",
+      "tier": "Uncommon",
+      "pool": "Green",
+      "description": "Upon pickup, choose a card.\nIt becomes unplayable but its effects are triggered on discard.",
+      "flavorText": "The cube floats and flips a lot, it looks extremely slippery."
+    },
+    {
+      "name": "Focus Band",
+      "tier": "Uncommon",
+      "pool": "Purple",
+      "description": "If you start your turn without being in any Stance gain 2 Mantra",
+      "flavorText": "It doesn't seem to be from that world."
+    },
+    {
+      "name": "Paint Roller",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "When your hand is full, Attacks you play deal triple the damage.",
+      "flavorText": "If you gather enough paint you can just roll on your enemies."
+    },
+    {
+      "name": "Solar Panel",
+      "tier": "Uncommon",
+      "pool": "Blue",
+      "description": "At the start of your turn, if you have a Light orb gain [E] .",
+      "flavorText": "I wonder who brought that in the tower, but I'm happy it can have some use.."
+    },
+    {
+      "name": "Technique Scroll",
+      "tier": "Uncommon",
+      "pool": "Red",
+      "description": "Every time you play 2 Strikes in a single turn, gain 5 Block.",
+      "flavorText": "Learning has never been simpler than that."
+    },
+    {
+      "name": "Geode",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of each combat, deal 3 damage to a random enemy.\nAllows Opened Geode to spawn in Boss chests.",
+      "flavorText": "No one knows what's inside until opened... You could hold immense riches or a plain rock."
+    },
+    {
+      "name": "Smoothed Vajra",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon pickup, obtain a Vajra and a Oddly Smooth Stone.",
+      "flavorText": "How come no one ever though of that ?"
+    },
+    {
+      "name": "Blood Hourglass",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn.\nAt the end of each turn,\nAgainst elites and bosses : lose 1 HP.\nOtherwise : lose HP equal to the number of passed turn.",
+      "flavorText": "It could be your blood in here if you don't hurry."
+    },
+    {
+      "name": "Haunted Anvil",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn.\nUpon pickup, obtain a unique upgradable Curse.",
+      "flavorText": "You periodically hear clanks like someone is forging something."
+    },
+    {
+      "name": "Infinite Power",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain [E] at the start of your turn.\nIf you have a Power in hand you must play it before other cards.",
+      "flavorText": "Unlimited POWA !"
+    },
+    {
+      "name": "Opened Geode",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Replaces Geode.\nGain [E] at the start of your turn.",
+      "flavorText": "This one had more than you could ever expect ! NL Show it to the shopkeeper at your own risks."
+    },
+    {
+      "name": "Secret Stash",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Put your remaining Gold in this relic to gain as much Gold the 3 next times you open a chest.",
+      "flavorText": "People wouldn't look further than the main loot, what a shame."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+  ],
+  "keywords": [
+    {
+      "name": "Neatthespire:light",
+      "description": "Orb: Transforms itself depending on the next Orb you Channel."
+    },
+    {
+      "name": "Neatthespire:magnetic",
+      "description": "Orb: Draw cards."
+    }
+  ]
+}

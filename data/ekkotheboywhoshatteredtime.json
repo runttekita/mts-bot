@@ -1,0 +1,1513 @@
+{
+  "mod": {
+    "name": "Ekko",
+    "version": "0.1",
+    "authors": ["Diamsword"],
+    "credits": "Basemod, ModTheSpire, Vex'D, Alchyr, StS Discord",
+    "description": "A fan mod inspired by the league of legend character Ekko.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Ekko_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Ekko_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Powered",
+      "color": "Ekko_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 temporary Strength and Dexterity.\nIf you fully apply ekkotheboywhoshatteredtime:Resonance, they become permanent."
+    },
+    {
+      "name": "Powered+",
+      "color": "Ekko_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 temporary Strength and Dexterity.\nIf you fully apply ekkotheboywhoshatteredtime:Resonance, they become permanent."
+    },
+    {
+      "name": "Strike",
+      "color": "Ekko_blue_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Ekko_blue_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Time Master",
+      "color": "Ekko_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nNext turn, gain [E]."
+    },
+    {
+      "name": "Time Master+",
+      "color": "Ekko_blue_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain [E].\nNext turn, gain [E]."
+    },
+    {
+      "name": "Afterimage bait",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nNext turn,\ngain 11 Block."
+    },
+    {
+      "name": "Afterimage bait+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nNext turn,\ngain 15 Block."
+    },
+    {
+      "name": "Afterimage hit",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Next turn, deal 8 damage and gain [E].\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Afterimage hit+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Next turn, deal 12 damage and gain [E].\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Afterimage tease",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nIf you attacked last turn, gain [E] and apply 1 Vulnerable"
+    },
+    {
+      "name": "Afterimage tease+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you attacked last turn, gain [E] and apply 2 Vulnerable"
+    },
+    {
+      "name": "Backtrack",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nThis card costs 0 if you fully applied ekkotheboywhoshatteredtime:Resonance this turn."
+    },
+    {
+      "name": "Backtrack+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block.\nThis card costs 0 if you fully applied ekkotheboywhoshatteredtime:Resonance this turn."
+    },
+    {
+      "name": "Committed attack",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. ekkotheboywhoshatteredtime:Resonate.\nThe next time you play a ekkotheboywhoshatteredtime:Strike this turn, return this card to your hand."
+    },
+    {
+      "name": "Committed strike+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nThe next time you play a ekkotheboywhoshatteredtime:Strike this turn, return this card to your hand.\nThis card acts as a ekkotheboywhoshatteredtime:Strike."
+    },
+    {
+      "name": "Dash",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDraw 1 card."
+    },
+    {
+      "name": "Dash+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Fading",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 17 Block.\nThe next card you play Exhausts."
+    },
+    {
+      "name": "Fading+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 22 Block.\nThe next card you play Exhausts."
+    },
+    {
+      "name": "Feel it",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf you generated extra [E] this turn, deal 7 damage again.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Feel it+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf you generated extra [E] this turn, deal 10 damage again.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Haunted afterimage",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust 1 card at random.\nDeal 9 damage to a random enemy twice.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Haunted afterimage+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust 1 card.\nDeal 9 damage twice.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Leap",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDexterity affects this card twice."
+    },
+    {
+      "name": "Leap+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nDexterity affects this card three times."
+    },
+    {
+      "name": "Level up",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Upgrade your ekkotheboywhoshatteredtime:Strikes for the combat.\nThis can upgrade them any number of time.\nExhaustive 2."
+    },
+    {
+      "name": "Level up+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Upgrade your ekkotheboywhoshatteredtime:Strikes for the combat.\nThis can upgrade them any number of time."
+    },
+    {
+      "name": "Nagging blow",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. ekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Nagging blow+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. ekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Needlessly large rod",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nEvery two \"Needlessly large rod\" you play, gain half of your current Strength."
+    },
+    {
+      "name": "Needlessly large rod+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 2 Strength.\nEvery two \"Needlessly large rod\" you play, gain half of your current Strength."
+    },
+    {
+      "name": "Phase Dive",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The next ekkotheboywhoshatteredtime:Strike you play this turn deals 8 additional damage."
+    },
+    {
+      "name": "Phase Dive+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The next ekkotheboywhoshatteredtime:Strike you play this turn deals 8 additional damage.\nAdd a ekkotheboywhoshatteredtime:Strike into your hand."
+    },
+    {
+      "name": "Quick break",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain block equal to the number of your ekkotheboywhoshatteredtime:Strikes.\nThen add a ekkotheboywhoshatteredtime:Strike to your hand."
+    },
+    {
+      "name": "Quick break+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain block equal to the number of your ekkotheboywhoshatteredtime:Strikes.\nThen add a ekkotheboywhoshatteredtime:Strike that costs 0 to your hand."
+    },
+    {
+      "name": "Sneak-Hit",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf this attack is fully blocked gain 1 Artifact.\nIf this attack is fully unblocked draw 1 card."
+    },
+    {
+      "name": "Sneak-Hit+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf this attack is fully blocked gain 2 Artifact.\nIf this attack is fully unblocked draw 2 cards."
+    },
+    {
+      "name": "Sp-Hit",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nNext turn deal 5 damage, affected by Dexterity instead of Strength.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Sp-Hit+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nNext turn deal 7 damage, affected by Dexterity instead of Strength.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Time recall",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Take 2 damage.\nReturn 1 card from your discard pile to your hand.\nExhaust."
+    },
+    {
+      "name": "Time recall+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Take 2 damage.\nReturn 2 cards from your discard pile to your hand.\nExhaust."
+    },
+    {
+      "name": "Wait for key timing",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nNext turn, gain [E] and draw 2 card."
+    },
+    {
+      "name": "Wait for key timing+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nNext turn, gain [E] and draw 3 cards."
+    },
+    {
+      "name": "Wide slice",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Wide slice+",
+      "color": "Ekko_blue_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Acceleration",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card for each [E] spent that turn.\nExhaust"
+    },
+    {
+      "name": "Acceleration+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card for each [E] spent that turn."
+    },
+    {
+      "name": "Afterimage dual stroke",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Afterimage dual stroke+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Afterimage setup",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nnext turn gain Block equal to the damage blocked."
+    },
+    {
+      "name": "Afterimage setup+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nnext turn gain Block equal to the damage blocked."
+    },
+    {
+      "name": "Afterimage time wrap",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage for each delayed effect\non you and the target.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Afterimage time wrap+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage for each delayed effect\non you and the target.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Banshee's Veil",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Artifact and 1 Strength."
+    },
+    {
+      "name": "Banshee's Veil+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Artifact and 1 Strength."
+    },
+    {
+      "name": "Calming waves",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 ekkotheboywhoshatteredtime:Resonance.\nGain 8 Block."
+    },
+    {
+      "name": "Calming waves+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 ekkotheboywhoshatteredtime:Resonance.\nGain 11 Block."
+    },
+    {
+      "name": "Come at me",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy intends to attack, gain 1 Strength and 8 Block."
+    },
+    {
+      "name": "Come at me+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy intends to attack, gain 2 Strength and 8 Block."
+    },
+    {
+      "name": "Confident",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage. Gain 3 Block. If you gained Strength or Dexterity this turn, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Confident+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Gain 5 Block. If you gained Strength or Dexterity this turn, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Defensive stance",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Dexterity.\nNext turn gain [E].\nPlace 1 card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Defensive stance+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Dexterity.\nNext turn gain [E].\nPlace 2 cards from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Delayed work",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Next turn, deal 5 damage, gain 5 Block, gain [E] and draw 1 card"
+    },
+    {
+      "name": "Delayed work+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Next turn, deal 8 damage, gain 8 Block, gain [E] and draw 1 card"
+    },
+    {
+      "name": "Disturblast",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\nRemove all ekkotheboywhoshatteredtime:Resonance and delayed ekkotheboywhoshatteredtime:Resonance stacks from the target."
+    },
+    {
+      "name": "Disturblast+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nRemove all ekkotheboywhoshatteredtime:Resonance, delayed ekkotheboywhoshatteredtime:Resonance and\n Resonance cooldown stacks from the target."
+    },
+    {
+      "name": "Dodge training",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Dexterity.\nExhaustive 2.\nWhen Exhausted gain 3 Dexterity"
+    },
+    {
+      "name": "Dodge training+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Dexterity.\nExhaustive 2.\nWhen Exhausted gain 3 Dexterity"
+    },
+    {
+      "name": "Fluid energy",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Block for each extra [E] that you generate."
+    },
+    {
+      "name": "Fluid energy+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Block for each extra [E] that you generate."
+    },
+    {
+      "name": "Fourth dimension",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a copy of every card (except \"Fourth dimension\") in your exhaust pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Fourth dimension+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a copy of every card (except \"Fourth dimension\") in your exhaust pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Greed",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Take 2 damage.\nDeal 13 damage.\nekkotheboywhoshatteredtime:Resonate. If this attack applies the last ekkotheboywhoshatteredtime:Resonance stack,\ngain [E] ."
+    },
+    {
+      "name": "Greed+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Take 1 damage.\nDeal 16 damage.\nekkotheboywhoshatteredtime:Resonate. If this attack applies the last ekkotheboywhoshatteredtime:Resonance stack,\ngain [E] ."
+    },
+    {
+      "name": "Hail of blades",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nIf you did not attack last turn, create 2 ekkotheboywhoshatteredtime:Strikes in your hand that cost 0 for the turn."
+    },
+    {
+      "name": "Hail of blades+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nIf you did not attack last turn, create 3 ekkotheboywhoshatteredtime:Strikes in your hand that cost 0 for the turn."
+    },
+    {
+      "name": "Haunting Guise",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply slow.\nGain 3 temporary HP.\nExhaust."
+    },
+    {
+      "name": "Haunting Guise+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nApply slow.\nGain 3 temporary HP.\nExhaust."
+    },
+    {
+      "name": "Hextech protobelt-01",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage to ALL enemies and draw 1 card.\nExhaustive 2."
+    },
+    {
+      "name": "Hextech protobelt-01+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage to ALL enemies and draw 1 card.\nExhaustive 3."
+    },
+    {
+      "name": "Iceborn gauntlet",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 Dexterity.\nGain 4 ekkotheboywhoshatteredtime:Sheen."
+    },
+    {
+      "name": "Iceborn gauntlet+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 3 Dexterity.\nGain 6 ekkotheboywhoshatteredtime:Sheen."
+    },
+    {
+      "name": "Item's afterimage",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next Power card is played twice.\nExhaust."
+    },
+    {
+      "name": "Item's afterimage+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, your next Power card is played twice.\nExhaust."
+    },
+    {
+      "name": "Keeping momentum",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 cards.\nIf you fully apply ekkotheboywhoshatteredtime:Resonance return this to your hand on your next turn.\nExhaust."
+    },
+    {
+      "name": "Keeping momentum+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 cards.\nIf you fully apply ekkotheboywhoshatteredtime:Resonance return this to your hand on your next turn."
+    },
+    {
+      "name": "Knee'n'sword",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nGain 9 Block.\ndamage and Block modifiers are inverted for this card."
+    },
+    {
+      "name": "Knee'n'sword+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nGain 12 Block.\ndamage and Block modifiers are inverted for this card."
+    },
+    {
+      "name": "Knowledge",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E] [E].\nExhaust."
+    },
+    {
+      "name": "Knowledge+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E] [E] [E].\nExhaust."
+    },
+    {
+      "name": "Lich Bane",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 8 ekkotheboywhoshatteredtime:Sheen."
+    },
+    {
+      "name": "Lich Bane+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 12 ekkotheboywhoshatteredtime:Sheen."
+    },
+    {
+      "name": "Load up",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X [E] .\nExhaust."
+    },
+    {
+      "name": "Load up+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X [E] .\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Mic check",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E] .\nDraw 1 card.\nGain 1 temporary Strength and Dexterity."
+    },
+    {
+      "name": "Mic check+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E] .\nDraw 1 card.\nGain 2 temporary Strength and Dexterity."
+    },
+    {
+      "name": "Motivate crowds",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nExhaustive 3.\nWhen Exhausted\ngain 2 [E] and draw 2 cards."
+    },
+    {
+      "name": "Motivate crowds+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nExhaustive 3.\nWhen Exhausted\ngain 4 [E] and draw 4 cards."
+    },
+    {
+      "name": "Nashor's Tooth",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "ekkotheboywhoshatteredtime:Strikes deal 5 additional damage.\nIf you played a total of three \"Nashor's tooth\", ekkotheboywhoshatteredtime:Strikes now cost 0."
+    },
+    {
+      "name": "Nashor's Tooth+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "ekkotheboywhoshatteredtime:Strikes deal 5 additional damage.\nIf you played a total of three \"Nashor's tooth\", ekkotheboywhoshatteredtime:Strikes now cost 0."
+    },
+    {
+      "name": "Overflow",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If you have Strength, gain 2 Strength and lose Weak.\nIf you have Dexterity, gain 2 Dexterity and lose Frail."
+    },
+    {
+      "name": "Overflow+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If you have Strength, gain 3 Strength and lose Weak.\nIf you have Dexterity, gain 3 Dexterity and lose Frail."
+    },
+    {
+      "name": "Parallel convergence",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, if the target intends to attack, it gets Stunned.\nExhaust."
+    },
+    {
+      "name": "Parallel convergence+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, if any enemy intends to attack, it gets Stunned.\nExhaust."
+    },
+    {
+      "name": "Phasing armor",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you generated\nextra [E] this turn,\ngain 10 Block.\nOtherwise gain it next turn."
+    },
+    {
+      "name": "Phasing armor+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you generated\nextra [E] this turn,\ngain 13 Block.\nOtherwise gain it next turn."
+    },
+    {
+      "name": "Play the beat",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage twice.\nGain 0 Block twice."
+    },
+    {
+      "name": "Play the beat+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 0 damage twice.\nGain 0 Block twice.\nA random card in your hand costs 0 for the turn."
+    },
+    {
+      "name": "Playful",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card(s),\naffected by Strength.\nNext turn,\ndraw 1 card(s),\naffected by Dexterity."
+    },
+    {
+      "name": "Playful+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 card(s),\naffected by Strength.\nNext turn,\ndraw 2 card(s),\naffected by Dexterity."
+    },
+    {
+      "name": "Process",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Costs 1 [E] less for each Strength and Dexterity gained this turn.\nGain 16 Block."
+    },
+    {
+      "name": "Process+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Costs 1 [E] less for each Strength and Dexterity gained this turn.\nGain 20 Block."
+    },
+    {
+      "name": "Recalling punch",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nPut 1 basic rarity card from your discard pile into your hand."
+    },
+    {
+      "name": "Recalling punch+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nPut 2 basic rarity cards from your discard pile into your hand."
+    },
+    {
+      "name": "Resocharge",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The next attack with ekkotheboywhoshatteredtime:Resonate you play this turn gets a boost of 6 Strength."
+    },
+    {
+      "name": "Resocharge+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The next attack with ekkotheboywhoshatteredtime:Resonate you play this turn gets a boost of 9 Strength."
+    },
+    {
+      "name": "Timewinder",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nNext turn deal 8 damage, affected twice by Strength.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Timewinder+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nNext turn deal 12 damage, affected twice by Strength.\nekkotheboywhoshatteredtime:Resonate."
+    },
+    {
+      "name": "Unchained",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Next turn,\ngain 3 Strength."
+    },
+    {
+      "name": "Unchained+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Next turn,\ngain 4 Strength."
+    },
+    {
+      "name": "Velocity consuming",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card.\nAttack : Gain 2 Strength.\nSkill : Gain 2 Dexterity.\nPower : Gain 6 Temporary HP.\nStatus : Draw 3 cards.\nCurse : nothing."
+    },
+    {
+      "name": "Velocity consuming+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card.\nAttack : Gain 3 Strength.\nSkill : Gain 3 Dexterity.\nPower : Gain 9 Temporary HP.\nStatus : Draw 4 cards.\nCurse : Heal 2 HP."
+    },
+    {
+      "name": "Vibin'",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random card with ekkotheboywhoshatteredtime:Resonate to your hand.\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Vibin'+",
+      "color": "Ekko_blue_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random card with ekkotheboywhoshatteredtime:Resonate to your hand.\nIt costs 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Academy attraction",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Fully applying ekkotheboywhoshatteredtime:Resonance gives you 2 Strength and Dexterity."
+    },
+    {
+      "name": "Academy attraction+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Fully applying ekkotheboywhoshatteredtime:Resonance gives you 3 Strength and Dexterity."
+    },
+    {
+      "name": "Catch up time",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaustive 2.\nWhen Exhausted, gain [E] at the start of every turn."
+    },
+    {
+      "name": "Catch up time+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaustive 2.\nWhen Exhausted, gain [E] at the start of every turn."
+    },
+    {
+      "name": "Chronobreak",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Gain [E] and Heal 1 HP for each [E] spent that turn.\nIf you attacked last turn, deal 16 damage. Strength affects this twice.\nekkotheboywhoshatteredtime:Resonate. Exhaust."
+    },
+    {
+      "name": "Chronobreak+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Gain [E] and Heal 1 HP for each [E] spent that turn.\nIf you attacked last turn, deal 24 damage. Strength affects this 3 times.\nekkotheboywhoshatteredtime:Resonate. Exhaust."
+    },
+    {
+      "name": "Discharge",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage for each [E] spent that turn."
+    },
+    {
+      "name": "Discharge+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage for each [E] spent that turn."
+    },
+    {
+      "name": "Duplicate timelines",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Trigger delayed effects now without removing them."
+    },
+    {
+      "name": "Duplicate timelines+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nTrigger delayed effects now without removing them."
+    },
+    {
+      "name": "Final solo",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage. If Fatal, gain 15 Gold and heal 2 HP.\nExhaust."
+    },
+    {
+      "name": "Final solo+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage. If Fatal, gain 20 Gold and heal 3 HP.\nExhaust."
+    },
+    {
+      "name": "Guinsoo's rageblade",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "When you play a ekkotheboywhoshatteredtime:Strike, create a 0 cost ekkotheboywhoshatteredtime:Strike in your discard pile. Your ekkotheboywhoshatteredtime:Strikes apply 1 extra ekkotheboywhoshatteredtime:Resonance."
+    },
+    {
+      "name": "Guinsoo's rageblade+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "When you play a ekkotheboywhoshatteredtime:Strike, create a 0 cost ekkotheboywhoshatteredtime:Strike in your discard pile. Your ekkotheboywhoshatteredtime:Strikes apply 1 extra ekkotheboywhoshatteredtime:Resonance."
+    },
+    {
+      "name": "Overloading weapon",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain [E] . Every time this card is played, increase its damage by 18 and its cost by 1 for this combat."
+    },
+    {
+      "name": "Overloading weapon+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nGain [E] . Every time this card is played, increase its damage by 18 and its cost by 1 for this combat."
+    },
+    {
+      "name": "Periocharge",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, Automatically play a Resocharge."
+    },
+    {
+      "name": "Periocharge+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, Automatically play an upgraded Resocharge."
+    },
+    {
+      "name": "Project preference",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage,\n3 times.\nekkotheboywhoshatteredtime:Resonate"
+    },
+    {
+      "name": "Project preference+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage,\n4 times.\nekkotheboywhoshatteredtime:Resonate"
+    },
+    {
+      "name": "Pulsefire pooling",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E] [E].\ndraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Pulsefire pooling+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain [E] [E] [E] [E].\ndraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "SKT Synergy",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Your ekkotheboywhoshatteredtime:Strikes deal 1 additional damage for each of your ekkotheboywhoshatteredtime:Strikes."
+    },
+    {
+      "name": "SKT Synergy+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your ekkotheboywhoshatteredtime:Strikes deal 1 additional damage for each of your ekkotheboywhoshatteredtime:Strikes."
+    },
+    {
+      "name": "Sandstorm sympathy",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add Timewinder, Parallel convergence, Phase dive and Chronobreak to your hand.\nExhaust."
+    },
+    {
+      "name": "Sandstorm sympathy+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add upgraded Timewinder, Parallel convergence, Phase dive and Chronobreak to your hand.\nExhaust."
+    },
+    {
+      "name": "Time industry",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Play one copy of each ekkotheboywhoshatteredtime:item you played this combat.\nExhaust"
+    },
+    {
+      "name": "Time industry+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Play one copy of each ekkotheboywhoshatteredtime:item you played this combat.\nExhaust. Grave."
+    },
+    {
+      "name": "Trick or treat trend",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Place a card from your Exhaust pile into your hand.\nExhaust a card from your hand.\nExhaust."
+    },
+    {
+      "name": "Trick or treat trend+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Place a card from your Exhaust pile into your hand.\nExhaust a card from your hand.\nExhaust. Grave."
+    },
+    {
+      "name": "Trinity force",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 3 Strength and Dexterity.\nGain 6 ekkotheboywhoshatteredtime:Sheen.\nAt the start of your turn add a ekkotheboywhoshatteredtime:Strike into your hand."
+    },
+    {
+      "name": "Trinity force+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 4 Strength and Dexterity.\nGain 8 ekkotheboywhoshatteredtime:Sheen.\nAt the start of your turn add a ekkotheboywhoshatteredtime:Strike into your hand."
+    },
+    {
+      "name": "True damage tide",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E].\nAdd Vibin' to your hand.\nExhaust."
+    },
+    {
+      "name": "True damage tide+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nAdd Vibin', Infernal Blade, Distraction and White Noise to your hand. Exhaust."
+    },
+    {
+      "name": "U.R.F.",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Reduce the cost of all cards in your hand by 1 this turn.\nExhaust."
+    },
+    {
+      "name": "U.R.F.+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Reduce the cost of all cards in your hand by 2 this turn.\nExhaust."
+    },
+    {
+      "name": "Unleashed",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Double your Strength and Dexterity.\nExhaust."
+    },
+    {
+      "name": "Unleashed+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your Strength and Dexterity.\nExhaust."
+    },
+    {
+      "name": "Zhonya's hourglass",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Stun enemies that intend to attack or debuff you.\nEnd your turn.\nExhaust."
+    },
+    {
+      "name": "Zhonya's hourglass+",
+      "color": "Ekko_blue_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Stun enemies that intend to attack or debuff you.\nEnd your turn.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Z-Drive Resonance",
+      "tier": "Starter",
+      "pool": "Ekko_blue_color",
+      "description": "ekkotheboywhoshatteredtime:Strikes apply 1 ekkotheboywhoshatteredtime:Resonance.",
+      "flavorText": "Using his own invention, the Z-Drive, Ekko explores the branching possibilities of reality to craft the perfect moment."
+    },
+    {
+      "name": "Twisted clockwork",
+      "tier": "Common",
+      "pool": "Ekko_blue_color",
+      "description": "Whenever you apply Delayed damage or Next turn Block, apply 3 more.",
+      "flavorText": "It might be illegal but at least it's helpful."
+    },
+    {
+      "name": "Chain armlet",
+      "tier": "Uncommon",
+      "pool": "Ekko_blue_color",
+      "description": "Whenever you receive Weak gain 1 Strengh.\nWhenever you receive Frail gain 1 Dexterity.",
+      "flavorText": "A cool addition to your look."
+    },
+    {
+      "name": "Resonance receiver",
+      "tier": "Uncommon",
+      "pool": "Ekko_blue_color",
+      "description": "Whenever you successfully apply a ekkotheboywhoshatteredtime:Resonance stack, gain 1 Block.",
+      "flavorText": "Ready to play in a band."
+    },
+    {
+      "name": "Bronze tube",
+      "tier": "Rare",
+      "pool": "Ekko_blue_color",
+      "description": "The first time you generate extra [E] each turn, draw one more card next turn.",
+      "flavorText": "Some weird science can happen in a that simple tube."
+    },
+    {
+      "name": "Chaos pliers",
+      "tier": "Rare",
+      "pool": "Ekko_blue_color",
+      "description": "Whenever you play a card with an Exhaustive value greater than 1, add a copy of it to your discard pile.",
+      "flavorText": "What's life without some chaos ?..."
+    },
+    {
+      "name": "Z-Drive Academy",
+      "tier": "Boss",
+      "pool": "Ekko_blue_color",
+      "description": "Replaces Z-Drive Resonance. ekkotheboywhoshatteredtime:Strikes apply 1 ekkotheboywhoshatteredtime:Resonance.\nStrength and Dexterity gains are increased by 1.\nNot gaining Strength or Dexterity during one turn makes you lose 2 of both.",
+      "flavorText": "Your past seems to have changed."
+    },
+    {
+      "name": "Z-Drive Greediness",
+      "tier": "Boss",
+      "pool": "Ekko_blue_color",
+      "description": "Activating ekkotheboywhoshatteredtime:Resonance now gives [E] .\nNot activating Resonance during one turn gives you 1 Vulnerable.",
+      "flavorText": "Maybe you shouldn't be so confident on your capacities. High risk high reward as they say."
+    },
+    {
+      "name": "Z-Drive Project",
+      "tier": "Boss",
+      "pool": "Ekko_blue_color",
+      "description": "Replaces Z-Drive Resonance. ekkotheboywhoshatteredtime:Strikes apply 1 ekkotheboywhoshatteredtime:Resonance.\nActivating Resonance now trigger 2 times the effects.\nResonance now requires 4 stacks instead of 3 to be activated.",
+      "flavorText": "Your past seems to have changed."
+    },
+    {
+      "name": "Z-Drive Pulsefire",
+      "tier": "Boss",
+      "pool": "Ekko_blue_color",
+      "description": "Replaces Z-Drive Resonance. ekkotheboywhoshatteredtime:Strikes apply 1 ekkotheboywhoshatteredtime:Resonance.\nEach [E] gain grants you 1 Strength per [E] .\nYou can't play Power cards anymore.",
+      "flavorText": "Your past seems to have changed."
+    },
+    {
+      "name": "Z-Drive SKT",
+      "tier": "Boss",
+      "pool": "Ekko_blue_color",
+      "description": "Replaces Z-Drive Resonance. ekkotheboywhoshatteredtime:Strikes apply 1 ekkotheboywhoshatteredtime:Resonance.\nAll Strikes in your deck are upgraded .\nGenerates 3 Strikes in your deck on pickup.",
+      "flavorText": "Your past seems to have changed."
+    },
+    {
+      "name": "Z-Drive Sandstorm",
+      "tier": "Boss",
+      "pool": "Ekko_blue_color",
+      "description": "Replaces Z-Drive Resonance. ekkotheboywhoshatteredtime:Strikes apply 1 ekkotheboywhoshatteredtime:Resonance.\nPlaying a card related to another turn will reduce the cost of a card related to another turn in your hand by 1 for the turn.\nGenerates 3 Defends in your deck on pickup.",
+      "flavorText": "Your past seems to have changed."
+    },
+    {
+      "name": "Z-Drive Trick or Treat",
+      "tier": "Boss",
+      "pool": "Ekko_blue_color",
+      "description": "Replaces Z-Drive Resonance. ekkotheboywhoshatteredtime:Strikes apply 1 ekkotheboywhoshatteredtime:Resonance.\nExhausting a card applies 1 Resonance to all enemies.\nNot Exhausting a card during one turn adds a Wound to your draw pile.",
+      "flavorText": "Your past seems to have changed."
+    },
+    {
+      "name": "Z-Drive True Damage",
+      "tier": "Boss",
+      "pool": "Ekko_blue_color",
+      "description": "Replaces Z-Drive Resonance. ekkotheboywhoshatteredtime:Strikes apply 1 ekkotheboywhoshatteredtime:Resonance.\nPlaying a 0-cost card makes you draw 1 card.\nResonance cooldown never wears off.",
+      "flavorText": "Your past seems to have changed."
+    },
+    {
+      "name": "Pair of masks",
+      "tier": "Shop",
+      "pool": "Ekko_blue_color",
+      "description": "Whenever you play an item, add a random colorless cards into your hand.",
+      "flavorText": "Makes you and your loved one match perfectly."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Bottled sheen",
+      "rarity": "Common",
+      "description": "Gain 5 ekkotheboywhoshatteredtime:Sheen."
+    },
+    {
+      "name": "Resonating potion",
+      "rarity": "Uncommon",
+      "description": "Apply 3 ekkotheboywhoshatteredtime:Resonance."
+    },
+    {
+      "name": "Equilibrium potion",
+      "rarity": "Rare",
+      "description": "Increase your Strength or Dexterity so it reaches the highest one."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "ekko",
+      "type": "Player",
+      "minHP": "72",
+      "maxHP": "72"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Ekkotheboywhoshatteredtime:item",
+      "description": "Banshee's veil\nGuinsoo's rageblade\nHaunting guise\nHextech protobelt\nIceborn gauntlet\nLich bane\nNashor's tooth\nNeedlessly large rod\nTrinity force\nZhonyas hourglass"
+    },
+    {
+      "name": "Ekkotheboywhoshatteredtime:resonance",
+      "description": "When at 3 stacks draw two cards, deal damage equal to your strength and gain 4 Block, can be activated only once per turn per enemy."
+    },
+    {
+      "name": "Ekkotheboywhoshatteredtime:resonate",
+      "description": "Applies 1 Resonance for each hit.\nWhen at 3 stacks draw two cards, deal damage equal to your strength and gain 4 Block, can be activated only once per turn per enemy."
+    },
+    {
+      "name": "Ekkotheboywhoshatteredtime:sheen",
+      "description": "Strikes deal additional damage equal to Sheen amount when played directly after a non-Power card (except Strike and Defend)."
+    },
+    {
+      "name": "Ekkotheboywhoshatteredtime:strike",
+      "description": "Strike from base deck."
+    }
+  ]
+}
