@@ -1,0 +1,1524 @@
+{
+  "mod": {
+    "name": "Ferrothorn",
+    "version": "1.0",
+    "authors": ["Diamsword"],
+    "credits": "Basemod, ModTheSpire, StS Discord",
+    "description": "A fan mod inspired by the Pokemon Ferrothorn.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Insomnia",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nGain 1 Block.\nExhaust."
+    },
+    {
+      "name": "Insomnia+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nGain 2 Block.\nExhaust."
+    },
+    {
+      "name": "Seed",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nExhaust."
+    },
+    {
+      "name": "Seed+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nExhaust."
+    },
+    {
+      "name": "Solar Beam Attack",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 29 damage.\nExhaust."
+    },
+    {
+      "name": "Solar Beam Attack+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 36 damage.\nExhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Ferrothorn_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Ferrothorn_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block."
+    },
+    {
+      "name": "Growth",
+      "color": "Ferrothorn_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ferrothorn:Grow twice.\nIf you are not in a ferrothorn:Weather, enter a random one.\nExhaust."
+    },
+    {
+      "name": "Growth+",
+      "color": "Ferrothorn_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ferrothorn:Grow three times.\nIf you are not in a ferrothorn:Weather, choose one to enter.\nExhaust."
+    },
+    {
+      "name": "Leech Seed",
+      "color": "Ferrothorn_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 ferrothorn:Leech_Seed.\nExhaust."
+    },
+    {
+      "name": "Leech Seed+",
+      "color": "Ferrothorn_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 ferrothorn:Leech_Seed.\nExhaust."
+    },
+    {
+      "name": "Strike",
+      "color": "Ferrothorn_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Ferrothorn_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage."
+    },
+    {
+      "name": "Aerial Ace",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nYou can always play this card.\nThis card always deals 6 damage."
+    },
+    {
+      "name": "Aerial Ace+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nYou can always play this card.\nThis card always deals 9 damage."
+    },
+    {
+      "name": "Assist",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nPlace a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Assist+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nPlace a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Bullet Seed",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Randomly add 2 to 5 Seeds into your hand."
+    },
+    {
+      "name": "Bullet Seed+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Randomly add 4 to 5 Seeds into your hand."
+    },
+    {
+      "name": "Confide",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 ferrothorn:Stamina."
+    },
+    {
+      "name": "Confide+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 6 ferrothorn:Stamina."
+    },
+    {
+      "name": "Grass Knot",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nRepeats for each enemy with more HP than you."
+    },
+    {
+      "name": "Grass Knot+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to ALL enemies.\nRepeats for each enemy with more HP than you."
+    },
+    {
+      "name": "Head Charge",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nThe enemy immediately attacks you for 3 damage."
+    },
+    {
+      "name": "Head Charge+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nThe enemy immediately attacks you for 2 damage."
+    },
+    {
+      "name": "Iron Head",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 1 Weak."
+    },
+    {
+      "name": "Iron Head+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Power Whip",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage."
+    },
+    {
+      "name": "Power Whip+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage."
+    },
+    {
+      "name": "Rain Dance",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ferrothorn:Grow.\nEnter ferrothorn:Rain."
+    },
+    {
+      "name": "Rain Dance+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "ferrothorn:Grow.\nEnter ferrothorn:Rain.\nExhaust."
+    },
+    {
+      "name": "Revenge",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf the enemy intends to attack, deal 7 damage again."
+    },
+    {
+      "name": "Revenge+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf the enemy intends to attack, deal 9 damage again."
+    },
+    {
+      "name": "Sandstorm",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ferrothorn:Grow.\nEnter ferrothorn:Sandstorm."
+    },
+    {
+      "name": "Sandstorm+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "ferrothorn:Grow.\nEnter ferrothorn:Sandstorm.\nExhaust."
+    },
+    {
+      "name": "Shift Gear",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nDexterity affects this card twice."
+    },
+    {
+      "name": "Shift Gear+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nDexterity affects this card three times."
+    },
+    {
+      "name": "Spikes",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Thorns.\nExhaustive 3."
+    },
+    {
+      "name": "Spikes+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Thorns.\nExhaustive 3."
+    },
+    {
+      "name": "Stealth Rock",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 ferrothorn:Scales.\nExhaust."
+    },
+    {
+      "name": "Stealth Rock+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 ferrothorn:Scales.\nExhaust."
+    },
+    {
+      "name": "Sucker Punch",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the enemy intends to attack, gain 8 Block instead."
+    },
+    {
+      "name": "Sucker Punch+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nIf the enemy intends to attack, gain 11 Block instead."
+    },
+    {
+      "name": "Sunny Day",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "ferrothorn:Grow.\nEnter ferrothorn:Harsh_Sunlight."
+    },
+    {
+      "name": "Sunny Day+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "ferrothorn:Grow.\nEnter ferrothorn:Harsh_Sunlight.\nExhaust."
+    },
+    {
+      "name": "Synthesis",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nferrothorn:Grow."
+    },
+    {
+      "name": "Synthesis+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nferrothorn:Grow."
+    },
+    {
+      "name": "Teeter Dance",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block for each enemy in combat."
+    },
+    {
+      "name": "Teeter Dance+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block for each enemy in combat."
+    },
+    {
+      "name": "Toxic Spikes",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 ferrothorn:Toxic_Spikes.\nDraw 1 card.\nExhaustive 2."
+    },
+    {
+      "name": "Toxic Spikes+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 ferrothorn:Toxic_Spikes.\nDraw 1 card.\nExhaustive 2."
+    },
+    {
+      "name": "Weather Ball",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nEffect varies with ferrothorn:Weather."
+    },
+    {
+      "name": "Weather Ball+",
+      "color": "Ferrothorn_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nEffect varies with ferrothorn:Weather."
+    },
+    {
+      "name": "Acid Spray",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to ALL enemies.\nGain ferrothorn:Stamina equal to unblocked damage dealt."
+    },
+    {
+      "name": "Acid Spray+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies.\nGain ferrothorn:Stamina equal to unblocked damage dealt."
+    },
+    {
+      "name": "After You",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nPut a card from your hand on top of your draw pile.\nIt costs 0 until played."
+    },
+    {
+      "name": "After You+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block.\nPut a card from your hand on top of your draw pile.\nIt costs 0 until played."
+    },
+    {
+      "name": "Ancient Power",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Dexterity.\nGain 1 Metallicize.\nGain 1 Plated Armor."
+    },
+    {
+      "name": "Ancient Power+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Dexterity.\nGain 1 Metallicize.\nGain 1 Plated Armor."
+    },
+    {
+      "name": "Baneful Bunker",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\n Gain 1 ferrothorn:Toxic_Spikes."
+    },
+    {
+      "name": "Baneful Bunker+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\n Gain 2 ferrothorn:Toxic_Spikes."
+    },
+    {
+      "name": "Body Press",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nAffected by Block modifiers instead of damage modifiers."
+    },
+    {
+      "name": "Body Press+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nAffected by Block modifiers instead of damage modifiers."
+    },
+    {
+      "name": "Cotton Guard",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block 3 times."
+    },
+    {
+      "name": "Cotton Guard+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block 4 times."
+    },
+    {
+      "name": "Curse",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nGain 1 Dexterity.\nShuffle a Wound into your draw pile."
+    },
+    {
+      "name": "Curse+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nGain 1 Dexterity.\nShuffle a Slimed into your discard pile."
+    },
+    {
+      "name": "Defense Curl",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Metallicize.\nAt the end of combat, heal 2 HP."
+    },
+    {
+      "name": "Defense Curl+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Metallicize.\nAt the end of combat, heal 3 HP."
+    },
+    {
+      "name": "Diamond Storm",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage.\nGain 6 Block twice."
+    },
+    {
+      "name": "Diamond Storm+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nGain 8 Block twice."
+    },
+    {
+      "name": "Double Team",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nNext turn gain 5 Block."
+    },
+    {
+      "name": "Double Team+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nNext turn gain 7 Block."
+    },
+    {
+      "name": "Endure",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The first time you lose HP, gain 10 Block\n and 1 Blur.\nExhaust."
+    },
+    {
+      "name": "Endure+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The first time you lose HP, gain 15 Block\n and 1 Blur.\nExhaust."
+    },
+    {
+      "name": "Explosion",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Lose 4 HP.\nDeal 28 damage."
+    },
+    {
+      "name": "Explosion+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Lose 4 HP.\nDeal 36 damage."
+    },
+    {
+      "name": "Fell Stinger",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf this kills an enemy, add a copy of this to your hand.\nExhaust."
+    },
+    {
+      "name": "Fell Stinger+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 12 damage.\nIf this kills an enemy, add a copy of this to your hand.\nExhaust."
+    },
+    {
+      "name": "Flatter",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 Block.\nGive 1 Strength to the enemy."
+    },
+    {
+      "name": "Flatter+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 19 Block.\nGive 1 Strength to the enemy."
+    },
+    {
+      "name": "Follow Me",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nALL enemies immediately attack you for 4 damage."
+    },
+    {
+      "name": "Follow Me+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nALL enemies immediately attack you for 2 damage."
+    },
+    {
+      "name": "Foul Play",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nDamage is calculated with the enemy's powers, instead of yours."
+    },
+    {
+      "name": "Foul Play+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nDamage is calculated with the enemy's powers, instead of yours."
+    },
+    {
+      "name": "Harden",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Dexterity\nand 2 ferrothorn:Scales."
+    },
+    {
+      "name": "Harden+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Dexterity\nand 4 ferrothorn:Scales."
+    },
+    {
+      "name": "Hyper Beam",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 25 damage.\nNext turn, lose [E] ."
+    },
+    {
+      "name": "Hyper Beam+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 32 damage.\nNext turn, lose [E] ."
+    },
+    {
+      "name": "Ingrain",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nHeal 4 HP.\nferrothorn:Grow.  \nExhaust."
+    },
+    {
+      "name": "Ingrain+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nHeal 6 HP.\nferrothorn:Grow.  \nExhaust."
+    },
+    {
+      "name": "Iron Defense",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Dexterity."
+    },
+    {
+      "name": "Iron Defense+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Dexterity."
+    },
+    {
+      "name": "Payback",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf this is in your hand at the end of your turn, increase its damage by 6 this combat."
+    },
+    {
+      "name": "Payback+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf this is in your hand at the end of your turn, increase its damage by 10 this combat."
+    },
+    {
+      "name": "Quick Guard",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nDraw a card for each enemy that intends to attack you."
+    },
+    {
+      "name": "Quick Guard+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 13 Block.\nDraw a card for each enemy that intends to attack you."
+    },
+    {
+      "name": "Rock Polish",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nRemove Frail."
+    },
+    {
+      "name": "Rock Polish+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nRemove Frail."
+    },
+    {
+      "name": "Seed Bomb",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Seed+ to your hand and double its damage."
+    },
+    {
+      "name": "Seed Bomb+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Seed+ to your hand.\nDouble the damage\nof ALL Seed cards in your hand."
+    },
+    {
+      "name": "Seed Flare",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nApply 2 Vulnerable.\nApply extra Vulnerable for each other Seed card in your hand."
+    },
+    {
+      "name": "Seed Flare+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nApply 3 Vulnerable.\nApply extra Vulnerable for each other Seed card in your hand."
+    },
+    {
+      "name": "Shell Trap",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nWhenever you are attacked this turn, deal 3 damage to the attacker."
+    },
+    {
+      "name": "Shell Trap+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nWhenever you are attacked this turn, deal 4 damage to the attacker."
+    },
+    {
+      "name": "Shore Up",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Plated Armor.\nIn ferrothorn:Sandstorm gain additional Plated Armor equal to your Dexterity."
+    },
+    {
+      "name": "Shore Up+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Plated Armor.\nIn ferrothorn:Sandstorm gain as much Dexterity instead."
+    },
+    {
+      "name": "Snap Trap",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 Block.\nDraw 2 cards.\nApply 2 ferrothorn:Leech_Seed.\nExhaust."
+    },
+    {
+      "name": "Snap Trap+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nDraw 3 cards.\nApply 3 ferrothorn:Leech_Seed.\nExhaust."
+    },
+    {
+      "name": "Solar Beam",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Shuffle a Solar Beam Attack into your draw pile.\nIn ferrothorn:Harsh_Sunlight add it to your hand instead."
+    },
+    {
+      "name": "Solar Beam+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Shuffle a Solar Beam Attack+ into your draw pile.\nIn ferrothorn:Harsh_Sunlight add it to your hand instead."
+    },
+    {
+      "name": "Spiky Shield",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 Thorns."
+    },
+    {
+      "name": "Spiky Shield+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nGain 2 Thorns."
+    },
+    {
+      "name": "Strength Sap",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal HP equal to enemy's Strength.\nEnemy loses 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Strength Sap+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal HP equal to enemy's Strength.\nEnemy loses 3 Strength.\nExhaust."
+    },
+    {
+      "name": "Substitute",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 7 HP.\nPrevent the next time you would lose HP.\nExhaust."
+    },
+    {
+      "name": "Substitute+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 4 HP.\nPrevent the next time you would lose HP.\nExhaust."
+    },
+    {
+      "name": "Swagger",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Strength to the enemy.\nStun.\nExhaust."
+    },
+    {
+      "name": "Swagger+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Strength to the enemy.\nStun.\nExhaust."
+    },
+    {
+      "name": "Swallow",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 8 Block X times."
+    },
+    {
+      "name": "Swallow+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 10 Block X times."
+    },
+    {
+      "name": "Taunt",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The enemy instantly attacks you for 2 damage twice."
+    },
+    {
+      "name": "Taunt+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "The enemy instantly attacks you for 1 damage three times."
+    },
+    {
+      "name": "Thunder",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove all Block from an enemy.\nDeal 14 damage.\nIn ferrothorn:Rain this costs 0."
+    },
+    {
+      "name": "Thunder+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove all Block from an enemy.\nDeal 18 damage.\nIn ferrothorn:Rain this costs 0."
+    },
+    {
+      "name": "Toxic",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 Poison.\nIncrease this card's Poison by 3 this combat."
+    },
+    {
+      "name": "Toxic+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 Poison.\nIncrease this card's Poison by 4 this combat."
+    },
+    {
+      "name": "Venom Drench",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf an enemy has Poison,\ngain 3 ferrothorn:Stamina."
+    },
+    {
+      "name": "Venom Drench+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nIf an enemy has Poison,\ngain 5 ferrothorn:Stamina."
+    },
+    {
+      "name": "Wish",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn gain Block equal to half your current Block."
+    },
+    {
+      "name": "Wish+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn gain Block equal to half your current Block."
+    },
+    {
+      "name": "Worry Seed",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 Seeds into your hand.\nThen transform ALL Seed cards in your hand into Insomnia."
+    },
+    {
+      "name": "Worry Seed+",
+      "color": "Ferrothorn_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 Seeds into your hand.\nThen transform ALL Seed cards in your hand into Insomnia."
+    },
+    {
+      "name": "Autotomize",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nAffected by Block modifiers."
+    },
+    {
+      "name": "Autotomize+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 4 cards.\nAffected by Block modifiers."
+    },
+    {
+      "name": "Counter",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you fully block an enemy's attack, deal that much damage back to the attacker."
+    },
+    {
+      "name": "Counter+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you fully block an enemy's attack, deal that much damage back to the attacker."
+    },
+    {
+      "name": "Defog",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exit your ferrothorn:Weather.\nRemove Strength on EVERYONE.\nExhaust."
+    },
+    {
+      "name": "Defog+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove Artifact and Strength on ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Encore",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Repeat the effects of the last card you played.\nExhaust."
+    },
+    {
+      "name": "Encore+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Repeat the effects of the last card you played."
+    },
+    {
+      "name": "Grassy Terrain",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply 4 Regen to EVERYONE."
+    },
+    {
+      "name": "Grassy Terrain+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply 5 Regen to EVERYONE."
+    },
+    {
+      "name": "Gyro Ball",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nDeals 1 additional damage for each Relic you have."
+    },
+    {
+      "name": "Gyro Ball+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\nDeals 2 additional damage for each Relic you have."
+    },
+    {
+      "name": "Heavy Slam",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nDeals additional damage equal to your Max HP exceeding 80. If Fatal, gain 1 Max HP."
+    },
+    {
+      "name": "Heavy Slam+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nDeals additional damage equal to your Max HP exceeding 80. If Fatal, gain 2 Max HP."
+    },
+    {
+      "name": "Helping Hand",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next Attack deals double damage.\nExhaust."
+    },
+    {
+      "name": "Helping Hand+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next Attack deals double damage."
+    },
+    {
+      "name": "King's Shield",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nWhenever you are attacked this turn, apply 2 Weak back."
+    },
+    {
+      "name": "King's Shield+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nWhenever you are attacked this turn, apply 3 Weak back."
+    },
+    {
+      "name": "Magnet Rise",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] for each enemy in combat.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Magnet Rise+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] .\nGain [E] for each enemy in combat.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Metal Burst",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain Block, deal 2 damage to a random enemy."
+    },
+    {
+      "name": "Metal Burst+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain Block, deal 3 damage to a random enemy."
+    },
+    {
+      "name": "Moonlight",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose a ferrothorn:Weather to enter. Activate exiting effects of the other two.\nExhaust."
+    },
+    {
+      "name": "Moonlight+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nChoose a ferrothorn:Weather to enter. Activate exiting effects of the other two.\nExhaust."
+    },
+    {
+      "name": "Morning Sun",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Hazards varying with ferrothorn:Weather.\nExhaust."
+    },
+    {
+      "name": "Morning Sun+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Hazards varying with ferrothorn:Weather."
+    },
+    {
+      "name": "Protect",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Protect+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible.\nExhaust."
+    },
+    {
+      "name": "Rage Powder",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If the enemy intends to attack, gain 25 Block.\nThe enemy performs its attack on you and himself."
+    },
+    {
+      "name": "Rage Powder+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If the enemy intends to attack, gain 28 Block.\nThe enemy performs its attack on EVERYONE."
+    },
+    {
+      "name": "Rollout",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIncrease this card's damage by 6 this combat. Add a copy of this card to your discard pile."
+    },
+    {
+      "name": "Rollout+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIncrease this card's damage by 9 this combat. Add a copy of this card to your discard pile."
+    },
+    {
+      "name": "Sappy Seed",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 2 ferrothorn:Leech_Seed."
+    },
+    {
+      "name": "Sappy Seed+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 3 ferrothorn:Leech_Seed."
+    },
+    {
+      "name": "Spotlight",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, a random enemy instantly attacks you for 0 damage."
+    },
+    {
+      "name": "Spotlight+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, a random enemy instantly attacks you for 0 damage."
+    },
+    {
+      "name": "Sticky Web",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you are attacked, draw 1 card."
+    },
+    {
+      "name": "Sticky Web+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you are attacked, draw 1 card."
+    },
+    {
+      "name": "Wide Guard",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nGain 1 Blur."
+    },
+    {
+      "name": "Wide Guard+",
+      "color": "Ferrothorn_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nGain 2 Blur."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Iron Barbs",
+      "tier": "Starter",
+      "pool": "Ferrothorn_color",
+      "description": "Start each combat with 3 ferrothorn:Scales.",
+      "flavorText": "Its spikes are harder than steel."
+    },
+    {
+      "name": "Dry Skin",
+      "tier": "Uncommon",
+      "pool": "Ferrothorn_color",
+      "description": "While in ferrothorn:Rain, gain 4 Block at the end of your turn.\nIf you are in another Weather, lose 2 Block instead.",
+      "flavorText": ""
+    },
+    {
+      "name": "Sand Veil",
+      "tier": "Uncommon",
+      "pool": "Ferrothorn_color",
+      "description": "While in ferrothorn:Sandstorm lose 2 Strength but you apply 1 Weak to ALL enemies at the start of your turn.",
+      "flavorText": ""
+    },
+    {
+      "name": "Solar Power",
+      "tier": "Uncommon",
+      "pool": "Ferrothorn_color",
+      "description": "While in ferrothorn:Harsh_Sunlight your Attacks deal 4 additional damage, but while in Harsh Sunlight you also lose 1 HP at the end of your turn",
+      "flavorText": ""
+    },
+    {
+      "name": "Drizzle",
+      "tier": "Rare",
+      "pool": "Ferrothorn_color",
+      "description": "Weather spawns on every Non-Boss combat.",
+      "flavorText": ""
+    },
+    {
+      "name": "Moxie",
+      "tier": "Rare",
+      "pool": "Ferrothorn_color",
+      "description": "When you deal 14 unblocked damage, draw 1 card.",
+      "flavorText": ""
+    },
+    {
+      "name": "Defeatist",
+      "tier": "Boss",
+      "pool": "Ferrothorn_color",
+      "description": "If your HP is above 50%, gain [E] at the start of your turn.",
+      "flavorText": ""
+    },
+    {
+      "name": "Rocky Helmet",
+      "tier": "Boss",
+      "pool": "Ferrothorn_color",
+      "description": "Replaces Iron Barbs.\nStart each combat with 4 Scales and 4 Thorns.",
+      "flavorText": "The attacker will also be damaged upon contact."
+    },
+    {
+      "name": "Rare Candy",
+      "tier": "Shop",
+      "pool": "Ferrothorn_color",
+      "description": "Upon pickup, raise your Max HP by 6 and chose 1 card to add to your deck.",
+      "flavorText": ""
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "Ferrothorn",
+      "type": "Player",
+      "minHP": "80",
+      "maxHP": "80"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Ferrothorn:grow",
+      "description": "Activate exiting effects of your current Weather without exiting it."
+    },
+    {
+      "name": "Harsh Sunlight",
+      "description": "Draw a card at the start of your turn.\nUpon exiting this Weather, gain [E] ."
+    },
+    {
+      "name": "Leech Seed",
+      "description": "The enemy loses HP at the end of each turn.\nWhen the enemy dies, heal HP."
+    },
+    {
+      "name": "Ferrothorn:rain",
+      "description": "Reduce received Attack damage by 20%.\nUpon exiting this Weather, add a Seed+ to your hand."
+    },
+    {
+      "name": "Ferrothorn:sandstorm",
+      "description": "At the end of your turn, deal 4 damage to ALL enemies.\nUpon exiting this Weather, gain 1 Metallicize."
+    },
+    {
+      "name": "Ferrothorn:scale",
+      "description": "Once an enemy's finished attacking, deals damage back."
+    },
+    {
+      "name": "Ferrothorn:seed",
+      "description": ""
+    },
+    {
+      "name": "Ferrothorn:stamina",
+      "description": "Your next card that grants you Block grants you additional Block."
+    },
+    {
+      "name": "Toxic Spikes",
+      "description": "Whenever you are attacked, apply Poison back."
+    },
+    {
+      "name": "Ferrothorn:weather",
+      "description": "You can only have one Weather at a time."
+    }
+  ]
+}
