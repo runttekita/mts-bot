@@ -1,32 +1,16 @@
 {
   "mod": {
     "name": "The Packmaster",
-    "version": "0.0.1",
-    "authors": ["Vex'd"],
+    "version": "1.0.0",
+    "authors": ["Vex'd","modargo","(Gk) erasels","Michael Mayhem","DJGames","Alchyr","NellyDevo","Bryan","Enbeon","Silver","Diamsword","AlexMdle","Pandemonium","Laugic","Pina Colada","FieryChocobo","Dayvig","Darkglade","Kiooeht","JohnnyBazooka","EricB","Celicath","PureQuestion","SandTag","Charlie","Mindbomber","Jack Renoson"],
     "credits": "",
     "description": "Modding Anniversary 5: The Packmaster",
-    "mts_version": "3.18.2",
-    "sts_version": "12-22-2020",
+    "mts_version": "3.30.2",
+    "sts_version": "12-18-2022",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
   "cards": [
-    {
-      "name": "Claw",
-      "color": "Blue",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 3 damage.\nanniv5:Sharpen 2."
-    },
-    {
-      "name": "Claw+",
-      "color": "Blue",
-      "rarity": "Common",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 5 damage.\nanniv5:Sharpen 2."
-    },
     {
       "name": "8 Ball",
       "color": "Colorless",
@@ -92,6 +76,22 @@
       "description": "Draw a card.\nExhaust."
     },
     {
+      "name": "Fishy Croquettes",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "anniv5:Croquette.\nApply 2 Weak.\nExhaust."
+    },
+    {
+      "name": "Fishy Croquettes+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "anniv5:Croquette.\nApply 3 Weak.\nExhaust."
+    },
+    {
       "name": "Food",
       "color": "Colorless",
       "rarity": "Special",
@@ -106,6 +106,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "Retain.\nGain X [E] .\nExhaust."
+    },
+    {
+      "name": "Friendship Croquettes",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "anniv5:Croquette.\nGain 6 Block, Exhaust.\nWhen Retained, increase its Block by 2 this combat."
+    },
+    {
+      "name": "Friendship Croquettes+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "anniv5:Croquette.\nGain 9 Block, Exhaust.\nWhen Retained, increase its Block by 3 this combat."
     },
     {
       "name": "Fury",
@@ -188,12 +204,28 @@
       "description": "anniv5:Casts\u00A0When\u00A0Drawn.\nDeal 3 damage. Increase the damage of Imps by 1 this combat.\nDraw a card.\nExhaust."
     },
     {
+      "name": "Meaty Croquettes",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "anniv5:Croquette.\nGain 3 Strength.\nExhaust."
+    },
+    {
+      "name": "Meaty Croquettes+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "0",
+      "description": "anniv5:Croquette.\nGain 5 Strength.\nExhaust."
+    },
+    {
       "name": "Molded Fire",
       "color": "Colorless",
       "rarity": "Special",
       "type": "Attack",
       "cost": "X",
-      "description": "anniv5:Occult.\nanniv5:Occult.\nDeal 11 damage for each [E] more this costs than your current energy."
+      "description": "anniv5:Occult.\nDeal 11 damage for each [E] more this costs than your current energy."
     },
     {
       "name": "Molded Fire+",
@@ -201,7 +233,23 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "X",
-      "description": "anniv5:Occult.\nanniv5:Occult.\nDeal 15 damage for each [E] more this costs than your current energy."
+      "description": "anniv5:Occult.\nDeal 15 damage for each [E] more this costs than your current energy."
+    },
+    {
+      "name": "Mystery Croquettes",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "anniv5:Croquette.\nApply 1 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Mystery Croquettes+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "anniv5:Croquette.\nApply 99 Vulnerable.\nExhaust."
     },
     {
       "name": "Quill",
@@ -327,7 +375,7 @@
       "name": "Despair",
       "color": "Curse",
       "rarity": "Curse",
-      "type": "Curse",
+      "type": "Status",
       "cost": "2",
       "description": "Counts as a Curse.\nExhaust."
     },
@@ -369,23 +417,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 10 damage.\nReduce the cost of the highest-cost card in hand by 1 this turn."
-    },
-    {
-      "name": "Rummage II",
-      "color": "Packmaster_rainbow",
-      "rarity": "Basic",
-      "type": "Attack",
-      "cost": "2",
       "description": "Deal 10 damage.\nDraw a card and reduce its cost by 1 this turn."
-    },
-    {
-      "name": "Rummage II+",
-      "color": "Packmaster_rainbow",
-      "rarity": "Basic",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 14 damage.\nDraw a card and reduce its cost by 2 this turn."
     },
     {
       "name": "Rummage+",
@@ -393,7 +425,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 10 damage.\nReduce the cost of the 2 highest-cost cards in hand by 1 this turn."
+      "description": "Deal 14 damage.\nDraw a card and reduce its cost by 1 this turn."
     },
     {
       "name": "Strike",
@@ -441,7 +473,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 28 Damage."
+      "description": "Deal 18 Damage."
     },
     {
       "name": "",
@@ -505,7 +537,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 34 Damage."
+      "description": "Deal 26 Damage."
     },
     {
       "name": "",
@@ -641,7 +673,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "anniv5:MEGAthereal.\nDeal 25 damage."
+      "description": "anniv5:MEGAthereal.\nDeal 22 damage."
     },
     {
       "name": "Darkside Slap+",
@@ -649,7 +681,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "anniv5:MEGAthereal.\nDeal 30 damage."
+      "description": "anniv5:MEGAthereal.\nDeal 27 damage."
     },
     {
       "name": "Deca Amulet",
@@ -858,22 +890,6 @@
       "type": "Attack",
       "cost": "1",
       "description": "*Magic. Retain.\nDeal 6 damage.\nIncrease the damage dealt by Magic cards by 6 this turn."
-    },
-    {
-      "name": "Pack Rip",
-      "color": "Packmaster_rainbow",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Discard your hand, then choose 1 of 3 Packs. Add its cards to your hand.\nExhaust."
-    },
-    {
-      "name": "Pack Rip+",
-      "color": "Packmaster_rainbow",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Discard your hand, then choose 1 of 3 Packs. Add its cards to your hand and Upgrade them.\nExhaust."
     },
     {
       "name": "Shell Platemail",
@@ -1265,7 +1281,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "anniv5:Infest.\nDeal 16 damage.\nDeals 4 additional damage for each infestation counter."
+      "description": "anniv5:Infest.\nDeal 16 damage.\nDeals 4 additional damage for each [bugIcon] ."
     },
     {
       "name": "Buggy Bash+",
@@ -1273,7 +1289,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "anniv5:Infest.\nDeal 18 damage.\nDeals 5 additional damage for each infestation counter."
+      "description": "anniv5:Infest.\nDeal 18 damage.\nDeals 5 additional damage for each [bugIcon] ."
     },
     {
       "name": "Captain's Cabin",
@@ -1340,6 +1356,22 @@
       "description": "Deal 9 damage to a random enemy 3 times."
     },
     {
+      "name": "Chained",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nGive ALL enemies 3 Block."
+    },
+    {
+      "name": "Chained+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nGive ALL enemies 2 Block."
+    },
+    {
       "name": "Clang",
       "color": "Packmaster_rainbow",
       "rarity": "Common",
@@ -1354,6 +1386,22 @@
       "type": "Attack",
       "cost": "0",
       "description": "Can only be played if there is a Curse or Status in your hand.\nDeal 18 damage."
+    },
+    {
+      "name": "Claw",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nanniv5:Sharpen 2."
+    },
+    {
+      "name": "Claw+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nanniv5:Sharpen 2."
     },
     {
       "name": "Cloak and Claw",
@@ -1417,7 +1465,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Manifest 2 random orbs."
+      "description": "anniv5:Manifest a random orb.\nExhaust"
     },
     {
       "name": "Cull",
@@ -1916,6 +1964,38 @@
       "description": "ALL enemies lose 3 Strength this turn.\nNext turn, deal 11 damage to ALL enemies.\nExhaust."
     },
     {
+      "name": "Frontloaded Bash",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDeals 1 additional damage for every 3 cards in your draw pile."
+    },
+    {
+      "name": "Frontloaded Bash+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nDeals 1 additional damage for every 3 cards in your draw pile.\nDraw 1 card."
+    },
+    {
+      "name": "Fume",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enter anniv5:Angry."
+    },
+    {
+      "name": "Fume+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nEnter anniv5:Angry."
+    },
+    {
       "name": "Furious Assault",
       "color": "Packmaster_rainbow",
       "rarity": "Common",
@@ -2065,7 +2145,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 5 damage.\nIf the last card you played this combat wasn't an Attack, deal 5 damage to ALL enemies."
+      "description": "Deal 5 damage.\nDeal 5 damage to ALL enemies if the last card played this combat wasn't an Attack."
     },
     {
       "name": "Harvest Beans+",
@@ -2073,7 +2153,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage.\nIf the last card you played this combat wasn't an Attack, deal 7 damage to ALL enemies."
+      "description": "Deal 7 damage.\nDeal 7 damage to ALL enemies if the last card played this combat wasn't an Attack."
     },
     {
       "name": "Harvest Potatoes",
@@ -2121,7 +2201,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 9 Block.\nanniv5:Manifest anniv5:Crescent_Moon.\nanniv5:Inscribe a random card in your hand."
+      "description": "Gain 9 Block.\nanniv5:Manifest anniv5:Crescent_Moon."
     },
     {
       "name": "High Priestess Jeklik",
@@ -2233,7 +2313,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "If you don't receive unblocked attack damage this turn, gain [E] and draw 2 cards next turn."
+      "description": "If you don't receive unblocked attack damage this turn, gain [E] and draw 1 card next turn."
     },
     {
       "name": "Hutts' Gamble+",
@@ -2241,7 +2321,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "If you don't receive unblocked attack damage this turn, gain [E] [E] and draw 2 cards next turn."
+      "description": "If you don't receive unblocked attack damage this turn, gain [E] [E] and draw 1 card next turn."
     },
     {
       "name": "Hydraulics",
@@ -2393,7 +2473,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 damage.\nApply 1 anniv5:Petra."
+      "description": "Gain 7 Block.\nApply 1 anniv5:Petra."
     },
     {
       "name": "Lithosphere+",
@@ -2401,7 +2481,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 10 damage.\nApply 1 anniv5:Petra."
+      "description": "Gain 10 Block.\nApply 1 anniv5:Petra."
     },
     {
       "name": "Locusts",
@@ -2409,7 +2489,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Infest.\nGain 8 Block.\nWhen this gains an infestation counter, ALL enemies lose 3 HP."
+      "description": "anniv5:Infest.\nGain 8 Block.\nWhen this gains [bugIcon] , ALL enemies lose 3 HP."
     },
     {
       "name": "Locusts+",
@@ -2417,7 +2497,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Infest.\nGain 10 Block.\nWhen this gains an infestation counter, ALL enemies lose 4 HP."
+      "description": "anniv5:Infest.\nGain 10 Block.\nWhen this gains [bugIcon] , ALL enemies lose 4 HP."
     },
     {
       "name": "Magic Dart",
@@ -2633,7 +2713,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 5 damage and Apply 2 thedragonkin:Penance.\nChannel Lightning"
+      "description": "Deal 5 damage and Apply 2 anniv5:Penance.\nChannel Lightning"
     },
     {
       "name": "Penance Shock+",
@@ -2641,7 +2721,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage and Apply 4 thedragonkin:Penance.\nChannel Lightning"
+      "description": "Deal 7 damage and Apply 4 anniv5:Penance.\nChannel Lightning"
     },
     {
       "name": "Pierce Veil",
@@ -2724,6 +2804,22 @@
       "description": "Deal 8 damage.\nIf the enemy intends to attack, deal 8 damage again."
     },
     {
+      "name": "Preparation",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an Attack or Skill card.\nAdd copy of that card into your hand.\nExhaust."
+    },
+    {
+      "name": "Preparation+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose an Attack or Skill card.\nAdd copy of that card into your hand."
+    },
+    {
       "name": "Prepare Crush",
       "color": "Packmaster_rainbow",
       "rarity": "Common",
@@ -2788,12 +2884,28 @@
       "description": "Deal 11 damage.\nDraw 3 cards.\nNext turn, draw 1 less card."
     },
     {
+      "name": "Rapier",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 anniv5:Front damage.\nGoes through Block."
+    },
+    {
+      "name": "Rapier+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 anniv5:Front damage.\nGoes through Block."
+    },
+    {
       "name": "Razor Wind",
       "color": "Packmaster_rainbow",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 2 anniv5:Confession.\nTake 4 damage."
+      "description": "Gain 4 anniv5:Confession.\nTake 2 damage."
     },
     {
       "name": "Razor Wind+",
@@ -2801,7 +2913,23 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 2 anniv5:Confession.\nTake 4 damage."
+      "description": "Gain 6 anniv5:Confession.\nTake 2 damage."
+    },
+    {
+      "name": "Rea--dy!",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Vigor.\nGain 2 Temporary Dexterity.\nExhaustive 2."
+    },
+    {
+      "name": "Rea--dy!+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Vigor.\nGain 2 Temporary Dexterity.\nDraw 1 card.\nExhaustive 2."
     },
     {
       "name": "Rearming Strike",
@@ -2930,6 +3058,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Apply 6 anniv5:Frostbite."
+    },
+    {
+      "name": "Relax",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enter Calm."
+    },
+    {
+      "name": "Relax+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nEnter Calm."
     },
     {
       "name": "Reverberation",
@@ -3281,7 +3425,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "ALL creatures gain 5 Block.\nALL enemies lose 4 HP."
+      "description": "ALL creatures gain 5 Block.\nALL enemies lose 5 HP."
     },
     {
       "name": "Smokescreen+",
@@ -3289,7 +3433,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "ALL creatures gain 7 Block.\nALL enemies lose 6 HP."
+      "description": "ALL creatures gain 7 Block.\nALL enemies lose 7 HP."
     },
     {
       "name": "Soul Shear",
@@ -3388,6 +3532,38 @@
       "description": "Skill anniv5:Enchantment.\nGain 3 Block."
     },
     {
+      "name": "Stone Sword",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 9 damage.\nGain 2 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Stone Sword+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage.\nGain 3 Dexterity.\nExhaust."
+    },
+    {
+      "name": "Storm Strike",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 anniv5:Feral damage.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Storm Strike+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 anniv5:Feral damage.\nApply 2 Vulnerable."
+    },
+    {
       "name": "Strike Through Fate",
       "color": "Packmaster_rainbow",
       "rarity": "Common",
@@ -3457,7 +3633,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "anniv5:Infest.\nDeal 10 damage.\nDraw 1 card for each infestation counter."
+      "description": "anniv5:Infest.\nDeal 10 damage.\nDraw 1 card for each [bugIcon] ."
     },
     {
       "name": "Swarm Strike+",
@@ -3465,7 +3641,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "anniv5:Infest.\nDeal 13 damage.\nDraw 1 card for each infestation counter."
+      "description": "anniv5:Infest.\nDeal 13 damage.\nDraw 1 card for each [bugIcon] ."
     },
     {
       "name": "Swarm of Bees",
@@ -3601,7 +3777,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "anniv5:Inscribed.\nDeal 8 damage."
+      "description": "Deal 8 damage.\nActivate the passive effect of your next orb"
     },
     {
       "name": "Tetsuzanko+",
@@ -3609,7 +3785,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "anniv5:Inscribed.\nDeal 10 damage.\nanniv5:Inscribe a random card in your hand."
+      "description": "Deal 10 damage.\nActivate the passive effect of your next orb twice"
     },
     {
       "name": "The Fool",
@@ -3649,7 +3825,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage.\nAdd a Fertilizer to your hand."
+      "description": "Deal 7 damage.\nGain a Fertilizer."
     },
     {
       "name": "Till The Earth+",
@@ -3657,7 +3833,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nAdd a Fertilizer to your hand."
+      "description": "Deal 10 damage.\nGain a Fertilizer."
     },
     {
       "name": "Toll",
@@ -3788,22 +3964,6 @@
       "description": "anniv5:Mutable: Gain 10 Block.\nanniv5:Transmute this card."
     },
     {
-      "name": "Voracious Sigil",
-      "color": "Packmaster_rainbow",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "2",
-      "description": "anniv5:Absorb a random Skill in your hand. Play all the cards this has anniv5:Absorbed."
-    },
-    {
-      "name": "Voracious Sigil+",
-      "color": "Packmaster_rainbow",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "2",
-      "description": "Innate.\nanniv5:Absorb a random Skill in your hand. Play all the cards this has anniv5:Absorbed."
-    },
-    {
       "name": "Whirligig",
       "color": "Packmaster_rainbow",
       "rarity": "Common",
@@ -3887,17 +4047,17 @@
       "name": "Wolves",
       "color": "Packmaster_rainbow",
       "rarity": "Common",
-      "type": "Skill",
+      "type": "Attack",
       "cost": "1",
-      "description": "Gain 7 Block.\nChannel a anniv5:Wolf."
+      "description": "Deal 7 damage.\nChannel a anniv5:Wolf."
     },
     {
       "name": "Wolves+",
       "color": "Packmaster_rainbow",
       "rarity": "Common",
-      "type": "Skill",
+      "type": "Attack",
       "cost": "1",
-      "description": "Gain 10 Block.\nChannel a anniv5:Wolf."
+      "description": "Deal 10 damage.\nChannel a anniv5:Wolf."
     },
     {
       "name": "Worker's Strike",
@@ -4228,12 +4388,28 @@
       "description": "Put 4 random cards from different Packs from your draw pile into your hand."
     },
     {
+      "name": "Bucket Of Dregs",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. Retain.\nWhen Retained, heal ALL enemies for 6 HP and gain 3 Block."
+    },
+    {
+      "name": "Bucket Of Dregs+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. Retain.\nWhen Retained, heal ALL enemies for 10 HP and gain 5 Block."
+    },
+    {
       "name": "Bug Out",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "anniv5:Infest.\nGain 1 Strength and Dexterity for each infestation counter."
+      "description": "anniv5:Infest.\nGain 1 Strength and Dexterity for each [bugIcon] ."
     },
     {
       "name": "Bug Out+",
@@ -4241,7 +4417,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "0",
-      "description": "anniv5:Infest.\nGain 1 Strength and Dexterity for each infestation counter."
+      "description": "anniv5:Infest.\nGain 1 Strength and Dexterity for each [bugIcon] ."
     },
     {
       "name": "Burning Act",
@@ -4345,7 +4521,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "anniv5:Infest. anniv5:Inscribed.\nDeal 8 damage.\nanniv5:Manifest anniv5:Crescent_Moon for each infestation counter."
+      "description": "anniv5:Infest.\nDeal 8 damage.\nWhen this anniv5:infests anniv5:Manifest anniv5:Crescent_Moon."
     },
     {
       "name": "Chittering Punt+",
@@ -4353,7 +4529,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "anniv5:Infest. anniv5:Inscribed.\nDeal 10 damage.\nanniv5:Manifest anniv5:Crescent_Moon for each infestation counter."
+      "description": "anniv5:Infest.\nDeal 10 damage.\nWhen this anniv5:infests anniv5:Manifest anniv5:Crescent_Moon."
     },
     {
       "name": "Choice Cut",
@@ -4505,7 +4681,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage. Deal damage for all your created Crosses. Shuffle a Cross into your draw pile."
+      "description": "Deal 2 damage twice. Hits one more time for each of your created Crosses. Shuffle a Cross into your draw pile."
     },
     {
       "name": "Cross+",
@@ -4513,7 +4689,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Innate.\nDeal 7 damage. Deal damage for all your created Crosses. Shuffle a Cross+ into your draw pile."
+      "description": "Innate.\nDeal 2 damage twice. Hits one more time for each of your created Crosses. Shuffle a Cross+ into your draw pile."
     },
     {
       "name": "Crossroads",
@@ -4596,20 +4772,20 @@
       "description": "Innate.\nWhenever you draw a Curse card, deal 13 damage to a random enemy."
     },
     {
-      "name": "Cunning",
+      "name": "Cunning Poison",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "2",
-      "description": "Whenever you gain a buff, draw 1 card."
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 Poison to the highest HP enemy.\nIf it dies while Poisoned, steal 12 Gold.\nExhaust."
     },
     {
-      "name": "Cunning+",
+      "name": "Cunning Poison+",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
-      "type": "Power",
+      "type": "Skill",
       "cost": "1",
-      "description": "Whenever you gain a buff, draw 1 card."
+      "description": "Apply 5 Poison to the highest HP enemy.\nIf it dies while Poisoned, steal 15 Gold.\nExhaust."
     },
     {
       "name": "Cursed Circle",
@@ -5001,7 +5177,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "anniv5:Infest.\nDeal 6 damage.\nIf this has an infestation counter, remove it to draw 1 card and gain [E] ."
+      "description": "anniv5:Infest.\nDeal 6 damage.\nIf this has any [bugIcon] , remove it to draw 1 card and gain [E] ."
     },
     {
       "name": "Entomology+",
@@ -5009,7 +5185,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "anniv5:Infest.\nDeal 10 damage.\nIf this has an infestation counter, remove it to draw 1 card and gain [E] ."
+      "description": "anniv5:Infest.\nDeal 10 damage.\nIf this has any [bugIcon] , remove it to draw 1 card and gain [E] ."
     },
     {
       "name": "Epiphany",
@@ -5044,6 +5220,22 @@
       "description": "Gain 12 Block.\nFetch 2 cards from your discard pile and Retain them."
     },
     {
+      "name": "Exhaustive Work",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nChoose a card.\nExhaust that card and add a copy of it to your draw pile."
+    },
+    {
+      "name": "Exhaustive Work+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nChoose a card.\nExhaust that card and add a copy of it to your draw pile."
+    },
+    {
       "name": "Exotic Knowledge",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
@@ -5058,6 +5250,38 @@
       "type": "Skill",
       "cost": "1",
       "description": "Draw 2 cards.\nIf you've played a anniv5:different\u00A0color card this turn, draw 3 more cards."
+    },
+    {
+      "name": "ExperimentalMerge",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nShuffle your discard pile into your draw pile. Draw 1."
+    },
+    {
+      "name": "ExperimentalMerge+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nShuffle your discard pile into your draw pile. Draw 1."
+    },
+    {
+      "name": "Fall",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal anniv5:Front damage equal to the number of cards in your\ndraw pile + 6."
+    },
+    {
+      "name": "Fall+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Innate.\nDeal anniv5:Front damage equal to the number of cards in your\ndraw pile + 6."
     },
     {
       "name": "False Grit",
@@ -5304,16 +5528,16 @@
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "1",
-      "description": "anniv5:Inscribed.\n Gain 10 Block.\nManifest anniv5:Full_Moon."
+      "cost": "2",
+      "description": "anniv5:Inscribed.\nGain 10 Block.\nanniv5:Manifest anniv5:Full_Moon."
     },
     {
       "name": "Full Moon Halo+",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "1",
-      "description": "anniv5:Inscribed.\n Gain 14 Block.\nManifest anniv5:Full_Moon."
+      "cost": "2",
+      "description": "anniv5:Inscribed.\nGain 14 Block.\nanniv5:Manifest anniv5:Full_Moon."
     },
     {
       "name": "Funerary Jewels",
@@ -5481,7 +5705,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever a card is Retained, deal 4 damage to ALL enemies."
+      "description": "Whenever a card is Retained, deal 3 damage to ALL enemies."
     },
     {
       "name": "Hammer Throw+",
@@ -5489,7 +5713,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever a card is Retained, deal 6 damage to ALL enemies."
+      "description": "Whenever a card is Retained, deal 5 damage to ALL enemies."
     },
     {
       "name": "Hand of Gul'dan",
@@ -5561,7 +5785,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 28 Damage.\nWhen ripped, exhaust 3 cards at random."
+      "description": "Deal 18 Damage.\nWhen ripped, exhaust 2 cards at random."
     },
     {
       "name": "Hazardous Strike+",
@@ -5569,7 +5793,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 34 Damage.\nWhen ripped, exhaust 3 cards at random."
+      "description": "Deal 26 Damage.\nWhen ripped, exhaust 2 cards at random."
     },
     {
       "name": "Heart of the Forge",
@@ -5705,7 +5929,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "anniv5:Infest.\nGain 3 block.\nWhen this anniv5:infests, anniv5:Inscribe a random card in your draw pile."
+      "description": "anniv5:Infest.\nGain 3 block.\nWhen this anniv5:infests, Evoke your next orb 3 times and lose and orb slot."
     },
     {
       "name": "Hornet Within+",
@@ -5713,7 +5937,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "anniv5:Infest.\nGain 5 block.\nWhen this anniv5:infests, anniv5:Inscribe a random card in your draw pile."
+      "description": "anniv5:Infest.\nGain 5 block.\nWhen this anniv5:infests, Evoke your next orb 4 times and lose and orb slot."
     },
     {
       "name": "Huge Shackles",
@@ -5881,7 +6105,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Innate.\nGain 5 Block. Discard all Innate cards in your hand and draw 1 card for each card discarded."
+      "description": "Gain 5 Block. Discard all Innate cards in your hand. If you do, next turn, your Attacks deal double damage"
     },
     {
       "name": "Improvise+",
@@ -5889,7 +6113,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Innate.\nGain 8 Block. Discard all Innate cards in your hand and draw 1 card for each card discarded."
+      "description": "Innate.\nGain 5 Block. Discard all Innate cards in your hand. If you do, next turn, your Attacks deal double damage"
     },
     {
       "name": "Inertia",
@@ -5945,7 +6169,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw cards equal to the number of anniv5:Art\u00A0Cards in your exhaust pile.\nExhaust."
+      "description": "Draw cards equal to the number of anniv5:Art and Status Cards in your exhaust pile.\nExhaust."
     },
     {
       "name": "Inspiration+",
@@ -5953,7 +6177,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw cards equal to the number of anniv5:Art\u00A0Cards in your exhaust pile."
+      "description": "Draw cards equal to the number of anniv5:Art and Status Cards in your exhaust pile."
     },
     {
       "name": "Instinctive Thinking",
@@ -6004,6 +6228,22 @@
       "description": "Whenever you spend 2 or more Energy on a card, gain 9 Block."
     },
     {
+      "name": "Iterative Design",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever your create a card this combat gain 6 Block."
+    },
+    {
+      "name": "Iterative Design+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever your create a card this combat gain 8 Block."
+    },
+    {
       "name": "Kill Thirst",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
@@ -6041,7 +6281,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Channel a anniv5:Leprechaun.\nRoll 2d6."
+      "description": "Gain 6 Block.\nChannel a anniv5:Leprechaun."
     },
     {
       "name": "Leprechaun+",
@@ -6049,7 +6289,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Channel a anniv5:Leprechaun.\nRoll 3d6."
+      "description": "Gain 9 Block.\nChannel a anniv5:Leprechaun."
     },
     {
       "name": "Lesser Hex",
@@ -6153,15 +6393,15 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Steal all Artifact from ALL enemies.\nIf there's none, gain 1 Artifact.\nExhaust."
+      "description": "Steal all []Artifact, Plated Armor, []Thorns, and Metallicize from the enemy.\nExhaust."
     },
     {
       "name": "Magnet+",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
-      "description": "Steal all Artifact from ALL enemies.\nIf there's none, gain 1 Artifact.\nExhaust."
+      "cost": "1",
+      "description": "Steal all []Artifact, Plated Armor, []Thorns, and Metallicize from ALL enemies.\nExhaust."
     },
     {
       "name": "Manaburst",
@@ -6194,6 +6434,22 @@
       "type": "Attack",
       "cost": "X",
       "description": "Deal 7 damage X times.\nShuffle a Food into your draw pile."
+    },
+    {
+      "name": "Marvelous Feast",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate. Add in order: anniv5:Croquettes that provide Block, Weak, Strength and Vulnerable to your hand. Once per turn ended."
+    },
+    {
+      "name": "Marvelous Feast+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate. Add in order, upgraded: anniv5:Croquettes that provide Block, Weak, Strength and Vulnerable to your hand. Once per turn ended."
     },
     {
       "name": "Mercury Fist",
@@ -6242,6 +6498,22 @@
       "type": "Skill",
       "cost": "X",
       "description": "Gain 15 Block X times.\nPut X Dazed on top of your draw pile."
+    },
+    {
+      "name": "Mood Swing",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nDiscard 2 cards.\nIf you are in anniv5:Angry, enter Calm. Otherwise, enter anniv5:Angry."
+    },
+    {
+      "name": "Mood Swing+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nDiscard 2 cards.\nIf you are in anniv5:Angry, enter Calm. Otherwise, enter anniv5:Angry."
     },
     {
       "name": "Moonlight Barrage",
@@ -6297,7 +6569,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 15 damage.\nSteal all Plated Armor, []Thorns, and Metallicize from the enemy."
+      "description": "Deal 12 damage.\nSteal all buffs this enemy gains until your next turn."
     },
     {
       "name": "Null Hammer+",
@@ -6305,7 +6577,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 20 damage.\nSteal all Plated Armor, []Thorns, and Metallicize from the enemy."
+      "description": "Deal 16 damage.\nSteal all buffs this enemy gains until your next turn."
     },
     {
       "name": "Odd One",
@@ -6313,7 +6585,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "anniv5:Odd: Deal 11 damage to a random enemy.\nanniv5:Even: Draw a card."
+      "description": "anniv5:Odd: Deal 6 damage to a random enemy.\nanniv5:Even: Draw a card."
     },
     {
       "name": "Odd One+",
@@ -6321,7 +6593,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "anniv5:Odd: Deal 15 damage to a random enemy.\nanniv5:Even: Draw a card."
+      "description": "anniv5:Odd: Deal 10 damage to a random enemy.\nanniv5:Even: Draw a card."
     },
     {
       "name": "One Is Enough",
@@ -6345,7 +6617,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 2 Attacks.\nYou cannot draw additional cards this turn."
+      "description": "Draw 2 cards.\nYou can only play Attacks for the rest of the turn."
     },
     {
       "name": "Open Bracket+",
@@ -6353,7 +6625,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 3 Attacks.\nYou cannot draw additional cards this turn."
+      "description": "Draw 3 cards.\nYou can only play Attacks for the rest of the turn."
     },
     {
       "name": "Optimized Blur",
@@ -6548,6 +6820,22 @@
       "description": "anniv5:Flow.\nAt the start of your next turn, anniv5:Flow."
     },
     {
+      "name": "Pocket Tournament",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Next turn, randomly, 2X times:\nDraw 1 card, gain [E] , gain 1 Strength or gain 3 Block.\nExhaust."
+    },
+    {
+      "name": "Pocket Tournament+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Next turn, randomly, 2X+2 times:\nDraw 1 card, gain [E] , gain 1 Strength or gain 3 Block.\nExhaust."
+    },
+    {
       "name": "PocketAce",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
@@ -6562,6 +6850,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "Draw 4 cards.\nDiscard 3 cards.\nExhaust."
+    },
+    {
+      "name": "Polishing",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an Attack, increase its damage by 4 this combat."
+    },
+    {
+      "name": "Polishing+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an Attack, increase its damage by 6 this combat."
     },
     {
       "name": "Potential",
@@ -6689,7 +6993,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Channel a anniv5:Rainbow\u00A0Louse.\nDraw a card."
+      "description": "Channel a anniv5:Rainbow\u00A0Louse.\nDraw 1 card."
     },
     {
       "name": "Ray Of Frost",
@@ -6801,7 +7105,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "At the start of your turn, gain a card from a Pack not available to your draft.\nIt gains Ethereal."
+      "description": "At the start of your turn, gain a card from a Pack not available in your draft.\nIt gains Ethereal."
     },
     {
       "name": "Retromation+",
@@ -6809,7 +7113,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "0",
-      "description": "At the start of your turn, gain a card from a Pack not available to your draft.\nIt gains Ethereal."
+      "description": "At the start of your turn, gain a card from a Pack not available in your draft.\nIt gains Ethereal."
     },
     {
       "name": "Ring the Bell",
@@ -6857,7 +7161,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Take 4 damage.\nChannel 3 Lightning"
+      "description": "Take 2 damage.\nChannel 2 Lightning"
     },
     {
       "name": "Scarab Shield",
@@ -6865,7 +7169,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "anniv5:Infest.\nGain 15 Block.\nGain 1 Artifact for each infestation counter."
+      "description": "anniv5:Infest.\nGain 15 Block.\nGain 1 Artifact for each [bugIcon] ."
     },
     {
       "name": "Scarab Shield+",
@@ -6873,7 +7177,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "anniv5:Infest.\nGain 20 Block.\nGain 1 Artifact for each infestation counter."
+      "description": "anniv5:Infest.\nGain 20 Block.\nGain 1 Artifact for each [bugIcon] ."
     },
     {
       "name": "Searing Claw",
@@ -6961,7 +7265,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Take 3 damage.\nGain 13 Block.\nChannel anniv5:Light"
+      "description": "Gain 8 Block.\nChannel anniv5:Light"
     },
     {
       "name": "Searing Light+",
@@ -6969,7 +7273,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Take 1 damage.\nGain 13 Block.\nChannel anniv5:Light"
+      "description": "Gain 8 Block.\nChannel anniv5:Light"
     },
     {
       "name": "Seeds of Destruction",
@@ -7188,6 +7492,22 @@
       "description": "At the start of your turn, gain [E] .\nAdd a Wound into your hand."
     },
     {
+      "name": "Small Adaptation",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nChoose a card that costs 1 or 0.\nAdd a copy of that card into your hand."
+    },
+    {
+      "name": "Small Adaptation+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nChoose a card that costs 1 or 0.\nAdd a copy of that card into your hand."
+    },
+    {
       "name": "Smoke Pellets",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
@@ -7273,7 +7593,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Add a Fertilizer to your hand.\nPut 2 random cards with different types from your draw pile into your hand."
+      "description": "Gain a Fertilizer.\nFetch 2 random cards with different types from your draw pile."
     },
     {
       "name": "Sow The Seeds+",
@@ -7281,7 +7601,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Add a Fertilizer to your hand.\nPut 3 random cards with different types from your draw pile into your hand."
+      "description": "Gain a Fertilizer.\nFetch 3 random cards with different types from your draw pile."
     },
     {
       "name": "Spike Trap",
@@ -7330,6 +7650,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Ethereal.\nWhen this card is drawn, draw 3 cards."
+    },
+    {
+      "name": "Stance Dance",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nEnter a random Stance.\nExhaust."
+    },
+    {
+      "name": "Stance Dance+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nEnter a random Stance."
     },
     {
       "name": "Stardust Reverie",
@@ -7604,6 +7940,22 @@
       "description": "Gain 18 Block.\nGain 1 Strength."
     },
     {
+      "name": "Top of the Sky",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 2 damage.\nGain 2 Block.\nReturns to your hand on play. Exhaustive 2."
+    },
+    {
+      "name": "Top of the Sky+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 2 damage.\nGain 2 Block.\nReturns to your hand on play. Exhaustive 3."
+    },
+    {
       "name": "Total Weakness",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
@@ -7666,6 +8018,22 @@
       "type": "Attack",
       "cost": "1",
       "description": "Deal 10 damage to ALL enemies.\nanniv5:Critical_Hit if you hold 6 or more cards."
+    },
+    {
+      "name": "Turtle",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nYour next Attack deals anniv5:Feral damage."
+    },
+    {
+      "name": "Turtle+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nYour next Attack deals anniv5:Feral damage."
     },
     {
       "name": "Twin Claw",
@@ -7796,6 +8164,22 @@
       "description": "anniv5:Inscribed.\nGain 6 Block.\nChannel a anniv5:Wanderbot."
     },
     {
+      "name": "War Song",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable.\nGain 3 Vigor."
+    },
+    {
+      "name": "War Song+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Vulnerable.\nGain 4 Vigor."
+    },
+    {
       "name": "Weight of Contrition",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
@@ -7860,6 +8244,22 @@
       "description": "Retain.\nDiscard your hand. Draw a card and set your Energy to its cost."
     },
     {
+      "name": "Work Hammer",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 anniv5:Front damage.\nGive enemy 2 Plated Armor."
+    },
+    {
+      "name": "Work Hammer+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 anniv5:Front damage.\nGive enemy 2 Plated Armor."
+    },
+    {
       "name": "Za Hando",
       "color": "Packmaster_rainbow",
       "rarity": "Uncommon",
@@ -7881,7 +8281,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 4 anniv5:Penance. Whenever you take damage this combat, increase anniv5:Penance HP loss by 5 this combat."
+      "description": "Apply 4 anniv5:Penance.\nWhenever a creature is damaged by anniv5:Penance this turn apply 2 Weak."
     },
     {
       "name": "Absolution+",
@@ -7889,7 +8289,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 6 anniv5:Penance. Whenever you take damage this combat, increase anniv5:Penance HP loss by 9 this combat."
+      "description": "Apply 6 anniv5:Penance.\nWhenever a creature is damaged by anniv5:Penance this turn apply 3 Weak."
     },
     {
       "name": "Alclawmize",
@@ -7988,6 +8388,22 @@
       "description": "When you enter, exit, or start your turn in anniv5:Aggression, gain 2 Strength."
     },
     {
+      "name": "Arrow Storm",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Exhaust all Attack cards in your hand.\nIf you exhausted a card, deal 12 damage to ALL enemies 3 times."
+    },
+    {
+      "name": "Arrow Storm+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Exhaust all Attack cards in your hand.\nIf you exhausted a card, deal 16 damage to ALL enemies 3 times."
+    },
+    {
       "name": "Art Attack",
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
@@ -8057,7 +8473,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "anniv5:Infest.\nDeal 1 damage 6 times.\nDeals 1 additional damage for each infestation counter."
+      "description": "anniv5:Infest.\nDeal 1 damage 6 times.\nDeals 1 additional damage for each [bugIcon] ."
     },
     {
       "name": "BEES!!!+",
@@ -8065,7 +8481,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "anniv5:Infest.\nDeal 1 damage 8 times.\nDeals 1 additional damage for each infestation counter."
+      "description": "anniv5:Infest.\nDeal 1 damage 8 times.\nDeals 1 additional damage for each [bugIcon] ."
     },
     {
       "name": "Baalorlord's Bash",
@@ -8098,6 +8514,22 @@
       "type": "Skill",
       "cost": "2",
       "description": "Retain.\nChoose a card in your hand and permanently give it Innate. Remove this from your deck, permanently."
+    },
+    {
+      "name": "Bolas",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply Slow.\nGive enemy 3 Block.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Bolas+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply Slow.\nGive enemy 1 Block.\nDraw 2 card.\nExhaust."
     },
     {
       "name": "Bulwark",
@@ -8377,7 +8809,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Your Innate cards Refund 1."
+      "description": "Once each turn, playing an Innate card Refunds 1."
     },
     {
       "name": "Debut+",
@@ -8385,7 +8817,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Innate.\nYour Innate cards Refund 1."
+      "description": "Innate.\nOnce each turn, playing an Innate card Refunds 1."
     },
     {
       "name": "Deep Dream",
@@ -8500,6 +8932,22 @@
       "description": "Deal 6 damage. Deals 3 additional damage for each card in your exhaust pile."
     },
     {
+      "name": "Drone Swarm",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Raise your hand size this turn by 4.\nDraw 3 cards."
+    },
+    {
+      "name": "Drone Swarm+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Raise your hand size this turn by 5.\nDraw 4 cards."
+    },
+    {
       "name": "Dust Tornado",
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
@@ -8532,6 +8980,22 @@
       "description": "After you gain anniv5:Charge\u00A0Up, deal damage equal to 3 times its total to ALL enemies."
     },
     {
+      "name": "Electromagnetic Burst",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you gain Block, deal 8 damage to a random enemy."
+    },
+    {
+      "name": "Electromagnetic Burst+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you gain Block, deal 11 damage to a random enemy."
+    },
+    {
       "name": "End of Days",
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
@@ -8546,6 +9010,22 @@
       "type": "Power",
       "cost": "1",
       "description": "Gain 2 Focus.\nAt end of turn, Channel a Dark for each [E] unspent."
+    },
+    {
+      "name": "Energy Drink",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 8 stslib:Temporary_HP. Gain 1 anniv5:Duplication for every 10 cards you shuffle into your draw pile."
+    },
+    {
+      "name": "Energy Drink+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 8 stslib:Temporary_HP. Gain 1 anniv5:Duplication for every 10 cards you shuffle into your draw pile."
     },
     {
       "name": "Enigmancy",
@@ -8610,6 +9090,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "anniv5:Modify a card in your discard pile: \"Ethereal.\" and \"Remove Exhaust.\"\nExhaust."
+    },
+    {
+      "name": "FF Blade",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 anniv5:Feral and anniv5:Front damage."
+    },
+    {
+      "name": "FF Blade+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 anniv5:Feral and anniv5:Front damage."
     },
     {
       "name": "Fast Hands",
@@ -8776,16 +9272,16 @@
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "2",
-      "description": "Gain 2 anniv5:Confession.\nanniv5:Manifest Lightning equal to your anniv5:Confession.\nExhaust"
+      "cost": "1",
+      "description": "Take 1 damage.\nReturn this from the discard pile to your hand whenever you gain anniv5:Confession"
     },
     {
       "name": "Holy Wrath+",
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "1",
-      "description": "Gain 2 anniv5:Confession.\nanniv5:Manifest Lightning equal to your anniv5:Confession.\nExhaust"
+      "cost": "0",
+      "description": "Take 1 damage.\nReturn this from the discard pile to your hand whenever you gain anniv5:Confession"
     },
     {
       "name": "Horizonbound",
@@ -8857,7 +9353,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "anniv5:Manifest 2 Lightning.\nWhenever you channel Lightning gain 4 anniv5:Confession."
+      "description": "anniv5:Manifest 2 Lightning.\nWhenever a Lightning orbs passive effect activates gain 1 anniv5:Confession."
     },
     {
       "name": "Judgement Day+",
@@ -8865,7 +9361,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "anniv5:Manifest 3 Lightning.\nWhenever you channel Lightning gain 6 anniv5:Confession."
+      "description": "anniv5:Manifest 3 Lightning.\nWhenever a Lightning orbs passive effect activates gain 3 anniv5:Confession."
     },
     {
       "name": "Killer Instinct",
@@ -8921,7 +9417,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Exhaust ALL your Art and Status cards. Gain 1 Strength for each card Exhausted."
+      "description": "Exhaust ALL your anniv5:Art and Status cards. Gain 1 Strength for each card Exhausted."
     },
     {
       "name": "Left Brain+",
@@ -8929,7 +9425,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "anniv5:Unnate.\nExhaust ALL your Art and Status cards. Gain 1 Strength for each card Exhausted."
+      "description": "anniv5:Unnate.\nExhaust ALL your anniv5:Art and Status cards. Gain 1 Strength for each card Exhausted."
     },
     {
       "name": "Level Up!",
@@ -8969,7 +9465,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Draw 1 additional card each turn.\nWhen your cards anniv5:Infest, put an additional counter on them."
+      "description": "Draw 1 additional card each turn.\nWhen your cards anniv5:Infest, put an additional [bugIcon] on them."
     },
     {
       "name": "Lord of the Flies+",
@@ -8977,7 +9473,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "0",
-      "description": "Draw 1 additional card each turn.\nWhen your cards anniv5:Infest, put an additional counter on them."
+      "description": "Draw 1 additional card each turn.\nWhen your cards anniv5:Infest, put an additional [bugIcon] on them."
     },
     {
       "name": "Luciferium",
@@ -9026,6 +9522,22 @@
       "type": "Power",
       "cost": "3",
       "description": "Raise your Strength\nto 11."
+    },
+    {
+      "name": "Magic Hand",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 cards from your master deck to add to your hand.\nIt costs 0 this turn and exhausts."
+    },
+    {
+      "name": "Magic Hand+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Choose 1 of 3 cards from your master deck to add to your hand.\nIt costs 0 this turn."
     },
     {
       "name": "Magnum Opus",
@@ -9524,6 +10036,22 @@
       "description": "Deal 35 damage.\nApply 6 anniv5:Ignite."
     },
     {
+      "name": "Ragnarok 'n Roll",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 5 damage to a random enemy 5 times.\nExit your Stance."
+    },
+    {
+      "name": "Ragnarok 'n Roll+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 6 damage to a random enemy 6 times.\nExit your Stance."
+    },
+    {
       "name": "Rare Strike",
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
@@ -9586,6 +10114,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "Shuffle a copy of your hand into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Reduce Overhead",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Exhaust ALL cards that have duplicates.\nDeal 7 damage for each card exhausted.\nExhaust."
+    },
+    {
+      "name": "Reduce Overhead+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust ALL cards that have duplicates.\nDeal 7 damage for each card exhausted.\nExhaust."
     },
     {
       "name": "Release Valve",
@@ -9796,6 +10340,22 @@
       "description": "Exhaust.\nWhen this is Exhausted, shuffle a Souleater Strike+ into your draw pile."
     },
     {
+      "name": "Serenity",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nEnter anniv5:Serene."
+    },
+    {
+      "name": "Serenity+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nEnter anniv5:Serene."
+    },
+    {
       "name": "Shatter",
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
@@ -9976,7 +10536,7 @@
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "3",
+      "cost": "2",
       "description": "Your attacks costs 0 this turn. You cannot play non-Attacks this turn."
     },
     {
@@ -9984,7 +10544,7 @@
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
       "type": "Skill",
-      "cost": "2",
+      "cost": "1",
       "description": "Your attacks costs 0 this turn. You cannot play non-Attacks this turn."
     },
     {
@@ -10041,7 +10601,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Add a Fertilizer to your hand at the start of each turn."
+      "description": "Gain a Fertilizer at the start of each turn."
     },
     {
       "name": "Supply Chain+",
@@ -10049,7 +10609,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Innate.\nAdd a Fertilizer to your hand at the start of each turn."
+      "description": "Innate.\nGain a Fertilizer at the start of each turn."
     },
     {
       "name": "Surge",
@@ -10082,6 +10642,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Draw 3 cards.\nWhen ripped,\ngain [E] [E]."
+    },
+    {
+      "name": "Swagger",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "If you end your turn in a Stance, gain 1 Strength and Dexterity."
+    },
+    {
+      "name": "Swagger+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nIf you end your turn in a Stance, gain 1 Strength and Dexterity."
     },
     {
       "name": "Tectonic Quake",
@@ -10148,6 +10724,22 @@
       "description": "Draw 4 cards.\nGive them Ethereal.\nExhaust."
     },
     {
+      "name": "The Suckamid",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal 8 HP.\nRetain your hand for 2 turns.\nExhaust."
+    },
+    {
+      "name": "The Suckamid+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Heal 12 HP.\nRetain your hand for 3 turns.\nExhaust."
+    },
+    {
       "name": "The Sun",
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
@@ -10169,7 +10761,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you steal something, gain 100% more of it."
+      "description": "Whenever you steal something, gain 100% more of it.\n(Does not stack)"
     },
     {
       "name": "Thievery Mastery+",
@@ -10177,7 +10769,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Innate.\nWhenever you steal something, gain 100% more of it."
+      "description": "Innate.\nWhenever you steal something, gain 100% more of it.\n(Does not stack)"
     },
     {
       "name": "This Isn't Even My...",
@@ -10249,7 +10841,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "At the start of your turn Evoke your next orb 2 times."
+      "description": "At the end of your turn Evoke your next orb 2 times."
     },
     {
       "name": "Training+",
@@ -10257,7 +10849,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "At the start of your turn Evoke your next orb 3 times."
+      "description": "At the end of your turn Evoke your next orb 3 times."
     },
     {
       "name": "Tranquilizer Bomb",
@@ -10388,6 +10980,22 @@
       "description": "Whenever an enemy deals only blocked damage, deal 14 damage to it."
     },
     {
+      "name": "Voracious Sigil",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "anniv5:Absorb a random Skill in your hand. Play all the cards this has anniv5:Absorbed."
+    },
+    {
+      "name": "Voracious Sigil+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Innate.\nanniv5:Absorb a random Skill in your hand. Play all the cards this has anniv5:Absorbed."
+    },
+    {
       "name": "Waning",
       "color": "Packmaster_rainbow",
       "rarity": "Rare",
@@ -10425,7 +11033,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [E].\nDiscard any number of cards in your hand. Draw that many card.\nExhaust."
+      "description": "Gain [E].\nDiscard any number of cards in your hand. Draw that many cards.\nExhaust."
     },
     {
       "name": "Wisdom+",
@@ -10433,7 +11041,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [E] [E].\nDiscard any number of cards in your hand. Draw that many card.\nExhaust."
+      "description": "Gain [E] [E].\nDiscard any number of cards in your hand. Draw that many cards.\nExhaust."
     },
     {
       "name": "Witch Twist",
@@ -10441,7 +11049,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Inscribed.\nanniv5:Inscribe 2 random cards in your hand.\nGain 1 Focus."
+      "description": "anniv5:Inscribed.\nanniv5:Modify 2 random cards in your hand : anniv5:Inscribed.\nGain 1 Focus.\nExhaust"
     },
     {
       "name": "Witch Twist+",
@@ -10449,7 +11057,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Inscribed.\nanniv5:Inscribe 3 random cards in your hand.\nGain 2 Focus."
+      "description": "anniv5:Inscribed.\nanniv5:Modify 3 random cards in your hand : anniv5:Inscribed.\nGain 2 Focus.\nExhaust"
     },
     {
       "name": "Witchcraft",
@@ -10457,7 +11065,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Steal 4 HP from the enemy. If Fatal, obtain a Potion that gives 8 Temporary_HP.\nExhaust."
+      "description": "Steal 5 HP from the enemy. If Fatal, obtain a Potion that gives 8 Temporary_HP.\nExhaust."
     },
     {
       "name": "Witchcraft+",
@@ -10465,7 +11073,23 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Steal 6 HP from the enemy. If Fatal, obtain a Potion that gives 8 Temporary_HP.\nExhaust."
+      "description": "Steal 7 HP from the enemy. If Fatal, obtain a Potion that gives 8 Temporary_HP.\nExhaust."
+    },
+    {
+      "name": "Xpansion",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X anniv5:Duplication.\nExhaust."
+    },
+    {
+      "name": "Xpansion+",
+      "color": "Packmaster_rainbow",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X anniv5:Duplication."
     }
   ],
   "relics": [
@@ -10473,7 +11097,7 @@
       "name": "Handy Haversack",
       "tier": "Starter",
       "pool": "Packmaster_rainbow",
-      "description": "At the start of each combat:\nGain [E] if you have 10 or more cards in your deck.\nDraw 1 card if you have 20 or more cards in your deck.",
+      "description": "At the start of each combat, gain [E] and draw 1 card.",
       "flavorText": "Helps heroic hoarders handle hindrances."
     },
     {
@@ -10486,7 +11110,7 @@
     {
       "name": "P.M. Booster Pack",
       "tier": "Common",
-      "pool": "Packmaster_rainbow",
+      "pool": "",
       "description": "Upon pickup, you may add any one card from a random Packmaster Booster to your deck.",
       "flavorText": "A package of cards in a foil wrapper. How did it end up in the Spire?"
     },
@@ -10512,16 +11136,9 @@
       "flavorText": "A small elemental furnace, generates enough heat and energy to destroy a mountain."
     },
     {
-      "name": "Collector Badge",
-      "tier": "Rare",
-      "pool": "Packmaster_rainbow",
-      "description": "At the start of each turn, if you played a card from 4 different Booster Packs the previous turn, gain [E] .",
-      "flavorText": "Gotta collect 'em all."
-    },
-    {
       "name": "P.M. Booster Box",
       "tier": "Rare",
-      "pool": "Packmaster_rainbow",
+      "pool": "",
       "description": "Upon pickup, choose 1 of 3 Packmaster Boosters, three times. Earn one additional card reward from these boosters at the end of each combat.",
       "flavorText": "Better price for buying in bulk."
     },
@@ -10531,6 +11148,13 @@
       "pool": "Packmaster_rainbow",
       "description": "Replaces Handy Haversack.\nGain [E] at the start of each turn, lasting one turn for every 5 cards in your deck.",
       "flavorText": "\"Incredible! It appears that this bag connects to an extradimensional space. What if I jump inside?\" - Ranwid"
+    },
+    {
+      "name": "Collector Badge",
+      "tier": "Boss",
+      "pool": "Packmaster_rainbow",
+      "description": "Each turn, after you play a card from 4 different Packs, gain [E].",
+      "flavorText": "Gotta collect 'em all."
     },
     {
       "name": "Banishing Decree",
@@ -10549,7 +11173,7 @@
     {
       "name": "P.M. Collection",
       "tier": "Shop",
-      "pool": "Packmaster_rainbow",
+      "pool": "",
       "description": "Upon pickup, you may add each card from a random Packmaster Booster to your deck.",
       "flavorText": "Said to have been assembled by a consortium of wizards."
     },
@@ -10557,7 +11181,7 @@
       "name": "Tarred Feather",
       "tier": "Shop",
       "pool": "Packmaster_rainbow",
-      "description": "Raise you max hand size by 2.\nAt the start of each combat, add 2 Weights into your hand.",
+      "description": "Raise your max hand size by 2.\nAt the start of each combat, add 2 Weights into your hand.",
       "flavorText": "You wouldn't want to meet its previous wearer."
     }
   ],
@@ -10614,15 +11238,19 @@
   "keywords": [
     {
       "name": "Confession",
-      "description": "Whenever you take damage, deal damage equal to your Confession to all enemies"
+      "description": "Whenever you take damage or lose hp, deal damage equal to your Confession to all enemies.\nIf it isn't your turn reduce Confession by half."
     },
     {
       "name": "Crescent Moon",
-      "description": "Orb. Passive : Deals damage to a random enemy when activated by a cards effect. Evokes after activating 4 times. Evoke : Deal damage to a random enemy for each remaining activation and lose and orb slot"
+      "description": "Orb. Passive : Deals damage to a random enemy when activated by a cards effect. Evokes after activating 4 times. Evoke : Deal damage to a random enemy"
     },
     {
       "name": "Critical Hit",
       "description": "Critical Hits deal 50% more damage."
+    },
+    {
+      "name": "Croquette",
+      "description": "A Retained 0 cost consumable tokens that provides a resource."
     },
     {
       "name": "Enchantment",
@@ -10634,7 +11262,7 @@
     },
     {
       "name": "Full Moon",
-      "description": "Orb. Passive : Draw a card when activated by a cards effect. Evokes after activating 4 times. Evoke : Draw a card for each remaining activation and lose and orb slot"
+      "description": "Orb. Passive : Draw a card when activated by a cards effect. Evokes after activating 4 times. Evoke : Draw a card"
     },
     {
       "name": "Glass Armor",
@@ -10646,7 +11274,7 @@
     },
     {
       "name": "Light",
-      "description": "Orb - Gain Confession and take damage."
+      "description": "Orb - Passive : At the end of your turn gain 1 Confession.\nEvoke : Gain 3 Confession."
     },
     {
       "name": "Penance",
@@ -10689,6 +11317,10 @@
       "description": "Stance: If you have less than 6 Plated Armor at the start of your turn, gain 2 Plated Armor.\nWhen you leave this Stance, gain 1 Artifact."
     },
     {
+      "name": "Angry",
+      "description": "Your Attacks deal 50% more damage and you take 50% more damage from attacks. Upon exiting this Stance, gain 3 Vigor."
+    },
+    {
       "name": "Art Card",
       "description": "The art half of a ripped card. It does nothing and always exhausts."
     },
@@ -10729,6 +11361,10 @@
       "description": "Creatures with Distortion lose HP whenever a card is Exhausted."
     },
     {
+      "name": "Duplication",
+      "description": "Your next X cards are played twice."
+    },
+    {
       "name": "Echo",
       "description": "Add a copy of this card with Exhaust and Ethereal to your hand."
     },
@@ -10749,12 +11385,20 @@
       "description": "Evolving cards can be upgraded up to 3 times. They are upgraded this combat whenever the listed condition is met while the card is in your hand and gain bonus effects when fully upgraded."
     },
     {
+      "name": "Feral damage",
+      "description": "Deals 50% additional damage to enemies with a debuff."
+    },
+    {
       "name": "Flow",
       "description": "When you Flow, you may discard any number of cards. Draw that many at the start of your next turn."
     },
     {
       "name": "Flurry",
       "description": "Specified effect triggers every time you play a card this turn."
+    },
+    {
+      "name": "Front damage",
+      "description": "Deals 50% additional damage to enemies with Block."
     },
     {
       "name": "Frostbite",
@@ -10766,7 +11410,7 @@
     },
     {
       "name": "Hoard",
-      "description": "When played, reduce Hoard by X (the card's cost). When Hoard reaches 0, its effects trigger."
+      "description": "When played, reduce Hoard by $bX (the card's cost). When Hoard reaches $b0, its effects trigger."
     },
     {
       "name": "Hunted",
@@ -10883,6 +11527,10 @@
     {
       "name": "Ruin",
       "description": "The next time a creature with Ruin takes unblocked attack damage, they lose HP equal to their Ruin."
+    },
+    {
+      "name": "Serene",
+      "description": "At the end of your turn, gain Block equal to 50% of your Block. Upon exiting this Stance, gain 1 Dexterity."
     },
     {
       "name": "Sharpen",
