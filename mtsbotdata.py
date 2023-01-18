@@ -10,6 +10,7 @@ aliases = {
     "hydrologist": ["hydrologistmod"],
     "challengethespire": ["challenge the spire", "cts"],
     "basegame": ["sts", "base", "slaythespire"],
+    "anniv5": ["packmaster"],
 }
 
 suggestables = {
