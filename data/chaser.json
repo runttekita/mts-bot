@@ -1,0 +1,1449 @@
+{
+  "mod": {
+    "name": "TheChaser",
+    "version": "1.24",
+    "authors": ["FastCat"],
+    "credits": "Basemod, ModTheSpire, #modding",
+    "description": "A character mod adds The Chaser!",
+    "mts_version": "3.19.1",
+    "sts_version": "02-22-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Bloody Wind",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 thechaser:Bleeding to ALL enemies."
+    },
+    {
+      "name": "Bloody Wind+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 thechaser:Bleeding to ALL enemies."
+    },
+    {
+      "name": "Camouflage",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 thechaser:Proxy 3 times."
+    },
+    {
+      "name": "Camouflage+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 thechaser:Proxy 4 times."
+    },
+    {
+      "name": "Followup Slash",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal. Deal 2 damage twice.\nExhaust."
+    },
+    {
+      "name": "Followup Slash+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal. Deal 3 damage twice.\nExhaust."
+    },
+    {
+      "name": "Knife Throw",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Trigger thechaser:Targeting 3 times."
+    },
+    {
+      "name": "Knife Throw+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Trigger thechaser:Targeting 4 times."
+    },
+    {
+      "name": "Sequence Flow",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal. Deal 2 damage.\nExhaust."
+    },
+    {
+      "name": "Sequence Flow+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal. Deal 3 damage.\nExhaust."
+    },
+    {
+      "name": "Throwing Knife",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal.\nDeal 3 damage to a random enemy. Enemies affected by thechaser:Targeting are prioritized. Exhaust."
+    },
+    {
+      "name": "Throwing Knife+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal.\nDeal 5 damage to a random enemy. Enemies affected by thechaser:Targeting are prioritized. Exhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Color_chaser",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Color_chaser",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Flawed Stealth",
+      "color": "Color_chaser",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 Frail."
+    },
+    {
+      "name": "Flawed Stealth+",
+      "color": "Color_chaser",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nGain 1 Frail."
+    },
+    {
+      "name": "Reactive Shot",
+      "color": "Color_chaser",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage and apply 2 thechaser:Targeting to a random enemy."
+    },
+    {
+      "name": "Reactive Shot+",
+      "color": "Color_chaser",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage and apply 3 thechaser:Targeting to a random enemy."
+    },
+    {
+      "name": "Strike",
+      "color": "Color_chaser",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Color_chaser",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Aggravate",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nTrigger thechaser:Bleeding once on all enemies affected by thechaser:Bleeding."
+    },
+    {
+      "name": "Aggravate+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nTrigger thechaser:Bleeding once on all enemies affected by thechaser:Bleeding."
+    },
+    {
+      "name": "Alertness",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nGain thechaser:Proxy 1 times.\nthechaser:Quickstep 1."
+    },
+    {
+      "name": "Alertness+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nGain thechaser:Proxy 2 times.\nthechaser:Quickstep 2."
+    },
+    {
+      "name": "Blitzkrieg",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nApply 1 thechaser:Blindsided."
+    },
+    {
+      "name": "Blitzkrieg+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nApply 2 thechaser:Blindsided."
+    },
+    {
+      "name": "Brass Tacks",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 7 thechaser:Bleeding."
+    },
+    {
+      "name": "Brass Tacks+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 10 thechaser:Bleeding."
+    },
+    {
+      "name": "Continuous Slash",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage twice.\nthechaser:Swift: Add 1 Followup Slash into your hand."
+    },
+    {
+      "name": "Continuous Slash+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage twice.\nthechaser:Swift: Add 1 Followup Slash+ into your hand."
+    },
+    {
+      "name": "Draw Knives",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 Throwing Knife into your hand."
+    },
+    {
+      "name": "Draw Knives+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 4 Throwing Knife into your hand."
+    },
+    {
+      "name": "Fatal Blitz",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nApply 5 thechaser:Bleeding."
+    },
+    {
+      "name": "Fatal Blitz+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\nApply 7 thechaser:Bleeding."
+    },
+    {
+      "name": "Illusionary Strike",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nIf you are Weak, gain [E] [E]."
+    },
+    {
+      "name": "Illusionary Strike+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nIf you are Weak, gain [E] [E]."
+    },
+    {
+      "name": "Inertial Strike",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDeals additional damage equal to the amount of cards played this turn."
+    },
+    {
+      "name": "Inertial Strike+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDeals additional damage equal to the amount of cards played this turn."
+    },
+    {
+      "name": "Leave a Mark",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage and apply 1 thechaser:Targeting to ALL enemies."
+    },
+    {
+      "name": "Leave a Mark+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage and apply 1 thechaser:Targeting to ALL enemies."
+    },
+    {
+      "name": "Malicious Trick",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nTrigger thechaser:Targeting 2 times."
+    },
+    {
+      "name": "Malicious Trick+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nTrigger thechaser:Targeting 3 times."
+    },
+    {
+      "name": "Nullify Defenses",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 thechaser:Blindsided and thechaser:Targeting to ALL enemies."
+    },
+    {
+      "name": "Nullify Defenses+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 thechaser:Blindsided and thechaser:Targeting to ALL enemies."
+    },
+    {
+      "name": "Open Vein",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 4 thechaser:Bleeding."
+    },
+    {
+      "name": "Open Vein+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 5 thechaser:Bleeding."
+    },
+    {
+      "name": "Pass Through",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. If you have played an Attack on an enemy affected by thechaser:Targeting this turn, draw 2 cards."
+    },
+    {
+      "name": "Pass Through+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block. If you have played an Attack on an enemy affected by thechaser:Targeting this turn, draw 2 cards."
+    },
+    {
+      "name": "Preparation",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards. If this card is the first card you play this turn, draw 1 more card."
+    },
+    {
+      "name": "Preparation+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards. If this card is the first card you play this turn, draw 1 more card."
+    },
+    {
+      "name": "Pursuit",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Draw 1 card for each enemy affected by thechaser:Targeting."
+    },
+    {
+      "name": "Pursuit+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. Draw 1 card for each enemy affected by thechaser:Targeting."
+    },
+    {
+      "name": "Stalling",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGain thechaser:Proxy 1 times.\nthechaser:Quickstep 1."
+    },
+    {
+      "name": "Stalling+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain thechaser:Proxy 2 times.\nthechaser:Quickstep 2."
+    },
+    {
+      "name": "Thornmail",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nApply 3 thechaser:Bleeding to ALL enemies."
+    },
+    {
+      "name": "Thornmail+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nApply 4 thechaser:Bleeding to ALL enemies."
+    },
+    {
+      "name": "Watch",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 thechaser:Targeting.\nExhaust."
+    },
+    {
+      "name": "Watch+",
+      "color": "Color_chaser",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 8 thechaser:Targeting.\nExhaust."
+    },
+    {
+      "name": "Armorslayer",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove ALL stacks of thechaser:Targeting on the enemy. Apply Vulnerable, Weak, and thechaser:Bleeding equal to the amount removed. Exhaust."
+    },
+    {
+      "name": "Armorslayer+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply Vulnerable, Weak, and thechaser:Bleeding equal to the amount of thechaser:Targeting on the enemy. Exhaust."
+    },
+    {
+      "name": "Blade Genesis",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a Skill that doesn't cost 0, add 1 Throwing Knife to your hand."
+    },
+    {
+      "name": "Blade Genesis+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a Skill that doesn't cost 0, add 1 Throwing Knife to your hand."
+    },
+    {
+      "name": "Chaser's Luck",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nthechaser:Swift: Reduce the cost of a random card in your hand to 0 this turn."
+    },
+    {
+      "name": "Chaser's Luck+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block.\nthechaser:Swift: Reduce the cost of a random card in your hand to 0 this turn."
+    },
+    {
+      "name": "Chaser's Trick",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nIf it's an Attack, trigger thechaser:Targeting 2 times."
+    },
+    {
+      "name": "Chaser's Trick+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nIf it's an Attack, trigger thechaser:Targeting 3 times."
+    },
+    {
+      "name": "Combat Spacing",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you trigger thechaser:Targeting, gain 1 Block."
+    },
+    {
+      "name": "Combat Spacing+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you trigger thechaser:Targeting, gain 2 Block."
+    },
+    {
+      "name": "Counter Manoeuvre",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 6 Block X times. Trigger thechaser:Targeting X times."
+    },
+    {
+      "name": "Counter Manoeuvre+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 8 Block X times. Trigger thechaser:Targeting X times."
+    },
+    {
+      "name": "Deceptive Defense",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf you are Frail, double the amount of Block gained."
+    },
+    {
+      "name": "Deceptive Defense+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf you are Frail, triple the amount of Block gained."
+    },
+    {
+      "name": "Deceptive Strike",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf you are Weak, deal double damage."
+    },
+    {
+      "name": "Deceptive Strike+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf you are Weak, deal triple damage."
+    },
+    {
+      "name": "Disguise",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nRepeat for each unique debuff on you."
+    },
+    {
+      "name": "Disguise+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nRepeat for each unique debuff on you."
+    },
+    {
+      "name": "Evasive Fall",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 15 Block.\nGain 2 Weak."
+    },
+    {
+      "name": "Evasive Fall+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 18 Block.\nGain 1 Weak."
+    },
+    {
+      "name": "Flexibility",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose two:\nTrigger thechaser:Targeting 3 times; gain thechaser:Proxy 3 times; apply 3 thechaser:Bleeding to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Flexibility+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Choose two:\nTrigger thechaser:Targeting 4 times; gain thechaser:Proxy 4 times; apply 4 thechaser:Bleeding to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Gale Strike",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 3 damage X times to ALL enemies. Trigger thechaser:Targeting X times."
+    },
+    {
+      "name": "Gale Strike+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 6 damage X times to ALL enemies. Trigger thechaser:Targeting X times."
+    },
+    {
+      "name": "Gore Scars",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nIf the enemy has thechaser:Bleeding, trigger it once."
+    },
+    {
+      "name": "Gore Scars+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nIf the enemy has thechaser:Bleeding, trigger it twice."
+    },
+    {
+      "name": "Grand Plan",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to yourself, gain 1 Strength."
+    },
+    {
+      "name": "Grand Plan+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to yourself, gain 2 Strength."
+    },
+    {
+      "name": "Hack Away",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage 6 times."
+    },
+    {
+      "name": "Hack Away+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage 6 times."
+    },
+    {
+      "name": "Hidden Dagger",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block. Add 1 Throwing Knife into your hand.\nthechaser:Swift: Upgrade ALL Throwing Knife cards in your hand."
+    },
+    {
+      "name": "Hidden Dagger+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block. Add 2 Throwing Knife into your hand.\nthechaser:Swift: Upgrade ALL Throwing Knife cards in your hand."
+    },
+    {
+      "name": "Internal Hemorrhage",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 6 thechaser:Bleeding and 2 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Internal Hemorrhage+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 9 thechaser:Bleeding and 2 Weak to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Open Sore",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 3 thechaser:Bleeding to ALL enemies."
+    },
+    {
+      "name": "Open Sore+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 5 thechaser:Bleeding to ALL enemies."
+    },
+    {
+      "name": "Paralyze",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses Strength equal to the amount of unique debuffs on them.\nExhaust."
+    },
+    {
+      "name": "Paralyze+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enemy loses Strength equal to the amount of unique debuffs on them.\nExhaust."
+    },
+    {
+      "name": "Penetrate",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage and apply 2 Vulnerable. If the enemy is already Vulnerable, apply 2 thechaser:Blindsided instead."
+    },
+    {
+      "name": "Penetrate+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage and apply 3 Vulnerable. If the enemy is already Vulnerable, apply 3 thechaser:Blindsided instead."
+    },
+    {
+      "name": "Piercing Blows",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you deal damage by triggering thechaser:Targeting, deal 2 additional damage."
+    },
+    {
+      "name": "Piercing Blows+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you deal damage by triggering thechaser:Targeting, deal 3 additional damage."
+    },
+    {
+      "name": "Pluck Out Daggers",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Costs 1 [E] less for each time you have triggered thechaser:Targeting this turn.\nDeal 5 damage 3 times."
+    },
+    {
+      "name": "Pluck Out Daggers+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Costs 1 [E] less for each time you have triggered thechaser:Targeting this turn.\nDeal 7 damage 3 times."
+    },
+    {
+      "name": "Replicating Daggers",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a Throwing Knife into your hand and apply 1 thechaser:Targeting to a random enemy."
+    },
+    {
+      "name": "Replicating Daggers+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, add a Throwing Knife into your hand and apply 1 thechaser:Targeting to a random enemy."
+    },
+    {
+      "name": "Slash Sequence",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nAdd 1 Sequence Flow into your hand.\nthechaser:Swift: Deal 3 damage 2 times."
+    },
+    {
+      "name": "Slash Sequence+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nAdd 2 Sequence Flow into your hand.\nthechaser:Swift: Deal 3 damage 2 times."
+    },
+    {
+      "name": "Spirit of Conquest",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Strength equal to the cumulative stacks of ALL debuffs you have.\nExhaust."
+    },
+    {
+      "name": "Spirit of Conquest+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Strength equal to the cumulative stacks of ALL debuffs you have."
+    },
+    {
+      "name": "Strong Bulwark",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Strong Bulwark+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Strength.\nGain 2 Dexterity."
+    },
+    {
+      "name": "Take Initiative",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nAt the start of your next turn, draw 2 less card."
+    },
+    {
+      "name": "Take Initiative+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nAt the start of your next turn, draw 1 less card."
+    },
+    {
+      "name": "Test the Waters",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage and apply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Test the Waters+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage and apply 3 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Throes of Rage",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage and apply 3 thechaser:Blindsided.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Throes of Rage+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage and apply 4 thechaser:Blindsided.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Unstable Defense",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 30 Block and 1 Vulnerable."
+    },
+    {
+      "name": "Unstable Defense+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 30 Block and 1 thechaser:Blindsided."
+    },
+    {
+      "name": "Weakpoint Strike",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage. Repeat for each unique debuff on the enemy."
+    },
+    {
+      "name": "Weakpoint Strike+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Repeat for each unique debuff on the enemy."
+    },
+    {
+      "name": "Win the Exchange",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nIf the enemy has thechaser:Blindsided, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Win the Exchange+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf the enemy has thechaser:Blindsided, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Winds of Fury",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Trigger thechaser:Targeting 1 times.\nPermanently increase this card's thechaser:Targeting trigger amount by 1.\nExhaust."
+    },
+    {
+      "name": "Winds of Fury+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Trigger thechaser:Targeting 1 times.\nPermanently increase this card's thechaser:Targeting trigger amount by 1.\nExhaust."
+    },
+    {
+      "name": "Wither",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 99 Weak. Exhaust."
+    },
+    {
+      "name": "Wither+",
+      "color": "Color_chaser",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 99 Weak. Exhaust."
+    },
+    {
+      "name": "Absolute Edge",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E].\nDraw 1 card for each unique debuff on ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Absolute Edge+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nDraw 1 card for each unique debuff on ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Acceleration",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an Attack, gain 1 temporary Strength."
+    },
+    {
+      "name": "Acceleration+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an Attack, gain 1 temporary Strength."
+    },
+    {
+      "name": "Bloodhound",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage to ALL enemies. Trigger thechaser:Targeting equal to the amount of cards played this turn.\nEnd your turn."
+    },
+    {
+      "name": "Bloodhound+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage to ALL enemies. Trigger thechaser:Targeting equal to the amount of cards played this turn.\nEnd your turn."
+    },
+    {
+      "name": "Chaser's Guard",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block for each unique debuff on ALL enemies."
+    },
+    {
+      "name": "Chaser's Guard+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block for each unique debuff on ALL enemies."
+    },
+    {
+      "name": "Confounding Assault",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Dealing damage by triggering thechaser:Targeting also applies thechaser:Blindsided."
+    },
+    {
+      "name": "Confounding Assault+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Dealing damage by triggering thechaser:Targeting also applies thechaser:Blindsided."
+    },
+    {
+      "name": "Cruel Ruin",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nApply 2 Vulnerable, Weak, and thechaser:Blindsided."
+    },
+    {
+      "name": "Cruel Ruin+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nApply 3 Vulnerable, Weak, and thechaser:Blindsided."
+    },
+    {
+      "name": "Dual Wielding",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you trigger thechaser:Targeting this turn, trigger it twice."
+    },
+    {
+      "name": "Dual Wielding+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you trigger thechaser:Targeting this turn, trigger it twice."
+    },
+    {
+      "name": "High-Speed Advance",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thechaser:Quickstep 10.\nthechaser:Swift: Apply 10 thechaser:Bleeding to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "High-Speed Advance+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thechaser:Quickstep 15.\nthechaser:Swift: Apply 15 thechaser:Bleeding to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Joy From Misfortune",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal HP equal to the amount of times you have triggered thechaser:Targeting this turn.\nExhaust."
+    },
+    {
+      "name": "Joy From Misfortune+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nHeal HP equal to the amount of times you have triggered thechaser:Targeting this turn.\nExhaust."
+    },
+    {
+      "name": "Lust for Power",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "All your buffs count as debuffs, for the purposes of effects which check for debuffs on you."
+    },
+    {
+      "name": "Lust for Power+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "All your buffs count as debuffs, for the purposes of effects which check for debuffs on you."
+    },
+    {
+      "name": "Neckcutter",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal. Deal 14 damage.\nExhaust."
+    },
+    {
+      "name": "Neckcutter+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal. Deal 19 damage.\nExhaust."
+    },
+    {
+      "name": "Perfected Stealth",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "thechaser:Hide for 2 turns.\nExhaust."
+    },
+    {
+      "name": "Perfected Stealth+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "thechaser:Hide for 3 turns.\nExhaust."
+    },
+    {
+      "name": "Phrenitis",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Targeting, thechaser:Proxy, and thechaser:Blindsided.\nExhaust."
+    },
+    {
+      "name": "Phrenitis+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Weak, Vulnerable, Frail, Poison, thechaser:Bleeding, thechaser:Targeting, thechaser:Proxy, and thechaser:Blindsided.\nExhaust."
+    },
+    {
+      "name": "Preemptive Offense",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, draw 1 additional card and trigger thechaser:Targeting once."
+    },
+    {
+      "name": "Preemptive Offense+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, draw 1 additional card and trigger thechaser:Targeting once."
+    },
+    {
+      "name": "Prepay",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "This turn, your next X cards cost 0. Exhaust."
+    },
+    {
+      "name": "Prepay+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "This turn, your next X cards cost 0. Draw X cards. Exhaust."
+    },
+    {
+      "name": "Sawblades",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play a card, apply 1 thechaser:Bleeding to ALL enemies."
+    },
+    {
+      "name": "Sawblades+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Innate. Whenever you play a card, apply 1 thechaser:Bleeding to ALL enemies."
+    },
+    {
+      "name": "Shakedown",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nGain 10 Gold.\nExhaust."
+    },
+    {
+      "name": "Shakedown+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nGain 15 Gold.\nExhaust."
+    },
+    {
+      "name": "Spectre Form",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, increase damage dealt when triggering thechaser:Targeting by 2."
+    },
+    {
+      "name": "Spectre Form+",
+      "color": "Color_chaser",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, increase damage dealt when triggering thechaser:Targeting by 3."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Shadowed Necklace",
+      "tier": "Starter",
+      "pool": "Color_chaser",
+      "description": "At the start of each combat, apply 2 Targeting to a random enemy.",
+      "flavorText": "A necklace with a small glass bottle, created from the abyssal darkness."
+    },
+    {
+      "name": "Scotch Stone",
+      "tier": "Common",
+      "pool": "Color_chaser",
+      "description": "Whenever you deal damage by triggering Targeting, deal 1 additional damage.",
+      "flavorText": "A fine-grained grey stone used for sharpening weapons."
+    },
+    {
+      "name": "Box Cutter",
+      "tier": "Uncommon",
+      "pool": "Color_chaser",
+      "description": "Your first Attack that triggers Targeting each turn triggers it twice.",
+      "flavorText": "A very peculiar sword. So peculiar, that its purpose is unknown."
+    },
+    {
+      "name": "R-B0-7",
+      "tier": "Uncommon",
+      "pool": "Color_chaser",
+      "description": "At the start of each turn, enemies which have debuffs lose 5 HP.",
+      "flavorText": "A dangerous secret weapon. Its lethality is complemented with an infamous drug."
+    },
+    {
+      "name": "Acid Solution",
+      "tier": "Rare",
+      "pool": "Color_chaser",
+      "description": "Whenever you play an Attack, if you are Weak, apply 1 Weak to the enemy. If you are Frail, remove all Block from the enemy.",
+      "flavorText": "Extremely corrosive. Hopefully no one else carelessly sprinkles this on something...or someone."
+    },
+    {
+      "name": "Assassin's Cloak",
+      "tier": "Rare",
+      "pool": "Color_chaser",
+      "description": "At the start of each combat, Hide for 2 turns.",
+      "flavorText": "This mass-produced cloak boasts the most reliable camouflage."
+    },
+    {
+      "name": "Rusty Helmet",
+      "tier": "Rare",
+      "pool": "Color_chaser",
+      "description": "At the start of each turn, apply 1 Blindsided to ALL enemies.",
+      "flavorText": "An old helmet used in wars of the past. It's unlikely to see use today."
+    },
+    {
+      "name": "Broken Ticker",
+      "tier": "Boss",
+      "pool": "Color_chaser",
+      "description": "At the start of each combat, apply Slow to ALL enemies.",
+      "flavorText": "It is already broken, yet a faint ticking can still be heard."
+    },
+    {
+      "name": "Masked Shadows",
+      "tier": "Boss",
+      "pool": "Color_chaser",
+      "description": "Replaces Shadowed Necklace. At the start of your turn, apply 1 Targeting to ALL enemies and trigger Targeting once.",
+      "flavorText": "Behind a mask, nobody can see the abyss."
+    },
+    {
+      "name": "Pocket Knife",
+      "tier": "Boss",
+      "pool": "Color_chaser",
+      "description": "After Target is triggered for the fourth time each turn, gain [E] .",
+      "flavorText": "A portable knife used to cut ropes."
+    },
+    {
+      "name": "Letter of Request",
+      "tier": "Shop",
+      "pool": "Color_chaser",
+      "description": "At the start of each combat, apply 3 Targeting to ALL enemies.",
+      "flavorText": "A letter of request from an unknown client."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Bottled Hemorrhage",
+      "rarity": "Common",
+      "description": "Apply 8 Bleeding to an enemy."
+    },
+    {
+      "name": "Target Potion",
+      "rarity": "Uncommon",
+      "description": "Trigger Targeting 5 times."
+    },
+    {
+      "name": "Shadow in a Jar",
+      "rarity": "Rare",
+      "description": "Hide for 1 turn."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Chaser",
+      "type": "Player",
+      "minHP": "74",
+      "maxHP": "74"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "",
+      "description": ""
+    },
+    {
+      "name": "Bleeding",
+      "description": "Bleeding creatures lose HP at the start of their turn, then reduce Bleeding by half. Whenever you play an Attack, increase Bleeding by 1."
+    },
+    {
+      "name": "Blindsided",
+      "description": "Target receives 15% more damage for each stack of Blindsided (up to a maximum of 4.)"
+    },
+    {
+      "name": "Hide",
+      "description": "ALL enemies become Stunned. Fades away after an Attack is played or Targeting is triggered."
+    },
+    {
+      "name": "Proxy",
+      "description": "Target receives 5% more damage for each stack of Proxy."
+    },
+    {
+      "name": "Quickstep",
+      "description": "Simulate playing cards, for use with Swift effects."
+    },
+    {
+      "name": "Swift",
+      "description": "If you have played 4 or more cards this turn, trigger an additional effect."
+    },
+    {
+      "name": "Targeting",
+      "description": "After a player or monster attacks, all creatures with Targeting take 2 damage."
+    }
+  ]
+}

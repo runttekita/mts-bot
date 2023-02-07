@@ -1,0 +1,1570 @@
+{
+  "mod": {
+    "name": "The M10 Robot",
+    "version": "1.0.5",
+    "authors": ["Mistress Alison"],
+    "credits": "Art Assets - 100% Orange Juice (sprites, cards)\nBaseMod, ModTheSpire, and StSLib - Bug Kiooeht\nBeta Testing - Spookalon\nKorean Translation - Saki\nSimplified Chinese Translation - Leaf_Fallen",
+    "description": "Adds M10 Robot from 100% Orange Juice.",
+    "mts_version": "3.20.0",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Green_spring_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Green_spring_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Magnum Strike",
+      "color": "Green_spring_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nApply 2 Lock-On"
+    },
+    {
+      "name": "Magnum Strike+",
+      "color": "Green_spring_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nApply 2 Lock-On"
+    },
+    {
+      "name": "Strike",
+      "color": "Green_spring_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Green_spring_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Surveillance",
+      "color": "Green_spring_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 m10robot:Searchlight.\nGain 3 m10robot:Spikes."
+    },
+    {
+      "name": "Surveillance+",
+      "color": "Green_spring_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Channel 1 m10robot:Searchlight.\nGain 3 m10robot:Spikes."
+    },
+    {
+      "name": "Assault",
+      "color": "Green_spring_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage to ALL enemies.\nDraw 1 card."
+    },
+    {
+      "name": "Assault+",
+      "color": "Green_spring_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage to ALL enemies.\nDraw 1 card."
+    },
+    {
+      "name": "Ascension",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert.\nDraw 1 card.\nm10robot:Overclock all cards in your hand 1 time."
+    },
+    {
+      "name": "Ascension*",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert.\nDraw 1 card.\nm10robot:Overclock all cards in your hand 1 time."
+    },
+    {
+      "name": "Ascension+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert.\nDraw 2 cards.\nm10robot:Overclock all cards in your hand 1 time."
+    },
+    {
+      "name": "Assault Field",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to ALL enemies. Shuffle 3 Assault into your draw pile."
+    },
+    {
+      "name": "Assault Field+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage to ALL enemies. Shuffle 3 Assault+ into your draw pile."
+    },
+    {
+      "name": "Attack Down",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nApply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Attack Down+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nApply 3 Weak to ALL enemies."
+    },
+    {
+      "name": "Bramble",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 m10robot:Spikes.\nGain Block equal to your m10robot:Spikes."
+    },
+    {
+      "name": "Bramble+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 m10robot:Spikes.\nGain Block equal to your m10robot:Spikes."
+    },
+    {
+      "name": "Brief Respite",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDraw 1 card."
+    },
+    {
+      "name": "Brief Respite+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nDraw 1 card."
+    },
+    {
+      "name": "Defense Down",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nApply 2 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Defense Down+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nApply 3 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Fortify",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nChannel 1 m10robot:Bit."
+    },
+    {
+      "name": "Fortify+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nChannel 1 m10robot:Bit."
+    },
+    {
+      "name": "Heat Seekers",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "m10robot:Swappable.\nDeal 7 damage to ALL enemies with Lock-On."
+    },
+    {
+      "name": "Heat Seekers+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "m10robot:Swappable.\nDeal 10 damage to ALL enemies with Lock-On."
+    },
+    {
+      "name": "Juggling",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nNext turn, draw 1 additional card."
+    },
+    {
+      "name": "Juggling*",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nNext turn, draw 2 additional cards."
+    },
+    {
+      "name": "Juggling+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nNext turn, draw 1 additional card."
+    },
+    {
+      "name": "Lash",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nChannel 1 m10robot:Searchlight."
+    },
+    {
+      "name": "Lash+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nChannel 1 m10robot:Searchlight."
+    },
+    {
+      "name": "Merge",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nm10robot:Extract 1 card."
+    },
+    {
+      "name": "Merge+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nm10robot:Extract 1 card."
+    },
+    {
+      "name": "Pile Driver",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "m10robot:Spiky.\nDeal 7 damage.\nDeal 7 damage to a random other enemy."
+    },
+    {
+      "name": "Pile Driver+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "m10robot:Spiky.\nDeal 10 damage.\nDeal 10 damage to a random other enemy."
+    },
+    {
+      "name": "Prelude",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "m10robot:Inert.\nm10robot:Overclock the next card you play 2 times."
+    },
+    {
+      "name": "Prelude+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "m10robot:Inert.\nm10robot:Overclock the next card you play 2 times."
+    },
+    {
+      "name": "Returning Shield",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nNext turn, gain 8 Block."
+    },
+    {
+      "name": "Returning Shield*",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nNext turn, gain 8 Block and draw 1 additional card."
+    },
+    {
+      "name": "Returning Shield+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nNext turn, gain 11 Block."
+    },
+    {
+      "name": "Scrape Off",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "m10robot:Spiky.\nDeal 4 damage.\nGain Block equal to unblocked damage dealt."
+    },
+    {
+      "name": "Scrape Off+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "m10robot:Spiky.\nDeal 6 damage.\nGain Block equal to unblocked damage dealt."
+    },
+    {
+      "name": "Scrapper",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Evoke your next Orb.\nGain 3 m10robot:Spikes."
+    },
+    {
+      "name": "Scrapper+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Evoke your next Orb.\nGain 2 m10robot:Spikes for each m10robot:Upgrade it had plus 3."
+    },
+    {
+      "name": "Seeker",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Apply 1 Lock-On.\nIf the enemy already had Lock-On, deal 9 damage."
+    },
+    {
+      "name": "Seeker*",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Apply 2 Lock-On.\nIf the enemy already had Lock-On, deal 9 damage."
+    },
+    {
+      "name": "Seeker+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Apply 1 Lock-On.\nIf the enemy already had Lock-On, deal 12 damage."
+    },
+    {
+      "name": "Split Beam",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage 2 times. When m10robot:Extracted, increase its hits by 1 this combat."
+    },
+    {
+      "name": "Split Beam+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage 2 times. When m10robot:Extracted, increase its hits by 1 this combat."
+    },
+    {
+      "name": "Steel Wall",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nChannel 1 m10robot:Searchlight."
+    },
+    {
+      "name": "Steel Wall+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nChannel 1 m10robot:Searchlight."
+    },
+    {
+      "name": "Step Up",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert.\nm10robot:Extract 1 card.\nm10robot:Overclock it 1 time."
+    },
+    {
+      "name": "Step Up+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert.\nm10robot:Extract 1 card.\nm10robot:Overclock it 2 times."
+    },
+    {
+      "name": "Support",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert. m10robot:Swappable.\nGain 6 Block.\nm10robot:Overclock the next card you play 1 time."
+    },
+    {
+      "name": "Support+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert. m10robot:Swappable.\nGain 9 Block.\nm10robot:Overclock the next card you play 1 time."
+    },
+    {
+      "name": "Thermal Imaging",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nApply 2 Lock-On.\nChannel 1 m10robot:Bit."
+    },
+    {
+      "name": "Thermal Imaging+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nApply 3 Lock-On.\nChannel 1 m10robot:Bit."
+    },
+    {
+      "name": "Thorn Field",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies. Gain 2 m10robot:Spikes for each enemy in combat."
+    },
+    {
+      "name": "Thorn Field+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies. Gain 2 m10robot:Spikes for each enemy in combat."
+    },
+    {
+      "name": "Tinker",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nGain 6 Block.\nm10robot:Upgrade the next Orb you Channel 1 time."
+    },
+    {
+      "name": "Tinker+",
+      "color": "Green_spring_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nGain 9 Block.\nm10robot:Upgrade the next Orb you Channel 1 time."
+    },
+    {
+      "name": "Acceleration",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert.\nm10robot:Extract 2 cards.\nm10robot:Overclock the next 2 cards you play 2 times."
+    },
+    {
+      "name": "Acceleration+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert.\nm10robot:Extract 2 cards.\nm10robot:Overclock the next 2 cards you play 2 times."
+    },
+    {
+      "name": "All In",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "m10robot:Inert.\nm10robot:Overclock all cards in your hand X times."
+    },
+    {
+      "name": "All In+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "m10robot:Inert.\nm10robot:Overclock all cards in your hand X + 1 times."
+    },
+    {
+      "name": "Atomize",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 2 m10robot:Bombs.\nm10robot:Upgrade them 1 time."
+    },
+    {
+      "name": "Atomize*",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 2 m10robot:Bombs.\nm10robot:Upgrade them 1 time."
+    },
+    {
+      "name": "Atomize+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 2 m10robot:Bombs.\nm10robot:Upgrade them 1 time."
+    },
+    {
+      "name": "Balance Currents",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff, gain 3 Block."
+    },
+    {
+      "name": "Balance Currents+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff, gain 5 Block."
+    },
+    {
+      "name": "Bitmask",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nChannel 1 m10robot:Bit for each Attack played this turn."
+    },
+    {
+      "name": "Bitmask+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nChannel 1 m10robot:Bit for each Attack played this turn."
+    },
+    {
+      "name": "Booster",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nm10robot:Upgrade your next Orb 2 times."
+    },
+    {
+      "name": "Booster+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nm10robot:Upgrade your next Orb 2 times."
+    },
+    {
+      "name": "Byte",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "m10robot:Swappable.\nDeal 8 damage.\nChannel 2 m10robot:Bits."
+    },
+    {
+      "name": "Byte+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "m10robot:Swappable.\nDeal 8 damage to ALL enemies.\nChannel 2 m10robot:Bits."
+    },
+    {
+      "name": "Cloaking",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nYour next Attack deals 5 additional damage."
+    },
+    {
+      "name": "Cloaking*",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nYour next Attack deals 5 additional damage."
+    },
+    {
+      "name": "Cloaking+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nYour next Attack deals 7 additional damage."
+    },
+    {
+      "name": "Command",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage for each Channeled Orb.\nIf the enemy has Lock-On, m10robot:Upgrade all your Orbs 1 time."
+    },
+    {
+      "name": "Command+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage for each Channeled Orb.\nIf the enemy has Lock-On, m10robot:Upgrade all your Orbs 1 time."
+    },
+    {
+      "name": "Compile Data",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 m10robot:Present.\nm10robot:Extract 1 card."
+    },
+    {
+      "name": "Compile Data+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 m10robot:Present.\nm10robot:Extract 2 cards."
+    },
+    {
+      "name": "Disable",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 5 Strength this turn.\nApply 1 Weak."
+    },
+    {
+      "name": "Disable*",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 5 Strength this turn.\nApply 1 Weak.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Disable+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enemy loses 5 Strength this turn.\nApply 1 Weak."
+    },
+    {
+      "name": "Divided Attention",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard 1 card at random. m10robot:Extract 3 cards at random."
+    },
+    {
+      "name": "Divided Attention*",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard 1 card. m10robot:Extract 3 cards at random."
+    },
+    {
+      "name": "Divided Attention+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard 1 card at random. m10robot:Extract 4 cards at random."
+    },
+    {
+      "name": "EMP",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "ALL enemies lose 2 Strength this turn.\nDeal 3 damage to ALL enemies."
+    },
+    {
+      "name": "EMP+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "ALL enemies lose 2 Strength this turn.\nDeal 5 damage to ALL enemies."
+    },
+    {
+      "name": "Energy Shield",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf you had no Block, gain [E] ."
+    },
+    {
+      "name": "Energy Shield+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nIf you had no Block, gain [E] ."
+    },
+    {
+      "name": "Engage",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Vulnerable.\nApply 1 Lock-On.\nIf the enemy intends to attack, draw 1 card."
+    },
+    {
+      "name": "Engage*",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Vulnerable.\nApply 1 Lock-On.\nDraw 1 card."
+    },
+    {
+      "name": "Engage+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable.\nApply 2 Lock-On.\nIf the enemy intends to attack, draw 1 card."
+    },
+    {
+      "name": "Evasion Down",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nEnemy takes 3 additional damage from all sources this turn."
+    },
+    {
+      "name": "Evasion Down+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nEnemy takes 5 additional damage from all sources this turn."
+    },
+    {
+      "name": "Extrapolate",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you m10robot:Extract a card, m10robot:Overclock it 1 time."
+    },
+    {
+      "name": "Extrapolate+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you m10robot:Extract a card, m10robot:Overclock it 1 time."
+    },
+    {
+      "name": "Filter",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Extract 1 card.\nSwap your draw and discard piles."
+    },
+    {
+      "name": "Filter+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Extract 2 cards.\nSwap your draw and discard piles."
+    },
+    {
+      "name": "Health Down",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nEnemy loses 7 HP.\nIf you have played Evasion Down this turn, repeat this effect."
+    },
+    {
+      "name": "Health Down+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Swappable.\nEnemy loses 10 HP.\nIf you have played Evasion Down this turn, repeat this effect."
+    },
+    {
+      "name": "Heuristics",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Channel an Orb, apply 1 Lock-On to a random enemy."
+    },
+    {
+      "name": "Heuristics*",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you Channel an Orb, apply 1 Lock-On to a random enemy."
+    },
+    {
+      "name": "Heuristics+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Channel an Orb, apply 2 Lock-On to a random enemy."
+    },
+    {
+      "name": "Light Show",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nChannel 1 m10robot:Searchlight for each Skill played this turn."
+    },
+    {
+      "name": "Light Show+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nChannel 1 m10robot:Searchlight for each Skill played this turn."
+    },
+    {
+      "name": "Nibble",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "m10robot:Swappable.\nGain 4 Block.\nDeal 4 damage."
+    },
+    {
+      "name": "Nibble+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "m10robot:Swappable.\nGain 4 Block.\nDeal 4 damage to ALL enemies."
+    },
+    {
+      "name": "Quick Boot",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 3 random Orbs."
+    },
+    {
+      "name": "Quick Boot+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 3 random Orbs."
+    },
+    {
+      "name": "Quick Repair",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nWhen m10robot:Extracted,\ngain 6 Block."
+    },
+    {
+      "name": "Quick Repair+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nWhen m10robot:Extracted,\ngain 8 Block."
+    },
+    {
+      "name": "Quick Thinking",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nAttacks drawn this way cost 0 this turn."
+    },
+    {
+      "name": "Quick Thinking+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nAttacks drawn this way cost 0 this turn."
+    },
+    {
+      "name": "RAM Upgrade",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Orb slot.\nWhenever you Channel an Orb, m10robot:Upgrade it 1 time."
+    },
+    {
+      "name": "RAM Upgrade*",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Orb slot.\nWhenever you Channel an Orb, m10robot:Upgrade it 2 times."
+    },
+    {
+      "name": "RAM Upgrade+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Orb slots.\nWhenever you Channel an Orb, m10robot:Upgrade it 1 time."
+    },
+    {
+      "name": "Railgun",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 1 Gold.\nDeal 10 damage.\nIf the enemy has Lock-On, apply 1 Vulnerable."
+    },
+    {
+      "name": "Railgun+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Lose 1 Gold.\nDeal 14 damage.\nIf the enemy has Lock-On, apply 1 Vulnerable."
+    },
+    {
+      "name": "Rapid Assembly",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "m10robot:Inert.\nm10robot:Overclock all cards in your hand 2 times."
+    },
+    {
+      "name": "Rapid Assembly+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "m10robot:Inert.\nm10robot:Overclock all cards in your hand 2 times."
+    },
+    {
+      "name": "Reroute",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nm10robot:Extract 1 card.\nWhen m10robot:Overclocked, increase its damage by 4 this combat."
+    },
+    {
+      "name": "Reroute+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nm10robot:Extract 1 card.\nWhen m10robot:Overclocked, increase its damage by 6 this combat."
+    },
+    {
+      "name": "Rewind",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time you lose Block each turn, gain that much Block next turn."
+    },
+    {
+      "name": "Rewind+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time you lose Block each turn, gain that much Block next turn."
+    },
+    {
+      "name": "Robo Beam",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to a random enemy.\nRepeat for every turn passed this combat."
+    },
+    {
+      "name": "Robo Beam+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to a random enemy.\nRepeat for every turn passed this combat."
+    },
+    {
+      "name": "Rush Down",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "m10robot:Spiky.\nGain 6 Block.\nDeal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Rush Down+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "m10robot:Spiky.\nGain 8 Block.\nDeal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Spike Shell",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain 5 m10robot:Spikes."
+    },
+    {
+      "name": "Spike Shell+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nGain 7 m10robot:Spikes."
+    },
+    {
+      "name": "Turbo",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Turbo*",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn, gain [E] [E] and draw 1 card."
+    },
+    {
+      "name": "Turbo+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn, gain [E] and draw 2 cards."
+    },
+    {
+      "name": "Unstable Compound",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 1 m10robot:Bomb.\nm10robot:Upgrade a random Orb 2 times."
+    },
+    {
+      "name": "Unstable Compound+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Channel 1 m10robot:Bomb.\nm10robot:Upgrade a random Orb 2 times."
+    },
+    {
+      "name": "Wave Generator",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies. Increase this card's damage by 4 this combat."
+    },
+    {
+      "name": "Wave Generator+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to ALL enemies. Increase this card's damage by 6 this combat."
+    },
+    {
+      "name": "Wide Angle",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "When you play an Attack, m10robot:Bits now hit 1 additional time.\nChannel 2 m10robot:Bits."
+    },
+    {
+      "name": "Wide Angle+",
+      "color": "Green_spring_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "When you play an Attack, m10robot:Bits now hit 1 additional time.\nChannel 3 m10robot:Bits."
+    },
+    {
+      "name": "Assembly Line",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 3 m10robot:Presents."
+    },
+    {
+      "name": "Assembly Line*",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 3 m10robot:Presents.\nm10robot:Upgrade all your Orbs 1 time."
+    },
+    {
+      "name": "Assembly Line+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Channel 3 m10robot:Presents."
+    },
+    {
+      "name": "Empty Buffer",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all your Orbs.\nGain 1 Orb slot for each Orb removed."
+    },
+    {
+      "name": "Empty Buffer+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Evoke all your Orbs.\nGain 1 Orb slot for each Orb Evoked."
+    },
+    {
+      "name": "Home Sweeper",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage to ALL enemies. Deals 2 more damage per turn passed."
+    },
+    {
+      "name": "Home Sweeper+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage to ALL enemies. Deals 2 more damage per turn passed."
+    },
+    {
+      "name": "Imaginary Numbers",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For 1 turn, cards randomly cost 0 or 1."
+    },
+    {
+      "name": "Imaginary Numbers*",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "For 1 turn, cards randomly cost 0 or 1."
+    },
+    {
+      "name": "Imaginary Numbers+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "For 1 turn, cards randomly cost 0 or 1."
+    },
+    {
+      "name": "Immovable Object",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 25 Block."
+    },
+    {
+      "name": "Immovable Object+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 35 Block."
+    },
+    {
+      "name": "Inversion Beam",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to ALL enemies 3 times."
+    },
+    {
+      "name": "Inversion Beam+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies 3 times."
+    },
+    {
+      "name": "Overdrive Form",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "m10robot:Inert.\nAt the start of your turn, m10robot:Overclock all cards in your hand 1 time."
+    },
+    {
+      "name": "Overdrive Form+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "m10robot:Inert.\nAt the start of your turn, m10robot:Overclock all cards in your hand 2 times."
+    },
+    {
+      "name": "Power Savings",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "m10robot:Inert.\nGain 3 Weak.\nAt the start of your turn, gain [E] ."
+    },
+    {
+      "name": "Power Savings+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "m10robot:Inert.\nGain 2 Weak.\nAt the start of your turn, gain [E] ."
+    },
+    {
+      "name": "Recovery Mode",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, gain 7 Block if you have any unspent energy."
+    },
+    {
+      "name": "Recovery Mode+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, gain 7 Block if you have any unspent energy."
+    },
+    {
+      "name": "Reflective Shell",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Fully blocked attacks are reflected onto the attacker 1 time."
+    },
+    {
+      "name": "Reflective Shell+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Fully blocked attacks are reflected onto the attacker 1 time."
+    },
+    {
+      "name": "Rootkit",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nCards drawn this way cost 0 this turn."
+    },
+    {
+      "name": "Rootkit+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nCards drawn this way cost 0 this turn."
+    },
+    {
+      "name": "Scramble Field",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X Strength.\nALL enemies lose\nX Strength."
+    },
+    {
+      "name": "Scramble Field+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain X + 1 Strength.\nALL enemies lose\nX + 1 Strength."
+    },
+    {
+      "name": "Self Destruction",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "m10robot:Inert.\nLose 5 HP.\nm10robot:Stun the enemy.\nDeal 20 damage to ALL enemies."
+    },
+    {
+      "name": "Self Destruction+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "m10robot:Inert.\nLose 5 HP.\nm10robot:Stun the enemy.\nDeal 28 damage to ALL enemies."
+    },
+    {
+      "name": "Solid Witch",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible."
+    },
+    {
+      "name": "Solid Witch+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Intangible."
+    },
+    {
+      "name": "Spiky Plating",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a card, gain 1 m10robot:Spikes.\nChannel 2 m10robot:Searchlights."
+    },
+    {
+      "name": "Spiky Plating+",
+      "color": "Green_spring_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play a card, gain 1 m10robot:Spikes.\nChannel 2 m10robot:Searchlights."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Dual Core",
+      "tier": "Starter",
+      "pool": "Green_spring_color",
+      "description": "m10robot:Overclock the first card you play each combat 2 times.",
+      "flavorText": "So much processing power!"
+    },
+    {
+      "name": "Puffer Fish",
+      "tier": "Common",
+      "pool": "Green_spring_color",
+      "description": "Start each combat with 5 m10robot:Spikes.",
+      "flavorText": "It looks very spiky."
+    },
+    {
+      "name": "Third Eye",
+      "tier": "Common",
+      "pool": "Green_spring_color",
+      "description": "At the start of each combat, apply 1 Lock-On to ALL enemies.",
+      "flavorText": "It's watching you."
+    },
+    {
+      "name": "Froggy",
+      "tier": "Uncommon",
+      "pool": "Green_spring_color",
+      "description": "Whenever you m10robot:Extract, Extract 1 additional card.",
+      "flavorText": "It has a very sticky tongue."
+    },
+    {
+      "name": "Searchlight Mk2",
+      "tier": "Uncommon",
+      "pool": "Green_spring_color",
+      "description": "Whenever you Channel a m10robot:Searchlight, m10robot:Upgrade it 1 time.",
+      "flavorText": "Upgraded Model! Same great taste!"
+    },
+    {
+      "name": "UFO",
+      "tier": "Uncommon",
+      "pool": "Green_spring_color",
+      "description": "Whenever you play a Power card, ALL enemies lose 2 Strength for the turn.",
+      "flavorText": "It got lost on it's way to the jungle dance party."
+    },
+    {
+      "name": "Robo Ball",
+      "tier": "Rare",
+      "pool": "Green_spring_color",
+      "description": "The first time you are attacked each combat, take no damage. The attacker takes the full damage instead.",
+      "flavorText": "\"Enemy detected. Destroying.\" - Robo Ball"
+    },
+    {
+      "name": "Awakened Core",
+      "tier": "Boss",
+      "pool": "Green_spring_color",
+      "description": "Replaces Dual Core. m10robot:Overclock the first card you play each turn 1 time.",
+      "flavorText": "Overclocked and ready."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Overclock Potion",
+      "rarity": "Common",
+      "description": "Overclock all cards in your hand 2 times."
+    },
+    {
+      "name": "Booster Potion",
+      "rarity": "Uncommon",
+      "description": "Upgrade all your Orbs 3 times."
+    },
+    {
+      "name": "Locking Potion",
+      "rarity": "Uncommon",
+      "description": "ALL enemies lose 5 Strength this turn."
+    },
+    {
+      "name": "Spiky Potion",
+      "rarity": "Uncommon",
+      "description": "Gain 5 Spikes."
+    },
+    {
+      "name": "Nullifier",
+      "rarity": "Rare",
+      "description": "Draw 1 card. All cards in your hand cost 0 until played."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the M10 Robot",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Bit",
+      "description": "Orb: Deals damage to the enemy with the least HP when you play an Attack. When Evoked, deals damage and applies Lock-On to a random enemy."
+    },
+    {
+      "name": "Bomb",
+      "description": "Orb: Stores damage when you are attacked. When Evoked, deals damage to the enemy with the most HP."
+    },
+    {
+      "name": "Extract",
+      "description": "Move the most recent cards in your discard pile to your hand."
+    },
+    {
+      "name": "Inert",
+      "description": "This card cannot be Overclocked."
+    },
+    {
+      "name": "Searchlight",
+      "description": "Orb: Deals damage when you are attacked. When Evoked, grants Spikes."
+    },
+    {
+      "name": "Overclock",
+      "description": "Increases the base stats of cards by 25% until played."
+    },
+    {
+      "name": "Present",
+      "description": "Orb: Draws cards."
+    },
+    {
+      "name": "Recoil",
+      "description": "Your next attack deals 50% less damage."
+    },
+    {
+      "name": "Spikes",
+      "description": "When receiving Attack damage, deals damage back.\nAt the start of your turn, lose Spikes if you were attacked."
+    },
+    {
+      "name": "Spiky",
+      "description": "Damage scales with Spikes."
+    },
+    {
+      "name": "Stun",
+      "description": "A stunned enemy does nothing this turn."
+    },
+    {
+      "name": "Swappable",
+      "description": "Right Click to swap the effect of this card."
+    },
+    {
+      "name": "Upgrade",
+      "description": "Upgrading Orbs makes them more powerful. Orbs can be upgraded any number of times."
+    }
+  ]
+}

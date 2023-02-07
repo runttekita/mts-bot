@@ -1,12 +1,12 @@
 {
   "mod": {
-    "name": "Catgirl Mod",
-    "version": "0.8.3",
+    "name": "CatGirl Mod",
+    "version": "0.9.1",
     "authors": ["saishy"],
-    "credits": "Contributors: Taxouck. \nBeta Testers: Yun, Graham, The Golden Fairy, Skyson. \nLocalization: BDWSSBB",
+    "credits": "Contributors: Taxouck. \nBeta Testers: Yun, Graham, The Golden Fairy, Skyson. \nLocalization: BDWSSBB, Rucodeby.",
     "description": "Adds a new playable catgirl as a character.",
-    "mts_version": "3.8.3",
-    "sts_version": "01-23-2019",
+    "mts_version": "3.15.0",
+    "sts_version": "01-27-2020",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -121,7 +121,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 7 damage to a random enemy.\nEnemy receives 2 additional damage from Claw cards."
+      "description": "Deal 7 damage to a random enemy and applies 2 stacks of Gash."
     },
     {
       "name": "Claws+",
@@ -129,7 +129,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 7 damage to a random enemy.\nEnemy receives 3 additional damage from Claw cards."
+      "description": "Deal 7 damage to a random enemy and applies 3 stacks of Gash."
     },
     {
       "name": "Clench Your Teeth",
@@ -201,7 +201,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain Block equal to your Evade.\nLose all Evade."
+      "description": "Lose all Evade and gain Block equal to the amount lost."
     },
     {
       "name": "Emergency Parry+",
@@ -209,7 +209,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain Block equal to 2 times your Evade.\nLose all Evade."
+      "description": "Lose all Evade and gain Block equal to 2 times the amount lost."
     },
     {
       "name": "Growl",
@@ -345,7 +345,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage.\nEnemy receives 2 additional damage from Strike cards."
+      "description": "Deal 7 damage and applies 2 stacks of Striken."
     },
     {
       "name": "Play Around+",
@@ -353,7 +353,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal 7 damage.\nEnemy receives 2 additional damage from Strike cards."
+      "description": "Deal 7 damage and applies 2 stacks of Striken."
     },
     {
       "name": "Poised Strike",
@@ -552,7 +552,7 @@
       "color": "Catgirl_teal",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "2",
+      "cost": "1",
       "description": "Deal damage equal to 1 times the number of cards discarded this combat."
     },
     {
@@ -560,7 +560,7 @@
       "color": "Catgirl_teal",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "2",
+      "cost": "1",
       "description": "Deal damage equal to 2 times the number of cards discarded this combat."
     },
     {
@@ -649,7 +649,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 4 Evade.\nPermanently increase this card's Evade by !theCatGirl:SecondMagic!.\nExhaust."
+      "description": "Gain 4 Evade.\nPermanently increase this card's Evade by 2.\nExhaust."
     },
     {
       "name": "Defensive Stance+",
@@ -657,7 +657,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 4 Evade.\nPermanently increase this card's Evade by !theCatGirl:SecondMagic!.\nExhaust."
+      "description": "Gain 4 Evade.\nPermanently increase this card's Evade by 3.\nExhaust."
     },
     {
       "name": "Extreme Speed",
@@ -681,7 +681,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Ethereal.\nDeal 20 damage.\nIf the enemy has less than 50 %HP, deal !theCatGirl:SecondMagic! damage instead."
+      "description": "Ethereal.\nDeal 20 damage.\nIf the enemy has less than 50 %HP, deal 30 damage instead."
     },
     {
       "name": "Finishing Move+",
@@ -689,7 +689,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Ethereal.\nDeal 25 damage.\nIf the enemy has less than 60 %HP, deal !theCatGirl:SecondMagic! damage instead."
+      "description": "Ethereal.\nDeal 25 damage.\nIf the enemy has less than 60 %HP, deal 35 damage instead."
     },
     {
       "name": "Focused Strike",
@@ -737,7 +737,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "At the start of your turn, add 1 Stumble into your hand.\nInnate."
+      "description": "Innate.\nAt the start of your turn, add 1 Stumble into your hand."
     },
     {
       "name": "Piling Errors",
@@ -753,7 +753,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "All Stumbles Retain.\nStumbles can now be played for 1 Energy. Whenever you play a Stumble, Exhaust it."
+      "description": "All Stumbles Retain.\nStumbles can now be played for 1 [E]. Whenever you play a Stumble, Exhaust it."
     },
     {
       "name": "Prepared",
@@ -913,7 +913,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you would gain Evade, gain 1 more.\nInnate."
+      "description": "Innate.\nWhenever you would gain Evade, gain 1 more."
     },
     {
       "name": "Angry Form",
@@ -929,7 +929,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Evade will increase your damage by 2 times the Evade amount.\nEvade will not increase Block anymore.\nInnate."
+      "description": "Innate.\nEvade will increase your damage by 2 times the Evade amount.\nEvade will not increase Block anymore."
     },
     {
       "name": "Beastification",
@@ -937,7 +937,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 3 Strength.\nGain !theCatGirl:SecondMagic! Dexterity.\nGain 15 Block.\nNext turn, lose [E] [E]."
+      "description": "Gain 3 Strength.\nGain 3 Dexterity.\nGain 15 Block.\nNext turn, lose [E] [E]."
     },
     {
       "name": "Beastification+",
@@ -945,7 +945,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 4 Strength.\nGain !theCatGirl:SecondMagic! Dexterity.\nGain 15 Block.\nNext turn, lose [E] [E]."
+      "description": "Gain 4 Strength.\nGain 4 Dexterity.\nGain 15 Block.\nNext turn, lose [E] [E]."
     },
     {
       "name": "Bleeding Wounds",
@@ -1017,7 +1017,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 18 damage to the enemy with the most Gash.\nIf this kills a non-minion enemy, raise your Max HP by 3.\nExhaust."
+      "description": "Deal 18 damage to the enemy with the most stacks of Gash.\nIf this kills a non-minion enemy, raise your Max HP by 3.\nExhaust."
     },
     {
       "name": "Hunger Claw+",
@@ -1025,7 +1025,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 18 damage to the enemy with the most Gash.\nIf this kills a non-minion enemy, raise your Max HP by 4.\nExhaust."
+      "description": "Deal 18 damage to the enemy with the most stacks of Gash.\nIf this kills a non-minion enemy, raise your Max HP by 4.\nExhaust."
     },
     {
       "name": "Insane",
@@ -1073,7 +1073,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Whenever you discard a card, deals 3 damage to a random enemy.\nInnate."
+      "description": "Innate.\nWhenever you discard a card, deals 3 damage to a random enemy."
     },
     {
       "name": "Perfect Block",
@@ -1096,7 +1096,7 @@
       "color": "Catgirl_teal",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
+      "cost": "1",
       "description": "At the start of your turn, gain 2 Evade."
     },
     {
@@ -1104,8 +1104,8 @@
       "color": "Catgirl_teal",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
-      "description": "At the start of your turn, gain 3 Evade."
+      "cost": "1",
+      "description": "At the start of your turn, gain 4 Evade."
     },
     {
       "name": "Seven Lives",
@@ -1113,7 +1113,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "3",
-      "description": "Ignore the next damage you would take, gain that much Evade instead.\nExhaust."
+      "description": "Ignore the next attack that would deal damage to you, gain that much Evade instead.\nExhaust."
     },
     {
       "name": "Seven Lives+",
@@ -1121,7 +1121,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "3",
-      "description": "Ignore the next 2 times you would take damage, gain that much Evade instead.\nExhaust."
+      "description": "Ignore the next 2 attacks that would deal damage to you, gain that much Evade instead. Multi-hits attacks are counted as a single attack, but will remove multiple stacks.\nExhaust."
     }
   ],
   "relics": [
@@ -1135,7 +1135,7 @@
     {
       "name": "Dried Fish",
       "tier": "Common",
-      "pool": "Catgirl_teal",
+      "pool": "",
       "description": "Every time you play 10 Attacks, heal 2.",
       "flavorText": "The perfect snack for a long adventure."
     },
@@ -1143,22 +1143,22 @@
       "name": "Lost and Found",
       "tier": "Common",
       "pool": "Catgirl_teal",
-      "description": "Whenever you Exhaust a card, gain Evade equal to it's cost.",
-      "flavorText": "I've never heard a monster yelling 'unfair'."
+      "description": "Whenever you Exhaust a card, gain 2 Evade.",
+      "flavorText": "Something ventured, something found."
     },
     {
       "name": "Ambush",
       "tier": "Uncommon",
-      "pool": "Catgirl_teal",
+      "pool": "",
       "description": "At the start of the combat, remove 1 Artifact from enemies.",
-      "flavorText": "I've never saw a monster yelling 'unfair'."
+      "flavorText": "I've never heard a monster yelling 'unfair'."
     },
     {
       "name": "Throwing Dagger",
       "tier": "Uncommon",
       "pool": "Catgirl_teal",
       "description": "Every time you play 3 Attacks in a single turn, gain 4 Evade.",
-      "flavorText": "Any seasoned adventurer know a trick or two."
+      "flavorText": "Any seasoned adventurer knows a trick or two."
     },
     {
       "name": "Monster Guide",
@@ -1170,9 +1170,16 @@
     {
       "name": "Nepeta's Hat",
       "tier": "Rare",
-      "pool": "Catgirl_teal",
+      "pool": "",
       "description": "Whenever you attack an enemy that has Block, remove 2 of their Block and apply 2 Poison.",
       "flavorText": "It smells like sugar and tea..."
+    },
+    {
+      "name": "Adventurer's Tag",
+      "tier": "Boss",
+      "pool": "Catgirl_teal",
+      "description": "Whenever you are attacked, gain 4 Evade.",
+      "flavorText": "A tag with your name made with a fantastical metal."
     },
     {
       "name": "Beginner's Luck",
@@ -1185,15 +1192,8 @@
       "name": "Instincts",
       "tier": "Boss",
       "pool": "Catgirl_teal",
-      "description": "Replaces Trained. At the start of combat, gain 3 Strength, lose .1 Strength at the end of your first turn.",
+      "description": "Replaces Trained. At the start of combat, gain 3 Strength, lose 1 Strength at the end of your first turn.",
       "flavorText": "You're slowly losing sanity."
-    },
-    {
-      "name": "S-Rank",
-      "tier": "Boss",
-      "pool": "Catgirl_teal",
-      "description": "Whenever you are attacked, gain 2 Evade.",
-      "flavorText": "You're in the top 1% of adventurers."
     }
   ],
   "potions": [
@@ -1209,15 +1209,19 @@
   "keywords": [
     {
       "name": "Clumsy",
-      "description": "Trigger when you discard or exhaust this card."
+      "description": "Triggers when you discard or exhaust this card."
     },
     {
       "name": "Evade",
-      "description": "Increases your next Block. Lose half stacks at the end of your turn."
+      "description": "Spends all Evade to increase your next Block. Lose half stacks at the end of your turn."
     },
     {
       "name": "Gash",
       "description": "Increases the damage done by Claw cards."
+    },
+    {
+      "name": "Keyword",
+      "description": "Whenever you play a card, gain 1 dexterity this turn only."
     },
     {
       "name": "Striken",

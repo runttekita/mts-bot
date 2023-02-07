@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "Aspiration",
-    "version": "1.5.0",
+    "version": "1.9.3",
     "authors": ["erasels"],
     "credits": "",
     "description": "A mod adding relics, cards and events with varying themes. There's no real end goal behind it, just me implementing neat ideas that come my way via reddit, Discord, other games or even my imagination.\n\n For a full list of everything added and an up to date look at what I'm working on, you can take a look at my Github Repository here: https://github.com/erasels/Aspiration-StS/ \n\nLet me know if you have questions, suggestions or found an error.",
@@ -41,7 +41,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "aspiration:Fuse all your orbs.\nExhaustive !stslib:ex!."
+      "description": "aspiration:Fuse all your orbs.\nExhaustive 2."
     }
   ],
   "relics": [
@@ -67,31 +67,17 @@
       "flavorText": "There is no shame in deception."
     },
     {
-      "name": "Lifesprig",
-      "tier": "Common",
-      "pool": "",
-      "description": "Every time you play 5 Attacks [REMOVE_SPACE], gain 1 Regen [REMOVE_SPACE].",
-      "flavorText": "From the weakest slime to the strongest abomination, hostile life thrives in the spire. Maybe, so can you."
-    },
-    {
-      "name": "Supercapacitive Coin",
-      "tier": "Common",
-      "pool": "",
-      "description": "Right click during combat to activate.Consume all charges and deal 3 damage to a random enemy for each.\nGain 1 Charge everytime you gain gold.",
-      "flavorText": "A mysterious arcade coin that can store large amounts of electricity. If enough is stored, maybe you could create a railgun?"
-    },
-    {
       "name": "Vile Toxins",
       "tier": "Common",
       "pool": "",
-      "description": "Whenever you apply Poison to an enemy that wasn't poisoned [REMOVE_SPACE], apply 2 Vulnerable and Weak [REMOVE_SPACE].",
-      "flavorText": "A mix so vile, it even makes organic and inorganic beings alike recoil in horror."
+      "description": "Poison deals 4 additional damage.",
+      "flavorText": "It bubbles menacingly."
     },
     {
       "name": "Faulty Coupler",
       "tier": "Uncommon",
       "pool": "",
-      "description": "Whenever an orb is channeled [REMOVE_SPACE], there is a 20% chance for it to aspiration:Fuse with a copy of a currently channeled orb.",
+      "description": "Every 5th orb that is channeled will aspiration:Fuse with a copy of a currently channeled orb.",
       "flavorText": "... Loneliness is... the enemy..."
     },
     {
@@ -119,22 +105,8 @@
       "name": "Sea Salt Ice Cream",
       "tier": "Uncommon",
       "pool": "",
-      "description": "Upon pickup, store a copy of one of your relics and obtain the relic you previously stored.\n\nPreviously stored:\nNostalgia",
+      "description": "Upon pickup, store a copy of one of your relics and obtain the relic you previously stored.\n\nPreviously stored:\nCirclet",
       "flavorText": "Bonds forged by the heart can never be broken."
-    },
-    {
-      "name": "Sticky Explosives",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "Apply Aftershock to the first monster you attack on the first round of combat.",
-      "flavorText": "You have the power of attacks and explosions on your side!"
-    },
-    {
-      "name": "Sticky Explosives",
-      "tier": "Uncommon",
-      "pool": "",
-      "description": "Apply Aftershock to the first monster you attack each combat.",
-      "flavorText": "You have the power of attacks and explosions on your side!"
     },
     {
       "name": "Anachronic Snail Shell",
@@ -149,20 +121,6 @@
       "pool": "",
       "description": "The first time you would lose more than 1 [E] each turn, lose 1 [E] less.",
       "flavorText": "It's brimming with energy as if powered by one thousand explosions!"
-    },
-    {
-      "name": "Headhunter",
-      "tier": "Rare",
-      "pool": "",
-      "description": "Gain Charges after killing a monster, gain a set of buffs at the start of battle depending on the amount of stored Charges [REMOVE_SPACE]. Visiting non-monster rooms makes Charges decay based on the type of room. Right-click to see more information [REMOVE_SPACE].",
-      "flavorText": "A belt of severed heads, the first step on the path of exiling yourself from this place of the damned."
-    },
-    {
-      "name": "Legacy Headhunter",
-      "tier": "Rare",
-      "pool": "",
-      "description": "[Unbalanced and broken, but useable.] Gain 1 tiered, random Buff after winning a battle, every Buff gained this way will be applied at the start of battle for the next 7 battles.",
-      "flavorText": "Such a lucky find! A rarity amongst rarities will surely lead to an exalted run."
     },
     {
       "name": "Mysterious Core",
@@ -200,6 +158,27 @@
       "flavorText": "For better or for worse, you've decided that this untainted creature deserves a better life."
     },
     {
+      "name": "Headhunter",
+      "tier": "Special",
+      "pool": "",
+      "description": "Gain Charges after killing a monster, gain a set of buffs at the start of battle depending on the amount of stored Charges. Visiting non-monster rooms makes Charges decay based on the type of room. Right-click to see more information.",
+      "flavorText": "A belt of severed heads, the first step on the path of exiling yourself from this place of the damned."
+    },
+    {
+      "name": "Legacy Headhunter",
+      "tier": "Special",
+      "pool": "",
+      "description": "[Unbalanced and broken, but useable.] Gain 1 tiered, random Buff after winning a battle, every Buff gained this way will be applied at the start of battle for the next 7 battles.",
+      "flavorText": "Such a lucky find! A rarity amongst rarities will surely lead to an exalted run."
+    },
+    {
+      "name": "Lifesprig",
+      "tier": "Special",
+      "pool": "",
+      "description": "Every time you play 3 Attacks in a single turn, gain [E] next turn.",
+      "flavorText": "From the weakest slime to the strongest abomination, hostile life thrives in the spire. Maybe, so can you."
+    },
+    {
       "name": "Nothing",
       "tier": "Special",
       "pool": "",
@@ -210,7 +189,7 @@
       "name": "Ritual Stick",
       "tier": "Special",
       "pool": "",
-      "description": "The first time you lose HP each combat, gain 1 Ritual [REMOVE_SPACE].",
+      "description": "The first time you lose HP each combat, gain 1 Ritual.",
       "flavorText": "If only you could express yourself better."
     },
     {
@@ -231,7 +210,7 @@
       "name": "Defect's Skillbook",
       "tier": "Boss",
       "pool": "",
-      "description": "At the start of each combat, gain 2 Orb slots and Channel that many random Orbs.\nWhenever you play a Power [REMOVE_SPACE], Channel a random Orb at the start of your turn for 3 turns.\n\nMulticlass Defect",
+      "description": "At the start of each combat, gain 2 Orb slots and Channel that many random Orbs.\nWhenever you play a Power, Channel a random Orb at the start of your turn for 3 turns.\n\nMulticlass Defect",
       "flavorText": "Pages upon pages filled with meticulously written 1s and 0s, what could this mean?"
     },
     {
@@ -245,21 +224,35 @@
       "name": "Ironclad's Skillbook",
       "tier": "Boss",
       "pool": "",
-      "description": "At the end of each turn, if you have more than 20 Block [REMOVE_SPACE], gain 1 Strength [REMOVE_SPACE]. At the end of combat, heal 4 HP.\n\nMulticlass Ironclad",
+      "description": "Before the start of your turn, if you have Block, gain 1 Strength. At the end of combat, heal 4 HP.\n\nMulticlass Ironclad",
       "flavorText": "An abused book that contains the hasty scribbles of an angry being."
+    },
+    {
+      "name": "Mageblood",
+      "tier": "Boss",
+      "pool": "",
+      "description": "You cannot use potions. You cannot have rare potions.\nAt the start of combat, gain all your potion effects.",
+      "flavorText": "Rivers of power course through your veins."
+    },
+    {
+      "name": "Mechanical Eye",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of the first 3 turns each combat, put a card from your draw pile into your hand.",
+      "flavorText": "20/20 Hindsight."
     },
     {
       "name": "Poet's Pen",
       "tier": "Boss",
       "pool": "",
-      "description": "Whenever you play an Attack [REMOVE_SPACE], play the top card of your draw pile if it's an Attack [REMOVE_SPACE], otherwise discard it.",
+      "description": "Whenever you play an Attack, play the top card of your draw pile if it's an Attack, otherwise discard it.",
       "flavorText": "In every piece of prose, lies a tiny spark of magic. With this tool, you may craft beauty even on this most dreary of canvasses."
     },
     {
       "name": "Poet's Pen",
       "tier": "Boss",
       "pool": "",
-      "description": "Whenever you play an Attack [REMOVE_SPACE], play the top card of your draw pile.\nStart combat with 6 stacks of Weak [REMOVE_SPACE], Frail and Vulnerable on you, reduced by Experience [REMOVE_SPACE].",
+      "description": "Whenever you play an Attack, play the top card of your draw pile.\nStart combat with 6 stacks of Weak, Frail and Vulnerable on you, reduced by Experience.",
       "flavorText": "In every piece of prose, lies a tiny spark of magic. With this tool, you may craft beauty even on this most dreary of canvasses."
     },
     {
@@ -273,14 +266,14 @@
       "name": "Ritual Dagger",
       "tier": "Boss",
       "pool": "",
-      "description": "Lose 3 HP at the start of your turn. When you would die in combat, heal to your Max HP instead and gain Awoken (works once).",
+      "description": "Lose 3 HP at the start of your turn. When you would die in combat, heal to your Max HP instead and gain permanently Awoken (works once).",
       "flavorText": "With every move you make, you feel the dagger dig in deeper into your being. You fear what you may become if you give in."
     },
     {
       "name": "Runic Spoon",
       "tier": "Boss",
       "pool": "",
-      "description": "In each combat, add a copy of every 3rd card you manually play into your hand.",
+      "description": "In each combat, add a copy of every 3rd card you manually play into your hand, it costs 1 more until played.",
       "flavorText": "Maybe you could read the runes if the spoon didn't wiggle around so much."
     },
     {
@@ -301,28 +294,28 @@
       "name": "Stellarator",
       "tier": "Boss",
       "pool": "",
-      "description": "Whenever channeling an orb fills your orb slots, Evoke your next orb and aspiration:Fuse all remaining orbs.",
+      "description": "The first time each turn when channeling an orb fills your orb slots, aspiration:Fuse all orbs.",
       "flavorText": "Who needs the Inserter if you can just squeeze!"
     },
     {
       "name": "Watcher's Skillbook",
       "tier": "Boss",
       "pool": "",
-      "description": "Whenever you spend 2 or more [E] [REMOVE_SPACE], gain Mantra equal to the amount spent.\n\nMulticlass Watcher",
-      "flavorText": ""
+      "description": "Whenever you play an Attack and then a Skill or vice versa, gain 1 Mantra.\n\nMulticlass Watcher",
+      "flavorText": "These pages just seem to have a bunch of random indentations..."
     },
     {
       "name": "Kaom's Heart",
       "tier": "Shop",
       "pool": "",
-      "description": "Raise your Max HP by 100 and become unable to obtain new relics FOR THE ENTIRE RUN [REMOVE_SPACE].",
+      "description": "Raise your Max HP by 100 and become unable to obtain new relics FOR THE ENTIRE RUN.",
       "flavorText": "The warrior who fears, will fail. Never look back. Never stop. Never surrender."
     },
     {
       "name": "Nostalgia",
       "tier": "Shop",
       "pool": "",
-      "description": "Upon pickup, obtain a random Starter Relic [REMOVE_SPACE].",
+      "description": "Upon pickup, obtain a random Starter Relic.",
       "flavorText": "Take heart in the memory of those that came before."
     }
   ],
@@ -332,7 +325,7 @@
   ],
   "keywords": [
     {
-      "name": "Aspiration:Fuse",
+      "name": "Fuse",
       "description": "Combine multiple orbs and their effects into a single orb."
     }
   ]

@@ -31,7 +31,22 @@ energy = re.compile(r"^(\[[RGBWE]])(.?)$")
 
 default_energy = "<:red_energy:382625376838615061>"
 
-icon_dictionary = { 
+wiki_dictionary = {
+    "mts": "https://github.com/kiooeht/ModTheSpire/wiki/",
+    "modthespire": "https://github.com/kiooeht/ModTheSpire/wiki/",
+    "spirepatch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
+    "patch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
+    "basemod": "https://github.com/daviscook477/BaseMod/wiki",
+    "hooks": "https://github.com/daviscook477/BaseMod/wiki/Hooks",
+    "stslib": "https://github.com/kiooeht/StSLib/wiki",
+    "cardmods": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
+    "card modifiers": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
+    "debug": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging",
+    "debugging": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging"
+}
+
+icon_dictionary = {
+    "[E]": "<:red_energy:382625376838615061>",
     "[R]": "<:red_energy:382625376838615061>", 
     "[G]": "<:green_energy:646206147220471808>", 
     "[B]": "<:blue_energy:668151236003889184>", 
@@ -45,6 +60,7 @@ color_dictionary = {
     "Purple": "<:purple_energy:620384758068674560>",
     "Colorless": "<:colorless_energy:382625433016991745>"
 }
+
 
 class Mod_Data:
     def __init__(self, id):
@@ -107,18 +123,20 @@ async def get_id(message):
             await message.channel.send("i love reina <3")
         if message.author.id == 86261397213708288:
             await message.channel.send("i love alchy <3")
+        if message.author.id == 138858311410909184:
+            await message.channel.send("i love reina AND alchy <3")
         return
     if s == "notneh" and message.author.id == 125669982041276416:
         await message.channel.send("djbtkdkfndn")
         return
     if s == "contribute":
         await message.channel.send(
-            "https://github.com/runttekita/mts-bot/blob/master/CONTRIBUTING.md"
+            "https://github.com/JohnnyDevo/mts-bot/blob/master/CONTRIBUTING.md"
         )
         return
     if s == "list":
         await message.channel.send(
-            "https://github.com/runttekita/mts-bot/tree/master/data"
+            "https://github.com/JohnnyDevo/mts-bot/tree/master/data"
         )
         return
     if s == "default":
@@ -143,6 +161,11 @@ async def get_id(message):
             "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch"
         )
         return
+    if s == "spirepatch2":
+        await message.channel.send(
+            "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch2"
+        )
+        return
     if s == "cardmods":
         await message.channel.send(
             "https://github.com/daviscook477/BaseMod/wiki/CardModifiers"
@@ -150,7 +173,7 @@ async def get_id(message):
         return
     if s == "optin":
         await message.channel.send(
-            "https://github.com/velvet-halation/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback"
+            "https://github.com/JohnnyDevo/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback"
         )
         return
     if s == "console":
@@ -159,18 +182,22 @@ async def get_id(message):
             + "Then hit ` while in a run."
         )
         return
-    if s == "relic:124":
+    if s == "relic:124" or s == "124" or s == "relic:126" or s == "126":
         await message.channel.send(
             "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings"
         )
         return
     if s == "cansuggest":
         await message.channel.send(
-            "https://github.com/velvet-halation/mts-bot/blob/master/mtsbotdata.py#L32"
+            "https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32"
         )
     if s == "pathwater":
         await message.channel.send(
             "https://cdn.discordapp.com/attachments/398373038732738570/633779880873689110/FB_IMG_1570999646277.png"
+        )
+    if s == "autoadd":
+        await message.channel.send(
+            "https://github.com/daviscook477/BaseMod/wiki/AutoAdd"
         )
     if len(s.split(" ")) == 1:
         return
@@ -223,7 +250,9 @@ async def do_command(channel, tokenized_message):
         "findcard": find,
         "findrelic": findrelic,
         "modder": get_mods_by_author,
-        "mod": get_mod_info
+        "mod": get_mod_info,
+        "potion": potion,
+        "wiki": wiki
     }
     callback = commands.get(tokenized_message[0])
     await callback(channel, tokenized_message)
@@ -757,36 +786,142 @@ async def relic(channel, tokenized_message):
 
 
 @client.event
+async def potion(channel, tokenized_message):
+    potions = Mod_Data(tokenized_message[1]).data
+    random.shuffle(potions)
+    first_match = {}
+    other_results = {}
+    if len(tokenized_message) == 3:
+        if tokenized_message[2] == "random" and (
+            channel.id == 384046138610941953 or channel.id == 632350690479570950
+        ):
+            if "mod" in potions[0]:
+                await channel.send(
+                    potion_format(
+                        random.choice(potions[0]["potions"]), potions[0]["mod"]["name"]
+                    )
+                )
+                return
+            else:
+                potion = random.choice(potions[0]["potions"])
+                await channel.send(potion_format(potion, potion["mod"]))
+                return
+    if len(tokenized_message) == 2:
+        if tokenized_message[1] == "random" and (
+            channel.id == 384046138610941953 or channel.id == 632350690479570950
+        ):
+            mod_object = random.choice(potions)
+            if len(mod_object["potions"]) == 0:
+                await potion(channel, tokenized_message)
+                return
+            potions_object = random.choice(mod_object["potions"])
+            if "mod" in mod_object:
+                await channel.send(
+                    potion_format(potions_object, mod_object["mod"]["name"])
+                )
+                return
+            else:
+                await channel.send(potion_format(potions_object, potions_object["mod"]))
+                return
+    for x in range(len(potions)):
+        for potion in potions[x]["potions"]:
+            if len(tokenized_message) == 3:
+                if tokenized_message[2] == potion["name"].lower():
+                    if "mod" in potions[x]:
+                        if not first_match:
+                            first_match.update({potions[x]["mod"]["name"]: potion})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update(
+                                    {potions[x]["mod"]["name"]: potion["name"]}
+                                )
+                    else:
+                        if not first_match:
+                            first_match.update({potion["mod"]: potion})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({potion["mod"]: potion["name"]})
+            else:
+                if tokenized_message[1] == potion["name"].lower():
+                    if "mod" in potions[x]:
+                        if not first_match:
+                            first_match.update({potions[x]["mod"]["name"]: potion})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update(
+                                    {potions[x]["mod"]["name"]: potion["name"]}
+                                )
+                    else:
+                        if not first_match:
+                            first_match.update({potion["mod"]: potion})
+                        else:
+                            if len(other_results) < 3:
+                                other_results.update({potion["mod"]: potion["name"]})
+    message = ""
+    if first_match:
+        for key in first_match:
+            message += potion_format(first_match.get(key), key) + "\n"
+        if len(other_results) > 3:
+            other_results = other_results[:2]
+        if other_results:
+            message += "Other matches include:\n"
+            for match in other_results:
+                name = other_results.get(match)
+                message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
+        await channel.send(message)
+        return
+    if len(tokenized_message) == 3:
+        await channel.send(
+            f"No potion named {tokenized_message[2]} found in {tokenized_message[1]}."
+        )
+    else:
+        await channel.send(f"No potion named {tokenized_message[1]} found.")
+
+
+@client.event
 async def keyword(channel, tokenized_message):
     keywords = Mod_Data(tokenized_message[1]).data
     for x in range(len(keywords)):
-        for keyword in keywords[x]["keywords"]:
-            keyword_name = ""
-            split_keyword = keyword["name"].split(":")
-            if len(split_keyword) == 2:
-                keyword_name = split_keyword[1]
-            else:
-                keyword_name = split_keyword[0]
-            if len(tokenized_message) == 3:
-                if tokenized_message[2] == keyword_name.lower():
+        if "keywords" in keywords[x]:
+            for keyword in keywords[x]["keywords"]:
+                keyword_name = ""
+                if "name" in keyword:
+                    split_keyword = keyword["name"].split(":")
                     if len(split_keyword) == 2:
-                        await channel.send(
-                            keyword_format_mod(keyword, keyword_name, split_keyword[0])
-                        )
-                        return
+                        keyword_name = split_keyword[1]
                     else:
-                        await channel.send(keyword_format(keyword, keyword_name))
-                        return
-            else:
-                if tokenized_message[1] == keyword_name.lower():
-                    if len(split_keyword) == 2:
-                        await channel.send(
-                            keyword_format_mod(keyword, keyword_name, split_keyword[0])
-                        )
-                        return
+                        keyword_name = keyword["name"]
+                    if len(tokenized_message) == 3:
+                        if tokenized_message[2] == keyword_name.lower():
+                            if len(split_keyword) == 2:
+                                mod_name = split_keyword[0]
+                                if "mod" in keywords[x]:
+                                    if "name" in keywords[x]["mod"]:
+                                        mod_name = keywords[x]["mod"]["name"]
+                                
+                                await channel.send(
+                                    keyword_format_mod(keyword, keyword_name, mod_name)
+                                )
+                                return
+                            else:
+                                await channel.send(keyword_format(keyword, keyword_name))
+                                return
                     else:
-                        await channel.send(keyword_format(keyword, keyword_name))
-                        return
+                        if tokenized_message[1] == keyword_name.lower():
+                            if "mod" in keywords[x]:
+                                if "name" in keywords[x]["mod"]:
+                                    await channel.send(
+                                        keyword_format_mod(keyword, keyword_name, keywords[x]["mod"]["name"])
+                                    )
+                                    return
+                            if len(split_keyword) == 2:
+                                await channel.send(
+                                    keyword_format_mod(keyword, keyword_name, split_keyword[0])
+                                )
+                                return
+                            else:
+                                await channel.send(keyword_format(keyword, keyword_name))
+                                return
 
     if len(tokenized_message) == 3:
         await channel.send(
@@ -806,18 +941,33 @@ async def help_command(channel):
         + f"You can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in."
     )
 
+@client.event
+async def wiki(channel, tokenized_message):
+    if len(tokenized_message) < 2:
+        return
+    wikipage = " ".join(tokenized_message[1:])
+    await channel.send(
+        wiki_dictionary.get(wikipage, "Wiki page not found.")
+    )
+    
+
+def energy_replace(strIn):
+    retVal = strIn
+    for key, value in icon_dictionary.items():
+        retVal = retVal.replace(key, value)
+    return retVal
 
 def card_format(card, id):
     if card["cost"] == "":
-        return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`\n{5}".format(
+        return energy_replace("**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`\n{5}".format(
             card["name"],
             card["type"],
             card["rarity"],
             card["color"],
             id,
             remove_keyword_prefixes(card["description"]),
-        )
-    return "**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(
+        ))
+    return energy_replace("**{0}**\n`{1}`  `{2}`  `{3}`  `{4}`  `{5}`\n{6}".format(
         card["name"],
         energy_string(card["cost"]),
         card["type"],
@@ -825,27 +975,33 @@ def card_format(card, id):
         card["color"],
         id,
         remove_keyword_prefixes(card["description"]),
-    )
+    ))
 
 
 def relic_format(relic, id):
     if relic["pool"] == "":
-        return "**{0}**\n`{1}`  `{2}`\n{3}\n*{4}*".format(
+        return energy_replace("**{0}**\n`{1}`  `{2}`\n{3}\n*{4}*".format(
             relic["name"], relic["tier"], id, relic["description"], relic["flavorText"]
-        )
+        ))
 
-    return "**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(
+    return energy_replace("**{0}**\n`{1}`  `{2}`  `{3}`\n{4}\n*{5}*".format(
         relic["name"],
         relic["tier"],
         relic["pool"],
         id,
         relic["description"],
         relic["flavorText"],
+    ))
+
+
+def potion_format(potion, id):
+    return "**{0}**\n`{1}`  `{2}`\n{3}".format(
+        potion["name"], potion["rarity"], id, potion["description"]
     )
 
 
 def keyword_format_mod(keyword, name, mod):
-    return "**{0}**\n {1}".format(name.capitalize(), keyword["description"])
+    return "**{0}** ({1})\n{2}".format(name.capitalize(), mod, keyword["description"])
 
 
 def keyword_format(keyword, name):
