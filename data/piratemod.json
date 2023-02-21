@@ -1,31 +1,79 @@
 {
   "mod": {
     "name": "The Abyssal",
-    "version": "0.5.2",
+    "version": "0.7.0",
     "authors": ["Ithilian"],
     "credits": "Basemod, ModTheSpire, StSLib, Playtesting: Vex'd, Laertes, Arch. Art: Jessparro",
     "description": "Adds The Abyssal as a new playable character.",
     "mts_version": "3.8.0",
-    "sts_version": "01-23-2019",
+    "sts_version": "12-18-2022",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
   "cards": [
     {
-      "name": "Pirate Form",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "3",
-      "description": "Ethereal.\nAt the start of your turn, thepirate:Bury and then thepirate:Dig."
+      "name": "Defend",
+      "color": "Pirate_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
     },
     {
-      "name": "Pirate Form+",
-      "color": "Colorless",
-      "rarity": "Special",
-      "type": "Power",
-      "cost": "3",
-      "description": "At the start of your turn, thepirate:Bury and then thepirate:Dig."
+      "name": "Defend+",
+      "color": "Pirate_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Reload",
+      "color": "Pirate_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nReturn a Cannon or a Cannonball from your Exhaust pile to your hand."
+    },
+    {
+      "name": "Reload+",
+      "color": "Pirate_purple_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nGain 8 Block.\nReturn a Cannon or a Cannonball from your Exhaust pile to your hand."
+    },
+    {
+      "name": "Round Shot",
+      "color": "Pirate_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nExhaust"
+    },
+    {
+      "name": "Round Shot+",
+      "color": "Pirate_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nExhaust"
+    },
+    {
+      "name": "Strike",
+      "color": "Pirate_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Pirate_purple_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
     },
     {
       "name": "Ancient Crab",
@@ -42,6 +90,38 @@
       "type": "Attack",
       "cost": "1",
       "description": "Deal 25 damage.\nWhen thepirate:Buried, return this to your hand and then thepirate:Dig.\nthepirate:Predatory."
+    },
+    {
+      "name": "Bathe in Blood",
+      "color": "Pirate_purple_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "thepirate:Lure.\nInnate. Unplayable.\nOn draw, gain 1 Vulnerable, discard this, and draw a card."
+    },
+    {
+      "name": "Cannon",
+      "color": "Pirate_purple_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain. Exhaust.\nWhile this is in your hand, Retain 1 Cannonball this turn."
+    },
+    {
+      "name": "Electric Eel",
+      "color": "Pirate_purple_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card and\ngain [E].\nWhen you thepirate:Bury this, play it.\nthepirate:Predatory."
+    },
+    {
+      "name": "Electric Eel+",
+      "color": "Pirate_purple_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card and\ngain [E] [E].\nWhen you thepirate:Bury this, play it.\nthepirate:Predatory."
     },
     {
       "name": "Kraken",
@@ -68,12 +148,372 @@
       "description": "thepirate:Lure.\nInnate. Unplayable.\nOn draw, gain 1 Frail, discard this, and draw a card."
     },
     {
+      "name": "Retreat",
+      "color": "Pirate_purple_color",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "1",
+      "description": "Gain 1 Vulnerable.\nPermanently replace this card with an Overexert.\nthepirate:Purge."
+    },
+    {
+      "name": "Shovel Blade",
+      "color": "Pirate_purple_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nthepirate:Dig.\nExhaust."
+    },
+    {
+      "name": "Shovel Blade+",
+      "color": "Pirate_purple_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nthepirate:Dig twice.\nExhaust."
+    },
+    {
+      "name": "Withdraw Weapons",
+      "color": "Pirate_purple_color",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "thepirate:Lure.\nInnate. Unplayable.\nOn draw, gain 1 Weak, discard this, and draw a card."
+    },
+    {
+      "name": "Beach Buddy",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nWhenever you thepirate:Bury, return this from the discard pile to your Hand."
+    },
+    {
+      "name": "Beach Buddy+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nWhenever you thepirate:Bury, return this from the discard pile to your Hand."
+    },
+    {
+      "name": "Brace For Impact",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 10 Block."
+    },
+    {
+      "name": "Brace For Impact+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn, gain 13 Block."
+    },
+    {
+      "name": "Bury",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thepirate:Bury 1 card.\nDraw 1 card."
+    },
+    {
+      "name": "Bury+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thepirate:Bury 1 card.\nDraw 2 cards."
+    },
+    {
+      "name": "Chemical Warfare",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nEnemy takes 50% more damage from thepirate:Ink."
+    },
+    {
+      "name": "Chemical Warfare+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nEnemy takes 50% more damage from thepirate:Ink."
+    },
+    {
+      "name": "Cursed Blade",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nGain 1 thepirate:Corrupt_Artifact."
+    },
+    {
+      "name": "Cursed Blade+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 17 damage.\nGain 1 thepirate:Corrupt_Artifact."
+    },
+    {
+      "name": "Cutlass",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage. \nPut this card on top of your draw pile and reduce it's damage by 2."
+    },
+    {
+      "name": "Cutlass+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. \nPut this card on top of your draw pile and reduce it's damage by 1."
+    },
+    {
+      "name": "Dig",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thepirate:Dig."
+    },
+    {
+      "name": "Dig+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thepirate:Dig.\nDraw 1 card."
+    },
+    {
+      "name": "Evasive Maneuver",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 5 thepirate:Ink."
+    },
+    {
+      "name": "Evasive Maneuver+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 8 thepirate:Ink."
+    },
+    {
+      "name": "Head to Shore",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard a card. \nAt the start of your next turn, thepirate:Dig."
+    },
+    {
+      "name": "Head to Shore+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card and Discard a card. \nAt the start of your next turn, thepirate:Dig."
+    },
+    {
+      "name": "Headbutt",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nPut a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Headbutt+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nPut a card from your discard pile on top of your draw pile."
+    },
+    {
       "name": "Makeshift Spear",
       "color": "Pirate_purple_color",
       "rarity": "Common",
       "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to all enemies.\nWhen this card is Upgraded, remove it from your deck instead."
+    },
+    {
+      "name": "Momentous Attack",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage.\nDeals 7 additional damage for each energy spent this turn."
+    },
+    {
+      "name": "Momentous Attack+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage.\nDeals 9 additional damage for each energy spent this turn."
+    },
+    {
+      "name": "Parry",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nGain [E]."
+    },
+    {
+      "name": "Parry+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain [E]."
+    },
+    {
+      "name": "Retreat to Shore",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nthepirate:Bury 2 cards."
+    },
+    {
+      "name": "Retreat to Shore+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nthepirate:Bury 2 cards."
+    },
+    {
+      "name": "Riposte",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain [E]."
+    },
+    {
+      "name": "Riposte+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nGain [E]."
+    },
+    {
+      "name": "Shots in the Dark",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage to a random enemy 4 times. \nIf this kills an enemy, play this card again."
+    },
+    {
+      "name": "Shots in the Dark+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage to a random enemy 4 times. \nIf this kills an enemy, play this card again."
+    },
+    {
+      "name": "Subdue",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nDeals additional damage equal to thepirate:Ink on enemy."
+    },
+    {
+      "name": "Subdue+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nDeals additional damage equal to thepirate:Ink on enemy."
+    },
+    {
+      "name": "Swab The Deck",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.  If this is the first card you played this turn gain 3 additional Block."
+    },
+    {
+      "name": "Swab The Deck+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.  If this is the first card you played this turn gain 4 additional Block."
+    },
+    {
+      "name": "Trusty Shovel",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. \nthepirate:Bury 1 card."
+    },
+    {
+      "name": "Trusty Shovel+",
+      "color": "Pirate_purple_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage. \nthepirate:Bury 2 card."
+    },
+    {
+      "name": "Ancient Alliances",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thepirate:Mysterious.\nDeal 14 damage."
+    },
+    {
+      "name": "Ancient Jewel",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
       "cost": "",
-      "description": ""
+      "description": "Unplayable.\nWhen you thepirate:Bury this card, gain 2 [E]."
+    },
+    {
+      "name": "Ancient Jewel+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you thepirate:Bury this card, gain 3 [E]."
+    },
+    {
+      "name": "Ancient Map",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you thepirate:Bury this card, draw 2 cards."
+    },
+    {
+      "name": "Ancient Map+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you thepirate:Bury this card, draw 3 cards."
     },
     {
       "name": "Austerity",
@@ -81,7 +521,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Whenever you thepirate:Bury a card, draw 1 card"
+      "description": "Whenever you thepirate:Bury a card, draw 1 card."
     },
     {
       "name": "Austerity+",
@@ -89,7 +529,23 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you thepirate:Bury a card, draw 1 card"
+      "description": "Whenever you thepirate:Bury a card, draw 1 card."
+    },
+    {
+      "name": "Boarding Party",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nBury all non-Attack cards in your draw pile."
+    },
+    {
+      "name": "Boarding Party+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nBury all non-Attack cards in your draw pile."
     },
     {
       "name": "Bolster Crew",
@@ -97,15 +553,39 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Ethereal.\nGain 3 Strength.\nThe first time you play this each combat, lose 20 gold."
+      "description": "thepirate:Mysterious.\nGain 3 Strength.\nThe first time you play this each combat, lose 20 gold."
     },
     {
-      "name": "Bolster Crew+",
+      "name": "Chain Shot",
       "color": "Pirate_purple_color",
       "rarity": "Uncommon",
-      "type": "Skill",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nEnemy loses 4 Strength this turn.\nExhaust."
+    },
+    {
+      "name": "Chain Shot+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nEnemy loses 6 Strength this turn.\nExhaust."
+    },
+    {
+      "name": "Fire At Will",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "The next Cannonball you play, and The first Cannonball you play each turn costs 0."
+    },
+    {
+      "name": "Fire At Will+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
       "cost": "1",
-      "description": "Ethereal.\nGain 4 Strength.\nThe first time you play this each combat, lose 20 gold."
+      "description": "The next Cannonball you play, and The first Cannonball you play each turn costs 0."
     },
     {
       "name": "Flexible Limb",
@@ -113,7 +593,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 5 damage.\nIf the enemy has thepirate:Ink, gain [E] and draw 1 card"
+      "description": "Deal 5 damage.\nIf the enemy has thepirate:Ink, gain [E] and draw 1 card."
     },
     {
       "name": "Flexible Limb+",
@@ -121,7 +601,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nIf the enemy has thepirate:Ink, gain [E] and draw 1 card"
+      "description": "Deal 8 damage.\nIf the enemy has thepirate:Ink, gain [E] and draw 1 card."
     },
     {
       "name": "Genetic Splice",
@@ -140,6 +620,38 @@
       "description": "Remove all thepirate:Ink from enemy.\nGain 1 Dexterity for every 2 thepirate:Ink removed.\nGain 6 Block.\nExhaust."
     },
     {
+      "name": "Ghost of Blackbeard",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage.\nCosts 1 [E] more for each card thepirate:Buried this combat."
+    },
+    {
+      "name": "Ghost of Blackbeard+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 13 damage.\nCosts 1 [E] more for each card thepirate:Buried this combat."
+    },
+    {
+      "name": "Giant Beak",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Apply 1 Vulnerable, then deal 11 damage."
+    },
+    {
+      "name": "Giant Beak+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Apply 1 Vulnerable, then deal 14 damage."
+    },
+    {
       "name": "Grape Shot",
       "color": "Pirate_purple_color",
       "rarity": "Uncommon",
@@ -156,6 +668,70 @@
       "description": "Deal 3 damage to a random enemy.\nthepirate:Storm.\nExhaust."
     },
     {
+      "name": "Hardened Brine",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you use energy, gain 1 Block for each energy spent."
+    },
+    {
+      "name": "Hardened Brine+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you use energy, gain 1 Block for each energy spent."
+    },
+    {
+      "name": "Ink Blast",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage and apply 7 thepirate:Ink."
+    },
+    {
+      "name": "Ink Blast+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage and apply 9 thepirate:Ink."
+    },
+    {
+      "name": "Ink Shot",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage and apply 2 thepirate:Ink to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Ink Shot+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage and apply 3 thepirate:Ink to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Jettison",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thepirate:Bury 2 cards.\nGain temporary Strength equal to their cost, and 1 Strength for each non-playable card thepirate:Buried."
+    },
+    {
+      "name": "Jettison+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thepirate:Bury 3 cards.\nGain temporary Strength equal to their cost, and 1 Strength for each non-playable card thepirate:Buried."
+    },
+    {
       "name": "Menace",
       "color": "Pirate_purple_color",
       "rarity": "Uncommon",
@@ -170,6 +746,86 @@
       "type": "Skill",
       "cost": "0",
       "description": "Double all debuffs on enemy.\nExhaust."
+    },
+    {
+      "name": "Mercenaries",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 20 damage.  The first time you play this each combat, lose 15 gold."
+    },
+    {
+      "name": "Mercenaries+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 26 damage.  The first time you play this each combat, lose 15 gold."
+    },
+    {
+      "name": "Overexert",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 24 damage.  Permanently replace this card with a Retreat.\nthepirate:Purge."
+    },
+    {
+      "name": "Overexert+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 28 damage.  Permanently replace this card with a Retreat+.\nthepirate:Purge."
+    },
+    {
+      "name": "Pin Down",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nShuffle a Shovel Blade to your draw pile."
+    },
+    {
+      "name": "Pin Down+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 Weak.\nShuffle a Shovel Blade to your draw pile."
+    },
+    {
+      "name": "Pirate Bay",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nCreate a copy of a card in your draw pile, then thepirate:Bury it.\nExhaust."
+    },
+    {
+      "name": "Pirate Bay+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nCreate a copy of a card in your draw pile, then thepirate:Bury it.\nExhaust."
+    },
+    {
+      "name": "Ransom",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thepirate:Bury a card.  Gain energy equal to its cost"
+    },
+    {
+      "name": "Ransom+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thepirate:Bury a card.  Gain energy equal to its cost"
     },
     {
       "name": "Red Shirt",
@@ -193,7 +849,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 12 Block.\nThe next time enemy would gain Block, instead it doesn't"
+      "description": "Gain 12 Block.\nThe next time enemy would gain Block, instead it doesn't."
     },
     {
       "name": "Saboteur+",
@@ -202,6 +858,158 @@
       "type": "Skill",
       "cost": "2",
       "description": "Gain 15 Block.\nThe next time ALL enemies would gain Block, instead they don't."
+    },
+    {
+      "name": "Sandblast",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage.\nApply 2 Weak and Vulnerable.\nCosts 1 [E] less for each card thepirate:Buried this turn."
+    },
+    {
+      "name": "Sandblast+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 12 damage.\nApply 3 Weak and Vulnerable.\nCosts 1 [E] less for each card thepirate:Buried this turn."
+    },
+    {
+      "name": "Scout Ahead",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Next turn, thepirate:Dig X times.\nExhaust."
+    },
+    {
+      "name": "Scout Ahead+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Next turn, thepirate:Dig X+1 times.\nExhaust."
+    },
+    {
+      "name": "Sea Turtles",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nWhen you thepirate:Bury this, thepirate:Bury a copy. When you thepirate:Dig this, put a copy in your draw pile.\nExhaust."
+    },
+    {
+      "name": "Sea Turtles+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 11 damage.\nWhen you thepirate:Bury this, thepirate:Bury a copy. When you thepirate:Dig this, put a copy in your draw pile.\nExhaust."
+    },
+    {
+      "name": "Storm Surge",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you use energy, gain 1 temporary Strength."
+    },
+    {
+      "name": "Storm Surge+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you use energy, gain 1 temporary Strength."
+    },
+    {
+      "name": "Strange Blade",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thepirate:Mysterious.\nDeal 10 damage."
+    },
+    {
+      "name": "Thief's Accomplice",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nThe next time you lose gold, gain that much gold."
+    },
+    {
+      "name": "Thief's Accomplice+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nThe next time you lose gold, gain that much gold."
+    },
+    {
+      "name": "Too Much Rum",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you thepirate:Bury a card, Exhaust it and gain 3 Block."
+    },
+    {
+      "name": "Too Much Rum+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "When you thepirate:Bury a card, Exhaust it and gain 4 Block."
+    },
+    {
+      "name": "Tropomyosin",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 1 Strength and gains 2 thepirate:Ink.\nApply thepirate:Volatile_Ink to enemy for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Tropomyosin+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 2 Strength and gains 4 thepirate:Ink.\nApply thepirate:Volatile_Ink to enemy for 1 turn.\nExhaust."
+    },
+    {
+      "name": "Unstable Formula",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of turn, Apply thepirate:Ink to ALL enemies equal to their current thepirate:Ink."
+    },
+    {
+      "name": "Unstable Formula+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of turn, Apply thepirate:Ink to ALL enemies equal to their current thepirate:Ink."
+    },
+    {
+      "name": "Volatile Ink",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain thepirate:Volatile_Ink."
+    },
+    {
+      "name": "Volatile Ink+",
+      "color": "Pirate_purple_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain thepirate:Volatile_Ink."
     },
     {
       "name": "Attend to Cache",
@@ -236,12 +1044,92 @@
       "description": "At the start of your turn, you may thepirate:Bury a card."
     },
     {
+      "name": "Captain's Quarters",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This Turn, your next Attack or Skill is played twice. \nExhaust."
+    },
+    {
+      "name": "Captain's Quarters+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This Turn, your next Attack or Skill is played twice."
+    },
+    {
+      "name": "Caustic Ink",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Enemy loses Block, thepirate:Artifacts, and 2 Strength.\nApply thepirate:Ink equal to Block lost.\nExhaust."
+    },
+    {
+      "name": "Caustic Ink+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain\nEnemy loses Block, thepirate:Artifacts, and 2 Strength.\nApply thepirate:Ink equal to Block lost.\nExhaust."
+    },
+    {
+      "name": "Cephalopod Form",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nWhenever you play a card, apply 1 thepirate:Ink to ALL enemies."
+    },
+    {
+      "name": "Cephalopod Form+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play a card, apply 1 thepirate:Ink to ALL enemies."
+    },
+    {
+      "name": "Cyclone",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block.\nthepirate:Storm.\nExhaust."
+    },
+    {
+      "name": "Cyclone+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nthepirate:Storm.\nExhaust."
+    },
+    {
+      "name": "Dark Experiment",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage and apply 4 thepirate:Ink.  If Fatal, permanently increase thepirate:Ink applied by this card by 4 .\nExhaust."
+    },
+    {
+      "name": "Dark Experiment+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage and apply 4 thepirate:Ink.  If Fatal, permanently increase thepirate:Ink applied by this card by 4 .\nExhaust."
+    },
+    {
       "name": "Dark Offering",
       "color": "Pirate_purple_color",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "thepirate:Bury up to x cards and apply 2x thepirate:Ink to ALL enemies.\nExhaust."
+      "description": "thepirate:Bury up to X cards and apply 2X thepirate:Ink to ALL enemies.\nExhaust."
     },
     {
       "name": "Dark Offering+",
@@ -249,7 +1137,127 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "X",
-      "description": "thepirate:Bury up to x+1 cards and apply 2 x+1 thepirate:Ink to ALL enemies.\nExhaust."
+      "description": "thepirate:Bury up to X+1 cards and apply 2 X+1 thepirate:Ink to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Dark Plans",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable. thepirate:Mysterious.\nApply 10 thepirate:Ink to ALL enemies for each time this was thepirate:Buried"
+    },
+    {
+      "name": "Davy Jones' Locker",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "thepirate:Purge this and the next card you play."
+    },
+    {
+      "name": "Davy Jones' Locker+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "thepirate:Purge this and the next card you play.\nGain a Davy Jones' Locker to your deck."
+    },
+    {
+      "name": "Death Knell",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Trigger the start of combat and start of turn effects of target Relic.\nExhaust."
+    },
+    {
+      "name": "Death Knell+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Trigger the start of combat and start of turn effects of target Relic.\nExhaust."
+    },
+    {
+      "name": "Down with the Ship",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Bury all but 1 card from your draw pile, then deal 2 damage for each card thepirate:Buried.\nExhaust."
+    },
+    {
+      "name": "Down with the Ship+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Bury all but 1 card from your draw pile, then deal 3 damage for each card thepirate:Buried.\nExhaust."
+    },
+    {
+      "name": "Hatch Plot",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play a card from your discard pile (cannot choose Hatch Plot).\nExhaust."
+    },
+    {
+      "name": "Hatch Plot+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Play a card from your discard pile (cannot choose Hatch Plot)."
+    },
+    {
+      "name": "Heated Shot",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to the leftmost enemy.\nIf this kills an enemy, play this card again.\nExhaust."
+    },
+    {
+      "name": "Heated Shot+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage to the leftmost enemy.\nIf this kills an enemy, play this card again.\nExhaust."
+    },
+    {
+      "name": "Retaliation",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If enemy intends to attack, deal damage equal to enemy intent."
+    },
+    {
+      "name": "Retaliation+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If enemy intends to attack, deal damage equal to enemy intent."
+    },
+    {
+      "name": "Sorcerer Attack",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nApply thepirate:Corrupt_Artifact to enemy 3 times.\nExhaust."
+    },
+    {
+      "name": "Sorcerer Attack+",
+      "color": "Pirate_purple_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nApply thepirate:Corrupt_Artifact to enemy 3 times.\nExhaust."
     },
     {
       "name": "Time Warp",
@@ -257,7 +1265,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "At the start of turn, return the last non- Exhaust card you played the previous turn to your hand.\nGain [E] equal to its cost."
+      "description": "At the start of turn, return the first non- Exhaust card you played the previous turn to your hand.\nGain [E] equal to its cost."
     },
     {
       "name": "Time Warp+",
@@ -265,7 +1273,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "At the start of turn, return the last non- Exhaust card you played the previous turn to your hand.\nGain [E] equal to its cost."
+      "description": "At the start of turn, return the first non- Exhaust card you played the previous turn to your hand.\nGain [E] equal to its cost."
     }
   ],
   "relics": [
@@ -280,7 +1288,7 @@
       "name": "Money Bag",
       "tier": "Common",
       "pool": "Pirate_purple_color",
-      "description": "When you spend gold, add it here. When you lose gold, lose it from here first instead.",
+      "description": "When you spend gold at shops, add it here. When you lose gold, lose it from here first instead.",
       "flavorText": ""
     },
     {
@@ -294,7 +1302,7 @@
       "name": "Exotic Dish",
       "tier": "Uncommon",
       "pool": "Pirate_purple_color",
-      "description": "At the start of battle, apply 5 thepirate:Ink to all enemies.",
+      "description": "At the start of battle, apply 5 thepirate:Ink to ALL enemies.",
       "flavorText": ""
     },
     {
@@ -340,45 +1348,31 @@
       "flavorText": ""
     },
     {
-      "name": "Button",
-      "tier": "Special",
-      "pool": "Pirate_purple_color",
-      "description": "Click Me!",
-      "flavorText": "Click Me!"
-    },
-    {
       "name": "Gold Cannon Trinket",
       "tier": "Special",
       "pool": "Pirate_purple_color",
-      "description": "At the start of combat, add a Cannon to your hand.\nCannon gains:\nThe next Cannonball you play this turn costs 0.\nApply Vulnerable to all enemies.\nGain 2 Strength.",
+      "description": "At the start of combat, add a Cannon to your hand.\nCannon gains:\nThe next Cannonball you play this turn costs 0.\nApply Vulnerable to ALL enemies.\nGain 2 Strength.",
       "flavorText": ""
-    },
-    {
-      "name": "Placeholder Relic 2",
-      "tier": "Special",
-      "pool": "",
-      "description": "At the start of each combat, gain 1 Strength.",
-      "flavorText": "You feel stronger."
     },
     {
       "name": "Platinum Cannon Trinket",
       "tier": "Special",
       "pool": "Pirate_purple_color",
-      "description": "At the start of combat, add a Cannon to your hand.\nCannon gains:\nThe next Cannonball you play this turn costs 0.\nApply Vulnerable and Weaken to all enemies.\nGain 2 Strength.\nAll enemies lose two Strength.",
+      "description": "At the start of combat, add a Cannon to your hand.\nCannon gains:\nThe next Cannonball you play this turn costs 0.\nApply Vulnerable and Weak to ALL enemies.\nGain 2 Strength.\nAll enemies lose 2 Strength.",
       "flavorText": ""
     },
     {
       "name": "Silver Cannon Trinket",
       "tier": "Special",
       "pool": "Pirate_purple_color",
-      "description": "At the start of combat, add a Cannon to your hand.\nCannon gains:\nThe next Cannonball you play this turn costs 0.\nApply Vulnerable to all enemies.",
+      "description": "At the start of combat, add a Cannon to your hand.\nCannon gains:\nThe next Cannonball you play this turn costs 0.\nApply Vulnerable to ALL enemies.",
       "flavorText": ""
     },
     {
       "name": "Experimental Cannon",
       "tier": "Boss",
       "pool": "Pirate_purple_color",
-      "description": "Replaces your Cannon relic (or Gunsmith's Bible). At the start of combat, add a Cannon to your hand.\nCannon gains:\nThe next Cannonball you play this turn costs 0 and is played twice.",
+      "description": "Replaces your Cannon relic (or Gunsmith's Bible ).\nAt the start of combat, add a Cannon to your hand.\nCannon gains:\nThe next Cannonball you play this turn costs 0 and is played twice.",
       "flavorText": ""
     },
     {
@@ -418,18 +1412,6 @@
   ],
   "keywords": [
     {
-      "name": "Multiword Keyword",
-      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
-    },
-    {
-      "name": "Stun",
-      "description": "Stunned enemies skip their turn."
-    },
-    {
-      "name": "Artifacts",
-      "description": "Negates the next debuff."
-    },
-    {
       "name": "Bleeding",
       "description": "At the end of your turn, lose HP equal to half your Bleeding (round up), and then reduce your Bleeding by that amount."
     },
@@ -448,10 +1430,6 @@
     {
       "name": "Ink",
       "description": "The next time this enemy would deal damage, prevent damage equal to the ink value, deal that much damage to the enemy, and then remove that much ink."
-    },
-    {
-      "name": "Thepirate:keyword",
-      "description": "Whenever you play a card, gain 1 dexterity this turn only."
     },
     {
       "name": "Lure",
