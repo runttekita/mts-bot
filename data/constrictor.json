@@ -1,0 +1,1428 @@
+{
+  "mod": {
+    "name": "TheConstrictor",
+    "version": "0.1.0",
+    "authors": ["chocolatecake5000"],
+    "credits": "",
+    "description": "Thanks to the mod the spire community for helping me make this mod. I hope you enjoy it.",
+    "mts_version": "3.29.0",
+    "sts_version": "03-07-2022",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Theconstrictor_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Theconstrictor_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Muddy Water",
+      "color": "Theconstrictor_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 4 theconstrictor:Constricting to ALL.\nGain 4 Block."
+    },
+    {
+      "name": "Muddy Water+",
+      "color": "Theconstrictor_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 6 theconstrictor:Constricting to ALL.\nGain 6 Block."
+    },
+    {
+      "name": "Strike",
+      "color": "Theconstrictor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Theconstrictor_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Dusty Shiv",
+      "color": "Theconstrictor_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Apply 2 theconstrictor:Constricting.\nDeal 2 damage.\nExhaust."
+    },
+    {
+      "name": "Dusty Shiv+",
+      "color": "Theconstrictor_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Apply 3 theconstrictor:Constricting.\nDeal 3 damage.\nExhaust."
+    },
+    {
+      "name": "Eldrich Blast",
+      "color": "Theconstrictor_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 22 Damage to all enemies.\nExhaust."
+    },
+    {
+      "name": "Eldrich Blast+",
+      "color": "Theconstrictor_color",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 30 Damage to all enemies.\nExhaust."
+    },
+    {
+      "name": "Bath Time",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nReduce your theconstrictor:Constricting by 4.\nExhaust."
+    },
+    {
+      "name": "Bath Time+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nReduce your theconstrictor:Constricting by 6.\nExhaust."
+    },
+    {
+      "name": "Blocky Block",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block."
+    },
+    {
+      "name": "Blocky Block+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block."
+    },
+    {
+      "name": "Break Free",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nReduce 4 theconstrictor:Constricting."
+    },
+    {
+      "name": "Break Free+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nReduce 6 theconstrictor:Constricting."
+    },
+    {
+      "name": "ClearHead",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nExhaust a random card in your hand."
+    },
+    {
+      "name": "ClearHead+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Cold Shower",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reduce your theconstrictor:Constricting by 2.\nExhaust a random card in your hand."
+    },
+    {
+      "name": "Cold Shower+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reduce your theconstrictor:Constricting by 4.\nExhaust a card in your hand."
+    },
+    {
+      "name": "Constricting Strike",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nApply 2 theconstrictor:Constricting.\nGain 2 theconstrictor:Constricting."
+    },
+    {
+      "name": "Constricting Strike+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage.\nApply 4 theconstrictor:Constricting.\nGain 2 theconstrictor:Constricting."
+    },
+    {
+      "name": "Cool Off",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain [E] next turn."
+    },
+    {
+      "name": "Cool Off+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain [E] next turn."
+    },
+    {
+      "name": "Dam Slam",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nGain 1 theconstrictor:RisingWater.\nExhaust."
+    },
+    {
+      "name": "Dam Slam+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nGain 2 theconstrictor:RisingWater.\nExhaust."
+    },
+    {
+      "name": "Envy",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nDraw 2 cards.\nGain 2 theconstrictor:Constricting.\nExhaust."
+    },
+    {
+      "name": "Envy+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nDraw 3 cards.\nGain 2 theconstrictor:Constricting.\nExhaust."
+    },
+    {
+      "name": "Faded Seal",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nOn Exhaust Gain 10 Block."
+    },
+    {
+      "name": "Faded Seal+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "",
+      "description": "*Retain.\nUnplayable.\n On Exhaust Gain 13 Block."
+    },
+    {
+      "name": "Fishy Shield",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Block.\nAdd 1 Dusty Shiv To Your Hand."
+    },
+    {
+      "name": "Fishy Shield+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nAdd 2 Dusty Shiv To Your Hand."
+    },
+    {
+      "name": "Ink Blast",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak.\nApply 1 Vulnerable. Draw 1 Card."
+    },
+    {
+      "name": "Ink Blast+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak.\nApply 1 Vulnerable. Draw 2 Cards."
+    },
+    {
+      "name": "Into It",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block.\nIf your theconstrictor:Constricting is positive gain 12 block instead."
+    },
+    {
+      "name": "Into It+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block.\nIf your theconstrictor:Constricting is positive gain 15 block instead."
+    },
+    {
+      "name": "Miscalculated",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 [E].\nGain 2 theconstrictor:Constricting."
+    },
+    {
+      "name": "Miscalculated+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 [E].\nGain 2 theconstrictor:Constricting."
+    },
+    {
+      "name": "Pacific Sailfish Strike",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. Draw 1 Card."
+    },
+    {
+      "name": "Pacific Sailfish Strike+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage. Draw 2 Cards."
+    },
+    {
+      "name": "SharkSlap",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "SharkSlap+",
+      "color": "Theconstrictor_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 3 Vulnerable."
+    },
+    {
+      "name": "Anchor Time",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 4 theconstrictor:Constricting.\nReduce the cost of all cards in your hand to 0 this turn."
+    },
+    {
+      "name": "Anchor Time+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 4 theconstrictor:Constricting.\nReduce the cost of all cards in your hand to 0 this turn."
+    },
+    {
+      "name": "Blood Bag",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 4 HP.\nGain 20 Gold.\nExhaust."
+    },
+    {
+      "name": "Blood Bag+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 4 HP.\nGain 25 Gold.\nExhaust."
+    },
+    {
+      "name": "Blurry Water",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nGain 1 theconstrictor:Blur."
+    },
+    {
+      "name": "Blurry Water+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 1 theconstrictor:Blur."
+    },
+    {
+      "name": "Buffered Slam",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 15 damage.\nPrevent the next time you would lose HP this combat.\nExhaust."
+    },
+    {
+      "name": "Buffered Slam+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 18 damage.\nPrevent the next time you would lose HP this combat.\nExhaust."
+    },
+    {
+      "name": "Chess",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn draw 1 extra card and gain 1 extra [E]."
+    },
+    {
+      "name": "Chess+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn draw 2 extra cards and gain 1 extra [E]."
+    },
+    {
+      "name": "Deadly Grip",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 theconstrictor:Constricting.\nWhenever you play a card this turn, the enemy loses 3 HP."
+    },
+    {
+      "name": "Deadly Grip+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 theconstrictor:Constricting.\nWhenever you play a card this turn, the enemy loses 4 HP."
+    },
+    {
+      "name": "Dolfin Dance",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Dexterity.\nGain 1 theconstrictor:Blur."
+    },
+    {
+      "name": "Dolfin Dance+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Dexterity.\nGain 2 theconstrictor:Blur."
+    },
+    {
+      "name": "Evil Eye",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 2 Strength.\nExhaust."
+    },
+    {
+      "name": "Evil Eye+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 3 Strength.\nExhaust."
+    },
+    {
+      "name": "Flood",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nGain 3 theconstrictor:RisingWater."
+    },
+    {
+      "name": "Flood+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nGain 4 theconstrictor:RisingWater."
+    },
+    {
+      "name": "Flow",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nIf your theconstrictor:Constricting is positive Gain [E] and draw a card."
+    },
+    {
+      "name": "Flow+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nIf your theconstrictor:Constricting is positive Gain [E] and draw a card."
+    },
+    {
+      "name": "Froggy Mode",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Strength.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Froggy Mode+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 Strength.\nGain 2 Dexterity."
+    },
+    {
+      "name": "Glasses",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Dexterity."
+    },
+    {
+      "name": "Glasses+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Dexterity."
+    },
+    {
+      "name": "Headache",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nIf this card is Exhausted add A Last Gasp to your hand."
+    },
+    {
+      "name": "Headache+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nRetain.\nIf this card is Exhausted add A Last Gasp to your hand."
+    },
+    {
+      "name": "Hide In Helmet",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn gain 3 Block."
+    },
+    {
+      "name": "Hide In Helmet+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn gain 4 Block."
+    },
+    {
+      "name": "Infinite Dust",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn add a Dusty Shiv into your hand."
+    },
+    {
+      "name": "Infinite Dust+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn add a Dusty Shiv into your hand.\nAdd a Dusty Shiv into your hand."
+    },
+    {
+      "name": "Lil Hit",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Draw 1.\nGain 3 Block.\nDeal 3 damage.\nExhaust."
+    },
+    {
+      "name": "Lil Hit+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Draw 2.\nGain 5 Block.\nDeal 5 damage.\nExhaust."
+    },
+    {
+      "name": "Load Off",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn reduce your theconstrictor:Constricting by 6."
+    },
+    {
+      "name": "Load Off+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn reduce your theconstrictor:Constricting by 8."
+    },
+    {
+      "name": "Memory",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 2 cards from your discard pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Memory+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 3 cards from your discard pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Mine",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put a card from your draw pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Mine+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nPut a card from your draw pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Not Into It",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nReduce 4 theconstrictor:Constricting."
+    },
+    {
+      "name": "Not Into It+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nReduce 6 theconstrictor:Constricting."
+    },
+    {
+      "name": "Rest",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 2 cards from your discard pile into your hand and Retain them.\nEnd your turn."
+    },
+    {
+      "name": "Rest+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 3 cards from your discard pile into your hand and Retain them.\nEnd your turn."
+    },
+    {
+      "name": "Role Reversal",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nGain 2 theconstrictor:RisingWater.\nExhaust."
+    },
+    {
+      "name": "Role Reversal+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nGain 3 theconstrictor:RisingWater.\nExhaust."
+    },
+    {
+      "name": "RustyKnife",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf Fatal, permanently increase this card's damage by 1.\nExhaust."
+    },
+    {
+      "name": "RustyKnife+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nIf Fatal, permanently increase this card's damage by 2.\nExhaust."
+    },
+    {
+      "name": "Sadistic",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, they take 4 damage."
+    },
+    {
+      "name": "Sadistic+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply a debuff to an enemy, they take 6 damage."
+    },
+    {
+      "name": "Secret Cache",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 Dusty Shiv To Your Hand."
+    },
+    {
+      "name": "Secret Cache+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 Dusty Shiv To Your Hand."
+    },
+    {
+      "name": "Shed Skin",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 Cards.\nExhaust 1 card."
+    },
+    {
+      "name": "Shed Skin+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 4 Cards.\nExhaust 1 card."
+    },
+    {
+      "name": "Shield Slammer",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your Block."
+    },
+    {
+      "name": "Shield Slammer+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal damage equal to your Block."
+    },
+    {
+      "name": "Shiny Fish",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nUpgrade a card in your hand for the rest of combat."
+    },
+    {
+      "name": "Shiny Fish+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\nUpgrade ALL cards in your hand for the rest of combat."
+    },
+    {
+      "name": "Slack Tide",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nThe next Attack you play costs 0."
+    },
+    {
+      "name": "Slack Tide+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nThe next Attack you play costs 0."
+    },
+    {
+      "name": "Sludge Wave",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage and apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Sludge Wave+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage and apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Smack Em'",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 3 times."
+    },
+    {
+      "name": "Smack Em'+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times."
+    },
+    {
+      "name": "Smelly Fish",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn apply 2 theconstrictor:Constricting to all enemies."
+    },
+    {
+      "name": "Smelly Fish+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn apply 3 theconstrictor:Constricting to all enemies."
+    },
+    {
+      "name": "Smother",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak.\nApply 2 theconstrictor:Constricting."
+    },
+    {
+      "name": "Smother+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Weak.\nApply 3 theconstrictor:Constricting."
+    },
+    {
+      "name": "Stare",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy has 24 or less HP, set their HP to 0."
+    },
+    {
+      "name": "Stare+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy has 30 or less HP, set their HP to 0."
+    },
+    {
+      "name": "StealAMid",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damage.\nHeal 4.\nExhaust."
+    },
+    {
+      "name": "StealAMid+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage.\nHeal 6.\nExhaust."
+    },
+    {
+      "name": "Strangled Strike",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nThe theconstrictor:AbsoluteValue of your theconstrictor:Constricting affects this card.\nExhaust."
+    },
+    {
+      "name": "Strangled Strike+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "*Retain.\nDeal 6 damage.\nThe theconstrictor:AbsoluteValue of your theconstrictor:Constricting affects this card.\nExhaust."
+    },
+    {
+      "name": "Swept Away",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies."
+    },
+    {
+      "name": "Swept Away+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage to ALL enemies."
+    },
+    {
+      "name": "Swordfish Slam",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 9 damage X times."
+    },
+    {
+      "name": "Swordfish Slam+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 11 damage X times."
+    },
+    {
+      "name": "Talk To The Tentacle",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nWhenever you attack this enemy gain 2 Block.\nExhaust."
+    },
+    {
+      "name": "Talk To The Tentacle+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nWhenever you attack this enemy gain 3 Block.\nExhaust."
+    },
+    {
+      "name": "Tasty Kelp",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 Regen."
+    },
+    {
+      "name": "Tasty Kelp+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 4 Regen."
+    },
+    {
+      "name": "Treasure Chest",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain 7 Gold.\nExhaust."
+    },
+    {
+      "name": "Treasure Chest+",
+      "color": "Theconstrictor_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain 10 Gold.\nExhaust."
+    },
+    {
+      "name": "Angel Fish Form",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first card you play each turn is played twice."
+    },
+    {
+      "name": "Angel Fish Form+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Innate.\nThe first card you play each turn is played twice."
+    },
+    {
+      "name": "Big Lil Hit",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Add 5 Lil Hit to your hand.\nExhaust."
+    },
+    {
+      "name": "Big Lil Hit+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Add 5 Lil Hit to your hand.\nExhaust."
+    },
+    {
+      "name": "Chum In The Water",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 6 theconstrictor:Constricting.\nWhen The enemy dies, deal damage equal to its max HP to ALL enemies."
+    },
+    {
+      "name": "Chum In The Water+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 9 theconstrictor:Constricting.\nWhen The enemy dies, deal damage equal to its max HP to ALL enemies."
+    },
+    {
+      "name": "Eldrich Form",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn add an Eldrich Blast to your hand."
+    },
+    {
+      "name": "Eldrich Form+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Innate.\nAt the start of your turn add an Eldrich Blast to your hand."
+    },
+    {
+      "name": "Eldritch Anger",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 15 theconstrictor:Constricting to ALL.\nGain 30 Block."
+    },
+    {
+      "name": "Eldritch Anger+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 20 theconstrictor:Constricting to ALL.\nGain 40 Block."
+    },
+    {
+      "name": "Evolution",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, draw one additional card."
+    },
+    {
+      "name": "Evolution+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, draw one additional card."
+    },
+    {
+      "name": "Fair Fight",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 4 theconstrictor:RisingWater.\nDeal damage = to theconstrictor:RisingWater."
+    },
+    {
+      "name": "Fair Fight+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 6 theconstrictor:RisingWater.\nDeal damage = to theconstrictor:RisingWater."
+    },
+    {
+      "name": "Freedom",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nReduce your theconstrictor:Constricting by 20.\nExhaust."
+    },
+    {
+      "name": "Freedom+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nReduce your theconstrictor:Constricting by 20.\nExhaust."
+    },
+    {
+      "name": "Froggy Form",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nAt the end of your turn gain 1 Strength and 1 Dexterity."
+    },
+    {
+      "name": "Froggy Form+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn gain 1 Strength and 1 Dexterity."
+    },
+    {
+      "name": "Golden Wave",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage to all X Times.\nGain 8 Block X Times.\nExhaust."
+    },
+    {
+      "name": "Golden Wave+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 10 damage to all X Times.\nGain 10 Block X Times.\nExhaust."
+    },
+    {
+      "name": "Hunger",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 9 Block X Times.\nExhaust up to 1 Card."
+    },
+    {
+      "name": "Hunger+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 11 Block X Times.\nExhaust up to 2 Cards."
+    },
+    {
+      "name": "Krill Shield",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain 3 Thorns.\nExhaust."
+    },
+    {
+      "name": "Krill Shield+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain 5 Thorns.\nExhaust."
+    },
+    {
+      "name": "Last Gasp",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 Cards.\nGain [E].\nExhaust."
+    },
+    {
+      "name": "Last Gasp+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nDraw 2 Cards.\nGain [E].\nExhaust."
+    },
+    {
+      "name": "Master Fate",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is created during combat, Upgrade it."
+    },
+    {
+      "name": "Master Fate+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever a card is created during combat, Upgrade it."
+    },
+    {
+      "name": "Painless",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is Exhausted, gain 3 Block."
+    },
+    {
+      "name": "Painless+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever a card is Exhausted, gain 4 Block."
+    },
+    {
+      "name": "Return Strike",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nPut a card from your discard pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Return Strike+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nPut a card from your discard pile into your hand."
+    },
+    {
+      "name": "Shining Light",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak.\nApply 2 Vulnerable.\nDraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Shining Light+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Weak.\nApply 3 Vulnerable.\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Sticky Penny",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 10 gold.\nIf your theconstrictor:Constricting is positive draw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Sticky Penny+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "*Retain.\nGain 10 gold.\nIf your theconstrictor:Constricting is positive draw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Thirst",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Obtain a Duplication Potion.\nExhaust."
+    },
+    {
+      "name": "Thirst+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Obtain a Duplication Potion.\nExhaust."
+    },
+    {
+      "name": "Tidal Wave",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to ALL enemies."
+    },
+    {
+      "name": "Tidal Wave+",
+      "color": "Theconstrictor_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage to ALL enemies."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Dusty Relic",
+      "tier": "Starter",
+      "pool": "Theconstrictor_color",
+      "description": "At the start of each combat, draw 1 additional card and heal 3 HP.",
+      "flavorText": "Seems familiar."
+    },
+    {
+      "name": "Marine Biologist",
+      "tier": "Common",
+      "pool": "Theconstrictor_color",
+      "description": "At the start of combat gain 1 theconstrictor:Blur",
+      "flavorText": "Eyes the color of the ocean. They reminds me of home."
+    },
+    {
+      "name": "Slimy Shield",
+      "tier": "Common",
+      "pool": "Theconstrictor_color",
+      "description": "At the start of each combat, reduce your theconstrictor:Constricting by 6.",
+      "flavorText": "Proof of victory in a hard fought battle."
+    },
+    {
+      "name": "Smudged Stone",
+      "tier": "Uncommon",
+      "pool": "Theconstrictor_color",
+      "description": "Whenever you play 12 cards, Gain 1 theconstrictor:Blur.",
+      "flavorText": "Hard to eat, not that pretty. What's the point?"
+    },
+    {
+      "name": "Rockfish",
+      "tier": "Rare",
+      "pool": "Theconstrictor_color",
+      "description": "At the start of each combat, Gain 1 Strength and 1 Dexterity.",
+      "flavorText": "The Hardest and strongest of all fish. Nom nom nom."
+    },
+    {
+      "name": "Lil Friend",
+      "tier": "Boss",
+      "pool": "Theconstrictor_color",
+      "description": "At the start of combat add 3 theconstrictor:LilHit to your hand.",
+      "flavorText": "Maybe I judged you too harshly. Tag along if you wish."
+    },
+    {
+      "name": "Polished Relic",
+      "tier": "Boss",
+      "pool": "Theconstrictor_color",
+      "description": "At the start of each combat, draw 2 additional cards and heal 6 HP.",
+      "flavorText": "Well cared for by The Collector."
+    },
+    {
+      "name": "StrangeRing",
+      "tier": "Boss",
+      "pool": "Theconstrictor_color",
+      "description": "Gain 1 Energy at the start of each turn.\nAt the start of each combat, Gain 10 theconstrictor:Constricting.",
+      "flavorText": "Very hard to eat and tasteless. 0/10."
+    },
+    {
+      "name": "Pollution",
+      "tier": "Shop",
+      "pool": "Theconstrictor_color",
+      "description": "At the start of each combat, apply 4 theconstrictor:Constricting to ALL enemies.",
+      "flavorText": "Yummy Black Liquid"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the constrictor",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Multiword Keyword",
+      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest should use _ to replace spaces. In card text, you'll use the underscore versions."
+    },
+    {
+      "name": "AbsoluteValue",
+      "description": "Absolute value is a numbers distance from 0."
+    },
+    {
+      "name": "Blur",
+      "description": "Block is not removed at the start of your next turn."
+    },
+    {
+      "name": "Constricting",
+      "description": "Constricted characters lose HP after damage is dealt."
+    },
+    {
+      "name": "LilHit",
+      "description": "A 0 cost card that deals 3 damage, grants 3 block, draws one card, and Exhausts."
+    },
+    {
+      "name": "RisingWater",
+      "description": " At the end of your turn increase by one and deal damage to ALL enemies."
+    }
+  ]
+}

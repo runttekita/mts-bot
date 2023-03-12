@@ -1,0 +1,136 @@
+{
+  "mod": {
+    "name": "Bundle Of Bundles",
+    "version": "1.15.5",
+    "authors": ["Sandtag"],
+    "credits": "",
+    "description": "Contains all of the config options and compatibility support for bundles.",
+    "mts_version": "3.29.0",
+    "sts_version": "03-07-2022",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+  ],
+  "relics": [
+    {
+      "name": "Pho",
+      "tier": "Common",
+      "pool": "",
+      "description": "Upon pickup, gain 3 Max HP.\nAt the start of your turn, gain 1 bundlecore:Fire_Breathing.",
+      "flavorText": "A very spicy and meaty eat that is great for getting over bumps and bruises."
+    },
+    {
+      "name": "Mana Cloak",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you use a potion, gain [E].\nIf you have a potion and take unblocked attack damage, deal 5 damage to ALL enemies and apply 1 Weak to them.",
+      "flavorText": "A refreshing cloak that can help extract the hidden potential of your draughts."
+    },
+    {
+      "name": "Ancient Meteorite",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, raise your maximum hand size by 1.\nAt the start of your turn, lose [E] and draw cards until your hand is full.",
+      "flavorText": "Food for a giant green dragon, not for you!"
+    },
+    {
+      "name": "Cheese Board",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup gain 1 Potion Slot.\nAll hallway fights now give a bonus potion reward, even special rarity ones.\nPotions are 40% stronger, with their potency increasing by at least 1.\nPotions grant 1 Max HP on use.",
+      "flavorText": "Includes a wine glass to put a potion in! The meal complements your potions perfectly."
+    },
+    {
+      "name": "Curse of the Peglin King",
+      "tier": "Boss",
+      "pool": "",
+      "description": "bundlecore:Rare.\nUpon pickup, gain 1 Potion Slot.\nAt the start of your turn, add a Miracle to the top of your draw pile.",
+      "flavorText": "Half of the time you feel full of energy, half of the time you feel slow. This odd artifact also has a slot in the back for a night cap."
+    },
+    {
+      "name": "Defresh Potion",
+      "tier": "Boss",
+      "pool": "",
+      "description": "bundlecore:Rare\nUpon pickup, raise your maximum hand size by 1.\nAt the start of your turn, gain [E][E] and draw 2 cards.\nALL CARDS EXHAUST.",
+      "flavorText": "As you drink from the potion you feel your memory begin to fade... It never returns..."
+    },
+    {
+      "name": "Magma Skull",
+      "tier": "Boss",
+      "pool": "",
+      "description": "bundlecore:Rare.\nUpon pickup, gain 2 potion slots.\nWhen you use a potion that isn't a bundlecore:Lava_Potion, gain a Lava Potion.\nElite fights drop two extra potions.",
+      "flavorText": "Overflowing with real lava, try putting it in those empty potion bottles!"
+    },
+    {
+      "name": "Pumpkin Pie",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, gain 6 Max HP and raise your maximum hand size by 2.\nAt the start of combat, gain [E][E][E] and draw 5 cards.",
+      "flavorText": "It tastes so great, but can only fill you up for a disappointingly short period of time."
+    },
+    {
+      "name": "Red Royal Gel",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of combat, Channel 3 bundlecore:Slimes.",
+      "flavorText": "The collective congealment of two slime kings, this potent gel crown will keep slimes in check."
+    },
+    {
+      "name": "Prime Rod of Ice",
+      "tier": "Shop",
+      "pool": "",
+      "description": "The first time each combat you play a non Power card that costs 3 or more, apply 1 bundlecore:Slow to ALL enemies and yourself.",
+      "flavorText": "Enhanced with a better stave from haglin, this frosty wand will make your enemies chill out!"
+    }
+  ],
+  "potions": [
+    {
+      "name": "Lava Potion",
+      "rarity": "Placeholder",
+      "description": "Deal 25 Damage and apply 5 On Fire to the target."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Lagavulin",
+      "type": "Elite",
+      "minHP": "131",
+      "maxHP": "131"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Fire Breathing",
+      "description": "When you draw a Status or Curse card, deals damage to ALL enemies."
+    },
+    {
+      "name": "Lava Potion",
+      "description": "Potion: Deal 25 damage to the target and apply 5 On Fire."
+    },
+    {
+      "name": "Multiword Keyword",
+      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest should use _ to replace spaces and be entirely lowercase. In card text, you'll use the underscore versions."
+    },
+    {
+      "name": "On Fire",
+      "description": "At the start of this creatures turn, On Fire is increased by 1 then it will lose HP. Damage is doubled if the target is Vulnerable."
+    },
+    {
+      "name": "Rare",
+      "description": "Spawns less often than other Relics of its type."
+    },
+    {
+      "name": "Slime",
+      "description": "Passive: At the end of your turn deal damage to a random enemy (Base: 1).\nOrb damage affected by Strength, Dexterity and Focus.\nEvoke: Gain 1 Orb slot and Channel this Orb."
+    },
+    {
+      "name": "Slow",
+      "description": "Target takes 10% more damage for each stack additively, resets to 0 each turn and increases by 1 when a card is played."
+    },
+    {
+      "name": "This is displayed in the tooltip.",
+      "description": "This is displayed in the tooltip. Note, spaces are not allowed in NAMES. Also, they should be entirely lowercase. For multi-word keywords, see the next one."
+    }
+  ]
+}

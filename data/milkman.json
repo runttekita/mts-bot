@@ -1,0 +1,1354 @@
+{
+  "mod": {
+    "name": "The Milkman",
+    "version": "0.1.0",
+    "authors": ["Danny and Janny"],
+    "credits": "",
+    "description": "A sentient carton of milk, brought to life by the Spire. Uses abilities to grow stronger and empower future turns and battles.",
+    "mts_version": "3.29.0",
+    "sts_version": "03-07-2022",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Empty Bottle",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 2 damage.\nExhaust."
+    },
+    {
+      "name": "Empty Bottle+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain.\nDeal 4 damage.\nExhaust."
+    },
+    {
+      "name": "Lost Child",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 25 Gold.\nExhaust."
+    },
+    {
+      "name": "Lost Child+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 25 Gold.\nExhaust."
+    },
+    {
+      "name": "Calcium Deficiency",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "At the end of the turn, lose 3 Calcium."
+    },
+    {
+      "name": "Defend",
+      "color": "Milkman_white",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Milkman_white",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "One-Two Punch",
+      "color": "Milkman_white",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice."
+    },
+    {
+      "name": "One-Two Punch+",
+      "color": "Milkman_white",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice."
+    },
+    {
+      "name": "Strike",
+      "color": "Milkman_white",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Milkman_white",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Stronger Bones",
+      "color": "Milkman_white",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 5 Calcium."
+    },
+    {
+      "name": "Stronger Bones+",
+      "color": "Milkman_white",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 Calcium."
+    },
+    {
+      "name": "Anticipate",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn gain 10 Block."
+    },
+    {
+      "name": "Anticipate+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn gain 14 Block."
+    },
+    {
+      "name": "Bucket Headbutt",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDeal 1 damage."
+    },
+    {
+      "name": "Bucket Headbutt+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 10 Block.\nDeal 4 damage."
+    },
+    {
+      "name": "Bucket Strike",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage."
+    },
+    {
+      "name": "Bucket Strike+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage."
+    },
+    {
+      "name": "Bucket Swing",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage to ALL enemies."
+    },
+    {
+      "name": "Bucket Swing+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage to ALL enemies."
+    },
+    {
+      "name": "Cappuccino",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 Calcium.\nGain 2 [E]  next turn."
+    },
+    {
+      "name": "Cappuccino+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 3 Calcium.\nGain 3 [E]  next turn."
+    },
+    {
+      "name": "Cool Glass",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Thorns.\nGain 1 Plated Armor."
+    },
+    {
+      "name": "Cool Glass+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Thorns.\nGain 1 Metallicize."
+    },
+    {
+      "name": "Cross Arms",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Block twice."
+    },
+    {
+      "name": "Cross Arms+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block twice."
+    },
+    {
+      "name": "Duck and Dive",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nNext turn gain 8 Block."
+    },
+    {
+      "name": "Duck and Dive+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nNext turn gain 12 Block."
+    },
+    {
+      "name": "Espresso",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn gain 1 [E]."
+    },
+    {
+      "name": "Espresso+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn gain 2 [E]."
+    },
+    {
+      "name": "Flick Milk Top",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage. When the target dies, add this card to your hand.\nExhaust."
+    },
+    {
+      "name": "Flick Milk Top+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. When the target dies, add this card to your hand.\nExhaust."
+    },
+    {
+      "name": "Glass Cut",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 Thorns.\nDeal 2 damage.\nApply 2 Weak."
+    },
+    {
+      "name": "Glass Cut+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 Thorns.\nDeal 5 damage.\nApply 3 Weak."
+    },
+    {
+      "name": "Gut Punch",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nEnemy loses 1 Strength."
+    },
+    {
+      "name": "Gut Punch+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nEnemy loses 1 Strength."
+    },
+    {
+      "name": "Knuckle Sandwich",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 22 damage.\nNext turn, target gains 3 temporary Strength and 3 Block."
+    },
+    {
+      "name": "Knuckle Sandwich+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 27 damage.\nNext turn, target gains 3 temporary Strength and 3 Block."
+    },
+    {
+      "name": "Lactokinesis",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block. If you play a Milk card while this card is in your hand, it costs 0 this turn."
+    },
+    {
+      "name": "Lactokinesis+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block. If you play a Milk card while this card is in your hand, it costs 0 this turn."
+    },
+    {
+      "name": "Milk Coating",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block and 2 Calcium.\nBottled.\nExhaust."
+    },
+    {
+      "name": "Milk Coating+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block and 3 Calcium.\nBottled.\nExhaust."
+    },
+    {
+      "name": "Milk Snort",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 7 Strength for the rest of this turn.\nBottled.\nExhaust."
+    },
+    {
+      "name": "Milk Snort+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 10 Strength for the rest of this turn.\nBottled.\nExhaust."
+    },
+    {
+      "name": "Milk Spill",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Vulnerable to ALL enemies.\nBottled.\nExhaust."
+    },
+    {
+      "name": "Milk Spill+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Vulnerable to ALL enemies.\nBottled.\nExhaust."
+    },
+    {
+      "name": "Milk Splash",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nBottled.\nExhaust."
+    },
+    {
+      "name": "Milk Splash+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies.\nBottled.\nExhaust."
+    },
+    {
+      "name": "Nap",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn draw 1 more card."
+    },
+    {
+      "name": "Nap+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn draw 2 more cards."
+    },
+    {
+      "name": "Rattle Mailbox",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nApply 3 Deliverance."
+    },
+    {
+      "name": "Rattle Mailbox+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nApply 5 Deliverance."
+    },
+    {
+      "name": "Shatter Glass",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 4 Thorns."
+    },
+    {
+      "name": "Shatter Glass+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 6 Thorns."
+    },
+    {
+      "name": "Spare Tire",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nDraw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Spare Tire+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nDraw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Thick Skull",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nIf you have at least 1 Calcium, gain 6 additional Block."
+    },
+    {
+      "name": "Thick Skull+",
+      "color": "Milkman_white",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nIf you have at least 1 Calcium, gain 9 additional Block."
+    },
+    {
+      "name": "Around the Houses",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards per enemy.\nExhaust."
+    },
+    {
+      "name": "Around the Houses+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nDraw 2 cards per enemy.\nExhaust."
+    },
+    {
+      "name": "Bully",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Calcium.\nApply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Bully+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Calcium.\nApply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Calcitrate",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nDeals additional damage equal to Calcium gained this combat."
+    },
+    {
+      "name": "Calcitrate+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nDeals additional damage equal to Calcium gained this combat."
+    },
+    {
+      "name": "Churn",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Calcium, then draw 1 card for each Calcium you have."
+    },
+    {
+      "name": "Churn+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Calcium, then draw 1 card for each Calcium you have."
+    },
+    {
+      "name": "Controlled Intake",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 3 Calcium X times."
+    },
+    {
+      "name": "Controlled Intake+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4 Calcium X times."
+    },
+    {
+      "name": "Cr\u00E8me de la Cr\u00E8me",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play a Milk card, Upgrade ALL cards in your hand for the rest of this combat."
+    },
+    {
+      "name": "Cr\u00E8me de la Cr\u00E8me+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a Milk card, Upgrade ALL cards in your hand for the rest of this combat."
+    },
+    {
+      "name": "Discount Dairy",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X random Milk cards to your hand. They cost 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Discount Dairy+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Add X+1 random Milk cards to your hand. They cost 0 this turn.\nExhaust."
+    },
+    {
+      "name": "Double Cream",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 5 damage twice.\nGain 1 Strength."
+    },
+    {
+      "name": "Double Cream+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage twice.\nGain 1 Strength."
+    },
+    {
+      "name": "Fortified Calcium",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, gain Block equal to your Calcium."
+    },
+    {
+      "name": "Fortified Calcium+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, gain Block equal to your Calcium.\nGain 3 Calcium."
+    },
+    {
+      "name": "Freshness",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nHeal 5 HP.\nExhaust."
+    },
+    {
+      "name": "Freshness+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nHeal 7 HP.\nExhaust."
+    },
+    {
+      "name": "Glass Bank",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Thorns for every 5 cards in your draw pile."
+    },
+    {
+      "name": "Glass Bank+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Thorns for every 4 cards in your draw pile."
+    },
+    {
+      "name": "Good Night's Rest",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn draw 4 more cards."
+    },
+    {
+      "name": "Good Night's Rest+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Next turn draw 5 more cards."
+    },
+    {
+      "name": "Growth Spurt",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "X",
+      "description": "At the start of your turn, gain X Calcium."
+    },
+    {
+      "name": "Growth Spurt+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "X",
+      "description": "At the start of your turn, gain X+1 Calcium."
+    },
+    {
+      "name": "Kick The Bucket",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Retain.\nDeal 25 damage."
+    },
+    {
+      "name": "Kick The Bucket+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Retain.\nDeal 32 damage."
+    },
+    {
+      "name": "Lactose Intolerance",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage. Whenever you attack this enemy, it loses 2 HP.\nExhaust."
+    },
+    {
+      "name": "Lactose Intolerance+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Whenever you attack this enemy, it loses 2 HP.\nExhaust."
+    },
+    {
+      "name": "Mark Door",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 10 Deliverance to an enemy.\nExhaust."
+    },
+    {
+      "name": "Mark Door+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 99 Deliverance to an enemy.\nExhaust."
+    },
+    {
+      "name": "Milkman's Rounds",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Shuffle 5 random Milk cards into your draw pile."
+    },
+    {
+      "name": "Milkman's Rounds+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 5 random Milk cards into your draw pile."
+    },
+    {
+      "name": "Missing Person",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nShuffle 1 Lost Child into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Missing Person+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nShuffle 1 Lost Child into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Morning Rounds",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, ALL enemies with less than 1 Deliverance have their Deliverance increased to 1."
+    },
+    {
+      "name": "Morning Rounds+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, ALL enemies with less than 1 Deliverance have their Deliverance increased to 1."
+    },
+    {
+      "name": "Preserve",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 10 Block.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Preserve+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain 1 Dexterity."
+    },
+    {
+      "name": "Reflective Surface",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to the target's Block.\nIf the target has no Block, double your Block instead."
+    },
+    {
+      "name": "Reflective Surface+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain Block equal to the target's Block.\nIf the target has no Block, double your Block instead."
+    },
+    {
+      "name": "Refrigerate",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 2 Block.\nGain 2 Metallicize.\nGain 2 Plated Armor."
+    },
+    {
+      "name": "Refrigerate+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 Block.\nGain 2 Metallicize.\nGain 2 Plated Armor."
+    },
+    {
+      "name": "Repeat On",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Repeat On+1",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X + 1 times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Repeat On+2",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X + 2 times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Repeat On+3",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X + 3 times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Repeat On+4",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X + 4 times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Repeat On+5",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X + 5 times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Repeat On+6",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X + 6 times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Repeat On+7",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X + 7 times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Repeat On+8",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X + 8 times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Repeat On+9",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 5 damage X + 9 times.\nCan be Upgraded any number of times."
+    },
+    {
+      "name": "Safekeeping",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain Block next turn equal to your current Block."
+    },
+    {
+      "name": "Safekeeping+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block next turn equal to your current Block."
+    },
+    {
+      "name": "Shield of Shards",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Convert your Thorns into Plated Armor."
+    },
+    {
+      "name": "Shield of Shards+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Convert your Thorns into Metallicize."
+    },
+    {
+      "name": "Skimming Process",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust your hand.\nAdd 1 random Milk card to your hand for each Exhausted card."
+    },
+    {
+      "name": "Skimming Process+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust your hand.\nAdd 1 random Milk card to your hand for each Exhausted card."
+    },
+    {
+      "name": "Skull Crack",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose 5 health, unless you have at least 3 Calcium.\nDeal 9 damage."
+    },
+    {
+      "name": "Skull Crack+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Lose 5 health, unless you have at least 2 Calcium.\nDeal 14 damage."
+    },
+    {
+      "name": "Supersize",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Ethereal.\nGain 1 Max HP."
+    },
+    {
+      "name": "Supersize+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Ethereal.\nGain 2 Max HP."
+    },
+    {
+      "name": "Udder",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 3 random Milk cards to your hand."
+    },
+    {
+      "name": "Udder+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 random Milk cards to your hand."
+    },
+    {
+      "name": "Waste Not",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 5 Block. Whenever you play a card, increase Block amount by 1 this combat."
+    },
+    {
+      "name": "Waste Not+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nGain 5 Block. Whenever you play a card, increase Block amount by 2 this combat."
+    },
+    {
+      "name": "Work Out",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Weak.\nGain 2 Vulnerable.\nGain 2 Strength.\nGain 2 Dexterity."
+    },
+    {
+      "name": "Work Out+",
+      "color": "Milkman_white",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Weak.\nGain 1 Vulnerable.\nGain 2 Strength.\nGain 2 Dexterity."
+    },
+    {
+      "name": "Bottle Holder",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Add Empty Bottles to your hand until your hand is full.\nExhaust."
+    },
+    {
+      "name": "Bottle Holder+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add Empty Bottles to your hand until your hand is full.\nExhaust."
+    },
+    {
+      "name": "Curdle",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 20 Block.\nGain 20 Block next turn.\nLose 3 Dexterity."
+    },
+    {
+      "name": "Curdle+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 25 Block.\nGain 25 Block next turn.\nLose 3 Dexterity."
+    },
+    {
+      "name": "Dented Bucket",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 25 damage. Whenever you use this card, permanently reduce its damage by 1. "
+    },
+    {
+      "name": "Dented Bucket+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 30 damage. Whenever you use this card, permanently reduce its damage by 1. "
+    },
+    {
+      "name": "Electrolytes",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "5",
+      "description": "Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1.\nEthereal."
+    },
+    {
+      "name": "Electrolytes+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "5",
+      "description": "Innate.\nGain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1.\nEthereal."
+    },
+    {
+      "name": "Extra Bucket",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Your Bucket cards are played 1 additional time."
+    },
+    {
+      "name": "Extra Bucket+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Your Bucket cards are played 1 additional time."
+    },
+    {
+      "name": "Glass Form",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 1 Thorns whenever you are attacked."
+    },
+    {
+      "name": "Glass Form+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 Thorns whenever you are attacked."
+    },
+    {
+      "name": "Growing Pains",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage.\nGain Calcium equal to unblocked damage dealt."
+    },
+    {
+      "name": "Growing Pains+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain Calcium equal to unblocked damage dealt."
+    },
+    {
+      "name": "Last Drop",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 40 damage.\nLose 3 Strength."
+    },
+    {
+      "name": "Last Drop+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 50 damage.\nLose 3 Strength."
+    },
+    {
+      "name": "Multivitamins",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage 6 times.\nExhaust."
+    },
+    {
+      "name": "Multivitamins+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nDeal 1 damage 6 times.\nExhaust."
+    },
+    {
+      "name": "Pasteurize",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Remove all debuffs.\nExhaust."
+    },
+    {
+      "name": "Pasteurize+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all debuffs.\nExhaust."
+    },
+    {
+      "name": "Rear Cattle",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Add 1 random Milk card to your hand every turn."
+    },
+    {
+      "name": "Rear Cattle+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Add 1 random Milk card to your hand every turn."
+    },
+    {
+      "name": "Trail of Glass",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Thorns.\nGain Block equal to 2 times your Thorns."
+    },
+    {
+      "name": "Trail of Glass+",
+      "color": "Milkman_white",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 Thorns.\nGain Block equal to 3 times your Thorns."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Breakfast",
+      "tier": "Starter",
+      "pool": "Milkman_white",
+      "description": "At the start of each battle, gain 3 Calcium.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Cheese Wheel",
+      "tier": "Common",
+      "pool": "Milkman_white",
+      "description": "The first time you gain Calcium each turn, draw 1 card.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Frozen Yogurt",
+      "tier": "Uncommon",
+      "pool": "Milkman_white",
+      "description": "At the end of each turn, gain 2 Block for each retained card.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Lasso",
+      "tier": "Uncommon",
+      "pool": "Milkman_white",
+      "description": "At the start of each battle, add 3 random Milk cards to your hand.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Butter Dish",
+      "tier": "Rare",
+      "pool": "Milkman_white",
+      "description": "Your Calcium bonuses last for two turns instead of one.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Mechanical Whisk",
+      "tier": "Rare",
+      "pool": "Milkman_white",
+      "description": "Whenever you Exhaust a card, gain 2 Calcium.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Whey Protein",
+      "tier": "Rare",
+      "pool": "Milkman_white",
+      "description": "Every 10th card you play grants you 1 Strength and Dexterity.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Big Breakfast",
+      "tier": "Boss",
+      "pool": "Milkman_white",
+      "description": "At the start of each battle, gain 3 Strength and Dexterity.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Spotted Fingernail",
+      "tier": "Boss",
+      "pool": "Milkman_white",
+      "description": "Gain 1 [E] at the start of each turn. At the start of combat, shuffle 1 Calcium Deficiency curse into your deck.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Whipped Cream",
+      "tier": "Boss",
+      "pool": "Milkman_white",
+      "description": "If you play at least 4 cards in a turn, gain 1 [E] next turn.",
+      "flavorText": "I followed a tutorial!"
+    },
+    {
+      "name": "Glass Cafetiere",
+      "tier": "Shop",
+      "pool": "Milkman_white",
+      "description": "Start each Elite encounter with 5 Thorns.",
+      "flavorText": "I followed a tutorial!"
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Milkman",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Bottled",
+      "description": "When you play this card, add 1 Empty Bottle to your hand."
+    },
+    {
+      "name": "Calcium",
+      "description": "Grants temporary Strength and Dexterity next turn."
+    },
+    {
+      "name": "Multiword Keyword",
+      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest should use _ to replace spaces and be entirely lowercase. In card text, you'll use the underscore versions."
+    },
+    {
+      "name": "This is displayed in the tooltip.",
+      "description": "This is displayed in the tooltip. Note, spaces are not allowed in NAMES. Also, they should be entirely lowercase. For multi-word keywords, see the next one."
+    },
+    {
+      "name": "Deliverance",
+      "description": "When attacked, you draw 1 card."
+    },
+    {
+      "name": "Milk",
+      "description": "Milk cards are strong cards that are Bottled and Exhaust."
+    }
+  ]
+}

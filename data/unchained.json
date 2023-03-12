@@ -1,0 +1,1369 @@
+{
+  "mod": {
+    "name": "The Unchained Mod",
+    "version": "1.0.2",
+    "authors": ["Mezix & BigL"],
+    "credits": "The Default Modbase, STSLib, Sounds by: Kinaticc & Plusma",
+    "description": "A new Character with 75+ new cards, 10 new Relics, 3 new Potions and 4 distinct archetypes you can play around with and have a lot of fun!",
+    "mts_version": "3.8.0",
+    "sts_version": "12-18-2022",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Swirl",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain. Gain 2 Block.\nDeal 2 damage. Double the base damage and Block of ALL Swirls this turn. Exhaust."
+    },
+    {
+      "name": "Swirl+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Retain. Gain 2 Block.\nDeal 2 damage. Double the base damage and Block of ALL Swirls this turn. Gain 1 theunchainedmod:Momentum. Exhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Unchained_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Unchained_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Defensive Link",
+      "color": "Unchained_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 9 Block. Reduce the cost of a card by 1 this turn."
+    },
+    {
+      "name": "Defensive Link+",
+      "color": "Unchained_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block. Reduce the cost of a card by 1 this turn."
+    },
+    {
+      "name": "Strike",
+      "color": "Unchained_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Unchained_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Whiplash",
+      "color": "Unchained_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\n1 theunchainedmod:Chain: Enemy loses 8 HP."
+    },
+    {
+      "name": "Whiplash+",
+      "color": "Unchained_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\n1 theunchainedmod:Chain: Enemy loses 8 HP."
+    },
+    {
+      "name": "Arcane Strike",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage 2 times. Gain 6 theunchainedmod:Relay."
+    },
+    {
+      "name": "Arcane Strike+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage 2 times. Gain 8 theunchainedmod:Relay."
+    },
+    {
+      "name": "Cocoon",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 theunchainedmod:Relay. Your theunchainedmod:Relay does not wear off at the start of next turn."
+    },
+    {
+      "name": "Cocoon+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 theunchainedmod:Relay. Your theunchainedmod:Relay does not wear off at the start of next turn."
+    },
+    {
+      "name": "Double Down",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block twice.\nCounts as a card for any theunchainedmod:Chain."
+    },
+    {
+      "name": "Double Down+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block twice.\nCounts as a card for any theunchainedmod:Chain."
+    },
+    {
+      "name": "Dual Barrier",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block. Gain 8 theunchainedmod:Relay."
+    },
+    {
+      "name": "Dual Barrier+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. Gain 10 theunchainedmod:Relay."
+    },
+    {
+      "name": "Glyph Swing",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage. Remove up to 8 theunchainedmod:Relayed_Damage and deal damage equal to the amount you removed."
+    },
+    {
+      "name": "Glyph Swing+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage. Remove up to 12 theunchainedmod:Relayed_Damage and deal damage equal to the amount you removed."
+    },
+    {
+      "name": "Grasp Future",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. Put 1 card from your draw pile on top of your draw pile."
+    },
+    {
+      "name": "Grasp Future+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Put 1 card from your draw pile on top of your draw pile."
+    },
+    {
+      "name": "Heavy Hitter",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 temporary Strength. Whenever you hit an enemy this turn, apply 2 theunchainedmod:Crushed_Armor."
+    },
+    {
+      "name": "Heavy Hitter+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 temporary Strength. Whenever you hit an enemy this turn, apply 3 theunchainedmod:Crushed_Armor."
+    },
+    {
+      "name": "Keep Distance",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. Enemy gains 9 Block."
+    },
+    {
+      "name": "Keep Distance+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block. Enemy gains 9 Block."
+    },
+    {
+      "name": "Lash Out",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 damage.\n1 theunchainedmod:Chain: Gain [E]."
+    },
+    {
+      "name": "Lash Out+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 17 damage.\n1 theunchainedmod:Chain: Gain [E]."
+    },
+    {
+      "name": "Liberation",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nFinish ALL your active theunchainedmod:Chains.\nRemove ALL theunchainedmod:Relayed_Damage. Exhaust."
+    },
+    {
+      "name": "Liberation+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nFinish ALL your active theunchainedmod:Chains.\nRemove ALL theunchainedmod:Relayed_Damage. Exhaust."
+    },
+    {
+      "name": "Offhanded Swing",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 1 card, if it is a 2-cost card play it on the same enemy if possible."
+    },
+    {
+      "name": "Offhanded Swing+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw 1 card, if it is a 2-cost card play it on the same enemy if possible."
+    },
+    {
+      "name": "Prophetic Swing",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to a random enemy.\nScry 3."
+    },
+    {
+      "name": "Prophetic Swing+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage to a random enemy.\nScry 4."
+    },
+    {
+      "name": "Reckless Swing",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage. Gain 8 theunchainedmod:Relayed_Damage."
+    },
+    {
+      "name": "Reckless Swing+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 11 damage. Gain 8 theunchainedmod:Relayed_Damage."
+    },
+    {
+      "name": "Riposte",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 5 Block. Deal 5 damage.\nGain 1 theunchainedmod:Momentum."
+    },
+    {
+      "name": "Riposte+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 7 Block. Deal 7 damage.\nGain 2 theunchainedmod:Momentum."
+    },
+    {
+      "name": "Single Out",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nA random enemy gains 3 Block."
+    },
+    {
+      "name": "Single Out+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 16 damage.\nA random enemy gains 4 Block."
+    },
+    {
+      "name": "Step Back",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card.\n1 theunchainedmod:Chain: Gain 9 Block."
+    },
+    {
+      "name": "Step Back+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\n1 theunchainedmod:Chain: Gain 9 Block."
+    },
+    {
+      "name": "Wide Swing",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage to ALL enemies.\nIf you have an active theunchainedmod:Chain end your turn."
+    },
+    {
+      "name": "Wide Swing+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage to ALL enemies.\nIf you have an active theunchainedmod:Chain end your turn."
+    },
+    {
+      "name": "\u00C0 Plomb",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block. Gain 1 theunchainedmod:Momentum.\nNext Turn, gain 1 theunchainedmod:Momentum."
+    },
+    {
+      "name": "\u00C0 Plomb+",
+      "color": "Unchained_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block. Gain 1 theunchainedmod:Momentum.\nNext Turn, gain 1 theunchainedmod:Momentum."
+    },
+    {
+      "name": "Arcane Transmutation",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever an enemy gains Block, gain 4 theunchainedmod:Relay."
+    },
+    {
+      "name": "Arcane Transmutation+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever an enemy gains Block, gain 5 theunchainedmod:Relay."
+    },
+    {
+      "name": "Baguazhang",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nEnemy gains 5 Block.\nIf the enemy intends to do less than 10 damage (per hit), gain 10 Block."
+    },
+    {
+      "name": "Baguazhang+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nEnemy gains 5 Block.\nIf the enemy intends to do less than 10 damage (per hit), gain 15 Block."
+    },
+    {
+      "name": "Ballet",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 1 theunchainedmod:Momentum.\nSwirls now hit ALL enemies."
+    },
+    {
+      "name": "Ballet+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 2 theunchainedmod:Momentum.\nSwirls now hit ALL enemies."
+    },
+    {
+      "name": "Battement",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. Gain 2 theunchainedmod:Momentum."
+    },
+    {
+      "name": "Battement+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage. Gain 3 theunchainedmod:Momentum."
+    },
+    {
+      "name": "Burnish",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust a card. Gain theunchainedmod:Momentum equal to double its cost."
+    },
+    {
+      "name": "Burnish+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust a card. Gain theunchainedmod:Momentum equal to double its cost."
+    },
+    {
+      "name": "Ceasefire",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your theunchainedmod:Relay. Double the Block of ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Ceasefire+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Double your theunchainedmod:Relay. Double the Block of ALL enemies."
+    },
+    {
+      "name": "Claustrophobia",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, apply 2 theunchainedmod:Crushed_Armor to ALL enemies."
+    },
+    {
+      "name": "Claustrophobia+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nAt the start of your turn, apply 2 theunchainedmod:Crushed_Armor to ALL enemies."
+    },
+    {
+      "name": "Cripple",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 theunchainedmod:Crushed_Armor. Apply 2 Weak. Apply 2 Vulnerable. Exhaust."
+    },
+    {
+      "name": "Cripple+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 6 theunchainedmod:Crushed_Armor. Apply 3 Weak. Apply 3 Vulnerable. Exhaust."
+    },
+    {
+      "name": "Cruiserweight",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you draw a 2-cost card, draw 1 card."
+    },
+    {
+      "name": "Cruiserweight+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you draw a 2-cost card, draw 2 cards."
+    },
+    {
+      "name": "Cuff",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate.\nDeal 3 damage.\nApply 1 Weak.\n2 theunchainedmod:Chain: Enemy loses 3 Strength.\nExhaust."
+    },
+    {
+      "name": "Cuff+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Innate.\nDeal 3 damage.\nApply 2 Weak.\n2 theunchainedmod:Chain: Enemy loses 4 Strength.\nExhaust."
+    },
+    {
+      "name": "Eye For An Eye",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Vigor.\nRemove up to 10 theunchainedmod:Relayed_Damage.\nGain Vigor equal to the amount you removed."
+    },
+    {
+      "name": "Eye For An Eye+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Vigor.\nRemove up to 15 theunchainedmod:Relayed_Damage.\nGain Vigor equal to the amount you removed."
+    },
+    {
+      "name": "Fractal Shield",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 9 theunchainedmod:Relay. theunchainedmod:Relay now blocks theunchainedmod:Relayed_Damage."
+    },
+    {
+      "name": "Fractal Shield+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain 9 theunchainedmod:Relay. theunchainedmod:Relay now blocks theunchainedmod:Relayed_Damage."
+    },
+    {
+      "name": "Full Swing",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage. Deal 5 damage to ALL enemies."
+    },
+    {
+      "name": "Full Swing+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage. Deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Guarded Posture",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you finish a Chain, gain 3 Block."
+    },
+    {
+      "name": "Guarded Posture+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you finish a Chain, gain 4 Block."
+    },
+    {
+      "name": "Heartfelt Speech",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Vulnerable.\n2 theunchainedmod:Chain: Gain 1 Intangible. Exhaust."
+    },
+    {
+      "name": "Heartfelt Speech+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Vulnerable.\n1 theunchainedmod:Chain: Gain 1 Intangible. Exhaust."
+    },
+    {
+      "name": "Immovable Object",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block. Whenever you are attacked this turn, the attacking enemy gains 4 theunchainedmod:Crushed_Armor."
+    },
+    {
+      "name": "Immovable Object+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block. Whenever you are attacked this turn, the attacking enemy gains 5 theunchainedmod:Crushed_Armor."
+    },
+    {
+      "name": "Keep Swinging",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "All Cards with \"Swing\" in their name deal 4 additional damage."
+    },
+    {
+      "name": "Keep Swinging+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "All Cards with \"Swing\" in their name deal 6 additional damage."
+    },
+    {
+      "name": "Masterwork Glyph",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 theunchainedmod:Relay. If you do not have Block, gain 9 theunchainedmod:Relay again."
+    },
+    {
+      "name": "Masterwork Glyph+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 theunchainedmod:Relay. If you do not have Block, gain 11 theunchainedmod:Relay again."
+    },
+    {
+      "name": "Overexertion",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E].\nGain 14 theunchainedmod:Relayed_Damage.\nExhaust."
+    },
+    {
+      "name": "Overexertion+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] [E] [E].\nGain 14 theunchainedmod:Relayed_Damage.\nExhaust."
+    },
+    {
+      "name": "Premonition",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nIf you have spent ALL your [E] at the end of this turn, gain [E] [E] next turn."
+    },
+    {
+      "name": "Premonition+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nIf you have spent ALL your [E] at the end of this turn, gain\n[E] [E] [E] next turn."
+    },
+    {
+      "name": "Prophecy",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Copy a card and put the copy on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Prophecy+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Copy a card twice and put both copies on top of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Quick Swing",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\n1 theunchainedmod:Chain: Draw 2 cards."
+    },
+    {
+      "name": "Quick Swing+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\n1 theunchainedmod:Chain: Draw 3 cards."
+    },
+    {
+      "name": "Razor Chain",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Enemy loses 10 HP.\nHP loss is affected by theunchainedmod:Damage_Modifiers."
+    },
+    {
+      "name": "Razor Chain+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Enemy loses 15 HP.\nHP loss is affected by theunchainedmod:Damage_Modifiers."
+    },
+    {
+      "name": "Refresh",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 theunchainedmod:Relay.\nLose up to 14 theunchainedmod:Relayed_Damage and gain Block equal to the amount you removed."
+    },
+    {
+      "name": "Refresh+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 theunchainedmod:Relay.\nLose up to 18 theunchainedmod:Relayed_Damage and gain Block equal to the amount you removed."
+    },
+    {
+      "name": "Reinforced Link",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block. If you have an active theunchainedmod:Chain, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Reinforced Link+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block. If you have an active theunchainedmod:Chain, gain [E] and draw 1 card."
+    },
+    {
+      "name": "Royal Assessment",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] for every enemy that is blocking."
+    },
+    {
+      "name": "Royal Assessment+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [E] if ALL enemies are blocking and [E] for every enemy that is blocking."
+    },
+    {
+      "name": "Royal Decree",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a random 2-cost card into your hand.\nIt costs 0 this turn\nand exhausts."
+    },
+    {
+      "name": "Royal Decree+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a random 2-cost card into your hand.\nIt costs 0 this turn\nand exhausts."
+    },
+    {
+      "name": "Share Pain",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 0 damage.\nDamage is equal to ALL theunchainedmod:Relayed_Damage you have gained this combat."
+    },
+    {
+      "name": "Share Pain+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Retain.\nDeal 0 damage.\nDamage is equal to ALL theunchainedmod:Relayed_Damage you have gained this combat."
+    },
+    {
+      "name": "Stare Down",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 temporary Dexterity. 1 theunchainedmod:Chain: Apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Stare Down+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 temporary Dexterity. 1 theunchainedmod:Chain: Apply 2 Weak to ALL enemies."
+    },
+    {
+      "name": "Taxes",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Rightfully acquire 15 Gold from every enemy."
+    },
+    {
+      "name": "Taxes+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Rightfully acquire 20 Gold from every enemy."
+    },
+    {
+      "name": "Telekinetic Pulse",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies gain 7 Block. 2 theunchainedmod:Chain: ALL enemies lose 25 HP."
+    },
+    {
+      "name": "Telekinetic Pulse+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "ALL enemies gain 10 Block. 2 theunchainedmod:Chain: ALL enemies lose 31 HP."
+    },
+    {
+      "name": "Tie Down",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 6 Strength this and next turn. Exhaust."
+    },
+    {
+      "name": "Tie Down+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enemy loses 8 Strength this and next turn. Exhaust."
+    },
+    {
+      "name": "Trade Offer",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enemy gains 6 Block.\nDraw 1 card."
+    },
+    {
+      "name": "Trade Offer+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enemy gains 12 Block.\nDraw 2 cards."
+    },
+    {
+      "name": "Windup",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 1 Vulnerable.\n1 Chain: Add a random common Attack to your hand.\nIt costs 0 this turn\nand exhausts."
+    },
+    {
+      "name": "Windup+",
+      "color": "Unchained_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Apply 1 Vulnerable.\n1 Chain: Add a random upgraded common Attack to your hand.\nIt costs 0 this turn\nand exhausts."
+    },
+    {
+      "name": "Arcane Charm",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 7 theunchainedmod:Relay."
+    },
+    {
+      "name": "Arcane Charm+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 10 theunchainedmod:Relay."
+    },
+    {
+      "name": "Chain Saw",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Delete ALL your active theunchainedmod:Chains. Increase this card's damage by 5 for every theunchainedmod:Chain deleted this combat.\nDeal 15 damage."
+    },
+    {
+      "name": "Chain Saw+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Delete ALL your active theunchainedmod:Chains. Increase this card's damage by 10 for every theunchainedmod:Chain deleted this combat.\nDeal 15 damage."
+    },
+    {
+      "name": "Chase Destiny",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, whenever you finish a theunchainedmod:Chain, gain [E]. Exhaust."
+    },
+    {
+      "name": "Chase Destiny+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This and next turn, whenever you finish a theunchainedmod:Chain, gain [E]. Exhaust."
+    },
+    {
+      "name": "Fouett\u00E9 En Tournant",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 theunchainedmod:Momentum X times.\nExhaust."
+    },
+    {
+      "name": "Fouett\u00E9 En Tournant+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 2 theunchainedmod:Momentum (X + 1) times.\nExhaust."
+    },
+    {
+      "name": "Glyph Beam",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage. Whenever you gain theunchainedmod:Relay this turn, the enemy takes 9 damage."
+    },
+    {
+      "name": "Glyph Beam+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage. Whenever you gain theunchainedmod:Relay this turn, the enemy takes 12 damage."
+    },
+    {
+      "name": "Kusarigama",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played if it finishes an Attack theunchainedmod:Chain. Deal 30 damage to ALL enemies."
+    },
+    {
+      "name": "Kusarigama+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Can only be played if it finishes an Attack theunchainedmod:Chain. Deal 36 damage to ALL enemies."
+    },
+    {
+      "name": "Last Resort",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nGain [E] [E]. 2 theunchainedmod:Chain: Lose ALL your [E].\nExhaust."
+    },
+    {
+      "name": "Last Resort+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nGain [E] [E]. 3 theunchainedmod:Chain: Lose ALL your [E].\nExhaust."
+    },
+    {
+      "name": "Law Of Inertia",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first time you finish a theunchainedmod:Chain each turn, gain 2 Strength and Dexterity. If you did not finish a theunchainedmod:Chain by the end of turn, lose 2 Strength and Dexterity. You cannot lose more than the amount you gained."
+    },
+    {
+      "name": "Law Of Inertia+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The first time you finish a theunchainedmod:Chain each turn, gain 3 Strength and Dexterity. If you did not finish a theunchainedmod:Chain by the end of turn, lose 3 Strength and Dexterity. You cannot lose more than the amount you gained."
+    },
+    {
+      "name": "Magus Form",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nWhenever you play a 2-cost card, gain [E]."
+    },
+    {
+      "name": "Magus Form+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play a 2-cost card, gain [E]."
+    },
+    {
+      "name": "Muscle Memory",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next 2-cost card is played twice."
+    },
+    {
+      "name": "Muscle Memory+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, your next 2 2-cost cards are played twice."
+    },
+    {
+      "name": "Pirouette",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Swirl into your hand.\nUpgrade ALL Swirls in your hand. Exhaust."
+    },
+    {
+      "name": "Pirouette+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add a Swirl into your hand.\nUpgrade ALL Swirls in your hand. Exhaust."
+    },
+    {
+      "name": "Relentless Movements",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Finishing a theunchainedmod:Chain gives 1 theunchainedmod:Momentum."
+    },
+    {
+      "name": "Relentless Movements+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Finishing a theunchainedmod:Chain gives 2 theunchainedmod:Momentum."
+    },
+    {
+      "name": "Relentless Onslaught",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 2 damage 3 times.\n1 theunchainedmod:Chain: Deal 2 damage 3 times and reapply this theunchainedmod:Chain.\nExhaust. "
+    },
+    {
+      "name": "Relentless Onslaught+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 3 damage 3 times.\n1 theunchainedmod:Chain: Deal 3 damage 3 times and reapply this theunchainedmod:Chain.\nExhaust. "
+    },
+    {
+      "name": "Solar Plexus",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\n3 theunchainedmod:Chain: theunchainedmod:Stun the same enemy.\nExhaust."
+    },
+    {
+      "name": "Solar Plexus+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\n2 theunchainedmod:Chain: theunchainedmod:Stun the same enemy.\nExhaust."
+    },
+    {
+      "name": "Suffocate",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to the enemies Block.\nEnemy loses HP equal to their Block."
+    },
+    {
+      "name": "Suffocate+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain Block equal to the enemies Block.\nEnemy loses HP equal to their Block."
+    },
+    {
+      "name": "Tethered Mind",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 theunchainedmod:Relay.\nWhenever you take damage or damage is blocked by theunchainedmod:Relay, the enemy loses the same amount of HP.\nExhaust."
+    },
+    {
+      "name": "Tethered Mind+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 theunchainedmod:Relay.\nWhenever you take damage or damage is blocked by theunchainedmod:Relay, the enemy loses the same amount of HP.\nExhaust."
+    },
+    {
+      "name": "The Prince's Grace",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of turn, draw 2 additional cards. All enemies gain 8 Block every turn."
+    },
+    {
+      "name": "The Prince's Grace+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nAt the start of turn, draw 2 additional cards. All enemies gain 8 Block every turn."
+    },
+    {
+      "name": "Thread Of Ariadne",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If you have an active Chain, take an extra turn after this turn. End your turn.\nExhaust."
+    },
+    {
+      "name": "Thread Of Ariadne+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have an active Chain, take an extra turn after this turn. End your turn.\nExhaust."
+    },
+    {
+      "name": "Unshackling",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play a card, Upgrade it for the rest of combat."
+    },
+    {
+      "name": "Unshackling+",
+      "color": "Unchained_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nWhenever you play a card, Upgrade it for the rest of combat."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Rusted Chains",
+      "tier": "Starter",
+      "pool": "Unchained_orange_color",
+      "description": "The seventh card you play each combat costs zero.",
+      "flavorText": "These used to hold you to a prison wall. Now they are handy tools."
+    },
+    {
+      "name": "Broken Charm",
+      "tier": "Common",
+      "pool": "Unchained_orange_color",
+      "description": "At the start of your first 3 turns, gain 5 Relay.",
+      "flavorText": "Ringing it doesnt make the most pleasant of sounds, but it has emotional value."
+    },
+    {
+      "name": "Wrench",
+      "tier": "Common",
+      "pool": "Unchained_orange_color",
+      "description": "Whenever you apply Crushed Armor, the enemy loses 5 HP.",
+      "flavorText": "You can never fasten your armor tight enough."
+    },
+    {
+      "name": "Ballet Shoes",
+      "tier": "Uncommon",
+      "pool": "Unchained_orange_color",
+      "description": "If you end your turn with Momentum, gain enough Momentum for the next Swirl.",
+      "flavorText": "Impossible to strike a bad pose with these."
+    },
+    {
+      "name": "Heart of the Underdog",
+      "tier": "Uncommon",
+      "pool": "Unchained_orange_color",
+      "description": "At the end of turn, gain 1 Strength if you do not have more block than ALL enemies combined.",
+      "flavorText": "You feel it beat stronger whenever the odds are stacked against you."
+    },
+    {
+      "name": "Totem Of Pain",
+      "tier": "Uncommon",
+      "pool": "Unchained_orange_color",
+      "description": "At the end of your turn, hit a random enemy for ALL Relayed Damage you gained since last turn.",
+      "flavorText": "When you listen close, you can hear the demon whisper: 'Sharing is caring'."
+    },
+    {
+      "name": "Carabiner",
+      "tier": "Rare",
+      "pool": "Unchained_orange_color",
+      "description": "Chains no longer wear off at the end of turn.",
+      "flavorText": "There is no better tool for connecting chains."
+    },
+    {
+      "name": "Churros",
+      "tier": "Rare",
+      "pool": "Unchained_orange_color",
+      "description": "The first Chain you start each turn, is copied.",
+      "flavorText": "These tasty treats fill you with a burst of energy."
+    },
+    {
+      "name": "Memento",
+      "tier": "Boss",
+      "pool": "Unchained_orange_color",
+      "description": "The first time the block of an enemy is broken each turn, gain [E] .",
+      "flavorText": "The demon awakens when the tide of battle turns."
+    },
+    {
+      "name": "Polished Chains",
+      "tier": "Boss",
+      "pool": "Unchained_orange_color",
+      "description": "Replaces Rusted Chains. EVERY seventh card you play each combat costs zero.",
+      "flavorText": "You can see your own reflection in these."
+    },
+    {
+      "name": "Dancing Ribbons",
+      "tier": "Shop",
+      "pool": "Unchained_orange_color",
+      "description": "At the end of your turn add a Swirl into your hand, if you played a Swirl this turn.",
+      "flavorText": "It reminds you of merry times spent dancing in the tavern hall"
+    }
+  ],
+  "potions": [
+    {
+      "name": "Chain Grease",
+      "rarity": "Common",
+      "description": "Gain 7 Block. Remove ALL Relayed Damage. Finish ALL your active Chains."
+    },
+    {
+      "name": "Crushing Elixir",
+      "rarity": "Uncommon",
+      "description": "Apply 10 Crushed Armor to ALL enemies."
+    },
+    {
+      "name": "Eau de Ballet",
+      "rarity": "Rare",
+      "description": "Add 2 Swirls into your hand."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Unchained",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Chain",
+      "description": "Playing enough cards with the same type as this card will finish the Chain and unlock the specified effect. Chains wear off at the end of turn."
+    },
+    {
+      "name": "Crushed Armor",
+      "description": "Enemies lose HP everytime they gain Block."
+    },
+    {
+      "name": "Damage Modifiers",
+      "description": "All effects that influence Attack Damage."
+    },
+    {
+      "name": "Full Spin",
+      "description": "Doubles the damage and Block of Swirls this turn."
+    },
+    {
+      "name": "Momentum",
+      "description": "When you obtain 3 Momentum, add a Swirl into your hand."
+    },
+    {
+      "name": "Relay",
+      "description": "Until next turn, prevents damage after Block.\nHalf of the damage prevented by Relay is dealt to the Player in 2 turns as Relayed Damage. Relayed Damage cannot be blocked by Relay."
+    },
+    {
+      "name": "Relayed Damage",
+      "description": "Damage that was prevented by Relay. Half of it is dealt to the Player at the end of the next turn. Is not blocked by Relay."
+    },
+    {
+      "name": "Stun",
+      "description": "Enemy does nothing this turn."
+    }
+  ]
+}

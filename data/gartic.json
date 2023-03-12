@@ -1,0 +1,2007 @@
+{
+  "mod": {
+    "name": "The Gartic",
+    "version": "0.1.0",
+    "authors": ["Levender","Vex'd"],
+    "credits": "",
+    "description": "A Slay The Spire character created using a Gartic Phone game",
+    "mts_version": "3.18.2",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Boot",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card.\nExhaust."
+    },
+    {
+      "name": "Boot+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Clownfish",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Clownfish+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Weak.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Crazy Panda",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": " At the end of your turn deals damage to a random enemy and applies Weak or Vulnerable."
+    },
+    {
+      "name": "Dire Wolf",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "A creature that deals 8 base damage 2 times.\nDamage is affected by attack modifiers."
+    },
+    {
+      "name": "Fetching Fox",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "At the start of your turn, will either draw or steal a card."
+    },
+    {
+      "name": "Fire Imp",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "A creature that deals 3 damage to a random enemy whenever you play an attack. Damage is affected by attack modifiers."
+    },
+    {
+      "name": "Guppy",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Guppy+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Hammerhead",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Hammerhead+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Strength.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Hungry Fox",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "At the end of your turn will deal 3 damage to the lowest health enemy."
+    },
+    {
+      "name": "Inari Barrage",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Deal -1 damage 5 times to the highest health enemy."
+    },
+    {
+      "name": "Inari Dash",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Next turn, if you play a card, draw -1"
+    },
+    {
+      "name": "Inari Endurance",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Gain -1 Temp HP."
+    },
+    {
+      "name": "Inari Energy",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Next turn, gain -1 [E]."
+    },
+    {
+      "name": "Inari Flames",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Deal -1 damage 10 times to the lowest health enemy."
+    },
+    {
+      "name": "Inari Gift",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Choose 1 of 3 Colorless cards with Exhaust to go to the top of your draw pile."
+    },
+    {
+      "name": "Inari Ploy",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Apply -1 Weak to ALL enemies."
+    },
+    {
+      "name": "Inari Protection",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Gain -1 Block."
+    },
+    {
+      "name": "Inari Sabotage",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Apply -1 Vulnerable to ALL enemies."
+    },
+    {
+      "name": "Mirrored Fox",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Gains 6 Block or deals 6 damage."
+    },
+    {
+      "name": "Mischievous Fox",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "",
+      "description": "Deals 2 damage to you or a random enemy."
+    },
+    {
+      "name": "Octopus",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nExhaust."
+    },
+    {
+      "name": "Octopus+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Orca",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Play the top card of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Orca+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nPlay the top card of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Paper Bunny",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "2",
+      "description": "Raise ALL numbers on cards by 2 except cost."
+    },
+    {
+      "name": "Paper Bunny+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "2",
+      "description": "Raise ALL numbers on cards by 4 except cost."
+    },
+    {
+      "name": "Paper Shield",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 a random type of Block.\nDeal 1 garticmod:Fixed damage to you twice.\nTypes of Block:  [garticmod:VoidIcon] ,  [garticmod:SpikyIcon] ,  [garticmod:PlatedIcon] ,  [garticmod:DamageIcon] ,  [garticmod:BlockingIcon] ,  [garticmod:AngryIcon] ,  [garticmod:EnergyIcon] ,  [garticmod:CurseIcon] ."
+    },
+    {
+      "name": "Paper Shield+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 14 a random type of Block.\nDeal 1 garticmod:Fixed damage to you twice.\nTypes of Block:  [garticmod:VoidIcon] ,  [garticmod:SpikyIcon] ,  [garticmod:PlatedIcon] ,  [garticmod:DamageIcon] ,  [garticmod:BlockingIcon] ,  [garticmod:AngryIcon] ,  [garticmod:EnergyIcon] ,  [garticmod:CurseIcon] ."
+    },
+    {
+      "name": "Paper Sword",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies.\nDeal 3 garticmod:Fixed damage to you."
+    },
+    {
+      "name": "Paper Sword+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage to ALL enemies.\nDeal 3 garticmod:Fixed damage to you."
+    },
+    {
+      "name": "Piranha",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Piranha+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Qwilfish",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 5 Poison.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Qwilfish+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 7 Poison.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Sea Monster",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 3 random Attacks into your hand. They cost 0 this turn and gain Exhaust.\nExhaust."
+    },
+    {
+      "name": "Sea Monster+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Add 3 random Upgraded Attacks into your hand. They cost 0 this turn and gain Exhaust.\nExhaust."
+    },
+    {
+      "name": "Shark",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Vulnerable.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Shark+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 Vulnerable.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Siren",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enemy loses 2 Strength and 6 HP.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Siren+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Enemy loses 3 Strength and 9 HP.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Three-Tailed White Fox",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "When your turn ends, pick 1 of 3 positive choices."
+    },
+    {
+      "name": "[MISSING_TITLE]",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "",
+      "description": "[MISSING_DESCRIPTION]"
+    },
+    {
+      "name": "Defend",
+      "color": "Gartic_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Gartic_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Stock Up",
+      "color": "Gartic_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDraw 1 card.\nDiscard 1 card."
+    },
+    {
+      "name": "Stock Up+",
+      "color": "Gartic_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDraw 2 cards.\nDiscard 2 cards."
+    },
+    {
+      "name": "Strike",
+      "color": "Gartic_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Gartic_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Tall Grass",
+      "color": "Gartic_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "10",
+      "description": "When you draw this card, permanently reduce its cost by 1. Choose 1 of 3 garticmod:Summons to join your garticmod:Party. Fleeting."
+    },
+    {
+      "name": "Tall Grass+",
+      "color": "Gartic_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "When you draw this card, permanently reduce its cost by 1. Choose 1 of 3 garticmod:Summons to join your garticmod:Party. Fleeting."
+    },
+    {
+      "name": "Approach",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nYour next Attack deals double damage.\nExhaust."
+    },
+    {
+      "name": "Approach+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nYour next Attack deals double damage.\nExhaust."
+    },
+    {
+      "name": "Block and Load",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enter garticmod:Resolute.\nWhenever you gain Block this turn, add a random Attack to your hand."
+    },
+    {
+      "name": "Block and Load+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Enter garticmod:Resolute.\nWhenever you gain Block this turn, add a random upgraded Attack to your hand."
+    },
+    {
+      "name": "Carry On",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 2 Cards. Draw an extra card next turn."
+    },
+    {
+      "name": "Carry On+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 2 Cards. Draw 2 extra cards next turn."
+    },
+    {
+      "name": "Creation of Creation",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Randomly add Infernal Blade, Distraction, White Noise or Jack of All Trades to your hand.\nExhaust."
+    },
+    {
+      "name": "Creation of Creation+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Randomly add Infernal Blade+, Distraction+, White Noise+ or Jack of All Trades+ to your hand.\nExhaust."
+    },
+    {
+      "name": "Cut Losses",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exit your Stance. All enemies lose HP equal to the HP you lost this turn."
+    },
+    {
+      "name": "Cut Losses+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exit your Stance. All enemies lose HP equal to the HP you lost this turn."
+    },
+    {
+      "name": "Elder's Knowledge",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nEnter garticmod:Wisdom."
+    },
+    {
+      "name": "Elder's Knowledge+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nEnter garticmod:Wisdom."
+    },
+    {
+      "name": "Extendo Arm",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nPut a card from your discard pile on the bottom of your draw pile."
+    },
+    {
+      "name": "Extendo Arm+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nPut a card from your discard pile on the bottom of your draw pile."
+    },
+    {
+      "name": "Fetching Fox",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a garticmod:FetchingFox."
+    },
+    {
+      "name": "Fetching Fox+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Summon a garticmod:FetchingFox."
+    },
+    {
+      "name": "Frontflip",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nDraw 2 random cards from your discard pile."
+    },
+    {
+      "name": "Frontflip+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDraw 2 random cards from your discard pile."
+    },
+    {
+      "name": "Galaxy Brain",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Innate.\nDeal damage equal to the number of cards in your discard pile."
+    },
+    {
+      "name": "Galaxy Brain+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal damage equal to the number of cards in your discard pile."
+    },
+    {
+      "name": "Heavy Slam",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to the number of cards in your discard pile."
+    },
+    {
+      "name": "Heavy Slam+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to the number of cards in your discard pile+3."
+    },
+    {
+      "name": "Hellblaze",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage twice.\ngarticmod:Summon a garticmod:Fire\u00A0Imp."
+    },
+    {
+      "name": "Hellblaze+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice.\ngarticmod:Summon a garticmod:Fire\u00A0Imp."
+    },
+    {
+      "name": "Hook",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nShuffle 1 garticmod:Fish into your draw pile."
+    },
+    {
+      "name": "Hook+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nShuffle 2 garticmod:Fish into your draw pile."
+    },
+    {
+      "name": "Hunt",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\ngarticmod:Summon a garticmod:Hungry\u00A0Fox that deals 3 damage."
+    },
+    {
+      "name": "Hunt+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\ngarticmod:Summon a garticmod:Hungry\u00A0Fox that deals 4 damage."
+    },
+    {
+      "name": "Inner Balance",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If not in Calm, gain 5 Block.\nIf not in Wrath, deal 7 damage.\nDraw a card."
+    },
+    {
+      "name": "Inner Balance+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "If not in Calm, gain 7 Block.\nIf not in Wrath, deal 9 damage.\nDraw a card."
+    },
+    {
+      "name": "Mischievous Fox",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a garticmod:MischievousFox that deals 2 damage."
+    },
+    {
+      "name": "Mischievous Fox+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a garticmod:MischievousFox that deals 3 damage."
+    },
+    {
+      "name": "Opening Strike",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Damage.\nDraw a card."
+    },
+    {
+      "name": "Opening Strike+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Damage.\nDraw a card."
+    },
+    {
+      "name": "Pounce and Retreat",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nGain 9 [garticmod:DamageIcon] Block."
+    },
+    {
+      "name": "Pounce and Retreat+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nGain 12 [garticmod:DamageIcon] Block."
+    },
+    {
+      "name": "Reel It In",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nAdd 1 garticmod:Fish to your hand."
+    },
+    {
+      "name": "Reel It In+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nAdd 1 garticmod:Fish to your hand."
+    },
+    {
+      "name": "Scrap Shield",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDraw 1 card.\nDiscard 1 card."
+    },
+    {
+      "name": "Scrap Shield+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nDraw 1 card.\nDiscard 1 card."
+    },
+    {
+      "name": "Tooth And Claw",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "garticmod:Unsummon. If you did, Summon a garticmod:Dire\u00A0Wolf that deals 8 base damage 2 times.\nDamage is affected by attack modifiers."
+    },
+    {
+      "name": "Tooth And Claw+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "garticmod:Unsummon. If you did, Summon a garticmod:Dire\u00A0Wolf that deals 8 base damage 3 times.\nDamage is affected by attack modifiers."
+    },
+    {
+      "name": "Waste Not",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nWhenever you garticmod:Unsummon, return this from the discard pile to your hand."
+    },
+    {
+      "name": "Waste Not+",
+      "color": "Gartic_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Grave. Deal 8 damage.\nWhenever you garticmod:Unsummon, return this from the discard pile to your hand."
+    },
+    {
+      "name": "As Stone",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Whenever you gain Block this turn, gain 1 Thorns.\nExhaust."
+    },
+    {
+      "name": "As Stone+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Whenever you gain Block this turn, gain 1 Thorns.\nExhaust."
+    },
+    {
+      "name": "Baited",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nAdd a garticmod:Fish into your hand.\nIf the enemy intends to attack, add 1 more."
+    },
+    {
+      "name": "Baited+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 18 damage.\nAdd a garticmod:Fish into your hand.\nIf the enemy intends to attack, add 2 more."
+    },
+    {
+      "name": "Big Haul",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 garticmod:Fish to your hand and give them Retain."
+    },
+    {
+      "name": "Big Haul+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 garticmod:Fish to your hand and give them Retain."
+    },
+    {
+      "name": "Blood in the Water",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "garticmod:Consume.\nGain 2 Strength. Gain  1 additional Strength for every garticmod:Fish garticmod:Consumed."
+    },
+    {
+      "name": "Blood in the Water+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "garticmod:Consume.\nRetain.\nGain 2 Strength. Gain  1 additional Strength for every garticmod:Fish garticmod:Consumed."
+    },
+    {
+      "name": "Catch of the Day",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, shuffle a garticmod:Fish into your draw pile."
+    },
+    {
+      "name": "Catch of the Day+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, shuffle a garticmod:Fish into your draw pile."
+    },
+    {
+      "name": "Celestial Crafting",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 1 garticmod:Flight.\nWhile you are in garticmod:Flight, whenever you create a card, add a copy to your discard pile."
+    },
+    {
+      "name": "Collect Self",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Exit your Stance.\nNext turn, draw X cards and gain X [E].\nExhaust."
+    },
+    {
+      "name": "Collect Self+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Exit your Stance.\nNext turn, draw X+1 cards and gain X+1 [E].\nExhaust."
+    },
+    {
+      "name": "Distracting Fox",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "garticmod:Unsummon a fox.  If you do, at the end of your turn, gain 5 Block."
+    },
+    {
+      "name": "Distracting Fox+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "garticmod:Unsummon a fox.  If you do, at the end of your turn, gain 7 Block."
+    },
+    {
+      "name": "Dive Bomb",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all garticmod:Flight.\nDeal 12 damage to a random enemy for each stack of garticmod:Flight removed."
+    },
+    {
+      "name": "Dive Bomb+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Remove all garticmod:Flight.\nDeal 15 damage to a random enemy for each stack of garticmod:Flight removed."
+    },
+    {
+      "name": "Divine Advent",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you shuffle your draw pile, you can add a Smite or Safety into your hand."
+    },
+    {
+      "name": "Divine Advent+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you shuffle your draw pile, you can add a Smite or Safety into your hand."
+    },
+    {
+      "name": "Dynamic Entry",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you garticmod:Summon, activate the summon's end of turn effect."
+    },
+    {
+      "name": "Dynamic Entry+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you garticmod:Summon, activate the summon's end of turn effect."
+    },
+    {
+      "name": "Emergency Fireworks",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 Damage. Apply 2 Vulnerable to ALL enemies.\nIf discarded from hand, apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Emergency Fireworks+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 Damage. Apply 3 Vulnerable to ALL enemies.\nIf discarded from hand, apply 1 Weak to ALL enemies."
+    },
+    {
+      "name": "Feather Guard",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain 2 garticmod:Flight."
+    },
+    {
+      "name": "Feather Guard+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nGain 3 garticmod:Flight."
+    },
+    {
+      "name": "Feeding Frenzy",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all garticmod:Fish in your hand and draw pile. Deal 7 damage to a random enemy for each."
+    },
+    {
+      "name": "Feeding Frenzy+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust all garticmod:Fish in your hand and draw pile. Deal 9 damage to a random enemy for each."
+    },
+    {
+      "name": "Friendly Lick",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 3 HP."
+    },
+    {
+      "name": "Friendly Lick+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 3 HP.\nRemove a random debuff from yourself."
+    },
+    {
+      "name": "Future Sight",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nPut a card from your hand to the bottom of your draw pile.\nIt costs 0 until played."
+    },
+    {
+      "name": "Future Sight+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nPut any number of cards from your hand to the bottom of your draw pile.\nThey cost 0 until played."
+    },
+    {
+      "name": "Gambit",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, gain 8 Block and discard 1 card at random."
+    },
+    {
+      "name": "Gambit+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, gain 11 Block and discard 1 card at random."
+    },
+    {
+      "name": "Glass Wave",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nGain 3 garticmod:Glass\u00A0Armor.\nExhaust."
+    },
+    {
+      "name": "Glass Wave+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nGain 4 garticmod:Glass\u00A0Armor.\nExhaust."
+    },
+    {
+      "name": "God's Blood",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 9 HP.\nEnter Wrath.\nYour next attack deals double damage."
+    },
+    {
+      "name": "God's Blood+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nLose 9 HP.\nEnter Wrath.\nYour next attack deals double damage."
+    },
+    {
+      "name": "Guzzler Helmet",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If there are more cards in your discard pile than your draw pile, gain [E] [E] [E] ."
+    },
+    {
+      "name": "Guzzler Helmet+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If there are more cards in your discard pile than your draw pile, gain [E] [E] [E] ."
+    },
+    {
+      "name": "Hover",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your garticmod:Flight can not decrease this turn."
+    },
+    {
+      "name": "Illusions",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 8 Block.\nDeal 8 damage.\nPut 2 cards from your discard pile into your hand."
+    },
+    {
+      "name": "Illusions+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain 10 Block.\nDeal 10 damage.\nPut 3 cards from your discard pile into your hand."
+    },
+    {
+      "name": "Jet Stream",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle your hand into your draw pile, excluding Safeties and Smites.\nDraw 5 cards.\nExhaust."
+    },
+    {
+      "name": "Jet Stream+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle your hand into your draw pile, excluding Safeties and Smites.\nDraw 6 cards.\nExhaust."
+    },
+    {
+      "name": "Light of Creation",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage to a random enemy.\nRepeat for each card in your hand that didn't start in your deck."
+    },
+    {
+      "name": "Light of Creation+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage to a random enemy.\nRepeat for each card in your hand that didn't start in your deck."
+    },
+    {
+      "name": "Little Shield Dude",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your next Attack grants Block equal to their unblocked Damage."
+    },
+    {
+      "name": "Little Shield Dude+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Your 2 next Attacks grant Block equal to their unblocked Damage."
+    },
+    {
+      "name": "Long Shot",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 11 damage.\nNext turn, discard any number of cards then draw that many."
+    },
+    {
+      "name": "Long Shot+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage.\nNext turn, discard any number of cards then draw that many."
+    },
+    {
+      "name": "Mental Matrix",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block. Repeat for each card added to your draw or discard pile this turn."
+    },
+    {
+      "name": "Mental Matrix+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block. Repeat for each card added to your draw or discard pile this turn."
+    },
+    {
+      "name": "Mirror Shot",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nIf you and the enemy share a buff or debuff with the same name, add 2 Shivs to your hand."
+    },
+    {
+      "name": "Mirror Shot+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nIf you and the enemy share a buff or debuff with the same name, add 3 Shivs to your hand."
+    },
+    {
+      "name": "Mirrored Fox",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Summon a garticmod:Mirrored_Fox that gains buff whenever you gain debuff."
+    },
+    {
+      "name": "Mirrored Fox+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Summon a garticmod:Mirrored_Fox that gains buff whenever you gain debuff."
+    },
+    {
+      "name": "Polarity Disorder",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nRepeat for each unique Stance you entered this turn."
+    },
+    {
+      "name": "Polarity Disorder+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nRepeat for each unique Stance you entered this turn."
+    },
+    {
+      "name": "Power of Creation",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Reduce the cost of the first card you add to your hand each turn by 1."
+    },
+    {
+      "name": "Power of Creation+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Reduce the cost of the first card you add to your hand each turn by 1."
+    },
+    {
+      "name": "Protector",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nIf this card is discarded, gain [E]."
+    },
+    {
+      "name": "Protector+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nIf this card is discarded, gain [E]."
+    },
+    {
+      "name": "Quick Cast",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose One ; Deal 7 damage and add a Smite to your hand.\nGain 7 Block and add a Safety to your hand"
+    },
+    {
+      "name": "Quick Cast+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Choose One ; Deal 10 damage and add a Smite to your hand.\nGain 10 Block and add a Safety to your hand"
+    },
+    {
+      "name": "Ranger's Focus",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage.\nThe next time you play a garticmod:Summon card,\ngain [E]."
+    },
+    {
+      "name": "Ranger's Focus+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 20 damage.\nThe next time you play a garticmod:Summon card,\ngain [E]."
+    },
+    {
+      "name": "Scorpion Sting",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage.\nApply 6 Poison.\nApply 2 Weak"
+    },
+    {
+      "name": "Scorpion Sting+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nApply 8 Poison.\nApply 2 Weak"
+    },
+    {
+      "name": "Soften",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nEnemy loses 3 Strength this turn."
+    },
+    {
+      "name": "Soften+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nEnemy loses 4 Strength this turn."
+    },
+    {
+      "name": "Sparks",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "",
+      "description": "Unplayable.\nWhile in hand, deal 3 damage to ALL enemies whenever you play an Attack."
+    },
+    {
+      "name": "Sparks+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "",
+      "description": "Unplayable.\nWhile in hand, deal 4 damage to ALL enemies whenever you play an Attack."
+    },
+    {
+      "name": "Sure Shot",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The target loses 8 HP. If it has Block, it loses 8 HP again."
+    },
+    {
+      "name": "Sure Shot+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The target loses 11 HP. If it has Block, it loses 11 HP again."
+    },
+    {
+      "name": "Tamer's Candy",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Fleeting. Ethereal.\nAdd one of your current Summons to your Party."
+    },
+    {
+      "name": "Tamer's Candy+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Fleeting.\nAdd one of your current Summons to your Party."
+    },
+    {
+      "name": "Void Defend",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 6 [garticmod:VoidIcon] Block to ALL characters."
+    },
+    {
+      "name": "Void Defend+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 [garticmod:VoidIcon] Block to ALL characters."
+    },
+    {
+      "name": "t0tAl MaDnEs5",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, if you are in Wrath, play a random card from your discard pile.\nOtherwise, enter Wrath."
+    },
+    {
+      "name": "t0tAl MaDnEs5+",
+      "color": "Gartic_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, if you are in Wrath, play 2 random cards from your discard pile.\nOtherwise, enter Wrath."
+    },
+    {
+      "name": "Adaptation",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you change Stances, put a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Adaptation+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you change Stances, put a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "All Will Return",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Gain Block and deal damage equal to the Block you gained and damage you dealt last turn."
+    },
+    {
+      "name": "All Will Return+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Gain Block and deal damage equal to the Block you gained and damage you dealt last turn."
+    },
+    {
+      "name": "Arcane Toolbox",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your first card played each turn grants:\n1 Strength if it's a Skill, 1 Dexterity if it's an Attack or [E] if it's a Power."
+    },
+    {
+      "name": "Arcane Toolbox+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Your first card played each turn grants:\n1 Strength if it's a Skill, 1 Dexterity if it's an Attack or [E] if it's a Power.\nInnate."
+    },
+    {
+      "name": "Charge Beam",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "",
+      "description": "Unplayable. Retain.\nWhen Retained, increase its damage by 3 this combat.\nWhen discarded from your hand, deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Charge Beam+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "",
+      "description": "Unplayable. Retain.\nWhen Retained, increase its damage by 4 this combat.\nWhen discarded from your hand, deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Cleanest Mind",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 4 Max HP.\nAt the start of your turn, lose 1 HP and gain 1 Dexterity.\nAt the end of your turn, if this is in your hand, shuffle a copy of it into your draw pile.\nSoulbound."
+    },
+    {
+      "name": "Cleanest Mind+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 2 Max HP.\nAt the start of your turn, lose 1 HP and gain 1 Dexterity.\nAt the end of your turn, if this is in your hand, shuffle a copy of it into your draw pile.\nSoulbound."
+    },
+    {
+      "name": "Clear Intention",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Pick a card from your draw pile. Discard your draw pile. Make 4 copies of the card you picked in your draw pile.\nExhaust."
+    },
+    {
+      "name": "Clear Intention+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Pick a card from your draw pile. Discard your draw pile. Make 9 copies of the card you picked in your draw pile.\nExhaust."
+    },
+    {
+      "name": "Creation of Power",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add a copy of each power you played this combat to your hand.\nExhaust."
+    },
+    {
+      "name": "Creation of Power+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add an Upgraded copy of each power you played this combat to your hand.\nExhaust."
+    },
+    {
+      "name": "Delayed Death",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 1 damage to ALL enemies.\nAt the start of targets' turn, they lose HP equal to unblocked damage dealt."
+    },
+    {
+      "name": "Delayed Death+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal 2 damage to ALL enemies.\nAt the start of targets' turn, they lose HP equal to unblocked damage dealt."
+    },
+    {
+      "name": "Divine Intervention",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The next time you would die, heal to 1 HP, gain 15 Block, and enter Divinity instead."
+    },
+    {
+      "name": "Divine Intervention+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The next time you would die, heal to 1 HP, gain 15 Block, and enter Divinity instead."
+    },
+    {
+      "name": "Freefall",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "garticmod:Unnate.\nUnplayable.\nWhen you draw this card, draw 3 cards and Exhaust."
+    },
+    {
+      "name": "Freefall+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Innate.\nUnplayable.\nWhen you draw this card, draw 2 cards and Exhaust."
+    },
+    {
+      "name": "Garbage Golem",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block.  If you win the combat this turn, your Block carries over to the next combat.\nExhaust."
+    },
+    {
+      "name": "Garbage Golem+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block.\nGain 3 Strength.\nIf you win the combat this turn, your Block carries over to the next combat.\nExhaust."
+    },
+    {
+      "name": "Gone Fishing",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 1 Intangible.\nShuffle 3 garticmod:Fish into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Gone Fishing+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Gain 1 Intangible.\nShuffle 5 garticmod:Fish into your draw pile.\nExhaust."
+    },
+    {
+      "name": "It Was THIIIIIIIS Big!",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Triple the effects of ALL current garticmod:Fish cards.\nExhaust."
+    },
+    {
+      "name": "It Was THIIIIIIIS Big!+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Quadruple the effects of ALL current garticmod:Fish cards.\nExhaust."
+    },
+    {
+      "name": "King of the Depths",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "garticmod:Consume.\nAdd 1 garticmod:Fish to your draw pile.\nWhenever this card garticmod:Consumes a garticmod:Fish, permanently increase the garticmod:Fish added by 1."
+    },
+    {
+      "name": "King of the Depths+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "garticmod:Consume.\nAdd 1 garticmod:Fish to your draw pile.\nWhenever this card garticmod:Consumes a garticmod:Fish, permanently increase the garticmod:Fish added by 1."
+    },
+    {
+      "name": "Lose Weight",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nDiscard any number of Colorless cards and gain 1 garticmod:Flight for each card discarded."
+    },
+    {
+      "name": "Lose Weight+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 4 cards.\nDiscard any number of Colorless cards and gain 1 garticmod:Flight for each card discarded."
+    },
+    {
+      "name": "Multi-Bottle Rockets",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Discard any number of cards.\nDeal 7 damage to a random enemy for each card\ndiscarded + 1."
+    },
+    {
+      "name": "Multi-Bottle Rockets+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Discard any number of cards.\nDeal 10 damage to a random enemy for each card\ndiscarded + 1."
+    },
+    {
+      "name": "Pandamonium",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, garticmod:Summon a garticmod:Crazy\u00A0Panda that deals 10 damage and inflicts either 1 Weak or 1 Vulnerable."
+    },
+    {
+      "name": "Pandamonium+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the end of your turn, garticmod:Summon a garticmod:Crazy\u00A0Panda that deals 15 damage and inflicts either 1 Weak or 1 Vulnerable."
+    },
+    {
+      "name": "Sheet of Paper",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "At start of your turn Transforms into random stuff."
+    },
+    {
+      "name": "Sheet of Paper+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "At start of your turn Transforms into random Upgraded stuff."
+    },
+    {
+      "name": "Soaring Form",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nAt the start of your turn, gain [E] and 1 garticmod:Flight."
+    },
+    {
+      "name": "Soaring Form+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, gain [E] and 1 garticmod:Flight."
+    },
+    {
+      "name": "Supplicate To Inari",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Summon a garticmod:Three-Tailed\u00A0White\u00A0Fox."
+    },
+    {
+      "name": "Supplicate To Inari+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Summon a garticmod:Three-Tailed\u00A0White\u00A0Fox.\nDraw 1 card.\nGain 1 [E]."
+    },
+    {
+      "name": "Uncanny Hunger",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, garticmod:Unsummon.\nIf you did, gain 2 [E] and draw 2 cards."
+    },
+    {
+      "name": "Uncanny Hunger+",
+      "color": "Gartic_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, garticmod:Unsummon.\nIf you did, gain 2 [E] and draw 2 cards."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Old Rod",
+      "tier": "Starter",
+      "pool": "Gartic_color",
+      "description": "At the start of combat, shuffle 2 garticmod:Fish into your draw pile.",
+      "flavorText": "Plop! Now to wait."
+    },
+    {
+      "name": "Box of Crayons",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you discard 3 cards, draw 1 card.",
+      "flavorText": "The orange ones taste the best."
+    },
+    {
+      "name": "Spiked Collar",
+      "tier": "Uncommon",
+      "pool": "Gartic_color",
+      "description": "At the start of your next combat, choose 1 of 3 creatures to add to your garticmod:Party.",
+      "flavorText": "It was attached to a friend!"
+    },
+    {
+      "name": "Abase Crown",
+      "tier": "Rare",
+      "pool": "",
+      "description": "The first cost 0 card you play after entering a Stance is played twice.",
+      "flavorText": "It was given as a gift. The receiver was not happy."
+    },
+    {
+      "name": "Hidden Compartment",
+      "tier": "Rare",
+      "pool": "Gartic_color",
+      "description": "At the start of combat, add a Smite and a Safety to your hand.",
+      "flavorText": "Don't forget how to open it."
+    },
+    {
+      "name": "Lotus Pendant",
+      "tier": "Rare",
+      "pool": "Gartic_color",
+      "description": "Whenever you enter a stance, gain 1 Mantra.",
+      "flavorText": "The flowers are abnormally sturdy."
+    },
+    {
+      "name": "Meat Treat",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the end of the turn, if you don't have a Summon, Summon a Bait.",
+      "flavorText": "High quality meat, but not a sign of a good place to properly cook it."
+    },
+    {
+      "name": "Party",
+      "tier": "Special",
+      "pool": "Gartic_color",
+      "description": "At the start of battle, summon the following creatures:",
+      "flavorText": "Gotta catch 'em all!"
+    },
+    {
+      "name": "Corrupted Meat",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Gain one [E] . At the start of each combat, summon a Small Spire Growth.",
+      "flavorText": "No one eats blighted meat, and there is a good reason for that."
+    },
+    {
+      "name": "Fiberglass Rod",
+      "tier": "Boss",
+      "pool": "Gartic_color",
+      "description": "Replaces Old Rod. At the start of each turn, shuffle 2 garticmod:Fish into your draw pile.",
+      "flavorText": "Plop!... Now to wait some more."
+    },
+    {
+      "name": "Dark Pact",
+      "tier": "Shop",
+      "pool": "Gartic_color",
+      "description": "While your HP is at or below 50%, draw 1 additional card at the beginning of your turn.",
+      "flavorText": "Unnatural speed payed for with lifeforce."
+    },
+    {
+      "name": "Tranquil Void",
+      "tier": "Shop",
+      "pool": "Gartic_color",
+      "description": "No more HP loss from Cleanest Mind, but the Max HP loss is increased by 1. Cleanest Mind costs 0 energy.",
+      "flavorText": "If you look into the void, then the void will look at you. If you try to embrace void, void will absorb you up."
+    },
+    {
+      "name": "Worn Coat",
+      "tier": "Shop",
+      "pool": "Gartic_color",
+      "description": "Whenever a garticmod:Fish enters your discard pile, gain 6 Block.",
+      "flavorText": "A reminder to take it easy sometimes."
+    }
+  ],
+  "potions": [
+    {
+      "name": "Copying Potion",
+      "rarity": "Common",
+      "description": "Add 3 createable in combat cards into your hand."
+    },
+    {
+      "name": "Purple Stuff",
+      "rarity": "Uncommon",
+      "description": "Swap your Draw and Discard piles, draw 4 cards."
+    },
+    {
+      "name": "Darkling Milk",
+      "rarity": "Rare",
+      "description": "If your Max HP is below its original value, gain 50% of it back."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Gartic",
+      "type": "Player",
+      "minHP": "80",
+      "maxHP": "80"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Crazy Panda",
+      "description": "Summon. At the end of your turn deals damage to a random enemy and applies Weak or Vulnerable."
+    },
+    {
+      "name": "Dire Wolf",
+      "description": "A creature that attacks the enemy with the lowest health multiple times, affected by attack modifiers."
+    },
+    {
+      "name": "Flight",
+      "description": "Take 50% less damage from attacks.\nReduced by 1 when damaged or at the start of your turn"
+    },
+    {
+      "name": "Hungry Fox",
+      "description": "Summon. At the end of your turn deals damage to the lowest health enemy."
+    },
+    {
+      "name": "Resolute",
+      "description": "Stance: While in Resolute, whenever you play an Attack, gain 2 Block."
+    },
+    {
+      "name": "Summon",
+      "description": "Create a creature to fight for you this battle."
+    },
+    {
+      "name": "Three-Tailed White Fox",
+      "description": "Summon. At the end of your turn, pick 1 of 3 random positive choices."
+    },
+    {
+      "name": "Unnate",
+      "description": "Start each combat with this card at the bottom of your draw pile."
+    },
+    {
+      "name": "Wisdom",
+      "description": "Stance: While in Wisdom, whenever you add a card to your draw or discard pile, add an additional copy."
+    },
+    {
+      "name": "[garticmod:AngryIcon] Block",
+      "description": "Enter in Wrath for 2 turns after losing all this Block."
+    },
+    {
+      "name": "[garticmod:BlockingIcon] Block",
+      "description": "Gain temporary Dexterity equal Blocked damage."
+    },
+    {
+      "name": "[garticmod:CurseIcon] Block",
+      "description": "Apply Weak, Vunerable, and Frail to owner after losing all this Block."
+    },
+    {
+      "name": "[garticmod:DamageIcon] Block",
+      "description": "Gain temporary Strength equal Blocked damage."
+    },
+    {
+      "name": "[garticmod:EnergyIcon] Block",
+      "description": "Gain [E] after losing all this Block."
+    },
+    {
+      "name": "[garticmod:PlatedIcon] Block",
+      "description": "Gain Plated Armor equal losed Block."
+    },
+    {
+      "name": "[garticmod:SpikyIcon] Block",
+      "description": "Gain temporary Thorns to owner each losed unit Block."
+    },
+    {
+      "name": "[garticmod:VoidIcon] Block",
+      "description": "Owner lose Strength until end of turn equal Blocked damage."
+    },
+    {
+      "name": "Consume",
+      "description": "When you have Fish in hand, you will Exhaust Fish to pay [E] per Fish for this card's cost."
+    },
+    {
+      "name": "Fetching Fox",
+      "description": "A creature that has a 50% chance to perform one of these two actions at the start of each turn.\n- Draws you a card.\n- Steals a card from you, returning it at the start of next turn."
+    },
+    {
+      "name": "Fire Imp",
+      "description": "A creature that deals 3 damage to a random enemy whenever you play an Attack."
+    },
+    {
+      "name": "Fish",
+      "description": "Fish are random Colorless cards that grant a small benefit, replace themselves, and Exhaust."
+    },
+    {
+      "name": "Fixed Damage",
+      "description": "Not affected by effects."
+    },
+    {
+      "name": "Glass Armor",
+      "description": "At the end of your turn, gain Block equal to your stacks of Glass Armor. Receiving unblocked attack damage removes all Glass Armor."
+    },
+    {
+      "name": "Mirrored Fox",
+      "description": "A creature that has a 50% chance to perform one of these two actions at the end of each turn.\n- Deals its damage to a random enemy.\n- Gain its Block to you."
+    },
+    {
+      "name": "Mischievous Fox",
+      "description": "A creature that has a 50% chance to perform one of these two actions after you play a card.\n- Deals its damage to you.\n- Deals its damage to a random enemy."
+    },
+    {
+      "name": "Paper",
+      "description": "One form of \"Sheet of Paper\"."
+    },
+    {
+      "name": "Party",
+      "description": "A group of Summons that join you at the start of each battle."
+    },
+    {
+      "name": "Unsummon",
+      "description": "Remove one of your Summons."
+    }
+  ]
+}

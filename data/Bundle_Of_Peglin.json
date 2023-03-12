@@ -1,0 +1,573 @@
+{
+  "mod": {
+    "name": "Bundle Of Peglin",
+    "version": "2.6.0",
+    "authors": ["SandTag"],
+    "credits": "",
+    "description": "Adds 25 events found in peglin to slay the spire! \n Also includes 8 orbs and 47 relics!",
+    "mts_version": "3.29.0",
+    "sts_version": "03-07-2022",
+    "dependencies": ["basemod","stslib","bundlecore"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Orboros",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bundle_of_peglin:Orb\nDeal 3 damage 6 times then shuffle this card into your draw pile.\nbundle_of_peglin:Crit: Create a copy of this bundle_of_peglin:Orb with full charges.\nExhaustive 4."
+    },
+    {
+      "name": "Orboros+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bundle_of_peglin:Orb\nDeal 4 damage 8 times then shuffle this card into your draw pile.\nbundle_of_peglin:Crit: Create a copy of this bundle_of_peglin:Orb with full charges.\nExhaustive 5."
+    },
+    {
+      "name": "Ball Lightning",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "bundle_of_peglin:Orb\nDeal 1 damage 4 times, this bundle_of_peglin:Orb ignores Block and Thorns.\nbundle_of_peglin:Crit: Deal damage an additional 4 times."
+    },
+    {
+      "name": "Ball Lightning+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "bundle_of_peglin:Orb\nDeal 1 damage 6 times, this bundle_of_peglin:Orb ignores Block and Thorns.\nbundle_of_peglin:Crit: Deal damage an additional 6 times."
+    },
+    {
+      "name": "Infernorb",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bundle_of_peglin:Orb\nLose 1 HP and deal 4 damage 5 times.\nbundle_of_peglin:Crit: Remove all Block from the target, then deal 4 damage 5 times and deal 35 thorns damage to all enemies."
+    },
+    {
+      "name": "Infernorb+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bundle_of_peglin:Orb\nLose 1 HP and Deal 3 damage 8 times.\nbundle_of_peglin:Crit: Remove ALL block from the target, then deal 3 damage 8 times and deal 50 thorns damage to all enemies."
+    },
+    {
+      "name": "Oreb",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "bundle_of_peglin:Orb, bundle_of_peglin:Stone, Ethereal.\nDeal 4 damage 6 times.\nbundle_of_peglin:Crit: ???\nThis card counts as a Strike."
+    },
+    {
+      "name": "Oreb+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "bundle_of_peglin:Orb, bundle_of_peglin:Stone, Ethereal.\nDeal 4 damage 8 times.\nbundle_of_peglin:Crit: ???\nThis card counts as a Strike."
+    },
+    {
+      "name": "Stone",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bundle_of_peglin:Orb, bundle_of_peglin:Stone.\nDeal 4 damage 2 times.\nbundle_of_peglin:Crit: Attack 2 more times.\nThis card counts as a Strike."
+    },
+    {
+      "name": "Stone+",
+      "color": "Colorless",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "bundle_of_peglin:Orb, bundle_of_peglin:Stone.\nDeal 4 damage 3 times.\nbundle_of_peglin:Crit: Attack 3 more times.\nThis card counts as a Strike."
+    },
+    {
+      "name": "Bramball",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "bundle_of_peglin:Orb\nDeal 6 damage 3 times, for each unblocked attack, the target ALWAYS loses 1 Strength.\nbundle_of_peglin:Crit: bundle_of_peglin:Stun all enemies and make them bundle_of_peglin:Explosive, then exhaust this card."
+    },
+    {
+      "name": "Bramball+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "bundle_of_peglin:Orb\nDeal 8 damage 4 times, for each unblocked attack, the target ALWAYS loses 1 Strength.\nbundle_of_peglin:Crit: bundle_of_peglin:Stun all enemies and make them bundle_of_peglin:Explosive, then exhaust this card."
+    },
+    {
+      "name": "Mirrorb",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "bundle_of_peglin:Orb, Unplayable.\nWhen this card is drawn, exhaust it and replace it with another rare card in your deck.\nIf you have no other rare cards, add a wound to your hand instead."
+    },
+    {
+      "name": "Mirrorb+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "bundle_of_peglin:Orb, Unplayable.\nWhen this card is drawn, exhaust it make a copy of a random rare card and uncommon card in your deck, the uncommon card is free this turn.\nIf you have no other rare or uncommon cards, add a Wound to your hand instead for each respectively."
+    },
+    {
+      "name": "Orbelisk",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "bundle_of_peglin:Orb, bundle_of_peglin:Stone.\nDeal 1 damage 5 times.\nbundle_of_peglin:Crit: Deal half of this damage to ALL enemies.\nThis bundle_of_peglin:Orb 's base damage increases by 1 for ALL bundle_of_peglin:Stone."
+    },
+    {
+      "name": "Orbelisk+",
+      "color": "Colorless",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "bundle_of_peglin:Orb, bundle_of_peglin:Stone.\nDeal 2 damage 6 times.\nbundle_of_peglin:Crit: Deal ALL of this damage to ALL enemies before dealing damage.\nThis bundle_of_peglin:Orb 's base damage increases by 2 and attack times by 1 for ALL bundle_of_peglin:Stone."
+    },
+    {
+      "name": "Terriball",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "0",
+      "description": "bundle_of_peglin:Orb\nDeal 2 damage, Exhaust.\nIts terrible!\nThis bundle_of_peglin:Orb cannot be removed from your deck and cannot bundle_of_peglin:Crit."
+    },
+    {
+      "name": "Terriball+",
+      "color": "Curse",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "0",
+      "description": "bundle_of_peglin:Orb\nDeal 3 damage 2 times, Exhaust.\nIts still terrible!\nThis bundle_of_peglin:Orb cannot be removed from your deck and cannot bundle_of_peglin:Crit."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Basic Blade",
+      "tier": "Common",
+      "pool": "",
+      "description": "Increase your attack damage by 1.",
+      "flavorText": "A simple utility blade, its helpful!"
+    },
+    {
+      "name": "Cookie",
+      "tier": "Common",
+      "pool": "",
+      "description": "Heal 1 HP the first two times you shuffle your draw pile each combat.",
+      "flavorText": "It tastes nice, and the dark chocolate flavour lingers."
+    },
+    {
+      "name": "Gardener's Gloves",
+      "tier": "Common",
+      "pool": "",
+      "description": "Take 80% less damage from Thorns type damage.",
+      "flavorText": "Helps keep the brambles at bay."
+    },
+    {
+      "name": "Sand Arrows",
+      "tier": "Common",
+      "pool": "",
+      "description": "When you deal unblocked attack damage, you have a 2% chance to Stun the enemy.\nThis effect ignores artifact.",
+      "flavorText": "I like Sand Arrows. They are coarse and rough and irritating\u2026 and they hit everyone."
+    },
+    {
+      "name": "Spiral Slayer",
+      "tier": "Common",
+      "pool": "",
+      "description": "Start every combat with 1 Strength and Temporary Strength.",
+      "flavorText": "So fancy it struggles to get to the middle of things."
+    },
+    {
+      "name": "Suffer the Sling",
+      "tier": "Common",
+      "pool": "",
+      "description": "All Strike cards deal 2 more damage, all bundle_of_peglin:Stone bundle_of_peglin:Orb deal 2 more damage ontop of that.\nObtain a Stone+ on pickup.",
+      "flavorText": "Most people consider Stones to be useless orbs, but this sling can make them shine."
+    },
+    {
+      "name": "Unicorn Horn?",
+      "tier": "Common",
+      "pool": "",
+      "description": "When an enemy dies, draw 1 card and put 1 card on top of your deck.",
+      "flavorText": "Perhaps."
+    },
+    {
+      "name": "Alchemist's Cookbook",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Every 15 cards played, gain a bundle_of_peglin:Bomb+ that will detonate in 3 turns.",
+      "flavorText": "Inside the book you find many exotic ways to destroy your enemies."
+    },
+    {
+      "name": "Enhanced Gunpowder",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "When you gain a bundle_of_peglin:Bomb, draw 2 cards.\nAt the start of turn 4 gain a bundle_of_peglin:Bomb+.",
+      "flavorText": "Can be good for moving large rocks, or large enemies!"
+    },
+    {
+      "name": "Improved Catalyst",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "When you gain a Bomb, it deals 10 more damage. At the start of turn 5 gain a lit bundle_of_peglin:Bomb+.",
+      "flavorText": "This genious substance makes simple explosives form a more powerful clay."
+    },
+    {
+      "name": "Refreshield",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of your turn, shuffle your discard pile into your draw pile and draw 1 card.\nbundle_of_peglin:Synergy: Fresh Bandana - Draw 2 more cards per turn instead.",
+      "flavorText": "Keeps things fresh during the heat of battle so you wont forget what you are doing."
+    },
+    {
+      "name": "Super Boots",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "When you enter a \"?\" room, heal 2 HP.\nWhen you enter a Rest Site, heal 5 HP.",
+      "flavorText": "Speedstrats not included."
+    },
+    {
+      "name": "Ambidextionary",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of your turn draw 1 card and discard 1 card. Raise you maximum hand size by 1.",
+      "flavorText": "Well isnt that handy?"
+    },
+    {
+      "name": "Apple a Day",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Upon pickup, gain 15 Max HP.",
+      "flavorText": "May or may not keep the cleric at bay."
+    },
+    {
+      "name": "Bomb Baton",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the start of combat, gain 3 Lit bundle_of_peglin:Bombs. They all deal 22 damage to all enemies and explode at the end of turns 4, 6 and 8.",
+      "flavorText": "Be careful when picking it up not to drop them at your feet!"
+    },
+    {
+      "name": "Decoy Orb",
+      "tier": "Rare",
+      "pool": "",
+      "description": "The first time you shuffle your deck each combat, ALWAYS bundle_of_peglin:Stun ALL enemies and end your turn.",
+      "flavorText": "If i am not taking a turn, then neither are you!"
+    },
+    {
+      "name": "Eye Of The Turtle",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Card rewards contain 2 more cards to choose from.\nElite rooms card rewards contain 5 more cards to choose from.",
+      "flavorText": "Slow and decisive, you will have plenty of time to consider new techniques."
+    },
+    {
+      "name": "Grabby Hand",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you deal unblocked attack damage, deal 10% + 1 of this damage to ALL enemies.",
+      "flavorText": "Helps you reach high places and throw things straight."
+    },
+    {
+      "name": "Knife's Edge",
+      "tier": "Rare",
+      "pool": "",
+      "description": "While your health is at or below 30%, deal 50% more damage, All Orb cards will Crit.",
+      "flavorText": "Small, sharp and exactly what you need in a pinch."
+    },
+    {
+      "name": "Pocket Sand",
+      "tier": "Rare",
+      "pool": "",
+      "description": "Enemies have a 5% chance to ALWAYS become bundle_of_peglin:stunned when attacking you. This effect can only happen once per turn.",
+      "flavorText": "Pocket sand!"
+    },
+    {
+      "name": "Rallying Heart",
+      "tier": "Rare",
+      "pool": "",
+      "description": "At the end of combat, heal 1 hp and 1 more for each bundle_of_peglin:Orb in your deck.",
+      "flavorText": "The Orbs call out for their friends. Unite them."
+    },
+    {
+      "name": "Refillibuster",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you shuffle your draw pile, a random enemy loses hp equal to the number of cards in your deck.",
+      "flavorText": "Give it a swing!"
+    },
+    {
+      "name": "Strange Brew",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When an enemy dies or your shuffle your deck, gain 3 temporary Strength and Dexterity.",
+      "flavorText": "Smells like a tar milkshake"
+    },
+    {
+      "name": "Tactical Treat",
+      "tier": "Rare",
+      "pool": "",
+      "description": "When you shuffle your deck, draw 2 cards and discard 2 cards.",
+      "flavorText": "Truly a tasty treat for anyone except your enemies!"
+    },
+    {
+      "name": "Well Done Steak",
+      "tier": "Rare",
+      "pool": "",
+      "description": "The first 2 times you shuffle your deck each combat, heal 6 HP.",
+      "flavorText": "I dunno man, looks kinda raw to me."
+    },
+    {
+      "name": "Infernal Ingot",
+      "tier": "Special",
+      "pool": "",
+      "description": "When you deal unblocked attack damage, heal 1 HP.",
+      "flavorText": "This confusing object absorbs the souls of creatures it touches, but you can take this essence back out of it later."
+    },
+    {
+      "name": "Shiny Special Button",
+      "tier": "Special",
+      "pool": "",
+      "description": "Every 10th bundle_of_peglin:Orb you play\ngives 1 bundle_of_peglin:Critical_Power.",
+      "flavorText": "A button from a faraway land, it seems to have fused with some of the gold in the spire... It craves orbs to share its power with."
+    },
+    {
+      "name": "Toxic Cake",
+      "tier": "Special",
+      "pool": "",
+      "description": "Upon pickup, gain 5 Max HP and Upgrade all Skills in your deck.\nAll future Skills will be Upgraded.",
+      "flavorText": "Surprisingly not a lie. Packed with acidic flavours, it helps keep your skills sharp."
+    },
+    {
+      "name": "Weighted Chip",
+      "tier": "Special",
+      "pool": "",
+      "description": "When you play an Attack that deals damage, you have 3 outcomes:\n40% - Deal 2x damage.\n40% - Deal normal damage.\n20% - Heal enemies for half of damage dealt.",
+      "flavorText": "This chip is rigged, most of the weight is stored in one side, but should it land on the soft side it lets out a cursed aura."
+    },
+    {
+      "name": "Bad Cheese",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup gain 3 Max HP.\nWhen you draw a card, deal 1 damage to ALL enemies.\nThis value increases by 1 this combat when you shuffle your deck.",
+      "flavorText": "The best kind of Cheese."
+    },
+    {
+      "name": "Complex Claw",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of your turn gain [E], but you can no longer gain bundle_of_peglin:Critical_Power.\nIf you have no bundle_of_peglin:Orb#ys in your deck that can bundle_of_peglin:Crit, instead lose 1 Strength each turn.",
+      "flavorText": "This artisanal bladed weapon can help you to extract more from your existing techniques."
+    },
+    {
+      "name": "Consuming Chalice",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Your attacks deal 4 more damage, but you draw 1 less card next turn each time you shuffle your draw pile.",
+      "flavorText": "Drink from the chalice!?"
+    },
+    {
+      "name": "Cursed Mask",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Start each combat Confused, your Attacks deal 5 more damage while you are Confused.",
+      "flavorText": "Its hard to see out of, but you think it makes you stronger?"
+    },
+    {
+      "name": "Dumb Bell",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Whenever you shuffle your deck, gain 2 Strength.",
+      "flavorText": "Dumbell would like you to think its the better bell because its shiny."
+    },
+    {
+      "name": "Echo Chamber",
+      "tier": "Boss",
+      "pool": "",
+      "description": "All of your Attacks deal 2 more damage.\nWhen you deal Attack damage, store 10% of that amount, which can round up (currently 0) and increase the damage of your next Attack by this amount.",
+      "flavorText": "Its kinda echoey in here."
+    },
+    {
+      "name": "Electropegnet",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the end of your turn, for each card left:\nAttack - Gain 3 Vigor.\nSkill - Gain 2 Block next turn.\nPower - Gain [E] and draw 1 card.\nIf there were 5 or more cards, gain 1 draw for the rest of combat.",
+      "flavorText": "The magnet is a bit too strong, and it often gets stuck to other relics."
+    },
+    {
+      "name": "Fresh Bandana",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of your turn, shuffle your discard pile into your draw pile then draw 3 cards.\nbundle_of_peglin:Synergy: Refreshield - Draw 2 more cards per turn.",
+      "flavorText": "Dont ask how the Bandana ended up in the punch bowl..."
+    },
+    {
+      "name": "Gift That Keeps On Giving",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of your turn, lose [E] and all cards become bundle_of_peglin:Durable.",
+      "flavorText": "It never stops, which is both a good thing and a bad thing."
+    },
+    {
+      "name": "Glorious SuffeRING",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of combat, ALWAYS lose 5 Strength and Dexterity. Gain 1 Strength when you play an Attack or 1 Dexterity when playing a Skill. Power cards give 1 of each.",
+      "flavorText": "A little bad can do alot of good."
+    },
+    {
+      "name": "Haglin's Satchel",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Upon pickup, upgrade 4 random cards. Obtain 1 card and 1 colourless card.",
+      "flavorText": "Probably stolen, but it contains a wealth of shiny items, so you are totally keeping it."
+    },
+    {
+      "name": "Kinetic Meteorite",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of your turn draw 1 card.\nWhenever you play 3 cards, draw a card.\nThe number of cards you need to play increases by 1 this turn when you shuffle your deck.",
+      "flavorText": "It still carries the energy it had when it crashed into the spire."
+    },
+    {
+      "name": "Matryoshka Shell",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Your Attacks deal 5 less damage.\nAll Attacks are played one additional time.",
+      "flavorText": "Inside the doll, you find another, but each layer is smaller than the last."
+    },
+    {
+      "name": "Molten Mantle",
+      "tier": "Boss",
+      "pool": "",
+      "description": "bundle_of_peglin:Rare.\nAt the end of combat, lose all gold.\nGain a small bundle_of_peglin:buff at the start of combat for every 55 gold lost to this relic.",
+      "flavorText": "Its like the opposite of midas touch, gold turns to ashes that can burn your foes."
+    },
+    {
+      "name": "Round Guard",
+      "tier": "Boss",
+      "pool": "",
+      "description": "When you shuffle your deck, ALWAYS bundle_of_peglin:Stun ALL enemies. This effect then gains a cooldown of 1 turn, increasing by 1 each time it activates.",
+      "flavorText": "An old buckler that smells of mouldy cheese."
+    },
+    {
+      "name": "Salt Shaker",
+      "tier": "Boss",
+      "pool": "",
+      "description": "When you draw a Slimed, Exhaust it and draw 2 cards.\nAt the start of combat and upon playing a Power card, add a Slimed to your discard pile and draw pile.",
+      "flavorText": "Meal not included."
+    },
+    {
+      "name": "Sapper Sack",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Multiply all bundle_of_peglin:Bomb#ys by 2.25x.\nAt the start of turn 5 and every turn afterwards, lose 3 HP.\nUpon pickup obtain The Bomb.",
+      "flavorText": "Rigged! Its all rigged!"
+    },
+    {
+      "name": "Sealed Conviction",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Your Attacks deal 4 more damage, but you discard your hand when you shuffle for the first time each combat.",
+      "flavorText": "It seals away evil, but now its stuck to you!"
+    },
+    {
+      "name": "Short Fuse",
+      "tier": "Boss",
+      "pool": "",
+      "description": "When you gain a bundle_of_peglin:bomb, instantly detonate it.\nAt the start of your turn, gain a 12 damage bundle_of_peglin:bomb.",
+      "flavorText": "Im gonna blow!"
+    },
+    {
+      "name": "Wand of Skultimate Power",
+      "tier": "Boss",
+      "pool": "",
+      "description": "Lose 4 hp for every 20 cards played.\nYour Attack damage and bundle_of_peglin:Bomb damage dealt is Doubled.",
+      "flavorText": "UNLIMITED POWER!!! (To make tpyos)."
+    },
+    {
+      "name": "Unpretentious Pendant",
+      "tier": "Shop",
+      "pool": "",
+      "description": "Your Attacks deal 2 more damage, but you can no longer bundle_of_peglin:Crit, if you have no bundle_of_peglin:Orb cards that can crit, this bonus is halved.",
+      "flavorText": "Theres no need to show off, after all."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+  ],
+  "keywords": [
+    {
+      "name": "Bomb",
+      "description": "Bombs deal X damage to ALL enemies after ending Y turns then is removed."
+    },
+    {
+      "name": "Bomb+",
+      "description": "After the end of 3 turns, deal 50 damage to ALL enemies."
+    },
+    {
+      "name": "Buff",
+      "description": "Randomly gain:\n1 Strength, Dexterity, Metallicize, Plated Armor, Thorns, Regen, Buffer, Intangible, Artifact or Critical Power, Draw Power or Temporary HP."
+    },
+    {
+      "name": "Crit",
+      "description": "When this card is played with Critical Power."
+    },
+    {
+      "name": "Critical Power",
+      "description": "Enables Orb cards to Crit."
+    },
+    {
+      "name": "Durable",
+      "description": "When a Durable card is played, it returns to your hand and loses this modifier.\nDurable cards do not Exhaust or get Exhausted by Ethereal.\nCannot be applied to Status cards."
+    },
+    {
+      "name": "Explosive",
+      "description": "When an enemy with this dies, they deal their max HP as damage to ALL enemies."
+    },
+    {
+      "name": "Multiword Keyword",
+      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest should use _ to replace spaces and be entirely lowercase. In card text, you'll use the underscore versions."
+    },
+    {
+      "name": "Orb",
+      "description": "Orb's are cards that when played will add charge towards Critical Power. Some orbs can Crit."
+    },
+    {
+      "name": "Rare",
+      "description": "Spawns less often than other Relics of its type."
+    },
+    {
+      "name": "Stone",
+      "description": "Stones contribute to the Orbelisk and can be boosted by some relics."
+    },
+    {
+      "name": "Stun",
+      "description": "The enemy will skip its next turn"
+    },
+    {
+      "name": "Synergy",
+      "description": "This item has additional effects with other items."
+    },
+    {
+      "name": "This is displayed in the tooltip.",
+      "description": "This is displayed in the tooltip. Note, spaces are not allowed in NAMES. Also, they should be entirely lowercase. For multi-word keywords, see the next one."
+    }
+  ]
+}

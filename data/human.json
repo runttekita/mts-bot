@@ -1,0 +1,1884 @@
+{
+  "mod": {
+    "name": "The Human",
+    "version": "3.5.1",
+    "authors": ["complex"],
+    "credits": "Basemod, ModTheSpire",
+    "description": "Adds Harold the Human as a playable character.",
+    "mts_version": "3.8.0",
+    "sts_version": "12-22-2020",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Consequences",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhen this is drawn, shuffle a Doubt, Regret and Shame into your draw pile."
+    },
+    {
+      "name": "Poverty",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhen you draw this, lose 3 Health."
+    },
+    {
+      "name": "Tired",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "When drawn, Exhaust a random card in your hand."
+    },
+    {
+      "name": "Defend",
+      "color": "Human_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nPacifist: Gain 5 thehuman:Peaceful instead."
+    },
+    {
+      "name": "Defend+",
+      "color": "Human_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nPacifist: Gain 8 thehuman:Peaceful instead."
+    },
+    {
+      "name": "Slap",
+      "color": "Human_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Slap+",
+      "color": "Human_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 1 thehuman:Injured."
+    },
+    {
+      "name": "Backhand Slap",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage and apply 2 thehuman:Injured to an enemy.\nIf this card is discarded, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Backhand Slap+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage and apply 2 thehuman:Injured to an enemy.\nIf this card is discarded, deal 9 damage to ALL enemies."
+    },
+    {
+      "name": "Backpack",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thehuman:Uncover 2 cards."
+    },
+    {
+      "name": "Backpack+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thehuman:Uncover 2 cards."
+    },
+    {
+      "name": "Berreta 92",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 11 x 1, 10 % ) an enemy.\nMastery 7.\nthehuman:Inventory."
+    },
+    {
+      "name": "Berreta 92 + 1",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 14 x 1, 12 % ) an enemy.\nMastery 7.\nthehuman:Inventory."
+    },
+    {
+      "name": "Berreta 92 + 2",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 17 x 1, 14 % ) an enemy.\nMastery 7.\nthehuman:Inventory."
+    },
+    {
+      "name": "Berreta 92 + 3",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 20 x 1, 16 % ) an enemy.\nMastery 7.\nthehuman:Inventory."
+    },
+    {
+      "name": "Berreta 92 + 4",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 23 x 1, 18 % ) an enemy.\nMastery 7.\nthehuman:Inventory."
+    },
+    {
+      "name": "Berreta 92 + 5",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 26 x 1, 20 % ) an enemy.\nMastery 7.\nthehuman:Inventory."
+    },
+    {
+      "name": "Berreta 92 + 6",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 29 x 1, 22 % ) an enemy.\nMastery 7.\nthehuman:Inventory."
+    },
+    {
+      "name": "Cautious Blow",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage to an enemy.\nGain 4 Block.\nTechnique: Gain 5 Block."
+    },
+    {
+      "name": "Cautious Blow+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to an enemy.\nGain 7 Block.\nTechnique: Gain 5 Block."
+    },
+    {
+      "name": "Codename: \"Fearless\"",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 32 x 1, 24 % ) an enemy.\nObtain a random Positive Effect twice.\nthehuman:Inventory."
+    },
+    {
+      "name": "Codename: \"Fearless\"",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 35 x 1, 26 % ) an enemy.\nObtain a random Positive Effect twice.\nthehuman:Inventory."
+    },
+    {
+      "name": "Codename: \"Fearless\"",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 38 x 1, 28 % ) an enemy.\nObtain a random Positive Effect twice.\nthehuman:Inventory."
+    },
+    {
+      "name": "Confused",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 2 cards.\nSet the cost of a random card in your hand to 0 this turn."
+    },
+    {
+      "name": "Confused+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard 2 cards.\nSet the cost of a random card in your hand to 0 this turn."
+    },
+    {
+      "name": "Disposal",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard any amount of cards. For each card discarded this way, find 1 thehuman:Junk."
+    },
+    {
+      "name": "Disposal+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard any amount of cards. For each card discarded this way, find 1 thehuman:Junk."
+    },
+    {
+      "name": "Dumpster Diving",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Find 2 thehuman:Junk.\nthehuman:Uncover a card."
+    },
+    {
+      "name": "Dumpster Diving+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Find 3 thehuman:Junk.\nthehuman:Uncover a card."
+    },
+    {
+      "name": "Focused",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, draw a card and gain 3 Block.\nGain 5 thehuman:Peaceful."
+    },
+    {
+      "name": "Focused+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, draw a card and gain 3 Block.\nGain 5 thehuman:Peaceful."
+    },
+    {
+      "name": "Freshly Brewed Coffee",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Dexterity.\nRestore 1 Health.\nLifestyle: Draw a card next turn."
+    },
+    {
+      "name": "Freshly Brewed Coffee+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Regen and Dexterity.\nRestore 1 Health.\nLifestyle: Draw a card next turn."
+    },
+    {
+      "name": "Front Kick",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage and apply 1 Weak to an enemy.\nGain 2 Block.\nDraw a card.\nTechnique: Gain 1 energy."
+    },
+    {
+      "name": "Front Kick+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 damage and apply 1 Weak to an enemy.\nGain 3 Block.\nDraw a card.\nTechnique: Gain 1 energy."
+    },
+    {
+      "name": "Furious Slap",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nDeal 3 damage and apply 1 thehuman:Injured to an enemy."
+    },
+    {
+      "name": "Furious Slap+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 1 Strength.\nDeal 6 damage and apply 1 thehuman:Injured to an enemy."
+    },
+    {
+      "name": "Heel Kick",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage twice.\nTechnique: Deal 6 damage to a random enemy twice."
+    },
+    {
+      "name": "Heel Kick+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage twice.\nTechnique: Deal 9 damage to a random enemy twice."
+    },
+    {
+      "name": "Ignore",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nPacifist: Gain 12 thehuman:Peaceful.\nLifestyle: Gain 1 thehuman:Peaceful."
+    },
+    {
+      "name": "Ignore+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nPacifist: Gain 12 thehuman:Peaceful.\nLifestyle: Gain 1 thehuman:Peaceful."
+    },
+    {
+      "name": "Impulse Purchase",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage.\nFind 2 thehuman:Junk."
+    },
+    {
+      "name": "Impulse Purchase+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage.\nFind 3 thehuman:Junk."
+    },
+    {
+      "name": "In The Park",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 thehuman:Healthiness and Regen.\nDraw a card.\nLifestyle: Find 1 thehuman:Junk."
+    },
+    {
+      "name": "In The Park+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 3 thehuman:Healthiness and Regen.\nDraw a card.\nLifestyle: Find 1 thehuman:Junk."
+    },
+    {
+      "name": "Jab",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 2 damage.\nDraw a card.\nTechnique: Deal 2 additional damage."
+    },
+    {
+      "name": "Jab+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 4 damage.\nDraw a card.\nTechnique: Deal 4 additional damage."
+    },
+    {
+      "name": "Keeping Fit",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 thehuman:Healthiness and 4 thehuman:Peaceful.\nDraw a card."
+    },
+    {
+      "name": "Keeping Fit+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 3 thehuman:Healthiness and 4 thehuman:Peaceful.\nDraw a card."
+    },
+    {
+      "name": "Kung Fu!",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies.\nGain 1 thehuman:Healthiness.\nTechnique: Deal 5 damage to ALL enemies."
+    },
+    {
+      "name": "Kung Fu!+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to ALL enemies.\nGain 1 thehuman:Healthiness.\nTechnique: Deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Midlife Crisis",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Weak, Frail and Vulnerable to an enemy.\nPacifist: Apply 99 Weak, Frail and Vulnerable instead."
+    },
+    {
+      "name": "Midlife Crisis+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Weak, Frail and Vulnerable to an enemy.\nPacifist: Apply 99 Weak, Frail and Vulnerable instead."
+    },
+    {
+      "name": "Petty Theft",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Find 1 thehuman:Junk.\nGain 10 Gold."
+    },
+    {
+      "name": "Petty Theft+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Find 1 thehuman:Junk.\nGain 16 Gold."
+    },
+    {
+      "name": "Preparation",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage.\nNext turn, gain 3 Block and draw 2 cards.\nLifestyle: Gain 1 Regen."
+    },
+    {
+      "name": "Preparation+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage.\nNext turn, gain 6 Block and draw 2 cards.\nLifestyle: Gain 1 Regen."
+    },
+    {
+      "name": "Prepare Hand",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards with \"Slap\" in their name."
+    },
+    {
+      "name": "Prepare Hand+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 4 cards with \"Slap\" in their name."
+    },
+    {
+      "name": "Quick Draw",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a thehuman:Weapon."
+    },
+    {
+      "name": "Quick Draw+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a thehuman:Weapon.\nthehuman:Shoot ( 1 x 6, 4 % ) a random enemy."
+    },
+    {
+      "name": "Refresh",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card.\nIf this card is discarded, draw 3 cards and restore 3 Health."
+    },
+    {
+      "name": "Refresh+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw a card.\nIf this card is discarded, draw 4 cards and restore 4 Health."
+    },
+    {
+      "name": "Salvage",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle your hand back into your draw pile.\nFor each card shuffled this way, return a random card from your discard pile to your hand."
+    },
+    {
+      "name": "Salvage+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle your hand back into your draw pile.\nFor each card shuffled this way, return a random card from your discard pile to your hand."
+    },
+    {
+      "name": "Scuffle",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage to a random enemy 3 times.\nDeal damage an additional time for each thehuman:Healthiness you have over 8.\nDiscard a random card."
+    },
+    {
+      "name": "Scuffle+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage to a random enemy 3 times.\nDeal damage an additional time for each thehuman:Healthiness you have over 8.\nDiscard a random card."
+    },
+    {
+      "name": "Teatime",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 thehuman:Healthiness.\nDraw 2 cards."
+    },
+    {
+      "name": "Teatime+",
+      "color": "Human_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 thehuman:Healthiness.\nDraw 2 cards."
+    },
+    {
+      "name": "Ageing",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 1 Ageing to all enemies.\nPacifist: Gain 10 Block."
+    },
+    {
+      "name": "Ageing+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Ageing to all enemies.\nPacifist: Gain 10 Block."
+    },
+    {
+      "name": "Aggressiveness",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 1 Strength and discard 1 card."
+    },
+    {
+      "name": "Aggressiveness+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 Strength and discard 1 card."
+    },
+    {
+      "name": "Angst",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard any number of cards from your hand.\nFor each card discarded, gain 1 Temporary Strength."
+    },
+    {
+      "name": "Angst+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard any number of cards from your hand.\nFor each card discarded, gain 1 Temporary Strength."
+    },
+    {
+      "name": "Arcade",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "For each energy you have, deal 3 damage to a random enemy and thehuman:Uncover a card."
+    },
+    {
+      "name": "Arcade+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "For each energy you have, deal 4 damage to a random enemy and thehuman:Uncover a card."
+    },
+    {
+      "name": "Arsenal",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, add a random thehuman:Weapon to your hand.\nIt Purges when used and at the end of your turn."
+    },
+    {
+      "name": "Arsenal+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a random thehuman:Weapon to your hand.\nIt Purges when used and at the end of your turn."
+    },
+    {
+      "name": "Back Pain",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 1 Ageing and 2 thehuman:Injured to ALL enemies."
+    },
+    {
+      "name": "Back Pain+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 1 Ageing and 2 thehuman:Injured to ALL enemies."
+    },
+    {
+      "name": "Car",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 10 Block.\nAt the start of your turn, draw a card and gain 1 energy."
+    },
+    {
+      "name": "Car+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 15 Block.\nAt the start of your turn, draw a card and gain 1 energy."
+    },
+    {
+      "name": "Codename: \"Ghost\"",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 34 x 1, 31 % ) an enemy.\nthehuman:Shoot ( 10 x 1, 100 % ) 3 random enemies with Unblockable bullets.\nthehuman:Inventory."
+    },
+    {
+      "name": "Codename: \"Ghost\"",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 37 x 1, 33 % ) an enemy.\nthehuman:Shoot ( 10 x 1, 100 % ) 3 random enemies with Unblockable bullets.\nthehuman:Inventory."
+    },
+    {
+      "name": "Concealed Carry",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Pocket Pistol to your hand."
+    },
+    {
+      "name": "Concealed Carry+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add a Pocket Pistol to your hand."
+    },
+    {
+      "name": "Dieting",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 4 thehuman:Healthiness."
+    },
+    {
+      "name": "Dieting+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 5 thehuman:Healthiness."
+    },
+    {
+      "name": "Discourage",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Weak to an enemy.\nPacifist: Also remove all its buffs."
+    },
+    {
+      "name": "Discourage+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Weak to an enemy.\nPacifist: Also remove all its buffs."
+    },
+    {
+      "name": "Do It Yourself",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to an enemy.\nIf you have thehuman:Junk in your hand, gain 1 energy and draw 1 card."
+    },
+    {
+      "name": "Do It Yourself+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to an enemy.\nIf you have thehuman:Junk in your hand, gain 1 energy and draw 1 card."
+    },
+    {
+      "name": "Double Tap",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next time you thehuman:Shoot an enemy, thehuman:Shoot them again with the same thehuman:Weapon."
+    },
+    {
+      "name": "Fit As A Fiddle",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If you have more than 18 thehuman:Healthiness, take another turn after this one.\nDraw a card.\nExhaustive 2."
+    },
+    {
+      "name": "Fit As A Fiddle+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "If you have more than 15 thehuman:Healthiness, take another turn after this one.\nDraw a card.\nExhaustive 2."
+    },
+    {
+      "name": "Follow-Up Slap",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage to an enemy twice.\nYour Slaps deal 3 more damage this combat."
+    },
+    {
+      "name": "Follow-Up Slap+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage to an enemy twice.\nYour Slaps deal 3 more damage this combat."
+    },
+    {
+      "name": "Glock 17",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 10 x 1, 15 % ) an enemy.\nMastery 8.\nthehuman:Inventory."
+    },
+    {
+      "name": "Glock 17 + 1",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 13 x 1, 17 % ) an enemy.\nMastery 8.\nthehuman:Inventory."
+    },
+    {
+      "name": "Glock 17 + 2",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 16 x 1, 19 % ) an enemy.\nMastery 8.\nthehuman:Inventory."
+    },
+    {
+      "name": "Glock 17 + 3",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 19 x 1, 21 % ) an enemy.\nMastery 8.\nthehuman:Inventory."
+    },
+    {
+      "name": "Glock 17 + 4",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 22 x 1, 23 % ) an enemy.\nMastery 8.\nthehuman:Inventory."
+    },
+    {
+      "name": "Glock 17 + 5",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 25 x 1, 25 % ) an enemy.\nMastery 8.\nthehuman:Inventory."
+    },
+    {
+      "name": "Glock 17 + 6",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 28 x 1, 27 % ) an enemy.\nMastery 8.\nthehuman:Inventory."
+    },
+    {
+      "name": "Glock 17 + 7",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 31 x 1, 29 % ) an enemy.\nMastery 8.\nthehuman:Inventory."
+    },
+    {
+      "name": "Grocery Shopping",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw 1 Attack, Skill and Power.\nLifestyle: Draw a card."
+    },
+    {
+      "name": "Grocery Shopping+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Draw 1 Attack, Skill and Power.\nLifestyle: Scry 3."
+    },
+    {
+      "name": "Hobbyist",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nIf your hand has no duplicates, draw triple this amount instead."
+    },
+    {
+      "name": "Hobbyist+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nIf your hand has no duplicates, draw triple this amount instead and gain 1 energy."
+    },
+    {
+      "name": "Lay Down Arms",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all Attacks and this card from your deck permanently.\nDraw a card.\nPacifist: Draw 5 cards instead."
+    },
+    {
+      "name": "Lay Down Arms+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all Attacks and this card from your deck permanently.\nDraw a card.\nPacifist: Draw 5 cards instead."
+    },
+    {
+      "name": "Legal Action",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Deal 25 damage.\nGain 25 Block.\nShuffle a Poverty into your draw pile."
+    },
+    {
+      "name": "Legal Action+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Deal 35 damage.\nGain 35 Block.\nShuffle a Poverty into your draw pile."
+    },
+    {
+      "name": "Morning Walk",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 2 thehuman:Healthiness. Find 2 thehuman:Junk."
+    },
+    {
+      "name": "Morning Walk+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 2 thehuman:Healthiness. Find 2 thehuman:Junk."
+    },
+    {
+      "name": "Nap",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Put an enemy to sleep for 2 turns.\nPacifist: Restore 5 Health."
+    },
+    {
+      "name": "Nap+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Put an enemy to sleep for 2 turns.\nPacifist: Restore 5 Health."
+    },
+    {
+      "name": "Nine To Five",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage and apply 5 Poison and 2 Weak to ALL enemies.\nAdd a Tired to your draw pile.\nLifestyle: Gain 1 Thorns."
+    },
+    {
+      "name": "Nine To Five+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage and apply 5 Poison and 2 Weak to ALL enemies.\nAdd a Tired to your draw pile.\nLifestyle: Gain 1 Thorns."
+    },
+    {
+      "name": "Party",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you discard this, gain 1 energy and draw 1 card."
+    },
+    {
+      "name": "Party+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you discard this, gain 2 energy and draw 1 card."
+    },
+    {
+      "name": "Physiotherapy",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust 5 cards.\nGain 30 Block.\nGain 2 thehuman:Healthiness."
+    },
+    {
+      "name": "Physiotherapy+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust 5 cards.\nGain 40 Block.\nGain 2 thehuman:Healthiness."
+    },
+    {
+      "name": "Recycle",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 5 random thehuman:Junk into your draw pile.\nShuffle your hand back into your draw pile.\nThen, draw that many cards."
+    },
+    {
+      "name": "Recycle+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle 7 random thehuman:Junk into your draw pile.\nShuffle your hand back into your draw pile.\nThen, draw that many cards."
+    },
+    {
+      "name": "Renewable Contract",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, choose 1 card from the discard pile and return it to your hand."
+    },
+    {
+      "name": "Renewable Contract+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, choose 1 card from the discard pile and return it to your hand."
+    },
+    {
+      "name": "Self Defense",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 1 Revolver, 1 Pepper Spray, 1 Kung Fu! and 1 Defend to your hand."
+    },
+    {
+      "name": "Self Defense+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 1 Revolver, 1 Pepper Spray, 1 Kung Fu! and 1 Defend to your hand."
+    },
+    {
+      "name": "Speedloader",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "While this is in your hand, whenever you thehuman:Shoot a thehuman:Weapon, thehuman:Shoot (4 x 2, 10% ) a random enemy.\nExhaust ALL Empty Cartridges in your draw pile."
+    },
+    {
+      "name": "Speedloader+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "While this is in your hand, whenever you thehuman:Shoot a thehuman:Weapon, thehuman:Shoot (4 x 2, 10% ) a random enemy.\nExhaust ALL Empty Cartridges in your draw pile."
+    },
+    {
+      "name": "Spring Cleaning",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust your discard pile.\nFor each card Exhausted this way, deal 9 damage to all enemies.\nLifestyle: Deal 11 damage to a random enemy."
+    },
+    {
+      "name": "Spring Cleaning+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Exhaust your discard pile.\nFor each card Exhausted this way, deal 11 damage to all enemies.\nLifestyle: Deal 11 damage to a random enemy."
+    },
+    {
+      "name": "Survivalist",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage to ALL enemies and gain 5 Block.\nRepeat this effect for each thehuman:Junk in your hand."
+    },
+    {
+      "name": "Survivalist+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage to ALL enemies and gain 8 Block.\nRepeat this effect for each thehuman:Junk in your hand."
+    },
+    {
+      "name": "Tinker",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Find 3 thehuman:Junk."
+    },
+    {
+      "name": "Tinker+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Find 4 thehuman:Junk."
+    },
+    {
+      "name": "Trash To Treasure",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust all thehuman:Junk in your hand.\nFor each thehuman:Junk Exhausted this way, thehuman:Uncover a card."
+    },
+    {
+      "name": "Trash To Treasure+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Exhaust all thehuman:Junk in your hand.\nFor each thehuman:Junk Exhausted this way, thehuman:Uncover a card."
+    },
+    {
+      "name": "Triple Tap+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "The next time you thehuman:Shoot an enemy, thehuman:Shoot them again with the same thehuman:Weapon 2 times."
+    },
+    {
+      "name": "Turbo Slap",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "When drawn, deal 4 damage to a random enemy.\nDeal 6 thehuman:Unblockable damage to an enemy.\nDraw a card."
+    },
+    {
+      "name": "Turbo Slap+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "When drawn, deal 4 damage to a random enemy.\nDeal 9 thehuman:Unblockable damage to an enemy.\nDraw a card."
+    },
+    {
+      "name": "Uppercut",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "When you draw this, deal 6 damage to a random enemy.\nDeal 6 damage.\nTechnique: Gain 1 Strength."
+    },
+    {
+      "name": "Uppercut+",
+      "color": "Human_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "When you draw this, deal 9 damage to a random enemy.\nDeal 9 damage.\nTechnique: Gain 1 Strength."
+    },
+    {
+      "name": "AK-47",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 6 x 4, 11 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AK-47 + 1",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 7 x 4, 12 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AK-47 + 2",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 8 x 4, 13 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AK-47 + 3",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 9 x 4, 14 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AK-47 + 4",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 10 x 4, 15 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AK-47 + 5",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 11 x 4, 16 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AK-47 + 6",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 12 x 4, 17 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AK-47 + 7",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 13 x 4, 18 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AK-47 + 8",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 14 x 4, 19 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AK-47 + 9",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 15 x 4, 20 % ) an enemy.\nMastery 12.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 40 x 1, 68 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP + 1",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 44 x 1, 71 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP + 2",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 48 x 1, 74 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP + 3",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 52 x 1, 77 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP + 4",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 56 x 1, 80 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP + 5",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 60 x 1, 83 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP + 6",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 64 x 1, 86 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP + 7",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 68 x 1, 89 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP + 8",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 72 x 1, 92 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "AWP + 9",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "thehuman:Shoot ( 76 x 1, 95 % ) an enemy.\nNext turn, deal 10 damage to the same enemy.\nMastery 10.\nthehuman:Inventory."
+    },
+    {
+      "name": "Birthday Cake",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 2 Birthday Presents to your hand."
+    },
+    {
+      "name": "Birthday Cake+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Add 2 Birthday Presents to your hand."
+    },
+    {
+      "name": "Codename: \"Guardian\"",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 48 x 1, 69 % ) an enemy.\nExhaust ALL other cards in your hand.\nRestore 1000 Health.\nthehuman:Inventory."
+    },
+    {
+      "name": "Community Service",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play an Attack, find 1 thehuman:Junk."
+    },
+    {
+      "name": "Community Service+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you play an Attack, find 1 thehuman:Junk."
+    },
+    {
+      "name": "Crescent Kick",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "For each Attack played this combat, deal 8 damage to an enemy.\nTechnique: Deal this damage to ALL enemies instead."
+    },
+    {
+      "name": "Crescent Kick+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "For each Attack played this combat, deal 12 damage to an enemy.\nTechnique: Deal this damage to ALL enemies instead."
+    },
+    {
+      "name": "Desert Eagle",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 12 x 1, 33 % ) an enemy.\nMastery 9.\nthehuman:Inventory."
+    },
+    {
+      "name": "Desert Eagle + 1",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 16 x 1, 37 % ) an enemy.\nMastery 9.\nthehuman:Inventory."
+    },
+    {
+      "name": "Desert Eagle + 2",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 20 x 1, 41 % ) an enemy.\nMastery 9.\nthehuman:Inventory."
+    },
+    {
+      "name": "Desert Eagle + 3",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 24 x 1, 45 % ) an enemy.\nMastery 9.\nthehuman:Inventory."
+    },
+    {
+      "name": "Desert Eagle + 4",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 28 x 1, 49 % ) an enemy.\nMastery 9.\nthehuman:Inventory."
+    },
+    {
+      "name": "Desert Eagle + 5",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 32 x 1, 53 % ) an enemy.\nMastery 9.\nthehuman:Inventory."
+    },
+    {
+      "name": "Desert Eagle + 6",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 36 x 1, 57 % ) an enemy.\nMastery 9.\nthehuman:Inventory."
+    },
+    {
+      "name": "Desert Eagle + 7",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 40 x 1, 61 % ) an enemy.\nMastery 9.\nthehuman:Inventory."
+    },
+    {
+      "name": "Desert Eagle + 8",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thehuman:Shoot ( 44 x 1, 65 % ) an enemy.\nMastery 9.\nthehuman:Inventory."
+    },
+    {
+      "name": "Detoxification",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Block.\nGain 1 thehuman:Healthiness.\nExhaust ALL Status and Curse cards in your hand, draw pile and discard pile."
+    },
+    {
+      "name": "Detoxification+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nGain 1 thehuman:Healthiness.\nExhaust ALL Status and Curse cards in your hand, draw pile and discard pile."
+    },
+    {
+      "name": "Dual Wielding",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you thehuman:Shoot a thehuman:Weapon, thehuman:Shoot another random thehuman:Weapon in your draw pile."
+    },
+    {
+      "name": "Dual Wielding+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you thehuman:Shoot a thehuman:Weapon, thehuman:Shoot another random thehuman:Weapon in your draw pile."
+    },
+    {
+      "name": "Exercise",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Exhaust any number of cards. For each card Exhausted this way, gain 1 energy.\nPacifist: Restore 10 Health."
+    },
+    {
+      "name": "Exercise+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust any number of cards. For each card Exhausted this way, gain 1 energy.\nPacifist: Restore 10 Health."
+    },
+    {
+      "name": "Freedom Of Mind",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, Fetch 1."
+    },
+    {
+      "name": "Freedom Of Mind+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, Fetch 1."
+    },
+    {
+      "name": "Fuming",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play a card with \"Slap\" in its name, play it again with random targets."
+    },
+    {
+      "name": "Fuming+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Draw a card with \"Slap\" in its name.\nWhenever you play a card with \"Slap\" in its name, play it again with random targets and draw a card."
+    },
+    {
+      "name": "Garbage Collector",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play a thehuman:Junk card, thehuman:Uncover a card."
+    },
+    {
+      "name": "Garbage Collector+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Whenever you play a thehuman:Junk card, thehuman:Uncover a card."
+    },
+    {
+      "name": "Happiness",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 5 thehuman:Healthiness and Regen."
+    },
+    {
+      "name": "Happiness+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Gain 7 thehuman:Healthiness and Regen."
+    },
+    {
+      "name": "Living It Up",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thehuman:Uncover 3 cards.\nLifestyle: Uncover a card."
+    },
+    {
+      "name": "Living It Up+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thehuman:Uncover 4 cards.\nLifestyle: Uncover a card."
+    },
+    {
+      "name": "Man Of Tomorrow",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "5",
+      "description": "Fetch 1 card from your draw pile.\nReduce the cost of ALL cards to 0 this turn."
+    },
+    {
+      "name": "Man Of Tomorrow+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Fetch 2 cards from your draw pile.\nReduce the cost of ALL cards to 0 this turn."
+    },
+    {
+      "name": "On The Streets",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "When drawn, deal 3 damage to a random enemy.\nAdd a thehuman:Weapon and 1 thehuman:Junk to your hand.\nthehuman:Uncover a card."
+    },
+    {
+      "name": "On The Streets+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "When drawn, deal 5 damage to a random enemy.\nAdd a thehuman:Weapon and 2 thehuman:Junk to your hand.\nthehuman:Uncover a card."
+    },
+    {
+      "name": "Prank",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage and Stun an enemy.\nShuffle a Consequences into your draw pile."
+    },
+    {
+      "name": "Prank+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 15 damage and Stun an enemy.\nShuffle a Consequences into your draw pile."
+    },
+    {
+      "name": "Reading",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 2 thehuman:Healthiness.\nWhenever you play a card that costs 2 or more, add a Deep Thought to your hand."
+    },
+    {
+      "name": "Reading+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 3 thehuman:Healthiness.\nWhenever you play a card that costs 2 or more, add a Big Brain to your hand."
+    },
+    {
+      "name": "Renovation",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand.\nDraw 10 cards.\nDiscard your hand.\nDraw 5 cards."
+    },
+    {
+      "name": "Renovation+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Discard your hand.\nDraw 10 cards.\nDiscard your hand.\nDraw 5 cards."
+    },
+    {
+      "name": "Risktaker",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, thehuman:Uncover a card."
+    },
+    {
+      "name": "Risktaker+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, thehuman:Uncover a card."
+    },
+    {
+      "name": "Sanitation",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Replay all cards that you have Exhausted this combat."
+    },
+    {
+      "name": "Sanitation+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Replay all cards that you have Exhausted this combat."
+    },
+    {
+      "name": "Silver Generation",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of every third turn you take, apply 1 Ageing to ALL enemies."
+    },
+    {
+      "name": "Silver Generation+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of every third turn you take, apply 1 Ageing to ALL enemies."
+    },
+    {
+      "name": "Slaptacular",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 8 damage.\nApply 2 thehuman:Injured to ALL enemies.\nReplay all Slaps played this combat."
+    },
+    {
+      "name": "Slaptacular+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 10 damage.\nApply 2 thehuman:Injured to ALL enemies.\nReplay all Slaps played this combat."
+    },
+    {
+      "name": "Stoicism",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 10 Block.\nWhenever you discard a card, gain 1 thehuman:Peaceful."
+    },
+    {
+      "name": "Stoicism+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Gain 14 Block.\nWhenever you discard a card, gain 1 thehuman:Peaceful and thehuman:Healthiness."
+    },
+    {
+      "name": "Sucker Punch",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "When drawn, deal 8 damage to a random enemy.\nAdd 2 Slaps to your hand that cost 0, but Purge when used and at the end of your turn.\nTechnique: Deal 10 damage to a random enemy."
+    },
+    {
+      "name": "Sucker Punch+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "When drawn, deal 10 damage to a random enemy.\nAdd 2 Slaps to your hand that cost 0, but Purge when used and at the end of your turn.\nTechnique: Deal 15 damage to a random enemy."
+    },
+    {
+      "name": "Superslap",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Play 5 Slaps with random targets."
+    },
+    {
+      "name": "Superslap+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Play 5 Slaps with random targets."
+    },
+    {
+      "name": "The Trash Monster",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, find 1 thehuman:Junk.\nWhenever you play 3 thehuman:Junk, deal 5 damage to a random enemy, then gain 1 Strength and Dexterity."
+    },
+    {
+      "name": "The Trash Monster+",
+      "color": "Human_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, find 1 thehuman:Junk.\nWhenever you play 2 thehuman:Junk, deal 5 damage to a random enemy, then gain 1 Strength and Dexterity."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Thumbs Up",
+      "tier": "Starter",
+      "pool": "Human_color",
+      "description": "At the start of each combat, gain 5 Healthiness and 5 Block.\n\nThere are 4 levels of healthiness: Healthy ( 0 - 10 ), Very Healthy ( 11 - 18 ) and Extremely Healthy ( > 18 ).\n\nCard Rewards have 4 choices instead of 3.",
+      "flavorText": "Hide the pain, Harold!"
+    },
+    {
+      "name": "Emerald Eyepiece",
+      "tier": "Common",
+      "pool": "Human_color",
+      "description": "Whenever you spend Gold, if you have more than 200 Gold, gain 20 Gold.\nOtherwise, gain 30 Gold.",
+      "flavorText": "Cashback!"
+    },
+    {
+      "name": "Environmentalist",
+      "tier": "Uncommon",
+      "pool": "Human_color",
+      "description": "At the start of your turn, add a random Junk to your hand.",
+      "flavorText": "\"Cleanup Crew\""
+    },
+    {
+      "name": "Secret Training",
+      "tier": "Uncommon",
+      "pool": "Human_color",
+      "description": "Usable once per combat.\n\nDraw 3 cards and add a Stabby Stabby to your hand.",
+      "flavorText": "The best way to avoid detection is to...be a ninja?"
+    },
+    {
+      "name": "Fire Arms",
+      "tier": "Rare",
+      "pool": "Human_color",
+      "description": "Whenever you Shoot a Weapon, also apply 1 Burning to the target.",
+      "flavorText": "A revolutionary step backward in peacemaking efforts."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "the Human",
+      "type": "Player",
+      "minHP": "70",
+      "maxHP": "70"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Thehuman:healthiness",
+      "description": "Keep your healthiness high! The higher your healthiness, the more likely that positive effects will be applied, and vice versa."
+    },
+    {
+      "name": "Thehuman:injured",
+      "description": "At the start of each turn, lose 1 to 4 health randomly for each stack of this applied."
+    },
+    {
+      "name": "Thehuman:inventory",
+      "description": "Return this card to your hand whenever it is played.\n\nThis card retains if it was not used this turn.\n\nThe cost of this card cannot be reduced below 1."
+    },
+    {
+      "name": "Thehuman:junk",
+      "description": "Junk consists of cheap and useful cards."
+    },
+    {
+      "name": "Thehuman:peaceful",
+      "description": "When attacked, negate damage equal to the amount of Peaceful you have."
+    },
+    {
+      "name": "Thehuman:shoot",
+      "description": "Shooting is a form of damage applied by certain ranged weapons. The damage per shot (A) is multiplied by the number of shots (B) with a Critical chance (C) and is displayed in (A x B, C) form.\n\nAfter each shot, shuffle an Empty Cartridge into your draw pile."
+    },
+    {
+      "name": "Thehuman:unblockable",
+      "description": "Damage of this type cannot be Blocked."
+    },
+    {
+      "name": "Thehuman:uncover",
+      "description": "Obtain ANY Red, Green, Blue, Purple or Colorless card. It costs 0 but Purges when used and at the end of your turn."
+    },
+    {
+      "name": "Thehuman:weapon",
+      "description": "Weapons are valuable cards with attack-oriented effects."
+    }
+  ]
+}

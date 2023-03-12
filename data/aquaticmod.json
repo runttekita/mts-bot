@@ -1,0 +1,1378 @@
+{
+  "mod": {
+    "name": "The Aquatic",
+    "version": "1.1.0",
+    "authors": ["pubby"],
+    "credits": "",
+    "description": "Adds the Aquatic character.",
+    "mts_version": "3.6.3",
+    "sts_version": "",
+    "dependencies": ["basemod"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Defend",
+      "color": "Aquatic",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Aquatic",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Pearl",
+      "color": "Aquatic",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "",
+      "description": "Deep.\nUnplayable.\nWhen you draw this card, gain [B]."
+    },
+    {
+      "name": "Pearl+",
+      "color": "Aquatic",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you draw this card, gain [B]."
+    },
+    {
+      "name": "Strike",
+      "color": "Aquatic",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Aquatic",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Hook",
+      "color": "Aquatic",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nReturn a card from your discard pile to your hand.\nExhaust."
+    },
+    {
+      "name": "Hook+",
+      "color": "Aquatic",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nReturn a card from your discard pile to your hand and Upgrade it for this combat.\nExhaust."
+    },
+    {
+      "name": "Abyss Scales",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Deep.\nGain 10 Block."
+    },
+    {
+      "name": "Abyss Scales+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Deep.\nGain 13 Block."
+    },
+    {
+      "name": "Anemone",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nGain Entangled."
+    },
+    {
+      "name": "Anemone+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 4 cards.\nGain Entangled."
+    },
+    {
+      "name": "Brine Blast",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If the target is at or below 50% HP,\napply 2 Weak.\nDeal 14 damage."
+    },
+    {
+      "name": "Brine Blast+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "If the target is at or below 50% HP,\napply 2 Weak.\nDeal 18 damage."
+    },
+    {
+      "name": "Bubble",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain 1 Swim.\nExhaust."
+    },
+    {
+      "name": "Bubble+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nGain 2 Swim.\nExhaust."
+    },
+    {
+      "name": "Cloister",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 3 Block.\nIf Entangled,\ngain 3 additional Block."
+    },
+    {
+      "name": "Cloister+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 4 Block.\nIf Entangled,\ngain 4 additional Block."
+    },
+    {
+      "name": "Float",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nGain 2 Swim."
+    },
+    {
+      "name": "Float+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nGain 3 Swim."
+    },
+    {
+      "name": "Harpoon Shot",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nPut a random Attack from your draw pile into your hand."
+    },
+    {
+      "name": "Harpoon Shot+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nPut a random Attack from your draw pile into your hand."
+    },
+    {
+      "name": "Net Cast",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak and\n3 Vulnerable.\nGain Entangled."
+    },
+    {
+      "name": "Net Cast+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 1 Weak and\n3 Vulnerable.\nGain Entangled."
+    },
+    {
+      "name": "Nibble",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 3 Block.\nDeal 3 damage.\nNext turn, gain [B]."
+    },
+    {
+      "name": "Nibble+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 4 Block.\nDeal 4 damage.\nNext turn, gain [B] [B]."
+    },
+    {
+      "name": "Patrol",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd a Depth Charge to the bottom of your draw pile."
+    },
+    {
+      "name": "Patrol+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nAdd a Depth Charge+ to the bottom of your draw pile."
+    },
+    {
+      "name": "Plant",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 20 Mines."
+    },
+    {
+      "name": "Plant+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 25 Mines."
+    },
+    {
+      "name": "Puddle",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 3 Swim."
+    },
+    {
+      "name": "Puddle+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Swim."
+    },
+    {
+      "name": "Razor Fin",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nGain 1 Thorns."
+    },
+    {
+      "name": "Razor Fin+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nGain 2 Thorns."
+    },
+    {
+      "name": "Rope Lash",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nA random Attack in your hand costs 0 until played."
+    },
+    {
+      "name": "Rope Lash+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nA random Attack in your hand costs 0 until played."
+    },
+    {
+      "name": "Shore Scales",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nGain 8 Block."
+    },
+    {
+      "name": "Shore Scales+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nGain 11 Block."
+    },
+    {
+      "name": "Shrimpy Strike",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Frozen.\nDeal 4 damage.\nIf Fatal, Upgrade this card permanently."
+    },
+    {
+      "name": "Shrimpy Strike+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage 3 times."
+    },
+    {
+      "name": "Stone Aged",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Frozen.\nDeal 2 damage.\nWhen you draw this card, increase its damage by 7 this combat."
+    },
+    {
+      "name": "Stone Aged+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Frozen.\nDeal 2 damage.\nWhen you draw this card, increase its damage by 10 this combat."
+    },
+    {
+      "name": "Torpedo Strike",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deep.\nDeal 12 damage."
+    },
+    {
+      "name": "Torpedo Strike+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deep.\nDeal 16 damage."
+    },
+    {
+      "name": "Wrap",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your Thorns 2 times."
+    },
+    {
+      "name": "Wrap+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your Thorns 3 times."
+    },
+    {
+      "name": "Wring Out",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 7 damage.\nLose ALL your Swim."
+    },
+    {
+      "name": "Wring Out+",
+      "color": "Aquatic",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 10 damage.\nLose ALL your Swim."
+    },
+    {
+      "name": "Ahoy",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain 3 Strength.\nThe next time you shuffle your draw pile, lose 3 Strength."
+    },
+    {
+      "name": "Ahoy+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nGain 3 Strength.\nThe next time you shuffle your draw pile, lose 3 Strength."
+    },
+    {
+      "name": "Algae Bloom",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain [B].\nAdd a Slimed to the bottom of your\ndraw pile."
+    },
+    {
+      "name": "Algae Bloom+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nGain [B].\nAdd a Slimed\ninto your hand."
+    },
+    {
+      "name": "Black Lagoon",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play an Attack, gain 2 Block."
+    },
+    {
+      "name": "Black Lagoon+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play an Attack, gain 2 Block."
+    },
+    {
+      "name": "Blown Out",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 Depth Charges to the bottom of your draw pile."
+    },
+    {
+      "name": "Blown Out+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 4 Depth Charges to the bottom of your draw pile."
+    },
+    {
+      "name": "Bombs Away",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a Depth Charge+ to the bottom of your draw pile."
+    },
+    {
+      "name": "Bombs Away+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, add a Depth Charge+ to the bottom of your draw pile."
+    },
+    {
+      "name": "Bright Scales",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to your Swim +5."
+    },
+    {
+      "name": "Bright Scales+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain Block equal to your Swim +8."
+    },
+    {
+      "name": "Cephalopod",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you end your turn Entangled,\ngain 1 Strength and Dexterity."
+    },
+    {
+      "name": "Cephalopod+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you end your turn Entangled,\ngain 1 Strength and Dexterity."
+    },
+    {
+      "name": "Chitin",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nIncrease this card's Block by 3 this combat."
+    },
+    {
+      "name": "Chitin+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nIncrease this card's Block by 4 this combat."
+    },
+    {
+      "name": "Compression",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage for each card in your hand.\nShuffle this card into your draw pile."
+    },
+    {
+      "name": "Compression+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 2 damage for each card in your hand +4.\nShuffle this card into your draw pile."
+    },
+    {
+      "name": "Dark Waters",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nGain 3 Swim.\nGain Entangled.\nExhaust."
+    },
+    {
+      "name": "Dark Waters+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nGain 4 Swim.\nGain Entangled.\nExhaust."
+    },
+    {
+      "name": "Demolish",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Double the target's Mines.\nDeal 16 damage."
+    },
+    {
+      "name": "Demolish+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Double the target's Mines.\nDeal 22 damage."
+    },
+    {
+      "name": "Deploy",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nApply 10 Mines to ALL enemies."
+    },
+    {
+      "name": "Deploy+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nApply 15 Mines to ALL enemies."
+    },
+    {
+      "name": "Detonate",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "You do not take damage from Mines this turn.\nDeal 8 damage."
+    },
+    {
+      "name": "Detonate+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "You do not take damage from Mines\nfor 2 turns.\nDeal 8 damage."
+    },
+    {
+      "name": "Dirty Bomb",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 10 Mines.\nThe next time you attack the enemy, Mines are not removed."
+    },
+    {
+      "name": "Dirty Bomb+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 10 Mines.\nThe next 2 times you attack the enemy, Mines are not removed."
+    },
+    {
+      "name": "Drowning Pool",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play a Deep card, deal 6 damage to ALL enemies."
+    },
+    {
+      "name": "Drowning Pool+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Whenever you play a Deep card, deal 9 damage to ALL enemies."
+    },
+    {
+      "name": "Fiery Fish",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage to\nALL enemies twice.\nUnfreeze a card in your hand."
+    },
+    {
+      "name": "Fiery Fish+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage to\nALL enemies twice.\nUnfreeze ALL the cards in your hand."
+    },
+    {
+      "name": "Frozen Solid",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Plated Armor.\nFreeze this card."
+    },
+    {
+      "name": "Frozen Solid+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Plated Armor.\nFreeze this card."
+    },
+    {
+      "name": "Gone Fishin'",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you draw this card, add a Hook into your hand."
+    },
+    {
+      "name": "Gone Fishin'+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen you draw this card, add an Upgraded Hook into your hand."
+    },
+    {
+      "name": "Iceberg",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Attacks Retain."
+    },
+    {
+      "name": "Iceberg+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Attacks Retain."
+    },
+    {
+      "name": "Icicle Wall",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Freeze any number of cards in your hand.\nGain 6 Block and\n1 Thorns for each."
+    },
+    {
+      "name": "Icicle Wall+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Freeze any number of cards in your hand.\nGain 8 Block and\n1 Thorns for each."
+    },
+    {
+      "name": "Icy Scales",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Frozen.\nGain 14 Block."
+    },
+    {
+      "name": "Icy Scales+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Frozen.\nGain 18 Block."
+    },
+    {
+      "name": "Ink Cloud",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 8 Block if being attacked, and gain Entangled otherwise."
+    },
+    {
+      "name": "Ink Cloud+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nAt the start of your turn, gain 8 Block if being attacked, and gain Entangled otherwise."
+    },
+    {
+      "name": "Lure",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy intends to attack, gain 3 Thorns."
+    },
+    {
+      "name": "Lure+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If the enemy intends to attack, gain 4 Thorns."
+    },
+    {
+      "name": "Maelstrom",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 3 Swim X times.\nExhaust."
+    },
+    {
+      "name": "Maelstrom+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 3 Swim X+1 times.\nExhaust."
+    },
+    {
+      "name": "Minefield",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, apply 15 Mines to ALL enemies."
+    },
+    {
+      "name": "Minefield+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, apply 20 Mines to ALL enemies."
+    },
+    {
+      "name": "Mop Up",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deep.\nIf the target is at or below 50% HP, gain\n[B] and draw 1 card.\nDeal 10 damage."
+    },
+    {
+      "name": "Mop Up+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deep.\nIf the target is at or below 50% HP, gain\n[B] and draw 1 card.\nDeal 13 damage."
+    },
+    {
+      "name": "Rising Tides",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put 1 card from your hand on the bottom of your draw pile.\nDraw 1 card.\nExhaust."
+    },
+    {
+      "name": "Rising Tides+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put any number of cards from your hand on the bottom of your draw pile, then draw 1 card for each.\nExhaust."
+    },
+    {
+      "name": "Rogue Wave",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 16 damage to\nALL enemies.\nGain 3 Swim."
+    },
+    {
+      "name": "Rogue Wave+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage to\nALL enemies.\nGain 4 Swim."
+    },
+    {
+      "name": "Sabotage",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If the target is at or below 50% HP, it loses 6 Strength this turn."
+    },
+    {
+      "name": "Sabotage+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "If the target is at or below 50% HP, it loses 9 Strength this turn."
+    },
+    {
+      "name": "Sonar Sweep",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nYou and ALL enemies gain 1 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Sonar Sweep+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nYou and ALL enemies gain 1 Vulnerable.\nExhaust."
+    },
+    {
+      "name": "Surf",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage to\nALL enemies.\nTrigger ALL\nyour Swim."
+    },
+    {
+      "name": "Surf+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage to\nALL enemies.\nTrigger ALL\nyour Swim."
+    },
+    {
+      "name": "Tentacle Slap",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 3 damage.\nGain Entangled.\nAdd a Hook into your hand."
+    },
+    {
+      "name": "Tentacle Slap+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage.\nGain Entangled.\nAdd a Hook into your hand."
+    },
+    {
+      "name": "Up To Speed",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": " Next turn, draw 2 additional cards. Exhaust."
+    },
+    {
+      "name": "Up To Speed+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Next turn, draw 2 additional cards."
+    },
+    {
+      "name": "Waterborne",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 1 Swim."
+    },
+    {
+      "name": "Waterborne+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, gain 2 Swim."
+    },
+    {
+      "name": "Yo Ho Ho",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nGain 2 Dexterity.\nThe next time you shuffle your draw pile, lose 2 Dexterity."
+    },
+    {
+      "name": "Yo Ho Ho+",
+      "color": "Aquatic",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nGain 2 Dexterity.\nThe next time you shuffle your draw pile, lose 2 Dexterity."
+    },
+    {
+      "name": "Ancient Nuke",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Frozen.\nApply 50 Mines to a random enemy."
+    },
+    {
+      "name": "Ancient Nuke+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Frozen.\nApply 60 Mines to a random enemy."
+    },
+    {
+      "name": "Avidity",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you gain Swim, trigger it."
+    },
+    {
+      "name": "Avidity+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you gain Swim, trigger it."
+    },
+    {
+      "name": "Bacteria",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Whenever you Exhaust a card, you may Exhaust another card from your hand."
+    },
+    {
+      "name": "Bacteria+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you Exhaust a card, you may Exhaust another card from your hand."
+    },
+    {
+      "name": "Barnacle Blitz",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDraw 2 Cards.\nGain 2 Swim.\nFreeze this card."
+    },
+    {
+      "name": "Barnacle Blitz+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nDraw 2 Cards.\nGain 2 Swim.\nFreeze this card."
+    },
+    {
+      "name": "Clone",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Pick a card from your hand. Put it and a copy of it on the bottom of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Clone+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Pick a card from your hand. Put it and a copy of it on the bottom of your draw pile.\nExhaust."
+    },
+    {
+      "name": "Coral Scales",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block.\nGain 1 Thorns for ALL your cards containing \"Scales\"."
+    },
+    {
+      "name": "Coral Scales+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 13 Block.\nGain 1 Thorns for ALL your cards containing \"Scales\"."
+    },
+    {
+      "name": "Dive",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nPut a Deep card from your draw pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Dive+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nPut a Deep card from your draw pile into your hand.\nExhaust."
+    },
+    {
+      "name": "Egg Clutch",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Deep.\nAt the end of 2 turns, gain 3 Strength and Dexterity."
+    },
+    {
+      "name": "Egg Clutch+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Deep.\nAt the end of 2 turns, gain 4 Strength and Dexterity."
+    },
+    {
+      "name": "Feeding Frenzy",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deep.\nDeal 12 damage.\nFor every 4 cards in your deck (not draw pile), heal 1 HP.\nExhaust."
+    },
+    {
+      "name": "Feeding Frenzy+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deep.\nDeal 16 damage.\nFor every 3 cards in your deck (not draw pile), heal 1 HP.\nExhaust."
+    },
+    {
+      "name": "From Below",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deep.\nDeal 4 damage twice.\nGain 2 Strength.\nShuffle this card into your draw pile."
+    },
+    {
+      "name": "From Below+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deep.\nDeal 6 damage twice.\nGain 2 Strength.\nShuffle this card into your draw pile."
+    },
+    {
+      "name": "Rebreather",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Deep.\nGain [B] [B].\nAdd a Hook to\nyour hand.\nExhaust."
+    },
+    {
+      "name": "Rebreather+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Deep.\nGain [B] [B] [B].\nAdd a Hook to\nyour hand.\nExhaust."
+    },
+    {
+      "name": "Rejuvenate",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, gain Block equal to your current Block.\nExhaust."
+    },
+    {
+      "name": "Rejuvenate+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, gain Block equal to your current Block."
+    },
+    {
+      "name": "Shipwreck",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 8 damage.\nPut as many 0 cost cards from your draw pile into your hand as possible."
+    },
+    {
+      "name": "Shipwreck+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nPut as many 0 cost cards from your draw pile into your hand as possible."
+    },
+    {
+      "name": "Squid Form",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Attacks cost 0.\nWhenever you play 4 Attacks in a turn,\ngain Entangled."
+    },
+    {
+      "name": "Squid Form+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Attacks cost 0.\nWhenever you play 5 Attacks in a turn,\ngain Entangled."
+    },
+    {
+      "name": "Steel Wave",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 8 Block.\nDeal 8 damage."
+    },
+    {
+      "name": "Steel Wave+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Gain 11 Block.\nDeal 11 damage."
+    },
+    {
+      "name": "Sunken Chest",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Deep.\nGain 2 Artifact.\nExhaust."
+    },
+    {
+      "name": "Sunken Chest+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Deep.\nRemove ALL your debuffs.\nGain 2 Artifact.\nExhaust."
+    },
+    {
+      "name": "Swift Swim",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Swim draws an additional card."
+    },
+    {
+      "name": "Swift Swim+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Swim draws an additional card."
+    },
+    {
+      "name": "The Kraken",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deep.\nFrozen.\nDeal 22 damage.\nGain [B] [B]."
+    },
+    {
+      "name": "The Kraken+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deep.\nFrozen.\nDeal 28 damage.\nGain [B] [B]."
+    },
+    {
+      "name": "Tsunami",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 Swim."
+    },
+    {
+      "name": "Tsunami+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Swim."
+    },
+    {
+      "name": "Typhoon",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 8 damage and apply 1 Weak to ALL enemies X times.\nExhaust."
+    },
+    {
+      "name": "Typhoon+",
+      "color": "Aquatic",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Innate.\nDeal 8 damage and apply 1 Weak to ALL enemies X times.\nExhaust."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Magic Rod",
+      "tier": "Starter",
+      "pool": "Aquatic",
+      "description": "At the start of each combat, add a Hook into your hand.",
+      "flavorText": "You can catch something big with this."
+    },
+    {
+      "name": "Lifebuoy",
+      "tier": "Common",
+      "pool": "Aquatic",
+      "description": "For the first 3 turns of combat, gain 3 Block at the start of your turn.",
+      "flavorText": "Brightly colored to attract underwater predators."
+    },
+    {
+      "name": "Cenozoic Tooth",
+      "tier": "Uncommon",
+      "pool": "Aquatic",
+      "description": "Whenever you play a Power, gain 2 Thorns.",
+      "flavorText": "An ancient artifact from a long forgotten age."
+    },
+    {
+      "name": "Worn Oar",
+      "tier": "Uncommon",
+      "pool": "Aquatic",
+      "description": "At the start of each combat, gain 3 Swim.",
+      "flavorText": "Looks a bit unsafe."
+    },
+    {
+      "name": "Caviar",
+      "tier": "Rare",
+      "pool": "Aquatic",
+      "description": "Whenever you add a Common card to your deck, it is Upgraded.",
+      "flavorText": "A delicious treat and exotic type of egg."
+    },
+    {
+      "name": "Amoeba",
+      "tier": "Boss",
+      "pool": "Aquatic",
+      "description": "Gain [B] and add a Slimed into your hand at the start of each turn.",
+      "flavorText": "This single-celled organism is ominously shaking."
+    },
+    {
+      "name": "Platinum Reel",
+      "tier": "Boss",
+      "pool": "Aquatic",
+      "description": "At the start of each combat, add 2 Upgraded Hooks into your hand.",
+      "flavorText": "Why is it so shiny? The more you look at it, the more it sparkles."
+    },
+    {
+      "name": "Oven Mitt",
+      "tier": "Shop",
+      "pool": "Aquatic",
+      "description": "You do not take damage from Mines.",
+      "flavorText": "Perfect for baking cookies!"
+    }
+  ],
+  "potions": [
+    {
+      "name": "Bottled Water",
+      "rarity": "Common",
+      "description": "Gain 4 Swim."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "The Aquatic",
+      "type": "Player",
+      "minHP": "75",
+      "maxHP": "75"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Deep",
+      "description": "Start each combat with this card on the bottom of your deck."
+    },
+    {
+      "name": "Entangle",
+      "description": "Entangled prevents you from attacking for a turn."
+    },
+    {
+      "name": "Freeze",
+      "description": "Frozen cards unfreeze when played instead of their normal effect."
+    },
+    {
+      "name": "Mines",
+      "description": "When you attack an enemy with Mines, deal damage equal to the amount of Mines, and take damage equal to 20% of the amount of Mines."
+    },
+    {
+      "name": "Plated armor",
+      "description": "Gains Block at the end of each turn. Receiving unblocked attack damage reduces Plated Armor by 1."
+    },
+    {
+      "name": "Swim",
+      "description": "Whenever you play an Attack, draw 1 card and lose 1 Swim."
+    }
+  ]
+}
