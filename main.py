@@ -254,8 +254,9 @@ async def do_command(channel, tokenized_message):
         "potion": potion,
         "wiki": wiki
     }
-    callback = commands.get(tokenized_message[0])
-    await callback(channel, tokenized_message)
+    if tokenized_message[0] in commands:
+        callback = commands.get(tokenized_message[0])
+        await callback(channel, tokenized_message)
 
 
 @client.event
