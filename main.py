@@ -16,10 +16,6 @@ pin_links = [
     "https://cdn.discordapp.com/attachments/504438263012917254/632966857292513320/fireworks.gif",
     "https://cdn.discordapp.com/attachments/504438263012917254/632966856596127745/ruiPins.gif",
 ]
-broken_mod_situation = [
-    "Thanks to the 2.0 update changing the game code, many mods that were compatible with 1.1 will probably have bugs or crash when used with 2.0, most mods should be fixed eventually (we hope).",
-    "Modders are working in mod fixing for 2.0, plz be patient :)"
-]
 
 client = discord.Client()
 prefix = "?"
@@ -107,6 +103,12 @@ async def on_message(message):
     ):
         await message.channel.send("Big thanks papa Kio!")
         return
+    if (
+        message.content.lower() == ":fox:"
+        and message.author.id == 138858311410909184
+    ):
+        await message.channel.send(":fox:")
+        return
     if is_command(message):
         print(message.content)
         message.content = del_char(message.content, len(prefix))
@@ -139,14 +141,11 @@ async def get_id(message):
             "https://github.com/JohnnyDevo/mts-bot/tree/master/data"
         )
         return
-    if s == "default":
-        await message.channel.send("https://github.com/Gremious/StS-DefaultModBase")
+    if s == "basic" or s == "basicmod":
+        await message.channel.send("https://github.com/Alchyr/BasicMod#basic-mod")
         return
     if s == "pins" or s == "pin":
         await message.channel.send(random.choice(pin_links))
-        return
-    if s == "brokenmod":
-        await message.channel.send(random.choice(broken_mod_situation))
         return
     if s == "xy":
         await message.channel.send("http://xyproblem.info/")
@@ -198,6 +197,15 @@ async def get_id(message):
     if s == "autoadd":
         await message.channel.send(
             "https://github.com/daviscook477/BaseMod/wiki/AutoAdd"
+        )
+    if s == "minimumcards":
+        await message.channel.send("""
+When making a new character, upon generating card rewards, the game can crash if there are not enough cards in the pool.
+The minimum requirements to not crash are:
+ - 3 of each rarity to not crash on card rewards (4 if you have question card)
+ - 3 or each type to not crash when using attack/skill/power potions
+ - 2 attacks, 2 skills, and 1 power to not crash shops
+"""
         )
     if len(s.split(" ")) == 1:
         return
