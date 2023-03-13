@@ -104,10 +104,10 @@ async def on_message(message):
         await message.channel.send("Big thanks papa Kio!")
         return
     if (
-        message.content.lower() == ":fox:"
+        message.content.lower() == "🦊"
         and message.author.id == 138858311410909184
     ):
-        await message.channel.send(":fox:")
+        await message.channel.send("🦊")
         return
     if is_command(message):
         print(message.content)
@@ -203,7 +203,7 @@ async def get_id(message):
 When making a new character, upon generating card rewards, the game can crash if there are not enough cards in the pool.
 The minimum requirements to not crash are:
  - 3 of each rarity to not crash on card rewards (4 if you have question card)
- - 3 or each type to not crash when using attack/skill/power potions
+ - 3 of each type to not crash when using attack/skill/power potions
  - 2 attacks, 2 skills, and 1 power to not crash shops
 """
         )
