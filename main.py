@@ -104,8 +104,8 @@ async def on_message(message):
         await message.channel.send("Big thanks papa Kio!")
         return
     if (
-        message.content.lower() == "🦊"
-        and message.author.id == 138858311410909184
+        message.content == "🦊"
+        and "🦊" in message.author.display_name
     ):
         await message.channel.send("🦊")
         return
