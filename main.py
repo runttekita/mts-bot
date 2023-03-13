@@ -205,6 +205,8 @@ The minimum requirements to not crash are:
  - 3 of each rarity to not crash on card rewards (4 if you have question card)
  - 3 of each type to not crash when using attack/skill/power potions
  - 2 attacks, 2 skills, and 1 power to not crash shops
+
+ As a temporary solution, you can also give yourself prismatic shard. However, this will not prevent crashing in shops.
 """
         )
     if len(s.split(" ")) == 1:
