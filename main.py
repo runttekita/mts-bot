@@ -105,7 +105,7 @@ async def on_message(message):
         return
     if (
         message.content == "🦊"
-        and "🦊" in message.author.name
+        and "🦊" in message.author.display_name
     ):
         await message.channel.send("🦊")
         return
