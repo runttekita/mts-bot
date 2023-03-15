@@ -109,6 +109,12 @@ async def on_message(message):
     ):
         await message.channel.send("🦊")
         return
+    if (
+        message.content == "<:mc_fox:594204020789477376>"
+        and "🦊" in message.author.display_name
+    ):
+        await message.channel.send("https://cdn.discordapp.com/emojis/594204020789477376.webp?size=48&quality=lossless")
+        return
     if is_command(message):
         print(message.content)
         message.content = del_char(message.content, len(prefix))
