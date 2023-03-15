@@ -108,12 +108,16 @@ async def on_message(message):
             message.content == "🦊"
             and "🦊" in message.author.display_name
         ):
+            if (message.author.id == 258676126090657793):
+                return
             await message.channel.send("🦊")
             return
         if (
             message.content == "<:mc_fox:594204020789477376>"
             and "🦊" in message.author.display_name
         ):
+            if (message.author.id == 258676126090657793):
+                return
             await message.channel.send("https://cdn.discordapp.com/emojis/594204020789477376.webp?size=48&quality=lossless")
             return
     if is_command(message):
