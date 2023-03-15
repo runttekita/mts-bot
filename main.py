@@ -103,18 +103,19 @@ async def on_message(message):
     ):
         await message.channel.send("Big thanks papa Kio!")
         return
-    if (
-        message.content == "🦊"
-        and "🦊" in message.author.display_name
-    ):
-        await message.channel.send("🦊")
-        return
-    if (
-        message.content == "<:mc_fox:594204020789477376>"
-        and "🦊" in message.author.display_name
-    ):
-        await message.channel.send("https://cdn.discordapp.com/emojis/594204020789477376.webp?size=48&quality=lossless")
-        return
+    if (message.channel.id == 398373038732738570 or message.channel.id == 724725673578463232):
+        if (
+            message.content == "🦊"
+            and "🦊" in message.author.display_name
+        ):
+            await message.channel.send("🦊")
+            return
+        if (
+            message.content == "<:mc_fox:594204020789477376>"
+            and "🦊" in message.author.display_name
+        ):
+            await message.channel.send("https://cdn.discordapp.com/emojis/594204020789477376.webp?size=48&quality=lossless")
+            return
     if is_command(message):
         print(message.content)
         message.content = del_char(message.content, len(prefix))
