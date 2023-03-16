@@ -105,20 +105,11 @@ async def on_message(message):
         return
     if (message.channel.id == 398373038732738570 or message.channel.id == 724725673578463232):
         if (
-            message.content == "🦊"
-            and "🦊" in message.author.display_name
+            "🦊" in message.author.display_name
+            and ("🦊" in message.content or "fox" in message.content)
+            and message.author.id != 258676126090657793
         ):
-            if (message.author.id == 258676126090657793):
-                return
-            await message.channel.send("🦊")
-            return
-        if (
-            message.content == "<:mc_fox:594204020789477376>"
-            and "🦊" in message.author.display_name
-        ):
-            if (message.author.id == 258676126090657793):
-                return
-            await message.channel.send("https://cdn.discordapp.com/emojis/594204020789477376.webp?size=48&quality=lossless")
+            await message.add_reaction("🦊")
             return
     if is_command(message):
         print(message.content)
