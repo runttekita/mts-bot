@@ -106,14 +106,12 @@ async def on_message(message):
 
             if (found_channel is not None):
                 ind = 2
-                message.channel.send("a channel was found, index is 2")
             else:
                 found_channel = message.channel
-                message.channel.send("a channel was not found, index is 1")
             if len(tokenized_message) < ind:
                 return
             toSend = " ".join(tokenized_message[ind:])
-            await found_channel.send(send)
+            await found_channel.send(toSend)
     if (
         message.content.lower() == "update body text"
         and message.author.id == 114667440507453441
