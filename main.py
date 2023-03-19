@@ -104,11 +104,11 @@ async def on_message(message):
                     if channel.id == 398373038732738570:
                         default_channel = channel
 
-            if (found_channel is not None):
+            if found_channel is not None:
                 ind = 2
-            else if (default_channel is not None):
+            else: if default_channel is not None:
                 found_channel = default_channel
-            else
+            else:
                 found_channel = message.channel
             if len(tokenized_message) < ind:
                 return
