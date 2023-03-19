@@ -99,7 +99,7 @@ async def on_message(message):
             if (foundChannel is not None):
                 ind = 2
             else:
-                foundChannel = channel
+                foundChannel = message.channel
             if len(tokenized_message) < ind:
                 return
             toSend = " ".join(tokenized_message[ind:])
