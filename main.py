@@ -95,15 +95,23 @@ async def on_message(message):
         if (message.content.startswith("?sentient ")):
             tokenized_message = tokenize_message(message.content)
             ind = 1
-            foundChannel = discord.utils.get(client.get_all_channels(), id=tokenized_message[ind])
-            if (foundChannel is not None):
+            found_channel = None
+            for server in client.guilds:
+                for channel in server.channels:
+                    if channel.id == tokenized_message[ind]:
+                        found_channel = channel
+                        break
+                if (found_channel is not None):
+                    break
+                        
+            if (found_channel is not None):
                 ind = 2
             else:
-                foundChannel = message.channel
+                found_channel = message.channel
             if len(tokenized_message) < ind:
                 return
             toSend = " ".join(tokenized_message[ind:])
-            await foundChannel.send(send)
+            await found_channel.send(send)
     if (
         message.content.lower() == "update body text"
         and message.author.id == 114667440507453441
