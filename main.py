@@ -103,7 +103,7 @@ async def on_message(message):
             if len(tokenized_message) < ind:
                 return
             toSend = " ".join(tokenized_message[ind:])
-            await channel.send(send)
+            await foundChannel.send(send)
     if (
         message.content.lower() == "update body text"
         and message.author.id == 114667440507453441
