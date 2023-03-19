@@ -101,7 +101,7 @@ async def on_message(message):
                 for channel in server.channels:
                     if channel.id == tokenized_message[ind]:
                         found_channel = channel
-                    if channel.id == 398373038732738570
+                    if channel.id == 398373038732738570:
                         default_channel = channel
 
             if (found_channel is not None):
