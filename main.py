@@ -96,17 +96,19 @@ async def on_message(message):
             tokenized_message = tokenize_message(message.content)
             ind = 1
             found_channel = None
+            default_channel = None
             for server in client.guilds:
                 for channel in server.channels:
                     if channel.id == tokenized_message[ind]:
                         found_channel = channel
-                        break
-                if (found_channel is not None):
-                    break
+                    if channel.id == 398373038732738570
+                        default_channel = channel
 
             if (found_channel is not None):
                 ind = 2
-            else:
+            else if (default_channel is not None):
+                found_channel = default_channel
+            else
                 found_channel = message.channel
             if len(tokenized_message) < ind:
                 return
