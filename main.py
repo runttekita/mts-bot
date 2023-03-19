@@ -106,10 +106,11 @@ async def on_message(message):
 
             if found_channel is not None:
                 ind = 2
-            else: if default_channel is not None:
-                found_channel = default_channel
             else:
-                found_channel = message.channel
+                if default_channel is not None:
+                    found_channel = default_channel
+                else:
+                    found_channel = message.channel
             if len(tokenized_message) < ind:
                 return
             toSend = " ".join(tokenized_message[ind:])
