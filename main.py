@@ -95,7 +95,7 @@ async def on_message(message):
         if (message.content.startswith("?sentient ")):
             tokenized_message = tokenize_message(message.content)
             ind = 1
-            foundChannel = discord.utils.get(self.client.get_all_channels(), id=tokenized_message[ind])
+            foundChannel = discord.utils.get(client.get_all_channels(), id=tokenized_message[ind])
             if (foundChannel is not None):
                 ind = 2
             else:
