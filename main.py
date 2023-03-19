@@ -91,6 +91,19 @@ def del_char(string, index):
 async def on_message(message):
     if message.author == client.user:
         return
+    if (isinstance(message.channel, discord.channel.DMChannel) and message.author.id == 138858311410909184):
+        if (message.content.startswith("?sentient ")):
+            tokenized_message = tokenize_message(message.content)
+            ind = 1
+            foundChannel = discord.utils.get(self.client.get_all_channels(), id=tokenized_message[ind])
+            if (foundChannel is not None):
+                ind = 2
+            else:
+                foundChannel = channel
+            if len(tokenized_message) < ind:
+                return
+            toSend = " ".join(tokenized_message[ind:])
+            await channel.send(send)
     if (
         message.content.lower() == "update body text"
         and message.author.id == 114667440507453441
