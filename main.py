@@ -273,7 +273,7 @@ def check_for_aliases(self, id):
             return mod
 
 
-async def do_command(channel, tokenized_message, message):
+async def do_command(channel, tokenized_message, discord_message):
     commands = {
         "help": help_command,
         "card": card,
@@ -292,11 +292,11 @@ async def do_command(channel, tokenized_message, message):
     }
     if tokenized_message[0] in commands:
         callback = commands.get(tokenized_message[0])
-        await callback(channel, tokenized_message, message)
+        await callback(channel, tokenized_message, discord_message)
 
 
 @client.event
-async def get_mod_info(channel, tokenized_message, message):
+async def get_mod_info(channel, tokenized_message, discord_message):
     """
     Get the info for a mod for the `?mod` command
 
@@ -356,7 +356,7 @@ async def get_mod_info(channel, tokenized_message, message):
 
 
 @client.event
-async def get_mods_by_author(channel, tokenized_message, message):
+async def get_mods_by_author(channel, tokenized_message, discord_message):
     mod_list = []
     author_name = "reina" if tokenized_message[1] == "reina" else None
     for mod in Mod_Data("").data:
@@ -380,7 +380,7 @@ async def get_mods_by_author(channel, tokenized_message, message):
 
 
 @client.event
-async def find(channel, tokenized_message, message):
+async def find(channel, tokenized_message, discord_message):
     """
     find a card
     -n causes to search name rather than description
@@ -498,17 +498,17 @@ async def find(channel, tokenized_message, message):
                         message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
                 await channel.send(message)
                 return
-            await message.add_reaction("🪪")
-            await message.add_reaction("❌")
+            await discord_message.add_reaction("🪪")
+            await discord_message.add_reaction("❌")
             #await channel.send(failure)
     except TimeoutError:
-        await message.add_reaction("⏰")
-        await message.add_reaction("❌")
+        await discord_message.add_reaction("⏰")
+        await discord_message.add_reaction("❌")
         #await channel.send("Unable to find a match in time!")
 
 
 @client.event
-async def findrelic(channel, tokenized_message, message):
+async def findrelic(channel, tokenized_message, discord_message):
     """
     find a relic
     -n causes to search name rather than description
@@ -602,12 +602,12 @@ async def findrelic(channel, tokenized_message, message):
                 await channel.send(message)
                 return
 
-            await message.add_reaction("<:derpRock:509737899504304135>")
-            await message.add_reaction("❌")
+            await discord_message.add_reaction("<:derpRock:509737899504304135>")
+            await discord_message.add_reaction("❌")
             #await channel.send(failure)
     except TimeoutError:
-        await message.add_reaction("⏰")
-        await message.add_reaction("❌")
+        await discord_message.add_reaction("⏰")
+        await discord_message.add_reaction("❌")
         #await channel.send("Unable to find a match in time!")
         
 
@@ -622,7 +622,7 @@ def makeCaps(string):
 
 
 @client.event
-async def dm_modder(channel, tokenized_message, message):
+async def dm_modder(channel, tokenized_message, discord_message):
     if len(tokenized_message) == 2:
         await channel.send("No mod ID or feedback supplied!")
         return
@@ -645,7 +645,7 @@ async def dm_modder(channel, tokenized_message, message):
 
 
 @client.event
-async def card(channel, tokenized_message, message):
+async def card(channel, tokenized_message, discord_message):
     cards = Mod_Data(tokenized_message[1]).data
     random.shuffle(cards)
     first_match = {}
@@ -728,8 +728,8 @@ async def card(channel, tokenized_message, message):
         await channel.send(message)
         return
 
-    await message.add_reaction("🪪")
-    await message.add_reaction("❌")
+    await discord_message.add_reaction("🪪")
+    await discord_message.add_reaction("❌")
     #if len(tokenized_message) == 3:
     #    await channel.send(
     #        f"No card named {tokenized_message[2]} found in {tokenized_message[1]}."
@@ -739,7 +739,7 @@ async def card(channel, tokenized_message, message):
 
 
 @client.event
-async def relic(channel, tokenized_message, message):
+async def relic(channel, tokenized_message, discord_message):
     relics = Mod_Data(tokenized_message[1]).data
     random.shuffle(relics)
     first_match = {}
@@ -827,8 +827,8 @@ async def relic(channel, tokenized_message, message):
         await channel.send(message)
         return
 
-    await message.add_reaction("<:derpRock:509737899504304135>")
-    await message.add_reaction("❌")
+    await discord_message.add_reaction("<:derpRock:509737899504304135>")
+    await discord_message.add_reaction("❌")
     #if len(tokenized_message) == 3:
     #    await channel.send(
     #        f"No relic named {tokenized_message[2]} found in {tokenized_message[1]}."
@@ -838,7 +838,7 @@ async def relic(channel, tokenized_message, message):
 
 
 @client.event
-async def potion(channel, tokenized_message, message):
+async def potion(channel, tokenized_message, discord_message):
     potions = Mod_Data(tokenized_message[1]).data
     random.shuffle(potions)
     first_match = {}
@@ -923,8 +923,8 @@ async def potion(channel, tokenized_message, message):
         await channel.send(message)
         return
 
-    await message.add_reaction("🥤")
-    await message.add_reaction("❌")
+    await discord_message.add_reaction("🥤")
+    await discord_message.add_reaction("❌")
     #if len(tokenized_message) == 3:
     #    await channel.send(
     #        f"No potion named {tokenized_message[2]} found in {tokenized_message[1]}."
@@ -934,7 +934,7 @@ async def potion(channel, tokenized_message, message):
 
 
 @client.event
-async def keyword(channel, tokenized_message, message):
+async def keyword(channel, tokenized_message, discord_message):
     keywords = Mod_Data(tokenized_message[1]).data
     for x in range(len(keywords)):
         if "keywords" in keywords[x]:
@@ -978,8 +978,8 @@ async def keyword(channel, tokenized_message, message):
                                 await channel.send(keyword_format(keyword, keyword_name))
                                 return
 
-    await message.add_reaction("🔑")
-    await message.add_reaction("❌")
+    await discord_message.add_reaction("🔑")
+    await discord_message.add_reaction("❌")
     #if len(tokenized_message) == 3:
     #    await channel.send(
     #        f"No keyword named {tokenized_message[2]} found in {tokenized_message[1]}."
@@ -999,7 +999,7 @@ async def help_command(channel):
     )
 
 @client.event
-async def wiki(channel, tokenized_message, message):
+async def wiki(channel, tokenized_message, discord_message):
     if len(tokenized_message) < 2:
         return
     wikipage = " ".join(tokenized_message[1:])
