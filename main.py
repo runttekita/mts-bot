@@ -246,7 +246,7 @@ The minimum requirements to not crash are:
         or tokenized_message[1] == "suggestion"
     ):
         return
-    await do_command(message.channel, tokenized_message)
+    await do_command(message.channel, tokenized_message, message)
 
 
 def tokenize_message(message):
@@ -273,7 +273,7 @@ def check_for_aliases(self, id):
             return mod
 
 
-async def do_command(channel, tokenized_message):
+async def do_command(channel, tokenized_message, message):
     commands = {
         "help": help_command,
         "card": card,
@@ -292,11 +292,11 @@ async def do_command(channel, tokenized_message):
     }
     if tokenized_message[0] in commands:
         callback = commands.get(tokenized_message[0])
-        await callback(channel, tokenized_message)
+        await callback(channel, tokenized_message, message)
 
 
 @client.event
-async def get_mod_info(channel, tokenized_message):
+async def get_mod_info(channel, tokenized_message, message):
     """
     Get the info for a mod for the `?mod` command
 
@@ -356,7 +356,7 @@ async def get_mod_info(channel, tokenized_message):
 
 
 @client.event
-async def get_mods_by_author(channel, tokenized_message):
+async def get_mods_by_author(channel, tokenized_message, message):
     mod_list = []
     author_name = "reina" if tokenized_message[1] == "reina" else None
     for mod in Mod_Data("").data:
@@ -380,7 +380,7 @@ async def get_mods_by_author(channel, tokenized_message):
 
 
 @client.event
-async def find(channel, tokenized_message):
+async def find(channel, tokenized_message, message):
     """
     find a card
     -n causes to search name rather than description
@@ -508,7 +508,7 @@ async def find(channel, tokenized_message):
 
 
 @client.event
-async def findrelic(channel, tokenized_message):
+async def findrelic(channel, tokenized_message, message):
     """
     find a relic
     -n causes to search name rather than description
@@ -622,7 +622,7 @@ def makeCaps(string):
 
 
 @client.event
-async def dm_modder(channel, tokenized_message):
+async def dm_modder(channel, tokenized_message, message):
     if len(tokenized_message) == 2:
         await channel.send("No mod ID or feedback supplied!")
         return
@@ -645,7 +645,7 @@ async def dm_modder(channel, tokenized_message):
 
 
 @client.event
-async def card(channel, tokenized_message):
+async def card(channel, tokenized_message, message):
     cards = Mod_Data(tokenized_message[1]).data
     random.shuffle(cards)
     first_match = {}
@@ -739,7 +739,7 @@ async def card(channel, tokenized_message):
 
 
 @client.event
-async def relic(channel, tokenized_message):
+async def relic(channel, tokenized_message, message):
     relics = Mod_Data(tokenized_message[1]).data
     random.shuffle(relics)
     first_match = {}
@@ -838,7 +838,7 @@ async def relic(channel, tokenized_message):
 
 
 @client.event
-async def potion(channel, tokenized_message):
+async def potion(channel, tokenized_message, message):
     potions = Mod_Data(tokenized_message[1]).data
     random.shuffle(potions)
     first_match = {}
@@ -999,7 +999,7 @@ async def help_command(channel):
     )
 
 @client.event
-async def wiki(channel, tokenized_message):
+async def wiki(channel, tokenized_message, message):
     if len(tokenized_message) < 2:
         return
     wikipage = " ".join(tokenized_message[1:])
