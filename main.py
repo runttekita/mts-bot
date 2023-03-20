@@ -431,18 +431,18 @@ async def find(channel, tokenized_message):
                 
             regex = re.compile(data)
             
-            failure = "No card "
-            if cost is not None:
-                failure += "with cost " + cost + " "
-            if type is not None:
-                failure += "of type " + type + " "
-            if rarity is not None:
-                failure += "of rarity " + rarity + " "
-                
-            if len(tokenized_message) == 3:
-                failure += f"with {data} in the {search_field} found in {tokenized_message[1]}."
-            else:
-                failure += f"with {data} in the {search_field} found."
+            #failure = "No card "
+            #if cost is not None:
+            #    failure += "with cost " + cost + " "
+            #if type is not None:
+            #    failure += "of type " + type + " "
+            #if rarity is not None:
+            #    failure += "of rarity " + rarity + " "
+            #
+            #if len(tokenized_message) == 3:
+            #    failure += f"with {data} in the {search_field} found in {tokenized_message[1]}."
+            #else:
+            #    failure += f"with {data} in the {search_field} found."
                 
             for x in range(len(cards)):
                 for card in cards[x]["cards"]:
@@ -498,9 +498,13 @@ async def find(channel, tokenized_message):
                         message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
                 await channel.send(message)
                 return
-            await channel.send(failure)
+            await message.add_reaction("🪪")
+            await message.add_reaction("❌")
+            #await channel.send(failure)
     except TimeoutError:
-        await channel.send("Unable to find a match in time!")
+        await message.add_reaction("⏰")
+        await message.add_reaction("❌")
+        #await channel.send("Unable to find a match in time!")
 
 
 @client.event
@@ -550,16 +554,16 @@ async def findrelic(channel, tokenized_message):
                 
             regex = re.compile(data)
             
-            failure = "No relic "
-            if color is not None:
-                failure += "of color " + color + " "
-            if tier is not None:
-                failure += "of tier " + tier + " "
-                
-            if len(tokenized_message) == 3:
-                failure += f"with {data} in the {search_field} found in {tokenized_message[1]}."
-            else:
-                failure += f"with {data} in the {search_field} found."
+            #failure = "No relic "
+            #if color is not None:
+            #    failure += "of color " + color + " "
+            #if tier is not None:
+            #    failure += "of tier " + tier + " "
+            #
+            #if len(tokenized_message) == 3:
+            #    failure += f"with {data} in the {search_field} found in {tokenized_message[1]}."
+            #else:
+            #    failure += f"with {data} in the {search_field} found."
                 
             for x in range(len(relics)):
                 for relic in relics[x]["relics"]:
@@ -597,9 +601,14 @@ async def findrelic(channel, tokenized_message):
                         message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
                 await channel.send(message)
                 return
-            await channel.send(failure)
+
+            await message.add_reaction("<:derpRock:509737899504304135>")
+            await message.add_reaction("❌")
+            #await channel.send(failure)
     except TimeoutError:
-        await channel.send("Unable to find a match in time!")
+        await message.add_reaction("⏰")
+        await message.add_reaction("❌")
+        #await channel.send("Unable to find a match in time!")
         
 
 def makeCaps(string):
@@ -718,12 +727,15 @@ async def card(channel, tokenized_message):
                 message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
         await channel.send(message)
         return
-    if len(tokenized_message) == 3:
-        await channel.send(
-            f"No card named {tokenized_message[2]} found in {tokenized_message[1]}."
-        )
-    else:
-        await channel.send(f"No card named {tokenized_message[1]} found.")
+
+    await message.add_reaction("🪪")
+    await message.add_reaction("❌")
+    #if len(tokenized_message) == 3:
+    #    await channel.send(
+    #        f"No card named {tokenized_message[2]} found in {tokenized_message[1]}."
+    #    )
+    #else:
+    #    await channel.send(f"No card named {tokenized_message[1]} found.")
 
 
 @client.event
@@ -814,12 +826,15 @@ async def relic(channel, tokenized_message):
                 message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
         await channel.send(message)
         return
-    if len(tokenized_message) == 3:
-        await channel.send(
-            f"No relic named {tokenized_message[2]} found in {tokenized_message[1]}."
-        )
-    else:
-        await channel.send(f"No relic named {tokenized_message[1]} found.")
+
+    await message.add_reaction("<:derpRock:509737899504304135>")
+    await message.add_reaction("❌")
+    #if len(tokenized_message) == 3:
+    #    await channel.send(
+    #        f"No relic named {tokenized_message[2]} found in {tokenized_message[1]}."
+    #    )
+    #else:
+    #    await channel.send(f"No relic named {tokenized_message[1]} found.")
 
 
 @client.event
@@ -907,16 +922,19 @@ async def potion(channel, tokenized_message):
                 message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
         await channel.send(message)
         return
-    if len(tokenized_message) == 3:
-        await channel.send(
-            f"No potion named {tokenized_message[2]} found in {tokenized_message[1]}."
-        )
-    else:
-        await channel.send(f"No potion named {tokenized_message[1]} found.")
+
+    await message.add_reaction("🥤")
+    await message.add_reaction("❌")
+    #if len(tokenized_message) == 3:
+    #    await channel.send(
+    #        f"No potion named {tokenized_message[2]} found in {tokenized_message[1]}."
+    #    )
+    #else:
+    #    await channel.send(f"No potion named {tokenized_message[1]} found.")
 
 
 @client.event
-async def keyword(channel, tokenized_message):
+async def keyword(channel, tokenized_message, message):
     keywords = Mod_Data(tokenized_message[1]).data
     for x in range(len(keywords)):
         if "keywords" in keywords[x]:
@@ -960,12 +978,14 @@ async def keyword(channel, tokenized_message):
                                 await channel.send(keyword_format(keyword, keyword_name))
                                 return
 
-    if len(tokenized_message) == 3:
-        await channel.send(
-            f"No keyword named {tokenized_message[2]} found in {tokenized_message[1]}."
-        )
-    else:
-        await channel.send(f"No keyword named {tokenized_message[1]} found.")
+    await message.add_reaction("🔑")
+    await message.add_reaction("❌")
+    #if len(tokenized_message) == 3:
+    #    await channel.send(
+    #        f"No keyword named {tokenized_message[2]} found in {tokenized_message[1]}."
+    #    )
+    #else:
+    #    await channel.send(f"No keyword named {tokenized_message[1]} found.")
 
 
 @client.event
