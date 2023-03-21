@@ -112,6 +112,7 @@ client = discord.Client()
 load_dotenv()
 token = os.getenv("DISCORD_TOKEN")
 
+
 class Mod_Data:
     def __init__(self, id):
         self.data = self.get_data(id)
@@ -221,7 +222,7 @@ def tokenize_message(message):
 
 async def do_command(channel, tokenized_message, discord_message):
     if tokenized_message[0] in commands_dictionary:
-        callback = commands.get(tokenized_message[0])
+        callback = commands_dictionary.get(tokenized_message[0])
         await callback(channel, tokenized_message, discord_message)
 
 
