@@ -171,13 +171,12 @@ async def on_message(message):
         ):
             await message.add_reaction("🦊")
             return
-    if (lowercase in meme_dictionary) {
+    if (lowercase in meme_dictionary):
         callback = meme_dictionary.get(lowercase)
         reply = callback(message)
         if reply is not None:
             await message.channel.send(reply)
             return
-    }
     if is_command(message):
         print(message.content)
         message.content = del_char(message.content, len(prefix))
