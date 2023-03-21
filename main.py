@@ -256,7 +256,7 @@ async def wiki(channel, tokenized_message, discord_message):
     wikipage = " ".join(tokenized_message[1:])
     message = wiki_dictionary().get(wikipage)
     if message is not None:
-        await send_with_ping(, "Wiki page not found."), discord_message)
+        await send_with_ping(message, discord_message)
         return
     await discord_message.add_reaction("📑")
     await discord_message.add_reaction("❌")
