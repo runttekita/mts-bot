@@ -130,7 +130,7 @@ async def on_message(message):
     if (message.channel.id == 398373038732738570 or message.channel.id == 724725673578463232):
         if (
             "🦊" in message.author.display_name
-            and ("🦊" in message.content or "fox" in message.content)
+            and ("🦊" in message.content or "fox" in message.content.lower())
             and message.author.id != 258676126090657793
         ):
             await message.add_reaction("🦊")
