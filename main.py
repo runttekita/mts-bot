@@ -74,7 +74,7 @@ help_dictionary = {
    "contribute": "https://github.com/JohnnyDevo/mts-bot/blob/master/CONTRIBUTING.md",
    "list": "https://github.com/JohnnyDevo/mts-bot/tree/master/data",
    "basic": "https://github.com/Alchyr/BasicMod#basic-mod",
-   "basicmod": "https://github.com/Alchyr/BasicMod#basic-mod"
+   "basicmod": "https://github.com/Alchyr/BasicMod#basic-mod",
    "xy": "http://xyproblem.info/",
    "debugger": "https://stackoverflow.com/questions/25385173/what-is-a-debugger-and-how-can-it-help-me-diagnose-problems",
    "optin": "https://github.com/JohnnyDevo/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback",
