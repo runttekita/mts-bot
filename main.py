@@ -11,6 +11,7 @@ import timeout
 #constants
 #any commands to the bot start with this character
 prefix = "?"
+
 #user IDs in this array will be ignored when making suggestions to modders
 banned_users = []
 
@@ -70,6 +71,7 @@ meme_dictionary = {
 
 
 help_dictionary = {
+   "help": f"I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!\nYou can use {prefix}help, {prefix}list, {prefix}find or {prefix}contribute to get information!\nYou can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in.",
    "minimumcards": "When making a new character, upon generating card rewards, the game can crash if there are not enough cards in the pool.\nThe minimum requirements to not crash are:\n - 3 of each rarity to not crash on card rewards (4 if you have question card)\n - 3 of each type to not crash when using attack/skill/power potions\n - 2 attacks, 2 skills, and 1 power to not crash shops\n\n As a temporary solution, you can also give yourself prismatic shard. However, this will not prevent crashing in shops.",
    "contribute": "https://github.com/JohnnyDevo/mts-bot/blob/master/CONTRIBUTING.md",
    "list": "https://github.com/JohnnyDevo/mts-bot/tree/master/data",
@@ -90,7 +92,6 @@ help_dictionary = {
 
 #let's try to keep these in order
 commands_dictionary = {
-    "help": help_command,
     "suggestion": dm_modder,
     "bug": dm_modder,
     "feedback": dm_modder,
@@ -226,17 +227,6 @@ async def do_command(channel, tokenized_message, discord_message):
 
 
 #commands go here (let's try to keep them in order)
-@client.event
-async def help_command(channel, discord_message):
-    message =
-        f"I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!"
-        + "\n"
-        + f"You can use {prefix}help, {prefix}list, {prefix}find or {prefix}contribute to get information!"
-        + "\n"
-        + f"You can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in."
-    await send_with_ping(message, discord_message)
-
-
 @client.event
 async def dm_modder(channel, tokenized_message, discord_message):
     if len(tokenized_message) == 2:
