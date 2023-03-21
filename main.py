@@ -1065,7 +1065,7 @@ def del_char(string, index):
 
 
 async def send_with_ping(message, discord_message):
-    message += "\n <@" + discord_message.author.id + ">"
+    message += "\n <@" + str(discord_message.author.id) + ">"
     await discord_message.channel.send(message)
 
 
