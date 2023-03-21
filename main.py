@@ -149,7 +149,7 @@ async def on_message(message):
     lowercase = message.content.lower()
     if (isinstance(message.channel, discord.channel.DMChannel) and message.author.id == 138858311410909184):
         if (lowercase.startswith("?sentient ")):
-            tokenized_message = tokenize_message(lowercase)
+            tokenized_message = tokenize_message(message.content)
             ind = 1
             found_channel = None
             default_channel = None
@@ -190,11 +190,12 @@ async def on_message(message):
     if is_command(message):
         print(message.content)
         message.content = del_char(message.content, len(prefix))
-        await get_id(message, lowercase)
+        await get_id(message)
 
 
-async def get_id(message, lowercase):
-
+async def get_id(message):
+    lowercase = message.content.lower()
+    
     help = help_dictionary()
     if lowercase in help:
         reply = help.get(lowercase)
