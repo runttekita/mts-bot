@@ -271,7 +271,7 @@ async def wiki(channel, tokenized_message, discord_message):
 
 @client.event
 async def pins(channel, tokenized_message, discord_message):
-    await send_with_ping(random.choice(pin_links(), discord_message)
+    await send_with_ping(random.choice(pin_links(), discord_message))
 
 
 @client.event
