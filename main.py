@@ -41,7 +41,9 @@ def wiki_dictionary():
         "cardmods": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
         "card modifiers": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
         "debug": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging",
-        "debugging": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging"
+        "debugging": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging",
+        "relicstrings": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
+        "autoadd": "https://github.com/daviscook477/BaseMod/wiki/AutoAdd"
     }
 
 
@@ -91,8 +93,7 @@ def help_dictionary():
         "126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
         "relic:124": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
         "relic:126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
-        "cansuggest": "https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32",
-        "autoadd": "https://github.com/daviscook477/BaseMod/wiki/AutoAdd"
+        "cansuggest": "https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32"
     }
 
 
@@ -253,7 +254,12 @@ async def wiki(channel, tokenized_message, discord_message):
     if len(tokenized_message) < 2:
         return
     wikipage = " ".join(tokenized_message[1:])
-    await send_with_ping(wiki_dictionary().get(wikipage, "Wiki page not found."), discord_message)
+    message = wiki_dictionary().get(wikipage)
+    if message is not None:
+        await send_with_ping(, "Wiki page not found."), discord_message)
+        return
+    await discord_message.add_reaction("📑")
+    await discord_message.add_reaction("❌")
 
 
 @client.event
@@ -430,7 +436,7 @@ async def card(channel, tokenized_message, discord_message):
         await send_with_ping(message, discord_message)
         return
 
-    await discord_message.add_reaction("🪪")
+    await discord_message.add_reaction("🃏")
     await discord_message.add_reaction("❌")
     #if len(tokenized_message) == 3:
     #    await send_with_ping(
@@ -560,7 +566,7 @@ async def find(channel, tokenized_message, discord_message):
                         message += f"`{makeCaps(name)} from {makeCaps(match)}`  "
                 await send_with_ping(message, discord_message)
                 return
-            await discord_message.add_reaction("🪪")
+            await discord_message.add_reaction("🃏")
             await discord_message.add_reaction("❌")
             #await send_with_ping(failure, discord_message)
     except TimeoutError:
