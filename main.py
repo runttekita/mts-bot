@@ -149,7 +149,7 @@ async def on_message(message):
     lowercase = message.content.lower()
     if (isinstance(message.channel, discord.channel.DMChannel) and message.author.id == 138858311410909184):
         if (lowercase.startswith("?sentient ")):
-            tokenized_message = tokenize_message(s)
+            tokenized_message = tokenize_message(lowercase)
             ind = 1
             found_channel = None
             default_channel = None
@@ -182,10 +182,11 @@ async def on_message(message):
     memes = meme_dictionary()
     if lowercase in memes:
         callback = memes.get(lowercase)
-        reply = callback(message)
-        if reply is not None:
-            await message.channel.send(reply)
-            return
+        if callback is not None:
+            reply = callback(message)
+            if reply is not None:
+                await message.channel.send(reply)
+                return
     if is_command(message):
         print(message.content)
         message.content = del_char(message.content, len(prefix))
@@ -213,27 +214,12 @@ async def get_id(message, lowercase):
     await do_command(message.channel, tokenized_message, message)
 
 
-def tokenize_message(message):
-    if len(message.split(" ")) >= 3:
-        for mod in aliases:
-            names = aliases.get(mod)
-            if message.split(" ")[1] in names:
-                tokenized_message = message.split(" ", 2)
-                del tokenized_message[1]
-                tokenized_message.insert(1, mod)
-                print(tokenized_message)
-                return tokenized_message
-    if os.path.exists(f'data/{message.split(" ")[1]}.json'):
-        return message.split(" ", 2)
-    else:
-        return message.split(" ", 1)
-
-
 async def do_command(channel, tokenized_message, discord_message):
     commands = commands_dictionary()
     if tokenized_message[0] in commands:
         callback = commands.get(tokenized_message[0])
-        await callback(channel, tokenized_message, discord_message)
+        if callback is not None:
+            await callback(channel, tokenized_message, discord_message)
 
 
 #commands go here (let's try to keep them in order)
@@ -271,7 +257,7 @@ async def wiki(channel, tokenized_message, discord_message):
 
 @client.event
 async def pins(channel, tokenized_message, discord_message):
-    await send_with_ping(random.choice(pin_links(), discord_message))
+    await send_with_ping(random.choice(pin_links()), discord_message)
 
 
 @client.event
@@ -377,8 +363,8 @@ async def card(channel, tokenized_message, discord_message):
                 )
                 return
             else:
-                card = random.choice(cards[0]["cards"])
-                await send_with_ping(card_format(card, card["mod"]), discord_message)
+                card_object = random.choice(cards[0]["cards"])
+                await send_with_ping(card_format(card_object, card_object["mod"]), discord_message)
                 return
     if len(tokenized_message) == 2:
         if tokenized_message[1] == "random" and (
@@ -386,7 +372,7 @@ async def card(channel, tokenized_message, discord_message):
         ):
             mod_object = random.choice(cards)
             if len(mod_object["cards"]) == 0:
-                await card(channel, tokenized_message)
+                await card(channel, tokenized_message, discord_message)
                 return
             cards_object = random.choice(mod_object["cards"])
             if "mod" in mod_object:
@@ -396,39 +382,39 @@ async def card(channel, tokenized_message, discord_message):
                 await send_with_ping(card_format(cards_object, cards_object["mod"]), discord_message)
                 return
     for x in range(len(cards)):
-        for card in cards[x]["cards"]:
+        for card_object in cards[x]["cards"]:
             if len(tokenized_message) == 3:
-                if tokenized_message[2] == card["name"].lower():
+                if tokenized_message[2] == card_object["name"].lower():
                     if "mod" in cards[x]:
                         if not first_match:
-                            first_match.update({cards[x]["mod"]["name"]: card})
+                            first_match.update({cards[x]["mod"]["name"]: card_object})
                         else:
                             if len(other_results) < 3:
                                 other_results.update(
-                                    {cards[x]["mod"]["name"]: card["name"]}
+                                    {cards[x]["mod"]["name"]: card_object["name"]}
                                 )
                     else:
                         if not first_match:
-                            first_match.update({card["mod"]: card})
+                            first_match.update({card_object["mod"]: card_object})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({card["mod"]: card["name"]})
+                                other_results.update({card_object["mod"]: card_object["name"]})
             else:
-                if tokenized_message[1] == card["name"].lower():
+                if tokenized_message[1] == card_object["name"].lower():
                     if "mod" in cards[x]:
                         if not first_match:
-                            first_match.update({cards[x]["mod"]["name"]: card})
+                            first_match.update({cards[x]["mod"]["name"]: card_object})
                         else:
                             if len(other_results) < 3:
                                 other_results.update(
-                                    {cards[x]["mod"]["name"]: card["name"]}
+                                    {cards[x]["mod"]["name"]: card_object["name"]}
                                 )
                     else:
                         if not first_match:
-                            first_match.update({card["mod"]: card})
+                            first_match.update({card_object["mod"]: card_object})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({card["mod"]: card["name"]})
+                                other_results.update({card_object["mod"]: card_object["name"]})
     message = ""
     if first_match:
         for key in first_match:
@@ -604,8 +590,8 @@ async def relic(channel, tokenized_message, discord_message):
                 )
                 return
             else:
-                relic = random.choice(relics[0]["relics"])
-                await send_with_ping(relic_format(relic, relic["mod"]), discord_message)
+                relic_object = random.choice(relics[0]["relics"])
+                await send_with_ping(relic_format(relic_object, relic_object["mod"]), discord_message)
                 return
     if len(tokenized_message) == 2:
         if tokenized_message[1] == "random" and (
@@ -613,7 +599,7 @@ async def relic(channel, tokenized_message, discord_message):
         ):
             mod_object = random.choice(relics)
             if len(mod_object["relics"]) == 0:
-                await relic(channel, tokenized_message)
+                await relic(channel, tokenized_message, discord_message)
                 return
             relics_object = random.choice(mod_object["relics"])
             if "mod" in mod_object:
@@ -626,39 +612,39 @@ async def relic(channel, tokenized_message, discord_message):
                 await send_with_ping(relic_format(relics_object, relics_object["mod"]), discord_message)
                 return
     for x in range(len(relics)):
-        for relic in relics[x]["relics"]:
+        for relic_object in relics[x]["relics"]:
             if len(tokenized_message) == 3:
-                if tokenized_message[2] == relic["name"].lower():
+                if tokenized_message[2] == relic_object["name"].lower():
                     if "mod" in relics[x]:
                         if not first_match:
-                            first_match.update({relics[x]["mod"]["name"]: relic})
+                            first_match.update({relics[x]["mod"]["name"]: relic_object})
                         else:
                             if len(other_results) < 3:
                                 other_results.update(
-                                    {relics[x]["mod"]["name"]: relic["name"]}
+                                    {relics[x]["mod"]["name"]: relic_object["name"]}
                                 )
                     else:
                         if not first_match:
-                            first_match.update({relic["mod"]: relic})
+                            first_match.update({relic_object["mod"]: relic_object})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({relic["mod"]: relic["name"]})
+                                other_results.update({relic_object["mod"]: relic_object["name"]})
             else:
-                if tokenized_message[1] == relic["name"].lower():
+                if tokenized_message[1] == relic_object["name"].lower():
                     if "mod" in relics[x]:
                         if not first_match:
-                            first_match.update({relics[x]["mod"]["name"]: relic})
+                            first_match.update({relics[x]["mod"]["name"]: relic_object})
                         else:
                             if len(other_results) < 3:
                                 other_results.update(
-                                    {relics[x]["mod"]["name"]: relic["name"]}
+                                    {relics[x]["mod"]["name"]: relic_object["name"]}
                                 )
                     else:
                         if not first_match:
-                            first_match.update({relic["mod"]: relic})
+                            first_match.update({relic_object["mod"]: relic_object})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({relic["mod"]: relic["name"]})
+                                other_results.update({relic_object["mod"]: relic_object["name"]})
     message = ""
     if first_match:
         for key in first_match:
@@ -850,7 +836,8 @@ async def potion(channel, tokenized_message, discord_message):
             if "mod" in potions[0]:
                 message = potion_format(random.choice(potions[0]["potions"]), potions[0]["mod"]["name"])
             else:
-                message = potion_format(random.choice(potions[0]["potions"]), potion["mod"])
+                potion_object = random.choice(potions[0]["potions"])
+                message = potion_format(potion_object, potion_object["mod"])
             await send_with_ping(message, discord_message)
             return
     if len(tokenized_message) == 2:
@@ -859,7 +846,7 @@ async def potion(channel, tokenized_message, discord_message):
         ):
             mod_object = random.choice(potions)
             if len(mod_object["potions"]) == 0:
-                await potion(channel, tokenized_message)
+                await potion(channel, tokenized_message, discord_message)
                 return
             message = ""
             potions_object = random.choice(mod_object["potions"])
@@ -869,39 +856,39 @@ async def potion(channel, tokenized_message, discord_message):
                 message = potion_format(potions_object, potions_object["mod"])
             await send_with_ping(message, discord_message)
     for x in range(len(potions)):
-        for potion in potions[x]["potions"]:
+        for potion_object in potions[x]["potions"]:
             if len(tokenized_message) == 3:
-                if tokenized_message[2] == potion["name"].lower():
+                if tokenized_message[2] == potion_object["name"].lower():
                     if "mod" in potions[x]:
                         if not first_match:
-                            first_match.update({potions[x]["mod"]["name"]: potion})
+                            first_match.update({potions[x]["mod"]["name"]: potion_object})
                         else:
                             if len(other_results) < 3:
                                 other_results.update(
-                                    {potions[x]["mod"]["name"]: potion["name"]}
+                                    {potions[x]["mod"]["name"]: potion_object["name"]}
                                 )
                     else:
                         if not first_match:
-                            first_match.update({potion["mod"]: potion})
+                            first_match.update({potion_object["mod"]: potion_object})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({potion["mod"]: potion["name"]})
+                                other_results.update({potion_object["mod"]: potion_object["name"]})
             else:
-                if tokenized_message[1] == potion["name"].lower():
+                if tokenized_message[1] == potion_object["name"].lower():
                     if "mod" in potions[x]:
                         if not first_match:
-                            first_match.update({potions[x]["mod"]["name"]: potion})
+                            first_match.update({potions[x]["mod"]["name"]: potion_object})
                         else:
                             if len(other_results) < 3:
                                 other_results.update(
-                                    {potions[x]["mod"]["name"]: potion["name"]}
+                                    {potions[x]["mod"]["name"]: potion_object["name"]}
                                 )
                     else:
                         if not first_match:
-                            first_match.update({potion["mod"]: potion})
+                            first_match.update({potion_object["mod"]: potion_object})
                         else:
                             if len(other_results) < 3:
-                                other_results.update({potion["mod"]: potion["name"]})
+                                other_results.update({potion_object["mod"]: potion_object["name"]})
     message = ""
     if first_match:
         for key in first_match:
@@ -928,6 +915,22 @@ async def potion(channel, tokenized_message, discord_message):
 
 
 #utility methods go here
+def tokenize_message(message):
+    if len(message.split(" ")) >= 3:
+        for mod in aliases:
+            names = aliases.get(mod)
+            if message.split(" ")[1] in names:
+                tokenized_message = message.split(" ", 2)
+                del tokenized_message[1]
+                tokenized_message.insert(1, mod)
+                print(tokenized_message)
+                return tokenized_message
+    if os.path.exists(f'data/{message.split(" ")[1]}.json'):
+        return message.split(" ", 2)
+    else:
+        return message.split(" ", 1)
+
+
 def makeCaps(string):
     split_word = string.split(" ")
     for word in split_word:
