@@ -12,102 +12,109 @@ import timeout
 #any commands to the bot start with this character
 prefix = "?"
 
-#user IDs in this array will be ignored when making suggestions to modders
-banned_users = []
-
 uncolor = re.compile(r"^\[#[0-9A-Fa-f]{6}\](\S+?)$")
 energy = re.compile(r"^(\[[RGBWE]])(.?)$")
 
+#user IDs in this array will be ignored when making suggestions to modders
+def banned_users():
+    return []
 
-pin_links = [
-    "https://media.discordapp.net/attachments/398373038732738570/543527729077682187/sts-check-the-pins.gif",
-    "https://media.discordapp.net/attachments/504438263012917254/542101742377107467/kumikopins.gif",
-    "https://cdn.discordapp.com/attachments/504438263012917254/632966857292513320/fireworks.gif",
-    "https://cdn.discordapp.com/attachments/504438263012917254/632966856596127745/ruiPins.gif",
-]
-
-
-wiki_dictionary = {
-    "mts": "https://github.com/kiooeht/ModTheSpire/wiki/",
-    "modthespire": "https://github.com/kiooeht/ModTheSpire/wiki/",
-    "spirepatch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
-    "spirepatch2": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch2",
-    "patch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
-    "basemod": "https://github.com/daviscook477/BaseMod/wiki",
-    "hooks": "https://github.com/daviscook477/BaseMod/wiki/Hooks",
-    "stslib": "https://github.com/kiooeht/StSLib/wiki",
-    "cardmods": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
-    "card modifiers": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
-    "debug": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging",
-    "debugging": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging"
-}
+def pin_links():
+    return [
+        "https://media.discordapp.net/attachments/398373038732738570/543527729077682187/sts-check-the-pins.gif",
+        "https://media.discordapp.net/attachments/504438263012917254/542101742377107467/kumikopins.gif",
+        "https://cdn.discordapp.com/attachments/504438263012917254/632966857292513320/fireworks.gif",
+        "https://cdn.discordapp.com/attachments/504438263012917254/632966856596127745/ruiPins.gif",
+    ]
 
 
-icon_dictionary = {
-    "[E]": "<:red_energy:382625376838615061>",
-    "[R]": "<:red_energy:382625376838615061>", 
-    "[G]": "<:green_energy:646206147220471808>", 
-    "[B]": "<:blue_energy:668151236003889184>", 
-    "[W]": "<:purple_energy:620384758068674560>"
-}
+def wiki_dictionary():
+    return {
+        "mts": "https://github.com/kiooeht/ModTheSpire/wiki/",
+        "modthespire": "https://github.com/kiooeht/ModTheSpire/wiki/",
+        "spirepatch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
+        "spirepatch2": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch2",
+        "patch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
+        "basemod": "https://github.com/daviscook477/BaseMod/wiki",
+        "hooks": "https://github.com/daviscook477/BaseMod/wiki/Hooks",
+        "stslib": "https://github.com/kiooeht/StSLib/wiki",
+        "cardmods": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
+        "card modifiers": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
+        "debug": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging",
+        "debugging": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging"
+    }
 
 
-color_dictionary = {
-    "Red": "<:red_energy:382625376838615061>", 
-    "Green":  "<:green_energy:646206147220471808>", 
-    "Blue": "<:blue_energy:668151236003889184>", 
-    "Purple": "<:purple_energy:620384758068674560>",
-    "Colorless": "<:colorless_energy:382625433016991745>"
-}
-default_energy = color_dictionary.get("Red")
+def icon_dictionary():
+    return {
+        "[E]": "<:red_energy:382625376838615061>",
+        "[R]": "<:red_energy:382625376838615061>",
+        "[G]": "<:green_energy:646206147220471808>",
+        "[B]": "<:blue_energy:668151236003889184>",
+        "[W]": "<:purple_energy:620384758068674560>"
+    }
 
 
-meme_dictionary = {
-    "?notneh": not_neh,
-    "?praise": praise,
-    "big thanks papa kio!": big_thanks,
-    "update body text": update_body_text
-}
+def color_dictionary():
+    return {
+        "Red": "<:red_energy:382625376838615061>",
+        "Green":  "<:green_energy:646206147220471808>",
+        "Blue": "<:blue_energy:668151236003889184>",
+        "Purple": "<:purple_energy:620384758068674560>",
+        "Colorless": "<:colorless_energy:382625433016991745>"
+    }
+default_energy = color_dictionary().get("Red")
 
 
-help_dictionary = {
-   "help": f"I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!\nYou can use {prefix}help, {prefix}list, {prefix}find or {prefix}contribute to get information!\nYou can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in.",
-   "minimumcards": "When making a new character, upon generating card rewards, the game can crash if there are not enough cards in the pool.\nThe minimum requirements to not crash are:\n - 3 of each rarity to not crash on card rewards (4 if you have question card)\n - 3 of each type to not crash when using attack/skill/power potions\n - 2 attacks, 2 skills, and 1 power to not crash shops\n\n As a temporary solution, you can also give yourself prismatic shard. However, this will not prevent crashing in shops.",
-   "contribute": "https://github.com/JohnnyDevo/mts-bot/blob/master/CONTRIBUTING.md",
-   "list": "https://github.com/JohnnyDevo/mts-bot/tree/master/data",
-   "basic": "https://github.com/Alchyr/BasicMod#basic-mod",
-   "basicmod": "https://github.com/Alchyr/BasicMod#basic-mod",
-   "xy": "http://xyproblem.info/",
-   "debugger": "https://stackoverflow.com/questions/25385173/what-is-a-debugger-and-how-can-it-help-me-diagnose-problems",
-   "optin": "https://github.com/JohnnyDevo/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback",
-   "console": "Enable it on the Main Menu by going to Mods>BaseMod>Config>Enable console.\nThen hit ` while in a run.",
-   "124": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
-   "126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
-   "relic:124": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
-   "relic:126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
-   "cansuggest": "https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32",
-   "autoadd": "https://github.com/daviscook477/BaseMod/wiki/AutoAdd"
-}
+def meme_dictionary():
+    return {
+        "?notneh": not_neh,
+        "?praise": praise,
+        "big thanks papa kio!": big_thanks,
+        "update body text": update_body_text
+    }
+
+
+def help_dictionary():
+    return {
+        "help": f"I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!\nYou can use {prefix}help, {prefix}list, {prefix}find or {prefix}contribute to get information!\nYou can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in.",
+        "minimumcards": "When making a new character, upon generating card rewards, the game can crash if there are not enough cards in the pool.\nThe minimum requirements to not crash are:\n - 3 of each rarity to not crash on card rewards (4 if you have question card)\n - 3 of each type to not crash when using attack/skill/power potions\n - 2 attacks, 2 skills, and 1 power to not crash shops\n\n As a temporary solution, you can also give yourself prismatic shard. However, this will not prevent crashing in shops.",
+        "contribute": "https://github.com/JohnnyDevo/mts-bot/blob/master/CONTRIBUTING.md",
+        "list": "https://github.com/JohnnyDevo/mts-bot/tree/master/data",
+        "basic": "https://github.com/Alchyr/BasicMod#basic-mod",
+        "basicmod": "https://github.com/Alchyr/BasicMod#basic-mod",
+        "xy": "http://xyproblem.info/",
+        "debugger": "https://stackoverflow.com/questions/25385173/what-is-a-debugger-and-how-can-it-help-me-diagnose-problems",
+        "optin": "https://github.com/JohnnyDevo/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback",
+        "console": "Enable it on the Main Menu by going to Mods>BaseMod>Config>Enable console.\nThen hit ` while in a run.",
+        "124": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
+        "126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
+        "relic:124": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
+        "relic:126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
+        "cansuggest": "https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32",
+        "autoadd": "https://github.com/daviscook477/BaseMod/wiki/AutoAdd"
+    }
 
 
 #let's try to keep these in order
-commands_dictionary = {
-    "suggestion": dm_modder,
-    "bug": dm_modder,
-    "feedback": dm_modder,
-    "wiki": wiki,
-    "pins": pins,
-    "pin": pins,
-    "modder": get_mods_by_author,
-    "mod": get_mod_info,
-    "card": card,
-    "find": find,
-    "findcard": find,
-    "relic": relic,
-    "findrelic": findrelic,
-    "keyword": keyword,
-    "potion": potion
-}
+def commands_dictionary():
+    return {
+        "suggestion": dm_modder,
+        "bug": dm_modder,
+        "feedback": dm_modder,
+        "wiki": wiki,
+        "pins": pins,
+        "pin": pins,
+        "modder": get_mods_by_author,
+        "mod": get_mod_info,
+        "card": card,
+        "find": find,
+        "findcard": find,
+        "relic": relic,
+        "findrelic": findrelic,
+        "keyword": keyword,
+        "potion": potion
+    }
 
 client = discord.Client()
 load_dotenv()
@@ -172,8 +179,9 @@ async def on_message(message):
         ):
             await message.add_reaction("🦊")
             return
-    if (lowercase in meme_dictionary):
-        callback = meme_dictionary.get(lowercase)
+    memes = meme_dictionary()
+    if lowercase in memes:
+        callback = memes.get(lowercase)
         reply = callback(message)
         if reply is not None:
             await message.channel.send(reply)
@@ -186,8 +194,9 @@ async def on_message(message):
 
 async def get_id(message, lowercase):
 
-    if lowercase in help_dictionary:
-        reply = help_dictionary.get(lowercase)
+    help = help_dictionary()
+    if lowercase in help:
+        reply = help.get(lowercase)
         await send_with_ping(reply, message)
 
     if len(lowercase.split(" ")) == 1:
@@ -195,7 +204,7 @@ async def get_id(message, lowercase):
 
     tokenized_message = tokenize_message(lowercase)
     if (
-        message.author.id in banned_users
+        message.author.id in banned_users()
         and tokenized_message[1] == "bug"
         or tokenized_message[1] == "feedback"
         or tokenized_message[1] == "suggestion"
@@ -221,8 +230,9 @@ def tokenize_message(message):
 
 
 async def do_command(channel, tokenized_message, discord_message):
-    if tokenized_message[0] in commands_dictionary:
-        callback = commands_dictionary.get(tokenized_message[0])
+    commands = commands_dictionary()
+    if tokenized_message[0] in commands:
+        callback = commands.get(tokenized_message[0])
         await callback(channel, tokenized_message, discord_message)
 
 
@@ -256,12 +266,12 @@ async def wiki(channel, tokenized_message, discord_message):
     if len(tokenized_message) < 2:
         return
     wikipage = " ".join(tokenized_message[1:])
-    await send_with_ping(wiki_dictionary.get(wikipage, "Wiki page not found."), discord_message)
+    await send_with_ping(wiki_dictionary().get(wikipage, "Wiki page not found."), discord_message)
 
 
 @client.event
 async def pins(channel, tokenized_message, discord_message):
-    await send_with_ping(random.choice(pin_links), discord_message)
+    await send_with_ping(random.choice(pin_links(), discord_message)
 
 
 @client.event
@@ -930,7 +940,7 @@ def makeCaps(string):
 
 def energy_replace(strIn):
     retVal = strIn
-    for key, value in icon_dictionary.items():
+    for key, value in icon_dictionary().items():
         retVal = retVal.replace(key, value)
     return retVal
 
