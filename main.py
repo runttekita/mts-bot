@@ -99,7 +99,7 @@ def help_dictionary():
 #let's try to keep these in order
 def commands_dictionary():
     return {
-        "help": help_command,
+        "info": info_command,
         "suggestion": dm_modder,
         "bug": dm_modder,
         "feedback": dm_modder,
@@ -117,9 +117,9 @@ def commands_dictionary():
         "potion": potion
     }
 
-def commands_help():
+def commands_info():
     return {
-        "help": f"I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!\nYou can use {prefix}help, {prefix}list, {prefix}find or {prefix}contribute to get information!\nYou can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in.",
+        "info": f"I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!\nYou can use {prefix}info [command], {prefix}list, {prefix}find or {prefix}contribute to get information!\nYou can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in.",
         "suggestion": f"The {prefix}suggestion command expects a mod id followed by whatever suggestion you might have. If the author has {prefix}optin, they will receive the suggestion.",
         "bug": f"The {prefix}bug command expects a mod id followed by whatever bug you might have found. If the author has {prefix}optin, they will receive the bug report.",
         "feedback": f"The {prefix}suggestion command expects a mod id followed by whatever suggestion you might have. If the author has {prefix}optin, they will receive the suggestion.",
@@ -289,6 +289,8 @@ async def get_id(message):
 
 async def do_command(channel, tokenized_message, discord_message):
     commands = commands_dictionary()
+    if len(tokenized_message) == 1:
+        tokenized_message = ["info", tokenized_message[0]]
     if tokenized_message[0] in commands:
         callback = commands.get(tokenized_message[0])
         if callback is not None:
@@ -297,13 +299,13 @@ async def do_command(channel, tokenized_message, discord_message):
 
 #commands go here (let's try to keep them in order)
 @client.event
-async def help_command(channel, tokenized_message, discord_message):
+async def info_command(channel, tokenized_message, discord_message):
     query = ""
-    replies = commands_help()
+    replies = commands_info()
     if len(tokenized_message) != 1 and tokenized_message[1] in replies:
         query = tokenized_message[1]
     else:
-        query = "help"
+        query = "info"
     reply = replies.get(query)
     await send_with_ping(reply, discord_message)
 
