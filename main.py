@@ -273,8 +273,8 @@ async def get_id(message):
         reply = help.get(lowercase)
         await send_with_ping(reply, message)
 
-    if len(lowercase.split(" ")) == 1:
-        return
+    #if len(lowercase.split(" ")) == 1:
+    #    return
 
     tokenized_message = tokenize_message(lowercase)
     if (
@@ -288,9 +288,9 @@ async def get_id(message):
 
 
 async def do_command(channel, tokenized_message, discord_message):
-    commands = commands_dictionary()
     if len(tokenized_message) == 1:
         tokenized_message = ["info", tokenized_message[0]]
+    commands = commands_dictionary()
     if tokenized_message[0] in commands:
         callback = commands.get(tokenized_message[0])
         if callback is not None:
