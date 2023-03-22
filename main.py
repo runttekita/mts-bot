@@ -282,12 +282,12 @@ async def get_id(message):
 
 
 async def do_command(channel, tokenized_message, discord_message):
+    commands = commands_dictionary()
     if len(tokenized_message) == 1:
         if tokenized_message[0] in commands:
             tokenized_message = ["info", tokenized_message[0]]
         else:
             return
-    commands = commands_dictionary()
     if tokenized_message[0] in commands:
         callback = commands.get(tokenized_message[0])
         if callback is not None:
