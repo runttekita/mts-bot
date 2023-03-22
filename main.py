@@ -79,7 +79,6 @@ def meme_dictionary():
 
 def help_dictionary():
     return {
-        "help": f"I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!\nYou can use {prefix}help, {prefix}list, {prefix}find or {prefix}contribute to get information!\nYou can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in.",
         "minimumcards": "When making a new character, upon generating card rewards, the game can crash if there are not enough cards in the pool.\nThe minimum requirements to not crash are:\n - 3 of each rarity to not crash on card rewards (4 if you have question card)\n - 3 of each type to not crash when using attack/skill/power potions\n - 2 attacks, 2 skills, and 1 power to not crash shops\n\n As a temporary solution, you can also give yourself prismatic shard. However, this will not prevent crashing in shops.",
         "contribute": "https://github.com/JohnnyDevo/mts-bot/blob/master/CONTRIBUTING.md",
         "list": "https://github.com/JohnnyDevo/mts-bot/tree/master/data",
@@ -100,6 +99,7 @@ def help_dictionary():
 #let's try to keep these in order
 def commands_dictionary():
     return {
+        "help": help_command,
         "suggestion": dm_modder,
         "bug": dm_modder,
         "feedback": dm_modder,
@@ -115,6 +115,77 @@ def commands_dictionary():
         "findrelic": findrelic,
         "keyword": keyword,
         "potion": potion
+    }
+
+def commands_help():
+    return {
+        "help": f"I can display modded info with {prefix}card, {prefix}relic or {prefix}keyword!\nYou can use {prefix}help, {prefix}list, {prefix}find or {prefix}contribute to get information!\nYou can use {prefix}bug, {prefix}feedback or {prefix}suggestion to send information to the developer of certain mods that have opted in.",
+        "suggestion": f"The {prefix}suggestion command expects a mod id followed by whatever suggestion you might have. If the author has {prefix}optin, they will receive the suggestion.",
+        "bug": f"The {prefix}bug command expects a mod id followed by whatever bug you might have found. If the author has {prefix}optin, they will receive the bug report.",
+        "feedback": f"The {prefix}suggestion command expects a mod id followed by whatever suggestion you might have. If the author has {prefix}optin, they will receive the suggestion.",
+        "wiki": f"The {prefix}wiki command expects a single word. If it matches a page found in my database, I will link it.",
+        "modder": f"The {prefix}modder command expects a name. If that name is in my database, I will list all mods by that author.",
+        "mod": f"The {prefix}mod command expects a name. If that name is in my database, I will list information about that mod.",
+        "card": f"""
+The {prefix}card command will attempt to find a card matching the name sent to this command.
+
+The command's anatomy looks as follows:
+{prefix}card [optional: name of mod] [name of card]
+
+If you are in the <#384046138610941953> channel, you can also run it with "random" in place of the card name to retrieve a random card.
+""",
+        "find": f"""
+The {prefix}find command will attempt to find a card containing card text sent to this command.
+
+The command's anatomy looks as follows:
+{prefix}card [args] [text]
+
+[args] can be any combination of the following arguments:
+-n indicates I should search name rather than description
+-c=[amount] specifies a card cost
+-t=[type] to specify card type (attack, skill, etc)
+-r=[rarity] to specify rarity (basic, common, etc)
+""",
+        "findcard": f"""
+The {prefix}find command will attempt to find a card containing card text sent to this command.
+
+The command's anatomy looks as follows:
+{prefix}card [args] [text]
+
+[args] can be any combination of the following arguments:
+-n indicates I should search name rather than description
+-c=[amount] specifies a card cost
+-t=[type] to specify card type (attack, skill, etc)
+-r=[rarity] to specify rarity (basic, common, etc)
+""",
+        "relic": f"""
+The {prefix}relic command will attempt to find a relic matching the name sent to this command.
+
+The command's anatomy looks as follows:
+{prefix}card [optional: name of mod] [name of relic]
+
+If you are in the <#384046138610941953> channel, you can also run it with "random" in place of the relic name to retrieve a random relic.
+""",
+        "findrelic": f"""
+The {prefix}find command will attempt to find a card containing card text sent to this command.
+
+The command's anatomy looks as follows:
+{prefix}card [args] [text]
+
+[args] can be any combination of the following arguments:
+-n indicates I should search name rather than description
+-c=[color] to specify a color
+-t=[tier] to specify tier (boss, common, etc)
+""",
+        "keyword": "The ?keyword command expects the name of a keyword. If it matches a keyword found in my database, I will list information about that keyword.",
+        "potion": f"""
+The {prefix}potion command will attempt to find a potion matching the name sent to this command.
+
+The command's anatomy looks as follows:
+{prefix}card [optional: name of mod] [name of potion]
+
+If you are in the <#384046138610941953> channel, you can also run it with "random" in place of the card name to retrieve a random potion.
+"""
     }
 
 client = discord.Client()
@@ -226,6 +297,18 @@ async def do_command(channel, tokenized_message, discord_message):
 
 #commands go here (let's try to keep them in order)
 @client.event
+async def help_command(channel, tokenized_message, discord_message):
+    query = ""
+    replies = commands_help()
+    if len(tokenized_message) != 1 and tokenized_message[1] in replies:
+        query = tokenized_message[1]
+    else:
+        query = "help"
+    reply = replies.get(query)
+    await send_with_ping(reply, discord_message)
+
+
+@client.event
 async def dm_modder(channel, tokenized_message, discord_message):
     if len(tokenized_message) == 2:
         await send_with_ping("No mod ID or feedback supplied!", discord_message)
@@ -236,7 +319,31 @@ async def dm_modder(channel, tokenized_message, discord_message):
             modder = await client.fetch_user(id)
             await modder.send(
                 tokenized_message[0].capitalize()
-                + " for "
+                + " from " + discord_message.author.name + " for "
+                + tokenized_message[1].capitalize()
+                + "\n"
+                + tokenized_message[2]
+            )
+            await send_with_ping(f"Feedback sent to developer of {tokenized_message[1]}!", discord_message)
+            return
+    await send_with_ping(
+        f"{tokenized_message[1].capitalize()} does not currently accept feedback.",
+        discord_message
+    )
+
+
+@client.event
+async def dm_modder(channel, tokenized_message, discord_message):
+    if len(tokenized_message) == 2:
+        await send_with_ping("No mod ID or feedback supplied!", discord_message)
+        return
+    for id in suggestables:
+        mods = suggestables.get(id)
+        if tokenized_message[1] in mods:
+            modder = await client.fetch_user(id)
+            await modder.send(
+                tokenized_message[0].capitalize()
+                + " from " + discord_message.author.name + " for "
                 + tokenized_message[1].capitalize()
                 + "\n"
                 + tokenized_message[2]
@@ -358,9 +465,7 @@ async def card(channel, tokenized_message, discord_message):
     first_match = {}
     other_results = {}
     if len(tokenized_message) == 3:
-        if tokenized_message[2] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
-        ):
+        if tokenized_message[2] == "random" and channel.id == 384046138610941953:
             if "mod" in cards[0]:
                 await send_with_ping(
                     card_format(
@@ -374,9 +479,7 @@ async def card(channel, tokenized_message, discord_message):
                 await send_with_ping(card_format(card_object, card_object["mod"]), discord_message)
                 return
     if len(tokenized_message) == 2:
-        if tokenized_message[1] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
-        ):
+        if tokenized_message[2] == "random" and channel.id == 384046138610941953:
             mod_object = random.choice(cards)
             if len(mod_object["cards"]) == 0:
                 await card(channel, tokenized_message, discord_message)
@@ -794,7 +897,6 @@ async def keyword(channel, tokenized_message, discord_message):
                         keyword_name = split_keyword[1]
                     else:
                         keyword_name = keyword["name"]
-                    message = ""
                     if len(tokenized_message) == 3:
                         if tokenized_message[2] == keyword_name.lower():
                             if len(split_keyword) == 2:
@@ -802,21 +904,30 @@ async def keyword(channel, tokenized_message, discord_message):
                                 if "mod" in keywords[x]:
                                     if "name" in keywords[x]["mod"]:
                                         mod_name = keywords[x]["mod"]["name"]
-
-                                message = keyword_format_mod(keyword, keyword_name, mod_name)
+                                
+                                await send_with_ping(
+                                    keyword_format_mod(keyword, keyword_name, mod_name), discord_message
+                                )
+                                return
                             else:
-                                message = keyword_format(keyword, keyword_name)
+                                await send_with_ping(keyword_format(keyword, keyword_name), discord_message)
+                                return
                     else:
                         if tokenized_message[1] == keyword_name.lower():
                             if "mod" in keywords[x]:
                                 if "name" in keywords[x]["mod"]:
-                                    message = keyword_format_mod(keyword, keyword_name, keywords[x]["mod"]["name"])
+                                    await send_with_ping(
+                                        keyword_format_mod(keyword, keyword_name, keywords[x]["mod"]["name"]), discord_message
+                                    )
+                                    return
                             if len(split_keyword) == 2:
-                                message = keyword_format_mod(keyword, keyword_name, split_keyword[0])
+                                await send_with_ping(
+                                    keyword_format_mod(keyword, keyword_name, split_keyword[0]), discord_message
+                                )
+                                return
                             else:
-                                message = keyword_format(keyword, keyword_name)
-                    await send_with_ping(message, discord_message)
-                    return
+                                await send_with_ping(keyword_format(keyword, keyword_name), discord_message)
+                                return
 
     await discord_message.add_reaction("🔑")
     await discord_message.add_reaction("❌")
@@ -1071,7 +1182,7 @@ def del_char(string, index):
 
 
 async def send_with_ping(message, discord_message):
-    message += "\n <@" + str(discord_message.author.id) + ">"
+    message += "\n<@" + str(discord_message.author.id) + ">"
     await discord_message.channel.send(message)
 
 
