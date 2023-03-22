@@ -250,7 +250,6 @@ async def on_message(message):
             and message.author.id != 258676126090657793
         ):
             await message.add_reaction("🦊")
-            return
     memes = meme_dictionary()
     if lowercase in memes:
         callback = memes.get(lowercase)
