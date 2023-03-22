@@ -480,7 +480,7 @@ async def card(channel, tokenized_message, discord_message):
                 await send_with_ping(card_format(card_object, card_object["mod"]), discord_message)
                 return
     if len(tokenized_message) == 2:
-        if tokenized_message[2] == "random" and channel.id == 384046138610941953:
+        if tokenized_message[1] == "random" and channel.id == 384046138610941953:
             mod_object = random.choice(cards)
             if len(mod_object["cards"]) == 0:
                 await card(channel, tokenized_message, discord_message)
@@ -689,9 +689,7 @@ async def relic(channel, tokenized_message, discord_message):
         await send_with_ping("Oops, I dropped it. Oh well.", discord_message)
         return
     if len(tokenized_message) == 3:
-        if tokenized_message[2] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
-        ):
+        if tokenized_message[2] == "random" and channel.id == 384046138610941953:
             if "mod" in relics[0]:
                 await send_with_ping(
                     relic_format(
@@ -705,9 +703,7 @@ async def relic(channel, tokenized_message, discord_message):
                 await send_with_ping(relic_format(relic_object, relic_object["mod"]), discord_message)
                 return
     if len(tokenized_message) == 2:
-        if tokenized_message[1] == "random" and (
-            channel.id == 384046138610941953 or channel.id == 632350690479570950
-        ):
+        if tokenized_message[1] == "random" and channel.id == 384046138610941953:
             mod_object = random.choice(relics)
             if len(mod_object["relics"]) == 0:
                 await relic(channel, tokenized_message, discord_message)
