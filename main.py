@@ -273,17 +273,11 @@ async def get_id(message):
         reply = help.get(lowercase)
         await send_with_ping(reply, message)
 
-    #if len(lowercase.split(" ")) == 1:
-    #    return
-
-    tokenized_message = tokenize_message(lowercase)
-    if (
-        message.author.id in banned_users()
-        and tokenized_message[1] == "bug"
-        or tokenized_message[1] == "feedback"
-        or tokenized_message[1] == "suggestion"
-    ):
-        return
+    tokenized_message = []
+    if len(lowercase.split(" ")) == 1:
+        tokenized_message = [lowercase]
+    else:
+        tokenized_message = tokenize_message(lowercase)
     await do_command(message.channel, tokenized_message, message)
 
 
@@ -312,6 +306,8 @@ async def info_command(channel, tokenized_message, discord_message):
 
 @client.event
 async def dm_modder(channel, tokenized_message, discord_message):
+    if message.author.id in banned_users():
+        return
     if len(tokenized_message) == 2:
         await send_with_ping("No mod ID or feedback supplied!", discord_message)
         return
