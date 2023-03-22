@@ -12,7 +12,7 @@ Open a pull request with your mod's `items.json` from [Spire Exporter](https://s
 
 Add your discord ID as a key in `suggestables` here:
 
-https://github.com/velvet-halation/mts-bot/blob/master/mtsbotdata.py#L32
+https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32
 
 And then followed by an array of strings of the ids of the mods you want to receive feedback for.
 
