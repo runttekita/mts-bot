@@ -243,7 +243,7 @@ async def on_message(message):
                 return
             toSend = " ".join(tokenized_message[ind:])
             await found_channel.send(toSend)
-    if (message.channel.id == 398373038732738570 or message.channel.id == 724725673578463232):
+    if is_modding_channel(message.channel):
         if (
             "🦊" in message.author.display_name
             and ("🦊" in lowercase or "fox" in lowercase)
@@ -1177,9 +1177,19 @@ def del_char(string, index):
     return string[1:]
 
 
+def is_modding_channel(channel):
+    return channel.id == 398373038732738570 or channel.id == 724725673578463232
+
+
 async def send_with_ping(message, discord_message):
-    message += "\n<@" + str(discord_message.author.id) + ">"
+    if not is_modding_channel(discord_message.channel):
+        message += "\n<@" + str(discord_message.author.id) + ">"
     await discord_message.channel.send(message)
+    if discord_message.author.id == 115569858724233216 and random.randrange(0, 10) == 0:
+        await discord_message.add_reaction("👀")
+        await discord_message.add_reaction("😤")
+        await discord_message.add_reaction("👍")
+        await discord_message.add_reaction("👆")
 
 
 #meme methods go below this point
