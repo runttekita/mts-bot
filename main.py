@@ -92,7 +92,10 @@ def help_dictionary():
         "126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
         "relic:124": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
         "relic:126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
-        "cansuggest": "https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32"
+        "cansuggest": "https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32",
+        "clipper": "https://github.com/JohnnyBazooka89/StSModdingToolCardImagesCreator",
+        "cardartclipper": "https://github.com/JohnnyBazooka89/StSModdingToolCardImagesCreator",
+        "artclipper": "https://github.com/JohnnyBazooka89/StSModdingToolCardImagesCreator"
     }
 
 
