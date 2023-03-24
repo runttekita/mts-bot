@@ -19,3 +19,11 @@ suggestables = {
     519278054913212417: ["duelistmod"],
     305721302621356043: ["betterbeginnings"],
 }
+
+wikis = {
+    "mts": "https://github.com/kiooeht/ModTheSpire/wiki/",
+    "modthespire": "https://github.com/kiooeht/ModTheSpire/wiki/",
+    "basemod": "https://github.com/daviscook477/BaseMod/wiki/",
+    "stslib": "https://github.com/kiooeht/StSLib/wiki/",
+    "basicmod": "https://github.com/Alchyr/BasicMod/wiki/"
+}

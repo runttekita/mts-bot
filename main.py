@@ -5,8 +5,9 @@ import discord
 from dotenv import load_dotenv
 import re
 import random
-from mtsbotdata import aliases, suggestables
+from mtsbotdata import aliases, suggestables, wikis
 import timeout
+import aiohttp
 
 #constants
 #any commands to the bot start with this character
@@ -26,25 +27,6 @@ def pin_links():
         "https://cdn.discordapp.com/attachments/504438263012917254/632966857292513320/fireworks.gif",
         "https://cdn.discordapp.com/attachments/504438263012917254/632966856596127745/ruiPins.gif",
     ]
-
-
-def wiki_dictionary():
-    return {
-        "mts": "https://github.com/kiooeht/ModTheSpire/wiki/",
-        "modthespire": "https://github.com/kiooeht/ModTheSpire/wiki/",
-        "spirepatch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
-        "spirepatch2": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch2",
-        "patch": "https://github.com/kiooeht/ModTheSpire/wiki/SpirePatch",
-        "basemod": "https://github.com/daviscook477/BaseMod/wiki",
-        "hooks": "https://github.com/daviscook477/BaseMod/wiki/Hooks",
-        "stslib": "https://github.com/kiooeht/StSLib/wiki",
-        "cardmods": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
-        "card modifiers": "https://github.com/daviscook477/BaseMod/wiki/CardModifiers",
-        "debug": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging",
-        "debugging": "https://github.com/Alchyr/BasicMod/wiki/Testing#intellij-debugging",
-        "relicstrings": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
-        "autoadd": "https://github.com/daviscook477/BaseMod/wiki/AutoAdd"
-    }
 
 
 def icon_dictionary():
@@ -192,6 +174,7 @@ If you are in the <#384046138610941953> channel, you can also run it with "rando
     }
 
 client = discord.Client()
+session = aiohttp.ClientSession()
 load_dotenv()
 token = os.getenv("DISCORD_TOKEN")
 
@@ -311,32 +294,8 @@ async def info_command(channel, tokenized_message, discord_message):
 
 @client.event
 async def dm_modder(channel, tokenized_message, discord_message):
-    if message.author.id in banned_users():
+    if discord_message.author.id in banned_users():
         return
-    if len(tokenized_message) == 2:
-        await send_with_ping("No mod ID or feedback supplied!", discord_message)
-        return
-    for id in suggestables:
-        mods = suggestables.get(id)
-        if tokenized_message[1] in mods:
-            modder = await client.fetch_user(id)
-            await modder.send(
-                tokenized_message[0].capitalize()
-                + " from " + discord_message.author.name + " for "
-                + tokenized_message[1].capitalize()
-                + "\n"
-                + tokenized_message[2]
-            )
-            await send_with_ping(f"Feedback sent to developer of {tokenized_message[1]}!", discord_message)
-            return
-    await send_with_ping(
-        f"{tokenized_message[1].capitalize()} does not currently accept feedback.",
-        discord_message
-    )
-
-
-@client.event
-async def dm_modder(channel, tokenized_message, discord_message):
     if len(tokenized_message) == 2:
         await send_with_ping("No mod ID or feedback supplied!", discord_message)
         return
@@ -361,16 +320,24 @@ async def dm_modder(channel, tokenized_message, discord_message):
 
 @client.event
 async def wiki(channel, tokenized_message, discord_message):
-    if len(tokenized_message) < 2:
-        return
-    wikipage = " ".join(tokenized_message[1:])
-    message = wiki_dictionary().get(wikipage)
-    if message is not None:
-        await send_with_ping(message, discord_message)
-        return
+    wiki_site = None
+    if tokenized_message[1] in wikis:
+        wiki_site = wikis.get[tokenized_message]
+    index = 1
+    if wiki_site is not None:
+        index = 2
+    page = " ".join(tokenized_message[index:])
+    if wiki_site is not None:
+        wiki_page = wiki_site + page
+        if page_exists(wiki_page):
+            await send_with_ping(wiki_page, discord_message)
+    else:
+        for site in wikis.values():
+            wiki_page = site + page
+            if page_exists(wiki_page):
+                await send_with_ping(wiki_page, discord_message)
     await discord_message.add_reaction("📑")
     await discord_message.add_reaction("❌")
-
 
 @client.event
 async def pins(channel, tokenized_message, discord_message):
@@ -1182,6 +1149,11 @@ def del_char(string, index):
 
 def is_modding_channel(channel):
     return channel.id == 398373038732738570 or channel.id == 724725673578463232
+
+
+async def page_exists(wiki_page):
+    response = await session.head(wiki_page)
+    return response.status < 300
 
 
 async def send_with_ping(message, discord_message):
