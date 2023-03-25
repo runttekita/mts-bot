@@ -108,7 +108,14 @@ def commands_info():
         "suggestion": f"The {prefix}suggestion command expects a mod id followed by whatever suggestion you might have. If the author has {prefix}optin, they will receive the suggestion.",
         "bug": f"The {prefix}bug command expects a mod id followed by whatever bug you might have found. If the author has {prefix}optin, they will receive the bug report.",
         "feedback": f"The {prefix}suggestion command expects a mod id followed by whatever suggestion you might have. If the author has {prefix}optin, they will receive the suggestion.",
-        "wiki": f"The {prefix}wiki command expects a single word. If it matches a page found in my database, I will link it.",
+        "wiki": f"""
+The {prefix}wiki command will attempt to find a given wiki page from any github wikis in my database. If it matches a page found in my database, I will link it.
+
+The command's anatomy looks as follows:
+{prefix}wiki [optional: name of wiki] [name of page]
+
+You can also retrieve the homepage of a wiki by just using {prefix}wiki [name of wiki]
+""",
         "modder": f"The {prefix}modder command expects a name. If that name is in my database, I will list all mods by that author.",
         "mod": f"The {prefix}mod command expects a name. If that name is in my database, I will list information about that mod.",
         "card": f"""
@@ -330,6 +337,8 @@ async def wiki(channel, tokenized_message, discord_message):
             return
         index = 2
     page = "-".join(tokenized_message[index:])
+    if (isinstance(discord_message.channel, discord.channel.DMChannel) and discord_message.author.id == 138858311410909184):
+        send_with_ping(page, discord_message)
     if wiki_site is not None:
         wiki_page = wiki_site + page
         if await page_exists(wiki_page):
