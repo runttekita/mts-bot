@@ -1161,7 +1161,7 @@ def is_modding_channel(channel):
 async def page_exists(wiki_page):
     response = await session.head(wiki_page)
     #return response.status < 300 and "<title>Home" not in response.text()
-    return response.text()
+    return await response.text()
 
 
 async def send_with_ping(message, discord_message):
