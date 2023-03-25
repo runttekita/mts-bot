@@ -337,9 +337,7 @@ async def wiki(channel, tokenized_message, discord_message):
             await send_with_ping(wiki_site, discord_message)
             return
         index = 2
-    page = "-".join(tokenized_message[1:])
-    if (isinstance(discord_message.channel, discord.channel.DMChannel) and discord_message.author.id == 138858311410909184):
-        await send_with_ping(page, discord_message)
+    page = "-".join(tokenized_message[index:])
     if wiki_site is not None:
         wiki_page = wiki_site + page
         if await page_exists(wiki_page):
