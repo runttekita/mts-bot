@@ -327,6 +327,7 @@ async def dm_modder(channel, tokenized_message, discord_message):
 
 @client.event
 async def wiki(channel, tokenized_message, discord_message):
+    tokenized_message = discord_message.content.split(" ")
     wiki_site = None
     if tokenized_message[1] in wikis:
         wiki_site = wikis.get(tokenized_message[1])
