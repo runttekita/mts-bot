@@ -332,13 +332,13 @@ async def wiki(channel, tokenized_message, discord_message):
     page = " ".join(tokenized_message[index:])
     if wiki_site is not None:
         wiki_page = wiki_site + page
-        if page_exists(wiki_page):
+        if await page_exists(wiki_page):
             await send_with_ping(wiki_page, discord_message)
             return
     else:
         for site in wikis.values():
             wiki_page = site + page
-            if page_exists(wiki_page):
+            if await page_exists(wiki_page):
                 await send_with_ping(wiki_page, discord_message)
                 return
     await discord_message.add_reaction("📑")
