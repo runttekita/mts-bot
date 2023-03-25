@@ -322,14 +322,14 @@ async def dm_modder(channel, tokenized_message, discord_message):
 async def wiki(channel, tokenized_message, discord_message):
     wiki_site = None
     if tokenized_message[1] in wikis:
-        wiki_site = wikis.get[tokenized_message]
+        wiki_site = wikis.get(tokenized_message[1])
     index = 1
     if wiki_site is not None:
         if len(tokenized_message) == 2:
             await send_with_ping(wiki_site, discord_message)
             return
         index = 2
-    page = " ".join(tokenized_message[index:])
+    page = "-".join(tokenized_message[index:])
     if wiki_site is not None:
         wiki_page = wiki_site + page
         if await page_exists(wiki_page):
