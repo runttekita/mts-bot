@@ -1161,7 +1161,7 @@ async def page_exists(wiki_page):
     if (response.status >= 300):
         return False
     text = await response.text()
-    return "<title>Home" not in response.text()
+    return "<title>Home" not in text
 
 
 async def send_with_ping(message, discord_message):
