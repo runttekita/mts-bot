@@ -325,17 +325,22 @@ async def wiki(channel, tokenized_message, discord_message):
         wiki_site = wikis.get[tokenized_message]
     index = 1
     if wiki_site is not None:
+        if len(tokenized_message) == 2:
+            await send_with_ping(wiki_site, discord_message)
+            return
         index = 2
     page = " ".join(tokenized_message[index:])
     if wiki_site is not None:
         wiki_page = wiki_site + page
         if page_exists(wiki_page):
             await send_with_ping(wiki_page, discord_message)
+            return
     else:
         for site in wikis.values():
             wiki_page = site + page
             if page_exists(wiki_page):
                 await send_with_ping(wiki_page, discord_message)
+                return
     await discord_message.add_reaction("📑")
     await discord_message.add_reaction("❌")
 
@@ -1153,7 +1158,7 @@ def is_modding_channel(channel):
 
 async def page_exists(wiki_page):
     response = await session.head(wiki_page)
-    return response.status < 300
+    return response.status < 300 and "<title>Home" not in response.text()
 
 
 async def send_with_ping(message, discord_message):
