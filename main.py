@@ -275,7 +275,7 @@ async def get_id(message):
 
 async def do_command(channel, tokenized_message, discord_message):
     commands = commands_dictionary()
-    if len(tokenized_message) == 1:
+    if tokenized_message[0] != "pins" and tokenized_message[0] != "pin" and len(tokenized_message) == 1:
         if tokenized_message[0] in commands:
             tokenized_message = ["info", tokenized_message[0]]
         else:
@@ -351,6 +351,7 @@ async def wiki(channel, tokenized_message, discord_message):
                 return
     await discord_message.add_reaction("📑")
     await discord_message.add_reaction("❌")
+
 
 @client.event
 async def pins(channel, tokenized_message, discord_message):
