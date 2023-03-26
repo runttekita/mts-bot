@@ -584,9 +584,11 @@ async def find(channel, tokenized_message, discord_message):
             if data == "":
                 data = "^[\s\S]*$"
 
-            data = re.escape(data)
-
-            regex = re.compile(data)
+            try:
+                re.compile(data)
+            except re.error:
+                data = re.escape(data)
+                re.compile(data)
 
             #failure = "No card "
             #if cost is not None:
@@ -807,9 +809,11 @@ async def findrelic(channel, tokenized_message, discord_message):
             if data == "":
                 data = "^[\s\S]*$"
 
-            data = re.escape(data)
-
-            regex = re.compile(data)
+            try:
+                re.compile(data)
+            except re.error:
+                data = re.escape(data)
+                re.compile(data)
 
             #failure = "No relic "
             #if color is not None:
