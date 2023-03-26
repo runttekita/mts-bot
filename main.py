@@ -584,6 +584,8 @@ async def find(channel, tokenized_message, discord_message):
             if data == "":
                 data = "^[\s\S]*$"
 
+            data = re.escape(data)
+
             regex = re.compile(data)
 
             #failure = "No card "
@@ -804,6 +806,8 @@ async def findrelic(channel, tokenized_message, discord_message):
 
             if data == "":
                 data = "^[\s\S]*$"
+
+            data = re.escape(data)
 
             regex = re.compile(data)
 
