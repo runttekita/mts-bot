@@ -1,11 +1,11 @@
 {
   "mod": {
     "name": "The Packmaster",
-    "version": "1.5",
+    "version": "1.7.0",
     "authors": ["Vex'd","modargo","(Gk) erasels","Michael Mayhem","DJGames","Alchyr","NellyDevo","Bryan","Enbeon","Silver","Diamsword","AlexMdle","Pandemonium","Laugic","Pina Colada","FieryChocobo","Dayvig","Darkglade","Kiooeht","JohnnyBazooka","EricB","Celicath","PureQuestion","SandTag","Charlie","Mindbomber","Jack Renoson","lobbien","Jedi","Mwalls"],
     "credits": "",
     "description": "Modding Anniversary 5: The Packmaster",
-    "mts_version": "3.18.2",
+    "mts_version": "3.30.2",
     "sts_version": "12-18-2022",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
@@ -17,7 +17,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 22 damage."
+      "description": "Deal 21 damage."
     },
     {
       "name": "9 Ball",
@@ -25,7 +25,23 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 28 damage."
+      "description": "Deal 27 damage."
+    },
+    {
+      "name": "Atomic Piledriver",
+      "color": "Goddess of Explosions",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal.\nDeal 22 damage.\nApply 8 anniv5:Fallout.\nExhaust."
+    },
+    {
+      "name": "Atomic Piledriver+",
+      "color": "Goddess of Explosions",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Ethereal.\nDeal 28 damage.\nApply 12 anniv5:Fallout.\nExhaust."
     },
     {
       "name": "Cannonball",
@@ -49,7 +65,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "*Magic. Retain.\nReduce the cost of a random Magic card in hand by 1 this turn.\nExhaust."
+      "description": "Retain.\nReduce the cost of a random card in hand by 1 this turn.\nExhaust."
     },
     {
       "name": "Channel+",
@@ -57,7 +73,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "*Magic. Retain.\nReduce the cost of a random Magic card in hand by 2 this turn.\nExhaust."
+      "description": "Retain.\nReduce the cost of a random card in hand by 2 this turn.\nExhaust."
     },
     {
       "name": "Comfy Blueprint",
@@ -90,6 +106,38 @@
       "type": "Power",
       "cost": "0",
       "description": "Innate.\nChoose 1 of 3 Packs available to your run.\nAt the start of the next 5 turns, add 2 of its cards to your hand."
+    },
+    {
+      "name": "DC",
+      "color": "Shock'n'Lock",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nChannel a Lightning.\nTrigger its Evoke effect.\nExhaust."
+    },
+    {
+      "name": "DC+",
+      "color": "Shock'n'Lock",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nChannel a Lightning.\nTrigger its Evoke and passive effects.\nExhaust."
+    },
+    {
+      "name": "Darkside Slap",
+      "color": "For The Content",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "anniv5:MEGAthereal.\nDeal 22 damage."
+    },
+    {
+      "name": "Darkside Slap+",
+      "color": "For The Content",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "anniv5:MEGAthereal.\nDeal 27 damage."
     },
     {
       "name": "Fading Ember",
@@ -129,7 +177,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "*Magic.\nApply 2 anniv5:Ignite.\nAdd a Channel to your hand.\nExhaust."
+      "description": "Apply 3 anniv5:Ignite.\nExhaust."
     },
     {
       "name": "Flame Pillar+",
@@ -137,7 +185,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "*Magic.\nApply 3 anniv5:Ignite.\nAdd a Channel to your hand.\nExhaust."
+      "description": "Apply 5 anniv5:Ignite.\nExhaust."
     },
     {
       "name": "Food",
@@ -186,6 +234,38 @@
       "type": "Attack",
       "cost": "0",
       "description": "Deal 5 damage.\nanniv5:Sharpen 2.\nExhaust."
+    },
+    {
+      "name": "Golden Round",
+      "color": "Anomaly",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Load a Golden Gun\nin your hand.\nIf you don't have one, put this on top of your draw pile."
+    },
+    {
+      "name": "Golden Round+",
+      "color": "Anomaly",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Load a Golden Gun\nin your hand.\nIf you don't have one, put this on top of your draw pile."
+    },
+    {
+      "name": "Golf Ball",
+      "color": "Vexation",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Ethereal.\nDeal damage equal to unused Block last turn.\nExhaust."
+    },
+    {
+      "name": "Golf Ball+",
+      "color": "Vexation",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Ethereal.\nDeal damage equal to unused Block last turn.\nExhaust."
     },
     {
       "name": "Greater Hex",
@@ -244,12 +324,28 @@
       "description": "Take 3 damage.\nDraw a card.\nExhaust."
     },
     {
+      "name": "Lunacy",
+      "color": "Eldritch Horror",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reduce the cost of a random card in your hand to 0 until played.\nLose 1 HP and 1 anniv5:Sanity.\nExhaust."
+    },
+    {
+      "name": "Lunacy+",
+      "color": "Eldritch Horror",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Reduce the cost of a random card in your hand to 0 until played.\nExhaust."
+    },
+    {
       "name": "Magic Missile",
       "color": "Gate 2: Conjuration",
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "*Magic. Retain.\nDeal 5 damage.\nIncrease the damage dealt by Magic cards by 5 this turn."
+      "description": "Retain.\nDeal 5 damage.\nIncrease the damage dealt by Magic Missiles by 5 this turn."
     },
     {
       "name": "Magic Missile+",
@@ -257,7 +353,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "*Magic. Retain.\nDeal 6 damage.\nIncrease the damage dealt by Magic cards by 6 this turn."
+      "description": "Retain.\nDeal 6 damage.\nIncrease the damage dealt by Magic Missiles by 6 this turn."
     },
     {
       "name": "Meaty Croquettes",
@@ -356,6 +452,22 @@
       "description": "Draw 2 cards.\nGain [E].\nExhaust."
     },
     {
+      "name": "Shard",
+      "color": "Vexation",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nAfter playing 3 Shards, shuffle The Prism into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Shard+",
+      "color": "Vexation",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nAfter playing 3 Shards, shuffle The Prism+ into your draw pile.\nExhaust."
+    },
+    {
       "name": "Snack",
       "color": "Frosty Fun",
       "rarity": "Special",
@@ -370,6 +482,22 @@
       "type": "Power",
       "cost": "2",
       "description": "Gain 2 Strength, 2 Dexterity, and 2 Focus."
+    },
+    {
+      "name": "Souleater Strike",
+      "color": "Anomaly",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 13 damage.\nApply 13 Vulnerable.\nApply 13 Weak."
+    },
+    {
+      "name": "Souleater Strike+",
+      "color": "Anomaly",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 13 damage.\nApply 13 Vulnerable.\nApply 13 Weak."
     },
     {
       "name": "Stick",
@@ -468,20 +596,20 @@
       "description": "Your cards are played twice."
     },
     {
-      "name": "Ward",
-      "color": "No Parent Pack!",
+      "name": "Triangle",
+      "color": "Vexation",
       "rarity": "Special",
       "type": "Skill",
-      "cost": "0",
-      "description": "Gain 3 Block.\nExhaust."
+      "cost": "1",
+      "description": "Gain 1 Strength.\nDraw 1 card."
     },
     {
-      "name": "Ward+",
-      "color": "No Parent Pack!",
+      "name": "Triangle+",
+      "color": "Vexation",
       "rarity": "Special",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 3 Block.\nExhaust."
+      "description": "Gain 1 Strength.\nDraw 1 card."
     },
     {
       "name": "Weight",
@@ -498,6 +626,14 @@
       "type": "Status",
       "cost": "2",
       "description": "Counts as a Curse.\nExhaust."
+    },
+    {
+      "name": "Vexed",
+      "color": "No Parent Pack!",
+      "rarity": "Special",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nCannot be removed from your deck.\nWhile in hand, Exhaust this when you play a Foil card."
     },
     {
       "name": "Cardistry",
@@ -564,44 +700,12 @@
       "description": "Deal 9 damage."
     },
     {
-      "name": "Aquamarine",
-      "color": "Jeweler's Kit",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "anniv5:Gem.\n\"Gain a Ward\""
-    },
-    {
-      "name": "Aquamarine+",
-      "color": "Jeweler's Kit",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "anniv5:Gem (2 Uses).\n\"Gain a Ward\""
-    },
-    {
-      "name": "Atomic Piledriver",
-      "color": "Goddess of Explosions",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Ethereal.\nDeal 20 damage.\nApply 8 anniv5:Fallout.\nExhaust."
-    },
-    {
-      "name": "Atomic Piledriver+",
-      "color": "Goddess of Explosions",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Ethereal.\nDeal 24 damage.\nApply 10 anniv5:Fallout.\nExhaust."
-    },
-    {
       "name": "Awakened Dagger",
       "color": "Monster Hunter",
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 45 damage. If Fatal, heal to full HP.\nExhaust."
+      "description": "Deal 45 damage.\nIf Fatal, heal to full HP.\nExhaust."
     },
     {
       "name": "Awakened Dagger+",
@@ -609,7 +713,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 55 damage. If Fatal, heal to full HP.\nExhaust."
+      "description": "Deal 55 damage.\nIf Fatal, heal to full HP.\nExhaust."
     },
     {
       "name": "Champion's Platemail",
@@ -617,7 +721,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 15 Block.\nIf you are at 50% Health or below, remove all your debuffs and gain 2 Strength.\nExhaust."
+      "description": "Gain 18 Block.\nIf you are at 50% Health or below, remove all your debuffs and gain 2 Strength.\nExhaust."
     },
     {
       "name": "Champion's Platemail+",
@@ -625,7 +729,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 15 Block.\nIf you are at 50% Health or below, remove all your debuffs and gain 2 Strength."
+      "description": "Gain 18 Block.\nIf you are at 50% Health or below, remove all your debuffs and gain 2 Strength."
     },
     {
       "name": "Core Blaster",
@@ -641,7 +745,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 12 damage.\nAdd a Core Blinder+ to your draw pile.\nExhaust."
+      "description": "Deal 13 damage.\nAdd a Core Blinder+ to your draw pile.\nExhaust."
     },
     {
       "name": "Core Blinder",
@@ -676,28 +780,12 @@
       "description": "Deal 10 damage.\nApply 8 Weak and Vulnerable.\nExhaust."
     },
     {
-      "name": "Darkside Slap",
-      "color": "For The Content",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "1",
-      "description": "anniv5:MEGAthereal.\nDeal 22 damage."
-    },
-    {
-      "name": "Darkside Slap+",
-      "color": "For The Content",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "1",
-      "description": "anniv5:MEGAthereal.\nDeal 27 damage."
-    },
-    {
       "name": "Deca Amulet",
       "color": "Monster Hunter",
       "rarity": "Special",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 10 Plated Armor."
+      "description": "Gain 10 anniv5:Plated_Armor."
     },
     {
       "name": "Deca Amulet+",
@@ -705,7 +793,7 @@
       "rarity": "Special",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 12 Plated Armor."
+      "description": "Gain 12 anniv5:Plated_Armor."
     },
     {
       "name": "Donu Amulet",
@@ -740,47 +828,7 @@
       "description": "Gain 1 Intangible.\nExhaust."
     },
     {
-      "name": "Fragmented Gem",
-      "color": "Jeweler's Kit",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "anniv5:Gem.\n\"Gain a Shiv\""
-    },
-    {
-      "name": "Fragmented Gem+",
-      "color": "Jeweler's Kit",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "anniv5:Gem (2 Uses).\n\"Gain a Shiv\""
-    },
-    {
-      "name": "Golden Round",
-      "color": "Anomaly",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Load a Golden Gun\nin your hand.\nIf you don't have one, put this on top of your draw pile."
-    },
-    {
-      "name": "Golden Round+",
-      "color": "Anomaly",
-      "rarity": "Special",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Load a Golden Gun\nin your hand.\nIf you don't have one, put this on top of your draw pile."
-    },
-    {
       "name": "Gremlin Lance",
-      "color": "Monster Hunter",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "2",
-      "description": "Deal 18 damage.\nIf this kills an enemy, gain [E] and draw a card."
-    },
-    {
-      "name": "Gremlin Lance+",
       "color": "Monster Hunter",
       "rarity": "Special",
       "type": "Attack",
@@ -788,12 +836,20 @@
       "description": "Deal 22 damage.\nIf this kills an enemy, gain [E] and draw a card."
     },
     {
+      "name": "Gremlin Lance+",
+      "color": "Monster Hunter",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 26 damage.\nIf this kills an enemy, gain [E] and draw a card."
+    },
+    {
       "name": "Guardian Shield",
       "color": "Monster Hunter",
       "rarity": "Special",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 4 Block at the end of your turn.\nWhenever you are attacked, deal 4 damage back."
+      "description": "At the end of your turn, gain 4 Block.\nWhenever you are attacked, deal 4 damage back."
     },
     {
       "name": "Guardian Shield+",
@@ -801,7 +857,7 @@
       "rarity": "Special",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 5 Block at the end of your turn.\nWhenever you are attacked, deal 5 damage back."
+      "description": "At the end of your turn, gain 5 Block.\nWhenever you are attacked, deal 5 damage back."
     },
     {
       "name": "Hyper Blaster",
@@ -857,7 +913,7 @@
       "rarity": "Special",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 8 anniv5:Glass_Armor."
+      "description": "Gain 6 anniv5:Plated_Armor."
     },
     {
       "name": "Shell Platemail+",
@@ -865,7 +921,7 @@
       "rarity": "Special",
       "type": "Power",
       "cost": "1",
-      "description": "Innate.\nGain 8 anniv5:Glass_Armor."
+      "description": "Innate.\nGain 6 anniv5:Plated_Armor."
     },
     {
       "name": "Skull Club",
@@ -897,7 +953,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 16 damage.\nApply 1 Weak and Vulnerable.\nIf this kills an enemy, add it back to your hand and it costs 0 this turn."
+      "description": "Deal 15 damage.\nApply 1 Weak and Vulnerable.\nIf this kills an enemy, add it back to your hand and it costs 0 this turn."
     },
     {
       "name": "Slime Hammer",
@@ -914,22 +970,6 @@
       "type": "Attack",
       "cost": "2",
       "description": "Apply 1 Weak.\nDeal 32 damage at the end of the next turn."
-    },
-    {
-      "name": "Souleater Strike",
-      "color": "Anomaly",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 13 damage.\nApply 13 Vulnerable.\nApply 13 Weak."
-    },
-    {
-      "name": "Souleater Strike+",
-      "color": "Anomaly",
-      "rarity": "Special",
-      "type": "Attack",
-      "cost": "0",
-      "description": "Deal 13 damage.\nApply 13 Vulnerable.\nApply 13 Weak."
     },
     {
       "name": "Spire Shield",
@@ -953,7 +993,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage. 4 times."
+      "description": "Deal 9 damage 4 times."
     },
     {
       "name": "Spire Spear+",
@@ -961,7 +1001,7 @@
       "rarity": "Special",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage. 4 times."
+      "description": "Deal 10 damage 4 times."
     },
     {
       "name": "Stabbing Manual",
@@ -985,7 +1025,7 @@
       "rarity": "Special",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 24 Block. Reduced by 2 for every card you've played this turn.\nEnd your turn."
+      "description": "Gain 26 Block. Reduced by 2 for every card you've played this turn.\nEnd your turn."
     },
     {
       "name": "Stone Helm+",
@@ -1010,6 +1050,22 @@
       "type": "Power",
       "cost": "0",
       "description": "Innate.\nGain 3 Strength every 12 cards you play."
+    },
+    {
+      "name": "AC",
+      "color": "Shock'n'Lock",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nAdd a DC to your hand."
+    },
+    {
+      "name": "AC+",
+      "color": "Shock'n'Lock",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nAdd a DC+ to your hand."
     },
     {
       "name": "Acidic Spray",
@@ -1145,7 +1201,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 damage to ALL enemies.\nGain a Madness."
+      "description": "Deal 7 damage to ALL enemies.\nLose 1 anniv5:Sanity for each enemy hit."
     },
     {
       "name": "Beyond the Stars+",
@@ -1153,7 +1209,23 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 damage to ALL enemies.\nGain a Madness+."
+      "description": "Deal 10 damage to ALL enemies.\nLose 1 anniv5:Sanity for each enemy hit."
+    },
+    {
+      "name": "Binding Chains",
+      "color": "Calamity",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nEnemy loses 3 Strength this turn.\nExhaust."
+    },
+    {
+      "name": "Binding Chains+",
+      "color": "Calamity",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nEnemy loses 5 Strength this turn.\nExhaust."
     },
     {
       "name": "Block Vial",
@@ -1177,7 +1249,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Add 3 random anniv5:different\u00A0color cards to your hand.\nGive them Ethereal."
+      "description": "Add 3 random anniv5:different\u00A0color cards into your hand. Give them Ethereal."
     },
     {
       "name": "Booster Pack+",
@@ -1185,7 +1257,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Add 3 random anniv5:different\u00A0color cards to your hand.\nGive them Ethereal."
+      "description": "Add 3 random anniv5:different\u00A0color cards into your hand. Give them Ethereal."
     },
     {
       "name": "Brainwave",
@@ -1220,6 +1292,22 @@
       "description": "anniv5:Infest.\nDeal 18 damage.\nDeals 5 additional damage for each [bugIcon] ."
     },
     {
+      "name": "Bunker",
+      "color": "Vexation",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nAt the start of your next turn, add a Golf Ball into your hand."
+    },
+    {
+      "name": "Bunker+",
+      "color": "Vexation",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 18 Block.\nAt the start of your next turn, add a Golf Ball into your hand."
+    },
+    {
       "name": "Captain's Cabin",
       "color": "A Grand Legacy",
       "rarity": "Common",
@@ -1241,7 +1329,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 5 damage. If this kills an Elite or Boss enemy, gain its weapon or armor card.\nFleeting."
+      "description": "Deal 6 damage.\nIf this kills an Elite or Boss, gain its weapon or armor card and remove this from your deck permanently.\nExhaust."
     },
     {
       "name": "Carving Knife+",
@@ -1249,7 +1337,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage. If this kills an Elite or Boss enemy, gain its weapon or armor card.\nFleeting."
+      "description": "Deal 9 damage.\nIf this kills an Elite or Boss, gain its weapon or armor card and remove this from your deck permanently.\nExhaust."
     },
     {
       "name": "Cascade",
@@ -1417,7 +1505,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Take 3 damage.\nGain 14 Block."
+      "description": "Gain 10 Block.\nAdd a Jam to your hand."
     },
     {
       "name": "Corset+",
@@ -1425,7 +1513,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Take 3 damage.\nGain 17 Block."
+      "description": "Gain 13 Block.\nAdd a Jam to your hand."
     },
     {
       "name": "Cull",
@@ -1442,6 +1530,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "Gain 11 Block.\nEVERYONE loses 2 HP."
+    },
+    {
+      "name": "Curtain",
+      "color": "Instant Death",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 3.\nGain 3 Block for each card discarded."
+    },
+    {
+      "name": "Curtain+",
+      "color": "Instant Death",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 4.\nGain 3 Block for each card discarded."
     },
     {
       "name": "Dagger Rush",
@@ -1497,7 +1601,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 4 anniv5:Distortion to ALL enemies.\nExhaust."
+      "description": "Apply 5 anniv5:Distortion to ALL enemies.\nExhaust."
     },
     {
       "name": "Deconstruct+",
@@ -1556,6 +1660,22 @@
       "description": "Put any number of cards from your hand onto the bottom of your draw pile.\nDraw 3 cards."
     },
     {
+      "name": "Doomtouch",
+      "color": "Calamity",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nApply 2 anniv5:Jinx."
+    },
+    {
+      "name": "Doomtouch+",
+      "color": "Calamity",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nApply 3 anniv5:Jinx."
+    },
+    {
       "name": "Drain Shield",
       "color": "Thief, the Deceiver",
       "rarity": "Common",
@@ -1570,6 +1690,22 @@
       "type": "Attack",
       "cost": "1",
       "description": "Steal all Block from the enemy.\nDeal 12 damage."
+    },
+    {
+      "name": "Dual Blade",
+      "color": "Spheres",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nEvoke your next Orb twice."
+    },
+    {
+      "name": "Dual Blade+",
+      "color": "Spheres",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nEvoke your next Orb twice."
     },
     {
       "name": "Eat Without Table",
@@ -1608,16 +1744,16 @@
       "color": "Meta",
       "rarity": "Common",
       "type": "Attack",
-      "cost": "1",
-      "description": "*Magic.\nDeal 5 damage. Reduce the cost of a random Magic card in hand by 1 this turn."
+      "cost": "0",
+      "description": "Deal 5 damage.\nWhenever you play a Power, return this from your discard pile to your hand."
     },
     {
       "name": "Eldritch Blast+",
       "color": "Meta",
       "rarity": "Common",
       "type": "Attack",
-      "cost": "1",
-      "description": "*Magic.\nDeal 8 damage. Reduce the cost of a random Magic card in hand by 1 this turn."
+      "cost": "0",
+      "description": "Deal 8 damage.\nWhenever you play a Power, return this from your discard pile to your hand."
     },
     {
       "name": "Electric Whip",
@@ -1785,7 +1921,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage and apply 2 anniv5:Distortion to a random enemy."
+      "description": "Deal 10 damage to a random enemy.\nLose 3 anniv5:Sanity.\nIf this costs 0, it hits twice."
     },
     {
       "name": "Flailing Tendril+",
@@ -1793,7 +1929,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage and apply 3 anniv5:Distortion to a random enemy."
+      "description": "Deal 13 damage to a random enemy.\nLose 3 anniv5:Sanity.\nIf this costs 0, it hits twice."
     },
     {
       "name": "Flame Blast",
@@ -1817,7 +1953,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "*Magic.\nDeal 6 damage.\nThe next Magic card played adds a Flame Pillar to your hand."
+      "description": "Deal 6 damage.\nNext turn, add a Flame Pillar to your hand."
     },
     {
       "name": "Flaming Grasp+",
@@ -1825,7 +1961,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "*Magic.\nDeal 9 damage.\nThe next Magic card played adds a Flame Pillar to your hand."
+      "description": "Deal 6 damage.\nNext turn, add 2 Flame Pillars to your hand."
     },
     {
       "name": "Flare",
@@ -1873,7 +2009,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nRoll a anniv5:D6."
+      "description": "Deal 8 damage.\nRoll a anniv5:D6."
     },
     {
       "name": "Flick Dice+",
@@ -1881,7 +2017,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 13 damage.\nRoll a anniv5:D6."
+      "description": "Deal 11 damage.\nRoll a anniv5:D6."
     },
     {
       "name": "Flick+",
@@ -1970,6 +2106,22 @@
       "type": "Attack",
       "cost": "1",
       "description": "ALL enemies lose 3 Strength this turn.\nNext turn, deal 11 damage to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Freezing Venom",
+      "color": "Calamity",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 damage to ALL enemies.\nApply 3 anniv5:Frostbite and Poison to ALL enemies."
+    },
+    {
+      "name": "Freezing Venom+",
+      "color": "Calamity",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage to ALL enemies.\nApply 4 anniv5:Frostbite and Poison to ALL enemies."
     },
     {
       "name": "Frontloaded Bash",
@@ -2098,6 +2250,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "Retain.\nApply 1 Weak and Vulnerable."
+    },
+    {
+      "name": "Glock-On",
+      "color": "Shock'n'Lock",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nAffected by Focus and Lock-On."
+    },
+    {
+      "name": "Glock-On+",
+      "color": "Shock'n'Lock",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nAffected by Focus and Lock-On."
     },
     {
       "name": "Grab Bag",
@@ -2321,7 +2489,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage.\nDeals double damage to elites and bosses."
+      "description": "Deal 8 damage.\nDeals double damage to Elites and Bosses."
     },
     {
       "name": "Hunting Strike+",
@@ -2329,7 +2497,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\nDeals double damage to elites and bosses."
+      "description": "Deal 11 damage.\nDeals double damage to Elites and Bosses."
     },
     {
       "name": "Hutts' Gamble",
@@ -2449,7 +2617,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 6 Block.\nChannel a anniv5:Leprechaun."
+      "description": "Gain 6 Block.\nChannel 1 anniv5:Leprechaun."
     },
     {
       "name": "Leprechaun+",
@@ -2457,7 +2625,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 9 Block.\nChannel a anniv5:Leprechaun."
+      "description": "Gain 9 Block.\nChannel 1 anniv5:Leprechaun."
     },
     {
       "name": "Let's Draft!",
@@ -2524,6 +2692,38 @@
       "description": "Gain 10 Block.\nApply 1 anniv5:Petra."
     },
     {
+      "name": "Lock",
+      "color": "Instant Death",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain a card in your hand and gain 2 Block at the end of each turn until you play it."
+    },
+    {
+      "name": "Lock'n'Load",
+      "color": "Shock'n'Lock",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 2 Lock-On.\nChannel 2 Lightning."
+    },
+    {
+      "name": "Lock'n'Load+",
+      "color": "Shock'n'Lock",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Apply 3 Lock-On.\nChannel 3 Lightning."
+    },
+    {
+      "name": "Lock+",
+      "color": "Instant Death",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain a card in your hand and gain 3 Block at the end of each turn until you play it."
+    },
+    {
       "name": "Locusts",
       "color": "The Swarm",
       "rarity": "Common",
@@ -2561,7 +2761,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal damage equal to your hand size."
+      "description": "Deal damage equal to the number of cards in your hand."
     },
     {
       "name": "Magic Dart+",
@@ -2569,7 +2769,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Retain.\nDeal damage equal to your hand size."
+      "description": "Retain.\nDeal damage equal to the number of cards in your hand."
     },
     {
       "name": "Magnet Rise",
@@ -2593,7 +2793,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "*Magic.\nGain 12 Block.\nAdd a Channel to your hand."
+      "description": "Gain 10 Block.\nAdd a Channel to your hand."
     },
     {
       "name": "Mana Shield+",
@@ -2601,7 +2801,23 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "*Magic.\nGain 12 Block.\nAdd 2 Channels to your hand."
+      "description": "Gain 10 Block.\nAdd 2 Channels to your hand."
+    },
+    {
+      "name": "Manifest",
+      "color": "Vexation",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 20 damage.\nPlay a 0 or 1 cost card from your discard pile."
+    },
+    {
+      "name": "Manifest+",
+      "color": "Vexation",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 26 damage.\nPlay a 0 or 1 cost card from your discard pile."
     },
     {
       "name": "Mantis Strike",
@@ -2609,7 +2825,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Take 3 damage.\nDeal 7 damage.\nDeal 3 damage to a random enemy, twice."
+      "description": "Deal 4 damage to a random enemy.\nRepeat whenever you fully block\u00A0a source of damage this turn."
     },
     {
       "name": "Mantis Strike+",
@@ -2617,7 +2833,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Take 3 damage.\nDeal 9 damage.\nDeal 4 damage to a random enemy, twice."
+      "description": "Deal 6 damage to a random enemy.\nRepeat whenever you fully block\u00A0a source of damage this turn."
     },
     {
       "name": "Master Spark",
@@ -2689,7 +2905,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 2 damage 4 times.\nPut a Jam in your discard pile."
+      "description": "Deal 2 damage 4 times.\nShuffle a Jam into your draw pile."
     },
     {
       "name": "Minniegun+",
@@ -2697,7 +2913,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 2 damage 5 times.\nPut a Jam in your discard pile."
+      "description": "Deal 2 damage 5 times.\nShuffle a Jam into your draw pile."
     },
     {
       "name": "Miracle Worker",
@@ -2780,12 +2996,28 @@
       "description": "Apply 3 Vulnerable.\nAdd a random Attack into your hand.\nIf in a ? room,\nit costs 0 this turn."
     },
     {
+      "name": "Mystic Cycle",
+      "color": "Artificer",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard up to 2 cards and draw that many."
+    },
+    {
+      "name": "Mystic Cycle+",
+      "color": "Artificer",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Discard up to 3 cards and draw that many."
+    },
+    {
       "name": "Nameless Mist",
       "color": "Eldritch Horror",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 4 Block.\nanniv5:Flurry: Gain 2 Block."
+      "description": "Gain 5 Block.\nanniv5:Flurry: Gain 1 Temporary_HP."
     },
     {
       "name": "Nameless Mist+",
@@ -2793,7 +3025,23 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 4 Block.\nanniv5:Flurry: Gain 3 Block."
+      "description": "Gain 5 Block.\nanniv5:Flurry: Gain 2 Temporary_HP."
+    },
+    {
+      "name": "Needle",
+      "color": "Instant Death",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nScry 2.\nGain 3 anniv5:Precision for each Skill discarded."
+    },
+    {
+      "name": "Needle+",
+      "color": "Instant Death",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nScry 3.\nGain 3 anniv5:Precision for each Skill discarded."
     },
     {
       "name": "Olexa's Cloak",
@@ -2849,7 +3097,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 5 damage and Apply 2 anniv5:Penance.\nChannel Lightning"
+      "description": "Deal 5 damage and apply 2 anniv5:Penance.\nChannel 1 Lightning."
     },
     {
       "name": "Penance Shock+",
@@ -2857,7 +3105,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage and Apply 4 anniv5:Penance.\nChannel Lightning"
+      "description": "Deal 7 damage and apply 4 anniv5:Penance.\nChannel 1 Lightning."
     },
     {
       "name": "Pierce Veil",
@@ -2908,12 +3156,28 @@
       "description": "Gain 8 Block.\nChannel 1 Frost."
     },
     {
+      "name": "Polar Blessing",
+      "color": "Artificer",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nRetain adjacent cards this turn."
+    },
+    {
+      "name": "Polar Blessing+",
+      "color": "Artificer",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 17 Block.\nRetain adjacent cards this turn."
+    },
+    {
       "name": "Porcupine",
       "color": "Summoner's Menagerie",
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Channel a anniv5:Porcupine.\nAdd 2 Quills into your hand."
+      "description": "Channel 1 anniv5:Porcupine.\nAdd 2 Quills into your hand."
     },
     {
       "name": "Porcupine+",
@@ -2921,7 +3185,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Channel a anniv5:Porcupine.\nAdd 3 Quills into your hand."
+      "description": "Channel 1 anniv5:Porcupine.\nAdd 3 Quills into your hand."
     },
     {
       "name": "Portal Punch",
@@ -2929,7 +3193,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage.\nAdd a random anniv5:different\u00A0color card to your hand. Give it Ethereal."
+      "description": "Deal 9 damage.\nAdd a random anniv5:different\u00A0color card into your hand. Give it Ethereal."
     },
     {
       "name": "Portal Punch+",
@@ -2937,7 +3201,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 11 damage.\nAdd 2 random anniv5:different\u00A0color cards to your hand. Give them Ethereal."
+      "description": "Deal 10 damage.\nAdd 2 random anniv5:different\u00A0color cards into your hand. Give them Ethereal."
     },
     {
       "name": "Preemptive Strike",
@@ -3249,7 +3513,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 7 anniv5:Frostbite."
+      "description": "Apply 11 anniv5:Frostbite.\nExhaust."
     },
     {
       "name": "Refrigerate+",
@@ -3257,7 +3521,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 9 anniv5:Frostbite."
+      "description": "Apply 11 anniv5:Frostbite.\nIf the enemy already had anniv5:Frostbite, they lose HP equal to it.\nExhaust."
     },
     {
       "name": "Relax",
@@ -3361,7 +3625,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 3 anniv5:Distortion.\nGain 5 Block."
+      "description": "Apply 4 anniv5:Distortion.\nGain 5 Block."
     },
     {
       "name": "Rope Trick+",
@@ -3369,7 +3633,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 4 anniv5:Distortion.\nGain 7 Block."
+      "description": "Apply 4 anniv5:Distortion.\nGain 8 Block."
     },
     {
       "name": "Rot Hound",
@@ -3433,7 +3697,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage.\nApply 2 anniv5:Distortion."
+      "description": "Deal 6 damage.\nApply 4 anniv5:Distortion."
     },
     {
       "name": "S r ke+",
@@ -3441,7 +3705,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\nApply 3 anniv5:Distortion."
+      "description": "Deal 7 damage.\nApply 5 anniv5:Distortion."
     },
     {
       "name": "Scrap Cannon",
@@ -3497,7 +3761,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Take 3 damage.\nHeal 3 HP.\nExhaust."
+      "description": "Take 3 damage.\nGain 4 Temporary_HP."
     },
     {
       "name": "Self Wound+",
@@ -3505,7 +3769,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Take 3 damage.\nHeal 5 HP.\nExhaust."
+      "description": "Take 3 damage.\nGain 6 Temporary_HP."
     },
     {
       "name": "Shadow Attack",
@@ -3652,6 +3916,22 @@
       "description": "Deal 11 damage.\nIf the enemy intends to attack, draw 3 cards."
     },
     {
+      "name": "Slapstick",
+      "color": "Vexation",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nShuffle Dramatic Entrance, Trip, or Blind at random into your draw pile."
+    },
+    {
+      "name": "Slapstick+",
+      "color": "Vexation",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nShuffle Dramatic Entrance, Trip, or Blind at random into your draw pile."
+    },
+    {
       "name": "Sliiiiither",
       "color": "Snecko",
       "rarity": "Common",
@@ -3764,6 +4044,38 @@
       "description": "Gain 9 Block.\nGain 3 Temporary Strength."
     },
     {
+      "name": "Spell Stone",
+      "color": "Artificer",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage.\nanniv5:Boost adjacent cards:\n\"Gain 3 Block\""
+    },
+    {
+      "name": "Spell Stone+",
+      "color": "Artificer",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nanniv5:Boost adjacent cards:\n\"Gain 3 Block\""
+    },
+    {
+      "name": "Sphere",
+      "color": "Spheres",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nChannel 1 anniv5:randomized\u00A0Orb."
+    },
+    {
+      "name": "Sphere+",
+      "color": "Spheres",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nChannel 1 anniv5:randomized\u00A0Orb."
+    },
+    {
       "name": "Stall",
       "color": "Warden",
       "rarity": "Common",
@@ -3785,7 +4097,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Attack anniv5:Enchantment.\nDeal 4 damage."
+      "description": "Deal 5 damage to a random enemy. The next time you play a anniv5:different\u00A0color Attack this turn, repeat this."
     },
     {
       "name": "Star Shower+",
@@ -3793,23 +4105,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Attack anniv5:Enchantment.\nDeal 6 damage."
-    },
-    {
-      "name": "Stardust Shield",
-      "color": "Pixie",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Skill anniv5:Enchantment.\nGain 3 Block."
-    },
-    {
-      "name": "Stardust Shield+",
-      "color": "Pixie",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "0",
-      "description": "Skill anniv5:Enchantment.\nGain 4 Block."
+      "description": "Deal 7 damage to a random enemy. The next time you play a anniv5:different\u00A0color Attack this turn, repeat this."
     },
     {
       "name": "Starting Gun",
@@ -3945,7 +4241,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block.\nApply 3 Poison to a random enemy.\nstslib:Persist 2."
+      "description": "Gain 5 Block.\nApply 2 Poison to a random enemy.\nstslib:Persist 2."
     },
     {
       "name": "Sustenance+",
@@ -3953,7 +4249,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nApply 4 Poison to a random enemy.\nstslib:Persist 2."
+      "description": "Gain 7 Block.\nApply 3 Poison to a random enemy.\nstslib:Persist 2."
     },
     {
       "name": "Swarm Strike",
@@ -3977,7 +4273,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 5 damage to ALL enemies.\nChannel a anniv5:Swarm\u00A0of\u00A0Bees."
+      "description": "Deal 5 damage to ALL enemies.\nChannel 1 anniv5:Swarm\u00A0of\u00A0Bees."
     },
     {
       "name": "Swarm of Bees+",
@@ -3985,7 +4281,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage to ALL enemies.\nChannel a anniv5:Swarm\u00A0of\u00A0Bees."
+      "description": "Deal 8 damage to ALL enemies.\nChannel 1 anniv5:Swarm\u00A0of\u00A0Bees."
     },
     {
       "name": "Swipe",
@@ -4137,7 +4433,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage.\nActivate the passive effect of your next orb"
+      "description": "Deal 8 damage.\nActivate the passive effect of your next Orb."
     },
     {
       "name": "Tetsuzanko+",
@@ -4145,7 +4441,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nActivate the passive effect of your next orb twice"
+      "description": "Deal 10 damage.\nActivate the passive effect of your next Orb twice."
     },
     {
       "name": "The Fool",
@@ -4265,7 +4561,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block.\nApply 3 anniv5:Hunted"
+      "description": "Gain 6 Block.\nApply 3 anniv5:Hunted"
     },
     {
       "name": "Track+",
@@ -4273,7 +4569,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nApply 4 anniv5:Hunted"
+      "description": "Gain 8 Block.\nApply 4 anniv5:Hunted"
     },
     {
       "name": "Trample",
@@ -4500,6 +4796,22 @@
       "description": "Channel 3 Frost.\nanniv5:Modify 3 random enemy-targeted cards in your draw pile: \"Apply 3 anniv5:Frostbite\""
     },
     {
+      "name": "Winterwisp",
+      "color": "Spheres",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nChannel 1 anniv5:Polar.\nIf it filled an empty Orb slot, trigger its passive."
+    },
+    {
+      "name": "Winterwisp+",
+      "color": "Spheres",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nChannel 1 anniv5:Polar.\nIf it filled an empty Orb slot, trigger its passive."
+    },
+    {
       "name": "Wither",
       "color": "Entropy",
       "rarity": "Common",
@@ -4537,7 +4849,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage.\nChannel a anniv5:Wolf."
+      "description": "Deal 7 damage.\nChannel 1 anniv5:Wolf."
     },
     {
       "name": "Wolves+",
@@ -4545,7 +4857,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage.\nChannel a anniv5:Wolf."
+      "description": "Deal 10 damage.\nChannel 1 anniv5:Wolf."
     },
     {
       "name": "Worker's Strike",
@@ -4580,7 +4892,7 @@
       "description": "Apply 2 Vulnerable and 2 Weak, and remove the target's Block.\nExhaust."
     },
     {
-      "name": "A.C.I.D Projector",
+      "name": "A.C.I.D. Projector",
       "color": "Into the Breach",
       "rarity": "Uncommon",
       "type": "Skill",
@@ -4588,7 +4900,7 @@
       "description": "The enemy takes double damage from Attacks this turn.\nExhaust."
     },
     {
-      "name": "A.C.I.D Projector+",
+      "name": "A.C.I.D. Projector+",
       "color": "Into the Breach",
       "rarity": "Uncommon",
       "type": "Skill",
@@ -4612,6 +4924,22 @@
       "description": "Deal 12 damage.\nDeals 2 additional damage for ALL your  created cards."
     },
     {
+      "name": "Adventurer's Sword",
+      "color": "Vexation",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nShuffle a Triangle into your draw pile.\nIf you're at Max HP, enemy loses 3 HP."
+    },
+    {
+      "name": "Adventurer's Sword+",
+      "color": "Vexation",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage.\nShuffle a Triangle into your draw pile.\nIf you're at Max HP, enemy loses 4 HP."
+    },
+    {
       "name": "Agile Strike",
       "color": "Weapons",
       "rarity": "Uncommon",
@@ -4626,22 +4954,6 @@
       "type": "Attack",
       "cost": "1",
       "description": "Deal 13 damage.\nIf you have equipped a anniv5:Weapon this turn, reduce cost of this\ncard to 0."
-    },
-    {
-      "name": "All Seeing",
-      "color": "Eldritch Horror",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "At the end of each turn, Scry 6 and take 3 damage."
-    },
-    {
-      "name": "All Seeing+",
-      "color": "Eldritch Horror",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "At the end of each turn, Scry 8 and take 3 damage."
     },
     {
       "name": "Allocate",
@@ -4737,7 +5049,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "anniv5:Gem.\n\"Channel a Frost\""
+      "description": "anniv5:Gem.\n\"Channel 1 Frost\""
     },
     {
       "name": "Aquamarine+",
@@ -4745,7 +5057,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "anniv5:Gem (2 Uses).\n\"Channel a Frost\""
+      "description": "anniv5:Gem (2 Uses).\n\"Channel 1 Frost\""
     },
     {
       "name": "Aqueducts",
@@ -4785,7 +5097,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "At the start of the next 3 turns, add a random Uncommon or Rare to your hand. It costs 0 and Exhausts."
+      "description": "At the start of the next 3 turns, add a random Uncommon or Rare to your hand. It costs 1 less this combat."
     },
     {
       "name": "Arsenal Gear+",
@@ -4793,7 +5105,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "At the start of the next 4 turns, add a random Uncommon or Rare to your hand. It costs 0 and Exhausts."
+      "description": "At the start of the next 4 turns, add a random Uncommon or Rare to your hand. It costs 1 less this combat."
     },
     {
       "name": "Arson",
@@ -4817,7 +5129,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 2 anniv5:Distortion to ALL enemies.\nanniv5:Amplify [E] : Exhaust a card."
+      "description": "Apply 4 anniv5:Distortion to ALL enemies.\nanniv5:Amplify [E] : Exhaust a card."
     },
     {
       "name": "Astral Fracture+",
@@ -4825,7 +5137,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 3 anniv5:Distortion to ALL enemies.\nanniv5:Amplify [E] : Exhaust a card."
+      "description": "Apply 5 anniv5:Distortion to ALL enemies.\nanniv5:Amplify [E] : Exhaust a card."
     },
     {
       "name": "Attack Vial",
@@ -4897,7 +5209,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Heal 3 HP.\nGain 1 Dexterity.\nPut a Trip on top of your draw pile."
+      "description": "Heal 4 HP.\nGain 1 Dexterity.\nPut a Trip on top of your draw pile."
     },
     {
       "name": "Banana+",
@@ -4905,7 +5217,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Heal 4 HP.\nGain 2 Dexterity.\nPut a Trip on top of your draw pile."
+      "description": "Heal 5 HP.\nGain 2 Dexterity.\nPut a Trip on top of your draw pile."
     },
     {
       "name": "Basic Hit",
@@ -4938,6 +5250,22 @@
       "type": "Power",
       "cost": "0",
       "description": "After you play a card, gain 1 Block for each Upgrade on it."
+    },
+    {
+      "name": "Block-On",
+      "color": "Shock'n'Lock",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nWhenever you are attacked this turn, apply 1 Lock-On back."
+    },
+    {
+      "name": "Block-On+",
+      "color": "Shock'n'Lock",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 11 Block.\nWhenever you are attacked this turn, apply 1 Lock-On back."
     },
     {
       "name": "Blood Ritual",
@@ -5132,6 +5460,22 @@
       "description": "Innate.\nDeal 4 damage.\nApply 4 Vulnerable.\nExhaust."
     },
     {
+      "name": "Chilling Curse",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 anniv5:Frostbite and Weak.\nExhaust."
+    },
+    {
+      "name": "Chilling Curse+",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 3 anniv5:Frostbite and Weak.\nExhaust."
+    },
+    {
       "name": "Choice Cut",
       "color": "Prismatic",
       "rarity": "Uncommon",
@@ -5180,6 +5524,38 @@
       "description": "anniv5:Gem (2 Uses).\n\"Gain [E] next turn\""
     },
     {
+      "name": "Cloud",
+      "color": "Instant Death",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Take 50% less attack damage this turn.\nExhaust a card in your discard pile."
+    },
+    {
+      "name": "Cloud+",
+      "color": "Instant Death",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Take 50% less attack damage this turn.\nExhaust a card in your draw or discard pile."
+    },
+    {
+      "name": "Cobra's Gift",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Poison.\nGain [E].\nExhaust."
+    },
+    {
+      "name": "Cobra's Gift+",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Poison.\nGain [E]."
+    },
+    {
       "name": "Cognition",
       "color": "Cosmos Command",
       "rarity": "Uncommon",
@@ -5210,6 +5586,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "anniv5:Unstable.\nDraw a card.\nGain 7 temporary Strength.\nGain 1 Vulnerable."
+    },
+    {
+      "name": "Colorless Mastery",
+      "color": "Vexation",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you play a Colorless card, gain 1 Strength."
+    },
+    {
+      "name": "Colorless Mastery+",
+      "color": "Vexation",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nWhenever you play a Colorless card, gain 1 Strength."
     },
     {
       "name": "Compound Eyes",
@@ -5265,7 +5657,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "*Magic.\nAdd 3 Magic Missiles to your hand.\nExhaust."
+      "description": "Add 3 Magic Missiles to your hand.\nExhaust."
     },
     {
       "name": "Conjure Barrage+",
@@ -5273,7 +5665,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "*Magic.\nAdd 3 Magic Missiles+ to your hand.\nExhaust."
+      "description": "Add 3 Magic Missiles+ to your hand.\nExhaust."
     },
     {
       "name": "Conjure Defends",
@@ -5290,6 +5682,22 @@
       "type": "Skill",
       "cost": "X",
       "description": "Add a Defend+ to your hand and anniv5:Modify it: \"Play this X times\". Refund 1. Exhaust."
+    },
+    {
+      "name": "Consolidate",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nRemove your first Orb.\nGain 1 Focus."
+    },
+    {
+      "name": "Consolidate+",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove your first Orb.\nGain 1 Focus."
     },
     {
       "name": "Construct",
@@ -5408,7 +5816,7 @@
       "color": "Gate 2: Conjuration",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "6",
+      "cost": "5",
       "description": "Retain.\nDeal 20 damage.\nWhen a card is created, reduce Crusher's cost by 1 until played."
     },
     {
@@ -5416,7 +5824,7 @@
       "color": "Gate 2: Conjuration",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "6",
+      "cost": "5",
       "description": "Retain.\nDeal 25 damage.\nWhen a card is created, reduce Crusher's cost by 1 until played."
     },
     {
@@ -5441,7 +5849,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Manifest 1 random orb.\nExhaust."
+      "description": "anniv5:Manifest 1 random Orb.\nExhaust."
     },
     {
       "name": "Crystal Moonlight+",
@@ -5449,7 +5857,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Manifest 2 random orbs.\nExhaust."
+      "description": "anniv5:Manifest 2 random Orbs.\nExhaust."
     },
     {
       "name": "Crystal Resonance",
@@ -5617,7 +6025,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Shuffle 2 Horses into your draw pile.\nAt the end of your turn, if you played 6 or more cards, gain 1 Strength."
+      "description": "Shuffle 2 Horses into your draw pile.\nAt the end of your turn, if you played 6+ cards, gain 1 Strength."
     },
     {
       "name": "Derby+",
@@ -5625,7 +6033,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Shuffle 3 Horses into your draw pile.\nAt the end of your turn, if you played 6 or more cards, gain 1 Strength."
+      "description": "Shuffle 3 Horses into your draw pile.\nAt the end of your turn, if you played 6+ cards, gain 1 Strength."
     },
     {
       "name": "Destiny Draw",
@@ -5820,6 +6228,38 @@
       "description": "Choose: Gain [E] [E] or Draw 3 cards.\nExhaust."
     },
     {
+      "name": "Eclipse Charm",
+      "color": "Artificer",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nAfter you play an adjacent card 3 times in one turn, gain 1 Strength and Dexterity."
+    },
+    {
+      "name": "Eclipse Charm+",
+      "color": "Artificer",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nAfter you play an adjacent card 3 times, gain 1 Strength and Dexterity."
+    },
+    {
+      "name": "Eldritch Pact",
+      "color": "Eldritch Horror",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, lose 2 anniv5:Sanity.\nWhenever you lose anniv5:Sanity, gain 2 Block."
+    },
+    {
+      "name": "Eldritch Pact+",
+      "color": "Eldritch Horror",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of each turn, lose 3 anniv5:Sanity.\nWhenever you lose anniv5:Sanity, gain 3 Block."
+    },
+    {
       "name": "Elephant",
       "color": "Summoner's Menagerie",
       "rarity": "Uncommon",
@@ -5857,7 +6297,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 12 Block.\nDraw an anniv5:Enchantment card."
+      "description": "Gain 12 Block.\nAdd a copy of the last anniv5:different\u00A0color card played into your hand. Give it Ethereal."
     },
     {
       "name": "Enchanted Rift+",
@@ -5865,7 +6305,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 15 Block.\nDraw 2 anniv5:Enchantment cards."
+      "description": "Gain 15 Block.\nAdd a copy of the last anniv5:different\u00A0color card played into your hand. Give it Ethereal."
     },
     {
       "name": "Enervate",
@@ -5962,6 +6402,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "If you are in a Stance, exit it and draw 4 cards.\nOtherwise, enter anniv5:Aggression."
+    },
+    {
+      "name": "Essence Grasp",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nDraw 1 card for each of anniv5:Ignite, anniv5:Frostbite, and Poison the enemy has."
+    },
+    {
+      "name": "Essence Grasp+",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDraw 1 card for each of anniv5:Ignite, anniv5:Frostbite, and Poison the enemy has."
     },
     {
       "name": "Et Tu?",
@@ -6129,7 +6585,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 10 anniv5:Ruin to ALL enemies.\nNext turn, gain a Madness and lose 1 HP."
+      "description": "Gain 10 Block.\nApply 1 Weak to ALL enemies.\nLose 4 anniv5:Sanity."
     },
     {
       "name": "Familial Curse+",
@@ -6137,7 +6593,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 13 anniv5:Ruin to ALL enemies.\nNext turn, gain a Madness and lose 1 HP."
+      "description": "Gain 10 Block.\nApply 2 Weak to ALL enemies.\nLose 4 anniv5:Sanity."
     },
     {
       "name": "Favor",
@@ -6176,16 +6632,16 @@
       "color": "Pixie",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
-      "description": "Ethereal.\nSkill anniv5:Enchantment.\nDraw a card.\nExhaust."
+      "cost": "1",
+      "description": "Draw 2 cards.\nThe next time you play a anniv5:different\u00A0color Skill this turn, repeat this. Exhaust."
     },
     {
       "name": "Fetch!+",
       "color": "Pixie",
       "rarity": "Uncommon",
       "type": "Skill",
-      "cost": "0",
-      "description": "Skill anniv5:Enchantment.\nDraw a Card."
+      "cost": "1",
+      "description": "Draw 2 cards.\nThe next time you play a anniv5:different\u00A0color Skill this turn, repeat this."
     },
     {
       "name": "Fiery Mantle",
@@ -6209,7 +6665,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 10 Block.\nChannel a anniv5:Fire\u00A0Spirit."
+      "description": "Gain 9 Block.\nChannel 1 anniv5:Fire\u00A0Spirit."
     },
     {
       "name": "Fire Spirit+",
@@ -6217,7 +6673,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 14 Block.\nChannel a anniv5:Fire\u00A0Spirit."
+      "description": "Gain 13 Block.\nChannel 1 anniv5:Fire\u00A0Spirit."
     },
     {
       "name": "Flash Powder",
@@ -6284,6 +6740,22 @@
       "description": "Gain 5 Plated Armor.\nanniv5:Even: Heal 5 HP.\nanniv5:Odd: Gain [E] ."
     },
     {
+      "name": "Fluctuate",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak and Vulnerable to ALL enemies.\nIf you have 3+ unique Orbs, apply 1 more."
+    },
+    {
+      "name": "Fluctuate+",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 1 Weak and Vulnerable to ALL enemies.\nIf you have 3+ unique Orbs, apply 2 more."
+    },
+    {
       "name": "Force Bolt",
       "color": "Warden",
       "rarity": "Uncommon",
@@ -6321,7 +6793,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "anniv5:Gem.\n\"Channel a Lightning\""
+      "description": "anniv5:Gem.\n\"Channel 1 Lightning\""
     },
     {
       "name": "Fragmented Gem+",
@@ -6329,7 +6801,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "anniv5:Gem (2 Uses).\n\"Channel a Lightning\""
+      "description": "anniv5:Gem (2 Uses).\n\"Channel 1 Lightning\""
     },
     {
       "name": "Free Space",
@@ -6394,6 +6866,22 @@
       "type": "Skill",
       "cost": "2",
       "description": "Gain 15 Block.\nDraw 4 cards, discard Unplayable cards drawn."
+    },
+    {
+      "name": "Frost Conversion",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have 3+ unique Orbs, Channel 1 Frost.\nChannel 1 Frost."
+    },
+    {
+      "name": "Frost Conversion+",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "If you have 3+ unique Orbs, Channel 1 Frost and trigger its passive.\nChannel 1 Frost."
     },
     {
       "name": "Frostfire",
@@ -6464,16 +6952,16 @@
       "color": "Eldritch Horror",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "2",
-      "description": "Deal 5 damage 3 times.\nEnter anniv5:Nightmare."
+      "cost": "1",
+      "description": "Deal 5 damage to a random enemy.\nRepeat for each Lunacy played this combat."
     },
     {
       "name": "Gaze the Void+",
       "color": "Eldritch Horror",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "2",
-      "description": "Deal 5 damage 4 times.\nEnter anniv5:Nightmare."
+      "cost": "1",
+      "description": "Deal 8 damage to a random enemy.\nRepeat for each Lunacy played this combat."
     },
     {
       "name": "Geomorphology",
@@ -6492,20 +6980,20 @@
       "description": "Whenever you Exhaust a card or Channel an Orb, apply 1 anniv5:Petra to a random enemy."
     },
     {
-      "name": "Glaciate",
-      "color": "Biting Cold",
+      "name": "Ghost",
+      "color": "Vexation",
       "rarity": "Uncommon",
-      "type": "Power",
+      "type": "Skill",
       "cost": "1",
-      "description": "Whenever you apply anniv5:Frostbite, gain 1 Vigor."
+      "description": "At the end of its turns, enemy loses 12 HP.\nStartup: Disguise this as another card."
     },
     {
-      "name": "Glaciate+",
-      "color": "Biting Cold",
+      "name": "Ghost+",
+      "color": "Vexation",
       "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "0",
-      "description": "Whenever you apply anniv5:Frostbite, gain 1 Vigor."
+      "type": "Skill",
+      "cost": "1",
+      "description": "At the end of its turns, enemy loses 15 HP.\nStartup: Disguise this as another card."
     },
     {
       "name": "Glaive Throw",
@@ -6556,12 +7044,44 @@
       "description": "Deal 64 damage.\nMust be Loaded.\nStartup: Add a Golden Round to your draw pile. "
     },
     {
+      "name": "Grant Swiftness",
+      "color": "Artificer",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nanniv5:Boost adjacent cards:\n\"Draw 1 card\""
+    },
+    {
+      "name": "Grant Swiftness+",
+      "color": "Artificer",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nanniv5:Boost adjacent cards:\n\"Draw 1 card\""
+    },
+    {
       "name": "Gravity",
       "color": "Psychic",
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
       "description": "Ethereal.\nWhenever you draw a anniv5:Locked or Unplayable card, draw a card."
+    },
+    {
+      "name": "Gravity Slam",
+      "color": "Artificer",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 21 damage.\nExhaust adjacent cards."
+    },
+    {
+      "name": "Gravity Slam+",
+      "color": "Artificer",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 26 damage.\nExhaust adjacent cards."
     },
     {
       "name": "Gravity+",
@@ -6586,6 +7106,22 @@
       "type": "Attack",
       "cost": "3",
       "description": "Retain.\nDeal 36 damage.\nIf you have unspent energy at the end of the turn, increase this card's damage by 8 for each."
+    },
+    {
+      "name": "Growing Flames",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 2 anniv5:Ignite to ALL enemies."
+    },
+    {
+      "name": "Growing Flames+",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, apply 3 anniv5:Ignite to ALL enemies."
     },
     {
       "name": "Hail",
@@ -6689,7 +7225,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 10 damage to ALL enemies.\nDeals 2 additional damage for each card played this turn."
+      "description": "Deal 10 damage to ALL enemies.\nDeals 3 additional damage for each card played this turn."
     },
     {
       "name": "Haymaker+",
@@ -6697,7 +7233,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 10 damage to ALL enemies.\nDeals 3 additional damage for each card played this turn."
+      "description": "Deal 12 damage to ALL enemies.\nDeals 4 additional damage for each card played this turn."
     },
     {
       "name": "Hazardous Strike",
@@ -6889,7 +7425,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 3 Block.\nGains double Block if facing an elite or boss."
+      "description": "Gain 4 Block.\nGains double Block if facing an Elite or Boss."
     },
     {
       "name": "Hunter's Instincts+",
@@ -6897,7 +7433,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 4 Block.\nGains double Block if facing an elite or boss."
+      "description": "Gain 6 Block.\nGains double Block if facing an Elite or Boss."
     },
     {
       "name": "Hunting Contract",
@@ -6905,7 +7441,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Innate.\nApply 4 anniv5:Hunted.\nExhaust."
+      "description": "Innate.\nApply 5 anniv5:Hunted.\nExhaust."
     },
     {
       "name": "Hunting Contract+",
@@ -6913,7 +7449,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Innate.\nApply 6 anniv5:Hunted.\nExhaust."
+      "description": "Innate.\nApply 7 anniv5:Hunted.\nExhaust."
     },
     {
       "name": "Ice Beast",
@@ -6938,6 +7474,22 @@
       "type": "Attack",
       "cost": "3",
       "description": "Gain 20 Block.\nDeal 10 damage.\nanniv5:Evolves when you gain Block."
+    },
+    {
+      "name": "Ice Shatter",
+      "color": "Biting Cold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 damage.\nWhenever the enemy loses HP during their next turn, deal 8 damage."
+    },
+    {
+      "name": "Ice Shatter+",
+      "color": "Biting Cold",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nWhenever the enemy loses HP during their next turn, deal 11 damage."
     },
     {
       "name": "Ichor Goblet",
@@ -6972,22 +7524,6 @@
       "description": "Deal 17 damage.\nChannel 1 Frost for each empty Orb slot."
     },
     {
-      "name": "Icicle Spear",
-      "color": "Biting Cold",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 5 damage.\nApply 5 anniv5:Frostbite."
-    },
-    {
-      "name": "Icicle Spear+",
-      "color": "Biting Cold",
-      "rarity": "Uncommon",
-      "type": "Attack",
-      "cost": "1",
-      "description": "Deal 7 damage.\nApply 7 anniv5:Frostbite."
-    },
-    {
       "name": "Icy Floe",
       "color": "Go With The Flow",
       "rarity": "Uncommon",
@@ -7002,6 +7538,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "anniv5:Flow.\nNext turn,\ngain [E] [E] [E]."
+    },
+    {
+      "name": "Ignition",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nChannel 1 anniv5:Blaze."
+    },
+    {
+      "name": "Ignition+",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies.\nChannel 1 anniv5:Blaze."
     },
     {
       "name": "Improve",
@@ -7041,7 +7593,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage and apply 10 anniv5:Ignite to ALL enemies.\nGain 2 anniv5:Ignite."
+      "description": "Deal 8 damage and apply 4 anniv5:Ignite to ALL enemies.\nAdd 2 Burns to your hand."
     },
     {
       "name": "Inferno+",
@@ -7049,7 +7601,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage and apply 10 anniv5:Ignite to ALL enemies.\nGain 1 anniv5:Ignite."
+      "description": "Deal 10 damage and apply 5 anniv5:Ignite to ALL enemies.\nAdd 2 Burns to your hand."
     },
     {
       "name": "Infinite Claws",
@@ -7276,6 +7828,22 @@
       "description": "Deal 12 damage.\nGain Temporary_HP for half the unblocked damage dealt."
     },
     {
+      "name": "Lightning Rod",
+      "color": "Shock'n'Lock",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lightning targets this enemy for 1 turn.\nChannel a Lightning."
+    },
+    {
+      "name": "Lightning Rod+",
+      "color": "Shock'n'Lock",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lightning targets this enemy for 2 turns.\nChannel a Lightning."
+    },
+    {
       "name": "Like Clockwork",
       "color": "Bellord",
       "rarity": "Uncommon",
@@ -7340,6 +7908,22 @@
       "description": "Deal 7 damage.\nanniv5:Amplify [E] : Gain 6 anniv5:Charge\u00A0Up."
     },
     {
+      "name": "Lunch Box",
+      "color": "Vexation",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nYour next Colorless card this turn is played twice.\nanniv5:Pickup: Heal 3 HP."
+    },
+    {
+      "name": "Lunch Box+",
+      "color": "Vexation",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nYour next Colorless card this turn is played twice.\nanniv5:Pickup: Heal 3 HP."
+    },
+    {
       "name": "Magnet",
       "color": "Thief, the Deceiver",
       "rarity": "Uncommon",
@@ -7393,7 +7977,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 5 damage X times.\nShuffle a Food into your draw pile."
+      "description": "Deal 6 damage X times.\nShuffle a Food into your draw pile."
     },
     {
       "name": "Manifest Meal+",
@@ -7401,7 +7985,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 7 damage X times.\nShuffle a Food into your draw pile."
+      "description": "Deal 7 damage X times.\nShuffle a Food+ into your draw pile."
     },
     {
       "name": "Marvelous Feast",
@@ -7484,6 +8068,22 @@
       "description": "Gain 15 Block X times.\nPut X Dazed on top of your draw pile."
     },
     {
+      "name": "Mirror",
+      "color": "Instant Death",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put a copy of the top card of your draw pile into your hand."
+    },
+    {
+      "name": "Mirror+",
+      "color": "Instant Death",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Put a copy of the top card of your draw pile into your hand."
+    },
+    {
       "name": "Mood Swing",
       "color": "Sentinel",
       "rarity": "Uncommon",
@@ -7505,7 +8105,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "anniv5:Inscribed.\nDeal 7 damage to a random enemy for each channeled orb."
+      "description": "anniv5:Inscribed.\nDeal 7 damage to a random enemy for each channeled Orb."
     },
     {
       "name": "Moonlight Barrage+",
@@ -7513,7 +8113,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "anniv5:Inscribed.\nDeal 9 damage to a random enemy for each channeled orb."
+      "description": "anniv5:Inscribed.\nDeal 9 damage to a random enemy for each channeled Orb."
     },
     {
       "name": "More Explosions!",
@@ -7521,7 +8121,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Shuffle 2 random Powers into your draw pile."
+      "description": "Draw 1 card.\nShuffle 1 random Power into your draw pile."
     },
     {
       "name": "More Explosions!+",
@@ -7529,7 +8129,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Shuffle 3 random Powers into your draw pile."
+      "description": "Draw 2 cards.\nShuffle 2 random Powers into your draw pile."
     },
     {
       "name": "Muscle Memory",
@@ -7548,12 +8148,28 @@
       "description": "Choose a card in your draw pile. Add a copy of it to your hand.\nExhaustive 2."
     },
     {
+      "name": "Nail",
+      "color": "Instant Death",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nIf this card is Exhausted, gain 6 anniv5:Precision."
+    },
+    {
+      "name": "Nail+",
+      "color": "Instant Death",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 8 damage.\nIf this card is Exhausted, gain 8 anniv5:Precision."
+    },
+    {
       "name": "Neutron Star",
       "color": "Pixie",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Ethereal.\nAttack anniv5:Enchantment.\nGain 2 Strength\nthis turn.\nExhaust."
+      "description": "Gain 3 Temporary Strength.\nThe next time you play a anniv5:different\u00A0color attack this turn, repeat this. Exhaust."
     },
     {
       "name": "Neutron Star+",
@@ -7561,7 +8177,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Attack anniv5:Enchantment.\nGain 3 Strength\nthis turn."
+      "description": "Gain 3 Temporary Strength.\nThe next time you play a anniv5:different\u00A0color attack this turn, repeat this."
     },
     {
       "name": "Novile",
@@ -7724,22 +8340,6 @@
       "description": "Whenever you deal unblocked attack damage, gain 3 Block."
     },
     {
-      "name": "Ouroboros",
-      "color": "Gate 3: Life & Death",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "At the end of each turn, if you fully blocked any source of damage, gain 1 Strength."
-    },
-    {
-      "name": "Ouroboros+",
-      "color": "Gate 3: Life & Death",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "Innate.\nAt the end of each turn, if you fully blocked any source of damage, gain 1 Strength."
-    },
-    {
       "name": "Out To Market",
       "color": "Farmer",
       "rarity": "Uncommon",
@@ -7761,7 +8361,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain a Necronomicurse.\nThe next Attack you play that costs 2 or more is played twice."
+      "description": "Lose 5 anniv5:Sanity.\nAdd a random Attack that costs 2 to your hand."
     },
     {
       "name": "Page of the Dead+",
@@ -7769,7 +8369,23 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "The next Attack you play that costs 2 or more is played twice."
+      "description": "Lose 5 anniv5:Sanity.\nAdd a random Upgraded Attack that costs 2 to your hand."
+    },
+    {
+      "name": "Paintcan",
+      "color": "Pixie",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage to a random enemy.\nCards in your hand become a anniv5:different\u00A0color."
+    },
+    {
+      "name": "Paintcan+",
+      "color": "Pixie",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage to a random enemy.\nCards in your hand become a anniv5:different\u00A0color."
     },
     {
       "name": "Panacher",
@@ -7857,7 +8473,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nIf your Block is broken exactly this turn, gain 2 Strength."
+      "description": "Gain 7 Block.\nIf your Block is broken exactly this turn, gain 4 Strength."
     },
     {
       "name": "Perfect Dodge+",
@@ -7865,7 +8481,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 9 Block.\nIf your Block is broken exactly this turn, gain 2 Strength."
+      "description": "Gain 10 Block.\nIf your Block is broken exactly this turn, gain 4 Strength."
     },
     {
       "name": "Phantom Step",
@@ -8017,7 +8633,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 1 Orb slot and 1 Focus.\nWhenever you Channel an Orb, trigger its passive ability."
+      "description": "Gain 1 Orb slot.\nGain 1 Focus.\nWhenever you Channel an Orb, trigger its passive ability."
     },
     {
       "name": "Prime Directive",
@@ -8041,7 +8657,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 2 Orb slots and 1 Focus.\nWhenever you Channel an Orb, trigger its passive ability."
+      "description": "Gain 2 Orb slots.\nGain 1 Focus.\nWhenever you Channel an Orb, trigger its passive ability."
     },
     {
       "name": "Pyromastery",
@@ -8096,7 +8712,7 @@
       "color": "Prismatic",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "1",
+      "cost": "2",
       "description": "The first time you play each color of card this combat, gain 1 Strength and 1 Dexterity."
     },
     {
@@ -8105,7 +8721,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Innate.\nThe first time you play each color of card this combat, gain 1 Strength and 1 Dexterity."
+      "description": "The first time you play each color of card this combat, gain 1 Strength and 1 Dexterity."
     },
     {
       "name": "Rainbow Louse",
@@ -8113,7 +8729,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Channel a anniv5:Rainbow\u00A0Louse."
+      "description": "Channel 1 anniv5:Rainbow\u00A0Louse."
     },
     {
       "name": "Rainbow Louse+",
@@ -8121,7 +8737,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Channel a anniv5:Rainbow\u00A0Louse.\nDraw 1 card."
+      "description": "Channel 1 anniv5:Rainbow\u00A0Louse.\nDraw 1 card."
     },
     {
       "name": "Ranger's Setup",
@@ -8144,16 +8760,16 @@
       "color": "Meta",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "1",
-      "description": "*Magic.\nDeal 7 damage.\nWhenever you play a Magic card this turn, Channel 1 Frost."
+      "cost": "0",
+      "description": "Deal 4 damage.\nanniv5:Amplify [E] : Channel 1 Frost."
     },
     {
       "name": "Ray Of Frost+",
       "color": "Meta",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "1",
-      "description": "*Magic.\nDeal 10 damage.\nWhenever you play a Magic card this turn, Channel 1 Frost."
+      "cost": "0",
+      "description": "Deal 7 damage.\nanniv5:Amplify [E] : Channel 1 Frost."
     },
     {
       "name": "Rebound Volley",
@@ -8178,6 +8794,22 @@
       "type": "Attack",
       "cost": "1",
       "description": "Deal 9 damage.\nDeal 18 damage to a random other enemy."
+    },
+    {
+      "name": "Reiji",
+      "color": "Shock'n'Lock",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nApply 3 Lock-On.\nExhaust."
+    },
+    {
+      "name": "Reiji+",
+      "color": "Shock'n'Lock",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nApply 3 Lock-On.\nIf the target already had Lock-On, gain 1 Focus.\nExhaust."
     },
     {
       "name": "Rein In",
@@ -8281,7 +8913,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "ALL enemies lose 13 HP.\nanniv5:Pickup: Obtain a Curse of the Bell."
+      "description": "ALL enemies lose 13 HP.\nDraw 1 card.\nanniv5:Pickup: Obtain a Curse of the Bell."
     },
     {
       "name": "Ring the Bell+",
@@ -8289,7 +8921,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "ALL enemies lose 17 HP.\nanniv5:Pickup: Obtain a Curse of the Bell."
+      "description": "ALL enemies lose 17 HP.\nDraw 1 card.\nanniv5:Pickup: Obtain a Curse of the Bell."
     },
     {
       "name": "Ruinous Portent",
@@ -8313,7 +8945,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Take 5 damage.\nChannel 2 Lightning"
+      "description": "Take 5 damage.\nChannel 2 Lightning."
     },
     {
       "name": "Sacred Trial+",
@@ -8321,7 +8953,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Take 2 damage.\nChannel 2 Lightning"
+      "description": "Take 2 damage.\nChannel 2 Lightning."
     },
     {
       "name": "Scarab Shield",
@@ -8441,7 +9073,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.\nChannel anniv5:Light"
+      "description": "Gain 8 Block.\nChannel 1 anniv5:Light."
     },
     {
       "name": "Searing Light+",
@@ -8449,7 +9081,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 11 Block.\nChannel anniv5:Light"
+      "description": "Gain 11 Block.\nChannel 1 anniv5:Light."
     },
     {
       "name": "Seeds of Destruction",
@@ -8705,7 +9337,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 6 Block.\nChoose a non-Power card that costs 1 or 0.\nAdd a copy of that card into your hand."
+      "description": "Gain 6 Block.\nChoose a non-Power card that costs 0 or 1.\nAdd a copy of that card into your hand."
     },
     {
       "name": "Small Adaptation+",
@@ -8713,7 +9345,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.\nChoose a non-Power card that costs 1 or 0.\nAdd a copy of that card into your hand."
+      "description": "Gain 8 Block.\nChoose a non-Power card that costs 0 or 1.\nAdd a copy of that card into your hand."
     },
     {
       "name": "Smoke Pellets",
@@ -8801,7 +9433,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 13 anniv5:Frostbite.\nThe enemy's anniv5:Frostbite is not halved this turn.\nExhaust."
+      "description": "Apply 11 anniv5:Frostbite.\nThe enemy's anniv5:Frostbite is not halved this turn."
     },
     {
       "name": "Snowed In+",
@@ -8809,7 +9441,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 17 anniv5:Frostbite.\nThe enemy's anniv5:Frostbite is not halved this turn.\nExhaust."
+      "description": "Apply 14 anniv5:Frostbite.\nThe enemy's anniv5:Frostbite is not halved this turn."
     },
     {
       "name": "Sow The Seeds",
@@ -8881,7 +9513,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 2 Thorns.\nGain 3 Ablation."
+      "description": "Ethereal.\nGain 2 Thorns.\nGain 2 Ablation.\nShuffle a copy of this into your draw pile."
     },
     {
       "name": "Spreading Spores+",
@@ -8889,7 +9521,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 2 Thorns.\nGain 5 Ablation."
+      "description": "Gain 2 Thorns.\nGain 2 Ablation.\nShuffle a copy of this into your draw pile."
     },
     {
       "name": "Square",
@@ -9068,6 +9700,22 @@
       "description": "ALL enemies lose HP equal to 2 times their anniv5:Distortion.\nExhaust."
     },
     {
+      "name": "Suffer",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 anniv5:Ignite, anniv5:Frostbite, Poison, and anniv5:Jinx.\nExhaust."
+    },
+    {
+      "name": "Suffer+",
+      "color": "Calamity",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 anniv5:Ignite, anniv5:Frostbite, Poison, and anniv5:Jinx.\nExhaust."
+    },
+    {
       "name": "Talk to the Claw",
       "color": "Claw Pack",
       "rarity": "Uncommon",
@@ -9153,7 +9801,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Discard a card. Draw cards equal to its cost.\nExhaust."
+      "description": "Gain 3 Block.\nDiscard a card. Draw cards equal to its cost.\nExhaust."
     },
     {
       "name": "The Hermit+",
@@ -9161,7 +9809,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Discard a card. Draw cards equal to its cost."
+      "description": "Gain 3 Block.\nDiscard a card. Draw cards equal to its cost."
     },
     {
       "name": "The Tower",
@@ -9194,6 +9842,22 @@
       "type": "Attack",
       "cost": "3",
       "description": "Deal 15 damage to a random enemy for each living enemy.\nCosts 1 less [E]\nfor each living enemy."
+    },
+    {
+      "name": "Thread",
+      "color": "Instant Death",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nDraw a Skill.\nShuffle this card into your draw pile."
+    },
+    {
+      "name": "Thread+",
+      "color": "Instant Death",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies.\nDraw a Skill.\nShuffle this card into your draw pile."
     },
     {
       "name": "Time Out",
@@ -9468,12 +10132,28 @@
       "description": "Draw 4 cards.\nanniv5:Echo.\nExhaust."
     },
     {
+      "name": "Void Engine",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Focus.\nGain 1 Orb Slot.\nShuffle a Void into your draw pile."
+    },
+    {
+      "name": "Void Engine+",
+      "color": "Spheres",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 1 Focus.\nGain 1 Orb Slot.\nAdd a Void to your discard pile."
+    },
+    {
       "name": "Wanderbots",
       "color": "For The Content",
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 6 Block.\nChannel a anniv5:Wanderbot."
+      "description": "Gain 6 Block.\nChannel 1 anniv5:Wanderbot."
     },
     {
       "name": "Wanderbots+",
@@ -9481,7 +10161,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Inscribed.\nGain 6 Block.\nChannel a anniv5:Wanderbot."
+      "description": "anniv5:Inscribed.\nGain 6 Block.\nChannel 1 anniv5:Wanderbot."
     },
     {
       "name": "War Song",
@@ -9546,6 +10226,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Draw 4 cards.\nAdd a Dazed to your hand."
+    },
+    {
+      "name": "White Steel Charm",
+      "color": "Artificer",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you play an adjacent card, a random enemy takes 4 damage."
+    },
+    {
+      "name": "White Steel Charm+",
+      "color": "Artificer",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you play an adjacent card, a random enemy takes 6 damage."
     },
     {
       "name": "Windup Bomb",
@@ -9617,7 +10313,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 5 anniv5:Penance.\nWhenever a creature is damaged by anniv5:Penance this turn apply 2 Weak."
+      "description": "Apply 5 anniv5:Penance.\nWhenever a creature is damaged by anniv5:Penance this turn, apply 2 Weak."
     },
     {
       "name": "Absolution+",
@@ -9625,7 +10321,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Apply 8 anniv5:Penance.\nWhenever a creature is damaged by anniv5:Penance this turn apply 2 Weak."
+      "description": "Apply 8 anniv5:Penance.\nWhenever a creature is damaged by anniv5:Penance this turn, apply 2 Weak."
     },
     {
       "name": "Achievement Hunter",
@@ -9692,6 +10388,22 @@
       "description": "Deal 40 damage.\nDraw 4 cards.\nGain 4 [E] .\nSkip your next turn.\nExhaust."
     },
     {
+      "name": "All is Fire",
+      "color": "Calamity",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Convert all anniv5:Frostbite and Poison to anniv5:Ignite.\nIncrease the enemy's anniv5:Ignite by 50%.\nExhaustive 2."
+    },
+    {
+      "name": "All is Fire+",
+      "color": "Calamity",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Convert all anniv5:Frostbite and Poison to anniv5:Ignite.\nDouble the enemy's anniv5:Ignite.\nExhaustive 2."
+    },
+    {
       "name": "Amalgamate Waters",
       "color": "Transmutation",
       "rarity": "Rare",
@@ -9713,7 +10425,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Whenever you Channel an Orb, Evoke it without removing it."
+      "description": "Ethereal.\nWhenever you Channel an Orb, Evoke it without removing it."
     },
     {
       "name": "Ambush+",
@@ -9721,7 +10433,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Innate.\nWhenever you Channel an Orb, Evoke it without removing it."
+      "description": "Whenever you Channel an Orb, Evoke it without removing it."
     },
     {
       "name": "Animosity",
@@ -9740,6 +10452,22 @@
       "description": "When you enter, exit, or start your turn in anniv5:Aggression, gain 2 Strength."
     },
     {
+      "name": "Another Moment",
+      "color": "Instant Death",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Ethereal.\nThe first time you play a Skill each turn, Exhaust it and gain 1 Dexterity."
+    },
+    {
+      "name": "Another Moment+",
+      "color": "Instant Death",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "The first time you play a Skill each turn, Exhaust it and gain 1 Dexterity."
+    },
+    {
       "name": "Apex",
       "color": "Intrigue",
       "rarity": "Rare",
@@ -9754,6 +10482,38 @@
       "type": "Skill",
       "cost": "1",
       "description": "If all cards in hand are anniv5:Precious, anniv5:Ascend. anniv5:Demote all cards in hand to common."
+    },
+    {
+      "name": "Arcing Energy",
+      "color": "Cosmos Command",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time a card is anniv5:Amplified each turn, gain [E] ."
+    },
+    {
+      "name": "Arcing Energy+",
+      "color": "Cosmos Command",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "The first time a card is anniv5:Amplified each turn, gain [E] ."
+    },
+    {
+      "name": "Armor of Malice",
+      "color": "Calamity",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain Block equal to 3 times the number of unique debuffs on ALL enemies."
+    },
+    {
+      "name": "Armor of Malice+",
+      "color": "Calamity",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain Block equal to 4 times the number of unique debuffs on ALL enemies."
     },
     {
       "name": "Arrow Storm",
@@ -9900,6 +10660,22 @@
       "description": "Retain.\nPut a card from your discard pile into your hand. If it was not a anniv5:Basic card, Exhaust."
     },
     {
+      "name": "Battle Focus",
+      "color": "Artificer",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, discard up to 2 cards and draw that many."
+    },
+    {
+      "name": "Battle Focus+",
+      "color": "Artificer",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your turn, discard up to 3 cards and draw that many."
+    },
+    {
       "name": "Battle Prep",
       "color": "Grand Opening",
       "rarity": "Rare",
@@ -9980,12 +10756,28 @@
       "description": "Deal 6 damage twice.\nVigor and anniv5:Dice affect this card 3 times."
     },
     {
+      "name": "Bruteforce",
+      "color": "Shock'n'Lock",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Evoke your rightmost Lightning 2 times hitting ALL enemies\nExhaust."
+    },
+    {
+      "name": "Bruteforce+",
+      "color": "Shock'n'Lock",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Evoke your rightmost Lightning 2 times hitting ALL enemies."
+    },
+    {
       "name": "Bulwark",
       "color": "Meta",
       "rarity": "Rare",
       "type": "Skill",
       "cost": "3",
-      "description": "Innate.\nGain Temporary HP equal to your draw pile size.\nExhaust."
+      "description": "Innate.\nGain Temporary_HP equal to your draw pile size.\nExhaust."
     },
     {
       "name": "Bulwark+",
@@ -9993,7 +10785,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Innate.\nGain Temporary HP equal to your draw pile size.\nExhaust."
+      "description": "Innate.\nGain Temporary_HP equal to your draw pile size.\nExhaust."
     },
     {
       "name": "Burning Passion",
@@ -10026,6 +10818,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Add a Despair to your hand. The next card you play costs 0 and plays twice.\nExhaust."
+    },
+    {
+      "name": "Chaos Generator",
+      "color": "Spheres",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, Channel 1 random Orb."
+    },
+    {
+      "name": "Chaos Generator+",
+      "color": "Spheres",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, Channel 2 random Orbs."
     },
     {
       "name": "Chaos Vial",
@@ -10074,6 +10882,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "anniv5:Modify a card in your draw pile: \"Costs 0\"\nanniv5:Amplify [E] : Don't Exhaust."
+    },
+    {
+      "name": "Chronobooster",
+      "color": "Artificer",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you play an adjacent card, play it twice and Exhaust this."
+    },
+    {
+      "name": "Chronobooster+",
+      "color": "Artificer",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhenever you play an adjacent card, play it twice and discard this."
     },
     {
       "name": "Claw For One",
@@ -10138,6 +10962,22 @@
       "type": "Power",
       "cost": "0",
       "description": "Innate.\nWhenever you play a card, Upgrade it and ALL copies of it."
+    },
+    {
+      "name": "Cosmic Converter",
+      "color": "Pixie",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Ethereal.\nAt the start of your turn, add a anniv5:different\u00A0color card of the same type and cost as the last card played into your hand."
+    },
+    {
+      "name": "Cosmic Converter+",
+      "color": "Pixie",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Ethereal.\nAt the start of your turn, add a anniv5:different\u00A0color card of the same type and cost as the last card played into your hand."
     },
     {
       "name": "Crystallize",
@@ -10209,7 +11049,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "0-cost Exhaust cards are played an additional time."
+      "description": "When you create a non-Shiv card, create and play a Shiv on a random target."
     },
     {
       "name": "Daggerstorm+",
@@ -10217,7 +11057,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "0-cost Exhaust cards are played an additional time."
+      "description": "When you create a non-Shiv card, create and play a Shiv on a random target."
     },
     {
       "name": "Dark of Night",
@@ -10481,7 +11321,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "At end of turn, Channel a Dark for each [E] unspent."
+      "description": "At end of turn, Channel 1 Dark for each [E] unspent."
     },
     {
       "name": "End of Days+",
@@ -10489,7 +11329,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 2 Focus.\nAt end of turn, Channel a Dark for each [E] unspent."
+      "description": "Gain 2 Focus.\nAt end of turn, Channel 1 Dark for each [E] unspent."
     },
     {
       "name": "Energy Drink",
@@ -10593,7 +11433,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "At the end of your turn, anniv5:Freeze the highest-cost card in your hand."
+      "description": "At the end of your turn, anniv5:Freeze the highest-cost card in your hand and reduce its cost by 1."
     },
     {
       "name": "Extended Stall+",
@@ -10601,7 +11441,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Innate.\nAt the end of your turn, anniv5:Freeze the highest-cost card in your hand."
+      "description": "Innate.\nAt the end of your turn, anniv5:Freeze the highest-cost card in your hand and reduce its cost by 1."
     },
     {
       "name": "FF Blade",
@@ -10639,17 +11479,17 @@
       "name": "Fast Hands",
       "color": "Pixie",
       "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "After playing a anniv5:different\u00A0color card, draw a card."
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nPut a random anniv5:different\u00A0color card from your draw pile into your hand. Exhaust."
     },
     {
       "name": "Fast Hands+",
       "color": "Pixie",
       "rarity": "Rare",
-      "type": "Power",
-      "cost": "1",
-      "description": "After playing a anniv5:different\u00A0color card, draw a card and reduce its cost by 1 this turn."
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nPut a random anniv5:different\u00A0color card from your draw pile into your hand."
     },
     {
       "name": "Firewall",
@@ -10732,6 +11572,22 @@
       "description": "Apply 20 anniv5:Frostbite to ALL enemies.\nAdd a Burn into your discard pile."
     },
     {
+      "name": "Frosted Edge",
+      "color": "Biting Cold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply anniv5:Frostbite, gain 1 Temporary Strength."
+    },
+    {
+      "name": "Frosted Edge+",
+      "color": "Biting Cold",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Whenever you apply anniv5:Frostbite, gain 2 Temporary Strength."
+    },
+    {
       "name": "Frozen Capsule",
       "color": "Transmutation",
       "rarity": "Rare",
@@ -10746,6 +11602,22 @@
       "type": "Attack",
       "cost": "1",
       "description": "anniv5:Mutable: Deal 8 damage.\nanniv5:Mutable: When anniv5:Transmuted, draw 2 cards."
+    },
+    {
+      "name": "Frozen Magma",
+      "color": "Spheres",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 1 anniv5:Polar.\nChannel 1 Frost.\nChannel 1 anniv5:Blaze.\nExhaust."
+    },
+    {
+      "name": "Frozen Magma+",
+      "color": "Spheres",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Channel 1 anniv5:Polar.\nChannel 1 Frost.\nChannel 1 anniv5:Blaze."
     },
     {
       "name": "Frozen Snack",
@@ -10892,28 +11764,12 @@
       "description": "Take 1 damage.\nReturn this from the discard pile to your hand whenever you gain anniv5:Confession."
     },
     {
-      "name": "Horizonbound",
-      "color": "Pixie",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "Ethereal.\nanniv5:Different\u00A0color cards cost 1 less for each other anniv5:different\u00A0color card played this turn."
-    },
-    {
-      "name": "Horizonbound+",
-      "color": "Pixie",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "anniv5:Different\u00A0color cards cost 1 less for each other anniv5:different\u00A0color card played this turn."
-    },
-    {
       "name": "Hunter Rank",
       "color": "Monster Hunter",
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 1 Strength. Increases by 1 for each Elite and Boss enemy you've defeated."
+      "description": "Gain 1 Strength.\nIncreases by 1 for each Elite and Boss enemy you've defeated."
     },
     {
       "name": "Hunter Rank+",
@@ -10921,7 +11777,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 1 Strength. Increases by 1 for each Elite and Boss enemy you've defeated."
+      "description": "Gain 1 Strength.\nIncreases by 1 for each Elite and Boss enemy you've defeated."
     },
     {
       "name": "Invincible",
@@ -10945,7 +11801,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "anniv5:Manifest 2 Lightning.\nWhenever a Lightning orbs passive effect activates gain 2 anniv5:Confession."
+      "description": "anniv5:Manifest 2 Lightning.\nWhenever a Lightning orbs passive effect activates, gain 2 anniv5:Confession."
     },
     {
       "name": "Judgement Day+",
@@ -10953,7 +11809,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "anniv5:Manifest 3 Lightning.\nWhenever a Lightning orbs passive effect activates gain 2 anniv5:Confession."
+      "description": "anniv5:Manifest 3 Lightning.\nWhenever a Lightning orbs passive effect activates, gain 2 anniv5:Confession."
     },
     {
       "name": "Killer Instinct",
@@ -10977,7 +11833,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Pick a card in your hand. Whenever you play it, deal 10 damage to ALL enemies."
+      "description": "Pick a card in your hand. Whenever you play it, deal 8 damage to ALL enemies."
     },
     {
       "name": "Killer Queen+",
@@ -10985,7 +11841,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Pick a card in your hand. Whenever you play it, deal 15 damage to ALL enemies."
+      "description": "Pick a card in your hand. Whenever you play it, deal 12 damage to ALL enemies."
     },
     {
       "name": "Knighthood",
@@ -11009,7 +11865,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable anniv5:Gem.\n\"Card gains anniv5:Occult\""
+      "description": "anniv5:Occult.\nUnplayable anniv5:Gem.\n\"Card gains anniv5:Occult\""
     },
     {
       "name": "Lapis Lazuli+",
@@ -11017,7 +11873,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "",
-      "description": "anniv5:Gem (2 Uses).\n\"Card gains anniv5:Occult\""
+      "description": "anniv5:Occult.\nanniv5:Gem (2 Uses).\n\"Card gains anniv5:Occult\""
     },
     {
       "name": "Last Gasp",
@@ -11084,6 +11940,22 @@
       "description": "Gain 2 anniv5:Advantage.\nRoll 2 anniv5:D6."
     },
     {
+      "name": "Lights Out",
+      "color": "Shock'n'Lock",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Replace your Lightning with Dark.\nExhaust."
+    },
+    {
+      "name": "Lights Out+",
+      "color": "Shock'n'Lock",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Evoke your Lightning and Channel Dark for each Lightning Evoked.\nExhaust."
+    },
+    {
       "name": "Lord of the Flies",
       "color": "The Swarm",
       "rarity": "Rare",
@@ -11146,6 +12018,22 @@
       "type": "Power",
       "cost": "3",
       "description": "Raise your Strength\nto 11."
+    },
+    {
+      "name": "MC Reality",
+      "color": "Vexation",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "You know the drill;\nwhen you make a card,\ngive it an upgrade\nfor working so hard!"
+    },
+    {
+      "name": "MC Reality+",
+      "color": "Vexation",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate, that's great!\nYou know the drill;\nwhen you make a card,\ngive it an upgrade\nfor working so hard!"
     },
     {
       "name": "Magic Hand",
@@ -11225,7 +12113,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 12 damage X times.\nAdd a Molded Fire that costs X to your draw pile.\nExhaust."
+      "description": "Deal 12 damage X times.\nAdd a Molded Fire+ that costs X to your draw pile.\nExhaust."
     },
     {
       "name": "Many as One",
@@ -11420,12 +12308,28 @@
       "description": "Innate.\nWhenever you draw a card, gain 1 Block."
     },
     {
+      "name": "Mirror's Curse",
+      "color": "Artificer",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 7 damage.\nanniv5:Modify adjacent cards: \"Play a copy of Mirror's Curse.\"\nExhaust."
+    },
+    {
+      "name": "Mirror's Curse+",
+      "color": "Artificer",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nanniv5:Modify adjacent cards: \"Play a copy of Mirror's Curse.\"\nExhaust."
+    },
+    {
       "name": "Moonlight Flight",
       "color": "Witches Strike",
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Whenever you channel an orb gain 3 Focus until your next turn."
+      "description": "Whenever you channel an Orb, gain 3 Focus until your next turn."
     },
     {
       "name": "Moonlight Flight+",
@@ -11433,7 +12337,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Whenever you channel an orb gain 4 Focus until your next turn."
+      "description": "Whenever you channel an Orb, gain 4 Focus until your next turn."
     },
     {
       "name": "Mutate Claw",
@@ -11490,6 +12394,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "anniv5:Gem (2 Uses).\n\"Draw a card\""
+    },
+    {
+      "name": "Ouroboros",
+      "color": "Gate 3: Life & Death",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "The first time you fully block\u00A0any source of damage each turn, gain 1 Strength."
+    },
+    {
+      "name": "Ouroboros+",
+      "color": "Gate 3: Life & Death",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Innate.\nThe first time you fully block\u00A0any source of damage each turn, gain 1 Strength."
     },
     {
       "name": "Over Time",
@@ -11585,7 +12505,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 2 anniv5:Hunted.\nRetain 1 card this turn."
+      "description": "Apply 3 anniv5:Hunted.\nRetain 1 card this turn."
     },
     {
       "name": "Paintball+",
@@ -11593,7 +12513,23 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Apply 3 anniv5:Hunted.\nRetain 2 cards this turn."
+      "description": "Apply 4 anniv5:Hunted.\nRetain 2 cards this turn."
+    },
+    {
+      "name": "Path to Victory",
+      "color": "Instant Death",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put any number of cards from your hand on top of your draw pile and gain 3 anniv5:Precision for each."
+    },
+    {
+      "name": "Path to Victory+",
+      "color": "Instant Death",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put any number of cards from your hand on top of your draw pile and gain 4 anniv5:Precision for each."
     },
     {
       "name": "Pest Control",
@@ -11696,7 +12632,7 @@
       "color": "RimWorld",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "1",
+      "cost": "2",
       "description": "At the start of your turn, set a random card in your hand anniv5:On_Fire."
     },
     {
@@ -11704,7 +12640,7 @@
       "color": "RimWorld",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "1",
+      "cost": "2",
       "description": "Innate.\nAt the start of your turn, set a random card in your hand anniv5:On_Fire."
     },
     {
@@ -11713,7 +12649,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Put EVERYONE to sleep. Next turn, gain 3 Madness and lose 3 HP.\nExhaust."
+      "description": "Go to sleep (end your turn). Next turn, gain 15 Temporary_HP, gain\n[E] [E] [E] , and enter anniv5:Nightmare. Exhaust."
     },
     {
       "name": "R'lyeh Fhtagn+",
@@ -11721,7 +12657,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Put EVERYONE to sleep. Next turn, gain 3 Madness+ and lose 3 HP.\nExhaust."
+      "description": "Go to sleep (end your turn). Next turn, gain 20 Temporary_HP, gain\n[E] [E] [E] , and enter anniv5:Nightmare. Exhaust."
     },
     {
       "name": "R. Detonation",
@@ -11729,7 +12665,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Heal 8 HP.\nEnemy loses twice the amount of HP gained.\nExhaust."
+      "description": "Heal 10 HP.\nEnemy loses twice the amount of HP gained.\nExhaust."
     },
     {
       "name": "R. Detonation+",
@@ -11737,7 +12673,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Heal 8 HP.\nEnemy loses three times the amount of HP gained.\nExhaust."
+      "description": "Heal 10 HP.\nEnemy loses three times the amount of HP gained.\nExhaust."
     },
     {
       "name": "Radiance",
@@ -11820,22 +12756,6 @@
       "description": "Draw 4 cards.\nScry 2.\nShuffle a Fading Ember into your draw pile."
     },
     {
-      "name": "Recall",
-      "color": "Cosmos Command",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "3",
-      "description": "The first time a card is anniv5:Amplified each turn, put a card from your Exhaust pile into your hand. It gains stslib:Purge."
-    },
-    {
-      "name": "Recall+",
-      "color": "Cosmos Command",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "The first time a card is anniv5:Amplified each turn, put a card from your Exhaust pile into your hand. It gains stslib:Purge."
-    },
-    {
       "name": "Recurrence",
       "color": "Warden",
       "rarity": "Rare",
@@ -11888,16 +12808,16 @@
       "color": "Biting Cold",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "3",
-      "description": "Deal 4 damage 5 times."
+      "cost": "2",
+      "description": "Deal 6 damage to ALL enemies 2 times.\nIncrease this card's hits by 1 this combat."
     },
     {
       "name": "Relentless Hail+",
       "color": "Biting Cold",
       "rarity": "Rare",
       "type": "Attack",
-      "cost": "3",
-      "description": "Deal 4 damage 6 times."
+      "cost": "2",
+      "description": "Deal 8 damage to ALL enemies 2 times.\nIncrease this card's hits by 1 this combat."
     },
     {
       "name": "Reservoir",
@@ -12001,7 +12921,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Retain.\nGain 1 Intangible.\nExhaust.\nanniv5:Pickup: Obtain 3 Curses of the Bell."
+      "description": "Retain.\nGain 1 Intangible.\nExhaust.\nanniv5:Pickup: Obtain 2 Curses of the Bell."
     },
     {
       "name": "Saved by the Bell+",
@@ -12009,7 +12929,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "Retain.\nGain 1 Intangible.\nExhaust.\nanniv5:Pickup: Obtain 3 Curses of the Bell."
+      "description": "Retain.\nGain 1 Intangible.\nExhaust.\nanniv5:Pickup: Obtain 2 Curses of the Bell."
     },
     {
       "name": "Scarab Plague",
@@ -12140,6 +13060,22 @@
       "description": "Apply 1 anniv5:Tainted.\nEnter anniv5:Venomous.\nExhaust."
     },
     {
+      "name": "Slash Draw",
+      "color": "Instant Death",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage.\nDraw a card. If it was an Attack, play this card again with twice as much damage."
+    },
+    {
+      "name": "Slash Draw+",
+      "color": "Instant Death",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 1 damage.\nDraw a card. If it was an Attack, play this card again with thrice as much damage."
+    },
+    {
       "name": "Snazzy Swagger",
       "color": "Snecko",
       "rarity": "Rare",
@@ -12188,6 +13124,22 @@
       "description": "Gain 1 Strength.\nDouble this to a max of 10 after play if you've played 3 or more card types this turn.\nExhaustive 4."
     },
     {
+      "name": "Specialist",
+      "color": "Summoner's Menagerie",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 2 Focus.\nLose 1 Strength and Dexterity."
+    },
+    {
+      "name": "Specialist+",
+      "color": "Summoner's Menagerie",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 3 Focus.\nLose 1 Strength and Dexterity."
+    },
+    {
       "name": "Splendid Form",
       "color": "Bardic Inspiration",
       "rarity": "Rare",
@@ -12209,7 +13161,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 13 damage twice.\nHeal 6 HP.\nChannel a Plasma.\nExhaust."
+      "description": "Deal 13 damage twice.\nHeal 6 HP.\nChannel 1 Plasma.\nExhaust."
     },
     {
       "name": "Star Spawn+",
@@ -12217,7 +13169,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 16 damage twice.\nHeal 9 HP.\nChannel a Plasma.\nExhaust."
+      "description": "Deal 16 damage twice.\nHeal 9 HP.\nChannel 1 Plasma.\nExhaust."
     },
     {
       "name": "Static",
@@ -12305,7 +13257,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 5 damage.\nApply 5 anniv5:Distortion.\nanniv5:Amplify [E] : Exhaust, then add a copy of this to your discard pile."
+      "description": "Deal 6 damage.\nApply 6 anniv5:Distortion.\nanniv5:Amplify [E] : Exhaust, then add a copy of this to your discard pile."
     },
     {
       "name": "Subtle Knife+",
@@ -12313,7 +13265,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage.\nApply 6 anniv5:Distortion.\nanniv5:Amplify [E] : Exhaust, then add a copy of this to your discard pile."
+      "description": "Deal 7 damage.\nApply 7 anniv5:Distortion.\nanniv5:Amplify [E] : Exhaust, then add a copy of this to your discard pile."
     },
     {
       "name": "Super Nova",
@@ -12433,7 +13385,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 10 damage to ALL enemies.\nIf you're having fun, play a random Power!"
+      "description": "Deal 9 damage to ALL enemies.\nIf you're having fun, play a random Power!"
     },
     {
       "name": "The Donut+",
@@ -12441,7 +13393,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 12 damage to ALL enemies.\nIf you're having fun, play a random Upgraded Power!"
+      "description": "Deal 10 damage to ALL enemies.\nIf you're having fun, play a random Upgraded Power!"
     },
     {
       "name": "The Encyclopedia",
@@ -12474,6 +13426,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Gain 10 Block.\nRemove all your debuffs.\nExhaust."
+    },
+    {
+      "name": "The Prism",
+      "color": "Vexation",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 8 damage to a random enemy 8 times. Startup: Split into Shards in your hand and each pile."
+    },
+    {
+      "name": "The Prism+",
+      "color": "Vexation",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 9 damage to a random enemy 9 times. Startup: Split into Shards+ in your hand and each pile."
     },
     {
       "name": "The Soularium",
@@ -12636,28 +13604,12 @@
       "description": "Shuffle 5 Scrolls of Intellect into your draw pile. At the start of your turn, shuffle 1 more in."
     },
     {
-      "name": "Training",
-      "color": "Summoner's Menagerie",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "At the end of your turn Evoke your next orb 3 times."
-    },
-    {
-      "name": "Training+",
-      "color": "Summoner's Menagerie",
-      "rarity": "Rare",
-      "type": "Power",
-      "cost": "2",
-      "description": "At the end of your turn Evoke your next orb 4 times."
-    },
-    {
       "name": "Tranquilizer Bomb",
       "color": "Monster Hunter",
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 20 anniv5:Nonlethal damage.\nTarget enemy loses 2 Strength.\nExhaust."
+      "description": "Deal 20 anniv5:Nonlethal damage.\nEnemy loses 2 Strength.\nExhaust."
     },
     {
       "name": "Tranquilizer Bomb+",
@@ -12665,7 +13617,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 22 anniv5:Nonlethal damage.\nTarget enemy loses 3 Strength.\nExhaust."
+      "description": "Deal 22 anniv5:Nonlethal damage.\nEnemy loses 3 Strength.\nExhaust."
     },
     {
       "name": "Trine",
@@ -12682,6 +13634,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Ethereal.\nWhen this card is drawn, the next card you play this turn is played twice."
+    },
+    {
+      "name": "Tunnel Vision",
+      "color": "Shock'n'Lock",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lock-On further increases Orb damage by 25% per additional Lock-On."
+    },
+    {
+      "name": "Tunnel Vision+",
+      "color": "Shock'n'Lock",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Apply 2 Lock-On to ALL enemies.\nLock-On further increases Orb damage by 25% per additional Lock-On."
     },
     {
       "name": "Ultimate Homerun",
@@ -12729,7 +13697,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Once per turn, when you reach 2 or fewer cards in hand, draw 2 cards and gain [E] [E] ."
+      "description": "Once per turn, when you reach 2 or fewer cards in hand, draw 2 cards and gain 2 [E] ."
     },
     {
       "name": "Vial of Memory",
@@ -12762,6 +13730,22 @@
       "type": "Skill",
       "cost": "1",
       "description": "Put 3 cards from your draw pile into your hand.\nRetain your hand this turn.\nExhaust."
+    },
+    {
+      "name": "Visit a Monastery",
+      "color": "Vexation",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "At the start of your next 3 turns, add into your hand:\nMadness, Purity,\nApotheosis."
+    },
+    {
+      "name": "Visit a Monastery+",
+      "color": "Vexation",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate. At the start of your next 3 turns, add into your hand:\nMadness, Purity,\nApotheosis."
     },
     {
       "name": "Void Shocker",
@@ -12801,7 +13785,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "5",
-      "description": "*Magic.\nDeal 10 damage to a random enemy 3 times.\nAdd 3 Flame Pillars to your hand."
+      "description": "Deal 10 damage to a random enemy 3 times.\nAdd 3 Flame Pillars to your hand."
     },
     {
       "name": "Wall of Fire+",
@@ -12809,7 +13793,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "5",
-      "description": "*Magic.\nDeal 10 damage to a random enemy 4 times.\nAdd 3 Flame Pillars to your hand."
+      "description": "Deal 12 damage to a random enemy 3 times.\nAdd 3 Flame Pillars+ to your hand."
     },
     {
       "name": "Waning",
@@ -12865,7 +13849,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Inscribed.\nanniv5:Modify 2 random cards in your hand : anniv5:Inscribed.\nExhaust"
+      "description": "anniv5:Inscribed.\nanniv5:Modify 2 random cards in your hand: anniv5:Inscribed.\nExhaust."
     },
     {
       "name": "Witch Twist+",
@@ -12873,7 +13857,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "1",
-      "description": "anniv5:Inscribed.\nanniv5:Modify 3 random cards in your hand : anniv5:Inscribed.\nExhaust"
+      "description": "anniv5:Inscribed.\nanniv5:Modify 3 random cards in your hand: anniv5:Inscribed.\nExhaust."
     },
     {
       "name": "Witchcraft",
@@ -12934,7 +13918,7 @@
       "name": "Snowglobe",
       "tier": "Common",
       "pool": "Packmaster_rainbow",
-      "description": "Enemies take 1 additional damage from anniv5:Frostbite.",
+      "description": "Whenever you apply anniv5:Frostbite by attacking an enemy, apply 1 more.",
       "flavorText": "A depiction of the Spire during snowy weather. It growls when you shake it."
     },
     {
@@ -13029,11 +14013,11 @@
   "keywords": [
     {
       "name": "Confession",
-      "description": "Whenever you take damage or lose hp, deal damage equal to your Confession to ALL enemies.\nIf it isn't your turn reduce Confession by half."
+      "description": "Whenever you take damage or lose HP, deal damage equal to your Confession to ALL enemies.\nIf it isn't your turn, reduce Confession by half."
     },
     {
       "name": "Crescent Moon",
-      "description": "Orb. Passive : Deals damage to a random enemy when activated by a cards effect. Evokes after activating 4 times. Evoke : Deal damage to a random enemy"
+      "description": "Orb. Passive: Deals damage to a random enemy when activated by a cards effect. Evokes after activating 4 times. Evoke: Deal damage to a random enemy."
     },
     {
       "name": "Critical Hit",
@@ -13048,10 +14032,6 @@
       "description": "Decreases the rarity of a rare card to uncommon, or uncommon card to common."
     },
     {
-      "name": "Enchantment",
-      "description": "When you play a card with a different color any applicable Enchantments are copied and played onto the same target. (A different color is any color other than your character's normal card color; different Packmaster Packs are not different colors.)"
-    },
-    {
       "name": "Fallout",
       "description": "Whenever you play a Power, ALL creatures with Fallout take damage."
     },
@@ -13061,7 +14041,7 @@
     },
     {
       "name": "Full Moon",
-      "description": "Orb. Passive : Draw a card when activated by a cards effect. Evokes after activating 4 times. Evoke : Draw a card"
+      "description": "Orb. Passive: Draw a card when activated by a cards effect. Evokes after activating 4 times. Evoke: Draw a card."
     },
     {
       "name": "Glass Armor",
@@ -13069,11 +14049,11 @@
     },
     {
       "name": "Inscribed",
-      "description": "When played, activate the passive of your next orb, then of all Full and Crescent Moon orbs."
+      "description": "When played, activate the passive of your next Orb, then of all Full and Crescent Moon Orbs."
     },
     {
       "name": "Light",
-      "description": "Orb - Passive : At the end of your turn gain 1 Confession.\nEvoke : Gain 3 Confession."
+      "description": "Orb - Passive: At the end of your turn gain 1 Confession.\nEvoke: Gain 3 Confession."
     },
     {
       "name": "Mundane",
@@ -13086,6 +14066,10 @@
     {
       "name": "Penance",
       "description": "When a creature obtains 8 Penance, it loses 20 HP and loses 8 Penance.\nHP loss from Penance is increased by 10 this combat."
+    },
+    {
+      "name": "Plated Armor",
+      "description": "At the end of the turn, gain Block. When taking unblocked attack damage, reduce by 1."
     },
     {
       "name": "Precious",
@@ -13148,6 +14132,14 @@
       "description": "Basic cards are the cards that you find in decks at the start of the run. They have the same border as Common cards but cannot be obtained through normal means."
     },
     {
+      "name": "Blaze",
+      "description": "Orb: Increases amount every turn. When Evoked, applies Ignite to the enemy with the most HP."
+    },
+    {
+      "name": "Boost",
+      "description": "Add an effect to a card. This effect is removed at the end of your turn or after playing the card."
+    },
+    {
       "name": "Bounty",
       "description": "Normal Enemy: 15 gold. Elite Enemy: 40 gold. Boss: 100 gold."
     },
@@ -13181,7 +14173,7 @@
     },
     {
       "name": "Distortion",
-      "description": "Creatures with Distortion lose HP whenever a card is Exhausted."
+      "description": "Creatures with Distortion lose HP whenever a card is Exhausted, then lose 1 Distortion."
     },
     {
       "name": "Duplication",
@@ -13289,7 +14281,7 @@
     },
     {
       "name": "Manifest",
-      "description": "Gain an orb slot then channel the listed orb."
+      "description": "Gain an Orb slot then channel the listed Orb."
     },
     {
       "name": "MEGAthereal",
@@ -13305,11 +14297,11 @@
     },
     {
       "name": "Nightmare",
-      "description": "Stance: When you use 'Madness', exit Nightmare Stance.\nWhen you exit Nightmare Stance, draw 2 cards, gain [E] , and lose 1 HP."
+      "description": "Stance: While in Nightmare Stance, lose 1 Sanity when you play a card, and draw 2 cards when you play a Lunacy.\nExit Nightmare Stance at the end of your turn."
     },
     {
       "name": "Nonlethal",
-      "description": "Non-lethal damage will leave targets at 1 hp."
+      "description": "Non-lethal damage will leave targets at 1 HP."
     },
     {
       "name": "Not Hunted",
@@ -13329,19 +14321,31 @@
     },
     {
       "name": "On Fire",
-      "description": "At the end of your turn, cards in your hand with Fire Counters make you take damage equal to their Fire Counter. They then increase the Fire Counter. Cards with Fire Counters play an additional copy of themselves for every Fire Counter above 1, and Exhaust."
+      "description": "Play an additional time for each Fire Counter and Exhaust. Increase Fire Counter by 1 at the end of your turn while in your hand."
     },
     {
       "name": "Petra",
-      "description": "When you attack a target with Petra, gain Block equal to 35% of damage dealt on your next turn. Reduced by 1 at the end of turn."
+      "description": "When you attack a target with Petra, gain Block equal to 35% of unblocked damage dealt on your next turn. Reduced by 1 at the end of turn."
     },
     {
       "name": "Pickup",
       "description": "Effect triggers when you obtain this card."
     },
     {
+      "name": "Polar",
+      "description": "Orb: Applies Frostbite to random enemies. When Evoked, applies Frostbite to ALL enemies."
+    },
+    {
       "name": "Porcupine",
       "description": "Orb: Generates Quills. When Evoked, gain Thorns."
+    },
+    {
+      "name": "Precision",
+      "description": "Your next Attack gains additional damage for the rest of combat."
+    },
+    {
+      "name": "Randomized Orb",
+      "description": "When this card is created, the Orb it channels is randomly chosen from Lightning, Dark, Ghostflame, Blaze, and Polar."
     },
     {
       "name": "Rend",
@@ -13358,6 +14362,10 @@
     {
       "name": "Ruin",
       "description": "The next time a creature with Ruin takes unblocked attack damage, they lose HP equal to their Ruin for each buff and debuff they have."
+    },
+    {
+      "name": "Sanity",
+      "description": "While you have negative Sanity, lose 1 at the start of each turn.\nFor every 5 Sanity you lose, add a Lunacy to your hand, then gain 5 Sanity."
     },
     {
       "name": "Serene",
@@ -13405,7 +14413,7 @@
     },
     {
       "name": "Wolf",
-      "description": "Orb: Deals damage to the enemy with the least HP. Damage is increased by the number of orbs that are Channeled. When Evoked, gain an orb slot."
+      "description": "Orb: Deals damage to the enemy with the least HP. Damage is increased by the number of orbs that are Channeled. When Evoked, gain an Orb slot."
     }
   ]
 }
