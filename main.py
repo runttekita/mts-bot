@@ -130,7 +130,7 @@ If you are in the <#384046138610941953> channel, you can also run it with "rando
 The {prefix}find command will attempt to find a card containing card text sent to this command.
 
 The command's anatomy looks as follows:
-{prefix}card [args] [text]
+{prefix}find [args] [text]
 
 [args] can be any combination of the following arguments:
 -n indicates I should search name rather than description
@@ -139,10 +139,10 @@ The command's anatomy looks as follows:
 -r=[rarity] to specify rarity (basic, common, etc)
 """,
         "findcard": f"""
-The {prefix}find command will attempt to find a card containing card text sent to this command.
+The {prefix}find command will attempt to find a card containing text sent to this command.
 
 The command's anatomy looks as follows:
-{prefix}card [args] [text]
+{prefix}find [args] [text]
 
 [args] can be any combination of the following arguments:
 -n indicates I should search name rather than description
@@ -159,10 +159,10 @@ The command's anatomy looks as follows:
 If you are in the <#384046138610941953> channel, you can also run it with "random" in place of the relic name to retrieve a random relic.
 """,
         "findrelic": f"""
-The {prefix}find command will attempt to find a card containing card text sent to this command.
+The {prefix}findrelic command will attempt to find a relic containing text sent to this command.
 
 The command's anatomy looks as follows:
-{prefix}card [args] [text]
+{prefix}findrelic [args] [text]
 
 [args] can be any combination of the following arguments:
 -n indicates I should search name rather than description
