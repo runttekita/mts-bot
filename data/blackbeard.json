@@ -1,12 +1,12 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.18.1",
+    "version": "2.0.2",
     "authors": ["JohnnyBazooka89"],
     "credits": "Jedi - Russian localization, \u65C5\u6E1A - Simplified Chinese localization, Vex'd - various visual effects, Venim - card backgrounds",
     "description": "Adds The Blackbeard as a new playable character.\n\nMore info: https://steamcommunity.com/sharedfiles/filedetails/?id=1612105245\n\nGitHub: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
-    "mts_version": "3.18.0",
-    "sts_version": "03-07-2022",
+    "mts_version": "3.30.0",
+    "sts_version": "12-18-2022",
     "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
@@ -812,6 +812,22 @@
       "description": "Apply 5 Weak to ALL enemies.\nExhaust."
     },
     {
+      "name": "Pegleg",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 2 Dexterity.\nGain 4 Strength."
+    },
+    {
+      "name": "Pegleg+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Lose 2 Dexterity.\nGain 5 Strength."
+    },
+    {
       "name": "Pirate Earring",
       "color": "Blackbeard_black",
       "rarity": "Uncommon",
@@ -881,7 +897,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [E] [E].\nNext turn, lose [E] [E]."
+      "description": "Gain [E] [E].\nNext turn, lose [E]."
     },
     {
       "name": "Recklessness+",
@@ -889,7 +905,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [E] [E] [E].\nNext turn, lose [E] [E]."
+      "description": "Gain [E] [E] [E].\nNext turn, lose [E]."
     },
     {
       "name": "Remove Scurvy",
@@ -1009,7 +1025,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nThe next time your Intangible wears off, you take 8 damage.\nExhaust."
+      "description": "Gain 1 Intangible.\nThe next time your Intangible wears off, you take 10 damage.\nExhaust."
     },
     {
       "name": "Vengeful Spirit+",
@@ -1017,7 +1033,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nThe next time your Intangible wears off, you take 6 damage.\nExhaust."
+      "description": "Gain 1 Intangible.\nThe next time your Intangible wears off, you take 8 damage.\nExhaust."
     },
     {
       "name": "Weapon Proficiency",
@@ -1034,22 +1050,6 @@
       "type": "Power",
       "cost": "0",
       "description": "Your attacks use an additional blackbeard:Weapon."
-    },
-    {
-      "name": "Wooden Leg",
-      "color": "Blackbeard_black",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "Lose 2 Dexterity.\nGain 4 Strength."
-    },
-    {
-      "name": "Wooden Leg+",
-      "color": "Blackbeard_black",
-      "rarity": "Uncommon",
-      "type": "Power",
-      "cost": "1",
-      "description": "Lose 2 Dexterity.\nGain 5 Strength."
     },
     {
       "name": "Boost Morale",
@@ -1116,7 +1116,7 @@
       "description": "Deal damage equal to 6 times the amount of Cannonballs played this combat.\n(Every type of Cannonball counts.)"
     },
     {
-      "name": "Golden Guillotine",
+      "name": "Golden Noose",
       "color": "Blackbeard_black",
       "rarity": "Rare",
       "type": "Attack",
@@ -1124,7 +1124,7 @@
       "description": "Deal damage equal to\n4% of Gold gained this run."
     },
     {
-      "name": "Golden Guillotine+",
+      "name": "Golden Noose+",
       "color": "Blackbeard_black",
       "rarity": "Rare",
       "type": "Attack",
@@ -1345,7 +1345,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 3 Intangible.\nThe next time your Intangible wears off, you take 25 damage."
+      "description": "Gain 3 Intangible.\nThe next time your Intangible wears off, you take 30 damage."
     },
     {
       "name": "Undead Form+",
@@ -1353,7 +1353,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 3 Intangible.\nThe next time your Intangible wears off, you take 20 damage."
+      "description": "Gain 3 Intangible.\nThe next time your Intangible wears off, you take 24 damage."
     },
     {
       "name": "Weapon Mastery",
