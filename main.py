@@ -62,19 +62,19 @@ def meme_dictionary():
 def help_dictionary():
     return {
         "minimumcards": "When making a new character, upon generating card rewards, the game can crash if there are not enough cards in the pool.\nThe minimum requirements to not crash are:\n - 3 of each rarity to not crash on card rewards (4 if you have question card)\n - 3 of each type to not crash when using attack/skill/power potions\n - 2 attacks, 2 skills, and 1 power to not crash shops\n\n As a temporary solution, you can also give yourself prismatic shard. However, this will not prevent crashing in shops.",
-        "contribute": "https://github.com/JohnnyDevo/mts-bot/blob/master/CONTRIBUTING.md",
-        "list": "https://github.com/JohnnyDevo/mts-bot/tree/master/data",
+        "contribute": "https://github.com/NellyDevo/mts-bot/blob/master/CONTRIBUTING.md",
+        "list": "https://github.com/NellyDevo/mts-bot/tree/master/data",
         "basic": "https://github.com/Alchyr/BasicMod#basic-mod",
         "basicmod": "https://github.com/Alchyr/BasicMod#basic-mod",
         "xy": "http://xyproblem.info/",
         "debugger": "https://stackoverflow.com/questions/25385173/what-is-a-debugger-and-how-can-it-help-me-diagnose-problems",
-        "optin": "https://github.com/JohnnyDevo/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback",
+        "optin": "https://github.com/NellyDevo/mts-bot/blob/master/README.md#opt-in-for-receiving-feedback",
         "console": "Enable it on the Main Menu by going to Mods>BaseMod>Config>Enable console.\nThen hit ` while in a run.",
         "124": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
         "126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
         "relic:124": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
         "relic:126": "https://github.com/daviscook477/BaseMod/wiki/Custom-Relics#relicstrings",
-        "cansuggest": "https://github.com/JohnnyDevo/mts-bot/blob/master/mtsbotdata.py#L32",
+        "cansuggest": "https://github.com/NellyDevo/mts-bot/blob/master/mtsbotdata.py#L32",
         "clipper": "https://github.com/JohnnyBazooka89/StSModdingToolCardImagesCreator",
         "cardartclipper": "https://github.com/JohnnyBazooka89/StSModdingToolCardImagesCreator",
         "artclipper": "https://github.com/JohnnyBazooka89/StSModdingToolCardImagesCreator"
